@@ -1,0 +1,772 @@
+{
+  "url": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Dhalsim%22&limit=500",
+  "retrievedAt": "2026-11-05T09:20:26.187Z",
+  "status": 200,
+  "characterId": "dhalsim",
+  "gameVersion": "UNVERIFIED",
+  "license": "CC-BY-SA-4.0",
+  "attribution": "SuperCombo Wiki contributors",
+  "data": {
+    "cargoquery": [
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "1HK",
+          "startup": "9",
+          "total": "33",
+          "hitAdv": "KD +33",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-7'''</span>",
+          "notes": "Traditional sweep; can be difficult to punish if well spaced (much better block advantage than most sweeps)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "1HP",
+          "startup": "10",
+          "total": "33",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Decent range cancelable attack, primarily used out of Drive Rush; extends a hurtbox 1f before active and hurtbox lingers 12f after recovery making it susceptible to whiff punishes"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "1LK",
+          "startup": "5",
+          "total": "17",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Chains into 5LP/2LP/1LK"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "1MK",
+          "startup": "8",
+          "total": "30",
+          "hitAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-7'''</span>",
+          "notes": "Acts like a standard cancelable 2MK but with below-average range; DR cancel is delayed until after active frames"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "214214K",
+          "startup": "7",
+          "total": "67",
+          "hitAdv": "KD +50",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "Button strength determines trajectory; 5-hit projectile; cannot hit crouching opponents on the way up unless they extend a vertical hurtbox (opponent can safely pressure Dhalsim with a crouching meaty attack); automatically releases if the hitbox above Dhalsim's head connects; can hold the button to charge into a more powerful version; upon hitting the floor, creates a larger stationary hitbox that lasts 20f; [] refers to active projectile time after release"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "214214[K]",
+          "startup": "71~91",
+          "total": "129~148",
+          "hitAdv": "KD",
+          "blockAdv": "-",
+          "notes": "Button strength determines trajectory; 9-hit projectile; cannot hit crouching opponents on the way up; larger hitbox than partially charged version; automatically releases if the hitbox above Dhalsim's head connects; upon hitting the floor, creates a larger stationary hitbox that lasts 20f; [] refers to active projectile time after release; Dhalsim can hold the fireball for 20f after fully charged (no benefit for doing this)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "214214{K}",
+          "startup": "23~70",
+          "total": "81~128",
+          "hitAdv": "KD",
+          "blockAdv": "-",
+          "notes": "Button strength determines trajectory; 7-hit projectile; cannot hit crouching opponents on the way up; larger hitbox than uncharged version; automatically releases if the hitbox above Dhalsim's head connects; upon hitting the floor, creates a larger stationary hitbox that lasts 20f; [] refers to active projectile time after release"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "236236HP",
+          "startup": "10",
+          "total": "133",
+          "hitAdv": "KD +27",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-22'''</span>",
+          "notes": "Upward anti-air angle; crouching hurtbox on frames 1-12; whiffs on crouching opponents unless they extend a vertical hurtbox; deals 792 recoverable damage on block"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "236236K",
+          "startup": "10",
+          "total": "89",
+          "hitAdv": "HKD +19",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-62'''</span>",
+          "notes": "Cinematic time regenerates ~2 Drive bars for Dhalsim; 2f startup when canceled from 63214P; *Self-hitstop does not occur until 3rd active frame on block (incorrectly appears to have 7 active frames and 20f blockstun)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "236236K",
+          "startup": "10",
+          "total": "89",
+          "hitAdv": "HKD +19",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-62'''</span>",
+          "notes": "Available at 25% HP or below; cinematic time regenerates ~2.4 Drive bars for Dhalsim; 2f startup when canceled from 63214P"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "236236LP",
+          "startup": "10",
+          "total": "128",
+          "hitAdv": "KD +29",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-10'''</span>",
+          "notes": "Flames are low to the ground with ~1/2 screen range; deals 792 recoverable damage on block; high pushback on block makes it useful for mid-range block pressure against most characters"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "236236MP",
+          "startup": "10",
+          "total": "128",
+          "hitAdv": "KD +29",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-10'''</span>",
+          "notes": "Shorter range than LP version (~1/3 screen), ends with upward angled flame and deals more damage; deals 792 recoverable damage on block"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "236KK",
+          "startup": "18",
+          "total": "45",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "2-hit OD projectile thrown upward before coming down; button combination determines projectile speed and max distance (LKMK short, LKHK mid, MKHK far); projectile bounces twice toward the opponent upon hitting the floor (can only change direction on the first bounce); after the final bounce, creates a larger stationary hitbox that lasts 10f; projectile dissipates if completely off-screen; frame advantage refers to point blank upward hit, and varies significantly depending on range (canceling into 236KK can create enough pushback for much better frame advantage); cannot be performed while any other 236P/236K projectile is active on-screen (but can be followed up with meterless 236P immediately)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "236LK",
+          "startup": "18",
+          "total": "45",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "1-hit projectile thrown upward before coming down; button strength determines projectile speed and max distance (LK short, MK mid, HK far); upon hitting the floor, creates a larger stationary hitbox that lasts 10f; frame advantage refers to point blank upward hit; can be performed while an OD Yoga Fire projectile is active on-screen (but not while any other 236P/236K projectile is active)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "236P",
+          "startup": "15(11)",
+          "total": "48",
+          "hitAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "1-hit projectile; can hold the button for charged 2-hit version (releasing the button before 27f throws the regular version with 9f additional startup); speed depends on button strength (LP slowest, MP mid, HP fastest); frame advantage increases significantly outside of close range; can be performed while an OD Yoga Arch projectile is active on-screen (but not while any other 236P/236K projectile is active)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "236PP",
+          "startup": "12",
+          "total": "45",
+          "hitAdv": "KD +49",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "2-hit OD projectile; speed depends on button combination (LP+MP slowest, LP+HP mid, MP+HP fastest); frame advantage increases significantly outside of close range; cannot be performed while any other 236P/236K projectile is active on-screen (but can be followed up with meterless 236K immediately)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "236[P]",
+          "startup": "43",
+          "total": "73",
+          "hitAdv": "KD +51",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "2-hit projectile; speed depends on button strength (LP slowest, MP mid, HP fastest); button must be held 27 frames for full charge; frame advantage increases significantly outside of close range; can be performed while an OD Yoga Arch projectile is active on-screen (but not while any other 236P/236K projectile is active)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "2HK",
+          "startup": "12",
+          "total": "47",
+          "hitAdv": "HKD +22(+37)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-16'''</span><span style=\"color: #ff6347;\">(-1)</span>",
+          "notes": "Long range slide; low profile 8-39f; best version of slide for countering projectiles; has juggle potential (no longer a Hard Knockdown if juggled into)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "2HP",
+          "startup": "19",
+          "total": "42(46)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span>",
+          "notes": "Low Profile 11-46f (until recovery); can be used to punish projectiles from long range; 4f extra recovery on whiff and Perfect Parry"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "2KK or 3KK",
+          "startup": "30",
+          "total": "-",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Can use aerial normals/specials and move left/right after 30f rising animation; 3KK versions moves Dhalsim forward before rising; Counter-hit state on frame 1 until landing; active time refers to the airborne period in which Dhalsim can move (can input air attacks during his 20f descent); crouching state on final landing frame; Movement Speed: 0.04 forward / 0.03 back"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "2LK",
+          "startup": "4",
+          "total": "26",
+          "hitAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span><span style=\"color: #32CD32;\">(+1)</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-10(-4)'''</span>",
+          "notes": "Short range slide; semi-low profile 2-26f (until recovery)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "2LP",
+          "startup": "5",
+          "total": "16",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Chains into 5LP/2LP/1LK"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "2LPLK",
+          "startup": "5",
+          "total": "30",
+          "hitAdv": "KD +35",
+          "blockAdv": "-",
+          "notes": "Throws opponent full screen; allows for a corner throw loop with manual timing (+10 after dash, or walk); a successful Throw Escape builds 0.5 Drive bars for the defender; Throw Escape is awarded to a random player if input simultaneously"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "2MK",
+          "startup": "10",
+          "total": "36",
+          "hitAdv": "<span style=\"color: #ff6347;\">-3</span><span style=\"color: #30D5B8;\">'''(+9)'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-10'''</span><span style=\"color: #32CD32;\">(+2)</span>",
+          "notes": "Medium range slide; semi-low profile 10-30f; can lead to follow-up combos or pressure if well spaced; opponent has a different reeling animation when spaced to be +4 or better on hit"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "2MP",
+          "startup": "12",
+          "total": "30",
+          "hitAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "Long range cancelable poke; extends hurtbox 1f before active so it can be counterpoked"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "4 or 6 + j.PPP/j.KKK",
+          "startup": "9",
+          "total": "-",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Punish Counter state until landing; recovery refers to vulnerable air recovery time before Dhalsim can act (air moves can be used after 29f forward, 35f back); total recovery time depends on activation height; 4f extra air recovery on backward version; j.6PPP (j.6LMH) version crosses up (but cannot switch sides with fully cornered opponent); j.6KKK (j.6S) version stays on same side; j.4PPP (j.4S) version travels back (Distance: 1.5 units); j.4KKK (j.4LMH) version travels back slightly farther (Distance: 2.5 units);"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "4 or 6 + PPP/KKK",
+          "startup": "4",
+          "total": "39(46)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "6PPP version crosses up (but cannot switch sides with fully cornered opponent); 6KKK version stays on same side next to opponent; 4PPP and 4KKK travel back (Distance: 1.5 units); 7f extra recovery on backward version"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "4HK",
+          "startup": "14",
+          "total": "39",
+          "hitAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-9'''</span>",
+          "notes": "Slow anti-air (cannot hit cross-up); low profile 10-13f and 33-38f; Counter-hit/Punish Counter puts airborne opponents into limited juggle state"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "4HP",
+          "startup": "14",
+          "total": "49",
+          "hitAdv": "<span style=\"color: #b70c0b;\">'''-9'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-16'''</span>",
+          "notes": "Whiffs on crouching opponents unless they extend a vertical hurtbox; long-range anti-air (cannot hit cross-up); Counter-hit/Punish Counter puts airborne opponents into limited juggle state; canceling anti-air into a projectile can lead to juggles on CH/PC or meaty/teleport pressure"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "4LPLK",
+          "startup": "5",
+          "total": "30",
+          "hitAdv": "KD +19",
+          "blockAdv": "-",
+          "notes": "Side switch; no meaty throw after throwing opponent into corner, but can meaty with 2MK (0 oB) or DR 4MK (+6 oB); a successful Throw Escape builds 0.5 Drive bars for the defender; Throw Escape is awarded to a random player if input simultaneously"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "4MK",
+          "startup": "7",
+          "total": "27",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+          "notes": "Important combo tool; good meaty option due to high active frame count and safety on block"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "4MP",
+          "startup": "8",
+          "total": "29",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Forces stand on hit; good close-range anti-air but cannot hit cross-up; active frames 2-6 whiff on crouching opponents unless they extend a vertical hurtbox (making it a poor meaty option); all active frames are cancelable giving it a lenient hitconfirm window; special/DR/DI cancel is delayed until after 4th active frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "4PPPKKK",
+          "startup": "430 (total)",
+          "total": "430",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"I am in no hurry. Everything flows as one.\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "5HK",
+          "startup": "17",
+          "total": "39",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Only the closest hitbox can hit crouching opponents; mid-range hitbox whiffs on crouching opponents unless they extend a vertical hurtbox; the 2 farthest hitboxes whiff on all crouching opponents (even with an extended vertical hurtbox); extremely long range cancelable poke and anti-air; puts airborne opponents into limited juggle state; stagger on Punish Counter can combo into 5HP at most ranges, or can confirm into Drive Rush for stronger punishes; leg has an extended hurtbox 2f before active that is vulnerable to projectiles, and 1f before active that can be counterpoked; tip of Dhalsim's foot hurtbox is anti-air invincible on frames 16-23; special/DR/DI cancel is delayed until after 2nd recovery frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "5HP",
+          "startup": "16",
+          "total": "46",
+          "hitAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-11'''</span>",
+          "notes": "Long range poke; extended hurtbox lingers for the first 16 recovery frames (slightly retracts on 12-16f of recovery), making it easily whiff punished even at max range"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "5LK",
+          "startup": "9",
+          "total": "23",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Extremely long range for a light normal, but has startup similar to a medium poke; DR cancel is delayed until after 2nd active frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "5LP",
+          "startup": "4",
+          "total": "14",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Chains into 5LP/2LP/1LK"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "5MK",
+          "startup": "12",
+          "total": "32",
+          "hitAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Long range poke; extends hurtbox 1f before active so it can be counterpoked"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "5MP",
+          "startup": "14",
+          "total": "35",
+          "hitAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+          "notes": "Long range poke; extends hurtbox 1f before active so it can be counterpoked"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "5PPPKKK",
+          "startup": "190 (total)",
+          "total": "190",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"What is it... already finished?\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "63214HK",
+          "startup": "17",
+          "total": "44",
+          "hitAdv": "KD +47",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Strike hitbox with 1-hit projectile nullification; head hurtbox disappears on frames 3-44 (hurtbox shrinks even lower on frames 17-26 while active); useful anti-air that can hit cross-up; steps forward during startup; puts opponent into limited juggle state on hit; whiffs on crouching opponents unless they extend a vertical hurtbox; can always juggle into SA1 on hit (MP for damage, LP if spaced at max range for consistency)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "63214HP",
+          "startup": "26",
+          "total": "58",
+          "hitAdv": "KD +45(+47)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4(-2)'''</span>",
+          "notes": "3-hit projectile hitbox (only 1-hit if final active frame connects, otherwise all 3 hits come out); hitbox range increases until reaching max range on 3rd active frame; slightly better advantage at max range; on Perfect Parry, opponent only has 1f recovery despite no screen freeze; SA3 cancel has 2f startup to ensure combo consistency"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "63214KK",
+          "startup": "12",
+          "total": "41",
+          "hitAdv": "KD +42",
+          "blockAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+          "notes": "Strike hitbox with 2-hit OD projectile nullification; head hurtbox disappears on frames 3-41 (hurtbox shrinks even lower on frames 12-21 while active); useful anti-air that can hit cross-up; steps forward during startup; puts opponent into limited juggle state on hit; both hits come out even if final active frame connects; whiffs on crouching opponents unless they extend a vertical hurtbox"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "63214LK",
+          "startup": "12",
+          "total": "44",
+          "hitAdv": "KD +39",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Strike hitbox with 1-hit projectile nullification; head hurtbox disappears on frames 3-44 (hurtbox shrinks even lower on frames 12-21 while active); useful anti-air that can hit cross-up; does not move during startup; puts opponent into limited juggle state on hit; whiffs on crouching opponents unless they extend a vertical hurtbox"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "63214LP",
+          "startup": "16",
+          "total": "45",
+          "hitAdv": "KD +33",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "1-hit stationary projectile hitbox; on Perfect Parry, opponent only has 1f recovery despite no screen freeze; SA3 cancel has 2f startup to ensure combo consistency"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "63214MK",
+          "startup": "15",
+          "total": "44",
+          "hitAdv": "KD +42",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Strike hitbox with 1-hit projectile nullification; head hurtbox disappears on frames 3-44 (hurtbox shrinks even lower on frames 15-24 while active); useful anti-air that can hit cross-up; steps slightly forward during startup; puts opponent into limited juggle state on hit; whiffs on crouching opponents unless they extend a vertical hurtbox"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "63214MP",
+          "startup": "20",
+          "total": "51",
+          "hitAdv": "KD +33",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "2-hit stationary projectile hitbox (both hits come out even if final active frame connects); on Perfect Parry, opponent only has 1f recovery despite no screen freeze; SA3 cancel has 2f startup to ensure combo consistency"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "63214PP",
+          "startup": "18",
+          "total": "61(66)",
+          "hitAdv": "KD +51",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-11'''</span>",
+          "notes": "5-hit OD projectile hitbox that launches opponent upward into a limited juggle state; 5f extra recovery on whiff/block; causes free juggle state if only the 5th hit connects vs. airborne opponent; 5th hit does not connect on grounded opponents (only 4 hits on block); SA3 cancel has 2f startup to ensure combo consistency; can juggle into immediate j.MP to extend the combo"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "6HPHK",
+          "startup": "18",
+          "total": "55(61)",
+          "hitAdv": "KD +24",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "2 hits; performed by holding 6HPHK on wakeup; 6f extra recovery on hit; both hits knock down; does not have any screen freeze except for a 12f freeze when interacting with the opponent's throw hitbox (this also refunds 1 Drive bar after punishing the throw); if 1st hit is Perfect Parried, opponent can interrupt with a move 7f or faster; see [[Street_Fighter_6/Gauges#Drive_Reversal|Drive Reversal]]."
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "6HPHK",
+          "startup": "20",
+          "total": "57(63)",
+          "hitAdv": "KD +24",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "2 hits; performed by inputting 6HPHK during blockstun; 6f extra recovery on hit; both hits knock down; freezes the screen for 4f during startup; if 1st hit is Perfect Parried, opponent can interrupt with a move 7f or faster; see [[Street_Fighter_6/Gauges#Drive_Reversal|Drive Reversal]]."
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "6PPPKKK",
+          "startup": "380 (total)",
+          "total": "380",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"Unleash your heart!\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "HPHK",
+          "startup": "26",
+          "total": "62",
+          "hitAdv": "KD +35 / Wall Splat KD +65",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span> / Wall Splat HKD +72",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Impact|Drive Impact]]. Airborne connect gives spinning juggle state on Punish Counter or corner Wall Splat with variable height."
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "j.2HK",
+          "startup": "9",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #b70c0b;\">'''-17'''</span><span style=\"color: #30D5B8;\">'''(+10)'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-22'''</span><span style=\"color: #30D5B8;\">'''(+5)'''</span>",
+          "notes": "Steep trajectory; advantage depends on connect height; 5f extra landing recovery on whiff; Dhalsim is in a crouching state during landing recovery; can come out on 8th airborne jump frame at the earliest; foot projectile invuln 9f~land; can be used after air-to-air j.MP to land safely"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "j.2KK",
+          "startup": "15",
+          "total": "-",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Can come out on 8th airborne jump frame at the earliest; can use aerial normals/specials and move left/right during float; Counter-hit state on frame 1 until landing; active time refers to airborne period in which Dhalsim can move (can input air attacks during his descent, which depends on float height; 18f at minimum height); crouching state on final landing frame; can only be used once per jump even after using OD Yoga Comet to regain air control; Movement Speed: 0.04 forward / 0.03 back"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "j.2LK",
+          "startup": "9",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #b70c0b;\">'''-23'''</span><span style=\"color: #30D5B8;\">'''(+12)'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-30'''</span><span style=\"color: #30D5B8;\">'''(+5)'''</span>",
+          "notes": "Shallow trajectory; advantage depends on connect height; 5f extra landing recovery on whiff; Dhalsim is in a crouching state during landing recovery; can come out on 8th airborne jump frame at the earliest; foot and lower body projectile invuln 9f~land; can be used after air-to-air j.MP to land safely"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "j.2LP",
+          "startup": "10",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #b70c0b;\">'''-18'''</span><span style=\"color: #30D5B8;\">'''(+8)'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-22'''</span><span style=\"color: #30D5B8;\">'''(+4)'''</span>",
+          "notes": "Cancelable into Air Teleport or Yoga Comet until the final 6 active frames before landing; can come out on 8th airborne jump frame at the earliest; puts airborne opponent into limited juggle state; can be used after OD Yoga Flame ~ j.MP to extend the juggle into any Super after landing"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "j.2MK",
+          "startup": "9",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #b70c0b;\">'''-15'''</span><span style=\"color: #30D5B8;\">'''(+10)'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-20'''</span><span style=\"color: #30D5B8;\">'''(+5)'''</span>",
+          "notes": "Medium trajectory; advantage depends on connect height; 5f extra landing recovery on whiff; Dhalsim is in a crouching state during landing recovery; can come out on 8th airborne jump frame at the earliest; foot projectile invuln 9f~land; can be used after air-to-air j.MP to land safely"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "j.63214LP",
+          "startup": "30",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #b70c0b;\">'''-4~'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2~</span>",
+          "notes": "Button strength affects projectile speed (LP slowest, HP fastest); frame advantage refers to close range minimum height version; can come out on 2nd airborne jump frame at the earliest; disappears after 55f if no contact is made; if projectile hits the floor, creates a stationary hitbox that lasts 10f on the ground (more likely to happen with faster versions); the last 5f of landing recovery is in a crouching state; can be performed from any jump direction"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "j.63214PP",
+          "startup": "30",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5~'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+6~'''</span>",
+          "notes": "Frame advantage refers to close range minimum height version; Dhalsim can perform air normals and specials mid-air after throwing projectile on frame 45 onward (cannot perform multiple Yoga Floats or Air Teleports in one jump, and cannot throw another OD Yoga Comet until the first has disappeared); can come out on 2nd airborne jump frame at the earliest; at minimum height, Dhalsim is too low to follow up with Float, j.2LP, or j.2K (but can still teleport); if projectile hits the floor, creates a stationary hitbox that lasts 10f on the ground; can be performed from any jump direction"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "j.HK",
+          "startup": "10",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5(+15)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span><span style=\"color: #30D5B8;\">'''(+11)'''</span>",
+          "notes": "Great horizontal range at an upward angle for air-to-airs (especially out of Float); lower body projectile invuln 10-22f (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "j.HP",
+          "startup": "13",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span><span style=\"color: #30D5B8;\">'''(+19)'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-9'''</span><span style=\"color: #30D5B8;\">'''(+15)'''</span>",
+          "notes": "Causes spike knockdown vs. airborne opponents; very long horizontal range on 2nd active frame, then hits far below Dhalsim (hurtbox extends outside the hitbox, making it prone to trading/losing to anti-airs); can hit as an instant overhead (but slow startup makes this incredibly risky; too slow for fuzzy overhead setups); always safe on block if performed from Yoga Float; extends a large hurtbox in front and below Dhalsim during active frames 2-4 (projectile invuln farther back, allowing Dhalsim to punish fireballs more reliably while floating at close range)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "j.LK",
+          "startup": "6",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span><span style=\"color: #30D5B8;\">'''(+8)'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-15'''</span><span style=\"color: #30D5B8;\">'''(+5)'''</span>",
+          "notes": "Cross-up; can be used as an instant overhead (no fuzzy setup required; works on all crouchers)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "j.LP",
+          "startup": "4",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+8(+13)'''</span>",
+          "blockAdv": "<span style=\"color: #bcbd0c;\">0</span><span style=\"color: #30D5B8;\">'''(+5)'''</span>",
+          "notes": "Can be used as a fuzzy instant overhead vs. JP/Marisa/Zangief only"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "j.MK",
+          "startup": "11",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #b70c0b;\">'''-7'''</span><span style=\"color: #30D5B8;\">'''(+13)'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-11'''</span><span style=\"color: #30D5B8;\">'''(+9)'''</span>",
+          "notes": "Good horizontal range and a downward angle (very effective at stopping approaches when used out of Float); can be used as an instant overhead vs. Dee Jay/JP/Marisa/Zangief, or as a fuzzy instant overhead vs. opponents in Burnout"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "j.MP",
+          "startup": "9",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5(+13)'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span><span style=\"color: #30D5B8;\">'''(+7)'''</span>",
+          "notes": "Cancelable into Float, Air Teleport, Yoga Comet, Drill Kick, or Yoga Mummy; great horizontal range for use as an air-to-air; does not hit overhead and cannot hit crouching opponents unless they extend a vertical hurtbox; lower body projectile invuln 9-25f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs); when juggled into, puts opponent into a limited juggle state (has a higher Juggle Increase value mid-juggle); can be comboed into after OD Yoga Flame (then canceled into Yoga Mummy to keep the opponent juggled)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "LPLK",
+          "startup": "5",
+          "total": "30",
+          "hitAdv": "KD +31",
+          "blockAdv": "-",
+          "notes": "Allows for a corner throw loop; walk for manual timing, dash (+6) and delay throw by 1-4f, or whiff 2LK (+5) for auto-timing; a successful Throw Escape builds 0.5 Drive bars for the defender; Throw Escape is awarded to a random player if input simultaneously"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "MPMK",
+          "startup": "1",
+          "total": "45(3)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Parry|Drive Parry]]. Perfect Parrying has only 1F of recovery and disables the opponent from canceling their attack. Perfect Parrying projectiles puts you into fixed 11 frames of recovery. After a Perfect Parry, all Super Gauge gain is reduced by 20% and Drive Gauge gain/damage is reduced by 50% for the entire punish combo."
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "MPMK or 66",
+          "startup": "9",
+          "total": "24(46)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Rush|Drive Rush]]; 3-bar version performed on hit/block from a cancelable normal; can also be performed on whiff from cancelable light normals; startup refers to minimum time before an attack can cancel the Drive Rush animation; the first 15 recovery frames are cancelable into any attack; the final 22 recovery frames are cancelable into any attack or movement option or blocking (except Parry); only Normal and Command Normal attacks are enhanced with +4 frame advantage and improved juggle properties"
+        }
+      },
+      {
+        "title": {
+          "chara": "Dhalsim",
+          "input": "MPMK~66",
+          "startup": "3+8",
+          "total": "26(48)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Rush|Drive Rush]]; 1-bar version performed out of a Parry; startup refers to minimum time before an attack can cancel the Drive Rush animation (if performed immediately after a successful Parry, only 1+8 startup); the first 15 recovery frames are cancelable into any attack; the final 22 recovery frames are cancelable into any attack or movement option or blocking (except Parry); only Normal and Command Normal attacks are enhanced with +4 frame advantage and improved juggle properties; Distance: 0.471 (min/throw), 1.787 (min/block), 2.700 (max/final DR frame)"
+        }
+      }
+    ]
+  }
+}

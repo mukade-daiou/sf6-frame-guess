@@ -1,0 +1,827 @@
+{
+  "url": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Cammy%22&limit=500",
+  "retrievedAt": "2026-11-05T09:20:25.829Z",
+  "status": 200,
+  "characterId": "cammy",
+  "gameVersion": "UNVERIFIED",
+  "license": "CC-BY-SA-4.0",
+  "attribution": "SuperCombo Wiki contributors",
+  "data": {
+    "cargoquery": [
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "214214P",
+          "startup": "13",
+          "total": "58",
+          "hitAdv": "HKD +12 (KD +70 Launch)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-24(-18)'''</span>",
+          "notes": "Can escape grounded meaty attacks, but usually results in Cammy whiffing over opponent's head; puts airborne opponents into limited juggle state (no cinematic), number of airborne hits varies based on juggle height; Drive Damage distribution: 900x3-x7,3000; only deals 250 damage on the first hit if it trades"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "214HP",
+          "startup": "28",
+          "total": "48",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "notes": "Puts airborne opponents into limited juggle state"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "214LP",
+          "startup": "21",
+          "total": "40",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Puts airborne opponents into limited juggle state (keeps opponents closer than other versions and has some juggle potential); good frame trap from 5HP (2f gap) that leads to Counter-hit confirm"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "214MP",
+          "startup": "24",
+          "total": "43",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Puts airborne opponents into limited juggle state"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "214PP",
+          "startup": "25(28)",
+          "total": "45(48)",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+7'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+3</span><span style=\"color: #ff6347;\">(-2)</span>",
+          "notes": "No collision box on frames 1-10 (can cross-up from close range); cross-up version is 3f slower and 5f worse on block (no difference on hit); puts airborne opponents into limited juggle state"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "236236K",
+          "startup": "9",
+          "total": "62",
+          "hitAdv": "KD +10",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-24(-22)'''</span>",
+          "notes": "Great combo tool with high juggle potential and corner carry; 5th hits transitions into launching follow-up on hit only; damage distribution: 100,200x3,100,200,1000"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "236236P",
+          "startup": "9",
+          "total": "61",
+          "hitAdv": "HKD +17",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-33(-23)'''</span>",
+          "notes": "Full screen anti-projectile move (can lose to slow projectiles at max range); combos from charged 623[HP], 214P, or 236HK 1st hit when canceled into; cinematic time regenerates ~1.9 Drive bars for Cammy; only deals 500 damage on the first hit if it trades (only the first 5 active frames are invincible)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "236236P",
+          "startup": "9",
+          "total": "61",
+          "hitAdv": "HKD +22",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-33(-23)'''</span>",
+          "notes": "Full screen anti-projectile move (can lose to slow projectiles at max range); combos from charged 623[HP], 214P, or 236HK 1st hit when canceled into; available at 25% HP or below; cinematic time regenerates ~1.9 Drive bars for Cammy; only deals 500 damage on the first hit if it trades (only the first 5 active frames are invincible)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "236HK",
+          "startup": "15",
+          "total": "51",
+          "hitAdv": "KD +29(+48)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12<span style=\"color: #ff6347;\">(-1)</span>'''</span>",
+          "notes": "Only 1st hit is super cancelable (very low damage route); holding HK results in a powered up version"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "236KK",
+          "startup": "13",
+          "total": "48",
+          "hitAdv": "KD +47 Launch",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-14'''</span>",
+          "notes": "Switches sides on hit; puts opponent into limited juggle state"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "236LK",
+          "startup": "9",
+          "total": "42",
+          "hitAdv": "KD +26(+48)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12<span style=\"color: #bcbd0c;\">(0)</span>'''</span>",
+          "notes": "Can be spaced safely; useful in corner juggle routes after 5HP~HK, DR~4HK > 4HK, or blocked Drive Impact"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "236MK",
+          "startup": "9",
+          "total": "44",
+          "hitAdv": "KD +26(+48)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-14<span style=\"color: #bcbd0c;\">(0)</span>'''</span>",
+          "notes": "Can be spaced safely; best version for buffers in neutral; useful in corner juggle routes into 623K"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "236P",
+          "startup": "20(40)",
+          "total": "-",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Startup refers to earliest/latest follow-up input timings; trajectory depends on button strength (LP short/high, MP middle, HP far/low); LP and MP versions can cross over close standing opponents; HP version can cross over close crouching opponents"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "236PP",
+          "startup": "20(40)",
+          "total": "-",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Startup refers to earliest/latest follow-up input timings; button combination affects trajectory (LP+MP=LP, LP+HP=MP, MP+HP=HP); follow-ups have enhanced OD properties"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "236PP~2K",
+          "startup": "20+18",
+          "total": "72~",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+8'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "2 hits; causes OTG bounce vs. airborne opponents that can juggle into 623MK/HK/KK or any Super (low height juggle connect will only allow canceled Air SA2 to connect); does not autocorrect toward opponent after crossing over; crouching state during landing recovery"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "236PP~K",
+          "startup": "20+13",
+          "total": "53/51/50~",
+          "hitAdv": "<span style=\"color: #ff6347;\">-1<span style=\"color: #30D5B8;\">'''(+9)'''</span></span>",
+          "blockAdv": "<span style=\"color: #bcbd0c;\">0<span style=\"color: #30D5B8;\">'''(+5)'''</span></span>",
+          "notes": "Startup refers to earliest timing from Hooligan; button strength does not affect divekick trajectory; puts airborne opponents into limited juggle state; autocorrects toward opponent after crossing over"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "236PP~LPLK",
+          "startup": "20+10",
+          "total": "69/67/64~",
+          "hitAdv": "HKD +60 Launch",
+          "blockAdv": "-",
+          "notes": "Throws standing opponents only; puts opponent into limited juggle state; 1150 damage on Punish Counter; up to 8f more recovery before landing (depends on activation height); crouching state during landing recovery; extends a proximity guard box that immediately forces a crouch blocking opponent's hurtbox to reach its crouching height, preventing uncrouchable meaty setups (but can still throw opponents that hold straight down on wakeup)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "236PP~No Input",
+          "startup": "50",
+          "total": "90",
+          "hitAdv": "KD +48",
+          "blockAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "notes": "Puts opponent into limited juggle state on hit; low profile 50-80f; crouching state during recovery"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "236PP~P",
+          "startup": "20~",
+          "total": "39/38/37~",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Stops forward trajectory; recovery before landing depends on activation height; Cammy is in crouching state during recovery; useful for baiting reversals in setups where throw/overhead/divekick could hit meaty"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "236P~2K",
+          "startup": "20+18",
+          "total": "56/55/54~",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5(+9)'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span><span style=\"color: #ff6347;\">(-1)</span>",
+          "notes": "236P trajectory affects frame advantage (lower height is better); up to 3f more recovery before landing (depends on activation height); does not autocorrect toward opponent after crossing over; crouching state during landing recovery"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "236P~K",
+          "startup": "20+13",
+          "total": "54/52/50~",
+          "hitAdv": "<span style=\"color: #ff6347;\">-1<span style=\"color: #30D5B8;\">'''(+9)'''</span></span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-7<span style=\"color: #32CD32;\">(+3)</span>'''</span>",
+          "notes": "Startup refers to earliest timing from Hooligan; button strength affects divekick trajectory (LK short, MK medium, HK far); spike knockdown vs. airborne opponents; autocorrects toward opponent after crossing over"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "236P~LPLK",
+          "startup": "20+10",
+          "total": "69/67/64~",
+          "hitAdv": "HKD +18",
+          "blockAdv": "-",
+          "notes": "Throws standing opponents only; 2070 damage on Punish Counter; up to 8f more total recovery before landing (depends on activation height); crouching state during landing recovery; extends a proximity guard box that immediately forces a crouch blocking opponent's hurtbox to reach its crouching height, preventing uncrouchable meaty setups (but can still throw opponents that hold straight down on wakeup)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "236P~No Input",
+          "startup": "50",
+          "total": "71",
+          "hitAdv": "KD +48",
+          "blockAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "notes": "Puts opponent into limited juggle state on hit; low profile 50-63f; crouching state during recovery"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "236P~P",
+          "startup": "20~",
+          "total": "42/41/40~",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Stops forward trajectory; recovery before landing depends on activation height; Cammy is in crouching state during recovery; useful for baiting reversals in setups where throw/overhead/divekick could hit meaty"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "236[HK]",
+          "startup": "25",
+          "total": "60",
+          "hitAdv": "KD +47 Launch",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-14'''</span>",
+          "notes": "Switches sides on hit; puts opponent into limited juggle state; super cancel comes out on 4th hit; button must be held 16f for fully charged version; can combo from CH 5HP or PC 2MP; has a crouch-sized hurtboxes on frames 17-26 (but still considered standing)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "236[HP]",
+          "startup": "38(58)",
+          "total": "-",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Startup refers to earliest/latest follow-up input timings; button must be held 18f for fully charged version; can cross over crouching opponents; follow-ups gain properties of OD versions (except for SA2 cancelability)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "236[HP]~2K",
+          "startup": "38+18",
+          "total": "90~",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+8'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "2 hits; causes OTG bounce vs. airborne opponents that can juggle into 623MK/HK/KK or SA1/SA3 Super (low height juggle connect will not allow time for follow-up); does not autocorrect toward opponent after crossing over; crouching state during landing recovery"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "236[HP]~K",
+          "startup": "38+13",
+          "total": "68~",
+          "hitAdv": "<span style=\"color: #ff6347;\">-1<span style=\"color: #30D5B8;\">'''(+9)'''</span></span>",
+          "blockAdv": "<span style=\"color: #bcbd0c;\">0<span style=\"color: #30D5B8;\">'''(+5)'''</span></span>",
+          "notes": "Startup refers to earliest timing from Hooligan; button strength does not affect divekick trajectory; puts airborne opponents into limited juggle state; autocorrects toward opponent after crossing over"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "236[HP]~LPLK",
+          "startup": "38+10",
+          "total": "82~",
+          "hitAdv": "HKD +60 Launch",
+          "blockAdv": "-",
+          "notes": "Throws standing opponents only; puts opponent into limited juggle state; 1150 damage on Punish Counter; up to 2f more total recovery before landing (depends on activation height); crouching state during landing recovery; extends a proximity guard box that immediately forces a crouch blocking opponent's hurtbox to reach its crouching height, preventing uncrouchable meaty setups (but can still throw opponents that hold straight down on wakeup)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "236[HP]~No Input",
+          "startup": "68",
+          "total": "108",
+          "hitAdv": "KD +48",
+          "blockAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "notes": "Puts opponent into limited juggle state on hit; low profile 68-96f; crouching state during recovery"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "236[HP]~P",
+          "startup": "38~",
+          "total": "55~",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Stops forward trajectory; recovery before landing depends on activation height; Cammy is in crouching state during recovery; useful for baiting reversals in setups where throw/overhead/divekick could hit meaty"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "2HK",
+          "startup": "9",
+          "total": "35",
+          "hitAdv": "KD +38",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-10'''</span>",
+          "notes": "Disjointed hitbox gives it some neutral utility; has juggle potential (KD +37~39); extended hurtbox remains for 6f after active frames"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "2HP",
+          "startup": "10",
+          "total": "28",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+7'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "notes": "Forces stand; Good for starting pressure, especially with meaty timing (236HK + Dash 2HP sets gives enough advantage to link 5HP); extended hurtbox appears for 2f before active; situationally useful anti-air"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "2LK",
+          "startup": "5",
+          "total": "14",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Chains into 5LP/2LP/2LK; low hitconfirm starter; extended hurtbox appears for 2f before active and remains 5f after active"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "2LP",
+          "startup": "4",
+          "total": "13",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Chains into 5LP/2LP/2LK; extended hurtbox appears for 2f before active; DR cancel is delayed until after active frames"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "2MK",
+          "startup": "8",
+          "total": "28",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+          "notes": "Great ranged cancelable low poke; very useful when canceled to DR; extended hurtbox appears for 1f before active and remains 6f after active; special/DR/DI cancel is delayed until after active frames"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "2MP",
+          "startup": "7",
+          "total": "23(26)",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Good counterpoke and useful combo filler after 2HP or CH 5LP/2LP/5MP; 3f extra recovery on whiff; extends a wide hurtbox during recovery on whiff"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "4HK",
+          "startup": "9",
+          "total": "29",
+          "hitAdv": "KD +54",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-7'''</span>",
+          "notes": "Whiffs on crouching opponents; jump cancelable on hit only; puts opponents into limited juggle state on hit (free juggle if started from Drive Rush)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "4LPLK",
+          "startup": "5",
+          "total": "30",
+          "hitAdv": "KD +14",
+          "blockAdv": "-",
+          "notes": "No throw oki after corner side switch; can use Drive Rush 5MP (+3 oB, links to 5HP on hit), or Drive Rush 2MP to set up trade combo vs. reversal 4f normals; a successful Throw Escape builds 0.5 Drive bars for the defender; Throw Escape is awarded to a random player if input simultaneously"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "4MP",
+          "startup": "5",
+          "total": "21",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "notes": "Forces stand (required for 4MP~HK TC); useful anti-air starting on frame 6 but can often trade or whiff against close jumps; extended arm hurtbox on active frames 3-5 is anti-air invulnerable; combos naturally from 5LP/2LP/5MP at close range; frame traps into 5LP/2LP for a CH confirm into 2MP; useful approach out of Drive Rush (sets up a microwalk throw on block or a link to 5HP); low pushback allows a 214PP cancel to cross-up anywhere on screen (even when starting with DR~4MP, 4MP); active frames 3-5 cannot hit crouching opponents (however, meaty setups timed to hit on the 3rd active frame can be crouch blocked for +3 advantage if the opponent does not input a reversal crouching normal)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "4MP~HK",
+          "startup": "9",
+          "total": "34",
+          "hitAdv": "KD +49",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12(-17)'''</span>",
+          "notes": "Whiffs on crouch blocking opponents (works on crouching hit because 4MP forces stand); jump cancelable on hit only; puts opponent into limited juggle state; has 5f more recovery than 4HK on its own, resulting in more limited juggle follow-ups"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "4PPPKKK",
+          "startup": "340 (total)",
+          "total": "340",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"(Biiiig stretch)\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "5HK",
+          "startup": "11",
+          "total": "32(34)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-3'''</span>",
+          "notes": "2f extra recovery on whiff; great ranged poke; Punish Counter knockdown gives great corner carry and can juggle into Cannon Spike in the corner (623MK is most consistent but can whiff at longer ranges); extends a hurtbox 1f before active that is vulnerable to projectiles; crouch-sized hurtbox on frames 1-28; particularly vulnerable to Drive Impact in neutral; can anti-air some long range jump-ins; has high juggle potential (causes air reset when juggled into)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "5HP",
+          "startup": "8",
+          "total": "30",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Great disjointed hitbox; moves Cammy far forward during startup, giving it good range but making it easier to whiff punish; good Drive Rush starter (good momentum, links into 4MP~HK if close enough or frame traps into 5LP/2LP)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "5HP~HK",
+          "startup": "13",
+          "total": "60",
+          "hitAdv": "KD +26",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span>",
+          "notes": "2 hits; leaves a 9f gap between 1st and 2nd hit on block; 1st hit of HK is cancelable into j.214K (9f gap) or SA2; 2nd hit acts as a cancelable grounded normal; 2nd hit is cancelable into Supers after 5 recovery frames and into specials/DI/DR after 7 recovery frames"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "5LK",
+          "startup": "5",
+          "total": "17",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Good range for 5f punishes and light conversions; extended hurtbox appears for 2f before active; special/DI cancel is delayed until after active frames (prevents OD Spiral Arrow combo); DR cancel is delayed until after 2nd active frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "5LP",
+          "startup": "4",
+          "total": "13",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Chains into 5LP/2LP/2LK; extended hurtbox appears for 2f before active; DR cancel is delayed until after 2nd active frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "5MK",
+          "startup": "8",
+          "total": "28",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "Great ranged poke, vulnerable to DI if predicted; extended hurtbox remains for 7f after active frames, making it somewhat more whiff punishable"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "5MP",
+          "startup": "6",
+          "total": "22",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+6'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Can get frame advantage with meaty timing and leads to good conversions on counter-hit; decent Drive Rush starter (links to 5HP on hit, frame traps into itself) but doesn't carry much forward momentum; extended hurtbox remains for 4f after active frames"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "5PPPKKK",
+          "startup": "335 (total)",
+          "total": "335",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"Sigh... Do you plan to fight at all?\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "623HK",
+          "startup": "7",
+          "total": "62",
+          "hitAdv": "KD +22",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-36'''</span>",
+          "notes": "Longest horizontal range (good for long range anti-airs and neutral jumps; best grounded combo ender); () refers to damage and juggle limit on active frames 3-12; SA3 cancel whiffs on hit; cannot anti-air cross-ups"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "623KK",
+          "startup": "6",
+          "total": "63",
+          "hitAdv": "KD +19",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-40'''</span>",
+          "notes": "Long horizontal range (good for punishes and long range anti-airs); () refers to damage and juggle limit on active frames 4-12 (becomes 1 hit); cannot anti-air cross-ups"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "623LK",
+          "startup": "5",
+          "total": "56",
+          "hitAdv": "KD +20",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-36'''</span>",
+          "notes": "Shortest horizontal range (good close-range anti-air but can whiff in grounded combos); () refers to damage and juggle limit on active frames 3-12; SA3 cancel whiffs on hit; cannot anti-air cross-ups"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "623MK",
+          "startup": "6",
+          "total": "58",
+          "hitAdv": "KD +21",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-36'''</span>",
+          "notes": "Medium horizontal range (good all-purpose anti-air and juggle ender); () refers to damage and juggle limit on active frames 3-12; SA3 cancel whiffs on hit; cannot anti-air cross-ups"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "623[HK]",
+          "startup": "22",
+          "total": "78",
+          "hitAdv": "KD +16",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-40'''</span>",
+          "notes": "Long horizontal range (but can drop when canceled from max range 5HP); () refers to damage and juggle limit on active frames 5-12 (becomes 1 hit if these frames connect); switches sides on hit; first hit can successfully juggle to SA3; button must be held 15f for fully charged version; can combo from CH 2MP; cannot anti-air cross-ups"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "6HK",
+          "startup": "18",
+          "total": "40(45)",
+          "hitAdv": "KD +31",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span>",
+          "notes": "5f extra recovery on whiff/block; pulls back hurtbox on frame 5-14 (auto-shimmy tool); low blockstun means that DR Cancel is the only way to make it safe; extended hurtbox remains for 9f after active frames; special/DI cancel is delayed until after 2nd recovery frame; DR cancel is delayed until after active frames; can juggle into DRC~5HP~HK on normal hit or 214LP on Punish Counter for strong juggle routes"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "6HPHK",
+          "startup": "18",
+          "total": "46(51)",
+          "hitAdv": "KD +23",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Performed by holding 6HPHK on wakeup; 5f extra recovery on hit; does not have any screen freeze except for a 12f freeze when interacting with the opponent's throw hitbox (this also refunds 1 Drive bar after punishing the throw); see [[Street_Fighter_6/Gauges#Drive_Reversal|Drive Reversal]]."
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "6HPHK",
+          "startup": "20",
+          "total": "48(53)",
+          "hitAdv": "KD +23",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Performed by inputting 6HPHK during blockstun; 5f extra recovery on hit; freezes the screen for 4f during startup; see [[Street_Fighter_6/Gauges#Drive_Reversal|Drive Reversal]]."
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "6PPPKKK",
+          "startup": "255 (total)",
+          "total": "255",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"Time to meet your maker.\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "HPHK",
+          "startup": "26",
+          "total": "62",
+          "hitAdv": "KD +35 / Wall Splat KD +65",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span> / Wall Splat HKD +72",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Impact|Drive Impact]]. Airborne connect gives spinning juggle state on Punish Counter or corner Wall Splat with variable height."
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "j.214214P",
+          "startup": "13",
+          "total": "-",
+          "hitAdv": "HKD +12 (KD +70 Launch)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-23(-18)'''</span>",
+          "notes": "Forward jump only; puts airborne opponents into limited juggle state (no cinematic), number of airborne hits varies based on juggle height; non-cinematic Drive Damage distribution: 900x3-x7,3700; only deals 250 damage on the first hit if it trades"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "j.214K",
+          "startup": "13",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #ff6347;\">-2</span><span style=\"color: #30D5B8;\">'''(+11)'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span><span style=\"color: #30D5B8;\">'''(+5)'''</span>",
+          "notes": "Forward jump only; cancelable from j.MP; button strength affects dive trajectory (LK short, MK mid, HK far); spike knockdown vs. airborne opponents; HK version worst-case frame advantage is 1f better than LK/MK versions; 2f extra hitstun and blockstun if it connects on the final 2 active frames before landing (screen shake occurs, guaranteeing an advantage of at least +10/+4)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "j.214KK",
+          "startup": "13",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #bcbd0c;\">0</span><span style=\"color: #30D5B8;\">'''(+11)'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span><span style=\"color: #30D5B8;\">'''(+7)'''</span>",
+          "notes": "Forward jump only; cancelable from j.MP; puts airborne opponents into limited juggle state; hitconfirm reaction time is longer the higher the divekick connects (cancelable until landing); frame advantage on hit/block is fixed when connecting on the first active frame (e.g. as a corner throw escape); 2f extra hitstun and blockstun if it connects on the final 2 active frames before landing (screen shake occurs, guaranteeing an advantage of at least +10/+6)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "j.HK",
+          "startup": "10",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+11(+15)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+7(+11)'''</span>",
+          "notes": "Good jump-in from long range, especially mixed with empty jump or j.214K to bait anti-airs; can air-to-air from long range; lower body projectile invuln 10-35f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "j.HP",
+          "startup": "8",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+8(+15)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+4(+11)'''</span>",
+          "notes": "Causes spike knockdown vs. airborne opponents; good hitbox disjoint near Cammy's fists; lower body projectile invuln 8-35f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "j.LK",
+          "startup": "4",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+6(+10)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+2</span><span style=\"color: #30D5B8;\">'''(+6)'''</span>",
+          "notes": "Cross-up; can be used as a fuzzy instant overhead (except vs. Blanka)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "j.LP",
+          "startup": "4",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+6(+9)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+2</span><span style=\"color: #30D5B8;\">'''(+5)'''</span>",
+          "notes": "Quick air-to-air"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "j.LPLK",
+          "startup": "5",
+          "total": "-",
+          "hitAdv": "KD +22",
+          "blockAdv": "-",
+          "notes": "Can get throw oki if opponent is near the corner (no oki midscreen even with Drive Rush)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "j.MK",
+          "startup": "7",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+12(+13)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+8(+9)'''</span>",
+          "notes": "Long hitbox can work as a ranged air-to-air; lower body projectile invuln 7-30f (if used immediately on the way up, can avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "j.MP",
+          "startup": "6",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+10(+13)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span><span style=\"color: #30D5B8;\">'''(+4)'''</span>",
+          "notes": "Puts airborne opponents into limited juggle state; cancels into j.214K/j.214214P on forward jump only; low blockstun means there will always be a blockstring gap if canceled; lower body projectile invuln 6-28f (if used immediately on the way up, can avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "LPLK",
+          "startup": "5",
+          "total": "30",
+          "hitAdv": "KD +17",
+          "blockAdv": "-",
+          "notes": "Can walk for a manually-timed corner throw loop; a successful Throw Escape builds 0.5 Drive bars for the defender; Throw Escape is awarded to a random player if input simultaneously"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "MPMK",
+          "startup": "1",
+          "total": "45(3)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Parry|Drive Parry]]. Perfect Parrying has only 1F of recovery and disables the opponent from canceling their attack. Perfect Parrying projectiles puts you into fixed 11 frames of recovery. After a Perfect Parry, all Super Gauge gain is reduced by 20% and Drive Gauge gain/damage is reduced by 50% for the entire punish combo."
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "MPMK or 66",
+          "startup": "9",
+          "total": "24(46)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Rush|Drive Rush]]; 3-bar version performed on hit/block from a cancelable normal; can also be performed on whiff from cancelable light normals; startup refers to minimum time before an attack can cancel the Drive Rush animation; the first 15 recovery frames are cancelable into any attack; the final 22 recovery frames are cancelable into any attack or movement option or blocking (except Parry); only Normal and Command Normal attacks are enhanced with +4 frame advantage and improved juggle properties"
+        }
+      },
+      {
+        "title": {
+          "chara": "Cammy",
+          "input": "MPMK~66",
+          "startup": "3+8",
+          "total": "26(48)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Rush|Drive Rush]]; 1-bar version performed out of a Parry; startup refers to minimum time before an attack can cancel the Drive Rush animation (if performed immediately after a successful Parry, only 1+8 startup); the first 15 recovery frames are cancelable into any attack; the final 22 recovery frames are cancelable into any attack or movement option or blocking (except Parry); only Normal and Command Normal attacks are enhanced with +4 frame advantage and improved juggle properties; Distance: 0.603 (min/throw), 2.027 (min/block), 2.796 (max/final DR frame)"
+        }
+      }
+    ]
+  }
+}

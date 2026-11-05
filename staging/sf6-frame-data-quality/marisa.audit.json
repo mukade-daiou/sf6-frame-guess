@@ -1,0 +1,831 @@
+{
+  "characterId": "marisa",
+  "rawMoveCount": 90,
+  "candidateMoveCount": 30,
+  "candidateNormals": 12,
+  "candidateSpecials": 18,
+  "upstreamFetchedAt": "2026-08-19T04:05:24.993Z",
+  "missingNormals": [],
+  "excluded": [
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "214HP~6P",
+      "name": "HP Dimachaerus Follow-up",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "214K~K",
+      "name": "Procella",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "214K~LPLK",
+      "name": "Enfold",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "214K~P",
+      "name": "Tonitrus 1",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "214K~P~P",
+      "name": "Tonitrus 2",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "214LP~6P",
+      "name": "LP Dimachaerus Follow-up",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "214MP~6P",
+      "name": "MP Dimachaerus Follow-up",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "214PP~6P",
+      "name": "OD Dimachaerus Follow-up",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236[HP]",
+      "name": "Gladius (Hold)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236[LP]",
+      "name": "Gladius (Hold)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236[MP]",
+      "name": "Gladius (Hold)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236[PP]",
+      "name": "Gladius (Hold)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "2[HK]",
+      "name": "Gaia Bash (Hold)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "2[HP]",
+      "name": "Crouching Heavy Punch (Hold)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "3HP",
+      "name": "Malleus Breaker 1",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "3HP~3HP",
+      "name": "Malleus Breaker 2",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "3[HP]",
+      "name": "Malleus Breaker 1 (Hold)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "4HP",
+      "name": "Magna Bunker",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "4[HP]",
+      "name": "Magna Bunker (Hold)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5[HK]",
+      "name": "Marisa Style (HK)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5[HP]",
+      "name": "Marisa Style (HP)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5HP~HP",
+      "name": "Heavy Two Hitter",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5LP~LP",
+      "name": "Light Two Hitter",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5MP~MP",
+      "name": "Medium Two Hitter",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6HK",
+      "name": "Falx Crusher 1",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6HK~6HK",
+      "name": "Falx Crusher 2",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6[HK]",
+      "name": "Falx Crusher 1 (Hold)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6MP",
+      "name": "Novacula 1",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6MP~HK",
+      "name": "Novacula Thrust",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6MP~HP",
+      "name": "Novacula Swipe",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.HK",
+      "name": "Jumping Heavy Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.[HK]",
+      "name": "Marisa Style (j.HK)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.HP",
+      "name": "Jumping Heavy Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.[HP]",
+      "name": "Marisa Style (j.HP)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.LK",
+      "name": "Jumping Light Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.LP",
+      "name": "Jumping Light Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.MK",
+      "name": "Jumping Medium Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.MP",
+      "name": "Jumping Medium Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.MP~MP",
+      "name": "Volare Combo",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "nj.2HP",
+      "name": "Caelum Arc",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "nj.2[HP]",
+      "name": "Caelum Arc (Hold)",
+      "category": "normal"
+    },
+    {
+      "reason": "excluded_conditional_variant:special:214:K:none",
+      "input": "214K",
+      "name": "Scutum (Counter)",
+      "category": "special"
+    },
+    {
+      "reason": "excluded_conditional_variant:special:214:K:OD",
+      "input": "214KK",
+      "name": "Scutum (Counter)",
+      "category": "special"
+    }
+  ],
+  "gameVersion": "UNVERIFIED",
+  "status": "STAGING_ONLY",
+  "review": {
+    "applied": [
+      {
+        "characterId": "marisa",
+        "input": "2HK",
+        "name": "Gaia Bash",
+        "fingerprint": "c62ae2c00f4a9f3b91e1256ca9337c036f0a4013671f24b0fc5ae0a1f7b8ebfa",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +29",
+        "evidenceRetrievedAt": "2026-11-05T09:20:28.158Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Marisa%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "marisa",
+        "input": "2HP",
+        "name": "Crouching Heavy Punch",
+        "fingerprint": "b89c9e7279839a76ebf83eefd189a7f1d9c42e5b6e8a5e23ce7fee78450a2451",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +35",
+        "evidenceRetrievedAt": "2026-11-05T09:20:28.158Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Marisa%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "marisa",
+        "input": "214K",
+        "name": "Scutum",
+        "fingerprint": "3540f2da896e272a73d0fd1f731110d5eb79bf35b6ae44cb911ac0f0deb50e30",
+        "action": "mark_not_applicable",
+        "field": "hit",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Marisa%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "marisa",
+        "input": "214K",
+        "name": "Scutum",
+        "fingerprint": "3540f2da896e272a73d0fd1f731110d5eb79bf35b6ae44cb911ac0f0deb50e30",
+        "action": "mark_not_applicable",
+        "field": "block",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Marisa%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "marisa",
+        "input": "214KK",
+        "name": "Scutum",
+        "fingerprint": "bb301fed4815d80cffb776953a7cd8594256a00851905b7e507d6d15bacc8042",
+        "action": "mark_not_applicable",
+        "field": "hit",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Marisa%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "marisa",
+        "input": "214KK",
+        "name": "Scutum",
+        "fingerprint": "bb301fed4815d80cffb776953a7cd8594256a00851905b7e507d6d15bacc8042",
+        "action": "mark_not_applicable",
+        "field": "block",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Marisa%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "marisa",
+        "input": "214HP",
+        "name": "Dimachaerus",
+        "fingerprint": "9a3d561269e2c06f4a83b6b08543620d999ff527acb69956543f52219b77908d",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +38",
+        "evidenceRetrievedAt": "2026-11-05T09:20:28.158Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Marisa%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "marisa",
+        "input": "214PP",
+        "name": "Dimachaerus",
+        "fingerprint": "fd883ac9e8753550a3ee62d4792a8630083a8593c92a511a4f0210e53a9d6686",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +42",
+        "evidenceRetrievedAt": "2026-11-05T09:20:28.158Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Marisa%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "marisa",
+        "input": "236HK",
+        "name": "Quadriga",
+        "fingerprint": "4a3c26b1d9d9a29403543e667bc9ccc115b7fe750b18d26628f4c2d2e0289fde",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +37",
+        "evidenceRetrievedAt": "2026-11-05T09:20:28.158Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Marisa%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "marisa",
+        "input": "236LK",
+        "name": "Quadriga",
+        "fingerprint": "de03c38a29098de5f57674856458352b7058a722c7db9102c8d72a9d5f6d9160",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +35",
+        "evidenceRetrievedAt": "2026-11-05T09:20:28.158Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Marisa%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "marisa",
+        "input": "236MK",
+        "name": "Quadriga",
+        "fingerprint": "3d0178d4f4fa45ddde33372fd7067ed73b2e10af794fc15f4c7b7ff4948ba619",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +37",
+        "evidenceRetrievedAt": "2026-11-05T09:20:28.158Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Marisa%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "marisa",
+        "input": "236HP",
+        "name": "Gladius",
+        "fingerprint": "8ee53703367265d9673939dd9580b5941dacebd381a2ffc37fa521c8acb97e9c",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +36",
+        "evidenceRetrievedAt": "2026-11-05T09:20:28.158Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Marisa%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "marisa",
+        "input": "236LP",
+        "name": "Gladius",
+        "fingerprint": "a51a0c7c29cc22a532f85194de38352a459dd2772363e6cf1493b072024d8251",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +36",
+        "evidenceRetrievedAt": "2026-11-05T09:20:28.158Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Marisa%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "marisa",
+        "input": "236MP",
+        "name": "Gladius",
+        "fingerprint": "b564539257bab769e44011581e0135e8538e4c0283ec46178c87081e88a9a0ad",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +36",
+        "evidenceRetrievedAt": "2026-11-05T09:20:28.158Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Marisa%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "marisa",
+        "input": "236PP",
+        "name": "Gladius",
+        "fingerprint": "6a73f0101add0780c5fa464c9c71ce3b8a2ae622a22e6e9c3885993cb6de2671",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +36",
+        "evidenceRetrievedAt": "2026-11-05T09:20:28.158Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Marisa%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "marisa",
+        "input": "623PP",
+        "name": "Phalanx",
+        "fingerprint": "5c840eb69656ad47dcfce23ff1fb184af2f948c644688d20876665621ad641ca",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +70 Tumble (HKD +138 Wall Splat)",
+        "evidenceRetrievedAt": "2026-11-05T09:20:28.158Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Marisa%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      }
+    ],
+    "stale": [],
+    "classifiedExclusions": [
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "214HP~6P",
+        "name": "HP Dimachaerus Follow-up",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "214K~K",
+        "name": "Procella",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "214K~LPLK",
+        "name": "Enfold",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "214K~P",
+        "name": "Tonitrus 1",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "214K~P~P",
+        "name": "Tonitrus 2",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "214LP~6P",
+        "name": "LP Dimachaerus Follow-up",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "214MP~6P",
+        "name": "MP Dimachaerus Follow-up",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "214PP~6P",
+        "name": "OD Dimachaerus Follow-up",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236[HP]",
+        "name": "Gladius (Hold)",
+        "category": "special",
+        "classification": "held_button"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236[LP]",
+        "name": "Gladius (Hold)",
+        "category": "special",
+        "classification": "held_button"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236[MP]",
+        "name": "Gladius (Hold)",
+        "category": "special",
+        "classification": "held_button"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236[PP]",
+        "name": "Gladius (Hold)",
+        "category": "special",
+        "classification": "held_button"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "2[HK]",
+        "name": "Gaia Bash (Hold)",
+        "category": "normal",
+        "classification": "held_button"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "2[HP]",
+        "name": "Crouching Heavy Punch (Hold)",
+        "category": "normal",
+        "classification": "held_button"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "3HP",
+        "name": "Malleus Breaker 1",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "3HP~3HP",
+        "name": "Malleus Breaker 2",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "3[HP]",
+        "name": "Malleus Breaker 1 (Hold)",
+        "category": "normal",
+        "classification": "held_button"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "4HP",
+        "name": "Magna Bunker",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "4[HP]",
+        "name": "Magna Bunker (Hold)",
+        "category": "normal",
+        "classification": "held_button"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5[HK]",
+        "name": "Marisa Style (HK)",
+        "category": "normal",
+        "classification": "held_button"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5[HP]",
+        "name": "Marisa Style (HP)",
+        "category": "normal",
+        "classification": "held_button"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5HP~HP",
+        "name": "Heavy Two Hitter",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5LP~LP",
+        "name": "Light Two Hitter",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5MP~MP",
+        "name": "Medium Two Hitter",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6HK",
+        "name": "Falx Crusher 1",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6HK~6HK",
+        "name": "Falx Crusher 2",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6[HK]",
+        "name": "Falx Crusher 1 (Hold)",
+        "category": "normal",
+        "classification": "held_button"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6MP",
+        "name": "Novacula 1",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6MP~HK",
+        "name": "Novacula Thrust",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6MP~HP",
+        "name": "Novacula Swipe",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.HK",
+        "name": "Jumping Heavy Kick",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.[HK]",
+        "name": "Marisa Style (j.HK)",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.HP",
+        "name": "Jumping Heavy Punch",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.[HP]",
+        "name": "Marisa Style (j.HP)",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.LK",
+        "name": "Jumping Light Kick",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.LP",
+        "name": "Jumping Light Punch",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.MK",
+        "name": "Jumping Medium Kick",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.MP",
+        "name": "Jumping Medium Punch",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.MP~MP",
+        "name": "Volare Combo",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "nj.2HP",
+        "name": "Caelum Arc",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "nj.2[HP]",
+        "name": "Caelum Arc (Hold)",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "excluded_conditional_variant:special:214:K:none",
+        "input": "214K",
+        "name": "Scutum (Counter)",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      },
+      {
+        "reason": "excluded_conditional_variant:special:214:K:OD",
+        "input": "214KK",
+        "name": "Scutum (Counter)",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      }
+    ]
+  }
+}

@@ -1,0 +1,539 @@
+{
+  "characterId": "ed",
+  "rawMoveCount": 65,
+  "candidateMoveCount": 27,
+  "candidateNormals": 12,
+  "candidateSpecials": 15,
+  "upstreamFetchedAt": "2026-11-01T00:01:59.250Z",
+  "missingNormals": [],
+  "excluded": [
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236[HK]",
+      "name": "HK Psycho Flicker (Hold)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236[LK]",
+      "name": "LK Psycho Flicker (Hold)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236[MK]",
+      "name": "MK Psycho Flicker (Hold)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236PP~6P",
+      "name": "OD Psycho Shoot",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236P~6P",
+      "name": "Psycho Shoot",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "2HK~HP",
+      "name": "Low Smash Combination",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5[HP]",
+      "name": "Psycho Knuckle (Lv.1)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5[HP]",
+      "name": "Psycho Knuckle (Lv.2)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5LK~LK",
+      "name": "Flicker Combination 1",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5LK~LK~LK",
+      "name": "Flicker Combination 2",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5MK~MK",
+      "name": "Hitman Combination 1",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5MK~MK~HP",
+      "name": "Hitman Combination 2",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5MP~HP",
+      "name": "Body Blow Combination",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6HP",
+      "name": "Cobra Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5/6KK",
+      "name": "Kill Rush (Forward)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5/6KK~6P",
+      "name": "Kill Switch Break",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5/6KK~dl.6P",
+      "name": "Kill Switch Chaser",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.HK",
+      "name": "Jumping Heavy Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.HP",
+      "name": "Jumping Heavy Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.LK",
+      "name": "Jumping Light Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.LP",
+      "name": "Jumping Light Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.MK",
+      "name": "Jumping Medium Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.MP",
+      "name": "Jumping Medium Punch",
+      "category": "normal"
+    }
+  ],
+  "gameVersion": "UNVERIFIED",
+  "status": "STAGING_ONLY",
+  "review": {
+    "applied": [
+      {
+        "characterId": "ed",
+        "input": "2HP",
+        "name": "Low Hook Punch",
+        "fingerprint": "988c4b8c7ea02bd727b58d2ff0611d032fc68bbe6cf496ba4de128286c9d940d",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +30",
+        "evidenceRetrievedAt": "2026-11-05T09:20:26.563Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ed%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ed",
+        "input": "214HP",
+        "name": "HP Psycho Blitz",
+        "fingerprint": "a49588a29e9317f4f407464007ddaeb626137e583852b96eb5d04757e285e779",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +40",
+        "evidenceRetrievedAt": "2026-11-05T09:20:26.563Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ed%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ed",
+        "input": "214MP",
+        "name": "MP Psycho Blitz",
+        "fingerprint": "2e21af9a6f3f79e65c362018bfc49681d5075be73ffd440ef55848097f4b0ff6",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +39",
+        "evidenceRetrievedAt": "2026-11-05T09:20:26.563Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ed%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ed",
+        "input": "214PP",
+        "name": "OD Psycho Blitz",
+        "fingerprint": "afe49ce5bf4e5c898ae0eb9c7d828004c4dc0c5a1a7e3f4a0f1ef7927f712857",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +42",
+        "evidenceRetrievedAt": "2026-11-05T09:20:26.563Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ed%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ed",
+        "input": "236HK",
+        "name": "HK Psycho Flicker",
+        "fingerprint": "d7833933c0bd051e7d21fa46a32a750536b2ccf527cfd4893e69e71ac854b1f5",
+        "action": "mark_not_applicable",
+        "field": "block",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ed%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ed",
+        "input": "236KK",
+        "name": "OD Psycho Flicker",
+        "fingerprint": "6032c1f429c789e5794bdebbd19c8d25b0b9e62c301f840d13ec4fa1d19238c2",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +61",
+        "evidenceRetrievedAt": "2026-11-05T09:20:26.563Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ed%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ed",
+        "input": "236PP",
+        "name": "OD Psycho Spark",
+        "fingerprint": "e0c8e71c72768f0f4d8bb4807ae7b7ae78da9f1005aeb68cb9099d53fac8079c",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +43",
+        "evidenceRetrievedAt": "2026-11-05T09:20:26.563Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ed%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ed",
+        "input": "4KK",
+        "name": "Kill Rush (Backward)",
+        "fingerprint": "b8bb49567fc248d549557bb8eeb529c9d485e2395d20d86ab49deed46879390f",
+        "action": "mark_not_applicable",
+        "field": "startup",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ed%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ed",
+        "input": "4KK",
+        "name": "Kill Rush (Backward)",
+        "fingerprint": "b8bb49567fc248d549557bb8eeb529c9d485e2395d20d86ab49deed46879390f",
+        "action": "mark_not_applicable",
+        "field": "hit",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ed%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ed",
+        "input": "4KK",
+        "name": "Kill Rush (Backward)",
+        "fingerprint": "b8bb49567fc248d549557bb8eeb529c9d485e2395d20d86ab49deed46879390f",
+        "action": "mark_not_applicable",
+        "field": "block",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ed%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ed",
+        "input": "623HP",
+        "name": "HP Psycho Uppercut",
+        "fingerprint": "6061b1bac3d59eae826712da7f552cf1a74f7a838bb2f9fb84481fda8e355088",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +38",
+        "evidenceRetrievedAt": "2026-11-05T09:20:26.563Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ed%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ed",
+        "input": "623LP",
+        "name": "LP Psycho Uppercut",
+        "fingerprint": "0a68e48a9d65407f97221b1081bc5c3c324240b7fe25d54e595e4f96dea580fd",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +38",
+        "evidenceRetrievedAt": "2026-11-05T09:20:26.563Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ed%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ed",
+        "input": "623MP",
+        "name": "MP Psycho Uppercut",
+        "fingerprint": "b888663e45973ee8aa413d638cfa88f49bdf4f56c49028008c9aa2f150b5f2d2",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +39",
+        "evidenceRetrievedAt": "2026-11-05T09:20:26.563Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ed%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ed",
+        "input": "623PP",
+        "name": "OD Psycho Uppercut",
+        "fingerprint": "62e8e6bd449235628a6deafc68100857fc38cc55398722681e65913afaf1416d",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +19",
+        "evidenceRetrievedAt": "2026-11-05T09:20:26.563Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ed%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      }
+    ],
+    "stale": [],
+    "classifiedExclusions": [
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236[HK]",
+        "name": "HK Psycho Flicker (Hold)",
+        "category": "special",
+        "classification": "held_button"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236[LK]",
+        "name": "LK Psycho Flicker (Hold)",
+        "category": "special",
+        "classification": "held_button"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236[MK]",
+        "name": "MK Psycho Flicker (Hold)",
+        "category": "special",
+        "classification": "held_button"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236PP~6P",
+        "name": "OD Psycho Shoot",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236P~6P",
+        "name": "Psycho Shoot",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "2HK~HP",
+        "name": "Low Smash Combination",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5[HP]",
+        "name": "Psycho Knuckle (Lv.1)",
+        "category": "normal",
+        "classification": "held_button"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5[HP]",
+        "name": "Psycho Knuckle (Lv.2)",
+        "category": "normal",
+        "classification": "held_button"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5LK~LK",
+        "name": "Flicker Combination 1",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5LK~LK~LK",
+        "name": "Flicker Combination 2",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5MK~MK",
+        "name": "Hitman Combination 1",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5MK~MK~HP",
+        "name": "Hitman Combination 2",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5MP~HP",
+        "name": "Body Blow Combination",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6HP",
+        "name": "Cobra Punch",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5/6KK",
+        "name": "Kill Rush (Forward)",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5/6KK~6P",
+        "name": "Kill Switch Break",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5/6KK~dl.6P",
+        "name": "Kill Switch Chaser",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.HK",
+        "name": "Jumping Heavy Kick",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.HP",
+        "name": "Jumping Heavy Punch",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.LK",
+        "name": "Jumping Light Kick",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.LP",
+        "name": "Jumping Light Punch",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.MK",
+        "name": "Jumping Medium Kick",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.MP",
+        "name": "Jumping Medium Punch",
+        "category": "normal",
+        "classification": "air_move"
+      }
+    ]
+  }
+}

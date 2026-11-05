@@ -1,0 +1,556 @@
+{
+  "characterId": "aki",
+  "rawMoveCount": 64,
+  "candidateMoveCount": 29,
+  "candidateNormals": 12,
+  "candidateSpecials": 17,
+  "upstreamFetchedAt": "2026-08-19T04:05:24.993Z",
+  "missingNormals": [],
+  "excluded": [
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "214LP~6P",
+      "name": "Nightshade Chaser",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "214LP~6P",
+      "name": "Nightshade Chaser (Burst)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "214PP~6P",
+      "name": "Nightshade Chaser",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "214PP~6P",
+      "name": "Nightshade Chaser (Burst)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "2PP~8",
+      "name": "Sinister Slide Exit",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "2PP~K",
+      "name": "Heel Strike",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "2PP~LPLK",
+      "name": "Entrapment",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "2PP~P",
+      "name": "Venomous Fang",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "3MP",
+      "name": "Pu Lao",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5HP~HP",
+      "name": "Qiong Qi",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5LP~LP",
+      "name": "Hun Dun",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6HK",
+      "name": "Qiu Niu",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6HP",
+      "name": "Chi Wen",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.2HP",
+      "name": "Gong Fu",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.HK",
+      "name": "Jumping Heavy Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.HP",
+      "name": "Jumping Heavy Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.LK",
+      "name": "Jumping Light Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.LP",
+      "name": "Jumping Light Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.MK",
+      "name": "Jumping Medium Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.MP",
+      "name": "Jumping Medium Punch",
+      "category": "normal"
+    }
+  ],
+  "gameVersion": "UNVERIFIED",
+  "status": "STAGING_ONLY",
+  "review": {
+    "applied": [
+      {
+        "characterId": "aki",
+        "input": "2HP",
+        "name": "Xiu She",
+        "fingerprint": "161704c49c7adbf4d34fed1151747e64af7f728b842b38de640c06b55b10d408",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +27",
+        "evidenceRetrievedAt": "2026-11-05T09:20:21.356Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22A.K.I.%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "aki",
+        "input": "2PP",
+        "name": "Sinister Slide",
+        "fingerprint": "1b5085543c14c0b16d058cb5cd79f8071fe7d967d05684a1509f5a0ba7848563",
+        "action": "mark_not_applicable",
+        "field": "hit",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22A.K.I.%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "aki",
+        "input": "2PP",
+        "name": "Sinister Slide",
+        "fingerprint": "1b5085543c14c0b16d058cb5cd79f8071fe7d967d05684a1509f5a0ba7848563",
+        "action": "mark_not_applicable",
+        "field": "block",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22A.K.I.%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "aki",
+        "input": "214KK",
+        "name": "Cruel Fate",
+        "fingerprint": "2b6e20d3dc581d0bc3ba7056ee24727248cb1533996da1ac110632e45fb4620a",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "HKD +42 (+2~3)",
+        "evidenceRetrievedAt": "2026-11-05T09:20:21.356Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22A.K.I.%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "aki",
+        "input": "214HP",
+        "name": "Toxic Wreath",
+        "fingerprint": "c060febc794cb4432d89d138e1e404f06bf9ec27a0badd53431a97c3f65c792b",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +40",
+        "evidenceRetrievedAt": "2026-11-05T09:20:21.356Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22A.K.I.%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "aki",
+        "input": "214MP",
+        "name": "Orchid Spring",
+        "fingerprint": "cbaa6bba1b92a44d763feeaaaec7ff2fe9c4cdfa2775bd3f5a3dc4022962673d",
+        "action": "mark_not_applicable",
+        "field": "hit",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22A.K.I.%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "aki",
+        "input": "214MP",
+        "name": "Orchid Spring",
+        "fingerprint": "cbaa6bba1b92a44d763feeaaaec7ff2fe9c4cdfa2775bd3f5a3dc4022962673d",
+        "action": "mark_not_applicable",
+        "field": "block",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22A.K.I.%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "aki",
+        "input": "214PP",
+        "name": "Nightshade Pulse",
+        "fingerprint": "6ff6c54d94e1a42df33b5d3598965a32d8498334f46897490afc5b7ec0d4e6a3",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +45",
+        "evidenceRetrievedAt": "2026-11-05T09:20:21.356Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22A.K.I.%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "aki",
+        "input": "236HK",
+        "name": "Snake Step",
+        "fingerprint": "0de1cb136a63dcfa7079dd122b31d891f5d88cba4c1b643a8399e8edfdc20977",
+        "action": "mark_not_applicable",
+        "field": "hit",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22A.K.I.%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "aki",
+        "input": "236HK",
+        "name": "Snake Step",
+        "fingerprint": "0de1cb136a63dcfa7079dd122b31d891f5d88cba4c1b643a8399e8edfdc20977",
+        "action": "mark_not_applicable",
+        "field": "block",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22A.K.I.%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "aki",
+        "input": "236LK",
+        "name": "Snake Step",
+        "fingerprint": "a4d024cdd29e04f81f1f2ece684f5c117a9408e70da07aac9d1845af77d83e9f",
+        "action": "mark_not_applicable",
+        "field": "hit",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22A.K.I.%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "aki",
+        "input": "236LK",
+        "name": "Snake Step",
+        "fingerprint": "a4d024cdd29e04f81f1f2ece684f5c117a9408e70da07aac9d1845af77d83e9f",
+        "action": "mark_not_applicable",
+        "field": "block",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22A.K.I.%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "aki",
+        "input": "236MK",
+        "name": "Snake Step",
+        "fingerprint": "f6a54a5843aa75086581f5535d9ef11d6fad4117cf4212e93d548e0f56134a2c",
+        "action": "mark_not_applicable",
+        "field": "hit",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22A.K.I.%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "aki",
+        "input": "236MK",
+        "name": "Snake Step",
+        "fingerprint": "f6a54a5843aa75086581f5535d9ef11d6fad4117cf4212e93d548e0f56134a2c",
+        "action": "mark_not_applicable",
+        "field": "block",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22A.K.I.%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "aki",
+        "input": "236KK",
+        "name": "Snake Step",
+        "fingerprint": "71493993e0ef712f1cbf019353638c81b4bfd62eda85d9c58d2e36a778fe12c0",
+        "action": "mark_not_applicable",
+        "field": "hit",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22A.K.I.%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "aki",
+        "input": "236KK",
+        "name": "Snake Step",
+        "fingerprint": "71493993e0ef712f1cbf019353638c81b4bfd62eda85d9c58d2e36a778fe12c0",
+        "action": "mark_not_applicable",
+        "field": "block",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22A.K.I.%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "aki",
+        "input": "236HP",
+        "name": "Serpent Lash",
+        "fingerprint": "6cd6dcba733a7d6414536bfaeda5a1c918722a6b511f648e2058284350f83f54",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +44 [KD +53]",
+        "evidenceRetrievedAt": "2026-11-05T09:20:21.356Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22A.K.I.%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "aki",
+        "input": "236MP",
+        "name": "Serpent Lash",
+        "fingerprint": "d9f2c9eaa7bb86a2eb559584fa3cf4b7d2a65abecfaa396c60537a5c12f9b807",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +44 [Crumple +69]",
+        "evidenceRetrievedAt": "2026-11-05T09:20:21.356Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22A.K.I.%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      }
+    ],
+    "stale": [],
+    "classifiedExclusions": [
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "214LP~6P",
+        "name": "Nightshade Chaser",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "214LP~6P",
+        "name": "Nightshade Chaser (Burst)",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "214PP~6P",
+        "name": "Nightshade Chaser",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "214PP~6P",
+        "name": "Nightshade Chaser (Burst)",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "2PP~8",
+        "name": "Sinister Slide Exit",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "2PP~K",
+        "name": "Heel Strike",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "2PP~LPLK",
+        "name": "Entrapment",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "2PP~P",
+        "name": "Venomous Fang",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "3MP",
+        "name": "Pu Lao",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5HP~HP",
+        "name": "Qiong Qi",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5LP~LP",
+        "name": "Hun Dun",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6HK",
+        "name": "Qiu Niu",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6HP",
+        "name": "Chi Wen",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.2HP",
+        "name": "Gong Fu",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.HK",
+        "name": "Jumping Heavy Kick",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.HP",
+        "name": "Jumping Heavy Punch",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.LK",
+        "name": "Jumping Light Kick",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.LP",
+        "name": "Jumping Light Punch",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.MK",
+        "name": "Jumping Medium Kick",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.MP",
+        "name": "Jumping Medium Punch",
+        "category": "normal",
+        "classification": "air_move"
+      }
+    ]
+  }
+}

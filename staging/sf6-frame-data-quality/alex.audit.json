@@ -1,0 +1,610 @@
+{
+  "characterId": "alex",
+  "rawMoveCount": 76,
+  "candidateMoveCount": 25,
+  "candidateNormals": 12,
+  "candidateSpecials": 13,
+  "upstreamFetchedAt": "2026-08-19T04:05:24.993Z",
+  "missingNormals": [],
+  "excluded": [
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "2LK~2HK",
+      "name": "Twisted Drop",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "2PP~2LPLK",
+      "name": "Dangerous Armbar<br>(Spiral DDT)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "2PP~4",
+      "name": "Low Retreat",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "2PP~6",
+      "name": "Low Rush",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "2PP~6P",
+      "name": "Slashing Elbow",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "2PP~8",
+      "name": "Exit Prowler Stance",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "2PP~HK",
+      "name": "Sweep Combination 1<br>(Flying Suplex)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "2PP~HK~HK",
+      "name": "Sweep Combination 2<br>(Flying Suplex)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "2PP~HP",
+      "name": "Heavy Lariat",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "2PP~[HP]",
+      "name": "Heavy Lariat (Hold)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "2PP~LK",
+      "name": "Tactical Hop",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "2PP~LP",
+      "name": "Palm Jab",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "2PP~LPLK",
+      "name": "Hyper Takedown<br>(Death Valley Bomb)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "2PP~MK",
+      "name": "Air Stampede",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "2PP~MP",
+      "name": "Shoulder Launcher<br>(Falling Moon)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "4MK",
+      "name": "Oblique Stomp",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "4MK (Backturn)",
+      "name": "Collapsing Driver",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5[HK]",
+      "name": "Standing Heavy Kick (Hold)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5[HP]",
+      "name": "Standing Heavy Punch (Hold)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5MP~HP",
+      "name": "Palm Strikes",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "63214PP~6 Backturn",
+      "name": "OD Hyper Bomb",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "63214PP Backturn",
+      "name": "Power Drop",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "63214P Backturn",
+      "name": "Power Drop",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6MP",
+      "name": "Chop",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.2HP",
+      "name": "Flying Cross Chop",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.HK",
+      "name": "Jumping Heavy Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.HP",
+      "name": "Jumping Heavy Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.LK",
+      "name": "Jumping Light Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.LP",
+      "name": "Jumping Light Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.MK",
+      "name": "Jumping Medium Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.MP",
+      "name": "Jumping Medium Punch",
+      "category": "normal"
+    }
+  ],
+  "gameVersion": "UNVERIFIED",
+  "status": "STAGING_ONLY",
+  "review": {
+    "applied": [
+      {
+        "characterId": "alex",
+        "input": "2HK",
+        "name": "Roundhouse Kick",
+        "fingerprint": "3b65b09d4247d133a73b9562b06b4c1f9c6592ee501be6907808ab1a37ec1f7e",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +29",
+        "evidenceRetrievedAt": "2026-11-05T09:20:21.430Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Alex%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "alex",
+        "input": "2PP",
+        "name": "Prowler Stance",
+        "fingerprint": "212e227357857edffe31aefdedd600bc178dcb7206de4353fab4f3b538facbf5",
+        "action": "mark_not_applicable",
+        "field": "total",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Alex%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "alex",
+        "input": "2PP",
+        "name": "Prowler Stance",
+        "fingerprint": "212e227357857edffe31aefdedd600bc178dcb7206de4353fab4f3b538facbf5",
+        "action": "mark_not_applicable",
+        "field": "hit",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Alex%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "alex",
+        "input": "2PP",
+        "name": "Prowler Stance",
+        "fingerprint": "212e227357857edffe31aefdedd600bc178dcb7206de4353fab4f3b538facbf5",
+        "action": "mark_not_applicable",
+        "field": "block",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Alex%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "alex",
+        "input": "236MP",
+        "name": "Flash Axe",
+        "fingerprint": "45d45b506755d453854e1d4a15b319f1184bd1a3380373ff2296b8273f822043",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +39",
+        "evidenceRetrievedAt": "2026-11-05T09:20:21.430Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Alex%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "alex",
+        "input": "236PP",
+        "name": "Flash Chop",
+        "fingerprint": "c1a2b70befa5e038cb45633c04ded21de659bbacfb00535ba9decdf745be4641",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +41",
+        "evidenceRetrievedAt": "2026-11-05T09:20:21.430Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Alex%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "alex",
+        "input": "623HK",
+        "name": "Aerial Knee Smash",
+        "fingerprint": "223131406f4a5bf2fb9be6f70b0531af526a2de32c8ca6729a7048533092f66f",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +29",
+        "evidenceRetrievedAt": "2026-11-05T09:20:21.430Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Alex%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "alex",
+        "input": "623LK",
+        "name": "Aerial Knee Smash",
+        "fingerprint": "312989d8d3ee0c53814dc9a82611c236dbbd578387074f9bd0e8ae6d688c00a8",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +29",
+        "evidenceRetrievedAt": "2026-11-05T09:20:21.430Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Alex%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "alex",
+        "input": "623LK",
+        "name": "Aerial Knee Smash",
+        "fingerprint": "312989d8d3ee0c53814dc9a82611c236dbbd578387074f9bd0e8ae6d688c00a8",
+        "action": "mark_not_applicable",
+        "field": "block",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Alex%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "alex",
+        "input": "623MK",
+        "name": "Aerial Knee Smash",
+        "fingerprint": "a8bba0d8a2e6a9eb64076b9e970cb86a3f02d2d5f63440b6c5fb2c73d823f2b9",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +29",
+        "evidenceRetrievedAt": "2026-11-05T09:20:21.430Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Alex%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "alex",
+        "input": "623MK",
+        "name": "Aerial Knee Smash",
+        "fingerprint": "a8bba0d8a2e6a9eb64076b9e970cb86a3f02d2d5f63440b6c5fb2c73d823f2b9",
+        "action": "mark_not_applicable",
+        "field": "block",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Alex%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "alex",
+        "input": "623KK",
+        "name": "Aerial Knee Smash",
+        "fingerprint": "d40af0a3a9058c6b11d23f378aeefec6a0d40a30a99c31190d153aaa373bb1d8",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "HKD +27",
+        "evidenceRetrievedAt": "2026-11-05T09:20:21.430Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Alex%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      }
+    ],
+    "stale": [],
+    "classifiedExclusions": [
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "2LK~2HK",
+        "name": "Twisted Drop",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "2PP~2LPLK",
+        "name": "Dangerous Armbar<br>(Spiral DDT)",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "2PP~4",
+        "name": "Low Retreat",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "2PP~6",
+        "name": "Low Rush",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "2PP~6P",
+        "name": "Slashing Elbow",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "2PP~8",
+        "name": "Exit Prowler Stance",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "2PP~HK",
+        "name": "Sweep Combination 1<br>(Flying Suplex)",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "2PP~HK~HK",
+        "name": "Sweep Combination 2<br>(Flying Suplex)",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "2PP~HP",
+        "name": "Heavy Lariat",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "2PP~[HP]",
+        "name": "Heavy Lariat (Hold)",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "2PP~LK",
+        "name": "Tactical Hop",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "2PP~LP",
+        "name": "Palm Jab",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "2PP~LPLK",
+        "name": "Hyper Takedown<br>(Death Valley Bomb)",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "2PP~MK",
+        "name": "Air Stampede",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "2PP~MP",
+        "name": "Shoulder Launcher<br>(Falling Moon)",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "4MK",
+        "name": "Oblique Stomp",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "4MK (Backturn)",
+        "name": "Collapsing Driver",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5[HK]",
+        "name": "Standing Heavy Kick (Hold)",
+        "category": "normal",
+        "classification": "held_button"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5[HP]",
+        "name": "Standing Heavy Punch (Hold)",
+        "category": "normal",
+        "classification": "held_button"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5MP~HP",
+        "name": "Palm Strikes",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "63214PP~6 Backturn",
+        "name": "OD Hyper Bomb",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "63214PP Backturn",
+        "name": "Power Drop",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "63214P Backturn",
+        "name": "Power Drop",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6MP",
+        "name": "Chop",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.2HP",
+        "name": "Flying Cross Chop",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.HK",
+        "name": "Jumping Heavy Kick",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.HP",
+        "name": "Jumping Heavy Punch",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.LK",
+        "name": "Jumping Light Kick",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.LP",
+        "name": "Jumping Light Punch",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.MK",
+        "name": "Jumping Medium Kick",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.MP",
+        "name": "Jumping Medium Punch",
+        "category": "normal",
+        "classification": "air_move"
+      }
+    ]
+  }
+}

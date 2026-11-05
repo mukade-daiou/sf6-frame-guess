@@ -1,0 +1,575 @@
+{
+  "characterId": "yasmine",
+  "rawMoveCount": 71,
+  "candidateMoveCount": 28,
+  "candidateNormals": 12,
+  "candidateSpecials": 16,
+  "upstreamFetchedAt": "2026-11-01T00:01:59.250Z",
+  "missingNormals": [],
+  "excluded": [
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "214214P~4KK",
+      "name": "Linya ng Liwanag",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236HP~6P",
+      "name": "HP Alon",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236HP~6P",
+      "name": "HP Alon (Bayani)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236KK~K or 236K~KK",
+      "name": "OD Kulog",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236KK~P or 236K~PP",
+      "name": "OD Ulan",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236K~K",
+      "name": "Kulog",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236K~P",
+      "name": "Ulan",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236LP~6P",
+      "name": "LP Alon",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236LP~6P",
+      "name": "LP Alon (Bayani)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236MP~6P",
+      "name": "MP Alon",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236MP~6P",
+      "name": "MP Alon (Bayani)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236PP~6P",
+      "name": "OD Alon",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236PP~6P",
+      "name": "OD Alon (Bayani)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "2MK~HK",
+      "name": "Kumbinasyong Pampabagsak",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "4HK",
+      "name": "Walis na Pabagsak",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5LP~LP",
+      "name": "Kidlat na Hiwa",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5MK~MK",
+      "name": "Sunod-sunod na Sipa 1",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5MK~MK~HK",
+      "name": "Sunod-sunod na Sipa 2",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5MP~MP",
+      "name": "Tatlong Hiwa",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6MP",
+      "name": "Hiwang Pababa",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.HK",
+      "name": "Jumping Heavy Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.HP",
+      "name": "Jumping Heavy Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.LK",
+      "name": "Jumping Light Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.LP",
+      "name": "Jumping Light Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.MK",
+      "name": "Jumping Medium Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.MP",
+      "name": "Jumping Medium Punch",
+      "category": "normal"
+    }
+  ],
+  "gameVersion": "UNVERIFIED",
+  "status": "STAGING_ONLY",
+  "review": {
+    "applied": [
+      {
+        "characterId": "yasmine",
+        "input": "2HK",
+        "name": "Gunting na Pabagsak",
+        "fingerprint": "552d2e660f7425407b89035dfceefb6c95e4f71e24d3cedc0e000404d88d0941",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +40",
+        "evidenceRetrievedAt": "2026-11-05T09:20:28.513Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Yasmine/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Yasmine%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "yasmine",
+        "input": "214HP",
+        "name": "HP Talim ng Hangin",
+        "fingerprint": "3f05c75cc756938c6f20bf6f5e495fd6c67c68b57a263196c14a7fdc121852c8",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +37",
+        "evidenceRetrievedAt": "2026-11-05T09:20:28.513Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Yasmine/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Yasmine%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "yasmine",
+        "input": "214LP",
+        "name": "LP Talim ng Hangin",
+        "fingerprint": "c02247079d9c2ccc1d5aef92bfa019c218689fde926f64632b81b405e9660a0c",
+        "action": "mark_not_applicable",
+        "field": "startup",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Yasmine/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Yasmine%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "yasmine",
+        "input": "214LP",
+        "name": "LP Talim ng Hangin",
+        "fingerprint": "c02247079d9c2ccc1d5aef92bfa019c218689fde926f64632b81b405e9660a0c",
+        "action": "mark_not_applicable",
+        "field": "hit",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Yasmine/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Yasmine%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "yasmine",
+        "input": "214LP",
+        "name": "LP Talim ng Hangin",
+        "fingerprint": "c02247079d9c2ccc1d5aef92bfa019c218689fde926f64632b81b405e9660a0c",
+        "action": "mark_not_applicable",
+        "field": "block",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Yasmine/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Yasmine%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "yasmine",
+        "input": "214PP",
+        "name": "OD Talim ng Hangin",
+        "fingerprint": "c9b06054909b7fc814ef0eb533aaaf9aeee314c72a9515ad842f89958a698288",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +46",
+        "evidenceRetrievedAt": "2026-11-05T09:20:28.513Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Yasmine/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Yasmine%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "yasmine",
+        "input": "236K",
+        "name": "Mukha ng Langit",
+        "fingerprint": "b4c27a771bec2d5aeb62606af5afd48004d302dc83babd171c2a5e0b84216d89",
+        "action": "mark_not_applicable",
+        "field": "hit",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Yasmine/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Yasmine%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "yasmine",
+        "input": "236K",
+        "name": "Mukha ng Langit",
+        "fingerprint": "b4c27a771bec2d5aeb62606af5afd48004d302dc83babd171c2a5e0b84216d89",
+        "action": "mark_not_applicable",
+        "field": "block",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Yasmine/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Yasmine%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "yasmine",
+        "input": "236KK",
+        "name": "OD Mukha ng Langit",
+        "fingerprint": "9b154294340ebed1368e6d33461a11af8031a97d23cda1344fdba20dd98e79df",
+        "action": "mark_not_applicable",
+        "field": "hit",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Yasmine/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Yasmine%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "yasmine",
+        "input": "236KK",
+        "name": "OD Mukha ng Langit",
+        "fingerprint": "9b154294340ebed1368e6d33461a11af8031a97d23cda1344fdba20dd98e79df",
+        "action": "mark_not_applicable",
+        "field": "block",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Yasmine/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Yasmine%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "yasmine",
+        "input": "623HK",
+        "name": "HK Lipad ng Agila",
+        "fingerprint": "cbcbe71ae196207091d55b05f4026e7e4bd10bedac9f43860a524dbfaf68b9a4",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +21",
+        "evidenceRetrievedAt": "2026-11-05T09:20:28.513Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Yasmine/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Yasmine%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "yasmine",
+        "input": "623LK",
+        "name": "LK Lipad ng Agila",
+        "fingerprint": "a088b3c7a57a8344168d58d99f202d5a541b6d39aa1a866c639a6f2d0c37f7ac",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +20",
+        "evidenceRetrievedAt": "2026-11-05T09:20:28.513Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Yasmine/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Yasmine%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "yasmine",
+        "input": "623MK",
+        "name": "MK Lipad ng Agila",
+        "fingerprint": "26ebf72fa205a0a2fdcf37d2ee94b0e2628764bb04a451689b4cfba2d6990f04",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +21",
+        "evidenceRetrievedAt": "2026-11-05T09:20:28.513Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Yasmine/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Yasmine%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "yasmine",
+        "input": "623KK",
+        "name": "OD Lipad ng Agila",
+        "fingerprint": "5b11a6e474ff09276ffc4cc9e2d88ce524ca2fef3602a94812c7ad356e66463d",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +21",
+        "evidenceRetrievedAt": "2026-11-05T09:20:28.513Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Yasmine/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Yasmine%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      }
+    ],
+    "stale": [],
+    "classifiedExclusions": [
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "214214P~4KK",
+        "name": "Linya ng Liwanag",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236HP~6P",
+        "name": "HP Alon",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236HP~6P",
+        "name": "HP Alon (Bayani)",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236KK~K or 236K~KK",
+        "name": "OD Kulog",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236KK~P or 236K~PP",
+        "name": "OD Ulan",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236K~K",
+        "name": "Kulog",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236K~P",
+        "name": "Ulan",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236LP~6P",
+        "name": "LP Alon",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236LP~6P",
+        "name": "LP Alon (Bayani)",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236MP~6P",
+        "name": "MP Alon",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236MP~6P",
+        "name": "MP Alon (Bayani)",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236PP~6P",
+        "name": "OD Alon",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236PP~6P",
+        "name": "OD Alon (Bayani)",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "2MK~HK",
+        "name": "Kumbinasyong Pampabagsak",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "4HK",
+        "name": "Walis na Pabagsak",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5LP~LP",
+        "name": "Kidlat na Hiwa",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5MK~MK",
+        "name": "Sunod-sunod na Sipa 1",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5MK~MK~HK",
+        "name": "Sunod-sunod na Sipa 2",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5MP~MP",
+        "name": "Tatlong Hiwa",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6MP",
+        "name": "Hiwang Pababa",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.HK",
+        "name": "Jumping Heavy Kick",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.HP",
+        "name": "Jumping Heavy Punch",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.LK",
+        "name": "Jumping Light Kick",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.LP",
+        "name": "Jumping Light Punch",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.MK",
+        "name": "Jumping Medium Kick",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.MP",
+        "name": "Jumping Medium Punch",
+        "category": "normal",
+        "classification": "air_move"
+      }
+    ]
+  }
+}

@@ -1,0 +1,464 @@
+{
+  "characterId": "ryu",
+  "rawMoveCount": 77,
+  "candidateMoveCount": 33,
+  "candidateNormals": 12,
+  "candidateSpecials": 21,
+  "upstreamFetchedAt": "2026-08-19T04:05:24.993Z",
+  "missingNormals": [],
+  "excluded": [
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "4HK",
+      "name": "Axe Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "4HP",
+      "name": "Short Uppercut",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5HP~HK",
+      "name": "High Double Strike",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5MP~LK",
+      "name": "Fuwa Triple Strike 1",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5MP~LK~HK",
+      "name": "Fuwa Triple Strike 2",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6HK",
+      "name": "Whirlwind Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6HK~214K",
+      "name": "Aerial Tatsumaki Senpu-kyaku",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6HK~214KK",
+      "name": "Aerial Tatsumaki Senpu-kyaku",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6HP",
+      "name": "Solar Plexus Strike",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6MP",
+      "name": "Collarbone Breaker",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.214K",
+      "name": "Aerial Tatsumaki Senpu-kyaku",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.214KK",
+      "name": "Aerial Tatsumaki Senpu-kyaku",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.HK",
+      "name": "Jumping Heavy Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.HP",
+      "name": "Jumping Heavy Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.LK",
+      "name": "Jumping Light Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.LP",
+      "name": "Jumping Light Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.MK",
+      "name": "Jumping Medium Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.MP",
+      "name": "Jumping Medium Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "excluded_conditional_variant:special:214:P:H",
+      "input": "214HP",
+      "name": "Denjin Charge Hashogeki",
+      "category": "special"
+    },
+    {
+      "reason": "excluded_conditional_variant:special:214:P:OD",
+      "input": "214PP",
+      "name": "Denjin Charge Hashogeki",
+      "category": "special"
+    },
+    {
+      "reason": "excluded_conditional_variant:special:236:P:H",
+      "input": "236HP",
+      "name": "Denjin Charge Hadoken",
+      "category": "special"
+    },
+    {
+      "reason": "excluded_conditional_variant:special:236:P:OD",
+      "input": "236PP",
+      "name": "Denjin Charge Hadoken",
+      "category": "special"
+    }
+  ],
+  "gameVersion": "UNVERIFIED",
+  "status": "STAGING_ONLY",
+  "review": {
+    "applied": [
+      {
+        "characterId": "ryu",
+        "input": "2HK",
+        "name": "Low Spinning Sweep",
+        "fingerprint": "de1b1eac1260abc81336753a591e9b9ea68caad8400d96b79c24a5d55f35987f",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +40",
+        "evidenceRetrievedAt": "2026-11-05T09:20:28.408Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ryu%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ryu",
+        "input": "214LK",
+        "name": "Tatsumaki Senpu-kyaku",
+        "fingerprint": "9b0118b35b74ee91749d398bc055dd1a6b387e06f02d0a9731a2eed1c6c6787d",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +35",
+        "evidenceRetrievedAt": "2026-11-05T09:20:28.408Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ryu%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ryu",
+        "input": "214KK",
+        "name": "Tatsumaki Senpu-kyaku",
+        "fingerprint": "3753a0a4775caeef01aa05e5b2f8a37cc97e7d2751ed886d48f6aadea6844a7a",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +57",
+        "evidenceRetrievedAt": "2026-11-05T09:20:28.408Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ryu%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ryu",
+        "input": "214HP",
+        "name": "Hashogeki",
+        "fingerprint": "ebe05dd3ec58de4e9d4f80449a8b306c51e9b9ea8d263fd637fbf00f58435e4e",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +61 Spin",
+        "evidenceRetrievedAt": "2026-11-05T09:20:28.408Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ryu%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ryu",
+        "input": "22P",
+        "name": "Denjin Charge",
+        "fingerprint": "9c74efa4d31aa3a17e29c8dd306f3f3b66780eb3f90abe59a5da0318fd35bc03",
+        "action": "mark_not_applicable",
+        "field": "hit",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ryu%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ryu",
+        "input": "22P",
+        "name": "Denjin Charge",
+        "fingerprint": "9c74efa4d31aa3a17e29c8dd306f3f3b66780eb3f90abe59a5da0318fd35bc03",
+        "action": "mark_not_applicable",
+        "field": "block",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ryu%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ryu",
+        "input": "236PP",
+        "name": "Hadoken",
+        "fingerprint": "5618ee15721756e887e3047bd8cc72148ec0f1b044b5569dfa5308e35b77d4a3",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +54",
+        "evidenceRetrievedAt": "2026-11-05T09:20:28.408Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ryu%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ryu",
+        "input": "623LP",
+        "name": "Shoryuken",
+        "fingerprint": "eafaf0d3d5ae354b62147b358bf28af8e880e0da6fe29f3a7787ddf861124fe5",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +38",
+        "evidenceRetrievedAt": "2026-11-05T09:20:28.408Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ryu%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ryu",
+        "input": "623MP",
+        "name": "Shoryuken",
+        "fingerprint": "8c2666f81ad9d2e4617a740192cc2286634c3794b70522bf13fc7e10f6a3fa6a",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +34",
+        "evidenceRetrievedAt": "2026-11-05T09:20:28.408Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ryu%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ryu",
+        "input": "623PP",
+        "name": "Shoryuken",
+        "fingerprint": "340a014bd3d398a5d2e5d8760c93d2f4170ecdbbe049ee298c0ba6581f5669a1",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +29",
+        "evidenceRetrievedAt": "2026-11-05T09:20:28.408Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ryu%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      }
+    ],
+    "stale": [],
+    "classifiedExclusions": [
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "4HK",
+        "name": "Axe Kick",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "4HP",
+        "name": "Short Uppercut",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5HP~HK",
+        "name": "High Double Strike",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5MP~LK",
+        "name": "Fuwa Triple Strike 1",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5MP~LK~HK",
+        "name": "Fuwa Triple Strike 2",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6HK",
+        "name": "Whirlwind Kick",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6HK~214K",
+        "name": "Aerial Tatsumaki Senpu-kyaku",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6HK~214KK",
+        "name": "Aerial Tatsumaki Senpu-kyaku",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6HP",
+        "name": "Solar Plexus Strike",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6MP",
+        "name": "Collarbone Breaker",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.214K",
+        "name": "Aerial Tatsumaki Senpu-kyaku",
+        "category": "special",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.214KK",
+        "name": "Aerial Tatsumaki Senpu-kyaku",
+        "category": "special",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.HK",
+        "name": "Jumping Heavy Kick",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.HP",
+        "name": "Jumping Heavy Punch",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.LK",
+        "name": "Jumping Light Kick",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.LP",
+        "name": "Jumping Light Punch",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.MK",
+        "name": "Jumping Medium Kick",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.MP",
+        "name": "Jumping Medium Punch",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "excluded_conditional_variant:special:214:P:H",
+        "input": "214HP",
+        "name": "Denjin Charge Hashogeki",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      },
+      {
+        "reason": "excluded_conditional_variant:special:214:P:OD",
+        "input": "214PP",
+        "name": "Denjin Charge Hashogeki",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      },
+      {
+        "reason": "excluded_conditional_variant:special:236:P:H",
+        "input": "236HP",
+        "name": "Denjin Charge Hadoken",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      },
+      {
+        "reason": "excluded_conditional_variant:special:236:P:OD",
+        "input": "236PP",
+        "name": "Denjin Charge Hadoken",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      }
+    ]
+  }
+}

@@ -1,0 +1,512 @@
+{
+  "characterId": "ken",
+  "rawMoveCount": 75,
+  "candidateMoveCount": 32,
+  "candidateNormals": 12,
+  "candidateSpecials": 20,
+  "upstreamFetchedAt": "2026-08-19T04:05:24.993Z",
+  "missingNormals": [],
+  "excluded": [
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236KK~6HK",
+      "name": "Senka Snap Kick",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236KK~6HK~6K",
+      "name": "Kasai Thrust Kick (HK)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236KK~6LK",
+      "name": "Kazekama Shin Kick",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236KK~6LK~6K",
+      "name": "Kasai Thrust Kick (LK)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236KK~6MK",
+      "name": "Gorai Axe Kick",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236KK~6MK~6K",
+      "name": "Kasai Thrust Kick (MK)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236K~6HK",
+      "name": "Senka Snap Kick",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236K~6LK",
+      "name": "Kazekama Shin Kick",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236K~6MK",
+      "name": "Gorai Axe Kick",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5MK~MK",
+      "name": "Triple Flash Kicks 1",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5MK~MK~HK",
+      "name": "Triple Flash Kicks 2",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5MP~HP",
+      "name": "Chin Buster",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "8HK",
+      "name": "Neutral Jumping Heavy Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.214K",
+      "name": "Aerial Tatsumaki Senpu-kyaku",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.214KK",
+      "name": "Aerial Tatsumaki Senpu-kyaku",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "7HK or 9HK",
+      "name": "Jumping Heavy Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.HP",
+      "name": "Jumping Heavy Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.LK",
+      "name": "Jumping Light Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.LP",
+      "name": "Jumping Light Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.mK",
+      "name": "Jumping Medium Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.MP",
+      "name": "Jumping Medium Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "KK",
+      "name": "Quick Dash",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "KK~214K",
+      "name": "Run~Tatsumaki Senpukyaku",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "KK~623K",
+      "name": "Run~Dragonlash Kick",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "KK~623P",
+      "name": "Run~Shoryuken",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "KK~HK",
+      "name": "Forward Step Kick",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "KK~LK",
+      "name": "Emergency Stop",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "KK~MK",
+      "name": "Thunder Kick",
+      "category": "special"
+    }
+  ],
+  "gameVersion": "UNVERIFIED",
+  "status": "STAGING_ONLY",
+  "review": {
+    "applied": [
+      {
+        "characterId": "ken",
+        "input": "2HK",
+        "name": "Low Spinning Sweep",
+        "fingerprint": "d7568c97684c01c6c282ec25966ef8ec96586c3179210562a2f16089f8b92f87",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +40",
+        "evidenceRetrievedAt": "2026-11-05T09:20:27.355Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ken%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ken",
+        "input": "214HK",
+        "name": "Tatsumaki Senpu-kyaku",
+        "fingerprint": "67616c4806a306bfed70e08e93ed2781b51dd065af4192a9c49ae8500d44cbb3",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +36 (-38 cr)",
+        "evidenceRetrievedAt": "2026-11-05T09:20:27.355Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ken%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ken",
+        "input": "214KK",
+        "name": "Tatsumaki Senpu-kyaku",
+        "fingerprint": "9b250a41cfea9e339fac94196d1a0874383a988a8b224c9a8cde5f90ba3c3021",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +28",
+        "evidenceRetrievedAt": "2026-11-05T09:20:27.355Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ken%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ken",
+        "input": "236HK",
+        "name": "Jinrai Kick",
+        "fingerprint": "e81f2d625b50349e27137760a489a81e4b0bf73ce35a953f067ac46f376d3cc6",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +42",
+        "evidenceRetrievedAt": "2026-11-05T09:20:27.355Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ken%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ken",
+        "input": "623HP",
+        "name": "Shoryuken",
+        "fingerprint": "53b8a47280aea48eb8b966b30219378b205a0f08d58b2ecb1e0e1805be66c58c",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +25",
+        "evidenceRetrievedAt": "2026-11-05T09:20:27.355Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ken%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ken",
+        "input": "623LP",
+        "name": "Shoryuken",
+        "fingerprint": "f77f559f267b094f7e7fd6d9eb395c16f1e47eb4ec6d323573d02ac54ed9843a",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +33",
+        "evidenceRetrievedAt": "2026-11-05T09:20:27.355Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ken%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ken",
+        "input": "623MP",
+        "name": "Shoryuken",
+        "fingerprint": "715f5ce3038c62a6d6aa335b172555472726a10eaa0282d5a1334cfa6fbb2a55",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +33",
+        "evidenceRetrievedAt": "2026-11-05T09:20:27.355Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ken%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ken",
+        "input": "623PP",
+        "name": "Shoryuken",
+        "fingerprint": "84ecf0f7f46bd083ef74fb2d6faafb62bc66a2fb4e54fdcc204de15df1e47b72",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +22",
+        "evidenceRetrievedAt": "2026-11-05T09:20:27.355Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ken%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      }
+    ],
+    "stale": [],
+    "classifiedExclusions": [
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236KK~6HK",
+        "name": "Senka Snap Kick",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236KK~6HK~6K",
+        "name": "Kasai Thrust Kick (HK)",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236KK~6LK",
+        "name": "Kazekama Shin Kick",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236KK~6LK~6K",
+        "name": "Kasai Thrust Kick (LK)",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236KK~6MK",
+        "name": "Gorai Axe Kick",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236KK~6MK~6K",
+        "name": "Kasai Thrust Kick (MK)",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236K~6HK",
+        "name": "Senka Snap Kick",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236K~6LK",
+        "name": "Kazekama Shin Kick",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236K~6MK",
+        "name": "Gorai Axe Kick",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5MK~MK",
+        "name": "Triple Flash Kicks 1",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5MK~MK~HK",
+        "name": "Triple Flash Kicks 2",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5MP~HP",
+        "name": "Chin Buster",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "8HK",
+        "name": "Neutral Jumping Heavy Kick",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.214K",
+        "name": "Aerial Tatsumaki Senpu-kyaku",
+        "category": "special",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.214KK",
+        "name": "Aerial Tatsumaki Senpu-kyaku",
+        "category": "special",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "7HK or 9HK",
+        "name": "Jumping Heavy Kick",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.HP",
+        "name": "Jumping Heavy Punch",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.LK",
+        "name": "Jumping Light Kick",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.LP",
+        "name": "Jumping Light Punch",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.mK",
+        "name": "Jumping Medium Kick",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.MP",
+        "name": "Jumping Medium Punch",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "KK",
+        "name": "Quick Dash",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "KK~214K",
+        "name": "Run~Tatsumaki Senpukyaku",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "KK~623K",
+        "name": "Run~Dragonlash Kick",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "KK~623P",
+        "name": "Run~Shoryuken",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "KK~HK",
+        "name": "Forward Step Kick",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "KK~LK",
+        "name": "Emergency Stop",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "KK~MK",
+        "name": "Thunder Kick",
+        "category": "special",
+        "classification": "follow_up"
+      }
+    ]
+  }
+}

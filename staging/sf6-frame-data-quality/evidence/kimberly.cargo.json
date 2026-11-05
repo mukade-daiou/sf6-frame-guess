@@ -1,0 +1,937 @@
+{
+  "url": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Kimberly%22&limit=500",
+  "retrievedAt": "2026-11-05T09:20:27.359Z",
+  "status": 200,
+  "characterId": "kimberly",
+  "gameVersion": "UNVERIFIED",
+  "license": "CC-BY-SA-4.0",
+  "attribution": "SuperCombo Wiki contributors",
+  "data": {
+    "cargoquery": [
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "214214P",
+          "startup": "13",
+          "total": "59",
+          "hitAdv": "KD +22",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-26(-20)'''</span>",
+          "notes": "Becomes airborne during screen freeze (can dodge grounded attacks despite not having invincibility); screen freeze causes active spraycans to disappear; first hit before cinematic does 300 damage"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "214HK",
+          "startup": "8",
+          "total": "66",
+          "hitAdv": "KD +21",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-35'''</span>",
+          "notes": "Cannot hit cross-up; often too slow to work in juggles; if first hit (active frames 1-6) whiffs, still hits 3 times but the first hit only does 180 damage"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "214KK",
+          "startup": "6",
+          "total": "64",
+          "hitAdv": "KD +21",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-40'''</span>",
+          "notes": "Cannot hit cross-up; higher juggle potential than other versions; other than SA2 cancel, starter scaling only occurs if Spraycan detonates immediately after first grounded hit, or after a high-connect 4-hit 214KK"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "214LK",
+          "startup": "6",
+          "total": "59",
+          "hitAdv": "KD +23",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-30'''</span>",
+          "notes": "Cannot hit cross-up; if first hit (active frames 1-6) whiffs, still hits 3 times but the first hit only does 90 damage"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "214MK",
+          "startup": "7",
+          "total": "62",
+          "hitAdv": "KD +22",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-32'''</span>",
+          "notes": "Cannot hit cross-up; if first hit (active frames 1-6) whiffs, still hits 3 times but the first hit only does 90 damage"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "214P (HOLD OK)",
+          "startup": "19",
+          "total": "43(33)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "After reappearing, 7f recovery is cancelable into any attack except Parry or another 214P (otherwise 17f recovery); grants forward momentum when canceled into attacks, unlocking some unique combo routes due to pushback (slower attacks do not benefit from this momentum); normals (except 2HK or command normals) performed after reappearing add +3 to the move's Juggle Limit, -1 to the move's Juggle Increase, and put airborne opponents into a limited juggle state (similar to Drive Rush juggles except no free juggle state when starting a combo); can hold the button to make Kimberly reappear a short distance in front of her rather than in front of the opponent (useful for baiting the opponent's defensive options); Distance on held version: 0.984 (no input) / 0.691 (whiff throw) / longer distance if whiffing a normal out of teleport"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "214PP",
+          "startup": "19",
+          "total": "45(33)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "After reappearing, can act after 7f recovery; air follow-ups have the same properties as regular jump attacks (including 3 landing recovery frames); if Kimberly does not act, she has 1 punishable landing recovery frame, then 2 landing frames where she can block or cancel into an attack; cannot use j.236P after reappearing mid-air"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "22K",
+          "startup": "42",
+          "total": "44",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Refills 1 spray can; cannot reload if a spray can is currently active on-screen"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "22KK",
+          "startup": "42",
+          "total": "44",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Fully replenishes spraycans; cannot be used while 2 or more spraycans are stocked or if a spraycan is currently active on-screen"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "22P",
+          "startup": "18(122~128)",
+          "total": "44",
+          "hitAdv": "KD +88",
+          "blockAdv": "-",
+          "notes": "Button strength determines distance; cannot reload while a spraycan is active on-screen (but can throw additional spraycans); spraycan spawns on frame 18 (if Kimberly is hit before this, it will not be thrown); LP can hits the ground on frame 24 and explodes on frame 122; MP can hits the ground on frame 26 and explodes on frame 124; HP can hits the ground on frame 30 and explodes on frame 128; explosion can juggle if opponent is thrown immediately afterwards (MP/HP cans give more time for juggle follow-ups); puts opponent into free juggle state, or maintains the current juggle state if comboed into; important tool for corner oki scenarios; spraycan disappears if SA2 is activated"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "22PP",
+          "startup": "18(122~128)",
+          "total": "44",
+          "hitAdv": "KD~",
+          "blockAdv": "-",
+          "notes": "Button strengths determine distance of each can (each strength of spraycan reaches the ground with the same timing as the 1-stock version); cannot reload while a spraycan is active on-screen (but can throw additional spraycans); spraycans spawn on frame 18 (if Kimberly is hit before this, they will not be thrown); LP+HP gives near-simultaneous explosions (6f gap between hits); LP+HP version can be useful in corner setups with Drive Impact that will break armor on the opponent's counter-DI; LP+MP and MP+HP versions result in a staggered explosion (explode on frames 122/170 or 124/174 respectively); staggered explosions combo on hit, and leave a blockstring gap of 19f for LP+MP and 20f for MP+HP; the staggered version generally gives stronger combos and allows for multiple mixups in one sequence; staggered version allows for extended blockstring sequences that can deal incredible Drive damage; many non-cinematic reversals can be punished after landing even when hitting Kimberly; the first explosion can juggle if opponent is thrown immediately afterwards; puts opponent into free juggle state, or maintains the current juggle state if comboed into; spraycan disappears if SA2 is activated; the 2nd can does not add any extra hits of damage scaling, but will take on the scaling level of any other hits that occur between the spraycan explosions (e.g. 1st can 70%, j.HP 60%, 2nd can 60%)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "236236K",
+          "startup": "10",
+          "total": "66",
+          "hitAdv": "KD +22",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-25'''</span>",
+          "notes": "Travels ~75% screen length; does not throw spraycan without holding the button"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "236236P",
+          "startup": "8",
+          "total": "64",
+          "hitAdv": "HKD +16",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-35'''</span>",
+          "notes": "Immediately upon activation, Kimberly gains 11% buff to attack damage and walk speed for the rest of the match; cinematic time regenerates ~1.9 Drive bars for Kimberly"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "236236P",
+          "startup": "8",
+          "total": "64",
+          "hitAdv": "HKD +16",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-35'''</span>",
+          "notes": "Immediately upon activation, Kimberly gains 11% buff to attack damage and walk speed for the rest of the match; available at 25% HP or below; cinematic time regenerates ~2.1 Drive bars for Kimberly"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "236236[K]",
+          "startup": "10",
+          "total": "66",
+          "hitAdv": "KD +38",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-25'''</span>",
+          "notes": "Holding the button consumes 1 can for better damage and oki; travels ~75% screen length; spraycan only does 1 Drive damage to prevent opponent from recovering Drive meter too quickly"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "236HP",
+          "startup": "24",
+          "total": "53",
+          "hitAdv": "KD +56",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span>",
+          "notes": "Puts opponent into limited juggle state; very limited juggle potential, so it won't combo from 5MP~HP; 2nd hit only comes out on hit; forward jump cancelable on hit only; (note: frame display shows 3f extra block recovery, but this is a bug - total frame count remains unchanged)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "236K",
+          "startup": "8~",
+          "total": "55",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Holding forward causes Kimberly to continue running without activating Arc Step (must not let go of forward input at any point); can hold forward + button to activate follow-up at the earliest possible timing; Movement speed: 0.112/frame during cancelable frames"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "236K (close)",
+          "startup": "15+6",
+          "total": "46(60)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Can frame trap vs. 4f normals when canceled from 2HP, 5HP, or 5MP; only comes out if there is an opponent at close range on or near the ground after the 15th frame of Sprint; if opponent becomes airborne after startup, the whiffed attack has 1f active + 25f recovery; if Perfect Parried, Kimberly becomes airborne before opponent can Throw punish (can be punished with Drive Impact airborne connect or a Forced Knockdown normal up to 6f startup)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "236K (close)~K",
+          "startup": "8+15+13",
+          "total": "38",
+          "hitAdv": "KD +29(+31)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span>",
+          "notes": "KD Adv. is +31 if Arc Step is blocked, +30 on hit midscreen, +29 on hit in the corner"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "236K (close)~P",
+          "startup": "8+15+13",
+          "total": "58",
+          "hitAdv": "HKD +31",
+          "blockAdv": "-",
+          "notes": "Grabs standing/crouching opponents, whiffs vs. airborne (can be backdashed); 1656 damage on Punish Counter"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "236KK",
+          "startup": "8(6)~",
+          "total": "54",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Holding forward causes Kimberly to continue running without activating Arc Step (must not let go of forward input at any point); cancels into follow-ups after 8 frames minimum (can cancel into Emergency Stop 2f earlier); Movement speed: 0.135/frame during cancelable frames"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "236KK (close)",
+          "startup": "13+6",
+          "total": "44(58/60)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "True blockstring when canceled from 2HP; can frame trap vs. 4f normals when canceled from 5HP, 5MP, 5MK, or 5MP~HP; only comes out if there is an opponent at close range on or near the ground after the 13th frame of OD Sprint; if opponent becomes airborne after startup, the whiffed attack has 1f active + 25f recovery; if Perfect Parried, Kimberly becomes airborne before opponent can Throw punish (can be punished with Drive Impact airborne connect or a Forced Knockdown normal up to 6f startup)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "236KK (close)~K",
+          "startup": "8+13+13",
+          "total": "38",
+          "hitAdv": "KD +43 (Wall Splat +86)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span>",
+          "notes": "Causes Wall Splat on hit near the corner; 2nd hit of the divekick occurs on hit only (1 hit on whiff or block); SA2 cancel works on either hit"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "236KK (close)~P",
+          "startup": "8+13+13",
+          "total": "58",
+          "hitAdv": "HKD +94 (OTG)",
+          "blockAdv": "-",
+          "notes": "Throw connects against grounded opponents, whiffs vs. airborne or backdash; opponent is put into a limited juggle OTG state (slightly less time for juggle follow-ups than j.236PP); 1035 damage on Punish Counter"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "236KK~HK",
+          "startup": "8+15",
+          "total": "38",
+          "hitAdv": "KD +25(+44)",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Puts airborne opponents into short OTG juggle state (only SA2/SA3 cancels can follow up); Super cancels whiff vs. grounded opponents"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "236KK~LK",
+          "startup": "8+17",
+          "total": "39",
+          "hitAdv": "KD +43<br>(KD +56~66)",
+          "blockAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "notes": "Kicking legs are Anti-Air Invuln 14-23f (cannot hit cross-up); active frames 3-7 only hit airborne opponents above Kimberly (only active frames 1-2 are useful for meaty pressure); 2nd hit will expand its hitbox if the 1st hit connects, allowing both to connect on hit/block; puts opponent into limited juggle state (launches high in juggles, allowing Drive Rush 2HP loops); () refers to higher KD advantage when juggled into"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "236KK~MK",
+          "startup": "8+8",
+          "total": "38",
+          "hitAdv": "KD +47~50<br>(KD +49~52)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-10(-7)'''</span>",
+          "notes": "4-19f low profile and upper body projectile invuln (only on the Slide itself); puts opponent into limited juggle state; advantage varies significantly depending on which active frame of the 2nd hit connects; () refers to KD advantage when juggled into (KD +49 from 5MP~HP unless delayed); 1st hit forces stand vs. grounded opponents (ensures SA2 cancel can connect); if the 1st hit connects with the opponent, the 2nd hit has a greatly expanded vertical hitbox to ensure juggle consistency"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "236KK~P",
+          "startup": "6+13",
+          "total": "19",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Allows combo extensions from 5HP or 2HP, like a Drive Rush cancel for 2 bars with no damage scaling; latest possible stop occurs after 41f (54f total animation); shortest OD Run~Stop distance: 1.48"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "236K~HK",
+          "startup": "8+19",
+          "total": "42",
+          "hitAdv": "KD +23",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "SA3 cancel can only combo in high connect juggles, or if overhead is absorbed by armor"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "236K~LK",
+          "startup": "8+21",
+          "total": "43",
+          "hitAdv": "KD +41<br>(KD +53~66)",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "notes": "Kicking legs are Anti-Air Invuln 18-27f (cannot hit cross-up); active frames 3-7 only hit airborne opponents above Kimberly (only active frames 1-2 are useful for meaty pressure); puts opponent into limited juggle state; () refers to higher KD advantage when juggled into"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "236K~MK",
+          "startup": "8+10",
+          "total": "40",
+          "hitAdv": "KD +39~50<br>(KD +42~53)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span><span style=\"color: #ff6347;\">(-1)</span>",
+          "notes": "6-21f low profile and upper body projectile invuln (only on the Slide itself); puts opponent into limited juggle state; advantage varies significantly depending on which active frame connects; () refers to KD advantage when juggled into (KD +47 from 5MP~HP unless delayed); cancel to SA3 can whiff when used from longer range"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "236K~P",
+          "startup": "8+14",
+          "total": "22",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Latest possible stop occurs after 41f (55f total animation); shortest Run~Stop distance: 1.64"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "236LP",
+          "startup": "10",
+          "total": "33",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span><span style=\"color: #30D5B8;\">'''(+5)'''</span><br>(KD +30~36)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span><span style=\"color: #ff6347;\">(-2)</span>",
+          "notes": "Has juggle potential; good for safe pressure against opponents in Burnout (0 oB, setting up a follow-up 2LP that trades with 4f normals and can kara cancel into Parry/Super if the opponent performs a reversal Super); strongest 236P version when Super canceling; () refers to KD Adv. when juggled into (lower height gives lower KD Adv.); 3rd active frame has extra range, allowing it to be spaced for safety or combo extensions; extends a large hurtbox on whiff until the end of recovery"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "236MP",
+          "startup": "17",
+          "total": "46",
+          "hitAdv": "KD +37<br>(KD +26)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span>",
+          "notes": "2nd hit only comes out on hit; () refers to reduced KD Adv. when juggled into; (note: frame display shows 3f extra block recovery, but this is a bug - total frame count remains unchanged)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "236PP",
+          "startup": "17",
+          "total": "46",
+          "hitAdv": "KD +56",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span>",
+          "notes": "Puts opponent into limited juggle state; 2nd hit only comes out on hit; forward jump cancelable on hit only; gives the launch of 236HP with the startup and juggle potential of 236MP; (note: frame display shows 3f extra block recovery, but this is a bug - total frame count remains unchanged)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "2HK",
+          "startup": "8",
+          "total": "34",
+          "hitAdv": "KD +38",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-10'''</span>",
+          "notes": "Has some juggle potential; can be used in place of 236LP in some juggles for extra meter build and higher KD advantage"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "2HP",
+          "startup": "8",
+          "total": "30",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Forces stand on hit; good anti-air but cannot hit cross-up; in Drive Rush juggles, opponent is kept high enough to connect instant j.236PP for a ground bounce; can be up to +8/+3 meaty; best button for Run pressure (cancel into Arc Step beats 4f light normals); Run~Stop cancel: +3/-2 (OD: +6/+1)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "2LK",
+          "startup": "5",
+          "total": "14",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Chains into 5LP/2LP/2LK; slightly more pushback than other combo-starting lights, but can still chain 3 lights if starting point blank; can link to 5MP/2MP on Counter-hit or into 2HP out of close range Drive rush"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "2LP",
+          "startup": "4",
+          "total": "13",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Chains into 5LP/2LP/2LK; Run~Stop cancel: -9/-14 (OD: -6/-11)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "2MK",
+          "startup": "7",
+          "total": "25",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "notes": "Non-cancelable, but can combo afterward and is a great option out of Drive Rush"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "2MP",
+          "startup": "6",
+          "total": "21(23)",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+7'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "2f extra recovery on whiff; important combo tool; Run~Stop cancel: -1/-9 (OD: +2/-6); special/DR/DI cancel is delayed until after 2nd active frame; extends a hurtbox on whiff until the end of recovery (feet 6-23f, arm 6-15f with partial retraction 16-23f)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "3MK",
+          "startup": "11",
+          "total": "36",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span><span style=\"color: #30D5B8;\">'''(+6)'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span><span style=\"color: #bcbd0c;\">(0)</span>",
+          "notes": "Low profile 9-21f (combined with upper body projectile invuln, great at avoiding projectiles); the large extended hurtbox above her leg is also projectile invuln (more susceptible to mid counter-pokes in neutral); if it connects in a free juggle, puts airborne opponents into limited juggle state; the first 4 active frames have a set recovery that locks the frame advantage to +1/-5, and also cause a knockdown on Punish Counter (does not apply to later active frames, allowing combo extensions after punishing projectiles)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "4HK",
+          "startup": "22",
+          "total": "42",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Forces crouch on hit, making opponents wider for easier follow-up links; causes spike KD vs. airborne opponents; allows link to 2LP naturally, and 5MP link out of Drive Rush (DR momentum does not allow 2MP, 5MP or 2HP to reach opponent)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "4LPLK",
+          "startup": "5",
+          "total": "30",
+          "hitAdv": "KD +8",
+          "blockAdv": "-",
+          "notes": "Side switches; no throw oki after back throwing opponent into corner, but can meaty with strikes; starter scaling applies to Spraycan juggle follow-ups (requires staggered 2x Spraycans, follow-up juggles very limited); damage distribution is 401,681 (PC: 451,1388) and only the first hit will apply damage when comboing into Spraycan; Punish Counter also splits Meter data into 2 equal hits (only deals +50 damage and 0.5 bars of Drive Damage on spraycan juggles); a successful Throw Escape builds 0.5 Drive bars for the defender; Throw Escape is awarded to a random player if input simultaneously"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "4PPPKKK",
+          "startup": "328 (total)",
+          "total": "328",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"Rin Pyo To Sha Kai Jin Retsu Zai Zen!\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "5HK",
+          "startup": "12",
+          "total": "32",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+7'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "notes": "Whiffs vs. crouching opponents if not point blank unless they extend a vertical hurtbox; good combo and pressure starter; upper body is Air Invuln 10-15f (decent anti-air, but a little slow and cannot hit cross-up); the small hitbox on Kimberly's foot can only hit airborne opponents"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "5HP",
+          "startup": "9",
+          "total": "31",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "In punishes, can cancel to Run~Stop or Teleport to maintain close position, then link into 5HK or 5HP; single hit confirmable, but will not combo to 236HP on the final cancel frame; Run~Stop cancel: +3/-4 (OD: +6/-1); can frame trap into meterless Arc Step; edge of hitbox is raised to make the attack more vulnerable to low-profile attacks; extends a hurtbox 1f before active that is vulnerable to projectiles"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "5LK",
+          "startup": "5",
+          "total": "18",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Good range for a cancelable light normal; possible to chain 4 lights (2LP, 2LP, 5LP, 5LK) into 236LP/Super or into 214HK vs. standing; Run~Stop cancel: -8/-12 (OD: -5/-9)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "5LP",
+          "startup": "5",
+          "total": "14",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Chains into 5LP/2LP/2LK or into Bushin Prism Strikes; Run~Stop cancel: -8/-15 (OD: -5/-12)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "5LP~MP",
+          "startup": "6",
+          "total": "26",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "() refers to scaled damage from 5LP combo starter; difficult for most characters to punish if well spaced (e.g. 2LP, 5LP, 5LP~MP)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "5LP~MP~2HP",
+          "startup": "10",
+          "total": "36",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-10'''</span>",
+          "notes": "() refers to scaled damage from 5LP combo starter; useful against Drive Impacts, as this hit will land as a +4 counter-hit at point blank range; on hit, leaves Kimberly close for a strike/throw mixup"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "5LP~MP~2HP~2HK",
+          "startup": "15",
+          "total": "40",
+          "hitAdv": "KD +16",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span>",
+          "notes": "() refers to scaled damage from 5LP combo starter; throws opponent backwards for a side switch; very useful when Kimberly is cornered; cannot hit airborne opponents; true blockstring even at max delay; leads to a 9f safejab setup with immediate DR~2LP"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "5LP~MP~2HP~HK",
+          "startup": "15",
+          "total": "41",
+          "hitAdv": "KD +26(+45)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span>",
+          "notes": "() refers to scaled damage from 5LP combo starter; knocks opponent far away on hit; true blockstring even at max delay; (better KD Adv. after a DR juggle, maintains limited juggle state)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "5LP~MP~HP",
+          "startup": "12",
+          "total": "38",
+          "hitAdv": "KD +47",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-10'''</span>",
+          "notes": "() refers to scaled damage from 5LP combo starter; puts opponent into limited juggle state; can juggle with Bushin Senpukyaku in the corner; gives strong KD Adv. for oki, such as Spray Can setups"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "5LP~MP~HP~HK",
+          "startup": "26",
+          "total": "47(52)",
+          "hitAdv": "KD +49(+26)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span>",
+          "notes": "() refers to scaled damage from 5LP combo starter; 5f extra recovery on block; 10f gap between final 2 hits on block; airborne hit causes a small ground bounce that increases knockdown advantage, allowing for a spraycan setup (will always occur unless the first 3 hits are blocked before the final hit connects)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "5MK",
+          "startup": "8",
+          "total": "28",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "Longest range cancelable neutral button; Run~Stop cancel: -1/-6 (OD: +2/-3)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "5MP",
+          "startup": "6",
+          "total": "26",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Important combo tool with a Target Combo follow-up; Run~Stop cancel: +1/-4 (OD: +4/-1); collision box extends forward, allowing Kimberly to set up a tricky auto-shimmy with whiffed 5MP on a knocked down opponent; cancel into Run~Stop leaves Kim at +0 oB vs. Burnout (against reversal Super, sets up timing to kara cancel her next attack into Parry/Super)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "5MP~HP",
+          "startup": "10",
+          "total": "38",
+          "hitAdv": "KD +28",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span>",
+          "notes": "Puts opponent into a limited juggle state; will not combo into 236HP; Run~Stop cancel: KD+34/-6 (OD: KD+37/-3)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "5PPPKKK",
+          "startup": "200 (total)",
+          "total": "200",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"Man, come on, I'm ready to go!\"; during SA3 install, this taunt can be input with 2PPPKKK instead"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "5PPPKKK",
+          "startup": "545 (total)",
+          "total": "545",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "(Dance animation during SA3 only)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "6HK",
+          "startup": "27",
+          "total": "50(42)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1(+2)</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Can hop over low pokes for a Punish Counter combo; puts airborne opponents into limited juggle state; can cancel into forward, neutral, or back jump on hit or block; 8f less recovery on block only; 1f more hitstun vs. crouching opponents; much shorter range on the final active frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "6HK~7",
+          "startup": "16",
+          "total": "33",
+          "hitAdv": "<span style=\"color: #b70c0b;\">'''-10(-9)'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-22'''</span>",
+          "notes": "Startup refers to earliest frame that Kimberly can perform air follow-ups after Hop"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "6HK~8",
+          "startup": "20",
+          "total": "33",
+          "hitAdv": "<span style=\"color: #b70c0b;\">'''-10(-9)'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-22'''</span>",
+          "notes": "Startup refers to earliest frame that Kimberly can perform air follow-ups after Hop"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "6HK~9",
+          "startup": "20",
+          "total": "33",
+          "hitAdv": "<span style=\"color: #b70c0b;\">'''-10(-9)'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-22'''</span>",
+          "notes": "Crosses over the opponent; startup refers to earliest frame that Kimberly can perform air follow-ups after Hop"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "6HPHK",
+          "startup": "18",
+          "total": "46(51)",
+          "hitAdv": "KD +23",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Performed by holding 6HPHK on wakeup; 5f extra recovery on hit; does not have any screen freeze except for a 12f freeze when interacting with the opponent's throw hitbox (this also refunds 1 Drive bar after punishing the throw); SA3 install increases recoverable damage to 555; see [[Street_Fighter_6/Gauges#Drive_Reversal|Drive Reversal]]."
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "6HPHK",
+          "startup": "20",
+          "total": "48(53)",
+          "hitAdv": "KD +23",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Performed by inputting 6HPHK during blockstun; 5f extra recovery on hit; freezes the screen for 4f during startup; see [[Street_Fighter_6/Gauges#Drive_Reversal|Drive Reversal]]; SA3 install increases recoverable damage to 555"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "6PPPKKK",
+          "startup": "290 (total)",
+          "total": "290",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"Dōmo arigatō, from the Bushinryu!\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "HPHK",
+          "startup": "26",
+          "total": "62",
+          "hitAdv": "KD +35 / Wall Splat KD +65",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span> / Wall Splat HKD +72",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Impact|Drive Impact]]. Airborne connect gives spinning juggle state on Punish Counter or corner Wall Splat with variable height."
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "j.214214P",
+          "startup": "13(2)",
+          "total": "-",
+          "hitAdv": "KD +22",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-26(-20)'''</span>",
+          "notes": "Can only be used from Forward Jump; screen freeze causes active spraycans to disappear; first hit before cinematic does 300 damage; 2f startup when canceled from OD special moves only"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "j.214K",
+          "startup": "8",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4(+8)'''</span><br>(KD +38~42)",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1<span style=\"color: #30D5B8;\">'''(+4)'''</span></span>",
+          "notes": "Only possible during forward jump or after 6HK Forward Hop; can be done immediately with Tiger Knee motion (2149K); inputting at the end of Kimberly's jump arc allows 3 hits vs. standing, 1 hit vs. crouching (otherwise, 1 hit vs. standing and whiffs on crouching); listed () KD advantage refers to air juggled version"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "j.214KK",
+          "startup": "8",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5(+8)'''</span><br>(KD +46~51)",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1<span style=\"color: #30D5B8;\">'''(+4)'''</span></span>",
+          "notes": "Only possible during forward jump or after 6HK Forward Hop; can be done immediately with Tiger Knee motion (2149K); inputting at the end of Kimberly's jump arc allows 3 hits vs. standing, 1 hit vs. crouching (otherwise, 1 hit vs. standing and whiffs on crouching); can cross-up at close range vs. standing opponents (useful to escape corner throw loops if opponent is at +2 or worse); listed () KD advantage refers to air juggled version; can cancel into SA2 mid-air, or follow up with SA3 after landing in the corner"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "j.236P",
+          "startup": "5",
+          "total": "-",
+          "hitAdv": "HKD +22",
+          "blockAdv": "-",
+          "notes": "Air throw that can be comboed into; good combo ender due to damage and decent okizeme, especially in the corner; no minimum height requirement; the first 15 landing recovery frames put Kimberly in a crouching state; Range: 1.0"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "j.236PP",
+          "startup": "5",
+          "total": "-",
+          "hitAdv": "HKD +98 OTG",
+          "blockAdv": "-",
+          "notes": "Air throw that can be comboed into; causes OTG bounce (limited juggle state); no minimum height requirement; the first 15 landing recovery frames put Kimberly in a crouching state; Range: 1.0"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "j.2MP",
+          "startup": "13",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4(+8)'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span><span style=\"color: #32CD32;\">(+1)</span>",
+          "notes": "Can only be performed from Forward Jump; spike KD vs. airborne opponents; stops Kimberly's air momentum (useful for baiting anti-airs); maximum advantage is only possible when input at the latest possible timing (frame 30 of jump; otherwise, connects with 2nd to last active frame); minimum advantage is more likely to apply to tall standing characters, but is usually at least <span style=\"color: #30D5B8;\">'''+5'''</span>/<span style=\"color: #ff6347;\">-2</span>"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "j.HK",
+          "startup": "9",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+11(+16)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+6(+11)'''</span>",
+          "notes": "Great horizontal range and a good downward hitbox; useful for air resets after corner wallsplat into 6HK; lower body projectile invuln 9-35f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "j.HP",
+          "startup": "8",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+9(+16)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+4(+11)'''</span>",
+          "notes": "Causes spike knockdown vs. airborne opponents; best hitbox for opponents directly below Kimberly; useful in juggles with 2 spraycans as it does not increase the opponent's juggle count; lower body projectile invuln 8-30f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "j.LK",
+          "startup": "5",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5(+10)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span><span style=\"color: #30D5B8;\">'''(+6)'''</span>",
+          "notes": "Cross-up; can be used as a fuzzy instant overhead (vs. Blanka, will not work after perfect safe jump j.HP/j.HK timing, making it useless in corner spraycan setup)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "j.LP",
+          "startup": "4",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+7(+9)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+3</span><span style=\"color: #30D5B8;\">'''(+5)'''</span>",
+          "notes": "Quick air-to-air"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "j.MK",
+          "startup": "7",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+8(+13)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+4(+9)'''</span>",
+          "notes": "Cross-up; lower body projectile invuln 7-30f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "j.MP",
+          "startup": "6",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+11(+13)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+7(+9)'''</span>",
+          "notes": "Puts airborne opponents into limited juggle state; lower body projectile invuln 6-28f (if used immediately on the way up, can avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "LPLK",
+          "startup": "5",
+          "total": "30",
+          "hitAdv": "KD +17",
+          "blockAdv": "-",
+          "notes": "Can walk forward for a strong manually-timed corner throw loop; starter scaling applies to Spraycan juggle follow-ups; damage distribution is 501,581 (PC: 700,1138) and only the first hit will apply damage when comboing into Spraycan; Punish Counter also splits Meter data into 2 equal hits (only deals +199 damage and 0.5 bars of Drive Damage on spraycan setups vs. Parry); a successful Throw Escape builds 0.5 Drive bars for the defender; Throw Escape is awarded to a random player if input simultaneously"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "MPMK",
+          "startup": "1",
+          "total": "45(3)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Parry|Drive Parry]]. Perfect Parrying has only 1F of recovery and disables the opponent from canceling their attack. Perfect Parrying projectiles puts you into fixed 11 frames of recovery. After a Perfect Parry, all Super Gauge gain is reduced by 20% and Drive Gauge gain/damage is reduced by 50% for the entire punish combo."
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "MPMK or 66",
+          "startup": "9",
+          "total": "24(46)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Rush|Drive Rush]]; 3-bar version performed on hit/block from a cancelable normal; can also be performed on whiff from cancelable light normals; startup refers to minimum time before an attack can cancel the Drive Rush animation; the first 15 recovery frames are cancelable into any attack; the final 22 recovery frames are cancelable into any attack or movement option or blocking (except Parry); only Normal and Command Normal attacks are enhanced with +4 frame advantage and improved juggle properties"
+        }
+      },
+      {
+        "title": {
+          "chara": "Kimberly",
+          "input": "MPMK~66",
+          "startup": "3+8",
+          "total": "26(48)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Rush|Drive Rush]]; 1-bar version performed out of a Parry; startup refers to minimum time before an attack can cancel the Drive Rush animation (if performed immediately after a successful Parry, only 1+8 startup); the first 15 recovery frames are cancelable into any attack; the final 22 recovery frames are cancelable into any attack or movement option or blocking (except Parry); only Normal and Command Normal attacks are enhanced with +4 frame advantage and improved juggle properties; Distance: 0.817 (min/throw), 2.479 (min/block), 3.565 (max/final DR frame)"
+        }
+      }
+    ]
+  }
+}

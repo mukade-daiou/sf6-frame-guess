@@ -1,0 +1,838 @@
+{
+  "url": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22M.Bison%22&limit=500",
+  "retrievedAt": "2026-11-05T09:20:27.783Z",
+  "status": 200,
+  "characterId": "m_bison",
+  "gameVersion": "UNVERIFIED",
+  "license": "CC-BY-SA-4.0",
+  "attribution": "SuperCombo Wiki contributors",
+  "data": {
+    "cargoquery": [
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "214214K",
+          "startup": "24",
+          "total": "82",
+          "hitAdv": "HKD +23",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-34'''</span>",
+          "notes": "Can steer left/right during startup; can hit cross-up; causes planted Psycho Mine to disappear; can be used as a fullscreen punish against projectiles or install moves that would normally be safe due to distance; cannot be beaten by air-invuln moves because Bison is technically never considered airborne"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "214214P",
+          "startup": "9(15)",
+          "total": "117",
+          "hitAdv": "KD 0(+6)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-94(-88)'''</span>",
+          "notes": "Shin Bison only (requires detonating Psycho Mine with Forward Taunt); cannot hit cross-up; 1st active frame only connects when Bison is cornered (usually connects on 7th active frame midscreen, making it functionally 15f startup); fullscreen anti-air and anti-projectile Super; during recovery, flies off-screen then reappears on the opposite side of opponent (does not switch sides vs. cornered opponents on HIT"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "214HP",
+          "startup": "22",
+          "total": "65",
+          "hitAdv": "KD +31",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-15'''</span>",
+          "notes": "Plants Psycho Mine onto opponent on 2nd hit (detonates after 300f or when another Backfist Combo, Psycho Crusher, or Devil Reverse connects); useful ender for some juggles (higher KD advantage in high-connect juggles); Potential Bug: builds more Super gauge on hit when comboed into (denoted with [] in data)"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "214HP",
+          "startup": "22",
+          "total": "65",
+          "hitAdv": "KD +49",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+9'''</span>",
+          "notes": "Detonates Psycho Mine on hit/block; Mine detonation does not count as a hit for damage scaling; puts opponent into limited juggle state that allows follow-up juggles (can combo into midscreen 2HK / 3HK / LP Crusher / OD Backfist / SA1 / SA3, as well as corner LP Backfist); 2nd hit triggers Mine detonation even on Perfect Parry (punishable 5f gap before explosion hits); lets Bison maintain pressure on block; can be timed to plant another Psycho Mine if the previous one detonates during this attack's hitstun; POSSIBLE BUG: builds more Super gauge when comboed into compared to raw connect"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "214LP",
+          "startup": "13",
+          "total": "54",
+          "hitAdv": "KD +42",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+9'''</span>",
+          "notes": "Detonates Psycho Mine on hit/block; Mine detonation does not count as a hit for damage scaling; puts opponent into limited juggle state; sets up auto-timed safe jump vs. grounded or low-height opponents; 2nd hit triggers Mine detonation even on Perfect Parry (punishable 5f gap before explosion hits); lets Bison maintain pressure on block; can be timed to plant another Psycho Mine if the previous one detonates during this attack's hitstun"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "214LP",
+          "startup": "13",
+          "total": "54(57)",
+          "hitAdv": "KD +21",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-14'''</span>",
+          "notes": "Plants Psycho Mine onto opponent on 2nd hit (detonates after 300f or when another Backfist Combo, Psycho Crusher, or Devil Reverse connects); useful ender for many juggles (higher KD advantage in high-connect juggles); 3f extra recovery on hit"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "214MP",
+          "startup": "17",
+          "total": "59",
+          "hitAdv": "KD +44",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+9'''</span>",
+          "notes": "Detonates Psycho Mine on hit/block; Mine detonation does not count as a hit for damage scaling; puts opponent into limited juggle state; can juggle into 2HK or SA1/SA3 anywhere on screen; 2nd hit triggers Mine detonation even on Perfect Parry (punishable 5f gap before explosion hits); lets Bison maintain pressure on block; can be timed to plant another Psycho Mine if the previous one detonates during this attack's hitstun"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "214MP",
+          "startup": "17",
+          "total": "59(62)",
+          "hitAdv": "KD +20",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-15'''</span>",
+          "notes": "Plants Psycho Mine onto opponent on 2nd hit (detonates after 300f or when another Backfist Combo, Psycho Crusher, or Devil Reverse connects); useful ender for some juggles (higher KD advantage in high-connect juggles); +23 KD Advantage sets up a dash into strike/throw mixup, or a perfectly meaty 6HP (+5 oH / -1 oB); 3f extra recovery on hit"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "214P Detonation",
+          "startup": "300",
+          "total": "{{{total}}}",
+          "hitAdv": "KD",
+          "blockAdv": "-",
+          "notes": "Projectile hitbox (can be avoided with projectile invuln moves, including some with upper-body invuln); Mine dissipates if Bison is hit; explosion happens automatically 300f after a mine has been planted by the 2nd hit of Backfist Combo; also triggered by Psycho Crusher, Backfist Combo, and Devil Reverse on hit/block (only Backfist Combo triggers the detonation on Perfect Parry); explosion puts opponent into free juggle state or maintains existing juggle state; performing Forward Taunt causes Bison to start a countdown to trigger the explosion; explosion only counts as a hit for damage scaling when the timer expires (not when automatically activated from a special move); deals increased Drive Damage on block (5000) if detonated with Backfist Combo or Devil Reverse"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "214PP",
+          "startup": "14",
+          "total": "107",
+          "hitAdv": "KD +24",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-25'''</span>",
+          "notes": "Plants Psycho Mine onto opponent on 2nd hit (detonates after 300f or when another Backfist Combo, Psycho Crusher, or Devil Reverse connects); puts opponent into limited juggle OTG state on hit; useful ender for some juggles (higher KD advantage in high-connect juggles)"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "214PP",
+          "startup": "14",
+          "total": "107",
+          "hitAdv": "KD +55",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Detonates Psycho Mine on hit/block; Mine detonation does not count as a hit for damage scaling; launches opponent into a limited juggle state that allows follow-up juggles (most notably 214HP for another Mine or 236KK for extended juggles); 3rd hit triggers Mine detonation even on Perfect Parry (punishable 5f gap before explosion hits); does not let Bison maintain block pressure like the meterless versions; can be timed to plant another Psycho Mine if the previous one detonates during this attack's hitstun"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "236236K",
+          "startup": "10",
+          "total": "113",
+          "hitAdv": "KD +11<br>(KD +2)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-41'''</span>",
+          "notes": "First hit cause Bison to enter the full animation; connecting with the 2nd-4th hits leads to a weaker version with only 600-1200 damage and much worse KD advantage; causes planted Psycho Mine to disappear; opponents can jump out after Super freeze to escape chip damage (except Dhalsim/Lily/Zangief)"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "236236P",
+          "startup": "10(5)",
+          "total": "80",
+          "hitAdv": "HKD +15",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-46'''</span>",
+          "notes": "Travels slightly under 1/2 screen making it a viable projectile counter; opponent cannot jump out after Super freeze to escape chip damage; cinematic time regenerates ~2 Drive bars for M. Bison; causes planted Psycho Mine to disappear; only 5f startup when canceled from special moves"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "236236P",
+          "startup": "10(5)",
+          "total": "80",
+          "hitAdv": "HKD +15",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-46'''</span>",
+          "notes": "Travels slightly under 1/2 screen making it a viable projectile counter; available at 25% HP or below; opponent cannot jump out after Super freeze to escape chip damage; cinematic time regenerates ~2.2 Drive bars for M. Bison; causes planted Psycho Mine to disappear; only 5f startup when canceled from special moves"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "236HK",
+          "startup": "22",
+          "total": "46(51)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span><span style=\"color: #30D5B8;\">'''(+4)'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span><span style=\"color: #ff6347;\">(-3)</span>",
+          "notes": "5f extra recovery on whiff; Low Crush 14-24f (not airborne); Counter-hit/Punish Counter bonus advantage carries through both hits; extremely powerful punish starter due to high damage, frame advantage, and lack of damage scaling; strong pressure tool that gives strike/throw mixup on hit while easily spaced safely on block"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "236KK",
+          "startup": "17",
+          "total": "69",
+          "hitAdv": "KD +55",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-15'''</span>",
+          "notes": "Low Crush 12-19f (not airborne); puts opponent into limited juggle state; cancel is only useful if the first 2 hits are absorbed by Drive Impact (stronger juggle routes always possible); 3rd hit comes out even on whiff"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "236LK",
+          "startup": "13",
+          "total": "37(42)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2(+3)</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5(-4)'''</span>",
+          "notes": "5f extra recovery on whiff; Low Crush 7-15f (not airborne); Counter-hit/Punish Counter bonus advantage carries through both hits; strong pressure tool that gives strike/throw mixup on hit while easily spaced safely on block"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "236MK",
+          "startup": "17",
+          "total": "41(46)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span><span style=\"color: #30D5B8;\">'''(+4)'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5(-4)'''</span>",
+          "notes": "5f extra recovery on whiff; Low Crush 11-19f (not airborne); Counter-hit/Punish Counter bonus advantage carries through both hits; strong pressure tool that gives strike/throw mixup on hit while easily spaced safely on block"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "2HK",
+          "startup": "11",
+          "total": "39",
+          "hitAdv": "KD +29",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span>",
+          "notes": "Sweep with good range and hitbox priority; has juggle potential; puts airborne opponents into a limited juggle state (can combo with well-timed Psycho Mine detonation); can be difficult for some characters to punish when well spaced"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "2HP",
+          "startup": "10",
+          "total": "36",
+          "hitAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-9'''</span>",
+          "notes": "Forces stand; puts airborne opponents into limited juggle state on Counter-hit/Punish Counter; slow anti-air with good vertical hitbox priority on frames 12-15 but cannot hit cross-up; only first 2 active frames are cancelable"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "2LK",
+          "startup": "5",
+          "total": "16",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Chains into 5LP/2LP/2LK; links naturally into 4f lights without chaining and can link to 2MP on counter-hit (rare for a 2LK)"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "2LP",
+          "startup": "4",
+          "total": "15",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Chains into 5LP/2LP/2LK; DR cancel is delayed until after active frames; topmost hurtbox on frames 1-5 is vulnerable only to aerial strikes (preventing its use as an anti-air)"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "2MK",
+          "startup": "8",
+          "total": "29",
+          "hitAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Solid cancelable low poke; DR cancel is delayed until after active frames; extends a wide hurtbox through the first 9 recovery frames before starting to recede"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "2MP",
+          "startup": "6",
+          "total": "22(25)",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "3f extra recovery on whiff; great range for a 6f medium (great for buffers and combos); topmost hurtbox on frames 1-8 is vulnerable only to aerial strikes (preventing its use as an anti-air)"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "3HK",
+          "startup": "15",
+          "total": "47",
+          "hitAdv": "KD +25(+34)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-15(-6)'''</span>",
+          "notes": "Full-screen slide that can be spaced (but always punishable except vs. Burnout); has juggle potential (not a Hard Knockdown when juggled into); crouching state for entire duration"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "4HK",
+          "startup": "10",
+          "total": "30",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "notes": "Forces stand; good combo/pressure/oki tool but short horizontal range; low pushback on hit/block"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "4LPLK",
+          "startup": "5",
+          "total": "30",
+          "hitAdv": "KD +18",
+          "blockAdv": "-",
+          "notes": "Side switches; can Drive Rush for oki after throwing opponent into corner (DR~5MP is auto-timed for tick throw or combo), or pressure with ranged normals (no real midscreen oki); a successful Throw Escape builds 0.5 Drive bars for the defender; Throw Escape is awarded to a random player if input simultaneously"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "4PPPKKK",
+          "startup": "400+42 (792 total)",
+          "total": "442(792)",
+          "hitAdv": "KD -96",
+          "blockAdv": "-",
+          "notes": "\"My power howls. Face me!\"; if opponent steps within range, Bison unleashes an unblockable strike that knocks down for no damage (\"Not yet.\"); attack still comes out even if opponent stands behind Bison; if opponent does not approach: \"Hmm. Coward.\""
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "5HK",
+          "startup": "13",
+          "total": "35",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+6'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Punish Counter crumple is +7 before opponent goes airborne; extended foot hurtbox is anti-air invuln while active on frames 13-16; whiffs on crouching opponents at longer ranges; puts airborne opponents into limited juggle state (much higher launch on Punish Counter); extends a hurtbox 1f before active that is vulnerable to projectiles"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "5HP",
+          "startup": "19",
+          "total": "38(41)",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5(+7)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1(+3)</span>",
+          "notes": "Slow advancing poke with good hitbox priority; 3f extra recovery on whiff/armor; can be spaced for better frame advantage (but gains no links at this range due to pushback); can be hitconfirmed into Super; slams airborne opponents down into limited juggle OTG state (higher bounce on Punish Counter allows more juggle follow-ups); extends a hurtbox 1f before active that is vulnerable to projectiles"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "5LK",
+          "startup": "4",
+          "total": "15",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Good light string ender that moves Bison forward (keeps him closer after a cancel, allowing more consistent combos like 2LK, 2LP, 5LK > 214LP); rare light normal that is plus after DR Cancel on block"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "5LP",
+          "startup": "5",
+          "total": "17",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Chains into 5LP/2LP/2LK; good range for a 5f jab; DR cancel is delayed until after 1st recovery frame; when 5LP is chained into, a follow-up chain occurs 1f earlier than usual (e.g. 5LP~5LP has 2f blockstring gap, but 5LP~5LP~5LP has 1f gap between the 2nd/3rd hits)"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "5MK",
+          "startup": "10",
+          "total": "29",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Poke with great range and hitbox priority; extends a wider hurtbox until the end of recovery"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "5MP",
+          "startup": "8",
+          "total": "25",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+6'''</span>",
+          "blockAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+          "notes": "Counter-hit required to combo into 6HP Target Combo; combo and pressure starter"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "5MP~2HK",
+          "startup": "16",
+          "total": "39",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Safe low ender from 5MP with only a 1f gap on block; can link into light normals when landing as a counter-hit"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "5MP~6HP",
+          "startup": "22",
+          "total": "44",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Puts airborne opponents into limited juggle OTG bounce state; combos from 5MP only on CH/PC/DR or with meaty timing; safe on block, but has an interruptible 7f gap on block"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "5PPPKKK",
+          "startup": "544 (total)",
+          "total": "544",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"A gnat like you will be buried here.\"; can change to alternate taunts by holding Up or Down on frame 235"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "5PPPKKK~2",
+          "startup": "770 (total)",
+          "total": "770",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"A gnat like you has no value to anyone. You're a worthless piece of trash!\"; must be holding Down on frame 235 of Neutral Taunt"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "5PPPKKK~8",
+          "startup": "475 (total)",
+          "total": "475",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"A gnat like you is of no use to me.\"; must be holding Up on frame 235 of Neutral Taunt"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "6 or 4 + PPP/KKK",
+          "startup": "-",
+          "total": "43",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Shin Bison only (requires detonating Psycho Mine with Forward Taunt); 6PPP appears behind opponent unless fully cornered, and 4PPP appears directly in front of the opponent (close enough to throw or confirm 2 light normals); 4PPP teleports backward 1.50 units; 4KKK teleports backward 2.50 units; Modern controls can only access the PPP versions; can be canceled into from normals, allowing it to dodge Drive Reversal or Drive Impact and potentially punish (-5 on immediate Teleport cancel vs. immediate Drive Reversal; distance varies by opponent)"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "623PP",
+          "startup": "15",
+          "total": "65",
+          "hitAdv": "KD +17",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-28'''</span>",
+          "notes": "Shin Bison only (requires detonating Psycho Mine with Forward Taunt); very slow but meterless reversal; cannot hit cross-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "6HP",
+          "startup": "22",
+          "total": "44",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Safe overhead with follow-up combos out of Drive Rush; slams airborne opponents down into limited juggle OTG state"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "6HPHK",
+          "startup": "18",
+          "total": "46(51)",
+          "hitAdv": "KD +23",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Performed by holding 6HPHK on wakeup; 5f extra recovery on hit; does not have any screen freeze except for a 12f freeze when interacting with the opponent's throw hitbox (this also refunds 1 Drive bar after punishing the throw); see [[Street_Fighter_6/Gauges#Drive_Reversal|Drive Reversal]]."
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "6HPHK",
+          "startup": "20",
+          "total": "48(53)",
+          "hitAdv": "KD +23",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Performed by inputting 6HPHK during blockstun; 5f extra recovery on hit; freezes the screen for 4f during startup; see [[Street_Fighter_6/Gauges#Drive_Reversal|Drive Reversal]]."
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "6PPPKKK",
+          "startup": "409",
+          "total": "560",
+          "hitAdv": "KD",
+          "blockAdv": "-",
+          "notes": "\"Three. Two. One. BOOM! Hahahaha.\"; detonates a planted Psycho Mine at the end of the countdown; taunt activation can overwrite the previous explosion timer"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "6PPPKKK",
+          "startup": "411 (total)",
+          "total": "411",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"Hmph. Do you fear me?\""
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "HPHK",
+          "startup": "26",
+          "total": "62",
+          "hitAdv": "KD +35 / Wall Splat KD +65",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span> / Wall Splat HKD +72",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Impact|Drive Impact]]. Airborne connect gives spinning juggle state on Punish Counter or corner Wall Splat with variable height."
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "j.HK",
+          "startup": "10",
+          "total": "{{{total}}}",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+11(+15)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+7(+11)'''</span>",
+          "notes": "Longest horizontal range of Bison's air normals; lower body projectile invuln 10-19f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "j.HP",
+          "startup": "9",
+          "total": "{{{total}}}",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+7(+15)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+3</span><span style=\"color: #30D5B8;\">'''(+11)'''</span>",
+          "notes": "Good vertical hitbox for close jumps; spike knockdown vs. airborne opponents on Counter-hit/Punish Counter; lower body projectile invuln 9-23f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "j.LK",
+          "startup": "5",
+          "total": "{{{total}}}",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5(+10)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span><span style=\"color: #30D5B8;\">'''(+6)'''</span>",
+          "notes": "Cross-up; decent air-to-air"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "j.LP",
+          "startup": "5",
+          "total": "{{{total}}}",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+8(+9)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+4(+5)'''</span>",
+          "notes": "Decent air-to-air"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "j.MK",
+          "startup": "7",
+          "total": "{{{total}}}",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+8(+13)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+4(+9)'''</span>",
+          "notes": "Cross-up; lower body projectile invuln 7-20f (if used immediately on the way up, can avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "j.MP",
+          "startup": "8",
+          "total": "{{{total}}}",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+9(+11)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+5(+7)'''</span>",
+          "notes": "Great air-to-air with a long cancel window into Hell Attack; puts airborne opponents into limited juggle state; lower body projectile invuln 8-22f (if used immediately on the way up, can avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "j.MP~j.MP",
+          "startup": "7",
+          "total": "{{{total}}}",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Keeps airborne opponents in a limited juggle state after j.MP; can be delayed significantly, giving Bison better advantage to juggle after landing"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "LPLK",
+          "startup": "5",
+          "total": "30",
+          "hitAdv": "KD +21",
+          "blockAdv": "-",
+          "notes": "Can dash for auto-timed +2 corner throw loop, or walk for manual timing (better for baiting throw tech); a successful Throw Escape builds 0.5 Drive bars for the defender; Throw Escape is awarded to a random player if input simultaneously"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "MPMK",
+          "startup": "1",
+          "total": "45(3)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Parry|Drive Parry]]. Perfect Parrying has only 1F of recovery and disables the opponent from canceling their attack. Perfect Parrying projectiles puts you into fixed 11 frames of recovery. After a Perfect Parry, all Super Gauge gain is reduced by 20% and Drive Gauge gain/damage is reduced by 50% for the entire punish combo."
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "MPMK or 66",
+          "startup": "9",
+          "total": "24(46)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Rush|Drive Rush]]; 3-bar version performed on hit/block from a cancelable normal; can also be performed on whiff from cancelable light normals; startup refers to minimum time before an attack can cancel the Drive Rush animation; the first 15 recovery frames are cancelable into any attack; the final 22 recovery frames are cancelable into any attack or movement option or blocking (except Parry); only Normal and Command Normal attacks are enhanced with +4 frame advantage and improved juggle properties"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "MPMK~66",
+          "startup": "3+8",
+          "total": "26(48)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Rush|Drive Rush]]; 1-bar version performed out of a Parry; startup refers to minimum time before an attack can cancel the Drive Rush animation (if performed immediately after a successful Parry, only 1+8 startup); the first 15 recovery frames are cancelable into any attack; the final 22 recovery frames are cancelable into any attack or movement option or blocking (except Parry); only Normal and Command Normal attacks are enhanced with +4 frame advantage and improved juggle properties; Distance: 0.593 (min/throw), 2.650 (min/block), 4.425 (max/final DR frame)"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "[2]8K",
+          "startup": "18~46",
+          "total": "53/58/63",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "40f charge time (charge lasts 10f after releasing down direction); button strength determines trajectory (LK close, MK mid, HK far); landing recovery and total frame refers to LK/MK/HK version respectively; Bison is in a crouching state on the final landing recovery frame; can use the OD versions of follow-ups by pressing PP or KK; foot hurtbox is projectile invincible"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "[2]8KK",
+          "startup": "16~47",
+          "total": "54",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "40f charge time (charge lasts 10f after releasing down direction); automatically tracks opponent's location; horizontal travel speed depends on distance from opponent (much faster than HK Shadow Rise when used from longer ranges); follow-ups will become their respective OD versions without spending additional Drive gauge; Bison is in a crouching state on the final landing recovery frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "[2]8KK~K or [2]8K~KK",
+          "startup": "16+15",
+          "total": "{{{total}}}",
+          "hitAdv": "HKD +27",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+4(+9)'''</span>",
+          "notes": "Can also be input after meterless Shadow Rise; transitions to cinematic follow-up on grounded hit (causing Psycho Mine to disappear); lands near opponent on block (does not bounce like meterless version); puts airborne opponents into limited juggle OTG state, dealing 800 less damage; can get better block advantage by inputting as late as possible before landing"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "[2]8KK~P or [2]8K~PP",
+          "startup": "16+21",
+          "total": "{{{total}}}",
+          "hitAdv": "KD +35(+43)",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+4(+10)'''</span>",
+          "notes": "2 hits; can be steered left/right; cannot hit cross-up (but will turn around if Punch is input behind the opponent); 5f extra landing recovery on whiff; puts opponent into limited juggle state; gives good advantage on block; on whiff, final landing recovery frame is in a crouching state; on hit/block, all landing recovery frames are in a crouching state; does not extend a wide hurtbox like the meterless version, making it better for approaching"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "[2]8KK~P or [2]8K~PP",
+          "startup": "16+21",
+          "total": "{{{total}}}",
+          "hitAdv": "KD +54(+59)",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+23(+28)'''</span>",
+          "notes": "Detonates Psycho Mine on hit/block (does not trigger on Perfect Parry); can be steered left/right; cannot hit cross-up (but will turn around if Punch is input behind the opponent); gives great advantage on block or a juggle on hit (follow-ups possible in the corner); Bison is in a crouching state during landing recovery; does not extend a wide hurtbox like the meterless version, making it better for approaching"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "[2]8K~K",
+          "startup": "18+15",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #b70c0b;\">'''-29(-23)'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-39(-38)'''</span>",
+          "notes": "Bounces off opponent's head on hit/block/armor (can steer left/right after bounce); can hit cross-up; Hard Knockdown on Punish Counter; puts airborne opponents into limited juggle OTG state; Bison can auto-correct to face the opponent before descending; good hitbox and delayed descent makes it tricky to anti-air; drops straight to the ground on Perfect Parry (no follow-up possible)"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "[2]8K~K~P",
+          "startup": "12",
+          "total": "{{{total}}}",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+8(+14)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+3</span><span style=\"color: #30D5B8;\">'''(+9)'''</span>",
+          "notes": "Can only be performed after meterless Head Press after bouncing on hit/block/armor; lower body hurtbox shifts upward 1-21f (startup + active) as Bison tucks his knees in; puts airborne opponents into limited juggle state; cannot be performed after Perfect Parry or after connecting on a counter like JP's Amnesia or Marisa's charged SA1"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "[2]8K~P",
+          "startup": "18+16",
+          "total": "{{{total}}}",
+          "hitAdv": "KD +35(+43)",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span><span style=\"color: #30D5B8;\">'''(+9)'''</span>",
+          "notes": "Can be steered left/right; cannot hit cross-up (but will turn around if Punch is input behind the opponent); puts opponent into limited juggle state; gives good advantage on block; final landing recovery frame is in a crouching state; extends a wide full-body hurtbox forward on frame 9~ and a forward/downward hurtbox on the arms while active (easy to anti-air)"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "[2]8K~P",
+          "startup": "18+16",
+          "total": "{{{total}}}",
+          "hitAdv": "KD +52(+58)",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+21(+27)'''</span>",
+          "notes": "Detonates Psycho Mine on hit/block (does not trigger on Perfect Parry); can be steered left/right; cannot hit cross-up (but will turn around if Punch is input behind the opponent); gives great advantage on block or a juggle on hit (follow-ups possible in the corner); Bison is in a crouching state during landing recovery; extends a wide full-body hurtbox forward on frame 9~ and a forward/downward hurtbox on the arms while active (easy to anti-air)"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "[4]6HP",
+          "startup": "24",
+          "total": "73",
+          "hitAdv": "KD +14(+39)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-23'''</span><span style=\"color: #32CD32;\">(+2)</span>",
+          "notes": "45f charge time (charge lasts 8f after releasing back direction, and must be holding forward when HP is input); 1-hit projectile clash hitbox on frames 24-49"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "[4]6HP",
+          "startup": "24",
+          "total": "73",
+          "hitAdv": "KD +46(+51)",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "notes": "45f charge time (charge lasts 8f after releasing back direction, and must be holding forward when HP is input); strike hitbox surrounded by a 1-hit projectile clash hitbox on frames 24-49; detonates Psycho Mine on hit/block (does not trigger on Perfect Parry); puts opponent into limited juggle state, allowing a follow-up juggle (SA1 midscreen, 214LP/SA3 corner); KD advantage depends on spacing (+46 close range, +51 most mid/far ranges); useful pressure tool after Backfist Combo due to its block advantage, but is susceptible to Perfect Parry; when Perfect Parried, Bison will usually be airborne as the opponent punishes"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "[4]6LP",
+          "startup": "14",
+          "total": "53",
+          "hitAdv": "KD +24(+39)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-20(-5)'''</span>",
+          "notes": "45f charge time (charge lasts 8f after releasing back direction, and must be holding forward when LP is input); 1-hit projectile clash hitbox on frames 14-29"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "[4]6LP",
+          "startup": "14",
+          "total": "53",
+          "hitAdv": "KD +39(+42)",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+6'''</span>",
+          "notes": "45f charge time (charge lasts 8f after releasing back direction, and must be holding forward when LP is input); strike hitbox surrounded by a 1-hit projectile clash hitbox on frames 14-29; detonates Psycho Mine on hit/block (does not trigger on Perfect Parry); puts opponent into limited juggle state (cancel into SA3 connects before Psycho Mine explodes); KD advantage depends on spacing (+41 close range, +42 most mid ranges, +39 on last active frame); useful pressure tool after Backfist Combo due to its block advantage, but is susceptible to Perfect Parry; when Perfect Parried, Bison will usually be airborne as the opponent punishes"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "[4]6MP",
+          "startup": "20",
+          "total": "59",
+          "hitAdv": "KD +24(+39)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-20(-5)'''</span>",
+          "notes": "45f charge time (charge lasts 8f after releasing back direction, and must be holding forward when MP is input); 1-hit projectile clash hitbox on frames 20-35"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "[4]6MP",
+          "startup": "20",
+          "total": "59",
+          "hitAdv": "KD +39(+42)",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+6'''</span>",
+          "notes": "45f charge time (charge lasts 8f after releasing back direction, and must be holding forward when MP is input); strike hitbox surrounded by a 1-hit projectile clash hitbox on frames 20-35; detonates Psycho Mine on hit/block (does not trigger on Perfect Parry); puts opponent into limited juggle state (cancel into SA3 connects before Psycho Mine explodes); KD advantage depends on spacing (+41 close range, +42 most mid ranges, +39 on last active frame); useful pressure tool after Backfist Combo due to its block advantage, but is susceptible to Perfect Parry; when Perfect Parried, Bison will usually be airborne as the opponent punishes"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "[4]6PP",
+          "startup": "16",
+          "total": "51",
+          "hitAdv": "KD +35(+37)",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3(-1)</span>",
+          "notes": "45f charge time (charge lasts 8f after releasing back direction, and must be holding forward when PP is input); cancel into SA2 does not combo"
+        }
+      },
+      {
+        "title": {
+          "chara": "M.Bison",
+          "input": "[4]6PP",
+          "startup": "16",
+          "total": "51",
+          "hitAdv": "KD +82(+83)",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+10'''</span>",
+          "notes": "45f charge time (charge lasts 8f after releasing back direction, and must be holding forward when PP is input); strike hitbox (no projectile clash since Bison has full projectile invuln); detonates Psycho Mine on hit/block (does not trigger on Perfect Parry); launches opponent high into a limited juggle state, followed by an OTG bounce; when juggling late on these OTG bounce frames, an extra 10% Immediate Scaling is applied to the follow-ups (but an earlier juggle has no extra scaling); useful pressure tool after Backfist Combo due to its block advantage, but is susceptible to Perfect Parry; when Perfect Parried, Bison will usually be airborne as the opponent punishes"
+        }
+      }
+    ]
+  }
+}

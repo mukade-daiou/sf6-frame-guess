@@ -1,0 +1,52 @@
+# 未解決46キーの調査結果
+
+SuperCombo Wiki contributors; RyoSogawa/sf6-sensei / CC-BY-SA-4.0。原典レコードを調査し、抽出・分類を追加。
+
+| キャラ  | 入力キー           | 分類                    | 結果                       | 原典                                                                       |
+| ------- | ------------------ | ----------------------- | -------------------------- | -------------------------------------------------------------------------- |
+| arjun   | normal:2:K:H       | exact_duplicate         | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Arjun/Frame_data)   |
+| blanka  | special:[2]8:K:H   | super_install           | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data)  |
+| blanka  | special:[2]8:K:OD  | super_install           | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data)  |
+| blanka  | special:[2]8:K:L   | super_install           | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data)  |
+| blanka  | special:[2]8:K:M   | super_install           | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data)  |
+| blanka  | special:[4]6:P:H   | super_install           | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data)  |
+| blanka  | special:[4]6:P:L   | super_install           | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data)  |
+| blanka  | special:[4]6:P:M   | super_install           | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data)  |
+| blanka  | special:[4]6:P:OD  | super_install           | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data)  |
+| blanka  | special:63214:K:H  | super_install           | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data)  |
+| blanka  | special:63214:K:OD | super_install           | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data)  |
+| blanka  | special:63214:K:L  | super_install           | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data)  |
+| blanka  | special:63214:K:M  | super_install           | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data)  |
+| cviper  | special:214:K:none | hold_level_not_resolved | unresolved                 | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data) |
+| cviper  | special:214:K:OD   | hold_level_not_resolved | unresolved                 | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data) |
+| dee_jay | special:22:P:OD    | super_gauge_condition   | unresolved                 | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Dee_Jay/Frame_data) |
+| jamie   | special:236:P:H    | drink_level             | no_confirmed_initial_state | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data)   |
+| jamie   | special:236:P:L    | drink_level             | no_confirmed_initial_state | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data)   |
+| jamie   | special:236:P:M    | drink_level             | no_confirmed_initial_state | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data)   |
+| jamie   | special:236:P:OD   | drink_level             | no_confirmed_initial_state | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data)   |
+| jamie   | normal:5:P:L       | drink_level             | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data)   |
+| juri    | special:236:K:H    | fuha_stock              | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Juri/Frame_data)    |
+| m_bison | special:214:P:H    | installed_mine          | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data) |
+| m_bison | special:214:P:L    | installed_mine          | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data) |
+| m_bison | special:214:P:M    | installed_mine          | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data) |
+| m_bison | special:214:P:OD   | installed_mine          | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data) |
+| m_bison | special:[4]6:P:H   | installed_mine          | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data) |
+| m_bison | special:[4]6:P:L   | installed_mine          | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data) |
+| m_bison | special:[4]6:P:M   | installed_mine          | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data) |
+| m_bison | special:[4]6:P:OD  | installed_mine          | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data) |
+| mai     | special:214:P:H    | flame_stock             | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data)     |
+| mai     | special:214:P:L    | flame_stock             | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data)     |
+| mai     | special:214:P:M    | flame_stock             | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data)     |
+| mai     | special:214:P:OD   | flame_stock             | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data)     |
+| mai     | special:236:K:H    | flame_stock             | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data)     |
+| mai     | special:236:P:H    | flame_stock             | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data)     |
+| mai     | special:236:K:OD   | flame_stock             | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data)     |
+| mai     | special:236:K:L    | flame_stock             | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data)     |
+| mai     | special:236:P:L    | flame_stock             | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data)     |
+| mai     | special:236:K:M    | flame_stock             | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data)     |
+| mai     | special:236:P:M    | flame_stock             | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data)     |
+| mai     | special:236:P:OD   | flame_stock             | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data)     |
+| mai     | special:623:K:H    | flame_stock             | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data)     |
+| mai     | special:623:K:OD   | flame_stock             | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data)     |
+| mai     | special:623:K:L    | flame_stock             | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data)     |
+| mai     | special:623:K:M    | flame_stock             | adopted_unique_base        | [source](https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data)     |

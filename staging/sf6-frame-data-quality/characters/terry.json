@@ -1,0 +1,1744 @@
+{
+  "id": "terry",
+  "nameJa": "テリー",
+  "nameEn": "Terry",
+  "gameVersion": "UNVERIFIED",
+  "source": {
+    "url": "https://wiki.supercombo.gg/w/Street_Fighter_6",
+    "retrievedAt": "2026-11-01T00:01:59.250Z",
+    "gameVersion": "UNVERIFIED",
+    "kind": "community",
+    "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+    "license": "CC-BY-SA-4.0",
+    "verification": "unverified"
+  },
+  "coverage": {
+    "normal": {
+      "status": "partial",
+      "verification": "unverified"
+    },
+    "special": {
+      "status": "partial",
+      "verification": "unverified"
+    }
+  },
+  "moves": [
+    {
+      "id": "terry__normal_2_K_H",
+      "name": "しゃがみ強K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "36",
+          "numeric": 36,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-11",
+          "numeric": -11
+        }
+      },
+      "notes": [
+        "upstreamInput: 2HK",
+        "upstreamName: Sliding Kick",
+        "upstreamNotes: Good hitbox priority for counterpoking, but large extended hurtbox on whiff; can situationally anti-air some airborne moves at longer ranges; has juggle potential",
+        "upstreamActive: 3",
+        "upstreamRecovery: 24",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +40 as D; original onHit=40; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Terry%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "terry__normal_2_K_L",
+      "name": "しゃがみ弱K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "17",
+          "numeric": 17,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        }
+      },
+      "notes": [
+        "upstreamInput: 2LK",
+        "upstreamName: Crouching Light Kick",
+        "upstreamNotes: Chains into 5LP/2LP/2LK; good range, hitbox priority, and low pushback for a 2LK make it a great combo/blockstring starter or Drive Rush starter that can link into 2MP/5MP on hit",
+        "upstreamActive: 2",
+        "upstreamRecovery: 11"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "terry__normal_2_K_M",
+      "name": "しゃがみ中K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "29",
+          "numeric": 29,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        }
+      },
+      "notes": [
+        "upstreamInput: 2MK",
+        "upstreamName: Crouching Medium Kick",
+        "upstreamNotes: Very long range low poke with a launching TC extension; DR cancel is delayed until after active frames; moves Terry forward during cancelable frames (makes 2MK~2HK more consistent, keeps Terry closer for Crack Shoot burnout pressure, but makes Power Wave cancels more unsafe)",
+        "upstreamActive: 3",
+        "upstreamRecovery: 19"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "terry__normal_2_P_H",
+      "name": "しゃがみ強P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "35",
+          "numeric": 35,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
+        }
+      },
+      "notes": [
+        "upstreamInput: 2HP",
+        "upstreamName: Crouching Heavy Punch",
+        "upstreamNotes: Forces stand; good anti-air on frames 10-13 but cannot hit cross-up; very short horizontal range; only first 2 active frames are cancelable; if the attack connects on the first 2 active frames, it has 2 fewer active and recovery frames (meaty timing can be up to 2f worse on hit/block if 3rd active frame connects); active frames 4-6 whiff on crouching opponents unless they extend a vertical hurtbox; delaying the cancel into 236PP can grant better frame advantage for combo extensions",
+        "upstreamActive: 6(4)",
+        "upstreamRecovery: 22"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "terry__normal_2_P_L",
+      "name": "しゃがみ弱P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "4",
+          "numeric": 4
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        }
+      },
+      "notes": [
+        "upstreamInput: 2LP",
+        "upstreamName: Crouching Light Punch",
+        "upstreamNotes: Chains into 5LP/2LP/2LK; shortest range of Terry's light normals, but naturally combos into 236LP, 214MP, and 236LK; topmost hurtbox on frames 1-6 is vulnerable only to aerial strikes (preventing its use as an anti-air)",
+        "upstreamActive: 3",
+        "upstreamRecovery: 8"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "terry__normal_2_P_M",
+      "name": "しゃがみ中P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "22",
+          "numeric": 22,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+5",
+          "numeric": 5
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        }
+      },
+      "notes": [
+        "upstreamInput: 2MP",
+        "upstreamName: Crouching Medium Punch",
+        "upstreamNotes: 2f extra recovery on whiff; 1f extra recovery on block; great poke, counterpoke, meaty, and combo tool that can be up to +3 on block; topmost hurtbox on frames 1-9 is vulnerable only to aerial strikes (preventing its use as an anti-air)",
+        "upstreamActive: 4",
+        "upstreamRecovery: 13"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "terry__normal_5_K_H",
+      "name": "立ち強K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "36",
+          "numeric": 36,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
+        }
+      },
+      "notes": [
+        "upstreamInput: 5HK",
+        "upstreamName: Standing Heavy Kick",
+        "upstreamNotes: Solid poke for chipping the opponent's Drive gauge with its good range and hitbox priority; Punish Counter puts grounded opponents into a free juggle crumple state (+18 before opponent is knocked down); Punish Counter puts airborne opponents into limited juggle state; extends a hurtbox 1f before active that is vulnerable to projectiles; decent anti-air on frames 14-15 (strict timing to use effectively)",
+        "upstreamActive: 4",
+        "upstreamRecovery: 21"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "terry__normal_5_K_L",
+      "name": "立ち弱K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "18",
+          "numeric": 18,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        }
+      },
+      "notes": [
+        "upstreamInput: 5LK",
+        "upstreamName: Standing Light Kick",
+        "upstreamNotes: Terry's longest range light normal for 5f punishes (but below average for a 5LK); useful in LK Power Charge loops when spaced; DR cancel is delayed until after 1st recovery frame",
+        "upstreamActive: 2",
+        "upstreamRecovery: 12"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "terry__normal_5_K_M",
+      "name": "立ち中K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "29",
+          "numeric": 29,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+5",
+          "numeric": 5
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        }
+      },
+      "notes": [
+        "upstreamInput: 5MK",
+        "upstreamName: Standing Medium Kick",
+        "upstreamNotes: Terry's main mid-range poke that can also link to 5LK at closer ranges; can easily link to SA1 on Counter-hit; front leg hurtbox is raised on frames 3-20 making it strong against low pokes",
+        "upstreamActive: 3",
+        "upstreamRecovery: 18"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "terry__normal_5_P_H",
+      "name": "立ち強P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "30",
+          "numeric": 30,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        }
+      },
+      "notes": [
+        "upstreamInput: 5HP",
+        "upstreamName: Standing Heavy Punch",
+        "upstreamNotes: 2 hits; 2f less recovery on block; both hits are cancelable, making it easy to hitconfirm; 1st hit has more hitstun, allowing combos into 236HK; Counter-hit/Punish Counter advantage carries through both hits; short range but good hitbox priority for counterpoking; 1st hit has much less range (only 2nd hit will connect as a ranged poke); when used out of Drive Rush on block, Terry is left slightly out of throw range but can microwalk + throw to beat 4f light normals",
+        "upstreamActive: 1,3",
+        "upstreamRecovery: 18"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "terry__normal_5_P_L",
+      "name": "立ち弱P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "4",
+          "numeric": 4
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "13",
+          "numeric": 13,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        }
+      },
+      "notes": [
+        "upstreamInput: 5LP",
+        "upstreamName: Standing Light Punch",
+        "upstreamNotes: Chains into 5LP/2LP/2LK; faster chain timing than 2LP (better vs. DI); more range than 2LP, but less hitstun (cannot combo naturally into 236LP, 214MP, or 236LK)",
+        "upstreamActive: 3",
+        "upstreamRecovery: 7"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "terry__normal_5_P_M",
+      "name": "立ち中P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "25",
+          "numeric": 25,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: 5MP",
+        "upstreamName: Standing Medium Punch",
+        "upstreamNotes: Moves Terry slightly forward; cancelable into 3 different Target Combo routes; good against opponents in Burnout due to its low pushback",
+        "upstreamActive: 3",
+        "upstreamRecovery: 16"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "terry__special_214_K_H",
+      "name": "HK Crack Shoot",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "23",
+          "numeric": 23
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "52",
+          "numeric": 52,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+43",
+          "numeric": 43
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        }
+      },
+      "notes": [
+        "upstreamInput: 214HK",
+        "upstreamName: HK Crack Shoot",
+        "upstreamNotes: 2 hits vs. grounded, up to 3 hits vs. airborne; first 7 active frames can only hit airborne opponents (functionally 30f startup); cannot hit cross-up; puts airborne opponent into limited juggle state; kicking leg is anti-air invuln on frames 28-30; can be spaced out to hit once with 2f better advantage; technically has 4 hits, but up to 3 can land at once; damage is highly variable depending on which hits connect (last hit does most damage, but landing all 3 airborne hits allows strong juggle extensions); can hop over many grounded attacks (even some standing); can be used for a sideswitch mid-combo or a corpse hop on downed opponents; strong vs. Burnout, dealing chip while staying close range with frame advantage (but too slow to cancel into for Burnout loops); last hit is lower to the ground than other versions and can beat moves that low profile other versions",
+        "upstreamActive: 3,3,2,3",
+        "upstreamRecovery: 1",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "terry__special_214_K_L",
+      "name": "LK Crack Shoot",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "16",
+          "numeric": 16
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "37",
+          "numeric": 37,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: 214LK",
+        "upstreamName: LK Crack Shoot",
+        "upstreamNotes: First 2 active frames can only hit airborne opponents (functionally 18f startup); cannot hit cross-up; causes spike knockdown vs. airborne opponents; causes Hard Knockdown on Punish Counter (prevents follow-up links); can hop over many grounded attacks (especially crouching); can be used for a sideswitch mid-combo or a corpse hop on downed opponents; very strong vs. Burnout, dealing chip while staying close range with frame advantage",
+        "upstreamActive: 4",
+        "upstreamRecovery: 4"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "terry__special_214_K_M",
+      "name": "MK Crack Shoot",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "17",
+          "numeric": 17
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "41",
+          "numeric": 41,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: 214MK",
+        "upstreamName: MK Crack Shoot",
+        "upstreamNotes: 2 hits vs. airborne, 1 hit vs. grounded (different damage values accordingly); first 5 active frames can only hit airborne opponents (functionally 22f startup); cannot hit cross-up; puts airborne opponents into limited juggle state; causes Hard Knockdown on Counter-hit/Punish Counter (prevents follow-up links); can hop over many grounded attacks (even some standing); can be used for a sideswitch mid-combo or a corpse hop on downed opponents; very strong vs. Burnout, dealing chip while staying close range with frame advantage",
+        "upstreamActive: 4,3",
+        "upstreamRecovery: 2"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "terry__special_214_K_OD",
+      "name": "OD Crack Shoot",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "20",
+          "numeric": 20
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "42",
+          "numeric": 42,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+29",
+          "numeric": 29
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        }
+      },
+      "notes": [
+        "upstreamInput: 214KK",
+        "upstreamName: OD Crack Shoot",
+        "upstreamNotes: Puts airborne opponents into limited juggle OTG state; first active frame does not connect on grounded opponents (functionally 21f startup); first 2 active frames have a good anti-air hitbox; can hop over many grounded attacks (even some standing); very strong vs. Burnout, dealing chip while staying close range with frame advantage (often required to get point blank after 2 reps of meterless Burnout loop)",
+        "upstreamActive: 4",
+        "upstreamRecovery: 2",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "terry__special_214_P_H",
+      "name": "HP Burning Knuckle",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "23",
+          "numeric": 23
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "53",
+          "numeric": 53,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+28",
+          "numeric": 28
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-8",
+          "numeric": -8
+        }
+      },
+      "notes": [
+        "upstreamInput: 214HP",
+        "upstreamName: HP Burning Knuckle",
+        "upstreamNotes: Travels about 80% of the screen; can be spaced to be plus on block from farther ranges (causing a screen shake); good approach tool vs. opponents in Burnout, but no screen shake when +1~4 vs. Burnout; useful approach when following behind Power Wave; Terry raises his hands for a reactable visual cue; only cancelable on active frames 1-5 (cannot cancel on a farther range connect); puts airborne opponents into limited juggle state (can juggle after very late connect)",
+        "upstreamActive: 14",
+        "upstreamRecovery: 17",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "terry__special_214_P_L",
+      "name": "Quick Burn",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "46",
+          "numeric": 46,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-5",
+          "numeric": -5
+        }
+      },
+      "notes": [
+        "upstreamInput: 214LP",
+        "upstreamName: Quick Burn",
+        "upstreamNotes: 2 hits; functionally 22f startup as an overhead; on hit, leaves Terry at close range for a strike/throw/shimmy mixup or can backdash shimmy to become at least +10 vs. throw tech; short range, primarily used in light confirms",
+        "upstreamActive: 2(10)2",
+        "upstreamRecovery: 23"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "terry__special_214_P_M",
+      "name": "MP Burning Knuckle",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "42",
+          "numeric": 42,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+30",
+          "numeric": 30
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        }
+      },
+      "notes": [
+        "upstreamInput: 214MP",
+        "upstreamName: MP Burning Knuckle",
+        "upstreamNotes: Travels about 50% of the screen; can be spaced to be plus on block from farther ranges (causing a screen shake); good approach tool vs. opponents in Burnout, but no screen shake when +1~4 vs. Burnout; only cancelable on 1st active frame (cannot cancel on a farther range connect); grants a safe jump on hit if final active frame connects; puts airborne opponents into limited juggle state (can juggle after very late connect); topmost hitbox whiffs on standard-sized crouching opponents making it easier to space in neutral vs. crouch block",
+        "upstreamActive: 9",
+        "upstreamRecovery: 20",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "terry__special_236_K_H",
+      "name": "HK Power Charge",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "25",
+          "numeric": 25
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "60",
+          "numeric": 60,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+37",
+          "numeric": 37
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-16",
+          "numeric": -16
+        }
+      },
+      "notes": [
+        "upstreamInput: 236HK",
+        "upstreamName: HK Power Charge",
+        "upstreamNotes: Farthest travel distance; cancelable on frames 26-45 into special moves (except Power Charge) on hit only; delaying the special cancel allows different conversions or more optimal damage; puts opponent into limited juggle state (airborne opponents are not launched as high, resulting in more limited follow-ups); only combos naturally from the first hit of 5HP",
+        "upstreamActive: 9",
+        "upstreamRecovery: 27",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "terry__special_236_K_L",
+      "name": "LK Power Charge",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "42",
+          "numeric": 42,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-9",
+          "numeric": -9
+        }
+      },
+      "notes": [
+        "upstreamInput: 236LK",
+        "upstreamName: LK Power Charge",
+        "upstreamNotes: Short travel distance; comboable from lights except 5LP; keeps opponent standing for strike/throw mixup on hit; can be spaced out to allow a follow-up combo on hit; puts airborne opponents into limited juggle state",
+        "upstreamActive: 5",
+        "upstreamRecovery: 24"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "terry__special_236_K_M",
+      "name": "MK Power Charge",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "20",
+          "numeric": 20
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "48",
+          "numeric": 48,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+42",
+          "numeric": 42
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-11",
+          "numeric": -11
+        }
+      },
+      "notes": [
+        "upstreamInput: 236MK",
+        "upstreamName: MK Power Charge",
+        "upstreamNotes: Medium travel distance; comboable from 2MP or heavy normals; puts opponent into limited juggle state (airborne opponents are launched higher than the HK version); can juggle SA1 anywhere on screen; final 4 recovery frames are cancelable into SA2 on hit, allowing a juggle anywhere on screen; sets up a safe jump setup on a close range grounded hit",
+        "upstreamActive: 6",
+        "upstreamRecovery: 23",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "terry__special_236_K_OD",
+      "name": "OD Power Charge",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "19",
+          "numeric": 19
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "50",
+          "numeric": 50,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+55",
+          "numeric": 55
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-14",
+          "numeric": -14
+        }
+      },
+      "notes": [
+        "upstreamInput: 236KK",
+        "upstreamName: OD Power Charge",
+        "upstreamNotes: Causes Wall Bounce on hit; cancelable on frames 20-39 into special moves (except Power Charge) on hit only (useful for midscreen positioning or keeping opponent cornered after wall bounce); if used twice in a combo, 2nd hit will cause a quick wall splat that drops straight to the ground; KD advantage varies based on distance from wall (farther away gives higher advantage); wall bounce may not come out after a delayed cancel into 214K (can scroll the screen forward to prevent the opponent from hitting the wall)",
+        "upstreamActive: 8",
+        "upstreamRecovery: 24",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "terry__special_236_P_H",
+      "name": "Round Wave",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "29",
+          "numeric": 29
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "51",
+          "numeric": 51,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+8",
+          "numeric": 8
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "+5",
+          "numeric": 5
+        }
+      },
+      "notes": [
+        "upstreamInput: 236HP",
+        "upstreamName: Round Wave",
+        "upstreamNotes: Stationary 1-hit projectile hitbox that can dissipate fireballs or apply meaty pressure; can be perfect parried like a low strike (screen freeze); puts airborne opponents into limited juggle state; no head hurtbox on frames 24-48 (while leaning over)",
+        "upstreamActive: 9",
+        "upstreamRecovery: 14"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "terry__special_236_P_L",
+      "name": "LP Power Wave",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "49",
+          "numeric": 49,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-9",
+          "numeric": -9
+        }
+      },
+      "notes": [
+        "upstreamInput: 236LP",
+        "upstreamName: LP Power Wave",
+        "upstreamNotes: 1-hit projectile; travels fullscreen, moving slowly along the ground; can pass underneath standard projectiles without clashing; puts airborne opponents into limited juggle state; no head hurtbox on frames 11-41 (while leaning over); extended arm hurtbox on frames 14-37 is projectile invuln",
+        "upstreamActive: -",
+        "upstreamRecovery: 35"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "terry__special_236_P_M",
+      "name": "MP Power Wave",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "16",
+          "numeric": 16
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "48",
+          "numeric": 48,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "0",
+          "numeric": 0
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        }
+      },
+      "notes": [
+        "upstreamInput: 236MP",
+        "upstreamName: MP Power Wave",
+        "upstreamNotes: 1-hit projectile; travels more quickly than LP version but dissipates at ~60% screen distance; causes knockdown on Counter-hit/Punish Counter (KD +33~46); hitbox is at ground level but reaches high enough to clash with standard projectiles; projectile speed starts slow and accelerates each active frame; puts airborne opponents into limited juggle state; no head hurtbox on frames 11-41 (while leaning over); extended arm hurtbox on frames 21-39 is projectile invuln",
+        "upstreamActive: [14]",
+        "upstreamRecovery: 32"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "terry__special_236_P_OD",
+      "name": "OD Power Wave",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "15",
+          "numeric": 15
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "43",
+          "numeric": 43,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        }
+      },
+      "notes": [
+        "upstreamInput: 236PP",
+        "upstreamName: OD Power Wave",
+        "upstreamNotes: 2-hit OD projectile; travels fullscreen, moving slowly along the ground; hitbox is at ground level but reaches high enough to clash with standard OD projectiles; acts as a shield allowing Terry to Drive Rush for pressure; no head hurtbox on frames 13-36 (while leaning over); extended arm hurtbox on frames 21-25 is projectile invuln; Counter-hit/Punish Counter advantage carries through both hits; puts airborne opponents into limited juggle state (can pop opponents up twice at certain juggle spacings)",
+        "upstreamActive: -",
+        "upstreamRecovery: 28"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "terry__special_623_P_H",
+      "name": "HP Rising Tackle",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "68",
+          "numeric": 68,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-36",
+          "numeric": -36
+        }
+      },
+      "notes": [
+        "upstreamInput: 623HP",
+        "upstreamName: HP Rising Tackle",
+        "upstreamNotes: Farthest horizontal range (most consistent for combos, but may whiff under close jumps); cannot hit cross-up; only 1st active frame is cancelable (cancel may be impossible in combos from too far away); 3rd hit whiffs on crouch block (reduced chip and Drive damage); if Perfect Parried, opponent must crouch to avoid 2nd hit; puts opponent into limited juggle state",
+        "upstreamActive: 2,4,14",
+        "upstreamRecovery: 27",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +27 as D; original onHit=27; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Terry%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "terry__special_623_P_L",
+      "name": "LP Rising Tackle",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "47",
+          "numeric": 47,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-23",
+          "numeric": -23
+        }
+      },
+      "notes": [
+        "upstreamInput: 623LP",
+        "upstreamName: LP Rising Tackle",
+        "upstreamNotes: Very short horizontal range (hits straight above Terry to anti-air close jumps); cannot hit cross-up; active frames 3-10 do reduced damage; only 1st active frame is cancelable (cancel may be impossible in combos from too far away); puts opponent into limited juggle state (allows follow-up juggles on a high connect)",
+        "upstreamActive: 10",
+        "upstreamRecovery: 21",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +33 as D; original onHit=33; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Terry%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "terry__special_623_P_M",
+      "name": "MP Rising Tackle",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "55",
+          "numeric": 55,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-26",
+          "numeric": -26
+        }
+      },
+      "notes": [
+        "upstreamInput: 623MP",
+        "upstreamName: MP Rising Tackle",
+        "upstreamNotes: Medium horizontal range; cannot hit cross-up; only 1st active frame is cancelable (cancel may be impossible in combos from too far away); if Perfect Parried, opponent must crouch to avoid 2nd hit; puts opponent into limited juggle state",
+        "upstreamActive: 4,6",
+        "upstreamRecovery: 28",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +25 as D; original onHit=25; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Terry%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "terry__special_623_P_OD",
+      "name": "OD Rising Tackle",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "69",
+          "numeric": 69,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-42",
+          "numeric": -42
+        }
+      },
+      "notes": [
+        "upstreamInput: 623PP",
+        "upstreamName: OD Rising Tackle",
+        "upstreamNotes: Horizontal range is between MP/HP versions (good anti-air for mid range jumps, as well as a strong juggle ender); cannot hit cross-up; can miss several hits of damage against high airborne opponent",
+        "upstreamActive: 2,3,2,2,3,3",
+        "upstreamRecovery: 34",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +27 as D; original onHit=27; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Terry%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    }
+  ]
+}

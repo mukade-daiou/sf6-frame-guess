@@ -1,0 +1,674 @@
+{
+  "characterId": "ingrid",
+  "rawMoveCount": 83,
+  "candidateMoveCount": 24,
+  "candidateNormals": 12,
+  "candidateSpecials": 12,
+  "upstreamFetchedAt": "2026-08-19T04:05:24.993Z",
+  "missingNormals": [],
+  "excluded": [
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "214HP (1 Stock)",
+      "name": "Sun Flare (1 Stock)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "214HP (2 Stock)",
+      "name": "Sun Flare (2 Stock))",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "214LP (HOLD OK)",
+      "name": "Sun Flare",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "214PP (1 Stock)",
+      "name": "Sun Flare (1 Stock)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "214PP (2 Stock)",
+      "name": "Sun Flare (2 Stock)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "22PPP",
+      "name": "Sunburst Beam",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236LPMP or 236LPHP",
+      "name": "Sun Shot (L/M)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236MPHP",
+      "name": "Sun Shot (H)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "2KKK",
+      "name": "Vanishing Sun (Down)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "4HP",
+      "name": "Luminous Uppercut 1",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "4HP~HP",
+      "name": "Luminous Uppercut 2",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "4KKK",
+      "name": "Vanishing Sun (Back)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "4MK",
+      "name": "Glowing Touch 1",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "4MK~HP",
+      "name": "Glowing Touch 2",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5MP~MK",
+      "name": "Pretty Heel Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6HP",
+      "name": "Halo Flight",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6KKK",
+      "name": "Vanishing Sun (Forward)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6MP",
+      "name": "Sun Bright",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.214HP (1 Stock)",
+      "name": "Solar Burst (1 Stock)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.214HP (2 Stock)",
+      "name": "Solar Burst (2 Stock)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.214LP",
+      "name": "Solar Burst",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.214MP",
+      "name": "Solar Burst",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.214PP",
+      "name": "Solar Burst",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.214PP (1 Stock)",
+      "name": "Solar Burst (1 Stock)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.214PP (2 Stock)",
+      "name": "Solar Burst (2 Stock)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.HK",
+      "name": "Jumping Heavy Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.HK~j.HK",
+      "name": "Satellite Leap",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.HP",
+      "name": "Jumping Heavy Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.LK",
+      "name": "Jumping Light Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.LP",
+      "name": "Jumping Light Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.MK",
+      "name": "Jumping Medium Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.MP",
+      "name": "Jumping Medium Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "214236HP/HK",
+      "name": "Monoid Super",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "HP or HK",
+      "name": "Monoid Star Thrust",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "HP+HK",
+      "name": "Monoid Beam",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.X",
+      "name": "Monoid Aerial Strike",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "LP or LK",
+      "name": "Monoid Low Dive",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "MP or MK",
+      "name": "Monoid Overhead Hammer",
+      "category": "special"
+    }
+  ],
+  "gameVersion": "UNVERIFIED",
+  "status": "STAGING_ONLY",
+  "review": {
+    "applied": [
+      {
+        "characterId": "ingrid",
+        "input": "2HK",
+        "name": "Orbital Kick",
+        "fingerprint": "8d4c6775356d56d3c15986298956cf872d262a986294475da4909d689137770d",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +30",
+        "evidenceRetrievedAt": "2026-11-05T09:20:26.956Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ingrid%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ingrid",
+        "input": "214MP",
+        "name": "Sun Flare",
+        "fingerprint": "acb34fe685875de7370e922a2cb333b15570a99776cdb0be52595711a31a0068",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +47",
+        "evidenceRetrievedAt": "2026-11-05T09:20:26.956Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ingrid%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ingrid",
+        "input": "214PP",
+        "name": "Sun Flare",
+        "fingerprint": "92258148f17c251eab80617d562c5f65fc2eaaf83b8d8e7ad7b7dfc4cf41f945",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +68",
+        "evidenceRetrievedAt": "2026-11-05T09:20:26.956Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ingrid%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ingrid",
+        "input": "214214K",
+        "name": "Sunburst Blow",
+        "fingerprint": "fc2f1aacced6ca76ce1d7231ebe3ed5c2e5bb37432822d3e43ed9e31b58275b5",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +27",
+        "evidenceRetrievedAt": "2026-11-05T09:20:26.956Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ingrid%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ingrid",
+        "input": "22K",
+        "name": "Sun Veil",
+        "fingerprint": "8d16a5d133bf608cc8fa97cc86c6a2596fd49788ec723cd65257b8cd65388019",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +23",
+        "evidenceRetrievedAt": "2026-11-05T09:20:26.956Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ingrid%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ingrid",
+        "input": "22KK",
+        "name": "Sun Veil",
+        "fingerprint": "e6e2436f0b5b47f2417ed891abe4e6fa2c0383991653edb0e90b39d96a2110e3",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +52",
+        "evidenceRetrievedAt": "2026-11-05T09:20:26.956Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ingrid%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ingrid",
+        "input": "236HK",
+        "name": "Sun Rise",
+        "fingerprint": "49422db29e280b5f06430a245291a84ec9f39a315fd10fc9655c9a3bc4cba5bd",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +28",
+        "evidenceRetrievedAt": "2026-11-05T09:20:26.956Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ingrid%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ingrid",
+        "input": "236LK",
+        "name": "Sun Rise",
+        "fingerprint": "1b5be08a174506f61f951ef009d44d50e7120aff2c1df33e2a4ddfa359ea292a",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +36",
+        "evidenceRetrievedAt": "2026-11-05T09:20:26.956Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ingrid%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ingrid",
+        "input": "236MK",
+        "name": "Sun Rise",
+        "fingerprint": "6b1c1740e8b82470eaa910cdb6fea790b306914dd0d835136ac81506dc147645",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +38",
+        "evidenceRetrievedAt": "2026-11-05T09:20:26.956Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ingrid%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "ingrid",
+        "input": "236KK",
+        "name": "Sun Rise",
+        "fingerprint": "c04a852e61e2b6c25f43024d38c4e4082552f8efdf645e4c2a70893d59f738fa",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +40",
+        "evidenceRetrievedAt": "2026-11-05T09:20:26.956Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ingrid%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      }
+    ],
+    "stale": [],
+    "classifiedExclusions": [
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "214HP (1 Stock)",
+        "name": "Sun Flare (1 Stock)",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "214HP (2 Stock)",
+        "name": "Sun Flare (2 Stock))",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "214LP (HOLD OK)",
+        "name": "Sun Flare",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "214PP (1 Stock)",
+        "name": "Sun Flare (1 Stock)",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "214PP (2 Stock)",
+        "name": "Sun Flare (2 Stock)",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "22PPP",
+        "name": "Sunburst Beam",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236LPMP or 236LPHP",
+        "name": "Sun Shot (L/M)",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236MPHP",
+        "name": "Sun Shot (H)",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "2KKK",
+        "name": "Vanishing Sun (Down)",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "4HP",
+        "name": "Luminous Uppercut 1",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "4HP~HP",
+        "name": "Luminous Uppercut 2",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "4KKK",
+        "name": "Vanishing Sun (Back)",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "4MK",
+        "name": "Glowing Touch 1",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "4MK~HP",
+        "name": "Glowing Touch 2",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5MP~MK",
+        "name": "Pretty Heel Kick",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6HP",
+        "name": "Halo Flight",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6KKK",
+        "name": "Vanishing Sun (Forward)",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6MP",
+        "name": "Sun Bright",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.214HP (1 Stock)",
+        "name": "Solar Burst (1 Stock)",
+        "category": "special",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.214HP (2 Stock)",
+        "name": "Solar Burst (2 Stock)",
+        "category": "special",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.214LP",
+        "name": "Solar Burst",
+        "category": "special",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.214MP",
+        "name": "Solar Burst",
+        "category": "special",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.214PP",
+        "name": "Solar Burst",
+        "category": "special",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.214PP (1 Stock)",
+        "name": "Solar Burst (1 Stock)",
+        "category": "special",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.214PP (2 Stock)",
+        "name": "Solar Burst (2 Stock)",
+        "category": "special",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.HK",
+        "name": "Jumping Heavy Kick",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.HK~j.HK",
+        "name": "Satellite Leap",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.HP",
+        "name": "Jumping Heavy Punch",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.LK",
+        "name": "Jumping Light Kick",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.LP",
+        "name": "Jumping Light Punch",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.MK",
+        "name": "Jumping Medium Kick",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.MP",
+        "name": "Jumping Medium Punch",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "214236HP/HK",
+        "name": "Monoid Super",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "HP or HK",
+        "name": "Monoid Star Thrust",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "HP+HK",
+        "name": "Monoid Beam",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.X",
+        "name": "Monoid Aerial Strike",
+        "category": "special",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "LP or LK",
+        "name": "Monoid Low Dive",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "MP or MK",
+        "name": "Monoid Overhead Hammer",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      }
+    ]
+  }
+}

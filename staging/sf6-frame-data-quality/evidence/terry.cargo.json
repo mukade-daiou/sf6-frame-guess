@@ -1,0 +1,739 @@
+{
+  "url": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Terry%22&limit=500",
+  "retrievedAt": "2026-11-05T09:20:28.511Z",
+  "status": 200,
+  "characterId": "terry",
+  "gameVersion": "UNVERIFIED",
+  "license": "CC-BY-SA-4.0",
+  "attribution": "SuperCombo Wiki contributors",
+  "data": {
+    "cargoquery": [
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "214214P",
+          "startup": "13",
+          "total": "79",
+          "hitAdv": "KD +24",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-27'''</span>",
+          "notes": "1-hit Super-priority projectile hitbox with good anti-air and anti-projectile properties; can follow up with Twin Geyser (3 Drive bars) and Triple Geyser (1 Super bar) on hit only; starter scaling means that follow-ups will be heavily scaled after a reversal or anti-air SA2; can be performed during the last 4 recovery frames of 236MK for a juggle anywhere on screen; can also be input with 21416+MK+HP (cosmetic difference only)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "214214P~PP",
+          "startup": "22",
+          "total": "70",
+          "hitAdv": "KD +55",
+          "blockAdv": "-",
+          "notes": "Follow-up to Power Geyser for 3 Drive bars (on hit only); can also be followed up with SA1, 214MP, Drive Rush juggles, or more in the corner; the damage on non-Super follow-ups is extremely low when starting from raw SA2 due to starter scaling; attempting to input Triple Geyser follow-up without enough meter results in a whiffed attack that leaves Terry at -3 KD Advantage; no invincibility at all (can be hit by lingering moves like Kimberly's spraycan)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "214214P~PP~PP",
+          "startup": "14",
+          "total": "139",
+          "hitAdv": "KD +18",
+          "blockAdv": "-",
+          "notes": "Follow-up to Twin Geyser for 1 extra Super bar; attempting to input without a full Super meter results in a whiffed attack that leaves Terry at -3 KD Advantage"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "214HK",
+          "startup": "23(30)",
+          "total": "52",
+          "hitAdv": "KD +43~45",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "2 hits vs. grounded, up to 3 hits vs. airborne; first 7 active frames can only hit airborne opponents (functionally 30f startup); cannot hit cross-up; puts airborne opponent into limited juggle state; kicking leg is anti-air invuln on frames 28-30; can be spaced out to hit once with 2f better advantage; technically has 4 hits, but up to 3 can land at once; damage is highly variable depending on which hits connect (last hit does most damage, but landing all 3 airborne hits allows strong juggle extensions); can hop over many grounded attacks (even some standing); can be used for a sideswitch mid-combo or a corpse hop on downed opponents; strong vs. Burnout, dealing chip while staying close range with frame advantage (but too slow to cancel into for Burnout loops); last hit is lower to the ground than other versions and can beat moves that low profile other versions"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "214HP",
+          "startup": "23",
+          "total": "53",
+          "hitAdv": "KD +28~41",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span><span style=\"color: #30D5B8;\">'''(+5)'''</span>",
+          "notes": "Travels about 80% of the screen; can be spaced to be plus on block from farther ranges (causing a screen shake); good approach tool vs. opponents in Burnout, but no screen shake when +1~4 vs. Burnout; useful approach when following behind Power Wave; Terry raises his hands for a reactable visual cue; only cancelable on active frames 1-5 (cannot cancel on a farther range connect); puts airborne opponents into limited juggle state (can juggle after very late connect)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "214KK",
+          "startup": "20(21)",
+          "total": "42",
+          "hitAdv": "KD +29",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Puts airborne opponents into limited juggle OTG state; first active frame does not connect on grounded opponents (functionally 21f startup); first 2 active frames have a good anti-air hitbox; can hop over many grounded attacks (even some standing); very strong vs. Burnout, dealing chip while staying close range with frame advantage (often required to get point blank after 2 reps of meterless Burnout loop)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "214LK",
+          "startup": "16(18)",
+          "total": "37",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "First 2 active frames can only hit airborne opponents (functionally 18f startup); cannot hit cross-up; causes spike knockdown vs. airborne opponents; causes Hard Knockdown on Punish Counter (prevents follow-up links); can hop over many grounded attacks (especially crouching); can be used for a sideswitch mid-combo or a corpse hop on downed opponents; very strong vs. Burnout, dealing chip while staying close range with frame advantage"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "214LP",
+          "startup": "10(22)",
+          "total": "46",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+          "notes": "2 hits; functionally 22f startup as an overhead; on hit, leaves Terry at close range for a strike/throw/shimmy mixup or can backdash shimmy to become at least +10 vs. throw tech; short range, primarily used in light confirms"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "214LPMP or 214LPHP",
+          "startup": "10(22)",
+          "total": "46",
+          "hitAdv": "KD +33",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+          "notes": "2 hits that transition to a 3rd attack on hit only; functionally 22f startup as an overhead; gives solid damage and oki from light normals"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "214MK",
+          "startup": "17(22)",
+          "total": "41",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "2 hits vs. airborne, 1 hit vs. grounded (different damage values accordingly); first 5 active frames can only hit airborne opponents (functionally 22f startup); cannot hit cross-up; puts airborne opponents into limited juggle state; causes Hard Knockdown on Counter-hit/Punish Counter (prevents follow-up links); can hop over many grounded attacks (even some standing); can be used for a sideswitch mid-combo or a corpse hop on downed opponents; very strong vs. Burnout, dealing chip while staying close range with frame advantage"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "214MP",
+          "startup": "14",
+          "total": "42",
+          "hitAdv": "KD +30~42",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span><span style=\"color: #32CD32;\">(+2)</span>",
+          "notes": "Travels about 50% of the screen; can be spaced to be plus on block from farther ranges (causing a screen shake); good approach tool vs. opponents in Burnout, but no screen shake when +1~4 vs. Burnout; only cancelable on 1st active frame (cannot cancel on a farther range connect); grants a safe jump on hit if final active frame connects; puts airborne opponents into limited juggle state (can juggle after very late connect); topmost hitbox whiffs on standard-sized crouching opponents making it easier to space in neutral vs. crouch block"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "214MPHP",
+          "startup": "19",
+          "total": "49",
+          "hitAdv": "KD +60~73",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span><span style=\"color: #30D5B8;\">'''(+5)'''</span>",
+          "notes": "Punish Counter puts opponent into tumbling OTG state (wall splat if opponent reaches the corner); only cancelable on active frames 1-7; can be spaced to be plus on block from farther ranges (causing a screen shake); good approach tool vs. opponents in Burnout, but no screen shake when +1~4 vs. Burnout; puts airborne opponents into limited juggle state (can juggle after very late connect)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "236236K",
+          "startup": "7",
+          "total": "78(52)",
+          "hitAdv": "KD +22",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-26'''</span>",
+          "notes": "Incurs a fixed 45f recovery on block (advantage is not affected by meaty timing); transitions to projectile follow-up on hit only; fast and long range, making it great for combos and punishes; puts opponent into limited juggle state and can combo into another SA1 if juggled high enough; if first hit trades, deals 500 damage and puts the opponent into a free juggle crumple state (may be able to follow up with moves like 214HP, Dash/DR normals, or another SA1)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "236236P",
+          "startup": "8(2)",
+          "total": "91",
+          "hitAdv": "HKD +22<br>(KD +29~31)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-50(-53)'''</span>",
+          "notes": "Only the first 3 active frames cause cinematic hit; damage distribution on non-cinematic hit is 350(x6-7),550 with no HKD and less KD advantage; cinematic time regenerates ~2.1 Drive bars for Terry; faster 2f startup when canceled from Rising Tackle, Quick Burn, or Burning Knuckle; final hit whiffs on crouch block (reduced chip and Drive damage)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "236236P",
+          "startup": "8(2)",
+          "total": "91",
+          "hitAdv": "HKD +37<br>(KD +29~31)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-50(-53)'''</span>",
+          "notes": "Available at 25% HP or below; only the first 3 active frames cause cinematic hit; damage distribution on non-cinematic hit is 350(x6-7),1050 with no HKD and less KD advantage; cinematic time regenerates ~2.1 Drive bars for Terry; faster 2f startup when canceled from Rising Tackle, Quick Burn, or Burning Knuckle; final hit whiffs on crouch block (reduced chip and Drive damage)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "236HK",
+          "startup": "25",
+          "total": "60",
+          "hitAdv": "KD +37~45",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-16(-8)'''</span>",
+          "notes": "Farthest travel distance; cancelable on frames 26-45 into special moves (except Power Charge) on hit only; delaying the special cancel allows different conversions or more optimal damage; puts opponent into limited juggle state (airborne opponents are not launched as high, resulting in more limited follow-ups); only combos naturally from the first hit of 5HP"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "236HP",
+          "startup": "29",
+          "total": "51",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+8'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "notes": "Stationary 1-hit projectile hitbox that can dissipate fireballs or apply meaty pressure; can be perfect parried like a low strike (screen freeze); puts airborne opponents into limited juggle state; no head hurtbox on frames 24-48 (while leaning over)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "236KK",
+          "startup": "19",
+          "total": "50",
+          "hitAdv": "KD +55~76 Wall Bounce",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-14(-7)'''</span>",
+          "notes": "Causes Wall Bounce on hit; cancelable on frames 20-39 into special moves (except Power Charge) on hit only (useful for midscreen positioning or keeping opponent cornered after wall bounce); if used twice in a combo, 2nd hit will cause a quick wall splat that drops straight to the ground; KD advantage varies based on distance from wall (farther away gives higher advantage); wall bounce may not come out after a delayed cancel into 214K (can scroll the screen forward to prevent the opponent from hitting the wall)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "236LK",
+          "startup": "14",
+          "total": "42",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span><span style=\"color: #30D5B8;\">'''(+7)'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-9(-5)'''</span>",
+          "notes": "Short travel distance; comboable from lights except 5LP; keeps opponent standing for strike/throw mixup on hit; can be spaced out to allow a follow-up combo on hit; puts airborne opponents into limited juggle state"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "236LP",
+          "startup": "14",
+          "total": "49",
+          "hitAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-9'''</span>",
+          "notes": "1-hit projectile; travels fullscreen, moving slowly along the ground; can pass underneath standard projectiles without clashing; puts airborne opponents into limited juggle state; no head hurtbox on frames 11-41 (while leaning over); extended arm hurtbox on frames 14-37 is projectile invuln"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "236MK",
+          "startup": "20",
+          "total": "48",
+          "hitAdv": "KD +42~47",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-11(-6)'''</span>",
+          "notes": "Medium travel distance; comboable from 2MP or heavy normals; puts opponent into limited juggle state (airborne opponents are launched higher than the HK version); can juggle SA1 anywhere on screen; final 4 recovery frames are cancelable into SA2 on hit, allowing a juggle anywhere on screen; sets up a safe jump setup on a close range grounded hit"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "236MP",
+          "startup": "16",
+          "total": "48",
+          "hitAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "1-hit projectile; travels more quickly than LP version but dissipates at ~60% screen distance; causes knockdown on Counter-hit/Punish Counter (KD +33~46); hitbox is at ground level but reaches high enough to clash with standard projectiles; projectile speed starts slow and accelerates each active frame; puts airborne opponents into limited juggle state; no head hurtbox on frames 11-41 (while leaning over); extended arm hurtbox on frames 21-39 is projectile invuln"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "236PP",
+          "startup": "15",
+          "total": "43",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "2-hit OD projectile; travels fullscreen, moving slowly along the ground; hitbox is at ground level but reaches high enough to clash with standard OD projectiles; acts as a shield allowing Terry to Drive Rush for pressure; no head hurtbox on frames 13-36 (while leaning over); extended arm hurtbox on frames 21-25 is projectile invuln; Counter-hit/Punish Counter advantage carries through both hits; puts airborne opponents into limited juggle state (can pop opponents up twice at certain juggle spacings)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "2HK",
+          "startup": "10",
+          "total": "36",
+          "hitAdv": "KD +40",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-11'''</span>",
+          "notes": "Good hitbox priority for counterpoking, but large extended hurtbox on whiff; can situationally anti-air some airborne moves at longer ranges; has juggle potential"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "2HP",
+          "startup": "8",
+          "total": "35(31)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "Forces stand; good anti-air on frames 10-13 but cannot hit cross-up; very short horizontal range; only first 2 active frames are cancelable; if the attack connects on the first 2 active frames, it has 2 fewer active and recovery frames (meaty timing can be up to 2f worse on hit/block if 3rd active frame connects); active frames 4-6 whiff on crouching opponents unless they extend a vertical hurtbox; delaying the cancel into 236PP can grant better frame advantage for combo extensions"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "2LK",
+          "startup": "5",
+          "total": "17",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Chains into 5LP/2LP/2LK; good range, hitbox priority, and low pushback for a 2LK make it a great combo/blockstring starter or Drive Rush starter that can link into 2MP/5MP on hit"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "2LP",
+          "startup": "4",
+          "total": "14",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Chains into 5LP/2LP/2LK; shortest range of Terry's light normals, but naturally combos into 236LP, 214MP, and 236LK; topmost hurtbox on frames 1-6 is vulnerable only to aerial strikes (preventing its use as an anti-air)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "2MK",
+          "startup": "8",
+          "total": "29",
+          "hitAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Very long range low poke with a launching TC extension; DR cancel is delayed until after active frames; moves Terry forward during cancelable frames (makes 2MK~2HK more consistent, keeps Terry closer for Crack Shoot burnout pressure, but makes Power Wave cancels more unsafe)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "2MK~2HK",
+          "startup": "13",
+          "total": "42",
+          "hitAdv": "KD +35",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-16'''</span>",
+          "notes": "Puts opponent into limited juggle state; () refers to scaled damage from 2MK combo starter; can always be interrupted by an invincible reversal if DR canceled on block; DR/214LP cancel is delayed until after 2nd recovery frame; special/DI cancel (except 214LP) is delayed until after 3rd recovery frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "2MP",
+          "startup": "6",
+          "total": "22(23/24)",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "2f extra recovery on whiff; 1f extra recovery on block; great poke, counterpoke, meaty, and combo tool that can be up to +3 on block; topmost hurtbox on frames 1-9 is vulnerable only to aerial strikes (preventing its use as an anti-air)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "4LPLK",
+          "startup": "5",
+          "total": "30",
+          "hitAdv": "KD +18",
+          "blockAdv": "-",
+          "notes": "Side switches; cannot walk or dash for a corner throw loops; can use immediate DR~2MP for corner oki, but this is susceptible to invincible reversals on reaction; midscreen, chasing with Drive Rush gives very weak oki; a successful Throw Escape builds 0.5 Drive bars for the defender; Throw Escape is awarded to a random player if input simultaneously"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "4PPPKKK",
+          "startup": "499 (total)",
+          "total": "499",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"We gonna fight or what? I don't have all day. *whistle* Jeez.\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "5HK",
+          "startup": "12",
+          "total": "36",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "Solid poke for chipping the opponent's Drive gauge with its good range and hitbox priority; Punish Counter puts grounded opponents into a free juggle crumple state (+18 before opponent is knocked down); Punish Counter puts airborne opponents into limited juggle state; extends a hurtbox 1f before active that is vulnerable to projectiles; decent anti-air on frames 14-15 (strict timing to use effectively)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "5HP",
+          "startup": "9",
+          "total": "30(28)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "notes": "2 hits; 2f less recovery on block; both hits are cancelable, making it easy to hitconfirm; 1st hit has more hitstun, allowing combos into 236HK; Counter-hit/Punish Counter advantage carries through both hits; short range but good hitbox priority for counterpoking; 1st hit has much less range (only 2nd hit will connect as a ranged poke); when used out of Drive Rush on block, Terry is left slightly out of throw range but can microwalk + throw to beat 4f light normals"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "5LK",
+          "startup": "5",
+          "total": "18",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Terry's longest range light normal for 5f punishes (but below average for a 5LK); useful in LK Power Charge loops when spaced; DR cancel is delayed until after 1st recovery frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "5LP",
+          "startup": "4",
+          "total": "13",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Chains into 5LP/2LP/2LK; faster chain timing than 2LP (better vs. DI); more range than 2LP, but less hitstun (cannot combo naturally into 236LP, 214MP, or 236LK)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "5MK",
+          "startup": "9",
+          "total": "29",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Terry's main mid-range poke that can also link to 5LK at closer ranges; can easily link to SA1 on Counter-hit; front leg hurtbox is raised on frames 3-20 making it strong against low pokes"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "5MP",
+          "startup": "7",
+          "total": "25",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Moves Terry slightly forward; cancelable into 3 different Target Combo routes; good against opponents in Burnout due to its low pushback"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "5MP~HK",
+          "startup": "18",
+          "total": "51",
+          "hitAdv": "KD +39",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-14'''</span>",
+          "notes": "Puts opponent into limited juggle state; does not combo naturally on grounded opponents (requires at least Counter-hit or meaty timing); can be used in juggle routes; can follow up with Power Dunk on hit only; 5f gap between hits if blocked"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "5MP~HK~HK",
+          "startup": "18",
+          "total": "80",
+          "hitAdv": "KD +24",
+          "blockAdv": "-",
+          "notes": "() refers to 70% scaled damage after a CH/PC/DR/meaty 5MP combo starter; extra damage when performed within a specific 3f timing window (success indicated by screen shake); can only be performed on hit; useful for corner carry and oki"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "5MP~HK~HK",
+          "startup": "18",
+          "total": "80",
+          "hitAdv": "KD +25(+22)",
+          "blockAdv": "-",
+          "notes": "() refers to 70% scaled damage after a CH/PC/DR/meaty 5MP combo starter; this standard version occurs when buffering Power Dunk early or within the final 2f of the cancel window; KD advantage varies depending on timing (early input gives better advantage); can only be performed on hit; useful for corner carry and oki"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "5MP~HP",
+          "startup": "15",
+          "total": "39",
+          "hitAdv": "KD +29",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+          "notes": "() refers to scaled damage when comboed from 5MP; puts opponent into limited juggle state (no follow-up juggles possible); high pushback on block keeps Terry safe if well-spaced; 3f gap on block for a frame trap (but can lose to 3f startup counters/armor moves)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "5MP~MK",
+          "startup": "13",
+          "total": "41(52)",
+          "hitAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span>",
+          "notes": "Invuln applies during recovery on hit only; no collision box during invuln frames; can be followed up with Jumping Lariat or Jumping Knee; follow-ups cause invuln to be extended until the attack active frames (can significantly delay the follow-up for much longer invincibility); 1f gap between hits on block (can be delayed for a 2f gap)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "5MP~MK~MK",
+          "startup": "24",
+          "total": "45",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Follow-up from Passing Sway on hit (does not combo unless juggled into); can only hit cross-up (must be holding forward); -25~31 on whiff if Terry does not cross-up; full invincibility and no collision box from 5MP~MK is extended until end of active frames; can significantly delay the input to disrupt Perfect Parry timing while the extended invincibility window can beat normals and nearly all reversals (3-9f gap between hits); Terry recovers point blank on hit for a strike/throw mixup, and safely out of throw range on block; will counter-hit a 4f normal but can lose to specials with early anti-air invuln regardless of which side Terry recovers; does not cross up against cornered opponents, but if the opponent holds forward they will automatically block the cross-up (leaving Terry at point blank); this also applies midscreen if the opponent walks forward with a walk speed of 0.045 or faster (though this does not avoid the Jumping Lariat ender midscreen)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "5MP~MK~MP",
+          "startup": "24",
+          "total": "43",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "notes": "Follow-up from Passing Sway on hit only (does not combo unless juggled into); can only hit on the same side (whiffs if holding forward for cross-up); -23~29 on whiff if Terry crosses up; full invincibility and no collision box from 5MP~MK is extended until end of active frames; can significantly delay the input to disrupt Perfect Parry timing while the extended invincibility window can beat normals and nearly all reversals (3-9f gap between hits); leaves Terry close enough for follow-up link on hit, and slightly out of throw range on block; will counter-hit a 4f normal but can lose to specials with early anti-air invuln regardless of which side Terry recovers; in the corner, Terry will still connect even if attempting to whiff a cross-up Jumping Lariat; if the opponent walks forward while cornered, Jumping Lariat will whiff regardless of which side Terry chooses (and will also block Jumping Knee); midscreen, Jumping Lariat will whiff if the opponent walks forward with a walkspeed of 0.045 or faster (if the input is delayed, all characters can walk forward to make it whiff)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "5PPPKKK",
+          "startup": "300 (total)",
+          "total": "300",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"Hey, come on, come on!\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "5PPPKKK",
+          "startup": "370 (total)",
+          "total": "370",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"Hey buddy, I got tons of fight left in me!\"; only occurs when Terry is in Burnout"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "623HP",
+          "startup": "7",
+          "total": "68",
+          "hitAdv": "KD +27",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-36(-40)'''</span>",
+          "notes": "Farthest horizontal range (most consistent for combos, but may whiff under close jumps); cannot hit cross-up; only 1st active frame is cancelable (cancel may be impossible in combos from too far away); 3rd hit whiffs on crouch block (reduced chip and Drive damage); if Perfect Parried, opponent must crouch to avoid 2nd hit; puts opponent into limited juggle state"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "623LP",
+          "startup": "5",
+          "total": "47",
+          "hitAdv": "KD +33",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-23'''</span>",
+          "notes": "Very short horizontal range (hits straight above Terry to anti-air close jumps); cannot hit cross-up; active frames 3-10 do reduced damage; only 1st active frame is cancelable (cancel may be impossible in combos from too far away); puts opponent into limited juggle state (allows follow-up juggles on a high connect)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "623MP",
+          "startup": "6",
+          "total": "55",
+          "hitAdv": "KD +25",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-26'''</span>",
+          "notes": "Medium horizontal range; cannot hit cross-up; only 1st active frame is cancelable (cancel may be impossible in combos from too far away); if Perfect Parried, opponent must crouch to avoid 2nd hit; puts opponent into limited juggle state"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "623PP",
+          "startup": "6",
+          "total": "69",
+          "hitAdv": "KD +27",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-42'''</span>",
+          "notes": "Horizontal range is between MP/HP versions (good anti-air for mid range jumps, as well as a strong juggle ender); cannot hit cross-up; can miss several hits of damage against high airborne opponent"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "6HP",
+          "startup": "22",
+          "total": "43",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Can link into 5LP/2LP with perfect meaty timing; leaves Terry slightly out of throw range when used from Drive Rush"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "6HPHK",
+          "startup": "18",
+          "total": "46(51)",
+          "hitAdv": "KD +23",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Performed by holding 6HPHK on wakeup; 5f extra recovery on hit; does not have any screen freeze except for a 12f freeze when interacting with the opponent's throw hitbox (this also refunds 1 Drive bar after punishing the throw); see [[Street_Fighter_6/Gauges#Drive_Reversal|Drive Reversal]]."
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "6HPHK",
+          "startup": "20",
+          "total": "48(53)",
+          "hitAdv": "KD +23",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Performed by inputting 6HPHK during blockstun; 5f extra recovery on hit; freezes the screen for 4f during startup; see [[Street_Fighter_6/Gauges#Drive_Reversal|Drive Reversal]]."
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "6PPPKKK",
+          "startup": "205 (total)",
+          "total": "205",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"No line here? Alright\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "HPHK",
+          "startup": "26",
+          "total": "62",
+          "hitAdv": "KD +35 / Wall Splat KD +65",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span> / Wall Splat HKD +72",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Impact|Drive Impact]]. Airborne connect gives spinning juggle state on Punish Counter or corner Wall Splat with variable height."
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "j.HK",
+          "startup": "10",
+          "total": "{{{total}}}",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+9(+15)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+5(+11)'''</span>",
+          "notes": "Strongest all-purpose jump-in with good range and horizontal/vertical hitbox priority; lower body projectile invuln 10-19f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "j.HP",
+          "startup": "9",
+          "total": "{{{total}}}",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+9(+15)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+5(+11)'''</span>",
+          "notes": "Causes spike knockdown vs. airborne opponents on Counter-hit/Punish Counter; good hitbox priority for close-range jump-ins; lower body projectile invuln 9-23f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "j.LK",
+          "startup": "5",
+          "total": "{{{total}}}",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+7(+9)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+3</span><span style=\"color: #30D5B8;\">'''(+5)'''</span>",
+          "notes": "Fast air-to-air that hits above Terry"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "j.LP",
+          "startup": "4",
+          "total": "{{{total}}}",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+6(+9)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+2</span><span style=\"color: #30D5B8;\">'''(+5)'''</span>",
+          "notes": "Fast air-to-air"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "j.MK",
+          "startup": "7",
+          "total": "{{{total}}}",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+8(+13)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+4(+9)'''</span>",
+          "notes": "Cross-up with good horizontal range and forward hitbox priority; lower body projectile invuln 7-20f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "j.MP",
+          "startup": "7",
+          "total": "{{{total}}}",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+11'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+7'''</span>",
+          "notes": "Puts airborne opponents into limited juggle state; has a large air-to-air hitbox; only the last active frame can connect on grounded opponents (standing only, strict timing); lower body projectile invuln 6-22f (if used immediately on the way up, can avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "LPLK",
+          "startup": "5",
+          "total": "30",
+          "hitAdv": "KD +22",
+          "blockAdv": "-",
+          "notes": "Can dash for a +3 corner throw loop that leaves Terry point blank; can also walk forward with manual frame-perfect timing that allows a shimmy (4f timing vs. Zangief, 3f vs. Blanka/E. Honda, 2f vs. Marisa/Sagat); a successful Throw Escape builds 0.5 Drive bars for the defender; Throw Escape is awarded to a random player if input simultaneously"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "MPMK",
+          "startup": "1",
+          "total": "45(3)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Parry|Drive Parry]]. Perfect Parrying has only 1F of recovery and disables the opponent from canceling their attack. Perfect Parrying projectiles puts you into fixed 11 frames of recovery. After a Perfect Parry, all Super Gauge gain is reduced by 20% and Drive Gauge gain/damage is reduced by 50% for the entire punish combo."
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "MPMK or 66",
+          "startup": "9",
+          "total": "24(46)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Rush|Drive Rush]]; 3-bar version performed on hit/block from a cancelable normal; can also be performed on whiff from cancelable light normals; startup refers to minimum time before an attack can cancel the Drive Rush animation; the first 15 recovery frames are cancelable into any attack; the final 22 recovery frames are cancelable into any attack or movement option or blocking (except Parry); only Normal and Command Normal attacks are enhanced with +4 frame advantage and improved juggle properties"
+        }
+      },
+      {
+        "title": {
+          "chara": "Terry",
+          "input": "MPMK~66",
+          "startup": "3+8",
+          "total": "26(48)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Rush|Drive Rush]]; 1-bar version performed out of a Parry; startup refers to minimum time before an attack can cancel the Drive Rush animation (if performed immediately after a successful Parry, only 1+8 startup); the first 15 recovery frames are cancelable into any attack; the final 22 recovery frames are cancelable into any attack or movement option or blocking (except Parry); only Normal and Command Normal attacks are enhanced with +4 frame advantage and improved juggle properties; Distance: 0.634 (min/throw), 2.416 (min/block), 3.181 (max/final DR frame)"
+        }
+      }
+    ]
+  }
+}

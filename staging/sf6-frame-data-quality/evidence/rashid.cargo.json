@@ -1,0 +1,882 @@
+{
+  "url": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Rashid%22&limit=500",
+  "retrievedAt": "2026-11-05T09:20:28.161Z",
+  "status": 200,
+  "characterId": "rashid",
+  "gameVersion": "UNVERIFIED",
+  "license": "CC-BY-SA-4.0",
+  "attribution": "SuperCombo Wiki contributors",
+  "data": {
+    "cargoquery": [
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "214214K",
+          "startup": "11",
+          "total": "33",
+          "hitAdv": "KD +104",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+33'''</span>",
+          "notes": "No invincibility; puts opponent into limited juggle state; spawns a 5-hit Super projectile tornado; travels fullscreen on its own, and Rashid can kick it with 214P to make it travel faster (can also kick tornado in the opposite direction after a side switch); tornado remains active even if it disappears off-screen; creates Air Current that lasts until 120f after Super dissipates (enhances many of Rashid's moves); listed KD Advantage is from point blank connect; cannot use 236K Whirlwind Shot while Super is active; cannot gain Super Art gauge while the projectile hitbox is active"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "214HK",
+          "startup": "17",
+          "total": "81",
+          "hitAdv": "KD +59",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-15'''</span>",
+          "notes": "Functions identically to enhanced 214MK; puts opponent into limited juggle state on hit; on hit/block, bounces off opponent with extra recovery (frame advantage unaffected by which active frame connects); opponent slides on the ground for great corner carry; Punish Counter tumble allows for a follow-up 214K for even more damage and corner carry"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "214HK",
+          "startup": "26",
+          "total": "65",
+          "hitAdv": "KD +56(+68)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-36'''</span>",
+          "notes": "Puts opponent into limited juggle state on hit; on block, bounces off opponent with extra recovery (frame advantage unaffected by which active frame connects); on hit, Rashid gets better KD Advantage on later active frames; opponent slides on the ground for great corner carry; can be affected by Air Current on frames 6-30"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "214HP",
+          "startup": "27",
+          "total": "69",
+          "hitAdv": "KD +40",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Strike hitbox; spawns a tornado with 2 hits of projectile durability; first hit puts opponent into limited juggle state; the 2-hit tornado does not cause a knockdown on its own, and carries Counter-hit/Punish Counter advantage through both hits if it connects; cancelable into 4K Wing Stroke or 6K Rolling Assault on frames 33-34; high active frame count makes it great for oki; 29f recovery is total time after the tornado's 2nd hit occurs; 24f recovery is total time after tornado disappears; advantage when canceled into 6K Roll: KD+43/<span style=\"color: #32CD32;\">+1</span>"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "214KK",
+          "startup": "18",
+          "total": "53",
+          "hitAdv": "KD +53(+65)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-24'''</span>",
+          "notes": "Puts opponent into limited juggle state on hit and side switches if the opponent is not cornered; on block, bounces off opponent with extra recovery (frame advantage unaffected by which active frame connects); on hit, Rashid gets better KD Advantage on later active frames"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "214KK",
+          "startup": "21",
+          "total": "59",
+          "hitAdv": "KD +53(+65)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-36'''</span>",
+          "notes": "Puts opponent into limited juggle state on hit and side switches if the opponent is not cornered; on block, bounces off opponent with extra recovery (frame advantage unaffected by which active frame connects); on hit, Rashid gets better KD Advantage on later active frames; can be affected by Air Current on frames 6-29"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "214LK",
+          "startup": "14",
+          "total": "59",
+          "hitAdv": "KD +35(+47)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-24'''</span>",
+          "notes": "Puts opponent into limited juggle state on hit; on block, bounces off opponent with extra recovery (frame advantage unaffected by which active frame connects); on hit, Rashid gets better KD Advantage on later active frames; SA3 cancel occurs on hit only, allowing it to be freely buffered for extra damage"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "214LK",
+          "startup": "15",
+          "total": "58",
+          "hitAdv": "KD +30(+42)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-36'''</span>",
+          "notes": "Puts opponent into limited juggle state on hit (can lead to follow-up juggles if well spaced); on block, bounces off opponent with extra recovery (frame advantage unaffected by which active frame connects); on hit, Rashid gets better KD Advantage on later active frames; can be affected by Air Current on frames 4-14; SA3 cancel occurs on hit only, allowing it to be freely buffered for extra damage"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "214LP",
+          "startup": "15",
+          "total": "47",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Strike hitbox; spawns a tornado with 1 hit of projectile durability; cancelable into 4K Wing Stroke or 6K Rolling Assault on frames 21-22; Counter-hit/Punish Counter bonus advantage applies to both hits; high active frame count makes it great for oki; 28f recovery is total time after the tornado spawns; 14f recovery is total time after tornado disappears; advantage when canceled into 6K Roll: <span style=\"color: #b70c0b;\">'''-5'''</span>/<span style=\"color: #b70c0b;\">'''-13'''</span>"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "214MK",
+          "startup": "17",
+          "total": "81",
+          "hitAdv": "KD +59",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-15'''</span>",
+          "notes": "Functions identically to enhanced 214HK; puts opponent into limited juggle state on hit; on hit/block, bounces off opponent with extra recovery (frame advantage unaffected by which active frame connects); opponent slides on the ground for great corner carry; Punish Counter tumble allows for a follow-up 214K for even more damage and corner carry"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "214MK",
+          "startup": "21",
+          "total": "59",
+          "hitAdv": "KD +52(+64)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-36'''</span>",
+          "notes": "Puts opponent into limited juggle state on hit; on block, bounces off opponent with extra recovery (frame advantage unaffected by which active frame connects); on hit, Rashid gets better KD Advantage on later active frames; opponent slides on the ground for great corner carry; can be affected by Air Current on frames 6-27"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "214MP",
+          "startup": "20",
+          "total": "50",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "Strike hitbox; spawns a tornado with 1 hit of projectile durability; cancelable into 4K Wing Stroke or 6K Rolling Assault on frames 26-27; Counter-hit/Punish Counter bonus advantage applies to both hits; high active frame count makes it great for oki; in the corner, Rashid can consistently link 5LK on hit; 26f recovery is total time after the tornado spawns; 12f recovery is total time after tornado disappears; safe against Drive Reversal if the opponent blocks the 2nd hit; advantage when canceled into 6K Roll: <span style=\"color: #b70c0b;\">'''-5'''</span>/<span style=\"color: #b70c0b;\">'''-13'''</span>"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "214PP",
+          "startup": "20",
+          "total": "49(53)",
+          "hitAdv": "KD +49",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-10'''</span>",
+          "notes": "Strike hitbox (making it vulnerable to opponent's wakeup SA1); spawns a tornado with 1 hit of OD projectile durability; first hit puts opponent into limited juggle state; the tornado does not cause a knockdown on its own; cancelable into 4K Wing Stroke or 6K Rolling Assault on frames 26-27; creates an Air Current on frame 53 (after the first tornado dissipates) that lasts 60f and enhances many of Rashid's moves; 4f extra recovery on block; the listed recovery time begins after the tornado's first active frame (Rashid recovers before the tornado disappears); can be spaced for significant block advantage (very precise); advantage when canceled into 6K Roll: KD+39/<span style=\"color: #b70c0b;\">'''-16'''</span>"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "214P~4K",
+          "startup": "32",
+          "total": "67",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Cancelable into air normals/specials on frames 32-51; can be affected by Air Current on frames 23-47; 6f landing recovery occurs if no air move is used"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "214P~6K",
+          "startup": "-",
+          "total": "33",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Crouching state 6-33f; cancelable into Nail Assault follow-up on frames 17-20; can be affected by Air Current on frames 8-25; can roll under most projectiles (loses to low ones like Juri 236LK or Rashid 236KK); Hit/Block Advantage after 214P connects: 214LP/214MP <span style=\"color: #b70c0b;\">'''-5/-13'''</span>; 214HP KD+43/<span style=\"color: #32CD32;\">+1</span>; 214PP KD+39/<span style=\"color: #b70c0b;\">'''-16'''</span>"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "214P~6K~K",
+          "startup": "17",
+          "total": "45",
+          "hitAdv": "KD +44",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-9'''</span>",
+          "notes": "Puts opponent into limited juggle state; crouching state for entire move duration; cannot hit cross-ups behind Rashid; outside of juggles, only combos naturally from 214HP/214PP versions"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "236236K",
+          "startup": "9",
+          "total": "91",
+          "hitAdv": "KD +1(+7~14)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-53'''</span>",
+          "notes": "Useful anti-air and combo/juggle tool; deals 300 less damage vs. airborne opponents with variable KD Advantage based on juggle height; grounded hit gives a cinematic that switches sides; bounces far away on block, but easily punished with dash or Drive Rush starter; listed recovery is on whiff/(block); only 500 damage on first hit if it trades"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "236236P",
+          "startup": "11",
+          "total": "110",
+          "hitAdv": "HKD +17",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-75'''</span>",
+          "notes": "Reaches about half screen; cinematic time regenerates ~1.8 Drive bars for Rashid; only deals 10 damage when trading with opponent's attack"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "236236P",
+          "startup": "11",
+          "total": "110",
+          "hitAdv": "HKD +18",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-75'''</span>",
+          "notes": "Reaches about half screen; 1f better KD Advantage over non-CA version; available at 25% HP or below; cinematic time regenerates ~1.9 Drive bars for Rashid; only deals 10 damage when trading with opponent's attack"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "236HP",
+          "startup": "5",
+          "total": "104",
+          "hitAdv": "KD +27",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-83'''</span>",
+          "notes": "Good anti-air that can hit cross-ups"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "236HP",
+          "startup": "6",
+          "total": "77",
+          "hitAdv": "KD +33",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-55'''</span>",
+          "notes": "Good anti-air that can hit cross-ups; can be affected by Air Current on frames 2-5; if the final hit whiffs as an anti-air, Rashid can get a follow-up juggle"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "236K",
+          "startup": "11+6",
+          "total": "52",
+          "hitAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-9'''</span>",
+          "notes": "1-hit projectile that travels forward before arcing upward; can hold button to charge for a powered-up version; trajectory depends on button strength (LK = farthest/horizontal, MK = middle, HK = shortest/vertical); projectile comes out in 6f if button is released from frames 11-27 (total startup 17-33f); cannot use if SA2 is active"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "236KK",
+          "startup": "17",
+          "total": "52",
+          "hitAdv": "KD +49",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "2-hit OD projectile; 2nd hit puts opponent into limited juggle state on hit; travels fullscreen; hitbox is low to the ground, making many low-profile anti-projectile moves ineffective; projectile comes out in 6f if button is released from frames 11-34 (total startup 17-40f); cannot use if SA2 is active"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "236LP",
+          "startup": "6",
+          "total": "74",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "notes": "Fullscreen advancing move that gives a combo on hit and frame advantage on block; counter-hit/Punish Counter bonus advantage applies through all hits (allows for a stronger follow-up combo)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "236LP",
+          "startup": "8",
+          "total": "42(47)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Great pressure tool that is safe on block and can blow throw armor; 5f extra recovery on whiff; Counter-hit/Punish Counter bonus advantage applies through all hits (allows for follow-up combo); can be affected by Air Current on frames 2-16; if the 3rd hit whiffs in a Burnout pressure sequence, Rashid is safe at -3 oB"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "236MP",
+          "startup": "5",
+          "total": "120",
+          "hitAdv": "KD +37",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-75(-83)(-88)'''</span>",
+          "notes": "On block, gets +1 hit vs. tall standing characters, and -1 hit vs. crouching characters (affects block data, chip, meter gain, etc.); cannot anti-air cross-ups; travels fullscreen"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "236MP",
+          "startup": "8",
+          "total": "74",
+          "hitAdv": "KD +31",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-45(-49)'''</span>",
+          "notes": "The last 11f of landing recovery is cancelable into special moves or supers on hit only; 4f worse advantage and 1 less hit when crouch blocked; cannot anti-air cross-ups; can be affected by Air Current on frames 2-8"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "236PP",
+          "startup": "4",
+          "total": "119",
+          "hitAdv": "KD +42",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-77(-89)'''</span>",
+          "notes": "Cannot anti-air cross-ups; 12f worse advantage and 2 fewer hits when crouch blocked; on hit or block, Rashid can cancel into j.214K on frames 67-71 after the active period"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "236PP",
+          "startup": "6",
+          "total": "110(77)",
+          "hitAdv": "KD +9",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-53'''</span>",
+          "notes": "Shorter animation with less landing recovery on block only; cannot anti-air cross-ups; can only hit twice vs. grounded opponents (will not break DI armor); 5f extra knockdown advantage if the final hit whiffs (keeps Rashid safe); can be affected by Air Current on frames 2-8"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "236[KK]",
+          "startup": "38",
+          "total": "73",
+          "hitAdv": "KD +65",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+10'''</span>",
+          "notes": "3-hit OD projectile; 3rd hit puts opponent into limited juggle state on hit; must hold button 32f for fully charged version; travels fullscreen; cancelable into Wing Stroke (4K) and Rolling Assault (6K) follow-ups on frame 55 (can be buffered on frame 37 onward); cancel into Roll is -4 oB from point blank but massively plus on block from farther away; hitbox is low to the ground, making many low-profile anti-projectile moves ineffective; creates Air Current effect on frame 38 next to Rashid that lasts 70f and enhances many of his moves; cannot use if SA2 is active"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "236[K]",
+          "startup": "53",
+          "total": "88",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+16'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+8'''</span>",
+          "notes": "3-hit projectile; trajectory depends on button strength (LK = farthest/horizontal, MK = middle, HK = shortest/vertical); must hold button 48f for fully charged version; counter-hit/Punish Counter bonus advantage applies to all hits; creates Air Current effect on frame 51 next to Rashid that lasts 60f and enhances many of his moves; cannot use if SA2 is active"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "236{K}",
+          "startup": "28+6",
+          "total": "69(88)",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+          "notes": "2-hit projectile; trajectory depends on button strength (LK = farthest/horizontal, MK = middle, HK = shortest/vertical); must hold button 28f; counter-hit/Punish Counter bonus advantage applies to both hits; projectile comes out in 6f if button is released from frames 28-47 (total startup 34-53f); cannot use if SA2 is active"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "2HK",
+          "startup": "9",
+          "total": "35(39)",
+          "hitAdv": "KD +31",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-11'''</span>",
+          "notes": "Can be juggled into even without Drive Rush; 4f extra recovery on block; disadvantage on block is fixed regardless of which active frame connects (cannot make it safer when meaty)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "2HP",
+          "startup": "12",
+          "total": "35(37)",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "Decent poke that is safe at most ranges and can be buffered into supers; good close range Punish Counter starter (combos into 5HP), but high pushback makes it less reliable at longer ranges; 2 extra recovery frames on whiff; topmost hurtboxes on frames 8-14 are projectile invincible (avoids Sagat's MP/HP Tiger Shot)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "2LK",
+          "startup": "5",
+          "total": "15",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Chains into 5LP/2LP/2LK"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "2LP",
+          "startup": "5",
+          "total": "14",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Chains into 5LP/2LP/2LK; DR cancel is delayed until after 2nd active frame; topmost hurtbox on frames 1-7 is vulnerable only to aerial strikes (preventing its use as an anti-air)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "2MK",
+          "startup": "7",
+          "total": "27",
+          "hitAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+          "notes": "Standard cancelable low poke; DR cancel is delayed until after active frames"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "2MP",
+          "startup": "6",
+          "total": "22",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "notes": "Combo and pressure tool with many active frames for easy oki; can anti-air on frames 7-9 but cannot hit opponents behind Rashid; whiffs on crouching opponents at longer ranges unless they extend a vertical hurtbox"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "4LPLK",
+          "startup": "5",
+          "total": "30",
+          "hitAdv": "KD +24",
+          "blockAdv": "-",
+          "notes": "Side switches; Rashid can pressure with DR~6HK (+1 oB) midscreen or corner; or DR~2HP in the corner (huge pushback, links to SA1); a successful Throw Escape builds 0.5 Drive bars for the defender; Throw Escape is awarded to a random player if input simultaneously"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "4PPPKKK",
+          "startup": "220 (total)",
+          "total": "220",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"Check this out! Now you try.\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "5HK",
+          "startup": "13",
+          "total": "38",
+          "hitAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+          "notes": "Puts airborne opponents into limited juggle state; Punish Counter launches grounded opponents into limited juggle state and causes airborne opponents to fall closer to Rashid; decent anti-air hitbox, but very slow and cannot hit cross-up; high pushback on hit and block; forces stand on hit; final 2 active frames whiff on crouching opponents unless they extend a vertical hurtbox; has an extended hurtbox 1f before active that is vulnerable to projectiles"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "5HP",
+          "startup": "9",
+          "total": "32",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "Decent mid-range button with a strong hitbox for counterpoking; can combo to 214HK after Drive Rush or Punish Counter; special/DR/DI cancel is delayed until after 2nd active frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "5LK",
+          "startup": "4",
+          "total": "16",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Highest hitstun light normal makes it useful for special cancels (the only light normal that can combo into 214LK naturally); DR cancel is delayed until after active frames"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "5LP",
+          "startup": "4",
+          "total": "14",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Chains into 5LP/2LP/2LK"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "5MK",
+          "startup": "8",
+          "total": "27(29)",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+6'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Combo starter that links into 5MP or into itself on counter-hit; 2 extra recovery frames on whiff"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "5MP",
+          "startup": "6",
+          "total": "22",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "notes": "Useful for starting combos and block pressure; has a Target Combo follow-up that can be canceled into 236LP for safety on block or into higher damage routes on hit"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "5MP~HK",
+          "startup": "13",
+          "total": "52",
+          "hitAdv": "KD +42",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-20'''</span>",
+          "notes": "Puts opponent into limited juggle state; both hits form a true blockstring and can cancel to 236LP for safety; special/DR/DI cancel is delayed until after 4th recovery frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "5PPPKKK",
+          "startup": "534 (total)",
+          "total": "534",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"Do this... and this... and this. It's easy as pie.\"; hurtbox shifts as Rashid moves (lower body invuln frames 52-74, 83-107, 208-236; low profile 121-141, 169-186)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "6HK",
+          "startup": "16",
+          "total": "39(42)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span><span style=\"color: #30D5B8;\">'''(+6)'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span><span style=\"color: #bcbd0c;\">(0)</span>",
+          "notes": "3f extra recovery on whiff; useful for hopping over low pokes and comboing into 2MK normals on Punish Counter, but not actually airborne; good option out of Drive Rush; can be spaced to hit on later active frames for better advantage and a consistent link to 5LP; can be affected by Air Current on frames 6-19 (travels fullscreen)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "6HP",
+          "startup": "22",
+          "total": "45",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Long-ranged overhead that can lead to combos if well-spaced; not actually airborne despite the animation; can be affected by Air Current on frames 4-25 (travels nearly fullscreen)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "6HPHK",
+          "startup": "18",
+          "total": "46(51)",
+          "hitAdv": "KD +23",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Performed by holding 6HPHK on wakeup; 5f extra recovery on hit; does not have any screen freeze except for a 12f freeze when interacting with the opponent's throw hitbox (this also refunds 1 Drive bar after punishing the throw); see [[Street_Fighter_6/Gauges#Drive_Reversal|Drive Reversal]]."
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "6HPHK",
+          "startup": "20",
+          "total": "48(53)",
+          "hitAdv": "KD +23",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Performed by inputting 6HPHK during blockstun; 5f extra recovery on hit; freezes the screen for 4f during startup; see [[Street_Fighter_6/Gauges#Drive_Reversal|Drive Reversal]]."
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "6KK",
+          "startup": "32 total",
+          "total": "32",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Can input 4KK/5KK/6KK follow-up on frames 19-25; collision box disappears frames 8-23, allowing Rashid to pass through opponents; can be affected by Air Current on frames 2-20, traveling nearly fullscreen; travel distance: 1.7 (3.62 enhanced)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "6KK~KK",
+          "startup": "18+51 total",
+          "total": "51",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Input during 6KK; holding forward/back/neutral direction affects flip distance; can use any air attack frames 22-40; can be affected by Air Current on frames 1-36, traveling forward fullscreen"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "6MP",
+          "startup": "8(24)",
+          "total": "43",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "() refers to startup of 2nd hit; 1st hit puts airborne opponents into limited juggle state (or maintains juggle state when used mid-combo); 2nd hit causes air reset; counter-hit/Punish Counter bonus advantage applies to both hits; decent range for whiff punishing; can be affected by Air Current on frames 3-10 (travels fullscreen)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "6PPPKKK",
+          "startup": "545 (total)",
+          "total": "545",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"Hmm? Hey look, just relax and have fun, alright?\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "6[6]",
+          "startup": "18",
+          "total": "90",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Input by holding forward after a forward dash; cancelable into 6P or 6K follow-ups on frames 18-72; after 72f, Rashid has 18f stopping recovery if no follow-up is input (90f total); stopping the run early has 5f recovery; no stopping recovery if jumping forward out of the run animation (neutral/back jump still plays out the 5f recovery); counter-hit state during entire run animation; affected by Air Current for entire duration except for 18f recovery, causing Rashid to run faster"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "6[6]~6K",
+          "startup": "18+16",
+          "total": "45",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "Counter-hit/Punish Counter bonus advantage applies to both hits; frames 1-3 can be affected by Air Current, becoming the Enhanced version"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "6[6]~6K",
+          "startup": "18+9",
+          "total": "62",
+          "hitAdv": "KD +56 OTG / KD +22",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+          "notes": "Puts opponent into limited juggle OTG state if first hit connects (regular knockdown if first hit doesn't connect)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "6[6]~6P",
+          "startup": "18+8",
+          "total": "34",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+7'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-10'''</span><span style=\"color: #ff6347;\">(-1)</span>",
+          "notes": "Crouching state for entire move duration; on hit, connects twice and switches sides, remaining projectile invincible throughout the entire animation; on block, connects once and stays on the same side; if opponent is cornered, Rashid is close enough for a follow-up combo; counter-hit/Punish Counter bonus advantage applies to both hits; frames 1-17 can be affected by Air Current"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "9 (against wall)",
+          "startup": "-",
+          "total": "-",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Counter-hit state during entire duration; can be done from Back or Neutral jump if fully against the wall, or after Forward Jump against a cornered opponent; cannot be performed after j.2HP or j.214K"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "HPHK",
+          "startup": "26",
+          "total": "62",
+          "hitAdv": "KD +35 / Wall Splat KD +65",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span> / Wall Splat HKD +72",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Impact|Drive Impact]]. Airborne connect gives spinning juggle state on Punish Counter or corner Wall Splat with variable height."
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "j.214HK",
+          "startup": "21(22)",
+          "total": "-",
+          "hitAdv": "KD +20(+22)~",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-43(-46)'''</span>",
+          "notes": "From forward jump or 6KK~KK only; 1st active frame can only connect in juggles; puts opponent into limited juggle state on hit; has minimum height restriction (will not activate after low-height j.2HP); KD Advantage varies greatly based on the height it connects; performs a double-jump after the initial flip kick (longest trajectory); can be affected by Air Current on frames 1-21"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "j.214KK",
+          "startup": "13(14)",
+          "total": "-",
+          "hitAdv": "KD +34(+35)~",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-25(-29)'''</span>",
+          "notes": "From forward jump or 6KK~KK only; 1st active frame can only connect in juggles; puts opponent into limited juggle OTG state on hit; has minimum height restriction (will not activate after low-height j.2HP); performs a double-jump after the initial flip kick; on hit, transitions into a follow-up divekick that is projectile invincible; can be affected by Air Current on frames 1-13"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "j.214LK",
+          "startup": "13(14)",
+          "total": "-",
+          "hitAdv": "KD +16(+18)~",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-32(-35)'''</span>",
+          "notes": "From forward jump or 6KK~KK only; 1st active frame can only connect in juggles; puts opponent into limited juggle state on hit; has minimum height restriction (will not activate after low-height j.2HP); KD Advantage varies greatly based on the height it connects; performs a double-jump after the initial flip kick (shortest trajectory); can be affected by Air Current on frames 1-13"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "j.214MK",
+          "startup": "18(19)",
+          "total": "-",
+          "hitAdv": "KD +18(+20)~",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-35(-38)'''</span>",
+          "notes": "From forward jump or 6KK~KK only; 1st active frame can only connect in juggles; puts opponent into limited juggle state on hit; has minimum height restriction (will not activate after low-height j.2HP); KD Advantage varies greatly based on the height it connects; performs a double-jump after the initial flip kick (medium trajectory, similar to normal jump); can be affected by Air Current on frames 1-18"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "j.2HP",
+          "startup": "10",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #b70c0b;\">'''-9'''</span><span style=\"color: #ff6347;\">(-1)</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-29(-21)'''</span>",
+          "notes": "Can be performed during forward jump or after j.214K; causes spike knockdown and OTG juggle state vs. airborne opponents; cancelable into j.214K; bounces off opponent on hit/block/parry, allowing Rashid to follow up with another airborne move (except another j.2HP) on frames 12-23; if Rashid hits airborne opponent 1f before landing, he lands immediately rather than bouncing; listed frame advantage assumes a grounded opponent and no follow-up air attack; juggle data in () refers to version after j.214K; lower body projectile invuln 10-19f except around attack hitbox"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "j.8HK",
+          "startup": "8",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+12(+15)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+8(+11)'''</span>",
+          "notes": "During neutral jump only; puts airborne opponents into limited juggle state, making it a useful air-to-air; lower body projectile invuln 8-19f (if used immediately on the way up, can avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "j.HK",
+          "startup": "10",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+8(+15)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+4(+11)'''</span>",
+          "notes": "When used after j.214K or 214P~4K, causes a spike knockdown vs. airborne opponents; lower body projectile invuln 10-19f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "j.HP",
+          "startup": "8",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+11(+15)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+7(+11)'''</span>",
+          "notes": "1st hit puts airborne opponents into limited juggle state, 2nd hit causes spike knockdown; if 1st hit is stand blocked, the 2nd hit will not hit overhead against crouch block; lower body projectile invuln 8-23f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "j.LK",
+          "startup": "5",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+7(+9)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+3</span><span style=\"color: #30D5B8;\">'''(+5)'''</span>",
+          "notes": "Longest horizontal range of Rashid's jump normals"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "j.LP",
+          "startup": "4",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+8(+9)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+4(+5)'''</span>",
+          "notes": "Quick air-to-air"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "j.LPLK",
+          "startup": "5",
+          "total": "-",
+          "hitAdv": "KD +27",
+          "blockAdv": "-",
+          "notes": "Useful air-to-air against close range jumps; in the corner, can get oki with Drive Rush"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "j.MK",
+          "startup": "7",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+7(+13)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+3</span><span style=\"color: #30D5B8;\">'''(+9)'''</span>",
+          "notes": "Cross-up; lower body projectile invuln 7-20f (if used immediately on the way up, can avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "j.MP",
+          "startup": "9",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+9(+11)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+5(+7)'''</span>",
+          "notes": "Puts airborne opponents into limited juggle state; cancels into j.214K from forward jumps; lower body projectile invuln 9-22f (if used immediately on the way up, can avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "LPLK",
+          "startup": "5",
+          "total": "30",
+          "hitAdv": "KD +27",
+          "blockAdv": "-",
+          "notes": "Allows for a corner throw loop by holding Run for 18-20f, then letting go before throwing (17-20f for Blanka/E.Honda/Zangief); a successful Throw Escape builds 0.5 Drive bars for the defender; Throw Escape is awarded to a random player if input simultaneously"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "MPMK",
+          "startup": "1",
+          "total": "45(3)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Parry|Drive Parry]]. Perfect Parrying has only 1F of recovery and disables the opponent from canceling their attack. Perfect Parrying projectiles puts you into fixed 11 frames of recovery. After a Perfect Parry, all Super Gauge gain is reduced by 20% and Drive Gauge gain/damage is reduced by 50% for the entire punish combo."
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "MPMK or 66",
+          "startup": "9",
+          "total": "24(46)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Rush|Drive Rush]]; 3-bar version performed on hit/block from a cancelable normal; can also be performed on whiff from cancelable light normals; startup refers to minimum time before an attack can cancel the Drive Rush animation; the first 15 recovery frames are cancelable into any attack; the final 22 recovery frames are cancelable into any attack or movement option or blocking (except Parry); only Normal and Command Normal attacks are enhanced with +4 frame advantage and improved juggle properties"
+        }
+      },
+      {
+        "title": {
+          "chara": "Rashid",
+          "input": "MPMK~66",
+          "startup": "3+8",
+          "total": "26(48)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Rush|Drive Rush]]; 1-bar version performed out of a Parry; startup refers to minimum time before an attack can cancel the Drive Rush animation (if performed immediately after a successful Parry, only 1+8 startup); the first 15 recovery frames are cancelable into any attack; the final 22 recovery frames are cancelable into any attack or movement option or blocking (except Parry); only Normal and Command Normal attacks are enhanced with +4 frame advantage and improved juggle properties; Distance: 0.796 (min/throw), 2.253 (min/block), 2.998 (max/final DR frame)"
+        }
+      }
+    ]
+  }
+}

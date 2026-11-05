@@ -1,0 +1,970 @@
+{
+  "url": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Juri%22&limit=500",
+  "retrievedAt": "2026-11-05T09:20:27.351Z",
+  "status": 200,
+  "characterId": "juri",
+  "gameVersion": "UNVERIFIED",
+  "license": "CC-BY-SA-4.0",
+  "attribution": "SuperCombo Wiki contributors",
+  "data": {
+    "cargoquery": [
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "214214K",
+          "startup": "10",
+          "total": "65",
+          "hitAdv": "HKD +20",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-36'''</span>",
+          "notes": "Available at 25% HP or below; cinematic time regenerates ~2.4 Drive bars for Juri"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "214214K",
+          "startup": "10",
+          "total": "65",
+          "hitAdv": "HKD +22",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-36'''</span>",
+          "notes": "Cinematic time regenerates ~2 Drive bars for Juri"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "214214P",
+          "startup": "1",
+          "total": "7",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Lasts 600 frames (10 seconds); timer stops counting down during attack hit/block freeze; allows Juri to chain into normals of equal or ascending strength (cannot chain back into the same attack); chains change the properties of certain moves (6MK and Heavy normals become knockdowns); 5HK/2LK/2HK/6MK become cancelable"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "214214[P]",
+          "startup": "9",
+          "total": "45",
+          "hitAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span><span style=\"color: #30D5B8;\">'''(+6)'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-17(-7)'''</span>",
+          "notes": "Holding the button performs a dash attack; puts airborne opponents into free juggle state or maintains existing juggle state; can cancel on hit/block into any normal; afterwards, has same properties as regular Feng Shui Engine activation; dash attack cannot hit cross-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "214HK",
+          "startup": "25",
+          "total": "48(50)",
+          "hitAdv": "KD +46",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span>",
+          "notes": "Gains 1 Fuha stock on hit/block/whiff on frame 25; 1-hit projectile clash hitbox on frames 23-28; launches opponent high into a limited juggle state; takes large step forward (but only combos naturally from 5HP, 2HP, and first hit of 5MK and 6HP); 2f extra recovery on block; 8f hitstop when clashing with projectile"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "214KK",
+          "startup": "12",
+          "total": "38",
+          "hitAdv": "KD +45",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span>",
+          "notes": "Gains 1 Fuha stock on hit/block/whiff on frame 12; 2-hit OD projectile clash hitbox on frames 10-17; launches opponent high into a free juggle state (limited juggle when 214KK is juggled into); takes small step forward (consistent like the MK version while comboing naturally from light normals); SA2 cancel: KD+49/-8; 8f hitstop when clashing with projectile"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "214LK",
+          "startup": "10",
+          "total": "32(34)",
+          "hitAdv": "KD +37",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "Gains 1 Fuha stock on hit/block/whiff on frame 10; 1-hit projectile clash hitbox on frames 8-13; puts opponent into limited juggle state (only combos into SA3); does not move forward during startup; 2f extra recovery on whiff; 8f hitstop when clashing with projectile"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "214MK",
+          "startup": "13",
+          "total": "37",
+          "hitAdv": "KD +37",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Gains 1 Fuha stock on hit/block/whiff on frame 13; 1-hit projectile clash hitbox on frames 11-16; puts opponent into limited juggle state (only combos into SA3); takes small step forward, making it more consistent in combos (but does not combo naturally from 5LK); 8f hitstop when clashing with projectile"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "236236K",
+          "startup": "7",
+          "total": "201",
+          "hitAdv": "KD +26(+49)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-32'''</span>",
+          "notes": "Projectile hitbox; active frames and KD Adv. are highly variable based on screen position; Full Dmg distribution: 200x4,300,700"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "236236[K]",
+          "startup": "7",
+          "total": "201",
+          "hitAdv": "KD +26(+49)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-32'''</span>",
+          "notes": "Projectile hitbox; requires one Fuha stock to use (consumes this stock); active frames and KD Adv. are highly variable based on screen position; Full Dmg distribution: 200x4,300,1000"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "236HK",
+          "startup": "18",
+          "total": "48",
+          "hitAdv": "KD +27",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-11'''</span>",
+          "notes": "Puts airborne opponents into limited juggle state (only high airborne connect launches high enough for follow-up juggle besides SA3 cancel); good juggle ender for damage when canceling to SA3"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "236HK",
+          "startup": "18",
+          "total": "63",
+          "hitAdv": "KD +37",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span>",
+          "notes": "Costs 1 Fuha stock; both hits are Super cancelable; can press LK or MK to cancel into other 236K specials for 1 Fuha stock; puts opponent into limited juggle state (only airborne hit launches high enough for follow-up juggle besides SA3 cancel); good for damage when comboing into SA3"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "236LK",
+          "startup": "16",
+          "total": "45",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "1-hit projectile; costs 1 Fuha stock; can press MK or HK to cancel into other 236K specials for 1 Fuha stock (within the first 3 active frames)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "236LK",
+          "startup": "16",
+          "total": "45",
+          "hitAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span>",
+          "notes": "1-hit projectile hitbox (can lose to projectile-invuln moves); very short range"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "236LKHK",
+          "startup": "24",
+          "total": "46",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+9'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span>",
+          "notes": "8-27f low crush; puts airborne opponents into a limited juggle OTG bounce state; pressing LK or HK cancels to other OD 236K specials for 1 Fuha stock + 1 Drive bar; hitbox gradually expands forward during active frames (easier to space more safely); SA2 cancel: +16/-3"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "236LKMK",
+          "startup": "11",
+          "total": "38",
+          "hitAdv": "KD +39",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "2-hit OD projectile; only the 2nd hit knocks down; can press MK or HK to cancel into other OD 236K specials for 1 Fuha stock and 1 Drive bar; SA2 cancel: KD+57/+17"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "236MK",
+          "startup": "24",
+          "total": "46",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span><br>(KD +24~26)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span>",
+          "notes": "8-27f low crush; KD vs. airborne opponents; hitbox gradually expands forward during active frames (easier to space more safely); active frames 2-4 cause a knockdown; proximity guard box appears on frame 5 to make it harder for the opponent to walk out of range"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "236MK",
+          "startup": "24",
+          "total": "46",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+8'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span>",
+          "notes": "Costs 1 Fuha stock; 8-27f low crush; puts airborne opponents into a limited juggle OTG bounce state (useful for SA3 cancel); can press LK or HK to cancel into other 236K specials for 1 Fuha stock; hitbox gradually expands forward during active frames (easier to space more safely)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "236MKHK",
+          "startup": "18",
+          "total": "97",
+          "hitAdv": "KD +32",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-16'''</span>",
+          "notes": "All 3 hits are Super cancelable; first hit keeps opponent grounded, 2nd and 3rd hits put opponent into limited juggle state; can press LK or MK to cancel any hit into other OD 236K specials for 1 Fuha stock and 1 Drive bar; SA2 cancel: +17/+17 (1st hit), KD+54/+15 (2nd hit), KD+52/+4 (3rd hit); 3rd hit cannot juggle into held SA2 dash attack"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "2HK",
+          "startup": "10",
+          "total": "35",
+          "hitAdv": "KD +38",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-11'''</span>",
+          "notes": "Becomes fully cancelable during Feng Shui Engine (even when not chained into)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "2HK (FSE Chain)",
+          "startup": "10",
+          "total": "35",
+          "hitAdv": "KD +38",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-11'''</span>",
+          "notes": "Chained version of 2HP during SA2 (FSE); maintains juggle state vs. airborne opponents; 4f shorter hitconfirm window when chained into"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "2HP",
+          "startup": "8",
+          "total": "34",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-11'''</span>",
+          "notes": "Forces stand on hit; great anti-air but cannot hit cross-up (upward leg hurtbox is anti-air invincible on frames 8-15); Punish Counter puts airborne opponents into spinning free juggle state; all active frames are cancelable; powerful combo starter after a canceled Drive Rush hitconfirm; SA2 cancel: +22/+8"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "2HP (FSE Chain)",
+          "startup": "8",
+          "total": "34",
+          "hitAdv": "KD +34",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-11'''</span>",
+          "notes": "Chained version of 2HP during SA2 (FSE); jump cancelable on hit only; when jump canceled, FSE air normals cause juggle state; 2f shorter CHAIN react window when chained into"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "2LK",
+          "startup": "5",
+          "total": "15",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Chains into 5LP/2LP/2LK; becomes fully cancelable during Feng Shui Engine"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "2LK (FSE Chain)",
+          "startup": "5",
+          "total": "15",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Chained version during SA2 (FSE); 2f shorter special hitconfirm window when chained into; maintains juggle state vs. airborne opponents"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "2LP",
+          "startup": "4",
+          "total": "14",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Chains into 5LP/2LP/2LK; SA2 cancel: +7/+2; DR cancel is delayed until after 2nd active frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "2LP (FSE Chain)",
+          "startup": "4",
+          "total": "14",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Chained version during SA2 (FSE); maintains juggle state vs. airborne opponents; DR cancel is delayed until after 2nd active frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "2MK",
+          "startup": "8",
+          "total": "29",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Excellent range for a cancelable low poke in neutral; SA2 cancel: +15/+8; shorter range on 1st active frame; DR cancel is delayed until after active frames; has an extended hurtbox on whiff until the end of recovery"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "2MK (FSE Chain)",
+          "startup": "8",
+          "total": "29",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Chained version during SA2 (FSE); 1f shorter hitconfirm window when chained into; maintains juggle state vs. airborne opponents; shorter range on 1st active frame; DR cancel is delayed until after active frames; has an extended hurtbox on whiff until the end of recovery"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "2MP",
+          "startup": "6",
+          "total": "23(24)",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "1f extra recovery on whiff and extends a wider hurtbox until the end of recovery; good combo tool and useful when buffered in neutral; good anti-air for horizontal approaches (hitbox is above her extended fist); SA2 cancel: +15/+8"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "2MP (FSE Chain)",
+          "startup": "6",
+          "total": "23(24)",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Chained version during SA2 (FSE); 1f extra recovery on whiff and extends a wider hurtbox until the end of recovery; maintains juggle state vs. airborne opponents; 2f shorter hitconfirm window when chained into"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "4HK",
+          "startup": "10(19)",
+          "total": "40",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Both hits are cancelable; 1st hit forces stand and puts airborne opponents into limited juggle state; 2nd hit causes OTG bounce vs. airborne opponents; 19f startup for 2nd hit only; carries counter-hit/Punish Counter advantage through both hits; combos naturally into 236MK for a hitconfirmable extension; links into SA1 on Punish Counter; SA2 cancel: +12/+6 (1st hit), +17/+8 (2nd hit)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "4HK (FSE Chain)",
+          "startup": "10(19)",
+          "total": "40",
+          "hitAdv": "KD +39",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Chained version during SA2 (FSE); both hits knock down; 2nd hit causes OTG bounce vs. airborne opponents; 8f shorter hitconfirm window when chained into"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "4LPLK",
+          "startup": "5",
+          "total": "30",
+          "hitAdv": "KD +18",
+          "blockAdv": "-",
+          "notes": "No throw oki after back throwing opponent into corner, but can use meaty strikes; a successful Throw Escape builds 0.5 Drive bars for the defender; Throw Escape is awarded to a random player if input simultaneously"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "4PPPKKK",
+          "startup": "185 (total)",
+          "total": "185",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"What are you waiting for?\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "5HK",
+          "startup": "17",
+          "total": "39",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span><span style=\"color: #30D5B8;\">'''(+5)'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span><span style=\"color: #bcbd0c;\">(0)</span>",
+          "notes": "Not airborne despite the animation; Counter-Hit/Punish Counter puts airborne opponents into limited juggle state; Punish Counter also puts grounded opponents into limited juggle state (can follow up, including Supers or DR~2LP); long range and safe on block makes it great in neutral; better frame advantage when well spaced (very difficult to connect with the final active frame); extends a hurtbox 1f before active that is vulnerable to projectiles"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "5HK (FSE Chain)",
+          "startup": "17",
+          "total": "39",
+          "hitAdv": "KD +34",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Becomes fully cancelable during FSE, even when not chained into; not airborne despite the animation; maintains juggle state vs. airborne opponents; 2f shorter hitconfirm window when chained into; special/DR/DI cancel is delayed until after 5th recovery frame; extends a hurtbox 1f before active that is vulnerable to projectiles"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "5HP",
+          "startup": "10",
+          "total": "36",
+          "hitAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+          "notes": "Forces stand on hit; good whiff punish tool with long range; large hurtbox makes it weak as an anti-air; SA2 cancel: +18/+14"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "5HP (FSE Chain)",
+          "startup": "10",
+          "total": "36",
+          "hitAdv": "KD +29",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+          "notes": "Chained version during SA2 (FSE); forces stand on hit; maintains juggle state vs. airborne opponents; 1f shorter hitconfirm window when chained into"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "5LK",
+          "startup": "5",
+          "total": "16",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Good range for a light normal, but can't combo into 214MK; SA2 cancel: +5/0; special/DI cancel is delayed until after 2nd active frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "5LK (FSE Chain)",
+          "startup": "5",
+          "total": "16",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Chained version during SA2 (FSE); maintains juggle state vs. airborne opponents; special/DI cancel is delayed until after 2nd active frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "5LP",
+          "startup": "4",
+          "total": "14",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Chains into 5LP/2LP/2LK; high active frame count makes it a useful meaty (up to +8/+1); SA2 cancel: +8/+1; DR cancel is delayed until after 3rd active frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "5LP (FSE Chain)",
+          "startup": "4",
+          "total": "14",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Chained version during SA2 (FSE); maintains juggle state vs. airborne opponents; DR cancel is delayed until after 3rd active frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "5MK",
+          "startup": "5(8)",
+          "total": "27",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "8f startup for 2nd hit only; deals full 700 damage if only the 2nd hit connects; 1st hit can combo from 5LP and has enough hitstun to combo to 214HK for a launch and Fuha stock; great poke in neutral (1st hit can interrupt opponent's button while 2nd hit extends for long range); very effective when used out of Drive Rush; SA2 cancel: +19/+7 (1st hit)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "5MK (FSE Chain)",
+          "startup": "5(8)",
+          "total": "27",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "Chained version during SA2 (FSE); deals full 500 damage if only the 2nd hit connects; 1st hit has 4f less hitstun (cannot combo into 214HK); when chained into, 4f shorter hitconfirm window (2f if 2nd hit only); maintains juggle state vs. airborne opponents"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "5MP",
+          "startup": "6",
+          "total": "21",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+7'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "notes": "Strong combo/pressure starter and meaty tool, especially out of Drive Rush to minimize pushback; meaty timing can be up to +10/+5; SA2 cancel: +14/+9; special/DR/DI cancel is delayed until after 2nd active frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "5MP (FSE Chain)",
+          "startup": "6",
+          "total": "21",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+7'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "notes": "Chained version during SA2 (FSE); maintains juggle state vs. airborne opponents; 2f shorter hitconfirm window when chained into; special/DR/DI cancel is delayed until after 2nd active frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "5MP~4HP",
+          "startup": "12",
+          "total": "34",
+          "hitAdv": "KD +33",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Safe Target Combo starter that leaves ample time to confirm the final hit; leaves a 2f blockstring gap after 5MP"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "5MP~4HP~HP",
+          "startup": "17",
+          "total": "46",
+          "hitAdv": "KD +32",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-16'''</span>",
+          "notes": "(refers to scaled damage); not airborne despite the animation; always a true blockstring from 4HP; puts opponent into limited juggle state; cannot cancel into Super on block"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "5PPPKKK",
+          "startup": "294 (total)",
+          "total": "294",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"You gonna keep me waiting, babe?\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "623HP",
+          "startup": "5",
+          "total": "62",
+          "hitAdv": "KD +28",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-37(-41)'''</span>",
+          "notes": "Only 1 hit connects vs. crouch block (4f worse oB, less chip damage); strong combo ender and anti-air but cannot hit cross-up; slightly more horizontal range than 623MP"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "623LP",
+          "startup": "11",
+          "total": "39",
+          "hitAdv": "KD +37",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span>",
+          "notes": "Both hits are SA3 cancelable; not airborne; fairly consistent combo ender; 2nd hit has a combo-only hitbox for juggle consistency"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "623MP",
+          "startup": "5",
+          "total": "62",
+          "hitAdv": "KD +31",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-37'''</span>",
+          "notes": "Strong anti-air but cannot hit cross-up; slightly less horizontal range than 623HP"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "623PP",
+          "startup": "6",
+          "total": "75",
+          "hitAdv": "KD +5",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-48'''</span>",
+          "notes": "Juri's primary reversal option; final attack comes out on hit only; cannot hit cross-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "6HP",
+          "startup": "15(23)",
+          "total": "45(48)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "3f extra recovery on whiff; both hits are cancelable; 23f startup for 2nd hit only; 1st hit has more hitstun and blockstun for cancels; both hits put airborne opponent into limited juggle state; carries counter-hit/Punish Counter advantage through both hits; extended whiff hurtbox lasts until the end of recovery; SA2 cancel: +18/+8 (1st hit), +17/+11 (2nd hit)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "6HP (FSE Chain)",
+          "startup": "15(23)",
+          "total": "45(48)",
+          "hitAdv": "KD +40",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "Chained version during SA2 (FSE); 3f extra recovery on whiff; maintains juggle state vs. airborne opponents; 4f shorter hitconfirm window when chained into; canceling the 1st hit uses less juggle potential, allowing alternate juggle routes in exchange for some initial damage; extended whiff hurtbox lasts until the end of recovery"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "6HPHK",
+          "startup": "18",
+          "total": "46(51)",
+          "hitAdv": "KD +23",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Performed by holding 6HPHK on wakeup; 5f extra recovery on hit; does not have any screen freeze except for a 12f freeze when interacting with the opponent's throw hitbox (this also refunds 1 Drive bar after punishing the throw); see [[Street_Fighter_6/Gauges#Drive_Reversal|Drive Reversal]]."
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "6HPHK",
+          "startup": "20",
+          "total": "48(53)",
+          "hitAdv": "KD +23",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Performed by inputting 6HPHK during blockstun; 5f extra recovery on hit; freezes the screen for 4f during startup; see [[Street_Fighter_6/Gauges#Drive_Reversal|Drive Reversal]]."
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "6MK",
+          "startup": "21",
+          "total": "43(45)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Not airborne despite the animation; 2 extra recovery frames on whiff"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "6MK (FSE Chain)",
+          "startup": "21",
+          "total": "43(45)",
+          "hitAdv": "KD +25",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Chained Feng Shui Engine version; not airborne despite the animation; the special/chain cancel window only applies when chaining into 6MK and the KD doesn't allow anything to juggle on hit; 2 extra recovery frames on whiff; special/DR/DI cancel is delayed until after 2nd active frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "6MP",
+          "startup": "8",
+          "total": "27",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Continues juggle state when comboed into (e.g. after 214KK free juggle launch); SA2 cancel: +16/+9"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "6MP (FSE Chain)",
+          "startup": "8",
+          "total": "27",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Chained version during SA2 (FSE); 2f shorter hitconfirm window when chained into; maintains juggle state vs. airborne opponents"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "6PPPKKK",
+          "startup": "199 (total)",
+          "total": "199",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"Killer beam! Or whatever.\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "8HK",
+          "startup": "10",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+11(+15)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+7(+11)'''</span>",
+          "notes": "Hits on both sides (can cross-up if opponent tries to move underneath Juri); can be used as an air-to-air; when chained after FSE nj.MP, puts airborne opponents into juggle state; lower body projectile invuln 10-13f (if used immediately on the way up, can avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "8HK (FSE Chain)",
+          "startup": "10",
+          "total": "-",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Chained version during SA2 (FSE); maintains juggle state vs. airborne opponents; lower body projectile invuln 10-13f"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "HPHK",
+          "startup": "26",
+          "total": "62",
+          "hitAdv": "KD +35 / Wall Splat KD +65",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span> / Wall Splat HKD +72",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Impact|Drive Impact]]. Airborne connect gives spinning juggle state on Punish Counter or corner Wall Splat with variable height."
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "j.214K",
+          "startup": "18",
+          "total": "-",
+          "hitAdv": "KD +34(+41)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-10<span style=\"color: #ff6347;\">(-3)</span>'''</span>",
+          "notes": "During forward jump only; can input follow-up on hit only; puts opponent into limited juggle state (lower connect allows better follow-up juggles); button strength does not affect trajectory"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "j.214KK",
+          "startup": "16",
+          "total": "-",
+          "hitAdv": "KD +37(+44)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-10<span style=\"color: #ff6347;\">(-3)</span>'''</span>",
+          "notes": "During forward jump only; can input follow-up on hit only; puts opponent into limited juggle state"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "j.214KK~K",
+          "startup": "6",
+          "total": "77",
+          "hitAdv": "KD +50(+57)",
+          "blockAdv": "-",
+          "notes": "Puts opponent into limited juggle state; comes out on hit only; can delay the input to get better juggle follow-ups and better KD Adv.; Juri is in a crouching state during landing recovery; total recovery time before landing varies by juggle height"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "j.214K~K",
+          "startup": "6",
+          "total": "77",
+          "hitAdv": "KD +28(+33)",
+          "blockAdv": "-",
+          "notes": "Comes out on hit only; can delay the input to get better KD Advantage; no follow-up after juggle state; Juri is in a crouching state during landing recovery; total recovery time before landing varies by juggle height"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "j.HK",
+          "startup": "10",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+6(+15)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+2</span><span style=\"color: #30D5B8;\">'''(+11)'''</span>",
+          "notes": "During FSE forward jump, can cancel into divekick; lower body projectile invuln 10-13f and kicking leg 10-19f (if used immediately on the way up, can avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "j.HK (FSE Chain)",
+          "startup": "10",
+          "total": "-",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Chained version during SA2 (FSE); maintains juggle state vs. airborne opponents; lower body projectile invuln 10-13f and kicking leg 10-19f"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "j.HP",
+          "startup": "12",
+          "total": "-",
+          "hitAdv": "HKD +23(+34)",
+          "blockAdv": "<span style=\"color: #bcbd0c;\">0</span><span style=\"color: #30D5B8;\">'''(+7)'''</span>",
+          "notes": "Cross-up; causes a spike knockdown vs. airborne opponents with no Hard Knockdown; better KD Adv. when hitting lower to the ground; Juri's collision box prevents her from connecting this on grounded opponents late in her jump arc (cannot use in safe jump setups); during FSE forward jump, can cancel into divekick; lower body projectile invuln 12-23f (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "j.HP (FSE Chain)",
+          "startup": "12",
+          "total": "-",
+          "hitAdv": "KD",
+          "blockAdv": "-",
+          "notes": "Chained version during SA2 (FSE); lower body projectile invuln 12-23f"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "j.LK",
+          "startup": "4",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5(+10)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span><span style=\"color: #30D5B8;\">'''(+6)'''</span>",
+          "notes": "Cross-up; can be used as a fuzzy instant overhead (vs. Blanka, will not work after perfect safe jump j.HK timing); during FSE forward jump, can cancel into divekick"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "j.LK (FSE Chain)",
+          "startup": "4",
+          "total": "-",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Chained version during SA2 (FSE); maintains juggle state vs. airborne opponents"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "j.LP",
+          "startup": "5",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+6(+9)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+2</span><span style=\"color: #30D5B8;\">'''(+5)'''</span>",
+          "notes": "During FSE forward jump, can cancel into divekick"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "j.LP (FSE Chain)",
+          "startup": "5",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+9'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "notes": "Chained version during SA2 (FSE); maintains juggle state vs. airborne opponents"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "j.LPLK",
+          "startup": "5",
+          "total": "-",
+          "hitAdv": "KD +2(+4)",
+          "blockAdv": "-",
+          "notes": "KD Adv. varies based on height (lower height = worse advantage); switches sides; no oki after throwing opponent back into the corner"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "j.MK",
+          "startup": "6",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+8(+13)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+4(+9)'''</span>",
+          "notes": "Cross-up; during FSE forward jump, can cancel into divekick; lower body projectile invuln 6-20f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "j.MK (FSE Chain)",
+          "startup": "6",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+10(+13)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+6(+9)'''</span>",
+          "notes": "Chained version during SA2 (FSE); maintains juggle state vs. airborne opponents; lower body projectile invuln 6-20f except around attack hitbox"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "j.MP",
+          "startup": "7",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4(+13)'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span><span style=\"color: #30D5B8;\">'''(+7)'''</span>",
+          "notes": "Puts airborne opponents into limited juggle state; cancelable into divekick; instant j.MP > j.214KK is a useful option against corner throw loops (much less punishable than a blocked reversal); can only be used as a fuzzy instant overhead if the opponent is in Burnout and blocks a deep j.HK"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "j.MP (FSE Chain)",
+          "startup": "7",
+          "total": "-",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Chained version during SA2 (FSE); maintains juggle state vs. airborne opponents"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "LPLK",
+          "startup": "5",
+          "total": "30",
+          "hitAdv": "KD +25",
+          "blockAdv": "-",
+          "notes": "Has access to corner throw loops by dashing (+3); a successful Throw Escape builds 0.5 Drive bars for the defender; Throw Escape is awarded to a random player if input simultaneously"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "MPMK",
+          "startup": "1",
+          "total": "45(3)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Parry|Drive Parry]]. Perfect Parrying has only 1F of recovery and disables the opponent from canceling their attack. Perfect Parrying projectiles puts you into fixed 11 frames of recovery. After a Perfect Parry, all Super Gauge gain is reduced by 20% and Drive Gauge gain/damage is reduced by 50% for the entire punish combo."
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "MPMK or 66",
+          "startup": "9",
+          "total": "24(46)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Rush|Drive Rush]]; 3-bar version performed on hit/block from a cancelable normal; can also be performed on whiff from cancelable light normals; startup refers to minimum time before an attack can cancel the Drive Rush animation; the first 15 recovery frames are cancelable into any attack; the final 22 recovery frames are cancelable into any attack or movement option or blocking (except Parry); only Normal and Command Normal attacks are enhanced with +4 frame advantage and improved juggle properties"
+        }
+      },
+      {
+        "title": {
+          "chara": "Juri",
+          "input": "MPMK~66",
+          "startup": "3+8",
+          "total": "26(48)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Rush|Drive Rush]]; 1-bar version performed out of a Parry; startup refers to minimum time before an attack can cancel the Drive Rush animation (if performed immediately after a successful Parry, only 1+8 startup); the first 15 recovery frames are cancelable into any attack; the final 22 recovery frames are cancelable into any attack or movement option or blocking (except Parry); only Normal and Command Normal attacks are enhanced with +4 frame advantage and improved juggle properties; Distance: 0.641 (min/throw), 2.479 (min/block), 3.999 (max/final DR frame)"
+        }
+      }
+    ]
+  }
+}

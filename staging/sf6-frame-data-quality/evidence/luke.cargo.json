@@ -1,0 +1,827 @@
+{
+  "url": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Luke%22&limit=500",
+  "retrievedAt": "2026-11-05T09:20:27.782Z",
+  "status": 200,
+  "characterId": "luke",
+  "gameVersion": "UNVERIFIED",
+  "license": "CC-BY-SA-4.0",
+  "attribution": "SuperCombo Wiki contributors",
+  "data": {
+    "cargoquery": [
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "214214P",
+          "startup": "5",
+          "total": "58",
+          "hitAdv": "KD +4",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-29'''</span>",
+          "notes": "Extremely fast super that works well in juggles; in the corner, gives Luke an auto-timed strike/throw/shimmy mixup; on hit, the animation is not invincible until the very end (can be hit by delayed projectiles like Kimberly Spraycan or JP Amnesia orbs); Full Dmg distribution: 300x3,200x6,900"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "214HP",
+          "startup": "22",
+          "total": "45",
+          "hitAdv": "KD +42(+31)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "Puts opponent into limited juggle state (can only juggle into canceled SA3); worse KD advantage vs. airborne opponents (+31 when juggled after 5LP~MP~HP); can cancel into SA3 on reaction if opponent attempts a Drive Impact; pulls back hurtbox on frames 5-15"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "214LP",
+          "startup": "13",
+          "total": "42",
+          "hitAdv": "KD +36",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span>",
+          "notes": "Puts opponent into limited juggle state; no head hurtbox on frames 6-17 for improved anti-air; the final 2 recovery frames are cancelable on Hit into specials/Supers (enables a corner juggle into 623LP or SA2)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "214MP",
+          "startup": "19",
+          "total": "48",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span>",
+          "notes": "Leaves opponent standing on hit, very slightly out of throw range; knocks airborne opponents far away into a limited juggle state"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "214PP",
+          "startup": "15",
+          "total": "56",
+          "hitAdv": "KD +62",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-22'''</span>",
+          "notes": "Puts opponent into limited juggle state; active frames 3-4 can nullify normal 1-hit projectiles; listed recovery is for blocked/whiffed version (on hit, automatically transitions to 2nd hit); 1st hit is cancelable into PP follow-up for 1 extra Drive bar on hit only; can juggle directly into any Super (canceling into Super will cause SA3 to whiff; SA2 will whiff on final cancelable frame)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "214PP~PP",
+          "startup": "1",
+          "total": "161",
+          "hitAdv": "HKD +12",
+          "blockAdv": "-",
+          "notes": "Costs 1 extra Drive bar on 214PP 1st hit only (cannot activate on block or when armor absorbed); leaves Luke close enough to walk in for a strike/throw mixup; counts as a separate hit from 214PP for damage scaling; in juggles, only connects on opponents low to the ground and will not come out if opponent is juggled higher"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "214[HP]",
+          "startup": "33",
+          "total": "60",
+          "hitAdv": "KD +64",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "notes": "1f extra recovery on hit/block; active frames 3-4 can nullify normal 1-hit projectiles; cancelable into SA3 on reaction if opponent attempts a Drive Impact; pulls back hurtbox on frames 5-25; leaves opponent close on block for a 2LK~2LP hitconfirm or a 1f microwalk into throw (slightly longer if opponent walks back)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "214[LP]",
+          "startup": "26",
+          "total": "54(55)",
+          "hitAdv": "KD +54",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span>",
+          "notes": "Puts opponent into limited juggle state; active frames 3-4 can nullify normal 1-hit projectiles; canceling to SA3 will cause juggle to whiff; 1f more recovery on hit/block; no head hurtbox on frames 6-29 for improved anti-air"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "214[MP]",
+          "startup": "29",
+          "total": "58",
+          "hitAdv": "KD +54(+67)",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Wall Bounce on hit for a limited juggle state; active frames 3-4 can nullify normal 1-hit projectiles; higher KD Adv when farther from wall (opponent may bounce over Luke's head if too close to the wall); SA3 cancel only juggles properly in corner; 1f more recovery on hit/block; cannot combo naturally when canceled from 2HP"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "236236K",
+          "startup": "10(27)",
+          "total": "122",
+          "hitAdv": "HKD +18",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-42'''</span>",
+          "notes": "Luke runs forward; active frames occur upon reaching the opponent or on frame 27 (whichever occurs first) but invincibility is not extended when far from opponent; has juggle potential; on block, bounces away with a fixed recovery period (whiff recovery is 26f slower); cinematic time regenerates ~2 Drive bars for Luke; takes opponent to Memphis"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "236236K",
+          "startup": "10(27)",
+          "total": "122",
+          "hitAdv": "HKD +18",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-42'''</span>",
+          "notes": "Luke runs forward; active frames occur upon reaching the opponent or on frame 27 (whichever occurs first) but invincibility is not extended when far from opponent; has juggle potential; on block, bounces away with a fixed recovery period (whiff recovery is 26f slower); cinematic time regenerates ~2.3 Drive bars for Luke; available at 25% HP or below; does not take opponent to Memphis"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "236236P",
+          "startup": "6",
+          "total": "108",
+          "hitAdv": "KD +17(+30)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-29'''</span>",
+          "notes": "5 hit Super projectile, first 4 hits travel 65% screen, final hit goes fullscreen; higher KD Adv. when farther from wall; extends a projectile-vulnerable hurtbox during startup frames 2-5 (more difficult to use as an anti-fireball tool)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "236HP",
+          "startup": "20",
+          "total": "47",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "1-hit projectile, travels ~91% screen length; [] refers to projectile active time; puts the opponent into a limited juggle state on Counter-hit/Punish Counter (can juggle into 623LP/SA2 deep in the corner or into SA1 from a specific range)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "236K",
+          "startup": "12",
+          "total": "45",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Follow-up P or K can be input on frames 12-32; Luke is in a counter-hit state for entire duration; Total Distance: 2.23 (0.82 before the earliest follow-up timing)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "236KK",
+          "startup": "11",
+          "total": "45",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Armor does not apply to follow-up attacks; follow-up P or K can be input up to frame 32; follow-up can start immediately after armor hit freeze without waiting for any additional Avenger startup frames to occur; Luke is in a Punish Counter state for entire duration; Total Distance: 2.47 (0.75 before the earliest follow-up timing)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "236KK~K",
+          "startup": "11+13",
+          "total": "39",
+          "hitAdv": "KD +38(+43)",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span><span style=\"color: #32CD32;\">(+2)</span>",
+          "notes": "First 2 active frames can only hit airborne opponents; Luke is in a crouching state for entire recovery duration; puts opponent into limited juggle state (airborne hit will always juggle at least as high as a grounded hit)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "236KK~P",
+          "startup": "11+12",
+          "total": "37",
+          "hitAdv": "KD +32(+41)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6<span style=\"color: #32CD32;\">(+3)</span>'''</span>",
+          "notes": "Puts opponent into limited juggle state; very late connect to juggle into 623LP/MP, SA1, or SA2 (otherwise, can only cancel into SA2 or SA3); midscreen, later active frames canceled into SA2 will whiff"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "236K~K",
+          "startup": "12+13",
+          "total": "42(47)",
+          "hitAdv": "KD +30(+35)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8<span style=\"color: #ff6347;\">(-3)</span>'''</span>",
+          "notes": "First 2 active frames can only hit airborne opponents; 3rd active frame hits grounded and gives the best KD Advantage (cannot hit meaty to allow a follow-up juggle); Luke is in a crouching state for entire recovery duration; puts opponents into limited juggle state; 5f extra recovery on whiff"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "236K~P",
+          "startup": "12+12",
+          "total": "37",
+          "hitAdv": "KD +32(+41)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6<span style=\"color: #32CD32;\">(+3)</span>'''</span>",
+          "notes": "Puts opponent into limited juggle state; very late connect to juggle into 623LP/MP, SA1, or SA2 (otherwise, can only cancel into SA3)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "236LP",
+          "startup": "14",
+          "total": "47",
+          "hitAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span>",
+          "notes": "1-hit projectile, travels ~50% screen length; [] refers to projectile active time; puts the opponent into a limited juggle state on Counter-hit/Punish Counter"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "236MP",
+          "startup": "17",
+          "total": "47",
+          "hitAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+          "notes": "1-hit projectile, travels ~66% screen length; [] refers to projectile active time; puts the opponent into a limited juggle state on Counter-hit/Punish Counter"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "236PP",
+          "startup": "16",
+          "total": "40",
+          "hitAdv": "KD +41",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "2-hit OD projectile, full screen length; puts opponent into limited juggle state; can follow up with PP for 1 extra Drive bar; extends a projectile invuln hurtbox on frames 19-36 (more vulnerable to ranged jumps and anti-projectile moves)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "236PP~PP",
+          "startup": "8",
+          "total": "50",
+          "hitAdv": "KD +46~58",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-21'''</span>",
+          "notes": "1-hit OD projectile; costs 1 extra Drive bar; () refers to scaled damage after 236PP connects; causes a wallsplat on hit (can combo near the corner, or whiff 236K~P to safely gain ground); extends a projectile invuln hurtbox on frames 10-32 (more vulnerable to ranged jumps and anti-projectile moves)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "2HK",
+          "startup": "10",
+          "total": "36",
+          "hitAdv": "KD +40",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-9'''</span>",
+          "notes": "Has juggle potential; has a fixed 26f recovery on block regardless of which active frame connects (always -9 oB even when meaty)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "2HP",
+          "startup": "7",
+          "total": "35",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-13'''</span>",
+          "notes": "Forces stand on hit; only the first active frame is cancelable; good anti-air hitbox but cannot hit cross-ups"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "2LK",
+          "startup": "5",
+          "total": "18",
+          "hitAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Chains into 2LP/2LK"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "2LP",
+          "startup": "4",
+          "total": "15",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Chains into 2LP/2LK; Luke's only 4f normal, useful in 3-hit light confirms; DR cancel is delayed until after 1st recovery frame; topmost hurtbox on frames 1-5 is vulnerable only to aerial strikes (preventing its use as an anti-air)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "2MK",
+          "startup": "8",
+          "total": "29",
+          "hitAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Moves Luke forward, greatly increasing its range despite the stubby-looking animation; shorter range on 1st active frame; DR cancel is delayed until after active frames; has an extended hurtbox on whiff until the end of recovery"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "2MK~2HP",
+          "startup": "9",
+          "total": "36",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span>",
+          "notes": "Easier hitconfirm ender compared to a special cancel from 2MK; leaves Luke close for a strike/throw mixup on hit; true blockstring even at max delay"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "2MP",
+          "startup": "6",
+          "total": "21(24)",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "notes": "3f extra recovery on whiff; great pressure tool with high reward on counter-hit or when canceled to Drive Rush; up to +7/+3 with meaty timing; has an extended hurtbox on whiff until the end of recovery; topmost hurtbox on frames 1-7 is vulnerable only to aerial strikes (preventing its use as an anti-air)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "4HK",
+          "startup": "12",
+          "total": "39",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-3'''</span>",
+          "notes": "Whiffs on crouching opponents at farther ranges unless they extend a vertical hurtbox; puts airborne opponents into spinning limited juggle state; no head hurtbox during active frames, making it a useful anti-air; after DR~4HK on block, Luke is at the edge of throw range and can also threaten with 2LK~2LP to punish walk back, or 2LP to beat reversal 4f normals; extends a hurtbox 1f before active that is vulnerable to projectiles"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "4HP",
+          "startup": "16",
+          "total": "38",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Pulls back hurtbox frames 5-12 for an auto-shimmy tool (also very strong when used out of Drive Rush)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "4LPLK",
+          "startup": "5",
+          "total": "30",
+          "hitAdv": "KD +14",
+          "blockAdv": "-",
+          "notes": "Side switches; no throw oki after back throwing opponent into corner, but can threaten with meaty strikes; a successful Throw Escape builds 0.5 Drive bars for the defender; Throw Escape is awarded to a random player if input simultaneously"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "4PPPKKK",
+          "startup": "109 (total)",
+          "total": "109",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"Hadooken!\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "5HK",
+          "startup": "10",
+          "total": "32",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span><span style=\"color: #30D5B8;\">'''(+8)'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span><span style=\"color: #32CD32;\">(+1)</span>",
+          "notes": "8-15f Low Crush (feet are strike invincible); puts airborne opponents into limited juggle state; Punish Counter launches opponent high into a limited juggle state; can be spaced for significantly better advantage; extends a hurtbox 1f before active that is vulnerable to projectiles; first 2 active frames have shorter range (makes it easier to space properly); causes camera shake effect on block when connecting with final active frame (easier to tell when Luke has advantage)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "5HP",
+          "startup": "10",
+          "total": "35(34)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "Good whiff punish tool due to its long range and cancelability; extends a vertical collision box to reduce the risk of whiffing under opponent mid-juggle; safe and a true blockstring when canceled into 236MP for solid Drive chip pressure"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "5LK",
+          "startup": "5",
+          "total": "18",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "DR cancel is delayed until after 1st recovery frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "5LP",
+          "startup": "7",
+          "total": "19(22)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Long range for a cancelable light normal, good whiff punish tool; 3f extra recovery on whiff; greatly extends hurtbox for 3f before active, making it susceptible to counterpokes; special/DR/DI cancel is delayed until after active frames"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "5LP~MP",
+          "startup": "8",
+          "total": "31",
+          "hitAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-9'''</span>",
+          "notes": "() refers to scaled damage when starting combo with 5LP"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "5LP~MP~HP",
+          "startup": "10",
+          "total": "39",
+          "hitAdv": "KD +27",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-14'''</span>",
+          "notes": "() refers to scaled damage when starting combo with 5LP; puts opponent into limited juggle state; special/DR/DI cancel is delayed until after 2nd active frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "5MK",
+          "startup": "8",
+          "total": "26(29)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Good neutral poke; 3f extra recovery on whiff; lifts up leg hurtbox on frames 4-11, making it strong vs. low attacks"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "5MP",
+          "startup": "9",
+          "total": "28",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Good whiff punish tool when buffered into Target Combo or Super"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "5MP~MP",
+          "startup": "12",
+          "total": "36",
+          "hitAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span>",
+          "notes": "Useful buffer from 5MP in neutral that can end with Super or the full Target Combo sequence; Super cancel is delayed until after 4th recovery frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "5MP~MP~MP",
+          "startup": "11",
+          "total": "41",
+          "hitAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-14'''</span>",
+          "notes": "() refers to scaled damage"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "5MP~MP~MP~MP",
+          "startup": "11",
+          "total": "36(39)",
+          "hitAdv": "KD +34",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span>",
+          "notes": "() refers to scaled damage; 3f extra recovery on block; full sequence builds significant Drive gauge; knockdown grants a perfect meaty Dash + 5HK (+1 on Block even vs. midscreen Back Rise); maintains the Punish Counter state from any of the initial TC hits (puts the opponent into a limited juggle state and sets up a KD +42 safe jump anywhere on-screen); Punish Counter juggles into SA1 midscreen as well as 623P/SA2 in the corner"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "5PPPKKK",
+          "startup": "96 (total)",
+          "total": "96",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"Come on!\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "623HP",
+          "startup": "9",
+          "total": "58",
+          "hitAdv": "KD +29",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-33'''</span>",
+          "notes": "Reduced damage and higher juggle start/increase/limit on active frames 2-10; cannot hit cross-up; does not juggle into SA3 despite being cancelable"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "623LP",
+          "startup": "5",
+          "total": "48",
+          "hitAdv": "KD +28",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-27'''</span>",
+          "notes": "Reduced damage and higher juggle start/increase/limit on active frames 3-10; cannot hit cross-up; does not juggle into SA3 despite being cancelable; much higher juggle limit than other versions of Rising Uppercut (useful in corner juggles)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "623MP",
+          "startup": "6",
+          "total": "51",
+          "hitAdv": "KD +28",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-29'''</span>",
+          "notes": "Reduced damage and higher juggle start/increase/limit on active frames 3-10; cannot hit cross-up; does not juggle into SA3 despite being cancelable"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "623PP",
+          "startup": "6",
+          "total": "65",
+          "hitAdv": "KD +25",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-40(-43)'''</span>",
+          "notes": "Reduced damage 3rd active frame of 1st hit (will only do 1 hit for 600 damage on later active frames); cannot hit cross-up; can cancel into PP follow-up on hit for 1 Drive bar; 2nd hit whiffs vs. crouch block (reduced chip damage, worse advantage)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "623PP~PP",
+          "startup": "16",
+          "total": "48",
+          "hitAdv": "KD +14",
+          "blockAdv": "-",
+          "notes": "Follow-up on hit only for 1 additional Drive bar; can whiff against high juggled opponent; counts as a separate hit for damage scaling"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "6HP",
+          "startup": "16",
+          "total": "33(37)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "4f extra recovery on whiff; 5f gap on block into TC follow-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "6HPHK",
+          "startup": "18",
+          "total": "46(51)",
+          "hitAdv": "KD +23",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Performed by holding 6HPHK on wakeup; 5f extra recovery on hit; does not have any screen freeze except for a 12f freeze when interacting with the opponent's throw hitbox (this also refunds 1 Drive bar after punishing the throw); see [[Street_Fighter_6/Gauges#Drive_Reversal|Drive Reversal]]."
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "6HPHK",
+          "startup": "20",
+          "total": "48(53)",
+          "hitAdv": "KD +23",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Performed by inputting 6HPHK during blockstun; 5f extra recovery on hit; freezes the screen for 4f during startup; see [[Street_Fighter_6/Gauges#Drive_Reversal|Drive Reversal]]."
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "6HP~HP",
+          "startup": "11",
+          "total": "46",
+          "hitAdv": "KD +20",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-19'''</span>",
+          "notes": "5f gap on block between hits; causes a staggered tailspin when performed after Punish Counter 6HP (allows a cancel into fully charged Flash Knuckle of any strength or a +28 DR Cancel); this Punish Counter version forces stand and does not incur any extra damage scaling"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "6MP",
+          "startup": "21",
+          "total": "43",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Causes spike knockdown vs. airborne opponents; has some juggle potential"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "6PPPKKK",
+          "startup": "180 (total)",
+          "total": "180",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"Yeah! Let's let it fly!\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "HPHK",
+          "startup": "26",
+          "total": "62",
+          "hitAdv": "KD +35 / Wall Splat KD +65",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span> / Wall Splat HKD +72",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Impact|Drive Impact]]. Airborne connect gives spinning juggle state on Punish Counter or corner Wall Splat with variable height."
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "j.214P",
+          "startup": "14",
+          "total": "-",
+          "hitAdv": "KD ~",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12<span style=\"color: #32CD32;\">(+3)</span>'''</span>",
+          "notes": "Can be input during forward/neutral jump (or back jump when canceled from j.MP); 7f extra landing recovery on whiff if input during the first 32 jump frames; Luke is in a crouching state from 4th landing recovery frame onward; improved frame advantage when done lower to the ground, and spaced out at farther ranges; can only be up to -1 on block if not precisely spaced; can partially charge the attack and release early for better juggle advantage after 214[LP]"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "j.214PP",
+          "startup": "14",
+          "total": "-",
+          "hitAdv": "KD ~",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-33(-21)'''</span>",
+          "notes": "Can be input during forward/neutral jump (or back jump when canceled from j.MP); the final 12 recovery frames are in a crouching state; puts the opponent into a limited juggle state; kara-canceling the startup with j.214P~PP can affect Luke's trajectory and frame advantage"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "j.214[P]",
+          "startup": "23",
+          "total": "-",
+          "hitAdv": "KD ~",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-30(-21)'''</span>",
+          "notes": "Can be input during forward/neutral jump (or back jump when canceled from j.MP); the final 12 recovery frames are in a crouching state; puts the opponent into a limited juggle state (can follow-up with 623LP if opponent is juggled at max height)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "j.HK",
+          "startup": "10",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+8(+15)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+4(+11)'''</span>",
+          "notes": "Better horizontal range than j.HP for long-range jumps; lower body projectile invuln 10-19f except around attack hitbox, and 10-24f for lowest part of foot hurtbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "j.HP",
+          "startup": "9",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+6(+15)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+2</span><span style=\"color: #30D5B8;\">'''(+11)'''</span>",
+          "notes": "Spike knockdown on counter-hit/Punish Counter vs. airborne opponents; good close range jump-in and neutral jump throw bait tool; lower body projectile invuln 9-23f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "j.LK",
+          "startup": "6",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5(+10)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span><span style=\"color: #30D5B8;\">'''(+6)'''</span>",
+          "notes": "Cross-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "j.LP",
+          "startup": "5",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5(+9)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span><span style=\"color: #30D5B8;\">'''(+5)'''</span>",
+          "notes": ""
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "j.MK",
+          "startup": "7",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+8(+13)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+4(+9)'''</span>",
+          "notes": "Cross-up; lower body projectile invuln 7-20f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "j.MP",
+          "startup": "8",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+9(+11)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+5(+7)'''</span>",
+          "notes": "Puts airborne opponents into limited juggle state; has some juggle potential; can significantly delay the cancel into j.214P, allowing unique combos after 214[LP] or 214PP; lower body projectile invuln 8-22f (if used immediately on the way up, can avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "LPLK",
+          "startup": "5",
+          "total": "30",
+          "hitAdv": "KD +19",
+          "blockAdv": "-",
+          "notes": "Has access to corner throw loop, requires walking with manual timing (4f timing leniency to beat reversal 4f buttons); a successful Throw Escape builds 0.5 Drive bars for the defender; Throw Escape is awarded to a random player if input simultaneously"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "MPMK",
+          "startup": "1",
+          "total": "45(3)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Parry|Drive Parry]]. Perfect Parrying has only 1F of recovery and disables the opponent from canceling their attack. Perfect Parrying projectiles puts you into fixed 11 frames of recovery. After a Perfect Parry, all Super Gauge gain is reduced by 20% and Drive Gauge gain/damage is reduced by 50% for the entire punish combo."
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "MPMK or 66",
+          "startup": "9",
+          "total": "24(46)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Rush|Drive Rush]]; 3-bar version performed on hit/block from a cancelable normal; can also be performed on whiff from cancelable light normals; startup refers to minimum time before an attack can cancel the Drive Rush animation; the first 15 recovery frames are cancelable into any attack; the final 22 recovery frames are cancelable into any attack or movement option or blocking (except Parry); only Normal and Command Normal attacks are enhanced with +4 frame advantage and improved juggle properties"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "MPMK~66",
+          "startup": "3+8",
+          "total": "26(48)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Rush|Drive Rush]]; 1-bar version performed out of a Parry; startup refers to minimum time before an attack can cancel the Drive Rush animation (if performed immediately after a successful Parry, only 1+8 startup); the first 15 recovery frames are cancelable into any attack; the final 22 recovery frames are cancelable into any attack or movement option or blocking (except Parry); only Normal and Command Normal attacks are enhanced with +4 frame advantage and improved juggle properties; Distance: 0.817 (min/throw), 2.499 (min/block), 3.461 (max/final DR frame)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "pf.214[HP]",
+          "startup": "33",
+          "total": "60",
+          "hitAdv": "KD +64",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "notes": "Hold HP 18-20f for perfect version; active frames 3-4 can nullify normal 1-hit projectiles; 1f more recovery on hit/block; cancelable into SA3 on reaction if opponent attempts a Drive Impact; pulls back hurtbox on frames 5-25; leaves opponent close on block for a 2LK~2LP hitconfirm or a 1f microwalk into throw (slightly longer if opponent walks back)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "pf.214[LP]",
+          "startup": "26",
+          "total": "51(52)",
+          "hitAdv": "KD +56",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span>",
+          "notes": "Hold LP 18-20f for perfect version; launches opponent high into a limited juggle state; active frames 3-4 can nullify normal 1-hit projectiles; canceling to SA3 will cause juggle to whiff; 1f more recovery on hit/block; no head hurtbox on frames 6-29 for improved anti-air"
+        }
+      },
+      {
+        "title": {
+          "chara": "Luke",
+          "input": "pf.214[MP]",
+          "startup": "29",
+          "total": "58(59)",
+          "hitAdv": "KD +53(+66)",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Hold MP 18-20f for perfect version; Wall Bounce on hit for a limited juggle state; active frames 3-4 can nullify normal 1-hit projectiles; higher KD Adv. when farther from wall (opponent may bounce over Luke's head if too close to the wall); SA3 cancel only juggles properly in corner; 1f more recovery on hit/block; perfect timing allows natural combo from 2HP cancel"
+        }
+      }
+    ]
+  }
+}

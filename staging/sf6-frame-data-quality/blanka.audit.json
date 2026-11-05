@@ -1,0 +1,738 @@
+{
+  "characterId": "blanka",
+  "rawMoveCount": 71,
+  "candidateMoveCount": 32,
+  "candidateNormals": 12,
+  "candidateSpecials": 20,
+  "upstreamFetchedAt": "2026-08-19T04:05:24.993Z",
+  "missingNormals": [],
+  "excluded": [
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "214[P]",
+      "name": "Electric Thunder (hold)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "22P~214P",
+      "name": "Blanka-chan Bomb (Charge)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "22P~214PP",
+      "name": "Blanka-chan Bomb (OD Charge)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "22P~236236P",
+      "name": "Blanka-chan Bomb (SA1 Charge)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "2PP~K",
+      "name": "Raid Jump",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "2PP~P",
+      "name": "Wild Lift",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "3HP",
+      "name": "Amazon River Run",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "4KKK",
+      "name": "Surprise Back Hop",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "4MK",
+      "name": "Wild Edge",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6HP",
+      "name": "Wild Nail",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6KKK",
+      "name": "Surprise Forward Hop",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6MK",
+      "name": "Double Knee Bombs",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6MP",
+      "name": "Rock Crusher",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "8HP",
+      "name": "Neutral Jumping Heavy Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.[4]6P",
+      "name": "Aerial Rolling Attack",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.[4]6PP",
+      "name": "Aerial Rolling Attack",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.HK",
+      "name": "Jumping Heavy Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.HP",
+      "name": "Jumping Heavy Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.LK",
+      "name": "Jumping Light Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.LP",
+      "name": "Jumping Light Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.MK",
+      "name": "Jumping Medium Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.MP",
+      "name": "Jumping Medium Punch",
+      "category": "normal"
+    }
+  ],
+  "gameVersion": "UNVERIFIED",
+  "status": "STAGING_ONLY",
+  "review": {
+    "applied": [
+      {
+        "characterId": "blanka",
+        "input": "[2]8HK",
+        "name": "Vertical Rolling Attack (SA2)",
+        "fingerprint": "e1063e2a4239ad1a3622718f9ae437fb3483a1e8bebd90bd241c3ca70d7e4b10",
+        "action": "exclude",
+        "classification": "enhanced_state",
+        "reason": "SA2 install requirement is explicit in source notes; ordinary same-input record exists.",
+        "evidence": "SA2 install version (drains 100f/6.7% from install timer); trajectory: straight vertical; 40f charge time (charge lasts 12f after releasing down direction); no charge required if canceled into; cannot hit cross-up; activates Blanka-chan doll with electricity (meterless 1-hit version); if opponent crouch blocks, cannot create a true blockstring into Rolling Cannon; difficult to land a grounded punish on block due to only 1f landing recovery (juggle punishes are more consistent); safer on block and bounces farther away then regular version",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "blanka",
+        "input": "[2]8KK",
+        "name": "Vertical Rolling Attack (SA2)",
+        "fingerprint": "a692bf2b15fa78fdb4ce8e5114e0e766f17ee7946fb4328bbe40f5cd04b7d7ca",
+        "action": "exclude",
+        "classification": "enhanced_state",
+        "reason": "SA2 install requirement is explicit in source notes; ordinary same-input record exists.",
+        "evidence": "SA2 install version (drains 100f/6.7% from install timer); trajectory: up and slightly forward (less horizontal distance than MK version); 40f charge time (charge lasts 12f after releasing down direction); no charge required if canceled into; cannot hit cross-up; activates Blanka-chan doll with electricity (3-hit OD version); can only cancel into Rolling Cannon on hit (no way to make it safe on block)",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "blanka",
+        "input": "[2]8LK",
+        "name": "Vertical Rolling Attack (SA2)",
+        "fingerprint": "009e6da7be0cd167be72a4902f87b442f99654deaf7c3f5fac9eeea3e9c88c23",
+        "action": "exclude",
+        "classification": "enhanced_state",
+        "reason": "SA2 install requirement is explicit in source notes; ordinary same-input record exists.",
+        "evidence": "SA2 install version (drains 100f/6.7% from install timer); trajectory: ~45 degrees; 40f charge time (charge lasts 12f after releasing down direction); no charge required if canceled into; cannot hit cross-up; activates Blanka-chan doll with electricity (meterless 1-hit version); if normal-height opponent crouch blocks, cannot create a true blockstring into Rolling Cannon (true blockstring can occur vs. taller characters); difficult to land a grounded punish on block due to only 1f landing recovery (juggle punishes are more consistent); safer on block and bounces farther away then regular version",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "blanka",
+        "input": "[2]8MK",
+        "name": "Vertical Rolling Attack (SA2)",
+        "fingerprint": "4ce9bca4367d2dfccc0d8aebf95ee8aa958b5fd3a01fc14dff79661a5774d9c2",
+        "action": "exclude",
+        "classification": "enhanced_state",
+        "reason": "SA2 install requirement is explicit in source notes; ordinary same-input record exists.",
+        "evidence": "SA2 install version (drains 100f/6.7% from install timer); trajectory: up and slightly forward; 40f charge time (charge lasts 12f after releasing down direction); no charge required if canceled into; cannot hit cross-up; activates Blanka-chan doll with electricity (meterless 1-hit version); if opponent crouch blocks, cannot create a true blockstring into Rolling Cannon; difficult to land a grounded punish on block due to only 1f landing recovery (juggle punishes are more consistent); safer on block and bounces farther away then regular version",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "blanka",
+        "input": "[4]6HP",
+        "name": "Rolling Attack (SA2)",
+        "fingerprint": "14ead4ab13fcdd42b841f40590200cce4bec7e25b4ab722ad43ec9a2451596a2",
+        "action": "exclude",
+        "classification": "enhanced_state",
+        "reason": "SA2 install requirement is explicit in source notes; ordinary same-input record exists.",
+        "evidence": "SA2 install version (drains 100f/6.7% from install timer); 40f charge time (charge lasts 10f after releasing back direction); no charge required if canceled into; worse on block than regular version and leaves Blanka closer; activates Blanka-chan doll with electricity (meterless 1-hit version); if opponent crouch blocks, cannot create a true blockstring into Rolling Cannon",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "blanka",
+        "input": "[4]6LP",
+        "name": "Rolling Attack (SA2)",
+        "fingerprint": "db0632e8cea777fb7bf4a80f9dda58a9ac91d4662a22c209813976f319e9f498",
+        "action": "exclude",
+        "classification": "enhanced_state",
+        "reason": "SA2 install requirement is explicit in source notes; ordinary same-input record exists.",
+        "evidence": "SA2 install version (drains 100f/6.7% from install timer); 40f charge time (charge lasts 10f after releasing back direction); no charge required if canceled into; slightly safer on block than regular version, and bounces farther away; activates Blanka-chan doll with electricity (meterless 1-hit version); if opponent crouch blocks, cannot create a true blockstring into Rolling Cannon",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "blanka",
+        "input": "[4]6MP",
+        "name": "Rolling Attack (SA2)",
+        "fingerprint": "a0cce897dd3ddbbece64ab4a2afef1563777e0c9fabed1d180c02adbcc4dc7c3",
+        "action": "exclude",
+        "classification": "enhanced_state",
+        "reason": "SA2 install requirement is explicit in source notes; ordinary same-input record exists.",
+        "evidence": "SA2 install version (drains 100f/6.7% from install timer); 40f charge time (charge lasts 10f after releasing back direction); no charge required if canceled into; Punish Counter sends opponent tumbling into a limited juggle OTG state (can follow up with enhanced SA1 or 3P Rolling Cannon anywhere on screen); slightly safer on block than regular version; activates Blanka-chan doll with electricity (meterless 1-hit version); if opponent crouch blocks, cannot create a true blockstring into Rolling Cannon",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "blanka",
+        "input": "[4]6PP",
+        "name": "Rolling Attack (SA2)",
+        "fingerprint": "5263888ffe86a98eec89881da51d91d8ea205850d27bd6725465e7f03e20ed2a",
+        "action": "exclude",
+        "classification": "enhanced_state",
+        "reason": "SA2 install requirement is explicit in source notes; ordinary same-input record exists.",
+        "evidence": "SA2 install version (drains 100f/6.7% from install timer); 40f charge time (charge lasts 10f after releasing back direction); no charge required if canceled into; completely safe unless Perfect Parried; less pushback on block than the regular version; can only cancel into Rolling Cannon on block; activates Blanka-chan doll with electricity (3-hit OD version); can lead to true blockstring into Rolling Cannon",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "blanka",
+        "input": "63214HK",
+        "name": "Backstep Rolling Attack (SA2)",
+        "fingerprint": "532c830111d477769b1665e84264de567b52d56677a22124cff6c8aed8fa1d8c",
+        "action": "exclude",
+        "classification": "enhanced_state",
+        "reason": "SA2 install requirement is explicit in source notes; ordinary same-input record exists.",
+        "evidence": "SA2 install version (drains 100f/6.7% from install timer); farthest trajectory; can steer forward/backward (forward momentum is faster than backward); can hit cross-up; hitconfirm time refers to Rolling Cannon cancel vs. grounded opponents; activates Blanka-chan doll with electricity (meterless 1-hit version)",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "blanka",
+        "input": "63214KK",
+        "name": "Backstep Rolling Attack (SA2)",
+        "fingerprint": "15879919acfb1a620535e14926e86fff3d3261dd4120b010943080141b3f8f70",
+        "action": "exclude",
+        "classification": "enhanced_state",
+        "reason": "SA2 install requirement is explicit in source notes; ordinary same-input record exists.",
+        "evidence": "SA2 install version (drains 100f/6.7% from install timer); can steer forward/backward (forward momentum is faster than backward); can hit cross-up on the way down; 1st hit is SA2/SA3 cancelable, works in juggles, and only connects at very close range; () startup refers to the downward hit; downward hit connects twice vs. standing opponents or once vs. crouching opponents; hitconfirm time refers to Rolling Cannon cancel vs. grounded opponents; activates Blanka-chan doll with electricity (3-hit OD version)",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "blanka",
+        "input": "63214LK",
+        "name": "Backstep Rolling Attack (SA2)",
+        "fingerprint": "e5e1105bff394626fac55c2d463af4c0123d206ece5f39930a7b8b3115944b99",
+        "action": "exclude",
+        "classification": "enhanced_state",
+        "reason": "SA2 install requirement is explicit in source notes; ordinary same-input record exists.",
+        "evidence": "SA2 install version (drains 100f/6.7% from install timer); shortest trajectory; can steer forward/backward (forward momentum is faster than backward); can hit cross-up; hitconfirm time refers to Rolling Cannon cancel vs. grounded opponents; activates Blanka-chan doll with electricity (meterless 1-hit version)",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "blanka",
+        "input": "63214MK",
+        "name": "Backstep Rolling Attack (SA2)",
+        "fingerprint": "e2c793741c9bcbe63f2d02e42085d96f052bd47ac996983e17a1a5f6891a622e",
+        "action": "exclude",
+        "classification": "enhanced_state",
+        "reason": "SA2 install requirement is explicit in source notes; ordinary same-input record exists.",
+        "evidence": "SA2 install version (drains 100f/6.7% from install timer); medium trajectory; can steer forward/backward (forward momentum is faster than backward); can hit cross-up; hitconfirm time refers to Rolling Cannon cancel vs. grounded opponents; activates Blanka-chan doll with electricity (meterless 1-hit version)",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "blanka",
+        "input": "j.[4]6PP",
+        "name": "Aerial Rolling Attack (SA2)",
+        "fingerprint": "240e2d74f3a37d7197a329044e5bf160dae4e91ded7c31972919287b6676cc55",
+        "action": "exclude",
+        "classification": "enhanced_state",
+        "reason": "SA2 install requirement is explicit in source notes; ordinary same-input record exists.",
+        "evidence": "SA2 install version (drains 100f/6.7% from install timer); 40f charge time (charge lasts 10f after releasing back direction); no charge required if canceled into from j.MP; can be done from any jump direction or after Coward Crouch > Raid Jump; can hit cross-up (2nd hit whiffs unless near corner); powerful defensive option, especially vs. throw loops; automatically performs 2nd attack on hit only; hitconfirm time refers to Rolling Cannon cancel vs. grounded opponents (cannot cancel on block if it connects at minimum height); activates Blanka-chan doll with electricity (3-hit OD version)",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "blanka",
+        "input": "j.[4]6P",
+        "name": "Aerial Rolling Attack (SA2)",
+        "fingerprint": "4c7b1cc0f02428b8bfc5f8efceb7b447eb8923433270eafecd7a0a04e2ed1e4c",
+        "action": "exclude",
+        "classification": "enhanced_state",
+        "reason": "SA2 install requirement is explicit in source notes; ordinary same-input record exists.",
+        "evidence": "SA2 install version (drains 100f/6.7% from install timer); 40f charge time (charge lasts 10f after releasing back direction); no charge required if canceled into from j.MP; can be done from any jump direction or after Coward Crouch > Raid Jump; button strength determines trajectory (LP close, MP mid, HP far); can hit cross-up; puts grounded opponents into limited juggle state; spike knockdown vs. airborne opponents; hitconfirm time refers to Rolling Cannon cancel vs. grounded opponents (cannot cancel if it connects at minimum height); activates Blanka-chan doll with electricity (meterless 1-hit version); POTENTIAL BUG: at minimum height, canceling into downward Rolling Cannon reduces landing recovery and gives frame advantage without consuming any additional SA2 Install timer",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "blanka",
+        "input": "2HK",
+        "name": "Crouching Heavy Kick",
+        "fingerprint": "a331930d734d131980292231b54233774ab2bfdd098080cae2bdc22bd6fd9fc5",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +25",
+        "evidenceRetrievedAt": "2026-11-05T09:20:25.827Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Blanka%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "blanka",
+        "input": "[2]8HK",
+        "name": "Vertical Rolling Attack",
+        "fingerprint": "9cb6ee271a7da9d08ba7be3720cbfc6c39567d06f5e97c7c953f94430bc3f456",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +42",
+        "evidenceRetrievedAt": "2026-11-05T09:20:25.827Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Blanka%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "blanka",
+        "input": "[2]8LK",
+        "name": "Vertical Rolling Attack",
+        "fingerprint": "8f7b56a7b50fbb670b56f9ed9ebc581dff84e28242ebfc6c1e4b93bf95dcfe9c",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +35",
+        "evidenceRetrievedAt": "2026-11-05T09:20:25.827Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Blanka%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "blanka",
+        "input": "[2]8MK",
+        "name": "Vertical Rolling Attack",
+        "fingerprint": "0ca333d0dc1735d5486282043a2ca8ea2daf855890123361a627ddd899839d9c",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +42",
+        "evidenceRetrievedAt": "2026-11-05T09:20:25.827Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Blanka%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "blanka",
+        "input": "[2]8KK",
+        "name": "Vertical Rolling Attack",
+        "fingerprint": "654f91a88fafa908fc11865ce4930e49b82bcaf7cef223bc06f62fd07851af5f",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +28",
+        "evidenceRetrievedAt": "2026-11-05T09:20:25.827Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Blanka%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "blanka",
+        "input": "[4]6HP",
+        "name": "Rolling Attack",
+        "fingerprint": "b467df09afdec5e01e588639dd8645cec1041373f905dedbeba4696f245b8cf5",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +19",
+        "evidenceRetrievedAt": "2026-11-05T09:20:25.827Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Blanka%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "blanka",
+        "input": "[4]6LP",
+        "name": "Rolling Attack",
+        "fingerprint": "13d3d9b8a13c052a4e5968dcaedbf5eb3b88abfc14af71bb87564cd39a6a8abe",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +13",
+        "evidenceRetrievedAt": "2026-11-05T09:20:25.827Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Blanka%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "blanka",
+        "input": "[4]6MP",
+        "name": "Rolling Attack",
+        "fingerprint": "443ae3674829a619cb3958365e99870950cf32c65170a16ef387c712e276b326",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +14",
+        "evidenceRetrievedAt": "2026-11-05T09:20:25.827Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Blanka%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "blanka",
+        "input": "[4]6PP",
+        "name": "Rolling Attack",
+        "fingerprint": "61e68b86cfff9501a964ac82ae76f2f0784dd5dd4c3fef0c56ef8f6f0f93aa11",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +57",
+        "evidenceRetrievedAt": "2026-11-05T09:20:25.827Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Blanka%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "blanka",
+        "input": "2PP",
+        "name": "Coward Crouch",
+        "fingerprint": "0336d5ea1b8dab38a29337f7516e4a8b46b669d4d7ffe00ed6210227527f79ed",
+        "action": "mark_not_applicable",
+        "field": "hit",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Blanka%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "blanka",
+        "input": "2PP",
+        "name": "Coward Crouch",
+        "fingerprint": "0336d5ea1b8dab38a29337f7516e4a8b46b669d4d7ffe00ed6210227527f79ed",
+        "action": "mark_not_applicable",
+        "field": "block",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Blanka%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "blanka",
+        "input": "214P",
+        "name": "Electric Thunder",
+        "fingerprint": "c1f6bae166f9d304cb336578a24138d0834cb5cebe333c618fa159d3d596ce60",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +39",
+        "evidenceRetrievedAt": "2026-11-05T09:20:25.827Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Blanka%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "blanka",
+        "input": "214PP",
+        "name": "Electric Thunder",
+        "fingerprint": "3a6a93e3be20f26872ab6eff0e4b9e24fc86c111223a8f6ba76b078bb7327870",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +40",
+        "evidenceRetrievedAt": "2026-11-05T09:20:25.827Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Blanka%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "blanka",
+        "input": "22P",
+        "name": "Blanka-chan Bomb",
+        "fingerprint": "d7e0746f2bc70315ed2667f3bc7e69b87a0733e1062d9d805558491b6ee07f70",
+        "action": "mark_not_applicable",
+        "field": "hit",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Blanka%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "blanka",
+        "input": "22P",
+        "name": "Blanka-chan Bomb",
+        "fingerprint": "d7e0746f2bc70315ed2667f3bc7e69b87a0733e1062d9d805558491b6ee07f70",
+        "action": "mark_not_applicable",
+        "field": "block",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Blanka%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      }
+    ],
+    "stale": [],
+    "classifiedExclusions": [
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "214[P]",
+        "name": "Electric Thunder (hold)",
+        "category": "special",
+        "classification": "held_button"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "22P~214P",
+        "name": "Blanka-chan Bomb (Charge)",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "22P~214PP",
+        "name": "Blanka-chan Bomb (OD Charge)",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "22P~236236P",
+        "name": "Blanka-chan Bomb (SA1 Charge)",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "2PP~K",
+        "name": "Raid Jump",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "2PP~P",
+        "name": "Wild Lift",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "3HP",
+        "name": "Amazon River Run",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "4KKK",
+        "name": "Surprise Back Hop",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "4MK",
+        "name": "Wild Edge",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6HP",
+        "name": "Wild Nail",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6KKK",
+        "name": "Surprise Forward Hop",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6MK",
+        "name": "Double Knee Bombs",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6MP",
+        "name": "Rock Crusher",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "8HP",
+        "name": "Neutral Jumping Heavy Punch",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.[4]6P",
+        "name": "Aerial Rolling Attack",
+        "category": "special",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.[4]6PP",
+        "name": "Aerial Rolling Attack",
+        "category": "special",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.HK",
+        "name": "Jumping Heavy Kick",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.HP",
+        "name": "Jumping Heavy Punch",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.LK",
+        "name": "Jumping Light Kick",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.LP",
+        "name": "Jumping Light Punch",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.MK",
+        "name": "Jumping Medium Kick",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.MP",
+        "name": "Jumping Medium Punch",
+        "category": "normal",
+        "classification": "air_move"
+      }
+    ]
+  }
+}

@@ -1,0 +1,643 @@
+{
+  "characterId": "mai",
+  "rawMoveCount": 70,
+  "candidateMoveCount": 28,
+  "candidateNormals": 12,
+  "candidateSpecials": 16,
+  "upstreamFetchedAt": "2026-11-01T00:01:59.250Z",
+  "missingNormals": [],
+  "excluded": [
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236[PP]",
+      "name": "OD Kachousen (Flame+Hold)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236[PP]",
+      "name": "OD Kachousen (Hold)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236[PP]~6P",
+      "name": "Midare Kachousen",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236[PP]~6P",
+      "name": "Midare Kachousen (Flame)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236[P]",
+      "name": "Kachousen (Flame+Hold)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "236[P]",
+      "name": "Kachousen (Hold)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "4HK",
+      "name": "Hoshi Kujaku 1",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "4HK~HK",
+      "name": "Hoshi Kujaku 2",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5LK~LK",
+      "name": "Hien Ren Kyaku 1",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5LK~LK~LK",
+      "name": "Hien Ren Kyaku 2",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6MP",
+      "name": "Senkotsu Uchi",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.214P",
+      "name": "Musasabi no Mai",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.214PP",
+      "name": "OD Musasabi no Mai",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.214PP",
+      "name": "OD Musasabi no Mai (Flame)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.214P",
+      "name": "Musasabi no Mai (Flame)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.HK",
+      "name": "Jumping Heavy Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.HP",
+      "name": "Jumping Heavy Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.LK",
+      "name": "Jumping Light Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.LP",
+      "name": "Jumping Light Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.MK",
+      "name": "Jumping Medium Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.MP",
+      "name": "Jumping Medium Punch",
+      "category": "normal"
+    }
+  ],
+  "gameVersion": "UNVERIFIED",
+  "status": "STAGING_ONLY",
+  "review": {
+    "applied": [
+      {
+        "characterId": "mai",
+        "input": "214HP",
+        "name": "HP Ryuuenbu (Flame)",
+        "fingerprint": "d4bf301b774757232c15c1abefcd349f0f2af689d071405b7e986085b2087f43",
+        "action": "exclude",
+        "classification": "resource_state",
+        "reason": "Source explicitly requires consuming Flame Stock; ordinary same-input record exists.",
+        "evidence": "Enhanced version that costs 1 Flame Stock; 2 hits, () refers to startup of 2nd hit from longer range; whiffs on crouching opponents unless they extend a vertical hurtbox (unsafe on hit if 1st hit connects like this); puts opponent into a limited juggle state (higher launch gives more follow-up options like 236KK launch or Flame 214MP safe jump); head hurtbox is anti-air invincible on frames 6-17 (slow but rewarding anti-air); 2nd hit (frames 27-36) is a strike hitbox that can dissipate standard 1-hit projectiles; incurs no extra damage scaling, making it a significantly stronger combo tool than the non-flame version; 1st active frame can only hit grounded opponents (allows it to combo from 5LP)",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "mai",
+        "input": "214LP",
+        "name": "LP Ryuuenbu (Flame)",
+        "fingerprint": "0c6ca8ae581e1d3f1f0d100e50fa6b66ac45407c0a716a61280571cf0e43177e",
+        "action": "exclude",
+        "classification": "resource_state",
+        "reason": "Source explicitly requires consuming Flame Stock; ordinary same-input record exists.",
+        "evidence": "Enhanced version that costs 1 Flame Stock; Low Crush 7-14f; strike hitbox that can dissipate standard 1-hit projectiles during active frames; always safe on block, and very effective at creating spacing traps against light normals (even when canceled from ranged pokes); when used as a meaty, can be up to +4 on block or KD +41 for a juggle; extends a forward hurtbox on whiff until the end of recovery",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "mai",
+        "input": "214MP",
+        "name": "MP Ryuuenbu (Flame)",
+        "fingerprint": "702cff34d5d07554f62f866e92705ad5f51cddd18f12cb174054012b5cd0d8ff",
+        "action": "exclude",
+        "classification": "resource_state",
+        "reason": "Source explicitly requires consuming Flame Stock; ordinary same-input record exists.",
+        "evidence": "Enhanced version that costs 1 Flame Stock; 2 hits, () refers to startup of 2nd hit from longer range; similar utility to LP version (grants a combo from 5LP as a decent light chain ender); forward movement ensures both hits connect when canceled (except in some whiff punish scenarios); 2nd hit (frames 25-31) is a strike hitbox that can dissipate standard 1-hit projectiles; can be spaced relatively safely on block (max range can be -4 unlike the non-flame version due to forward movement during active frames); puts opponents into limited juggle state (can juggle 623MK or SA1); sets up a perfect KD +42 safe jump on grounded or juggled hit (unless spaced out at max range where it becomes +44)",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "mai",
+        "input": "214PP",
+        "name": "OD Ryuuenbu (Flame)",
+        "fingerprint": "dd34e88d6e5aa3f4597f7b3fd5068b6380a5275466dcb2eb5b92f9559da3830c",
+        "action": "exclude",
+        "classification": "resource_state",
+        "reason": "Source explicitly requires consuming Flame Stock; ordinary same-input record exists.",
+        "evidence": "Enhanced version that costs 1 Flame Stock; 3 hits; puts opponent into a free juggle state (can only combo into a canceled SA2/SA3 midscreen); causes a wall splat in the corner (KD +61~82, higher advantage from farther away or when opponent is at the peak of their launch arc); much shorter wall splat time if performed twice in the same combo; variable KD Advantage (+37~41) if only the 3rd hit connects midscreen; 2nd/3rd hits (frames 30-34 and 42-46) are strike hitboxes that can dissipate 1-hit OD projectiles; good Burnout chip tool that leaves Mai +1 oB for looping pressure",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "mai",
+        "input": "236HK",
+        "name": "HK Hissatsu Shinobi Bachi (Flame)",
+        "fingerprint": "fcaea112302e5ce03610db3fb89233106626beac448efacc2a88785904f7208a",
+        "action": "exclude",
+        "classification": "resource_state",
+        "reason": "Source explicitly requires consuming Flame Stock; ordinary same-input record exists.",
+        "evidence": "Enhanced version that costs 1 Flame Stock; only the first 7 active frames of the 2nd hit are SA3 cancelable; puts the opponent into a limited juggle state (allows some follow-ups after high-connect juggles); SA3 cancel can occur on whiff when the first cartwheel connects (allows SA3 to connect during these high-connect juggles when the cancel window would normally have passed); combos from medium/heavy normals and Punish Counter 5LP, making it a solid combo ender and a great corner carry tool; reaches beyond full screen length; can be very plus if spaced perfectly or timed as a meaty (but very reactable startup in this scenario); 2nd hit active frames 7-15 whiff on crouching opponents unless they extend a vertical hurtbox; this makes it more interruptible by crouching attacks at long range, but makes it at least +2 when crouch blocked",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "mai",
+        "input": "236HP",
+        "name": "HP Kachousen (Flame)",
+        "fingerprint": "c6f43a2b2b2555fbf401277fc919fb0b0ab58bea8198b4a88b58c9cb6931274a",
+        "action": "exclude",
+        "classification": "resource_state",
+        "reason": "Source explicitly requires consuming Flame Stock; ordinary same-input record exists.",
+        "evidence": "Enhanced version that costs 1 Flame Stock; fastest travel speed; 2-hit standard projectile (cannot be dissipated by strikes); can hold the button for 19f to charge to a stronger version; startup can increase up to 20f when partially held; only the first hit is cancelable to SA3; puts airborne opponents into a limited juggle state; Counter-hit/Punish Counter advantage carries through both hits; Mai has an extended hurtbox vulnerable to strikes on her leg (3-45f) and arm (12-38f)",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "mai",
+        "input": "236KK",
+        "name": "OD Hissatsu Shinobi Bachi (Flame)",
+        "fingerprint": "afbbd605aa15b68ea79d612900ae03202895b1e9f1b2d481c58207fe242e8d94",
+        "action": "exclude",
+        "classification": "resource_state",
+        "reason": "Source explicitly requires consuming Flame Stock; ordinary same-input record exists.",
+        "evidence": "Enhanced version that costs 1 Flame Stock; no extra damage scaling, making it a much stronger combo route than regular version; stops after the 2nd hit on block; on hit, puts opponent into a limited juggle state (can follow up with air normals/specials/supers on frames 54-74); canceling the 2nd hit into SA2 whiffs (partial connect in the corner); Mai still performs the jump animation on whiff, allowing her to come down with an air normal (mostly a gimmick during charged Kachousen pressure); only the first active frame of the 2nd hit can connect on grounded opponents (the remaining 16 active frames only hit airborne); combos from 5LP, making it a useful damage/corner carry option even from light starters",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "mai",
+        "input": "236LK",
+        "name": "LK Hissatsu Shinobi Bachi (Flame)",
+        "fingerprint": "60c8783c4c6aabf612a1c008e33a3204ec1eca27bcbe10d3da7e62749c67baf3",
+        "action": "exclude",
+        "classification": "resource_state",
+        "reason": "Source explicitly requires consuming Flame Stock; ordinary same-input record exists.",
+        "evidence": "Enhanced version that costs 1 Flame Stock; only the first 7 active frames of the 2nd hit are SA3 cancelable; puts the opponent into a limited juggle state (allows some follow-ups after high-connect juggles); SA3 cancel can occur on whiff when the first cartwheel connects (allows SA3 to connect during these high-connect juggles when the cancel window would normally have passed); combos from any light normal, making it Mai's most consistent combo ender and a great corner carry tool; reaches about 80% screen length; can be very plus if spaced perfectly or timed as a meaty (but very reactable startup in this scenario); 2nd hit active frames 7-13 whiff on crouching opponents unless they extend a vertical hurtbox; this makes it more interruptible by crouching attacks at long range, but makes it at least +3 when crouch blocked",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "mai",
+        "input": "236LP",
+        "name": "LP Kachousen (Flame)",
+        "fingerprint": "07b0d84191553aa216bbb27a9d44685c6444fd9f233272a5435c4438e66a3b7e",
+        "action": "exclude",
+        "classification": "resource_state",
+        "reason": "Source explicitly requires consuming Flame Stock; ordinary same-input record exists.",
+        "evidence": "Enhanced version that costs 1 Flame Stock; slowest travel speed; 2-hit standard projectile (cannot be dissipated by strikes); can hold the button for 19f to charge to a stronger version; startup can increase up to 23f when partially held; only the first hit is cancelable to SA3; puts airborne opponents into a limited juggle state; Counter-hit/Punish Counter advantage carries through both hits; Mai has an extended hurtbox vulnerable to strikes on her leg (3-45f) and arm (16-42f)",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "mai",
+        "input": "236MK",
+        "name": "MK Hissatsu Shinobi Bachi (Flame)",
+        "fingerprint": "89f2475d3f43ee824c6b6cbd067f00e1613ceded3b28567c2406849362cca463",
+        "action": "exclude",
+        "classification": "resource_state",
+        "reason": "Source explicitly requires consuming Flame Stock; ordinary same-input record exists.",
+        "evidence": "Enhanced version that costs 1 Flame Stock; only the first 7 active frames of the 2nd hit are SA3 cancelable; puts the opponent into a limited juggle state (allows some follow-ups after high-connect juggles); SA3 cancel can occur on whiff when the first cartwheel connects (allows SA3 to connect during these high-connect juggles when the cancel window would normally have passed); combos from medium/heavy normals and Punish Counter light normals, making it a solid combo ender and a great corner carry tool; reaches about 99% screen length (barely whiffs on fullscreen standing opponents); can be very plus if spaced perfectly or timed as a meaty (but very reactable startup in this scenario); 2nd hit active frames 7-15 whiff on crouching opponents unless they extend a vertical hurtbox; this makes it more interruptible by crouching attacks at long range, but makes it at least +3 when crouch blocked; sets up a safe jab vs. 9f or slower reversals (close range hit grounded hit into Dash + 5LP or 2LP)",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "mai",
+        "input": "236MP",
+        "name": "MP Kachousen (Flame)",
+        "fingerprint": "f60dde4b8bb11f5b2f6f34f8050a7668f7cc8cf541e3ad54bf34687ae7c99b83",
+        "action": "exclude",
+        "classification": "resource_state",
+        "reason": "Source explicitly requires consuming Flame Stock; ordinary same-input record exists.",
+        "evidence": "Enhanced version that costs 1 Flame Stock; medium travel speed; 2-hit standard projectile (cannot be dissipated by strikes); can hold the button for 19f to charge to a stronger version; startup can increase up to 22f when partially held; only the first hit is cancelable to SA3; puts airborne opponents into a limited juggle state; Counter-hit/Punish Counter advantage carries through both hits; Mai has an extended hurtbox vulnerable to strikes on her leg (3-45f) and arm (14-40f)",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "mai",
+        "input": "236PP",
+        "name": "OD Kachousen (Flame)",
+        "fingerprint": "bc61baf7b5273534c40489bb29f106a9efabe42a90c5b83d2c498d2b605ee844",
+        "action": "exclude",
+        "classification": "resource_state",
+        "reason": "Source explicitly requires consuming Flame Stock; ordinary same-input record exists.",
+        "evidence": "Enhanced version that costs 1 Flame Stock; 2-hit OD projectile (cannot be dissipated by strikes); bounces upward on contact with the opponent, then drops downward for a follow-up hit; () refers to damage/hitstun values of the bouncing fan follow-up on hit or block; can hold the button for 19f for a charged version that throws 2 fans; startup can increase up to 21f when partially held; only the first hit is cancelable to SA2/SA3; puts airborne opponents into a limited juggle state; Mai has an extended hurtbox vulnerable to strikes on her leg (12-37f) and upper body (15-27f); frame gap before follow-up bounce: 24f stand / 30f crouch (on hit), 26f stand / 32f crouch (on block); all gaps are 1f smaller vs. standing Dee Jay, 2f smaller vs. standing JP/Marisa/Sagat/Zangief; the bouncing fan does not trigger proximity guard (allowing back walk) and counts as an air attack (allows anti-air invuln moves to pass through)",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "mai",
+        "input": "623HK",
+        "name": "HK Hishou Ryuuenjin (Flame)",
+        "fingerprint": "beb02ef9a8019cd7f640b154b1b0c03235bdf15d58a0efff76093e8ceb863150",
+        "action": "exclude",
+        "classification": "resource_state",
+        "reason": "Source explicitly requires consuming Flame Stock; ordinary same-input record exists.",
+        "evidence": "Enhanced version that costs 1 Flame Stock in exchange for slightly better damage, juggle potential, and KD advantage; mid/farther range anti-air and juggle ender (slower startup limits its use in some juggle routes); cannot hit cross-up; puts opponents into limited juggle state on hit; first/second hits can whiff if used too early as an anti-air; last 2 hits whiff on block (except vs. standing Dee Jay/JP/Marisa/Sagat/Zangief) resulting in worse block advantage and reduced chip/drive damage",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "mai",
+        "input": "623KK",
+        "name": "OD Hishou Ryuuenjin (Flame)",
+        "fingerprint": "07a6b669070fc459bc25d44bd41750b38a984a51d80e5118c0d12058bf8e0638",
+        "action": "exclude",
+        "classification": "resource_state",
+        "reason": "Source explicitly requires consuming Flame Stock; ordinary same-input record exists.",
+        "evidence": "Enhanced version that costs 1 Flame Stock in exchange for slightly better damage and KD advantage; Mai's primary reversal, as well as an anti-air and strong juggle ender; cannot hit cross-up; puts opponents into limited juggle state on hit; first/second hits can whiff if used too early as an anti-air; last 2 hits whiff on crouch block resulting in worse block advantage and reduced chip/drive damage; 7f extra landing recovery on block",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "mai",
+        "input": "623LK",
+        "name": "LK Hishou Ryuuenjin (Flame)",
+        "fingerprint": "853969b3306169911d57e9434ca82e6c4add4da52d360a660b77655834f99814",
+        "action": "exclude",
+        "classification": "resource_state",
+        "reason": "Source explicitly requires consuming Flame Stock; ordinary same-input record exists.",
+        "evidence": "Enhanced version that costs 1 Flame Stock in exchange for slightly better damage, juggle potential, and KD advantage; close range anti-air and juggle ender; cannot hit cross-up; puts opponents into limited juggle state on hit; first/second hits can whiff if used too early as an anti-air; last 2 hits whiff on crouch block (except vs. Dee Jay/JP/Marisa/Sagat/Zangief) resulting in worse block advantage and reduced chip/drive damage",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "mai",
+        "input": "623MK",
+        "name": "MK Hishou Ryuuenjin (Flame)",
+        "fingerprint": "374cbfc93b6f6069428e5c7743eda772c56582e8d9a6b4e54dc7328db39f0d73",
+        "action": "exclude",
+        "classification": "resource_state",
+        "reason": "Source explicitly requires consuming Flame Stock; ordinary same-input record exists.",
+        "evidence": "Enhanced version that costs 1 Flame Stock in exchange for slightly better damage, juggle potential, and KD advantage; close/mid range anti-air and juggle ender; cannot hit cross-up; puts opponents into limited juggle state on hit; first/second hits can whiff if used too early as an anti-air; last 2 hits whiff on crouch block resulting in worse block advantage and reduced chip/drive damage",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "mai",
+        "input": "j.236236K",
+        "name": "Air Chou Hissatsu Shinobi Bachi (Flame)",
+        "fingerprint": "f9d82dc924fdb45e80fa55e36ef4ddb0b1fc22edc6d221f278a1896e24191513",
+        "action": "exclude",
+        "classification": "resource_state",
+        "reason": "Source explicitly requires consuming Flame Stock; ordinary same-input record exists.",
+        "evidence": "Enhanced version that costs 1 Flame Stock; can be input during forward or neutral jump; deals 20% more damage on counter-hit/Punish Counter (3600 damage / 120x11,2280); good air-to-air and combo tool; no invincibility of any kind, but can be very effective against projectiles when input at minimum height with a Tiger Knee motion (2362369K); deals less damage from long range due to earlier hits whiffing; frame advantage varies drastically depending on the height and distance it connects; very likely to fly over the opponent on block unless they are fully cornered; cannot hit cross-up",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "mai",
+        "input": "2HK",
+        "name": "Sori Geri",
+        "fingerprint": "9cbb1f13ba285d275c63603b45649364049287310771403a794c8f822e8cf9ab",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +38",
+        "evidenceRetrievedAt": "2026-11-05T09:20:27.784Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Mai%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "mai",
+        "input": "214PP",
+        "name": "OD Ryuuenbu",
+        "fingerprint": "e03404a64551491bd46f57d44b06d6507f85ed94f3c6354cfaeae662a27b4fa6",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +39",
+        "evidenceRetrievedAt": "2026-11-05T09:20:27.784Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Mai%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "mai",
+        "input": "236KK",
+        "name": "OD Hissatsu Shinobi Bachi",
+        "fingerprint": "99821f8929fdf8d5ca5e9746df129a53bdf78bd7bb2c47793414b69d93f412bb",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +27",
+        "evidenceRetrievedAt": "2026-11-05T09:20:27.784Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Mai%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "mai",
+        "input": "623HK",
+        "name": "HK Hishou Ryuuenjin",
+        "fingerprint": "a639b269f0ef46c5cde2da045ac2e34be443f54a6488f63fd7fda7fb2bdd8410",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +31",
+        "evidenceRetrievedAt": "2026-11-05T09:20:27.784Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Mai%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "mai",
+        "input": "623LK",
+        "name": "LK Hishou Ryuuenjin",
+        "fingerprint": "78f731777a33c32c45718013e16f2f590c11e8ae9f2279a8bef198d3a2a26144",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +29",
+        "evidenceRetrievedAt": "2026-11-05T09:20:27.784Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Mai%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "mai",
+        "input": "623MK",
+        "name": "MK Hishou Ryuuenjin",
+        "fingerprint": "f99bd8ac02ac204a72ea377164f142672fe3a9fa958dcddbda26ae079f40157b",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +31",
+        "evidenceRetrievedAt": "2026-11-05T09:20:27.784Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Mai%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "mai",
+        "input": "623KK",
+        "name": "OD Hishou Ryuuenjin",
+        "fingerprint": "37ec2583eb555b78c2a13f3be28159cda95900bbe5fa5083e251a7e7f6776a47",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +20",
+        "evidenceRetrievedAt": "2026-11-05T09:20:27.784Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Mai%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      }
+    ],
+    "stale": [],
+    "classifiedExclusions": [
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236[PP]",
+        "name": "OD Kachousen (Flame+Hold)",
+        "category": "special",
+        "classification": "held_button"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236[PP]",
+        "name": "OD Kachousen (Hold)",
+        "category": "special",
+        "classification": "held_button"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236[PP]~6P",
+        "name": "Midare Kachousen",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236[PP]~6P",
+        "name": "Midare Kachousen (Flame)",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236[P]",
+        "name": "Kachousen (Flame+Hold)",
+        "category": "special",
+        "classification": "held_button"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "236[P]",
+        "name": "Kachousen (Hold)",
+        "category": "special",
+        "classification": "held_button"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "4HK",
+        "name": "Hoshi Kujaku 1",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "4HK~HK",
+        "name": "Hoshi Kujaku 2",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5LK~LK",
+        "name": "Hien Ren Kyaku 1",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5LK~LK~LK",
+        "name": "Hien Ren Kyaku 2",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6MP",
+        "name": "Senkotsu Uchi",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.214P",
+        "name": "Musasabi no Mai",
+        "category": "special",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.214PP",
+        "name": "OD Musasabi no Mai",
+        "category": "special",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.214PP",
+        "name": "OD Musasabi no Mai (Flame)",
+        "category": "special",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.214P",
+        "name": "Musasabi no Mai (Flame)",
+        "category": "special",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.HK",
+        "name": "Jumping Heavy Kick",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.HP",
+        "name": "Jumping Heavy Punch",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.LK",
+        "name": "Jumping Light Kick",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.LP",
+        "name": "Jumping Light Punch",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.MK",
+        "name": "Jumping Medium Kick",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.MP",
+        "name": "Jumping Medium Punch",
+        "category": "normal",
+        "classification": "air_move"
+      }
+    ]
+  }
+}

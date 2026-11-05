@@ -1,0 +1,970 @@
+{
+  "url": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Mai%22&limit=500",
+  "retrievedAt": "2026-11-05T09:20:27.784Z",
+  "status": 200,
+  "characterId": "mai",
+  "gameVersion": "UNVERIFIED",
+  "license": "CC-BY-SA-4.0",
+  "attribution": "SuperCombo Wiki contributors",
+  "data": {
+    "cargoquery": [
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "214214P",
+          "startup": "10(3)",
+          "total": "94",
+          "hitAdv": "HKD +19<br>(KD +52)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-33'''</span>",
+          "notes": "1st hit causes cinematic; non-cinematic version does less damage (varies based on how many hits connect), but can juggle into 623K to recover some lost damage; cinematic time regenerates ~2 Drive bars for Mai; 3f startup when canceled from 236K/KK only; slower startup makes it risky as a reversal (many light normals can be safe with meaty timing)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "214214P",
+          "startup": "10(3)",
+          "total": "94",
+          "hitAdv": "HKD +20<br>(KD +52)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-33'''</span>",
+          "notes": "1st hit causes cinematic; non-cinematic version does less damage (varies based on how many hits connect), but can juggle into 623K to recover some lost damage; available at 25% HP or below; cinematic time regenerates ~2.1 Drive bars for Mai; 3f startup when canceled from 236K/KK only; slower startup makes it risky as a reversal (many light normals can be safe with meaty timing)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "214HP",
+          "startup": "14(27)",
+          "total": "48",
+          "hitAdv": "KD +47",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Enhanced version that costs 1 Flame Stock; 2 hits, () refers to startup of 2nd hit from longer range; whiffs on crouching opponents unless they extend a vertical hurtbox (unsafe on hit if 1st hit connects like this); puts opponent into a limited juggle state (higher launch gives more follow-up options like 236KK launch or Flame 214MP safe jump); head hurtbox is anti-air invincible on frames 6-17 (slow but rewarding anti-air); 2nd hit (frames 27-36) is a strike hitbox that can dissipate standard 1-hit projectiles; incurs no extra damage scaling, making it a significantly stronger combo tool than the non-flame version; 1st active frame can only hit grounded opponents (allows it to combo from 5LP)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "214HP",
+          "startup": "15(27)",
+          "total": "48",
+          "hitAdv": "KD +43",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "2 hits, () refers to startup of 2nd hit from longer range; whiffs on crouching opponents unless they extend a vertical hurtbox (unsafe on hit if 1st hit connects like this); puts opponent into a limited juggle state; head hurtbox is anti-air invincible on frames 6-17 (slow but rewarding anti-air); 2nd hit (frames 27-36) is a strike hitbox that can dissipate standard 1-hit projectiles"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "214LP",
+          "startup": "14",
+          "total": "35",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "Low Crush 7-14f; strike hitbox that can dissipate standard 1-hit projectiles during active frames; becomes KD +35 on Counter-hit/Punish Counter; leaves opponent standing on hit just outside throw range (must walk 1-2f to throw, or more if spaced far away); safe when well spaced in neutral; when canceled from a normal on block, its safe range is character-specific (max range 2MK offers the best pushback); useful oki tool that can be up to +9/+2 when meaty (e.g. 2HK, whiff 5LK, 214LP) and can also lead to a juggle on meaty Counter-hit; extends a forward hurtbox on whiff until the end of recovery"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "214LP",
+          "startup": "14",
+          "total": "35",
+          "hitAdv": "KD +35",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-2'''</span>",
+          "notes": "Enhanced version that costs 1 Flame Stock; Low Crush 7-14f; strike hitbox that can dissipate standard 1-hit projectiles during active frames; always safe on block, and very effective at creating spacing traps against light normals (even when canceled from ranged pokes); when used as a meaty, can be up to +4 on block or KD +41 for a juggle; extends a forward hurtbox on whiff until the end of recovery"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "214MP",
+          "startup": "14(25)",
+          "total": "47",
+          "hitAdv": "KD +35",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "2 hits, () refers to startup of 2nd hit from longer range; similar utility to LP version but grants a knockdown instead of a standing reset; combos from 5LP as a decent light chain ender; 1st hit can whiff when canceled from ranged pokes, making it unsafe; 2nd hit (frames 25-31) is a strike hitbox that can dissipate standard 1-hit projectiles; can be spaced relatively safely on block (only Ken SA2 can punish at max range)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "214MP",
+          "startup": "14(25)",
+          "total": "47",
+          "hitAdv": "KD +42(+44)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6(-4)'''</span>",
+          "notes": "Enhanced version that costs 1 Flame Stock; 2 hits, () refers to startup of 2nd hit from longer range; similar utility to LP version (grants a combo from 5LP as a decent light chain ender); forward movement ensures both hits connect when canceled (except in some whiff punish scenarios); 2nd hit (frames 25-31) is a strike hitbox that can dissipate standard 1-hit projectiles; can be spaced relatively safely on block (max range can be -4 unlike the non-flame version due to forward movement during active frames); puts opponents into limited juggle state (can juggle 623MK or SA1); sets up a perfect KD +42 safe jump on grounded or juggled hit (unless spaced out at max range where it becomes +44)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "214PP",
+          "startup": "16",
+          "total": "62",
+          "hitAdv": "KD +39",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "3 hits; puts opponent into a limited juggle state (free juggle state if only the final hit connects); can juggle into 623MK/KK or SA1 in the corner, or cancel into SA2/SA3 midscreen; variable KD Advantage (+37~41) if only the 3rd hit connects (in worst case, can only juggle into 4f lights in the corner); 2nd/3rd hits (frames 30-34 and 42-46) are strike hitboxes that can dissipate 1-hit OD projectiles; good Burnout chip tool that leaves Mai +1 oB for looping pressure"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "214PP",
+          "startup": "16",
+          "total": "62",
+          "hitAdv": "KD +39",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Enhanced version that costs 1 Flame Stock; 3 hits; puts opponent into a free juggle state (can only combo into a canceled SA2/SA3 midscreen); causes a wall splat in the corner (KD +61~82, higher advantage from farther away or when opponent is at the peak of their launch arc); much shorter wall splat time if performed twice in the same combo; variable KD Advantage (+37~41) if only the 3rd hit connects midscreen; 2nd/3rd hits (frames 30-34 and 42-46) are strike hitboxes that can dissipate 1-hit OD projectiles; good Burnout chip tool that leaves Mai +1 oB for looping pressure"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "236236K",
+          "startup": "7",
+          "total": "68(79)",
+          "hitAdv": "KD +33",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-24'''</span>",
+          "notes": "11f extra recovery on block; solid range, but a short invincibility window that makes it difficult to use against slower projectiles; deals less damage from long range due to earlier hits whiffing; good reversal and juggle ender; generally should not be canceled into from OD specials (214PP: manually juggle afterward, 236KK: juggle j.MP > Air SA2)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "236236K",
+          "startup": "7",
+          "total": "73(79)",
+          "hitAdv": "KD +38",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-24'''</span>",
+          "notes": "Enhanced version for 1 Flame Stock; 6f extra recovery on block; moves forward much more quickly and has extra projectile invincibility compared to the standard version, making it an incredible anti-fireball and whiff punish tool; good reversal and juggle ender; deals less damage from long range due to earlier hits whiffing; puts opponents into limited juggle state (can juggle 623LK in the corner, and higher juggle/anti-air connects can give better juggles (e.g. midscreen Flame 214PP, juggle Flame SA2 + Flame 623KK); generally should not be canceled into from OD specials (214PP: manually juggle afterward, 236KK: juggle j.MP > Air SA2)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "236236P",
+          "startup": "6",
+          "total": "141",
+          "hitAdv": "KD +40",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-26'''</span>",
+          "notes": "Refills Mai's flame stock count to 5 on the last frame of recovery; flame stocks enhance special moves and SA1/SA2 (stocks do not carry over between rounds); flame-enhanced version has a wider hitbox in both directions and grants better oki; KD advantage refers to grounded hit (higher advantage vs. airborne but also variable); short horizontal range but has a good anti-air hitbox that hits on both sides; puts the opponent into a limited juggle state; 12-hit projectile, but Perfect Parry only incurs 1 recovery frame per hit (allows the opponent to interrupt between hits after one Perfect Parry); on hit/block, the last projectile hit has 1 active frame, converting the remaining 2 active frames to \"recovery frames\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "236236P",
+          "startup": "6",
+          "total": "90",
+          "hitAdv": "KD +26",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-31'''</span>",
+          "notes": "Grants Mai 5 flame stocks on the last frame of recovery; flame stocks enhance special moves and SA1/SA2 (stocks do not carry over between rounds); short horizontal range but has a good anti-air hitbox that hits on both sides; KD advantage refers to grounded hit (higher advantage vs. airborne but also variable); 8-hit projectile, but Perfect Parry only incurs 1 recovery frame per hit (allows the opponent to interrupt between hits after one Perfect Parry); on hit/block, the last 2 projectile hits have 1 active frame each, occurring consecutively (the remaining frames are converted to \"recovery frames\")"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "236HK",
+          "startup": "18",
+          "total": "68",
+          "hitAdv": "KD +22(+38)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-13'''</span><span style=\"color: #32CD32;\">(+3)</span>",
+          "notes": "Only the first 3 active frames of the 2nd hit are SA3 cancelable; puts the opponent into a limited juggle state (allows some follow-ups after high-connect juggles); SA3 cancel can occur on whiff when the first cartwheel connects (allows SA3 to connect during these high-connect juggles when the cancel window would normally have passed); combos from medium/heavy normals and Punish Counter 5LP, making it a solid combo ender and a great corner carry tool; reaches beyond full screen length; can be very plus if spaced perfectly or timed as a meaty (but very reactable startup in this scenario); 2nd hit active frames 7-15 whiff on crouching opponents unless they extend a vertical hurtbox; this makes it more interruptible by crouching attacks at long range, but makes it at least +2 when crouch blocked"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "236HK",
+          "startup": "18",
+          "total": "68",
+          "hitAdv": "KD +22(+38)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-13'''</span><span style=\"color: #32CD32;\">(+3)</span>",
+          "notes": "Enhanced version that costs 1 Flame Stock; only the first 7 active frames of the 2nd hit are SA3 cancelable; puts the opponent into a limited juggle state (allows some follow-ups after high-connect juggles); SA3 cancel can occur on whiff when the first cartwheel connects (allows SA3 to connect during these high-connect juggles when the cancel window would normally have passed); combos from medium/heavy normals and Punish Counter 5LP, making it a solid combo ender and a great corner carry tool; reaches beyond full screen length; can be very plus if spaced perfectly or timed as a meaty (but very reactable startup in this scenario); 2nd hit active frames 7-15 whiff on crouching opponents unless they extend a vertical hurtbox; this makes it more interruptible by crouching attacks at long range, but makes it at least +2 when crouch blocked"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "236HP",
+          "startup": "12",
+          "total": "45",
+          "hitAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-7'''</span>",
+          "notes": "Enhanced version that costs 1 Flame Stock; fastest travel speed; 2-hit standard projectile (cannot be dissipated by strikes); can hold the button for 19f to charge to a stronger version; startup can increase up to 20f when partially held; only the first hit is cancelable to SA3; puts airborne opponents into a limited juggle state; Counter-hit/Punish Counter advantage carries through both hits; Mai has an extended hurtbox vulnerable to strikes on her leg (3-45f) and arm (12-38f)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "236HP",
+          "startup": "12",
+          "total": "48",
+          "hitAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-11'''</span>",
+          "notes": "Fastest travel speed; low-priority 1-hit projectile that disappears when interacting with another strike or projectile hitbox (does not dissipate any hits of a standard projectile); clashing with a fan is considered a whiff (no extra hitstop or cancelability); can hold the button for 19f to charge to a stronger version; startup can increase up to 20f when partially held; puts airborne opponents into a limited juggle state; Mai has an extended hurtbox vulnerable to strikes on her leg (3-48f) and arm (12-38f)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "236KK",
+          "startup": "14",
+          "total": "77",
+          "hitAdv": "KD +27",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span>",
+          "notes": "Stops after the 2nd hit on block; on hit, puts opponent into a limited juggle state (can follow up with air normals/specials/supers on frames 54-74); canceling the 2nd hit into SA2 whiffs (partial connect in the corner); Mai still performs the jump animation on whiff, allowing her to come down with an air normal (mostly a gimmick during charged Kachousen pressure); only the first active frame of the 2nd hit can connect on grounded opponents (the remaining 16 active frames only hit airborne); combos from 5LP, making it a useful damage/corner carry option even from light starters"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "236KK",
+          "startup": "14",
+          "total": "77",
+          "hitAdv": "KD +27",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span>",
+          "notes": "Enhanced version that costs 1 Flame Stock; no extra damage scaling, making it a much stronger combo route than regular version; stops after the 2nd hit on block; on hit, puts opponent into a limited juggle state (can follow up with air normals/specials/supers on frames 54-74); canceling the 2nd hit into SA2 whiffs (partial connect in the corner); Mai still performs the jump animation on whiff, allowing her to come down with an air normal (mostly a gimmick during charged Kachousen pressure); only the first active frame of the 2nd hit can connect on grounded opponents (the remaining 16 active frames only hit airborne); combos from 5LP, making it a useful damage/corner carry option even from light starters"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "236LK",
+          "startup": "10",
+          "total": "55",
+          "hitAdv": "KD +27(+43)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-10'''</span><span style=\"color: #30D5B8;\">'''(+6)'''</span>",
+          "notes": "Only the first 6 active frames of the 2nd hit are SA3 cancelable; puts the opponent into a limited juggle state (allows some follow-ups after high-connect juggles); SA3 cancel can occur on whiff when the first cartwheel connects (allows SA3 to connect during these high-connect juggles when the cancel window would normally have passed); combos from any light normal, making it Mai's most consistent combo ender and a great corner carry tool; reaches about 80% screen length; can be very plus if spaced perfectly or timed as a meaty (but very reactable startup in this scenario); 2nd hit active frames 7-13 whiff on crouching opponents unless they extend a vertical hurtbox; this makes it more interruptible by crouching attacks at long range, but makes it at least +3 when crouch blocked"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "236LK",
+          "startup": "10",
+          "total": "55",
+          "hitAdv": "KD +27(+43)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-10'''</span><span style=\"color: #30D5B8;\">'''(+6)'''</span>",
+          "notes": "Enhanced version that costs 1 Flame Stock; only the first 7 active frames of the 2nd hit are SA3 cancelable; puts the opponent into a limited juggle state (allows some follow-ups after high-connect juggles); SA3 cancel can occur on whiff when the first cartwheel connects (allows SA3 to connect during these high-connect juggles when the cancel window would normally have passed); combos from any light normal, making it Mai's most consistent combo ender and a great corner carry tool; reaches about 80% screen length; can be very plus if spaced perfectly or timed as a meaty (but very reactable startup in this scenario); 2nd hit active frames 7-13 whiff on crouching opponents unless they extend a vertical hurtbox; this makes it more interruptible by crouching attacks at long range, but makes it at least +3 when crouch blocked"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "236LP",
+          "startup": "16",
+          "total": "45",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Enhanced version that costs 1 Flame Stock; slowest travel speed; 2-hit standard projectile (cannot be dissipated by strikes); can hold the button for 19f to charge to a stronger version; startup can increase up to 23f when partially held; only the first hit is cancelable to SA3; puts airborne opponents into a limited juggle state; Counter-hit/Punish Counter advantage carries through both hits; Mai has an extended hurtbox vulnerable to strikes on her leg (3-45f) and arm (16-42f)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "236LP",
+          "startup": "16",
+          "total": "48",
+          "hitAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-7'''</span>",
+          "notes": "Slowest travel speed; low-priority 1-hit projectile that disappears when interacting with another strike or projectile hitbox (does not dissipate any hits of a standard projectile); clashing with a fan is considered a whiff (no extra hitstop or cancelability); can hold the button for 19f to charge to a stronger version; startup can increase up to 23f when partially held; puts airborne opponents into a limited juggle state; Mai has an extended hurtbox vulnerable to strikes on her leg (3-48f) and arm (16-42f)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "236MK",
+          "startup": "15",
+          "total": "64",
+          "hitAdv": "KD +23(+39)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span><span style=\"color: #30D5B8;\">'''(+4)'''</span>",
+          "notes": "Only the first 3 active frames of the 2nd hit are SA3 cancelable; puts the opponent into a limited juggle state (allows some follow-ups after high-connect juggles); SA3 cancel can occur on whiff when the first cartwheel connects (allows SA3 to connect during these high-connect juggles when the cancel window would normally have passed); combos from medium/heavy normals and Punish Counter light normals, making it a solid combo ender and a great corner carry tool; reaches about 99% screen length (barely whiffs on fullscreen standing opponents); can be very plus if spaced perfectly or timed as a meaty (but very reactable startup in this scenario); 2nd hit active frames 7-15 whiff on crouching opponents unless they extend a vertical hurtbox; this makes it more interruptible by crouching attacks at long range, but makes it at least +3 when crouch blocked; sets up a safe jab vs. 9f or slower reversals (close range hit grounded hit into Dash + 5LP or 2LP)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "236MK",
+          "startup": "15",
+          "total": "64",
+          "hitAdv": "KD +23(+39)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span><span style=\"color: #30D5B8;\">'''(+4)'''</span>",
+          "notes": "Enhanced version that costs 1 Flame Stock; only the first 7 active frames of the 2nd hit are SA3 cancelable; puts the opponent into a limited juggle state (allows some follow-ups after high-connect juggles); SA3 cancel can occur on whiff when the first cartwheel connects (allows SA3 to connect during these high-connect juggles when the cancel window would normally have passed); combos from medium/heavy normals and Punish Counter light normals, making it a solid combo ender and a great corner carry tool; reaches about 99% screen length (barely whiffs on fullscreen standing opponents); can be very plus if spaced perfectly or timed as a meaty (but very reactable startup in this scenario); 2nd hit active frames 7-15 whiff on crouching opponents unless they extend a vertical hurtbox; this makes it more interruptible by crouching attacks at long range, but makes it at least +3 when crouch blocked; sets up a safe jab vs. 9f or slower reversals (close range hit grounded hit into Dash + 5LP or 2LP)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "236MP",
+          "startup": "14",
+          "total": "45",
+          "hitAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+          "notes": "Enhanced version that costs 1 Flame Stock; medium travel speed; 2-hit standard projectile (cannot be dissipated by strikes); can hold the button for 19f to charge to a stronger version; startup can increase up to 22f when partially held; only the first hit is cancelable to SA3; puts airborne opponents into a limited juggle state; Counter-hit/Punish Counter advantage carries through both hits; Mai has an extended hurtbox vulnerable to strikes on her leg (3-45f) and arm (14-40f)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "236MP",
+          "startup": "14",
+          "total": "48",
+          "hitAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-9'''</span>",
+          "notes": "Medium travel speed; low-priority 1-hit projectile that disappears when interacting with another strike or projectile hitbox (does not dissipate any hits of a standard projectile); clashing with a fan is considered a whiff (no extra hitstop or cancelability); can hold the button for 19f to charge to a stronger version; startup can increase up to 22f when partially held; puts airborne opponents into a limited juggle state; Mai has an extended hurtbox vulnerable to strikes on her leg (3-48f) and arm (14-40f)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "236PP",
+          "startup": "12",
+          "total": "42",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+          "notes": "1-hit OD projectile (cannot be dissipated by strikes); bounces upward on contact with the opponent, then drops downward for a follow-up hit; () refers to damage/hitstun values of the bouncing fan follow-up on hit or block; can hold the button for 19f for a charged version that throws 2 fans; startup can increase up to 21f when partially held; only the first hit is cancelable to SA2/SA3; puts airborne opponents into a limited juggle state; Mai has an extended hurtbox vulnerable to strikes on her leg (12-37f) and upper body (15-27f); frame gap before follow-up bounce: 16f stand / 22f crouch (on hit), 24f stand / 30f crouch (on block); all gaps are 1f smaller vs. standing Dee Jay, 2f smaller vs. standing JP/Marisa/Sagat/Zangief; the bouncing fan does not trigger proximity guard (allowing back walk) and counts as an air attack (allows anti-air invuln moves to pass through)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "236PP",
+          "startup": "12",
+          "total": "42",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "notes": "Enhanced version that costs 1 Flame Stock; 2-hit OD projectile (cannot be dissipated by strikes); bounces upward on contact with the opponent, then drops downward for a follow-up hit; () refers to damage/hitstun values of the bouncing fan follow-up on hit or block; can hold the button for 19f for a charged version that throws 2 fans; startup can increase up to 21f when partially held; only the first hit is cancelable to SA2/SA3; puts airborne opponents into a limited juggle state; Mai has an extended hurtbox vulnerable to strikes on her leg (12-37f) and upper body (15-27f); frame gap before follow-up bounce: 24f stand / 30f crouch (on hit), 26f stand / 32f crouch (on block); all gaps are 1f smaller vs. standing Dee Jay, 2f smaller vs. standing JP/Marisa/Sagat/Zangief; the bouncing fan does not trigger proximity guard (allowing back walk) and counts as an air attack (allows anti-air invuln moves to pass through)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "236[PP]",
+          "startup": "28(48)",
+          "total": "58",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+14'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+12'''</span>",
+          "notes": "Throws 2 single-hit fans (these fans do NOT bounce on contact with the opponent); has OD priority and cannot be dissipated by a strike; cancelable into a follow-up (~6P) that throws 2 additional fans at no extra cost; puts airborne opponents into a limited juggle state (does not affect any existing juggle state); Counter-hit/Punish Counter advantage carries through both hits; only the first hit is cancelable to SA2/SA3; Mai has an extended hurtbox vulnerable to strikes on her arm and head (28-58f)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "236[PP]",
+          "startup": "28(48)",
+          "total": "58",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+45(+52)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+46(+53)'''</span>",
+          "notes": "Throws 2 fans that bounce on contact with the opponent for up to 4 hits total; has OD priority and cannot be dissipated by a strike; all 4 fan hits form a true combo or blockstring after the first one connects; the listed frame advantage is for point blank standing(crouching) characters (slightly less advantage taller characters like Dee Jay/JP/Marisa/Sagat/Zangief); cancelable into a follow-up (~6P) that throws 2 additional fans at no extra cost; puts airborne opponents into a limited juggle state (does not affect any existing juggle state); only the first hit is cancelable to SA2/SA3; Mai has an extended hurtbox vulnerable to strikes on her arm and head (28-58f); the bouncing fan does not trigger proximity guard (allowing back walk) and counts as an air attack (allows anti-air invuln moves to pass through)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "236[PP]~6P",
+          "startup": "57+15",
+          "total": "39(96)",
+          "hitAdv": "KD +60~",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+33~40'''</span><br><span style=\"color: #30D5B8;\">'''(+15~39 Tall)'''</span>",
+          "notes": "Throws an additional 2-hit projectile with OD priority (does not dissipate on contact with strike hitboxes); on contact with the opponent, the fan splits into 2 additional projectiles and bounces up before hitting on the way down; the two falling fans bounce at staggered heights, with the second hitting much later than the first; if 1 hit of the first Midare Kachousen is dissipated then the low bouncing fan does not appear; puts opponents into a limited juggle state if the initial Midare Kachousen fan connects, while the falling fans keep the opponent in grounded hitstun; () refers to damage/hitstun values of the bouncing follow-ups on hit or block; any hit that connects after the follow-up bounce overwrites the fan's hitstun/blockstun; Mai has an extended hurtbox vulnerable to strikes on her arm/head (28-79f); the listed frame advantage assumes Mai is at point blank range; all hits up to the first bouncing fan are a true blockstring (advantage is calculated from that point, ignoring the final delayed fan); the bouncing fan does not trigger proximity guard (allowing back walk) and counts as an air attack (allows anti-air invuln moves to pass through)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "236[PP]~6P",
+          "startup": "57+15",
+          "total": "39(96)",
+          "hitAdv": "KD +61~",
+          "blockAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+          "notes": "Throws an additional 2-hit projectile with OD priority (does not dissipate on contact with strike hitboxes); on contact with the opponent, the fan splits into 2 additional projectiles and bounces up before hitting on the way down; the two falling fans bounce at staggered heights, with the second hitting much later than the first; if 1 hit of the first Midare Kachousen is dissipated then the low bouncing fan does not appear; puts opponents into a limited juggle state if the initial Midare Kachousen fan connects, while the falling fans keep the opponent in grounded hitstun; () refers to damage/hitstun values of the bouncing follow-ups on hit or block; any hit that connects after the follow-up bounce overwrites the fan's hitstun/blockstun; Mai has an extended hurtbox vulnerable to strikes on her arm/head (28-79f); the listed frame advantage assumes Mai is at point blank range; there are small interruptible gaps on block before Midare Kachousen or the bouncing follow-ups connect; the exact gaps between falling fans varies greatly depending on spacing, standing/crouching, and character height; the bouncing fan does not trigger proximity guard (allowing back walk) and counts as an air attack (allows anti-air invuln moves to pass through)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "236[P]",
+          "startup": "32",
+          "total": "62",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Charged/Enhanced version acts as a standard 2-hit projectile (does not dissipate on contact with strike hitboxes); bounces upward on contact with the opponent, then drops downward for a follow-up hit (this bounce is higher/slower than the non-flame version); () refers to damage/hitstun values of the bouncing fan follow-up on hit or block; the listed frame advantage refers to the first hit at point blank range before the follow-up connects; any hit that connects after the follow-up bounce overwrites the fan's hitstun/blockstun; projectile speed depends on button strength (LP slow / MP medium / HP fast); bounce height depends on button strength (LP low / MP medium / HP high); the time difference between the first and second fan on hit or block varies based on this bounce height; puts airborne opponents into a limited juggle state; Counter-hit/Punish Counter advantage carries through both hits; Mai has an extended hurtbox vulnerable to strikes on her leg (32-62f) and arm (32-48f); LP Version frame gap before follow-up bounce: 10f stand / 16f crouch (on hit), 12f stand / 18f crouch (on block); MP Version frame gap before follow-up bounce: 27f stand / 33f crouch (on hit), 29f stand / 35f crouch (on block); HP Version frame gap before follow-up bounce: 39f stand / 45f crouch (on hit), 41f stand / 47f crouch (on block); all gaps are 1f smaller vs. standing Dee Jay, 2f smaller vs. standing JP/Marisa/Sagat/Zangief; the bouncing fan does not trigger proximity guard (allowing back walk) and counts as an air attack (allows anti-air invuln moves to pass through)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "236[P]",
+          "startup": "32",
+          "total": "64",
+          "hitAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+          "notes": "Charged version acts as a standard 1-hit projectile (does not dissipate on contact with strike hitboxes); puts airborne opponents into a limited juggle state; bounces upward on contact with the opponent, then drops downward for a follow-up hit; () refers to damage/hitstun values of the bouncing fan follow-up on hit or block; the listed frame advantage refers to the first hit at point blank range before the follow-up connects; any hit that connects after the follow-up bounce overwrites the fan's hitstun/blockstun; projectile speed depends on button strength (LP slow / MP medium / HP fast); bounce height depends on button strength (LP low / MP medium / HP high); the time difference between the first and second fan on hit or block varies based on this bounce height; Mai has an extended hurtbox vulnerable to strikes on her leg (32-62f) and arm (32-48f); LP Version frame gap before follow-up bounce: 2f stand / 8f crouch (on hit), 6f stand / 12f crouch (on block); MP Version frame gap before follow-up bounce: 19f stand / 25f crouch (on hit), 23f stand / 29f crouch (on block); HP Version frame gap before follow-up bounce: 31f stand / 37f crouch (on hit), 35f stand / 41f crouch (on block); all gaps are 1f smaller vs. standing Dee Jay, and 2f smaller vs. standing JP/Marisa/Sagat/Zangief which allows the LP bounce follow-up to naturally combo; tall characters cannot punish a close range 236[LP] with Throw before the bouncing fan connects, making them more susceptible to corner fan pressure (but they can weaken the mixup by trading with an immediate crouching medium/heavy normal); the bouncing fan does not trigger proximity guard (allowing back walk) and counts as an air attack (allows anti-air invuln moves to pass through)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "2HK",
+          "startup": "9",
+          "total": "33(34/36)",
+          "hitAdv": "KD +38",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-11'''</span>",
+          "notes": "1f extra recovery on block; 3f extra recovery on whiff; good hitbox priority vs. low attacks (can low crush many low pokes); has an extended hurtbox on whiff until the end of recovery"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "2HP",
+          "startup": "10",
+          "total": "41",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "2 hits; first hit has great hitbox priority for counter-poking and pulls the opponent closer on hit/block; Counter-hit/Punish Counter advantage carries through both hits; pushback on block ensures Mai is always out of throw range (except vs. Marisa/Zangief, but Mai can walk back to escape a reversal throw); if DR~2HP is blocked, Mai is still out of throw range and cannot convert from a 2LK chain starter"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "2LK",
+          "startup": "5",
+          "total": "15",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Chains into 5LP/2LP/2LK"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "2LP",
+          "startup": "4",
+          "total": "13",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Chains into 5LP/2LP/2LK; longest range of Mai's light normals; topmost hurtbox on frames 1-6 is vulnerable only to aerial strikes (preventing its use as an anti-air)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "2MK",
+          "startup": "7",
+          "total": "28",
+          "hitAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Cancelable low poke with decent range; useful Counter-hit conversion after 5LP at ranges where 2MP whiffs; has an extended hurtbox on whiff until the end of recovery; DR cancel is delayed until after active frames"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "2MP",
+          "startup": "6",
+          "total": "24(26)",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "2f extra recovery on whiff; good range for a cancelable 6f medium; the forward movement makes it riskier to whiff than similar attacks"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "4HK",
+          "startup": "8",
+          "total": "32",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span><span style=\"color: #30D5B8;\">'''(+7)'''</span>)",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span><span style=\"color: #32CD32;\">(+3)</span>",
+          "notes": "Forces stand on hit (useful in DR combos involving 214HP); legs and lower body are anti-air invincible on frames 8-12 (great anti-air when used early, but leaves a tall standing hurtbox for the first 7 frames that can lose to strong vertical jump-ins); cannot hit cross-up; always a true blockstring when canceled into 4HK~HK TC (but very easy hitconfirm); strong oki tool that can be up to +7 oH / +3 oB when meaty"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "4HK~HK",
+          "startup": "9",
+          "total": "39(49)",
+          "hitAdv": "KD +48",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-11'''</span>",
+          "notes": "On hit, Mai performs a 2nd kick that is fully invincible until the end of recovery; in the corner, Mai can juggle into SA1 or 623LK/MK/KK; if the TC was juggled into, may also be able to juggle SA2 or 623HK; () refers to active/recovery/total on whiffed version if opponent is juggled too high"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "4LPLK",
+          "startup": "5",
+          "total": "30",
+          "hitAdv": "KD +17",
+          "blockAdv": "-",
+          "notes": "Side switches; can only get corner oki with Drive Rush, or can pressure with a spaced meaty normal; DR~2LK is a good option (+4 oB and safe vs. 10f reversals); a successful Throw Escape builds 0.5 Drive bars for the defender; Throw Escape is awarded to a random player if input simultaneously"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "4PPPKKK",
+          "startup": "430",
+          "total": "763",
+          "hitAdv": "KD -171",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-234'''</span>",
+          "notes": "\"Hey everyone, get ready to feast your eyes on... the strongest Shiranui fighter around!\"; creates an 8-hit projectile on the ground that launches on the final hit; holding any button will delay the fireworks and lead to a more powerful version if fully held"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "4[PPPKKK]",
+          "startup": "616",
+          "total": "949",
+          "hitAdv": "KD -148",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-234'''</span>",
+          "notes": "\"Hey everyone, get ready to feast your eyes on... the most ravishing Shiranui fighter around! Thanks everyone!\"; hold any button for this enhanced taunt; creates an 8-hit projectile on the ground that launches on the final hit; the final hit has significantly better damage and drive damage compared to the unheld version"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "5HK",
+          "startup": "14",
+          "total": "35(38)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "3f extra recovery on whiff; Great range for a safe poke; Mai lifts up her leg hurtbox on frames 10-16 making it decent vs. low attacks; grounded Punish Counter causes a crumple state (opponent is airborne for all follow-up hits); airborne Punish Counter puts opponents into limited juggle state; extends a hurtbox 1f before active that is vulnerable to projectiles; extends a hurtbox at mid-height for the first 17 recovery frames, making it more whiff punishable by standing or high-angled crouching buttons"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "5HP",
+          "startup": "9",
+          "total": "32",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1(+3)</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3(-1)</span>",
+          "notes": "Very long range for a cancelable poke; great for combos and whiff punishing; combos from PC/DR 5LP for optimal conversions; slightly less pushback on Counter-hit/Punish Counter (makes some ranged 214P cancels more reliable)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "5LK",
+          "startup": "4",
+          "total": "14",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Very short range (only combos naturally from point blank 5LP/2LP); only useful for 5LK~LK~LK Target Combo"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "5LK~LK",
+          "startup": "7",
+          "total": "28",
+          "hitAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-10'''</span>",
+          "notes": "() refers to scaled damage; forces stand on hit; stopping after the second LK can be useful in combo extensions where a bouncing fan is falling onto the opponent; always a true blockstring"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "5LK~LK~LK",
+          "startup": "10",
+          "total": "39",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-10'''</span>",
+          "notes": "() refers to scaled damage; always a true blockstring; bounces far back into the air, usually keeping her safe due to pushback; can cancel the airborne frames into j.214P or Air SA2 (can be delayed significantly, allowing Mai to mix up her approach and gain better frame advantage); the divekick/SA2 can also let Mai avoid some moves that would otherwise punish the bounce; delaying too long will cause the follow-up to drop in combos (59f is the longest total hitconfirm window that still combos); divekick follow-up can lead to +42 safe jump if the initial 5LK is spaced out (e.g. DR~6MP, 5LK or DR~5LP, 5LP, 5LK)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "5LP",
+          "startup": "4",
+          "total": "13",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Chains into 5LP/2LP/2LK; useful in combos due to its extra 1f hitstun over 2LP (combos naturally into 214LP/MP, 236KK, and has more utility in CH/PC/DR routes)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "5MK",
+          "startup": "9",
+          "total": "29",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "Solid poke with good hitbox priority that can lead to combos with CH/PC/DR; links consistently into SA2 when used as a whiff punish; Mai lifts up her front hurtbox on frames 4-17 making it useful vs. low attacks"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "5MP",
+          "startup": "8",
+          "total": "26(28)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Great range for a cancelable poke; 2f extra recovery on whiff; solid hitbox priority; important combo tool from Punish Counter 2LP (works from max range); has an extended body hurtbox on whiff until the end of recovery and an extended arm hurtbox until frame 15 of recovery"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "5PPPKKK",
+          "startup": "279 (total)",
+          "total": "279",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"Hey, don't mess up!\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "5PPPKKK~2PPPKKK",
+          "startup": "363 (total)",
+          "total": "363",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"Hey, what are you looking at? Up here.\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "623HK",
+          "startup": "7",
+          "total": "53",
+          "hitAdv": "KD +31",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-28(-31)'''</span>",
+          "notes": "Mid/farther range anti-air and juggle ender (slower startup limits its use in some juggle routes); cannot hit cross-up; puts opponents into limited juggle state on hit; first hit can whiff if used too early as an anti-air; second hit whiffs on block (except vs. standing Dee Jay/JP/Marisa/Sagat/Zangief) resulting in worse block advantage and reduced chip/drive damage"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "623HK",
+          "startup": "7",
+          "total": "53",
+          "hitAdv": "KD +32",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-28(-31)'''</span>",
+          "notes": "Enhanced version that costs 1 Flame Stock in exchange for slightly better damage, juggle potential, and KD advantage; mid/farther range anti-air and juggle ender (slower startup limits its use in some juggle routes); cannot hit cross-up; puts opponents into limited juggle state on hit; first/second hits can whiff if used too early as an anti-air; last 2 hits whiff on block (except vs. standing Dee Jay/JP/Marisa/Sagat/Zangief) resulting in worse block advantage and reduced chip/drive damage"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "623KK",
+          "startup": "6",
+          "total": "57(64)",
+          "hitAdv": "KD +20",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-40(-47)'''</span>",
+          "notes": "Mai's primary reversal, as well as an anti-air and strong juggle ender; cannot hit cross-up; puts opponents into limited juggle state on hit; first hit can whiff if used too early as an anti-air; second hit whiffs on crouch block resulting in worse block advantage and reduced chip/drive damage; 7f extra landing recovery on block"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "623KK",
+          "startup": "6",
+          "total": "57(64)",
+          "hitAdv": "KD +27",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-40(-47)'''</span>",
+          "notes": "Enhanced version that costs 1 Flame Stock in exchange for slightly better damage and KD advantage; Mai's primary reversal, as well as an anti-air and strong juggle ender; cannot hit cross-up; puts opponents into limited juggle state on hit; first/second hits can whiff if used too early as an anti-air; last 2 hits whiff on crouch block resulting in worse block advantage and reduced chip/drive damage; 7f extra landing recovery on block"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "623LK",
+          "startup": "5",
+          "total": "52",
+          "hitAdv": "KD +29",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-29(-32)'''</span>",
+          "notes": "Close range anti-air and juggle ender; cannot hit cross-up; puts opponents into limited juggle state on hit; first hit can whiff if used too early as an anti-air; second hit whiffs on crouch block (except vs. Dee Jay/JP/Marisa/Sagat/Zangief) resulting in worse block advantage and reduced chip/drive damage"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "623LK",
+          "startup": "5",
+          "total": "52",
+          "hitAdv": "KD +31",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-29(-32)'''</span>",
+          "notes": "Enhanced version that costs 1 Flame Stock in exchange for slightly better damage, juggle potential, and KD advantage; close range anti-air and juggle ender; cannot hit cross-up; puts opponents into limited juggle state on hit; first/second hits can whiff if used too early as an anti-air; last 2 hits whiff on crouch block (except vs. Dee Jay/JP/Marisa/Sagat/Zangief) resulting in worse block advantage and reduced chip/drive damage"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "623MK",
+          "startup": "6",
+          "total": "52",
+          "hitAdv": "KD +31",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-28(-31)'''</span>",
+          "notes": "Close/mid range anti-air and juggle ender; cannot hit cross-up; puts opponents into limited juggle state on hit; first hit can whiff if used too early as an anti-air; second hit whiffs on crouch block resulting in worse block advantage and reduced chip/drive damage"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "623MK",
+          "startup": "6",
+          "total": "52",
+          "hitAdv": "KD +32",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-28(-31)'''</span>",
+          "notes": "Enhanced version that costs 1 Flame Stock in exchange for slightly better damage, juggle potential, and KD advantage; close/mid range anti-air and juggle ender; cannot hit cross-up; puts opponents into limited juggle state on hit; first/second hits can whiff if used too early as an anti-air; last 2 hits whiff on crouch block resulting in worse block advantage and reduced chip/drive damage"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "6HPHK",
+          "startup": "18",
+          "total": "46(51)",
+          "hitAdv": "KD +23",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Performed by holding 6HPHK on wakeup; 5f extra recovery on hit; does not have any screen freeze except for a 12f freeze when interacting with the opponent's throw hitbox (this also refunds 1 Drive bar after punishing the throw); see [[Street_Fighter_6/Gauges#Drive_Reversal|Drive Reversal]]."
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "6HPHK",
+          "startup": "20",
+          "total": "48(53)",
+          "hitAdv": "KD +23",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Performed by inputting 6HPHK during blockstun; 5f extra recovery on hit; freezes the screen for 4f during startup; see [[Street_Fighter_6/Gauges#Drive_Reversal|Drive Reversal]]."
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "6MP",
+          "startup": "20",
+          "total": "40",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Fast overhead that can combo into lights with perfect meaty timing; spike knockdown vs. airborne opponents"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "6PPPKKK",
+          "startup": "405 (total)",
+          "total": "405",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"I like my fighters like I like my tea... very strong.\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "HPHK",
+          "startup": "26",
+          "total": "62",
+          "hitAdv": "KD +35 / Wall Splat KD +65",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span> / Wall Splat HKD +72",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Impact|Drive Impact]]. Airborne connect gives spinning juggle state on Punish Counter or corner Wall Splat with variable height."
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "j.214P",
+          "startup": "21",
+          "total": "-",
+          "hitAdv": "KD +38(+45)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span><span style=\"color: #ff6347;\">(-1)</span>",
+          "notes": "Can only be performed during Forward Jump or after 5LK~LK~LK; 7f extra landing recovery on whiff (10f extra when crossing behind the opponent); Mai is in a crouching state on the final frame of landing recovery (can affect punish routes); puts grounded opponents into limited juggle state; spike knockdown vs. airborne opponents that causes a very quick OTG bounce state (allows juggle into held 236PP with specific air-to-air timing); cannot hit cross-up; solid hitbox for a divekick but very unsafe if whiffed"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "j.214P",
+          "startup": "21",
+          "total": "-",
+          "hitAdv": "KD +44(+51)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span><span style=\"color: #32CD32;\">(+2)</span>",
+          "notes": "Can only be performed during Forward Jump or after 5LK~LK~LK; enhanced version with better frame advantage and damage (juggle follow-ups are the same as the normal OD version); 7f extra landing recovery on whiff (10f extra when crossing behind the opponent); Mai is in a crouching state on the final frame of landing recovery (can affect punish routes); puts grounded opponents into limited juggle state; spike knockdown vs. airborne opponents that causes a very quick OTG bounce state (allows juggle into held 236PP with specific air-to-air timing); cannot hit cross-up; solid hitbox for a divekick but very unsafe if whiffed"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "j.214PP",
+          "startup": "21",
+          "total": "-",
+          "hitAdv": "KD +44(+51)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span><span style=\"color: #ff6347;\">(-1)</span>",
+          "notes": "Can only be performed during Forward Jump or after 5LK~LK~LK; 7f extra landing recovery on whiff (10f extra when crossing behind the opponent); Mai is in a crouching state on the final frame of landing recovery (can affect punish routes); puts grounded opponents into limited juggle state; spike knockdown vs. airborne opponents that causes a very quick OTG bounce state (allows juggle into held 236PP with specific air-to-air timing, or more consistent Air SA2 juggles); SA2 cancelable until the 2nd to last airborne active frame on the way down (TK version vs. grounded opponents can hit too late for cancel); cannot hit cross-up; solid hitbox for a divekick but very unsafe if whiffed"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "j.214PP",
+          "startup": "21",
+          "total": "-",
+          "hitAdv": "KD +53(+60)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span><span style=\"color: #32CD32;\">(+2)</span>",
+          "notes": "Can only be performed during Forward Jump or after 5LK~LK~LK; enhanced version with better frame advantage and damage; 7f extra landing recovery on whiff (10f extra when crossing behind the opponent); Mai is in a crouching state on the final frame of landing recovery (can affect punish routes); puts grounded opponents into limited juggle state and causes a high OTG bounce vs. airborne opponents; does not cause spike knockdown vs. airborne like the non-flame version, making it better in juggles; SA2 cancelable until the 2nd to last airborne active frame on the way down (TK version vs. grounded opponents can hit too late for cancel); cannot hit cross-up; solid hitbox for a divekick but very unsafe if whiffed"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "j.236236K",
+          "startup": "3",
+          "total": "-",
+          "hitAdv": "KD +6(+11)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-50~'''</span>",
+          "notes": "Can be input during forward or neutral jump; deals 20% more damage on counter-hit/Punish Counter (3360 damage / 300x4,2160); good air-to-air and combo tool; no invincibility of any kind, but can be very effective against projectiles when input at minimum height with a Tiger Knee motion (2362369K); deals less damage from long range due to earlier hits whiffing; frame advantage varies drastically depending on the height and distance it connects; very likely to fly over the opponent on block unless they are fully cornered; cannot hit cross-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "j.236236K",
+          "startup": "3",
+          "total": "-",
+          "hitAdv": "KD +7(+17)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-50~'''</span>",
+          "notes": "Enhanced version that costs 1 Flame Stock; can be input during forward or neutral jump; deals 20% more damage on counter-hit/Punish Counter (3600 damage / 120x11,2280); good air-to-air and combo tool; no invincibility of any kind, but can be very effective against projectiles when input at minimum height with a Tiger Knee motion (2362369K); deals less damage from long range due to earlier hits whiffing; frame advantage varies drastically depending on the height and distance it connects; very likely to fly over the opponent on block unless they are fully cornered; cannot hit cross-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "j.HK",
+          "startup": "10",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+11(+15)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+7(+11)'''</span>",
+          "notes": "Most horizontal range of Mai's jump-ins; lower body projectile invuln 10-23f (if used immediately on the way up, can avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "j.HP",
+          "startup": "9",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+7(+15)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+3</span><span style=\"color: #30D5B8;\">'''(+11)'''</span>",
+          "notes": "Good hitbox for vertical approach; lower body projectile invuln 9-23f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "j.LK",
+          "startup": "5",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5(+10)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span><span style=\"color: #30D5B8;\">'''(+6)'''</span>",
+          "notes": "Cross-up; can be used as a fuzzy instant overhead (except vs. Blanka)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "j.LP",
+          "startup": "4",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+6(+9)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+3</span><span style=\"color: #30D5B8;\">'''(+6)'''</span>",
+          "notes": "Fastest air-to-air option with good horizontal hitbox priority"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "j.LPLK",
+          "startup": "5",
+          "total": "-",
+          "hitAdv": "KD +20",
+          "blockAdv": "-",
+          "notes": "No real midscreen oki (can chase with a spaced Drive Rush normal); in the corner, can dash for +2 oki or Drive Rush for stronger pressure"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "j.MK",
+          "startup": "7",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+8(+13)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+4(+9)'''</span>",
+          "notes": "Cross-up; lower body projectile invuln 7-20f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "j.MP",
+          "startup": "7",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+7(+11)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+3</span><span style=\"color: #30D5B8;\">'''(+7)'''</span>",
+          "notes": "Puts airborne opponents into limited juggle state; strong air-to-air hitbox; important juggle tool after 236KK launch (allows midscreen juggles into SA1); lower body projectile invuln 7-22f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "LPLK",
+          "startup": "5",
+          "total": "30",
+          "hitAdv": "KD +21",
+          "blockAdv": "-",
+          "notes": "Can dash forward for a corner throw loop (+3, cannot walk back to shimmy); can walk for a throw loop vs. Zangief (2f timing) or Blanka/E.Honda (1f timing); DR~4HK sets up auto-timed +6 on Block (slightly out of throw range); a successful Throw Escape builds 0.5 Drive bars for the defender; Throw Escape is awarded to a random player if input simultaneously"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "MPMK",
+          "startup": "1",
+          "total": "45(3)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Parry|Drive Parry]]. Perfect Parrying has only 1F of recovery and disables the opponent from canceling their attack. Perfect Parrying projectiles puts you into fixed 11 frames of recovery. After a Perfect Parry, all Super Gauge gain is reduced by 20% and Drive Gauge gain/damage is reduced by 50% for the entire punish combo."
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "MPMK or 66",
+          "startup": "9",
+          "total": "24(46)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Rush|Drive Rush]]; 3-bar version performed on hit/block from a cancelable normal; can also be performed on whiff from cancelable light normals; startup refers to minimum time before an attack can cancel the Drive Rush animation; the first 15 recovery frames are cancelable into any attack; the final 22 recovery frames are cancelable into any attack or movement option or blocking (except Parry); only Normal and Command Normal attacks are enhanced with +4 frame advantage and improved juggle properties"
+        }
+      },
+      {
+        "title": {
+          "chara": "Mai",
+          "input": "MPMK~66",
+          "startup": "3+8",
+          "total": "26(48)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Rush|Drive Rush]]; 1-bar version performed out of a Parry; startup refers to minimum time before an attack can cancel the Drive Rush animation (if performed immediately after a successful Parry, only 1+8 startup); the first 15 recovery frames are cancelable into any attack; the final 22 recovery frames are cancelable into any attack or movement option or blocking (except Parry); only Normal and Command Normal attacks are enhanced with +4 frame advantage and improved juggle properties; Distance: 0.669 (min/throw), 2.383 (min/block), 2.977 (max/final DR frame)"
+        }
+      }
+    ]
+  }
+}

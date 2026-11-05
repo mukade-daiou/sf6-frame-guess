@@ -1,0 +1,695 @@
+{
+  "url": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Arjun%22&limit=500",
+  "retrievedAt": "2026-11-05T09:20:21.434Z",
+  "status": 200,
+  "characterId": "arjun",
+  "gameVersion": "UNVERIFIED",
+  "license": "CC-BY-SA-4.0",
+  "attribution": "SuperCombo Wiki contributors",
+  "data": {
+    "cargoquery": [
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "214214P",
+          "startup": "9",
+          "total": "69",
+          "hitAdv": "KD +57",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-41'''</span>",
+          "notes": "Short horizontal range (impractical as a projectile counter); has a decent anti-air hitbox on active frames 1-2 but can whiff under close jumps; deals 200 recoverable damage on block (stacks with chip damage if the opponent is in Burnout)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "214K",
+          "startup": "25 (77/101)",
+          "total": "55",
+          "hitAdv": "KD +42",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Button strength determines pillar distance (LK close, MK middle, HK far); holding the button results in a delayed activation with a screen shake effect; second pillar puts the opponent into a limited juggle OTG state (can follow up with Justice Beyond); can be auto-spaced for safety on block against most characters by canceling from 2HP (also creates a frame trap)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "214KK",
+          "startup": "20 (62/96)",
+          "total": "50",
+          "hitAdv": "KD +42",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Button combination determines pillar distance (LK+MK close, LK+HK middle, MK+HK far); holding the buttons results in a delayed activation with a screen shake effect; second pillar puts the opponent into a limited juggle OTG state (can follow up with Justice Beyond); can be auto-spaced for safety on block against most characters by canceling from 2HP (also creates a frame trap)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "214K~623P",
+          "startup": "15",
+          "total": "57",
+          "hitAdv": "KD +95~",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-7'''</span>",
+          "notes": "Occurs automatically when Cruel Shoulder connects with a placed Divine Pillar (startup is counted from the frame Arjun reaches the pillar); will auto-correct if Arjun is behind the opponent when swinging the pillar; no difference between strengths of Cruel Shoulder or Divine Pillar (including OD versions); Arjun can connect with both Cruel Shoulder and Justice Beyond if the opponent is close enough to the Pillar (results in a higher KD advantage); deals 1000 recoverable damage on block (stacks with chip damage if the opponent is in Burnout); Arjun builds significant Drive Gauge on hit or block compared to most special moves (0.8 bars)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "22HK",
+          "startup": "3",
+          "total": "60~",
+          "hitAdv": "KD +29",
+          "blockAdv": "-",
+          "notes": "Absorbs any strike or projectile attack (including Super Arts) without incurring any recoverable damage; automatically performs a counter-attack when absorbing a strike; absorbing a projectile incurs the usual 30f recovery animation after releasing the button; this counter-attack is a guaranteed punish and cannot be baited with a fast normal; counter-attack deals only recoverable damage and cannot KO the opponent; can walk forward or backward while holding button (walk speed: 0.02 in either direction); counter-attack will autocorrect to face the opponent if they switch sides; Arjun is in a counter-hit state on frames 1-2 and a Punish Counter state for the rest of the move duration (including the Moral Breakdown follow-up); depletes 0.3 Drive bars on hit; useful reversal in some blockstrings (such as Drive Impact blockstrings in Burnout if the gap is 3f or larger)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "22HK~P",
+          "startup": "26+28",
+          "total": "88",
+          "hitAdv": "KD +54",
+          "blockAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "notes": "11-hit OD-priority projectile hitbox (disappears if Arjun is hit); can be used to safely pressure without the threat of Drive Impact or reversal SA1; puts opponent into a limited juggle state (slightly higher launch vs. airborne opponents); extremely high juggle potential (can be used for a meterless ender after Justice Beyond); Arjun is in a Punish Counter state for the entire move duration; deals 1100 recoverable damage on block (stacks with chip damage if the opponent is in Burnout); the large number of hits allows it to clash with Super projectiles long enough for Arjun to recover and punish the opponent (despite not depleting any of the Super's hits); Arjun extends a forward hurtbox on frames 28-66 that is vulnerable only to aerial strikes; Arjun will autocorrect to face the opponent if they switch sides during his counter stance"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "236236K",
+          "startup": "8",
+          "total": "136",
+          "hitAdv": "KD +43",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-46'''</span>",
+          "notes": "12-hit Super-priority projectile hitbox; aims near the ground before sweeping outward and upward (less range on early active frames but reaches fullscreen on the final 2 hits); can hit cross-up (even on grounded opponents if they extend a forward hurtbox while behind Arjun); useful juggle ender; can be used as an anti-fireball tool at mid range (less like to punish if clashing with multiple projectile hits); deals 100 recoverable damage on block (stacks with chip damage if the opponent is in Burnout); Active Frame distribution: 5x11,7 (hitbox expands every 5 frames); expanded head hurtbox on frames 13-85 is projectile invincible (makes Arjun more susceptible to long range jump-in punishes)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "236236P",
+          "startup": "13",
+          "total": "73",
+          "hitAdv": "HKD +22",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-41'''</span>",
+          "notes": "Can be used to counter projectiles from over half screen if the opponent has an extended hurtbox; deals 300 recoverable damage on block (stacks with chip damage if the opponent is in Burnout); cinematic time regenerates ~2.1 Drive bars for Arjun"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "236236P",
+          "startup": "13",
+          "total": "73",
+          "hitAdv": "HKD +35",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-41'''</span>",
+          "notes": "Can be used to counter projectiles from over half screen if the opponent has an extended hurtbox; deals 300 recoverable damage on block (stacks with chip damage if the opponent is in Burnout); available at 25% HP or below; cinematic time regenerates ~2.3 Drive bars for Arjun"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "236HP",
+          "startup": "28",
+          "total": "50(53)",
+          "hitAdv": "KD +43(+48)",
+          "blockAdv": "<span style=\"color: #32CD32;\">+2</span><span style=\"color: #30D5B8;\">'''(+7)'''</span>",
+          "notes": "3f extra recovery on whiff; hitstop increased by 7f on Counter-hit / 12f on Punish Counter (increases the hitconfirm window into ~6P or SA3 by the same amount)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "236K",
+          "startup": "17",
+          "total": "48",
+          "hitAdv": "KD +42",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "No difference between button strengths; projectile dissipates on contact with opponent; the final cancel frame into SA3 does not combo"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "236KK",
+          "startup": "17",
+          "total": "48",
+          "hitAdv": "KD +49",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "notes": "2 hits; projectile moves forward slightly while active; can input follow-up even after projectile connects with opponent"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "236KK~6P",
+          "startup": "15",
+          "total": "42",
+          "hitAdv": "KD +38(+41~48)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-7'''</span>",
+          "notes": "Button strength determines the projectile angle (LP straight, MP 45 degree angle, HP nearly vertical); shockwave has an initial hitbox in front of Arjun for 10 frames followed by a launched projectile; if the initial Breathing Ring was dissipated on hit/block or by colliding with another projectile, only this short range shockwave will come out (less useful in ranged fireball wars)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "236K~6P",
+          "startup": "15",
+          "total": "42",
+          "hitAdv": "KD +38(+41)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-7'''</span>",
+          "notes": "Button strength determines the projectile angle (LP straight, MP 45 degree angle, HP nearly vertical); shockwave has an initial hitbox in front of Arjun for 10 frames followed by a launched projectile; if the initial Breathing Ring was dissipated on hit/block or by colliding with another projectile, only this short range shockwave will come out (less useful in ranged fireball wars); meter data refers to close shockwave / ranged projectile (HP projectile deals more Drive damage on Punish Counter)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "236LP",
+          "startup": "15",
+          "total": "38",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span><span style=\"color: #30D5B8;\">'''(+8)'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span><span style=\"color: #30D5B8;\">'''(+4)'''</span>",
+          "notes": "; hitstop increased by 7f on Counter-hit / Punish Counter (increases the hitconfirm window into ~6P or SA3 by the same amount)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "236MP",
+          "startup": "20",
+          "total": "43",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span><span style=\"color: #30D5B8;\">'''(+8)'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span><span style=\"color: #30D5B8;\">'''(+4)'''</span>",
+          "notes": "; hitstop increased by 7f on Counter-hit / Punish Counter (increases the hitconfirm window into ~6P or SA3 by the same amount)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "236PP",
+          "startup": "23",
+          "total": "45(48)",
+          "hitAdv": "KD +43(+48)",
+          "blockAdv": "<span style=\"color: #32CD32;\">+2</span><span style=\"color: #30D5B8;\">'''(+7)'''</span>",
+          "notes": "3f extra recovery on whiff; hitstop increased by 7f on Counter-hit / Punish Counter (increases the hitconfirm window into ~6P or SA3 by the same amount)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "236PP~6P",
+          "startup": "20",
+          "total": "46",
+          "hitAdv": "KD +74",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "notes": "; hitconfirm window for full sequence is increased by 7f on Counter-hit/Punish Counter 236PP due to extra hitstop"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "236P~6P",
+          "startup": "20",
+          "total": "46",
+          "hitAdv": "KD +74",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "notes": "; hitconfirm window for full sequence is increased by 7f on Counter-hit 236P and by 12f on Punish Counter 236HP due to extra hitstop"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "2HK",
+          "startup": "14",
+          "total": "41",
+          "hitAdv": "KD +32",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-11'''</span>",
+          "notes": "Fully cancelable sweep with good range; cancel does not allow a combo follow-up on grounded hit or counter-hit (requires Punish Counter or airborne juggle); Punish Counter puts the opponent into a limited juggle OTG bounce state with extra hitstop for an easy hitconfirm; useful juggle tool that keeps the opponent airborne but only has slight juggle potential itself; forward movement leaves Arjun very close to the opponent on block if not canceled; cancel into 236LP creates a safe frame trap on block; Arjun lifts up his front leg hurtbox on frames 6-14, making it strong vs. low pokes; extends a hurtbox 1f before active that is vulnerable to projectiles; extends a projectile invincible head hurtbox upwards on frames 2-17 (but still in a crouching state)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "2HP",
+          "startup": "10",
+          "total": "38",
+          "hitAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+          "notes": "Forces stand; Arjun's primary anti-air and a core combo tool; upper body is anti-air invuln on frames 10-16; very strong anti-air; the narrow central hitbox can hit cross-up on active frames 5-7 (most effective against air moves that extend a backward hurtbox); only cancelable on active frames 1-4 (can get strong meaty options on a deep anti-air like 236HP, 623HP, or 214K); high blockstun gives strong cancel options (can frame trap with 236HP or 623HP vs. Burnout); Arjun is in a standing state on frames 12-37 (returns to crouching on the final recovery frame); the upper body air invuln allows Arjun to low-profile certain reversals that are airborne on the first active frame (e.g. Blanka and Dee Jay [2]8KK)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "2LK",
+          "startup": "5",
+          "total": "19",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Chains into 5LP/2LP/2LK; very solid range for a chainable low starter"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "2LP",
+          "startup": "5",
+          "total": "16",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Chains into 5LP/2LP/2LK; great range for a 5f light normal (comparable to shoto 5LK while still being chainable); topmost hurtbox on frames 1-7 is vulnerable only to aerial strikes (preventing its use as an anti-air)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "2MK",
+          "startup": "8",
+          "total": "28",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Great range for a safe low poke; useful out of Drive Rush for a link into 5MK (closer ranges), 2MP (farther), or SA2 (max range); pushback is too far for a true strike/throw mixup on block"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "2MP",
+          "startup": "9",
+          "total": "33",
+          "hitAdv": "KD +27",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "Sweep that can be spaced safely and leaves Arjun neutral on block vs. Burnout for great low pressure"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "4LPLK",
+          "startup": "5",
+          "total": "30",
+          "hitAdv": "KD +21",
+          "blockAdv": "-",
+          "notes": "Side switch; a successful Throw Escape builds 0.5 Drive bars for the defender; Throw Escape is awarded to a random player if input simultaneously"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "4PPPKKK",
+          "startup": "257",
+          "total": "745",
+          "hitAdv": "KD -413",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-461'''</span>",
+          "notes": "\"Hmmm. This will not end well for you.\"; tosses a rock into the air, creating a large projectile hitbox when his breath collides with it; hitbox whiffs on crouching opponents unless they extend a vertical hurtbox; deals 200 recoverable damage on block"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "5HK",
+          "startup": "14",
+          "total": "38",
+          "hitAdv": "KD +43",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Head and kicking leg hurtboxes are anti-air invuln on frames 11-17; solid anti-air but has slow startup and cannot hit cross-up; whiffs on crouching opponents unless they extend a vertical hurtbox; puts opponent into a limited juggle state (grounded hit only juggles into SA1); Punish Counter launched opponents high into the air (allows stronger follow-up juggles like a fully charged 5HK~HP Target Combo); extends a hurtbox 1f before active that is vulnerable to projectiles"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "5HK~HP",
+          "startup": "24",
+          "total": "68",
+          "hitAdv": "KD +29",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-23'''</span>",
+          "notes": "Can hold the button 30 frames for an enhanced version (releasing the button early gives the regular version with delayed timing); spike knockdown on hit; cancel does not lead to combos except a max-height juggle after anti-air 5HK into SA1; 6f blockstring gap (becomes a frame trap vs. Burnout but requires the opponent to stand block); can cancel vs. Burnout into 236HP or 623HP for a frame trap on hit or strong pressure on block; the first active frame can only connect mid-combo"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "5HK~[HP]",
+          "startup": "41",
+          "total": "85",
+          "hitAdv": "HKD +54~62 / +122~130 Wall Splat",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-19'''</span>",
+          "notes": "Button must be held 30 frames (releasing early results in the uncharged version with delayed startup); a full charge allows the TC to combo after a 5HK Punish Counter launch; causes a wallsplat if opponent reaches the corner (reaches from near round-start distance); easily interruptible but can outspace many normals while charging, allowing Arjun to release the button for a whiff punish"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "5HP",
+          "startup": "15",
+          "total": "40(39)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "1f less recovery on block; long range and forward movement with an easy Target Combo hitconfirm; puts airborne opponents into a limited juggle state (ensures the TC follow-up will connect)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "5HP~HP",
+          "startup": "16",
+          "total": "48",
+          "hitAdv": "KD +35",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-11'''</span>",
+          "notes": "Easily hitconfirmed into for a long range knockdown; always a true blockstring; HP/HK follow-ups can only be input on hit"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "5HP~HP~HK",
+          "startup": "-",
+          "total": "60",
+          "hitAdv": "KD +5",
+          "blockAdv": "-",
+          "notes": "Chases the opponent down for strong oki anywhere on the screen; cannot be input on block; can get a meaty throw, command throw, or 3-hit confirm from 2LK; if opponent Back Rises midscreen and gets hit with 2LK, Arjun can combo into a spaced 236LP~6P for a meterless knockdown (must link final 2LP on wide characters)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "5HP~HP~HP",
+          "startup": "18",
+          "total": "60",
+          "hitAdv": "KD +25",
+          "blockAdv": "-",
+          "notes": "() refers to scaled damage from 5HP~HP combo starter; cannot be input on block; only combos in the corner (opponent is too far to connect midscreen)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "5LK",
+          "startup": "6",
+          "total": "22",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "Slow for a light, but has great range for a 6-frame normal; important Drive Rush check due to its speed/range (but the extended hurtbox before startup can get stuffed by longer range approaches); Arjun's only light normal that combos naturally into 236K~6HP (but can whiff at max range)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "5LP",
+          "startup": "4",
+          "total": "15",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "notes": "Chains into 5LP/2LP/2LK; good block advantage for a light normal; range is average but much shorter than 4f lights from other large-hurtbox characters"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "5MK",
+          "startup": "7",
+          "total": "28(26)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "2f less recovery on block; Arjun shifts his foot hurtbox back on frames 7-9 (stronger vs. low pokes); core poke and combo tool"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "5MK~HK",
+          "startup": "17",
+          "total": "39",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "3f gap between hits on block; safe low ender that leaves Arjun close for a strike/throw mixup on hit; leaves Arjun +1 on Block vs. Burnout (can loop pressure several times); knocks down on counter-hit/Punish Counter (canceling into Super does not combo off the knockdown); puts airborne opponents into a limited juggle state (no new combo routes but sets up a KD +42 safe jump)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "5MP",
+          "startup": "11",
+          "total": "32",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Great range and forward movement but relatively slow (comparable to a 5HP from most characters); high hitstun allows natural combo into Divine Pillar; great pressure starter especially against opponents in Burnout; leaves Arjun close enough for a link into 5LP~2LP if used at point blank while remaining safe (can walk back to avoid reversal throw on standard-sized characters)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "5PPPKKK",
+          "startup": "1364 (total)",
+          "total": "1364",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"You challenge me? You stand no chance. Ahh... haha. Your move. Your lack of rhythm disturbs me.\"; can change which dance Arjun performs by holding a direction (forward/back/up/down) and extend the taunt indefinitely"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "623HP",
+          "startup": "28",
+          "total": "75(51~71)",
+          "hitAdv": "KD +42(+62)",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "notes": "Reaches fullscreen; launches opponent upward followed by a limited juggle OTG bounce state; switches sides on a midscreen hit unless used from near fullscreen range; transitions into Justice Beyond when colliding with an active Divine Pillar; deals 800 recoverable damage on block (stacks with chip damage if the opponent is in Burnout); the active frames end immediately on block/parry or when absorbed by armor followed by a fixed 23f recovery (cannot gain extra block advantage with meaty timing); Super cancelable on active frames 1-5 (cannot cancel from longer ranges)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "623LP",
+          "startup": "19",
+          "total": "56(42~57)",
+          "hitAdv": "KD +60(+75)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "Launches opponent slightly upward followed by a limited juggle OTG tumble state (can get follow-up near the corner if spaced out); transitions into Justice Beyond when colliding with an active Divine Pillar; deals 600 recoverable damage on block (stacks with chip damage if the opponent is in Burnout); the active frames end immediately on block/parry or when absorbed by armor followed by a fixed 23f recovery (cannot be made safer on block with meaty timing); Super cancelable on active frames 1-5 (cannot cancel from longer ranges)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "623MP",
+          "startup": "23",
+          "total": "60(46~64)",
+          "hitAdv": "KD +64(+82)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "Launches opponent slightly upward followed by a limited juggle OTG tumble state (can get follow-up near the corner if spaced out); transitions into Justice Beyond when colliding with an active Divine Pillar; deals 700 recoverable damage on block (stacks with chip damage if the opponent is in Burnout); the active frames end immediately on block/parry or when absorbed by armor followed by a fixed 23f recovery (cannot be made safer on block with meaty timing); Super cancelable on active frames 1-5 (cannot cancel from longer ranges)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "623PP",
+          "startup": "22",
+          "total": "69(45~65)",
+          "hitAdv": "KD +42(+62)",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "notes": "Reaches fullscreen; launches opponent upward followed by a limited juggle OTG bounce state; switches sides on a midscreen hit unless used from near fullscreen range; transitions into Justice Beyond when colliding with an active Divine Pillar; deals 800 recoverable damage on block (stacks with chip damage if the opponent is in Burnout); the active frames end immediately on block/parry or when absorbed by armor followed by a fixed 23f recovery (cannot gain extra block advantage with meaty timing); Super cancelable on active frames 1-5 (cannot cancel from longer ranges)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "63214P",
+          "startup": "8",
+          "total": "45",
+          "hitAdv": "HKD +8(+13)",
+          "blockAdv": "-",
+          "notes": "Deals recoverable damage to the opponent (cannot K.O. a low-health opponent); if the opponent already accumulated any recoverable damage, it instead deals actual damage (+200 additional damage), can K.O. the opponent, and becomes HKD +13 leaving the opponent farther away; can be comboed into on grounded opponents but cannot be canceled into from normals; Punish Counter damage: 1840 rec / 2070"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "63214PP",
+          "startup": "26",
+          "total": "66",
+          "hitAdv": "HKD +8(+13)",
+          "blockAdv": "-",
+          "notes": "Deals recoverable damage to the opponent (cannot K.O. a low-health opponent); if the opponent already accumulated any recoverable damage, it instead deals actual damage (+200 additional damage), can K.O. the opponent, and becomes HKD +13 leaving the opponent farther away; takes a step forward on startup similar to 236PP; can be comboed into on grounded or airborne opponents but cannot be canceled into from normals; Punish Counter damage: 2530 rec / 2730"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "6HK",
+          "startup": "19",
+          "total": "42",
+          "hitAdv": "KD +40",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "Low Crush on frames 7-23; long range hopkick that knocks down on hit; can be spaced safely; puts opponent into a limited juggle state (can only combo with Divine Pillar); has extremely high juggle potential for ending combos (like after Justice Beyond)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "6HP",
+          "startup": "22",
+          "total": "45",
+          "hitAdv": "KD +36",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Long range overhead but knockdown prevents follow-up links like standard overheads; puts opponents into a limited juggle OTG bounce that can combo when combined with Divine Pillar (or a precisely spaced OD Breathing Ring); has extremely high juggle potential for ending combos (like after Justice Beyond)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "6HPHK",
+          "startup": "18",
+          "total": "46(51)",
+          "hitAdv": "KD +23",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Performed by holding 6HPHK on wakeup; 5f extra recovery on hit; does not have any screen freeze except for a 12f freeze when interacting with the opponent's throw hitbox (this also refunds 1 Drive bar after punishing the throw); see [[Street_Fighter_6/Gauges#Drive_Reversal|Drive Reversal]]."
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "6HPHK",
+          "startup": "20",
+          "total": "48(53)",
+          "hitAdv": "KD +23",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Performed by inputting 6HPHK during blockstun; 5f extra recovery on hit; freezes the screen for 4f during startup; see [[Street_Fighter_6/Gauges#Drive_Reversal|Drive Reversal]]."
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "6PPPKKK",
+          "startup": "975 (total)",
+          "total": "975",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"One moment. There. Many thanks.\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "HPHK",
+          "startup": "26",
+          "total": "62",
+          "hitAdv": "KD +35 / Wall Splat KD +65",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span> / Wall Splat HKD +72",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Impact|Drive Impact]]. Airborne connect gives spinning juggle state on Punish Counter or corner Wall Splat with variable height."
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "j.HK",
+          "startup": "10",
+          "total": "-",
+          "hitAdv": "KD +26(+36)",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span><span style=\"color: #30D5B8;\">'''(+11)'''</span>",
+          "notes": "Reaches farther downward than Arjun's other air normals (more likely to punish whiffed normals / projectiles / throw techs and harder to anti-air on reaction); knocks down the opponent on any hit (no follow-up combo is possible making it less rewarding than most air normals); lower body projectile invuln 10-21f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "j.HP",
+          "startup": "10",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+9(+15)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+5(+11)'''</span>",
+          "notes": "Cross-up (can connect even from a point blank forward jump); spike knockdown vs. airborne opponents; 1st active frame can only hit forward while the final active frame can only hit cross-up (2 separate hitboxes overlap during the middle 4 active frames); extends a large downward hurtbox that makes it vulnerable to otherwise weak anti-airs (like many 5LP/2LP/2MP attacks); lower body projectile invuln 10-22f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "j.LK",
+          "startup": "7",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span><span style=\"color: #30D5B8;\">'''(+9)'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span><span style=\"color: #30D5B8;\">'''(+6)'''</span>",
+          "notes": "Strong downward hitbox priority; can be used as a fuzzy instant overhead if the opponent is in Burnout"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "j.LP",
+          "startup": "5",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+8(+9)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+4(+5)'''</span>",
+          "notes": "Fast air-to-air with strong horizontal hitbox priority"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "j.MK",
+          "startup": "9",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+12(+15)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+8(+11)'''</span>",
+          "notes": "Greatest horizontal range of Arjun's air normals; lower body projectile invuln 9-26f (if used immediately on the way up, can avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "j.MP",
+          "startup": "8",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+9(+11)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+5(+7)'''</span>",
+          "notes": "Puts airborne opponents into a limited juggle state; lower body projectile invuln 8-22f (if used immediately on the way up, can avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "LPLK",
+          "startup": "5",
+          "total": "30",
+          "hitAdv": "KD +23",
+          "blockAdv": "-",
+          "notes": "; a successful Throw Escape builds 0.5 Drive bars for the defender; Throw Escape is awarded to a random player if input simultaneously"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "MPMK",
+          "startup": "1",
+          "total": "45(3)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Parry|Drive Parry]]. Perfect Parrying has only 1F of recovery and disables the opponent from canceling their attack. Perfect Parrying projectiles puts you into fixed 11 frames of recovery. After a Perfect Parry, all Super Gauge gain is reduced by 20% and Drive Gauge gain/damage is reduced by 50% for the entire punish combo."
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "MPMK or 66",
+          "startup": "9",
+          "total": "24(46)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Rush|Drive Rush]]; 3-bar version performed on hit/block from a cancelable normal; can also be performed on whiff from cancelable light normals; startup refers to minimum time before an attack can cancel the Drive Rush animation; the first 15 recovery frames are cancelable into any attack; the final 22 recovery frames are cancelable into any attack or movement option or blocking (except Parry); only Normal and Command Normal attacks are enhanced with +4 frame advantage and improved juggle properties"
+        }
+      },
+      {
+        "title": {
+          "chara": "Arjun",
+          "input": "MPMK~66",
+          "startup": "3+8",
+          "total": "26(48)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Rush|Drive Rush]]; 1-bar version performed out of a Parry; startup refers to minimum time before an attack can cancel the Drive Rush animation (if performed immediately after a successful Parry, only 1+8 startup); the first 15 recovery frames are cancelable into any attack; the final 22 recovery frames are cancelable into any attack or movement option or blocking (except Parry); only Normal and Command Normal attacks are enhanced with +4 frame advantage and improved juggle properties; Distance: 0.421 (min/throw), 1.810 (min/block), 3.589 (max/final DR frame)"
+        }
+      }
+    ]
+  }
+}

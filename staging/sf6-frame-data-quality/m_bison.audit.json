@@ -1,0 +1,593 @@
+{
+  "characterId": "m_bison",
+  "rawMoveCount": 64,
+  "candidateMoveCount": 27,
+  "candidateNormals": 12,
+  "candidateSpecials": 15,
+  "upstreamFetchedAt": "2026-11-01T00:01:59.250Z",
+  "missingNormals": [],
+  "excluded": [
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "[2]8KK~K or [2]8K~KK",
+      "name": "OD Head Press",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "[2]8KK~P or [2]8K~PP",
+      "name": "OD Devil Reverse",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "[2]8K~K",
+      "name": "Head Press",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "[2]8K~K~P",
+      "name": "Somersault Skull Diver",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "[2]8K~P",
+      "name": "Devil Reverse",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "3HK",
+      "name": "Hover Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "4HK",
+      "name": "Evil Knee",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6 or 4 + PPP/KKK",
+      "name": "Bison Warp",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5MP~2HK",
+      "name": "Shadow Spear",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5MP~6HP",
+      "name": "Shadow Hammer",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6HP",
+      "name": "Psycho Hammer",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.HK",
+      "name": "Jumping Heavy Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.HP",
+      "name": "Jumping Heavy Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.LK",
+      "name": "Jumping Light Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.LP",
+      "name": "Jumping Light Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.MK",
+      "name": "Jumping Medium Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.MP",
+      "name": "Jumping Medium Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.MP~j.MP",
+      "name": "Hell Attack",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "214P Detonation",
+      "name": "Psycho Mine (Detonation)",
+      "category": "special"
+    }
+  ],
+  "gameVersion": "UNVERIFIED",
+  "status": "STAGING_ONLY",
+  "review": {
+    "applied": [
+      {
+        "characterId": "m_bison",
+        "input": "214HP",
+        "name": "HP Backfist Combo (Mine)",
+        "fingerprint": "04f3055a5af873943ed9bbf1157173dd7da3b314c3d31d5d24c16c82ac62468d",
+        "action": "exclude",
+        "classification": "installed_object",
+        "reason": "Source describes detonation of an installed Mine; separate no-Mine record exists.",
+        "evidence": "Detonates Psycho Mine on hit/block; Mine detonation does not count as a hit for damage scaling; puts opponent into limited juggle state that allows follow-up juggles (can combo into midscreen 2HK / 3HK / LP Crusher / OD Backfist / SA1 / SA3, as well as corner LP Backfist); 2nd hit triggers Mine detonation even on Perfect Parry (punishable 5f gap before explosion hits); lets Bison maintain pressure on block; can be timed to plant another Psycho Mine if the previous one detonates during this attack's hitstun; POSSIBLE BUG: builds more Super gauge when comboed into compared to raw connect",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "m_bison",
+        "input": "214LP",
+        "name": "LP Backfist Combo (Mine)",
+        "fingerprint": "ac468bedbe138ed287eceba0b20d4f31e12516bc74ca55688bf8e72950819c5a",
+        "action": "exclude",
+        "classification": "installed_object",
+        "reason": "Source describes detonation of an installed Mine; separate no-Mine record exists.",
+        "evidence": "Detonates Psycho Mine on hit/block; Mine detonation does not count as a hit for damage scaling; puts opponent into limited juggle state; sets up auto-timed safe jump vs. grounded or low-height opponents; 2nd hit triggers Mine detonation even on Perfect Parry (punishable 5f gap before explosion hits); lets Bison maintain pressure on block; can be timed to plant another Psycho Mine if the previous one detonates during this attack's hitstun",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "m_bison",
+        "input": "214MP",
+        "name": "MP Backfist Combo (Mine)",
+        "fingerprint": "ad90b249aeb41aa3ffb57b9b223b2e21b379867103ccb693832683c9ddb867a9",
+        "action": "exclude",
+        "classification": "installed_object",
+        "reason": "Source describes detonation of an installed Mine; separate no-Mine record exists.",
+        "evidence": "Detonates Psycho Mine on hit/block; Mine detonation does not count as a hit for damage scaling; puts opponent into limited juggle state; can juggle into 2HK or SA1/SA3 anywhere on screen; 2nd hit triggers Mine detonation even on Perfect Parry (punishable 5f gap before explosion hits); lets Bison maintain pressure on block; can be timed to plant another Psycho Mine if the previous one detonates during this attack's hitstun",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "m_bison",
+        "input": "214PP",
+        "name": "OD Backfist Combo (Mine)",
+        "fingerprint": "cac1c8e35f5b2f6b8bbec570657f7905cfdca614fce96778964bb384eec31611",
+        "action": "exclude",
+        "classification": "installed_object",
+        "reason": "Source describes detonation of an installed Mine; separate no-Mine record exists.",
+        "evidence": "Detonates Psycho Mine on hit/block; Mine detonation does not count as a hit for damage scaling; launches opponent into a limited juggle state that allows follow-up juggles (most notably 214HP for another Mine or 236KK for extended juggles); 3rd hit triggers Mine detonation even on Perfect Parry (punishable 5f gap before explosion hits); does not let Bison maintain block pressure like the meterless versions; can be timed to plant another Psycho Mine if the previous one detonates during this attack's hitstun",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "m_bison",
+        "input": "[2]8KK~P or [2]8K~PP",
+        "name": "OD Devil Reverse (Mine)",
+        "fingerprint": "7ee783a25ed3b4354494c4eb0ace195dda46bce3d6defa0b6a7c7e36e3661f7f",
+        "action": "exclude",
+        "classification": "installed_object",
+        "reason": "Source describes detonation of an installed Mine; separate no-Mine record exists.",
+        "evidence": "Detonates Psycho Mine on hit/block (does not trigger on Perfect Parry); can be steered left/right; cannot hit cross-up (but will turn around if Punch is input behind the opponent); gives great advantage on block or a juggle on hit (follow-ups possible in the corner); Bison is in a crouching state during landing recovery; does not extend a wide hurtbox like the meterless version, making it better for approaching",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "m_bison",
+        "input": "[2]8K~P",
+        "name": "Devil Reverse (Mine)",
+        "fingerprint": "c309e845b40f82f12d4635576b6ca47b0f1838170e466ae56d1f7a7ce4ddbae6",
+        "action": "exclude",
+        "classification": "installed_object",
+        "reason": "Source describes detonation of an installed Mine; separate no-Mine record exists.",
+        "evidence": "Detonates Psycho Mine on hit/block (does not trigger on Perfect Parry); can be steered left/right; cannot hit cross-up (but will turn around if Punch is input behind the opponent); gives great advantage on block or a juggle on hit (follow-ups possible in the corner); Bison is in a crouching state during landing recovery; extends a wide full-body hurtbox forward on frame 9~ and a forward/downward hurtbox on the arms while active (easy to anti-air)",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "m_bison",
+        "input": "[4]6HP",
+        "name": "HP Psycho Crusher (Mine)",
+        "fingerprint": "351b307c25ccc309cc02d86822e2f7852fb85658a9e7513516cf53580767989f",
+        "action": "exclude",
+        "classification": "installed_object",
+        "reason": "Source describes detonation of an installed Mine; separate no-Mine record exists.",
+        "evidence": "45f charge time (charge lasts 8f after releasing back direction, and must be holding forward when HP is input); strike hitbox surrounded by a 1-hit projectile clash hitbox on frames 24-49; detonates Psycho Mine on hit/block (does not trigger on Perfect Parry); puts opponent into limited juggle state, allowing a follow-up juggle (SA1 midscreen, 214LP/SA3 corner); KD advantage depends on spacing (+46 close range, +51 most mid/far ranges); useful pressure tool after Backfist Combo due to its block advantage, but is susceptible to Perfect Parry; when Perfect Parried, Bison will usually be airborne as the opponent punishes",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "m_bison",
+        "input": "[4]6LP",
+        "name": "LP Psycho Crusher (Mine)",
+        "fingerprint": "b8b56fc1cf3faeb8fbe0769204bf966ca21c7937325d76ec4b3df88156d7fe2c",
+        "action": "exclude",
+        "classification": "installed_object",
+        "reason": "Source describes detonation of an installed Mine; separate no-Mine record exists.",
+        "evidence": "45f charge time (charge lasts 8f after releasing back direction, and must be holding forward when LP is input); strike hitbox surrounded by a 1-hit projectile clash hitbox on frames 14-29; detonates Psycho Mine on hit/block (does not trigger on Perfect Parry); puts opponent into limited juggle state (cancel into SA3 connects before Psycho Mine explodes); KD advantage depends on spacing (+41 close range, +42 most mid ranges, +39 on last active frame); useful pressure tool after Backfist Combo due to its block advantage, but is susceptible to Perfect Parry; when Perfect Parried, Bison will usually be airborne as the opponent punishes",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "m_bison",
+        "input": "[4]6MP",
+        "name": "MP Psycho Crusher (Mine)",
+        "fingerprint": "b3eb7dba055334d8cc085ddc66503e5c7ff3f8ae41aad356ef2cda5ada1628e9",
+        "action": "exclude",
+        "classification": "installed_object",
+        "reason": "Source describes detonation of an installed Mine; separate no-Mine record exists.",
+        "evidence": "45f charge time (charge lasts 8f after releasing back direction, and must be holding forward when MP is input); strike hitbox surrounded by a 1-hit projectile clash hitbox on frames 20-35; detonates Psycho Mine on hit/block (does not trigger on Perfect Parry); puts opponent into limited juggle state (cancel into SA3 connects before Psycho Mine explodes); KD advantage depends on spacing (+41 close range, +42 most mid ranges, +39 on last active frame); useful pressure tool after Backfist Combo due to its block advantage, but is susceptible to Perfect Parry; when Perfect Parried, Bison will usually be airborne as the opponent punishes",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "m_bison",
+        "input": "[4]6PP",
+        "name": "OD Psycho Crusher (Mine)",
+        "fingerprint": "8e6784db53153f5b17dcf5ddb00a451e2d7c5bdbe58c96b0b2ead208e3673f11",
+        "action": "exclude",
+        "classification": "installed_object",
+        "reason": "Source describes detonation of an installed Mine; separate no-Mine record exists.",
+        "evidence": "45f charge time (charge lasts 8f after releasing back direction, and must be holding forward when PP is input); strike hitbox (no projectile clash since Bison has full projectile invuln); detonates Psycho Mine on hit/block (does not trigger on Perfect Parry); launches opponent high into a limited juggle state, followed by an OTG bounce; when juggling late on these OTG bounce frames, an extra 10% Immediate Scaling is applied to the follow-ups (but an earlier juggle has no extra scaling); useful pressure tool after Backfist Combo due to its block advantage, but is susceptible to Perfect Parry; when Perfect Parried, Bison will usually be airborne as the opponent punishes",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "m_bison",
+        "input": "6PPPKKK",
+        "name": "Forward Taunt (Mine)",
+        "fingerprint": "a63146976f52fb026d55c3f21f5f6dc8010dc319214cbb1099c4a10d5a157765",
+        "action": "exclude",
+        "classification": "installed_object",
+        "reason": "Source describes detonation of an installed Mine; separate no-Mine record exists.",
+        "evidence": "\"Three. Two. One. BOOM! Hahahaha.\"; detonates a planted Psycho Mine at the end of the countdown; taunt activation can overwrite the previous explosion timer",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "m_bison",
+        "input": "2HK",
+        "name": "Shadow Sweep",
+        "fingerprint": "6bf1751485395ce1925123882f9a6873594f30464a475f3b482745d11b54cfc3",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +29",
+        "evidenceRetrievedAt": "2026-11-05T09:20:27.783Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22M.Bison%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "m_bison",
+        "input": "[2]8K",
+        "name": "Shadow Rise",
+        "fingerprint": "543e052cbf0a8448d1c8c7e9211cee43e335a51ad7b746a9bfb84ee126c7f968",
+        "action": "mark_not_applicable",
+        "field": "hit",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22M.Bison%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "m_bison",
+        "input": "[2]8K",
+        "name": "Shadow Rise",
+        "fingerprint": "543e052cbf0a8448d1c8c7e9211cee43e335a51ad7b746a9bfb84ee126c7f968",
+        "action": "mark_not_applicable",
+        "field": "block",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22M.Bison%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "m_bison",
+        "input": "[2]8KK",
+        "name": "OD Shadow Rise",
+        "fingerprint": "a6e452ee67ba10c3ce429b918511ac5e7ac85c630e3841ffeed40a0c21a10345",
+        "action": "mark_not_applicable",
+        "field": "hit",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22M.Bison%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "m_bison",
+        "input": "[2]8KK",
+        "name": "OD Shadow Rise",
+        "fingerprint": "a6e452ee67ba10c3ce429b918511ac5e7ac85c630e3841ffeed40a0c21a10345",
+        "action": "mark_not_applicable",
+        "field": "block",
+        "classification": "explicit_not_applicable",
+        "reason": "Explicit dash in matched source row; no numeric frame value imported.",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22M.Bison%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "m_bison",
+        "input": "214HP",
+        "name": "HP Backfist Combo",
+        "fingerprint": "eaec1143dd365f32c610549da21c0fe9ef33e1516ff151269784a758055e22c7",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +31",
+        "evidenceRetrievedAt": "2026-11-05T09:20:27.783Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22M.Bison%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "m_bison",
+        "input": "214LP",
+        "name": "LP Backfist Combo",
+        "fingerprint": "aa258dde0712246c8672f647ef56401194b3769960486bfa764c0f263e47035a",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +21",
+        "evidenceRetrievedAt": "2026-11-05T09:20:27.783Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22M.Bison%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "m_bison",
+        "input": "214MP",
+        "name": "MP Backfist Combo",
+        "fingerprint": "106a4c21c2fe08574ed52f2649792593965c9743b599dca3f23a1ab55fe1c499",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +20",
+        "evidenceRetrievedAt": "2026-11-05T09:20:27.783Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22M.Bison%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "m_bison",
+        "input": "214PP",
+        "name": "OD Backfist Combo",
+        "fingerprint": "8afeba471d1d6318b2ec9f5f0374b5d59266df434d535eb4b6caa2443a6da8d2",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +24",
+        "evidenceRetrievedAt": "2026-11-05T09:20:27.783Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22M.Bison%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "m_bison",
+        "input": "236KK",
+        "name": "OD Double Knee Press",
+        "fingerprint": "781c86b6eedf0adfbe07125835617c9044eb80266413ff066697b7e7f1495959",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +55",
+        "evidenceRetrievedAt": "2026-11-05T09:20:27.783Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22M.Bison%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "m_bison",
+        "input": "623PP",
+        "name": "Psycho Burst",
+        "fingerprint": "950df4c99cf44a757047fe4cc82cf82242b0cdfe0471f3aee97221227dff5033",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +17",
+        "evidenceRetrievedAt": "2026-11-05T09:20:27.783Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22M.Bison%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      }
+    ],
+    "stale": [],
+    "classifiedExclusions": [
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "[2]8KK~K or [2]8K~KK",
+        "name": "OD Head Press",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "[2]8KK~P or [2]8K~PP",
+        "name": "OD Devil Reverse",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "[2]8K~K",
+        "name": "Head Press",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "[2]8K~K~P",
+        "name": "Somersault Skull Diver",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "[2]8K~P",
+        "name": "Devil Reverse",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "3HK",
+        "name": "Hover Kick",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "4HK",
+        "name": "Evil Knee",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6 or 4 + PPP/KKK",
+        "name": "Bison Warp",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5MP~2HK",
+        "name": "Shadow Spear",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5MP~6HP",
+        "name": "Shadow Hammer",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6HP",
+        "name": "Psycho Hammer",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.HK",
+        "name": "Jumping Heavy Kick",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.HP",
+        "name": "Jumping Heavy Punch",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.LK",
+        "name": "Jumping Light Kick",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.LP",
+        "name": "Jumping Light Punch",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.MK",
+        "name": "Jumping Medium Kick",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.MP",
+        "name": "Jumping Medium Punch",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.MP~j.MP",
+        "name": "Hell Attack",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "214P Detonation",
+        "name": "Psycho Mine (Detonation)",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      }
+    ]
+  }
+}

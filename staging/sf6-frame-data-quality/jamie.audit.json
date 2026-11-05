@@ -1,0 +1,1127 @@
+{
+  "characterId": "jamie",
+  "rawMoveCount": 64,
+  "candidateMoveCount": 13,
+  "candidateNormals": 12,
+  "candidateSpecials": 1,
+  "upstreamFetchedAt": "2026-08-19T04:05:24.993Z",
+  "missingNormals": [],
+  "excluded": [
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "22P (hold)",
+      "name": "The Devil Inside (2 drinks)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "22P (hold)",
+      "name": "The Devil Inside (3 drinks)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "22P (hold)",
+      "name": "The Devil Inside (4 drinks)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "22P (activation)",
+      "name": "The Devil Inside (DL4 activation)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "2HK~HK",
+      "name": "Phantom Sway (DL2)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "2HK~HK~P",
+      "name": "Phantom Sway + Drink (DL2)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "2KK",
+      "name": "Tensei Kick (DL2)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "4HP",
+      "name": "Hermit's Elbow (DL2)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "4HP",
+      "name": "Hermit's Elbow (DL3)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "4HP~HP",
+      "name": "Intoxicated Assault 1 (DL3)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "4HP~HP~HK",
+      "name": "Intoxicated Assault 2 (DL3)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5LP~LK",
+      "name": "Bitter Strikes 1 (DL2)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "5LP~LK~MP",
+      "name": "Bitter Strikes 2 (DL2)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6HK~4HK",
+      "name": "Ransui Haze (DL4)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6HK~4HK~P (close)",
+      "name": "Ransui Haze Headbutt (DL4)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6HK~4HK~P (far)",
+      "name": "Ransui Haze Drink (DL4)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6HK~4HK~P (mid)",
+      "name": "Ransui Haze Triple Fist (DL4)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6HK",
+      "name": "Senei Kick (DL2)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6HK",
+      "name": "Senei Kick (DL4)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6MK",
+      "name": "Falling Star Kick (DL0)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6MK",
+      "name": "Falling Star Kick (DL2)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6MK~MK",
+      "name": "Full Moon Kick (DL2)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6MK~MK~P",
+      "name": "Full Moon Kick + Drink (DL2)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.HK",
+      "name": "Jump HK (DL2)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.HP",
+      "name": "Jump HP (DL2)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.LK",
+      "name": "Jump LK (DL2)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.LP",
+      "name": "Jump LP (DL2)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.MK",
+      "name": "Jump MK (DL2)",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.MP",
+      "name": "Jump MP (DL2)",
+      "category": "normal"
+    }
+  ],
+  "gameVersion": "UNVERIFIED",
+  "status": "STAGING_ONLY",
+  "review": {
+    "applied": [
+      {
+        "characterId": "jamie",
+        "input": "214HP",
+        "name": "Swagger Step (DL2)",
+        "fingerprint": "b4a1cbde67a2f3f123ad6f6dc278dc82942af728ab19245e6fa201dfd7783fe7",
+        "action": "exclude",
+        "classification": "drink_state",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Damage DL0-DL4: 1080/1140/1200/1260/1320 (Chip: 270/285/300/315/330); has juggle potential; has 6P follow-up during DL4 only; can be spaced to be plus on block; final active frame will only connect as a meaty (subtract 1f for max advantage when used in neutral); sets up a safe jump when connecting with first active frame on grounded opponent",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "214LP",
+        "name": "Swagger Step (DL2)",
+        "fingerprint": "3ac365881394a5e13282c803d2b1a7aa709c7634c3ea18edc7d1d36d453bb8c5",
+        "action": "exclude",
+        "classification": "drink_state",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Damage DL0-DL4: 810/855/900/945/990 (Chip: 202/213/225/236/247); has juggle potential; has 6P follow-up during DL4 only; can be spaced for safety (final active frame will only connect as a meaty; subtract 1f for max advantage when used in neutral)",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "214MP",
+        "name": "Swagger Step (DL2)",
+        "fingerprint": "e50c48c09db03820cc0636a62aafc88b99b7c5d2f762cd4982877010f5c662ce",
+        "action": "exclude",
+        "classification": "drink_state",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Damage DL0-DL4: 900/950/1000/1050/1100 (Chip: 225/237/250/262/275); has juggle potential; has 6P follow-up during DL4 only; can be spaced for safety (final active frame will only connect as a meaty; subtract 1f for max advantage when used in neutral)",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "214PP~6P",
+        "name": "Swagger Hermit Punch (DL4)",
+        "fingerprint": "4ddba7e9f09f6592a2825a9da8a6776c17a2e1b133e7e3b270a19c4ed613338c",
+        "action": "exclude",
+        "classification": "state_scope_unconfirmed",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Both hits are a true blockstring (up to 5f gap if delayed); the initial 214PP is safe on block making it very risky to attempt a delay frame trap; does not cost any additional Drive meter to perform; SA2 cancel: KD+55(57)/+12, 2f better KD Adv. if the 6P follow-up hits grounded",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "214PP",
+        "name": "Swagger Step (DL2)",
+        "fingerprint": "8530ec72e48ec7ac6a17195e118eace5d89e196177cf8f5170371c0b588a1ee9",
+        "action": "exclude",
+        "classification": "drink_state",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Damage DL0-DL4: 990/1045/1100/1155/1210 (Chip: 247/261/275/288/302); has juggle potential; has 6P follow-up during DL4 only; can juggle OTG during Tumble state; Punish Counter near corner causes a crouching Wall Splat that puts opponent into limited juggle state while still grounded (can be thrown; strikes cause opponent to become airborne); can be spaced for plus frames (final active frame will only connect as a meaty; subtract 1f for max advantage when used in neutral); SA2 cancel: KD+89(103)/+15",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "214P~6P",
+        "name": "Swagger Hermit Punch (DL4)",
+        "fingerprint": "389e43a838171b6c035529666a0e4bc9a8efc30c4d85d4a009258bf4768233b1",
+        "action": "exclude",
+        "classification": "state_scope_unconfirmed",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Can delay follow-up input; blockstring gap is 1-8f after 214LP/MP and 0-6f after 214HP depending on how much it's delayed; KD advantage is 1f worse after 214HP starter",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236HK",
+        "name": "Bakkai (DL2)",
+        "fingerprint": "63daf21afa26180631c0a24774c5d60885f6cd69c668eb77f46a7daa1c782cdd",
+        "action": "exclude",
+        "classification": "state_scope_unconfirmed",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Damage DL2-DL4: 1800/1887/1980 (Chip: 447/468/490); semi-consistent projectile counter at mid-range (except vs. fireballs with low recovery or with smaller extended hurtboxes)",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236HP~6K~6K",
+        "name": "HP Freeflow Kicks 2 (DL2)",
+        "fingerprint": "aa33645d156a8e54c72a3768fff851ea820fbd9c791b028369f7193bdae3fa7b",
+        "action": "exclude",
+        "classification": "state_scope_unconfirmed",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Damage DL0-DL4: 495/522/550/577/605 (Scaled: 396/418/440/462/484) (Chip: 123/130/137/143/150); 2nd Kick follow-up can be performed on whiff as long as the first 6K comes out; increases Drink Level by 1 on frame 37 of recovery; refills 0.5 Drive bars; at DL4, refills 1 Drive bar; () refers to scaled damage when starting combo from 236P; 8-12f blockstring gap depending on input timing; activating DL4 gives much better frame advantage",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236HP~6K",
+        "name": "HP Freeflow Kicks 1 (DL2)",
+        "fingerprint": "53969cf4a0ce568ed01b9d2d11b1157e8eac5f78d0dfd2b762e75b3396c783ca",
+        "action": "exclude",
+        "classification": "state_scope_unconfirmed",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Damage DL0-DL4: 270/285/300/315/330 (Chip: 67/71/75/78/82); Kick follow-up cannot be performed on whiff (but the 2nd Kick follow-up can be performed if the initial 6K whiffs); 4-9f blockstring gap depending on input timing (DL4: 4-12f gap)",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236HP~6P~6P",
+        "name": "HP Freeflow Strikes Punch 2 (DL2)",
+        "fingerprint": "1f5506d24c9e213f0746cf653024e0aa19085686029901907e89965a31acb802",
+        "action": "exclude",
+        "classification": "state_scope_unconfirmed",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Damage DL0-DL3: 585(468)/617(494)/650(520)/682(546) (Chip: 145/153/162/170); can be performed on hit/block/whiff (startup is delayed by 3f on whiff version); [] refers to total startup when whiffing initial 236P~6P; () refers to scaled damage when starting combo from 236P; 3-7f gap before final hit on block",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236HP~6P~6P",
+        "name": "HP Freeflow Strikes Punch 2 (DL4)",
+        "fingerprint": "318e271aa1bace223d2d2ae284cc5c17546256a52541f54672bb9d6a63aa1a6b",
+        "action": "exclude",
+        "classification": "state_scope_unconfirmed",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Can be performed on hit/block/whiff (startup is delayed by 3f on whiff version); [] refers to total startup when whiffing initial 236P~6P; () refers to scaled damage when starting combo from 236P; 3 hits; 2-6f gap between 2nd/3rd Rekkas on block",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236HP~6P",
+        "name": "HP Freeflow Strikes Punch 1 (DL2)",
+        "fingerprint": "1efeb3a68f373b09b4ce617a338d47f26725c3dd21b6b8b3cc956648cd68a57e",
+        "action": "exclude",
+        "classification": "drink_state",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Damage DL0-DL3: 405/427/450/472 (Chip: 100/106/112/117); can be performed on hit/block/whiff (startup is delayed by 4f on whiff version); [] refers to total startup when whiffing initial 236P; counter-hit/Punish Counter bonus only applies if 1st Rekka did not hit; 3-8f blockstring gap depending on input timing",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236HP~6P",
+        "name": "HP Freeflow Strikes Punch 1 (DL4)",
+        "fingerprint": "69c41085f5a2aa4ba4722291a03c2ed8597ece7e62dc004921a5f92d99db6ae2",
+        "action": "exclude",
+        "classification": "drink_state",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Can be performed on hit/block/whiff (startup is delayed by 4f on whiff version); [] refers to total startup when whiffing initial 236P; 2 hits; counter-hit/Punish Counter bonus only applies if 2nd hit connects; 2-7f blockstring gap depending on input timing",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236HP",
+        "name": "HP Freeflow Strikes 1 (DL2)",
+        "fingerprint": "73cb54be020ce9e4ff9c9b5cb200590600b774c68ac1a1aa15a6d29ef29de776",
+        "action": "exclude",
+        "classification": "state_scope_unconfirmed",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Damage DL0-DL3: 405/427/450/472 (Chip: 100/106/112/117); cancelable into Punch follow-up on hit/block/whiff or Kick follow-up on hit/block; whiff cancel into 6P is delayed by 4f compared to hit/block version",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236HP",
+        "name": "HP Freeflow Strikes 1 (DL4)",
+        "fingerprint": "8bcc7b6e7123cb0ec405fae55cfae05e01a2e80a746afb2294ccf190233676e5",
+        "action": "exclude",
+        "classification": "state_scope_unconfirmed",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "2 hits, both are super cancelable; cancelable into 6P or 6K follow-up (6K cannot be performed on whiff); whiff cancel into 6P is delayed by 4f compared to hit/block version; counter-hit/Punish Counter bonus advantage carries over through both hits",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236KK",
+        "name": "Bakkai (DL2)",
+        "fingerprint": "3cb5c78288094b38b795e755c7ca203bb3fe3a7569e3110c05ddc4444efca669",
+        "action": "exclude",
+        "classification": "state_scope_unconfirmed",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Damage DL2-DL4: 2000/2100/2200 (Chip: 500/522/545); fairly consistent projectile counter at mid-range (except vs. fireballs with low recovery or with smaller extended hurtboxes); Super cancel occurs on 7th hit; SA2 cancel: +14/+7; -97 if opponent Perfect Parries the 1st hit and then jumps to avoid the rest",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236LK",
+        "name": "Bakkai (DL2)",
+        "fingerprint": "0ae510680dcdc06177bc7c43f6032a064c183188f4c2ce819bf3ccfa2e991ea4",
+        "action": "exclude",
+        "classification": "state_scope_unconfirmed",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Damage DL2-DL4: 1400/1468/1540 (Chip: 348/365/382); important combo ender for safe jump setups",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236LP~6K~6K",
+        "name": "LP Freeflow Kicks 2 (DL2)",
+        "fingerprint": "e218fa8604e79c365dffb40dfe59e9f3df294a3731b9c99b8f657204474defae",
+        "action": "exclude",
+        "classification": "state_scope_unconfirmed",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Damage DL0-DL4: 405/427/450/472/495 (Scaled: 324/342/360/378/396) (Chip: 100/106/112/117/123); 2nd Kick follow-up can be performed on whiff as long as the first 6K comes out; () refers to scaled damage when starting combo from 236P; increases Drink Level by 1 on frame 36 of recovery; refills 0.5 Drive bars; at DL4, refills 1 Drive bar; 2-6f blockstring gap depending on input timing; activating DL4 gives much better frame advantage",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236LP~6K",
+        "name": "LP Freeflow Kicks 1 (DL2)",
+        "fingerprint": "1dc7d9cb06d884ae8d5c06d1e1e499e471295ead7c8c2c3ebcdf2dc79fe39dd9",
+        "action": "exclude",
+        "classification": "state_scope_unconfirmed",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Damage DL0-DL4: 225/237/250/262/275 (Chip: 55/58/62/65/68); Kick follow-up cannot be performed on whiff (but the 2nd Kick follow-up can be performed if the initial 6K whiffs); 0-3f blockstring gap depending on input timing (DL4: 0-6f gap)",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236LP~6P~6P",
+        "name": "LP Freeflow Strikes Punch 2 (DL2)",
+        "fingerprint": "450b17423907bf1be0755fbefde8919b91cd1c90d80437e34e016625e36a5cf6",
+        "action": "exclude",
+        "classification": "state_scope_unconfirmed",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Damage DL0-DL3: 495(396)/522(418)/550(440)/577(462) (Chip: 123/130/137/144); can be performed on hit/block/whiff (startup is delayed by 3f on whiff version); [] refers to total startup when whiffing initial 236P~6P; () refers to scaled damage when starting combo from 236P; 1-5f gap before final hit on block",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236LP~6P~6P",
+        "name": "LP Freeflow Strikes Punch 2 (DL4)",
+        "fingerprint": "474bc2a86d010cf0ba08fbc4802315e3684e342855934b9d03bcec27ba837462",
+        "action": "exclude",
+        "classification": "state_scope_unconfirmed",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Can be performed on hit/block/whiff (startup is delayed by 3f on whiff version); [] refers to total startup when whiffing initial 236P~6P; () refers to scaled damage when starting combo from 236P; 3 hits; 2-6f gap between 2nd/3rd Rekkas on block",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236LP~6P",
+        "name": "LP Freeflow Strikes Punch 1 (DL2)",
+        "fingerprint": "efff9d0d341fcaf2fd6dc6d84d52f2872c5f38cb6a138e5712eabcf5ea92d67c",
+        "action": "exclude",
+        "classification": "drink_state",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Damage DL0-DL3: 315/332/350/367 (Chip: 78/82/87/91); can be performed on hit/block/whiff (startup is delayed by 4f on whiff version); [] refers to total startup when whiffing initial 236P; counter-hit/Punish Counter bonus only applies if 1st Rekka did not hit; 0-2f blockstring gap depending on input timing",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236LP~6P",
+        "name": "LP Freeflow Strikes Punch 1 (DL4)",
+        "fingerprint": "577e5a2d362035f6cc20ba45311e5cc2764377ff5ee862804ea4ae3eb83d9ebe",
+        "action": "exclude",
+        "classification": "drink_state",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Can be performed on hit/block/whiff (startup is delayed by 4f on whiff version); [] refers to total startup when whiffing initial 236P; 2 hits; counter-hit/Punish Counter bonus only applies if 2nd hit connects; 2-7f blockstring gap depending on input timing",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236LP",
+        "name": "LP Freeflow Strikes 1 (DL2)",
+        "fingerprint": "1c727d98a7c7b542ba64e7aff0069c1dc5e09970e205850f2a14a404d210ec32",
+        "action": "exclude",
+        "classification": "state_scope_unconfirmed",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Damage DL0-DL3: 315/332/350/367 (Chip: 78/82/87/91); cancelable into Punch follow-up on hit/block/whiff or Kick follow-up on hit/block; whiff cancel into 6P is delayed by 4f compared to hit/block version; can be safe if well-spaced",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236LP",
+        "name": "LP Freeflow Strikes 1 (DL4)",
+        "fingerprint": "16882f8e59981c3a2edc6c3595fe1f49c7fbd233785d9cfca2410717e1bd35d1",
+        "action": "exclude",
+        "classification": "state_scope_unconfirmed",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "2 hits, both are super cancelable; cancelable into 6P or 6K follow-up (6K cannot be performed on whiff); whiff cancel into 6P is delayed by 4f compared to hit/block version; counter-hit/Punish Counter bonus advantage carries over through both hits",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236MK",
+        "name": "Bakkai (DL2)",
+        "fingerprint": "333f1615e7f1aed8c91d250a30a2d29770f02b4e2d7c9a4b3a5b809c869ba940",
+        "action": "exclude",
+        "classification": "state_scope_unconfirmed",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Damage DL2-DL4: 1600/1677/1760 (Chip: 397/416/435)",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236MP~6K~6K",
+        "name": "MP Freeflow Kicks 2 (DL2)",
+        "fingerprint": "ab2bc066bcb190cc3c9c7da4680e438684f76693b25dbe109812097b9e90249c",
+        "action": "exclude",
+        "classification": "state_scope_unconfirmed",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Damage DL0-DL4: 450/475/500/525/550 (Scaled: 360/380/400/420/440) (Chip: 112/118/125/131/137); 2nd Kick follow-up can be performed on whiff as long as the first 6K comes out; increases Drink Level by 1 on frame 37 of recovery; refills 0.5 Drive bars; at DL4, refills 1 Drive bar; () refers to scaled damage when starting combo from 236P; 5-9f blockstring gap depending on input timing; activating DL4 gives much better frame advantage",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236MP~6K",
+        "name": "MP Freeflow Kicks 1 (DL2)",
+        "fingerprint": "980885ff40c51376917d4c8bcf2f5a3b10e181b9411180078e55c102be808358",
+        "action": "exclude",
+        "classification": "state_scope_unconfirmed",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Damage DL0-DL4: 270/285/300/315/330 (Chip: 67/71/75/78/82); Kick follow-up cannot be performed on whiff (but the 2nd Kick follow-up can be performed if the initial 6K whiffs); 1-6f blockstring gap depending on input timing (DL4: 2-9f gap)",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236MP~6P~6P",
+        "name": "MP Freeflow Strikes Punch 2 (DL2)",
+        "fingerprint": "12b4e0a4c21bfac1ddf61385752c6cfed3de71f49f9955374cf9373e2c56876e",
+        "action": "exclude",
+        "classification": "state_scope_unconfirmed",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Damage DL0-DL3: 540(432)/570(456)/600(480)/630(504) (Chip: 135/142/150/157); can be performed on hit/block/whiff (startup is delayed by 3f on whiff version); [] refers to total startup when whiffing initial 236P~6P; () refers to scaled damage when starting combo from 236P; 2-6f gap before final hit on block",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236MP~6P~6P",
+        "name": "MP Freeflow Strikes Punch 2 (DL4)",
+        "fingerprint": "ee9ae81d20abfbc6228dfb05c4d26e17e0cd450d30f9de076e88f4ee5577d9b7",
+        "action": "exclude",
+        "classification": "state_scope_unconfirmed",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Can be performed on hit/block/whiff (startup is delayed by 3f on whiff version); [] refers to total startup when whiffing initial 236P~6P; () refers to scaled damage when starting combo from 236P; 3 hits; 2-6f gap between 2nd/3rd Rekkas on block",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236MP~6P",
+        "name": "MP Freeflow Strikes Punch 1 (DL2)",
+        "fingerprint": "d732a6c903073b25cd3dd4597691cbfe61fb086630b1a72176f5f060b2fb9919",
+        "action": "exclude",
+        "classification": "drink_state",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Damage DL0-DL3: 360/380/400/420 (Chip: 90/95/100/105); can be performed on hit/block/whiff (startup is delayed by 4f on whiff version); [] refers to total startup when whiffing initial 236P; counter-hit/Punish Counter bonus only applies if 1st Rekka did not hit; 0-5f blockstring gap depending on input timing",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236MP~6P",
+        "name": "MP Freeflow Strikes Punch 1 (DL4)",
+        "fingerprint": "e2adfa18acafcfd6344649635741041ead19a41c3c5c9cf8435e40c0772d1a9b",
+        "action": "exclude",
+        "classification": "drink_state",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Can be performed on hit/block/whiff (startup is delayed by 4f on whiff version); [] refers to total startup when whiffing initial 236P; 2 hits; counter-hit/Punish Counter bonus only applies if 2nd hit connects; 2-7f blockstring gap depending on input timing",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236MP",
+        "name": "MP Freeflow Strikes 1 (DL2)",
+        "fingerprint": "a3edd8fef58dd1f4fccb378184c76542d3dcde8bc411a1580228eb09ee650dda",
+        "action": "exclude",
+        "classification": "state_scope_unconfirmed",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Damage DL0-DL3: 360/380/400/420 (Chip: 90/95/100/105); cancelable into Punch follow-up on hit/block/whiff or Kick follow-up on hit/block; whiff cancel into 6P is delayed by 4f compared to hit/block version",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236MP",
+        "name": "MP Freeflow Strikes 1 (DL4)",
+        "fingerprint": "60adcae4bab494ec9a9b63e483f2afef7ca677371300d837926b8f2c4bbaa445",
+        "action": "exclude",
+        "classification": "state_scope_unconfirmed",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "2 hits, both are super cancelable; cancelable into 6P or 6K follow-up (6K cannot be performed on whiff); whiff cancel into 6P is delayed by 4f compared to hit/block version; counter-hit/Punish Counter bonus advantage carries over through both hits",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236PP~6K~6K",
+        "name": "OD Freeflow Kicks 2 (DL2)",
+        "fingerprint": "19d689334982a867880b142a1253d689118f7f62e370fa5a005b4943a18ffed8",
+        "action": "exclude",
+        "classification": "drink_state",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Damage DL0-DL4: 540/570/600/630/660 (Scaled: 432/456/480/504/528) (Chip: 135/142/150/157/165); 2nd Kick follow-up can be performed on whiff as long as the first 6K comes out; increases Drink Level by 1 on frame 37 of recovery; refills 0.5 Drive bars; at DL4, refills 1 Drive bar; OD version is the only Drink ender that gives corner oki; () refers to scaled damage when starting combo from 236P; 2-6f blockstring gap depending on input timing; activating DL4 gives much better frame advantage",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236PP~6K",
+        "name": "OD Freeflow Kicks 1 (DL2)",
+        "fingerprint": "3a69161279e7d1996f7ce7ea0a47f873dcedff2f2ca9de6e7689815452364d64",
+        "action": "exclude",
+        "classification": "state_scope_unconfirmed",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Damage DL0-DL4: 315/332/350/367/385 (Chip: 78/82/87/91/95); Kick follow-up cannot be performed on whiff (but the 2nd Kick follow-up can be performed if the initial 6K whiffs); 0-4f blockstring gap depending on input timing (DL4: 1-6f gap)",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236PP~6P~6P",
+        "name": "OD Freeflow Strikes Punch 2 (DL2)",
+        "fingerprint": "14cdfec547f06ada52659904d16346165edf906eb05047d3b7c286b7ce4750b6",
+        "action": "exclude",
+        "classification": "state_scope_unconfirmed",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Damage DL0-DL3: 675(540)/712(570)/750(600)/787(630) (Chip: 168/177/187/196); can be performed on hit/block/whiff (startup is delayed by 2f on whiff version); [] refers to total startup when whiffing initial 236P~6P; 0-2f gap before final hit on block; does not count as a separate move for damage scaling purposes (but does apply scaling to follow-ups)",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236PP~6P~6P",
+        "name": "OD Freeflow Strikes Punch 2 (DL4)",
+        "fingerprint": "5f09ba766a4e74fd69e54dcabe6e91d8d44d8006b70e71ffc0f855a15889d0f7",
+        "action": "exclude",
+        "classification": "state_scope_unconfirmed",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Can be performed on hit/block/whiff (startup is delayed by 3f on whiff version); [] refers to total startup when whiffing initial 236P~6P; 3 hits; 2-6f gap between 2nd/3rd Rekkas on block; does not count as a separate move for damage scaling purposes (but does apply scaling to follow-ups)",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236PP~6P",
+        "name": "OD Freeflow Strikes Punch 1 (DL2)",
+        "fingerprint": "b44f8d51f88a27bfa8d41690710204c0fe2794f48c46eec7d180355820b25bc1",
+        "action": "exclude",
+        "classification": "drink_state",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Damage DL0-DL3: 405/427/450/472 (Chip: 100/106/112/117); can be performed on hit/block/whiff (startup is delayed by 5f on whiff version); [] refers to total startup when whiffing initial 236P; counter-hit/Punish Counter bonus only applies if 1st Rekka did not hit; 0-3f blockstring gap depending on input timing; does not count as a separate move for damage scaling purposes (but does apply scaling to any follow-ups after 3rd rekka hit)",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236PP~6P",
+        "name": "OD Freeflow Strikes Punch 1 (DL4)",
+        "fingerprint": "296de22c92db096f59f35544d18783de595810a18ca266d9e09e52076c23c61a",
+        "action": "exclude",
+        "classification": "drink_state",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Can be performed on hit/block/whiff (startup is delayed by 4f on whiff version); [] refers to total startup when whiffing initial 236P; 2 hits; counter-hit/Punish Counter bonus only applies if 2nd hit connects; 2-7f blockstring gap depending on input timing; does not count as a separate move for damage scaling purposes (but does apply scaling to any follow-ups after 3rd rekka hit)",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236PP",
+        "name": "OD Freeflow Strikes 1 (DL2)",
+        "fingerprint": "2cec2892452bc2d6856b39b54759e6f8c98409f7a598a2941b6815804445ccae",
+        "action": "exclude",
+        "classification": "state_scope_unconfirmed",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Damage DL0-DL3: 405/427/450/472 (Chip: 100/106/112/117); cancelable into Punch follow-up on hit/block/whiff or Kick follow-up on hit/block; whiff cancel into 6P is delayed by 5f compared to hit/block version; safe buffer option that allows an easy hitconfirm into follow-ups; all 6P Rekka follow-ups do not count as separate moves for damage scaling (but do apply scaling to other follow-ups after 1st or 3rd rekka); SA2 cancel: +17/+14",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "236PP",
+        "name": "OD Freeflow Strikes 1 (DL4)",
+        "fingerprint": "b52e94a1ae858a2653e8220ddb26a3acc90154d36388b9e6341dc112165454b4",
+        "action": "exclude",
+        "classification": "state_scope_unconfirmed",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "2 hits, both are super cancelable; cancelable into 6P or 6K follow-up (6K cannot be performed on whiff); whiff cancel into 6P is delayed by 4f compared to hit/block version; counter-hit/Punish Counter bonus advantage carries over through both hits; all 6P Rekka follow-ups do not count as separate moves for damage scaling (but do apply scaling to other follow-ups after 1st or 3rd rekka); SA2 cancel: +18/+13 (1st hit), +18/+12 (2nd hit)",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "5LP",
+        "name": "Stand LP (DL2)",
+        "fingerprint": "60a4795b73c526e0c23d30ca08f6d1b33af44d9444f11833ed36aa20b3b9792c",
+        "action": "exclude",
+        "classification": "drink_state",
+        "reason": "Source explicitly requires Drink Lv.1 or higher; separate DL0-only row exists.",
+        "evidence": "Damage DL1-DL4: 285/300/315/330; requires Drink Lv.1 or higher; cannot link afterward naturally, but gives new Target Combo follow-up; good range for a light normal (slightly shorter range vs. crouching opponents); SA2 cancel: +7/+2; Drink cancel: -37/-42",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "623HK",
+        "name": "Arrow Kick (DL2)",
+        "fingerprint": "122cb5d9dffd0b9c5a717a4d8ab6b8eab500e9881d32632b90d61567f1a94a44",
+        "action": "exclude",
+        "classification": "state_scope_unconfirmed",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Damage DL0-DL4: 1260/1330/1400/1470/1540 (Chip: 315/332/350/367/385); on hit, a follow-up occurs with 8f landing recovery (19-42f full invuln, vulnerable to projectiles before invincibility starts); cannot hit cross-up; can juggle into 623KK or SA1 after a high airborne connect in the corner",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "623KK",
+        "name": "Arrow Kick (DL2)",
+        "fingerprint": "935f0580a0c842960dc212a79c567b0fe9d534791c474638dddf3f4a482d6c81",
+        "action": "exclude",
+        "classification": "state_scope_unconfirmed",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Damage DL0-DL4: 1350/1424/1500/1574/1650 (Chip: 337/356/375/393/412); on hit, a follow-up occurs with 11f landing recovery (15-38f full invuln, vulnerable to projectiles before 2nd hit invincibility starts); Jamie's primary reversal; cannot hit cross-up",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "623LK",
+        "name": "Arrow Kick (DL2)",
+        "fingerprint": "9d8ff95817598428a2dff98cbf44980281deeff0b9eaec6bc0564ed838896476",
+        "action": "exclude",
+        "classification": "drink_state",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Damage DL0-DL4: 900/950/1000/1050/1100 (Chip: 225/237/250/262/275); on hit, a follow-up occurs with 11f landing recovery (16-42f full invuln, vulnerable to projectiles before invincibility starts); cannot hit cross-up; sets up a safe jump in the corner (or midscreen if no back rise); can juggle into 623KK, SA1, or SA3 after a high airborne connect (623KK requires corner positioning)",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "623MK",
+        "name": "Arrow Kick (DL2)",
+        "fingerprint": "035f18e634a61835c4ce0ac16c61cb79986a50923809924c85602905e5ab747a",
+        "action": "exclude",
+        "classification": "state_scope_unconfirmed",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Damage DL0-DL4: 1080/1140/1200/1260/1320 (Chip: 270/285/300/315/330); on hit, a follow-up occurs with 18f landing recovery (17-40f full invuln, vulnerable to projectiles before invincibility starts); cannot hit cross-up",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "63214KK",
+        "name": "Tenshin (DL3)",
+        "fingerprint": "5459affad2c289cc6bf254b8cd9e953d6c52663c5403e85e1aa48be8431c0148",
+        "action": "exclude",
+        "classification": "state_scope_unconfirmed",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Damage DL3-DL4: 682/715; cannot be canceled into from normals; Jamie is +28 before crumpled opponent goes airborne into a free juggle state; leaves enough frame advantage to dash or Drive Rush into a grounded combo; does not benefit from Counter/Punish Counter bonus frame advantage; Range: 0.96",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "63214K",
+        "name": "Tenshin (DL3)",
+        "fingerprint": "ab79750d4c14222b375ef59f6b4c07bde9c8c8932469c3787203024d3bcffb1b",
+        "action": "exclude",
+        "classification": "state_scope_unconfirmed",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Cannot be canceled into from normals; leaves opponent standing on hit for a grounded combo; does not benefit from Counter/Punish Counter bonus frame advantage; starter scaling is applied to the 3rd hit of the combo, while immediate scaling applies if Tenshin is comboed into (e.g. after Stun, PC Drive Impact, or corner PC 214PP)); Range: 0.96",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "j.214KK",
+        "name": "Luminous Dive Kick (DL2)",
+        "fingerprint": "96725715a51f48fe8c935fdcb3a57600eebbb8971b436155b8a75dd1f95a20b1",
+        "action": "exclude",
+        "classification": "drink_state",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Damage DL1-DL4: 760/800/840/880 (Chip: 190/200/210/220); during forward jump only; connecting lower to the ground gives better frame advantage; grounded hit puts opponent into limited juggle state; OTG bounce on airborne hit; can be done low to the ground with Tiger Knee motion (214~9K); can be used to bait throw techs or as an escape from corner throw loops; Jamie is crouching on the final landing recovery frame with a standing-sized hurtbox (IASA: this tall crouching hurtbox lasts up to 39 more frames when holding any crouch after landing)",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "j.214K",
+        "name": "Luminous Dive Kick (DL2)",
+        "fingerprint": "d6df9624bd93742588f636769d0e8833c1623d8772336e3fdf671cd7471c961e",
+        "action": "exclude",
+        "classification": "drink_state",
+        "reason": "DL-specific source row; DL0 frames are not separately certified. Quarantine rather than assuming identical DL0 performance. See preserved source notes.",
+        "evidence": "Damage DL1-DL4: 950/1000/1050/1100 (Chip: 237/250/262/275); forward jump only; button strength determines angle; connecting lower to the ground gives better frame advantage; can be done very low to the ground with Tiger Knee motion (214~9K); can get a follow-up juggle after low grounded hit; spike knockdown vs. airborne opponents (no juggle); can be used to bait throw techs or as an escape from corner throw loops; Jamie is crouching on the final landing recovery frame with a standing-sized hurtbox (IASA: this tall crouching hurtbox lasts up to 39 more frames when holding any crouch after landing)",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        ],
+        "patchStatus": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "input": "2HK",
+        "name": "Crouch HK (DL2)",
+        "fingerprint": "f2f0919c62c42798d2cebce59a8414d2c9537387f2b2cef0acd9eee378264e96",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +33",
+        "evidenceRetrievedAt": "2026-11-05T09:20:26.958Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Jamie%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      }
+    ],
+    "stale": [],
+    "classifiedExclusions": [
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "22P (hold)",
+        "name": "The Devil Inside (2 drinks)",
+        "category": "special",
+        "classification": "held_button"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "22P (hold)",
+        "name": "The Devil Inside (3 drinks)",
+        "category": "special",
+        "classification": "held_button"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "22P (hold)",
+        "name": "The Devil Inside (4 drinks)",
+        "category": "special",
+        "classification": "held_button"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "22P (activation)",
+        "name": "The Devil Inside (DL4 activation)",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "2HK~HK",
+        "name": "Phantom Sway (DL2)",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "2HK~HK~P",
+        "name": "Phantom Sway + Drink (DL2)",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "2KK",
+        "name": "Tensei Kick (DL2)",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "4HP",
+        "name": "Hermit's Elbow (DL2)",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "4HP",
+        "name": "Hermit's Elbow (DL3)",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "4HP~HP",
+        "name": "Intoxicated Assault 1 (DL3)",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "4HP~HP~HK",
+        "name": "Intoxicated Assault 2 (DL3)",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5LP~LK",
+        "name": "Bitter Strikes 1 (DL2)",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "5LP~LK~MP",
+        "name": "Bitter Strikes 2 (DL2)",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6HK~4HK",
+        "name": "Ransui Haze (DL4)",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6HK~4HK~P (close)",
+        "name": "Ransui Haze Headbutt (DL4)",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6HK~4HK~P (far)",
+        "name": "Ransui Haze Drink (DL4)",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6HK~4HK~P (mid)",
+        "name": "Ransui Haze Triple Fist (DL4)",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6HK",
+        "name": "Senei Kick (DL2)",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6HK",
+        "name": "Senei Kick (DL4)",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6MK",
+        "name": "Falling Star Kick (DL0)",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6MK",
+        "name": "Falling Star Kick (DL2)",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6MK~MK",
+        "name": "Full Moon Kick (DL2)",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6MK~MK~P",
+        "name": "Full Moon Kick + Drink (DL2)",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.HK",
+        "name": "Jump HK (DL2)",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.HP",
+        "name": "Jump HP (DL2)",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.LK",
+        "name": "Jump LK (DL2)",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.LP",
+        "name": "Jump LP (DL2)",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.MK",
+        "name": "Jump MK (DL2)",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.MP",
+        "name": "Jump MP (DL2)",
+        "category": "normal",
+        "classification": "air_move"
+      }
+    ]
+  }
+}

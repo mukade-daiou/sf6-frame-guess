@@ -1,0 +1,1521 @@
+{
+  "id": "sagat",
+  "nameJa": "サガット",
+  "nameEn": "Sagat",
+  "gameVersion": "UNVERIFIED",
+  "source": {
+    "url": "https://wiki.supercombo.gg/w/Street_Fighter_6",
+    "retrievedAt": "2026-11-01T00:01:59.250Z",
+    "gameVersion": "UNVERIFIED",
+    "kind": "community",
+    "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+    "license": "CC-BY-SA-4.0",
+    "verification": "unverified"
+  },
+  "coverage": {
+    "normal": {
+      "status": "partial",
+      "verification": "unverified"
+    },
+    "special": {
+      "status": "partial",
+      "verification": "unverified"
+    }
+  },
+  "moves": [
+    {
+      "id": "sagat__normal_2_K_H",
+      "name": "しゃがみ強K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "11",
+          "numeric": 11
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "39",
+          "numeric": 39,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-12",
+          "numeric": -12
+        }
+      },
+      "notes": [
+        "upstreamInput: 2HK",
+        "upstreamName: Tiger Kick",
+        "upstreamNotes: Has some juggle potential; great range and hitbox priority; can be punished on block by most other sweeps in the game",
+        "upstreamActive: 3",
+        "upstreamRecovery: 26",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +29 as D; original onHit=29; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Sagat%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "sagat__normal_2_K_L",
+      "name": "しゃがみ弱K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "19",
+          "numeric": 19,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: 2LK",
+        "upstreamName: Crouching Light Kick",
+        "upstreamNotes: Chains into 5LP/2LP/2LK; low starter that can combo into any 3-light chain from close range",
+        "upstreamActive: 3",
+        "upstreamRecovery: 12"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "sagat__normal_2_K_M",
+      "name": "しゃがみ中K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "29",
+          "numeric": 29,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+5",
+          "numeric": 5
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        }
+      },
+      "notes": [
+        "upstreamInput: 2MK",
+        "upstreamName: Crouching Medium Kick",
+        "upstreamNotes: Amazing hitbox priority as a neutral poke; can link to 5LP at closer ranges, or into 2MP/5LK on Counter-hit; useful combo/pressure starter out of Drive Rush (but has poor link options near its max range)",
+        "upstreamActive: 3",
+        "upstreamRecovery: 18"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "sagat__normal_2_P_H",
+      "name": "しゃがみ強P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "11",
+          "numeric": 11
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "35",
+          "numeric": 35,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-5",
+          "numeric": -5
+        }
+      },
+      "notes": [
+        "upstreamInput: 2HP",
+        "upstreamName: Crouching Heavy Punch",
+        "upstreamNotes: Very long range for a cancelable and hitconfirmable poke; significantly more range on active frames 3-4; topmost hurtbox is vulnerable only to aerial strikes on frames 1-14 (preventing its use as an anti-air), and is projectile invincible on frames 1-19 to avoid High Tiger Shot (frames 20-35 are still vulnerable)",
+        "upstreamActive: 4",
+        "upstreamRecovery: 21"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "sagat__normal_2_P_L",
+      "name": "しゃがみ弱P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "4",
+          "numeric": 4
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "15",
+          "numeric": 15,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+5",
+          "numeric": 5
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        }
+      },
+      "notes": [
+        "upstreamInput: 2LP",
+        "upstreamName: Crouching Light Punch",
+        "upstreamNotes: Chains into 5LP/2LP/2LK; excellent range for a 4f jab; high pushback makes tick throw and counter-hit pressure weaker, but also allows Sagat to space himself outside the opponent's reversal normals on block; DR cancel is delayed until after 2nd recovery frame (up to the 3rd recovery frame); topmost hurtbox on frames 1-5 is vulnerable only to aerial strikes (preventing its use as an anti-air)",
+        "upstreamActive: 2",
+        "upstreamRecovery: 10"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "sagat__normal_2_P_M",
+      "name": "しゃがみ中P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "25",
+          "numeric": 25,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        }
+      },
+      "notes": [
+        "upstreamInput: 2MP",
+        "upstreamName: Crouching Medium Punch",
+        "upstreamNotes: Solid mid-range cancelable poke and buffer tool; 1f extra recovery on block; 3f extra recovery on whiff; significantly more range on active frames 2-3 (more effective linking from +8 or punishing -8 moves); cancelable into 2 different Target Combo follow-ups with different hitconfirm timings (requires Punish Counter or Drive Rush for 2MP~HP combo); topmost hurtbox is vulnerable only to aerial strikes on frames 1-9 (preventing its use as an anti-air), and is projectile invincible on frames 1-14 to avoid High Tiger Shot (frames 15-26 are still vulnerable)",
+        "upstreamActive: 3",
+        "upstreamRecovery: 16"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "sagat__normal_5_K_H",
+      "name": "立ち強K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "36",
+          "numeric": 36,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-5",
+          "numeric": -5
+        }
+      },
+      "notes": [
+        "upstreamInput: 5HK",
+        "upstreamName: Standing Heavy Kick",
+        "upstreamNotes: Upper Body/Leg hurtbox is anti-air invincible on frames 9-15 (solid anti-air against midrange jumps); cannot hit cross-up; 1st hit forces stand on hit; 2nd hit whiffs on crouching opponents (2f worse on block); 4f extra recovery if both hits whiff; 1st hit deals extra hitstun, allowing a natural combo into 214HK; deals full damage / Drive damage / Meter gain even if only the 2nd hit connects; 1st hit puts airborne opponents into a free juggle state (limited juggle if comboed from a wallsplat or airborne crumple), then air resets on the 2nd hit; 2nd hit only has juggle potential after the 1st hit connects; the first 11 recovery frames extend a wide leg hurtbox making it more easily whiff punished by standing normals; carries counter-hit/Punish Counter advantage through both hits",
+        "upstreamActive: 2,4",
+        "upstreamRecovery: 21"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "sagat__normal_5_K_L",
+      "name": "立ち弱K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "23",
+          "numeric": 23,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "0",
+          "numeric": 0
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
+        }
+      },
+      "notes": [
+        "upstreamInput: 5LK",
+        "upstreamName: Standing Light Kick",
+        "upstreamNotes: Long range but slow startup (more comparable to a medium normal); 2f extra recovery on whiff; great whiff punish tool that combos consistently into 623HP on Punish Counter; input overlap with 6LK Low Step Kick makes it harder to walk forward and poke in neutral; DR cancel is delayed until after 3rd recovery frame",
+        "upstreamActive: 2",
+        "upstreamRecovery: 15"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "sagat__normal_5_K_M",
+      "name": "立ち中K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "11",
+          "numeric": 11
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "33",
+          "numeric": 33,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: 5MK",
+        "upstreamName: Standing Medium Kick",
+        "upstreamNotes: Very long poke with a semi-hitconfirmable TC follow-up; more range vs. standing opponents (the tip of the hitbox whiffs on crouching opponents); the first 10 recovery frames extend a wide leg hurtbox making it more easily whiff punished by standing normals; extends a wider body hurtbox for the entire whiff recovery",
+        "upstreamActive: 4",
+        "upstreamRecovery: 19"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "sagat__normal_5_P_H",
+      "name": "立ち強P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "15",
+          "numeric": 15
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "40",
+          "numeric": 40,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "0",
+          "numeric": 0
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-5",
+          "numeric": -5
+        }
+      },
+      "notes": [
+        "upstreamInput: 5HP",
+        "upstreamName: Standing Heavy Punch",
+        "upstreamNotes: 3f extra recovery on whiff; huge range poke with a hitconfirmable TC follow-up; the first 10 recovery frames extend a wide arm-height hurtbox making it easily whiff punished by standing normals",
+        "upstreamActive: 4",
+        "upstreamRecovery: 22"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "sagat__normal_5_P_L",
+      "name": "立ち弱P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "18",
+          "numeric": 18,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: 5LP",
+        "upstreamName: Standing Light Punch",
+        "upstreamNotes: Chains into 5LP/2LP/2LK; great range for a chainable 5f jab (but slightly shorter than a standard shoto 5LK); DR cancel is delayed until after 2nd recovery frame; Sagat's only light normal that combos naturally into 214LK",
+        "upstreamActive: 3",
+        "upstreamRecovery: 11"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "sagat__normal_5_P_M",
+      "name": "立ち中P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "24",
+          "numeric": 24,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+6",
+          "numeric": 6
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        }
+      },
+      "notes": [
+        "upstreamInput: 5MP",
+        "upstreamName: Standing Medium Punch",
+        "upstreamNotes: Core pressure tool for frame traps (5MPx2 sets up a trade combo vs. most reversal 4f normals); pushback on block is too far for a throw mixup without Drive Rush; links consistently into 2MP on counter-hit or into 5HK on Punish Counter (very strong Drive Reversal punish option); on regular hit can lead to 5MP, 5MP, 5LP combo",
+        "upstreamActive: 4",
+        "upstreamRecovery: 15"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "sagat__special_214_K_H",
+      "name": "HK Tiger Nexus",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "28",
+          "numeric": 28
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "55",
+          "numeric": 55,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: 214HK",
+        "upstreamName: HK Tiger Nexus",
+        "upstreamNotes: Slow startup, only combos naturally from the first hit of 5HK (requires Drive Rush or Punish Counter to combo from 2HP, 4HP launch, or 5HK 2nd hit); 214HK cannot frame trap when canceled from a normal (except for Burnout + Drive Rush into 2MP/2HP/5HK); combos naturally into all follow-ups including 6HK; cancel into 6HK follow-up leaves a 7f gap on block (can frame trap 4f normals in Burnout); 2f extra recovery on Perfect Parry only; if the 1st hit is Perfect Parried, 2nd hit will interrupt any punish slower than 5f startup (trades with 6f attacks); cannot perform follow-up attacks if both hits whiff; carries Counter-hit/Punish Counter advantage through both hits; can juggle after DR~4HP (easier execution but less damaging than his MP Tiger Shot juggle sequence); opponents can beat all follow-ups with invincible reversals (but standard 6f reversals will not punish 214HK)",
+        "upstreamActive: 3(1)4",
+        "upstreamRecovery: 20"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "sagat__special_214_K_L",
+      "name": "LK Tiger Nexus",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "17",
+          "numeric": 17
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "42",
+          "numeric": 42,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-5",
+          "numeric": -5
+        }
+      },
+      "notes": [
+        "upstreamInput: 214LK",
+        "upstreamName: LK Tiger Nexus",
+        "upstreamNotes: 1f extra recovery vs. armor (DI is a guaranteed punish if not canceled to SA3); the only strength of 214K that can combo naturally from 5LP (3-light confirm can reach if point blank, but results in weaker mixup from ~6LK ender); does not frame trap when canceled on block (except from Light normals with Drive Rush or Burnout); combos into 6LK/6MK follow-ups; canceling into the 6HK follow-up leaves a 2f gap on hit / 9f gap on block (loses to 4f normals even in Burnout); Counter-hit/Punish Counter puts the opponent into a limited juggle state that allows the 6HK follow-up to combo; cannot perform follow-up attacks on whiff; opponents can beat all follow-ups with invincible reversals (but standard 6f reversals will not punish 214LK); if the opponent attempts to punish 214LK, the 6LK follow-up will frame trap on block (must delay 6LK vs. Burnout)",
+        "upstreamActive: 3",
+        "upstreamRecovery: 23"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "sagat__special_214_K_M",
+      "name": "MK Tiger Nexus",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "20",
+          "numeric": 20
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "45",
+          "numeric": 45,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-5",
+          "numeric": -5
+        }
+      },
+      "notes": [
+        "upstreamInput: 214MK",
+        "upstreamName: MK Tiger Nexus",
+        "upstreamNotes: 1f extra recovery vs. armor (DI is a guaranteed punish if not canceled to SA3); combos into 6LK/6MK follow-ups; canceling into the 6HK follow-up leaves a 2f gap on hit / 9f gap on block (loses to 4f normals even in Burnout); Counter-hit/Punish Counter puts the opponent into a limited juggle state that allows the 6HK follow-up to combo; 214MK combos from canceled 2MP/2HP/5HK (these cancels also frame trap on block); cannot perform follow-up attacks on whiff; lacks natural juggle potential but can juggle after DR~4HP (free juggle state) for a powerful 1-bar corner combo (DR~4HP > 214MK, 4HP > 236HK, 623MP); opponents can beat all follow-ups with invincible reversals (but standard 6f reversals will not punish 214MK); if the opponent attempts to punish 214MK, the 6LK follow-up will frame trap on block (must delay 6LK vs. Burnout)",
+        "upstreamActive: 3",
+        "upstreamRecovery: 23"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "sagat__special_214_K_OD",
+      "name": "OD Tiger Nexus",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "23",
+          "numeric": 23
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "50",
+          "numeric": 50,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: 214KK",
+        "upstreamName: OD Tiger Nexus",
+        "upstreamNotes: Similar to HK version but faster (can cancel from more starters like 2HP, 4HP launch, and 5HK 2nd hit); combos naturally into all follow-ups including 6HK; cancel into 6HK follow-up leaves a 7f gap on block (can frame trap 4f normals in Burnout); 2f extra recovery on Perfect Parry only; if the 1st hit is Perfect Parried, 2nd hit will interrupt any punish slower than 5f startup (trades with 6f attacks); cannot perform follow-up attacks if both hits whiff; carries Counter-hit/Punish Counter advantage through both hits; opponents can beat all follow-ups with invincible reversals (but standard 6f reversals will not punish 214KK)",
+        "upstreamActive: 3(1)4",
+        "upstreamRecovery: 20"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "sagat__special_236_K_H",
+      "name": "HK Tiger Knee Crush",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "22",
+          "numeric": 22
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "58",
+          "numeric": 58,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+40",
+          "numeric": 40
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-5",
+          "numeric": -5
+        }
+      },
+      "notes": [
+        "upstreamInput: 236HK",
+        "upstreamName: HK Tiger Knee Crush",
+        "upstreamNotes: Furthest horizontal distance; much better block advantage when spaced at max range; 2nd hit active frames 1-9 whiff on crouching opponents; this means that if the Knee is spaced out so the first hit whiffs, it connects on the 2nd to last active frame vs. crouching opponents (+4 on block); if the 1st hit is crouch blocked, opponent cannot switch to stand block the 2nd hit; puts opponent into a limited juggle state (in the corner, can juggle 623LP if the last 6 active frames connect, or 623MP / SA2 if the final active frame connects); blocked Knee causes a screen shake when Sagat has frame advantage; Sweet Spot occurs when juggling into the 3rd or 4th active frame, dealing 1300 damage (single hit) with a higher spinning juggle launch (ensures a follow-up juggle is possible even midscreen); the 2nd hit's extended Knee hitbox is too high to connect on standing characters on active frames 2-7 (tall characters: active frames 4-6); sets up corner safe jump in certain juggle scenarios (e.g. after juggled 2MP~HP)",
+        "upstreamActive: 4(4)11",
+        "upstreamRecovery: 3",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "sagat__special_236_K_L",
+      "name": "LK Tiger Knee Crush",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "42",
+          "numeric": 42,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+36",
+          "numeric": 36
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-8",
+          "numeric": -8
+        }
+      },
+      "notes": [
+        "upstreamInput: 236LK",
+        "upstreamName: LK Tiger Knee Crush",
+        "upstreamNotes: Shortest horizontal distance; no front leg hurtbox on frames 10-12 (helps avoid low pokes); 3f extra landing recovery when absorbed by armor; much better block advantage (up to +2) when spaced at max range; active frames 2-10 whiff on crouching opponents; this means that if the Knee is spaced out so the first active frame whiffs, it always connects on the last active frame vs. crouching opponents (+2 on block, 623LP juggle on hit); puts opponent into a limited juggle state (in the corner, can juggle 623LP if the last active frame connects); blocked Knee causes a screen shake when Sagat has frame advantage; can be whiffed in some situations for a side switch vs. knocked down opponents",
+        "upstreamActive: 11",
+        "upstreamRecovery: 3",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "sagat__special_236_K_M",
+      "name": "MK Tiger Knee Crush",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "18",
+          "numeric": 18
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "46",
+          "numeric": 46,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+39",
+          "numeric": 39
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-7",
+          "numeric": -7
+        }
+      },
+      "notes": [
+        "upstreamInput: 236MK",
+        "upstreamName: MK Tiger Knee Crush",
+        "upstreamNotes: Medium horizontal distance; no front leg hurtbox on frames 14-15 (helps avoid low pokes); 3f extra landing recovery when absorbed by armor; much better block advantage (up to +3) when spaced at max range; active frames 2-9 whiff on crouching opponents; this means that if the Knee is spaced out so the first active frame whiffs, it connects on the 2nd to last active frame vs. crouching opponents (+2 on block, 623LP juggle on hit); puts opponent into a limited juggle state (in the corner, can juggle 623LP if the last 4 active frames connect); blocked Knee causes a screen shake when Sagat has frame advantage; can be whiffed in some situations for a side switch vs. knocked down opponents; sets up midscreen safe jump in certain juggle scenarios (e.g. after juggled 2MP~HP)",
+        "upstreamActive: 11",
+        "upstreamRecovery: 3",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "sagat__special_236_K_OD",
+      "name": "OD Tiger Knee Crush",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "19",
+          "numeric": 19
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "54",
+          "numeric": 54,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        }
+      },
+      "notes": [
+        "upstreamInput: 236KK",
+        "upstreamName: OD Tiger Knee Crush",
+        "upstreamNotes: 1st hit transitions to a different follow-up on hit, resulting in higher damage and a tumbling +66 knockdown (allows a 623LP juggle in the corner); if 1st hit whiffs, the next 2 hits deal 500 damage each and give a worse knockdown (only 1 hit at farthest ranges); safe on block but usually lands inside the opponent's throw range; 2nd hit active frames 2-10 whiff on crouching opponents; this means that if the Knee is spaced out, it connects on the last active frame vs. crouching opponents (+1 on block); unlike HK Knee, the opponent can switch to stand block after the first hit connects, leaving Sagat at -2; blocked Knee causes a screen shake when Sagat has frame advantage; later hits put opponent into a limited juggle state (in the corner, can juggle 623LP)",
+        "upstreamActive: 3(4)6,5",
+        "upstreamRecovery: 2",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +66 Tumble(KD +44~50) as D; original onHit=66; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Sagat%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "sagat__special_236_P_H",
+      "name": "HP High Tiger Shot",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "42",
+          "numeric": 42,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        }
+      },
+      "notes": [
+        "upstreamInput: 236HP",
+        "upstreamName: HP High Tiger Shot",
+        "upstreamNotes: Fast 1-hit projectile; whiffs on crouching opponents unless they extend an upward hurtbox; puts airborne opponents into a limited juggle state; has much better recovery and frame advantage than the Low version; can be used meaty on the opponent's wakeup even if they crouch block, but the opponent can input a crouching button to avoid blocking the projectile; extends a slight projectile invincible arm hurtbox on frames 14-28 and a leg hurtbox on frames 14-42",
+        "upstreamActive: -",
+        "upstreamRecovery: 30"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "sagat__special_236_P_L",
+      "name": "LP Low Tiger Shot",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "50",
+          "numeric": 50,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-7",
+          "numeric": -7
+        }
+      },
+      "notes": [
+        "upstreamInput: 236LP",
+        "upstreamName: LP Low Tiger Shot",
+        "upstreamNotes: Fast 1-hit projectile (speed is not variable); can hit crouching opponents unlike MP/HP High Tiger Shot; has extremely long recovery compared to most projectiles (more vulnerable to jumps, Drive Impact, projectile invuln moves, and Perfect Parry + Drive Rush); the projectile travels low to the ground, preventing many low profile attacks from avoiding it (e.g. Kimberly's slide, A.K.I.'s Sinister Slide); Sagat is in a crouching state for the entire move duration with crouch-sized hurtboxes; puts airborne opponents into a limited juggle state; extends a slight projectile invincible arm hurtbox on frames 16-43 and a leg hurtbox on frames 14-50; topmost hurtboxes are vulnerable only to air attacks on frames 1-50 (more vulnerable to jump-ins despite crouching) and are projectile invincible on frames 1-31 to avoid High Tiger Shot (frames 32-50 are still vulnerable)",
+        "upstreamActive: -",
+        "upstreamRecovery: 36"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "sagat__special_236_P_M",
+      "name": "MP High Tiger Shot",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "16",
+          "numeric": 16
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "42",
+          "numeric": 42,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        }
+      },
+      "notes": [
+        "upstreamInput: 236MP",
+        "upstreamName: MP High Tiger Shot",
+        "upstreamNotes: Medium speed 1-hit projectile (comparable to a shoto HP fireball, but much slower than Sagat's other projectiles); whiffs on crouching opponents unless they extend an upward hurtbox; puts airborne opponents into a limited juggle state (useful juggle tool after 4HP launch); has much better recovery and frame advantage than the Low version; can be used meaty on the opponent's wakeup even if they crouch block, but the opponent can input a crouching button to avoid blocking the projectile; extends a slight projectile invincible arm hurtbox on frames 18-32 and a leg hurtbox on frames 18-42",
+        "upstreamActive: -",
+        "upstreamRecovery: 26"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "sagat__special_623_P_H",
+      "name": "HP Tiger Uppercut",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "18",
+          "numeric": 18
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "82",
+          "numeric": 82,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-45",
+          "numeric": -45
+        }
+      },
+      "notes": [
+        "upstreamInput: 623HP",
+        "upstreamName: HP Tiger Uppercut",
+        "upstreamNotes: Extremely long range but slow startup (cannot combo naturally from light normals, but works well as a combo ender from 5LK whiff punish); deals 600 less damage on active frames 3-10; cannot hit cross-up; can be charged into a much stronger version by holding the button 24 frames; releasing the button early results in uncharged 623HP with 8f startup after release; if partially charged, the Air Invuln is 1-9f then 1-11f after the button is released, and the airborne frames are 12-57f after the button is released; puts opponent into a limited juggle state (allows SA3 cancel on active frames 1-2 only)",
+        "upstreamActive: 10",
+        "upstreamRecovery: 40",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +27 as D; original onHit=27; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Sagat%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "sagat__special_623_P_L",
+      "name": "LP Tiger Uppercut",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "61",
+          "numeric": 61,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-37",
+          "numeric": -37
+        }
+      },
+      "notes": [
+        "upstreamInput: 623LP",
+        "upstreamName: LP Tiger Uppercut",
+        "upstreamNotes: Sagat's primary anti-air with fast startup but short range; deals 300 less damage on active frames 4-10; cannot hit cross-up; puts opponent into a limited juggle state (allows SA3 cancel on active frames 1-2 only)",
+        "upstreamActive: 10",
+        "upstreamRecovery: 35",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +32 as D; original onHit=32; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Sagat%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "sagat__special_623_P_M",
+      "name": "MP Tiger Uppercut",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "74",
+          "numeric": 74,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-45",
+          "numeric": -45
+        }
+      },
+      "notes": [
+        "upstreamInput: 623MP",
+        "upstreamName: MP Tiger Uppercut",
+        "upstreamNotes: Much more range than LP version for mid-range anti airs and more consistent cancels from light normals; much slower startup (limits usefulness in many juggles); forward movement makes Sagat more likely to whiff under an opponent's jump-in; deals 600 less damage on active frames 4-10; cannot hit cross-up; puts opponent into a limited juggle state (allows SA3 cancel on active frames 1-2 only)",
+        "upstreamActive: 10",
+        "upstreamRecovery: 40",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +27 as D; original onHit=27; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Sagat%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "sagat__special_623_P_OD",
+      "name": "OD Tiger Uppercut",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "72",
+          "numeric": 72,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-43",
+          "numeric": -43
+        }
+      },
+      "notes": [
+        "upstreamInput: 623PP",
+        "upstreamName: OD Tiger Uppercut",
+        "upstreamNotes: Sagat's main reversal; slightly slower than most OD reversals (can be safejabbed by Dee Jay 5LP but is otherwise reliable); deals less damage if it connects on later active frames (1st hit deals significant portion of overall damage); cannot hit cross-up",
+        "upstreamActive: 2x6",
+        "upstreamRecovery: 38",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +25 as D; original onHit=25; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Sagat%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    }
+  ]
+}

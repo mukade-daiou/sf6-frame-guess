@@ -1,0 +1,301 @@
+{
+  "characterId": "blanka",
+  "rawMoveCount": 85,
+  "candidateMoveCount": 20,
+  "candidateNormals": 12,
+  "candidateSpecials": 8,
+  "upstreamFetchedAt": "2026-08-19T04:05:24.993Z",
+  "missingNormals": [],
+  "excluded": [
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "214[P]",
+      "name": "Electric Thunder (hold)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "22P~214P",
+      "name": "Blanka-chan Bomb (Charge)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "22P~214PP",
+      "name": "Blanka-chan Bomb (OD Charge)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "22P~236236P",
+      "name": "Blanka-chan Bomb (SA1 Charge)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "2PP~K",
+      "name": "Raid Jump",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "2PP~P",
+      "name": "Wild Lift",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "3HP",
+      "name": "Amazon River Run",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "4KKK",
+      "name": "Surprise Back Hop",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "4MK",
+      "name": "Wild Edge",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6HP",
+      "name": "Wild Nail",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6KKK",
+      "name": "Surprise Forward Hop",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6MK",
+      "name": "Double Knee Bombs",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6MP",
+      "name": "Rock Crusher",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "8HP",
+      "name": "Neutral Jumping Heavy Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.[4]6P",
+      "name": "Aerial Rolling Attack",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.[4]6PP",
+      "name": "Aerial Rolling Attack",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.[4]6PP",
+      "name": "Aerial Rolling Attack (SA2)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.[4]6P",
+      "name": "Aerial Rolling Attack (SA2)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.HK",
+      "name": "Jumping Heavy Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.HP",
+      "name": "Jumping Heavy Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.LK",
+      "name": "Jumping Light Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.LP",
+      "name": "Jumping Light Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.MK",
+      "name": "Jumping Medium Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.MP",
+      "name": "Jumping Medium Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "unresolved_base_collision:special:[2]8:K:H",
+      "input": "[2]8HK",
+      "name": "Vertical Rolling Attack",
+      "category": "special"
+    },
+    {
+      "reason": "unresolved_base_collision:special:[2]8:K:H",
+      "input": "[2]8HK",
+      "name": "Vertical Rolling Attack (SA2)",
+      "category": "special"
+    },
+    {
+      "reason": "unresolved_base_collision:special:[2]8:K:OD",
+      "input": "[2]8KK",
+      "name": "Vertical Rolling Attack",
+      "category": "special"
+    },
+    {
+      "reason": "unresolved_base_collision:special:[2]8:K:OD",
+      "input": "[2]8KK",
+      "name": "Vertical Rolling Attack (SA2)",
+      "category": "special"
+    },
+    {
+      "reason": "unresolved_base_collision:special:[2]8:K:L",
+      "input": "[2]8LK",
+      "name": "Vertical Rolling Attack",
+      "category": "special"
+    },
+    {
+      "reason": "unresolved_base_collision:special:[2]8:K:L",
+      "input": "[2]8LK",
+      "name": "Vertical Rolling Attack (SA2)",
+      "category": "special"
+    },
+    {
+      "reason": "unresolved_base_collision:special:[2]8:K:M",
+      "input": "[2]8MK",
+      "name": "Vertical Rolling Attack",
+      "category": "special"
+    },
+    {
+      "reason": "unresolved_base_collision:special:[2]8:K:M",
+      "input": "[2]8MK",
+      "name": "Vertical Rolling Attack (SA2)",
+      "category": "special"
+    },
+    {
+      "reason": "unresolved_base_collision:special:[4]6:P:H",
+      "input": "[4]6HP",
+      "name": "Rolling Attack",
+      "category": "special"
+    },
+    {
+      "reason": "unresolved_base_collision:special:[4]6:P:H",
+      "input": "[4]6HP",
+      "name": "Rolling Attack (SA2)",
+      "category": "special"
+    },
+    {
+      "reason": "unresolved_base_collision:special:[4]6:P:L",
+      "input": "[4]6LP",
+      "name": "Rolling Attack",
+      "category": "special"
+    },
+    {
+      "reason": "unresolved_base_collision:special:[4]6:P:L",
+      "input": "[4]6LP",
+      "name": "Rolling Attack (SA2)",
+      "category": "special"
+    },
+    {
+      "reason": "unresolved_base_collision:special:[4]6:P:M",
+      "input": "[4]6MP",
+      "name": "Rolling Attack",
+      "category": "special"
+    },
+    {
+      "reason": "unresolved_base_collision:special:[4]6:P:M",
+      "input": "[4]6MP",
+      "name": "Rolling Attack (SA2)",
+      "category": "special"
+    },
+    {
+      "reason": "unresolved_base_collision:special:[4]6:P:OD",
+      "input": "[4]6PP",
+      "name": "Rolling Attack",
+      "category": "special"
+    },
+    {
+      "reason": "unresolved_base_collision:special:[4]6:P:OD",
+      "input": "[4]6PP",
+      "name": "Rolling Attack (SA2)",
+      "category": "special"
+    },
+    {
+      "reason": "unresolved_base_collision:special:63214:K:H",
+      "input": "63214HK",
+      "name": "Backstep Rolling Attack",
+      "category": "special"
+    },
+    {
+      "reason": "unresolved_base_collision:special:63214:K:H",
+      "input": "63214HK",
+      "name": "Backstep Rolling Attack (SA2)",
+      "category": "special"
+    },
+    {
+      "reason": "unresolved_base_collision:special:63214:K:OD",
+      "input": "63214KK",
+      "name": "Backstep Rolling Attack",
+      "category": "special"
+    },
+    {
+      "reason": "unresolved_base_collision:special:63214:K:OD",
+      "input": "63214KK",
+      "name": "Backstep Rolling Attack (SA2)",
+      "category": "special"
+    },
+    {
+      "reason": "unresolved_base_collision:special:63214:K:L",
+      "input": "63214LK",
+      "name": "Backstep Rolling Attack",
+      "category": "special"
+    },
+    {
+      "reason": "unresolved_base_collision:special:63214:K:L",
+      "input": "63214LK",
+      "name": "Backstep Rolling Attack (SA2)",
+      "category": "special"
+    },
+    {
+      "reason": "unresolved_base_collision:special:63214:K:M",
+      "input": "63214MK",
+      "name": "Backstep Rolling Attack",
+      "category": "special"
+    },
+    {
+      "reason": "unresolved_base_collision:special:63214:K:M",
+      "input": "63214MK",
+      "name": "Backstep Rolling Attack (SA2)",
+      "category": "special"
+    }
+  ],
+  "gameVersion": "UNVERIFIED",
+  "status": "STAGING_ONLY"
+}

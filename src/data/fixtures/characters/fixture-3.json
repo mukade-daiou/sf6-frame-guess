@@ -1,0 +1,1538 @@
+{
+  "id": "fixture-3",
+  "nameJa": "テストガンマ",
+  "nameEn": "Fixture 3",
+  "gameVersion": "fixture-v1-NOT-SF6",
+  "source": {
+    "url": "https://example.invalid/synthetic-fixture",
+    "retrievedAt": "2026-01-01T00:00:00Z",
+    "gameVersion": "fixture-v1-NOT-SF6",
+    "kind": "community",
+    "attribution": "Synthetic test data; not actual SF6 frame data.",
+    "license": "CC0-1.0 (synthetic fixture only)",
+    "verification": "verified"
+  },
+  "coverage": {
+    "normal": {
+      "status": "complete",
+      "verification": "verified"
+    },
+    "special": {
+      "status": "complete",
+      "verification": "verified"
+    }
+  },
+  "moves": [
+    {
+      "id": "move-0",
+      "name": "架空技 1",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "22",
+          "numeric": 22,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "0",
+          "numeric": 0
+        }
+      },
+      "notes": ["テスト専用の架空値"],
+      "source": {
+        "url": "https://example.invalid/synthetic-fixture",
+        "retrievedAt": "2026-01-01T00:00:00Z",
+        "gameVersion": "fixture-v1-NOT-SF6",
+        "kind": "community",
+        "attribution": "Synthetic test data; not actual SF6 frame data.",
+        "license": "CC0-1.0 (synthetic fixture only)",
+        "verification": "verified"
+      }
+    },
+    {
+      "id": "move-1",
+      "name": "架空技 2",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "23",
+          "numeric": 23,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-5",
+          "numeric": -5
+        }
+      },
+      "notes": ["テスト専用の架空値"],
+      "source": {
+        "url": "https://example.invalid/synthetic-fixture",
+        "retrievedAt": "2026-01-01T00:00:00Z",
+        "gameVersion": "fixture-v1-NOT-SF6",
+        "kind": "community",
+        "attribution": "Synthetic test data; not actual SF6 frame data.",
+        "license": "CC0-1.0 (synthetic fixture only)",
+        "verification": "verified"
+      }
+    },
+    {
+      "id": "move-2",
+      "name": "架空技 3",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "24",
+          "numeric": 24,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        }
+      },
+      "notes": ["テスト専用の架空値"],
+      "source": {
+        "url": "https://example.invalid/synthetic-fixture",
+        "retrievedAt": "2026-01-01T00:00:00Z",
+        "gameVersion": "fixture-v1-NOT-SF6",
+        "kind": "community",
+        "attribution": "Synthetic test data; not actual SF6 frame data.",
+        "license": "CC0-1.0 (synthetic fixture only)",
+        "verification": "verified"
+      }
+    },
+    {
+      "id": "move-3",
+      "name": "架空技 4",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "25",
+          "numeric": 25,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+5",
+          "numeric": 5
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-7",
+          "numeric": -7
+        }
+      },
+      "notes": ["テスト専用の架空値"],
+      "source": {
+        "url": "https://example.invalid/synthetic-fixture",
+        "retrievedAt": "2026-01-01T00:00:00Z",
+        "gameVersion": "fixture-v1-NOT-SF6",
+        "kind": "community",
+        "attribution": "Synthetic test data; not actual SF6 frame data.",
+        "license": "CC0-1.0 (synthetic fixture only)",
+        "verification": "verified"
+      }
+    },
+    {
+      "id": "move-4",
+      "name": "架空技 5",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "26",
+          "numeric": 26,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-8",
+          "numeric": -8
+        }
+      },
+      "notes": ["テスト専用の架空値"],
+      "source": {
+        "url": "https://example.invalid/synthetic-fixture",
+        "retrievedAt": "2026-01-01T00:00:00Z",
+        "gameVersion": "fixture-v1-NOT-SF6",
+        "kind": "community",
+        "attribution": "Synthetic test data; not actual SF6 frame data.",
+        "license": "CC0-1.0 (synthetic fixture only)",
+        "verification": "verified"
+      }
+    },
+    {
+      "id": "move-5",
+      "name": "架空技 6",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "11",
+          "numeric": 11
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "27",
+          "numeric": 27,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-9",
+          "numeric": -9
+        }
+      },
+      "notes": ["テスト専用の架空値"],
+      "source": {
+        "url": "https://example.invalid/synthetic-fixture",
+        "retrievedAt": "2026-01-01T00:00:00Z",
+        "gameVersion": "fixture-v1-NOT-SF6",
+        "kind": "community",
+        "attribution": "Synthetic test data; not actual SF6 frame data.",
+        "license": "CC0-1.0 (synthetic fixture only)",
+        "verification": "verified"
+      }
+    },
+    {
+      "id": "move-6",
+      "name": "架空技 7",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "28",
+          "numeric": 28,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-10",
+          "numeric": -10
+        }
+      },
+      "notes": ["テスト専用の架空値"],
+      "source": {
+        "url": "https://example.invalid/synthetic-fixture",
+        "retrievedAt": "2026-01-01T00:00:00Z",
+        "gameVersion": "fixture-v1-NOT-SF6",
+        "kind": "community",
+        "attribution": "Synthetic test data; not actual SF6 frame data.",
+        "license": "CC0-1.0 (synthetic fixture only)",
+        "verification": "verified"
+      }
+    },
+    {
+      "id": "move-7",
+      "name": "架空技 8",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "13",
+          "numeric": 13
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "29",
+          "numeric": 29,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
+        }
+      },
+      "notes": ["テスト専用の架空値"],
+      "source": {
+        "url": "https://example.invalid/synthetic-fixture",
+        "retrievedAt": "2026-01-01T00:00:00Z",
+        "gameVersion": "fixture-v1-NOT-SF6",
+        "kind": "community",
+        "attribution": "Synthetic test data; not actual SF6 frame data.",
+        "license": "CC0-1.0 (synthetic fixture only)",
+        "verification": "verified"
+      }
+    },
+    {
+      "id": "move-8",
+      "name": "架空技 9",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "30",
+          "numeric": 30,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-5",
+          "numeric": -5
+        }
+      },
+      "notes": ["テスト専用の架空値"],
+      "source": {
+        "url": "https://example.invalid/synthetic-fixture",
+        "retrievedAt": "2026-01-01T00:00:00Z",
+        "gameVersion": "fixture-v1-NOT-SF6",
+        "kind": "community",
+        "attribution": "Synthetic test data; not actual SF6 frame data.",
+        "license": "CC0-1.0 (synthetic fixture only)",
+        "verification": "verified"
+      }
+    },
+    {
+      "id": "move-9",
+      "name": "架空技 10",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "15",
+          "numeric": 15
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "31",
+          "numeric": 31,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+6",
+          "numeric": 6
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        }
+      },
+      "notes": ["テスト専用の架空値"],
+      "source": {
+        "url": "https://example.invalid/synthetic-fixture",
+        "retrievedAt": "2026-01-01T00:00:00Z",
+        "gameVersion": "fixture-v1-NOT-SF6",
+        "kind": "community",
+        "attribution": "Synthetic test data; not actual SF6 frame data.",
+        "license": "CC0-1.0 (synthetic fixture only)",
+        "verification": "verified"
+      }
+    },
+    {
+      "id": "move-10",
+      "name": "架空技 11",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "4",
+          "numeric": 4
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "32",
+          "numeric": 32,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-7",
+          "numeric": -7
+        }
+      },
+      "notes": ["テスト専用の架空値"],
+      "source": {
+        "url": "https://example.invalid/synthetic-fixture",
+        "retrievedAt": "2026-01-01T00:00:00Z",
+        "gameVersion": "fixture-v1-NOT-SF6",
+        "kind": "community",
+        "attribution": "Synthetic test data; not actual SF6 frame data.",
+        "license": "CC0-1.0 (synthetic fixture only)",
+        "verification": "verified"
+      }
+    },
+    {
+      "id": "move-11",
+      "name": "架空技 12",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "33",
+          "numeric": 33,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-8",
+          "numeric": -8
+        }
+      },
+      "notes": ["テスト専用の架空値"],
+      "source": {
+        "url": "https://example.invalid/synthetic-fixture",
+        "retrievedAt": "2026-01-01T00:00:00Z",
+        "gameVersion": "fixture-v1-NOT-SF6",
+        "kind": "community",
+        "attribution": "Synthetic test data; not actual SF6 frame data.",
+        "license": "CC0-1.0 (synthetic fixture only)",
+        "verification": "verified"
+      }
+    },
+    {
+      "id": "move-12",
+      "name": "架空技 13",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "34",
+          "numeric": 34,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-9",
+          "numeric": -9
+        }
+      },
+      "notes": ["テスト専用の架空値"],
+      "source": {
+        "url": "https://example.invalid/synthetic-fixture",
+        "retrievedAt": "2026-01-01T00:00:00Z",
+        "gameVersion": "fixture-v1-NOT-SF6",
+        "kind": "community",
+        "attribution": "Synthetic test data; not actual SF6 frame data.",
+        "license": "CC0-1.0 (synthetic fixture only)",
+        "verification": "verified"
+      }
+    },
+    {
+      "id": "move-13",
+      "name": "架空技 14",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "35",
+          "numeric": 35,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+5",
+          "numeric": 5
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-10",
+          "numeric": -10
+        }
+      },
+      "notes": ["テスト専用の架空値"],
+      "source": {
+        "url": "https://example.invalid/synthetic-fixture",
+        "retrievedAt": "2026-01-01T00:00:00Z",
+        "gameVersion": "fixture-v1-NOT-SF6",
+        "kind": "community",
+        "attribution": "Synthetic test data; not actual SF6 frame data.",
+        "license": "CC0-1.0 (synthetic fixture only)",
+        "verification": "verified"
+      }
+    },
+    {
+      "id": "move-14",
+      "name": "架空技 15",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "36",
+          "numeric": 36,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+6",
+          "numeric": 6
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
+        }
+      },
+      "notes": ["テスト専用の架空値"],
+      "source": {
+        "url": "https://example.invalid/synthetic-fixture",
+        "retrievedAt": "2026-01-01T00:00:00Z",
+        "gameVersion": "fixture-v1-NOT-SF6",
+        "kind": "community",
+        "attribution": "Synthetic test data; not actual SF6 frame data.",
+        "license": "CC0-1.0 (synthetic fixture only)",
+        "verification": "verified"
+      }
+    },
+    {
+      "id": "move-15",
+      "name": "架空技 16",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "37",
+          "numeric": 37,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-5",
+          "numeric": -5
+        }
+      },
+      "notes": ["テスト専用の架空値"],
+      "source": {
+        "url": "https://example.invalid/synthetic-fixture",
+        "retrievedAt": "2026-01-01T00:00:00Z",
+        "gameVersion": "fixture-v1-NOT-SF6",
+        "kind": "community",
+        "attribution": "Synthetic test data; not actual SF6 frame data.",
+        "license": "CC0-1.0 (synthetic fixture only)",
+        "verification": "verified"
+      }
+    },
+    {
+      "id": "move-16",
+      "name": "架空技 17",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "38",
+          "numeric": 38,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        }
+      },
+      "notes": ["テスト専用の架空値"],
+      "source": {
+        "url": "https://example.invalid/synthetic-fixture",
+        "retrievedAt": "2026-01-01T00:00:00Z",
+        "gameVersion": "fixture-v1-NOT-SF6",
+        "kind": "community",
+        "attribution": "Synthetic test data; not actual SF6 frame data.",
+        "license": "CC0-1.0 (synthetic fixture only)",
+        "verification": "verified"
+      }
+    },
+    {
+      "id": "move-17",
+      "name": "架空技 18",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "11",
+          "numeric": 11
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "39",
+          "numeric": 39,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-7",
+          "numeric": -7
+        }
+      },
+      "notes": ["テスト専用の架空値"],
+      "source": {
+        "url": "https://example.invalid/synthetic-fixture",
+        "retrievedAt": "2026-01-01T00:00:00Z",
+        "gameVersion": "fixture-v1-NOT-SF6",
+        "kind": "community",
+        "attribution": "Synthetic test data; not actual SF6 frame data.",
+        "license": "CC0-1.0 (synthetic fixture only)",
+        "verification": "verified"
+      }
+    },
+    {
+      "id": "move-18",
+      "name": "架空技 19",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "40",
+          "numeric": 40,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+5",
+          "numeric": 5
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-8",
+          "numeric": -8
+        }
+      },
+      "notes": ["テスト専用の架空値"],
+      "source": {
+        "url": "https://example.invalid/synthetic-fixture",
+        "retrievedAt": "2026-01-01T00:00:00Z",
+        "gameVersion": "fixture-v1-NOT-SF6",
+        "kind": "community",
+        "attribution": "Synthetic test data; not actual SF6 frame data.",
+        "license": "CC0-1.0 (synthetic fixture only)",
+        "verification": "verified"
+      }
+    },
+    {
+      "id": "move-19",
+      "name": "架空技 20",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "K",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "13",
+          "numeric": 13
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "41",
+          "numeric": 41,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+6",
+          "numeric": 6
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-9",
+          "numeric": -9
+        }
+      },
+      "notes": ["テスト専用の架空値"],
+      "source": {
+        "url": "https://example.invalid/synthetic-fixture",
+        "retrievedAt": "2026-01-01T00:00:00Z",
+        "gameVersion": "fixture-v1-NOT-SF6",
+        "kind": "community",
+        "attribution": "Synthetic test data; not actual SF6 frame data.",
+        "license": "CC0-1.0 (synthetic fixture only)",
+        "verification": "verified"
+      }
+    },
+    {
+      "id": "move-20",
+      "name": "架空技 21",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "421",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "42",
+          "numeric": 42,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-10",
+          "numeric": -10
+        }
+      },
+      "notes": ["テスト専用の架空値"],
+      "source": {
+        "url": "https://example.invalid/synthetic-fixture",
+        "retrievedAt": "2026-01-01T00:00:00Z",
+        "gameVersion": "fixture-v1-NOT-SF6",
+        "kind": "community",
+        "attribution": "Synthetic test data; not actual SF6 frame data.",
+        "license": "CC0-1.0 (synthetic fixture only)",
+        "verification": "verified"
+      }
+    },
+    {
+      "id": "move-21",
+      "name": "架空技 22",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "421",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "15",
+          "numeric": 15
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "43",
+          "numeric": 43,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
+        }
+      },
+      "notes": ["テスト専用の架空値"],
+      "source": {
+        "url": "https://example.invalid/synthetic-fixture",
+        "retrievedAt": "2026-01-01T00:00:00Z",
+        "gameVersion": "fixture-v1-NOT-SF6",
+        "kind": "community",
+        "attribution": "Synthetic test data; not actual SF6 frame data.",
+        "license": "CC0-1.0 (synthetic fixture only)",
+        "verification": "verified"
+      }
+    },
+    {
+      "id": "move-22",
+      "name": "架空技 23",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "22",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "4",
+          "numeric": 4
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "44",
+          "numeric": 44,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-5",
+          "numeric": -5
+        }
+      },
+      "notes": ["テスト専用の架空値"],
+      "source": {
+        "url": "https://example.invalid/synthetic-fixture",
+        "retrievedAt": "2026-01-01T00:00:00Z",
+        "gameVersion": "fixture-v1-NOT-SF6",
+        "kind": "community",
+        "attribution": "Synthetic test data; not actual SF6 frame data.",
+        "license": "CC0-1.0 (synthetic fixture only)",
+        "verification": "verified"
+      }
+    },
+    {
+      "id": "move-23",
+      "name": "架空技 24",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "22",
+        "button": "P",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "45",
+          "numeric": 45,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+5",
+          "numeric": 5
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        }
+      },
+      "notes": ["テスト専用の架空値"],
+      "source": {
+        "url": "https://example.invalid/synthetic-fixture",
+        "retrievedAt": "2026-01-01T00:00:00Z",
+        "gameVersion": "fixture-v1-NOT-SF6",
+        "kind": "community",
+        "attribution": "Synthetic test data; not actual SF6 frame data.",
+        "license": "CC0-1.0 (synthetic fixture only)",
+        "verification": "verified"
+      }
+    },
+    {
+      "id": "move-24",
+      "name": "架空技 25",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "22",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "46",
+          "numeric": 46,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-7",
+          "numeric": -7
+        }
+      },
+      "notes": ["テスト専用の架空値"],
+      "source": {
+        "url": "https://example.invalid/synthetic-fixture",
+        "retrievedAt": "2026-01-01T00:00:00Z",
+        "gameVersion": "fixture-v1-NOT-SF6",
+        "kind": "community",
+        "attribution": "Synthetic test data; not actual SF6 frame data.",
+        "license": "CC0-1.0 (synthetic fixture only)",
+        "verification": "verified"
+      }
+    },
+    {
+      "id": "move-25",
+      "name": "架空技 26",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "[4]6",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "47",
+          "numeric": 47,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-8",
+          "numeric": -8
+        }
+      },
+      "notes": ["テスト専用の架空値"],
+      "source": {
+        "url": "https://example.invalid/synthetic-fixture",
+        "retrievedAt": "2026-01-01T00:00:00Z",
+        "gameVersion": "fixture-v1-NOT-SF6",
+        "kind": "community",
+        "attribution": "Synthetic test data; not actual SF6 frame data.",
+        "license": "CC0-1.0 (synthetic fixture only)",
+        "verification": "verified"
+      }
+    },
+    {
+      "id": "move-26",
+      "name": "架空技 27",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "[4]6",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "48",
+          "numeric": 48,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-9",
+          "numeric": -9
+        }
+      },
+      "notes": ["テスト専用の架空値"],
+      "source": {
+        "url": "https://example.invalid/synthetic-fixture",
+        "retrievedAt": "2026-01-01T00:00:00Z",
+        "gameVersion": "fixture-v1-NOT-SF6",
+        "kind": "community",
+        "attribution": "Synthetic test data; not actual SF6 frame data.",
+        "license": "CC0-1.0 (synthetic fixture only)",
+        "verification": "verified"
+      }
+    },
+    {
+      "id": "move-27",
+      "name": "架空技 28",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "[4]6",
+        "button": "K",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "49",
+          "numeric": 49,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-10",
+          "numeric": -10
+        }
+      },
+      "notes": ["テスト専用の架空値"],
+      "source": {
+        "url": "https://example.invalid/synthetic-fixture",
+        "retrievedAt": "2026-01-01T00:00:00Z",
+        "gameVersion": "fixture-v1-NOT-SF6",
+        "kind": "community",
+        "attribution": "Synthetic test data; not actual SF6 frame data.",
+        "license": "CC0-1.0 (synthetic fixture only)",
+        "verification": "verified"
+      }
+    },
+    {
+      "id": "move-28",
+      "name": "架空技 29",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "[2]8",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "50",
+          "numeric": 50,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
+        }
+      },
+      "notes": ["テスト専用の架空値"],
+      "source": {
+        "url": "https://example.invalid/synthetic-fixture",
+        "retrievedAt": "2026-01-01T00:00:00Z",
+        "gameVersion": "fixture-v1-NOT-SF6",
+        "kind": "community",
+        "attribution": "Synthetic test data; not actual SF6 frame data.",
+        "license": "CC0-1.0 (synthetic fixture only)",
+        "verification": "verified"
+      }
+    },
+    {
+      "id": "move-29",
+      "name": "架空技 30",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "[2]8",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "11",
+          "numeric": 11
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "51",
+          "numeric": 51,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+6",
+          "numeric": 6
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-5",
+          "numeric": -5
+        }
+      },
+      "notes": ["テスト専用の架空値"],
+      "source": {
+        "url": "https://example.invalid/synthetic-fixture",
+        "retrievedAt": "2026-01-01T00:00:00Z",
+        "gameVersion": "fixture-v1-NOT-SF6",
+        "kind": "community",
+        "attribution": "Synthetic test data; not actual SF6 frame data.",
+        "license": "CC0-1.0 (synthetic fixture only)",
+        "verification": "verified"
+      }
+    },
+    {
+      "id": "move-30",
+      "name": "架空技 31",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "360",
+        "button": "P",
+        "strength": "none"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "52",
+          "numeric": 52,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        }
+      },
+      "notes": ["テスト専用の架空値"],
+      "source": {
+        "url": "https://example.invalid/synthetic-fixture",
+        "retrievedAt": "2026-01-01T00:00:00Z",
+        "gameVersion": "fixture-v1-NOT-SF6",
+        "kind": "community",
+        "attribution": "Synthetic test data; not actual SF6 frame data.",
+        "license": "CC0-1.0 (synthetic fixture only)",
+        "verification": "verified"
+      }
+    }
+  ]
+}

@@ -1,0 +1,849 @@
+{
+  "url": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Lily%22&limit=500",
+  "retrievedAt": "2026-11-05T09:20:27.778Z",
+  "status": 200,
+  "characterId": "lily",
+  "gameVersion": "UNVERIFIED",
+  "license": "CC-BY-SA-4.0",
+  "attribution": "SuperCombo Wiki contributors",
+  "data": {
+    "cargoquery": [
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "214214P",
+          "startup": "5+2",
+          "total": "114",
+          "hitAdv": "HKD +4",
+          "blockAdv": "-",
+          "notes": "Can be jumped out of during startup; can be comboed into like a hit-grab (immediate damage scaling applies to any combo into SA3); cinematic time regenerates ~1.7 Drive bars for Lily; Range: 1.728 (1.755 on 2nd active frame)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "214214P",
+          "startup": "5+2",
+          "total": "114",
+          "hitAdv": "HKD +4",
+          "blockAdv": "-",
+          "notes": "Can be jumped out of during startup; can be comboed into like a hit-grab (immediate damage scaling applies to any combo into SA3); available at 25% HP or below; cinematic time regenerates ~2.4 Drive bars for Lily; Range: 1.728 (1.755 on 2nd active frame)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "214HP (HOLD OK)",
+          "startup": "25(4)",
+          "total": "53",
+          "hitAdv": "KD +30",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span>",
+          "notes": "Windclad stock gained on the first active frame (or frames 46, 71 and 90 if held); can delay the attack by holding HP (attack comes out 4f after button release); puts opponents into limited juggle state on hit; cancel into SA3 does not combo (only useful when absorbed by armor); cancels and self-hitstop do not occur until after the 2nd active frame; head hurtbox shrinks during active frames and the first 16 recovery frames"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "214LP (HOLD OK)",
+          "startup": "19",
+          "total": "47",
+          "hitAdv": "KD +16",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span>",
+          "notes": "Does not grant a Windclad Stock like the MP/HP/OD Attack versions; holding LP for 16f or longer results in non-attack version instead; puts airborne opponents into OTG bounce state (no juggle but greatly improves KD Advantage); cancel into SA3 does not combo (only useful when absorbed by armor); cancels and self-hitstop do not occur until after the 2nd active frame; head hurtbox shrinks on frames 19-38; true blockstring when canceled from 2HP/4HP/6HP and can be spaced safely against most characters"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "214MP (HOLD OK)",
+          "startup": "23(4)",
+          "total": "51",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span>",
+          "notes": "Windclad stock gained on the first active frame (or frames 46, 71 and 90 if held); can delay the attack by holding MP (attack comes out 4f after button release); cancels and self-hitstop do not occur until after the 2nd active frame; useful for comboing into SA3 as it leaves the opponent grounded on hit; puts airborne opponents into limited juggle state on hit; head hurtbox shrinks during active frames and the first 16 recovery frames"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "214PP (HOLD OK)",
+          "startup": "19(4)",
+          "total": "45",
+          "hitAdv": "KD +39",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+          "notes": "Windclad stock gained on the 1st active frame; holding the buttons for 16-24f increases the startup (attack comes out 4f after button release); puts opponents into limited juggle state on hit (can land a corner follow-up juggle with up to 6f startup); holding for 25f or longer results in non-attack version instead; SA3 cancel does not combo on hit (only useful when absorbed by armor); cancels and self-hitstop do not occur until after the 2nd active frame; head hurtbox shrinks during active frames and the first 16 recovery frames"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "214[LP]",
+          "startup": "46(71/90)",
+          "total": "47(90/109)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "LP must be held 16f for the non-attack version to come out; starts recovery after 27 frames if LP is released or any kick button is held; Windclad stock gained on frame 46 (frames 71 and 90 if held longer); LP must be held for 59f/89f for Lv.2/Lv.3 versions (releasing too early extends the animation without building a stock); can build up to 3 Windclad stocks; stocks can be spent for enhanced versions of Condor Spire, Tomahawk Buster, or Condor Dive"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "214[PP]",
+          "startup": "38",
+          "total": "40",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Windclad stock gained on frame 38; buttons must be held 25f for the non-attack version to come out; can built up to 3 Windclad stocks; stocks can be spent for enhanced versions of Condor Spire, Tomahawk Buster, or Condor Dive; 7f faster than the LP version, making it much safer to use in neutral"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "236236K",
+          "startup": "9",
+          "total": "104",
+          "hitAdv": "KD +42",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-60(-66)'''</span>",
+          "notes": "Connects 7 times vs. stand block, 5 times vs. crouch block (affects Block Adv, Chip Damage, and Drive Damage); hits on both sides of Lily (good anti-air against cross-ups); must be Perfect Parried twice (3 times for tall standing characters); suction effect on hit (can be used against extended projectile hurtboxes); Dmg distribution: 100x7,1900"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "236236K",
+          "startup": "9",
+          "total": "104",
+          "hitAdv": "KD +46",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-59(-65)'''</span>",
+          "notes": "Consumes 1 Windclad stock (+300 damage, +4 KD Adv, better horizontal range in both directions); connects 11 times vs. stand block, 8 times vs. crouch block (affects Block Adv, Chip Damage, and Drive Damage); hits on both sides of Lily (good anti-air against cross-ups); must be Perfect Parried twice (3 times for tall standing characters); suction effect on hit (can be used against extended projectile hurtboxes); Dmg distribution: 100x12,1700"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "236236P",
+          "startup": "10",
+          "total": "101",
+          "hitAdv": "KD +27(+19)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-36'''</span>",
+          "notes": "First 2 hits give full animation; partial connect gives reduced damage and KD advantage; Dmg distribution: 80x13,1160 (full animation), 80x2,1680 (partial animation)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "236HK",
+          "startup": "25",
+          "total": "53",
+          "hitAdv": "KD +37(+49)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span><span style=\"color: #30D5B8;\">'''(+4)'''</span>",
+          "notes": "Can be spaced out for better frame advantage, allowing a strike/throw mixup on block; puts opponent into limited juggle state on hit (corner juggle follow-up is possible when hitting on active frame 9 or later)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "236KK",
+          "startup": "15",
+          "total": "40",
+          "hitAdv": "KD +43(+55)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span><span style=\"color: #30D5B8;\">'''(+4)'''</span>",
+          "notes": "Button combination determines travel distance; far version MK+HK (Modern A[3S]), short version LK+MK / LK+HK (Modern A[2S] / A[1S]); can be spaced out for better frame advantage, allowing a strike/throw mixup on block; short version is easier to space on later active frames for frame advantage (extends a proximity guard box beyond its max range); puts opponent into limited juggle state on hit (corner juggle follow-up is possible when hitting on active frame 5 or later); SA2 hitconfirm time decreases when connecting from longer ranges"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "236LK",
+          "startup": "17",
+          "total": "45",
+          "hitAdv": "KD +33(+45)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span><span style=\"color: #30D5B8;\">'''(+4)'''</span>",
+          "notes": "Can be spaced out for better frame advantage, allowing a strike/throw mixup on block; puts opponent into limited juggle state on hit (corner juggle follow-up is possible only vs. airborne opponents at longer ranges)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "236MK",
+          "startup": "21",
+          "total": "49",
+          "hitAdv": "KD +37(+49)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span><span style=\"color: #30D5B8;\">'''(+4)'''</span>",
+          "notes": "Can be spaced out for better frame advantage, allowing a strike/throw mixup on block; puts opponent into limited juggle state on hit (corner juggle follow-up is possible when hitting on active frame 10 or later)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "2HK",
+          "startup": "11",
+          "total": "44",
+          "hitAdv": "KD +32",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span>",
+          "notes": "2 hits; 2nd hit is not low if the 1st hit is blocked; 1st hit doesn't knock down (-4 if the 2nd hit whiffs on a long range Punish Counter); has juggle potential"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "2HP",
+          "startup": "10",
+          "total": "37",
+          "hitAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Counter-hit/Punish Counter puts airborne opponents into limited juggle state; incredible anti-air hitbox but cannot hit cross-up; ; special/DR/DI cancel is delayed until after 4th active frame (2nd active frame of 2nd hit); has an extended hurtbox on whiff until the end of recovery"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "2LK",
+          "startup": "5",
+          "total": "18",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Chains into 5LP/5LK/2LP/2LK"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "2LP",
+          "startup": "6",
+          "total": "16",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+6'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Chains into 5LP/5LK/2LP/2LK; great range for a light attack; topmost hurtbox on frames 1-8 is vulnerable only to aerial strikes (preventing its use as an anti-air); DR cancel is delayed until after 2nd active frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "2MK",
+          "startup": "9",
+          "total": "29",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+          "notes": "Slow and stubby compared to most cancelable 2MKs in the game; special/DR/DI cancel is delayed until after active frames"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "2MP",
+          "startup": "8",
+          "total": "28",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Strong poke with great hitbox priority; can buffer into Super Arts (SA2 is likely to whiff if buffered as a counterpoke); topmost hurtbox on frames 1-10 is vulnerable only to aerial strikes (preventing its use as an anti-air)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "360+HP",
+          "startup": "5",
+          "total": "60",
+          "hitAdv": "HKD +28",
+          "blockAdv": "-",
+          "notes": "Puts Lily fullscreen after successful grab; Range: 0.98; 3220 damage on Punish Counter"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "360+LP",
+          "startup": "5",
+          "total": "60",
+          "hitAdv": "HKD +28",
+          "blockAdv": "-",
+          "notes": "Puts Lily fullscreen after successful grab; Range: 1.38; 2300 damage on Punish Counter"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "360+MP",
+          "startup": "5",
+          "total": "60",
+          "hitAdv": "HKD +28",
+          "blockAdv": "-",
+          "notes": "Puts Lily fullscreen after successful grab; Range: 1.23; 2760 damage on Punish Counter"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "360+PP",
+          "startup": "5",
+          "total": "60",
+          "hitAdv": "HKD +28",
+          "blockAdv": "-",
+          "notes": "Puts Lily fullscreen after successful grab; Range: 1.38; 3350 damage on Punish Counter"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "3HP",
+          "startup": "25",
+          "total": "45",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Good range and hitbox priority for an overhead; Lily is in a crouching state on frames 25-42 (only the final 3f of recovery has a standing hurtbox); causes spike knockdown vs. airborne opponents"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "4HP",
+          "startup": "14",
+          "total": "35",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Good range, strong hitbox priority (strong bufferable neutral tool); extends a hurtbox in front of body until the end of recovery"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "4LPLK",
+          "startup": "5",
+          "total": "30",
+          "hitAdv": "KD +32",
+          "blockAdv": "-",
+          "notes": "Side switch; requires Drive Rush to land another meaty throw after cornering opponent; can also use immediate 236MK to become +4 on block for a mixup (or Windclad 236LK to become +3); forward dash can set up a meaty normal but no real throw mixup; a successful Throw Escape builds 0.5 Drive bars for the defender; Throw Escape is awarded to a random player if input simultaneously"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "4PPPKKK",
+          "startup": "144 (total)",
+          "total": "144",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"Come on! I'm ready to fight!\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "5HK",
+          "startup": "14",
+          "total": "38",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+          "notes": "Solid poke with good range and high pushback; knocks down on Counter-hit (+40) or Punish Counter (+47); Counter-hit/Punish Counter puts opponents into limited juggle state (can combo in the corner on trade or against an airborne opponent); extends a hurtbox 1f before active that is vulnerable to projectiles"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "5HP",
+          "startup": "10",
+          "total": "34",
+          "hitAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+          "notes": "Punish Counter crumple state is +5 before opponent becomes airborne and +28 to land a juggle follow-up; Punish Counter puts airborne opponents into limited juggle state (requires very precise timing); extends a large hurtbox 1f before active that is vulnerable to projectiles; no head hurtbox on frames 9-34; special/DR/DI cancel is delayed until after 2nd active frame; Lily's best link after Punish Counter 5LP due to its range and damage"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "5LK",
+          "startup": "4",
+          "total": "14",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-1'''</span>",
+          "notes": "Chains into 5LP/5LK/2LP/2LK; true blockstring when chained from 2LK; Lily's fastest button but incredibly short range"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "5LP",
+          "startup": "5",
+          "total": "15",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+6'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Chains into 5LP/5LK/2LP/2LK; more damage than other light attacks; DR cancel is delayed until after 2nd active frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "5MK",
+          "startup": "7",
+          "total": "24",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Combo tool (primarily for counter-hit links); decent neutral buffer that can go over low pokes and has low whiff recovery"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "5MP",
+          "startup": "9",
+          "total": "29",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "Strong poke with great range and hitbox priority; no head hurtbox on frames 8-25"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "5PPPKKK (HOLD OK)",
+          "startup": "147(17)",
+          "total": "366",
+          "hitAdv": "<span style=\"color: #b70c0b;\">'''-201'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-206'''</span>",
+          "notes": "\"Okay, smile! Good stuff.\"; Camera flash is a 1-hit low priority projectile; can hold any button to indefinitely delay the camera flash (17f startup after release)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "623HP",
+          "startup": "10",
+          "total": "61",
+          "hitAdv": "KD +36(+41)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-35'''</span>",
+          "notes": "Puts opponent into limited juggle state on hit; cannot hit cross-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "623LP",
+          "startup": "6",
+          "total": "49",
+          "hitAdv": "KD +36(+41)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-27'''</span>",
+          "notes": "Puts opponent into limited juggle state on hit; cannot hit cross-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "623MP",
+          "startup": "8",
+          "total": "56",
+          "hitAdv": "KD +36(+42)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-32'''</span>",
+          "notes": "Puts opponent into limited juggle state on hit; cannot hit cross-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "623PP",
+          "startup": "6",
+          "total": "60",
+          "hitAdv": "KD +32(+37)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-35'''</span>",
+          "notes": "Puts opponent into limited juggle state on hit (cancelable into OD Condor Dive for extra damage at the cost of 2 Drive bars); cannot hit cross-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "6HP",
+          "startup": "16",
+          "total": "41",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "Forces stand; cancelable to Desert Storm target combo (can frame trap opponents if not in Burnout); good range and incredible hitbox priority for a cancelable normal, but slow startup; not a useful anti-air despite the animation; puts airborne opponents into limited juggle state (can juggle full TC sequence)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "6HPHK",
+          "startup": "18",
+          "total": "46(51)",
+          "hitAdv": "KD +23",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Performed by holding 6HPHK on wakeup; 5f extra recovery on hit; does not have any screen freeze except for a 12f freeze when interacting with the opponent's throw hitbox (this also refunds 1 Drive bar after punishing the throw); see [[Street_Fighter_6/Gauges#Drive_Reversal|Drive Reversal]]."
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "6HPHK",
+          "startup": "20",
+          "total": "48(53)",
+          "hitAdv": "KD +23",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Performed by inputting 6HPHK during blockstun; 5f extra recovery on hit; freezes the screen for 4f during startup; see [[Street_Fighter_6/Gauges#Drive_Reversal|Drive Reversal]]."
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "6HP~HP",
+          "startup": "20",
+          "total": "48",
+          "hitAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-9'''</span>",
+          "notes": "2f gap on block between 1st/2nd hits of TC (can frame trap opponents if not in Burnout); puts airborne opponents into limited juggle state (can juggle full TC sequence)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "6HP~HP~HP",
+          "startup": "20",
+          "total": "61",
+          "hitAdv": "KD +26",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-23'''</span>",
+          "notes": "() refers to scaled damage when starting a combo with 6HP~HP; 1f gap on block between 2nd and 3rd hits of TC (can frame trap opponents if not in Burnout); full TC sequence can juggle vs. airborne opponents"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "6PPPKKK",
+          "startup": "338 (total)",
+          "total": "338",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"Hey! Is there anyone that wants to duke it out with me? Oh wait, you're here.\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "HPHK",
+          "startup": "26",
+          "total": "62",
+          "hitAdv": "KD +35 / Wall Splat KD +65",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span> / Wall Splat HKD +72",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Impact|Drive Impact]]. Airborne connect gives spinning juggle state on Punish Counter or corner Wall Splat with variable height."
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "j.236236K",
+          "startup": "9",
+          "total": "-",
+          "hitAdv": "KD +36~42",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-54(-66)'''</span>",
+          "notes": "2f startup if canceled from OD Condor Spire (this version's Full Invuln lasts 1-41f); total recovery time before landing depends on activation height; hits on both sides of Lily; if input after a cross-up jump, Lily turns to face the opponent (can be used to escape anti-air punish after jumping out of corner); Dmg distribution: 100x7,1900"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "j.236236K",
+          "startup": "9",
+          "total": "-",
+          "hitAdv": "KD +39~45",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-51(-65)'''</span>",
+          "notes": "2f startup if canceled from OD Condor Spire (this version's Full Invuln lasts 1-41f); consumes 1 Windclad stock (+300 damage, +4 KD Adv, better horizontal range in both directions); total recovery time before landing depends on activation height; hits on both sides of Lily; if input after a cross-up jump, Lily turns to face the opponent (can be used to escape anti-air punish after jumping out of corner); Dmg distribution: 100x12,1700"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "j.2HP",
+          "startup": "9",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+11(+15)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+7(+11)'''</span>",
+          "notes": "Cross-up; can be used from any jump direction; extended backwards hurtbox is projectile invuln 9-19f"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "j.HK",
+          "startup": "11",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+9(+15)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+5(+11)'''</span>",
+          "notes": "Lower body projectile invuln 11-26f (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "j.HP",
+          "startup": "10",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+6(+15)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+2</span><span style=\"color: #30D5B8;\">'''(+11)'''</span>",
+          "notes": "Causes spike knockdown vs. airborne opponents; good downward hitbox priority for close range jump-ins; lower body projectile invuln 10-15f (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "j.LK",
+          "startup": "6",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4(+10)'''</span>",
+          "blockAdv": "<span style=\"color: #bcbd0c;\">0</span><span style=\"color: #30D5B8;\">'''(+6)'''</span>",
+          "notes": "Cross-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "j.LP",
+          "startup": "5",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+6(+9)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+2</span><span style=\"color: #30D5B8;\">'''(+5)'''</span>",
+          "notes": "Decent horizontal air-to-air"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "j.MK",
+          "startup": "8",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+7(+13)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+3</span><span style=\"color: #30D5B8;\">'''(+9)'''</span>",
+          "notes": "Cross-up; lower body projectile invuln 8-22f and 8-12f around the kicking foot (if used immediately on the way up, can avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "j.MP",
+          "startup": "9",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5(+11)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span><span style=\"color: #30D5B8;\">'''(+7)'''</span>",
+          "notes": "Puts airborne opponents into limited juggle state; decent hitbox priority for horizontal jump-in approaches (longest horizontal range of all Lily's air normals) cancel window into Condor Dive and Air SA2 is longer, enabling some juggles that would whiff if canceled early; lower body projectile invuln 9-22f (if used immediately on the way up, can avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "j.MP~j.MP",
+          "startup": "10",
+          "total": "-",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Puts airborne opponents into limited juggle state"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "j.PP",
+          "startup": "12",
+          "total": "-",
+          "hitAdv": "KD +32(+37)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-24(-19)'''</span>",
+          "notes": "Usable during neutral/forward jump; final active frame has an expanded downward hitbox; can hit cross-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "j.PPP",
+          "startup": "12",
+          "total": "-",
+          "hitAdv": "KD +40(+46)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-24(-19)'''</span>",
+          "notes": "Usable during neutral/forward jump, or canceled from 623PP on hit; final active frame has an expanded downward hitbox; can hit cross-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "LPLK",
+          "startup": "5",
+          "total": "30",
+          "hitAdv": "KD +20",
+          "blockAdv": "-",
+          "notes": "Can Drive Rush for a corner strike/throw mixup; has a true walking throw loop vs. Blanka/E.Honda/Zangief that requires frame perfect timing; a successful Throw Escape builds 0.5 Drive bars for the defender; Throw Escape is awarded to a random player if input simultaneously"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "MPMK",
+          "startup": "1",
+          "total": "45(3)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Parry|Drive Parry]]. Perfect Parrying has only 1F of recovery and disables the opponent from canceling their attack. Perfect Parrying projectiles puts you into fixed 11 frames of recovery. After a Perfect Parry, all Super Gauge gain is reduced by 20% and Drive Gauge gain/damage is reduced by 50% for the entire punish combo."
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "MPMK or 66",
+          "startup": "9",
+          "total": "24(46)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Rush|Drive Rush]]; 3-bar version performed on hit/block from a cancelable normal; can also be performed on whiff from cancelable light normals; startup refers to minimum time before an attack can cancel the Drive Rush animation; the first 15 recovery frames are cancelable into any attack; the final 22 recovery frames are cancelable into any attack or movement option or blocking (except Parry); only Normal and Command Normal attacks are enhanced with +4 frame advantage and improved juggle properties"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "MPMK~66",
+          "startup": "3+8",
+          "total": "26(48)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Rush|Drive Rush]]; 1-bar version performed out of a Parry; startup refers to minimum time before an attack can cancel the Drive Rush animation (if performed immediately after a successful Parry, only 1+8 startup); the first 15 recovery frames are cancelable into any attack; the final 22 recovery frames are cancelable into any attack or movement option or blocking (except Parry); only Normal and Command Normal attacks are enhanced with +4 frame advantage and improved juggle properties; Distance: 0.434 (min/throw), 1.900 (min/block), 3.044 (max/final DR frame)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "W.236HK",
+          "startup": "17",
+          "total": "59",
+          "hitAdv": "KD +52(+50~56)",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span><span style=\"color: #30D5B8;\">'''(+7)'''</span>",
+          "notes": "Consumes 1 Windclad Stock; 3 hits (can lose hits from farther range); can be spaced out for better frame advantage if only 3rd hit connects; puts opponent into limited juggle state on hit; can land a follow-up juggle with 10f startup (up to 14f startup on max range connect)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "W.236LK",
+          "startup": "9",
+          "total": "51",
+          "hitAdv": "KD +47(+46~52)",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span><span style=\"color: #30D5B8;\">'''(+7)'''</span>",
+          "notes": "Consumes 1 Windclad Stock; 3 hits (can lose hits from farther range); can be spaced out for better frame advantage if only 3rd hit connects; puts opponent into limited juggle state on hit; can land a follow-up juggle with 5f startup (up to 10f startup on max range connect)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "W.236LKMK or W.236LKHK",
+          "startup": "9",
+          "total": "46",
+          "hitAdv": "KD +44(+50)",
+          "blockAdv": "<span style=\"color: #32CD32;\">+2</span><span style=\"color: #30D5B8;\">'''(+8)'''</span>",
+          "notes": "Consumes 1 Windclad Stock; 3 hits (can lose hits from farther range); can be spaced out for better frame advantage if only 3rd hit connects; puts opponent into limited juggle state on hit; can land a follow-up juggle with 8f startup (up to 14f startup on max range connect); SA2 hitconfirm time decreases when connecting from longer ranges; shorter travel distance and less knockdown advantage than the MKHK version; easier to space on a late active frame (becomes safe to Drive Reversal); range on the 3rd hit's first active frame: 2.876"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "W.236MK",
+          "startup": "13",
+          "total": "55",
+          "hitAdv": "KD +49(+47~53)",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span><span style=\"color: #30D5B8;\">'''(+7)'''</span>",
+          "notes": "Consumes 1 Windclad Stock; 3 hits (can lose hits from farther range); can be spaced out for better frame advantage if only 3rd hit connects; puts opponent into limited juggle state on hit; can land a follow-up juggle with 7f startup (up to 11f startup on max range connect)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "W.236MKHK",
+          "startup": "9",
+          "total": "46",
+          "hitAdv": "KD +56(+62)",
+          "blockAdv": "<span style=\"color: #32CD32;\">+2</span><span style=\"color: #30D5B8;\">'''(+8)'''</span>",
+          "notes": "Consumes 1 Windclad Stock; 3 hits (can lose hits from farther range); can be spaced out for better frame advantage if only 3rd hit connects; puts opponent into limited juggle state on hit; can land a follow-up juggle with 16f startup (up to 22f startup on max range connect); SA2 hitconfirm time decreases when connecting from longer ranges; longer travel distance and more knockdown advantage than the LKK version; range on the 3rd hit's first active frame: 3.351"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "W.623HP",
+          "startup": "8",
+          "total": "61",
+          "hitAdv": "KD +41(+43)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-33'''</span>",
+          "notes": "Consumes 1 Windclad Stock (2f faster, 200 more damage, better juggles and KD Adv.); puts opponents into limited juggle state; if 2nd hit connects vs. standing grounded opponent, they are launched higher and fall more slowly (KD +46~49 and follow-ups only possible in the corner); cannot hit cross-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "W.623LP",
+          "startup": "4",
+          "total": "49",
+          "hitAdv": "KD +41(+43)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-25'''</span>",
+          "notes": "Consumes 1 Windclad Stock (2f faster, 100 more damage, better juggles and KD Adv.); puts opponents into limited juggle state; 4f startup means this move cannot be safe jumped unless jump-in is spaced out to make it whiff; if 2nd hit connects vs. standing grounded opponent, they are launched close enough to follow up midscreen with SA1, SA2, 2HK, or 2HP (and more in the corner); KD Adv. of 2nd hit is +49~53 depending on distance; cannot hit cross-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "W.623MP",
+          "startup": "6",
+          "total": "56",
+          "hitAdv": "KD +41(+43)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-30'''</span>",
+          "notes": "Consumes 1 Windclad Stock (2f faster, 200 more damage, better juggles and KD Adv.); puts opponents into limited juggle state; if 2nd hit connects vs. standing grounded opponent, they are launched higher and fall more slowly (KD +47~50 and follow-ups only possible in the corner); cannot hit cross-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "W.623PP",
+          "startup": "4",
+          "total": "60",
+          "hitAdv": "KD +33(+38)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-35'''</span>",
+          "notes": "Consumes 1 Windclad Stock (2f faster, 200 more damage, better juggles and KD Adv.); puts opponents into limited juggle state; 4f startup means this move cannot be safe jumped unless jump-in is spaced out to make it whiff; cancelable into OD Condor Dive on hit (if 623PP hits grounded opponents, the final cancel frame into j.PPP will not connect); has extra range on the 2nd active frame vs. grounded opponents only for combo consistency; cannot hit cross-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "W.j.PP",
+          "startup": "12",
+          "total": "-",
+          "hitAdv": "KD +34(+40)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-24(-19)'''</span>",
+          "notes": "Consumes 1 Windclad Stock; usable during neutral/forward jump; final active frame has an expanded downward hitbox; can hit cross-up; bounces farther away on block than regular version, making it harder for some characters to punish; cancelable into a follow-up Dive at the cost of 1 Windclad stock (and 1 Drive bar for OD version); hitconfirm time refers to follow-up Dive cancel window at the lowest/highest connect (actual timing to combo into follow-up is variable)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "W.j.PPP",
+          "startup": "12",
+          "total": "-",
+          "hitAdv": "KD +41(+47)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-24(-19)'''</span>",
+          "notes": "Consumes 1 Windclad Stock; usable during neutral/forward jump, or canceled from 623PP on hit; final active frame has an expanded downward hitbox; can hit cross-up; bounces farther away on block than regular version, making it harder for some characters to punish; cancelable into a follow-up Dive at the cost of 1 Windclad stock (and 1 Drive bar for OD version); hitconfirm time refers to follow-up Dive cancel window at the lowest/highest connect (actual timing to combo into follow-up is variable)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "W.j.PP~PP",
+          "startup": "12",
+          "total": "-",
+          "hitAdv": "KD +27(+33)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-24(-19)'''</span>",
+          "notes": "Consumes 1 additional Windclad Stock; can be canceled from Windclad j.PP or j.PPP; final active frame has an expanded downward hitbox; min/max active frame count refers grounded opponents only (can bounce higher vs. point blank airborne opponent; can be used to extend combos or stop opponents from moving forward to punish the initial Condor Dive"
+        }
+      },
+      {
+        "title": {
+          "chara": "Lily",
+          "input": "W.j.PP~PPP",
+          "startup": "12",
+          "total": "-",
+          "hitAdv": "HKD +44(+49)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-24(-19)'''</span>",
+          "notes": "Consumes 1 additional Windclad Stock and 1 Drive bar; can be canceled from Windclad j.PP or j.PPP; final active frame has an expanded downward hitbox; Hard Knockdown on hit that allows Lily to dash twice for oki anywhere on the screen; can be used to extend combos or stop opponents from moving forward to punish the initial Condor Dive"
+        }
+      }
+    ]
+  }
+}

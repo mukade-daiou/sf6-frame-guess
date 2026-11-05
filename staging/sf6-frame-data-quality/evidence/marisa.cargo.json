@@ -1,0 +1,1003 @@
+{
+  "url": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Marisa%22&limit=500",
+  "retrievedAt": "2026-11-05T09:20:28.158Z",
+  "status": 200,
+  "characterId": "marisa",
+  "gameVersion": "UNVERIFIED",
+  "license": "CC-BY-SA-4.0",
+  "attribution": "SuperCombo Wiki contributors",
+  "data": {
+    "cargoquery": [
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "214214P~4/5/6",
+          "startup": "9",
+          "total": "110",
+          "hitAdv": "HKD +17",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-44(-77)'''</span>",
+          "notes": "Useful anti-air, reversal, and juggle ender; can be steered by holding forward/back; this affects the range, allowing you to hold back for close anti-airs or hold forward in ranged juggles or fireball punishes; upward hit triggers a cinematic; on block/whiff, ends with a downward slam that does 500 less damage than the cinematic version (still does full Drive Damage on hit); Marisa's collision box extends far downward, preventing opponent from walking or dashing underneath (opponent can still jump to avoid 2nd hit)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "214HP",
+          "startup": "22",
+          "total": "55",
+          "hitAdv": "KD +38",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-16'''</span>",
+          "notes": "Cannot hit cross-up; cancelable into 6P follow-up on hit or armor absorb; puts airborne opponents into free juggle state"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "214HP~6P",
+          "startup": "18",
+          "total": "45",
+          "hitAdv": "KD +56 Bounce",
+          "blockAdv": "-",
+          "notes": "Only comes out after 214HP hits or is armor absorbed"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "214K",
+          "startup": "3(8)",
+          "total": "54(144)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Stance with 1-hit armor can be extended an extra 90f by holding the button, followed by 26 unarmored recovery frames; no armor on lower half of body; cancelable into follow-ups after 8f; stance cannot be canceled into from other attacks; absorbing an attack automatically triggers counterattack follow-up; Marisa takes a fixed 6f hitstop when absorbing attacks (causing the counterattack to often land as a Counter-hit rather than a Punish Counter against medium/heavy attacks)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "214K",
+          "startup": "7",
+          "total": "30",
+          "hitAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Automatically triggers counterattack after 214K absorbs attack; Marisa is in a Punish Counter state for entire duration; can hold button to remain in Scutum stance after counterattack; hit advantage depends on attack that is absorbed; Marisa's short 6f hitstop causes attack to land as a +1 Counter-hit against most Medium/Heavy normals, while landing as a +3 Punish Counter against Lights"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "214KK",
+          "startup": "1",
+          "total": "57(87)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Stance with 2-hit full-body armor can be extended an extra 30f by holding a kick button, followed by 29 unarmored recovery frames; cancelable into follow-ups after 8f; stance cannot be canceled into from other attacks; absorbing an attack automatically triggers counterattack follow-up; Marisa takes a fixed 6f hitstop when absorbing attacks (causing the counterattack to often land as a Counter-hit rather than a Punish Counter against medium/heavy attacks)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "214KK",
+          "startup": "7",
+          "total": "30",
+          "hitAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Automatically triggers counterattack after 214KK absorbs attack; Marisa is in a Punish Counter state for entire duration; can hold button to remain in Scutum stance after counterattack; hit advantage depends on attack that is absorbed; Marisa's short 6f hitstop causes attack to land as a +1 Counter-hit against most Medium/Heavy normals, while landing as a +3 Punish Counter against Lights"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "214K~K",
+          "startup": "8+16",
+          "total": "55",
+          "hitAdv": "HKD +22",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-24'''</span>",
+          "notes": "Risky low ender; may catch opponent by surprise since the overhead ender is safe on block; Marisa is in a Punish Counter state for entire duration; range includes 0.218 forward movement from 214K startup"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "214K~LPLK",
+          "startup": "8+5",
+          "total": "61",
+          "hitAdv": "HKD +18",
+          "blockAdv": "-",
+          "notes": "Marisa is in a Punish Counter state for entire duration; Range: 1.109 (final active frame: 1.164); range includes 0.218 forward movement from 214K startup; 2875 damage on Punish Counter"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "214K~P",
+          "startup": "8+15(16)",
+          "total": "40(42)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "1st active frame only hits airborne opponents (functionally 8+16f startup vs. grounded); causes spike knockdown vs. airborne opponents; Marisa is in a Punish Counter state for entire duration; hitconfirm window is 1f shorter vs. grounded opponents; cannot be canceled into Tonitrus 2 on whiff; range includes 0.218 forward movement from 214K startup"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "214K~P~P",
+          "startup": "19",
+          "total": "57",
+          "hitAdv": "KD +31",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-21'''</span>",
+          "notes": "True blockstring from overhead starter; Marisa is in a Punish Counter state for entire duration; cannot be performed when Tonitrus 1 whiffs"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "214LP",
+          "startup": "12",
+          "total": "45",
+          "hitAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-16'''</span>",
+          "notes": "Cannot hit cross-up; cancelable into 6P follow-up on hit or armor absorb; puts airborne opponents into free juggle state"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "214LP~6P",
+          "startup": "13",
+          "total": "40",
+          "hitAdv": "KD +31",
+          "blockAdv": "-",
+          "notes": "Only comes out after 214LP hits or is armor absorbed"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "214MP",
+          "startup": "16",
+          "total": "49",
+          "hitAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-16'''</span>",
+          "notes": "Cannot hit cross-up; cancelable into 6P follow-up on hit or armor absorb; puts airborne opponents into free juggle state"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "214MP~6P",
+          "startup": "13",
+          "total": "41",
+          "hitAdv": "KD +36",
+          "blockAdv": "-",
+          "notes": "Only comes out after 214MP hits or is armor absorbed; gives a slight ground bounce on hit (can follow up with juggle vs. airborne opponents)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "214PP",
+          "startup": "16",
+          "total": "45",
+          "hitAdv": "KD +42",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span>",
+          "notes": "Cannot hit cross-up; cancelable into 6P follow-up on hit or armor absorb; puts airborne opponents into free juggle state"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "214PP~6P",
+          "startup": "13",
+          "total": "40",
+          "hitAdv": "KD +58 Bounce",
+          "blockAdv": "-",
+          "notes": "Only comes out after 214PP hits or is armor absorbed"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "236236K",
+          "startup": "13",
+          "total": "79",
+          "hitAdv": "HKD +14",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-39(-33)'''</span>",
+          "notes": "Takes opponent to corner; cinematic time regenerates ~2.1 Drive bars for Marisa; excellent whiff punish and projectile counter tool (especially with Modern controls)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "236236K",
+          "startup": "13",
+          "total": "79",
+          "hitAdv": "HKD +14",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-39(-33)'''</span>",
+          "notes": "Takes opponent to corner; available at 25% HP or below; cinematic time regenerates ~2.1 Drive bars for Marisa; excellent whiff punish and projectile counter tool (especially with Modern controls)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "236236P",
+          "startup": "19",
+          "total": "83",
+          "hitAdv": "KD +14",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-43'''</span>",
+          "notes": "Can hold button 27f for more damage and a cinematic counter that activates against strikes and throws"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "236236[P]",
+          "startup": "42",
+          "total": "107",
+          "hitAdv": "HKD +35 (KD +17)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-42'''</span>",
+          "notes": "Held version; only the first 3 active frames trigger cinematic hit, which deals extra damage and Drive damage; max-range non-cinematic version does not give a Hard Knockdown; if frames 1-27 absorb a strike or throw, results in Counterattack version instead; has slightly less range than the uncharged version"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "236236[P]",
+          "startup": "7",
+          "total": "63",
+          "hitAdv": "KD +46",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-37'''</span>",
+          "notes": "Automatically triggers counterattack after Held SA1 armor absorbs a strike or throw on frames 1-27; can be baited with safe jump timing"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "236HK",
+          "startup": "29",
+          "total": "53",
+          "hitAdv": "KD +37",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "notes": "Cannot hit cross-up; ~70% screen length; advancing poke with advantage on block; has a screen shake effect to make it easier to distinguish from 236MK"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "236HP",
+          "startup": "22",
+          "total": "46",
+          "hitAdv": "KD +36",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+          "notes": "Armor loses to low attacks; cannot hit cross-up; can hold the button 35f to charge a more powerful version (armor is lost immediately upon button release); after releasing partial charge, startup is 10f (frames 12-19), 9f (frames 20-27), or 8f (frames 28-34); holding the button for 33-34f results in an uncharged 236HP with even slower startup than the fully charged version"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "236KK",
+          "startup": "24",
+          "total": "51",
+          "hitAdv": "KD +50(68) Wall Splat",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Cannot hit cross-up; ~65% screen length; Wall Splat on hit; KD Advantage increases when farther from the wall; significant pushback on block makes it hard to punish when spaced out"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "236LK",
+          "startup": "20",
+          "total": "47",
+          "hitAdv": "KD +35",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Cannot hit cross-up; ~50% screen length"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "236LP",
+          "startup": "17",
+          "total": "41",
+          "hitAdv": "KD +36",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+          "notes": "Armor loses to low attacks; cannot hit cross-up; can hold the button 26f to charge a more powerful version (armor is lost immediately upon button release); after releasing partial charge, startup is 5f (frames 12-19) or 4f (frames 20-25); holding the button for 11-12f can extend the armor by 1-2f without increasing startup"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "236MK",
+          "startup": "24",
+          "total": "49",
+          "hitAdv": "KD +37",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Cannot hit cross-up; ~60% screen length; safe advancing poke that leaves Marisa out of throw range on block (can space farther for even better spacing traps); increased pushback vs. opponents in Burnout (out of throw range and cannot combo from chained lights)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "236MP",
+          "startup": "19",
+          "total": "43",
+          "hitAdv": "KD +36",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+          "notes": "Armor loses to low attacks; cannot hit cross-up; can hold the button 29f to charge a more powerful version (armor is lost immediately upon button release); after releasing partial charge, startup is 7f (frames 12-19) or 6f (frames 20-28)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "236PP",
+          "startup": "19",
+          "total": "43",
+          "hitAdv": "KD +36",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Armor loses to low attacks; cannot hit cross-up; can hold the button 29f to charge a more powerful version; after releasing partial charge, startup is 8f (frames 11-12), 7f (frames 13-19), or 6f (frames 20-28)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "236[HP]",
+          "startup": "41",
+          "total": "64",
+          "hitAdv": "HKD +40",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "notes": "Armor loses to low attacks; transitions to a cinematic follow-up on hit; vs. airborne opponents, 2nd follow-up hit whiffs (no Hard Knockdown and reduced Super Meter gain); cannot hit cross-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "236[LP]",
+          "startup": "30",
+          "total": "53",
+          "hitAdv": "HKD +40",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "notes": "Armor loses to low attacks; transitions to a cinematic follow-up on hit; vs. airborne opponents, 2nd follow-up hit whiffs (no Hard Knockdown and reduced Super Meter gain); cannot hit cross-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "236[MP]",
+          "startup": "35",
+          "total": "58",
+          "hitAdv": "HKD +40",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "notes": "Armor loses to low attacks; transitions to a cinematic follow-up on hit; vs. airborne opponents, 2nd follow-up hit whiffs (no Hard Knockdown and reduced Super Meter gain); cannot hit cross-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "236[PP]",
+          "startup": "35",
+          "total": "58",
+          "hitAdv": "HKD +40",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "notes": "Armor loses to low attacks; transitions to a cinematic follow-up on hit; vs. airborne opponents, 2nd follow-up hit whiffs (no Hard Knockdown and reduced Super Meter gain); cannot hit cross-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "2HK",
+          "startup": "11",
+          "total": "39",
+          "hitAdv": "KD +29",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-11'''</span>",
+          "notes": "Can hold button 20f for improved properties; has juggle potential; topmost hurtboxes on frames 1-7 are projectile invincible (avoids Sagat's MP/HP Tiger Shot)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "2HP",
+          "startup": "9",
+          "total": "36",
+          "hitAdv": "KD +35",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Can hold button 17f for improved properties; slow but solid anti-air; cannot hit cross-up; only first 2 active frames hit grounded opponents; active frames 3-5 only hit airborne opponents (active frame 3 extends a much wider anti-air hitbox); puts opponent into limited juggle state on hit (higher launch vs. airborne, and much higher on Punish Counter)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "2LK",
+          "startup": "5",
+          "total": "19",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Chains into 2LP/2LK"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "2LP",
+          "startup": "4",
+          "total": "15",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Chains into 2LP/2LK; Marisa's only 4f normal; special/DI cancel is delayed until after active frames; DR cancel is delayed until after 2nd recovery frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "2MK",
+          "startup": "9",
+          "total": "29",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "1f extra recovery on whiff/block; solid low poke with good range and hitbox priority; strong Drive Rush starter that links into 4HP or 5MP~MP at close range, 2MP at mid range, or 6MP from farther out; topmost hurtboxes on frames 9-16 are projectile invincible (avoids Sagat's MP/HP Tiger Shot but becomes vulnerable on frame 17~)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "2MP",
+          "startup": "8",
+          "total": "26",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Long range for a cancelable 2MP (but slower than average startup); topmost hurtboxes on frames 8-15 are projectile invincible (avoids Sagat's MP/HP Tiger Shot)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "2[HK]",
+          "startup": "20(4)",
+          "total": "42(45)",
+          "hitAdv": "KD +35",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "3f extra recovery on whiff; has juggle potential and keeps the opponent in a limited juggle state (e.g. corner OTG bounce > 2[HK] > SA2); releasing the button on frames 7-15 results in uncharged version with 4f startup; topmost hurtboxes on frames 1-7 are projectile invincible (avoids Sagat's MP/HP Tiger Shot but becomes vulnerable on frame 8~)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "2[HP]",
+          "startup": "21(4)",
+          "total": "47",
+          "hitAdv": "KD +52",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Launches opponent into limited juggle state on hit, and much higher launch on Punish Counter; useful for continuing juggles; cannot hit cross-up and too slow to realistically anti-air; only first 2 active frames hit grounded opponents; active frames 3-6 only hit airborne opponents and extend a much wider anti-air hitbox; releasing the button on frames 5-16 results in uncharged version with 4f startup; only Super cancelable on the first 2 active frames; can always combo into a fully charged SA1 for incredible 1-bar damage; hitstop is 2 frames longer on hit than on block for easier cancel hitconfirms"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "3HP",
+          "startup": "21",
+          "total": "43",
+          "hitAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Can hold button 17f for improved propertied; has a Target Combo follow-up; causes a short OTG bounce vs. airborne opponents"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "3HP~3HP",
+          "startup": "18",
+          "total": "43",
+          "hitAdv": "KD +29",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span> (<span style=\"color: #b70c0b;\">'''-24 whiff'''</span>)",
+          "notes": "Gives a risky 2nd overhead after 3HP; true blockstring, so opponent can safely mash a standing normal after blocking 3HP without being frame trapped or hit by the overhead; can be juggled into (KD +31); can whiff at longer ranges of 3HP (much more unsafe)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "3[HP]",
+          "startup": "28(14)",
+          "total": "48",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "notes": "Slow overhead that can combo on hit or give pressure on block; releasing the button on frames 7-13 results in uncharged version with 14f startup; causes a short OTG bounce vs. airborne opponents"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "4HP",
+          "startup": "8",
+          "total": "30(33)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "3f extra recovery on whiff; can hold button 17f for improved properties; causes air reset when juggled into without Drive Rush; short range but important in combos and pressure; special/DR/DI cancel is delayed until after 2nd recovery frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "4LPLK",
+          "startup": "5",
+          "total": "30",
+          "hitAdv": "KD +33",
+          "blockAdv": "-",
+          "notes": "Side switch; after throwing opponent into corner, can Drive Rush for strong strike/throw mixup; DR~5[HP] trades with reversal 4f normals for a high-damage trade combo; meaty options are much weaker after normal dash (no throw, limited conversions on hit); a successful Throw Escape builds 0.5 Drive bars for the defender; Throw Escape is awarded to a random player if input simultaneously"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "4PPPKKK",
+          "startup": "184 (total)",
+          "total": "184",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"This will be fun! *crack*\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "4[HP]",
+          "startup": "20(3)",
+          "total": "39(45)",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+13'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "notes": "5f extra recovery on whiff; 2nd active frame is omitted on hit/block (when combined with the extra whiff recovery, the total frame count is 6f longer on whiff compared to hit/block); releasing the button on frames 5-16 results in uncharged version with 3f startup; short range but excellent combo and pressure tool; meaty connect does not give extra frame advantage; puts airborne opponents into limited juggle state"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "5HK",
+          "startup": "15",
+          "total": "41",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Can hold button 17f for improved properties; solid poke with good hitbox priority; Punish Counter puts opponent into free juggle state; puts airborne opponents into limited juggle state; extends a hurtbox 1f before active that is vulnerable to projectiles"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "5HP",
+          "startup": "12",
+          "total": "36",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Can hold button 21f for improved properties; strong whiff punish tool"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "5HP~HP",
+          "startup": "24",
+          "total": "45",
+          "hitAdv": "KD +42",
+          "blockAdv": "<span style=\"color: #32CD32;\">+2</span> (<span style=\"color: #30D5B8;\">'''+4'''</span>)",
+          "notes": "() refers to scaled damage after 5HP combo starter; 6f gap between hits on block (1f gap if starting from 5[HP]); grants a safe jump near the corner on a grounded hit or low-height juggle"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "5LK",
+          "startup": "6",
+          "total": "21",
+          "hitAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "At farther ranges, can only combo into SA2; special/DI cancel is delayed until after 2nd recovery frame; DR cancel is delayed until after 3rd recovery frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "5LP",
+          "startup": "6",
+          "total": "19",
+          "hitAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Good neutral buffer into 5LP~LP Target Combo (requires at least a Counter-hit to combo); causes air reset if juggled into"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "5LP~LP",
+          "startup": "14",
+          "total": "38",
+          "hitAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Requires Counter-hit, Punish Counter, or Drive Rush 5LP to combo; 3f gap on block between hits that allows for a frame trap"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "5MK",
+          "startup": "11",
+          "total": "30",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Good poke and Drive Rush starter"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "5MP",
+          "startup": "7",
+          "total": "25(27)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "2f extra recovery on whiff; great hitbox and a strong buffer into 5MP~MP Target Combo"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "5MP~MP",
+          "startup": "14",
+          "total": "38",
+          "hitAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span>",
+          "notes": "Great pressure and bully tool from 5MP; true blockstring between hits; special/DR/DI cancel is delayed until after 1st recovery frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "5PPPKKK",
+          "startup": "242 (total)",
+          "total": "242",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"I may need a second helping of you!\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "5[HK]",
+          "startup": "24(10)",
+          "total": "50",
+          "hitAdv": "KD +36",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "notes": "Releasing the button on frames 5-13 results in uncharged version with 10f startup; puts airborne opponents into limited juggle state; Punish Counter causes free juggle state"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "5[HP]",
+          "startup": "23(5)",
+          "total": "45(46)",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+7'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "notes": "1f extra recovery on whiff; releasing the button on frames 7-17 results in uncharged version with 5f startup; great range and frame advantage for follow-up combos and pressure; puts airborne opponents into limited juggle state"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "623HP",
+          "startup": "32",
+          "total": "52",
+          "hitAdv": "KD +42(43)",
+          "blockAdv": "<span style=\"color: #32CD32;\">+3</span><span style=\"color: #30D5B8;\">'''(+4)'''</span>",
+          "notes": "Cannot hit cross-up; hits 1f later vs. crouching opponents; leaves Marisa close enough to frame trap with 5LP~LP on block or use 5MP~MP without causing an air reset; can set up trade combos with 4f reversals using 5MP vs. stand block or 4HP vs. crouch block"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "623LP",
+          "startup": "25",
+          "total": "45",
+          "hitAdv": "KD +42(43)",
+          "blockAdv": "<span style=\"color: #32CD32;\">+3</span><span style=\"color: #30D5B8;\">'''(+4)'''</span>",
+          "notes": "Cannot hit cross-up; hits 1f later vs. crouching opponents"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "623MP",
+          "startup": "28",
+          "total": "48",
+          "hitAdv": "KD +42(43)",
+          "blockAdv": "<span style=\"color: #32CD32;\">+3</span><span style=\"color: #30D5B8;\">'''(+4)'''</span>",
+          "notes": "Cannot hit cross-up; hits 1f later vs. crouching opponents; leaves Marisa close enough to frame trap with 5LP~LP on block or use 5MP~MP without causing an air reset; can set up trade combos with 4f reversals using 5MP vs. stand block or 4HP vs. crouch block"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "623PP",
+          "startup": "28",
+          "total": "48",
+          "hitAdv": "KD +70 Tumble (HKD +138 Wall Splat)",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+4(5)'''</span>",
+          "notes": "Sends opponent tumbling backward into OTG state; if opponent hits the corner, a low-height Wall Splat occurs (opponent is grounded and throwable, but strikes put them into juggle state); cannot hit cross-up; hits 1f later vs. crouching opponents; can set up trade combos with 4f reversals using 4HP vs. stand block or 6MP vs. crouch block"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "6HK",
+          "startup": "14",
+          "total": "37",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Can hold button 21f for improved properties; has a hitconfirmable Target Combo follow-up; forces stand on hit; forward movement ensures a link into 2LP on hit or into 4HP on counter-hit"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "6HK~6HK",
+          "startup": "16",
+          "total": "45",
+          "hitAdv": "KD +52",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span>",
+          "notes": "Hitconfirmable ender after 6HK; delaying the input can create a frame trap up to 3f on block (no gap if starting from 6[HK]); puts opponent into limited juggle state; extremely powerful when juggled into (does not increase juggle count at all from DR~6HK)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "6HPHK",
+          "startup": "18",
+          "total": "46(51)",
+          "hitAdv": "KD +23",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Performed by holding 6HPHK on wakeup; 5f extra recovery on hit; does not have any screen freeze except for a 12f freeze when interacting with the opponent's throw hitbox (this also refunds 1 Drive bar after punishing the throw); 4f less hitstop on block compared to most Drive Reversals (changes the punish timing); see [[Street_Fighter_6/Gauges#Drive_Reversal|Drive Reversal]]."
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "6HPHK",
+          "startup": "20",
+          "total": "48(53)",
+          "hitAdv": "KD +23",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Performed by inputting 6HPHK during blockstun; 5f extra recovery on hit; freezes the screen for 4f during startup; 4f less hitstop on block compared to most Drive Reversals (changes the punish timing); see [[Street_Fighter_6/Gauges#Drive_Reversal|Drive Reversal]]."
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "6MP",
+          "startup": "9",
+          "total": "30",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Strong forward movement and can link into light normals after Counter-hit, Punish Counter, or Drive Rush; has 2 hitconfirmable Target Combo follow-ups; useful link option out of DR~2MK due to its range, forces stand on Punish Counter to ensure that 6MP~HK can always connect"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "6MP~HK",
+          "startup": "11",
+          "total": "37",
+          "hitAdv": "KD +39 / <span style=\"color: #b70c0b;\">'''(-21)'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-10(-26)'''</span>",
+          "notes": "Whiffs on crouching opponents; if the opponent is standing, this ender is preferable for its corner carry and Super cancelability; Super cancel is delayed until after 3rd active frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "6MP~HP",
+          "startup": "11",
+          "total": "38",
+          "hitAdv": "KD +31",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span>",
+          "notes": "Low follow-up; true blockstring from 6MP, so an opponent mashing a crouching button after blocked 6MP will not be frame trapped; useful confirm if 6MP hits crouching opponent; Marisa is in a crouching state during recovery but has standing-sized hurtboxes (can be punished by some moves that usually whiff on crouching as long as they aren't flagged as \"can't hit crouch\", but afterwards Marisa will still be crouching unless a Force Stand move is used)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "6PPPKKK",
+          "startup": "85",
+          "total": "211",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"Come on, the first hit's free.\"; active frames refer to armored period"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "6[HK]",
+          "startup": "27(4~7)",
+          "total": "49",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+10'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "notes": "Releasing the button on frames 7-14 results in uncharged version with 7f startup (frames 15-20: 4f startup); has a hitconfirmable Target Combo follow-up; forces stand on hit; puts airborne opponents into limited juggle state; more range than uncharged version with excellent follow-up combos or block pressure; special/DR/DI cancel is delayed until after 3rd active frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "HPHK",
+          "startup": "26",
+          "total": "62",
+          "hitAdv": "KD +35 / Wall Splat KD +65",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span> / Wall Splat HKD +72",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Impact|Drive Impact]]. Airborne connect gives spinning juggle state on Punish Counter or corner Wall Splat with variable height."
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "j.HK",
+          "startup": "10",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+10(+15)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+6(+11)'''</span>",
+          "notes": "Can hold button 20f for improved properties; lower body projectile invuln 10-21f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "j.HP",
+          "startup": "10",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+9(+15)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+5(+11)'''</span>",
+          "notes": "Can hold button 20f for improved properties; causes spike knockdown vs. airborne opponents; lower body projectile invuln 9-23f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "j.LK",
+          "startup": "5",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4(+11)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span><span style=\"color: #30D5B8;\">'''(+8)'''</span>",
+          "notes": "Cross-up; useful for safe jumps; can be used as a fuzzy instant overhead"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "j.LP",
+          "startup": "4",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+9(+11)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+6(+8)'''</span>",
+          "notes": "Quick air-to-air"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "j.MK",
+          "startup": "8",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+9(+14)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+6(+11)'''</span>",
+          "notes": "Farthest reaching horizontal jump-in with good hitbox priority; lower body projectile invuln 8-25f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "j.MP",
+          "startup": "7",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+8(+11)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+4(+7)'''</span>",
+          "notes": "Puts airborne opponents into limited juggle state; lower body projectile invuln 7-21f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "j.MP~j.MP",
+          "startup": "10",
+          "total": "-",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Spike KD vs. airborne opponents"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "j.[HK]",
+          "startup": "29(3)",
+          "total": "-",
+          "hitAdv": "HKD +70(+75)",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+13(+18)'''</span>",
+          "notes": "Releasing the button on frames 7-19 results in uncharged version with 3f startup; causes spike knockdown; lower body projectile invuln 29-37f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "j.[HP]",
+          "startup": "28(5)",
+          "total": "-",
+          "hitAdv": "HKD +69(+75)",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+12(+18)'''</span>",
+          "notes": "Releasing the button on frames 5-19 results in uncharged version with 5f startup; causes spike knockdown; lower body projectile invuln 28-37f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "LPLK",
+          "startup": "5",
+          "total": "30",
+          "hitAdv": "KD +23",
+          "blockAdv": "-",
+          "notes": "Can use Drive Rush for a corner throw loop with 2f timing on standard characters; a successful Throw Escape builds 0.5 Drive bars for the defender; Throw Escape is awarded to a random player if input simultaneously"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "MPMK",
+          "startup": "1",
+          "total": "45(3)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Parry|Drive Parry]]. Perfect Parrying has only 1F of recovery and disables the opponent from canceling their attack. Perfect Parrying projectiles puts you into fixed 11 frames of recovery. After a Perfect Parry, all Super Gauge gain is reduced by 20% and Drive Gauge gain/damage is reduced by 50% for the entire punish combo."
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "MPMK or 66",
+          "startup": "9",
+          "total": "24(46)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Rush|Drive Rush]]; 3-bar version performed on hit/block from a cancelable normal; can also be performed on whiff from cancelable light normals; startup refers to minimum time before an attack can cancel the Drive Rush animation; the first 15 recovery frames are cancelable into any attack; the final 22 recovery frames are cancelable into any attack or movement option or blocking (except Parry); only Normal and Command Normal attacks are enhanced with +4 frame advantage and improved juggle properties"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "MPMK~66",
+          "startup": "3+8",
+          "total": "26(48)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Rush|Drive Rush]]; 1-bar version performed out of a Parry; startup refers to minimum time before an attack can cancel the Drive Rush animation (if performed immediately after a successful Parry, only 1+8 startup); the first 15 recovery frames are cancelable into any attack; the final 22 recovery frames are cancelable into any attack or movement option or blocking (except Parry); only Normal and Command Normal attacks are enhanced with +4 frame advantage and improved juggle properties; Distance: 0.544 (min/throw), 1.903 (min/block), 3.081 (max/final DR frame)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "nj.2HP",
+          "startup": "9",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+11(+15)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+7(+11)'''</span>",
+          "notes": "Can hit Cross-up; can hold button 20f for improved properties; causes spike knockdown vs. airborne opponents; lower body projectile invuln 9f until land except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Marisa",
+          "input": "nj.2[HP]",
+          "startup": "28(4)",
+          "total": "-",
+          "hitAdv": "HKD +71(+75)",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+14(+18)'''</span>",
+          "notes": "Can hit Cross-up; releasing the button on frames 5-19 results in uncharged version with 4f startup; causes spike knockdown; lower body projectile invuln 28f until land except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      }
+    ]
+  }
+}

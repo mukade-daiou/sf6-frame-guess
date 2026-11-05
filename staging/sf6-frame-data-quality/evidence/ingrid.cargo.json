@@ -1,0 +1,926 @@
+{
+  "url": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ingrid%22&limit=500",
+  "retrievedAt": "2026-11-05T09:20:26.956Z",
+  "status": 200,
+  "characterId": "ingrid",
+  "gameVersion": "UNVERIFIED",
+  "license": "CC-BY-SA-4.0",
+  "attribution": "SuperCombo Wiki contributors",
+  "data": {
+    "cargoquery": [
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "214214K",
+          "startup": "27",
+          "total": "58",
+          "hitAdv": "KD +27",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-15'''</span>",
+          "notes": "Dark Ingrid only; immediately puts the opponent into Burnout on hit; cannot be canceled into from normals; hits twice on hit or once on block"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "214214P",
+          "startup": "1",
+          "total": "13",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Fires beacon into the air that spawns 3 downward-hitting Super-priority projectiles (these projectiles disappear if Ingrid is hit); button strength determines beacon position (Modern Controls: hold back/neutral/forward to control position); LP version appears in front of the opponent, MP version appears above the opponent, HP version appears behind the opponent (except at fullscreen distance); can hold the button to spend up to 2 Sun Crests for additional projectiles; projectile startup varies based on strength: LP 103f / MP 68f / HP 98f; gap between blocked projectiles is 8f / 7f (varies when switching between stand/crouch block, but always large enough to throw between projectiles); grounded opponents are put into a free juggle state by the 3rd projectile (1st/2nd keep the opponent grounded); airborne opponents are put into a free juggle state or maintain the existing juggle count; Ingrid cannot gain additional Super gauge while the projectiles are active or until the current combo ends; after SA2 activation, can combo after a Forward Throw (limited juggle) or Back Throw (free juggle)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "214214[P]",
+          "startup": "1",
+          "total": "13",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Button must be held 71f during Super freeze; fires beacon into the air that spawns 5 sets of downward-hitting Super-priority projectiles (these projectiles disappear if Ingrid is hit); button strength determines beacon position (Modern Controls: hold back/neutral/forward to control position); LP version appears in front of the opponent, MP version appears above the opponent, HP version appears behind the opponent (except at fullscreen distance); consumes 2 Sun Crests in exchange for the additional projectiles; projectile startup varies based on strength: LP 103f / MP 68f / HP 98f; gap between blocked projectiles is 8f / 7f / 10f / 7f (varies when switching between stand/crouch block, but always large enough to throw between projectiles); grounded opponents are put into a free juggle state by the 3rd projectile (1st/2nd/4th keep the opponent grounded); airborne opponents are put into a free juggle state or maintain the existing juggle count; 5th hit puts opponent into an OTG bounce state; Ingrid cannot gain additional Super gauge while the projectiles are active or until the current combo ends; after SA2 activation, can combo after a Forward Throw (limited juggle) or Back Throw (free juggle)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "214214{P}",
+          "startup": "1",
+          "total": "13",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Button must be held 26f during Super freeze; fires beacon into the air that spawns 4 sets of downward-hitting Super-priority projectiles (these projectiles disappear if Ingrid is hit); button strength determines beacon position (Modern Controls: hold back/neutral/forward to control position); LP version appears in front of the opponent, MP version appears above the opponent, HP version appears behind the opponent (except at fullscreen distance); consumes 1 Sun Crest in exchange for the additional projectiles; projectile startup varies based on strength: LP 103f / MP 68f / HP 98f; gap between blocked projectiles is 8f / 7f / 10f (varies when switching between stand/crouch block, but always large enough to throw between projectiles); grounded opponents are put into a free juggle state by the 3rd projectile (1st/2nd/4th keep the opponent grounded); airborne opponents are put into a free juggle state or maintain the existing juggle count; Ingrid cannot gain additional Super gauge while the projectiles are active or until the current combo ends; after SA2 activation, can combo after a Forward Throw (limited juggle) or Back Throw (free juggle)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "214236HP/HK",
+          "startup": "46",
+          "total": "89",
+          "hitAdv": "KD -124(-652)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-24(-13)'''</span>",
+          "notes": "Slow 3-bar Super with low damage relative to its meter cost; unsafe on hit or block; on hit, Ingrid returns and high-fives the Monoid (can transform into Dark Ingrid using the LP~LP~4~LK~HK input before the high five, becoming much more unsafe on hit); Modern Controls: 214236H"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "214HP (1 Stock)",
+          "startup": "18",
+          "total": "46",
+          "hitAdv": "KD +68",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "notes": "2-hit projectile hitbox; consumes 1 Sun Crest for more hits, extra damage, and longer range compared to the 0-stock MP/HP version; stock is consumed on frame 2; identical to the 0-stock OD version except for projectile priority and Super cancelability; puts the opponent into a limited juggle state (can follow up in the corner or with a midscreen DR~6HP); extends a foot hurtbox and a projectile invincible arm hurtbox on frames 19-38"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "214HP (2 Stock)",
+          "startup": "18",
+          "total": "46",
+          "hitAdv": "KD +76",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "notes": "3-hit projectile hitbox; consumes 2 Sun Crests for more hits, extra damage, and longer range compared to the 1-stock HP version; stocks are consumed on frame 2 and the first active frame (only 1 stock is consumed if interrupted on startup); identical to the 1-stock OD version except for projectile priority and Super cancelability; puts the opponent into a limited juggle state (can follow up anywhere with 6KKK or in the corner with 236HP > 236HP for a safe jump); extends a foot hurtbox and a projectile invincible arm hurtbox on frames 19-38"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "214LP (HOLD OK)",
+          "startup": "-",
+          "total": "48~186",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Builds Sun Crests up to a maximum of 4 stocks; can hold the button to extend the move and build stocks slightly more quickly (ends automatically upon reaching 4 stocks); Lv.1 (unheld version): 48F total, stock is built on frame 47 (or frame 42 when continuing to Lv.2 Hold); Lv.2 Hold: 94F total, button must be held 23F, 2nd stock is built on frame 93 (or frame 88 when continuing to Lv.3 Hold); Lv.3 Hold: 140F total, button must be held 85F, 3rd stock is built on frame 139 (or frame 134 when continuing to Lv.4 Hold); Lv.4 Hold: 186F total, button must be held 131F, 4th stock is built on frame 182; if activated with 4 Sun Crests, Ingrid instead builds 3000 Drive gauge every 46 frames (frame data is identical to the regular version but the button can be held indefinitely); Ingrid is in a counter-hit state for the entire duration; hurtbox expands upward on frames 10-44 (Lv.1) / 10-84 (Lv.2) / 10-130 (Lv.3) / 10-184 (Lv.4)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "214MP",
+          "startup": "21",
+          "total": "47",
+          "hitAdv": "KD +47",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "1-hit projectile hitbox; this version also comes out when input with HP button if Ingrid has 0 Sun Crests; puts the opponent into a limited juggle state (corner follow-ups possible on a high connect like 4HP~HP > 214MP); extends a foot hurtbox and a projectile invincible arm hurtbox on frames 22-41"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "214PP",
+          "startup": "18",
+          "total": "46",
+          "hitAdv": "KD +68",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "notes": "2-hit OD projectile hitbox; identical to the 1-stock HP version except for projectile priority and SA2 cancelability; puts the opponent into a limited juggle state (can follow up in the corner or with a midscreen DR~6HP); extends a foot hurtbox and a projectile invincible arm hurtbox on frames 19-38; SA2 cancel: KD+75/+11"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "214PP (1 Stock)",
+          "startup": "18",
+          "total": "46",
+          "hitAdv": "KD +76",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "notes": "3-hit OD projectile hitbox; identical to the 2-stock HP version except for projectile priority and SA2 cancelability; has more hits, extra damage, and longer range compared to 0-stock OD version; stock is consumed on frame 2; puts the opponent into a limited juggle state (can follow up anywhere with 6KKK or in the corner with 236HP > 236HP for a safe jump); extends a foot hurtbox and a projectile invincible arm hurtbox on frames 19-38; SA2 cancel: KD+83/+12"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "214PP (2 Stock)",
+          "startup": "18",
+          "total": "46",
+          "hitAdv": "KD +87",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+9'''</span>",
+          "notes": "4-hit OD projectile hitbox; has properties greater than the 2-stock HP version or 1-stock OD version for 2 Sun Crests; stocks are consumed on frame 2 and the first active frame (only 1 stock is consumed if interrupted on startup); launches the opponent high into a free juggle state (can follow up with moves like 2KKK, Dash + 236HK, or Walk/Dash + j.HK~j.HK); opponent flies backward ~50% faster on airborne hits (prevents some juggle follow-ups like midscreen 2KKK); extends a foot hurtbox and a projectile invincible arm hurtbox on frames 19-38; SA2 cancel: KD+94/+16"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "22K",
+          "startup": "6",
+          "total": "55",
+          "hitAdv": "KD +23",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Counter that can absorb strikes (resulting in a counter-attack) or dissipate 1-hit non-Super projectiles; counter-attack is a strike knockdown that can be blocked if triggered by a low-recovery attack; counter-attack has 12f startup / 3f active / 21f recovery / 45f total animation / 1-14 fully invuln / Armor Break / no collision box 1-14f (some moves can pass through before counter-attack connects); absorbing a projectile results in 28f total recovery (often punishable if done from longer ranges); can be used to counter most strike-based Supers (useful option out of Drive Rush cancel on reaction to opponent's Super freeze); Ingrid is in a counter-hit state on frames 1-5 and a Punish Counter state for the rest of the move's duration; extends a vulnerable arm hurtbox on frames 21-36 if the counter whiffs"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "22KK",
+          "startup": "1",
+          "total": "55",
+          "hitAdv": "KD +52",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Counter that can absorb strikes/throws (resulting in a counter-attack) or dissipate non-Super projectiles even with multiple hits; counter-attack is a strike knockdown that can be blocked if triggered by a safe jump (3f leniency on safe jump timing); counter-attack has 6f startup / 6f active / 21f recovery / 40f total animation / 1-11 fully invuln / Armor Break / no collision box 1-11f (some moves can pass through before counter-attack connects); after absorbing a projectile hit, Ingrid incurs up to 9f fully invincible recovery per hit (refreshing for each new hit absorbed) followed by 15f vulnerable recovery; can be used to counter most Supers (useful option out of Drive Rush cancel on reaction to opponent's Super freeze); extends a vulnerable arm hurtbox on frames 21-36 if the counter whiffs"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "22PPP",
+          "startup": "61",
+          "total": "135",
+          "hitAdv": "KD +48",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-14'''</span>",
+          "notes": "Dark Ingrid only; tall 16-hit beam projectile that reaches fullscreen; expands forward during the first 4 active frames before reaching full range on the 5th active frame; most/all hits will connect even if opponent falls into the late active frames; chip damage deals 50% of its base damage rather than the usual 25%"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "236236K",
+          "startup": "11",
+          "total": "129",
+          "hitAdv": "HKD +12",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-99'''</span>",
+          "notes": "Can hold the button to spend up to 2 Sun Crests (+400 damage per crest but reduced oki); sends opponent ~1/2 screen away on hit; Ingrid's primary reversal while in Burnout (but slow startup makes it susceptible to safejab pressure); hitbox has a dead zone that can cause it to whiff through high airborne opponents; solid anti-air but cannot hit cross-up; 1st hit deals 400 damage and puts the opponent into a limited juggle state if it trades with a projectile (high float for easy hitconfirm)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "236236P",
+          "startup": "20",
+          "total": "90",
+          "hitAdv": "HKD +30",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-45'''</span>",
+          "notes": "Projectile hitbox that targets the opponent's position 8f before it becomes active (can continue moving slightly upward after this point); the opponent can avoid the projectile by moving quickly (like a fast Drive Rush or jumping after the Super freeze); cinematic time regenerates ~2.1 Drive bars for Ingrid; very slow startup makes it a poor reversal"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "236236P",
+          "startup": "20",
+          "total": "90",
+          "hitAdv": "HKD +30",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-45'''</span>",
+          "notes": "Projectile hitbox that targets the opponent's position 8f before it becomes active (can continue moving slightly upward after this point); the opponent can avoid the projectile by moving quickly (like a fast Drive Rush or jumping after the Super freeze); available at 25% HP or below; cinematic time regenerates ~2.3 Drive bars for Ingrid; very slow startup makes it a poor reversal"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "236236[K]",
+          "startup": "11",
+          "total": "129",
+          "hitAdv": "HKD +20",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-99'''</span>",
+          "notes": "Hold the button for 60 frames to spend 2 Sun Crests for 800 extra damage and a farther knockdown; sends opponent a full screen away on hit; hitbox has a dead zone that can cause it to whiff through high airborne opponents; solid anti-air but cannot hit cross-up; 1st hit deals 400 damage and puts the opponent into a limited juggle state if it trades with a projectile (high float for easy hitconfirm)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "236236{K}",
+          "startup": "11",
+          "total": "129",
+          "hitAdv": "HKD +17",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-99'''</span>",
+          "notes": "Hold the button for 30 frames to spend 1 Sun Crest for 400 extra damage and a farther knockdown; sends opponent ~2/3 screen away on hit; hitbox has a dead zone that can cause it to whiff through high airborne opponents; solid anti-air but cannot hit cross-up; 1st hit deals 400 damage and puts the opponent into a limited juggle state if it trades with a projectile (high float for easy hitconfirm)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "236HK",
+          "startup": "27",
+          "total": "94",
+          "hitAdv": "KD +28",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-25'''</span>",
+          "notes": "4 hits (only 3 hits on block/whiff); Low Crush 25-35f (not airborne during these frames); on hit, Ingrid recovers mid-air on frame 77 with the opponent in a limited juggle state (can follow up with j.MP knockdown / j.HP reset / j.214P)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "236HP",
+          "startup": "15",
+          "total": "46(48)",
+          "hitAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+          "notes": "1-hit projectile; uncharged version has 2f extra whiff recovery if the projectile does not connect within the first 40 frames; sends a projectile upward that stays active for 39f, then descends for another 20f; hold button 15f for charged version that instead flies straight forward mid-air; puts airborne opponents into a limited juggle state; charged version is useful for baiting a whiffed parry or punishing opponents trying to jump out of Ingrid's projectile zoning; uncharged version can be used to safely stock a Sun Crest at mid range if the opponent doesn't jump over it; can only have 1 meterless Sun Shot on-screen at a time (but can be used in conjunction with OD Sun Shot); projectile disappears 1f after Ingrid is hit; extends a slight projectile invuln hand hitbox on frames 16-45 and a foot hurtbox on frames 16-44"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "236KK",
+          "startup": "14",
+          "total": "56",
+          "hitAdv": "KD +40",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "4 hits (only 3 hits on block/whiff); Low Crush 14-26f (not airborne); safe buffer option that becomes +1 vs. Burnout; forces stand on the first 3 hits; carries over Counter-Hit / Punish Counter bonus frame advantage through the first 3 hits (affects SA2 cancel advantage); SA2 cancel: +15/+5"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "236LK",
+          "startup": "8",
+          "total": "51",
+          "hitAdv": "KD +36",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-24'''</span>",
+          "notes": "Strong anti-air but cannot hit cross-up; deals 200 less damage and has reduced advantage (KD +32~38) on active frames 4-10"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "236LP",
+          "startup": "17",
+          "total": "49",
+          "hitAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "1-hit projectile; sends a slower projectile forward a short distance that pauses before continuing forward; hold button 17f for charged version (faster ending projectile speed); puts airborne opponents into a limited juggle state; useful approach tool that can be followed up with Drive Rush pressure from midrange; can only have 1 meterless Sun Shot on-screen at a time (but can be used in conjunction with OD Sun Shot); projectile disappears 1f after Ingrid is hit; extends a slight projectile invuln hand hitbox on frames 18-44 and a foot hurtbox on frames 18-45"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "236LPMP or 236LPHP",
+          "startup": "17",
+          "total": "45",
+          "hitAdv": "KD +52",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "notes": "2-hit OD projectile; LP+MP gives the shorter/slower 236LP version (most useful for approaching from midrange); LP+HP gives the farther/faster 236MP version (more useful as a traditional zoning projectile); hold button 17f for charged version (faster ending projectile speed); 2nd hit puts opponents into a limited juggle state; can only have 1 OD Sun Shot on-screen at a time (but can be used in conjunction with another meterless Sun Shot); projectile disappears 1f after Ingrid is hit; extends a slight projectile invuln hand hitbox on frames 18-44 and a foot hurtbox on frames 18-45; SA2 cancel: KD+61/+10"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "236MK",
+          "startup": "13",
+          "total": "77",
+          "hitAdv": "KD +38",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-23'''</span>",
+          "notes": "2 hits; Low Crush 12-20f (not airborne during these frames); combos from light normals"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "236MP",
+          "startup": "17",
+          "total": "49",
+          "hitAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "1-hit projectile; sends a projectile forward a medium distance that pauses before continuing forward; hold button 17f for charged version (faster ending projectile speed); puts airborne opponents into a limited juggle state; can only have 1 meterless Sun Shot on-screen at a time (but can be used in conjunction with OD Sun Shot); projectile disappears 1f after Ingrid is hit; extends a slight projectile invuln hand hitbox on frames 18-44 and a foot hurtbox on frames 18-45"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "236MPHP",
+          "startup": "15",
+          "total": "42(44)",
+          "hitAdv": "KD +53",
+          "blockAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "notes": "2-hit OD projectile; uncharged version has 2f extra whiff recovery if the projectile does not connect within the first 35 frames; sends a projectile upward that stays active for 39f, then descends for another 20f; hold button 15f for charged version that instead flies straight forward mid-air; 2nd hit puts opponents into a limited juggle state; charged version is useful for baiting a whiffed parry or punishing opponents trying to jump out of Ingrid's projectile zoning; uncharged version can be used to safely stock a Sun Crest at mid range if the opponent doesn't jump over it; can only have 1 OD Sun Shot on-screen at a time (but can be used in conjunction with another meterless Sun Shot); projectile disappears 1f after Ingrid is hit; extends a slight projectile invuln hand hitbox on frames 16-45 and a foot hurtbox on frames 16-44; SA2 cancel: KD+61/+10"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "2HK",
+          "startup": "10",
+          "total": "37",
+          "hitAdv": "KD +30",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span>",
+          "notes": "Solid range and hitbox priority; has juggle potential without Drive Rush"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "2HP",
+          "startup": "12",
+          "total": "34",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Ingrid's longest ranged fully cancelable poke with a strong disjointed hitbox; much safer on block than most similar pokes (sets up a +3 strike/throw/shimmy mixup when used out of Drive Rush on block); has an extended hurtbox on whiff until the end of recovery; SA2 cancel: +10/+8"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "2KKK",
+          "startup": "43",
+          "total": "59",
+          "hitAdv": "KD +48",
+          "blockAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "notes": "Teleports above the opponent and comes down with an overhead strike that is plus on block; puts grounded opponents into a limited juggle state (follow-ups possible in the corner); puts airborne opponents into a limited juggle OTG bounce state (follow-ups possible anywhere on screen); can whiff over opponents that are walking forward; vulnerable for 15f after reappearing (can be countered on reaction)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "2LK",
+          "startup": "5",
+          "total": "16",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Chains into 5LP/2LP/2LK"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "2LP",
+          "startup": "4",
+          "total": "14",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Chains into 5LP/2LP/2LK; more range and less pushback than 5LP but worse hit advantage (cannot link on hit to 5LK or on counter-hit to 2MP); DR cancel is delayed until after active frames; topmost hurtbox on frames 1-5 is vulnerable only to aerial strikes (preventing its use as an anti-air); SA2 cancel: +1/-4"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "2MK",
+          "startup": "8",
+          "total": "29",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Slightly below average range for a cancelable low poke; Special/DR cancel (but not DI cancel) is delayed until after active frames; SA2 cancel: +7/+0"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "2MP",
+          "startup": "7",
+          "total": "22(25)",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+6'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "3f extra recovery on whiff; one of Ingrid's primary buffer tools (less range than 5MK/2HP but also less likely to be whiff punished); links into 5MP on crouching opponents or into 5LK vs. standing/crouching; high active frame count (up to +9 oH / +2 oB with meaty timing); topmost hurtbox on frames 1-10 is vulnerable only to aerial strikes (preventing its use as an anti-air); SA2 cancel: +8/+1"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "2PPPKKK",
+          "startup": "123 (total)",
+          "total": "123",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"You're done!\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "360+KK",
+          "startup": "6+0",
+          "total": "108",
+          "hitAdv": "HKD +36",
+          "blockAdv": "-",
+          "notes": "Dark Ingrid only; command grab Super; opponent cannot jump after the freeze; can be comboed into on grounded opponents; cinematic time regenerates ~1.6 Drive bars for Ingrid"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "4HP",
+          "startup": "14",
+          "total": "38",
+          "hitAdv": "KD +45",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span>",
+          "notes": "Whiffs on crouching opponents; slow but solid anti-air with an extremely rewarding Target Combo juggle follow-up; strong hitbox but no head or upper body invincibility (likely to trade if not timed early); puts the opponent into a free juggle state on hit; cannot hit cross-up; very short horizontal range on grounded opponents; 7f blockstring gap into 4HP~HP TC (up to 11f if delayed); Ingrid shifts backward during startup unless she is fully cornered"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "4HP~HP",
+          "startup": "23",
+          "total": "46",
+          "hitAdv": "KD +43(+37)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-10'''</span>",
+          "notes": "Whiffs on crouching opponents (opponent can crouch block even after stand blocking the initial 4HP); puts opponents into a limited juggle state; reduced KD Advantage if only the 2nd hit connects on a grounded opponent; 7f blockstring gap between hits (up to 11f if delayed); SA2 cancel: KD+53/+0"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "4KKK",
+          "startup": "13",
+          "total": "48",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Teleports away from the opponent; Ingrid is in a counter-hit state on frames 1-12 (before disappearing); after reappearing, Ingrid incurs 22 vulnerable recovery frames with an extended forward hurtbox (Punish Counter state); can use the teleport animation to bait an anti-air reaction to the Forward/Air versions of Vanishing Sun; Distance: 1.74"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "4LPLK",
+          "startup": "5",
+          "total": "30",
+          "hitAdv": "KD +20",
+          "blockAdv": "-",
+          "notes": "Side switch; no true throw oki after corner side switch but can threaten with ranged normals, forward dash (+0), or Drive Rush normals like 5MP/5HK/2HP; can set up a LP Sun Shot that allows Ingrid to dash in with frame advantage while recovering quickly enough to anti-air if the opponent jumps out of the corner; can throw opponent into falling projectiles after SA2 activation (free juggle state with no damage scaling, since the throw itself does not deal damage in this scenario); a successful Throw Escape builds 0.5 Drive bars for the defender; Throw Escape is awarded to a random player if input simultaneously"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "4MK",
+          "startup": "9",
+          "total": "29",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "Foot hurtbox shifts backward on frames 5-11f (more effective against low pokes); has strong hitbox priority and a hitconfirmable TC extension; 6f blockstring gap into 4MK~HP TC (up to 8f if delayed)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "4MK~HP",
+          "startup": "20",
+          "total": "46",
+          "hitAdv": "KD +44",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-11'''</span>",
+          "notes": "TC extension that makes 4MK a solid whiff punishing tool; puts opponents into a limited juggle state and does not increase the juggle counter on airborne opponents; 6f blockstring gap between hits (up to 8f if delayed)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "4PPPKKK",
+          "startup": "425(914) (total)",
+          "total": "425(914)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"Oop, I forgot I have an urgent matter. You, babysit this one for a while.\"; summons a controllable Monoid that cannot block and has access to 6 attacks; LP or LK is a divekick-like move that hits low, MP or MK is an overhead, HP or HK is a high strike, HP+HK performs a beam attack, any aerial button in the air performs an aerial strike, and 214236+HP or HK performs a 3-bar Super; the Monoid is fully controllable mid-air; Ingrid comes back if the Monoid stands still or after hitting with Super; when Ingrid returns and high fives the Monoid, input LP~LP~4~LK~HK (Modern: L~L~4~M~H) to absorb the Monoid and transform into a more powerful version (\"Dark Ingrid\"); this transformation also fully heals Ingrid, fills her Super gauge, and grants 4 Sun Crests; Dark Ingrid gains access to 2 new Hidden Art special moves (22PPP and 214214K) and a new SA2 (360+KK)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "5HK",
+          "startup": "9",
+          "total": "36",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "2 hits; only the 2nd hit is Super cancelable; Super cancel is delayed until after active frames; puts airborne opponents into a limited juggle OTG state that can juggle into SA1/SA3 (or pick up a post-SA2 juggle if the opponent is high enough); active frames 1-3 hit upward but have poor anti-air hitbox priority; Counter-hit/Punish Counter bonus advantage applies to both hits; strong approach tool out of Drive Rush (links to mediums on hit or grants a +2 strike/throw/shimmy mixup on block); SA2 cancel: +10/+4"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "5HP",
+          "startup": "12",
+          "total": "34(35)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+          "notes": "1f extra recovery on whiff and block; long range whiff punish tool (links to 6HP at nearly any range on Punish Counter); extends a hurtbox 1f before active that is vulnerable to projectiles"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "5LK",
+          "startup": "5",
+          "total": "18",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Longest range of Ingrid's light normals (but relatively short for a 5f light); DR cancel is delayed until after active frames; SA2 cancel: +3/-3"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "5LP",
+          "startup": "4",
+          "total": "13",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Chains into 5LP/2LP/2LK; shorter range than 2LP but links naturally into 5LP or into 2MP on counter-hit; SA2 cancel: +1/-5"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "5MK",
+          "startup": "8",
+          "total": "27",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Has forward movement on startup (allows Ingrid to maintain a consistent corner spacing when canceling into Sun Shot); highest damage and hitstun out of Ingrid's cancelable mediums; DR/PC version combos into 236HK making it a strong whiff punish tool or DR combo extension; SA2 cancel: +10/+3"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "5MP",
+          "startup": "6",
+          "total": "23",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+          "notes": "Strong meaty option due to high active frame count (up to +5 oH / +4 oB); true blockstring when chained into 5MP~MK even at max delay; SA2 cancel: +5/+4"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "5MP~MK",
+          "startup": "12",
+          "total": "37",
+          "hitAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-11'''</span>",
+          "notes": "Important combo tool for converting from Ingrid's 6f medium; true blockstring even at max delay; 2nd hit keeps airborne opponents in a juggle state (does not increase the juggle counter); SA2 cancel: +9/+1"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "5PPPKKK",
+          "startup": "1540 (total)",
+          "total": "1540",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"Ahhh, time for a break I guess. Hmm? You too little one? Oh, you're such a little nice Monoid. Yes you are, yes you are, yes you are! See ya later!\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "6HP",
+          "startup": "17",
+          "total": "40(43)",
+          "hitAdv": "KD +38",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "3f extra recovery on whiff; Low Crush on frames 9-19 (not airborne); cancelable into j.214P on hit or block (cancel is delayed until after 1st recovery frame); j.214P cancel can be interrupted with 4-5f normals or air-invuln specials; KD +10 after cancel into j.214LP; can lead to huge damage with Sun Crests and j.214PP hitconfirm; high pushback keeps it safe on block in most scenarios; puts the opponent into a free juggle state on hit or maintains the existing juggle count"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "6HPHK",
+          "startup": "18",
+          "total": "46(51)",
+          "hitAdv": "KD +23",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Performed by holding 6HPHK on wakeup; 5f extra recovery on hit; does not have any screen freeze except for a 12f freeze when interacting with the opponent's throw hitbox (this also refunds 1 Drive bar after punishing the throw); see [[Street_Fighter_6/Gauges#Drive_Reversal|Drive Reversal]]."
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "6HPHK",
+          "startup": "20",
+          "total": "48(53)",
+          "hitAdv": "KD +23",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Performed by inputting 6HPHK during blockstun; 5f extra recovery on hit; freezes the screen for 4f during startup; see [[Street_Fighter_6/Gauges#Drive_Reversal|Drive Reversal]]."
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "6KKK",
+          "startup": "36",
+          "total": "57",
+          "hitAdv": "KD +44",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Teleports forward to the opponent's location and performs a kick that is safe on block; puts opponents into a limited juggle state (follow-ups possible on a corner airborne connect); can whiff in juggle routes where the opponent is flying backward too quickly; vulnerable for 8f after reappearing (can be countered on reaction)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "6MP",
+          "startup": "21",
+          "total": "40",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Short range for an overhead; high active frame count (up to +6 oH / 0 oB with meaty timing for a potential meterless medium link); puts airborne opponents into a limited juggle OTG state"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "6PPPKKK",
+          "startup": "382(583)",
+          "total": "583(590)",
+          "hitAdv": "KD -99",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-189'''</span>",
+          "notes": "\"My power howls! Face me! Just kidding.\"; if opponent stands directly in front of Ingrid, she performs an attack that deals 0 damage but grants full Super gauge to the opponent on hit/block/parry; references M. Bison's back taunt"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "HP or HK",
+          "startup": "30",
+          "total": "59",
+          "hitAdv": "KD +31",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-14'''</span>",
+          "notes": "Requires summoning the Monoid with Ingrid's Back Taunt; can hold forward to steer and increase the attack's range; knocks down on grounded opponents and resets airborne opponents; Modern Controls: H"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "HP+HK",
+          "startup": "32",
+          "total": "68",
+          "hitAdv": "KD +37",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-13'''</span>",
+          "notes": "Requires summoning the Monoid with Ingrid's Back Taunt; cannot steer the attack forward like the other Monoid attacks; knocks down on both grounded and airborne opponents; input has no kara-cancel leniency (must hit HP+HK on the exact same frame); Modern Controls: Sp"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "HPHK",
+          "startup": "26",
+          "total": "62",
+          "hitAdv": "KD +35 / Wall Splat KD +65",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span> / Wall Splat HKD +72",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Impact|Drive Impact]]. Airborne connect gives spinning juggle state on Punish Counter or corner Wall Splat with variable height."
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "j.214HP (1 Stock)",
+          "startup": "22",
+          "total": "-",
+          "hitAdv": "KD +44(+61)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span><span style=\"color: #30D5B8;\">'''(+13)'''</span>",
+          "notes": "2-hit projectile hitbox; can be used during Forward/Neutral jump only on frames 13-37; Ingrid will land before the projectile comes out if activated on jump frame 30-37; consumes 1 Sun Crest for more hits, extra damage, and longer range compared to 0-stock MP/HP version; stock is consumed on frame 2; can be canceled into from 6HP (on hit becomes KD +40, on block becomes -10 vs. standing, -9 vs. crouching); puts opponents into a limited juggle state (corner follow-ups possible if input low to the ground); 2f extra landing recovery when performed from a neutral jump; Ingrid is in a crouching state on the final landing recovery frame; extends a large full-body hurtbox until Ingrid lands (lower body hurtbox is projectile invincible); hitbox is considered both a projectile and an airborne attack (loses to both types of invuln)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "j.214HP (2 Stock)",
+          "startup": "22",
+          "total": "-",
+          "hitAdv": "KD +60(+78)",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span><span style=\"color: #30D5B8;\">'''(+15)'''</span>",
+          "notes": "3-hit projectile hitbox; can be used during Forward/Neutral jump only on frames 13-37; Ingrid will land before the projectile comes out if activated on jump frame 30-37; consumes 2 Sun Crests for more hits, extra damage, and longer range compared to 1-stock HP version; stocks are consumed on frame 2 and the first active frame (only 1 stock is consumed if interrupted on startup or if Ingrid lands before active); can be canceled into from 6HP (on hit becomes KD +55, on block becomes -6 vs. standing, -5 vs. crouching); launches opponents upward into a limited juggle state; 3f extra landing recovery when performed from a neutral jump; Ingrid is in a crouching state on the final landing recovery frame; extends a large full-body hurtbox until Ingrid lands (lower body hurtbox is projectile invincible); hitbox is considered both a projectile and an airborne attack (loses to both types of invuln)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "j.214LP",
+          "startup": "-",
+          "total": "48",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Can be used during Forward/Neutral jump only on frames 17-33; builds 1 Sun Crest on frame 47 (1f before end of recovery); the animation lasts 48f regardless of when it was input during the jump (more total recovery if input late in the jump arc); landing recovery ranges from 8-30f depending on activation time; Ingrid is in a counter-hit state for the entire duration and a Forced Knockdown state during all airborne frames; if performed with 4 Sun Crests, Ingrid builds 3000 Drive gauge instead; can be canceled into from 6HP (on hit becomes KD +10, on block becomes -32 and shifts backward); extends a large full-body hurtbox for the entire move duration; can be used after midscreen 236HK (earliest timing) to gain a stock while maintaining KD +5 oki after a forward dash"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "j.214MP",
+          "startup": "22",
+          "total": "-",
+          "hitAdv": "KD +43(+55)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span><span style=\"color: #30D5B8;\">'''(+6)'''</span>",
+          "notes": "1-hit projectile hitbox; can be used during Forward/Neutral jump only on frames 13-37; Ingrid will land before the projectile comes out if activated on jump frame 30-37; this version also comes out when input with HP button if Ingrid has 0 Sun Crests; can be canceled into from 6HP (on hit becomes KD +36, on block becomes -11 vs. standing, -10 vs. crouching); puts opponents into a limited juggle state (corner follow-ups possible if input low to the ground); 2f extra landing recovery when performed from a neutral jump; Ingrid is in a crouching state on the final landing recovery frame; extends a large full-body hurtbox until Ingrid lands (lower body hurtbox is projectile invincible); can be used after corner 236HK launch (earliest timing), allowing Ingrid to land and build another Sun Crest without losing corner oki; hitbox is considered both a projectile and an airborne attack (loses to both types of invuln)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "j.214PP",
+          "startup": "22",
+          "total": "-",
+          "hitAdv": "KD +44(+61)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span><span style=\"color: #30D5B8;\">'''(+13)'''</span>",
+          "notes": "2-hit OD projectile hitbox; can be used during Forward/Neutral jump only on frames 13-37; Ingrid will land before the projectile comes out if activated on jump frame 30-37; has the properties of the 1-stock HP version without spending any Sun Crests; can be canceled into from 6HP (on hit becomes KD +40, on block becomes -10 vs. standing, -9 vs. crouching); puts opponents into a limited juggle state (corner follow-ups possible if input low to the ground); 2f extra landing recovery when performed from a neutral jump; Ingrid is in a crouching state on the final landing recovery frame; extends a large full-body hurtbox until Ingrid lands (lower body hurtbox is projectile invincible); hitbox is considered both a projectile and an airborne attack (loses to both types of invuln)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "j.214PP (1 Stock)",
+          "startup": "22",
+          "total": "-",
+          "hitAdv": "KD +59(+78)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span><span style=\"color: #30D5B8;\">'''(+15)'''</span>",
+          "notes": "3-hit OD projectile hitbox; can be used during Forward/Neutral jump only on frames 13-37; Ingrid will land before the projectile comes out if activated on jump frame 30-37; has the properties of the 2-stock HP version but only costs 1 Sun Crest; stock is consumed on frame 2; can be canceled into from 6HP (on hit becomes KD +55, on block becomes -6 vs. standing, -5 vs. crouching); launches opponents upward into a limited juggle state; 3f extra landing recovery when performed from a neutral jump; Ingrid is in a crouching state on the final landing recovery frame; extends a large full-body hurtbox until Ingrid lands (lower body hurtbox is projectile invincible); hitbox is considered both a projectile and an airborne attack (loses to both types of invuln)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "j.214PP (2 Stock)",
+          "startup": "22",
+          "total": "-",
+          "hitAdv": "KD +73(+88)",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+4(+19)'''</span>",
+          "notes": "4-hit OD projectile hitbox; can be used during Forward/Neutral jump only on frames 13-37; Ingrid will land before the projectile comes out if activated on jump frame 30-37; has properties greater than the 2-stock HP version or 1-stock OD version for 2 Sun Crests; stocks are consumed on frame 2 and the first active frame (only 1 stock is consumed if interrupted on startup or if Ingrid lands before active); can be canceled into from 6HP (on hit becomes KD +66, on block becomes +1 vs. standing, +2 vs. crouching); puts opponents into a free juggle OTG bounce state; if the opponent Perfect Parries and Ingrid lands before all 4 hits connect, all remaining hits will fail to come out resulting in worse frame advantage; Ingrid is in a crouching state on the final landing recovery frame; extends a large full-body hurtbox until Ingrid lands (lower body hurtbox is projectile invincible); hitbox is considered both a projectile and an airborne attack (loses to both types of invuln)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "j.HK",
+          "startup": "12",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+10(+15)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+6(+11)'''</span>",
+          "notes": "Puts airborne opponents into a limited juggle state (can juggle into Target Combo extension); lower body projectile invuln 12-19f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs); best horizontal range of Ingrid's jump-ins"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "j.HK~j.HK",
+          "startup": "8",
+          "total": "-",
+          "hitAdv": "KD",
+          "blockAdv": "-",
+          "notes": "Puts airborne opponents into a limited juggle state; cannot hit grounded opponents (too slow to connect even after max-height j.HK); 1st hit pulls opponents inward (if the 2nd hit whiffs, opponent can fly over Ingrid for a side switch)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "j.HP",
+          "startup": "9",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+8(+15)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+4(+11)'''</span>",
+          "notes": "Spikes airborne opponents on counter-hit/Punish Counter; has juggle potential (causes air reset when juggled after 236HK); lower body projectile invuln 9-23f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs); hitbox extends farther beyond Ingrid's arm (visually deceptive); best downward reach of Ingrid's jump-ins for vertical approaches"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "j.LK",
+          "startup": "6",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5(+10)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span><span style=\"color: #30D5B8;\">'''(+6)'''</span>",
+          "notes": "Cross-up; good air-to-air for potential cross-ups (e.g. E. Honda Sumo Smash, M. Bison Devil Reverse)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "j.LP",
+          "startup": "4",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+6(+9)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+2</span><span style=\"color: #30D5B8;\">'''(+5)'''</span>",
+          "notes": "Fastest air-to-air; good hitbox priority"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "j.MK",
+          "startup": "8",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+9(+13)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+5(+9)'''</span>",
+          "notes": "Cross-up; lower body projectile invuln 8-21f (if used immediately on the way up, can avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "j.MP",
+          "startup": "8",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+10(+11)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+6(+7)'''</span>",
+          "notes": "Puts airborne opponents into a limited juggle state; lower body projectile invuln 8-23f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "j.X",
+          "startup": "13",
+          "total": "-",
+          "hitAdv": "KD +19(+23)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-25(-20)'''</span>",
+          "notes": "Requires summoning the Monoid with Ingrid's Back Taunt; can hold forward to steer and increase the attack's range; knocks down on grounded opponents and resets airborne opponents; gains a second hitbox on active frames 3-6 that can hit cross-up; Modern Controls: j.X"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "LP or LK",
+          "startup": "38",
+          "total": "99",
+          "hitAdv": "KD +8",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-40'''</span>",
+          "notes": "Requires summoning the Monoid with Ingrid's Back Taunt; 3 hits (all hit low despite the divekick-like animation); can hold forward to steer and increase the attack's range; Modern Controls: L"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "LPLK",
+          "startup": "5",
+          "total": "30",
+          "hitAdv": "KD +21",
+          "blockAdv": "-",
+          "notes": "No true throw loop, but can dash to become +1 for a corner pseudo-throw loop (also in range for a 2-hit light confirm); can follow with Drive Rush normals like 5HK/2HP; can set up a LP Sun Shot that allows Ingrid to dash in with frame advantage while recovering quickly enough to anti-air if the opponent jumps out of the corner; can throw opponent into falling projectiles after SA2 activation (limited juggle state and the throw itself deals full damage); a successful Throw Escape builds 0.5 Drive bars for the defender; Throw Escape is awarded to a random player if input simultaneously"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "MP or MK",
+          "startup": "37",
+          "total": "79",
+          "hitAdv": "KD +5",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-27'''</span>",
+          "notes": "Requires summoning the Monoid with Ingrid's Back Taunt; can hold forward to steer and increase the attack's range; knocks down on grounded opponents and resets airborne opponents; Modern Controls: M"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "MPMK",
+          "startup": "1",
+          "total": "45(3)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Parry|Drive Parry]]. Perfect Parrying has only 1F of recovery and disables the opponent from canceling their attack. Perfect Parrying projectiles puts you into fixed 11 frames of recovery. After a Perfect Parry, all Super Gauge gain is reduced by 20% and Drive Gauge gain/damage is reduced by 50% for the entire punish combo."
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "MPMK or 66",
+          "startup": "9",
+          "total": "24(46)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Rush|Drive Rush]]; 3-bar version performed on hit/block from a cancelable normal; can also be performed on whiff from cancelable light normals; startup refers to minimum time before an attack can cancel the Drive Rush animation; the first 15 recovery frames are cancelable into any attack; the final 22 recovery frames are cancelable into any attack or movement option or blocking (except Parry); only Normal and Command Normal attacks are enhanced with +4 frame advantage and improved juggle properties"
+        }
+      },
+      {
+        "title": {
+          "chara": "Ingrid",
+          "input": "MPMK~66",
+          "startup": "3+8",
+          "total": "26(48)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Rush|Drive Rush]]; 1-bar version performed out of a Parry; startup refers to minimum time before an attack can cancel the Drive Rush animation (if performed immediately after a successful Parry, only 1+8 startup); the first 15 recovery frames are cancelable into any attack; the final 22 recovery frames are cancelable into any attack or movement option or blocking (except Parry); only Normal and Command Normal attacks are enhanced with +4 frame advantage and improved juggle properties; Distance: 0.375 (min/throw), 1.502 (min/block), 3.083 (max/final DR frame)"
+        }
+      }
+    ]
+  }
+}

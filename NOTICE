@@ -1,0 +1,32 @@
+SF6 Frame Guess — Data attribution and changes
+
+The community frame-data material under staging/sf6-frame-data/ and
+staging/sf6-frame-data-quality/ is derived from:
+
+  SuperCombo Wiki contributors — Street Fighter 6 Frame Data
+  https://wiki.supercombo.gg/w/Street_Fighter_6
+  Public MediaWiki/Cargo API: https://srk.shib.live/api.php
+
+  RyoSogawa/sf6-sensei — structured normalization
+  https://github.com/RyoSogawa/sf6-sensei
+  Snapshot: a0b4105fb368c308699ec0757ee6e4182e5a9d1c
+
+These data and their data-derived adaptations are retained under Creative
+Commons Attribution-ShareAlike 4.0 International (CC-BY-SA-4.0):
+https://creativecommons.org/licenses/by-sa/4.0/
+The license text is included in LICENSES/CC-BY-SA-4.0.txt.
+
+Changes in this project: scope filtering, structured command conversion,
+Japanese normal-move labels, frame-value status classification, exclusion and
+collision audits, source-record-bound review annotations, exact-duplicate
+merging, restoration of explicit knockdown markers as D, restoration of
+explicit not-applicable dashes, quality reports and before/after diffs.
+Data remains unverified for production; see docs/FRAME_DATA_QUALITY_REPORT.md.
+
+The original upstream NOTICE files are preserved inside both staging folders.
+The upstream NOTICE's reference to an MIT source-code license concerns that
+upstream project; it is not a blanket license grant for this repository's code.
+Synthetic fixtures are separate and carry their own recorded attribution.
+
+Street Fighter and related names and marks belong to CAPCOM and their
+respective owners. This unofficial project is not endorsed by CAPCOM.

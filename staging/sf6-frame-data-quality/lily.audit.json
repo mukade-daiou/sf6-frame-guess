@@ -1,0 +1,530 @@
+{
+  "characterId": "lily",
+  "rawMoveCount": 76,
+  "candidateMoveCount": 20,
+  "candidateNormals": 12,
+  "candidateSpecials": 8,
+  "upstreamFetchedAt": "2026-08-19T04:05:24.993Z",
+  "missingNormals": [],
+  "excluded": [
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "214HP (HOLD OK)",
+      "name": "Condor Wind (attack)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "214LP (HOLD OK)",
+      "name": "Condor Wind (attack)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "214[LP]",
+      "name": "Condor Wind (stock)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "214MP (HOLD OK)",
+      "name": "Condor Wind (attack)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "214PP (HOLD OK)",
+      "name": "Condor Wind (attack)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "214[PP]",
+      "name": "Condor Wind (stock)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "W.236HK",
+      "name": "Condor Spire (Windclad)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "W.236LKMK or W.236LKHK",
+      "name": "Condor Spire (Windclad)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "W.236LK",
+      "name": "Condor Spire (Windclad)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "W.236MKHK",
+      "name": "Condor Spire (Windclad)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "W.236MK",
+      "name": "Condor Spire (Windclad)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "360+HP",
+      "name": "Mexican Typhoon",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "360+LP",
+      "name": "Mexican Typhoon",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "360+MP",
+      "name": "Mexican Typhoon",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "360+PP",
+      "name": "Mexican Typhoon",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "3HP",
+      "name": "Ridge Thrust",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "4HP",
+      "name": "Horn Breaker",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "W.623HP",
+      "name": "Tomahawk Buster (Windclad)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "W.623LP",
+      "name": "Tomahawk Buster (Windclad)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "W.623MP",
+      "name": "Tomahawk Buster (Windclad)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "W.623PP",
+      "name": "Tomahawk Buster (Windclad)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6HP",
+      "name": "Desert Storm 1",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6HP~HP",
+      "name": "Desert Storm 2",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "6HP~HP~HP",
+      "name": "Desert Storm 3",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.2HP",
+      "name": "Great Spin",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.HK",
+      "name": "Jumping Heavy Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.HP",
+      "name": "Jumping Heavy Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.LK",
+      "name": "Jumping Light Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.LP",
+      "name": "Jumping Light Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.MK",
+      "name": "Jumping Medium Kick",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.MP",
+      "name": "Jumping Medium Punch",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.MP~MP",
+      "name": "Double Arrow",
+      "category": "normal"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.PP",
+      "name": "Condor Dive",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "j.PPP",
+      "name": "Condor Dive",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "W.j.PPP",
+      "name": "Condor Dive (Windclad)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "W.j.PP",
+      "name": "Condor Dive (Windclad)",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "W.j.PP~PPP",
+      "name": "Dive Follow-up",
+      "category": "special"
+    },
+    {
+      "reason": "out_of_scope_or_unsupported_input",
+      "input": "W.j.PP~PP",
+      "name": "Dive Follow-up",
+      "category": "special"
+    }
+  ],
+  "gameVersion": "UNVERIFIED",
+  "status": "STAGING_ONLY",
+  "review": {
+    "applied": [
+      {
+        "characterId": "lily",
+        "input": "2HK",
+        "name": "Squall Kick",
+        "fingerprint": "88f261a8d39601c7fab5a7898ea2ab7184e0c932f0b01e6d719d255639926023",
+        "action": "replace_hit_D",
+        "classification": "explicit_knockdown_marker",
+        "reason": "Same input, normalized source notes, startup, and numeric KD advantage match pinned row; restore lost KD semantics only. No cross-patch numerical frame value imported.",
+        "sourceDisplay": "KD +32",
+        "evidenceRetrievedAt": "2026-11-05T09:20:27.778Z",
+        "urls": [
+          "https://wiki.supercombo.gg/w/Street_Fighter_6/Lily/Frame_data",
+          "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Lily%22&limit=500"
+        ],
+        "patchStatus": "UNVERIFIED"
+      }
+    ],
+    "stale": [],
+    "classifiedExclusions": [
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "214HP (HOLD OK)",
+        "name": "Condor Wind (attack)",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "214LP (HOLD OK)",
+        "name": "Condor Wind (attack)",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "214[LP]",
+        "name": "Condor Wind (stock)",
+        "category": "special",
+        "classification": "held_button"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "214MP (HOLD OK)",
+        "name": "Condor Wind (attack)",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "214PP (HOLD OK)",
+        "name": "Condor Wind (attack)",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "214[PP]",
+        "name": "Condor Wind (stock)",
+        "category": "special",
+        "classification": "held_button"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "W.236HK",
+        "name": "Condor Spire (Windclad)",
+        "category": "special",
+        "classification": "windclad_resource"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "W.236LKMK or W.236LKHK",
+        "name": "Condor Spire (Windclad)",
+        "category": "special",
+        "classification": "windclad_resource"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "W.236LK",
+        "name": "Condor Spire (Windclad)",
+        "category": "special",
+        "classification": "windclad_resource"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "W.236MKHK",
+        "name": "Condor Spire (Windclad)",
+        "category": "special",
+        "classification": "windclad_resource"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "W.236MK",
+        "name": "Condor Spire (Windclad)",
+        "category": "special",
+        "classification": "windclad_resource"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "360+HP",
+        "name": "Mexican Typhoon",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "360+LP",
+        "name": "Mexican Typhoon",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "360+MP",
+        "name": "Mexican Typhoon",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "360+PP",
+        "name": "Mexican Typhoon",
+        "category": "special",
+        "classification": "unsupported_or_unreviewed"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "3HP",
+        "name": "Ridge Thrust",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "4HP",
+        "name": "Horn Breaker",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "W.623HP",
+        "name": "Tomahawk Buster (Windclad)",
+        "category": "special",
+        "classification": "windclad_resource"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "W.623LP",
+        "name": "Tomahawk Buster (Windclad)",
+        "category": "special",
+        "classification": "windclad_resource"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "W.623MP",
+        "name": "Tomahawk Buster (Windclad)",
+        "category": "special",
+        "classification": "windclad_resource"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "W.623PP",
+        "name": "Tomahawk Buster (Windclad)",
+        "category": "special",
+        "classification": "windclad_resource"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6HP",
+        "name": "Desert Storm 1",
+        "category": "normal",
+        "classification": "non_basic_normal"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6HP~HP",
+        "name": "Desert Storm 2",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "6HP~HP~HP",
+        "name": "Desert Storm 3",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.2HP",
+        "name": "Great Spin",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.HK",
+        "name": "Jumping Heavy Kick",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.HP",
+        "name": "Jumping Heavy Punch",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.LK",
+        "name": "Jumping Light Kick",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.LP",
+        "name": "Jumping Light Punch",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.MK",
+        "name": "Jumping Medium Kick",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.MP",
+        "name": "Jumping Medium Punch",
+        "category": "normal",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.MP~MP",
+        "name": "Double Arrow",
+        "category": "normal",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.PP",
+        "name": "Condor Dive",
+        "category": "special",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "j.PPP",
+        "name": "Condor Dive",
+        "category": "special",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "W.j.PPP",
+        "name": "Condor Dive (Windclad)",
+        "category": "special",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "W.j.PP",
+        "name": "Condor Dive (Windclad)",
+        "category": "special",
+        "classification": "air_move"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "W.j.PP~PPP",
+        "name": "Dive Follow-up",
+        "category": "special",
+        "classification": "follow_up"
+      },
+      {
+        "reason": "out_of_scope_or_unsupported_input",
+        "input": "W.j.PP~PP",
+        "name": "Dive Follow-up",
+        "category": "special",
+        "classification": "follow_up"
+      }
+    ]
+  }
+}

@@ -1,0 +1,882 @@
+{
+  "url": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Chun-Li%22&limit=500",
+  "retrievedAt": "2026-11-05T09:20:26.115Z",
+  "status": 200,
+  "characterId": "chunli",
+  "gameVersion": "UNVERIFIED",
+  "license": "CC-BY-SA-4.0",
+  "attribution": "SuperCombo Wiki contributors",
+  "data": {
+    "cargoquery": [
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "214214K",
+          "startup": "8",
+          "total": "82",
+          "hitAdv": "HKD +18",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-24'''</span>",
+          "notes": "Hits 3 times on block (true blockstring); no cinematic if 1st hit whiffs (1000 dmg total); available at 25% HP or below; cinematic time regenerates ~2 Drive bars for Chun-Li"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "214214K",
+          "startup": "8",
+          "total": "82",
+          "hitAdv": "HKD +6",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-24'''</span>",
+          "notes": "Hits 3 times on block (true blockstring); no cinematic if 1st hit whiffs (1000 dmg total); cinematic time regenerates ~1.8 Drive bars for Chun-Li"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "214HK",
+          "startup": "32",
+          "total": "50(52)",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+6'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "2f extra recovery on whiff; crouching state during recovery; cannot hit cross-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "214KK",
+          "startup": "26",
+          "total": "44",
+          "hitAdv": "KD +52 OTG",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+          "notes": "Bounces for an OTG juggle state on hit; crouching state during recovery; cannot hit cross-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "214LK",
+          "startup": "23",
+          "total": "45",
+          "hitAdv": "KD +21",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "Crouching state during recovery; cannot hit cross-up; safe overhead vs. Burnout and can be spaced safely (leniency depends heavily on the opponent's 4-frame normal range); causes a very short OTG bounce when juggled into for improved KD advantage; SA3 cancel only combos when juggled into and can be useful for chip damage or reacting to DI armor"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "214MK",
+          "startup": "27",
+          "total": "45",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Crouching state during recovery; cannot hit cross-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "214P",
+          "startup": "14(~)",
+          "total": "-",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Crouching state 14-22f, then low profiles until exiting stance; follow-ups can be input on frame 15 at the earliest; counter-hit state for entire animation; if no follow-up, stays crouched for 57f (hold crouch to extend); can block while crouching (cannot block overheads, as this leads to Stance Exit); blocking an attack immediately exits stance and allows a Drive Reversal; can take longer to enter stance when canceled from heavy normals, giving much worse frame advantage if a follow-up is not used immediately"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "214P~8",
+          "startup": "-",
+          "total": "-",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Input Up (or another 214P) to manually exit stance (fastest total Serenity Stream time is 37f); cannot block while exiting stance; counter-hit state for entire animation; final 14f of recovery is in a standing state; 18f version occurs automatically after 14+57f (can delay by holding crouch); when Stance Exit occurs automatically after LP/LK/MK stance attacks, the total exit duration is increased and Chun can stand block before the final 18f recovery period"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "214P~HK",
+          "startup": "8",
+          "total": "[36]",
+          "hitAdv": "KD +41",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-9'''</span>",
+          "notes": "Jump cancelable on hit only; puts opponent into limited juggle state; exits Serenity Stream upon use; 1-6f crouching state"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "214P~HP",
+          "startup": "23",
+          "total": "51",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "notes": "No charge required to cancel into Kikoken or Spinning Bird Kick; exits Serenity Stream upon use; only first hit is an overhead; 1-2f low profile, 1-5f crouching state; 29-42f no head hurtbox; leaves Chun-Li inside throw range after a close range block (very powerful vs. opponents in Burnout)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "214P~LK",
+          "startup": "8",
+          "total": "25[48]",
+          "hitAdv": "<span style=\"color: #bcbd0c;\">0<span style=\"color: #b70c0b;\">'''(-23)'''</span></span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4(-27)'''</span>",
+          "notes": "No charge required to cancel into Kikoken or Spinning Bird Kick; [] refers to recovery when exiting Serenity Stream; on Perfect Parry, Chun-Li is forced to exit the stance (5f less total recovery on PP) and is in a Punish Counter state during the entire stance exit animation; when automatically transitioning into Stance Exit, Chun-Li can block for the first 5 transition frames (except on Perfect Parry)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "214P~LP",
+          "startup": "5",
+          "total": "25[45]",
+          "hitAdv": "<span style=\"color: #ff6347;\">-2<span style=\"color: #b70c0b;\">'''(-22)'''</span></span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3<span style=\"color: #b70c0b;\">'''(-23)'''</span></span>",
+          "notes": "No charge required to cancel into Kikoken or Spinning Bird Kick; [] refers to recovery when exiting Serenity Stream; slight low profile for entire move duration; special/DR/DI cancel is delayed until after 4th active frame; on Perfect Parry, Chun-Li is forced to exit the stance (2f less total recovery on PP) and is in a Punish Counter state during the entire stance exit animation; when automatically transitioning into Stance Exit, Chun-Li can block for the first 2 transition frames (except on Perfect Parry)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "214P~MK",
+          "startup": "10",
+          "total": "36[60]",
+          "hitAdv": "<span style=\"color: #ff6347;\">-3</span><span style=\"color: #b70c0b;\">'''(-27)'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-9(-33)'''</span>",
+          "notes": "No charge required to cancel into Kikoken or Spinning Bird Kick; [] refers to recovery when exiting Serenity Stream; puts airborne opponents into limited juggle state; special/DR/DI cancel is delayed until after 4th active frame; on Perfect Parry, Chun-Li is forced to exit the stance (6f less total recovery on PP) and is in a Punish Counter state during the entire stance exit animation; when automatically transitioning into Stance Exit, Chun-Li can block for the first 6 transition frames (except on Perfect Parry)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "214P~MP",
+          "startup": "6",
+          "total": "36[49]",
+          "hitAdv": "KD +34(+45)<br>[KD +21(+32)]",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-15(-4)'''</span><br><span style=\"color: #b70c0b;\">'''[-28(-17)]'''</span>",
+          "notes": "Low profile/upper body projectile invuln: 1-31f (exit stance) / 1-36f (remain crouched); extra-low profile 8-21f (can even go under Drive Impact); [] refers to recovery when exiting Serenity Stream; () refers to KD Adv. when exiting Serenity Stream on hit; on Perfect Parry, Chun-Li is forced to exit the stance and is in a Punish Counter state during the entire stance exit animation (1f worse PP disadvantage if she holds downback); the final active frame does not move forward (can only achieve the highest frame advantage with meaty timing, not with spacing)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "22HK",
+          "startup": "9",
+          "total": "81",
+          "hitAdv": "KD +37",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-57'''</span>",
+          "notes": "Cannot hit cross-up; the final landing recovery frame is in a crouching state"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "22KK",
+          "startup": "6",
+          "total": "57",
+          "hitAdv": "KD +30",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-40'''</span>",
+          "notes": "Active/Recovery frames listed are for whiff/block (follow-up attack only occurs after 2nd hit connects); cannot hit cross-up; the final landing recovery frame is in a crouching state"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "22LK",
+          "startup": "5",
+          "total": "57",
+          "hitAdv": "KD +29",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-37'''</span>",
+          "notes": "Cannot hit cross-up; the final landing recovery frame is in a crouching state"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "22MK",
+          "startup": "7",
+          "total": "63",
+          "hitAdv": "KD +25",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-41'''</span>",
+          "notes": "Cannot hit cross-up; the final landing recovery frame is in a crouching state; builds twice as much Drive gauge as other strengths (mostly useful in anti-air scenarios, as Drive cooldown would apply in many combo routes)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "236236K",
+          "startup": "11",
+          "total": "144",
+          "hitAdv": "KD +29",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-35'''</span>",
+          "notes": "12f blockstring gap before final hit (8f in Burnout); 1000 damage if only the last hit connects; last hit is forward jump cancelable and puts opponent into free juggle state on grounded hit (limited juggle state if juggled into); applies 30% scaling to Super Art gain until end of combo; Full active frame distribution: 2(1)2(1)2(1)2(2)2(1)2(1)2(1)2(11)2(2)2(2)2(2)2(2)2(2)2(2)2(23)3"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "236236P",
+          "startup": "7",
+          "total": "122",
+          "hitAdv": "KD +22",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-22'''</span>",
+          "notes": "5-hit Super projectile; can hit cross-up (behind Chun-Li)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "236HK",
+          "startup": "23",
+          "total": "62",
+          "hitAdv": "KD +50",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "5 hits; puts opponents into limited juggle state; can juggle into 22K in the corner or SA1/SA3 anywhere (optimal for SA3 damage, skipping the additional damage scaling when canceled); cannot hit cross-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "236KK",
+          "startup": "8",
+          "total": "54",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "5 hits; can follow-up with KK on hit/block for no extra Drive cost; Counter-hit bonus advantage carries over through all hits; cannot hit cross-up; Punish Counter crumple state gives 11 frames to link a grounded hit, then an additional 23 frames to land a juggle before the opponent is knocked down; airborne Punish Counter puts the opponent into a spinning free juggle state; juggles midscreen after 236HK for solid damage and corner carry"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "236KK~KK",
+          "startup": "11",
+          "total": "73",
+          "hitAdv": "KD +29",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-13'''</span>",
+          "notes": "() refers to scaled damage from 236KK combo starter; 10 hits total; does not cost additional Drive meter; cannot hit cross-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "236LK",
+          "startup": "5",
+          "total": "40",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span>",
+          "notes": "3 hits; Counter-hit bonus advantage carries through all hits; Punish Counter knockdown puts opponent into a free juggle state (can air reset with a 4f normal in the corner); useful as a 5f punish starter (similar to a shoto 5LK in terms of range); cannot hit cross-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "236MK",
+          "startup": "12",
+          "total": "54",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span>",
+          "notes": "4 hits; counter-hit/Punish Counter bonus advantage carries over through all hits; cannot hit cross-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "2HK",
+          "startup": "9",
+          "total": "33(35)",
+          "hitAdv": "KD +40",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-9'''</span>",
+          "notes": "2f extra recovery on block; more active frames than most sweeps (can be as safe as -4 with meaty timing); puts airborne opponents into limited juggle state (can juggle after late anti-air 2HK); Stance Cancel: KD/-11 into follow-up, KD/-21 into blocking"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "2HP",
+          "startup": "11",
+          "total": "41",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "2 hits (only 2nd is cancelable); forces stand on hit; solid anti-air on frames 12-13 and 21-23 (cannot hit cross-up); 1st hit puts airborne opponent into limited juggle state (2nd hit causes air reset, but can whiff for a knockdown); counter-hit/Punish Counter bonus advantage applies to both hits; Stance Cancel: +8/+4 into follow-up, -6/-10 into blocking"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "2LK",
+          "startup": "4",
+          "total": "15",
+          "hitAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Chains into 5LP/2LP/2LK; fully cancelable (rare for a 2LK); Stance Cancel: -3/-4"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "2LP",
+          "startup": "4",
+          "total": "13",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Chains into 5LP/2LP/2LK; Stance Cancel: -1/-6"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "2MK",
+          "startup": "7",
+          "total": "28",
+          "hitAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Good range for a cancelable low poke; Stance Cancel: +5/+2; DR cancel is delayed until after active frames"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "2MP",
+          "startup": "6",
+          "total": "22(23)",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "1f extra recovery on whiff; decent range and hitbox disjoint for a poke; Stance Cancel: +6/+1; topmost hurtbox on frames 1-9 is vulnerable only to aerial strikes (preventing its use as an anti-air)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "3HK",
+          "startup": "37",
+          "total": "51",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+7'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "notes": "Side-switching overhead; can only hit cross-up (does not work on fully cornered opponents); puts airborne opponents into limited juggle state; 1f better hit advantage vs. most crouching characters; has extremely long range when performed out of Drive Rush"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "3HP",
+          "startup": "21",
+          "total": "38",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Stance Cancel: +3/-2 into follow-up, -5/-10 into blocking; 1-8f crouching state; does not allow a follow-up link (except for Punish Counter 3HP into Stance LP); puts airborne opponent into limited juggle state (e.g. after Wallsplat)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "4/6MP",
+          "startup": "7",
+          "total": "24",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Great poke and neutral buffer tool with a disjointed hitbox and lenient hitconfirm window; Stance Cancel: +5/+1; DR cancel is delayed until after active frames"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "4HP",
+          "startup": "8",
+          "total": "27",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Short range combo and frame trap tool; high active frame count makes it amazing as a meaty option; Stance Cancel: +9/+3 into follow-up, -5/-11 into blocking"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "4LPLK",
+          "startup": "5",
+          "total": "30",
+          "hitAdv": "KD +13",
+          "blockAdv": "-",
+          "notes": "Side switches; in the corner, does not allow true strike/throw oki without Drive Rush; a successful Throw Escape builds 0.5 Drive bars for the defender; Throw Escape is awarded to a random player if input simultaneously"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "4PPPKKK",
+          "startup": "401 (total)",
+          "total": "401",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"Yawn... are you ready yet?\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "5HK",
+          "startup": "14",
+          "total": "34",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+          "notes": "Cannot hit crouching opponents; slow but rewarding mid-range anti-air (leg/head are invulnerable to airborne strikes 14-16f); cannot hit cross-up; puts airborne opponents into limited juggle state; Stance Cancel: +10/+6 into follow-up, -3/-7 into blocking"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "5HP",
+          "startup": "13",
+          "total": "35",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-3'''</span>",
+          "notes": "Great long-ranged poke and whiff punish tool; cancelable into Stance and can input follow-ups after 16f; combos naturally to Stance LP if close enough, or stance MK/HK on Punish Counter; Stance Cancel: +6/+1 into follow-up, -4/-9 into blocking"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "5LK",
+          "startup": "5",
+          "total": "17",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Stance Cancel: 0/-3; DR cancel is delayed until after 2nd active frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "5LP",
+          "startup": "4",
+          "total": "13",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Chains into 5LP/2LP/2LK; combos naturally to 5MP; Stance Cancel: -1/-8; special/DR/DI cancel is delayed until after 2nd active frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "5MK",
+          "startup": "7",
+          "total": "26",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Cannot hit crouching opponents; good anti-air (cannot hit cross-up); Stance Cancel: +9/+4"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "5MP",
+          "startup": "5",
+          "total": "18",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+6'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "notes": "Good combo/frame trap starter; Stance Cancel: +3/-1; special/DR/DI cancel is delayed until after 3rd active frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "5PPPKKK",
+          "startup": "35",
+          "total": "106",
+          "hitAdv": "<span style=\"color: #b70c0b;\">'''-58'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-65'''</span>",
+          "notes": "\"Sorry!\"; Punish Counter crumple is the only way to keep it safe, but does not allow follow-up combo"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "6HK",
+          "startup": "16",
+          "total": "40",
+          "hitAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "Punish Counter crumple state can lead to Stance HK launch or Stance LP grounded combo; causes spinning free juggle state on Punish Counter vs. airborne opponents; great hitbox priority; Stance Cancel: +2/-1 into follow-up, -6/-9 into blocking; extends a lower-body hurtbox 1f before active that is vulnerable to projectiles"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "6HPHK",
+          "startup": "18",
+          "total": "59(66)",
+          "hitAdv": "KD +23",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "2 hits; performed by inputting 6HPHK on wakeup; 7f extra recovery on hit; does not have any screen freeze except for a 12f freeze when interacting with the opponent's throw hitbox (this also refunds 1 Drive bar after punishing the throw); if 1st hit is Perfect Parried, opponent can interrupt with a move 11f or faster; see [[Street_Fighter_6/Gauges#Drive_Reversal|Drive Reversal]]."
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "6HPHK",
+          "startup": "20",
+          "total": "61(68)",
+          "hitAdv": "KD +23",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "2 hits; performed by inputting 6HPHK during blockstun; 7f extra recovery on hit; freezes the screen for 4f during startup; if 1st hit is Perfect Parried, opponent can interrupt with a move 11f or faster; see [[Street_Fighter_6/Gauges#Drive_Reversal|Drive Reversal]]."
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "6PPPKKK",
+          "startup": "273 (total)",
+          "total": "273",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"Welcome!\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "7HK or 9HK",
+          "startup": "8",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+8(+16)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+3</span><span style=\"color: #30D5B8;\">'''(+11)'''</span>",
+          "notes": "Can be used as a fuzzy instant overhead vs. JP/Marisa/Zangief (opponent must be in Burnout for true blockstring); lower body projectile invuln 8-19f and 8-25f on kicking leg (if used immediately on the way up, can avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "8HK",
+          "startup": "8",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+11(+16)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+6(+11)'''</span>",
+          "notes": "Hits on both sides, preventing the opponent from walking under for a punish; useful air-to-air; lower body projectile invuln 8-19f and 8-25f on kicking legs (if used immediately on the way up, can avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "9 (against wall)",
+          "startup": "-",
+          "total": "-",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Counter-hit state during entire duration; can be done from Back or Neutral jump if fully against the wall, or after Forward Jump against a cornered opponent"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "HPHK",
+          "startup": "26",
+          "total": "62",
+          "hitAdv": "KD +35 / Wall Splat KD +65",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span> / Wall Splat HKD +72",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Impact|Drive Impact]]. Airborne connect gives spinning juggle state on Punish Counter or corner Wall Splat with variable height."
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "j.236236P",
+          "startup": "7",
+          "total": "103",
+          "hitAdv": "KD +14",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-20'''</span>",
+          "notes": "5-hit Super projectile; can hit cross-up (behind Chun-Li); higher activation height causes longer recovery before reaching the ground"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "j.236HK",
+          "startup": "12",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #b70c0b;\">'''-5<span style=\"color: #ff6347;\">(-2)</span>'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-9(-6)'''</span>",
+          "notes": "5 hits; Forward/Neutral Jump only; 3f extra landing recovery on whiff; cannot hit crouching; final 5f landing recovery is in crouching state; very strict timing required to hit standing opponent (can hit twice vs. tall characters)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "j.236KK",
+          "startup": "6",
+          "total": "-",
+          "hitAdv": "KD +47",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-26'''</span><span style=\"color: #ff6347;\">(-1)</span>",
+          "notes": "2f extra landing recovery on block/whiff; 6 hits; Forward/Neutral Jump only; cannot hit crouching; no minimum height requirement; better KD Adv. when used in air juggles; entire landing recovery is in crouching state; puts opponent into a limited juggle state (can follow up with grounded juggle after some air connects); safe vs. stand block when input at earliest timing (Tiger Knee motion)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "j.236LK",
+          "startup": "8",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #b70c0b;\">'''-4<span style=\"color: #32CD32;\">(+1)</span>'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-7<span style=\"color: #ff6347;\">(-2)</span>'''</span>",
+          "notes": "3 hits; Forward/Neutral Jump only; 3f extra landing recovery on whiff; cannot hit crouching; final 5f landing recovery is in crouching state"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "j.236MK",
+          "startup": "10",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #b70c0b;\">'''-4<span style=\"color: #32CD32;\">(+1)</span>'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8<span style=\"color: #ff6347;\">(-3)</span>'''</span>",
+          "notes": "4 hits; Forward/Neutral Jump only; 3f extra landing recovery on whiff; cannot hit crouching; final 5f landing recovery is in crouching state"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "j.2MK",
+          "startup": "3",
+          "total": "-",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Not an overhead, but can hit immediately on the way up to bait throw techs; cancelable into itself on hit/block (up to 3 total uses) or into other air moves; puts airborne opponents into limited juggle state; can hit cross-up (bounces away from wall if opponent is fully cornered); lower body projectile invuln 3f~land (if used immediately on the way up and whiffs, can avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "j.2MK~j.2MK",
+          "startup": "6",
+          "total": "-",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Cancelable into itself on hit/block (up to 3 total uses) or into other air moves; puts airborne opponents into limited juggle state; can hit cross-up (bounces away from wall if opponent is fully cornered)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "j.2MK~j.2MK~j.2MK",
+          "startup": "6",
+          "total": "-",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Cancelable into other air moves on hit/block but cannot chain into any further Yoso Kicks; causes spike knockdown vs. airborne opponents; can hit cross-up (bounces away from wall if opponent is fully cornered)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "j.HP",
+          "startup": "9",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+12(+16)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+7(+11)'''</span>",
+          "notes": "Puts airborne opponents into limited juggle state (300 less damage vs. airborne); cancelable into j.HP~j.HP even on whiff; lower body projectile invuln 9-23f (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "j.HP~j.HP",
+          "startup": "6",
+          "total": "-",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Can be performed on whiff; puts airborne opponents into limited juggle state"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "j.LK",
+          "startup": "4",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+7(+9)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+4(+6)'''</span>",
+          "notes": "Fast upward-angled air-to-air"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "j.LP",
+          "startup": "4",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4(+9)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span><span style=\"color: #30D5B8;\">'''(+6)'''</span>",
+          "notes": "Fast downward-angled air-to-air; can be used as a fuzzy instant overhead vs. tall characters (Arjun/Dee Jay/JP/Marisa/Sagat/Zangief)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "j.LPLK",
+          "startup": "5",
+          "total": "-",
+          "hitAdv": "KD +10",
+          "blockAdv": "-",
+          "notes": "Throw height doesn't affect KD advantage, but higher connect will throw opponent farther; no throw oki but can use a ranged meaty strike against cornered opponent"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "j.MK",
+          "startup": "6",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+7(+13)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+3</span><span style=\"color: #30D5B8;\">'''(+9)'''</span>",
+          "notes": "Cross-up; lower body projectile invuln 6-20f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "j.MP",
+          "startup": "7",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+8(+13)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+4(+9)'''</span>",
+          "notes": "2 hits, can only connect once vs. grounded opponents; both hits put airborne opponents into limited juggle state; cancels to Air Lightning Legs or Air SA1 from either hit; lower body projectile invuln 7-22f (if used immediately on the way up, can avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "LPLK",
+          "startup": "5",
+          "total": "30",
+          "hitAdv": "KD +11",
+          "blockAdv": "-",
+          "notes": "Has large pushback during throw animation, preventing corner throw loops (with frame-perfect timing, can throw loop vs. Blanka, E. Honda, and Zangief); a successful Throw Escape builds 0.5 Drive bars for the defender; Throw Escape is awarded to a random player if input simultaneously"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "MPMK",
+          "startup": "1",
+          "total": "45(3)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Parry|Drive Parry]]. Perfect Parrying has only 1F of recovery and disables the opponent from canceling their attack. Perfect Parrying projectiles puts you into fixed 11 frames of recovery. After a Perfect Parry, all Super Gauge gain is reduced by 20% and Drive Gauge gain/damage is reduced by 50% for the entire punish combo."
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "MPMK or 66",
+          "startup": "9",
+          "total": "24(46)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Rush|Drive Rush]]; 3-bar version performed on hit/block from a cancelable normal; can also be performed on whiff from cancelable light normals; startup refers to minimum time before an attack can cancel the Drive Rush animation; the first 15 recovery frames are cancelable into any attack; the final 22 recovery frames are cancelable into any attack or movement option or blocking (except Parry); only Normal and Command Normal attacks are enhanced with +4 frame advantage and improved juggle properties"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "MPMK~66",
+          "startup": "3+8",
+          "total": "26(48)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Rush|Drive Rush]]; 1-bar version performed out of a Parry; startup refers to minimum time before an attack can cancel the Drive Rush animation (if performed immediately after a successful Parry, only 1+8 startup); the first 15 recovery frames are cancelable into any attack; the final 22 recovery frames are cancelable into any attack or movement option or blocking (except Parry); only Normal and Command Normal attacks are enhanced with +4 frame advantage and improved juggle properties; Distance: 1.044 (min/throw), 2.222 (min/block), 3.163 (max/final DR frame)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "[2]8HK",
+          "startup": "20",
+          "total": "94",
+          "hitAdv": "KD +33",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-18'''</span>",
+          "notes": "30f charge time (charge lasts 12f after releasing down direction); no charge required if canceled from Stance normals; combos from 2HP, 4HP, 2MP, 5MK, Stance HP, and Stance MK; cannot hit cross-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "[2]8KK",
+          "startup": "16",
+          "total": "78",
+          "hitAdv": "KD +55(+41)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span>",
+          "notes": "30f charge time (charge lasts 12f after releasing down direction); no charge required if canceled from Stance normals; puts opponent into limited juggle state (juggle follow-up only possible vs. grounded opponents); combos from medium normals; cannot hit cross-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "[2]8LK",
+          "startup": "9",
+          "total": "56",
+          "hitAdv": "KD +33",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-18'''</span>",
+          "notes": "30f charge time (charge lasts 12f after releasing down direction); no charge required if canceled from Stance normals; combos from light normals; cannot hit cross-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "[2]8MK",
+          "startup": "16",
+          "total": "77",
+          "hitAdv": "KD +34",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-17'''</span>",
+          "notes": "30f charge time (charge lasts 12f after releasing down direction); no charge required if canceled from Stance normals; combos from medium normals; cannot hit cross-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "[4]6HP",
+          "startup": "11",
+          "total": "43",
+          "hitAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "50f charge (charge lasts 10f after releasing back direction); no charge required if canceled from Stance normals; travels ~60% screen; Super cancel timing is very strict"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "[4]6LP",
+          "startup": "15",
+          "total": "47",
+          "hitAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-7'''</span>",
+          "notes": "50f charge (charge lasts 10f after releasing back direction); no charge required if canceled from Stance normals; travels ~90% screen; Super cancel timing is very strict"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "[4]6MP",
+          "startup": "12",
+          "total": "45",
+          "hitAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-7'''</span>",
+          "notes": "50f charge (charge lasts 10f after releasing back direction); no charge required if canceled from Stance normals; travels ~80% screen; Super cancel timing is very strict"
+        }
+      },
+      {
+        "title": {
+          "chara": "Chun-Li",
+          "input": "[4]6PP",
+          "startup": "11",
+          "total": "39",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+          "notes": "45f charge (charge lasts 10f after releasing back direction); no charge required if canceled from Stance normals; 2-hit projectile; counter-hit/Punish Counter bonus advantage applies after both hits; 2nd hit with higher juggle limit only comes out if 1st hit connects"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,794 @@
+{
+  "url": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Yasmine%22&limit=500",
+  "retrievedAt": "2026-11-05T09:20:28.513Z",
+  "status": 200,
+  "characterId": "yasmine",
+  "gameVersion": "UNVERIFIED",
+  "license": "CC-BY-SA-4.0",
+  "attribution": "SuperCombo Wiki contributors",
+  "data": {
+    "cargoquery": [
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "214214P",
+          "startup": "1",
+          "total": "10",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Install that keeps Yasmine in Bayani Mode until the timer ends; timer lasts 1500 frames (25 seconds) and freezes during hitstop; cannot build additional Super gauge while the install is active; Yasmine stays in Bayani Mode after install ends (if 236P is activated with at least 1 frame left on the timer, the follow-up enhanced Alon can be used freely without spending the Bayani stock); grants access to a new special move Linya ng Liwanag (fast cross-up slash); changes the properties of OD Alon (new cinematic ender); each activation of an enhanced Bayani Mode special consumes 375f from the install timer (25%); install activation is useful for starting pressure from ranges approaches like 214PP or 236PP~6P (very high pushback and weak pressure when canceled directly from 5MP~MP or 236PP)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "214214P~4KK",
+          "startup": "22(30)",
+          "total": "-",
+          "hitAdv": "KD +49(+53)",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span><span style=\"color: #30D5B8;\">'''(+5)'''</span>",
+          "notes": "Requires SA2 install; each use consumes 375f (25%) of SA2 install timer; deals Drive Damage on normal hit (0.5 bars if both hits connect); reaches fullscreen and extends a huge proximity guard hitbox from frame 15 onward; if the 1st hit is blocked, parried, or absorbed by armor, Yasmine stops her forward movement and does not perform the 2nd hit (this hit has 2f active + 24f recovery); on hit, Yasmine will dash behind the opponent (even in the corner) and perform a 2nd hit that launches the opponent into a limited juggle state; this cross-up hit can also occur if the first hit whiffs (like in a knockdown setup or on a jumping opponent); cross-up hit has functionally 30f startup when used as an oki tool; can be canceled into from 2MK~HK and 5MK~MK~HK Target Combos on hit; active frame distribution is 2(11)5 when both hits connect; whiff recovery is 1f faster (19f) if Yasmine passes far behind the opponent before the 2nd hit comes out; startup time can be up to 3f faster (19f) if Yasmine passes through a close range airborne/teleporting opponent with no collision box; after a corner sideswitch, some follow-up juggles can whiff under the opponent (623HK requires delay, while 623MK and SA1 are auto-timed)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "214HP",
+          "startup": "30",
+          "total": "48",
+          "hitAdv": "KD +37",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "notes": "Puts Yasmine into Bayani Mode on hit (this occurs after the hitstop of the 1st hit ends, so it will be granted when Super canceled but not if it trades with opponent's attack); plus on block advancing special; slow startup makes it reactable and only combos naturally from 2HP; last 2 hits only play out on hit and are not cancelable (listed recovery refers to the blocked/whiffed version); puts opponents into a limited juggle state (follow-ups only possible when juggled on airborne opponents)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "214LP",
+          "startup": "-",
+          "total": "35",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Feints forward movement; useful to bait Parry / Drive Impact / jumps in neutral; hurtbox extends forward on frame 14 until the end of recovery; Yasmine is in a counter-hit state with a standing hurtbox for the entire duration"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "214MP",
+          "startup": "21",
+          "total": "43(46)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Puts Yasmine into Bayani Mode on hit (this occurs after the hitstop of the 1st hit ends, so it will be granted when Super canceled but not if it trades with opponent's attack); safe on block advancing special; last 2 hits only play out on hit and are not cancelable (listed recovery refers to the blocked version); 3f extra recovery on whiff; 4f extra recovery when absorbed by armor (guaranteed punish when absorbed by Drive Impact unless canceled into SA3); counter-hit/Punish Counter bonus advantage carries through both hits (gives light confirms on CH and medium confirms on PC); puts airborne opponents into a limited juggle state (follow-ups are usually only possible in the corner)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "214PP",
+          "startup": "20",
+          "total": "49",
+          "hitAdv": "KD +46",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span>",
+          "notes": "Puts Yasmine into Bayani Mode on hit (this occurs after the hitstop of the 1st hit ends, so it will be granted when Super canceled but not if it trades with opponent's attack); last 2 hits only play out on hit and are not cancelable (listed recovery refers to the blocked/whiffed version); puts opponents into a limited juggle state; useful approach tool when buffered into SA2; SA2 cancel: +15/+5"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "22P",
+          "startup": "25",
+          "total": "50",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span> / KD",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "2-hit boomerang projectile (can only hit once on the way up, then applies all remaining hits on the way back); button strength determines projectile distance (LP short / MP mid / HP far); the listed active frames are for the L/M/H versions respectively; projectile disappears if Yasmine is hit; can only have one boomerang on-screen at a time; only the first 3 active frames are Super cancelable; the initial upward hit keeps opponents grounded (less range vs. crouching opponents); the returning projectile puts opponents into a limited juggle state; canceling from 2HP gives increased hit advantage (use LP boomerang from point blank 2HP for a link into 2LP in the corner); projectile speed refers to the initial activation before changing directions"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "22PP",
+          "startup": "25",
+          "total": "50",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span> / KD",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "3-hit boomerang projectile (can only hit once on the way up, then applies all remaining hits on the way back); button combination determines projectile distance (LP+MP short / LP+HP mid / MP+HP far); the listed active frames are for the L/M/H versions respectively; projectile disappears if Yasmine is hit; can only have one boomerang on-screen at a time; only the first 3 active frames are Super cancelable; the initial upward hit keeps opponents grounded (less range vs. crouching opponents); the returning projectile puts opponents into a limited juggle state; canceling from 2HP gives increased hit advantage (use LP+MP boomerang from point blank 2HP for a link into 5LK); projectile speed refers to the initial activation before changing directions; the 2nd hit Juggle Limit depends on whether the 1st hit connected on the way up (if returning projectile has all 3 hits: JL 2,2,10; if only 2 hits on the returning projectile, JL 2 followed by JL 10,10); SA2 cancel: +16/+12"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "236236K",
+          "startup": "7",
+          "total": "62",
+          "hitAdv": "KD +24(+18~20)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-34'''</span>",
+          "notes": "Puts Yasmine into Bayani Mode on hit; active frames 1-3 transition into a fully invincible cinematic on hit (1st hit can trade for 500 damage); active frames 4-6 perform a non-cinematic hit (1600 damage, KD +18~20 vs. grounded opponents, variable vs. airborne); fast reversal and a strong anti-air even at close ranges; useful juggle ender in any scenario where 623HK can also land"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "236236P",
+          "startup": "10(2)",
+          "total": "82",
+          "hitAdv": "HKD +20",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-48'''</span>",
+          "notes": "Available at 25% HP or below; cinematic time regenerates ~2.3 Drive bars for Yasmine; can be used against projectiles from about round-start distance if it catches an extended hurtbox; tall hitbox can anti-air at long range but whiffs under close/mid range opponents; gives +1 oki after forward dash near the edge of throw range (opponent can back walk to avoid Throw or a chain after 2LK); can also Drive Rush for stronger pressure and bait 6f reversals with DR~2LP; 2f startup when canceled from specials or 5HP"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "236236P",
+          "startup": "10(2)",
+          "total": "82",
+          "hitAdv": "HKD +42",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-48'''</span>",
+          "notes": "Cinematic time regenerates ~2.2 Drive bars for Yasmine; can be used against projectiles from about round-start distance if it catches an extended hurtbox; tall hitbox can anti-air at long range but whiffs under close/mid range opponents; leaves Yasmine fullscreen on hit even if the opponent was cornered; can still get oki with Drive Rush into a delayed normal but cannot get into throw range; 2f startup when canceled from specials or 5HP"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "236HP",
+          "startup": "21",
+          "total": "45",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Longest range and slowest startup (combos from 2MP, 2HP, and 5HP); too slow to frame trap when canceled into without Burnout or Drive Rush starter (always punishable in cancels, but if spaced in neutral can be safe to some stronger 6-frame punishes); leads to Alon follow-up that launches the opponent upward for midscreen oki or corner juggles (stronger juggles possible on enhanced follow-up); always a true blockstring when canceled into Alon follow-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "236HP~6P",
+          "startup": "13",
+          "total": "57",
+          "hitAdv": "KD +44",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span>",
+          "notes": "Final hit puts Yasmine into Bayani Mode on hit only (will not enter Bayani Mode if canceled on 3rd hit or if only the early hits connect); launches the opponent upward into a limited juggle state (gives a corner juggle into 623LK or gives solid oki anywhere on the screen); launch height is not improved by juggling an airborne opponent; always a true blockstring from Daloy ng Tubig starter; active/recovery/total data refers to the block/whiff version without the final hit"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "236HP~6P",
+          "startup": "13",
+          "total": "85(82)",
+          "hitAdv": "KD +52",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Spends the Bayani Mode enhancement; 3f less recovery on block; Yasmine performs the final hit on block unlike the standard version (safe on block and deals more Drive Damage); decent pressure tool vs. Burnout (but opponent can walk back to avoid throws and prevent a 2LK chain from comboing); launches opponents high into a limited juggle state (much more rewarding than non-Bayani version, juggles into 5HP / DR~2HP / 623HK / Supers); always a true blockstring from Daloy ng Tubig starter; deals 0.1 bars of Drive Damage on a normal hit during SA2 Bayani Mode install"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "236K",
+          "startup": "23~",
+          "total": "59",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Button strength determines trajectory (LK short, MK mid, HK far); cannot be steered manually after activation; follow-ups can be input starting on frame 24, and as late as frame 45 (236LK) / frame 42 (236MK) / frame 43 (236HK); can input OD follow-up with PP or KK for 2 Drive bars (safer on block); empty HK flip can have 1f longer or shorter aerial animation when crossing over the opponent at certain ranges; Yasmine is in a standing state with a standing-sized hurtbox during landing recovery"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "236KK",
+          "startup": "23~",
+          "total": "59",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Enhances the properties of follow-up attacks (improved hit and block advantage, can be input with no extra meter cost); can be steered by holding back/neutral/forward before the follow-up starts (no input gives the same trajectory as 236LK); gives more freedom to control Yasmine's trajectory compared to the meterless flip; follow-ups can be input on frames 24-46; Yasmine is in a standing state with a standing-sized hurtbox during landing recovery"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "236KK~K or 236K~KK",
+          "startup": "17",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4(+13)'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span><span style=\"color: #30D5B8;\">'''(+7)'''</span>",
+          "notes": "Button strength determines downward trajectory (LK short, MK mid, HK far); can no longer alter the trajectory of OD Flip once the follow-up is activated; can be input with KK from a meterless Flip (button combination affects trajectory with LK+MK / LK+HK / MK+HK); cannot hit cross-up; stalls mid-air to bait anti-airs; plus on block and links into 5MP/2MP in almost all cases (worst advantage is only possible by inputting the follow-up right before landing against a point blank opponent); puts airborne opponents into a limited juggle state"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "236KK~P or 236K~PP",
+          "startup": "17",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4(+10)'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span><span style=\"color: #32CD32;\">(+3)</span>",
+          "notes": "Cross-up only (in very ambiguous situations, can actually be blocked either direction before landing behind the opponent); button combination determines downward trajectory (LP+MP short / LP+HP mid / MP+HP far); can no longer alter the trajectory of OD Flip once the follow-up is activated; can use KD +42 safe jump setups to auto-time the deepest possible hit midscreen (may require OD Flip starter if the opponent Back Rises); puts airborne opponents into a limited juggle state (opponent falls toward Yasmine for easy follow-up)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "236K~K",
+          "startup": "17",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span><span style=\"color: #30D5B8;\">'''(+10)'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span><span style=\"color: #30D5B8;\">'''(+4)'''</span>",
+          "notes": "Button strength determines downward trajectory (LK short, MK mid, HK far); cannot hit cross-up; stalls mid-air to bait anti-airs; safe on block and links into light normals in almost all cases (worst advantage is only possible by inputting the follow-up right before landing against a point blank opponent); puts airborne opponents into a limited juggle state"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "236K~P",
+          "startup": "17",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span><span style=\"color: #30D5B8;\">'''(+8)'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span><span style=\"color: #bcbd0c;\">(0)</span>",
+          "notes": "Cross-up only (in very ambiguous situations, can actually be blocked either direction before landing behind the opponent); button strength determines downward trajectory (LP short / MP mid / HP far); can use KD +42 safe jump setups to auto-time the deepest possible hit midscreen (may not be possible if the opponent Back Rises); puts airborne opponents into a limited juggle state (opponent falls toward Yasmine for easy follow-up)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "236LP",
+          "startup": "12",
+          "total": "36",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Shortest range but fastest startup (combos from all light normals and fast enough to juggle in situations where MP/HP versions are too slow); frame traps when canceled from 2LP or 5LK (nearly always punishable, but when spaced may avoid strong 6-frame punishes); leads to Alon follow-up that keeps opponent grounded (enhanced follow-up gives a knockdown); always a true blockstring when canceled into Alon follow-up; with Alon, this version deals more damage than MP Daloy with less combo scaling (can be more useful in short combo routes)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "236LP~6P",
+          "startup": "13",
+          "total": "57",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span>",
+          "notes": "Final hit puts Yasmine into Bayani Mode on hit only (will not enter Bayani Mode if canceled on 3rd hit or if only the early hits connect); leaves grounded opponents at close range with slight advantage on hit for continued pressure; puts airborne opponents into a limited juggle state (can only cancel into SA3); always a true blockstring from Daloy ng Tubig starter; active/recovery/total data refers to the block/whiff version without the final hit"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "236LP~6P",
+          "startup": "13",
+          "total": "73",
+          "hitAdv": "KD +42",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Spends the Bayani Mode enhancement; Yasmine performs the final hit on block unlike the standard version (safe on block and deals more Drive Damage); decent pressure tool vs. Burnout that deals more chip damage than the other versions (but opponent can walk back to avoid throws and prevent a 2LK chain from comboing); puts opponents into a limited juggle state (can only cancel into SA3 on grounded opponents, but in juggles like after 5MP~MP it can lead to a corner 623LK follow-up); grounded hit gives a KD +42 safe jump anywhere on the screen; always a true blockstring from Daloy ng Tubig starter; deals 0.1 bars of Drive Damage on a normal hit during SA2 Bayani Mode install"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "236MP",
+          "startup": "16",
+          "total": "40",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Medium range and startup (combos from mediums and 5LP~LP TC); frame traps when canceled from 5LP~LP, 5MP~MP, or 2MK (always punishable at this range, but if spaced in neutral can be safe to some stronger 6-frame punishes); leads to Alon follow-up that knocks down with good midscreen oki (OTG bounce juggles possible from enhanced follow-up); always a true blockstring when canceled into Alon follow-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "236MP~6P",
+          "startup": "13",
+          "total": "57",
+          "hitAdv": "KD +30",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span>",
+          "notes": "Final hit puts Yasmine into Bayani Mode on hit only (will not enter Bayani Mode if canceled on 3rd hit or if only the early hits connect); slams the opponent to the ground and gives solid oki anywhere on the screen; puts opponents into a limited juggle state (can only cancel into SA3); always a true blockstring from Daloy ng Tubig starter; active/recovery/total data refers to the block/whiff version without the final hit"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "236MP~6P",
+          "startup": "13",
+          "total": "81",
+          "hitAdv": "KD +42",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Spends the Bayani Mode enhancement; Yasmine performs the final hit on block unlike the standard version (safe on block and deals more Drive Damage); decent pressure tool vs. Burnout (but opponent can walk back to avoid throws and prevent a 2LK chain from comboing); puts opponents into a limited juggle OTG Bounce state (can juggle into 623MK/KK, but in juggles like after 5MP~MP it bounces higher for a juggle into 5HP / 623HK / SA1); grounded hit gives a KD +42 safe jump anywhere on the screen (but this sacrifices the juggle follow-up damage); always a true blockstring from Daloy ng Tubig starter; deals 0.1 bars of Drive Damage on a normal hit during SA2 Bayani Mode install"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "236PP",
+          "startup": "12",
+          "total": "36",
+          "hitAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Has the startup of the LP version with improved range and juggle potential for consistency; puts airborne opponents into a limited juggle OTG bounce state (ensures OD Alon follow-up connects); safe on block and +1 in Burnout for continued pressure; leads to solid damage and corner carry; canceling directly into SA2 on block causes high pushback for weak pressure (always better to cancel from Alon follow-up); the OD follow-up plays out a cinematic cutscene that can lead to juggles if SA2 canceled; always a true blockstring when canceled into Alon follow-up; SA2 cancel: +9/+8"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "236PP~6P",
+          "startup": "13",
+          "total": "57",
+          "hitAdv": "KD +40",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span>",
+          "notes": "Final cinematic hit puts Yasmine into Bayani Mode; does not cost any additional Drive gauge; puts opponents into a free juggle OTG Bounce state on hit or maintains the existing juggle state (requires SA2 cancel to continue the juggle, can combo into 214HP / DR normals / dash normals, will cause air reset if using a non-juggle move); always a true blockstring from OD Daloy ng Tubig starter; active/recovery/total data refers to block/whiff version without the final hit; SA2 cancel: KD+85/+3"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "236PP~6P",
+          "startup": "13",
+          "total": "73",
+          "hitAdv": "KD +40<br><span style=\"color: #ee6da8;\">(HKD +47)</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Exits Bayani Mode on block but maintains the enhancement on hit; does not cost any additional Drive gauge; properties change during SA2 install (+400 damage, Hard Knockdown with greater advantage, and deals 0.5 bars of Drive Damage on a normal hit); puts opponents into a free juggle OTG Bounce state on hit or maintains the existing juggle state (requires SA2 cancel to continue the juggle, can combo into 214HP / DR normals / dash normals, will cause air reset if using a non-juggle move); always a true blockstring from OD Daloy ng Tubig starter; active/recovery/total data refers to blocked version (final hit does not occur on whiff, like when 236PP punishes a Dhalsim limb); SA2 cancel: KD+85/+9"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "2HK",
+          "startup": "10",
+          "total": "37",
+          "hitAdv": "KD +40",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-10'''</span>",
+          "notes": "Sweep with good range that shifts Yasmine forward; has slight juggle potential without Drive Rush"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "2HP",
+          "startup": "8",
+          "total": "36",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-11'''</span>",
+          "notes": "Forces stand; upper body and extended arm hurtbox is anti-air invuln on frames 10-13; active frames 1-2 hit in front of Yasmine and are cancelable; active frames 3-6 hit above Yasmine with a solid anti-air hitbox (these frames can hit grounded opponents but are not cancelable); forward movement on startup can cause it to whiff against closer jump-ins; important combo tool with high hitstun and much more damage than 5HP when canceled; SA2 cancel: +20/+7"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "2LK",
+          "startup": "5",
+          "total": "17",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Chains into 5LP/2LP/2LK"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "2LP",
+          "startup": "4",
+          "total": "14",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Chains into 5LP/2LP/2LK; Yasmine's only 4f option with fairly short range; up to +6 oH / +1 oB with meaty timing (allows stronger links or block pressure); topmost hurtbox on frames 1-6 is vulnerable only to aerial strikes (preventing its use as an anti-air); SA2 cancel: +4/-1"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "2MK",
+          "startup": "8",
+          "total": "29",
+          "hitAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Solid cancelable low poke; can be hitconfirmed into a Target Combo extension for a knockdown (and an extended juggle with SA2 install active); SA2 cancel: +10/+5"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "2MK~HK",
+          "startup": "8",
+          "total": "34",
+          "hitAdv": "KD +30",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-10'''</span>",
+          "notes": "Hitconfirmable TC extension from low-hitting 2MK; always a true blockstring from 2MK; puts opponent into a limited juggle state on hit (much higher launch vs. airborne opponents, allowing follow-up juggles); becomes cancelable on hit only into 4KK (during SA2 install)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "2MP",
+          "startup": "6",
+          "total": "24(22/26)",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+          "notes": "2f less recovery on block compared to on hit; 2f extra recovery on whiff; great neutral buffer with good range for a 6f medium but slightly more whiff punishable than most similar normals; great pressure tool when used as a meaty or with bonus advantage from Drive Rush or Burnout; Yasmine's only medium button that combos naturally into 236HP and 214MP; topmost hurtbox on frames 1-8 is vulnerable only to aerial strikes (preventing its use as an anti-air); SA2 cancel: +12/+6"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "4HK",
+          "startup": "22",
+          "total": "45(48)",
+          "hitAdv": "KD +31",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Hurtbox shifts backwards on frames 5-15 before attacking with a low-hitting sweep (can be used as an auto-shimmy tool to avoid throws and some short-range attacks to score a Punish Counter); 3f extra recovery on whiff; extends a hurtbox 1f before active that is vulnerable to projectiles; crouching state on frames 16-44 (standing state for the last frame on block or the last 4 frames on whiff); fully cancelable despite being a sweep; puts opponent into a limited juggle state (when canceled, combos into moves like 236LP/MP/PP, 623K, SA1/SA3); Punish Counter launches the opponent higher (cancels into 214HP/PP or 236HP, and gains corner juggles into 623K / SA1 without a cancel); Special/DI cancel is delayed until after active frames; SA2 cancel: KD+43/+6"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "4LPLK",
+          "startup": "5",
+          "total": "30",
+          "hitAdv": "KD +24",
+          "blockAdv": "-",
+          "notes": "Side switch; after a corner back throw, can dash forward and poke with 2MK for a TC hitconfirm or 5HP for a potential trade combo; Drive Rush gives a pseudo-throw loop (and gives true strike/throw oki vs. Blanka / E. Honda / Zangief) but cannot get oki midscreen; a successful Throw Escape builds 0.5 Drive bars for the defender; Throw Escape is awarded to a random player if input simultaneously"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "4PPPKKK",
+          "startup": "796 (total)",
+          "total": "796",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"Hoy! You're not taking this seriously! Underestimate me and I'll make a big meanie face like this, then I'll walk all over you! Don't sandbag me!\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "5HK",
+          "startup": "14",
+          "total": "36",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "12-16f Low Crush (not airborne); Punish Counter puts opponent into a limited juggle state (can follow with 214PP or DR~2HP anywhere or 214MP/236PP at closer ranges); great poke that can be spaced safely and is very rewarding when countering low pokes in neutral; extends a hurtbox 1f before active that is vulnerable to projectiles"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "5HP",
+          "startup": "9",
+          "total": "43",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "3 hits (only the 2nd hit is cancelable); core poke and combo tool with good range for whiff punishing; counter-hit/Punish Counter bonus advantage carries through all hits; very high juggle potential; can be hitconfirmed, but late cancels have reduced advantage (DRC Adv. as low as +6 oH / -2 oB, and cancels into 214MP/PP and 236MP/HP can drop); high pushback prevents most counter-hit conversions but can usually link into mediums after Drive Rush or Punish Counter; punishable by Drive Impact if either of the first 2 hits are Perfect Parried; SA2 cancel: +12/+4"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "5LK",
+          "startup": "5",
+          "total": "18",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "Great range for a 5f light normal; does not link naturally from most combo starters but useful as a neutral buffer and punish starter; can combo into 236MP on Punish Counter (important for whiff punishes since other cancels drop or are too slow); DR cancel is delayed until after active frames; SA2 cancel: +5/-1"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "5LP",
+          "startup": "5",
+          "total": "14(15)",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Chains into 5LP/2LP/2LK (delay required for consecutive 5LPs) or the 5LP~LP TC if chained quickly; 1f extra recovery on whiff; significantly less pushback on hit/block compared to 2LP for tick throw or DR pressure; SA2 cancel: +3/-2"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "5LP~LP",
+          "startup": "8",
+          "total": "23(25)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Important hitconfirm tool from light strings with more hitstun than other lights (can combo naturally into 236MP); 2f extra recovery on block; safe on block and becomes +1 vs. Burnout for continued pressure (5LP~LP > 214MP keeps her in 5LP range); 1f longer hitconfirm window into DR Cancel; 2f gap between hits on block; DR cancel is delayed until after 1st recovery frame; SA2 cancel: +5/+3"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "5MK",
+          "startup": "10",
+          "total": "31",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "Solid poke with good hitbox priority; foot hurtbox shifts backward on frames 4-12f (more effective at counter-hitting low pokes); moves Yasmine forward and maintains a somewhat consistent spacing on block (but can be punished at close range)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "5MK~MK",
+          "startup": "13",
+          "total": "47",
+          "hitAdv": "<span style=\"color: #b70c0b;\">'''-13'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-13'''</span>",
+          "notes": "Always a true blockstring from 5MK starter; primarily used after a 5MK whiff punish as it's difficult to hitconfirm directly; very unsafe on hit or block (should always go into the ender even on block)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "5MK~MK~HK",
+          "startup": "16",
+          "total": "41(46)",
+          "hitAdv": "KD +33",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-9'''</span>",
+          "notes": "5f extra recovery on whiff/block; always a true blockstring from 5MK~MK; puts opponent into a limited juggle state on hit; becomes cancelable on hit only into 4KK (during SA2 install)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "5MP",
+          "startup": "6",
+          "total": "35",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "2 hits; hitconfirmable pressure starter into a Target Combo extension; counter-hit/Punish Counter bonus advantage carries through both hits; 1st hit pulls opponent inward on hit/block; 2nd hit has less range but extends a wider combo-only hitbox for consistency; 2nd hit is Drive Impact punishable if the 1st hit is Perfect Parried; stops DR momentum almost immediately (weak as a DR approach tool at midrange)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "5MP~MP",
+          "startup": "12",
+          "total": "40",
+          "hitAdv": "KD +25",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-13'''</span>",
+          "notes": "Easily hitconfirmable from 5MP starter (always a true blockstring from 5MP); puts opponents into a limited juggle state (combos into 236LP/MP/PP, 214PP, or Super); SA2 cancel: KD+43/+5"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "5PPPKKK",
+          "startup": "1221 (total)",
+          "total": "1221",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"I'm starving... Oh, I almost forgot! Aha! Want some? Really? Your loss! Alright, ready to go!\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "5PPPKKK",
+          "startup": "574",
+          "total": "750",
+          "hitAdv": "KD -102",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-157'''</span>",
+          "notes": "\"I've been practicing this a lot! Gotcha! Cool, right?\"; Yasmine attacks with a kick while catching the knife; gives a shorter knockdown on Punish Counter"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "623HK",
+          "startup": "7",
+          "total": "55",
+          "hitAdv": "KD +21",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-32'''</span>",
+          "notes": "Only the first 2 hits come out on block/whiff; cannot hit cross-up; has the most horizontal range of meterless versions (works from max range 5LK cancel except in whiff punish scenarios)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "623KK",
+          "startup": "6",
+          "total": "61",
+          "hitAdv": "KD +21",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-40'''</span>",
+          "notes": "Only the first 2 hits come out on block/whiff; cannot hit cross-up; Yasmine's primary reversal option; has the most horizontal range of all versions"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "623LK",
+          "startup": "5",
+          "total": "53",
+          "hitAdv": "KD +20",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-29'''</span>",
+          "notes": "Only the first 2 hits come out on block/whiff; cannot hit cross-up; best overall anti-air due to speed and invuln; very short horizontal range"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "623MK",
+          "startup": "6",
+          "total": "54",
+          "hitAdv": "KD +21",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-29'''</span>",
+          "notes": "Only the first 2 hits come out on block/whiff; cannot hit cross-up; slightly more horizontal range than 623LK"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "6HPHK",
+          "startup": "18",
+          "total": "46(51)",
+          "hitAdv": "KD +23",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Performed by holding 6HPHK on wakeup; 5f extra recovery on hit; does not have any screen freeze except for a 12f freeze when interacting with the opponent's throw hitbox (this also refunds 1 Drive bar after punishing the throw); see [[Street_Fighter_6/Gauges#Drive_Reversal|Drive Reversal]]."
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "6HPHK",
+          "startup": "20",
+          "total": "48(53)",
+          "hitAdv": "KD +23",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Performed by inputting 6HPHK during blockstun; 5f extra recovery on hit; freezes the screen for 4f during startup; see [[Street_Fighter_6/Gauges#Drive_Reversal|Drive Reversal]]."
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "6MP",
+          "startup": "22",
+          "total": "42",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Spike knockdown vs. airborne opponents; can link into light normals with meaty timing or with precise spacing in neutral; above average range for an overhead"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "6PPPKKK",
+          "startup": "853 (total)",
+          "total": "853",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"Watch this! Haaaaaaaahhhhhh! Oh, um... hehehe...\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "6[PPPKKK]",
+          "startup": "450",
+          "total": "874",
+          "hitAdv": "KD -341",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-397'''</span>",
+          "notes": "\"Watch this! Haaaaaaaahhhhhh! HADOKEN - Aaahhh! Wait, I did it? I gotta practice more!\"; must be holding a button on frame 275 of startup to fill Yasmine with aura, causing her to perform a short-range stationary projectile attack"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "HPHK",
+          "startup": "26",
+          "total": "62",
+          "hitAdv": "KD +35 / Wall Splat KD +65",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span> / Wall Splat HKD +72",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Impact|Drive Impact]]. Airborne connect gives spinning juggle state on Punish Counter or corner Wall Splat with variable height."
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "j.HK",
+          "startup": "10",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+11(+15)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+7(+11)'''</span>",
+          "notes": "Yasmine's best horizontal approach with the longest range; lower body projectile invuln 10-19f (if used immediately on the way up, can avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "j.HP",
+          "startup": "9",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+8(+15)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+4(+11)'''</span>",
+          "notes": "Spikes airborne opponents on counter-hit/Punish Counter; hitbox starts at the bottom and expands upward throughout the first 3 active frames (decent air-to-air on later active frames); Yasmine's best vertical approach at closer ranges; lower body projectile invuln 9-23f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "j.LK",
+          "startup": "4",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5(+10)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span><span style=\"color: #30D5B8;\">'''(+6)'''</span>",
+          "notes": "Cross-up; can be used as a fuzzy instant overhead (except vs. Blanka)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "j.LP",
+          "startup": "4",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+6(+9)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+2</span><span style=\"color: #30D5B8;\">'''(+5)'''</span>",
+          "notes": "Quick air-to-air"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "j.MK",
+          "startup": "7",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+10(+13)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+6(+9)'''</span>",
+          "notes": "Cross-up; lower body projectile invuln 7-20f (if used immediately on the way up, can avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "j.MP",
+          "startup": "7",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+10(+11)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+6(+7)'''</span>",
+          "notes": "Puts airborne opponents into a limited juggle state; lower body projectile invuln 6-22f (if used immediately on the way up, can avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "LPLK",
+          "startup": "5",
+          "total": "30",
+          "hitAdv": "KD +29",
+          "blockAdv": "-",
+          "notes": "Has a corner throw loop with Dash + walk with enough time for a shimmy (throw requires 3f timing vs. standard characters, 4f timing vs. wide characters); Drive Rush gives better strike options in the corner (requires manual timing except for DR~6MP which sets up trade combos); can chase opponent midscreen with DR normals (not a true strike/throw mixup but can get into throw range if the opponent doesn't wake up with a fast attack); a successful Throw Escape builds 0.5 Drive bars for the defender; Throw Escape is awarded to a random player if input simultaneously"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "MPMK",
+          "startup": "1",
+          "total": "45(3)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Parry|Drive Parry]]. Perfect Parrying has only 1F of recovery and disables the opponent from canceling their attack. Perfect Parrying projectiles puts you into fixed 11 frames of recovery. After a Perfect Parry, all Super Gauge gain is reduced by 20% and Drive Gauge gain/damage is reduced by 50% for the entire punish combo."
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "MPMK or 66",
+          "startup": "9",
+          "total": "24(46)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Rush|Drive Rush]]; 3-bar version performed on hit/block from a cancelable normal; can also be performed on whiff from cancelable light normals; startup refers to minimum time before an attack can cancel the Drive Rush animation; the first 15 recovery frames are cancelable into any attack; the final 22 recovery frames are cancelable into any attack or movement option or blocking (except Parry); only Normal and Command Normal attacks are enhanced with +4 frame advantage and improved juggle properties"
+        }
+      },
+      {
+        "title": {
+          "chara": "Yasmine",
+          "input": "MPMK~66",
+          "startup": "3+8",
+          "total": "26(48)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Rush|Drive Rush]]; 1-bar version performed out of a Parry; startup refers to minimum time before an attack can cancel the Drive Rush animation (if performed immediately after a successful Parry, only 1+8 startup); the first 15 recovery frames are cancelable into any attack; the final 22 recovery frames are cancelable into any attack or movement option or blocking (except Parry); only Normal and Command Normal attacks are enhanced with +4 frame advantage and improved juggle properties; Distance: 0.708 (min/throw), 2.478 (min/block), 3.918 (max/final DR frame)"
+        }
+      }
+    ]
+  }
+}

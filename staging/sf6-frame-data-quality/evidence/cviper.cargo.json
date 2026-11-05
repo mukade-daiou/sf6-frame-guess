@@ -1,0 +1,717 @@
+{
+  "url": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22C.Viper%22&limit=500",
+  "retrievedAt": "2026-11-05T09:20:26.117Z",
+  "status": 200,
+  "characterId": "cviper",
+  "gameVersion": "UNVERIFIED",
+  "license": "CC-BY-SA-4.0",
+  "attribution": "SuperCombo Wiki contributors",
+  "data": {
+    "cargoquery": [
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "214214K",
+          "startup": "10",
+          "total": "67",
+          "hitAdv": "HKD +21",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-38'''</span>",
+          "notes": "Short range makes it a poor projectile counter; cinematic time regenerates ~2 Drive bars for C.Viper"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "214214K",
+          "startup": "10",
+          "total": "67",
+          "hitAdv": "HKD +23",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-38'''</span>",
+          "notes": "Short range makes it a poor projectile counter; available at 25% HP or below; cinematic time regenerates ~2.2 Drive bars for C.Viper"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "214214P",
+          "startup": "7",
+          "total": "55",
+          "hitAdv": "HKD +19",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-29'''</span>",
+          "notes": "Strong reversal but short range makes it a poor projectile counter; cinematic carries opponent over half screen; cannot be executed using easy input shortcuts when inputting with HP button or immediately after High Jump (to prevent input overlap issues with HP Thunder Dash and Feint cancels)"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "214HP",
+          "startup": "7",
+          "total": "53",
+          "hitAdv": "KD +21<br>(KD +18~35)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-24'''</span>",
+          "notes": "Upward trajectory for juggles and anti-airs; cannot hit cross-up; combos from all light normals; can whiff in long-range cancels like 5MK > HJC 214HP; startup can be canceled into Feint by inputting K (feint occurs after 6 startup frames, leading to the best advantage of all feint cancels); feint-canceled version still maintains anti-air invincibility on frames 1-6, allowing C.Viper to \"spot dodge\" some airborne attacks with precise timing for a better punish; variable knockdown advantage on airborne opponents; cancelable into Tracer Combination (6PP) on hit only (can whiff on high juggled opponents)"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "214HP~6PP",
+          "startup": "17",
+          "total": "57",
+          "hitAdv": "KD +25(+34)",
+          "blockAdv": "-",
+          "notes": "Costs 1 extra bar of Drive gauge (except during SA1 install); can only be canceled into on hit; can whiff on high juggled opponents; gives the best oki out of all Thunder Dash follow-ups; useful way to extend C. Viper's anti-air damage"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "214K",
+          "startup": "13+10",
+          "total": "70",
+          "hitAdv": "KD +24",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-16'''</span>",
+          "notes": "Lv.1 version when uncharged or when button is held up to 19f; can hold button longer to charge to a stronger version (20f Lv.2 / 59f Lv.3); 1-hit armor frames cover the full body, ending immediately if button is released after frame 13; absorbing a strike results in an automatic counter-attack with 10f startup (comes out on frame 14 at the earliest); absorbing an attack early in the armor frames makes it possible for the counter-attack to be blocked; C. Viper incurs only 7f armor hitstop from absorbing a strike; armor can absorb projectiles but does not perform counter-attack (C. Viper incurs 10f projectile hitstop during armor); cancelable into Forward Dash from frame 12 until button is released (not possible after absorbing a strike); C. Viper is in a Punish Counter state for entire duration (including Forward Dash cancel); 2f extra knockdown advantage on Punish Counter; only the first hit gains the bonus damage from a Counter-hit/Punish Counter; -17 on Punish Counter if only the first hit of counter-attack reaches opponent (e.g. absorbing a ranged Dhalsim poke); Focus + Dash can be used to absorb projectiles when Drive gauge is too low for Parry; can be used against Drive Impact while in Burnout (but armor starts too late to work in most DI-cancel blockstrings)"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "214KK",
+          "startup": "10+10",
+          "total": "67",
+          "hitAdv": "KD +24",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-16'''</span>",
+          "notes": "Lv.1 version when uncharged or when button is held up to 19f; can hold button longer to charge to a stronger version (20f Lv.2 / 57f Lv.3); 1-hit armor frames cover the full body, ending immediately if button is released after frame 10; absorbing a strike results in an automatic counter-attack with 10f startup (comes out on frame 11 at the earliest); absorbing an attack early in the armor frames makes it possible for the counter-attack to be blocked; C. Viper incurs only 7f armor hitstop from absorbing a strike; armor can absorb projectiles but does not perform counter-attack (C. Viper incurs 10f projectile hitstop during armor); cancelable into Forward Dash from frame 9 until button is released (not possible after absorbing a strike); C. Viper is in a Punish Counter state for entire duration (including Forward Dash cancel); 2f extra knockdown advantage on Punish Counter; only the first hit gains the bonus damage from a Counter-hit/Punish Counter; -17 on Punish Counter if only the first hit of counter-attack reaches opponent (e.g. absorbing a ranged Dhalsim poke)"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "214LP",
+          "startup": "17",
+          "total": "43",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span><span style=\"color: #30D5B8;\">'''(+5)'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span><span style=\"color: #ff6347;\">(-1)</span>",
+          "notes": "Crouch-sized hurtbox on frames 14-43 (standing state); can be spaced meaty for better advantage (very precise spacing required for the final active frame to connect); can duck under projectiles with precise timing (impractical as a reaction to fast fireballs, and can be clipped on her back during recovery against slow fireballs); combos naturally from medium/heavy normals; punishing a projectile can link into 2MP, SA2, 5MK, or 2HP depending on the range; startup can be canceled into Feint by inputting K (feint occurs after 12 startup frames); cancelable into Tracer Combination (6PP) on hit/block only"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "214LP~6PP",
+          "startup": "15",
+          "total": "45",
+          "hitAdv": "KD +37",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-15'''</span>",
+          "notes": "Costs 1 extra bar of Drive gauge (except during SA1 install); maintains the Projectile Invuln and crouch-sized hurtbox of 214LP on frames 1-17; best version for confirming into SA3 (combos naturally); forms a true blockstring from 214LP; gives solid oki with Drive Rush or a Forward Dash + manually timed walk"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "214MP",
+          "startup": "16",
+          "total": "41",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span><span style=\"color: #30D5B8;\">'''(+4)'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span><span style=\"color: #bcbd0c;\">(0)</span>",
+          "notes": "Less range than LP version but safe on block at all ranges; can be spaced meaty for better advantage; combos from 5LK naturally; startup can be canceled into Feint by inputting K (feint occurs after 8 startup frames); cancelable into Tracer Combination (6PP) on hit/block only; can perform a risky frame trap into follow-up on block (2f gap) unless the move connects on the final 2 active frames"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "214MP~6PP",
+          "startup": "21",
+          "total": "49",
+          "hitAdv": "KD +18<br>(KD +30~34)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-13'''</span>",
+          "notes": "Costs 1 extra bar of Drive gauge (except during SA1 install); cancel into SA3 does not combo on grounded opponents; puts airborne opponents into a limited juggle OTG bounce state (KD +30 at lowest height, allows SA3 cancel to juggle); 2f gap on block can set up a risky frame trap (no gap during Burnout or if the final 2 active frames of 214MP connect); grounded hit gives the worst oki of all Thunder Dash follow-ups (-3 after Dash)"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "214PP",
+          "startup": "18",
+          "total": "62",
+          "hitAdv": "KD +42",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "2 hits with a large gap in between; range of the 1st hit is in between LP/MP versions (total range is longer but easily interruptible if 1st hit whiffs); combos from medium and heavy normals; allows an easy hitconfirm into SA2/SA3 while remaining safe on block; leaves C.Viper inside throw range with block advantage on burned out opponents, making it a strong chip and pressure tool; cannot perform feint cancels or Tracer Combination follow-ups; if Perfect Parried, opponent can interrupt 2nd hit with 18f or faster attack; extremely disjointed hitbox makes it a strong approach tool at midrange; sets up a safe jump on grounded hit (midscreen, can only connect with max range j.MK)"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "214P~K",
+          "startup": "12/8/6",
+          "total": "24/20/18",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Feint animation lasts 12f but occurs at a different timing from each meterless strength of Thunder Dash (LP 12+12 / MP 8+12 / HP 6+12); can be input more easily by holding any K while inputting 214P; 214HP version gives better combo potential from 2HP or from High Jump canceled 5HP/5HK; Counter-hit state for entire feint animation"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "214[KK]",
+          "startup": "57+10",
+          "total": "114",
+          "hitAdv": "KD +73 Crumple",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-10'''</span>",
+          "notes": "Fully charged Lv.3 version when button is held at least 57f; Punish Counter causes a limited juggle crumple state (+29 before opponent falls to the ground); extremely powerful combo starter for Stun or punishing very unsafe Supers; 1-hit armor frames cover the full body; attack hitbox starts up 10f after reaching full charge (no armor on these frames); absorbing a strike while charging results in an automatic counter-attack with 10f startup; C. Viper incurs only 7f armor hitstop from absorbing a strike; armor can absorb projectiles but does not perform counter-attack (C. Viper incurs 10f projectile hitstop during armor); cancelable into Forward Dash from frame 9-58 (not possible after absorbing a strike); C. Viper is in a Punish Counter state for entire duration (including Forward Dash cancel); only the first hit gains the bonus damage from a Counter-hit/Punish Counter; -17 on Punish Counter if only the first hit of counter-attack reaches opponent (e.g. absorbing a ranged Dhalsim poke)"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "214[K]",
+          "startup": "59+10",
+          "total": "116",
+          "hitAdv": "KD +73 Crumple",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-10'''</span>",
+          "notes": "Fully charged Lv.3 version when button is held at least 59f; Punish Counter causes a limited juggle crumple state (+29 before opponent falls to the ground); 1-hit armor frames cover the full body; attack hitbox starts up 10f after reaching full charge (no armor on these frames); absorbing a strike while charging results in an automatic counter-attack with 10f startup; C. Viper incurs only 7f armor hitstop from absorbing a strike; armor can absorb projectiles but does not perform counter-attack (C. Viper incurs 10f projectile hitstop during armor); cancelable into Forward Dash from frame 12-60 (not possible after absorbing a strike); C. Viper is in a Punish Counter state for entire duration (including Forward Dash cancel); only the first hit gains the bonus damage from a Counter-hit/Punish Counter; -17 on Punish Counter if only the first hit of counter-attack reaches opponent (e.g. absorbing a ranged Dhalsim poke)"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "214{KK}",
+          "startup": "20~56+10",
+          "total": "77~113",
+          "hitAdv": "KD +26",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-16'''</span>",
+          "notes": "Partially charged Lv.2 version when button is held at least 20f (up to 56f); Punish Counter causes a limited juggle crumple state (+8 before opponent falls to the ground); 1-hit armor frames cover the full body, ending immediately if button is released after frame 10; attack hitbox starts up 10f after button release (no armor on these frames); absorbing a strike results in an automatic counter-attack with 10f startup; C. Viper incurs only 7f armor hitstop from absorbing a strike; armor can absorb projectiles but does not perform counter-attack (C. Viper incurs 10f projectile hitstop during armor); cancelable into Forward Dash from frame 9 until button is released (not possible after absorbing a strike); C. Viper is in a Punish Counter state for entire duration (including Forward Dash cancel); only the first hit gains the bonus damage from a Counter-hit/Punish Counter; -17 on Punish Counter if only the first hit of counter-attack reaches opponent (e.g. absorbing a ranged Dhalsim poke)"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "214{K}",
+          "startup": "20~58+10",
+          "total": "77~115",
+          "hitAdv": "KD +26",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-16'''</span>",
+          "notes": "Partially charged Lv.2 version when button is held at least 20f (up to 58f); Punish Counter causes a limited juggle crumple state (+8 before opponent falls to the ground); 1-hit armor frames cover the full body, ending immediately if button is released after frame 13; attack hitbox starts up 10f after button release (no armor on these frames); absorbing a strike results in an automatic counter-attack with 10f startup; C. Viper incurs only 7f armor hitstop from absorbing a strike; armor can absorb projectiles but does not perform counter-attack (C. Viper incurs 10f projectile hitstop during armor); cancelable into Forward Dash from frame 12 until button is released (not possible after absorbing a strike); C. Viper is in a Punish Counter state for entire duration (including Forward Dash cancel); only the first hit gains the bonus damage from a Counter-hit/Punish Counter; -17 on Punish Counter if only the first hit of counter-attack reaches opponent (e.g. absorbing a ranged Dhalsim poke); Focus + Dash can be used to absorb projectiles when Drive gauge is too low for Parry"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "236236K",
+          "startup": "8",
+          "total": "73",
+          "hitAdv": "KD +21",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-34'''</span>",
+          "notes": "Puts C.Viper into an install state on frame 21 (after active frames) that removes the meter cost of her 1-bar moves (High Jump, extensions from Thunder Dash and Burning Kick) and also causes the 1-bar special follow-ups to build 3000 Drive gauge on hit/block; during Burnout, the install ends after one use of these moves; install lasts for 700 frames (11.7 seconds) and freezes during hitstop or cinematics; cannot build additional Super gauge while install is active; KD advantage varies slightly when used in juggles or as an anti-air; if 1st hit is Perfect Parried, opponent can interrupt 2nd hit with 5f or faster attack that reaches around standing chest-height; if 1st hit trades with a projectile at close range, C. Viper can pick up a juggle into 214HP, SA1, or SA2 depending on the distance and fireball hitstun (useful in blockstrings with a large gap, like Terry 5HP > Round Wave)"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "236HK",
+          "startup": "27",
+          "total": "51",
+          "hitAdv": "KD +38",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span><span style=\"color: #32CD32;\">(+2)</span>",
+          "notes": "Farthest trajectory; cannot hit cross-up; Punish Counter gives an extra +5 KD advantage (allows combo into KK follow-up); useful as a safe approach tool from long range (but more likely to land inside opponent's throw range on block); easiest version to space meaty for extra advantage due to forward movement during active frames; works well as a predictive fireball counter due to its range, safety, and lower body projectile invuln frames"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "236KK",
+          "startup": "8",
+          "total": "56",
+          "hitAdv": "KD +43",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span><span style=\"color: #ff6347;\">(-1)</span>",
+          "notes": "Best horizontal range for combo consistency; 2 hits (cannot be interrupted on block); cannot hit cross-up; recovery is cancelable into SA2/SA3 after 11f on hit or block; very difficult to space meaty for extra advantage due to minimal forward movement during 2nd hit's active frames; important juggle tool after launches into Air Burning Kick or juggled 5HK ground bounce; combo from 5HK > HJC requires a strict 2f input window (cannot buffer on the first High Jump frame, and results in air version on frame 4 onward)"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "236K~KK",
+          "startup": "21",
+          "total": "45",
+          "hitAdv": "KD +40<br>(KD +34~40)",
+          "blockAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "notes": "Costs 1 extra bar of Drive gauge (except during SA1 install); leaves a 3f gap on block from Burning Kick that can beat non-invincible attacks (but loses to Drive Impact and anti-air invuln moves); true blockstring vs. opponents in Burnout and +6 oB making it a great pressure tool; KD +40 on grounded opponents (e.g. frame trap after Burning Kick) and +34 on airborne opponents (e.g. combo after PC Burning Kick or in juggle routes, up to KD +40 in very high juggles); does not combo naturally from Burning Kick on grounded opponents (requires Punish Counter or airborne connect); whiffing this attack on grounded hit results in a +13 knockdown with oki only possible in the corner"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "236K~PP",
+          "startup": "12",
+          "total": "49",
+          "hitAdv": "KD +23(+30)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-15'''</span>",
+          "notes": "Costs 1 extra bar of Drive gauge (except during SA1 install); true blockstring and natural combo from Burning Kick; higher KD advantage if Burning Kick lands as a Punish Counter or hits airborne opponent; KD +9 when follow-up hits a grounded opponent (e.g. after Burning Kick is absorbed by 1-hit armor like Luke 236KK or Zangief Charged 5HP)"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "236LK",
+          "startup": "23",
+          "total": "47",
+          "hitAdv": "KD +38",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span><span style=\"color: #32CD32;\">(+2)</span>",
+          "notes": "Shortest trajectory; cannot hit cross-up; Punish Counter gives an extra +5 KD advantage (allows combo into KK follow-up); primarily used for beating throw techs and crouching buttons; connects from about C. Viper's maximum poke range; very difficult to space more safely in neutral due to minimal forward movement during active frames"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "236MK",
+          "startup": "25",
+          "total": "49",
+          "hitAdv": "KD +38",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span><span style=\"color: #32CD32;\">(+2)</span>",
+          "notes": "Medium trajectory; cannot hit cross-up; Punish Counter gives an extra +5 KD advantage (allows combo into KK follow-up); useful for crushing low pokes from outside their max range and for approaching in neutral while staying out of the opponent's throw range on block"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "2HK",
+          "startup": "10",
+          "total": "37(41)",
+          "hitAdv": "KD +34",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-11'''</span>",
+          "notes": "4f extra recovery on block; C. Viper's only standard normal that cannot be High Jump canceled; has some juggle potential; Punish Counter sets up a safe jump using High Jump (fairly impractical outside the corner, as a forward High Jump usually sails over the opponent)"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "2HP",
+          "startup": "9",
+          "total": "31",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+          "notes": "C.Viper's main cancelable poke (no High Jump cancel required) that combos into meterless Seismic Hammer; forces stand on hit; 214HP Feint cancel: +6 oH / -1 oB"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "2LK",
+          "startup": "5",
+          "total": "15",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Chains into 5LP/2LP/2LK; can be High Jump canceled allowing for stronger combo options than most 2LKs; can input High Jump Cancel without returning to neutral for easier execution; HJC~214HP Feint cancel: -6 oH / -11 oB"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "2LP",
+          "startup": "4",
+          "total": "14",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Chains into 5LP/2LP/2LK; DR cancel is delayed until after 2nd active frame; 214HP Feint cancel: -3 oH / -9 oB; topmost hurtbox on frames 1-6 is vulnerable only to aerial attacks, preventing its use as an anti-air"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "2MK",
+          "startup": "8",
+          "total": "27",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Amazing range for a low poke that can lead to combos with High Jump cancel; can input High Jump Cancel without returning to neutral for easier execution; HJC~214HP Feint cancel: +4 oH / -2 oB"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "2MP",
+          "startup": "6",
+          "total": "25",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "High hitstun for a medium normal (combos into OD Seismo); special/DI/High Jump cancel is delayed until after 2nd active frame; 214HP Feint cancel: +5 oH / -2 oB; topmost hurtbox on frames 1-8 is vulnerable only to aerial attacks, preventing its use as an anti-air"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "2~8",
+          "startup": "6 prejump",
+          "total": "49",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Costs 1 bar of Drive gauge (except during SA1 install); jumps slightly higher and over 50% farther than a standard jump; can be input in neutral or canceled on hit/block from all normals (except 2HK/6MP/6HK) and from Seismic Hammer; can be input as a forward or neutral jump (cannot High Jump backwards, but attempting this as a cancel results in neutral jump); cancelable into grounded special moves and Supers during prejump frames 2-6, effectively allowing any HJ-cancelable attack to be special/super cancelable; C. Viper is in a Counter-hit state for the entire duration and in a Forced Knockdown state when airborne; Drive Gauge recovery acts similar to OD specials (can start regaining meter quickly, effectively refunding part of its cost by hitting the opponent afterward; grounded High Jump Cancel into grounded Burning Kick cannot be buffered on the first jump frame (results in a strict 2f window to properly input a combo sequence like juggled 5HK > HJC OD Burning Kick); can be used in safe jump setups with a KD Advantage of +45; the Up direction must be input no later than the 8th frame after initiating the Down direction (holding down before inputting a jump does not result in a High Jump); when canceled from a normal that is otherwise not special cancelable, execution requirements are relaxed and a neutral input is no longer required before the HJC (most useful for 2MK/2LK)"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "4LPLK",
+          "startup": "5",
+          "total": "30",
+          "hitAdv": "KD +19",
+          "blockAdv": "-",
+          "notes": "Side switch; can pressure with Drive Rush after a corner side switch (but cannot beat reversal 4f normals with another throw); meaty LK Burning Kick can lead to a DI-safe Double Burn blockstring, but loses to wakeup Drive Impact; a successful Throw Escape builds 0.5 Drive bars for the defender; Throw Escape is awarded to a random player if input simultaneously"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "4PPPKKK",
+          "startup": "965 (total)",
+          "total": "965",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Begins with \"You're a stubborn one —\" / \"You're becoming a pain in —\" / \"I have a few new tricks up —\" / \"Decouple power limiters —\" / \"This is going on far too —\" / \"I think it's about time I —\"; after being interrupted, plays out one of 6 potential phone conversations."
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "5HK",
+          "startup": "10",
+          "total": "33",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Staggers opponent on Punish Counter; shorter range vs. crouching opponents; puts airborne opponents into a limited juggle OTG bounce that can be followed up with High Jump cancel into Thunder Dash, OD Burning Kick, or any Super; can be juggled into after Seismo > HJC Air Burning Kick, then High Jump canceled into more damage; extends a hurtbox 1f before active that is vulnerable to projectiles; HJC~214HP Feint cancel: +7 oH / 0 oB / +22 onPC; HJC~214K~Dash cancel onPC: +8 meterless / +11 OD; strict 2f timing to input HJC into grounded Burning Kick (cannot be buffered on the first frame of High Jump)"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "5HP",
+          "startup": "12",
+          "total": "35",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Long range poke that can be converted into damaging combos with High Jump cancel into Feint or Seismo; HJC~214HP Feint cancel: +6 oH / +1 oB"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "5LK",
+          "startup": "5",
+          "total": "18",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Primary 5f punish tool; higher hitstun than other lights (can combo into 214MP); links from 2LP allowing C.Viper to combo 4 light normals; DR cancel is delayed until after active frames; 214HP Feint cancel: -2 oH / -7 oB"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "5LP",
+          "startup": "4",
+          "total": "14",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Chains into 5LP/2LP/2LK; 214HP Feint cancel: -4 oH / -10 oB; more range than 2LP but worse advantage on hit/block"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "5MK",
+          "startup": "8",
+          "total": "28(30)",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Strong poke that can combo into specials with a High Jump cancel (214HP can whiff at farther ranges); can link into SA2 on counter-hit from around the max range of 2MP; 2f extra recovery on whiff; HJC~214HP Feint cancel: +5 oH / -3 oB"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "5MP",
+          "startup": "8",
+          "total": "23",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+6'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "notes": "Primary combo and frame trap starter; 214HP Feint cancel: +3 oH / -2 oB"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "5PPPKKK",
+          "startup": "605 (total)",
+          "total": "605",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"Ugh, could you just like, give up now? I have other work to do.\""
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "623P",
+          "startup": "24",
+          "total": "57",
+          "hitAdv": "KD +53",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-10'''</span>",
+          "notes": "1-hit standard projectile; button strength determines projectile distance (LP close, MP ~50% screen, HP ~80% screen); puts opponents into a limited juggle state; combos from 2HP or from High Jump canceled 5HP/5HK; cancelable into High Jump on hit or block for 1 extra Drive bar (no extra cost during SA1 install); all strengths will not go beyond the corner; can transition into Seismo Feint after 11f (total Feint duration 27f); HJC~214HP Feint cancel: KD +61 / -2 oB; great tool for Burnout pressure (can repeatedly chain Seismos together with High Jump cancels until pushed out of range); can connect 9 consecutive HP Seismos on a blocking cornered opponent (if starting from a canceled normal, 5HP > HJC Seismo is the best option with 8 consecutive Seismo chains); hitbox is very low to the ground, allowing opponent to block when landing from an empty jump"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "623PP",
+          "startup": "19",
+          "total": "52",
+          "hitAdv": "KD +53",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "1-hit OD projectile; covers wide area in front of C. Viper (~50% screen); puts opponents into a limited juggle state; combos from medium normals; cancelable into High Jump on hit or block for 1 extra Drive bar (no extra cost during SA1 install); startup cannot be canceled with Seismo Feint; HJC~214HP Feint cancel: KD +61 / +2 oB; hitbox is very low to the ground, allowing opponent to block when landing from an empty jump; hurtbox expands forward beginning on the 2nd active frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "623P~K",
+          "startup": "11",
+          "total": "27",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Useful for baiting neutral responses like jumps or anti-projectile Supers; much slower than HP Thunder Dash feint (not useful for combos/pressure when canceled from normals); can only be performed from meterless Seismic Hammer after 11 frames of startup (27f total animation); can be performed by holding K for easier execution; Counter-hit state for entire feint animation"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "6HK",
+          "startup": "11",
+          "total": "47",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "2 hits; carries counter-hit/Punish Counter advantage through both hits; if 1st hit is Perfect Parried, opponent can interrupt 2nd hit with 16f or faster attack; useful approach tool from Drive Rush (strike/throw mixup on block, 2MP link on hit); can be spaced effectively in neutral to keep C.Viper out of the opponent's throw range on block"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "6HPHK",
+          "startup": "18",
+          "total": "46(51)",
+          "hitAdv": "KD +23",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Performed by holding 6HPHK on wakeup; 5f extra recovery on hit; does not have any screen freeze except for a 12f freeze when interacting with the opponent's throw hitbox (this also refunds 1 Drive bar after punishing the throw); see [[Street_Fighter_6/Gauges#Drive_Reversal|Drive Reversal]]."
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "6HPHK",
+          "startup": "20",
+          "total": "48(53)",
+          "hitAdv": "KD +23",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Performed by inputting 6HPHK during blockstun; 5f extra recovery on hit; freezes the screen for 4f during startup; see [[Street_Fighter_6/Gauges#Drive_Reversal|Drive Reversal]]."
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "6MP",
+          "startup": "22",
+          "total": "44",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "16-27f Low Crush (not airborne or throw invincible)"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "6PPPKKK",
+          "startup": "740 (total)",
+          "total": "740",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"I hate to admit, you're not half bad! Even messed up my makeup. Hmm, alright, all done up.\""
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "8HK",
+          "startup": "10",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+11(+16)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+6(+11)'''</span>",
+          "notes": "Longest horizontal range of Viper's air normals; in the corner or against wide characters (Blanka/E.Honda/Zangief), can combo Punish Counter 5HK into High Jump cancel nj.HK for powerful combo extension; lower body projectile invuln 10-19f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "HPHK",
+          "startup": "26",
+          "total": "62",
+          "hitAdv": "KD +35 / Wall Splat KD +65",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span> / Wall Splat HKD +72",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Impact|Drive Impact]]. Airborne connect gives spinning juggle state on Punish Counter or corner Wall Splat with variable height."
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "j.236HK",
+          "startup": "18",
+          "total": "-",
+          "hitAdv": "KD +36(+48)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span><span style=\"color: #30D5B8;\">'''(+7)'''</span>",
+          "notes": "Can be input from a forward/neutral jump or High Jump; maintains the most forward air momentum; effective approach tool when used from immediate High Jump; can hit crossup; 1f extra landing recovery frame when blocked as a cross-up; 8f extra landing recovery on whiff after crossing over the opponent; comes out after 7 airborne frames (normal jump) or 3 airborne frames (High Jump); High Jump version deals 1f less blockstun but hits lower to the ground resulting in better advantage when used low to the ground; advantage on knockdown or block varies greatly depending on angle, distance, and height when activated; earliest input timing (Tiger Knee input) at close range results in KD +38 / -3 oB (regular jump), KD +41 / -1 oB (High Jump)"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "j.236KK",
+          "startup": "18",
+          "total": "-",
+          "hitAdv": "KD +35(+48)",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span><span style=\"color: #30D5B8;\">'''(+13)'''</span>",
+          "notes": "Can be input from a forward/neutral jump or High Jump; same air trajectory as Heavy version; can hit crossup; 8f extra landing recovery on whiff after crossing over the opponent; comes out after 7 airborne frames (normal jump) or 3 airborne frames (High Jump); High Jump version deals 1f less blockstun but hits lower to the ground resulting in better advantage when used low to the ground; advantage on knockdown or block varies greatly depending on angle, distance, and height when activated; earliest input timing (Tiger Knee input) at close range results in KD +37 / +2 oB (regular jump), KD +41 / +4 oB (High Jump)"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "j.236LK",
+          "startup": "22",
+          "total": "-",
+          "hitAdv": "KD +38(+43)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span><span style=\"color: #32CD32;\">(+2)</span>",
+          "notes": "Can be input from a forward/neutral jump or High Jump; stops forward air momentum; can hit crossup; 1f extra landing recovery frame when blocked as a cross-up; 8f extra landing recovery on whiff after crossing over the opponent; comes out after 7 airborne frames (normal jump) or 3 airborne frames (High Jump); High Jump version deals 1f less blockstun but hits lower to the ground resulting in better advantage when used low to the ground; advantage on knockdown or block varies greatly depending on angle, distance, and height when activated; earliest input timing (Tiger Knee input) at close range results in KD +39 / -2 oB (regular jump), KD +43 / +1 oB (High Jump)"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "j.236MK",
+          "startup": "20",
+          "total": "-",
+          "hitAdv": "KD +37(+48)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span><span style=\"color: #30D5B8;\">'''(+8)'''</span>",
+          "notes": "Can be input from a forward/neutral jump or High Jump; maintains some forward air momentum; can hit crossup; 1f extra landing recovery frame when blocked as a cross-up; 8f extra landing recovery on whiff after crossing over the opponent; comes out after 7 airborne frames (normal jump) or 3 airborne frames (High Jump); High Jump version deals 1f less blockstun but hits lower to the ground resulting in better advantage when used low to the ground; advantage on knockdown or block varies greatly depending on angle, distance, and height when activated; earliest input timing (Tiger Knee input) at close range results in KD +40 / -1 oB (regular jump), KD +43 / +1 oB (High Jump); using this version after Seismic Hammer launch allows a midscreen juggle into MP Thunder Dash + Tracer Combination (great damage, oki, and potential SA3 cancel with less meter cost than OD Burning Kick routes)"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "j.HK",
+          "startup": "8",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+11(+16)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+6(+11)'''</span>",
+          "notes": "Cross-up; cancelable into Aerial Burn Kick (only combos naturally into HK/OD version on grounded opponents, and cannot juggle after air-to-air connect due to air reset); cancelable until the 37th airborne frame of a forward jump or High Jump; lower body projectile invuln 8-19f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "j.HP",
+          "startup": "11",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+11(+16)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+6(+11)'''</span>",
+          "notes": "Spike knockdown vs. airborne opponents; forces stand on hit; good hitbox for vertical approaches; lower body projectile invuln 11-23f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "j.LK",
+          "startup": "5",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span><span style=\"color: #30D5B8;\">'''(+9)'''</span>",
+          "blockAdv": "<span style=\"color: #bcbd0c;\">0</span><span style=\"color: #30D5B8;\">'''(+6)'''</span>",
+          "notes": "Can be used as a fuzzy instant overhead; strong hitbox priority; against tall standing characters, can combo any close range button into High Jump canceled j.LK on the way up"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "j.LP",
+          "startup": "5",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+6(+9)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+3</span><span style=\"color: #30D5B8;\">'''(+6)'''</span>",
+          "notes": "Forces stand on hit; short range air-to-air with an upward angle"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "j.MK",
+          "startup": "7",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+7(+13)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+3</span><span style=\"color: #30D5B8;\">'''(+9)'''</span>",
+          "notes": "Cross-up; strong overall jump-in (great hitbox priority and the most range of her forward jump normals); lower body projectile invuln 7-20f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "j.MP",
+          "startup": "8",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+8(+11)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+6(+9)'''</span>",
+          "notes": "Puts airborne opponents into a limited juggle state; cancelable into Aerial Burning Kick on forward or neutral jump; lower body projectile invuln 8-22f (if used immediately on the way up, can avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "LPLK",
+          "startup": "5",
+          "total": "30",
+          "hitAdv": "KD +28",
+          "blockAdv": "-",
+          "notes": "Grants a corner throw loop by walking or dashing (+7, requires delayed throw); can pressure with MK Burning Kick (+2 oB, DI-safe), MK Burning Kick ~ Double Burn (also +2 oB, true blockstring, gives better Drive damage but the sequence loses to wakeup DI), or HK Burning Kick ~ Double Burn (leaves a small blockstring gap between hits, allowing C. Viper to land and counter-DI); a successful Throw Escape builds 0.5 Drive bars for the defender; Throw Escape is awarded to a random player if input simultaneously"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "MPMK",
+          "startup": "1",
+          "total": "45(3)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Parry|Drive Parry]]. Perfect Parrying has only 1F of recovery and disables the opponent from canceling their attack. Perfect Parrying projectiles puts you into fixed 11 frames of recovery. After a Perfect Parry, all Super Gauge gain is reduced by 20% and Drive Gauge gain/damage is reduced by 50% for the entire punish combo."
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "MPMK or 66",
+          "startup": "9",
+          "total": "24(46)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Rush|Drive Rush]]; 3-bar version performed on hit/block from a cancelable normal; can also be performed on whiff from cancelable light normals; startup refers to minimum time before an attack can cancel the Drive Rush animation; the first 15 recovery frames are cancelable into any attack; the final 22 recovery frames are cancelable into any attack or movement option or blocking (except Parry); only Normal and Command Normal attacks are enhanced with +4 frame advantage and improved juggle properties"
+        }
+      },
+      {
+        "title": {
+          "chara": "C.Viper",
+          "input": "MPMK~66",
+          "startup": "3+8",
+          "total": "26(48)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Rush|Drive Rush]]; 1-bar version performed out of a Parry; startup refers to minimum time before an attack can cancel the Drive Rush animation (if performed immediately after a successful Parry, only 1+8 startup); the first 15 recovery frames are cancelable into any attack; the final 22 recovery frames are cancelable into any attack or movement option or blocking (except Parry); only Normal and Command Normal attacks are enhanced with +4 frame advantage and improved juggle properties; Distance: 0.374 (min/throw), 1.756 (min/block), 3.355 (max/final DR frame)"
+        }
+      }
+    ]
+  }
+}

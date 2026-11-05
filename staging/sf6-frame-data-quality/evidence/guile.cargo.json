@@ -1,0 +1,750 @@
+{
+  "url": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Guile%22&limit=500",
+  "retrievedAt": "2026-11-05T09:20:26.568Z",
+  "status": 200,
+  "characterId": "guile",
+  "gameVersion": "UNVERIFIED",
+  "license": "CC-BY-SA-4.0",
+  "attribution": "SuperCombo Wiki contributors",
+  "data": {
+    "cargoquery": [
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "214214P",
+          "startup": "1",
+          "total": "6",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "Gives access to Sonic Break follow-ups; remaining active time decreases by 200f with each Sonic Break use (maximum 7 uses)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "214HP",
+          "startup": "31",
+          "total": "54",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "2 hits; [] refers to projectile active time (very slow forward movement); can enhance a Sonic Boom by inputting 6P during recovery (no charge required), or by using [4]6P through the Sonic Blade after 214P recovery; Guile has a wide lower body hurtbox, making him vulnerable to ranged low pokes and sweeps; cannot activate SA1 while Sonic Blade is active on-screen"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "214LP",
+          "startup": "16",
+          "total": "42",
+          "hitAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "1 hit; [] refers to stationary projectile active time; can enhance a Sonic Boom by inputting 6P during recovery (no charge required), or by using [4]6P through the Sonic Blade after 214P recovery; Guile has a wide lower body hurtbox, making him vulnerable to ranged low pokes and sweeps; cannot activate SA1 while Sonic Blade is active on-screen"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "214MP",
+          "startup": "21",
+          "total": "50",
+          "hitAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-7'''</span>",
+          "notes": "1 hit; [] refers to projectile active time (very slow forward movement); can enhance a Sonic Boom by inputting 6P during recovery (no charge required), or by using [4]6P through the Sonic Blade after 214P recovery; Guile has a wide lower body hurtbox, making him vulnerable to ranged low pokes and sweeps; cannot activate SA1 while Sonic Blade is active on-screen"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "214PP",
+          "startup": "15",
+          "total": "39",
+          "hitAdv": "KD +57",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "notes": "2-hit OD projectile; button combination determines forward movement speed of the projectile (LP+MP slowest, LP+HP mid, MP+HP fastest); [] refers to projectile active time; on grounded connect, 1st hit knocks down and the 2nd hit remains active; either hit puts opponent into limited juggle state; cannot activate SA1 while Sonic Blade is active on-screen; gives slight advantage on block and can be extremely plus when used with meaty timing; SA2 cancel: KD+68/+16"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "214PP ~ 6P",
+          "startup": "10",
+          "total": "38",
+          "hitAdv": "KD +47",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "No charge required to throw projectile; puts opponents into limited juggle state; only the Enhanced Boom is cancelable to SA2; if the OD Sonic Blade is blocked immediately at close range, it will dissipate before the Boom follow-up comes out, making the cancel impossible; SA2 cancel: KD+64/+24; projectile speed accelerates until no longer on screen"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "214PP ~ 6PP",
+          "startup": "10",
+          "total": "38",
+          "hitAdv": "KD Spin + Splat",
+          "blockAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "notes": "No charge required to throw projectile; puts opponents into limited juggle state; costs 3 total stocks of Drive Gauge counting the initial Sonic Blade activation (4 stocks if you delay with a manual OD Sonic Boom); causes a short wallsplat animation if the opponent is near the corner; SA2 cancel: KD+65/+25; projectile speed accelerates until no longer on screen"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "214P~6P",
+          "startup": "10",
+          "total": "38",
+          "hitAdv": "KD +44~",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "No charge required to throw projectile; the 6P button strength determines projectile speed and Drive damage on block (LP 3500 / MP 5000 / HP 4000); enhanced version becomes a 2-hit projectile that puts opponents into limited juggle state on hit; input 6+P within 3f of each other for Perfect Boom (+200 damage on 1st hit); if Sonic Blade dissipates before Boom passes through it, the projectile is not enhanced; the projectile speed of 214P~6LP is very slow for the first 8 frames (almost stationary); arm hurtbox appears 2f before active"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "214P~6PP",
+          "startup": "10",
+          "total": "38",
+          "hitAdv": "KD +48~",
+          "blockAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "notes": "No charge required to throw projectile; enhanced version becomes a 3-hit OD projectile that puts opponents into limited juggle state on hit; if Sonic Blade dissipates before OD Boom passes through it, the projectile remains a regular OD Sonic Boom; SA2 cancel: KD+65/+25; projectile speed accelerates until no longer on screen"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "2HK",
+          "startup": "9",
+          "total": "50",
+          "hitAdv": "KD +34",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span>",
+          "notes": "2 hits; both hits have juggle potential; 1st hit launches opponent into limited juggle state on Punish Counter; Target Combo follow-up only combos on Drive Rush, Punish Counter, or when 2HK is juggled into"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "2HK~3HK",
+          "startup": "10",
+          "total": "37",
+          "hitAdv": "KD +33",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-10(-30)'''</span>",
+          "notes": "(refers to 20% scaled damage from 2HK); only combos from 1st hit of 2HK on Punish Counter, after Drive Rush, or in juggles; very lenient confirm window; puts opponent into limited juggle state; whiffs on crouching opponents (works after Punish Counter 2HK due to juggle state); SA2 cancel: KD +47/+4; special/DR cancel/DI is delayed until after 5th recovery frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "2HP",
+          "startup": "9",
+          "total": "33",
+          "hitAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-9'''</span>",
+          "notes": "Good vertical anti-air (cannot hit cross-up); forces stand on hit (useful to create consistent spacing in Sonic Boom loops); SA2 cancel: +18/+9"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "2LK",
+          "startup": "5",
+          "total": "18",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Chains into 5LP/2LP/2LK"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "2LP",
+          "startup": "4",
+          "total": "14",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Chains into 5LP/2LP/2LK; SA2 cancel: +9/+2; DR cancel is delayed until after active frames; topmost hurtbox on frames 1-6 is vulnerable only to aerial strikes (preventing its use as an anti-air)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "2MK",
+          "startup": "8",
+          "total": "28",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+          "notes": "Good poke, especially when used from Drive Rush; significantly more range on 2nd active frame (may not work as an 8f punish at some ranges)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "2MK~6MP",
+          "startup": "20",
+          "total": "42",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+          "notes": "() refers to 20% scaled damage from 2MK combo starter; low into overhead string; has a 5f gap between hits on block that can lead to trade combos; causes spike knockdown vs. airborne opponents; Counter-hit/Punish Counter puts the opponent into a limited juggle OTG bounce state (juggle into [2]8LK is most consistent); 2nd hit maintains the CH/PC state from the initial 2MK"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "2MP",
+          "startup": "6",
+          "total": "21(24)",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "3f extra recovery on whiff; low pushback on hit; chains into itself for a launching Target Combo; has an extended hurtbox on whiff until the end of recovery; SA2 cancel: +13/+7; topmost hurtbox on frames 1-8 is vulnerable only to aerial strikes (preventing its use as an anti-air)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "2MP~2MP",
+          "startup": "12",
+          "total": "30",
+          "hitAdv": "KD +44",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Puts opponents into limited juggle state; +12 extra KD Adv when canceled into SA2; 2f gap between hits on block; SA2 cancel: KD+56/+6"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "2PPPKKK",
+          "startup": "73 (total)",
+          "total": "73",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"Come on!\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "3HK",
+          "startup": "10",
+          "total": "35",
+          "hitAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-9'''</span>",
+          "notes": "Whiffs on crouching opponents unless they extend a vertical hurtbox; puts airborne opponents into limited juggle state on CH; puts grounded/airborne opponents into free juggle state on PC; not a reliable anti-air; SA2 cancel: +12/+3; special/DR/DI cancel is delayed until after 5th recovery frame; extends a hurtbox 1f before active that is vulnerable to projectiles"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "4HP",
+          "startup": "9",
+          "total": "32",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "Good buffer tool that allows Guile to maintain back charge; SA2 cancel: +18/+13"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "4LK",
+          "startup": "8",
+          "total": "27",
+          "hitAdv": "<span style=\"color: #bcbd0c;\">0</span><span style=\"color: #30D5B8;\">'''(+4)'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span><span style=\"color: #bcbd0c;\">(0)</span>",
+          "notes": "7-17f low crush (not airborne); has some juggle potential; great approach option out of Drive Rush; the final active frame requires incredible precise spacing to connect (for practical purposes, the max frame advantage is <span style=\"color: #32CD32;\">+3</span>/<span style=\"color: #ff6347;\">-1</span>)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "4LPLK",
+          "startup": "5",
+          "total": "30",
+          "hitAdv": "KD +18",
+          "blockAdv": "-",
+          "notes": "Side switch; Drive Rush is required for throw/strike oki after back throwing opponent into corner; a successful Throw Escape builds 0.5 Drive bars for the defender; Throw Escape is awarded to a random player if input simultaneously"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "4MK or 6MK",
+          "startup": "11",
+          "total": "31(34)",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+3'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "7-17f low crush (not airborne); has some juggle potential; 6MK version has 3f extra recovery on whiff; strong neutral tool; better hitbox priority on 4MK version"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "4PPPKKK",
+          "startup": "325 (total)",
+          "total": "325",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"This is a war, and I'm ready for you.\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "5HK",
+          "startup": "12",
+          "total": "35",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "SA2 cancel: +21/+13; can link into 2LP at point blank, 2MP on close range Counter-hit, or 5HP on mid-range Punish Counter"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "5HP",
+          "startup": "7",
+          "total": "32",
+          "hitAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Stagger effect makes it useful as a whiff punish; extends a hurtbox 1f before active that is vulnerable to projectiles; SA2 cancel: +18/+13"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "5LK",
+          "startup": "5",
+          "total": "18",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Decent range light poke, but must let go of back charge before LK input making the execution a bit harder; SA2 cancel: +10/+6; DR cancel is delayed until after 1st recovery frame"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "5LP",
+          "startup": "5",
+          "total": "14",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Chains into 5LP/2LP/2LK; SA2 cancel: +7/+1"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "5MK",
+          "startup": "7",
+          "total": "29",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "Solid anti-air"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "5MP",
+          "startup": "7",
+          "total": "24",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+6'''</span>",
+          "blockAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+          "notes": "Main combo starter, can chain into 4HP Target Combo; SA2 cancel: +17/+11"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "5MP~4HP",
+          "startup": "16",
+          "total": "44",
+          "hitAdv": "KD +35",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-9'''</span>",
+          "notes": "2f gap on block; puts opponents into limited juggle state; frames 8-9 of 4HP animation are kara-cancelable (shifts Guile backwards); SA2 cancel: KD+57/+13"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "5PPPKKK",
+          "startup": "116 (total)",
+          "total": "116",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"Got you in my sights.\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "6HK",
+          "startup": "17",
+          "total": "45",
+          "hitAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span>",
+          "notes": "4-28f low crush/throw invuln (not airborne); Counter-hit causes knockdown vs. grounded/airborne opponents (KD +29~); Punish Counter causes crumple vs. grounded and limited juggle state vs. airborne; extends a hurtbox 1f before active that is vulnerable to projectiles"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "6HP",
+          "startup": "16",
+          "total": "38",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "notes": "Whiffs vs. crouching opponents; has some juggle potential; long forward movement"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "6HPHK",
+          "startup": "18",
+          "total": "46(51)",
+          "hitAdv": "KD +23",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Performed by holding 6HPHK on wakeup; 5f extra recovery on hit; does not have any screen freeze except for a 12f freeze when interacting with the opponent's throw hitbox (this also refunds 1 Drive bar after punishing the throw); see [[Street_Fighter_6/Gauges#Drive_Reversal|Drive Reversal]]."
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "6HPHK",
+          "startup": "20",
+          "total": "48(53)",
+          "hitAdv": "KD +23",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+          "notes": "Performed by inputting 6HPHK during blockstun; 5f extra recovery on hit; freezes the screen for 4f during startup; see [[Street_Fighter_6/Gauges#Drive_Reversal|Drive Reversal]]."
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "6MP",
+          "startup": "20",
+          "total": "41",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Fast and high damage for a command overhead; spike knockdown vs. airborne opponents"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "6PPPKKK",
+          "startup": "225 (total)",
+          "total": "225",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "\"You won't know what hit you.\""
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "HPHK",
+          "startup": "26",
+          "total": "62",
+          "hitAdv": "KD +35 / Wall Splat KD +65",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span> / Wall Splat HKD +72",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Impact|Drive Impact]]. Airborne connect gives spinning juggle state on Punish Counter or corner Wall Splat with variable height."
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "j.4LPLK",
+          "startup": "5",
+          "total": "-",
+          "hitAdv": "KD +15",
+          "blockAdv": "-",
+          "notes": "Side switch; if throwing opponent back into the corner, can Drive Rush for meaty strike (no true throw oki)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "j.HK",
+          "startup": "10",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+10(+15)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+6(+11)'''</span>",
+          "notes": "Decent horizontal jump-in; lower body projectile invuln 10-19f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "j.HP",
+          "startup": "9",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+7(+15)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+3</span><span style=\"color: #30D5B8;\">'''(+11)'''</span>",
+          "notes": "Spikes airborne opponents on counter-hit/Punish Counter; lower body projectile invuln 9-23f except around attack hitbox (cannot be used to avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "j.LK",
+          "startup": "6",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5(+10)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span><span style=\"color: #30D5B8;\">'''(+6)'''</span>",
+          "notes": "Cross-up"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "j.LP",
+          "startup": "4",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4(+9)'''</span>",
+          "blockAdv": "<span style=\"color: #bcbd0c;\">0</span><span style=\"color: #30D5B8;\">'''(+5)'''</span>",
+          "notes": "Can be used as a fuzzy instant overhead"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "j.LPLK",
+          "startup": "5",
+          "total": "-",
+          "hitAdv": "KD +21(23)",
+          "blockAdv": "-",
+          "notes": "Higher air throw gives slightly better KD Adv.; gives oki if near the corner"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "j.MK",
+          "startup": "7",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+11(+13)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+7(+9)'''</span>",
+          "notes": "Lower body projectile invuln 7-20f (if used immediately on the way up, can avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "j.MP",
+          "startup": "7",
+          "total": "-",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+9(+11)'''</span>",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+5(+7)'''</span>",
+          "notes": "Puts airborne opponents into limited juggle state; lower body projectile invuln 7-22f (if used immediately on the way up, can avoid the 2nd hit of JP's OD Amnesia bombs)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "LPLK",
+          "startup": "5",
+          "total": "30",
+          "hitAdv": "KD +15",
+          "blockAdv": "-",
+          "notes": "No corner throw loop without Drive Rush (with frame-perfect timing, can throw loop vs. Blanka, E. Honda, and Zangief); a successful Throw Escape builds 0.5 Drive bars for the defender; Throw Escape is awarded to a random player if input simultaneously"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "MPMK",
+          "startup": "1",
+          "total": "45(3)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Parry|Drive Parry]]. Perfect Parrying has only 1F of recovery and disables the opponent from canceling their attack. Perfect Parrying projectiles puts you into fixed 11 frames of recovery. After a Perfect Parry, all Super Gauge gain is reduced by 20% and Drive Gauge gain/damage is reduced by 50% for the entire punish combo."
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "MPMK or 66",
+          "startup": "9",
+          "total": "24(46)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Rush|Drive Rush]]; 3-bar version performed on hit/block from a cancelable normal; can also be performed on whiff from cancelable light normals; startup refers to minimum time before an attack can cancel the Drive Rush animation; the first 15 recovery frames are cancelable into any attack; the final 22 recovery frames are cancelable into any attack or movement option or blocking (except Parry); only Normal and Command Normal attacks are enhanced with +4 frame advantage and improved juggle properties"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "MPMK~66",
+          "startup": "3+8",
+          "total": "26(48)",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "See [[Street_Fighter_6/Gauges#Drive_Rush|Drive Rush]]; 1-bar version performed out of a Parry; startup refers to minimum time before an attack can cancel the Drive Rush animation (if performed immediately after a successful Parry, only 1+8 startup); the first 15 recovery frames are cancelable into any attack; the final 22 recovery frames are cancelable into any attack or movement option or blocking (except Parry); only Normal and Command Normal attacks are enhanced with +4 frame advantage and improved juggle properties; Distance: 0.805 (min/throw), 1.898 (min/block), 3.461 (max/final DR frame)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "PP",
+          "startup": "11",
+          "total": "36",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "1-hit projectile; only possible during SA2 install (1500f timer); each use drains timer by 200f (maximum 5 per sequence); projectile speed changes based on directional input (1PP/4PP slow, 5PP/2PP medium, 6PP/3PP fast); Guile only builds super meter for himself if projectile connects after install timer has expired"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "[2]8HK",
+          "startup": "7",
+          "total": "55",
+          "hitAdv": "KD +39",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-32'''</span>",
+          "notes": "45f charge (charge lasts 12f after releasing down direction); cannot hit cross-ups; input 8+HK within 3f of each other for Perfect timing (better damage); does 400 less damage on active frames 3-6 (800 regular, 1000 perfect)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "[2]8KK",
+          "startup": "6",
+          "total": "57",
+          "hitAdv": "KD +29",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-33(-37)'''</span>",
+          "notes": "45f charge (charge lasts 15f after releasing down direction); cannot hit cross-ups; does not have a Perfect timing version; 2nd hit whiffs vs. crouch block (4f worse advantage, less chip damage); 1st hit does 300 less damage on active frames 3-4 (high anti-air or long range connect)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "[2]8LK",
+          "startup": "5",
+          "total": "51",
+          "hitAdv": "KD +36",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-30'''</span>",
+          "notes": "45f charge (charge lasts 12f after releasing down direction); cannot hit cross-ups; input 8+LK within 3f of each other for Perfect timing (better damage); does 200 less damage on active frames 3-6 (800 regular, 1000 perfect); 2nd active frame extends a wide combo-only hitbox (important for specific combo routes like CH/PC 2MK~6MP bounce or max range CH 2MP link)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "[2]8MK",
+          "startup": "6",
+          "total": "53",
+          "hitAdv": "KD +37",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-31'''</span>",
+          "notes": "45f charge (charge lasts 12f after releasing down direction); cannot hit cross-ups; input 8+MK within 3f of each other for Perfect timing (better damage); does 300 less damage on active frames 3-6 (800 regular, 1000 perfect)"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "[4]646HP",
+          "startup": "7",
+          "total": "75",
+          "hitAdv": "KD +70",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "45f charge (charge lasts 22f after releasing back direction); 7-hit Super projectile; primarily used in air juggles (whiffs on crouching opponents unless they extend a vertical hurtbox, can hit standing opponents at close range); puts opponent into limited juggle state; KD Adv. can vary depending on juggle height; cannot be used while Sonic Blade projectile is active on-screen; can follow up with a LP/MP SA1 after hitting a grounded opponent"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "[4]646K",
+          "startup": "9",
+          "total": "84",
+          "hitAdv": "HKD +16",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-59'''</span>",
+          "notes": "45f charge (charge lasts 22f after releasing back direction); active frames 3-6 give a non-cinematic hit with reduced damage and chip; cannot hit cross-up; cinematic time regenerates ~1.8 Drive bars for Guile"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "[4]646K",
+          "startup": "9",
+          "total": "84",
+          "hitAdv": "HKD +16",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-59'''</span>",
+          "notes": "45f charge (charge lasts 22f after releasing back direction); active frames 3-6 give a non-cinematic hit with reduced damage and chip; cannot hit cross-up; available at 25% HP or below; cinematic time regenerates ~2 Drive bars for Guile"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "[4]646P",
+          "startup": "8(11)",
+          "total": "89",
+          "hitAdv": "KD +41",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-26'''</span>",
+          "notes": "45f charge (charge lasts 22f after releasing back direction); 7-hit Super projectile; can input this horizontal version with LP or MP; cannot be used while Sonic Blade projectile is active on-screen; active frames 1-3 only hits on the shorter-range hitbox in front of Guile, but extends a combo-only hitbox to its full range that connects if the opponent is in hitstun (essentially has 11f startup as a long-range punish tool, like when used against the opponent's projectile); the upper combo-only hitbox applies to strike-based hitstun (e.g. j.MP air-to-air) while the lower combo-only hitbox applies to projectile-based hitstun (e.g. anti-air Sonic Boom); can be juggled into after HP SA1 if the opponent was launched from a grounded state"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "[4]6HP",
+          "startup": "10",
+          "total": "40",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3<span style=\"color: #30D5B8;\">'''(+4)'''</span></span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "1-hit projectile; 45f charge (charge lasts 10f after releasing back direction); input 6+HP within 3f of each other for Perfect timing (better damage and Hit advantage); can follow up with Sonic Break (6P) during SA2; arm hurtbox appears 2f before active"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "[4]6LP",
+          "startup": "10",
+          "total": "40",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3<span style=\"color: #30D5B8;\">'''(+4)'''</span></span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "1-hit projectile; 45f charge (charge lasts 10f after releasing back direction); input 6+LP within 3f of each other for Perfect timing (better damage and Hit advantage); can follow up with Sonic Break (6P) during SA2; arm hurtbox appears 2f before active"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "[4]6MP",
+          "startup": "10",
+          "total": "40",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3<span style=\"color: #30D5B8;\">'''(+4)'''</span></span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "1-hit projectile; 45f charge (charge lasts 10f after releasing back direction); input 6+MP within 3f of each other for Perfect timing (better damage and Hit advantage); can follow up with Sonic Break (6P) during SA2; arm hurtbox appears 2f before active; has the most Drive Damage and Super Gain of all meterless versions, giving it a unique purpose"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "[4]6PP",
+          "startup": "10",
+          "total": "38",
+          "hitAdv": "KD +48",
+          "blockAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "notes": "2-hit OD projectile; 45f charge (charge lasts 13f after releasing back direction); does not have a Perfect timing version; puts opponents into limited juggle state; can follow up with Sonic Break (6P) during SA2; SA2 cancel: KD+65/+25"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "[4]6PP~P",
+          "startup": "11",
+          "total": "35",
+          "hitAdv": "KD +54~",
+          "blockAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "notes": "2-hit OD projectile; only possible during SA2 install (1500f timer); each use drains timer by 200f (maximum 2 follow-ups per sequence); Guile only builds super meter for himself if projectile connects after install timer has expired"
+        }
+      },
+      {
+        "title": {
+          "chara": "Guile",
+          "input": "[4]6P~P",
+          "startup": "11",
+          "total": "36",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "1-hit projectile; only possible during SA2 install (1500f timer); each use drains timer by 200f (maximum 4 follow-ups per sequence); button strength determines projectile speed; Guile only builds super meter for himself if projectile connects after install timer has expired"
+        }
+      }
+    ]
+  }
+}
