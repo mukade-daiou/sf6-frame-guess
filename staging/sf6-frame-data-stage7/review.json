@@ -1,0 +1,5996 @@
+{
+  "standard": "通常状態・原則立ち・画面中央・通常ヒット/ガード・非ホールド・派生なし。全体Fは空振り。",
+  "updatePolicy": "frozen_until_explicit_user_update",
+  "targetPatch": "UNVERIFIED",
+  "comparisonPatch": "Ver.2.0500.001",
+  "schemaPass": 2,
+  "productionEligible": 0,
+  "developmentPlayable": 2,
+  "characters": [
+    {
+      "characterId": "ken",
+      "moves": [
+        {
+          "characterId": "ken",
+          "moveId": "ken__normal_2_K_H",
+          "input": {
+            "type": "normal",
+            "direction": "2",
+            "button": "K",
+            "strength": "H"
+          },
+          "upstreamInput": "2HK",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:27.533Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Ken",
+            "input": "2HK",
+            "startup": "8",
+            "total": "34(37)",
+            "hitAdv": "KD +40",
+            "blockAdv": "<span style=\"color: #b70c0b;\">'''-10'''</span>",
+            "notes": "Has juggle potential; on block, always plays out a fixed 27f recovery (cannot be made safer with meaty timing)"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "8",
+              "numeric": 8
+            },
+            "total": {
+              "status": "conditional",
+              "display": "34(37)",
+              "condition": "原典34(37)。ガード時は固定27Fの硬直という注記はあるが、括弧内が空振り全体Fかは未確定。計算補完しない。",
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-10",
+              "numeric": -10
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "8",
+              "numeric": 8
+            },
+            "total": {
+              "status": "unknown",
+              "display": null,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-10",
+              "numeric": -10
+            }
+          },
+          "decisions": [
+            {
+              "field": "total",
+              "original": "34(37)",
+              "normalized": {
+                "status": "unknown",
+                "display": null
+              },
+              "reason": "標準条件での単一値・同一指標の確定範囲を認定できない。元表記は監査に保持。"
+            }
+          ],
+          "sourceProperties": [
+            "low"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": false,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "ken",
+          "moveId": "ken__normal_2_K_L",
+          "input": {
+            "type": "normal",
+            "direction": "2",
+            "button": "K",
+            "strength": "L"
+          },
+          "upstreamInput": "2LK",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:27.533Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Ken",
+            "input": "2LK",
+            "startup": "5",
+            "total": "17",
+            "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+            "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+            "notes": "Chains into 5LP/2LP/2LK"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "5",
+              "numeric": 5
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "17",
+              "numeric": 17,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+1",
+              "numeric": 1
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-3",
+              "numeric": -3
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "5",
+              "numeric": 5
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "17",
+              "numeric": 17,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+1",
+              "numeric": 1
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-3",
+              "numeric": -3
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "ken",
+          "moveId": "ken__normal_2_K_M",
+          "input": {
+            "type": "normal",
+            "direction": "2",
+            "button": "K",
+            "strength": "M"
+          },
+          "upstreamInput": "2MK",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:27.533Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Ken",
+            "input": "2MK",
+            "startup": "7",
+            "total": "28",
+            "hitAdv": "<span style=\"color: #ff6347;\">-2</span>",
+            "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+            "notes": "Run~Stop cancel: -8/-12; DR cancel is delayed until after active frames"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "7",
+              "numeric": 7
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "28",
+              "numeric": 28,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "-2",
+              "numeric": -2
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-6",
+              "numeric": -6
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "7",
+              "numeric": 7
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "28",
+              "numeric": 28,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "-2",
+              "numeric": -2
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-6",
+              "numeric": -6
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "ken",
+          "moveId": "ken__normal_2_P_H",
+          "input": {
+            "type": "normal",
+            "direction": "2",
+            "button": "P",
+            "strength": "H"
+          },
+          "upstreamInput": "2HP",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:27.533Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Ken",
+            "input": "2HP",
+            "startup": "8",
+            "total": "35",
+            "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+            "blockAdv": "<span style=\"color: #b70c0b;\">'''-7'''</span>",
+            "notes": "Forces stand; decent anti-air (cannot hit cross-up); only first 2 active frames are cancelable; cancel into 236HK on block leaves a 5f gap and is DI-safe; Run~Stop cancel: +3/-7"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "8",
+              "numeric": 8
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "35",
+              "numeric": 35,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+3",
+              "numeric": 3
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-7",
+              "numeric": -7
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "8",
+              "numeric": 8
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "35",
+              "numeric": 35,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+3",
+              "numeric": 3
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-7",
+              "numeric": -7
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "ken",
+          "moveId": "ken__normal_2_P_L",
+          "input": {
+            "type": "normal",
+            "direction": "2",
+            "button": "P",
+            "strength": "L"
+          },
+          "upstreamInput": "2LP",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:27.533Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Ken",
+            "input": "2LP",
+            "startup": "4",
+            "total": "14",
+            "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+            "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+            "notes": "Primary combo starter; chains into 5LP/2LP/2LK; Run~Stop cancel: -12/-18; DR cancel is delayed until after 1st recovery frame; topmost hurtbox on frames 1-5 is vulnerable only to aerial strikes (preventing its use as an anti-air)"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "4",
+              "numeric": 4
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "14",
+              "numeric": 14,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+5",
+              "numeric": 5
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-1",
+              "numeric": -1
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "4",
+              "numeric": 4
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "14",
+              "numeric": 14,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+5",
+              "numeric": 5
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-1",
+              "numeric": -1
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "ken",
+          "moveId": "ken__normal_2_P_M",
+          "input": {
+            "type": "normal",
+            "direction": "2",
+            "button": "P",
+            "strength": "M"
+          },
+          "upstreamInput": "2MP",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:27.533Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Ken",
+            "input": "2MP",
+            "startup": "6",
+            "total": "22(24)",
+            "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+            "blockAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+            "notes": "Good buffer tool and great for pressure out of Drive Rush; Run~Stop cancel: -6/-11; 2f extra recovery on whiff and extends a wider hurtbox until the end of recovery; topmost hurtbox on frames 1-8 is vulnerable only to aerial strikes (preventing its use as an anti-air); strong combo tool that can link to 5MP at point blank range; strong counter-poke that can link to 2MK on counter-hit"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "6",
+              "numeric": 6
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "24",
+              "numeric": 24,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+5",
+              "numeric": 5
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "0",
+              "numeric": 0
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "6",
+              "numeric": 6
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "24",
+              "numeric": 24,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+5",
+              "numeric": 5
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "0",
+              "numeric": 0
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "ken",
+          "moveId": "ken__normal_5_K_H",
+          "input": {
+            "type": "normal",
+            "direction": "5",
+            "button": "K",
+            "strength": "H"
+          },
+          "upstreamInput": "5HK",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:27.533Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Ken",
+            "input": "5HK",
+            "startup": "12",
+            "total": "36(38)",
+            "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+            "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+            "notes": "Excellent ranged poke and whiff punish tool; even at max range, can convert Punish Counter spinning juggle state into 623KK or Drive Rush 5HP juggles; 2 extra recovery frames on whiff; extends a hurtbox 1f before active that is vulnerable to projectiles"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "12",
+              "numeric": 12
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "38",
+              "numeric": 38,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+1",
+              "numeric": 1
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-5",
+              "numeric": -5
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "12",
+              "numeric": 12
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "38",
+              "numeric": 38,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+1",
+              "numeric": 1
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-5",
+              "numeric": -5
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "ken",
+          "moveId": "ken__normal_5_K_L",
+          "input": {
+            "type": "normal",
+            "direction": "5",
+            "button": "K",
+            "strength": "L"
+          },
+          "upstreamInput": "5LK",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:27.533Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Ken",
+            "input": "5LK",
+            "startup": "5",
+            "total": "18",
+            "hitAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+            "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+            "notes": "Incredible range for a light normal and a great whiff punish; Run~Stop cancel: -14/-16; DR cancel is delayed until after 2nd active frame"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "5",
+              "numeric": 5
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "18",
+              "numeric": 18,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "0",
+              "numeric": 0
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-2",
+              "numeric": -2
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "5",
+              "numeric": 5
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "18",
+              "numeric": 18,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "0",
+              "numeric": 0
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-2",
+              "numeric": -2
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "ken",
+          "moveId": "ken__normal_5_K_M",
+          "input": {
+            "type": "normal",
+            "direction": "5",
+            "button": "K",
+            "strength": "M"
+          },
+          "upstreamInput": "5MK",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:27.533Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Ken",
+            "input": "5MK",
+            "startup": "8",
+            "total": "30",
+            "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+            "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+            "notes": "Has good forward movement; whiffs on crouching opponents at farther ranges unless they extend a vertical hurtbox; hitconfirmable Target Combo follow-up makes it strong in neutral; Super is much harder to hitconfirm but can buffer into a safe SA2 in neutral; front leg hurtbox is raised on frames 4-15, allowing it to dodge some low attacks"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "8",
+              "numeric": 8
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "30",
+              "numeric": 30,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+3",
+              "numeric": 3
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-5",
+              "numeric": -5
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "8",
+              "numeric": 8
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "30",
+              "numeric": 30,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+3",
+              "numeric": 3
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-5",
+              "numeric": -5
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "ken",
+          "moveId": "ken__normal_5_P_H",
+          "input": {
+            "type": "normal",
+            "direction": "5",
+            "button": "P",
+            "strength": "H"
+          },
+          "upstreamInput": "5HP",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:27.533Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Ken",
+            "input": "5HP",
+            "startup": "10",
+            "total": "31",
+            "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+            "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+            "notes": "Great poke in neutral; large number of active frames make it a great meaty; when used out of Drive Rush, links into 2MK on hit or gives pressure on block; Run~Stop cancel: -3/-8"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "10",
+              "numeric": 10
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "31",
+              "numeric": 31,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+3",
+              "numeric": 3
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-2",
+              "numeric": -2
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "10",
+              "numeric": 10
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "31",
+              "numeric": 31,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+3",
+              "numeric": 3
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-2",
+              "numeric": -2
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "ken",
+          "moveId": "ken__normal_5_P_L",
+          "input": {
+            "type": "normal",
+            "direction": "5",
+            "button": "P",
+            "strength": "L"
+          },
+          "upstreamInput": "5LP",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:27.533Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Ken",
+            "input": "5LP",
+            "startup": "4",
+            "total": "13",
+            "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+            "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+            "notes": "Chains into 5LP/2LP/2LK; Run~Stop cancel: -14/-19"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "4",
+              "numeric": 4
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "13",
+              "numeric": 13,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+4",
+              "numeric": 4
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-1",
+              "numeric": -1
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "4",
+              "numeric": 4
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "13",
+              "numeric": 13,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+4",
+              "numeric": 4
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-1",
+              "numeric": -1
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "ken",
+          "moveId": "ken__normal_5_P_M",
+          "input": {
+            "type": "normal",
+            "direction": "5",
+            "button": "P",
+            "strength": "M"
+          },
+          "upstreamInput": "5MP",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:27.533Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Ken",
+            "input": "5MP",
+            "startup": "5",
+            "total": "22",
+            "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+            "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+            "notes": "Easily hitconfirmable into Target Combo; farthest ~40% of hitbox is shifted upward (can whiff against some crouching attack hurtboxes in whiff punish scenarios); extends a forward leg hurtbox until end of recovery; Run~Stop cancel: -6/-12"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "5",
+              "numeric": 5
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "22",
+              "numeric": 22,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+4",
+              "numeric": 4
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-2",
+              "numeric": -2
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "5",
+              "numeric": 5
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "22",
+              "numeric": 22,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+4",
+              "numeric": 4
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-2",
+              "numeric": -2
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "ken",
+          "moveId": "ken__special_214_K_H",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "K",
+            "strength": "H"
+          },
+          "upstreamInput": "214HK",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:27.533Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Ken",
+            "input": "214HK",
+            "startup": "16",
+            "total": "78",
+            "hitAdv": "KD +36 <span style=\"color: #b70c0b;\">'''(-38 cr)'''</span>",
+            "blockAdv": "<span style=\"color: #b70c0b;\">'''-12 (-42 cr)'''</span>",
+            "notes": "2nd and 3rd hits whiff on crouching opponents (unsafe on crouching hit or block); same knockdown advantage regardless of which hit initially connects; cannot hit cross-up"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "16",
+              "numeric": 16
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "78",
+              "numeric": 78,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "conditional",
+              "display": "KD +36 (-38 cr)",
+              "condition": "立ちヒットはKD+36、しゃがみヒットは-38。2・3段目がしゃがみに空振りする。KDと通常硬直差を統合しない。"
+            },
+            "block": {
+              "status": "conditional",
+              "display": "-12 (-42 cr)",
+              "condition": "立ちガード-12、しゃがみガード-42。2・3段目がしゃがみに空振りする。"
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "16",
+              "numeric": 16
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "78",
+              "numeric": 78,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-12",
+              "numeric": -12
+            }
+          },
+          "decisions": [
+            {
+              "field": "hit",
+              "original": "KD +36 (-38 cr)",
+              "normalized": {
+                "status": "unknown",
+                "display": null
+              },
+              "reason": "標準条件での単一値・同一指標の確定範囲を認定できない。元表記は監査に保持。"
+            },
+            {
+              "field": "block",
+              "original": "-12 (-42 cr)",
+              "normalized": {
+                "status": "unknown",
+                "display": null
+              },
+              "reason": "標準条件での単一値・同一指標の確定範囲を認定できない。元表記は監査に保持。"
+            },
+            {
+              "field": "hit",
+              "original": "KD +36 (-38 cr)",
+              "normalized": {
+                "status": "confirmed",
+                "display": "D"
+              },
+              "reason": "立ち相手はKD。しゃがみヒットの-38を混在させない。"
+            },
+            {
+              "field": "block",
+              "original": "-12 (-42 cr)",
+              "normalized": {
+                "status": "confirmed",
+                "display": "-12",
+                "numeric": -12
+              },
+              "reason": "立ちガード。しゃがみの-42は対象外。"
+            }
+          ],
+          "sourceProperties": [
+            "low",
+            "high",
+            "airborne"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "ken",
+          "moveId": "ken__special_214_K_L",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "K",
+            "strength": "L"
+          },
+          "upstreamInput": "214LK",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:27.533Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Ken",
+            "input": "214LK",
+            "startup": "4",
+            "total": "46",
+            "hitAdv": "KD +46(+38)",
+            "blockAdv": "<span style=\"color: #b70c0b;\">'''-14'''</span>",
+            "notes": "Puts opponent into limited juggle state if 1st hit connects; if the first hit whiffs the second hit will always do 700 damage, but has worse KD Adv.; both hits connect on crouching opponents; cannot hit cross-up"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "4",
+              "numeric": 4
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "46",
+              "numeric": 46,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "conditional",
+              "display": "KD +46(+38)",
+              "condition": "原典の複合表記。各数値の適用条件を未確定のまま保持。"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-14",
+              "numeric": -14
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "4",
+              "numeric": 4
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "46",
+              "numeric": 46,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-14",
+              "numeric": -14
+            }
+          },
+          "decisions": [
+            {
+              "field": "hit",
+              "original": "KD +46(+38)",
+              "normalized": {
+                "status": "unknown",
+                "display": null
+              },
+              "reason": "標準条件での単一値・同一指標の確定範囲を認定できない。元表記は監査に保持。"
+            },
+            {
+              "field": "hit",
+              "original": "KD +46(+38)",
+              "normalized": {
+                "status": "confirmed",
+                "display": "D"
+              },
+              "reason": "第1ヒットの接続でダウン後有利が異なるが、いずれもKD。出題はダウンDであり、有利Fの範囲を推定しない。"
+            }
+          ],
+          "sourceProperties": [
+            "low",
+            "high",
+            "airborne"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "ken",
+          "moveId": "ken__special_214_K_M",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "K",
+            "strength": "M"
+          },
+          "upstreamInput": "214MK",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:27.533Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Ken",
+            "input": "214MK",
+            "startup": "14",
+            "total": "61",
+            "hitAdv": "KD +44(+32)",
+            "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span>",
+            "notes": "Better KD Adv. if first hit connects; both hits connect on crouching opponents; cannot hit cross-up"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "14",
+              "numeric": 14
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "61",
+              "numeric": 61,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "conditional",
+              "display": "KD +44(+32)",
+              "condition": "原典の複合表記。各数値の適用条件を未確定のまま保持。"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-12",
+              "numeric": -12
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "14",
+              "numeric": 14
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "61",
+              "numeric": 61,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-12",
+              "numeric": -12
+            }
+          },
+          "decisions": [
+            {
+              "field": "hit",
+              "original": "KD +44(+32)",
+              "normalized": {
+                "status": "unknown",
+                "display": null
+              },
+              "reason": "標準条件での単一値・同一指標の確定範囲を認定できない。元表記は監査に保持。"
+            },
+            {
+              "field": "hit",
+              "original": "KD +44(+32)",
+              "normalized": {
+                "status": "confirmed",
+                "display": "D"
+              },
+              "reason": "第1ヒットの接続でダウン後有利が異なるが、いずれもKD。出題はダウンDであり、有利Fの範囲を推定しない。"
+            }
+          ],
+          "sourceProperties": [
+            "low",
+            "high",
+            "airborne"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "ken",
+          "moveId": "ken__special_214_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "K",
+            "strength": "OD"
+          },
+          "upstreamInput": "214KK",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:27.533Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Ken",
+            "input": "214KK",
+            "startup": "9",
+            "total": "90",
+            "hitAdv": "KD +28",
+            "blockAdv": "<span style=\"color: #b70c0b;\">'''-61'''</span>",
+            "notes": "Great range and speed, useful in whiff punishes and juggles; cannot hit cross-up"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "9",
+              "numeric": 9
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "90",
+              "numeric": 90,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-61",
+              "numeric": -61
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "9",
+              "numeric": 9
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "90",
+              "numeric": 90,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-61",
+              "numeric": -61
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high",
+            "airborne"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": false
+        },
+        {
+          "characterId": "ken",
+          "moveId": "ken__special_236_K_H",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "H"
+          },
+          "upstreamInput": "236HK",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:27.533Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Ken",
+            "input": "236HK",
+            "startup": "25",
+            "total": "46",
+            "hitAdv": "KD +42",
+            "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+            "notes": "Puts opponents into limited juggle state; follow-up can be delayed up to 5f if input as late as possible (affecting frame trap and juggle opportunities); follow-ups can also be input on whiff; good approach tool that doesn't extend a hurtbox until active"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "25",
+              "numeric": 25
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "46",
+              "numeric": 46,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-2",
+              "numeric": -2
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "25",
+              "numeric": 25
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "46",
+              "numeric": 46,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-2",
+              "numeric": -2
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "ken",
+          "moveId": "ken__special_236_K_L",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "L"
+          },
+          "upstreamInput": "236LK",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:27.533Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Ken",
+            "input": "236LK",
+            "startup": "12",
+            "total": "42",
+            "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+            "blockAdv": "<span style=\"color: #b70c0b;\">'''-11'''</span>",
+            "notes": "Follow-up can be delayed up to 3f if input as late as possible (affecting frame trap and juggle opportunities); follow-ups can also be input on whiff"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "12",
+              "numeric": 12
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "42",
+              "numeric": 42,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+1",
+              "numeric": 1
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-11",
+              "numeric": -11
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "12",
+              "numeric": 12
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "42",
+              "numeric": 42,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+1",
+              "numeric": 1
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-11",
+              "numeric": -11
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "ken",
+          "moveId": "ken__special_236_K_M",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "M"
+          },
+          "upstreamInput": "236MK",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:27.533Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Ken",
+            "input": "236MK",
+            "startup": "16",
+            "total": "42",
+            "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+            "blockAdv": "<span style=\"color: #b70c0b;\">'''-7'''</span>",
+            "notes": "Follow-up can be delayed up to 2f if input as late as possible (affecting frame trap and juggle opportunities); best starter for frame trapping into 6LK follow-up; follow-ups can also be input on whiff"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "16",
+              "numeric": 16
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "42",
+              "numeric": 42,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+2",
+              "numeric": 2
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-7",
+              "numeric": -7
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "16",
+              "numeric": 16
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "42",
+              "numeric": 42,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+2",
+              "numeric": 2
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-7",
+              "numeric": -7
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "ken",
+          "moveId": "ken__special_236_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "OD"
+          },
+          "upstreamInput": "236KK",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:27.533Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Ken",
+            "input": "236KK",
+            "startup": "13",
+            "total": "40",
+            "hitAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+            "blockAdv": "<span style=\"color: #b70c0b;\">'''-7'''</span>",
+            "notes": "Follow-up can be delayed up to 6f if input as late as possible (affecting frame trap and juggle opportunities); follow-ups can also be input on whiff"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "13",
+              "numeric": 13
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "40",
+              "numeric": 40,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "-4",
+              "numeric": -4
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-7",
+              "numeric": -7
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "13",
+              "numeric": 13
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "40",
+              "numeric": 40,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "-4",
+              "numeric": -4
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-7",
+              "numeric": -7
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": false
+        },
+        {
+          "characterId": "ken",
+          "moveId": "ken__special_236_P_H",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "P",
+            "strength": "H"
+          },
+          "upstreamInput": "236HP",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:27.533Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Ken",
+            "input": "236HP",
+            "startup": "12",
+            "total": "49",
+            "hitAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+            "blockAdv": "<span style=\"color: #b70c0b;\">'''-11'''</span>",
+            "notes": "1-hit projectile; puts airborne opponents into limited juggle state"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "12",
+              "numeric": 12
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "49",
+              "numeric": 49,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "-5",
+              "numeric": -5
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-11",
+              "numeric": -11
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "12",
+              "numeric": 12
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "49",
+              "numeric": 49,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "-5",
+              "numeric": -5
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-11",
+              "numeric": -11
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "ken",
+          "moveId": "ken__special_236_P_L",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "P",
+            "strength": "L"
+          },
+          "upstreamInput": "236LP",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:27.533Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Ken",
+            "input": "236LP",
+            "startup": "16",
+            "total": "49",
+            "hitAdv": "<span style=\"color: #ff6347;\">-1</span>",
+            "blockAdv": "<span style=\"color: #b70c0b;\">'''-7'''</span>",
+            "notes": "1-hit projectile; puts airborne opponents into limited juggle state; useful for meaty corner setups if well-spaced, preventing wakeup SA1"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "16",
+              "numeric": 16
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "49",
+              "numeric": 49,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "-1",
+              "numeric": -1
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-7",
+              "numeric": -7
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "16",
+              "numeric": 16
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "49",
+              "numeric": 49,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "-1",
+              "numeric": -1
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-7",
+              "numeric": -7
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "ken",
+          "moveId": "ken__special_236_P_M",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "P",
+            "strength": "M"
+          },
+          "upstreamInput": "236MP",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:27.533Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Ken",
+            "input": "236MP",
+            "startup": "14",
+            "total": "49",
+            "hitAdv": "<span style=\"color: #ff6347;\">-3</span>",
+            "blockAdv": "<span style=\"color: #b70c0b;\">'''-9'''</span>",
+            "notes": "1-hit projectile; puts airborne opponents into limited juggle state"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "14",
+              "numeric": 14
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "49",
+              "numeric": 49,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "-3",
+              "numeric": -3
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-9",
+              "numeric": -9
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "14",
+              "numeric": 14
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "49",
+              "numeric": 49,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "-3",
+              "numeric": -3
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-9",
+              "numeric": -9
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "ken",
+          "moveId": "ken__special_236_P_OD",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "P",
+            "strength": "OD"
+          },
+          "upstreamInput": "236PP",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:27.533Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Ken",
+            "input": "236PP",
+            "startup": "12",
+            "total": "40",
+            "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+            "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+            "notes": "2-hit OD projectile with extremely fast recovery; at some ranges, Ken can follow up with Drive Rush to combo afterwards; puts airborne opponents into limited juggle state"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "12",
+              "numeric": 12
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "40",
+              "numeric": 40,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+2",
+              "numeric": 2
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-2",
+              "numeric": -2
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "12",
+              "numeric": 12
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "40",
+              "numeric": 40,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+2",
+              "numeric": 2
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-2",
+              "numeric": -2
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": false
+        },
+        {
+          "characterId": "ken",
+          "moveId": "ken__special_623_K_H",
+          "input": {
+            "type": "special",
+            "motion": "623",
+            "button": "K",
+            "strength": "H"
+          },
+          "upstreamInput": "623HK",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:27.533Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Ken",
+            "input": "623HK",
+            "startup": "28(30)",
+            "total": "53",
+            "hitAdv": "<span style=\"color: #32CD32;\">+3<span style=\"color: #30D5B8;\">'''(+4)'''</span></span>",
+            "blockAdv": "<span style=\"color: #32CD32;\">+1(+2)</span>",
+            "notes": "Can dodge lows until frame 40; first 2 active frames only hit airborne, causing spike knockdown on hit or OTG bounce on Punish Counter; 1f better hit/block advantage vs. crouching opponents; cannot hit cross-up"
+          },
+          "before": {
+            "startup": {
+              "status": "conditional",
+              "display": "28(30)",
+              "condition": "括弧外は空中相手にのみ当たる最初の発生。括弧内は地上相手に当たる発生。相手状態を指定する出題条件がないため自動選択しない。"
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "53",
+              "numeric": 53,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "conditional",
+              "display": "+3(+4)",
+              "condition": "括弧内はしゃがみ相手、括弧外は立ち相手。相手状態を指定する出題条件がないため複合値を保持。"
+            },
+            "block": {
+              "status": "conditional",
+              "display": "+1(+2)",
+              "condition": "括弧内はしゃがみ相手、括弧外は立ち相手。相手状態を指定する出題条件がないため複合値を保持。"
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "30",
+              "numeric": 30
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "53",
+              "numeric": 53,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "3",
+              "numeric": 3
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "1",
+              "numeric": 1
+            }
+          },
+          "decisions": [
+            {
+              "field": "startup",
+              "original": "28(30)",
+              "normalized": {
+                "status": "unknown",
+                "display": null
+              },
+              "reason": "標準条件での単一値・同一指標の確定範囲を認定できない。元表記は監査に保持。"
+            },
+            {
+              "field": "hit",
+              "original": "+3(+4)",
+              "normalized": {
+                "status": "unknown",
+                "display": null
+              },
+              "reason": "標準条件での単一値・同一指標の確定範囲を認定できない。元表記は監査に保持。"
+            },
+            {
+              "field": "block",
+              "original": "+1(+2)",
+              "normalized": {
+                "status": "unknown",
+                "display": null
+              },
+              "reason": "標準条件での単一値・同一指標の確定範囲を認定できない。元表記は監査に保持。"
+            },
+            {
+              "field": "startup",
+              "original": "28(30)",
+              "normalized": {
+                "status": "confirmed",
+                "display": "30",
+                "numeric": 30
+              },
+              "reason": "地上の立ち相手に当たる最初の発生。初期の空中限定判定を除く。注記に基づく技別選択。"
+            },
+            {
+              "field": "hit",
+              "original": "+3(+4)",
+              "normalized": {
+                "status": "confirmed",
+                "display": "3",
+                "numeric": 3
+              },
+              "reason": "立ち相手の通常ヒット。しゃがみの括弧内を除く。"
+            },
+            {
+              "field": "block",
+              "original": "+1(+2)",
+              "normalized": {
+                "status": "confirmed",
+                "display": "1",
+                "numeric": 1
+              },
+              "reason": "立ち相手の通常ガード。"
+            }
+          ],
+          "sourceProperties": [
+            "low",
+            "high",
+            "airborne"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "ken",
+          "moveId": "ken__special_623_K_L",
+          "input": {
+            "type": "special",
+            "motion": "623",
+            "button": "K",
+            "strength": "L"
+          },
+          "upstreamInput": "623LK",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:27.533Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Ken",
+            "input": "623LK",
+            "startup": "18(21)",
+            "total": "45",
+            "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+            "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+            "notes": "Can dodge lows until frame 32; first 3 active frames only hit airborne and do 1000 damage, causing spike knockdown on hit or OTG bounce on Punish Counter; hits standing and crouching opponents on 4th active frame onward, dealing 950 damage; cannot hit cross-up"
+          },
+          "before": {
+            "startup": {
+              "status": "conditional",
+              "display": "18(21)",
+              "condition": "括弧外は空中相手にのみ当たる最初の発生。括弧内は地上相手に当たる発生。相手状態を指定する出題条件がないため自動選択しない。"
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "45",
+              "numeric": 45,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+2",
+              "numeric": 2
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-4",
+              "numeric": -4
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "21",
+              "numeric": 21
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "45",
+              "numeric": 45,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+2",
+              "numeric": 2
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-4",
+              "numeric": -4
+            }
+          },
+          "decisions": [
+            {
+              "field": "startup",
+              "original": "18(21)",
+              "normalized": {
+                "status": "unknown",
+                "display": null
+              },
+              "reason": "標準条件での単一値・同一指標の確定範囲を認定できない。元表記は監査に保持。"
+            },
+            {
+              "field": "startup",
+              "original": "18(21)",
+              "normalized": {
+                "status": "confirmed",
+                "display": "21",
+                "numeric": 21
+              },
+              "reason": "地上の立ち相手に当たる最初の発生。初期の空中限定判定を除く。注記に基づく技別選択。"
+            }
+          ],
+          "sourceProperties": [
+            "low",
+            "high",
+            "airborne"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "ken",
+          "moveId": "ken__special_623_K_M",
+          "input": {
+            "type": "special",
+            "motion": "623",
+            "button": "K",
+            "strength": "M"
+          },
+          "upstreamInput": "623MK",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:27.533Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Ken",
+            "input": "623MK",
+            "startup": "23(25)",
+            "total": "52",
+            "hitAdv": "<span style=\"color: #32CD32;\">+3<span style=\"color: #30D5B8;\">'''(+4)'''</span></span>",
+            "blockAdv": "<span style=\"color: #b70c0b;\">'''-8(-7)'''</span>",
+            "notes": "Can dodge lows until frame 37; first 2 active frames only hit airborne, causing spike knockdown on hit or OTG bounce on Punish Counter; 1f better hit/block advantage vs. crouching opponents; cannot hit cross-up"
+          },
+          "before": {
+            "startup": {
+              "status": "conditional",
+              "display": "23(25)",
+              "condition": "括弧外は空中相手にのみ当たる最初の発生。括弧内は地上相手に当たる発生。相手状態を指定する出題条件がないため自動選択しない。"
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "52",
+              "numeric": 52,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "conditional",
+              "display": "+3(+4)",
+              "condition": "括弧内はしゃがみ相手、括弧外は立ち相手。相手状態を指定する出題条件がないため複合値を保持。"
+            },
+            "block": {
+              "status": "conditional",
+              "display": "-8(-7)",
+              "condition": "括弧内はしゃがみ相手、括弧外は立ち相手。相手状態を指定する出題条件がないため複合値を保持。"
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "25",
+              "numeric": 25
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "52",
+              "numeric": 52,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "3",
+              "numeric": 3
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-8",
+              "numeric": -8
+            }
+          },
+          "decisions": [
+            {
+              "field": "startup",
+              "original": "23(25)",
+              "normalized": {
+                "status": "unknown",
+                "display": null
+              },
+              "reason": "標準条件での単一値・同一指標の確定範囲を認定できない。元表記は監査に保持。"
+            },
+            {
+              "field": "hit",
+              "original": "+3(+4)",
+              "normalized": {
+                "status": "unknown",
+                "display": null
+              },
+              "reason": "標準条件での単一値・同一指標の確定範囲を認定できない。元表記は監査に保持。"
+            },
+            {
+              "field": "block",
+              "original": "-8(-7)",
+              "normalized": {
+                "status": "unknown",
+                "display": null
+              },
+              "reason": "標準条件での単一値・同一指標の確定範囲を認定できない。元表記は監査に保持。"
+            },
+            {
+              "field": "startup",
+              "original": "23(25)",
+              "normalized": {
+                "status": "confirmed",
+                "display": "25",
+                "numeric": 25
+              },
+              "reason": "地上の立ち相手に当たる最初の発生。初期の空中限定判定を除く。注記に基づく技別選択。"
+            },
+            {
+              "field": "hit",
+              "original": "+3(+4)",
+              "normalized": {
+                "status": "confirmed",
+                "display": "3",
+                "numeric": 3
+              },
+              "reason": "立ち相手の通常ヒット。しゃがみの括弧内を除く。"
+            },
+            {
+              "field": "block",
+              "original": "-8(-7)",
+              "normalized": {
+                "status": "confirmed",
+                "display": "-8",
+                "numeric": -8
+              },
+              "reason": "立ち相手の通常ガード。"
+            }
+          ],
+          "sourceProperties": [
+            "low",
+            "high",
+            "airborne"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "ken",
+          "moveId": "ken__special_623_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "623",
+            "button": "K",
+            "strength": "OD"
+          },
+          "upstreamInput": "623KK",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:27.533Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Ken",
+            "input": "623KK",
+            "startup": "9(19)",
+            "total": "47",
+            "hitAdv": "<span style=\"color: #32CD32;\">+1<span style=\"color: #30D5B8;\">'''(+4)'''</span></span>",
+            "blockAdv": "<span style=\"color: #b70c0b;\">'''-9(-6)'''</span>",
+            "notes": "Can dodge lows until frame 32; initial active frames 2(7)1 only hit airborne opponents for an OTG bounce and side switch; next 3 active frames only hit standing opponents; 3f better hit/block advantage vs. crouching opponents (allows link into 2LP); cannot hit cross-up"
+          },
+          "before": {
+            "startup": {
+              "status": "conditional",
+              "display": "9(19)",
+              "condition": "初期判定は空中限定、次の3Fは立ち限定。その後しゃがみに当たる。9(19)の19がどの区切りに対応するか追加確認が必要。"
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "47",
+              "numeric": 47,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "conditional",
+              "display": "+1(+4)",
+              "condition": "括弧内はしゃがみ相手、括弧外は立ち相手。相手状態を指定する出題条件がないため複合値を保持。"
+            },
+            "block": {
+              "status": "conditional",
+              "display": "-9(-6)",
+              "condition": "括弧内はしゃがみ相手、括弧外は立ち相手。相手状態を指定する出題条件がないため複合値を保持。"
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "unknown",
+              "display": null
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "47",
+              "numeric": 47,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "1",
+              "numeric": 1
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-9",
+              "numeric": -9
+            }
+          },
+          "decisions": [
+            {
+              "field": "startup",
+              "original": "9(19)",
+              "normalized": {
+                "status": "unknown",
+                "display": null
+              },
+              "reason": "標準条件での単一値・同一指標の確定範囲を認定できない。元表記は監査に保持。"
+            },
+            {
+              "field": "hit",
+              "original": "+1(+4)",
+              "normalized": {
+                "status": "unknown",
+                "display": null
+              },
+              "reason": "標準条件での単一値・同一指標の確定範囲を認定できない。元表記は監査に保持。"
+            },
+            {
+              "field": "block",
+              "original": "-9(-6)",
+              "normalized": {
+                "status": "unknown",
+                "display": null
+              },
+              "reason": "標準条件での単一値・同一指標の確定範囲を認定できない。元表記は監査に保持。"
+            },
+            {
+              "field": "hit",
+              "original": "+1(+4)",
+              "normalized": {
+                "status": "confirmed",
+                "display": "1",
+                "numeric": 1
+              },
+              "reason": "立ち相手の通常ヒット。しゃがみの括弧内を除く。"
+            },
+            {
+              "field": "block",
+              "original": "-9(-6)",
+              "normalized": {
+                "status": "confirmed",
+                "display": "-9",
+                "numeric": -9
+              },
+              "reason": "立ち相手の通常ガード。"
+            }
+          ],
+          "sourceProperties": [
+            "low",
+            "high",
+            "airborne"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": false,
+          "startupDisplayable": false,
+          "patchConfirmed": false,
+          "inputPairConfirmed": false
+        },
+        {
+          "characterId": "ken",
+          "moveId": "ken__special_623_P_H",
+          "input": {
+            "type": "special",
+            "motion": "623",
+            "button": "P",
+            "strength": "H"
+          },
+          "upstreamInput": "623HP",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:27.533Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Ken",
+            "input": "623HP",
+            "startup": "7",
+            "total": "66",
+            "hitAdv": "KD +25",
+            "blockAdv": "<span style=\"color: #b70c0b;\">'''-36(-38)'''</span>",
+            "notes": "Good anti-air; 3rd hit whiffs vs. crouch block (2f worse advantage, 75 less chip dmg); cannot hit cross-up"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "7",
+              "numeric": 7
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "66",
+              "numeric": 66,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "conditional",
+              "display": "-36(-38)",
+              "condition": "立ちガード-36、しゃがみガードは3段目が空振りして-38。相手状態未指定のため自動選択しない。"
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "7",
+              "numeric": 7
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "66",
+              "numeric": 66,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-36",
+              "numeric": -36
+            }
+          },
+          "decisions": [
+            {
+              "field": "block",
+              "original": "-36(-38)",
+              "normalized": {
+                "status": "unknown",
+                "display": null
+              },
+              "reason": "標準条件での単一値・同一指標の確定範囲を認定できない。元表記は監査に保持。"
+            },
+            {
+              "field": "block",
+              "original": "-36(-38)",
+              "normalized": {
+                "status": "confirmed",
+                "display": "-36",
+                "numeric": -36
+              },
+              "reason": "立ちガードでは3段目まで当たる。しゃがみの-38は対象外。"
+            }
+          ],
+          "sourceProperties": [
+            "low",
+            "high",
+            "invincible",
+            "airborne"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "ken",
+          "moveId": "ken__special_623_P_L",
+          "input": {
+            "type": "special",
+            "motion": "623",
+            "button": "P",
+            "strength": "L"
+          },
+          "upstreamInput": "623LP",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:27.533Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Ken",
+            "input": "623LP",
+            "startup": "5",
+            "total": "47",
+            "hitAdv": "KD +33",
+            "blockAdv": "<span style=\"color: #b70c0b;\">'''-23'''</span>",
+            "notes": "Good anti-air; cannot hit cross-up; reduced damage on high anti-air connect (active frames 3-10)"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "5",
+              "numeric": 5
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "47",
+              "numeric": 47,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-23",
+              "numeric": -23
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "5",
+              "numeric": 5
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "47",
+              "numeric": 47,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-23",
+              "numeric": -23
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high",
+            "invincible",
+            "airborne"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "ken",
+          "moveId": "ken__special_623_P_M",
+          "input": {
+            "type": "special",
+            "motion": "623",
+            "button": "P",
+            "strength": "M"
+          },
+          "upstreamInput": "623MP",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:27.533Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Ken",
+            "input": "623MP",
+            "startup": "6",
+            "total": "55",
+            "hitAdv": "KD +33",
+            "blockAdv": "<span style=\"color: #b70c0b;\">'''-28'''</span>",
+            "notes": "Good anti-air; cannot hit cross-up"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "6",
+              "numeric": 6
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "55",
+              "numeric": 55,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-28",
+              "numeric": -28
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "6",
+              "numeric": 6
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "55",
+              "numeric": 55,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-28",
+              "numeric": -28
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high",
+            "invincible",
+            "airborne"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "ken",
+          "moveId": "ken__special_623_P_OD",
+          "input": {
+            "type": "special",
+            "motion": "623",
+            "button": "P",
+            "strength": "OD"
+          },
+          "upstreamInput": "623PP",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:27.533Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Ken",
+            "input": "623PP",
+            "startup": "6",
+            "total": "89",
+            "hitAdv": "KD +22",
+            "blockAdv": "<span style=\"color: #b70c0b;\">'''-40'''</span>",
+            "notes": "All hits are a true blockstring; Ken's best reversal option; cannot hit cross-up"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "6",
+              "numeric": 6
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "89",
+              "numeric": 89,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-40",
+              "numeric": -40
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "6",
+              "numeric": 6
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "89",
+              "numeric": 89,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-40",
+              "numeric": -40
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high",
+            "invincible",
+            "airborne"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": false
+        },
+        {
+          "characterId": "ken",
+          "moveId": "ken_quick_dash_simultaneous",
+          "input": {
+            "type": "special",
+            "motion": "none",
+            "button": "K",
+            "strength": "none",
+            "buttonCombination": "LK+MK"
+          },
+          "upstreamInput": "KK",
+          "source": {
+            "url": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ken%22&limit=500",
+            "retrievedAt": "2026-11-05T14:25:32.234Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": null,
+          "before": {
+            "startup": {
+              "status": "conditional",
+              "display": "11(9)",
+              "condition": "攻撃発生ではなく派生受付。LK/MKは11F、HKは9Fから。"
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "45",
+              "numeric": 45,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "not_applicable",
+              "display": "-"
+            },
+            "block": {
+              "status": "not_applicable",
+              "display": "-"
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "not_applicable",
+              "display": "-"
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "45",
+              "numeric": 45,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "not_applicable",
+              "display": "-"
+            },
+            "block": {
+              "status": "not_applicable",
+              "display": "-"
+            }
+          },
+          "decisions": [
+            {
+              "field": "startup",
+              "original": "11(9)",
+              "normalized": {
+                "status": "unknown",
+                "display": null
+              },
+              "reason": "標準条件での単一値・同一指標の確定範囲を認定できない。元表記は監査に保持。"
+            },
+            {
+              "field": "startup",
+              "original": "11(9)",
+              "normalized": {
+                "status": "not_applicable",
+                "display": "-"
+              },
+              "reason": "奮迅脚自体は非攻撃。11(9)は派生受付で、派生なしの攻撃発生には適用対象外。"
+            }
+          ],
+          "sourceProperties": [],
+          "exception": null,
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": false
+        }
+      ],
+      "summary": {
+        "recorded": 33,
+        "normalDisplayable": 31,
+        "startupDisplayable": 32,
+        "patchConfirmed": 0,
+        "productionEligible": false
+      }
+    },
+    {
+      "characterId": "marisa",
+      "moves": [
+        {
+          "characterId": "marisa",
+          "moveId": "marisa__normal_2_K_H",
+          "input": {
+            "type": "normal",
+            "direction": "2",
+            "button": "K",
+            "strength": "H"
+          },
+          "upstreamInput": "2HK",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:28.060Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Marisa",
+            "input": "2HK",
+            "startup": "11",
+            "total": "39",
+            "hitAdv": "KD +29",
+            "blockAdv": "<span style=\"color: #b70c0b;\">'''-11'''</span>",
+            "notes": "Can hold button 20f for improved properties; has juggle potential; topmost hurtboxes on frames 1-7 are projectile invincible (avoids Sagat's MP/HP Tiger Shot)"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "11",
+              "numeric": 11
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "39",
+              "numeric": 39,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-11",
+              "numeric": -11
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "11",
+              "numeric": 11
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "39",
+              "numeric": 39,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-11",
+              "numeric": -11
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "marisa",
+          "moveId": "marisa__normal_2_K_L",
+          "input": {
+            "type": "normal",
+            "direction": "2",
+            "button": "K",
+            "strength": "L"
+          },
+          "upstreamInput": "2LK",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:28.060Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Marisa",
+            "input": "2LK",
+            "startup": "5",
+            "total": "19",
+            "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+            "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+            "notes": "Chains into 2LP/2LK"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "5",
+              "numeric": 5
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "19",
+              "numeric": 19,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+2",
+              "numeric": 2
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-3",
+              "numeric": -3
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "5",
+              "numeric": 5
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "19",
+              "numeric": 19,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+2",
+              "numeric": 2
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-3",
+              "numeric": -3
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "marisa",
+          "moveId": "marisa__normal_2_K_M",
+          "input": {
+            "type": "normal",
+            "direction": "2",
+            "button": "K",
+            "strength": "M"
+          },
+          "upstreamInput": "2MK",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:28.060Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Marisa",
+            "input": "2MK",
+            "startup": "9",
+            "total": "29",
+            "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+            "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+            "notes": "1f extra recovery on whiff/block; solid low poke with good range and hitbox priority; strong Drive Rush starter that links into 4HP or 5MP~MP at close range, 2MP at mid range, or 6MP from farther out; topmost hurtboxes on frames 9-16 are projectile invincible (avoids Sagat's MP/HP Tiger Shot but becomes vulnerable on frame 17~)"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "9",
+              "numeric": 9
+            },
+            "total": {
+              "status": "conditional",
+              "display": "29",
+              "numeric": 29,
+              "condition": "原典に空振り追加硬直あり。total欄が追加分を含むか未確定。",
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+5",
+              "numeric": 5
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-2",
+              "numeric": -2
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "9",
+              "numeric": 9
+            },
+            "total": {
+              "status": "unknown",
+              "display": null,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+5",
+              "numeric": 5
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-2",
+              "numeric": -2
+            }
+          },
+          "decisions": [
+            {
+              "field": "total",
+              "original": "29",
+              "normalized": {
+                "status": "unknown",
+                "display": null
+              },
+              "reason": "標準条件での単一値・同一指標の確定範囲を認定できない。元表記は監査に保持。"
+            }
+          ],
+          "sourceProperties": [
+            "low"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": false,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "marisa",
+          "moveId": "marisa__normal_2_P_H",
+          "input": {
+            "type": "normal",
+            "direction": "2",
+            "button": "P",
+            "strength": "H"
+          },
+          "upstreamInput": "2HP",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:28.060Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Marisa",
+            "input": "2HP",
+            "startup": "9",
+            "total": "36",
+            "hitAdv": "KD +35",
+            "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+            "notes": "Can hold button 17f for improved properties; slow but solid anti-air; cannot hit cross-up; only first 2 active frames hit grounded opponents; active frames 3-5 only hit airborne opponents (active frame 3 extends a much wider anti-air hitbox); puts opponent into limited juggle state on hit (higher launch vs. airborne, and much higher on Punish Counter)"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "9",
+              "numeric": 9
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "36",
+              "numeric": 36,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-6",
+              "numeric": -6
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "9",
+              "numeric": 9
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "36",
+              "numeric": 36,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-6",
+              "numeric": -6
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high",
+            "invincible"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "marisa",
+          "moveId": "marisa__normal_2_P_L",
+          "input": {
+            "type": "normal",
+            "direction": "2",
+            "button": "P",
+            "strength": "L"
+          },
+          "upstreamInput": "2LP",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:28.060Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Marisa",
+            "input": "2LP",
+            "startup": "4",
+            "total": "15",
+            "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+            "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+            "notes": "Chains into 2LP/2LK; Marisa's only 4f normal; special/DI cancel is delayed until after active frames; DR cancel is delayed until after 2nd recovery frame"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "4",
+              "numeric": 4
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "15",
+              "numeric": 15,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+4",
+              "numeric": 4
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-1",
+              "numeric": -1
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "4",
+              "numeric": 4
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "15",
+              "numeric": 15,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+4",
+              "numeric": 4
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-1",
+              "numeric": -1
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "marisa",
+          "moveId": "marisa__normal_2_P_M",
+          "input": {
+            "type": "normal",
+            "direction": "2",
+            "button": "P",
+            "strength": "M"
+          },
+          "upstreamInput": "2MP",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:28.060Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Marisa",
+            "input": "2MP",
+            "startup": "8",
+            "total": "26",
+            "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+            "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+            "notes": "Long range for a cancelable 2MP (but slower than average startup); topmost hurtboxes on frames 8-15 are projectile invincible (avoids Sagat's MP/HP Tiger Shot)"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "8",
+              "numeric": 8
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "26",
+              "numeric": 26,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+3",
+              "numeric": 3
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-2",
+              "numeric": -2
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "8",
+              "numeric": 8
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "26",
+              "numeric": 26,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+3",
+              "numeric": 3
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-2",
+              "numeric": -2
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "marisa",
+          "moveId": "marisa__normal_5_K_H",
+          "input": {
+            "type": "normal",
+            "direction": "5",
+            "button": "K",
+            "strength": "H"
+          },
+          "upstreamInput": "5HK",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:28.060Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Marisa",
+            "input": "5HK",
+            "startup": "15",
+            "total": "41",
+            "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+            "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+            "notes": "Can hold button 17f for improved properties; solid poke with good hitbox priority; Punish Counter puts opponent into free juggle state; puts airborne opponents into limited juggle state; extends a hurtbox 1f before active that is vulnerable to projectiles"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "15",
+              "numeric": 15
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "41",
+              "numeric": 41,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+1",
+              "numeric": 1
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-3",
+              "numeric": -3
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "15",
+              "numeric": 15
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "41",
+              "numeric": 41,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+1",
+              "numeric": 1
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-3",
+              "numeric": -3
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "marisa",
+          "moveId": "marisa__normal_5_K_L",
+          "input": {
+            "type": "normal",
+            "direction": "5",
+            "button": "K",
+            "strength": "L"
+          },
+          "upstreamInput": "5LK",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:28.060Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Marisa",
+            "input": "5LK",
+            "startup": "6",
+            "total": "21",
+            "hitAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+            "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+            "notes": "At farther ranges, can only combo into SA2; special/DI cancel is delayed until after 2nd recovery frame; DR cancel is delayed until after 3rd recovery frame"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "6",
+              "numeric": 6
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "21",
+              "numeric": 21,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "0",
+              "numeric": 0
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-2",
+              "numeric": -2
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "6",
+              "numeric": 6
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "21",
+              "numeric": 21,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "0",
+              "numeric": 0
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-2",
+              "numeric": -2
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "marisa",
+          "moveId": "marisa__normal_5_K_M",
+          "input": {
+            "type": "normal",
+            "direction": "5",
+            "button": "K",
+            "strength": "M"
+          },
+          "upstreamInput": "5MK",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:28.060Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Marisa",
+            "input": "5MK",
+            "startup": "11",
+            "total": "30",
+            "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+            "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+            "notes": "Good poke and Drive Rush starter"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "11",
+              "numeric": 11
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "30",
+              "numeric": 30,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+4",
+              "numeric": 4
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-2",
+              "numeric": -2
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "11",
+              "numeric": 11
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "30",
+              "numeric": 30,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+4",
+              "numeric": 4
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-2",
+              "numeric": -2
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "marisa",
+          "moveId": "marisa__normal_5_P_H",
+          "input": {
+            "type": "normal",
+            "direction": "5",
+            "button": "P",
+            "strength": "H"
+          },
+          "upstreamInput": "5HP",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:28.060Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Marisa",
+            "input": "5HP",
+            "startup": "12",
+            "total": "36",
+            "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+            "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+            "notes": "Can hold button 21f for improved properties; strong whiff punish tool"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "12",
+              "numeric": 12
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "36",
+              "numeric": 36,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+3",
+              "numeric": 3
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-3",
+              "numeric": -3
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "12",
+              "numeric": 12
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "36",
+              "numeric": 36,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+3",
+              "numeric": 3
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-3",
+              "numeric": -3
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "marisa",
+          "moveId": "marisa__normal_5_P_L",
+          "input": {
+            "type": "normal",
+            "direction": "5",
+            "button": "P",
+            "strength": "L"
+          },
+          "upstreamInput": "5LP",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:28.060Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Marisa",
+            "input": "5LP",
+            "startup": "6",
+            "total": "19",
+            "hitAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+            "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+            "notes": "Good neutral buffer into 5LP~LP Target Combo (requires at least a Counter-hit to combo); causes air reset if juggled into"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "6",
+              "numeric": 6
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "19",
+              "numeric": 19,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "0",
+              "numeric": 0
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-2",
+              "numeric": -2
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "6",
+              "numeric": 6
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "19",
+              "numeric": 19,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "0",
+              "numeric": 0
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-2",
+              "numeric": -2
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "marisa",
+          "moveId": "marisa__normal_5_P_M",
+          "input": {
+            "type": "normal",
+            "direction": "5",
+            "button": "P",
+            "strength": "M"
+          },
+          "upstreamInput": "5MP",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:28.060Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Marisa",
+            "input": "5MP",
+            "startup": "7",
+            "total": "25(27)",
+            "hitAdv": "<span style=\"color: #32CD32;\">+2</span>",
+            "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+            "notes": "2f extra recovery on whiff; great hitbox and a strong buffer into 5MP~MP Target Combo"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "7",
+              "numeric": 7
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "27",
+              "numeric": 27,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+2",
+              "numeric": 2
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-1",
+              "numeric": -1
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "7",
+              "numeric": 7
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "27",
+              "numeric": 27,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "+2",
+              "numeric": 2
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-1",
+              "numeric": -1
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "marisa",
+          "moveId": "marisa__special_214_K_none",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "K",
+            "strength": "none"
+          },
+          "upstreamInput": "214K",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:28.060Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Marisa",
+            "input": "214K",
+            "startup": "3(8)",
+            "total": "54(144)",
+            "hitAdv": "-",
+            "blockAdv": "-",
+            "notes": "Stance with 1-hit armor can be extended an extra 90f by holding the button, followed by 26 unarmored recovery frames; no armor on lower half of body; cancelable into follow-ups after 8f; stance cannot be canceled into from other attacks; absorbing an attack automatically triggers counterattack follow-up; Marisa takes a fixed 6f hitstop when absorbing attacks (causing the counterattack to often land as a Counter-hit rather than a Punish Counter against medium/heavy attacks)"
+          },
+          "before": {
+            "startup": {
+              "status": "conditional",
+              "display": "3(8)",
+              "condition": "原典3(8)。3Fはアーマー開始、8Fは派生受付。直接攻撃の発生として扱わない。"
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "54",
+              "numeric": 54,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "not_applicable",
+              "display": "-"
+            },
+            "block": {
+              "status": "not_applicable",
+              "display": "-"
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "not_applicable",
+              "display": "-"
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "54",
+              "numeric": 54,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "not_applicable",
+              "display": "-"
+            },
+            "block": {
+              "status": "not_applicable",
+              "display": "-"
+            }
+          },
+          "decisions": [
+            {
+              "field": "startup",
+              "original": "3(8)",
+              "normalized": {
+                "status": "unknown",
+                "display": null
+              },
+              "reason": "標準条件での単一値・同一指標の確定範囲を認定できない。元表記は監査に保持。"
+            },
+            {
+              "field": "startup",
+              "original": "3(8)",
+              "normalized": {
+                "status": "not_applicable",
+                "display": "-"
+              },
+              "reason": "構え移行は攻撃ではない。3/1はアーマー開始、8は派生受付であり攻撃発生へ流用しない。"
+            }
+          ],
+          "sourceProperties": [
+            "armor"
+          ],
+          "exception": null,
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "marisa",
+          "moveId": "marisa__special_214_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "K",
+            "strength": "OD"
+          },
+          "upstreamInput": "214KK",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:28.060Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Marisa",
+            "input": "214KK",
+            "startup": "1",
+            "total": "57(87)",
+            "hitAdv": "-",
+            "blockAdv": "-",
+            "notes": "Stance with 2-hit full-body armor can be extended an extra 30f by holding a kick button, followed by 29 unarmored recovery frames; cancelable into follow-ups after 8f; stance cannot be canceled into from other attacks; absorbing an attack automatically triggers counterattack follow-up; Marisa takes a fixed 6f hitstop when absorbing attacks (causing the counterattack to often land as a Counter-hit rather than a Punish Counter against medium/heavy attacks)"
+          },
+          "before": {
+            "startup": {
+              "status": "conditional",
+              "display": "1",
+              "numeric": 1,
+              "condition": "構えの開始に関する1F。攻撃判定の発生とは区別。"
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "57",
+              "numeric": 57,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "not_applicable",
+              "display": "-"
+            },
+            "block": {
+              "status": "not_applicable",
+              "display": "-"
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "not_applicable",
+              "display": "-"
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "57",
+              "numeric": 57,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "not_applicable",
+              "display": "-"
+            },
+            "block": {
+              "status": "not_applicable",
+              "display": "-"
+            }
+          },
+          "decisions": [
+            {
+              "field": "startup",
+              "original": "1",
+              "normalized": {
+                "status": "unknown",
+                "display": null
+              },
+              "reason": "標準条件での単一値・同一指標の確定範囲を認定できない。元表記は監査に保持。"
+            },
+            {
+              "field": "startup",
+              "original": "1",
+              "normalized": {
+                "status": "not_applicable",
+                "display": "-"
+              },
+              "reason": "構え移行は攻撃ではない。3/1はアーマー開始、8は派生受付であり攻撃発生へ流用しない。"
+            }
+          ],
+          "sourceProperties": [
+            "armor"
+          ],
+          "exception": null,
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": false
+        },
+        {
+          "characterId": "marisa",
+          "moveId": "marisa__special_214_P_H",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "P",
+            "strength": "H"
+          },
+          "upstreamInput": "214HP",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:28.060Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Marisa",
+            "input": "214HP",
+            "startup": "22",
+            "total": "55",
+            "hitAdv": "KD +38",
+            "blockAdv": "<span style=\"color: #b70c0b;\">'''-16'''</span>",
+            "notes": "Cannot hit cross-up; cancelable into 6P follow-up on hit or armor absorb; puts airborne opponents into free juggle state"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "22",
+              "numeric": 22
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "55",
+              "numeric": 55,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-16",
+              "numeric": -16
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "22",
+              "numeric": 22
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "55",
+              "numeric": 55,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-16",
+              "numeric": -16
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high",
+            "invincible"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "marisa",
+          "moveId": "marisa__special_214_P_L",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "P",
+            "strength": "L"
+          },
+          "upstreamInput": "214LP",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:28.060Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Marisa",
+            "input": "214LP",
+            "startup": "12",
+            "total": "45",
+            "hitAdv": "<span style=\"color: #ff6347;\">-3</span>",
+            "blockAdv": "<span style=\"color: #b70c0b;\">'''-16'''</span>",
+            "notes": "Cannot hit cross-up; cancelable into 6P follow-up on hit or armor absorb; puts airborne opponents into free juggle state"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "12",
+              "numeric": 12
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "45",
+              "numeric": 45,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "-3",
+              "numeric": -3
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-16",
+              "numeric": -16
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "12",
+              "numeric": 12
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "45",
+              "numeric": 45,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "-3",
+              "numeric": -3
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-16",
+              "numeric": -16
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high",
+            "invincible"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "marisa",
+          "moveId": "marisa__special_214_P_M",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "P",
+            "strength": "M"
+          },
+          "upstreamInput": "214MP",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:28.060Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Marisa",
+            "input": "214MP",
+            "startup": "16",
+            "total": "49",
+            "hitAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+            "blockAdv": "<span style=\"color: #b70c0b;\">'''-16'''</span>",
+            "notes": "Cannot hit cross-up; cancelable into 6P follow-up on hit or armor absorb; puts airborne opponents into free juggle state"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "16",
+              "numeric": 16
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "49",
+              "numeric": 49,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "0",
+              "numeric": 0
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-16",
+              "numeric": -16
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "16",
+              "numeric": 16
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "49",
+              "numeric": 49,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "0",
+              "numeric": 0
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-16",
+              "numeric": -16
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high",
+            "invincible"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "marisa",
+          "moveId": "marisa__special_214_P_OD",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "P",
+            "strength": "OD"
+          },
+          "upstreamInput": "214PP",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:28.060Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Marisa",
+            "input": "214PP",
+            "startup": "16",
+            "total": "45",
+            "hitAdv": "KD +42",
+            "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span>",
+            "notes": "Cannot hit cross-up; cancelable into 6P follow-up on hit or armor absorb; puts airborne opponents into free juggle state"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "16",
+              "numeric": 16
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "45",
+              "numeric": 45,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-12",
+              "numeric": -12
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "16",
+              "numeric": 16
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "45",
+              "numeric": 45,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-12",
+              "numeric": -12
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high",
+            "invincible",
+            "armor"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": false
+        },
+        {
+          "characterId": "marisa",
+          "moveId": "marisa__special_236_K_H",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "H"
+          },
+          "upstreamInput": "236HK",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:28.060Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Marisa",
+            "input": "236HK",
+            "startup": "29",
+            "total": "53",
+            "hitAdv": "KD +37",
+            "blockAdv": "<span style=\"color: #32CD32;\">+1</span>",
+            "notes": "Cannot hit cross-up; ~70% screen length; advancing poke with advantage on block; has a screen shake effect to make it easier to distinguish from 236MK"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "29",
+              "numeric": 29
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "53",
+              "numeric": 53,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "+1",
+              "numeric": 1
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "29",
+              "numeric": 29
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "53",
+              "numeric": 53,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "+1",
+              "numeric": 1
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "marisa",
+          "moveId": "marisa__special_236_K_L",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "L"
+          },
+          "upstreamInput": "236LK",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:28.060Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Marisa",
+            "input": "236LK",
+            "startup": "20",
+            "total": "47",
+            "hitAdv": "KD +35",
+            "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+            "notes": "Cannot hit cross-up; ~50% screen length"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "20",
+              "numeric": 20
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "47",
+              "numeric": 47,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-6",
+              "numeric": -6
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "20",
+              "numeric": 20
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "47",
+              "numeric": 47,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-6",
+              "numeric": -6
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "marisa",
+          "moveId": "marisa__special_236_K_M",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "M"
+          },
+          "upstreamInput": "236MK",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:28.060Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Marisa",
+            "input": "236MK",
+            "startup": "24",
+            "total": "49",
+            "hitAdv": "KD +37",
+            "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+            "notes": "Cannot hit cross-up; ~60% screen length; safe advancing poke that leaves Marisa out of throw range on block (can space farther for even better spacing traps); increased pushback vs. opponents in Burnout (out of throw range and cannot combo from chained lights)"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "24",
+              "numeric": 24
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "49",
+              "numeric": 49,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-3",
+              "numeric": -3
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "24",
+              "numeric": 24
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "49",
+              "numeric": 49,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-3",
+              "numeric": -3
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "marisa",
+          "moveId": "marisa__special_236_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "OD"
+          },
+          "upstreamInput": "236KK",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:28.060Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Marisa",
+            "input": "236KK",
+            "startup": "24",
+            "total": "51",
+            "hitAdv": "KD +50(68) Wall Splat",
+            "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+            "notes": "Cannot hit cross-up; ~65% screen length; Wall Splat on hit; KD Advantage increases when farther from the wall; significant pushback on block makes it hard to punish when spaced out"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "24",
+              "numeric": 24
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "51",
+              "numeric": 51,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "conditional",
+              "display": "KD +50(68) Wall Splat",
+              "condition": "Wall Splat。原典注記では壁から遠いほどダウン有利が増える。50(68)の各距離条件は未確定。"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-6",
+              "numeric": -6
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "24",
+              "numeric": 24
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "51",
+              "numeric": 51,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "unknown",
+              "display": null
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-6",
+              "numeric": -6
+            }
+          },
+          "decisions": [
+            {
+              "field": "hit",
+              "original": "KD +50(68) Wall Splat",
+              "normalized": {
+                "status": "unknown",
+                "display": null
+              },
+              "reason": "標準条件での単一値・同一指標の確定範囲を認定できない。元表記は監査に保持。"
+            }
+          ],
+          "sourceProperties": [
+            "low",
+            "high",
+            "armor"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": false,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": false
+        },
+        {
+          "characterId": "marisa",
+          "moveId": "marisa__special_236_P_H",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "P",
+            "strength": "H"
+          },
+          "upstreamInput": "236HP",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:28.060Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Marisa",
+            "input": "236HP",
+            "startup": "22",
+            "total": "46",
+            "hitAdv": "KD +36",
+            "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+            "notes": "Armor loses to low attacks; cannot hit cross-up; can hold the button 35f to charge a more powerful version (armor is lost immediately upon button release); after releasing partial charge, startup is 10f (frames 12-19), 9f (frames 20-27), or 8f (frames 28-34); holding the button for 33-34f results in an uncharged 236HP with even slower startup than the fully charged version"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "22",
+              "numeric": 22
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "46",
+              "numeric": 46,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-5",
+              "numeric": -5
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "22",
+              "numeric": 22
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "46",
+              "numeric": 46,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-5",
+              "numeric": -5
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high",
+            "armor"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "marisa",
+          "moveId": "marisa__special_236_P_L",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "P",
+            "strength": "L"
+          },
+          "upstreamInput": "236LP",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:28.060Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Marisa",
+            "input": "236LP",
+            "startup": "17",
+            "total": "41",
+            "hitAdv": "KD +36",
+            "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+            "notes": "Armor loses to low attacks; cannot hit cross-up; can hold the button 26f to charge a more powerful version (armor is lost immediately upon button release); after releasing partial charge, startup is 5f (frames 12-19) or 4f (frames 20-25); holding the button for 11-12f can extend the armor by 1-2f without increasing startup"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "17",
+              "numeric": 17
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "41",
+              "numeric": 41,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-5",
+              "numeric": -5
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "17",
+              "numeric": 17
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "41",
+              "numeric": 41,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-5",
+              "numeric": -5
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high",
+            "armor"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "marisa",
+          "moveId": "marisa__special_236_P_M",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "P",
+            "strength": "M"
+          },
+          "upstreamInput": "236MP",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:28.060Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Marisa",
+            "input": "236MP",
+            "startup": "19",
+            "total": "43",
+            "hitAdv": "KD +36",
+            "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+            "notes": "Armor loses to low attacks; cannot hit cross-up; can hold the button 29f to charge a more powerful version (armor is lost immediately upon button release); after releasing partial charge, startup is 7f (frames 12-19) or 6f (frames 20-28)"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "19",
+              "numeric": 19
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "43",
+              "numeric": 43,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-5",
+              "numeric": -5
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "19",
+              "numeric": 19
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "43",
+              "numeric": 43,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-5",
+              "numeric": -5
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high",
+            "armor"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "marisa",
+          "moveId": "marisa__special_236_P_OD",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "P",
+            "strength": "OD"
+          },
+          "upstreamInput": "236PP",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:28.060Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Marisa",
+            "input": "236PP",
+            "startup": "19",
+            "total": "43",
+            "hitAdv": "KD +36",
+            "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+            "notes": "Armor loses to low attacks; cannot hit cross-up; can hold the button 29f to charge a more powerful version; after releasing partial charge, startup is 8f (frames 11-12), 7f (frames 13-19), or 6f (frames 20-28)"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "19",
+              "numeric": 19
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "43",
+              "numeric": 43,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-2",
+              "numeric": -2
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "19",
+              "numeric": 19
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "43",
+              "numeric": 43,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "-2",
+              "numeric": -2
+            }
+          },
+          "decisions": [],
+          "sourceProperties": [
+            "low",
+            "high",
+            "armor"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": false
+        },
+        {
+          "characterId": "marisa",
+          "moveId": "marisa__special_623_P_H",
+          "input": {
+            "type": "special",
+            "motion": "623",
+            "button": "P",
+            "strength": "H"
+          },
+          "upstreamInput": "623HP",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:28.060Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Marisa",
+            "input": "623HP",
+            "startup": "32",
+            "total": "52",
+            "hitAdv": "KD +42(43)",
+            "blockAdv": "<span style=\"color: #32CD32;\">+3</span><span style=\"color: #30D5B8;\">'''(+4)'''</span>",
+            "notes": "Cannot hit cross-up; hits 1f later vs. crouching opponents; leaves Marisa close enough to frame trap with 5LP~LP on block or use 5MP~MP without causing an air reset; can set up trade combos with 4f reversals using 5MP vs. stand block or 4HP vs. crouch block"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "32",
+              "numeric": 32
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "52",
+              "numeric": 52,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "conditional",
+              "display": "KD +42(43)",
+              "condition": "括弧内はしゃがみ相手、括弧外は立ち相手。相手状態を指定する出題条件がないため複合値を保持。"
+            },
+            "block": {
+              "status": "conditional",
+              "display": "+3(+4)",
+              "condition": "括弧内はしゃがみ相手、括弧外は立ち相手。相手状態を指定する出題条件がないため複合値を保持。"
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "32",
+              "numeric": 32
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "52",
+              "numeric": 52,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "3",
+              "numeric": 3
+            }
+          },
+          "decisions": [
+            {
+              "field": "hit",
+              "original": "KD +42(43)",
+              "normalized": {
+                "status": "unknown",
+                "display": null
+              },
+              "reason": "標準条件での単一値・同一指標の確定範囲を認定できない。元表記は監査に保持。"
+            },
+            {
+              "field": "block",
+              "original": "+3(+4)",
+              "normalized": {
+                "status": "unknown",
+                "display": null
+              },
+              "reason": "標準条件での単一値・同一指標の確定範囲を認定できない。元表記は監査に保持。"
+            },
+            {
+              "field": "block",
+              "original": "+3(+4)",
+              "normalized": {
+                "status": "confirmed",
+                "display": "3",
+                "numeric": 3
+              },
+              "reason": "立ちガード。しゃがみに1F遅く当たる括弧内は対象外。"
+            },
+            {
+              "field": "hit",
+              "original": "KD +42(43)",
+              "normalized": {
+                "status": "confirmed",
+                "display": "D"
+              },
+              "reason": "画面中央で壁に到達しない通常ヒットはKD。壁到達時の別性能・ダウン後有利Fは出題対象外。"
+            }
+          ],
+          "sourceProperties": [
+            "low",
+            "high",
+            "invincible",
+            "armor",
+            "airborne"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "marisa",
+          "moveId": "marisa__special_623_P_L",
+          "input": {
+            "type": "special",
+            "motion": "623",
+            "button": "P",
+            "strength": "L"
+          },
+          "upstreamInput": "623LP",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:28.060Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Marisa",
+            "input": "623LP",
+            "startup": "25",
+            "total": "45",
+            "hitAdv": "KD +42(43)",
+            "blockAdv": "<span style=\"color: #32CD32;\">+3</span><span style=\"color: #30D5B8;\">'''(+4)'''</span>",
+            "notes": "Cannot hit cross-up; hits 1f later vs. crouching opponents"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "25",
+              "numeric": 25
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "45",
+              "numeric": 45,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "conditional",
+              "display": "KD +42(43)",
+              "condition": "括弧内はしゃがみ相手、括弧外は立ち相手。相手状態を指定する出題条件がないため複合値を保持。"
+            },
+            "block": {
+              "status": "conditional",
+              "display": "+3(+4)",
+              "condition": "括弧内はしゃがみ相手、括弧外は立ち相手。相手状態を指定する出題条件がないため複合値を保持。"
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "25",
+              "numeric": 25
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "45",
+              "numeric": 45,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "3",
+              "numeric": 3
+            }
+          },
+          "decisions": [
+            {
+              "field": "hit",
+              "original": "KD +42(43)",
+              "normalized": {
+                "status": "unknown",
+                "display": null
+              },
+              "reason": "標準条件での単一値・同一指標の確定範囲を認定できない。元表記は監査に保持。"
+            },
+            {
+              "field": "block",
+              "original": "+3(+4)",
+              "normalized": {
+                "status": "unknown",
+                "display": null
+              },
+              "reason": "標準条件での単一値・同一指標の確定範囲を認定できない。元表記は監査に保持。"
+            },
+            {
+              "field": "block",
+              "original": "+3(+4)",
+              "normalized": {
+                "status": "confirmed",
+                "display": "3",
+                "numeric": 3
+              },
+              "reason": "立ちガード。しゃがみに1F遅く当たる括弧内は対象外。"
+            },
+            {
+              "field": "hit",
+              "original": "KD +42(43)",
+              "normalized": {
+                "status": "confirmed",
+                "display": "D"
+              },
+              "reason": "画面中央で壁に到達しない通常ヒットはKD。壁到達時の別性能・ダウン後有利Fは出題対象外。"
+            }
+          ],
+          "sourceProperties": [
+            "low",
+            "high",
+            "invincible",
+            "armor",
+            "airborne"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "marisa",
+          "moveId": "marisa__special_623_P_M",
+          "input": {
+            "type": "special",
+            "motion": "623",
+            "button": "P",
+            "strength": "M"
+          },
+          "upstreamInput": "623MP",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:28.060Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Marisa",
+            "input": "623MP",
+            "startup": "28",
+            "total": "48",
+            "hitAdv": "KD +42(43)",
+            "blockAdv": "<span style=\"color: #32CD32;\">+3</span><span style=\"color: #30D5B8;\">'''(+4)'''</span>",
+            "notes": "Cannot hit cross-up; hits 1f later vs. crouching opponents; leaves Marisa close enough to frame trap with 5LP~LP on block or use 5MP~MP without causing an air reset; can set up trade combos with 4f reversals using 5MP vs. stand block or 4HP vs. crouch block"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "28",
+              "numeric": 28
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "48",
+              "numeric": 48,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "conditional",
+              "display": "KD +42(43)",
+              "condition": "括弧内はしゃがみ相手、括弧外は立ち相手。相手状態を指定する出題条件がないため複合値を保持。"
+            },
+            "block": {
+              "status": "conditional",
+              "display": "+3(+4)",
+              "condition": "括弧内はしゃがみ相手、括弧外は立ち相手。相手状態を指定する出題条件がないため複合値を保持。"
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "28",
+              "numeric": 28
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "48",
+              "numeric": 48,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "3",
+              "numeric": 3
+            }
+          },
+          "decisions": [
+            {
+              "field": "hit",
+              "original": "KD +42(43)",
+              "normalized": {
+                "status": "unknown",
+                "display": null
+              },
+              "reason": "標準条件での単一値・同一指標の確定範囲を認定できない。元表記は監査に保持。"
+            },
+            {
+              "field": "block",
+              "original": "+3(+4)",
+              "normalized": {
+                "status": "unknown",
+                "display": null
+              },
+              "reason": "標準条件での単一値・同一指標の確定範囲を認定できない。元表記は監査に保持。"
+            },
+            {
+              "field": "block",
+              "original": "+3(+4)",
+              "normalized": {
+                "status": "confirmed",
+                "display": "3",
+                "numeric": 3
+              },
+              "reason": "立ちガード。しゃがみに1F遅く当たる括弧内は対象外。"
+            },
+            {
+              "field": "hit",
+              "original": "KD +42(43)",
+              "normalized": {
+                "status": "confirmed",
+                "display": "D"
+              },
+              "reason": "画面中央で壁に到達しない通常ヒットはKD。壁到達時の別性能・ダウン後有利Fは出題対象外。"
+            }
+          ],
+          "sourceProperties": [
+            "low",
+            "high",
+            "invincible",
+            "armor",
+            "airborne"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": null
+        },
+        {
+          "characterId": "marisa",
+          "moveId": "marisa__special_623_P_OD",
+          "input": {
+            "type": "special",
+            "motion": "623",
+            "button": "P",
+            "strength": "OD"
+          },
+          "upstreamInput": "623PP",
+          "source": {
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+            "retrievedAt": "2026-08-19T04:05:28.060Z",
+            "gameVersion": "UNVERIFIED",
+            "kind": "community",
+            "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+            "license": "CC-BY-SA-4.0",
+            "verification": "unverified"
+          },
+          "sourceRow": {
+            "chara": "Marisa",
+            "input": "623PP",
+            "startup": "28",
+            "total": "48",
+            "hitAdv": "KD +70 Tumble (HKD +138 Wall Splat)",
+            "blockAdv": "<span style=\"color: #30D5B8;\">'''+4(5)'''</span>",
+            "notes": "Sends opponent tumbling backward into OTG state; if opponent hits the corner, a low-height Wall Splat occurs (opponent is grounded and throwable, but strikes put them into juggle state); cannot hit cross-up; hits 1f later vs. crouching opponents; can set up trade combos with 4f reversals using 4HP vs. stand block or 6MP vs. crouch block"
+          },
+          "before": {
+            "startup": {
+              "status": "confirmed",
+              "display": "28",
+              "numeric": 28
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "48",
+              "numeric": 48,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "conditional",
+              "display": "KD +70 Tumble (HKD +138 Wall Splat)",
+              "condition": "壁到達時はHKD+138 Wall Splat、それ以外はKD+70 Tumble。壁距離を指定しない出題には単一値を適用しない。"
+            },
+            "block": {
+              "status": "conditional",
+              "display": "+4(5)",
+              "condition": "括弧内はしゃがみ相手、括弧外は立ち相手。相手状態を指定する出題条件がないため複合値を保持。"
+            }
+          },
+          "after": {
+            "startup": {
+              "status": "confirmed",
+              "display": "28",
+              "numeric": 28
+            },
+            "total": {
+              "status": "confirmed",
+              "display": "48",
+              "numeric": 48,
+              "provenance": "source",
+              "calculation": null
+            },
+            "hit": {
+              "status": "confirmed",
+              "display": "D"
+            },
+            "block": {
+              "status": "confirmed",
+              "display": "4",
+              "numeric": 4
+            }
+          },
+          "decisions": [
+            {
+              "field": "hit",
+              "original": "KD +70 Tumble (HKD +138 Wall Splat)",
+              "normalized": {
+                "status": "unknown",
+                "display": null
+              },
+              "reason": "標準条件での単一値・同一指標の確定範囲を認定できない。元表記は監査に保持。"
+            },
+            {
+              "field": "block",
+              "original": "+4(5)",
+              "normalized": {
+                "status": "unknown",
+                "display": null
+              },
+              "reason": "標準条件での単一値・同一指標の確定範囲を認定できない。元表記は監査に保持。"
+            },
+            {
+              "field": "block",
+              "original": "+4(5)",
+              "normalized": {
+                "status": "confirmed",
+                "display": "4",
+                "numeric": 4
+              },
+              "reason": "立ちガード。しゃがみに1F遅く当たる括弧内は対象外。"
+            },
+            {
+              "field": "hit",
+              "original": "KD +70 Tumble (HKD +138 Wall Splat)",
+              "normalized": {
+                "status": "confirmed",
+                "display": "D"
+              },
+              "reason": "画面中央で壁に到達しない通常ヒットはKD。壁到達時の別性能・ダウン後有利Fは出題対象外。"
+            }
+          ],
+          "sourceProperties": [
+            "low",
+            "high",
+            "invincible",
+            "armor",
+            "airborne"
+          ],
+          "exception": "下段は立ちガード不成立のため、ガード時はしゃがみガードを使用。",
+          "normalDisplayable": true,
+          "startupDisplayable": true,
+          "patchConfirmed": false,
+          "inputPairConfirmed": false
+        }
+      ],
+      "summary": {
+        "recorded": 30,
+        "normalDisplayable": 28,
+        "startupDisplayable": 30,
+        "patchConfirmed": 0,
+        "productionEligible": false
+      }
+    }
+  ]
+}

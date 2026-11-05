@@ -1,0 +1,1689 @@
+{
+  "id": "marisa",
+  "nameJa": "マリーザ",
+  "nameEn": "Marisa",
+  "gameVersion": "UNVERIFIED",
+  "source": {
+    "url": "https://wiki.supercombo.gg/w/Street_Fighter_6",
+    "retrievedAt": "2026-08-19T04:05:24.993Z",
+    "gameVersion": "UNVERIFIED",
+    "kind": "community",
+    "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+    "license": "CC-BY-SA-4.0",
+    "verification": "unverified"
+  },
+  "coverage": {
+    "normal": {
+      "status": "partial",
+      "verification": "unverified"
+    },
+    "special": {
+      "status": "partial",
+      "verification": "unverified"
+    }
+  },
+  "moves": [
+    {
+      "id": "marisa__normal_2_K_H",
+      "name": "しゃがみ強K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "11",
+          "numeric": 11
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "39",
+          "numeric": 39,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-11",
+          "numeric": -11
+        }
+      },
+      "notes": [
+        "upstreamInput: 2HK",
+        "upstreamName: Gaia Bash",
+        "upstreamNotes: Can hold button 20f for improved properties; has juggle potential; topmost hurtboxes on frames 1-7 are projectile invincible (avoids Sagat's MP/HP Tiger Shot)",
+        "upstreamActive: 3",
+        "upstreamRecovery: 26",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +29 as D; original onHit=29; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Marisa%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "marisa__normal_2_K_L",
+      "name": "しゃがみ弱K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "19",
+          "numeric": 19,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: 2LK",
+        "upstreamName: Crouching Light Kick",
+        "upstreamNotes: Chains into 2LP/2LK",
+        "upstreamActive: 3",
+        "upstreamRecovery: 12"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "marisa__normal_2_K_M",
+      "name": "しゃがみ中K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "29",
+          "numeric": 29,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+5",
+          "numeric": 5
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        }
+      },
+      "notes": [
+        "upstreamInput: 2MK",
+        "upstreamName: Crouching Medium Kick",
+        "upstreamNotes: 1f extra recovery on whiff/block; solid low poke with good range and hitbox priority; strong Drive Rush starter that links into 4HP or 5MP~MP at close range, 2MP at mid range, or 6MP from farther out; topmost hurtboxes on frames 9-16 are projectile invincible (avoids Sagat's MP/HP Tiger Shot but becomes vulnerable on frame 17~)",
+        "upstreamActive: 3",
+        "upstreamRecovery: 17"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "marisa__normal_2_P_H",
+      "name": "しゃがみ強P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "36",
+          "numeric": 36,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        }
+      },
+      "notes": [
+        "upstreamInput: 2HP",
+        "upstreamName: Crouching Heavy Punch",
+        "upstreamNotes: Can hold button 17f for improved properties; slow but solid anti-air; cannot hit cross-up; only first 2 active frames hit grounded opponents; active frames 3-5 only hit airborne opponents (active frame 3 extends a much wider anti-air hitbox); puts opponent into limited juggle state on hit (higher launch vs. airborne, and much higher on Punish Counter)",
+        "upstreamActive: 5",
+        "upstreamRecovery: 23",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +35 as D; original onHit=35; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Marisa%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "marisa__normal_2_P_L",
+      "name": "しゃがみ弱P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "4",
+          "numeric": 4
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "15",
+          "numeric": 15,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        }
+      },
+      "notes": [
+        "upstreamInput: 2LP",
+        "upstreamName: Crouching Light Punch",
+        "upstreamNotes: Chains into 2LP/2LK; Marisa's only 4f normal; special cancel is delayed until after active frames; DR cancel is delayed until after 2nd recovery frame",
+        "upstreamActive: 2",
+        "upstreamRecovery: 10"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "marisa__normal_2_P_M",
+      "name": "しゃがみ中P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "26",
+          "numeric": 26,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        }
+      },
+      "notes": [
+        "upstreamInput: 2MP",
+        "upstreamName: Crouching Medium Punch",
+        "upstreamNotes: Long range for a cancelable 2MP (but slower than average startup); topmost hurtboxes on frames 8-15 are projectile invincible (avoids Sagat's MP/HP Tiger Shot)",
+        "upstreamActive: 3",
+        "upstreamRecovery: 16"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "marisa__normal_5_K_H",
+      "name": "立ち強K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "15",
+          "numeric": 15
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "41",
+          "numeric": 41,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: 5HK",
+        "upstreamName: Standing Heavy Kick",
+        "upstreamNotes: Can hold button 17f for improved properties; solid poke with good hitbox priority; Punish Counter puts opponent into free juggle state; puts airborne opponents into limited juggle state; extends a hurtbox 1f before active that is vulnerable to projectiles",
+        "upstreamActive: 2",
+        "upstreamRecovery: 25"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "marisa__normal_5_K_L",
+      "name": "立ち弱K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "21",
+          "numeric": 21,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "0",
+          "numeric": 0
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        }
+      },
+      "notes": [
+        "upstreamInput: 5LK",
+        "upstreamName: Standing Light Kick",
+        "upstreamNotes: At farther ranges, can only combo into SA2; special cancel is delayed until after 2nd recovery frame; DR cancel is delayed until after 3rd recovery frame",
+        "upstreamActive: 2",
+        "upstreamRecovery: 14"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "marisa__normal_5_K_M",
+      "name": "立ち中K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "11",
+          "numeric": 11
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "30",
+          "numeric": 30,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        }
+      },
+      "notes": [
+        "upstreamInput: 5MK",
+        "upstreamName: Standing Medium Kick",
+        "upstreamNotes: Good poke and Drive Rush starter",
+        "upstreamActive: 4",
+        "upstreamRecovery: 16"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "marisa__normal_5_P_H",
+      "name": "立ち強P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "36",
+          "numeric": 36,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: 5HP",
+        "upstreamName: Standing Heavy Punch",
+        "upstreamNotes: Can hold button 21f for improved properties; strong whiff punish tool",
+        "upstreamActive: 2",
+        "upstreamRecovery: 23"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "marisa__normal_5_P_L",
+      "name": "立ち弱P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "19",
+          "numeric": 19,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "0",
+          "numeric": 0
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        }
+      },
+      "notes": [
+        "upstreamInput: 5LP",
+        "upstreamName: Standing Light Punch",
+        "upstreamNotes: Good neutral buffer into 5LP~LP Target Combo (requires at least a Counter-hit to combo); causes air reset if juggled into",
+        "upstreamActive: 3",
+        "upstreamRecovery: 11"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "marisa__normal_5_P_M",
+      "name": "立ち中P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "25",
+          "numeric": 25,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        }
+      },
+      "notes": [
+        "upstreamInput: 5MP",
+        "upstreamName: Standing Medium Punch",
+        "upstreamNotes: 2f extra recovery on whiff; great hitbox and a strong buffer into 5MP~MP Target Combo",
+        "upstreamActive: 4",
+        "upstreamRecovery: 15"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "marisa__special_214_K_none",
+      "name": "Scutum",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "none"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "3",
+          "numeric": 3
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "54",
+          "numeric": 54,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 214K",
+        "upstreamName: Scutum",
+        "upstreamNotes: Stance with 1-hit armor can be extended an extra 90f by holding the button, followed by 26 unarmored recovery frames; no armor on lower half of body; cancelable into follow-ups after 8f; stance cannot be canceled into from other attacks; absorbing an attack automatically triggers counterattack follow-up; Marisa takes a fixed 6f hitstop when absorbing attacks (causing the counterattack to often land as a Counter-hit rather than a Punish Counter against medium/heavy attacks)",
+        "upstreamActive: 26(116)",
+        "upstreamRecovery: 26"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "marisa__special_214_K_OD",
+      "name": "Scutum",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "1",
+          "numeric": 1
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "57",
+          "numeric": 57,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 214KK",
+        "upstreamName: Scutum",
+        "upstreamNotes: Stance with 2-hit full-body armor can be extended an extra 30f by holding a kick button, followed by 29 unarmored recovery frames; cancelable into follow-ups after 8f; stance cannot be canceled into from other attacks; absorbing an attack automatically triggers counterattack follow-up; Marisa takes a fixed 6f hitstop when absorbing attacks (causing the counterattack to often land as a Counter-hit rather than a Punish Counter against medium/heavy attacks)",
+        "upstreamActive: 28(58)",
+        "upstreamRecovery: 29"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "marisa__special_214_P_H",
+      "name": "Dimachaerus",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "22",
+          "numeric": 22
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "55",
+          "numeric": 55,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-16",
+          "numeric": -16
+        }
+      },
+      "notes": [
+        "upstreamInput: 214HP",
+        "upstreamName: Dimachaerus",
+        "upstreamNotes: Cannot hit cross-up; cancelable into 6P follow-up on hit or armor absorb; puts airborne opponents into free juggle state",
+        "upstreamActive: 4",
+        "upstreamRecovery: 30",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +38 as D; original onHit=38; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Marisa%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "marisa__special_214_P_L",
+      "name": "Dimachaerus",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "45",
+          "numeric": 45,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-16",
+          "numeric": -16
+        }
+      },
+      "notes": [
+        "upstreamInput: 214LP",
+        "upstreamName: Dimachaerus",
+        "upstreamNotes: Cannot hit cross-up; cancelable into 6P follow-up on hit or armor absorb; puts airborne opponents into free juggle state",
+        "upstreamActive: 4",
+        "upstreamRecovery: 30"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "marisa__special_214_P_M",
+      "name": "Dimachaerus",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "16",
+          "numeric": 16
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "49",
+          "numeric": 49,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "0",
+          "numeric": 0
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-16",
+          "numeric": -16
+        }
+      },
+      "notes": [
+        "upstreamInput: 214MP",
+        "upstreamName: Dimachaerus",
+        "upstreamNotes: Cannot hit cross-up; cancelable into 6P follow-up on hit or armor absorb; puts airborne opponents into free juggle state",
+        "upstreamActive: 4",
+        "upstreamRecovery: 30"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "marisa__special_214_P_OD",
+      "name": "Dimachaerus",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "16",
+          "numeric": 16
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "45",
+          "numeric": 45,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-12",
+          "numeric": -12
+        }
+      },
+      "notes": [
+        "upstreamInput: 214PP",
+        "upstreamName: Dimachaerus",
+        "upstreamNotes: Cannot hit cross-up; cancelable into 6P follow-up on hit or armor absorb; puts airborne opponents into free juggle state",
+        "upstreamActive: 4",
+        "upstreamRecovery: 26",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +42 as D; original onHit=42; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Marisa%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "marisa__special_236_K_H",
+      "name": "Quadriga",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "29",
+          "numeric": 29
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "53",
+          "numeric": 53,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        }
+      },
+      "notes": [
+        "upstreamInput: 236HK",
+        "upstreamName: Quadriga",
+        "upstreamNotes: Cannot hit cross-up; ~70% screen length; advancing poke with advantage on block; has a screen shake effect to make it easier to distinguish from 236MK",
+        "upstreamActive: 4",
+        "upstreamRecovery: 21",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +37 as D; original onHit=37; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Marisa%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "marisa__special_236_K_L",
+      "name": "Quadriga",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "20",
+          "numeric": 20
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "47",
+          "numeric": 47,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        }
+      },
+      "notes": [
+        "upstreamInput: 236LK",
+        "upstreamName: Quadriga",
+        "upstreamNotes: Cannot hit cross-up; ~50% screen length",
+        "upstreamActive: 4",
+        "upstreamRecovery: 24",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +35 as D; original onHit=35; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Marisa%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "marisa__special_236_K_M",
+      "name": "Quadriga",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "24",
+          "numeric": 24
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "49",
+          "numeric": 49,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: 236MK",
+        "upstreamName: Quadriga",
+        "upstreamNotes: Cannot hit cross-up; ~60% screen length; safe advancing poke that leaves Marisa out of throw range on block (can space farther for even better spacing traps); increased pushback vs. opponents in Burnout (out of throw range and cannot combo from chained lights)",
+        "upstreamActive: 4",
+        "upstreamRecovery: 22",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +37 as D; original onHit=37; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Marisa%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "marisa__special_236_K_OD",
+      "name": "Quadriga",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "24",
+          "numeric": 24
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "51",
+          "numeric": 51,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+50",
+          "numeric": 50
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        }
+      },
+      "notes": [
+        "upstreamInput: 236KK",
+        "upstreamName: Quadriga",
+        "upstreamNotes: Cannot hit cross-up; ~65% screen length; Wall Splat on hit; KD Advantage increases when farther from the wall; significant pushback on block makes it hard to punish when spaced out",
+        "upstreamActive: 4",
+        "upstreamRecovery: 24",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "marisa__special_236_P_H",
+      "name": "Gladius",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "22",
+          "numeric": 22
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "46",
+          "numeric": 46,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-5",
+          "numeric": -5
+        }
+      },
+      "notes": [
+        "upstreamInput: 236HP",
+        "upstreamName: Gladius",
+        "upstreamNotes: Armor loses to low attacks; cannot hit cross-up; can hold the button 35f to charge a more powerful version (armor is lost immediately upon button release); after releasing partial charge, startup is 10f (frames 12-19), 9f (frames 20-27), or 8f (frames 28-34); holding the button for 33-34f results in an uncharged 236HP with even slower startup than the fully charged version",
+        "upstreamActive: 4",
+        "upstreamRecovery: 21",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +36 as D; original onHit=36; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Marisa%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "marisa__special_236_P_L",
+      "name": "Gladius",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "17",
+          "numeric": 17
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "41",
+          "numeric": 41,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-5",
+          "numeric": -5
+        }
+      },
+      "notes": [
+        "upstreamInput: 236LP",
+        "upstreamName: Gladius",
+        "upstreamNotes: Armor loses to low attacks; cannot hit cross-up; can hold the button 26f to charge a more powerful version (armor is lost immediately upon button release); after releasing partial charge, startup is 5f (frames 12-19) or 4f (frames 20-25); holding the button for 11-12f can extend the armor by 1-2f without increasing startup",
+        "upstreamActive: 4",
+        "upstreamRecovery: 21",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +36 as D; original onHit=36; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Marisa%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "marisa__special_236_P_M",
+      "name": "Gladius",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "19",
+          "numeric": 19
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "43",
+          "numeric": 43,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-5",
+          "numeric": -5
+        }
+      },
+      "notes": [
+        "upstreamInput: 236MP",
+        "upstreamName: Gladius",
+        "upstreamNotes: Armor loses to low attacks; cannot hit cross-up; can hold the button 29f to charge a more powerful version (armor is lost immediately upon button release); after releasing partial charge, startup is 7f (frames 12-19) or 6f (frames 20-28)",
+        "upstreamActive: 4",
+        "upstreamRecovery: 21",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +36 as D; original onHit=36; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Marisa%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "marisa__special_236_P_OD",
+      "name": "Gladius",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "19",
+          "numeric": 19
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "43",
+          "numeric": 43,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        }
+      },
+      "notes": [
+        "upstreamInput: 236PP",
+        "upstreamName: Gladius",
+        "upstreamNotes: Armor loses to low attacks; cannot hit cross-up; can hold the button 29f to charge a more powerful version; after releasing partial charge, startup is 8f (frames 11-12), 7f (frames 13-19), or 6f (frames 20-28)",
+        "upstreamActive: 4",
+        "upstreamRecovery: 21",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +36 as D; original onHit=36; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Marisa%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "marisa__special_623_P_H",
+      "name": "Phalanx",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "32",
+          "numeric": 32
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "52",
+          "numeric": 52,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+42",
+          "numeric": 42
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        }
+      },
+      "notes": [
+        "upstreamInput: 623HP",
+        "upstreamName: Phalanx",
+        "upstreamNotes: Cannot hit cross-up; hits 1f later vs. crouching opponents; leaves Marisa close enough to frame trap with 5LP~LP on block or use 5MP~MP without causing an air reset; can set up trade combos with 4f reversals using 5MP vs. stand block or 4HP vs. crouch block",
+        "upstreamActive: 6",
+        "upstreamRecovery: 15",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "marisa__special_623_P_L",
+      "name": "Phalanx",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "25",
+          "numeric": 25
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "45",
+          "numeric": 45,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+42",
+          "numeric": 42
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        }
+      },
+      "notes": [
+        "upstreamInput: 623LP",
+        "upstreamName: Phalanx",
+        "upstreamNotes: Cannot hit cross-up; hits 1f later vs. crouching opponents",
+        "upstreamActive: 6",
+        "upstreamRecovery: 15",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "marisa__special_623_P_M",
+      "name": "Phalanx",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "28",
+          "numeric": 28
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "48",
+          "numeric": 48,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+42",
+          "numeric": 42
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        }
+      },
+      "notes": [
+        "upstreamInput: 623MP",
+        "upstreamName: Phalanx",
+        "upstreamNotes: Cannot hit cross-up; hits 1f later vs. crouching opponents; leaves Marisa close enough to frame trap with 5LP~LP on block or use 5MP~MP without causing an air reset; can set up trade combos with 4f reversals using 5MP vs. stand block or 4HP vs. crouch block",
+        "upstreamActive: 6",
+        "upstreamRecovery: 15",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "id": "marisa__special_623_P_OD",
+      "name": "Phalanx",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "28",
+          "numeric": 28
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "48",
+          "numeric": 48,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        }
+      },
+      "notes": [
+        "upstreamInput: 623PP",
+        "upstreamName: Phalanx",
+        "upstreamNotes: Sends opponent tumbling backward into OTG state; if opponent hits the corner, a low-height Wall Splat occurs (opponent is grounded and throwable, but strikes put them into juggle state); cannot hit cross-up; hits 1f later vs. crouching opponents; can set up trade combos with 4f reversals using 4HP vs. stand block or 6MP vs. crouch block",
+        "upstreamActive: 6",
+        "upstreamRecovery: 15",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +70 Tumble (HKD +138 Wall Splat) as D; original onHit=70; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Marisa%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    }
+  ]
+}

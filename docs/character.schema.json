@@ -151,7 +151,7 @@
                   "motion": {
                     "type": "string",
                     "minLength": 1,
-                    "pattern": "^[0-9\\[\\]]+$"
+                    "pattern": "^(?:[0-9\\[\\]]+|none)$"
                   },
                   "button": {
                     "type": "string",
@@ -160,6 +160,10 @@
                   "strength": {
                     "type": "string",
                     "enum": ["L", "M", "H", "OD", "none"]
+                  },
+                  "buttonCombination": {
+                    "type": "string",
+                    "enum": ["LP+MP", "LK+MK"]
                   }
                 },
                 "required": ["type", "motion", "button", "strength"],
@@ -243,6 +247,27 @@
                       "condition": {
                         "type": "string",
                         "minLength": 1
+                      },
+                      "range": {
+                        "type": "object",
+                        "properties": {
+                          "min": {
+                            "type": "number"
+                          },
+                          "max": {
+                            "type": "number"
+                          },
+                          "evidence": {
+                            "minItems": 1,
+                            "type": "array",
+                            "items": {
+                              "type": "string",
+                              "format": "uri"
+                            }
+                          }
+                        },
+                        "required": ["min", "max", "evidence"],
+                        "additionalProperties": false
                       }
                     },
                     "required": ["status", "display", "condition"],
@@ -394,6 +419,27 @@
                       "condition": {
                         "type": "string",
                         "minLength": 1
+                      },
+                      "range": {
+                        "type": "object",
+                        "properties": {
+                          "min": {
+                            "type": "number"
+                          },
+                          "max": {
+                            "type": "number"
+                          },
+                          "evidence": {
+                            "minItems": 1,
+                            "type": "array",
+                            "items": {
+                              "type": "string",
+                              "format": "uri"
+                            }
+                          }
+                        },
+                        "required": ["min", "max", "evidence"],
+                        "additionalProperties": false
                       }
                     },
                     "required": [
@@ -556,6 +602,27 @@
                       "condition": {
                         "type": "string",
                         "minLength": 1
+                      },
+                      "range": {
+                        "type": "object",
+                        "properties": {
+                          "min": {
+                            "type": "number"
+                          },
+                          "max": {
+                            "type": "number"
+                          },
+                          "evidence": {
+                            "minItems": 1,
+                            "type": "array",
+                            "items": {
+                              "type": "string",
+                              "format": "uri"
+                            }
+                          }
+                        },
+                        "required": ["min", "max", "evidence"],
+                        "additionalProperties": false
                       }
                     },
                     "required": ["status", "display", "condition"],
@@ -658,6 +725,27 @@
                       "condition": {
                         "type": "string",
                         "minLength": 1
+                      },
+                      "range": {
+                        "type": "object",
+                        "properties": {
+                          "min": {
+                            "type": "number"
+                          },
+                          "max": {
+                            "type": "number"
+                          },
+                          "evidence": {
+                            "minItems": 1,
+                            "type": "array",
+                            "items": {
+                              "type": "string",
+                              "format": "uri"
+                            }
+                          }
+                        },
+                        "required": ["min", "max", "evidence"],
+                        "additionalProperties": false
                       }
                     },
                     "required": ["status", "display", "condition"],

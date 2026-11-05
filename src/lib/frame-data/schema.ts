@@ -21,11 +21,30 @@ export const frameValueSchema = z
       status: z.literal("conditional"),
       ...valueFields,
       condition: text,
+      range: z
+        .object({
+          min: z.number().finite(),
+          max: z.number().finite(),
+          evidence: z.array(z.url()).min(1),
+        })
+        .optional(),
     }),
     z.object({ status: z.literal("not_applicable"), display: text.nullable() }),
     z.object({ status: z.literal("unknown"), display: text.nullable() }),
   ])
   .superRefine((value, ctx) => {
+    if (
+      value.status === "conditional" &&
+      value.range &&
+      (value.range.min > value.range.max ||
+        value.display !== `${value.range.min}~${value.range.max}` ||
+        value.numeric !== undefined)
+    )
+      ctx.addIssue({
+        code: "custom",
+        message:
+          "A certified range requires ordered bounds, matching min~max display, evidence and no scalar numeric",
+      });
     if (
       "numeric" in value &&
       value.numeric !== undefined &&
@@ -39,23 +58,40 @@ export const frameValueSchema = z
       });
     }
   });
-export const inputSchema = z.discriminatedUnion("type", [
-  z.object({
-    type: z.literal("normal"),
-    direction: z.enum(["5", "2"]),
-    button: z.enum(["P", "K"]),
-    strength: z.enum(["L", "M", "H"]),
-  }),
-  z.object({
-    type: z.literal("special"),
-    motion: text.regex(
-      /^[0-9\[\]]+$/,
-      "Use an explicit numpad motion; aliases are not normalized",
-    ),
-    button: z.enum(["P", "K"]),
-    strength: z.enum(["L", "M", "H", "OD", "none"]),
-  }),
-]);
+export const inputSchema = z
+  .discriminatedUnion("type", [
+    z.object({
+      type: z.literal("normal"),
+      direction: z.enum(["5", "2"]),
+      button: z.enum(["P", "K"]),
+      strength: z.enum(["L", "M", "H"]),
+    }),
+    z.object({
+      type: z.literal("special"),
+      motion: text.regex(
+        /^(?:[0-9\[\]]+|none)$/,
+        "Use an explicit numpad motion; aliases are not normalized",
+      ),
+      button: z.enum(["P", "K"]),
+      strength: z.enum(["L", "M", "H", "OD", "none"]),
+      buttonCombination: z.enum(["LP+MP", "LK+MK"]).optional(),
+    }),
+  ])
+  .superRefine((input, ctx) => {
+    if (input.type !== "special") return;
+    const simultaneous = input.motion === "none";
+    if (
+      simultaneous
+        ? input.strength !== "none" ||
+          input.buttonCombination !== (input.button === "P" ? "LP+MP" : "LK+MK")
+        : input.buttonCombination !== undefined
+    )
+      ctx.addIssue({
+        code: "custom",
+        message:
+          "Simultaneous input requires motion none, strength none and a matching explicit button pair",
+      });
+  });
 export const moveSchema = z
   .object({
     id: text,

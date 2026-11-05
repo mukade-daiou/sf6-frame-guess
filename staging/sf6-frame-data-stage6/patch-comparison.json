@@ -1,0 +1,55 @@
+{
+  "comparisonVersion": "Ver.2.0500.001",
+  "targetGameVersion": "UNVERIFIED",
+  "gameBinaryObserved": false,
+  "official": {
+    "datesAttempted": ["2026-08-03", "2026-10-13", "2026-10-16"],
+    "result": "403: content and effect on Ken/Marisa not certified",
+    "evidence": "evidence/index.json"
+  },
+  "thirdPartyComparisons": [
+    {
+      "characterId": "ken",
+      "input": "2MP",
+      "field": "hit",
+      "changeDate": "2026-08-03",
+      "beforeReported": 3,
+      "afterReported": 5,
+      "pinnedValue": 5,
+      "pinnedRetrievedAt": "2026-08-19T04:05:27.533Z",
+      "source": "https://update-tracker.org/ja/topics/sf6/ken/",
+      "evidence": "evidence/tracker_ken.json",
+      "result": "matches_reported_post_update_value",
+      "patchConfirmed": false
+    },
+    {
+      "characterId": "marisa",
+      "input": "236MK",
+      "field": "block",
+      "changeDate": "2026-08-03",
+      "beforeReported": -4,
+      "afterReported": -3,
+      "pinnedValue": -3,
+      "pinnedRetrievedAt": "2026-08-19T04:05:28.060Z",
+      "source": "https://update-tracker.org/en/topics/sf6/marisa/",
+      "evidence": "evidence/tracker_marisa.json",
+      "result": "matches_reported_post_update_value",
+      "patchConfirmed": false
+    },
+    {
+      "characterId": "marisa",
+      "input": "236HK",
+      "field": "block",
+      "changeDate": "2026-08-03",
+      "beforeReported": -3,
+      "afterReported": 1,
+      "pinnedValue": 1,
+      "pinnedRetrievedAt": "2026-08-19T04:05:28.060Z",
+      "source": "https://update-tracker.org/en/topics/sf6/marisa/",
+      "evidence": "evidence/tracker_marisa.json",
+      "result": "matches_reported_post_update_value",
+      "patchConfirmed": false
+    }
+  ],
+  "conclusion": "Three changed fields agree with third-party descriptions of the August update. This is evidence of partial post-update consistency, not certification of the full October patch."
+}

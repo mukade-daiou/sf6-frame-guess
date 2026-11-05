@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-05",
+  "checks": [
+    { "command": "npm run typecheck", "status": "passed" },
+    { "command": "npm test", "status": "passed", "tests": 23 },
+    { "command": "node --test tests/collect-supercombo.test.mjs tests/quality-converter.test.mjs tests/stage4-rules.test.mjs tests/stage5-rules.test.mjs", "status": "passed", "tests": 21 },
+    { "command": "npm run build", "status": "passed", "includes": ["typecheck", "validate:data", "vite build"] },
+    { "command": "node --test tests/stage6-data.test.mjs", "status": "passed", "tests": 2 },
+    { "command": "npx tsx scripts/build-stage6.ts", "status": "passed", "schemaPass": 2, "productionEligible": 0, "developmentPlayable": 2 },
+    { "command": "node scripts/verify-stage6-browser.mjs", "status": "passed", "scenarios": 4, "actualViewportWidthsAsserted": [1280, 390], "results": "browser/results.json" }
+  ],
+  "productionPreview": { "url": "http://127.0.0.1:4173/", "reviewControl": false, "startDisabled": true, "eligibleCharacters": 0 },
+  "testData": { "stage4CandidatesPreserved": 860, "stage5CandidatesPreserved": 62, "stage6Ken": 33, "stage6Marisa": 30 },
+  "limitations": ["Official patch pages returned 403", "Game binary version not observed", "Mobile browser viewport tested; no physical device test", "Six source conditions remain unresolved", "OD source-button pairing remains unverified"],
+  "warnings": ["Rollup removed unsupported PURE annotations in Zod"],
+  "commitPushDeploy": "not_performed"
+}

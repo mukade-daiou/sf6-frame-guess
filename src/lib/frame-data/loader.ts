@@ -9,6 +9,8 @@ import { inputKey } from "./input";
 import { resolveMove } from "./resolver";
 
 export interface Dataset {
+  // Present only on the explicit development review adapter; never set by validateDataset.
+  review?: { absentInputs: Record<string, string[]> };
   metadata: Metadata;
   characters: Character[];
   eligible: Character[];

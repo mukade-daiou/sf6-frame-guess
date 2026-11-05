@@ -95,7 +95,9 @@ export function MoveSelector({
           {type === "normal" ? "方向" : "コマンド"}
           <select value={motion} onChange={(e) => changeMotion(e.target.value)}>
             {motions.map((value) => (
-              <option key={value}>{value}</option>
+              <option key={value} value={value}>
+                {value === "none" ? "同時押し（モーションなし）" : value}
+              </option>
             ))}
           </select>
         </label>

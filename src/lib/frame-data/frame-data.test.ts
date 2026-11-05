@@ -118,7 +118,7 @@ describe("validation and display", () => {
       expect(displayFrame({ status: "confirmed", display })).toBe(display);
     expect(
       displayFrame({ status: "conditional", display: "+4", condition: "先端" }),
-    ).toBe("+4（先端）");
+    ).toBe("不明");
     expect(displayFrame({ status: "unknown", display: null })).toBe("不明");
     expect(displayFrame({ status: "not_applicable", display: null })).toBe(
       "対象外",

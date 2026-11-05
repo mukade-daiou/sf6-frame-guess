@@ -31,6 +31,11 @@ variantは基本版なら `{ "kind": "base", "condition": null }`、特殊条件
 コマンド候補を固定列挙しないので、検証済みの新しいテンキー入力をJSONに追加できます。
 特殊な入力形式が表現できない場合はスキーマを明示的に拡張し、推測で既存コマンドに置換しません。
 
+第6段階でモーションなしの同時押しを追加しました。例：
+`{ "type": "special", "motion": "none", "button": "K", "strength": "none", "buttonCombination": "LK+MK" }`。
+`motion: "none"`ではボタンに対応する`LP+MP`または`LK+MK`と`strength: "none"`を必須とします。モーションありの入力にbuttonCombinationは指定できません。この組み合わせ制約はZodの追加検証で適用します。
+キーは`special:buttons:LK+MK`、表示は`KK (LK+MK)`です。奮迅脚をODへ統合しません。既存入力のキーは変わりません。
+
 内部キーは `normal:5:P:L`、`special:214:K:OD` のように種別・方向/モーション・ボタン・強度を区切ります。
 表示は5LP、214KK、[4]6MP、360P。ODはPP/KK、noneは強度記号なしです。
 必殺技motionの外側空白を除去する以外、入力の同一視・別名展開は行いません。
@@ -64,7 +69,24 @@ framesはstartup、total、hit、blockを持ちます。各値は次の状態を
 displayは全状態でnullを許します。confirmedでも表示未取得なら質問には使用しません。
 numericは有限の数値で、displayが符号付き数値文字列として同じ値を表す場合のみ指定できます。
 Dや10-12を数値化しません。unknownの表示に0を代入しません。
-条件付き値は条件を保持し、自動で通常状態に適用しません。
+第7段階の標準条件は、通常状態・原則立ちの相手・画面中央・通常ヒット/ガード・非ホールド・派生なしです。全体Fは空振り時を使用します。立ちガードが成立しない下段はしゃがみガードを使用し、非攻撃の構え・移動技では攻撃発生を適用対象外とします。技別の例外と元表記は監査JSONに記録します。
+
+原典注記から標準条件の値を選択できる場合は、その根拠と元表記を保持して正規化します。条件が残る場合、同じ指標の上下限が確定したときだけconditionalにrangeを付けて`20~30`のように表示します。例（架空の形式例）:
+
+```json
+{
+  "status": "conditional",
+  "display": "20~30",
+  "condition": "標準条件内での同一指標の変動条件",
+  "range": {
+    "min": 20,
+    "max": 30,
+    "evidence": ["https://example.invalid/range-evidence"]
+  }
+}
+```
+
+rangeには有限のmin/max、順序、表示との一致、根拠URLを要求し、単一のnumericと併存させません。括弧内外が同じ指標の端点であるという根拠なしに範囲を生成しません。rangeのないconditional、unknown、表示未取得は「不明」で、質問を消費しません。確定範囲は1回消費します。ダウンはDで、ダウン後有利Fを通常硬直差の範囲として扱いません。通常モードは4項目、発生のみは発生について判定します。
 
 totalは上記に加えてprovenance（source/verified_calculation/null）とcalculation（文字列/null）が必須です。
 confirmedなtotalにはprovenanceが必須で、verified_calculationには計算式・検証根拠をcalculationに記録します。
@@ -76,6 +98,8 @@ confirmedなtotalにはprovenanceが必須で、verified_calculationには計算
 sourceはurl、retrievedAt（UTC ISO日時）、gameVersion、kind（official/community）、attribution、license、verificationを持ちます。
 Fixtureのverifiedは架空データとしての整合性検証を意味し、SF6公式確認を意味しません。
 実データには取得元の利用条件・必要な帰属を記録し、未確認のライセンスを推測で記入しないでください。
+
+開発環境には、本番・架空Fixtureと分離した未検証実データの試遊モードがあります。元データのverificationやcoverageは変更しません。条件付き値・不明値を保持し、原典の対象範囲での技なしは現行パッチでの不存在と区別します。本番ビルドには検証用JSONを含めず、本番ローダーの判定は維持します。検証基準と操作の違いは[第6段階報告](FRAME_DATA_STAGE6_REPORT.md)を参照してください。
 
 metadata・Character・Character.source・全Move.sourceのgameVersionは完全一致が必須です。
 不正レコード、パッチ混在、重複キャラID、同一キャラの重複技IDはエラーとして対象から除外します。
@@ -90,4 +114,4 @@ metadata・Character・Character.source・全Move.sourceのgameVersionは完全�
 4. `npm run validate:data`、`npm test`、`npm run build` を実行します。
 5. 2体以上が抽選対象になったことを確認し、Fixtureのチェックを外してプレイします。
 
-データ収集・更新スクリプトは含めません。`scripts/create-fixtures.ts` は架空データを再生成するだけです。
+初期フレームデータの確定後は、ユーザーが明示的に更新を指示するまで固定します。自動取得・自動更新・起動時の外部照合は実装しません。調査用取得スクリプトは明示的な調査・更新依頼がある場合だけ実行し、保存済み証拠からの変換とネットワーク取得を区別します。今回の対象はケン・マリーザだけで、残り30キャラの候補を変更しません。

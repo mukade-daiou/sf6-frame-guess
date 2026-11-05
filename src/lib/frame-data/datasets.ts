@@ -13,3 +13,9 @@ const fixtureFiles = import.meta.glob("../../data/fixtures/characters/*.json", {
 });
 export const production = validateDataset(metadata, productionFiles);
 export const fixtures = validateDataset(fixtureMetadata, fixtureFiles);
+
+export async function loadDevelopmentReview() {
+  if (import.meta.env.DEV)
+    return (await import("./review-dataset")).reviewDataset;
+  return null;
+}

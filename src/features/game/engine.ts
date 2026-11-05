@@ -3,12 +3,15 @@ import type { Dataset } from "../../lib/frame-data/loader";
 import { inputKey } from "../../lib/frame-data/input";
 import { inputSchema } from "../../lib/frame-data/schema";
 import { resolveMove, type Resolution } from "../../lib/frame-data/resolver";
+import { resolveReviewMove } from "../../lib/frame-data/review-resolver";
+import { isDisplayable } from "../../lib/frame-data/resolver";
 
 export interface HistoryEntry {
   input: MoveInput;
   result: Resolution;
 }
 export interface Game {
+  review?: Dataset["review"];
   phase: "question" | "answer" | "result";
   target: Character;
   candidates: Character[];
@@ -31,6 +34,7 @@ export function startGame(
   if (!Number.isInteger(limit) || limit < 1)
     throw new Error("質問回数は1以上の整数で指定してください。");
   return {
+    review: dataset.review,
     phase: "question",
     target:
       dataset.eligible[
@@ -63,8 +67,26 @@ export function ask(
     return { game, status: "unsupported" };
   if (game.history.some((h) => inputKey(h.input) === inputKey(input)))
     return { game, status: "duplicate" };
-  const result = resolveMove(game.target, input, game.mode);
-  if (result.status !== "found" && result.status !== "not_found")
+  const result = game.review
+    ? resolveReviewMove(game.target, input, game.review.absentInputs)
+    : resolveMove(game.target, input, game.mode);
+  if (result.status === "review" && result.assessment === "ambiguous")
+    return { game, status: "ambiguous" };
+  if (
+    result.status === "review" &&
+    (result.assessment === "not_recorded" ||
+      (result.frames &&
+        (game.mode === "startup"
+          ? [result.frames.startup]
+          : Object.values(result.frames)
+        ).some((v) => !isDisplayable(v))))
+  )
+    return { game, status: "unknown" };
+  if (
+    result.status !== "found" &&
+    result.status !== "not_found" &&
+    result.status !== "review"
+  )
     return { game, status: result.status };
   const history = [...game.history, { input, result }];
   return {

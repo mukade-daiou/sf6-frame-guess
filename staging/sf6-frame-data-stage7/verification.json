@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-06",
+  "checks": [
+    { "command": "npm run typecheck", "status": "passed" },
+    { "command": "npm test", "status": "passed", "tests": 26 },
+    { "command": "node --test tests/collect-supercombo.test.mjs tests/quality-converter.test.mjs tests/stage4-rules.test.mjs tests/stage5-rules.test.mjs tests/stage6-data.test.mjs", "status": "passed", "tests": 23 },
+    { "command": "node --test tests/stage7-data.test.mjs", "status": "passed", "tests": 2 },
+    { "command": "npm run build", "status": "passed" },
+    { "command": "npx tsx scripts/build-stage7.ts", "status": "passed", "schemaPass": 2, "productionEligible": 0, "developmentPlayable": 2 },
+    { "command": "node scripts/verify-stage7-browser.mjs", "status": "passed", "scenarios": 4, "results": "browser/results.json" }
+  ],
+  "standardConditionDisplayable": { "ken": { "normal": 31, "startup": 32, "recorded": 33 }, "marisa": { "normal": 28, "startup": 30, "recorded": 30 } },
+  "rangesAddedToRealData": 0,
+  "rangeBehavior": "tested with explicitly fictional regression values",
+  "unknownBehavior": "no consumption; not marked duplicate; required fields depend on mode",
+  "patch": "UNVERIFIED",
+  "inputPairCorrespondence": "unverified",
+  "productionRequired": ["target_patch_consistency", "OD_and_simultaneous_input_correspondence", "target_patch_coverage"],
+  "remainingUnknownMoves": ["ken:2HK", "ken:623KK", "marisa:2MK", "marisa:236KK"],
+  "unknownValueReleasePolicy": "Unknown values do not consume questions; resolving them is required for fully confirmed data, but not inherently required for playable release if disclosed",
+  "updatePolicy": "frozen_until_explicit_user_update",
+  "previousCandidateCountsPreserved": { "stage4": 860, "stage5": 62 },
+  "commitPushDeploy": "not_performed"
+}

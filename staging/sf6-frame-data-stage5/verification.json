@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-05",
+  "checks": [
+    { "command": "npm run typecheck", "status": "passed" },
+    { "command": "npm test", "status": "passed", "tests": 17 },
+    { "command": "node --test tests/collect-supercombo.test.mjs tests/quality-converter.test.mjs tests/stage4-rules.test.mjs tests/stage5-rules.test.mjs", "status": "passed", "tests": 21, "stage5Tests": 4 },
+    { "command": "npm run build", "status": "passed", "includes": ["typecheck", "validate:data", "vite build"] },
+    { "command": "npx tsx scripts/build-stage5.ts", "status": "passed", "schemaPass": 2, "loaderErrors": 0 },
+    { "check": "stage5 saved-source conversion replay", "status": "passed", "method": "compare review.json and both character JSON files before and after regeneration" }
+  ],
+  "browser": {
+    "officialKen": "403 ERROR / Request blocked via normal browser",
+    "restrictionBypass": false,
+    "gameProductionPlay": "not_run: zero production-eligible characters"
+  },
+  "patch": {
+    "comparisonVersion": "Ver.2.0500.001",
+    "targetGameVersion": "UNVERIFIED",
+    "gameBinaryVersion": "not_observed",
+    "officialPatchHistory": "blocked_403",
+    "verifiedMoves": 0
+  },
+  "productionEligible": 0,
+  "warnings": ["Rollup removed unsupported PURE annotations in Zod"],
+  "commitPushDeploy": "not_performed"
+}
