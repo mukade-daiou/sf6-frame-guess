@@ -1,6 +1,10 @@
 import { z } from "zod";
 
 const text = z.string().trim().min(1);
+const adoptionSchema = z.object({
+  status: z.enum(["accepted", "held"]),
+  basis: text,
+});
 export const sourceSchema = z.object({
   url: z.url(),
   retrievedAt: z.iso.datetime(),
@@ -94,6 +98,7 @@ export const inputSchema = z
   });
 export const moveSchema = z
   .object({
+    adoption: adoptionSchema.optional(),
     id: text,
     name: text,
     category: z.enum(["normal", "special"]),
@@ -154,6 +159,7 @@ const coverage = z.object({
   verification: z.enum(["verified", "unverified"]),
 });
 export const characterSchema = z.object({
+  adoption: adoptionSchema.optional(),
   id: text,
   nameJa: text,
   nameEn: text,
@@ -163,6 +169,8 @@ export const characterSchema = z.object({
   moves: z.array(moveSchema),
 });
 export const metadataSchema = z.object({
+  datasetId: text.optional(),
+  updatePolicy: z.literal("manual").optional(),
   schemaVersion: z.literal("1.0.0"),
   kind: z.enum(["production", "fixture"]),
   gameVersion: text,

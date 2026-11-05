@@ -1,0 +1,5966 @@
+{
+  "targetBattleVersion": "2.0500.001",
+  "automaticLaunchOrUpdate": false,
+  "productionEligible": 0,
+  "sourceLineageAlreadyReviewed": [
+    {
+      "source": "frame-search",
+      "origin": "Guide explicitly says data sourced from Capcom official information",
+      "independentGameMeasurement": "not_established"
+    },
+    {
+      "source": "sf6-sensei",
+      "origin": "SuperCombo normalized data at pinned commit",
+      "independentOfSuperCombo": false
+    },
+    {
+      "source": "Update Tracker",
+      "origin": "Summaries link official changes",
+      "independentGameMeasurement": "not_established"
+    },
+    {
+      "source": "SuperCombo",
+      "origin": "Cargo database and wiki contributors",
+      "independenceFromOfficialNumbers": "not_established"
+    }
+  ],
+  "unknownFramesAllowed": [
+    "ken:2HK:total",
+    "ken:623KK:startup",
+    "marisa:2MK:total",
+    "marisa:236KK:hit"
+  ],
+  "standard": {
+    "control": "classic",
+    "state": "initial",
+    "location": "midscreen",
+    "opponent": "standing_except_low_guard",
+    "hit": "normal",
+    "hold": false,
+    "followup": false,
+    "total": "whiff"
+  },
+  "minimumFiles": [
+    "version.png",
+    "ken-session.mp4",
+    "marisa-session.mp4"
+  ],
+  "versionProcedure": [
+    "ユーザー自身が現在のSteam/SF6を確認。更新・起動はCodexが実行しない。",
+    "タイトル／メインメニューで版表示を探し、数値だけでなく画面全体と表示ラベルを撮る。",
+    "表示がBattle Version／バトルバージョンでなければ、何の版かの確認を残す。場所やラベルは未確認なので推測しない。",
+    "2.0500.001に対応すると確認できなければ入力測定を採用せず停止。別版の値で置き換えない。"
+  ],
+  "measurementsPolicy": "11入力を優先。残る52技もpatchFrameValuesは未確認。版付き資料と変更履歴で対応付けられない場合に限り追加計測する。未知の4値は不明のままでも可。",
+  "moves": [
+    {
+      "characterId": "ken",
+      "moveId": "ken__normal_2_K_H",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "K",
+        "strength": "H"
+      },
+      "sourceInput": "2HK",
+      "name": "しゃがみ強K",
+      "referenceName": "Crouching Heavy Kick",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "unknown",
+          "display": null,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-10",
+          "numeric": -10
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "8",
+            "numeric": 8
+          },
+          "sourceDisplay": "8",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "sourceDisplay": "D",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-10",
+            "numeric": -10
+          },
+          "sourceDisplay": "-10",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "unknown_total",
+          "method": "同じ対象版で、標準条件の空振り動作開始から再行動可能までをフレームメーターで記録する。接触時・ガード時の硬直欄や全体Fの一律計算を代用しない。"
+        },
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__normal_2_K_L",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "K",
+        "strength": "L"
+      },
+      "sourceInput": "2LK",
+      "name": "しゃがみ弱K",
+      "referenceName": "Crouching Light Kick",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "17",
+          "numeric": 17,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "5",
+            "numeric": 5
+          },
+          "sourceDisplay": "5",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "+1",
+            "numeric": 1
+          },
+          "sourceDisplay": "1",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-3",
+            "numeric": -3
+          },
+          "sourceDisplay": "-3",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__normal_2_K_M",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "K",
+        "strength": "M"
+      },
+      "sourceInput": "2MK",
+      "name": "しゃがみ中K",
+      "referenceName": "Crouching Medium Kick",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "28",
+          "numeric": 28,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "7",
+            "numeric": 7
+          },
+          "sourceDisplay": "7",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-2",
+            "numeric": -2
+          },
+          "sourceDisplay": "-2",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-6",
+            "numeric": -6
+          },
+          "sourceDisplay": "-6",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__normal_2_P_H",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "H"
+      },
+      "sourceInput": "2HP",
+      "name": "しゃがみ強P",
+      "referenceName": "Crouching Heavy Punch",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "35",
+          "numeric": 35,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-7",
+          "numeric": -7
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "8",
+            "numeric": 8
+          },
+          "sourceDisplay": "8",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "+3",
+            "numeric": 3
+          },
+          "sourceDisplay": "3",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-7",
+            "numeric": -7
+          },
+          "sourceDisplay": "-7",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__normal_2_P_L",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "L"
+      },
+      "sourceInput": "2LP",
+      "name": "しゃがみ弱P",
+      "referenceName": "Crouching Light Punch",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "4",
+          "numeric": 4
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+5",
+          "numeric": 5
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "4",
+            "numeric": 4
+          },
+          "sourceDisplay": "4",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "+5",
+            "numeric": 5
+          },
+          "sourceDisplay": "5",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-1",
+            "numeric": -1
+          },
+          "sourceDisplay": "-1",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__normal_2_P_M",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "M"
+      },
+      "sourceInput": "2MP",
+      "name": "しゃがみ中P",
+      "referenceName": "Crouching Medium Punch",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "24",
+          "numeric": 24,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+5",
+          "numeric": 5
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "0",
+          "numeric": 0
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "6",
+            "numeric": 6
+          },
+          "sourceDisplay": "6",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "+5",
+            "numeric": 5
+          },
+          "sourceDisplay": "5",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "0",
+            "numeric": 0
+          },
+          "sourceDisplay": "0",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__normal_5_K_H",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "K",
+        "strength": "H"
+      },
+      "sourceInput": "5HK",
+      "name": "立ち強K",
+      "referenceName": "Standing Heavy Kick",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "38",
+          "numeric": 38,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-5",
+          "numeric": -5
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "12",
+            "numeric": 12
+          },
+          "sourceDisplay": "12",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "+1",
+            "numeric": 1
+          },
+          "sourceDisplay": "1",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-5",
+            "numeric": -5
+          },
+          "sourceDisplay": "-5",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__normal_5_K_L",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "K",
+        "strength": "L"
+      },
+      "sourceInput": "5LK",
+      "name": "立ち弱K",
+      "referenceName": "Standing Light Kick",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "18",
+          "numeric": 18,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "0",
+          "numeric": 0
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "5",
+            "numeric": 5
+          },
+          "sourceDisplay": "5",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "0",
+            "numeric": 0
+          },
+          "sourceDisplay": "0",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-2",
+            "numeric": -2
+          },
+          "sourceDisplay": "-2",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__normal_5_K_M",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "K",
+        "strength": "M"
+      },
+      "sourceInput": "5MK",
+      "name": "立ち中K",
+      "referenceName": "Standing Medium Kick",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "30",
+          "numeric": 30,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-5",
+          "numeric": -5
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "8",
+            "numeric": 8
+          },
+          "sourceDisplay": "8",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "+3",
+            "numeric": 3
+          },
+          "sourceDisplay": "3",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-5",
+            "numeric": -5
+          },
+          "sourceDisplay": "-5",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__normal_5_P_H",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "P",
+        "strength": "H"
+      },
+      "sourceInput": "5HP",
+      "name": "立ち強P",
+      "referenceName": "Standing Heavy Punch",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "31",
+          "numeric": 31,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "10",
+            "numeric": 10
+          },
+          "sourceDisplay": "10",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "+3",
+            "numeric": 3
+          },
+          "sourceDisplay": "3",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-2",
+            "numeric": -2
+          },
+          "sourceDisplay": "-2",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__normal_5_P_L",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "P",
+        "strength": "L"
+      },
+      "sourceInput": "5LP",
+      "name": "立ち弱P",
+      "referenceName": "Standing Light Punch",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "4",
+          "numeric": 4
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "13",
+          "numeric": 13,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "4",
+            "numeric": 4
+          },
+          "sourceDisplay": "4",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "+4",
+            "numeric": 4
+          },
+          "sourceDisplay": "4",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-1",
+            "numeric": -1
+          },
+          "sourceDisplay": "-1",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__normal_5_P_M",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "P",
+        "strength": "M"
+      },
+      "sourceInput": "5MP",
+      "name": "立ち中P",
+      "referenceName": "Standing Medium Punch",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "22",
+          "numeric": 22,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "5",
+            "numeric": 5
+          },
+          "sourceDisplay": "5",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "+4",
+            "numeric": 4
+          },
+          "sourceDisplay": "4",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-2",
+            "numeric": -2
+          },
+          "sourceDisplay": "-2",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__special_214_K_H",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "H"
+      },
+      "sourceInput": "214HK",
+      "name": "Tatsumaki Senpu-kyaku",
+      "referenceName": "H Tatsumaki Senpu-kyaku",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "16",
+          "numeric": 16
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "78",
+          "numeric": 78,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-12",
+          "numeric": -12
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "16",
+            "numeric": 16
+          },
+          "sourceDisplay": "16",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "sourceDisplay": "D",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-12",
+            "numeric": -12
+          },
+          "sourceDisplay": "-12",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__special_214_K_L",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "L"
+      },
+      "sourceInput": "214LK",
+      "name": "Tatsumaki Senpu-kyaku",
+      "referenceName": "L Tatsumaki Senpu-kyaku",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "4",
+          "numeric": 4
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "46",
+          "numeric": 46,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-14",
+          "numeric": -14
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "4",
+            "numeric": 4
+          },
+          "sourceDisplay": "4",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "sourceDisplay": "D",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-14",
+            "numeric": -14
+          },
+          "sourceDisplay": "-14",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__special_214_K_M",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "M"
+      },
+      "sourceInput": "214MK",
+      "name": "Tatsumaki Senpu-kyaku",
+      "referenceName": "M Tatsumaki Senpu-kyaku",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "61",
+          "numeric": 61,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-12",
+          "numeric": -12
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "14",
+            "numeric": 14
+          },
+          "sourceDisplay": "14",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "sourceDisplay": "D",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-12",
+            "numeric": -12
+          },
+          "sourceDisplay": "-12",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__special_214_K_OD",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "OD"
+      },
+      "sourceInput": "214KK",
+      "name": "Tatsumaki Senpu-kyaku",
+      "referenceName": "OD Tatsumaki Senpu-kyaku",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "90",
+          "numeric": 90,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-61",
+          "numeric": -61
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "9",
+            "numeric": 9
+          },
+          "sourceDisplay": "9",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "sourceDisplay": "D",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-61",
+            "numeric": -61
+          },
+          "sourceDisplay": "-61",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "pending",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": "LK+MK",
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        },
+        {
+          "fact": "low_medium_pair_performance",
+          "method": "クラシック・初期状態・標準条件でLK+MKを実際に入力し、入力履歴・発動技名・フレームメーターを同時記録する。PP/KK表記だけの資料を代用しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__special_236_K_H",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "H"
+      },
+      "sourceInput": "236HK",
+      "name": "Jinrai Kick",
+      "referenceName": "H Jinrai Kick",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "25",
+          "numeric": 25
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "46",
+          "numeric": 46,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "25",
+            "numeric": 25
+          },
+          "sourceDisplay": "25",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "sourceDisplay": "D",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-2",
+            "numeric": -2
+          },
+          "sourceDisplay": "-2",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__special_236_K_L",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "L"
+      },
+      "sourceInput": "236LK",
+      "name": "Jinrai Kick",
+      "referenceName": "L Jinrai Kick",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "42",
+          "numeric": 42,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-11",
+          "numeric": -11
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "12",
+            "numeric": 12
+          },
+          "sourceDisplay": "12",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "+1",
+            "numeric": 1
+          },
+          "sourceDisplay": "1",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-11",
+            "numeric": -11
+          },
+          "sourceDisplay": "-11",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__special_236_K_M",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "M"
+      },
+      "sourceInput": "236MK",
+      "name": "Jinrai Kick",
+      "referenceName": "M Jinrai Kick",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "16",
+          "numeric": 16
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "42",
+          "numeric": 42,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-7",
+          "numeric": -7
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "16",
+            "numeric": 16
+          },
+          "sourceDisplay": "16",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "+2",
+            "numeric": 2
+          },
+          "sourceDisplay": "2",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-7",
+            "numeric": -7
+          },
+          "sourceDisplay": "-7",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__special_236_K_OD",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "OD"
+      },
+      "sourceInput": "236KK",
+      "name": "Jinrai Kick",
+      "referenceName": "OD Jinrai Kick",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "13",
+          "numeric": 13
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "40",
+          "numeric": 40,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-7",
+          "numeric": -7
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "13",
+            "numeric": 13
+          },
+          "sourceDisplay": "13",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-4",
+            "numeric": -4
+          },
+          "sourceDisplay": "-4",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-7",
+            "numeric": -7
+          },
+          "sourceDisplay": "-7",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "pending",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": "LK+MK",
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        },
+        {
+          "fact": "low_medium_pair_performance",
+          "method": "クラシック・初期状態・標準条件でLK+MKを実際に入力し、入力履歴・発動技名・フレームメーターを同時記録する。PP/KK表記だけの資料を代用しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__special_236_P_H",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "H"
+      },
+      "sourceInput": "236HP",
+      "name": "Hadoken",
+      "referenceName": "H Hadoken",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "49",
+          "numeric": 49,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "-5",
+          "numeric": -5
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-11",
+          "numeric": -11
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "12",
+            "numeric": 12
+          },
+          "sourceDisplay": "12",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-5",
+            "numeric": -5
+          },
+          "sourceDisplay": "-5",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-11",
+            "numeric": -11
+          },
+          "sourceDisplay": "-11",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__special_236_P_L",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "L"
+      },
+      "sourceInput": "236LP",
+      "name": "Hadoken",
+      "referenceName": "L Hadoken",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "16",
+          "numeric": 16
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "49",
+          "numeric": 49,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-7",
+          "numeric": -7
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "16",
+            "numeric": 16
+          },
+          "sourceDisplay": "16",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-1",
+            "numeric": -1
+          },
+          "sourceDisplay": "-1",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-7",
+            "numeric": -7
+          },
+          "sourceDisplay": "-7",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__special_236_P_M",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "M"
+      },
+      "sourceInput": "236MP",
+      "name": "Hadoken",
+      "referenceName": "M Hadoken",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "49",
+          "numeric": 49,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-9",
+          "numeric": -9
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "14",
+            "numeric": 14
+          },
+          "sourceDisplay": "14",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-3",
+            "numeric": -3
+          },
+          "sourceDisplay": "-3",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-9",
+            "numeric": -9
+          },
+          "sourceDisplay": "-9",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__special_236_P_OD",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "OD"
+      },
+      "sourceInput": "236PP",
+      "name": "Hadoken",
+      "referenceName": "OD Hadoken",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "40",
+          "numeric": 40,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "12",
+            "numeric": 12
+          },
+          "sourceDisplay": "12",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "+2",
+            "numeric": 2
+          },
+          "sourceDisplay": "2",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-2",
+            "numeric": -2
+          },
+          "sourceDisplay": "-2",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "pending",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": "LP+MP",
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        },
+        {
+          "fact": "low_medium_pair_performance",
+          "method": "クラシック・初期状態・標準条件でLP+MPを実際に入力し、入力履歴・発動技名・フレームメーターを同時記録する。PP/KK表記だけの資料を代用しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__special_623_K_H",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "K",
+        "strength": "H"
+      },
+      "sourceInput": "623HK",
+      "name": "Dragonlash Kick",
+      "referenceName": "H Dragonlash Kick",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "30",
+          "numeric": 30
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "53",
+          "numeric": 53,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "1",
+          "numeric": 1
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "30",
+            "numeric": 30
+          },
+          "sourceDisplay": "28",
+          "result": "different_or_semantic_exception"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "3",
+            "numeric": 3
+          },
+          "sourceDisplay": "3",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "1",
+            "numeric": 1
+          },
+          "sourceDisplay": "1",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__special_623_K_L",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "K",
+        "strength": "L"
+      },
+      "sourceInput": "623LK",
+      "name": "Dragonlash Kick",
+      "referenceName": "L Dragonlash Kick",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "21",
+          "numeric": 21
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "45",
+          "numeric": 45,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "21",
+            "numeric": 21
+          },
+          "sourceDisplay": "18",
+          "result": "different_or_semantic_exception"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "+2",
+            "numeric": 2
+          },
+          "sourceDisplay": "2",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-4",
+            "numeric": -4
+          },
+          "sourceDisplay": "-4",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__special_623_K_M",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "K",
+        "strength": "M"
+      },
+      "sourceInput": "623MK",
+      "name": "Dragonlash Kick",
+      "referenceName": "M Dragonlash Kick",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "25",
+          "numeric": 25
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "52",
+          "numeric": 52,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-8",
+          "numeric": -8
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "25",
+            "numeric": 25
+          },
+          "sourceDisplay": "23",
+          "result": "different_or_semantic_exception"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "3",
+            "numeric": 3
+          },
+          "sourceDisplay": "3",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-8",
+            "numeric": -8
+          },
+          "sourceDisplay": "-8",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__special_623_K_OD",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "K",
+        "strength": "OD"
+      },
+      "sourceInput": "623KK",
+      "name": "Dragonlash Kick",
+      "referenceName": "OD Dragonlash Kick",
+      "referenceFrames": {
+        "startup": {
+          "status": "unknown",
+          "display": null
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "47",
+          "numeric": 47,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "1",
+          "numeric": 1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-9",
+          "numeric": -9
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "unknown",
+            "display": null
+          },
+          "sourceDisplay": "9",
+          "result": "candidate_unknown_preserved"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "1",
+            "numeric": 1
+          },
+          "sourceDisplay": "1",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-9",
+            "numeric": -9
+          },
+          "sourceDisplay": "-9",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "pending",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": "LK+MK",
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "unknown_startup",
+          "method": "対象版の立ち相手にLK+MKで発動し、初期の空中限定判定と立ち相手に初めて当たる判定を入力履歴・フレームメーター付きで記録する。"
+        },
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        },
+        {
+          "fact": "low_medium_pair_performance",
+          "method": "クラシック・初期状態・標準条件でLK+MKを実際に入力し、入力履歴・発動技名・フレームメーターを同時記録する。PP/KK表記だけの資料を代用しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__special_623_P_H",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "H"
+      },
+      "sourceInput": "623HP",
+      "name": "Shoryuken",
+      "referenceName": "H Shoryuken",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "66",
+          "numeric": 66,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-36",
+          "numeric": -36
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "7",
+            "numeric": 7
+          },
+          "sourceDisplay": "7",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "sourceDisplay": "D",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-36",
+            "numeric": -36
+          },
+          "sourceDisplay": "-36",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__special_623_P_L",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "L"
+      },
+      "sourceInput": "623LP",
+      "name": "Shoryuken",
+      "referenceName": "L Shoryuken",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "47",
+          "numeric": 47,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-23",
+          "numeric": -23
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "5",
+            "numeric": 5
+          },
+          "sourceDisplay": "5",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "sourceDisplay": "D",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-23",
+            "numeric": -23
+          },
+          "sourceDisplay": "-23",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__special_623_P_M",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "M"
+      },
+      "sourceInput": "623MP",
+      "name": "Shoryuken",
+      "referenceName": "M Shoryuken",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "55",
+          "numeric": 55,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-28",
+          "numeric": -28
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "6",
+            "numeric": 6
+          },
+          "sourceDisplay": "6",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "sourceDisplay": "D",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-28",
+            "numeric": -28
+          },
+          "sourceDisplay": "-28",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__special_623_P_OD",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "OD"
+      },
+      "sourceInput": "623PP",
+      "name": "Shoryuken",
+      "referenceName": "OD Shoryuken",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "89",
+          "numeric": 89,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-40",
+          "numeric": -40
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "6",
+            "numeric": 6
+          },
+          "sourceDisplay": "6",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "sourceDisplay": "D",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-40",
+            "numeric": -40
+          },
+          "sourceDisplay": "-40",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "pending",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": "LP+MP",
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        },
+        {
+          "fact": "low_medium_pair_performance",
+          "method": "クラシック・初期状態・標準条件でLP+MPを実際に入力し、入力履歴・発動技名・フレームメーターを同時記録する。PP/KK表記だけの資料を代用しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken_quick_dash_simultaneous",
+      "input": {
+        "type": "special",
+        "motion": "none",
+        "button": "K",
+        "strength": "none",
+        "buttonCombination": "LK+MK"
+      },
+      "sourceInput": "KK",
+      "name": "奮迅脚",
+      "referenceName": "Quick Dash",
+      "referenceFrames": {
+        "startup": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "45",
+          "numeric": 45,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ken%22&limit=500",
+        "retrievedAt": "2026-11-05T14:25:32.234Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "not_applicable",
+            "display": "-"
+          },
+          "sourceDisplay": "-",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "not_applicable",
+            "display": "-"
+          },
+          "sourceDisplay": "-",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "not_applicable",
+            "display": "-"
+          },
+          "sourceDisplay": "-",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "pending",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": "LK+MK",
+      "role": "non_attacking_entry_or_movement",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        },
+        {
+          "fact": "low_medium_pair_performance",
+          "method": "クラシック・初期状態・標準条件でLK+MKを実際に入力し、入力履歴・発動技名・フレームメーターを同時記録する。PP/KK表記だけの資料を代用しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "marisa",
+      "moveId": "marisa__normal_2_K_H",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "K",
+        "strength": "H"
+      },
+      "sourceInput": "2HK",
+      "name": "しゃがみ強K",
+      "referenceName": "Crouching Heavy Kick",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "11",
+          "numeric": 11
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "39",
+          "numeric": 39,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-11",
+          "numeric": -11
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "11",
+            "numeric": 11
+          },
+          "sourceDisplay": "11",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "sourceDisplay": "D",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-11",
+            "numeric": -11
+          },
+          "sourceDisplay": "-11",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "marisa",
+      "moveId": "marisa__normal_2_K_L",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "K",
+        "strength": "L"
+      },
+      "sourceInput": "2LK",
+      "name": "しゃがみ弱K",
+      "referenceName": "Crouching Light Kick",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "19",
+          "numeric": 19,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "5",
+            "numeric": 5
+          },
+          "sourceDisplay": "5",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "+2",
+            "numeric": 2
+          },
+          "sourceDisplay": "2",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-3",
+            "numeric": -3
+          },
+          "sourceDisplay": "-3",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "marisa",
+      "moveId": "marisa__normal_2_K_M",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "K",
+        "strength": "M"
+      },
+      "sourceInput": "2MK",
+      "name": "しゃがみ中K",
+      "referenceName": "Crouching Medium Kick",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
+        },
+        "total": {
+          "status": "unknown",
+          "display": null,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+5",
+          "numeric": 5
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "9",
+            "numeric": 9
+          },
+          "sourceDisplay": "9",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "+5",
+            "numeric": 5
+          },
+          "sourceDisplay": "5",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-2",
+            "numeric": -2
+          },
+          "sourceDisplay": "-2",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "unknown_total",
+          "method": "同じ対象版で、標準条件の空振り動作開始から再行動可能までをフレームメーターで記録する。接触時・ガード時の硬直欄や全体Fの一律計算を代用しない。"
+        },
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "marisa",
+      "moveId": "marisa__normal_2_P_H",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "H"
+      },
+      "sourceInput": "2HP",
+      "name": "しゃがみ強P",
+      "referenceName": "Crouching Heavy Punch",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "36",
+          "numeric": 36,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "9",
+            "numeric": 9
+          },
+          "sourceDisplay": "9",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "sourceDisplay": "D",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-6",
+            "numeric": -6
+          },
+          "sourceDisplay": "-6",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "marisa",
+      "moveId": "marisa__normal_2_P_L",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "L"
+      },
+      "sourceInput": "2LP",
+      "name": "しゃがみ弱P",
+      "referenceName": "Crouching Light Punch",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "4",
+          "numeric": 4
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "15",
+          "numeric": 15,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "4",
+            "numeric": 4
+          },
+          "sourceDisplay": "4",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "+4",
+            "numeric": 4
+          },
+          "sourceDisplay": "4",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-1",
+            "numeric": -1
+          },
+          "sourceDisplay": "-1",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "marisa",
+      "moveId": "marisa__normal_2_P_M",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "M"
+      },
+      "sourceInput": "2MP",
+      "name": "しゃがみ中P",
+      "referenceName": "Crouching Medium Punch",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "26",
+          "numeric": 26,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "8",
+            "numeric": 8
+          },
+          "sourceDisplay": "8",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "+3",
+            "numeric": 3
+          },
+          "sourceDisplay": "3",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-2",
+            "numeric": -2
+          },
+          "sourceDisplay": "-2",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "marisa",
+      "moveId": "marisa__normal_5_K_H",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "K",
+        "strength": "H"
+      },
+      "sourceInput": "5HK",
+      "name": "立ち強K",
+      "referenceName": "Standing Heavy Kick",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "15",
+          "numeric": 15
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "41",
+          "numeric": 41,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "15",
+            "numeric": 15
+          },
+          "sourceDisplay": "15",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "+1",
+            "numeric": 1
+          },
+          "sourceDisplay": "1",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-3",
+            "numeric": -3
+          },
+          "sourceDisplay": "-3",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "marisa",
+      "moveId": "marisa__normal_5_K_L",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "K",
+        "strength": "L"
+      },
+      "sourceInput": "5LK",
+      "name": "立ち弱K",
+      "referenceName": "Standing Light Kick",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "21",
+          "numeric": 21,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "0",
+          "numeric": 0
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "6",
+            "numeric": 6
+          },
+          "sourceDisplay": "6",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "0",
+            "numeric": 0
+          },
+          "sourceDisplay": "0",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-2",
+            "numeric": -2
+          },
+          "sourceDisplay": "-2",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "marisa",
+      "moveId": "marisa__normal_5_K_M",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "K",
+        "strength": "M"
+      },
+      "sourceInput": "5MK",
+      "name": "立ち中K",
+      "referenceName": "Standing Medium Kick",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "11",
+          "numeric": 11
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "30",
+          "numeric": 30,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "11",
+            "numeric": 11
+          },
+          "sourceDisplay": "11",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "+4",
+            "numeric": 4
+          },
+          "sourceDisplay": "4",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-2",
+            "numeric": -2
+          },
+          "sourceDisplay": "-2",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "marisa",
+      "moveId": "marisa__normal_5_P_H",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "P",
+        "strength": "H"
+      },
+      "sourceInput": "5HP",
+      "name": "立ち強P",
+      "referenceName": "Standing Heavy Punch",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "36",
+          "numeric": 36,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "12",
+            "numeric": 12
+          },
+          "sourceDisplay": "12",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "+3",
+            "numeric": 3
+          },
+          "sourceDisplay": "3",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-3",
+            "numeric": -3
+          },
+          "sourceDisplay": "-3",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "marisa",
+      "moveId": "marisa__normal_5_P_L",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "P",
+        "strength": "L"
+      },
+      "sourceInput": "5LP",
+      "name": "立ち弱P",
+      "referenceName": "Standing Light Punch",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "19",
+          "numeric": 19,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "0",
+          "numeric": 0
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "6",
+            "numeric": 6
+          },
+          "sourceDisplay": "6",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "0",
+            "numeric": 0
+          },
+          "sourceDisplay": "0",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-2",
+            "numeric": -2
+          },
+          "sourceDisplay": "-2",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "marisa",
+      "moveId": "marisa__normal_5_P_M",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "P",
+        "strength": "M"
+      },
+      "sourceInput": "5MP",
+      "name": "立ち中P",
+      "referenceName": "Standing Medium Punch",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "27",
+          "numeric": 27,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "7",
+            "numeric": 7
+          },
+          "sourceDisplay": "7",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "+2",
+            "numeric": 2
+          },
+          "sourceDisplay": "2",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-1",
+            "numeric": -1
+          },
+          "sourceDisplay": "-1",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "marisa",
+      "moveId": "marisa__special_214_K_none",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "none"
+      },
+      "sourceInput": "214K",
+      "name": "Scutum",
+      "referenceName": "Scutum",
+      "referenceFrames": {
+        "startup": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "54",
+          "numeric": 54,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "not_applicable",
+            "display": "-"
+          },
+          "sourceDisplay": "-",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "not_applicable",
+            "display": "-"
+          },
+          "sourceDisplay": "-",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "not_applicable",
+            "display": "-"
+          },
+          "sourceDisplay": "-",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "non_attacking_entry_or_movement",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "marisa",
+      "moveId": "marisa__special_214_K_OD",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "OD"
+      },
+      "sourceInput": "214KK",
+      "name": "Scutum",
+      "referenceName": "OD Scutum",
+      "referenceFrames": {
+        "startup": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "57",
+          "numeric": 57,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "not_applicable",
+            "display": "-"
+          },
+          "sourceDisplay": "-",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "not_applicable",
+            "display": "-"
+          },
+          "sourceDisplay": "-",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "not_applicable",
+            "display": "-"
+          },
+          "sourceDisplay": "-",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "pending",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": "LK+MK",
+      "role": "non_attacking_entry_or_movement",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        },
+        {
+          "fact": "low_medium_pair_performance",
+          "method": "クラシック・初期状態・標準条件でLK+MKを実際に入力し、入力履歴・発動技名・フレームメーターを同時記録する。PP/KK表記だけの資料を代用しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "marisa",
+      "moveId": "marisa__special_214_P_H",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "H"
+      },
+      "sourceInput": "214HP",
+      "name": "Dimachaerus",
+      "referenceName": "H Dimachaerus(1)",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "22",
+          "numeric": 22
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "55",
+          "numeric": 55,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-16",
+          "numeric": -16
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "22",
+            "numeric": 22
+          },
+          "sourceDisplay": "22",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "sourceDisplay": "D",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-16",
+            "numeric": -16
+          },
+          "sourceDisplay": "-16",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "marisa",
+      "moveId": "marisa__special_214_P_L",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "L"
+      },
+      "sourceInput": "214LP",
+      "name": "Dimachaerus",
+      "referenceName": "L Dimachaerus(1)",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "45",
+          "numeric": 45,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-16",
+          "numeric": -16
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "12",
+            "numeric": 12
+          },
+          "sourceDisplay": "12",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-3",
+            "numeric": -3
+          },
+          "sourceDisplay": "-3",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-16",
+            "numeric": -16
+          },
+          "sourceDisplay": "-16",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "marisa",
+      "moveId": "marisa__special_214_P_M",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "M"
+      },
+      "sourceInput": "214MP",
+      "name": "Dimachaerus",
+      "referenceName": "M Dimachaerus(1)",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "16",
+          "numeric": 16
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "49",
+          "numeric": 49,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "0",
+          "numeric": 0
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-16",
+          "numeric": -16
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "16",
+            "numeric": 16
+          },
+          "sourceDisplay": "16",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "0",
+            "numeric": 0
+          },
+          "sourceDisplay": "0",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-16",
+            "numeric": -16
+          },
+          "sourceDisplay": "-16",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "marisa",
+      "moveId": "marisa__special_214_P_OD",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "OD"
+      },
+      "sourceInput": "214PP",
+      "name": "Dimachaerus",
+      "referenceName": "OD Dimachaerus(1)",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "16",
+          "numeric": 16
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "45",
+          "numeric": 45,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-12",
+          "numeric": -12
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "16",
+            "numeric": 16
+          },
+          "sourceDisplay": "16",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "sourceDisplay": "D",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-12",
+            "numeric": -12
+          },
+          "sourceDisplay": "-12",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "pending",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": "LP+MP",
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        },
+        {
+          "fact": "low_medium_pair_performance",
+          "method": "クラシック・初期状態・標準条件でLP+MPを実際に入力し、入力履歴・発動技名・フレームメーターを同時記録する。PP/KK表記だけの資料を代用しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "marisa",
+      "moveId": "marisa__special_236_K_H",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "H"
+      },
+      "sourceInput": "236HK",
+      "name": "Quadriga",
+      "referenceName": "H Quadriga",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "29",
+          "numeric": 29
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "53",
+          "numeric": 53,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "29",
+            "numeric": 29
+          },
+          "sourceDisplay": "29",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "sourceDisplay": "D",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "+1",
+            "numeric": 1
+          },
+          "sourceDisplay": "1",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "marisa",
+      "moveId": "marisa__special_236_K_L",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "L"
+      },
+      "sourceInput": "236LK",
+      "name": "Quadriga",
+      "referenceName": "L Quadriga",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "20",
+          "numeric": 20
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "47",
+          "numeric": 47,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "20",
+            "numeric": 20
+          },
+          "sourceDisplay": "20",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "sourceDisplay": "D",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-6",
+            "numeric": -6
+          },
+          "sourceDisplay": "-6",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "marisa",
+      "moveId": "marisa__special_236_K_M",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "M"
+      },
+      "sourceInput": "236MK",
+      "name": "Quadriga",
+      "referenceName": "M Quadriga",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "24",
+          "numeric": 24
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "49",
+          "numeric": 49,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "24",
+            "numeric": 24
+          },
+          "sourceDisplay": "24",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "sourceDisplay": "D",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-3",
+            "numeric": -3
+          },
+          "sourceDisplay": "-3",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "marisa",
+      "moveId": "marisa__special_236_K_OD",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "OD"
+      },
+      "sourceInput": "236KK",
+      "name": "Quadriga",
+      "referenceName": "OD Quadriga",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "24",
+          "numeric": 24
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "51",
+          "numeric": 51,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "unknown",
+          "display": null
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "24",
+            "numeric": 24
+          },
+          "sourceDisplay": "24",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "unknown",
+            "display": null
+          },
+          "sourceDisplay": "D",
+          "result": "candidate_unknown_preserved"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-6",
+            "numeric": -6
+          },
+          "sourceDisplay": "-6",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "pending",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": "LK+MK",
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "unknown_hit",
+          "method": "対象版で両者の開始位置を画面中央に固定し、通常ヒットの最終状態（ダウン／壁やられ）を動画で確認する。壁距離の括弧表記だけからDや範囲へ変換しない。"
+        },
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        },
+        {
+          "fact": "low_medium_pair_performance",
+          "method": "クラシック・初期状態・標準条件でLK+MKを実際に入力し、入力履歴・発動技名・フレームメーターを同時記録する。PP/KK表記だけの資料を代用しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "marisa",
+      "moveId": "marisa__special_236_P_H",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "H"
+      },
+      "sourceInput": "236HP",
+      "name": "Gladius",
+      "referenceName": "H Gladius",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "22",
+          "numeric": 22
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "46",
+          "numeric": 46,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-5",
+          "numeric": -5
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "22",
+            "numeric": 22
+          },
+          "sourceDisplay": "22",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "sourceDisplay": "D",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-5",
+            "numeric": -5
+          },
+          "sourceDisplay": "-5",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "marisa",
+      "moveId": "marisa__special_236_P_L",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "L"
+      },
+      "sourceInput": "236LP",
+      "name": "Gladius",
+      "referenceName": "L Gladius",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "17",
+          "numeric": 17
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "41",
+          "numeric": 41,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-5",
+          "numeric": -5
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "17",
+            "numeric": 17
+          },
+          "sourceDisplay": "17",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "sourceDisplay": "D",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-5",
+            "numeric": -5
+          },
+          "sourceDisplay": "-5",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "marisa",
+      "moveId": "marisa__special_236_P_M",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "M"
+      },
+      "sourceInput": "236MP",
+      "name": "Gladius",
+      "referenceName": "M Gladius",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "19",
+          "numeric": 19
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "43",
+          "numeric": 43,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-5",
+          "numeric": -5
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "19",
+            "numeric": 19
+          },
+          "sourceDisplay": "19",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "sourceDisplay": "D",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-5",
+            "numeric": -5
+          },
+          "sourceDisplay": "-5",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "marisa",
+      "moveId": "marisa__special_236_P_OD",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "OD"
+      },
+      "sourceInput": "236PP",
+      "name": "Gladius",
+      "referenceName": "OD Gladius",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "19",
+          "numeric": 19
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "43",
+          "numeric": 43,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "19",
+            "numeric": 19
+          },
+          "sourceDisplay": "19",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "sourceDisplay": "D",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "-2",
+            "numeric": -2
+          },
+          "sourceDisplay": "-2",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "pending",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": "LP+MP",
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        },
+        {
+          "fact": "low_medium_pair_performance",
+          "method": "クラシック・初期状態・標準条件でLP+MPを実際に入力し、入力履歴・発動技名・フレームメーターを同時記録する。PP/KK表記だけの資料を代用しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "marisa",
+      "moveId": "marisa__special_623_P_H",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "H"
+      },
+      "sourceInput": "623HP",
+      "name": "Phalanx",
+      "referenceName": "H Phalanx",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "32",
+          "numeric": 32
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "52",
+          "numeric": 52,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "3",
+          "numeric": 3
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "32",
+            "numeric": 32
+          },
+          "sourceDisplay": "32",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "sourceDisplay": "D",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "3",
+            "numeric": 3
+          },
+          "sourceDisplay": "3",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "marisa",
+      "moveId": "marisa__special_623_P_L",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "L"
+      },
+      "sourceInput": "623LP",
+      "name": "Phalanx",
+      "referenceName": "L Phalanx",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "25",
+          "numeric": 25
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "45",
+          "numeric": 45,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "3",
+          "numeric": 3
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "25",
+            "numeric": 25
+          },
+          "sourceDisplay": "25",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "sourceDisplay": "D",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "3",
+            "numeric": 3
+          },
+          "sourceDisplay": "3",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "marisa",
+      "moveId": "marisa__special_623_P_M",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "M"
+      },
+      "sourceInput": "623MP",
+      "name": "Phalanx",
+      "referenceName": "M Phalanx",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "28",
+          "numeric": 28
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "48",
+          "numeric": 48,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "3",
+          "numeric": 3
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "28",
+            "numeric": 28
+          },
+          "sourceDisplay": "28",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "sourceDisplay": "D",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "3",
+            "numeric": 3
+          },
+          "sourceDisplay": "3",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "not_applicable",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": null,
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        }
+      ]
+    },
+    {
+      "characterId": "marisa",
+      "moveId": "marisa__special_623_P_OD",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "OD"
+      },
+      "sourceInput": "623PP",
+      "name": "Phalanx",
+      "referenceName": "OD Phalanx",
+      "referenceFrames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "28",
+          "numeric": 28
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "48",
+          "numeric": 48,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "4",
+          "numeric": 4
+        }
+      },
+      "referenceWarning": "未検証の参照値。実測欄にコピーしない。",
+      "existingSource": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "existingComparisons": {
+        "startup": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "28",
+            "numeric": 28
+          },
+          "sourceDisplay": "28",
+          "result": "display_agrees"
+        },
+        "hit": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "sourceDisplay": "D",
+          "result": "display_agrees"
+        },
+        "block": {
+          "candidate": {
+            "status": "confirmed",
+            "display": "4",
+            "numeric": 4
+          },
+          "sourceDisplay": "4",
+          "result": "display_agrees"
+        }
+      },
+      "technicalStatus": {
+        "schema": "complete",
+        "counterpartName": "complete"
+      },
+      "gameStatus": {
+        "battleVersion": "pending",
+        "inputPair": "pending",
+        "patchFrameValues": "pending",
+        "coverage": "pending"
+      },
+      "requiredPair": "LP+MP",
+      "role": "attack",
+      "requiredEvidence": [
+        {
+          "fact": "target_patch_frame_values",
+          "method": "当該版と確認できるゲーム本体のバージョン表示と同じセッションの入力履歴・フレームメーター、または版と変更履歴が対応する技別表を保存する。数値だけの一致では認定しない。"
+        },
+        {
+          "fact": "low_medium_pair_performance",
+          "method": "クラシック・初期状態・標準条件でLP+MPを実際に入力し、入力履歴・発動技名・フレームメーターを同時記録する。PP/KK表記だけの資料を代用しない。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 import type { Character, FrameValue, Mode, Move, MoveInput } from "./schema";
 import { inputKey } from "./input";
+import { hasCompleteScope, isMoveUsable } from "./adoption";
 
 export type Resolution =
   | {
@@ -35,21 +36,17 @@ export function resolveMove(
   );
   if (matches.length > 1) return { status: "ambiguous" };
   if (!matches.length) {
-    const coverage = character.coverage[input.type];
+    if (character.moves.some((m) => inputKey(m.input) === inputKey(input)))
+      return { status: "unknown" };
     return {
-      status:
-        coverage.status === "complete" &&
-        coverage.verification === "verified" &&
-        character.source.verification === "verified"
-          ? "not_found"
-          : "unknown",
+      status: hasCompleteScope(character, input.type) ? "not_found" : "unknown",
     };
   }
   const move = matches[0];
   const values =
     mode === "startup" ? [move.frames.startup] : Object.values(move.frames);
   if (
-    move.source.verification !== "verified" ||
+    !isMoveUsable(character, move) ||
     values.some((value) => !isDisplayable(value))
   )
     return { status: "unknown" };

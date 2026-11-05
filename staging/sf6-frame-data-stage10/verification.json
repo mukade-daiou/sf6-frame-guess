@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-06",
+  "checks": [
+    { "command": "npm run typecheck", "status": "passed" },
+    { "command": "npm test", "status": "passed", "tests": 31 },
+    { "command": "npm run build", "status": "passed", "includes": ["typecheck", "validate:data", "vite build"] },
+    { "command": "node --test --test-concurrency=1 tests/*.test.mjs", "status": "passed", "tests": 30 },
+    { "command": "node scripts/verify-stage10-browser.mjs", "status": "passed", "scenarios": 4, "usesFixture": false, "usesDevelopmentReview": false, "results": "browser/results.json" }
+  ],
+  "adoptedCharacters": 2,
+  "adoptedMoves": 63,
+  "schemaPass": 2,
+  "loaderErrors": 0,
+  "generatedInputCount": 37,
+  "sourceVerification": "unverified",
+  "gameVersion": "UNVERIFIED",
+  "datasetId": "initial-2026-11-06",
+  "unknownFieldsPreserved": 4,
+  "previousCandidatesPreserved": 860,
+  "updatePolicy": "manual",
+  "warnings": ["Zod PURE annotations removed by Rollup", "Production chunk exceeds 500kB; build succeeded"],
+  "commitPushDeploy": "not_performed"
+}

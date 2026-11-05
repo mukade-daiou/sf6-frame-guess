@@ -29,7 +29,7 @@ export function startGame(
 ): Game {
   if (dataset.eligible.length < 2)
     throw new Error(
-      "収録完了・検証済みで同じバージョンのキャラクターが2体以上必要です。",
+      "採用済みで収録範囲が確定したキャラクターが2体以上必要です。",
     );
   if (!Number.isInteger(limit) || limit < 1)
     throw new Error("質問回数は1以上の整数で指定してください。");

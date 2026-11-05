@@ -1,0 +1,66 @@
+{
+  "datasetId": "initial-2026-11-06",
+  "eligible": [
+    "ken",
+    "marisa"
+  ],
+  "schemaPass": 2,
+  "errors": [],
+  "characters": [
+    {
+      "id": "ken",
+      "moves": 33,
+      "sourceVerification": "unverified",
+      "coverage": {
+        "normal": {
+          "status": "complete",
+          "verification": "unverified"
+        },
+        "special": {
+          "status": "complete",
+          "verification": "unverified"
+        }
+      },
+      "normalPlayable": 31,
+      "startupPlayable": 32,
+      "unknownFields": [
+        {
+          "moveId": "ken__normal_2_K_H",
+          "field": "total"
+        },
+        {
+          "moveId": "ken__special_623_K_OD",
+          "field": "startup"
+        }
+      ]
+    },
+    {
+      "id": "marisa",
+      "moves": 30,
+      "sourceVerification": "unverified",
+      "coverage": {
+        "normal": {
+          "status": "complete",
+          "verification": "unverified"
+        },
+        "special": {
+          "status": "complete",
+          "verification": "unverified"
+        }
+      },
+      "normalPlayable": 28,
+      "startupPlayable": 30,
+      "unknownFields": [
+        {
+          "moveId": "marisa__normal_2_K_M",
+          "field": "total"
+        },
+        {
+          "moveId": "marisa__special_236_K_OD",
+          "field": "hit"
+        }
+      ]
+    }
+  ],
+  "policy": "Source reliability is separate from adoption; absence is relative to this source-based adopted dataset; updates are manual."
+}

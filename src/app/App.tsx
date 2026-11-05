@@ -50,9 +50,9 @@ export default function App() {
         review:
           "未検証データの確認結果です。検証用として質問を1回記録しました。",
         found: "フレームデータを取得しました。履歴で確認できます。",
-        not_found: "該当する技なし。質問を1回消費しました。",
+        not_found: "採用データ内に該当する技なし。質問を1回消費しました。",
         unknown:
-          "必要な値が不明、出典未検証、またはデータ未収録です。質問は消費しません。",
+          "必要な値が不明、技が保留中、またはデータ未収録です。質問は消費しません。",
         ambiguous: "同じ入力に複数候補があります。質問は消費しません。",
         duplicate: "質問済みの入力です。履歴を確認してください。",
         invalid: "無効な入力です。",
@@ -78,10 +78,10 @@ export default function App() {
             ? "テスト用Fixtureでプレイ中。キャラクター・技・数値は架空で、SF6の実データではありません。"
             : production.eligible.length === 0
               ? "本番データは未収録です。動作確認にはテスト用Fixtureを選択してください。"
-              : "本番データを利用しています。"}
+              : "原典対応に基づく採用データです。公式検証・対象パッチは未確認です。技なしは採用データ内での不存在を示します。"}
         <small>
-          データ: {dataset.metadata.gameVersion} / 出題対象:{" "}
-          {dataset.eligible.length}体
+          データ: {dataset.metadata.label} / 版: {dataset.metadata.gameVersion}{" "}
+          / 出題対象: {dataset.eligible.length}体
         </small>
         {review && (
           <p>
@@ -143,7 +143,7 @@ export default function App() {
           <p className="muted">プレイ中は表示モードを変更できません。</p>
           {dataset.eligible.length < 2 && (
             <p role="status">
-              開始には、収録完了・検証済みで同じバージョンのキャラクターが2体以上必要です。
+              開始には、採用済みで収録範囲が確定したキャラクターが2体以上必要です。
             </p>
           )}
           <button
@@ -271,7 +271,8 @@ export default function App() {
                 <a href={source.url} rel="noreferrer" target="_blank">
                   取得元
                 </a>{" "}
-                · 取得日時 {source.retrievedAt}
+                · 取得日時 {source.retrievedAt} · 出典確認:{" "}
+                {source.verification === "verified" ? "検証済み" : "未検証"}
               </p>
             ))
           )}

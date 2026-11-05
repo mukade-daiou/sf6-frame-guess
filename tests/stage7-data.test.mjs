@@ -34,6 +34,6 @@ test("normal production bundle excludes Stage 7 candidate records", () => {
   for (const p of files)
     assert.doesNotMatch(
       readFileSync("dist/assets/" + p, "utf8"),
-      /stage7\/characters|ken_quick_dash_simultaneous|未検証の実データで試遊/,
+      /stage7\/characters|未検証の実データで試遊/,
     );
 });

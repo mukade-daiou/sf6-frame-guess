@@ -30,9 +30,6 @@ test("production artifacts exclude development data and its opt-in control", () 
   assert.ok(files.length);
   for (const file of files) {
     const body = readFileSync(`dist/assets/${file}`, "utf8");
-    assert.doesNotMatch(
-      body,
-      /ken_quick_dash_simultaneous|未検証の実データで試遊|stage6\/characters/,
-    );
+    assert.doesNotMatch(body, /未検証の実データで試遊|stage6\/characters/);
   }
 });

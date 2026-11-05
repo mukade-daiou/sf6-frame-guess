@@ -1,0 +1,114 @@
+import { mkdir, readFile, writeFile, readdir } from "node:fs/promises";
+import { characterSchema, type Character } from "../src/lib/frame-data/schema";
+import { validateDataset } from "../src/lib/frame-data/loader";
+import { resolveMove } from "../src/lib/frame-data/resolver";
+const read = async (p: string) => JSON.parse(await readFile(p, "utf8"));
+const save = async (p: string, v: unknown) =>
+  writeFile(p, JSON.stringify(v, null, 2) + "\n");
+const out = "staging/sf6-frame-data-stage10";
+const decisions = await read(`${out}/adoption-decisions.json`);
+const metadata = {
+  schemaVersion: "1.0.0",
+  kind: "production",
+  datasetId: decisions.datasetId,
+  gameVersion: decisions.gameVersion,
+  label: decisions.label,
+  updatePolicy: "manual",
+};
+const files: Record<string, Character> = {};
+for (const d of decisions.characters) {
+  const c = characterSchema.parse(await read(d.candidatePath));
+  if (c.id !== d.id || !d.sourceInventoryComplete)
+    throw new Error(`Scope not adopted: ${d.id}`);
+  const normals = new Set(
+    c.moves
+      .filter((m) => m.category === "normal" && m.variant.kind === "base")
+      .map((m) => JSON.stringify(m.input)),
+  );
+  if (normals.size !== 12)
+    throw new Error(`Normal coverage incomplete: ${d.id}`);
+  c.adoption = { status: "accepted", basis: d.basis };
+  c.coverage.normal.status = "complete";
+  c.coverage.special.status = "complete";
+  for (const m of c.moves)
+    m.adoption = {
+      status:
+        m.variant.kind !== "base" || d.heldMoveIds.includes(m.id)
+          ? "held"
+          : "accepted",
+      basis:
+        "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。",
+    };
+  files[c.id] = characterSchema.parse(c);
+}
+const dataset = validateDataset(metadata, files);
+if (
+  dataset.errors.length ||
+  dataset.eligible.length !== decisions.characters.length
+)
+  throw new Error(JSON.stringify(dataset.errors));
+const report = {
+  datasetId: decisions.datasetId,
+  eligible: dataset.eligible.map((c) => c.id),
+  schemaPass: dataset.characters.length,
+  errors: dataset.errors,
+  characters: dataset.characters.map((c) => ({
+    id: c.id,
+    moves: c.moves.length,
+    sourceVerification: c.source.verification,
+    coverage: c.coverage,
+    normalPlayable: c.moves.filter(
+      (m) => resolveMove(c, m.input, "normal").status === "found",
+    ).length,
+    startupPlayable: c.moves.filter(
+      (m) => resolveMove(c, m.input, "startup").status === "found",
+    ).length,
+    unknownFields: c.moves.flatMap((m) =>
+      Object.entries(m.frames)
+        .filter(([, v]) => v.status === "unknown")
+        .map(([field]) => ({ moveId: m.id, field })),
+    ),
+  })),
+  policy:
+    "Source reliability is separate from adoption; absence is relative to this source-based adopted dataset; updates are manual.",
+};
+await save(`${out}/release.json`, report);
+if (process.argv.includes("--write")) {
+  await mkdir("data/characters", { recursive: true });
+  const existing = (await readdir("data/characters")).filter((p) =>
+    p.endsWith(".json"),
+  );
+  if (existing.length) {
+    const differs =
+      JSON.stringify(await read("data/metadata.json")) !==
+        JSON.stringify(metadata) ||
+      existing.length !== Object.keys(files).length;
+    let changed = differs;
+    for (const [id, c] of Object.entries(files))
+      if (
+        !existing.includes(`${id}.json`) ||
+        JSON.stringify(await read(`data/characters/${id}.json`)) !==
+          JSON.stringify(c)
+      )
+        changed = true;
+    if (changed) {
+      const previous = await read("data/metadata.json");
+      if (
+        !process.argv.includes("--update") ||
+        previous.datasetId === metadata.datasetId ||
+        existing.some((name) => !files[name.slice(0, -5)])
+      )
+        throw new Error(
+          "Frozen snapshot differs: explicit --update, a new datasetId and preservation of existing characters are required",
+        );
+      for (const [id, c] of Object.entries(files))
+        await save(`data/characters/${id}.json`, c);
+      await save("data/metadata.json", metadata);
+    }
+  } else {
+    for (const [id, c] of Object.entries(files))
+      await save(`data/characters/${id}.json`, c);
+    await save("data/metadata.json", metadata);
+  }
+}
+console.log(JSON.stringify(report, null, 2));

@@ -8,13 +8,18 @@ JSON Schemaに加えて、下記の意味的検証をローダーとZodの追加
 ## 配置・取り込み
 
 `data/metadata.json` は `schemaVersion: "1.0.0"`、`kind: "production"`、`gameVersion`、`label` を持ちます。
+第10段階の初期データはdatasetId `initial-2026-11-06`、updatePolicy `manual`を持ちます。datasetIdは採用データの識別子であり、gameVersionの代用ではありません。未確認のゲーム版はUNVERIFIEDのまま保持します。
 `data/characters/*.json` は1ファイル1キャラです。Fixtureは `src/data/fixtures/` に隔離しています。
 全ファイルをビルド時に自動検出するため、アプリ側にIDやコマンド候補を追記する必要はありません。
 URLでJSONを取得しないので、Pagesのリポジトリ配下でも絶対パスに依存しません。
 
 Characterはid、nameJa、nameEn、gameVersion、source、coverage、movesを持ちます。
 coverageはnormalとspecialそれぞれにstatus（complete/partial/unrecorded）とverification（verified/unverified）を指定します。
-completeは対象範囲全体の不存在まで判断できる収録完了を意味します。未取得の技を不存在とするためにcompleteを使ってはいけません。
+completeは採用の基準とした原典一覧の対象範囲を収録したことを意味します。verificationは独立した信頼性の記録で、complete/unverifiedも許します。未取得のカテゴリをcompleteにしてはいけません。技なしは採用データセット内での不存在に限定します。
+
+第10段階でCharacterとMoveへ任意のadoptionを追加しました。`{ "status": "accepted", "basis": "採用の根拠" }`またはstatus heldを指定します。Characterがaccepted、両coverageがcomplete、各技がacceptedまたは明示的heldなら採用対象にできます。heldは出題を保留し、通常状態が不明のvariantもunknownとします。衝突はambiguousで、値がunknownなら必要項目のモードに応じて質問を消費しません。
+
+source.verificationがunverifiedでも明示的に採用できます。これをverifiedへ書き換える必要はありません。adoptionのない既存Fixture等は従来のverified条件を使い、過去のステージングを自動で採用しません。ODはLP+MP/LK+MKを基本とし、原典上で別性能の入力と明確に分かるものを個別に選別します。
 
 Moveはid、name、category（normal/special）、input、variant、frames、notes（文字列配列）、sourceを持ちます。
 variantは基本版なら `{ "kind": "base", "condition": null }`、特殊条件版なら `{ "kind": "conditional", "condition": "条件の説明" }` です。
@@ -99,7 +104,7 @@ sourceはurl、retrievedAt（UTC ISO日時）、gameVersion、kind（official/co
 Fixtureのverifiedは架空データとしての整合性検証を意味し、SF6公式確認を意味しません。
 実データには取得元の利用条件・必要な帰属を記録し、未確認のライセンスを推測で記入しないでください。
 
-開発環境には、本番・架空Fixtureと分離した未検証実データの試遊モードがあります。元データのverificationやcoverageは変更しません。条件付き値・不明値を保持し、原典の対象範囲での技なしは現行パッチでの不存在と区別します。本番ビルドには検証用JSONを含めず、本番ローダーの判定は維持します。検証基準と操作の違いは[第6段階報告](FRAME_DATA_STAGE6_REPORT.md)を参照してください。
+開発環境には過去のステージングを参照する試遊モードもあります。通常ゲームは本番data内のadoption付きJSONを使用し、開発モードは不要です。ステージングのJSONを直接本番ビルドへ混入させず、採用時に別ファイルへ出力します。[第10段階報告](FRAME_DATA_STAGE10_REPORT.md)を参照してください。
 
 metadata・Character・Character.source・全Move.sourceのgameVersionは完全一致が必須です。
 不正レコード、パッチ混在、重複キャラID、同一キャラの重複技IDはエラーとして対象から除外します。
@@ -108,9 +113,9 @@ metadata・Character・Character.source・全Move.sourceのgameVersionは完全�
 
 ## 実データ統合手順
 
-1. 同一パッチのデータを収集し、JSON Schemaと付属Fixtureを形式の参考に1キャラ1JSONを作成します。
-2. 対象状態・技範囲・全入力の収録を確認し、出典と検証状態、coverageを正しく記入します。
-3. metadataのgameVersionと各出典のバージョンをそろえます。本番のkindはproductionです。
+1. 原典の技一覧、通常状態、入力と明らかな矛盾を確認し、採用判断を明示します。対象パッチが未確認でも採用可能です。
+2. 対象範囲・出典・ライセンス・verificationを保持し、adoptionとcoverageを記入します。不明値や保留技を推測で補完しません。
+3. metadataのgameVersionと各出典のバージョンを整合させます。未確認はUNVERIFIEDで、架空のパッチ番号を付けません。本番のkindはproductionです。
 4. `npm run validate:data`、`npm test`、`npm run build` を実行します。
 5. 2体以上が抽選対象になったことを確認し、Fixtureのチェックを外してプレイします。
 

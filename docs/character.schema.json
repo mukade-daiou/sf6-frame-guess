@@ -2,6 +2,21 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
   "properties": {
+    "adoption": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["accepted", "held"]
+        },
+        "basis": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": ["status", "basis"],
+      "additionalProperties": false
+    },
     "id": {
       "type": "string",
       "minLength": 1
@@ -104,6 +119,21 @@
       "items": {
         "type": "object",
         "properties": {
+          "adoption": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "string",
+                "enum": ["accepted", "held"]
+              },
+              "basis": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": ["status", "basis"],
+            "additionalProperties": false
+          },
           "id": {
             "type": "string",
             "minLength": 1

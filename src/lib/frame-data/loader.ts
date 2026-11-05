@@ -7,6 +7,7 @@ import {
 } from "./schema";
 import { inputKey } from "./input";
 import { resolveMove } from "./resolver";
+import { hasCompleteScope, isMoveUsable } from "./adoption";
 
 export interface Dataset {
   // Present only on the explicit development review adapter; never set by validateDataset.
@@ -66,11 +67,11 @@ export function validateDataset(
   }
   const eligible = characters.filter(
     (c) =>
-      c.source.verification === "verified" &&
-      Object.values(c.coverage).every(
-        (v) => v.status === "complete" && v.verification === "verified",
-      ) &&
-      c.moves.every((m) => m.source.verification === "verified"),
+      hasCompleteScope(c, "normal") &&
+      hasCompleteScope(c, "special") &&
+      (c.adoption?.status === "accepted" ||
+        c.source.verification === "verified") &&
+      c.moves.every((m) => isMoveUsable(c, m) || m.adoption?.status === "held"),
   );
   const inputs = [
     ...new Map(

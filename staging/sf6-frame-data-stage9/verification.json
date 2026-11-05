@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-06",
+  "priorStagePush": { "stage": 8, "commit": "89bc5b74385dced80c27901779d1147c453b23fb", "branch": "main", "status": "pushed" },
+  "checks": [
+    { "command": "npx tsx scripts/prepare-stage9.ts", "status": "passed", "schemaPass": 2, "moves": 63, "priorityInputs": 11 },
+    { "command": "npm run typecheck", "status": "passed" },
+    { "command": "npm test", "status": "passed", "tests": 27 },
+    { "command": "node --test tests/stage9-intake.test.mjs", "status": "passed", "tests": 2 },
+    { "command": "npm run build", "status": "passed" }
+  ],
+  "gameChecksCompleted": 0,
+  "evidenceRecordsReceived": 0,
+  "userActionNeeded": ["capture labelled battle-version screen", "capture classic command lists and scope", "capture 11 specified pairs with names and performance"],
+  "gameOrSteamLaunched": false,
+  "gameUpdated": false,
+  "gameFilesMemoryOrProcessesModified": false,
+  "webRefetchPerformed": false,
+  "productionEligible": 0,
+  "stage9CommitPushDeploy": "not_performed"
+}
