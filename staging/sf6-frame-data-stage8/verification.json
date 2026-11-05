@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-06",
+  "checks": [
+    { "command": "npm run typecheck", "status": "passed" },
+    { "command": "npm test", "status": "passed", "tests": 27 },
+    { "command": "npm run build", "status": "passed", "includes": ["typecheck", "validate:data", "vite build"] },
+    { "command": "node --test --test-concurrency=1 tests/collect-supercombo.test.mjs tests/quality-converter.test.mjs tests/stage4-rules.test.mjs tests/stage5-rules.test.mjs tests/stage6-data.test.mjs tests/stage7-data.test.mjs tests/stage8-evidence.test.mjs", "status": "passed", "tests": 27 },
+    { "command": "npx tsx scripts/audit-stage8.ts", "status": "passed", "schemaPass": 2, "loaderErrors": 0, "productionEligible": 0 }
+  ],
+  "initialParallelTestAttempt": "failed: stage6 and stage7 regeneration tests raced on shared JSON; resolved by serial test-file execution without changing past artifacts",
+  "frameSearchNamedCounterparts": { "ken": 33, "marisa": 30 },
+  "frameSearchSpecialRowsClassified": { "ken": 34, "marisa": 32 },
+  "threeFieldDisplayComparisons": { "agrees": 184, "differentOrSemanticException": 3, "candidateUnknownPreserved": 2 },
+  "candidateDataChanged": false,
+  "productionEligible": 0,
+  "unknownValuesAloneBlockRelease": false,
+  "missingEvidence": ["formal battle-patch mapping", "specified OD/simultaneous input performance", "coverage certified for that patch"],
+  "productionPlay": "not_run: no production-eligible characters",
+  "gameLaunchedOrUpdated": false,
+  "commitPushDeploy": "not_performed"
+}
