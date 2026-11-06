@@ -26,11 +26,13 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm test
-      - run: node --test tests/collect-supercombo.test.mjs tests/quality-converter.test.mjs
       - name: Build under repository path
         run: npm run build
         env:
           VITE_BASE_PATH: /${{ github.event.repository.name }}/
+      - run: npm run test:data
+      - run: npm run test:archive
+      - run: node scripts/check-references.mjs
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

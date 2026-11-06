@@ -104,7 +104,7 @@ sourceはurl、retrievedAt（UTC ISO日時）、gameVersion、kind（official/co
 Fixtureのverifiedは架空データとしての整合性検証を意味し、SF6公式確認を意味しません。
 実データには取得元の利用条件・必要な帰属を記録し、未確認のライセンスを推測で記入しないでください。
 
-開発環境には過去のステージングを参照する試遊モードもあります。通常ゲームは本番data内のadoption付きJSONを使用し、開発モードは不要です。ステージングのJSONを直接本番ビルドへ混入させず、採用時に別ファイルへ出力します。[第10段階報告](FRAME_DATA_STAGE10_REPORT.md)を参照してください。
+開発環境には過去のステージングを参照する試遊モードもあります。通常ゲームは本番data内のadoption付きJSONを使用し、開発モードは不要です。ステージングのJSONを直接本番ビルドへ混入させず、採用時に別ファイルへ出力します。[第10段階報告](../archive/docs/FRAME_DATA_STAGE10_REPORT.md)を参照してください。
 
 metadata・Character・Character.source・全Move.sourceのgameVersionは完全一致が必須です。
 不正レコード、パッチ混在、重複キャラID、同一キャラの重複技IDはエラーとして対象から除外します。

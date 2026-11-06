@@ -1,6 +1,6 @@
-import ken from "../../../staging/sf6-frame-data-stage7/characters/ken.json";
-import marisa from "../../../staging/sf6-frame-data-stage7/characters/marisa.json";
-import audit from "../../../staging/sf6-frame-data-stage7/review-policy.json";
+import ken from "../../../staging/adoption-inputs/ken.json";
+import marisa from "../../../staging/adoption-inputs/marisa.json";
+import audit from "../../../staging/dev-review-policy.json";
 import { validateDataset, type Dataset } from "./loader";
 import { inputKey } from "./input";
 

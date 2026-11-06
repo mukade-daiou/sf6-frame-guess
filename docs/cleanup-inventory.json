@@ -1,0 +1,2842 @@
+{
+  "before": {
+    "src": {
+      "files": 25,
+      "bytes": 185604
+    },
+    "data": {
+      "files": 5,
+      "bytes": 141081
+    },
+    "docs": {
+      "files": 22,
+      "bytes": 192512
+    },
+    "staging": {
+      "files": 353,
+      "bytes": 27367999
+    },
+    "scripts": {
+      "files": 27,
+      "bytes": 146478
+    },
+    "tests": {
+      "files": 9,
+      "bytes": 23371
+    }
+  },
+  "after": {
+    "src": {
+      "files": 25,
+      "bytes": 185552
+    },
+    "data": {
+      "files": 6,
+      "bytes": 141832
+    },
+    "docs": {
+      "files": 9,
+      "bytes": 104812
+    },
+    "staging": {
+      "files": 35,
+      "bytes": 1714329
+    },
+    "scripts": {
+      "files": 5,
+      "bytes": 16501
+    },
+    "tests": {
+      "files": 1,
+      "bytes": 1235
+    },
+    "archive": {
+      "files": 369,
+      "bytes": 26082915
+    }
+  },
+  "protectedByteIdentical": 357,
+  "candidateCharacters": 32,
+  "candidateMoves": 860,
+  "files": [
+    {
+      "path": ".github/workflows/deploy.yml",
+      "bytes": 1388,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 66,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": ".prettierignore",
+      "bytes": 18,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "DESIGN.md",
+      "bytes": 14848,
+      "classification": "B",
+      "basis": "import/loader/build reference"
+    },
+    {
+      "path": "LICENSES/CC-BY-SA-4.0.txt",
+      "bytes": 20138,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "NOTICE",
+      "bytes": 1621,
+      "classification": "A",
+      "basis": "import/loader/build reference"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3855,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "archive/README.md",
+      "bytes": 1423,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/docs/BATCH1_DATA_SOURCES.md",
+      "bytes": 2478,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/docs/FRAME_DATA_COLLECTION_REPORT.md",
+      "bytes": 9493,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/docs/FRAME_DATA_COLLECTION_TABLES.md",
+      "bytes": 6039,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/docs/FRAME_DATA_QUALITY_COLLISIONS.md",
+      "bytes": 8099,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/docs/FRAME_DATA_QUALITY_REPORT.md",
+      "bytes": 12731,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/docs/FRAME_DATA_RELEASE_READINESS.md",
+      "bytes": 10722,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/docs/FRAME_DATA_STAGE10_REPORT.md",
+      "bytes": 10132,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/docs/FRAME_DATA_STAGE5_MOVES.md",
+      "bytes": 7013,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/docs/FRAME_DATA_STAGE5_REPORT.md",
+      "bytes": 13344,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/docs/FRAME_DATA_STAGE6_REPORT.md",
+      "bytes": 13899,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/docs/FRAME_DATA_STAGE7_REPORT.md",
+      "bytes": 12556,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/docs/FRAME_DATA_STAGE8_REPORT.md",
+      "bytes": 14281,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/docs/FRAME_DATA_STAGE9_REPORT.md",
+      "bytes": 12664,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/docs/HANDOFF.md",
+      "bytes": 8271,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/docs/INTEGRATION_INSTRUCTIONS.md",
+      "bytes": 2473,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/docs/VERIFICATION.md",
+      "bytes": 1636,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/scripts/audit-stage4.ts",
+      "bytes": 9866,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/scripts/audit-stage8.ts",
+      "bytes": 10837,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/scripts/audit-staging.ts",
+      "bytes": 6606,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/scripts/build-quality.ts",
+      "bytes": 9471,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/scripts/build-stage5.ts",
+      "bytes": 9229,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/scripts/build-stage6.ts",
+      "bytes": 7701,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/scripts/build-stage7.ts",
+      "bytes": 7991,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/scripts/check-stage7-sources.mjs",
+      "bytes": 1272,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/scripts/check-stage9-submission.ts",
+      "bytes": 5407,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/scripts/collect-quality-evidence.mjs",
+      "bytes": 3629,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/scripts/collect-stage5-evidence.mjs",
+      "bytes": 2515,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/scripts/collect-stage6-evidence.mjs",
+      "bytes": 1353,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/scripts/collect-stage8-browser.mjs",
+      "bytes": 1507,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/scripts/collect-stage8-evidence.mjs",
+      "bytes": 2182,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/scripts/collect-supercombo.mjs",
+      "bytes": 13812,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/scripts/prepare-stage9.ts",
+      "bytes": 6267,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/scripts/quality-converter.mjs",
+      "bytes": 3982,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/scripts/review-source-semantics.mjs",
+      "bytes": 4441,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/scripts/seed-quality-reviews.mjs",
+      "bytes": 4084,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/scripts/stage4-rules.mjs",
+      "bytes": 1524,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/scripts/stage5-rules.mjs",
+      "bytes": 8399,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/scripts/verify-stage6-browser.mjs",
+      "bytes": 5256,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/scripts/verify-stage7-browser.mjs",
+      "bytes": 5261,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/NOTICE",
+      "bytes": 1475,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/aki.audit.json",
+      "bytes": 21822,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/akuma.audit.json",
+      "bytes": 24231,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/alex.audit.json",
+      "bytes": 21741,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/arjun.audit.json",
+      "bytes": 9519,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/blanka.audit.json",
+      "bytes": 35879,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/cammy.audit.json",
+      "bytes": 21494,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/characters/aki.json",
+      "bytes": 54881,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/characters/akuma.json",
+      "bytes": 53775,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/characters/alex.json",
+      "bytes": 47640,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/characters/arjun.json",
+      "bytes": 45178,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/characters/blanka.json",
+      "bytes": 58791,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/characters/cammy.json",
+      "bytes": 44746,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/characters/chunli.json",
+      "bytes": 58897,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/characters/cviper.json",
+      "bytes": 43469,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/characters/dee_jay.json",
+      "bytes": 55820,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/characters/dhalsim.json",
+      "bytes": 44809,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/characters/e_honda.json",
+      "bytes": 58034,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/characters/ed.json",
+      "bytes": 51499,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/characters/elena.json",
+      "bytes": 61948,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/characters/guile.json",
+      "bytes": 43145,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/characters/ingrid.json",
+      "bytes": 46612,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/characters/jamie.json",
+      "bytes": 23624,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/characters/jp.json",
+      "bytes": 53964,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/characters/juri.json",
+      "bytes": 41963,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/characters/ken.json",
+      "bytes": 54952,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/characters/kimberly.json",
+      "bytes": 44634,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/characters/lily.json",
+      "bytes": 34192,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/characters/luke.json",
+      "bytes": 46323,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/characters/m_bison.json",
+      "bytes": 48742,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/characters/mai.json",
+      "bytes": 55366,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/characters/manon.json",
+      "bytes": 52826,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/characters/marisa.json",
+      "bytes": 54608,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/characters/rashid.json",
+      "bytes": 49925,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/characters/ryu.json",
+      "bytes": 57048,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/characters/sagat.json",
+      "bytes": 55834,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/characters/terry.json",
+      "bytes": 58458,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/characters/yasmine.json",
+      "bytes": 54352,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/characters/zangief.json",
+      "bytes": 22881,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/chunli.audit.json",
+      "bytes": 23216,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/cviper.audit.json",
+      "bytes": 17550,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/dee_jay.audit.json",
+      "bytes": 27473,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/dhalsim.audit.json",
+      "bytes": 16552,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/e_honda.audit.json",
+      "bytes": 11060,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/ed.audit.json",
+      "bytes": 20739,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/elena.audit.json",
+      "bytes": 25623,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/aki.cargo.json",
+      "bytes": 39883,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json",
+      "bytes": 54918,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/alex.cargo.json",
+      "bytes": 50564,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+      "bytes": 38311,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json",
+      "bytes": 51191,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/cammy.cargo.json",
+      "bytes": 38970,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/chunli.cargo.json",
+      "bytes": 41707,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json",
+      "bytes": 47760,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/dee_jay.cargo.json",
+      "bytes": 51970,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/dhalsim.cargo.json",
+      "bytes": 39963,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+      "bytes": 39414,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/ed.cargo.json",
+      "bytes": 39030,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/elena.cargo.json",
+      "bytes": 52341,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/guile.cargo.json",
+      "bytes": 35545,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/ingrid.cargo.json",
+      "bytes": 58755,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+      "bytes": 68392,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+      "bytes": 39967,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/juri.cargo.json",
+      "bytes": 43327,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/ken.cargo.json",
+      "bytes": 37664,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/kimberly.cargo.json",
+      "bytes": 46820,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json",
+      "bytes": 41959,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/luke.cargo.json",
+      "bytes": 38548,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json",
+      "bytes": 44036,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/mai.cargo.json",
+      "bytes": 67529,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/manon.cargo.json",
+      "bytes": 33152,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/marisa.cargo.json",
+      "bytes": 46391,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/rashid.cargo.json",
+      "bytes": 45133,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json",
+      "bytes": 38736,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/sagat.cargo.json",
+      "bytes": 49403,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/source-checks.json",
+      "bytes": 6188,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json",
+      "bytes": 41138,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/yasmine.cargo.json",
+      "bytes": 48752,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/zangief.cargo.json",
+      "bytes": 36308,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/guile.audit.json",
+      "bytes": 15341,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/ingrid.audit.json",
+      "bytes": 23489,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/jamie.audit.json",
+      "bytes": 59403,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/jp.audit.json",
+      "bytes": 15455,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/juri.audit.json",
+      "bytes": 26843,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/ken.audit.json",
+      "bytes": 17793,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/kimberly.audit.json",
+      "bytes": 29239,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/lily.audit.json",
+      "bytes": 15304,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/luke.audit.json",
+      "bytes": 22418,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/m_bison.audit.json",
+      "bytes": 28362,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/mai.audit.json",
+      "bytes": 34166,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/manon.audit.json",
+      "bytes": 22110,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/marisa.audit.json",
+      "bytes": 29712,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/quality-report.json",
+      "bytes": 2313668,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/rashid.audit.json",
+      "bytes": 21500,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/review-decisions.json",
+      "bytes": 1490566,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/ryu.audit.json",
+      "bytes": 17229,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/sagat.audit.json",
+      "bytes": 14092,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/source-semantic-observations.json",
+      "bytes": 754044,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/terry.audit.json",
+      "bytes": 10994,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/yasmine.audit.json",
+      "bytes": 21337,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-quality/zangief.audit.json",
+      "bytes": 16267,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-release/NOTICE",
+      "bytes": 1593,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-release/evidence/akuma.json",
+      "bytes": 47356,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-release/evidence/alex.json",
+      "bytes": 44136,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-release/evidence/alternative_ken.json",
+      "bytes": 654735,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-release/evidence/alternative_marisa.json",
+      "bytes": 714414,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-release/evidence/arjun.json",
+      "bytes": 33088,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-release/evidence/blanka.json",
+      "bytes": 44086,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-release/evidence/cviper.json",
+      "bytes": 42466,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-release/evidence/dee_jay.json",
+      "bytes": 43777,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-release/evidence/e_honda.json",
+      "bytes": 33660,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-release/evidence/history.json",
+      "bytes": 37841,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-release/evidence/jamie.json",
+      "bytes": 58890,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-release/evidence/jp.json",
+      "bytes": 34565,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-release/evidence/ken.json",
+      "bytes": 31476,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-release/evidence/marisa.json",
+      "bytes": 38883,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-release/evidence/official_ken.json",
+      "bytes": 1103,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-release/evidence/official_marisa.json",
+      "bytes": 1106,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-release/evidence/patch_20261013.json",
+      "bytes": 1114,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-release/evidence/patch_20261016.json",
+      "bytes": 1114,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-release/evidence/ryu.json",
+      "bytes": 32322,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-release/evidence/sagat.json",
+      "bytes": 43671,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-release/evidence/terry.json",
+      "bytes": 35619,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-release/evidence/zangief.json",
+      "bytes": 30537,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-release/readiness.json",
+      "bytes": 293053,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-release/verification.json",
+      "bytes": 1483,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage10/adoption-decisions.json",
+      "bytes": 717,
+      "classification": "C",
+      "basis": "historical evidence or reproducibility dependency"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage10/browser/1280-normal.png",
+      "bytes": 103844,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage10/browser/1280-startup.png",
+      "bytes": 88784,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage10/browser/390-normal.png",
+      "bytes": 93784,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage10/browser/390-startup.png",
+      "bytes": 79202,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage10/browser/results.json",
+      "bytes": 2487,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage10/release.json",
+      "bytes": 1484,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage10/verification.json",
+      "bytes": 1043,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage5/NOTICE",
+      "bytes": 1735,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage5/characters/ken.json",
+      "bytes": 60590,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage5/characters/marisa.json",
+      "bytes": 59343,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage5/evidence/frame_key.json",
+      "bytes": 1749,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage5/evidence/index.json",
+      "bytes": 3027,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage5/evidence/lab_ken.json",
+      "bytes": 121532,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage5/evidence/lab_marisa.json",
+      "bytes": 124775,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage5/evidence/official_20260528.json",
+      "bytes": 1229,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage5/evidence/official_20260803.json",
+      "bytes": 1229,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage5/evidence/official_20261013.json",
+      "bytes": 1229,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage5/evidence/official_20261016.json",
+      "bytes": 1229,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage5/evidence/official_changes.json",
+      "bytes": 1210,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage5/evidence/official_ken.json",
+      "bytes": 1202,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage5/evidence/official_marisa.json",
+      "bytes": 1211,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage5/evidence/pages_ken.json",
+      "bytes": 972,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage5/evidence/pages_marisa.json",
+      "bytes": 1005,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage5/evidence/supplement-index.json",
+      "bytes": 1070,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage5/evidence/wiki_ken.json",
+      "bytes": 96936,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage5/evidence/wiki_marisa.json",
+      "bytes": 92511,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage5/review.json",
+      "bytes": 546389,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage5/verification.json",
+      "bytes": 1309,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage6/NOTICE",
+      "bytes": 1867,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage6/browser/1280-normal.png",
+      "bytes": 93615,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage6/browser/1280-startup.png",
+      "bytes": 93619,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage6/browser/390-normal.png",
+      "bytes": 80335,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage6/browser/390-startup.png",
+      "bytes": 80305,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage6/browser/desktop-conditional.png",
+      "bytes": 132176,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage6/browser/results.json",
+      "bytes": 6039,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage6/characters/ken.json",
+      "bytes": 62656,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage6/characters/marisa.json",
+      "bytes": 59343,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage6/evidence/history.json",
+      "bytes": 37841,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage6/evidence/index.json",
+      "bytes": 1024,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage6/evidence/official_20260803.json",
+      "bytes": 1111,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage6/evidence/official_20261013.json",
+      "bytes": 1111,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage6/evidence/official_20261016.json",
+      "bytes": 1111,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage6/evidence/tracker_ken.json",
+      "bytes": 301491,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage6/evidence/tracker_marisa.json",
+      "bytes": 404549,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage6/patch-comparison.json",
+      "bytes": 1906,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage6/review-policy.json",
+      "bytes": 581,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage6/review.json",
+      "bytes": 478060,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage6/verification.json",
+      "bytes": 1489,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage7/NOTICE",
+      "bytes": 1978,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage7/browser/1280-normal.png",
+      "bytes": 103277,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage7/browser/1280-startup.png",
+      "bytes": 103284,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage7/browser/390-normal.png",
+      "bytes": 84277,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage7/browser/390-startup.png",
+      "bytes": 84278,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage7/browser/results.json",
+      "bytes": 4036,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage7/characters/ken.json",
+      "bytes": 64761,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage7/characters/marisa.json",
+      "bytes": 61750,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage7/evidence/0.json",
+      "bytes": 1103,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage7/evidence/1.json",
+      "bytes": 1106,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage7/evidence/2.json",
+      "bytes": 1111,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage7/evidence/3.json",
+      "bytes": 1111,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage7/evidence/4.json",
+      "bytes": 1111,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage7/evidence/5.json",
+      "bytes": 301491,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage7/evidence/6.json",
+      "bytes": 404549,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage7/evidence/index.json",
+      "bytes": 1031,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage7/review-policy.json",
+      "bytes": 581,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage7/review.json",
+      "bytes": 202608,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage7/verification.json",
+      "bytes": 1787,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage8/NOTICE",
+      "bytes": 2117,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage8/evidence/browser_ken_1.json",
+      "bytes": 437845,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage8/evidence/browser_ken_2.json",
+      "bytes": 302100,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage8/evidence/browser_marisa_1.json",
+      "bytes": 469157,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage8/evidence/browser_marisa_2.json",
+      "bytes": 261368,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage8/evidence/frame_guide.json",
+      "bytes": 23403,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage8/evidence/frame_ken_special.json",
+      "bytes": 783493,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage8/evidence/frame_ken_special_page2.json",
+      "bytes": 394,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage8/evidence/frame_marisa_special.json",
+      "bytes": 814366,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage8/evidence/frame_marisa_special_page2.json",
+      "bytes": 400,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage8/evidence/frame_script.json",
+      "bytes": 23412,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage8/evidence/index.json",
+      "bytes": 1728,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage8/evidence/steam_news.json",
+      "bytes": 210404,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage8/evidence/steam_official_news.json",
+      "bytes": 205506,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage8/evidence/supplement-index.json",
+      "bytes": 1116,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage8/evidence/wiki_glossary.json",
+      "bytes": 16086,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage8/local-installation.json",
+      "bytes": 813,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage8/review.json",
+      "bytes": 279110,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage8/verification.json",
+      "bytes": 1517,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage9/CHECKLIST.md",
+      "bytes": 6170,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage9/NOTICE",
+      "bytes": 2245,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage9/OBSERVATIONS.md",
+      "bytes": 2747,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage9/evidence/README.md",
+      "bytes": 532,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage9/plan.json",
+      "bytes": 179646,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage9/submission.json",
+      "bytes": 61,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data-stage9/verification.json",
+      "bytes": 1009,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/NOTICE",
+      "bytes": 1475,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/aki.audit.json",
+      "bytes": 3289,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/akuma.audit.json",
+      "bytes": 6479,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/alex.audit.json",
+      "bytes": 5113,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/arjun.audit.json",
+      "bytes": 3652,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/blanka.audit.json",
+      "bytes": 8079,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/cammy.audit.json",
+      "bytes": 5057,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/characters/aki.json",
+      "bytes": 52996,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/characters/akuma.json",
+      "bytes": 51686,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/characters/alex.json",
+      "bytes": 45558,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/characters/arjun.json",
+      "bytes": 42296,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/characters/blanka.json",
+      "bytes": 35082,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/characters/cammy.json",
+      "bytes": 42933,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/characters/chunli.json",
+      "bytes": 55586,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/characters/cviper.json",
+      "bytes": 41077,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/characters/dee_jay.json",
+      "bytes": 52769,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/characters/dhalsim.json",
+      "bytes": 42417,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/characters/e_honda.json",
+      "bytes": 57125,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/characters/ed.json",
+      "bytes": 48585,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/characters/elena.json",
+      "bytes": 59245,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/characters/guile.json",
+      "bytes": 41080,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/characters/ingrid.json",
+      "bytes": 43642,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/characters/jamie.json",
+      "bytes": 46983,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/characters/jp.json",
+      "bytes": 52772,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/characters/juri.json",
+      "bytes": 37316,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/characters/ken.json",
+      "bytes": 52615,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/characters/kimberly.json",
+      "bytes": 42467,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/characters/lily.json",
+      "bytes": 33899,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/characters/luke.json",
+      "bytes": 43955,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/characters/m_bison.json",
+      "bytes": 32475,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/characters/mai.json",
+      "bytes": 20479,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/characters/manon.json",
+      "bytes": 48664,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/characters/marisa.json",
+      "bytes": 50991,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/characters/rashid.json",
+      "bytes": 47834,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/characters/ryu.json",
+      "bytes": 54703,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/characters/sagat.json",
+      "bytes": 54046,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/characters/terry.json",
+      "bytes": 56983,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/characters/yasmine.json",
+      "bytes": 52217,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/characters/zangief.json",
+      "bytes": 21977,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/chunli.audit.json",
+      "bytes": 4759,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/collection-report.json",
+      "bytes": 8739,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/cviper.audit.json",
+      "bytes": 4487,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/dee_jay.audit.json",
+      "bytes": 4709,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/dhalsim.audit.json",
+      "bytes": 4031,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/e_honda.audit.json",
+      "bytes": 3039,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/ed.audit.json",
+      "bytes": 3863,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/elena.audit.json",
+      "bytes": 5021,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/guile.audit.json",
+      "bytes": 3932,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/ingrid.audit.json",
+      "bytes": 6198,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/jamie.audit.json",
+      "bytes": 11324,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/jp.audit.json",
+      "bytes": 3299,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/juri.audit.json",
+      "bytes": 7657,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/ken.audit.json",
+      "bytes": 4649,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/kimberly.audit.json",
+      "bytes": 6647,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/lily.audit.json",
+      "bytes": 6220,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/luke.audit.json",
+      "bytes": 5335,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/m_bison.audit.json",
+      "bytes": 6215,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/mai.audit.json",
+      "bytes": 8816,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/manon.audit.json",
+      "bytes": 2835,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/marisa.audit.json",
+      "bytes": 6875,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/rashid.audit.json",
+      "bytes": 5896,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/raw/aki.json",
+      "bytes": 114591,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/raw/akuma.json",
+      "bytes": 162424,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/raw/alex.json",
+      "bytes": 139191,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/raw/arjun.json",
+      "bytes": 99090,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/raw/blanka.json",
+      "bytes": 152558,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/raw/cammy.json",
+      "bytes": 127155,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/raw/chunli.json",
+      "bytes": 137115,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/raw/cviper.json",
+      "bytes": 123996,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/raw/dee_jay.json",
+      "bytes": 165894,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/raw/dhalsim.json",
+      "bytes": 121879,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/raw/e_honda.json",
+      "bytes": 114913,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/raw/ed.json",
+      "bytes": 116272,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/raw/elena.json",
+      "bytes": 148558,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/raw/guile.json",
+      "bytes": 115315,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/raw/ingrid.json",
+      "bytes": 158892,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/raw/jamie.json",
+      "bytes": 202444,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/raw/jp.json",
+      "bytes": 115542,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/raw/juri.json",
+      "bytes": 147288,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/raw/ken.json",
+      "bytes": 126176,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/raw/kimberly.json",
+      "bytes": 146002,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/raw/lily.json",
+      "bytes": 132662,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/raw/luke.json",
+      "bytes": 126196,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/raw/m_bison.json",
+      "bytes": 133911,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/raw/mai.json",
+      "bytes": 171710,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/raw/manon.json",
+      "bytes": 104298,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/raw/marisa.json",
+      "bytes": 154087,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/raw/rashid.json",
+      "bytes": 139478,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/raw/ryu.json",
+      "bytes": 130646,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/raw/sagat.json",
+      "bytes": 132113,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/raw/terry.json",
+      "bytes": 120044,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/raw/yasmine.json",
+      "bytes": 133317,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/raw/zangief.json",
+      "bytes": 117400,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/ryu.audit.json",
+      "bytes": 3752,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/sagat.audit.json",
+      "bytes": 3783,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/special-candidates.md",
+      "bytes": 38539,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/terry.audit.json",
+      "bytes": 2866,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/upstream-manifest.json",
+      "bytes": 553,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/validation-report.json",
+      "bytes": 372707,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/yasmine.audit.json",
+      "bytes": 4234,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/staging/sf6-frame-data/zangief.audit.json",
+      "bytes": 5502,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/tests/collect-supercombo.test.mjs",
+      "bytes": 2257,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/tests/quality-converter.test.mjs",
+      "bytes": 5677,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/tests/stage4-rules.test.mjs",
+      "bytes": 2386,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/tests/stage5-rules.test.mjs",
+      "bytes": 3582,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/tests/stage6-data.test.mjs",
+      "bytes": 1426,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/tests/stage7-data.test.mjs",
+      "bytes": 1566,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/tests/stage8-evidence.test.mjs",
+      "bytes": 1820,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "archive/tests/stage9-intake.test.mjs",
+      "bytes": 3593,
+      "classification": "C",
+      "basis": "historical generator/evidence/test references"
+    },
+    {
+      "path": "data/NOTICE",
+      "bytes": 753,
+      "classification": "A",
+      "basis": "import/loader/build reference"
+    },
+    {
+      "path": "data/adoption-decisions.json",
+      "bytes": 751,
+      "classification": "B",
+      "basis": "import/loader/build reference"
+    },
+    {
+      "path": "data/characters/.gitkeep",
+      "bytes": 0,
+      "classification": "A",
+      "basis": "import/loader/build reference"
+    },
+    {
+      "path": "data/characters/ken.json",
+      "bytes": 71868,
+      "classification": "A",
+      "basis": "import/loader/build reference"
+    },
+    {
+      "path": "data/characters/marisa.json",
+      "bytes": 68227,
+      "classification": "A",
+      "basis": "import/loader/build reference"
+    },
+    {
+      "path": "data/metadata.json",
+      "bytes": 233,
+      "classification": "A",
+      "basis": "import/loader/build reference"
+    },
+    {
+      "path": "docs/DATA_SOURCES.md",
+      "bytes": 1208,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "docs/DATA_SPEC.md",
+      "bytes": 10089,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "docs/DATA_WORKFLOW.md",
+      "bytes": 3573,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "docs/DESIGN_DECISIONS.md",
+      "bytes": 1668,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "docs/GAME_SPEC.md",
+      "bytes": 4249,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "docs/PROJECT_CLEANUP_REPORT.md",
+      "bytes": 9173,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "docs/character.schema.json",
+      "bytes": 29263,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "docs/cleanup-moves.json",
+      "bytes": 44935,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "docs/metadata.schema.json",
+      "bytes": 654,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "index.html",
+      "bytes": 365,
+      "classification": "A",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 72353,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "package.json",
+      "bytes": 1233,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "scripts/build-snapshot.ts",
+      "bytes": 4597,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "scripts/check-references.mjs",
+      "bytes": 1847,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "scripts/create-fixtures.ts",
+      "bytes": 2847,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "scripts/validate-data.ts",
+      "bytes": 1265,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "scripts/verify-gameplay.mjs",
+      "bytes": 5945,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "src/app/App.tsx",
+      "bytes": 10807,
+      "classification": "A",
+      "basis": "import/loader/build reference"
+    },
+    {
+      "path": "src/components/History.tsx",
+      "bytes": 2747,
+      "classification": "A",
+      "basis": "import/loader/build reference"
+    },
+    {
+      "path": "src/data/fixtures/characters/fixture-1.json",
+      "bytes": 39558,
+      "classification": "A",
+      "basis": "import/loader/build reference"
+    },
+    {
+      "path": "src/data/fixtures/characters/fixture-2.json",
+      "bytes": 39559,
+      "classification": "A",
+      "basis": "import/loader/build reference"
+    },
+    {
+      "path": "src/data/fixtures/characters/fixture-3.json",
+      "bytes": 39569,
+      "classification": "A",
+      "basis": "import/loader/build reference"
+    },
+    {
+      "path": "src/data/fixtures/metadata.json",
+      "bytes": 158,
+      "classification": "A",
+      "basis": "import/loader/build reference"
+    },
+    {
+      "path": "src/features/game/engine.test.ts",
+      "bytes": 3012,
+      "classification": "A",
+      "basis": "import/loader/build reference"
+    },
+    {
+      "path": "src/features/game/engine.ts",
+      "bytes": 3456,
+      "classification": "A",
+      "basis": "import/loader/build reference"
+    },
+    {
+      "path": "src/features/move-selector/MoveSelector.test.tsx",
+      "bytes": 783,
+      "classification": "A",
+      "basis": "import/loader/build reference"
+    },
+    {
+      "path": "src/features/move-selector/MoveSelector.tsx",
+      "bytes": 4506,
+      "classification": "A",
+      "basis": "import/loader/build reference"
+    },
+    {
+      "path": "src/lib/frame-data/adoption.test.ts",
+      "bytes": 3274,
+      "classification": "A",
+      "basis": "import/loader/build reference"
+    },
+    {
+      "path": "src/lib/frame-data/adoption.ts",
+      "bytes": 794,
+      "classification": "A",
+      "basis": "import/loader/build reference"
+    },
+    {
+      "path": "src/lib/frame-data/coverage.test.ts",
+      "bytes": 980,
+      "classification": "A",
+      "basis": "import/loader/build reference"
+    },
+    {
+      "path": "src/lib/frame-data/datasets.ts",
+      "bytes": 774,
+      "classification": "A",
+      "basis": "import/loader/build reference"
+    },
+    {
+      "path": "src/lib/frame-data/frame-data.test.ts",
+      "bytes": 6828,
+      "classification": "A",
+      "basis": "import/loader/build reference"
+    },
+    {
+      "path": "src/lib/frame-data/frame-policy.test.ts",
+      "bytes": 3233,
+      "classification": "A",
+      "basis": "import/loader/build reference"
+    },
+    {
+      "path": "src/lib/frame-data/input.ts",
+      "bytes": 971,
+      "classification": "A",
+      "basis": "import/loader/build reference"
+    },
+    {
+      "path": "src/lib/frame-data/loader.ts",
+      "bytes": 2857,
+      "classification": "A",
+      "basis": "import/loader/build reference"
+    },
+    {
+      "path": "src/lib/frame-data/resolver.ts",
+      "bytes": 1923,
+      "classification": "A",
+      "basis": "import/loader/build reference"
+    },
+    {
+      "path": "src/lib/frame-data/review-dataset.ts",
+      "bytes": 920,
+      "classification": "A",
+      "basis": "import/loader/build reference"
+    },
+    {
+      "path": "src/lib/frame-data/review-resolver.ts",
+      "bytes": 1573,
+      "classification": "A",
+      "basis": "import/loader/build reference"
+    },
+    {
+      "path": "src/lib/frame-data/review.test.tsx",
+      "bytes": 5698,
+      "classification": "A",
+      "basis": "import/loader/build reference"
+    },
+    {
+      "path": "src/lib/frame-data/schema.ts",
+      "bytes": 5601,
+      "classification": "A",
+      "basis": "import/loader/build reference"
+    },
+    {
+      "path": "src/main.tsx",
+      "bytes": 235,
+      "classification": "A",
+      "basis": "import/loader/build reference"
+    },
+    {
+      "path": "src/styles.css",
+      "bytes": 5736,
+      "classification": "A",
+      "basis": "import/loader/build reference"
+    },
+    {
+      "path": "staging/adoption-inputs/ken.json",
+      "bytes": 64761,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "staging/adoption-inputs/marisa.json",
+      "bytes": 61750,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "staging/candidates/aki.json",
+      "bytes": 54881,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "staging/candidates/akuma.json",
+      "bytes": 53775,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "staging/candidates/alex.json",
+      "bytes": 47640,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "staging/candidates/arjun.json",
+      "bytes": 45178,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "staging/candidates/blanka.json",
+      "bytes": 58791,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "staging/candidates/cammy.json",
+      "bytes": 44746,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "staging/candidates/chunli.json",
+      "bytes": 58897,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "staging/candidates/cviper.json",
+      "bytes": 43469,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "staging/candidates/dee_jay.json",
+      "bytes": 55820,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "staging/candidates/dhalsim.json",
+      "bytes": 44809,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "staging/candidates/e_honda.json",
+      "bytes": 58034,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "staging/candidates/ed.json",
+      "bytes": 51499,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "staging/candidates/elena.json",
+      "bytes": 61948,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "staging/candidates/guile.json",
+      "bytes": 43145,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "staging/candidates/ingrid.json",
+      "bytes": 48860,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "staging/candidates/jamie.json",
+      "bytes": 23624,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "staging/candidates/jp.json",
+      "bytes": 53964,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "staging/candidates/juri.json",
+      "bytes": 43744,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "staging/candidates/ken.json",
+      "bytes": 54952,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "staging/candidates/kimberly.json",
+      "bytes": 44634,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "staging/candidates/lily.json",
+      "bytes": 34192,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "staging/candidates/luke.json",
+      "bytes": 46323,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "staging/candidates/m_bison.json",
+      "bytes": 48742,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "staging/candidates/mai.json",
+      "bytes": 55366,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "staging/candidates/manon.json",
+      "bytes": 52826,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "staging/candidates/marisa.json",
+      "bytes": 54608,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "staging/candidates/rashid.json",
+      "bytes": 49925,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "staging/candidates/ryu.json",
+      "bytes": 57048,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "staging/candidates/sagat.json",
+      "bytes": 58326,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "staging/candidates/terry.json",
+      "bytes": 60238,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "staging/candidates/yasmine.json",
+      "bytes": 54352,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "staging/candidates/zangief.json",
+      "bytes": 22881,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "staging/dev-review-policy.json",
+      "bytes": 581,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "tests/snapshot.test.mjs",
+      "bytes": 1235,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "tsconfig.json",
+      "bytes": 398,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "vite.config.ts",
+      "bytes": 179,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    },
+    {
+      "path": "vitest.config.ts",
+      "bytes": 210,
+      "classification": "B",
+      "basis": "current maintenance, instructions or validation"
+    }
+  ],
+  "scope": "All managed repository files; excludes .git, node_modules, dist and ignored verification outputs. This inventory excludes its own bytes to avoid recursive size changes."
+}
