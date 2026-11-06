@@ -19,6 +19,22 @@ export function appendDirection(
 ): string {
   return next === "5" || previous === next ? command : command + next;
 }
+export function getMotionCandidates(
+  inputs: MoveInput[],
+  prefix: string,
+): string[] {
+  return [
+    ...new Set(
+      inputs.flatMap((input) =>
+        input.type === "special" &&
+        isQuestionInput(input) &&
+        input.motion.startsWith(prefix)
+          ? [input.motion]
+          : [],
+      ),
+    ),
+  ];
+}
 export function directionAt(x: number, y: number, size: number): Direction {
   const dx = x - size / 2,
     dy = y - size / 2;

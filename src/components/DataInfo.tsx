@@ -32,6 +32,35 @@ export function DataInfo({ dataset }: { dataset: Dataset }) {
             {s.verification === "verified" ? "検証済み" : "未検証"}
           </p>
         ))}
+        <h2>操作アイコン</h2>
+        <p>
+          <a
+            href="https://game-icons.net/1x1/lorc/punch.html"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Punch
+          </a>
+          ・
+          <a
+            href="https://game-icons.net/1x1/lorc/barefoot.html"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Barefoot
+          </a>{" "}
+          by Lorc / Game-icons.net
+          <br />
+          <a
+            href="https://creativecommons.org/licenses/by/3.0/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            CC BY 3.0
+          </a>
+          <br />
+          表示用に縮小し、色付き円と合成。同時押しは2個を組み合わせています。
+        </p>
       </div>
     </details>
   );

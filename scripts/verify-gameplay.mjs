@@ -16,12 +16,37 @@ async function exercise(config) {
     if (!v) throw new Error(message);
   };
   const click = async (label) => {
+    const questionsBefore = document.querySelectorAll("ol.history li").length;
     const el = [...document.querySelectorAll("button")].find(
       (b) => (b.getAttribute("aria-label") || b.textContent.trim()) === label,
     );
     assert(el && !el.disabled, `Disabled/missing: ${label}`);
     el.click();
     await tick();
+    if (label === "質問する" && document.querySelector(".attack-buttons")) {
+      assert(
+        !document.querySelector(".input-preview [role=img]"),
+        "Asked input preview not cleared",
+      );
+      assert(
+        document.querySelector(".submit-row button[type=submit]").disabled,
+        "Ask button still enabled after submission",
+      );
+      const strip = document.querySelector(".command-strip [aria-label]");
+      if (strip)
+        assert(
+          strip.getAttribute("aria-label") === "未入力",
+          "Command not cleared after submission",
+        );
+      assert(
+        !document.querySelector(".motion-suggestions"),
+        "Suggestions not cleared after submission",
+      );
+      assert(
+        document.querySelectorAll("ol.history li").length >= questionsBefore,
+        "Clear removed history",
+      );
+    }
   };
   const count = () => document.querySelectorAll("ol.history li").length;
   const preview = () =>
@@ -59,10 +84,29 @@ async function exercise(config) {
     document.querySelectorAll(".attack-buttons button").length === 8,
     "Not eight attack buttons",
   );
+  const iconImages = [
+    ...document.querySelectorAll(".attack-buttons .attack-icon image"),
+  ];
+  assert(
+    iconImages.length === 10 && !document.querySelector(".attack-icon text"),
+    "Attack image replacement incomplete",
+  );
+  for (const href of new Set(iconImages.map((i) => i.getAttribute("href")))) {
+    const asset = await fetch(href);
+    assert(
+      asset.ok && (await asset.text()).includes("<svg"),
+      "Local attack SVG failed to load",
+    );
+  }
   assert(
     document.querySelector('[aria-label="弱P＋中P"]').disabled,
     "Normal OD enabled",
   );
+  if (config.target === "ken") {
+    await command("623");
+    await click("弱K＋中K");
+    assert(preview() === "623KK", "OD kick cannot be selected");
+  }
   await normal("5", "弱P");
   assert(preview() === "5LP", "Standing LP");
   await normal("5", "強P");
@@ -74,10 +118,33 @@ async function exercise(config) {
   await normal("2", config.target === "ken" ? "強K" : "中K");
   await click("質問する");
   assert(count() === 0, "Unknown consumed");
+  assert(
+    document.querySelector(".query-unknown")?.textContent === "不明",
+    "Unknown has no visible result",
+  );
   await click("発生のみ");
+  assert(
+    !document.querySelector(".query-unknown"),
+    "Stale unknown after mode switch",
+  );
+  await normal("2", config.target === "ken" ? "強K" : "中K");
   await click("質問する");
   assert(count() === 1, "Startup question missing");
+  const frameList = document.querySelector("ol.history .frames");
+  assert(
+    getComputedStyle(frameList).textAlign === "center",
+    "Frames not centered",
+  );
+  const valueBox = frameList.querySelector("dd").getBoundingClientRect();
+  const frameBox = frameList.getBoundingClientRect();
+  assert(
+    Math.abs(
+      valueBox.x + valueBox.width / 2 - (frameBox.x + frameBox.width / 2),
+    ) < 1,
+    "Startup frame not centered in history",
+  );
   await click("ノーマル");
+  await normal("2", config.target === "ken" ? "強K" : "中K");
   await click("質問する");
   assert(
     count() === 1 &&
@@ -85,8 +152,9 @@ async function exercise(config) {
     "Mode-switch duplicate",
   );
   assert(
-    document.querySelector("ol.history li").querySelectorAll("dd").length === 1,
-    "History re-evaluated",
+    document.querySelector("ol.history li").querySelectorAll("dd").length ===
+      4 && document.querySelector("ol.history li").textContent.includes("不明"),
+    "History did not switch to normal with unknown total",
   );
   if (config.mode === "startup") await click("発生のみ");
   await click("必殺技");
@@ -96,6 +164,38 @@ async function exercise(config) {
     ),
     "Motionless attack enabled",
   );
+  assert(
+    !document.querySelector(".motion-suggestions"),
+    "Suggestions shown before direction input",
+  );
+  for (const [prefix, completion] of [
+    ["2", "236"],
+    ["21", "214"],
+    ["6", "623"],
+  ]) {
+    await command(prefix);
+    const questionsBefore = count();
+    assert(
+      document.querySelector(".motion-suggestions"),
+      "Prefix suggestions missing",
+    );
+    await click(`コマンド ${completion}`);
+    assert(
+      document
+        .querySelector('.motion-suggestion[aria-pressed="true"]')
+        ?.getAttribute("aria-label") === `コマンド ${completion}`,
+      "Suggestion not selected",
+    );
+    assert(
+      count() === questionsBefore && !preview(),
+      "Suggestion submitted or selected attack",
+    );
+    await click("弱P");
+    assert(
+      preview() === `${completion}LP`,
+      "Suggestion did not complete motion",
+    );
+  }
   for (const m of ["236", "214", "623"]) {
     await command(m);
     assert(
@@ -119,6 +219,10 @@ async function exercise(config) {
   );
   await command("2366");
   assert(
+    !document.querySelector(".motion-suggestions"),
+    "Unmatched command has suggestions",
+  );
+  assert(
     [...document.querySelectorAll(".attack-buttons button")].every(
       (b) => b.disabled,
     ),
@@ -135,35 +239,56 @@ async function exercise(config) {
   assert(preview() === "236PP", "OD mapping");
   await click("質問する");
   assert(count() === 3, "236PP");
+  assert(
+    !document
+      .querySelector(".feedback")
+      .textContent.includes("フレームデータを取得しました"),
+    "Redundant success message",
+  );
   await command("623");
   await click("強P");
   await click("質問する");
   assert(count() === 4, "623HP");
-  await normal("5", "中P");
+  if (config.target === "ken") {
+    await command("623");
+    await click("弱K＋中K");
+  } else await normal("5", "中P");
   await click("質問する");
   assert(count() === 5, "Five questions");
+  if (config.target === "ken")
+    assert(
+      document.querySelector("ol.history li:last-child dd")?.textContent ===
+        "9",
+      "OD kick startup is not 9",
+    );
   const entries = [...document.querySelectorAll("ol.history li")];
   assert(
-    entries[0].querySelectorAll("dd").length === 1,
-    "First history changed",
+    entries[0].querySelectorAll("dd").length ===
+      (config.mode === "normal" ? 4 : 1),
+    "First history did not follow current mode",
   );
   assert(
-    entries
-      .slice(1)
-      .every(
-        (e) =>
-          e.querySelectorAll("dd").length === 0 ||
-          e.querySelectorAll("dd").length ===
-            (config.mode === "normal" ? 4 : 1),
-      ),
+    entries.every(
+      (e) =>
+        e.querySelectorAll("dd").length === 0 ||
+        e.querySelectorAll("dd").length === (config.mode === "normal" ? 4 : 1),
+    ),
     "History mode mismatch",
   );
   assert(
     [...document.querySelectorAll(".mode-toggle button")].every(
-      (b) => b.disabled,
+      (b) => !b.disabled,
     ),
-    "Answer mode enabled",
+    "Answer mode disabled",
   );
+  await click(config.mode === "normal" ? "発生のみ" : "ノーマル");
+  assert(
+    count() === 5 &&
+      entries[0].querySelectorAll("dd").length ===
+        (config.mode === "normal" ? 1 : 4),
+    "Answer history did not switch",
+  );
+  await click(config.mode === "normal" ? "ノーマル" : "発生のみ");
   const choice = config.correct
     ? config.target
     : config.target === "ken"
@@ -182,6 +307,14 @@ async function exercise(config) {
       (config.target === "ken" ? "ケン" : "マリーザ"),
     "Wrong target",
   );
+  await click(config.mode === "normal" ? "発生のみ" : "ノーマル");
+  assert(
+    count() === 5 &&
+      entries[0].querySelectorAll("dd").length ===
+        (config.mode === "normal" ? 1 : 4),
+    "Result history did not switch",
+  );
+  await click(config.mode === "normal" ? "ノーマル" : "発生のみ");
   document.querySelector(".data-info").open = true;
   await tick();
   assert(
@@ -189,6 +322,13 @@ async function exercise(config) {
       .querySelector(".info-content")
       .textContent.includes("CC-BY-SA-4.0"),
     "Attribution missing",
+  );
+  assert(
+    document.querySelector(".info-content").textContent.includes("Lorc") &&
+      document.querySelector(
+        ".info-content a[href='https://creativecommons.org/licenses/by/3.0/']",
+      ),
+    "Attack icon attribution missing",
   );
   document.querySelector(".data-info").open = false;
   assert(
@@ -201,7 +341,7 @@ async function exercise(config) {
     ...config,
     passed: true,
     questions: 5,
-    mixedModeHistory: true,
+    liveHistoryMode: true,
     unknownNotConsumed: true,
     fixture: false,
     history,
@@ -216,7 +356,7 @@ async function replay() {
       .click();
     await new Promise((r) => setTimeout(r, 30));
   };
-  await click("再プレイ・設定に戻る");
+  await click("再プレイ");
   if (document.querySelector("ol.history")) throw new Error("Replay history");
   await click("ゲーム開始");
   if (
@@ -244,6 +384,78 @@ async function pointerChecks() {
   lever.focus();
   return lever.getBoundingClientRect().toJSON();
 }
+async function earlyAnswer(config) {
+  const wait = () => new Promise((r) => setTimeout(r, 30));
+  const assert = (value, message) => {
+    if (!value) throw new Error(message);
+  };
+  const click = async (label) => {
+    const button = [...document.querySelectorAll("button")].find(
+      (b) => (b.getAttribute("aria-label") || b.textContent.trim()) === label,
+    );
+    assert(button && !button.disabled, `Early answer missing: ${label}`);
+    button.click();
+    await wait();
+  };
+  Math.random = () => (config.target === "ken" ? 0 : 0.999);
+  await click("ゲーム開始");
+  if (config.mode === "startup") await click("発生のみ");
+  for (const button of ["弱P", "中P"].slice(0, config.questions)) {
+    await click(button);
+    await click("質問する");
+  }
+  const history = document.querySelector("ol.history")?.innerHTML || "";
+  await click("回答へ進む");
+  assert(
+    !document.querySelector(".attack-buttons") &&
+      !document.querySelector(".result"),
+    "Early answer phase incorrect",
+  );
+  assert(
+    (document.querySelector("ol.history")?.innerHTML || "") === history,
+    "Early answer changed history",
+  );
+  assert(
+    document.querySelectorAll("ol.history li").length === config.questions,
+    "Early answer changed count",
+  );
+  assert(
+    [...document.querySelectorAll("button")].find(
+      (b) => b.textContent === "回答確定",
+    ).disabled,
+    "Answer enabled without choice",
+  );
+  const id = config.correct
+    ? config.target
+    : config.target === "ken"
+      ? "marisa"
+      : "ken";
+  document.querySelector(`input[name=answer][value=${id}]`).click();
+  await wait();
+  await click("回答確定");
+  assert(
+    document.querySelector(".verdict").textContent ===
+      (config.correct ? "正解！" : "不正解"),
+    "Early verdict mismatch",
+  );
+  assert(
+    document.querySelector(".result dd").textContent ===
+      (config.target === "ken" ? "ケン" : "マリーザ"),
+    "Early target changed",
+  );
+  assert(
+    document.documentElement.scrollWidth <=
+      document.documentElement.clientWidth,
+    "Early answer overflow",
+  );
+  await click("再プレイ");
+  await click("ゲーム開始");
+  assert(
+    !document.querySelector("ol.history li"),
+    "Early replay did not reset",
+  );
+  return { ...config, earlyAnswer: true, passed: true };
+}
 const results = [];
 const controlsOnly = process.argv.includes("--controls-only");
 const widths = controlsOnly
@@ -251,6 +463,30 @@ const widths = controlsOnly
   : process.argv.slice(2).length
     ? process.argv.slice(2).map(Number)
     : [1280, 768, 390, 320];
+if (!controlsOnly)
+  for (const config of [
+    {
+      width: widths[0],
+      mode: "normal",
+      questions: 0,
+      target: "ken",
+      correct: true,
+    },
+    {
+      width: widths.at(-1),
+      mode: "startup",
+      questions: 2,
+      target: "marisa",
+      correct: false,
+    },
+  ]) {
+    run("open", "http://127.0.0.1:4173/");
+    run("set", "viewport", String(config.width), "1000");
+    results.push(evaluate(earlyAnswer, config));
+    console.log(
+      `${config.width} early answer (${config.questions} questions): passed`,
+    );
+  }
 for (const width of widths)
   for (const mode of ["normal", "startup"]) {
     const config = {
@@ -265,6 +501,13 @@ for (const width of widths)
     run("screenshot", `${out}/${width}-${mode}-history.png`, "--full");
     results.at(-1).replay = evaluate(replay);
     run("screenshot", `${out}/${width}-${mode}.png`, "--full");
+    evaluate(async () => {
+      document.querySelector(".command-strip button").click();
+      await new Promise((r) => setTimeout(r, 30));
+      document.querySelector('.lever-direction[aria-label="下"]').click();
+      await new Promise((r) => setTimeout(r, 30));
+    });
+    run("screenshot", `${out}/${width}-${mode}-candidates.png`, "--full");
     console.log(`${width} ${mode}: passed`);
   }
 await writeFile(

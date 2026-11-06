@@ -78,7 +78,9 @@ it.each(["normal", "startup"] as const)(
         ),
       ).toBe(false);
       expect(startGame(reviewDataset, mode).history).toEqual([]);
-      const html = renderToStaticMarkup(<History entries={game.history} />);
+      const html = renderToStaticMarkup(
+        <History entries={game.history} mode={mode} />,
+      );
       expect(html).toContain("未検証");
       expect(html.includes("全体F")).toBe(mode === "normal");
     }
@@ -124,6 +126,7 @@ it("separates audited-source absence, missing data, conditional values and OD pa
   const game = startGame(reviewDataset, "normal");
   const html = renderToStaticMarkup(
     <History
+      mode={game.mode}
       entries={[
         { input: move.input, result: unknownResult, mode: game.mode },
         { input: dash, result: conditional, mode: game.mode },

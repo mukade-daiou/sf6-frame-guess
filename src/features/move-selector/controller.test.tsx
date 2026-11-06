@@ -8,11 +8,81 @@ import {
   directionAt,
   isQuestionInput,
   selectAttack,
+  getMotionCandidates,
   type Direction,
 } from "./controller";
-import { DirectionIcon, MoveNotation } from "../../components/MoveNotation";
+import {
+  AttackIcon,
+  DirectionIcon,
+  MoveNotation,
+} from "../../components/MoveNotation";
+import punchIcon from "../../assets/attack-icons/punch.svg";
+import barefootIcon from "../../assets/attack-icons/barefoot.svg";
 import { MoveSelector } from "./MoveSelector";
 import { resolveMove } from "../../lib/frame-data/resolver";
+import { startGame, ask } from "../game/engine";
+
+it("suggests unique directional prefixes from all eligible inputs without fuzzy conversion", () => {
+  const inputs = [
+    ...production.inputs,
+    { type: "special", motion: "22", button: "P", strength: "OD" },
+    { type: "special", motion: "[4]6", button: "P", strength: "L" },
+    {
+      type: "special",
+      motion: "none",
+      button: "K",
+      strength: "none",
+      buttonCombination: "LK+MK",
+    },
+  ] as const;
+  const candidates = getMotionCandidates([...inputs], "2");
+  expect(candidates).toContain("236");
+  expect(candidates).toContain("214");
+  expect(candidates).toContain("22");
+  expect(candidates.length).toBe(new Set(candidates).size);
+  expect(getMotionCandidates([...inputs], "23")).toEqual(["236"]);
+  expect(getMotionCandidates([...inputs], "6")).toContain("623");
+  expect(getMotionCandidates([...inputs], "236")).toEqual(["236"]);
+  expect(getMotionCandidates([...inputs], "2366")).toEqual([]);
+  expect(getMotionCandidates([...inputs], "[4]")).toEqual([]);
+  expect(getMotionCandidates([...inputs], "none")).toEqual([]);
+});
+
+it("uses the licensed punch/barefoot assets for single attacks and both OD icons", () => {
+  for (const button of ["P", "K"] as const)
+    for (const strength of ["L", "M", "H", "OD"] as const) {
+      const html = renderToStaticMarkup(
+        <AttackIcon button={button} strength={strength} />,
+      );
+      expect(html.replaceAll("&#x27;", "'")).toContain(
+        button === "P" ? punchIcon : barefootIcon,
+      );
+      expect((html.match(/<image /g) || []).length).toBe(
+        strength === "OD" ? 2 : 1,
+      );
+      expect(html).not.toContain("<text");
+    }
+});
+
+it("adopts user-selected 9F for 623 OD kick without marking its source verified", () => {
+  const input = selectAttack(production.inputs, "special", "623", "K", "OD");
+  expect(input).toBeDefined();
+  expect(displayInput(input!)).toBe("623KK");
+  for (const mode of ["normal", "startup"] as const) {
+    const game = startGame(production, mode, 5, () => 0);
+    const next = ask(game, input);
+    expect(next.status).toBe("found");
+    expect(next.game.history).toHaveLength(1);
+    expect(next.game.history[0].result).toMatchObject({
+      frames: { startup: { display: "9", numeric: 9 } },
+    });
+    const move = game.target.moves.find(
+      (m) => inputKey(m.input) === inputKey(input!),
+    )!;
+    expect(move.source.verification).toBe("unverified");
+    expect(move.notes.some((n) => n.includes("9(19)"))).toBe(true);
+  }
+});
 
 it("maps eight fixed buttons and standing/crouching normals without simultaneous normals", () => {
   expect(attackButtons.map((b) => b.label)).toEqual([

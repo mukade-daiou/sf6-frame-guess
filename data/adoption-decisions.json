@@ -1,7 +1,18 @@
 {
-  "datasetId": "initial-2026-11-06",
+  "datasetId": "initial-2026-11-06-r2",
   "gameVersion": "UNVERIFIED",
   "label": "ケン・マリーザ 初期採用データ（パッチ未確認）",
+  "frameDecisions": [
+    {
+      "characterId": "ken",
+      "moveId": "ken__special_623_K_OD",
+      "field": "startup",
+      "sourceNotation": "9(19)",
+      "adoptedValue": 9,
+      "basis": "2026-11-06のユーザー指示により、括弧外の値をゲーム用代表値として採用。条件の解釈や公式・パッチ検証とは別の判断。",
+      "sourceVerification": "unverified"
+    }
+  ],
   "characters": [
     {
       "id": "ken",

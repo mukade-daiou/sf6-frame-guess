@@ -104,7 +104,10 @@ export function ask(
   };
 }
 export function changeMode(game: Game, mode: Mode): Game {
-  return game.phase === "question" ? { ...game, mode } : game;
+  return { ...game, mode };
+}
+export function requestAnswer(game: Game): Game {
+  return game.phase === "question" ? { ...game, phase: "answer" } : game;
 }
 export function answer(game: Game, selectedId: string): Game {
   if (

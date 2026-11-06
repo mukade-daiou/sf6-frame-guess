@@ -4,13 +4,41 @@ import beta from "../../data/fixtures/characters/fixture-2.json";
 import metadata from "../../data/fixtures/metadata.json";
 import { validateDataset } from "../../lib/frame-data/loader";
 import { inputKey } from "../../lib/frame-data/input";
-import { answer, ask, isCorrect, startGame, changeMode } from "./engine";
+import {
+  answer,
+  ask,
+  isCorrect,
+  startGame,
+  changeMode,
+  requestAnswer,
+} from "./engine";
 
 const dataset = () =>
   validateDataset(metadata, {
     alpha: structuredClone(alpha),
     beta: structuredClone(beta),
   });
+it.each([0, 2, 4])(
+  "allows an early final answer after %i questions without changing the count or target",
+  (count) => {
+    let game = startGame(dataset(), "normal", 5, () => 0);
+    for (const input of game.inputs.slice(0, count))
+      game = ask(game, input).game;
+    expect(game.history).toHaveLength(count);
+    const ended = requestAnswer(game);
+    expect(ended.phase).toBe("answer");
+    expect(ended.history).toBe(game.history);
+    expect(ended.target).toBe(game.target);
+    expect(ended.mode).toBe(game.mode);
+    expect(ask(ended, game.inputs[count]).status).toBe("closed");
+    expect(requestAnswer(ended)).toBe(ended);
+    const result = answer(ended, ended.target.id);
+    expect(isCorrect(result)).toBe(true);
+    expect(result.history).toHaveLength(count);
+    expect(isCorrect(answer(ended, beta.id))).toBe(false);
+    expect(requestAnswer(result)).toBe(result);
+  },
+);
 it("consumes found/absent questions, prevents duplicates, enters answer after five, checks answer, replays", () => {
   const data = dataset();
   let game = startGame(data, "normal", 5, () => 0);
@@ -90,5 +118,14 @@ it("keeps the target, count and immutable question-time mode/results while switc
   expect(JSON.stringify(game.history)).toBe(saved);
   game = ask(game, game.inputs[1]).game;
   expect(game.history.map((h) => h.mode)).toEqual(["startup", "normal"]);
-  expect(changeMode(game, "startup")).toBe(game);
+  const changedAnswer = changeMode(game, "startup");
+  expect(changedAnswer.phase).toBe("answer");
+  expect(changedAnswer.history).toBe(game.history);
+  expect(changedAnswer.mode).toBe("startup");
+  const result = answer(changedAnswer, changedAnswer.target.id);
+  const changedResult = changeMode(result, "normal");
+  expect(changedResult.phase).toBe("result");
+  expect(changedResult.selectedId).toBe(result.selectedId);
+  expect(changedResult.history).toBe(result.history);
+  expect(changedResult.mode).toBe("normal");
 });

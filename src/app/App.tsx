@@ -12,6 +12,7 @@ import {
   isCorrect,
   startGame,
   changeMode,
+  requestAnswer,
   type Game,
 } from "../features/game/engine";
 import { MoveSelector } from "../features/move-selector/MoveSelector";
@@ -50,10 +51,9 @@ export default function App() {
       {
         review:
           "未検証データの確認結果です。検証用として質問を1回記録しました。",
-        found: "フレームデータを取得しました。履歴で確認できます。",
-        not_found: "採用データ内に該当する技なし。質問を1回消費しました。",
-        unknown:
-          "必要な値が不明、技が保留中、またはデータ未収録です。質問は消費しません。",
+        found: "",
+        not_found: "",
+        unknown: "",
         ambiguous: "同じ入力に複数候補があります。質問は消費しません。",
         duplicate: "質問済みの入力です。履歴を確認してください。",
         invalid: "無効な入力です。",
@@ -61,17 +61,16 @@ export default function App() {
         closed: "質問は終了しました。",
       }[next.status],
     );
+    return next.status;
   }
   return (
     <main>
       <header>
         <DataInfo dataset={dataset} />
-        <p className="eyebrow">FRAME DATA / GUESS THE CHARACTER</p>
         <h1>
           SF6 Frame Data
           <br className="mobile-break" /> Guessing Game
         </h1>
-        <p>フレームデータを手がかりに、隠されたキャラクターを推理。</p>
       </header>
       {(review || fixture) && (
         <aside className="notice">
@@ -100,8 +99,8 @@ export default function App() {
         <section className="panel">
           <h2>ゲームを始める</h2>
           <p>
-            共通コマンドで{limit}
-            回質問した後、キャラクターを1体選んで回答します。技が存在しないこともヒントになります。
+            最大{limit}
+            回質問して、キャラクターを1体選んで回答します。分かった時点で、途中でも回答できます。
           </p>
           <details className="development-options">
             <summary>動作確認用データ</summary>
@@ -178,7 +177,6 @@ export default function App() {
                       key={m}
                       type="button"
                       aria-pressed={game.mode === m}
-                      disabled={game.phase !== "question"}
                       onClick={() => {
                         setGame(changeMode(game, m));
                         setMessage("");
@@ -194,7 +192,15 @@ export default function App() {
               </div>
             </div>
             {game.phase === "question" && (
-              <MoveSelector inputs={game.inputs} onAsk={question} />
+              <MoveSelector
+                inputs={game.inputs}
+                onAsk={question}
+                mode={game.mode}
+                onAnswer={() => {
+                  setGame(requestAnswer(game));
+                  setMessage("");
+                }}
+              />
             )}
             {game.phase === "answer" && (
               <>
@@ -250,7 +256,7 @@ export default function App() {
                     setMessage("");
                   }}
                 >
-                  再プレイ・設定に戻る
+                  再プレイ
                 </button>
               </>
             )}
@@ -258,7 +264,7 @@ export default function App() {
               {message}
             </p>
           </section>
-          <History entries={game.history} />
+          <History entries={game.history} mode={game.mode} />
         </>
       )}
     </main>

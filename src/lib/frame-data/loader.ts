@@ -6,7 +6,6 @@ import {
   type MoveInput,
 } from "./schema";
 import { inputKey } from "./input";
-import { resolveMove } from "./resolver";
 import { isQuestionInput } from "./input";
 import { hasCompleteScope, isMoveUsable } from "./adoption";
 
@@ -78,14 +77,10 @@ export function validateDataset(
     ...new Map(
       eligible.flatMap((c) =>
         c.moves
-          .filter((m) => m.variant.kind === "base")
+          .filter((m) => m.variant.kind === "base" && isMoveUsable(c, m))
           .map((m) => [inputKey(m.input), m.input] as const),
       ),
     ).values(),
-  ].filter(
-    (input) =>
-      isQuestionInput(input) &&
-      eligible.some((c) => resolveMove(c, input, "startup").status === "found"),
-  );
+  ].filter(isQuestionInput);
   return { metadata, characters, eligible, inputs, errors };
 }

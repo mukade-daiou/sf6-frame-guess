@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
-import type { MoveInput } from "../../lib/frame-data/schema";
+import type { Mode, MoveInput } from "../../lib/frame-data/schema";
+import type { ask } from "../game/engine";
 import {
   AttackIcon,
   CommandNotation,
@@ -10,28 +11,28 @@ import {
   attackButtons,
   appendDirection,
   selectAttack,
+  getMotionCandidates,
   type Direction,
 } from "./controller";
 export function MoveSelector({
   inputs,
   onAsk,
+  mode = "normal",
+  onAnswer,
 }: {
   inputs: MoveInput[];
-  onAsk: (input: MoveInput) => void;
+  onAsk: (input: MoveInput) => ReturnType<typeof ask>["status"] | void;
+  mode?: Mode;
+  onAnswer?: () => void;
 }) {
   const [type, setType] = useState<"normal" | "special">("normal");
   const [direction, setDirection] = useState<"5" | "2">("5");
   const [command, setCommand] = useState("");
   const previous = useRef<Direction>("5");
   const [selected, setSelected] = useState<MoveInput>();
-  const motions = inputs
-    .filter(
-      (i) =>
-        i.type === "special" &&
-        i.motion !== "none" &&
-        /^[12346789]+$/.test(i.motion),
-    )
-    .map((i) => (i.type === "special" ? i.motion : ""));
+  const [unknownMode, setUnknownMode] = useState<Mode | null>(null);
+  const motions = getMotionCandidates(inputs, "");
+  const suggestions = command ? getMotionCandidates(inputs, command) : [];
   const commandStatus = !command
     ? "未入力"
     : motions.includes(command)
@@ -40,6 +41,7 @@ export function MoveSelector({
         ? "入力途中"
         : "候補不一致・未対応";
   function clear() {
+    setUnknownMode(null);
     setCommand("");
     previous.current = "5";
     setSelected(undefined);
@@ -48,7 +50,11 @@ export function MoveSelector({
     <form
       onSubmit={(e) => {
         e.preventDefault();
-        if (selected) onAsk(selected);
+        if (selected) {
+          const status = onAsk(selected);
+          clear();
+          setUnknownMode(status === "unknown" ? mode : null);
+        }
       }}
     >
       <div className="segments type-toggle" role="group" aria-label="技の種類">
@@ -76,6 +82,7 @@ export function MoveSelector({
             onDirection={(d) => {
               if (type === "normal") {
                 if (d === "2" || d === "5") {
+                  setUnknownMode(null);
                   setDirection(d);
                   setSelected(undefined);
                 }
@@ -83,20 +90,50 @@ export function MoveSelector({
                 const before = previous.current;
                 setCommand((c) => appendDirection(c, before, d));
                 previous.current = d;
-                if (d !== "5") setSelected(undefined);
+                if (d !== "5") {
+                  setSelected(undefined);
+                  setUnknownMode(null);
+                }
               }
             }}
           />
           {type === "special" && (
-            <div className="command-strip">
-              <div>
-                <CommandNotation command={command} />
-                <small role="status">{commandStatus}</small>
+            <>
+              <div className="command-strip">
+                <div>
+                  <CommandNotation command={command} />
+                  <small role="status">{commandStatus}</small>
+                </div>
+                <button type="button" className="quiet-button" onClick={clear}>
+                  クリア
+                </button>
               </div>
-              <button type="button" className="quiet-button" onClick={clear}>
-                クリア
-              </button>
-            </div>
+              {suggestions.length > 0 && (
+                <div
+                  className="motion-suggestions"
+                  role="group"
+                  aria-label="コマンド候補"
+                >
+                  {suggestions.map((motion) => (
+                    <button
+                      type="button"
+                      className="motion-suggestion"
+                      key={motion}
+                      aria-label={`コマンド ${motion}`}
+                      aria-pressed={command === motion}
+                      onClick={() => {
+                        setCommand(motion);
+                        previous.current = "5";
+                        setSelected(undefined);
+                        setUnknownMode(null);
+                      }}
+                    >
+                      <CommandNotation command={motion} />
+                    </button>
+                  ))}
+                </div>
+              )}
+            </>
           )}
         </div>
         <div className="attack-buttons" role="group" aria-label="攻撃ボタン">
@@ -120,7 +157,10 @@ export function MoveSelector({
                   selected.strength === a.strength
                 }
                 disabled={!input}
-                onClick={() => setSelected(input)}
+                onClick={() => {
+                  setSelected(input);
+                  setUnknownMode(null);
+                }}
               >
                 <AttackIcon button={a.button} strength={a.strength} />
                 <span>{a.label}</span>
@@ -133,13 +173,28 @@ export function MoveSelector({
         <output className="input-preview" aria-live="polite">
           {selected ? (
             <MoveNotation input={selected} />
+          ) : unknownMode === mode ? (
+            <span className="query-unknown" role="status">
+              不明
+            </span>
           ) : (
             "レバーとボタンで技を選択"
           )}
         </output>
-        <button disabled={!selected} type="submit">
-          質問する
-        </button>
+        <div className="question-actions">
+          {onAnswer && (
+            <button
+              type="button"
+              className="secondary-button"
+              onClick={onAnswer}
+            >
+              回答へ進む
+            </button>
+          )}
+          <button disabled={!selected} type="submit">
+            質問する
+          </button>
+        </div>
       </div>
     </form>
   );

@@ -1,6 +1,8 @@
 import type { MoveInput } from "../lib/frame-data/schema";
 import { displayInput } from "../lib/frame-data/input";
 import type { Direction } from "../features/move-selector/controller";
+import punchIcon from "../assets/attack-icons/punch.svg";
+import barefootIcon from "../assets/attack-icons/barefoot.svg";
 export const directionNames: Record<Direction, string> = {
   "1": "左下",
   "2": "下",
@@ -59,9 +61,13 @@ export function AttackIcon({
       aria-hidden="true"
     >
       <circle cx="16" cy="16" r="14" />
-      <text x="16" y="21" textAnchor="middle">
-        {button}
-      </text>
+      <image
+        href={button === "P" ? punchIcon : barefootIcon}
+        x="6"
+        y="6"
+        width="20"
+        height="20"
+      />
     </svg>
   );
 }

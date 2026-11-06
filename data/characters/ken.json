@@ -1697,8 +1697,9 @@
       },
       "frames": {
         "startup": {
-          "status": "unknown",
-          "display": null
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
         },
         "total": {
           "status": "confirmed",
@@ -1720,6 +1721,7 @@
       },
       "notes": [
         "upstreamInput: 623KK",
+        "User adoption 2026-11-06: original startup=9(19); adopt the outside-parentheses value 9 for this personal game's startup, by explicit user instruction. Source condition interpretation and patch remain unverified; this is not official verification.",
         "upstreamName: Dragonlash Kick",
         "upstreamNotes: Can dodge lows until frame 32; initial active frames 2(7)1 only hit airborne opponents for an OTG bounce and side switch; next 3 active frames only hit standing opponents; 3f better hit/block advantage vs. crouching opponents (allows link into 2LP); cannot hit cross-up",
         "upstreamActive: 2(7)6",

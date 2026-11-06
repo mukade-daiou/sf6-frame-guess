@@ -42,17 +42,17 @@ body {
 }
 main {
   width: min(100% - 32px, var(--page-max-width));
-  margin: 32px auto;
+  margin: 24px auto;
 }
 header {
-  padding: 32px 0;
+  padding: 8px 0;
   position: relative;
 }
 h1 {
   font-size: 1.5rem;
   line-height: 1.5;
   font-weight: 500;
-  margin: 8px 0 16px;
+  margin: 4px 0 8px;
   text-wrap: balance;
 }
 h2 {
@@ -77,7 +77,7 @@ p {
   border: 1px solid var(--color-warm-mist);
   border-radius: var(--radius-cards);
   padding: var(--card-padding);
-  margin: var(--section-gap) 0;
+  margin: 16px 0;
   background: var(--color-soft-paper);
 }
 .panel {
@@ -194,7 +194,20 @@ select {
   justify-content: space-between;
   gap: 16px;
   align-items: center;
-  margin: 32px 0 12px;
+  margin: 20px 0 4px;
+}
+.question-actions {
+  display: flex;
+  gap: 8px;
+}
+.secondary-button {
+  background: transparent;
+  color: var(--color-ink);
+  border-color: var(--color-warm-mist);
+}
+.secondary-button:hover:enabled {
+  background: var(--color-parchment);
+  border-color: var(--color-ink);
 }
 .command,
 code {
@@ -218,6 +231,16 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 8px;
+  align-items: center;
+}
+.game-heading h2 {
+  margin: 0;
+}
+.game-heading > div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 .game-heading span {
   font-size: var(--text-body-sm);
@@ -239,7 +262,7 @@ footer {
 }
 .history li {
   border-top: 1px solid var(--color-warm-mist);
-  padding: 16px 0;
+  padding: 12px 0;
 }
 .history li:last-child {
   padding-bottom: 0;
@@ -249,6 +272,16 @@ footer {
   grid-template-columns: repeat(4, 1fr);
   gap: 12px;
   margin: 0;
+  text-align: center;
+}
+.frames.frames-startup {
+  grid-template-columns: 1fr;
+}
+.query-unknown {
+  display: inline-block;
+  margin-left: 12px;
+  font-size: 14px;
+  color: var(--color-graphite);
 }
 dt {
   font-size: var(--text-body-sm);
@@ -309,15 +342,16 @@ summary {
 }
 .remaining {
   text-align: right;
+  margin: 0;
 }
 .type-toggle {
-  margin: 12px 0 24px;
+  margin: 8px 0 12px;
 }
 .arcade-controls {
   display: flex;
   align-items: flex-start;
-  gap: 48px;
-  padding: 16px 0;
+  gap: 32px;
+  padding: 8px 0;
   justify-content: center;
 }
 .lever-column {
@@ -384,6 +418,7 @@ summary {
 .lever-help {
   text-align: center;
   font-size: 12px;
+  margin: 8px 0;
 }
 .command-strip {
   display: flex;
@@ -391,10 +426,35 @@ summary {
   gap: 8px;
   justify-content: space-between;
   border-top: 1px solid var(--color-warm-mist);
-  padding-top: 12px;
+  padding-top: 8px;
 }
 .command-strip > div {
   min-width: 0;
+}
+.motion-suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+.motion-suggestion {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 8px;
+  min-height: 44px;
+  border: 1px solid var(--color-warm-mist);
+  border-radius: 12px;
+  background: var(--color-parchment);
+  color: var(--color-ink);
+}
+.motion-suggestion:hover:enabled {
+  background: var(--color-soft-paper);
+  border-color: var(--color-deep-teal);
+}
+.motion-suggestion[aria-pressed="true"] {
+  border-color: var(--color-deep-teal);
+  color: var(--color-deep-teal);
 }
 .command-directions {
   display: inline-flex;
@@ -424,7 +484,7 @@ summary {
 .attack-buttons {
   display: grid;
   grid-template-columns: repeat(3, 64px) 76px;
-  gap: 20px 12px;
+  gap: 16px 12px;
   padding-top: 4px;
 }
 .attack-button {
@@ -482,10 +542,6 @@ summary {
   stroke: var(--color-ink);
   stroke-width: 1.5;
 }
-.attack-icon text {
-  fill: var(--color-ink);
-  font: 500 15px system-ui;
-}
 .button-pair {
   display: inline-flex;
   align-items: center;
@@ -517,6 +573,7 @@ summary {
   align-items: center;
   gap: 12px;
   flex-wrap: wrap;
+  margin-bottom: 8px;
 }
 .history-mode {
   font-size: 12px;
@@ -557,7 +614,7 @@ summary {
   .arcade-controls {
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    gap: 20px;
   }
   .attack-buttons {
     grid-template-columns: repeat(3, 52px) 64px;
@@ -573,7 +630,10 @@ summary {
   .submit-row {
     align-items: stretch;
     flex-direction: column;
-    gap: 16px;
+    gap: 12px;
+  }
+  .question-actions button {
+    flex: 1;
   }
   .game-heading {
     align-items: flex-start;
@@ -585,7 +645,7 @@ summary {
     width: calc(100% - 24px);
   }
   header {
-    padding: 16px 0;
+    padding: 8px 0;
   }
   .selector-grid {
     gap: 8px;
