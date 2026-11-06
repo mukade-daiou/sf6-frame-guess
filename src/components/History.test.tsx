@@ -17,6 +17,7 @@ it("switches all historical rows to the current mode, including unknown saved fi
   const history = game.history;
   const render = () =>
     renderToStaticMarkup(<History entries={game.history} mode={game.mode} />);
+  expect(render()).not.toContain("history-mode");
   expect((render().match(/<dd>/g) || []).length).toBe(1);
   game = changeMode(game, "normal");
   expect(game.history).toBe(history);

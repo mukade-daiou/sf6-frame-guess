@@ -13,6 +13,7 @@ import {
   startGame,
   changeMode,
   requestAnswer,
+  returnToQuestions,
   type Game,
 } from "../features/game/engine";
 import { MoveSelector } from "../features/move-selector/MoveSelector";
@@ -204,7 +205,20 @@ export default function App() {
             )}
             {game.phase === "answer" && (
               <>
-                <p>質問は終了です。隠されたキャラクターを選んでください。</p>
+                <p>隠されたキャラクターを選んでください。</p>
+                {game.history.length < game.limit && (
+                  <button
+                    type="button"
+                    className="secondary-button"
+                    onClick={() => {
+                      setGame(returnToQuestions(game));
+                      setSelection("");
+                      setMessage("");
+                    }}
+                  >
+                    質問に戻る
+                  </button>
+                )}
                 <form
                   onSubmit={(e) => {
                     e.preventDefault();

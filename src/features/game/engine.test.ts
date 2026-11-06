@@ -11,6 +11,7 @@ import {
   startGame,
   changeMode,
   requestAnswer,
+  returnToQuestions,
 } from "./engine";
 
 const dataset = () =>
@@ -32,11 +33,26 @@ it.each([0, 2, 4])(
     expect(ended.mode).toBe(game.mode);
     expect(ask(ended, game.inputs[count]).status).toBe("closed");
     expect(requestAnswer(ended)).toBe(ended);
+    const resumed = returnToQuestions(ended);
+    expect(resumed.phase).toBe("question");
+    expect(resumed.history).toBe(game.history);
+    expect(resumed.target).toBe(game.target);
+    expect(resumed.mode).toBe(game.mode);
+    if (count) expect(ask(resumed, game.inputs[0]).status).toBe("duplicate");
+    let completed = resumed;
+    for (const input of game.inputs) {
+      if (completed.phase !== "question") break;
+      completed = ask(completed, input).game;
+    }
+    expect(completed.history).toHaveLength(5);
+    expect(completed.phase).toBe("answer");
+    expect(returnToQuestions(completed)).toBe(completed);
     const result = answer(ended, ended.target.id);
     expect(isCorrect(result)).toBe(true);
     expect(result.history).toHaveLength(count);
     expect(isCorrect(answer(ended, beta.id))).toBe(false);
     expect(requestAnswer(result)).toBe(result);
+    expect(returnToQuestions(result)).toBe(result);
   },
 );
 it("consumes found/absent questions, prevents duplicates, enters answer after five, checks answer, replays", () => {

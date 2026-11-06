@@ -420,6 +420,35 @@ async function earlyAnswer(config) {
     "Early answer changed count",
   );
   assert(
+    !document.querySelector(".history-mode"),
+    "History mode label remains",
+  );
+  await click("質問に戻る");
+  assert(
+    (document.querySelector("ol.history")?.innerHTML || "") === history,
+    "Returning changed history",
+  );
+  assert(
+    document.querySelectorAll("ol.history li").length === config.questions,
+    "Returning changed question count",
+  );
+  for (const button of ["弱P", "中P", "強P", "弱K", "中K"].slice(
+    config.questions,
+  )) {
+    await click(button);
+    await click("質問する");
+  }
+  assert(
+    document.querySelectorAll("ol.history li").length === 5,
+    "Did not reach five questions after returning",
+  );
+  assert(
+    ![...document.querySelectorAll("button")].some(
+      (b) => b.textContent.trim() === "質問に戻る",
+    ),
+    "Return available after five questions",
+  );
+  assert(
     [...document.querySelectorAll("button")].find(
       (b) => b.textContent === "回答確定",
     ).disabled,
@@ -433,6 +462,12 @@ async function earlyAnswer(config) {
   document.querySelector(`input[name=answer][value=${id}]`).click();
   await wait();
   await click("回答確定");
+  assert(
+    ![...document.querySelectorAll("button")].some(
+      (b) => b.textContent.trim() === "質問に戻る",
+    ),
+    "Return available after answer",
+  );
   assert(
     document.querySelector(".verdict").textContent ===
       (config.correct ? "正解！" : "不正解"),

@@ -109,6 +109,11 @@ export function changeMode(game: Game, mode: Mode): Game {
 export function requestAnswer(game: Game): Game {
   return game.phase === "question" ? { ...game, phase: "answer" } : game;
 }
+export function returnToQuestions(game: Game): Game {
+  return game.phase === "answer" && game.history.length < game.limit
+    ? { ...game, phase: "question", selectedId: null }
+    : game;
+}
 export function answer(game: Game, selectedId: string): Game {
   if (
     game.phase !== "answer" ||

@@ -28,9 +28,6 @@ export function History({
                 <h3>
                   <span className="muted">{index + 1}.</span>{" "}
                   <MoveNotation input={entry.input} />
-                  <span className="history-mode">
-                    {mode === "normal" ? "ノーマル" : "発生のみ"}
-                  </span>
                 </h3>
                 {entry.result.status === "review" && (
                   <p>{entry.result.reason}</p>
