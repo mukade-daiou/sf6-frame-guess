@@ -1,7 +1,7 @@
 # SF6 Frame Data Guessing Game
 
 共通コマンドのフレームデータからキャラクターを推理する、バックエンド不要のReactアプリです。
-**ケン・マリーザの2体を通常ゲームで遊べます。原典対応を基準に採用した個人用データで、公式検証・対象パッチは未確認です。** 付属の3体のFixtureは別の架空データです。
+**32キャラを通常ゲームで遊べます。原典対応を基準に採用した個人用データで、公式検証・対象パッチは未確認です。** 付属の3体のFixtureは別の架空データです。
 
 Node.js 24とnpmを使用します。
 
@@ -10,7 +10,7 @@ npm ci
 npm run dev
 ```
 
-起動後、そのまま「ゲーム開始」を押すとケン・マリーザで遊べます。架空Fixtureの選択は不要です。
+起動後、そのまま「ゲーム開始」を押すと32キャラから抽選します。架空Fixtureの選択は不要です。
 
 `npm run dev`には過去の候補を調べる開発専用モードも残しています。通常ゲームは`data/characters/`の採用データを使います。[第10段階報告](archive/docs/FRAME_DATA_STAGE10_REPORT.md)を参照してください。不明値は質問を消費せず、根拠のある確定範囲は1回消費します。初期データは明示的な更新指示まで固定します。
 
@@ -46,7 +46,7 @@ VITE_BASE_PATH=/your-repository/ npm run preview
 
 ## 構成とデータ管理
 
-`src/`はゲーム本体、`data/`は固定スナップショットと採用判断、`staging/candidates/`は32体860候補、`staging/adoption-inputs/`は現在の採用入力です。通常の操作では採用済み63技を編集しません。
+`src/`はゲーム本体、`data/`は固定スナップショットと採用判断、`staging/candidates/`は元の32体860候補、`staging/adoption-inputs/`は現在の採用入力です。本番は884レコード（採用861・保留23）を保持し、通常の操作では編集しません。[採用ルール](docs/ADOPTION_RULES.md)と[統合報告](docs/CHARACTER_INTEGRATION_REPORT.md)を参照してください。
 
 [データ追加・更新手順](docs/DATA_WORKFLOW.md)、[整理結果](docs/PROJECT_CLEANUP_REPORT.md)、[過去資料の索引](archive/README.md)を参照してください。過去の段階別コード・証拠はarchiveに保存しています。
 

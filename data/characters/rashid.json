@@ -1,0 +1,1631 @@
+{
+  "adoption": {
+    "status": "accepted",
+    "basis": "保存済み原典全行を候補・過去の除外判断へ対応付け。未確定の地上入力はheld-source-input規則で保留登録。"
+  },
+  "id": "rashid",
+  "nameJa": "ラシード",
+  "nameEn": "Rashid",
+  "gameVersion": "UNVERIFIED",
+  "source": {
+    "url": "https://wiki.supercombo.gg/w/Street_Fighter_6",
+    "retrievedAt": "2026-08-19T04:05:24.993Z",
+    "gameVersion": "UNVERIFIED",
+    "kind": "community",
+    "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+    "license": "CC-BY-SA-4.0",
+    "verification": "unverified"
+  },
+  "coverage": {
+    "normal": {
+      "status": "complete",
+      "verification": "unverified"
+    },
+    "special": {
+      "status": "complete",
+      "verification": "unverified"
+    }
+  },
+  "moves": [
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "rashid__normal_2_K_H",
+      "name": "しゃがみ強K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "35",
+          "numeric": 35,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-11",
+          "numeric": -11
+        }
+      },
+      "notes": [
+        "upstreamInput: 2HK",
+        "upstreamName: Cyclone Slicer",
+        "upstreamNotes: Can be juggled into even without Drive Rush; 4f extra recovery on block; disadvantage on block is fixed regardless of which active frame connects (cannot make it safer when meaty)",
+        "upstreamActive: 3",
+        "upstreamRecovery: 24",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +31 as D; original onHit=31; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Rashid/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Rashid%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Rashid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "rashid__normal_2_K_L",
+      "name": "しゃがみ弱K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "15",
+          "numeric": 15,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        }
+      },
+      "notes": [
+        "upstreamInput: 2LK",
+        "upstreamName: Crouching Light Kick",
+        "upstreamNotes: Chains into 5LP/2LP/2LK",
+        "upstreamActive: 3",
+        "upstreamRecovery: 8"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Rashid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "rashid__normal_2_K_M",
+      "name": "しゃがみ中K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "27",
+          "numeric": 27,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-5",
+          "numeric": -5
+        }
+      },
+      "notes": [
+        "upstreamInput: 2MK",
+        "upstreamName: Crouching Medium Kick",
+        "upstreamNotes: Standard cancelable low poke; Range: 1.405; DR cancel is delayed until after active frames",
+        "upstreamActive: 3",
+        "upstreamRecovery: 18"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Rashid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "rashid__normal_2_P_H",
+      "name": "しゃがみ強P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "35",
+          "numeric": 35,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+5",
+          "numeric": 5
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
+        }
+      },
+      "notes": [
+        "upstreamInput: 2HP",
+        "upstreamName: Crouching Heavy Punch",
+        "upstreamNotes: Decent poke that is safe at most ranges and can be buffered into supers; good close range Punish Counter starter (combos into 5HP), but high pushback makes it less reliable at longer ranges; 2 extra recovery frames on whiff; topmost hurtboxes on frames 8-14 are projectile invincible (avoids Sagat's MP/HP Tiger Shot)",
+        "upstreamActive: 3",
+        "upstreamRecovery: 21"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Rashid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "rashid__normal_2_P_L",
+      "name": "しゃがみ弱P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+5",
+          "numeric": 5
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        }
+      },
+      "notes": [
+        "upstreamInput: 2LP",
+        "upstreamName: Crouching Light Punch",
+        "upstreamNotes: Chains into 5LP/2LP/2LK; DR cancel is delayed until after 2nd active frame; topmost hurtbox on frames 1-7 is vulnerable only to aerial strikes (preventing its use as an anti-air)",
+        "upstreamActive: 3",
+        "upstreamRecovery: 7"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Rashid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "rashid__normal_2_P_M",
+      "name": "しゃがみ中P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "22",
+          "numeric": 22,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        }
+      },
+      "notes": [
+        "upstreamInput: 2MP",
+        "upstreamName: Crouching Medium Punch",
+        "upstreamNotes: Combo and pressure tool with many active frames for easy oki; can anti-air on frames 7-9 but cannot hit opponents behind Rashid; whiffs on crouching opponents at longer ranges unless they extend a vertical hurtbox",
+        "upstreamActive: 4",
+        "upstreamRecovery: 13"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Rashid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "rashid__normal_5_K_H",
+      "name": "立ち強K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "13",
+          "numeric": 13
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "38",
+          "numeric": 38,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-5",
+          "numeric": -5
+        }
+      },
+      "notes": [
+        "upstreamInput: 5HK",
+        "upstreamName: Standing Heavy Kick",
+        "upstreamNotes: Puts airborne opponents into limited juggle state; Punish Counter launches grounded opponents into limited juggle state and causes airborne opponents to fall closer to Rashid; decent anti-air hitbox, but very slow and cannot hit cross-up; high pushback on hit and block; forces stand on hit; final 2 active frames whiff on crouching opponents unless they extend a vertical hurtbox; has an extended hurtbox 1f before active that is vulnerable to projectiles",
+        "upstreamActive: 8",
+        "upstreamRecovery: 18"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Rashid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "rashid__normal_5_K_L",
+      "name": "立ち弱K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "4",
+          "numeric": 4
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "16",
+          "numeric": 16,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        }
+      },
+      "notes": [
+        "upstreamInput: 5LK",
+        "upstreamName: Standing Light Kick",
+        "upstreamNotes: Highest hitstun light normal makes it useful for special cancels (the only light normal that can combo into 214LK naturally); DR cancel is delayed until after active frames",
+        "upstreamActive: 3",
+        "upstreamRecovery: 10"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Rashid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "rashid__normal_5_K_M",
+      "name": "立ち中K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "27",
+          "numeric": 27,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+6",
+          "numeric": 6
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: 5MK",
+        "upstreamName: Standing Medium Kick",
+        "upstreamNotes: Combo starter that links into 5MP or into itself on counter-hit; 2 extra recovery frames on whiff",
+        "upstreamActive: 3",
+        "upstreamRecovery: 17"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Rashid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "rashid__normal_5_P_H",
+      "name": "立ち強P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "32",
+          "numeric": 32,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
+        }
+      },
+      "notes": [
+        "upstreamInput: 5HP",
+        "upstreamName: Standing Heavy Punch",
+        "upstreamNotes: Decent mid-range button with a strong hitbox for counterpoking; can combo to 214HK after Drive Rush or Punish Counter; special/DR cancel is delayed until after 2nd active frame",
+        "upstreamActive: 3",
+        "upstreamRecovery: 21"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Rashid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "rashid__normal_5_P_L",
+      "name": "立ち弱P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "4",
+          "numeric": 4
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        }
+      },
+      "notes": [
+        "upstreamInput: 5LP",
+        "upstreamName: Standing Light Punch",
+        "upstreamNotes: Chains into 5LP/2LP/2LK",
+        "upstreamActive: 2",
+        "upstreamRecovery: 9"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Rashid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "rashid__normal_5_P_M",
+      "name": "立ち中P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "22",
+          "numeric": 22,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+5",
+          "numeric": 5
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        }
+      },
+      "notes": [
+        "upstreamInput: 5MP",
+        "upstreamName: Standing Medium Punch",
+        "upstreamNotes: Useful for starting combos and block pressure; has a Target Combo follow-up that can be canceled into 236LP for safety on block or into higher damage routes on hit",
+        "upstreamActive: 3",
+        "upstreamRecovery: 14"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Rashid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "rashid__special_214_K_H",
+      "name": "Eagle Spike",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "26",
+          "numeric": 26
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "65",
+          "numeric": 65,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+56",
+          "numeric": 56
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-36",
+          "numeric": -36
+        }
+      },
+      "notes": [
+        "upstreamInput: 214HK",
+        "upstreamName: Eagle Spike",
+        "upstreamNotes: Puts opponent into limited juggle state on hit; on block, bounces off opponent with extra recovery (frame advantage unaffected by which active frame connects); on hit, Rashid gets better KD Advantage on later active frames; opponent slides on the ground for great corner carry; can be affected by Air Current on frames 6-30",
+        "upstreamActive: 13",
+        "upstreamRecovery: 6",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Rashid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "rashid__special_214_K_L",
+      "name": "Eagle Spike",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "15",
+          "numeric": 15
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "58",
+          "numeric": 58,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+30",
+          "numeric": 30
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-36",
+          "numeric": -36
+        }
+      },
+      "notes": [
+        "upstreamInput: 214LK",
+        "upstreamName: Eagle Spike",
+        "upstreamNotes: Puts opponent into limited juggle state on hit (can lead to follow-up juggles if well spaced); on block, bounces off opponent with extra recovery (frame advantage unaffected by which active frame connects); on hit, Rashid gets better KD Advantage on later active frames; can be affected by Air Current on frames 4-14; SA3 cancel occurs on hit only, allowing it to be freely buffered for extra damage",
+        "upstreamActive: 13",
+        "upstreamRecovery: 11",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Rashid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "rashid__special_214_K_M",
+      "name": "Eagle Spike",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "21",
+          "numeric": 21
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "59",
+          "numeric": 59,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+52",
+          "numeric": 52
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-36",
+          "numeric": -36
+        }
+      },
+      "notes": [
+        "upstreamInput: 214MK",
+        "upstreamName: Eagle Spike",
+        "upstreamNotes: Puts opponent into limited juggle state on hit; on block, bounces off opponent with extra recovery (frame advantage unaffected by which active frame connects); on hit, Rashid gets better KD Advantage on later active frames; opponent slides on the ground for great corner carry; can be affected by Air Current on frames 6-27",
+        "upstreamActive: 13",
+        "upstreamRecovery: 5",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Rashid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "rashid__special_214_K_OD",
+      "name": "Eagle Spike",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "21",
+          "numeric": 21
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "59",
+          "numeric": 59,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+53",
+          "numeric": 53
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-36",
+          "numeric": -36
+        }
+      },
+      "notes": [
+        "upstreamInput: 214KK",
+        "upstreamName: Eagle Spike",
+        "upstreamNotes: Puts opponent into limited juggle state on hit and side switches if the opponent is not cornered; on block, bounces off opponent with extra recovery (frame advantage unaffected by which active frame connects); on hit, Rashid gets better KD Advantage on later active frames; can be affected by Air Current on frames 6-29",
+        "upstreamActive: 13",
+        "upstreamRecovery: 7",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Rashid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "rashid__special_214_P_H",
+      "name": "Arabian Cyclone",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "27",
+          "numeric": 27
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "69",
+          "numeric": 69,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        }
+      },
+      "notes": [
+        "upstreamInput: 214HP",
+        "upstreamName: Arabian Cyclone",
+        "upstreamNotes: Strike hitbox; spawns a tornado with 2 hits of projectile durability; first hit puts opponent into limited juggle state; the 2-hit tornado does not cause a knockdown on its own, and carries Counter-hit/Punish Counter advantage through both hits if it connects; cancelable into 4K Wing Stroke or 6K Rolling Assault on frames 33-34; high active frame count makes it great for oki; 29f recovery is total time after the tornado's 2nd hit occurs; 24f recovery is total time after tornado disappears; advantage when canceled into 6K Roll: KD+43/+1",
+        "upstreamActive: 3(1)15",
+        "upstreamRecovery: 29",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +40 as D; original onHit=40; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Rashid/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Rashid%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Rashid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "rashid__special_214_P_L",
+      "name": "Arabian Cyclone",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "15",
+          "numeric": 15
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "47",
+          "numeric": 47,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        }
+      },
+      "notes": [
+        "upstreamInput: 214LP",
+        "upstreamName: Arabian Cyclone",
+        "upstreamNotes: Strike hitbox; spawns a tornado with 1 hit of projectile durability; cancelable into 4K Wing Stroke or 6K Rolling Assault on frames 21-22; Counter-hit/Punish Counter bonus advantage applies to both hits; high active frame count makes it great for oki; 28f recovery is total time after the tornado spawns; 14f recovery is total time after tornado disappears; advantage when canceled into 6K Roll: -5/-13",
+        "upstreamActive: 3(1)15",
+        "upstreamRecovery: 28"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Rashid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "rashid__special_214_P_M",
+      "name": "Arabian Cyclone",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "20",
+          "numeric": 20
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "50",
+          "numeric": 50,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
+        }
+      },
+      "notes": [
+        "upstreamInput: 214MP",
+        "upstreamName: Arabian Cyclone",
+        "upstreamNotes: Strike hitbox; spawns a tornado with 1 hit of projectile durability; cancelable into 4K Wing Stroke or 6K Rolling Assault on frames 26-27; Counter-hit/Punish Counter bonus advantage applies to both hits; high active frame count makes it great for oki; in the corner, Rashid can consistently link 5LK on hit; 26f recovery is total time after the tornado spawns; 12f recovery is total time after tornado disappears; safe against Drive Reversal if the opponent blocks the 2nd hit; advantage when canceled into 6K Roll: -5/-13",
+        "upstreamActive: 3(1)15",
+        "upstreamRecovery: 26"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Rashid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "rashid__special_214_P_OD",
+      "name": "Arabian Cyclone",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "20",
+          "numeric": 20
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "49",
+          "numeric": 49,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-10",
+          "numeric": -10
+        }
+      },
+      "notes": [
+        "upstreamInput: 214PP",
+        "upstreamName: Arabian Cyclone",
+        "upstreamNotes: Strike hitbox (making it vulnerable to opponent's wakeup SA1); spawns a tornado with 1 hit of OD projectile durability; first hit puts opponent into limited juggle state; the tornado does not cause a knockdown on its own; cancelable into 4K Wing Stroke or 6K Rolling Assault on frames 26-27; creates an Air Current on frame 53 (after the first tornado dissipates) that lasts 60f and enhances many of Rashid's moves; 4f extra recovery on block; the listed recovery time begins after the tornado's first active frame (Rashid recovers before the tornado disappears); can be spaced for significant block advantage (very precise); advantage when canceled into 6K Roll: KD+39/-16",
+        "upstreamActive: 3(1)29",
+        "upstreamRecovery: 25",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +49 as D; original onHit=49; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Rashid/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Rashid%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Rashid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "rashid__special_236_K_none",
+      "name": "Whirlwind Shot",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "none"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "11",
+          "numeric": 11
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "52",
+          "numeric": 52,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-9",
+          "numeric": -9
+        }
+      },
+      "notes": [
+        "upstreamInput: 236K",
+        "upstreamName: Whirlwind Shot",
+        "upstreamNotes: 1-hit projectile that travels forward before arcing upward; can hold button to charge for a powered-up version; trajectory depends on button strength (LK = farthest/horizontal, MK = middle, HK = shortest/vertical); projectile comes out in 6f if button is released from frames 11-27 (total startup 17-33f); cannot use if SA2 is active",
+        "upstreamActive: -",
+        "upstreamRecovery: 35"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Rashid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "rashid__special_236_K_OD",
+      "name": "Whirlwind Shot",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "17",
+          "numeric": 17
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "52",
+          "numeric": 52,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        }
+      },
+      "notes": [
+        "upstreamInput: 236KK",
+        "upstreamName: Whirlwind Shot",
+        "upstreamNotes: 2-hit OD projectile; 2nd hit puts opponent into limited juggle state on hit; travels fullscreen; hitbox is low to the ground, making many low-profile anti-projectile moves ineffective; projectile comes out in 6f if button is released from frames 11-34 (total startup 17-40f); cannot use if SA2 is active",
+        "upstreamActive: -",
+        "upstreamRecovery: 35",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +49 as D; original onHit=49; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Rashid/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Rashid%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Rashid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "rashid__special_236_P_H",
+      "name": "Spinning Mixer",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "77",
+          "numeric": 77,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-55",
+          "numeric": -55
+        }
+      },
+      "notes": [
+        "upstreamInput: 236HP",
+        "upstreamName: Spinning Mixer",
+        "upstreamNotes: Good anti-air that can hit cross-ups; can be affected by Air Current on frames 2-5; if the final hit whiffs as an anti-air, Rashid can get a follow-up juggle",
+        "upstreamActive: 2(2)3(3)3(4)3(4)3(4)3",
+        "upstreamRecovery: 24",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +33 as D; original onHit=33; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Rashid/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Rashid%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Rashid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "rashid__special_236_P_L",
+      "name": "Spinning Mixer",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "42",
+          "numeric": 42,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: 236LP",
+        "upstreamName: Spinning Mixer",
+        "upstreamNotes: Great pressure tool that is safe on block and can blow throw armor; 5f extra recovery on whiff; Counter-hit/Punish Counter bonus advantage applies through all hits (allows for follow-up combo); can be affected by Air Current on frames 2-16; if the 3rd hit whiffs in a Burnout pressure sequence, Rashid is safe at -3 oB",
+        "upstreamActive: 3(5)2(4)2",
+        "upstreamRecovery: 19"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Rashid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "rashid__special_236_P_M",
+      "name": "Spinning Mixer",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "74",
+          "numeric": 74,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-45",
+          "numeric": -45
+        }
+      },
+      "notes": [
+        "upstreamInput: 236MP",
+        "upstreamName: Spinning Mixer",
+        "upstreamNotes: The last 11f of landing recovery is cancelable into special moves or supers on hit only; 4f worse advantage and 1 less hit when crouch blocked; cannot anti-air cross-ups; can be affected by Air Current on frames 2-8",
+        "upstreamActive: 1,2(2)2(5)2(3)2",
+        "upstreamRecovery: 34",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +31 as D; original onHit=31; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Rashid/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Rashid%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Rashid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "rashid__special_236_P_OD",
+      "name": "Spinning Mixer",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "110",
+          "numeric": 110,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-53",
+          "numeric": -53
+        }
+      },
+      "notes": [
+        "upstreamInput: 236PP",
+        "upstreamName: Spinning Mixer",
+        "upstreamNotes: Shorter animation with less landing recovery on block only; cannot anti-air cross-ups; can only hit twice vs. grounded opponents (will not break DI armor); 5f extra knockdown advantage if the final hit whiffs (keeps Rashid safe); can be affected by Air Current on frames 2-8",
+        "upstreamActive: 1,2(2)3(2)4(2)4(2)4(2)4(2)4(2)3",
+        "upstreamRecovery: 38",
+        "qualityReview: restored KD +9 as D; original onHit=9; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Rashid/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Rashid%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Rashid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "rashid__special_6_K_OD",
+      "name": "Side Flip",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "6",
+        "button": "K",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "32",
+          "numeric": 32
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "32",
+          "numeric": 32,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 6KK",
+        "upstreamName: Side Flip",
+        "upstreamNotes: Can input 4KK/5KK/6KK follow-up on frames 19-25; collision box disappears frames 8-23, allowing Rashid to pass through opponents; can be affected by Air Current on frames 2-20, traveling nearly fullscreen; travel distance: 1.7 (3.62 enhanced)",
+        "upstreamActive: -"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Rashid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    }
+  ]
+}

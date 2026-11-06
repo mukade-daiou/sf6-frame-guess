@@ -1,0 +1,1989 @@
+{
+  "adoption": {
+    "status": "accepted",
+    "basis": "保存済み原典全行を候補・過去の除外判断へ対応付け。未確定の地上入力はheld-source-input規則で保留登録。"
+  },
+  "id": "ryu",
+  "nameJa": "リュウ",
+  "nameEn": "Ryu",
+  "gameVersion": "UNVERIFIED",
+  "source": {
+    "url": "https://wiki.supercombo.gg/w/Street_Fighter_6",
+    "retrievedAt": "2026-08-19T04:05:24.993Z",
+    "gameVersion": "UNVERIFIED",
+    "kind": "community",
+    "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+    "license": "CC-BY-SA-4.0",
+    "verification": "unverified"
+  },
+  "coverage": {
+    "normal": {
+      "status": "complete",
+      "verification": "unverified"
+    },
+    "special": {
+      "status": "complete",
+      "verification": "unverified"
+    }
+  },
+  "moves": [
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ryu__normal_2_K_H",
+      "name": "しゃがみ強K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "34",
+          "numeric": 34,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-12",
+          "numeric": -12
+        }
+      },
+      "notes": [
+        "upstreamInput: 2HK",
+        "upstreamName: Low Spinning Sweep",
+        "upstreamNotes: Good range and hitbox priority; has some juggle potential; on block, always plays out a fixed 29f recovery (cannot be made safer with meaty timing)",
+        "upstreamActive: 3",
+        "upstreamRecovery: 23",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +40 as D; original onHit=40; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ryu%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ryu__normal_2_K_L",
+      "name": "しゃがみ弱K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "16",
+          "numeric": 16,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        }
+      },
+      "notes": [
+        "upstreamInput: 2LK",
+        "upstreamName: Crouching Light Kick",
+        "upstreamNotes: Chains into 5LP/2LP/2LK",
+        "upstreamActive: 2",
+        "upstreamRecovery: 10"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ryu__normal_2_K_M",
+      "name": "しゃがみ中K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "29",
+          "numeric": 29,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        }
+      },
+      "notes": [
+        "upstreamInput: 2MK",
+        "upstreamName: Crouching Medium Kick",
+        "upstreamNotes: Range: 1.482; DR cancel is delayed until after active frames",
+        "upstreamActive: 3",
+        "upstreamRecovery: 19"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ryu__normal_2_P_H",
+      "name": "しゃがみ強P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "35",
+          "numeric": 35,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-7",
+          "numeric": -7
+        }
+      },
+      "notes": [
+        "upstreamInput: 2HP",
+        "upstreamName: Crouching Heavy Punch",
+        "upstreamNotes: Forces stand on hit; decent anti-air; cannot hit cross-ups; fist hurtbox is invincible to air strikes on frame 9; head hurtbox is invincible to air strikes on frames 10-14; only 1st active frame is cancelable (extends a combo-only hitbox to match the range of the 2nd active frame for combo consistency); () refers to hit/block recovery on 1st active frame only; 5f less hitstun on active frames 2-5 (can be punishable on meaty timing)",
+        "upstreamActive: 6",
+        "upstreamRecovery: 21"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ryu__normal_2_P_L",
+      "name": "しゃがみ弱P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "4",
+          "numeric": 4
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        }
+      },
+      "notes": [
+        "upstreamInput: 2LP",
+        "upstreamName: Crouching Light Punch",
+        "upstreamNotes: Chains into 5LP/2LP/2LK; topmost hurtbox on frames 1-5 is vulnerable only to aerial strikes (preventing its use as an anti-air)",
+        "upstreamActive: 2",
+        "upstreamRecovery: 9"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ryu__normal_2_P_M",
+      "name": "しゃがみ中P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "22",
+          "numeric": 22,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+5",
+          "numeric": 5
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "0",
+          "numeric": 0
+        }
+      },
+      "notes": [
+        "upstreamInput: 2MP",
+        "upstreamName: Crouching Medium Punch",
+        "upstreamNotes: 2f extra recovery on whiff; combo and pressure tool; topmost hurtbox on frames 1-9 is vulnerable only to aerial strikes (preventing its use as an anti-air); extends a wider hurtbox until the end of recovery",
+        "upstreamActive: 4",
+        "upstreamRecovery: 13"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ryu__normal_5_K_H",
+      "name": "立ち強K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "35",
+          "numeric": 35,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+9",
+          "numeric": 9
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        }
+      },
+      "notes": [
+        "upstreamInput: 5HK",
+        "upstreamName: Standing Heavy Kick",
+        "upstreamNotes: Whiffs on crouching opponents unless they extend a vertical hurtbox; 2 extra recovery frames on block; good horizontal anti-air that puts airborne opponents into limited juggle state (higher launch on Punish Counter juggle); +11 before Punish Counter crumple state goes airborne; extends a hurtbox 1f before active that is vulnerable to projectiles",
+        "upstreamActive: 4",
+        "upstreamRecovery: 20"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ryu__normal_5_K_L",
+      "name": "立ち弱K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "18",
+          "numeric": 18,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
+        }
+      },
+      "notes": [
+        "upstreamInput: 5LK",
+        "upstreamName: Standing Light Kick",
+        "upstreamNotes: Good range for a 5f light (useful in punishes and neutral buffers); DR cancel is delayed until after 2nd active frame",
+        "upstreamActive: 3",
+        "upstreamRecovery: 11"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ryu__normal_5_K_M",
+      "name": "立ち中K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "29",
+          "numeric": 29,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
+        }
+      },
+      "notes": [
+        "upstreamInput: 5MK",
+        "upstreamName: Standing Medium Kick",
+        "upstreamNotes: Solid poke; front leg hurtbox is raised on frames 4-11 (can avoid low pokes)",
+        "upstreamActive: 3",
+        "upstreamRecovery: 18"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ryu__normal_5_P_H",
+      "name": "立ち強P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "32",
+          "numeric": 32,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        }
+      },
+      "notes": [
+        "upstreamInput: 5HP",
+        "upstreamName: Standing Heavy Punch",
+        "upstreamNotes: Forces stand on hit (allowing Target Combo follow-up to work on crouching opponents); good poke with hitbox priority, many active frames, and a reactable hitconfirm window",
+        "upstreamActive: 5",
+        "upstreamRecovery: 18"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ryu__normal_5_P_L",
+      "name": "立ち弱P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "4",
+          "numeric": 4
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "13",
+          "numeric": 13,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        }
+      },
+      "notes": [
+        "upstreamInput: 5LP",
+        "upstreamName: Standing Light Punch",
+        "upstreamNotes: Chains into 5LP/2LP/2LK",
+        "upstreamActive: 3",
+        "upstreamRecovery: 7"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ryu__normal_5_P_M",
+      "name": "立ち中P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "20",
+          "numeric": 20,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+7",
+          "numeric": 7
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        }
+      },
+      "notes": [
+        "upstreamInput: 5MP",
+        "upstreamName: Standing Medium Punch",
+        "upstreamNotes: 2f extra recovery on whiff; useful combo tool with a Target Combo follow-up; extends a wider body hurtbox until the end of recovery",
+        "upstreamActive: 4",
+        "upstreamRecovery: 11"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ryu__special_214_K_H",
+      "name": "Tatsumaki Senpu-kyaku",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "16",
+          "numeric": 16
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "78",
+          "numeric": 78,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+20",
+          "numeric": 20
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-13",
+          "numeric": -13
+        }
+      },
+      "notes": [
+        "upstreamInput: 214HK",
+        "upstreamName: Tatsumaki Senpu-kyaku",
+        "upstreamNotes: Only 1st hit can connect on crouching (stand blocking any hit forces next hit to be blocked, even if crouching); later hits have better KD Advantage; puts opponent into limited juggle state (can juggle afterward if 3rd hit connects)",
+        "upstreamActive: 2(13)2(13)2",
+        "upstreamRecovery: 14",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ryu__special_214_K_L",
+      "name": "Tatsumaki Senpu-kyaku",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "46",
+          "numeric": 46,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-15",
+          "numeric": -15
+        }
+      },
+      "notes": [
+        "upstreamInput: 214LK",
+        "upstreamName: Tatsumaki Senpu-kyaku",
+        "upstreamNotes: Can hit crouching opponents",
+        "upstreamActive: 3",
+        "upstreamRecovery: 14",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +35 as D; original onHit=35; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ryu%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ryu__special_214_K_M",
+      "name": "Tatsumaki Senpu-kyaku",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "61",
+          "numeric": 61,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+23",
+          "numeric": 23
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-13",
+          "numeric": -13
+        }
+      },
+      "notes": [
+        "upstreamInput: 214MK",
+        "upstreamName: Tatsumaki Senpu-kyaku",
+        "upstreamNotes: Only 1st hit can connect on crouching (stand blocking 1st hit forces 2nd hit to be blocked, even if crouching); later hits have better KD Advantage",
+        "upstreamActive: 2(13)2",
+        "upstreamRecovery: 11",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ryu__special_214_K_OD",
+      "name": "Tatsumaki Senpu-kyaku",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "13",
+          "numeric": 13
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "60",
+          "numeric": 60,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-14",
+          "numeric": -14
+        }
+      },
+      "notes": [
+        "upstreamInput: 214KK",
+        "upstreamName: Tatsumaki Senpu-kyaku",
+        "upstreamNotes: Can hit crouching opponents; puts opponent into limited juggle state; on hit, 1st hit has vacuum effect; on max range block, some hits can drop (-32 at worse)",
+        "upstreamActive: 2(4)2(4)2(3)2(4)2",
+        "upstreamRecovery: 10",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +57 as D; original onHit=57; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ryu%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ryu__special_214_P_H",
+      "name": "Hashogeki",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "30",
+          "numeric": 30
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "54",
+          "numeric": 54,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        }
+      },
+      "notes": [
+        "upstreamInput: 214HP",
+        "upstreamName: Hashogeki",
+        "upstreamNotes: 2 hits, even if it connects on final active frame; strike hitbox but can nullify 1-hit meterless projectiles; puts opponent into spinning juggle state on hit; leaves Ryu inside throw range for a strike/throw mixup on block",
+        "upstreamActive: 6",
+        "upstreamRecovery: 19",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +61 Spin as D; original onHit=61; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ryu%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ryu__special_214_P_L",
+      "name": "Hashogeki",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "35",
+          "numeric": 35,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: 214LP",
+        "upstreamName: Hashogeki",
+        "upstreamNotes: Strike hitbox but can nullify 1-hit meterless projectiles; puts opponent into spinning juggle state on counter-hit/Punish Counter; excellent Burnout pressure tool (+1 on block, but increased pushback against Burnout)",
+        "upstreamActive: 6",
+        "upstreamRecovery: 18"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ryu__special_214_P_M",
+      "name": "Hashogeki",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "19",
+          "numeric": 19
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "41",
+          "numeric": 41,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        }
+      },
+      "notes": [
+        "upstreamInput: 214MP",
+        "upstreamName: Hashogeki",
+        "upstreamNotes: Strike hitbox but can nullify 1-hit meterless projectiles; puts opponent into spinning juggle state on counter-hit/Punish Counter",
+        "upstreamActive: 6",
+        "upstreamRecovery: 17"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ryu__special_214_P_OD",
+      "name": "Hashogeki",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "18",
+          "numeric": 18
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "43",
+          "numeric": 43,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        }
+      },
+      "notes": [
+        "upstreamInput: 214PP",
+        "upstreamName: Hashogeki",
+        "upstreamNotes: Strike hitbox but can nullify 1-hit OD projectiles or any meterless projectiles; great pressure tool",
+        "upstreamActive: 6",
+        "upstreamRecovery: 20"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ryu__special_22_P_none",
+      "name": "Denjin Charge",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "22",
+        "button": "P",
+        "strength": "none"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "50",
+          "numeric": 50
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "52",
+          "numeric": 52,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 22P",
+        "upstreamName: Denjin Charge",
+        "upstreamNotes: Charges up next fireball-based move (Hadoken, Hashogeki, SA1, SA2) into a more powerful Denjin version; Ryu is in a counter-hit state for the entire animation; gains the Denjin charge on frame 50; can only store 1 stock at a time (does not persist between rounds); can also be performed after 5HP~HK or 5MP~LK~HK (on hit) by inputting 2P",
+        "upstreamActive: -",
+        "upstreamRecovery: 2"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ryu__special_236_K_H",
+      "name": "High Blade Kick",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "27",
+          "numeric": 27
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "50",
+          "numeric": 50,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+45",
+          "numeric": 45
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: 236HK",
+        "upstreamName: High Blade Kick",
+        "upstreamNotes: Puts opponent into limited juggle state on hit (can follow up with 623MP, 623PP, or SA3 in corner); Punish Counter tumble state can be hit OTG; has great range and forward movement, making it a useful poke in neutral; the last 3 active frames have identical range (the listed best-case frame advantage is when spaced at max range, active frame 7)",
+        "upstreamActive: 9",
+        "upstreamRecovery: 15",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ryu__special_236_K_L",
+      "name": "High Blade Kick",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "41",
+          "numeric": 41,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+42",
+          "numeric": 42
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-11",
+          "numeric": -11
+        }
+      },
+      "notes": [
+        "upstreamInput: 236LK",
+        "upstreamName: High Blade Kick",
+        "upstreamNotes: Puts opponent into limited juggle state on hit; sets up auto-timed safe jump against cornered opponents; can combo when canceled from any normal except 5LP; the last 2 active frames have identical range (the listed best-case frame advantage is when spaced at max range, active frame 5)",
+        "upstreamActive: 6",
+        "upstreamRecovery: 22",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ryu__special_236_K_M",
+      "name": "High Blade Kick",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "18",
+          "numeric": 18
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "45",
+          "numeric": 45,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+40",
+          "numeric": 40
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-8",
+          "numeric": -8
+        }
+      },
+      "notes": [
+        "upstreamInput: 236MK",
+        "upstreamName: High Blade Kick",
+        "upstreamNotes: Puts opponent into limited juggle state on hit; can be spaced safely due to its range and high active frame count; 3 extra recovery frames on whiff; the last 3 active frames have identical range (the listed best-case frame advantage is when spaced at max range, active frame 7)",
+        "upstreamActive: 9",
+        "upstreamRecovery: 19",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ryu__special_236_K_OD",
+      "name": "High Blade Kick",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "17",
+          "numeric": 17
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "54",
+          "numeric": 54,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "unknown",
+          "display": null
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-18",
+          "numeric": -18
+        }
+      },
+      "notes": [
+        "upstreamInput: 236KK",
+        "upstreamName: High Blade Kick",
+        "upstreamNotes: Wall Bounce into limited juggle state on hit; if close to corner, opponent flies over Ryu's head",
+        "upstreamActive: 5",
+        "upstreamRecovery: 33"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ryu__special_236_P_H",
+      "name": "Hadoken",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "47",
+          "numeric": 47,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-9",
+          "numeric": -9
+        }
+      },
+      "notes": [
+        "upstreamInput: 236HP",
+        "upstreamName: Hadoken",
+        "upstreamNotes: 1-hit projectile; puts airborne opponents into limited juggle state",
+        "upstreamActive: -",
+        "upstreamRecovery: 35"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ryu__special_236_P_L",
+      "name": "Hadoken",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "16",
+          "numeric": 16
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "47",
+          "numeric": 47,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-5",
+          "numeric": -5
+        }
+      },
+      "notes": [
+        "upstreamInput: 236LP",
+        "upstreamName: Hadoken",
+        "upstreamNotes: 1-hit projectile; puts airborne opponents into limited juggle state",
+        "upstreamActive: -",
+        "upstreamRecovery: 31"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ryu__special_236_P_M",
+      "name": "Hadoken",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "47",
+          "numeric": 47,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "0",
+          "numeric": 0
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-7",
+          "numeric": -7
+        }
+      },
+      "notes": [
+        "upstreamInput: 236MP",
+        "upstreamName: Hadoken",
+        "upstreamNotes: 1-hit projectile; puts airborne opponents into limited juggle state",
+        "upstreamActive: -",
+        "upstreamRecovery: 33"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ryu__special_236_P_OD",
+      "name": "Hadoken",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "40",
+          "numeric": 40,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        }
+      },
+      "notes": [
+        "upstreamInput: 236PP",
+        "upstreamName: Hadoken",
+        "upstreamNotes: 2-hit OD projectile; puts opponent into limited juggle state on hit",
+        "upstreamActive: -",
+        "upstreamRecovery: 28",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +54 as D; original onHit=54; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ryu%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ryu__special_623_P_H",
+      "name": "Shoryuken",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "62",
+          "numeric": 62,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+37",
+          "numeric": 37
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-39",
+          "numeric": -39
+        }
+      },
+      "notes": [
+        "upstreamInput: 623HP",
+        "upstreamName: Shoryuken",
+        "upstreamNotes: Has juggle potential; cannot hit cross-up; does reduced damage and higher juggle limit on active frames 3-10 (weaker as a high-connect anti-air); higher knockdown advantage on the first 2 active frames (+37 refers to 1st active frame, +29 refers to anti-air with 3rd active frame; actual advantage varies based on height/distance)",
+        "upstreamActive: 10",
+        "upstreamRecovery: 34",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ryu__special_623_P_L",
+      "name": "Shoryuken",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "47",
+          "numeric": 47,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-23",
+          "numeric": -23
+        }
+      },
+      "notes": [
+        "upstreamInput: 623LP",
+        "upstreamName: Shoryuken",
+        "upstreamNotes: Has juggle potential; puts opponent into limited juggle state (can juggle after a high corner anti-air); cannot hit cross-up; does reduced damage and higher juggle limit on active frames 4-10 (weaker as a high-connect anti-air)",
+        "upstreamActive: 10",
+        "upstreamRecovery: 21",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +38 as D; original onHit=38; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ryu%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ryu__special_623_P_M",
+      "name": "Shoryuken",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "57",
+          "numeric": 57,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-32",
+          "numeric": -32
+        }
+      },
+      "notes": [
+        "upstreamInput: 623MP",
+        "upstreamName: Shoryuken",
+        "upstreamNotes: Has juggle potential; cannot hit cross-up; does reduced damage and higher juggle limit on active frames 4-10 (weaker as a high-connect anti-air)",
+        "upstreamActive: 10",
+        "upstreamRecovery: 30",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +34 as D; original onHit=34; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ryu%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ryu__special_623_P_OD",
+      "name": "Shoryuken",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "67",
+          "numeric": 67,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-40",
+          "numeric": -40
+        }
+      },
+      "notes": [
+        "upstreamInput: 623PP",
+        "upstreamName: Shoryuken",
+        "upstreamNotes: Has high juggle potential; cannot hit cross-up; only 2nd hit will connect if used too early as an anti-air; extends a combo-only hitbox to make the 1st active frame more consistent",
+        "upstreamActive: 2,8",
+        "upstreamRecovery: 37",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +29 as D; original onHit=29; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ryu%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    }
+  ]
+}

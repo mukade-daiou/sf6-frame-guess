@@ -1,13 +1,13 @@
 # データの正本と更新手順
 
-現在のゲームが読む正本は`data/metadata.json`と`data/characters/*.json`。2体63技、datasetIdは`initial-2026-11-06-r2`（ユーザー指定でケンOD龍尾脚の発生を9Fへ更新）。信頼性と採用可否の分離、今後の括弧付き表記の採用方針はDATA_SPEC.mdを参照してください。
+現在のゲームが読む正本は`data/metadata.json`と`data/characters/*.json`。32体884レコード（採用861・保留23）、datasetIdは`roster32-2026-11-06-r2`。ケン・マリーザの63技とOD龍尾脚9Fは維持しました。信頼性と採用可否の分離はDATA_SPEC.md、判断の再利用はADOPTION_RULES.mdを参照してください。
 
 | 場所                            | 役割・編集方針                                                      |
 | ------------------------------- | ------------------------------------------------------------------- |
 | data/characters/、metadata.json | 固定済みの実行スナップショット。通常は編集しない                    |
 | data/adoption-decisions.json    | 採用・保留と入力候補の参照先の正本。今後の追加判断をここへまとめる  |
 | staging/candidates/             | 32体860技の未採用候補。過去の収集結果を引き継ぐ出発点               |
-| staging/adoption-inputs/        | 採用判断で参照する、標準条件を整理した現在の入力（ケン・マリーザ）  |
+| staging/adoption-inputs/        | 採用判断で参照する、標準条件と保留を整理した現在の32体の入力        |
 | staging/dev-review-policy.json  | 既存の開発専用試遊で使う入力スコープ。ゲーム本番では読まない        |
 | staging/verification/           | 現在の検査レポート・ブラウザー画像。次回検証で再生成可能            |
 | archive/staging/                | 第2～第10段階の原典・証拠・判断・スナップショット。現行正本ではない |

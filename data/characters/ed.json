@@ -1,0 +1,1630 @@
+{
+  "adoption": {
+    "status": "accepted",
+    "basis": "保存済み原典全行を候補・過去の除外判断へ対応付け。未確定の地上入力はheld-source-input規則で保留登録。"
+  },
+  "id": "ed",
+  "nameJa": "エド",
+  "nameEn": "Ed",
+  "gameVersion": "UNVERIFIED",
+  "source": {
+    "url": "https://wiki.supercombo.gg/w/Street_Fighter_6",
+    "retrievedAt": "2026-11-01T00:01:59.250Z",
+    "gameVersion": "UNVERIFIED",
+    "kind": "community",
+    "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+    "license": "CC-BY-SA-4.0",
+    "verification": "unverified"
+  },
+  "coverage": {
+    "normal": {
+      "status": "complete",
+      "verification": "unverified"
+    },
+    "special": {
+      "status": "complete",
+      "verification": "unverified"
+    }
+  },
+  "moves": [
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ed__normal_2_K_H",
+      "name": "しゃがみ強K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "32",
+          "numeric": 32,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        }
+      },
+      "notes": [
+        "upstreamInput: 2HK",
+        "upstreamName: Crouching Heavy Kick",
+        "upstreamNotes: 2f extra recovery on whiff; good range buffer tool with a hitconfirmable Target Combo follow-up; Kill Rush (Forward/Back) cancel advantage: -12/-17",
+        "upstreamActive: 2",
+        "upstreamRecovery: 19"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ed__normal_2_K_L",
+      "name": "しゃがみ弱K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "18",
+          "numeric": 18,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
+        }
+      },
+      "notes": [
+        "upstreamInput: 2LK",
+        "upstreamName: Crouching Light Kick",
+        "upstreamNotes: Excellent range for a light normal (functions like a 5LK for most characters); special/DR/DI cancel is delayed until after active frames; extends a strike-only hurtbox 2f before active and a wider hurtbox until the end of recovery; Kill Rush (Forward/Back) cancel advantage: -17/-24; topmost hurtbox on frames 1-6 is vulnerable only to aerial strikes (preventing its use as an anti-air)",
+        "upstreamActive: 2",
+        "upstreamRecovery: 12"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ed__normal_2_K_M",
+      "name": "しゃがみ中K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "26",
+          "numeric": 26,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+8",
+          "numeric": 8
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        }
+      },
+      "notes": [
+        "upstreamInput: 2MK",
+        "upstreamName: Crouching Medium Kick",
+        "upstreamNotes: Forces stand; whiffs vs. crouching opponents at longer ranges unless they extend a vertical hurtbox; 3f extra recovery on whiff and extends a wide hurtbox until the end of recovery; good range for combos and buffers; situational anti-air but loses or trades with stronger jump-ins; Kill Rush (Forward/Back) cancel advantage: -6/-15",
+        "upstreamActive: 2",
+        "upstreamRecovery: 16"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ed__normal_2_P_H",
+      "name": "しゃがみ強P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "37",
+          "numeric": 37,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-12",
+          "numeric": -12
+        }
+      },
+      "notes": [
+        "upstreamInput: 2HP",
+        "upstreamName: Low Hook Punch",
+        "upstreamNotes: Ed's sweep (comparable to 2HK for most characters); has juggle potential",
+        "upstreamActive: 4",
+        "upstreamRecovery: 24",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +30 as D; original onHit=30; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ed%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ed__normal_2_P_L",
+      "name": "しゃがみ弱P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "4",
+          "numeric": 4
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "16",
+          "numeric": 16,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: 2LP",
+        "upstreamName: Crouching Light Punch",
+        "upstreamNotes: Chains into 5LP/2LP; more range than 5LP but not very useful since it can't be canceled; comparable to a 2LK for most characters",
+        "upstreamActive: 3",
+        "upstreamRecovery: 10"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ed__normal_2_P_M",
+      "name": "しゃがみ中P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "29",
+          "numeric": 29,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        }
+      },
+      "notes": [
+        "upstreamInput: 2MP",
+        "upstreamName: Crouching Medium Punch",
+        "upstreamNotes: Functions like a 2MK for most characters (with below-average range); DR cancel is delayed until after active frames; has an extended hurtbox on whiff until the end of recovery; Kill Rush (Forward/Back) cancel advantage: -8/-16",
+        "upstreamActive: 3",
+        "upstreamRecovery: 19"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ed__normal_5_K_H",
+      "name": "立ち強K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "24",
+          "numeric": 24,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+8",
+          "numeric": 8
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        }
+      },
+      "notes": [
+        "upstreamInput: 5HK",
+        "upstreamName: Standing Heavy Kick",
+        "upstreamNotes: Whiffs on crouching opponents unless they extend a vertical hurtbox; useful anti-air and close range combo/pressure tool; extremely fast recovery for a heavy normal; Kill Rush (Forward/Back) cancel advantage: -9/-13",
+        "upstreamActive: 3",
+        "upstreamRecovery: 12"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ed__normal_5_K_L",
+      "name": "立ち弱K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "20",
+          "numeric": 20,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: 5LK",
+        "upstreamName: Standing Light Kick",
+        "upstreamNotes: Range and startup are more comparable to a medium normal; leads into safe hitconfirmable Target Combo; very susceptible to counterpokes (extends strike-only hurtbox 3f before active frames)",
+        "upstreamActive: 2",
+        "upstreamRecovery: 13"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ed__normal_5_K_M",
+      "name": "立ち中K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "27",
+          "numeric": 27,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "0",
+          "numeric": 0
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-5",
+          "numeric": -5
+        }
+      },
+      "notes": [
+        "upstreamInput: 5MK",
+        "upstreamName: Standing Medium Kick",
+        "upstreamNotes: 4f extra recovery on whiff; no true blockstring when DR canceled (weaker as an approach tool); great range with a relatively safe Target Combo when spaced out; extends a strike-only hurtbox on frames 4-9 (easier to counter-poke but not affected by projectiles); extends a wide hurtbox until the end of recovery; Kill Rush (Forward/Back) cancel advantage: -14/-19",
+        "upstreamActive: 2",
+        "upstreamRecovery: 16"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ed__normal_5_P_H",
+      "name": "立ち強P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "31",
+          "numeric": 31,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+5",
+          "numeric": 5
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        }
+      },
+      "notes": [
+        "upstreamInput: 5HP",
+        "upstreamName: Standing Heavy Punch",
+        "upstreamNotes: Forces stand; can be charged for Psycho Knuckle (releasing before 30f results in regular 5HP; startup of the release varies from 4-8f depending on charge time); good hitconfirmable poke that can combo into 2MK on Punish Counter even from max range; Kill Rush (Forward/Back) cancel advantage: -5/-12",
+        "upstreamActive: 4",
+        "upstreamRecovery: 18"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ed__normal_5_P_L",
+      "name": "立ち弱P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "4",
+          "numeric": 4
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "13",
+          "numeric": 13,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        }
+      },
+      "notes": [
+        "upstreamInput: 5LP",
+        "upstreamName: Standing Light Punch",
+        "upstreamNotes: Chains into 5LP/2LP; chained 5LP has unique animation for 2nd/3rd hits but has identical frame data and hitbox; very short range but low pushback for 3-hit confirms from point blank; Kill Rush (Forward/Back) cancel advantage: -18/-23",
+        "upstreamActive: 3",
+        "upstreamRecovery: 7"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ed__normal_5_P_M",
+      "name": "立ち中P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "24",
+          "numeric": 24,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+6",
+          "numeric": 6
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        }
+      },
+      "notes": [
+        "upstreamInput: 5MP",
+        "upstreamName: Standing Medium Punch",
+        "upstreamNotes: Combo tool with a useful Target Combo follow-up; useful button out of 2MP~DRC as other combo buttons are too slow; Kill Rush (Forward/Back) cancel advantage: -8/-15",
+        "upstreamActive: 3",
+        "upstreamRecovery: 15"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ed__special_214_P_H",
+      "name": "HP Psycho Blitz",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "15",
+          "numeric": 15
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "60",
+          "numeric": 60,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-12",
+          "numeric": -12
+        }
+      },
+      "notes": [
+        "upstreamInput: 214HP",
+        "upstreamName: HP Psycho Blitz",
+        "upstreamNotes: 3 hits; 3f extra recovery on block; puts opponent into limited juggle state for SA3 juggle",
+        "upstreamActive: 2(11)2(6)2",
+        "upstreamRecovery: 23",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +40 as D; original onHit=40; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ed%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ed__special_214_P_L",
+      "name": "LP Psycho Blitz",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "11",
+          "numeric": 11
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "43",
+          "numeric": 43,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-5",
+          "numeric": -5
+        }
+      },
+      "notes": [
+        "upstreamInput: 214LP",
+        "upstreamName: LP Psycho Blitz",
+        "upstreamNotes: 3 hits; leaves opponent grounded; counter-hit/Punish Counter advantage carries through all hits; puts airborne opponents into limited juggle state; can frame trap when canceled from light normals (only leads to a heavily scaled light combo while being punishable on block)",
+        "upstreamActive: 3(3)3(6)4",
+        "upstreamRecovery: 14"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ed__special_214_P_M",
+      "name": "MP Psycho Blitz",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "13",
+          "numeric": 13
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "52",
+          "numeric": 52,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-12",
+          "numeric": -12
+        }
+      },
+      "notes": [
+        "upstreamInput: 214MP",
+        "upstreamName: MP Psycho Blitz",
+        "upstreamNotes: 3 hits; 8f extra recovery on block; puts opponent into limited juggle state for SA3 juggle",
+        "upstreamActive: 2(7)3(9)3",
+        "upstreamRecovery: 16",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +39 as D; original onHit=39; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ed%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ed__special_214_P_OD",
+      "name": "OD Psycho Blitz",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "13",
+          "numeric": 13
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "64",
+          "numeric": 64,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
+        }
+      },
+      "notes": [
+        "upstreamInput: 214PP",
+        "upstreamName: OD Psycho Blitz",
+        "upstreamNotes: On hit, canceling the 8th hit leaves opponent grounded; 9th hit launches opponent into limited juggle state (only allows combo into midscreen LP/MP SA2); interruptible by 4f normals when canceled from any light normal, and always punishable on block even if spaced",
+        "upstreamActive: 1(4)1(3)1(3)1(3)1(3)1(8)2",
+        "upstreamRecovery: 20",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +42 as D; original onHit=42; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ed%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ed__special_236_K_H",
+      "name": "HK Psycho Flicker",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "42",
+          "numeric": 42,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+51",
+          "numeric": 51
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 236HK",
+        "upstreamName: HK Psycho Flicker",
+        "upstreamNotes: 1-hit projectile hitbox; can only hit airborne opponents (puts opponent into limited juggle state); KD advantage varies based on height; must hold HK at least 30f to get enhanced version (releasing early results in delayed regular version); extends a forward hurtbox on frame 1 until the end of recovery (this hurtbox is projectile invuln until the first active frame); cancelable into 6KK/4KK on hit only (comes out after 15 recovery frames), giving Ed better oki after midscreen anti-air 236HK, or a juggle after corner anti-air 236HK",
+        "upstreamActive: 8",
+        "upstreamRecovery: 18",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ed__special_236_K_L",
+      "name": "LK Psycho Flicker",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "11",
+          "numeric": 11
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "45",
+          "numeric": 45,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        }
+      },
+      "notes": [
+        "upstreamInput: 236LK",
+        "upstreamName: LK Psycho Flicker",
+        "upstreamNotes: 1-hit projectile hitbox (causes screen freeze on Perfect Parry); Punish Counter crumple state leaves opponent airborne (+21 before opponent hits the ground, can follow up with Drive Rush combo); puts airborne opponents into limited juggle state; total recovery is 2f faster on whiff; must hold LK at least 26f to get enhanced version (releasing early results in delayed regular version); when Super canceled, the SA3 incurs 30% immediate damage scaling; extends a forward hurtbox on frame 1 until the end of recovery (this hurtbox is projectile invuln until the first active frame); cancelable into 6KK/4KK on hit only (comes out after 15 recovery frames), giving Ed a juggle or improved oki after Punish Counter 236LK; Kill Rush Forward/Back cancel data: -18 oH, KD +42 on PC (+3 before opponent is knocked down after full dash animation)",
+        "upstreamActive: 4",
+        "upstreamRecovery: 26"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ed__special_236_K_M",
+      "name": "MK Psycho Flicker",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "15",
+          "numeric": 15
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "49",
+          "numeric": 49,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        }
+      },
+      "notes": [
+        "upstreamInput: 236MK",
+        "upstreamName: MK Psycho Flicker",
+        "upstreamNotes: 1-hit projectile hitbox (causes screen freeze on Perfect Parry); Counter-Hit: KD +36; Punish Counter crumple state leaves opponent airborne (+23 before opponent hits the ground, can follow up with Drive Rush combo); puts airborne opponents into limited juggle state; total recovery is 1f faster on whiff; must hold MK at least 30f to get enhanced version (releasing early results in delayed regular version); when Super canceled, the SA3 incurs 30% immediate damage scaling; extends a forward hurtbox on frame 1 until the end of recovery (this hurtbox is projectile invuln until the first active frame); cancelable into 6KK/4KK on hit only (comes out after 17 recovery frames), giving Ed better oki after Counter-hit 236MK or a meterless juggle after Punish Counter 236MK; Kill Rush Forward/Back cancel data: -17 oH, KD +16 on CH, KD +42 on PC (+3 before opponent is knocked down after full dash animation)",
+        "upstreamActive: 4",
+        "upstreamRecovery: 26"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ed__special_236_K_OD",
+      "name": "OD Psycho Flicker",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "25",
+          "numeric": 25
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "60",
+          "numeric": 60,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        }
+      },
+      "notes": [
+        "upstreamInput: 236KK",
+        "upstreamName: OD Psycho Flicker",
+        "upstreamNotes: 1-hit OD projectile hitbox (causes screen freeze on Perfect Parry); cannot grab opponent if it clashes with an OD projectile; pulls opponent in for a strike/throw mixup on block (pulled in half as far when Parried); launches opponent upward on grounded hit; airborne hit does extra damage and slams opponent down into limited juggle OTG bounce; active/recovery refers to whiffed version; cannot be charged for an enhanced version or canceled into Kill Rush; great oki tool",
+        "upstreamActive: 4",
+        "upstreamRecovery: 32",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +61 as D; original onHit=61; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ed%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ed__special_236_P_none",
+      "name": "Psycho Spark",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "none"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "33",
+          "numeric": 33,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-5",
+          "numeric": -5
+        }
+      },
+      "notes": [
+        "upstreamInput: 236P",
+        "upstreamName: Psycho Spark",
+        "upstreamNotes: Creates a 1-hit projectile hitbox that can clash with meterless projectiles; cancelable into 6P projectile follow-up on frames 22-28 (canceling on the final 4 frames will not combo); on Perfect Parry, has no screen freeze but only 1f Parry recovery; great meaty due to its high active frame count (up to +14 oH, +6 oB)",
+        "upstreamActive: 12",
+        "upstreamRecovery: 8"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ed__special_236_P_OD",
+      "name": "OD Psycho Spark",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "32",
+          "numeric": 32,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        }
+      },
+      "notes": [
+        "upstreamInput: 236PP",
+        "upstreamName: OD Psycho Spark",
+        "upstreamNotes: Creates a 2-hit OD projectile hitbox that can clash with other OD projectiles or outright beat meterless projectiles; cancelable into 6P projectile follow-up on frames 18-28; on Perfect Parry, has no screen freeze but only 1f Parry recovery for each hit; with perfect meaty timing, becomes +16 on hit / +10 on block (no knockdown), but meterless version offers similar advantage with less precision",
+        "upstreamActive: 12",
+        "upstreamRecovery: 7",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +43 as D; original onHit=43; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ed%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ed__special_4_K_OD",
+      "name": "Kill Rush (Backward)",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "4",
+        "button": "K",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "31",
+          "numeric": 31,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 4KK",
+        "upstreamName: Kill Rush (Backward)",
+        "upstreamNotes: Can be performed while charging 236[K] (also allows a 44 or 4K input for the backdash); cannot be performed from 5MP~HP Target Combo; counter-hit state for entire animation; head hurtbox disappears on frames 1-10; Distance: 0.999 (slightly farther than regular backdash); extends a wide forward hurtbox during recovery, leaving Ed vulnerable to counters like Drive Impact if too close",
+        "upstreamActive: -",
+        "upstreamRecovery: 31"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ed__special_623_P_H",
+      "name": "HP Psycho Uppercut",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "16",
+          "numeric": 16
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "54",
+          "numeric": 54,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-21",
+          "numeric": -21
+        }
+      },
+      "notes": [
+        "upstreamInput: 623HP",
+        "upstreamName: HP Psycho Uppercut",
+        "upstreamNotes: Takes a large step forward; allows follow-up juggles on high connect with strict timing and no additional damage scaling (launches opponent into limited juggle state); cancel into SA3 whiffs (only useful vs. armor absorb or for chip damage)",
+        "upstreamActive: 6",
+        "upstreamRecovery: 33",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +38 as D; original onHit=38; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ed%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ed__special_623_P_L",
+      "name": "LP Psycho Uppercut",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "45",
+          "numeric": 45,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-13",
+          "numeric": -13
+        }
+      },
+      "notes": [
+        "upstreamInput: 623LP",
+        "upstreamName: LP Psycho Uppercut",
+        "upstreamNotes: Stands in place; 5f extra recovery on whiff; allows follow-up juggles on high connect (launches opponent into limited juggle state); cancel into SA3 only combos on the last 5 cancel frames (vs. grounded opponents; more strict vs. very low-juggled opponents); cannot hit cross-up",
+        "upstreamActive: 8",
+        "upstreamRecovery: 23",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +38 as D; original onHit=38; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ed%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ed__special_623_P_M",
+      "name": "MP Psycho Uppercut",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "51",
+          "numeric": 51,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-20",
+          "numeric": -20
+        }
+      },
+      "notes": [
+        "upstreamInput: 623MP",
+        "upstreamName: MP Psycho Uppercut",
+        "upstreamNotes: Takes a small step forward; allows follow-up juggles on high connect with strict timing and no additional damage scaling (launches opponent into limited juggle state); cancel into SA3 whiffs (only useful vs. armor absorb or for chip damage)",
+        "upstreamActive: 6",
+        "upstreamRecovery: 32",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +39 as D; original onHit=39; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ed%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "ed__special_623_P_OD",
+      "name": "OD Psycho Uppercut",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "13",
+          "numeric": 13
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "54",
+          "numeric": 54,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-28",
+          "numeric": -28
+        }
+      },
+      "notes": [
+        "upstreamInput: 623PP",
+        "upstreamName: OD Psycho Uppercut",
+        "upstreamNotes: 2 hits that form a true blockstring; takes a large step forward (can be used as an anti-projectile tool); slow startup allows opponents to safely meaty on Ed's wakeup; 2nd hit only comes out on hit/block (not on whiff or Perfect Parry); invuln is extended on hit to cover the follow-up attack",
+        "upstreamActive: 6",
+        "upstreamRecovery: 36",
+        "qualityReview: restored KD +19 as D; original onHit=19; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ed%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    }
+  ]
+}

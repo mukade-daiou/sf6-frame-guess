@@ -5,7 +5,14 @@ import { production } from "../lib/frame-data/datasets";
 import { startGame, ask, changeMode } from "../features/game/engine";
 
 it("switches all historical rows to the current mode, including unknown saved fields", () => {
-  let game = startGame(production, "startup", 5, () => 0);
+  let game = startGame(
+    production,
+    "startup",
+    5,
+    () =>
+      (production.eligible.findIndex((c) => c.id === "ken") + 0.5) /
+      production.eligible.length,
+  );
   const input = game.inputs.find(
     (i) =>
       i.type === "normal" &&

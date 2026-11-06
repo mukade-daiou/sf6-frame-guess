@@ -26,14 +26,14 @@ archive/scripts/、tests/     過去の変換・調査・再現テスト
 棚卸しのファイル数・バイト数・A/B/C分類は[cleanup-inventory.json](cleanup-inventory.json)、全移動対応は[cleanup-moves.json](cleanup-moves.json)に保存した。容量はGit対象と今回の管理ファイルを集計し、node_modules・dist・.git・再生成用verificationは除外する。索引や整理報告の追加による増加はあるが、資料を捨てて容量を削減する作業ではない。
 
 | ディレクトリ | 整理前のファイル数／容量 | 整理後のファイル数／容量 |
-| --- | --- | --- |
-| src | 25／181 KiB | 25／181 KiB |
-| data | 5／138 KiB | 6／139 KiB |
-| docs | 22／188 KiB | 9／約103 KiB |
-| staging | 353／26.10 MiB | 35／1.63 MiB |
-| scripts | 27／143 KiB | 5／16 KiB |
-| tests | 9／23 KiB | 1／1 KiB |
-| archive | 0 | 369／24.87 MiB |
+| ------------ | ------------------------ | ------------------------ |
+| src          | 25／181 KiB              | 25／181 KiB              |
+| data         | 5／138 KiB               | 6／139 KiB               |
+| docs         | 22／188 KiB              | 9／約103 KiB             |
+| staging      | 353／26.10 MiB           | 35／1.63 MiB             |
+| scripts      | 27／143 KiB              | 5／16 KiB                |
+| tests        | 9／23 KiB                | 1／1 KiB                 |
+| archive      | 0                        | 369／24.87 MiB           |
 
 容量は概数。整理後のdocsは棚卸しJSON自身を除く。全管理ファイルの個別容量と正確な集計値は棚卸しJSONに保存した。
 

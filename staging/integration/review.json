@@ -1,0 +1,3311 @@
+{
+  "datasetId": "roster32-2026-11-06-r2",
+  "characters": [
+    {
+      "id": "aki",
+      "name": "A.K.I.",
+      "moves": 29,
+      "adopted": 29,
+      "held": [],
+      "uiInputs": 29,
+      "unsupported": [],
+      "unknown": [],
+      "coverage": {
+        "normal": {
+          "status": "complete",
+          "verification": "unverified"
+        },
+        "special": {
+          "status": "complete",
+          "verification": "unverified"
+        }
+      }
+    },
+    {
+      "id": "akuma",
+      "name": "豪鬼",
+      "moves": 30,
+      "adopted": 30,
+      "held": [],
+      "uiInputs": 29,
+      "unsupported": [
+        {
+          "moveId": "akuma__special_236_K_none",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "none"
+          }
+        }
+      ],
+      "unknown": [
+        {
+          "moveId": "akuma__special_236_K_none",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "none"
+          },
+          "name": "Demon Raid",
+          "field": "total",
+          "group": "複合値・原典値の不足",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6/Akuma/Frame_data"
+        },
+        {
+          "moveId": "akuma__special_236_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "OD"
+          },
+          "name": "Demon Raid",
+          "field": "total",
+          "group": "複合値・原典値の不足",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6/Akuma/Frame_data"
+        }
+      ],
+      "coverage": {
+        "normal": {
+          "status": "complete",
+          "verification": "unverified"
+        },
+        "special": {
+          "status": "complete",
+          "verification": "unverified"
+        }
+      }
+    },
+    {
+      "id": "alex",
+      "name": "アレックス",
+      "moves": 25,
+      "adopted": 25,
+      "held": [],
+      "uiInputs": 25,
+      "unsupported": [],
+      "unknown": [
+        {
+          "moveId": "alex__special_63214_P_H",
+          "input": {
+            "type": "special",
+            "motion": "63214",
+            "button": "P",
+            "strength": "H"
+          },
+          "name": "Power Bomb",
+          "field": "block",
+          "group": "ガード値が原典に未記載",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data"
+        },
+        {
+          "moveId": "alex__special_63214_P_L",
+          "input": {
+            "type": "special",
+            "motion": "63214",
+            "button": "P",
+            "strength": "L"
+          },
+          "name": "Power Bomb",
+          "field": "block",
+          "group": "ガード値が原典に未記載",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data"
+        },
+        {
+          "moveId": "alex__special_63214_P_M",
+          "input": {
+            "type": "special",
+            "motion": "63214",
+            "button": "P",
+            "strength": "M"
+          },
+          "name": "Power Bomb",
+          "field": "block",
+          "group": "ガード値が原典に未記載",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data"
+        },
+        {
+          "moveId": "alex__special_63214_P_OD",
+          "input": {
+            "type": "special",
+            "motion": "63214",
+            "button": "P",
+            "strength": "OD"
+          },
+          "name": "Power Bomb",
+          "field": "block",
+          "group": "ガード値が原典に未記載",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data"
+        }
+      ],
+      "coverage": {
+        "normal": {
+          "status": "complete",
+          "verification": "unverified"
+        },
+        "special": {
+          "status": "complete",
+          "verification": "unverified"
+        }
+      }
+    },
+    {
+      "id": "arjun",
+      "name": "アルジュン",
+      "moves": 27,
+      "adopted": 27,
+      "held": [],
+      "uiInputs": 24,
+      "unsupported": [
+        {
+          "moveId": "arjun__special_214_K_none",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "K",
+            "strength": "none"
+          }
+        },
+        {
+          "moveId": "arjun__special_236_K_none",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "none"
+          }
+        },
+        {
+          "moveId": "arjun__special_63214_P_none",
+          "input": {
+            "type": "special",
+            "motion": "63214",
+            "button": "P",
+            "strength": "none"
+          }
+        }
+      ],
+      "unknown": [
+        {
+          "moveId": "arjun__special_22_K_H",
+          "input": {
+            "type": "special",
+            "motion": "22",
+            "button": "K",
+            "strength": "H"
+          },
+          "name": "Indomitable Defense",
+          "field": "block",
+          "group": "ガード値が原典に未記載",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6/Arjun/Frame_data"
+        },
+        {
+          "moveId": "arjun__special_63214_P_none",
+          "input": {
+            "type": "special",
+            "motion": "63214",
+            "button": "P",
+            "strength": "none"
+          },
+          "name": "Ghastly Interrogation",
+          "field": "block",
+          "group": "ガード値が原典に未記載",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6/Arjun/Frame_data"
+        },
+        {
+          "moveId": "arjun__special_63214_P_OD",
+          "input": {
+            "type": "special",
+            "motion": "63214",
+            "button": "P",
+            "strength": "OD"
+          },
+          "name": "OD Ghastly Interrogation",
+          "field": "block",
+          "group": "ガード値が原典に未記載",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6/Arjun/Frame_data"
+        }
+      ],
+      "coverage": {
+        "normal": {
+          "status": "complete",
+          "verification": "unverified"
+        },
+        "special": {
+          "status": "complete",
+          "verification": "unverified"
+        }
+      }
+    },
+    {
+      "id": "blanka",
+      "name": "ブランカ",
+      "moves": 32,
+      "adopted": 32,
+      "held": [],
+      "uiInputs": 22,
+      "unsupported": [
+        {
+          "moveId": "blanka__special_[2]8_K_H",
+          "input": {
+            "type": "special",
+            "motion": "[2]8",
+            "button": "K",
+            "strength": "H"
+          }
+        },
+        {
+          "moveId": "blanka__special_[2]8_K_L",
+          "input": {
+            "type": "special",
+            "motion": "[2]8",
+            "button": "K",
+            "strength": "L"
+          }
+        },
+        {
+          "moveId": "blanka__special_[2]8_K_M",
+          "input": {
+            "type": "special",
+            "motion": "[2]8",
+            "button": "K",
+            "strength": "M"
+          }
+        },
+        {
+          "moveId": "blanka__special_[2]8_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "[2]8",
+            "button": "K",
+            "strength": "OD"
+          }
+        },
+        {
+          "moveId": "blanka__special_[4]6_P_H",
+          "input": {
+            "type": "special",
+            "motion": "[4]6",
+            "button": "P",
+            "strength": "H"
+          }
+        },
+        {
+          "moveId": "blanka__special_[4]6_P_L",
+          "input": {
+            "type": "special",
+            "motion": "[4]6",
+            "button": "P",
+            "strength": "L"
+          }
+        },
+        {
+          "moveId": "blanka__special_[4]6_P_M",
+          "input": {
+            "type": "special",
+            "motion": "[4]6",
+            "button": "P",
+            "strength": "M"
+          }
+        },
+        {
+          "moveId": "blanka__special_[4]6_P_OD",
+          "input": {
+            "type": "special",
+            "motion": "[4]6",
+            "button": "P",
+            "strength": "OD"
+          }
+        },
+        {
+          "moveId": "blanka__special_214_P_none",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "P",
+            "strength": "none"
+          }
+        },
+        {
+          "moveId": "blanka__special_22_P_none",
+          "input": {
+            "type": "special",
+            "motion": "22",
+            "button": "P",
+            "strength": "none"
+          }
+        }
+      ],
+      "unknown": [
+        {
+          "moveId": "blanka__special_236_K_H",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "H"
+          },
+          "name": "Wild Hunt",
+          "field": "block",
+          "group": "ガード値が原典に未記載",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data"
+        },
+        {
+          "moveId": "blanka__special_236_K_L",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "L"
+          },
+          "name": "Wild Hunt",
+          "field": "block",
+          "group": "ガード値が原典に未記載",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data"
+        },
+        {
+          "moveId": "blanka__special_236_K_M",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "M"
+          },
+          "name": "Wild Hunt",
+          "field": "block",
+          "group": "ガード値が原典に未記載",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data"
+        },
+        {
+          "moveId": "blanka__special_236_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "OD"
+          },
+          "name": "Wild Hunt",
+          "field": "block",
+          "group": "ガード値が原典に未記載",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data"
+        }
+      ],
+      "coverage": {
+        "normal": {
+          "status": "complete",
+          "verification": "unverified"
+        },
+        "special": {
+          "status": "complete",
+          "verification": "unverified"
+        }
+      }
+    },
+    {
+      "id": "cammy",
+      "name": "キャミィ",
+      "moves": 26,
+      "adopted": 26,
+      "held": [],
+      "uiInputs": 25,
+      "unsupported": [
+        {
+          "moveId": "cammy__special_236_P_none",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "P",
+            "strength": "none"
+          }
+        }
+      ],
+      "unknown": [],
+      "coverage": {
+        "normal": {
+          "status": "complete",
+          "verification": "unverified"
+        },
+        "special": {
+          "status": "complete",
+          "verification": "unverified"
+        }
+      }
+    },
+    {
+      "id": "chunli",
+      "name": "春麗",
+      "moves": 33,
+      "adopted": 33,
+      "held": [],
+      "uiInputs": 24,
+      "unsupported": [
+        {
+          "moveId": "chunli__special_[2]8_K_H",
+          "input": {
+            "type": "special",
+            "motion": "[2]8",
+            "button": "K",
+            "strength": "H"
+          }
+        },
+        {
+          "moveId": "chunli__special_[2]8_K_L",
+          "input": {
+            "type": "special",
+            "motion": "[2]8",
+            "button": "K",
+            "strength": "L"
+          }
+        },
+        {
+          "moveId": "chunli__special_[2]8_K_M",
+          "input": {
+            "type": "special",
+            "motion": "[2]8",
+            "button": "K",
+            "strength": "M"
+          }
+        },
+        {
+          "moveId": "chunli__special_[2]8_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "[2]8",
+            "button": "K",
+            "strength": "OD"
+          }
+        },
+        {
+          "moveId": "chunli__special_[4]6_P_H",
+          "input": {
+            "type": "special",
+            "motion": "[4]6",
+            "button": "P",
+            "strength": "H"
+          }
+        },
+        {
+          "moveId": "chunli__special_[4]6_P_L",
+          "input": {
+            "type": "special",
+            "motion": "[4]6",
+            "button": "P",
+            "strength": "L"
+          }
+        },
+        {
+          "moveId": "chunli__special_[4]6_P_M",
+          "input": {
+            "type": "special",
+            "motion": "[4]6",
+            "button": "P",
+            "strength": "M"
+          }
+        },
+        {
+          "moveId": "chunli__special_[4]6_P_OD",
+          "input": {
+            "type": "special",
+            "motion": "[4]6",
+            "button": "P",
+            "strength": "OD"
+          }
+        },
+        {
+          "moveId": "chunli__special_214_P_none",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "P",
+            "strength": "none"
+          }
+        }
+      ],
+      "unknown": [],
+      "coverage": {
+        "normal": {
+          "status": "complete",
+          "verification": "unverified"
+        },
+        "special": {
+          "status": "complete",
+          "verification": "unverified"
+        }
+      }
+    },
+    {
+      "id": "cviper",
+      "name": "C.ヴァイパー",
+      "moves": 24,
+      "adopted": 22,
+      "held": [
+        {
+          "moveId": "cviper__held_special_214_K_none",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "K",
+            "strength": "none"
+          },
+          "name": "Focus Force (Lv.1)",
+          "rule": "held-source-input"
+        },
+        {
+          "moveId": "cviper__held_special_214_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "K",
+            "strength": "OD"
+          },
+          "name": "OD Focus Force (Lv.1)",
+          "rule": "held-source-input"
+        }
+      ],
+      "uiInputs": 21,
+      "unsupported": [
+        {
+          "moveId": "cviper__special_623_P_none",
+          "input": {
+            "type": "special",
+            "motion": "623",
+            "button": "P",
+            "strength": "none"
+          }
+        },
+        {
+          "moveId": "cviper__held_special_214_K_none",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "K",
+            "strength": "none"
+          }
+        }
+      ],
+      "unknown": [
+        {
+          "moveId": "cviper__held_special_214_K_none",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "K",
+            "strength": "none"
+          },
+          "name": "Focus Force (Lv.1)",
+          "field": "startup",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "cviper__held_special_214_K_none",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "K",
+            "strength": "none"
+          },
+          "name": "Focus Force (Lv.1)",
+          "field": "total",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "cviper__held_special_214_K_none",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "K",
+            "strength": "none"
+          },
+          "name": "Focus Force (Lv.1)",
+          "field": "hit",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "cviper__held_special_214_K_none",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "K",
+            "strength": "none"
+          },
+          "name": "Focus Force (Lv.1)",
+          "field": "block",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "cviper__held_special_214_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "K",
+            "strength": "OD"
+          },
+          "name": "OD Focus Force (Lv.1)",
+          "field": "startup",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "cviper__held_special_214_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "K",
+            "strength": "OD"
+          },
+          "name": "OD Focus Force (Lv.1)",
+          "field": "total",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "cviper__held_special_214_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "K",
+            "strength": "OD"
+          },
+          "name": "OD Focus Force (Lv.1)",
+          "field": "hit",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "cviper__held_special_214_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "K",
+            "strength": "OD"
+          },
+          "name": "OD Focus Force (Lv.1)",
+          "field": "block",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        }
+      ],
+      "coverage": {
+        "normal": {
+          "status": "complete",
+          "verification": "unverified"
+        },
+        "special": {
+          "status": "complete",
+          "verification": "unverified"
+        }
+      }
+    },
+    {
+      "id": "dee_jay",
+      "name": "ディージェイ",
+      "moves": 31,
+      "adopted": 30,
+      "held": [
+        {
+          "moveId": "dee_jay__held_special_22_P_OD",
+          "input": {
+            "type": "special",
+            "motion": "22",
+            "button": "P",
+            "strength": "OD"
+          },
+          "name": "Speedy Maracas",
+          "rule": "held-source-input"
+        }
+      ],
+      "uiInputs": 21,
+      "unsupported": [
+        {
+          "moveId": "dee_jay__special_[2]8_K_H",
+          "input": {
+            "type": "special",
+            "motion": "[2]8",
+            "button": "K",
+            "strength": "H"
+          }
+        },
+        {
+          "moveId": "dee_jay__special_[2]8_K_L",
+          "input": {
+            "type": "special",
+            "motion": "[2]8",
+            "button": "K",
+            "strength": "L"
+          }
+        },
+        {
+          "moveId": "dee_jay__special_[2]8_K_M",
+          "input": {
+            "type": "special",
+            "motion": "[2]8",
+            "button": "K",
+            "strength": "M"
+          }
+        },
+        {
+          "moveId": "dee_jay__special_[2]8_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "[2]8",
+            "button": "K",
+            "strength": "OD"
+          }
+        },
+        {
+          "moveId": "dee_jay__special_[4]6_P_H",
+          "input": {
+            "type": "special",
+            "motion": "[4]6",
+            "button": "P",
+            "strength": "H"
+          }
+        },
+        {
+          "moveId": "dee_jay__special_[4]6_P_L",
+          "input": {
+            "type": "special",
+            "motion": "[4]6",
+            "button": "P",
+            "strength": "L"
+          }
+        },
+        {
+          "moveId": "dee_jay__special_[4]6_P_M",
+          "input": {
+            "type": "special",
+            "motion": "[4]6",
+            "button": "P",
+            "strength": "M"
+          }
+        },
+        {
+          "moveId": "dee_jay__special_[4]6_P_OD",
+          "input": {
+            "type": "special",
+            "motion": "[4]6",
+            "button": "P",
+            "strength": "OD"
+          }
+        },
+        {
+          "moveId": "dee_jay__special_214_K_none",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "K",
+            "strength": "none"
+          }
+        }
+      ],
+      "unknown": [
+        {
+          "moveId": "dee_jay__held_special_22_P_OD",
+          "input": {
+            "type": "special",
+            "motion": "22",
+            "button": "P",
+            "strength": "OD"
+          },
+          "name": "Speedy Maracas",
+          "field": "startup",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "dee_jay__held_special_22_P_OD",
+          "input": {
+            "type": "special",
+            "motion": "22",
+            "button": "P",
+            "strength": "OD"
+          },
+          "name": "Speedy Maracas",
+          "field": "total",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "dee_jay__held_special_22_P_OD",
+          "input": {
+            "type": "special",
+            "motion": "22",
+            "button": "P",
+            "strength": "OD"
+          },
+          "name": "Speedy Maracas",
+          "field": "hit",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "dee_jay__held_special_22_P_OD",
+          "input": {
+            "type": "special",
+            "motion": "22",
+            "button": "P",
+            "strength": "OD"
+          },
+          "name": "Speedy Maracas",
+          "field": "block",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        }
+      ],
+      "coverage": {
+        "normal": {
+          "status": "complete",
+          "verification": "unverified"
+        },
+        "special": {
+          "status": "complete",
+          "verification": "unverified"
+        }
+      }
+    },
+    {
+      "id": "dhalsim",
+      "name": "ダルシム",
+      "moves": 24,
+      "adopted": 24,
+      "held": [],
+      "uiInputs": 23,
+      "unsupported": [
+        {
+          "moveId": "dhalsim__special_236_P_none",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "P",
+            "strength": "none"
+          }
+        }
+      ],
+      "unknown": [],
+      "coverage": {
+        "normal": {
+          "status": "complete",
+          "verification": "unverified"
+        },
+        "special": {
+          "status": "complete",
+          "verification": "unverified"
+        }
+      }
+    },
+    {
+      "id": "e_honda",
+      "name": "エドモンド本田",
+      "moves": 32,
+      "adopted": 32,
+      "held": [],
+      "uiInputs": 21,
+      "unsupported": [
+        {
+          "moveId": "e_honda__special_[2]8_K_H",
+          "input": {
+            "type": "special",
+            "motion": "[2]8",
+            "button": "K",
+            "strength": "H"
+          }
+        },
+        {
+          "moveId": "e_honda__special_[2]8_K_L",
+          "input": {
+            "type": "special",
+            "motion": "[2]8",
+            "button": "K",
+            "strength": "L"
+          }
+        },
+        {
+          "moveId": "e_honda__special_[2]8_K_M",
+          "input": {
+            "type": "special",
+            "motion": "[2]8",
+            "button": "K",
+            "strength": "M"
+          }
+        },
+        {
+          "moveId": "e_honda__special_[2]8_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "[2]8",
+            "button": "K",
+            "strength": "OD"
+          }
+        },
+        {
+          "moveId": "e_honda__special_[4]6_P_H",
+          "input": {
+            "type": "special",
+            "motion": "[4]6",
+            "button": "P",
+            "strength": "H"
+          }
+        },
+        {
+          "moveId": "e_honda__special_[4]6_P_L",
+          "input": {
+            "type": "special",
+            "motion": "[4]6",
+            "button": "P",
+            "strength": "L"
+          }
+        },
+        {
+          "moveId": "e_honda__special_[4]6_P_M",
+          "input": {
+            "type": "special",
+            "motion": "[4]6",
+            "button": "P",
+            "strength": "M"
+          }
+        },
+        {
+          "moveId": "e_honda__special_[4]6_P_OD",
+          "input": {
+            "type": "special",
+            "motion": "[4]6",
+            "button": "P",
+            "strength": "OD"
+          }
+        },
+        {
+          "moveId": "e_honda__special_22_K_none",
+          "input": {
+            "type": "special",
+            "motion": "22",
+            "button": "K",
+            "strength": "none"
+          }
+        },
+        {
+          "moveId": "e_honda__special_22_P_none",
+          "input": {
+            "type": "special",
+            "motion": "22",
+            "button": "P",
+            "strength": "none"
+          }
+        },
+        {
+          "moveId": "e_honda__special_236_K_none",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "none"
+          }
+        }
+      ],
+      "unknown": [
+        {
+          "moveId": "e_honda__special_236_K_none",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "none"
+          },
+          "name": "Sumo Dash",
+          "field": "hit",
+          "group": "複合値・原典値の不足",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data"
+        },
+        {
+          "moveId": "e_honda__special_236_K_none",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "none"
+          },
+          "name": "Sumo Dash",
+          "field": "block",
+          "group": "ガード値が原典に未記載",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data"
+        },
+        {
+          "moveId": "e_honda__special_236_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "OD"
+          },
+          "name": "Sumo Dash",
+          "field": "hit",
+          "group": "複合値・原典値の不足",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data"
+        },
+        {
+          "moveId": "e_honda__special_236_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "OD"
+          },
+          "name": "Sumo Dash",
+          "field": "block",
+          "group": "ガード値が原典に未記載",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data"
+        },
+        {
+          "moveId": "e_honda__special_63214_K_H",
+          "input": {
+            "type": "special",
+            "motion": "63214",
+            "button": "K",
+            "strength": "H"
+          },
+          "name": "Oicho Throw",
+          "field": "block",
+          "group": "ガード値が原典に未記載",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data"
+        },
+        {
+          "moveId": "e_honda__special_63214_K_L",
+          "input": {
+            "type": "special",
+            "motion": "63214",
+            "button": "K",
+            "strength": "L"
+          },
+          "name": "Oicho Throw",
+          "field": "block",
+          "group": "ガード値が原典に未記載",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data"
+        },
+        {
+          "moveId": "e_honda__special_63214_K_M",
+          "input": {
+            "type": "special",
+            "motion": "63214",
+            "button": "K",
+            "strength": "M"
+          },
+          "name": "Oicho Throw",
+          "field": "block",
+          "group": "ガード値が原典に未記載",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data"
+        },
+        {
+          "moveId": "e_honda__special_63214_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "63214",
+            "button": "K",
+            "strength": "OD"
+          },
+          "name": "Oicho Throw",
+          "field": "block",
+          "group": "ガード値が原典に未記載",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data"
+        }
+      ],
+      "coverage": {
+        "normal": {
+          "status": "complete",
+          "verification": "unverified"
+        },
+        "special": {
+          "status": "complete",
+          "verification": "unverified"
+        }
+      }
+    },
+    {
+      "id": "ed",
+      "name": "エド",
+      "moves": 27,
+      "adopted": 27,
+      "held": [],
+      "uiInputs": 26,
+      "unsupported": [
+        {
+          "moveId": "ed__special_236_P_none",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "P",
+            "strength": "none"
+          }
+        }
+      ],
+      "unknown": [],
+      "coverage": {
+        "normal": {
+          "status": "complete",
+          "verification": "unverified"
+        },
+        "special": {
+          "status": "complete",
+          "verification": "unverified"
+        }
+      }
+    },
+    {
+      "id": "elena",
+      "name": "エレナ",
+      "moves": 32,
+      "adopted": 32,
+      "held": [],
+      "uiInputs": 32,
+      "unsupported": [],
+      "unknown": [],
+      "coverage": {
+        "normal": {
+          "status": "complete",
+          "verification": "unverified"
+        },
+        "special": {
+          "status": "complete",
+          "verification": "unverified"
+        }
+      }
+    },
+    {
+      "id": "guile",
+      "name": "ガイル",
+      "moves": 25,
+      "adopted": 24,
+      "held": [
+        {
+          "moveId": "guile__held_special_buttons_LP+MP",
+          "input": {
+            "type": "special",
+            "motion": "none",
+            "button": "P",
+            "strength": "none",
+            "buttonCombination": "LP+MP"
+          },
+          "name": "Sonic Break",
+          "rule": "held-source-input"
+        }
+      ],
+      "uiInputs": 16,
+      "unsupported": [
+        {
+          "moveId": "guile__special_[2]8_K_H",
+          "input": {
+            "type": "special",
+            "motion": "[2]8",
+            "button": "K",
+            "strength": "H"
+          }
+        },
+        {
+          "moveId": "guile__special_[2]8_K_L",
+          "input": {
+            "type": "special",
+            "motion": "[2]8",
+            "button": "K",
+            "strength": "L"
+          }
+        },
+        {
+          "moveId": "guile__special_[2]8_K_M",
+          "input": {
+            "type": "special",
+            "motion": "[2]8",
+            "button": "K",
+            "strength": "M"
+          }
+        },
+        {
+          "moveId": "guile__special_[2]8_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "[2]8",
+            "button": "K",
+            "strength": "OD"
+          }
+        },
+        {
+          "moveId": "guile__special_[4]6_P_H",
+          "input": {
+            "type": "special",
+            "motion": "[4]6",
+            "button": "P",
+            "strength": "H"
+          }
+        },
+        {
+          "moveId": "guile__special_[4]6_P_L",
+          "input": {
+            "type": "special",
+            "motion": "[4]6",
+            "button": "P",
+            "strength": "L"
+          }
+        },
+        {
+          "moveId": "guile__special_[4]6_P_M",
+          "input": {
+            "type": "special",
+            "motion": "[4]6",
+            "button": "P",
+            "strength": "M"
+          }
+        },
+        {
+          "moveId": "guile__special_[4]6_P_OD",
+          "input": {
+            "type": "special",
+            "motion": "[4]6",
+            "button": "P",
+            "strength": "OD"
+          }
+        },
+        {
+          "moveId": "guile__held_special_buttons_LP+MP",
+          "input": {
+            "type": "special",
+            "motion": "none",
+            "button": "P",
+            "strength": "none",
+            "buttonCombination": "LP+MP"
+          }
+        }
+      ],
+      "unknown": [
+        {
+          "moveId": "guile__held_special_buttons_LP+MP",
+          "input": {
+            "type": "special",
+            "motion": "none",
+            "button": "P",
+            "strength": "none",
+            "buttonCombination": "LP+MP"
+          },
+          "name": "Sonic Break",
+          "field": "startup",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "guile__held_special_buttons_LP+MP",
+          "input": {
+            "type": "special",
+            "motion": "none",
+            "button": "P",
+            "strength": "none",
+            "buttonCombination": "LP+MP"
+          },
+          "name": "Sonic Break",
+          "field": "total",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "guile__held_special_buttons_LP+MP",
+          "input": {
+            "type": "special",
+            "motion": "none",
+            "button": "P",
+            "strength": "none",
+            "buttonCombination": "LP+MP"
+          },
+          "name": "Sonic Break",
+          "field": "hit",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "guile__held_special_buttons_LP+MP",
+          "input": {
+            "type": "special",
+            "motion": "none",
+            "button": "P",
+            "strength": "none",
+            "buttonCombination": "LP+MP"
+          },
+          "name": "Sonic Break",
+          "field": "block",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        }
+      ],
+      "coverage": {
+        "normal": {
+          "status": "complete",
+          "verification": "unverified"
+        },
+        "special": {
+          "status": "complete",
+          "verification": "unverified"
+        }
+      }
+    },
+    {
+      "id": "ingrid",
+      "name": "イングリッド",
+      "moves": 25,
+      "adopted": 25,
+      "held": [],
+      "uiInputs": 23,
+      "unsupported": [
+        {
+          "moveId": "ingrid__special_214214_K_none",
+          "input": {
+            "type": "special",
+            "motion": "214214",
+            "button": "K",
+            "strength": "none"
+          }
+        },
+        {
+          "moveId": "ingrid__special_22_K_none",
+          "input": {
+            "type": "special",
+            "motion": "22",
+            "button": "K",
+            "strength": "none"
+          }
+        }
+      ],
+      "unknown": [],
+      "coverage": {
+        "normal": {
+          "status": "complete",
+          "verification": "unverified"
+        },
+        "special": {
+          "status": "complete",
+          "verification": "unverified"
+        }
+      }
+    },
+    {
+      "id": "jamie",
+      "name": "ジェイミー",
+      "moves": 31,
+      "adopted": 13,
+      "held": [
+        {
+          "moveId": "jamie__held_special_214_P_H",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "P",
+            "strength": "H"
+          },
+          "name": "Swagger Step (DL2)",
+          "rule": "held-source-input"
+        },
+        {
+          "moveId": "jamie__held_special_214_P_L",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "P",
+            "strength": "L"
+          },
+          "name": "Swagger Step (DL2)",
+          "rule": "held-source-input"
+        },
+        {
+          "moveId": "jamie__held_special_214_P_M",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "P",
+            "strength": "M"
+          },
+          "name": "Swagger Step (DL2)",
+          "rule": "held-source-input"
+        },
+        {
+          "moveId": "jamie__held_special_214_P_OD",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "P",
+            "strength": "OD"
+          },
+          "name": "Swagger Step (DL2)",
+          "rule": "held-source-input"
+        },
+        {
+          "moveId": "jamie__held_special_236_K_H",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "H"
+          },
+          "name": "Bakkai (DL2)",
+          "rule": "held-source-input"
+        },
+        {
+          "moveId": "jamie__held_special_236_P_H",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "P",
+            "strength": "H"
+          },
+          "name": "HP Freeflow Strikes 1 (DL2)",
+          "rule": "held-source-input"
+        },
+        {
+          "moveId": "jamie__held_special_236_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "OD"
+          },
+          "name": "Bakkai (DL2)",
+          "rule": "held-source-input"
+        },
+        {
+          "moveId": "jamie__held_special_236_K_L",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "L"
+          },
+          "name": "Bakkai (DL2)",
+          "rule": "held-source-input"
+        },
+        {
+          "moveId": "jamie__held_special_236_P_L",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "P",
+            "strength": "L"
+          },
+          "name": "LP Freeflow Strikes 1 (DL2)",
+          "rule": "held-source-input"
+        },
+        {
+          "moveId": "jamie__held_special_236_K_M",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "M"
+          },
+          "name": "Bakkai (DL2)",
+          "rule": "held-source-input"
+        },
+        {
+          "moveId": "jamie__held_special_236_P_M",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "P",
+            "strength": "M"
+          },
+          "name": "MP Freeflow Strikes 1 (DL2)",
+          "rule": "held-source-input"
+        },
+        {
+          "moveId": "jamie__held_special_236_P_OD",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "P",
+            "strength": "OD"
+          },
+          "name": "OD Freeflow Strikes 1 (DL2)",
+          "rule": "held-source-input"
+        },
+        {
+          "moveId": "jamie__held_special_623_K_H",
+          "input": {
+            "type": "special",
+            "motion": "623",
+            "button": "K",
+            "strength": "H"
+          },
+          "name": "Arrow Kick (DL2)",
+          "rule": "held-source-input"
+        },
+        {
+          "moveId": "jamie__held_special_623_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "623",
+            "button": "K",
+            "strength": "OD"
+          },
+          "name": "Arrow Kick (DL2)",
+          "rule": "held-source-input"
+        },
+        {
+          "moveId": "jamie__held_special_623_K_L",
+          "input": {
+            "type": "special",
+            "motion": "623",
+            "button": "K",
+            "strength": "L"
+          },
+          "name": "Arrow Kick (DL2)",
+          "rule": "held-source-input"
+        },
+        {
+          "moveId": "jamie__held_special_623_K_M",
+          "input": {
+            "type": "special",
+            "motion": "623",
+            "button": "K",
+            "strength": "M"
+          },
+          "name": "Arrow Kick (DL2)",
+          "rule": "held-source-input"
+        },
+        {
+          "moveId": "jamie__held_special_63214_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "63214",
+            "button": "K",
+            "strength": "OD"
+          },
+          "name": "Tenshin (DL3)",
+          "rule": "held-source-input"
+        },
+        {
+          "moveId": "jamie__held_special_63214_K_none",
+          "input": {
+            "type": "special",
+            "motion": "63214",
+            "button": "K",
+            "strength": "none"
+          },
+          "name": "Tenshin (DL3)",
+          "rule": "held-source-input"
+        }
+      ],
+      "uiInputs": 12,
+      "unsupported": [
+        {
+          "moveId": "jamie__special_22_P_none",
+          "input": {
+            "type": "special",
+            "motion": "22",
+            "button": "P",
+            "strength": "none"
+          }
+        },
+        {
+          "moveId": "jamie__held_special_63214_K_none",
+          "input": {
+            "type": "special",
+            "motion": "63214",
+            "button": "K",
+            "strength": "none"
+          }
+        }
+      ],
+      "unknown": [
+        {
+          "moveId": "jamie__special_22_P_none",
+          "input": {
+            "type": "special",
+            "motion": "22",
+            "button": "P",
+            "strength": "none"
+          },
+          "name": "The Devil Inside",
+          "field": "hit",
+          "group": "複合値・原典値の不足",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        },
+        {
+          "moveId": "jamie__special_22_P_none",
+          "input": {
+            "type": "special",
+            "motion": "22",
+            "button": "P",
+            "strength": "none"
+          },
+          "name": "The Devil Inside",
+          "field": "block",
+          "group": "ガード値が原典に未記載",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        },
+        {
+          "moveId": "jamie__held_special_214_P_H",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "P",
+            "strength": "H"
+          },
+          "name": "Swagger Step (DL2)",
+          "field": "startup",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_214_P_H",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "P",
+            "strength": "H"
+          },
+          "name": "Swagger Step (DL2)",
+          "field": "total",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_214_P_H",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "P",
+            "strength": "H"
+          },
+          "name": "Swagger Step (DL2)",
+          "field": "hit",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_214_P_H",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "P",
+            "strength": "H"
+          },
+          "name": "Swagger Step (DL2)",
+          "field": "block",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_214_P_L",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "P",
+            "strength": "L"
+          },
+          "name": "Swagger Step (DL2)",
+          "field": "startup",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_214_P_L",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "P",
+            "strength": "L"
+          },
+          "name": "Swagger Step (DL2)",
+          "field": "total",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_214_P_L",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "P",
+            "strength": "L"
+          },
+          "name": "Swagger Step (DL2)",
+          "field": "hit",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_214_P_L",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "P",
+            "strength": "L"
+          },
+          "name": "Swagger Step (DL2)",
+          "field": "block",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_214_P_M",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "P",
+            "strength": "M"
+          },
+          "name": "Swagger Step (DL2)",
+          "field": "startup",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_214_P_M",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "P",
+            "strength": "M"
+          },
+          "name": "Swagger Step (DL2)",
+          "field": "total",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_214_P_M",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "P",
+            "strength": "M"
+          },
+          "name": "Swagger Step (DL2)",
+          "field": "hit",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_214_P_M",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "P",
+            "strength": "M"
+          },
+          "name": "Swagger Step (DL2)",
+          "field": "block",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_214_P_OD",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "P",
+            "strength": "OD"
+          },
+          "name": "Swagger Step (DL2)",
+          "field": "startup",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_214_P_OD",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "P",
+            "strength": "OD"
+          },
+          "name": "Swagger Step (DL2)",
+          "field": "total",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_214_P_OD",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "P",
+            "strength": "OD"
+          },
+          "name": "Swagger Step (DL2)",
+          "field": "hit",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_214_P_OD",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "P",
+            "strength": "OD"
+          },
+          "name": "Swagger Step (DL2)",
+          "field": "block",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_236_K_H",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "H"
+          },
+          "name": "Bakkai (DL2)",
+          "field": "startup",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_236_K_H",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "H"
+          },
+          "name": "Bakkai (DL2)",
+          "field": "total",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_236_K_H",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "H"
+          },
+          "name": "Bakkai (DL2)",
+          "field": "hit",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_236_K_H",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "H"
+          },
+          "name": "Bakkai (DL2)",
+          "field": "block",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_236_P_H",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "P",
+            "strength": "H"
+          },
+          "name": "HP Freeflow Strikes 1 (DL2)",
+          "field": "startup",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_236_P_H",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "P",
+            "strength": "H"
+          },
+          "name": "HP Freeflow Strikes 1 (DL2)",
+          "field": "total",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_236_P_H",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "P",
+            "strength": "H"
+          },
+          "name": "HP Freeflow Strikes 1 (DL2)",
+          "field": "hit",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_236_P_H",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "P",
+            "strength": "H"
+          },
+          "name": "HP Freeflow Strikes 1 (DL2)",
+          "field": "block",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_236_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "OD"
+          },
+          "name": "Bakkai (DL2)",
+          "field": "startup",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_236_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "OD"
+          },
+          "name": "Bakkai (DL2)",
+          "field": "total",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_236_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "OD"
+          },
+          "name": "Bakkai (DL2)",
+          "field": "hit",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_236_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "OD"
+          },
+          "name": "Bakkai (DL2)",
+          "field": "block",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_236_K_L",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "L"
+          },
+          "name": "Bakkai (DL2)",
+          "field": "startup",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_236_K_L",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "L"
+          },
+          "name": "Bakkai (DL2)",
+          "field": "total",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_236_K_L",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "L"
+          },
+          "name": "Bakkai (DL2)",
+          "field": "hit",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_236_K_L",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "L"
+          },
+          "name": "Bakkai (DL2)",
+          "field": "block",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_236_P_L",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "P",
+            "strength": "L"
+          },
+          "name": "LP Freeflow Strikes 1 (DL2)",
+          "field": "startup",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_236_P_L",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "P",
+            "strength": "L"
+          },
+          "name": "LP Freeflow Strikes 1 (DL2)",
+          "field": "total",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_236_P_L",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "P",
+            "strength": "L"
+          },
+          "name": "LP Freeflow Strikes 1 (DL2)",
+          "field": "hit",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_236_P_L",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "P",
+            "strength": "L"
+          },
+          "name": "LP Freeflow Strikes 1 (DL2)",
+          "field": "block",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_236_K_M",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "M"
+          },
+          "name": "Bakkai (DL2)",
+          "field": "startup",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_236_K_M",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "M"
+          },
+          "name": "Bakkai (DL2)",
+          "field": "total",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_236_K_M",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "M"
+          },
+          "name": "Bakkai (DL2)",
+          "field": "hit",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_236_K_M",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "M"
+          },
+          "name": "Bakkai (DL2)",
+          "field": "block",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_236_P_M",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "P",
+            "strength": "M"
+          },
+          "name": "MP Freeflow Strikes 1 (DL2)",
+          "field": "startup",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_236_P_M",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "P",
+            "strength": "M"
+          },
+          "name": "MP Freeflow Strikes 1 (DL2)",
+          "field": "total",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_236_P_M",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "P",
+            "strength": "M"
+          },
+          "name": "MP Freeflow Strikes 1 (DL2)",
+          "field": "hit",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_236_P_M",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "P",
+            "strength": "M"
+          },
+          "name": "MP Freeflow Strikes 1 (DL2)",
+          "field": "block",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_236_P_OD",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "P",
+            "strength": "OD"
+          },
+          "name": "OD Freeflow Strikes 1 (DL2)",
+          "field": "startup",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_236_P_OD",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "P",
+            "strength": "OD"
+          },
+          "name": "OD Freeflow Strikes 1 (DL2)",
+          "field": "total",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_236_P_OD",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "P",
+            "strength": "OD"
+          },
+          "name": "OD Freeflow Strikes 1 (DL2)",
+          "field": "hit",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_236_P_OD",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "P",
+            "strength": "OD"
+          },
+          "name": "OD Freeflow Strikes 1 (DL2)",
+          "field": "block",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_623_K_H",
+          "input": {
+            "type": "special",
+            "motion": "623",
+            "button": "K",
+            "strength": "H"
+          },
+          "name": "Arrow Kick (DL2)",
+          "field": "startup",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_623_K_H",
+          "input": {
+            "type": "special",
+            "motion": "623",
+            "button": "K",
+            "strength": "H"
+          },
+          "name": "Arrow Kick (DL2)",
+          "field": "total",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_623_K_H",
+          "input": {
+            "type": "special",
+            "motion": "623",
+            "button": "K",
+            "strength": "H"
+          },
+          "name": "Arrow Kick (DL2)",
+          "field": "hit",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_623_K_H",
+          "input": {
+            "type": "special",
+            "motion": "623",
+            "button": "K",
+            "strength": "H"
+          },
+          "name": "Arrow Kick (DL2)",
+          "field": "block",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_623_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "623",
+            "button": "K",
+            "strength": "OD"
+          },
+          "name": "Arrow Kick (DL2)",
+          "field": "startup",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_623_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "623",
+            "button": "K",
+            "strength": "OD"
+          },
+          "name": "Arrow Kick (DL2)",
+          "field": "total",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_623_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "623",
+            "button": "K",
+            "strength": "OD"
+          },
+          "name": "Arrow Kick (DL2)",
+          "field": "hit",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_623_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "623",
+            "button": "K",
+            "strength": "OD"
+          },
+          "name": "Arrow Kick (DL2)",
+          "field": "block",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_623_K_L",
+          "input": {
+            "type": "special",
+            "motion": "623",
+            "button": "K",
+            "strength": "L"
+          },
+          "name": "Arrow Kick (DL2)",
+          "field": "startup",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_623_K_L",
+          "input": {
+            "type": "special",
+            "motion": "623",
+            "button": "K",
+            "strength": "L"
+          },
+          "name": "Arrow Kick (DL2)",
+          "field": "total",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_623_K_L",
+          "input": {
+            "type": "special",
+            "motion": "623",
+            "button": "K",
+            "strength": "L"
+          },
+          "name": "Arrow Kick (DL2)",
+          "field": "hit",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_623_K_L",
+          "input": {
+            "type": "special",
+            "motion": "623",
+            "button": "K",
+            "strength": "L"
+          },
+          "name": "Arrow Kick (DL2)",
+          "field": "block",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_623_K_M",
+          "input": {
+            "type": "special",
+            "motion": "623",
+            "button": "K",
+            "strength": "M"
+          },
+          "name": "Arrow Kick (DL2)",
+          "field": "startup",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_623_K_M",
+          "input": {
+            "type": "special",
+            "motion": "623",
+            "button": "K",
+            "strength": "M"
+          },
+          "name": "Arrow Kick (DL2)",
+          "field": "total",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_623_K_M",
+          "input": {
+            "type": "special",
+            "motion": "623",
+            "button": "K",
+            "strength": "M"
+          },
+          "name": "Arrow Kick (DL2)",
+          "field": "hit",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_623_K_M",
+          "input": {
+            "type": "special",
+            "motion": "623",
+            "button": "K",
+            "strength": "M"
+          },
+          "name": "Arrow Kick (DL2)",
+          "field": "block",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_63214_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "63214",
+            "button": "K",
+            "strength": "OD"
+          },
+          "name": "Tenshin (DL3)",
+          "field": "startup",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_63214_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "63214",
+            "button": "K",
+            "strength": "OD"
+          },
+          "name": "Tenshin (DL3)",
+          "field": "total",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_63214_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "63214",
+            "button": "K",
+            "strength": "OD"
+          },
+          "name": "Tenshin (DL3)",
+          "field": "hit",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_63214_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "63214",
+            "button": "K",
+            "strength": "OD"
+          },
+          "name": "Tenshin (DL3)",
+          "field": "block",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_63214_K_none",
+          "input": {
+            "type": "special",
+            "motion": "63214",
+            "button": "K",
+            "strength": "none"
+          },
+          "name": "Tenshin (DL3)",
+          "field": "startup",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_63214_K_none",
+          "input": {
+            "type": "special",
+            "motion": "63214",
+            "button": "K",
+            "strength": "none"
+          },
+          "name": "Tenshin (DL3)",
+          "field": "total",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_63214_K_none",
+          "input": {
+            "type": "special",
+            "motion": "63214",
+            "button": "K",
+            "strength": "none"
+          },
+          "name": "Tenshin (DL3)",
+          "field": "hit",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "jamie__held_special_63214_K_none",
+          "input": {
+            "type": "special",
+            "motion": "63214",
+            "button": "K",
+            "strength": "none"
+          },
+          "name": "Tenshin (DL3)",
+          "field": "block",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        }
+      ],
+      "coverage": {
+        "normal": {
+          "status": "complete",
+          "verification": "unverified"
+        },
+        "special": {
+          "status": "complete",
+          "verification": "unverified"
+        }
+      }
+    },
+    {
+      "id": "jp",
+      "name": "JP",
+      "moves": 28,
+      "adopted": 28,
+      "held": [],
+      "uiInputs": 24,
+      "unsupported": [
+        {
+          "moveId": "jp__special_214_K_none",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "K",
+            "strength": "none"
+          }
+        },
+        {
+          "moveId": "jp__special_214_P_none",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "P",
+            "strength": "none"
+          }
+        },
+        {
+          "moveId": "jp__special_22_K_none",
+          "input": {
+            "type": "special",
+            "motion": "22",
+            "button": "K",
+            "strength": "none"
+          }
+        },
+        {
+          "moveId": "jp__special_22_P_none",
+          "input": {
+            "type": "special",
+            "motion": "22",
+            "button": "P",
+            "strength": "none"
+          }
+        }
+      ],
+      "unknown": [
+        {
+          "moveId": "jp__special_214_K_none",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "K",
+            "strength": "none"
+          },
+          "name": "Embrace",
+          "field": "block",
+          "group": "ガード値が原典に未記載",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6/JP/Frame_data"
+        },
+        {
+          "moveId": "jp__special_214_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "K",
+            "strength": "OD"
+          },
+          "name": "Embrace",
+          "field": "block",
+          "group": "ガード値が原典に未記載",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6/JP/Frame_data"
+        },
+        {
+          "moveId": "jp__special_214_P_none",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "P",
+            "strength": "none"
+          },
+          "name": "Departure",
+          "field": "hit",
+          "group": "複合値・原典値の不足",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6/JP/Frame_data"
+        },
+        {
+          "moveId": "jp__special_214_P_OD",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "P",
+            "strength": "OD"
+          },
+          "name": "Departure",
+          "field": "hit",
+          "group": "複合値・原典値の不足",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6/JP/Frame_data"
+        }
+      ],
+      "coverage": {
+        "normal": {
+          "status": "complete",
+          "verification": "unverified"
+        },
+        "special": {
+          "status": "complete",
+          "verification": "unverified"
+        }
+      }
+    },
+    {
+      "id": "juri",
+      "name": "ジュリ",
+      "moves": 24,
+      "adopted": 24,
+      "held": [],
+      "uiInputs": 24,
+      "unsupported": [],
+      "unknown": [],
+      "coverage": {
+        "normal": {
+          "status": "complete",
+          "verification": "unverified"
+        },
+        "special": {
+          "status": "complete",
+          "verification": "unverified"
+        }
+      }
+    },
+    {
+      "id": "ken",
+      "name": "ケン",
+      "moves": 33,
+      "adopted": 33,
+      "held": [],
+      "uiInputs": 32,
+      "unsupported": [
+        {
+          "moveId": "ken_quick_dash_simultaneous",
+          "input": {
+            "type": "special",
+            "motion": "none",
+            "button": "K",
+            "strength": "none",
+            "buttonCombination": "LK+MK"
+          }
+        }
+      ],
+      "unknown": [
+        {
+          "moveId": "ken__normal_2_K_H",
+          "input": {
+            "type": "normal",
+            "direction": "2",
+            "button": "K",
+            "strength": "H"
+          },
+          "name": "しゃがみ強K",
+          "field": "total",
+          "group": "複合値・原典値の不足",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data"
+        }
+      ],
+      "coverage": {
+        "normal": {
+          "status": "complete",
+          "verification": "unverified"
+        },
+        "special": {
+          "status": "complete",
+          "verification": "unverified"
+        }
+      }
+    },
+    {
+      "id": "kimberly",
+      "name": "キンバリー",
+      "moves": 25,
+      "adopted": 25,
+      "held": [],
+      "uiInputs": 23,
+      "unsupported": [
+        {
+          "moveId": "kimberly__special_22_K_none",
+          "input": {
+            "type": "special",
+            "motion": "22",
+            "button": "K",
+            "strength": "none"
+          }
+        },
+        {
+          "moveId": "kimberly__special_236_K_none",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "none"
+          }
+        }
+      ],
+      "unknown": [],
+      "coverage": {
+        "normal": {
+          "status": "complete",
+          "verification": "unverified"
+        },
+        "special": {
+          "status": "complete",
+          "verification": "unverified"
+        }
+      }
+    },
+    {
+      "id": "lily",
+      "name": "リリー",
+      "moves": 20,
+      "adopted": 20,
+      "held": [],
+      "uiInputs": 20,
+      "unsupported": [],
+      "unknown": [],
+      "coverage": {
+        "normal": {
+          "status": "complete",
+          "verification": "unverified"
+        },
+        "special": {
+          "status": "complete",
+          "verification": "unverified"
+        }
+      }
+    },
+    {
+      "id": "luke",
+      "name": "ルーク",
+      "moves": 26,
+      "adopted": 26,
+      "held": [],
+      "uiInputs": 25,
+      "unsupported": [
+        {
+          "moveId": "luke__special_236_K_none",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "none"
+          }
+        }
+      ],
+      "unknown": [],
+      "coverage": {
+        "normal": {
+          "status": "complete",
+          "verification": "unverified"
+        },
+        "special": {
+          "status": "complete",
+          "verification": "unverified"
+        }
+      }
+    },
+    {
+      "id": "m_bison",
+      "name": "ベガ",
+      "moves": 27,
+      "adopted": 27,
+      "held": [],
+      "uiInputs": 21,
+      "unsupported": [
+        {
+          "moveId": "m_bison__special_[2]8_K_none",
+          "input": {
+            "type": "special",
+            "motion": "[2]8",
+            "button": "K",
+            "strength": "none"
+          }
+        },
+        {
+          "moveId": "m_bison__special_[2]8_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "[2]8",
+            "button": "K",
+            "strength": "OD"
+          }
+        },
+        {
+          "moveId": "m_bison__special_[4]6_P_H",
+          "input": {
+            "type": "special",
+            "motion": "[4]6",
+            "button": "P",
+            "strength": "H"
+          }
+        },
+        {
+          "moveId": "m_bison__special_[4]6_P_L",
+          "input": {
+            "type": "special",
+            "motion": "[4]6",
+            "button": "P",
+            "strength": "L"
+          }
+        },
+        {
+          "moveId": "m_bison__special_[4]6_P_M",
+          "input": {
+            "type": "special",
+            "motion": "[4]6",
+            "button": "P",
+            "strength": "M"
+          }
+        },
+        {
+          "moveId": "m_bison__special_[4]6_P_OD",
+          "input": {
+            "type": "special",
+            "motion": "[4]6",
+            "button": "P",
+            "strength": "OD"
+          }
+        }
+      ],
+      "unknown": [],
+      "coverage": {
+        "normal": {
+          "status": "complete",
+          "verification": "unverified"
+        },
+        "special": {
+          "status": "complete",
+          "verification": "unverified"
+        }
+      }
+    },
+    {
+      "id": "mai",
+      "name": "不知火舞",
+      "moves": 28,
+      "adopted": 28,
+      "held": [],
+      "uiInputs": 28,
+      "unsupported": [],
+      "unknown": [],
+      "coverage": {
+        "normal": {
+          "status": "complete",
+          "verification": "unverified"
+        },
+        "special": {
+          "status": "complete",
+          "verification": "unverified"
+        }
+      }
+    },
+    {
+      "id": "manon",
+      "name": "マノン",
+      "moves": 28,
+      "adopted": 28,
+      "held": [],
+      "uiInputs": 28,
+      "unsupported": [],
+      "unknown": [],
+      "coverage": {
+        "normal": {
+          "status": "complete",
+          "verification": "unverified"
+        },
+        "special": {
+          "status": "complete",
+          "verification": "unverified"
+        }
+      }
+    },
+    {
+      "id": "marisa",
+      "name": "マリーザ",
+      "moves": 30,
+      "adopted": 30,
+      "held": [],
+      "uiInputs": 29,
+      "unsupported": [
+        {
+          "moveId": "marisa__special_214_K_none",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "K",
+            "strength": "none"
+          }
+        }
+      ],
+      "unknown": [
+        {
+          "moveId": "marisa__normal_2_K_M",
+          "input": {
+            "type": "normal",
+            "direction": "2",
+            "button": "K",
+            "strength": "M"
+          },
+          "name": "しゃがみ中K",
+          "field": "total",
+          "group": "複合値・原典値の不足",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data"
+        },
+        {
+          "moveId": "marisa__special_236_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "OD"
+          },
+          "name": "Quadriga",
+          "field": "hit",
+          "group": "複合値・原典値の不足",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data"
+        }
+      ],
+      "coverage": {
+        "normal": {
+          "status": "complete",
+          "verification": "unverified"
+        },
+        "special": {
+          "status": "complete",
+          "verification": "unverified"
+        }
+      }
+    },
+    {
+      "id": "rashid",
+      "name": "ラシード",
+      "moves": 27,
+      "adopted": 27,
+      "held": [],
+      "uiInputs": 26,
+      "unsupported": [
+        {
+          "moveId": "rashid__special_236_K_none",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "none"
+          }
+        }
+      ],
+      "unknown": [],
+      "coverage": {
+        "normal": {
+          "status": "complete",
+          "verification": "unverified"
+        },
+        "special": {
+          "status": "complete",
+          "verification": "unverified"
+        }
+      }
+    },
+    {
+      "id": "ryu",
+      "name": "リュウ",
+      "moves": 33,
+      "adopted": 33,
+      "held": [],
+      "uiInputs": 32,
+      "unsupported": [
+        {
+          "moveId": "ryu__special_22_P_none",
+          "input": {
+            "type": "special",
+            "motion": "22",
+            "button": "P",
+            "strength": "none"
+          }
+        }
+      ],
+      "unknown": [
+        {
+          "moveId": "ryu__special_236_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "OD"
+          },
+          "name": "High Blade Kick",
+          "field": "hit",
+          "group": "複合値・原典値の不足",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data"
+        }
+      ],
+      "coverage": {
+        "normal": {
+          "status": "complete",
+          "verification": "unverified"
+        },
+        "special": {
+          "status": "complete",
+          "verification": "unverified"
+        }
+      }
+    },
+    {
+      "id": "sagat",
+      "name": "サガット",
+      "moves": 28,
+      "adopted": 28,
+      "held": [],
+      "uiInputs": 28,
+      "unsupported": [],
+      "unknown": [],
+      "coverage": {
+        "normal": {
+          "status": "complete",
+          "verification": "unverified"
+        },
+        "special": {
+          "status": "complete",
+          "verification": "unverified"
+        }
+      }
+    },
+    {
+      "id": "terry",
+      "name": "テリー",
+      "moves": 32,
+      "adopted": 32,
+      "held": [],
+      "uiInputs": 32,
+      "unsupported": [],
+      "unknown": [],
+      "coverage": {
+        "normal": {
+          "status": "complete",
+          "verification": "unverified"
+        },
+        "special": {
+          "status": "complete",
+          "verification": "unverified"
+        }
+      }
+    },
+    {
+      "id": "yasmine",
+      "name": "ヤスミン",
+      "moves": 28,
+      "adopted": 28,
+      "held": [],
+      "uiInputs": 26,
+      "unsupported": [
+        {
+          "moveId": "yasmine__special_22_P_none",
+          "input": {
+            "type": "special",
+            "motion": "22",
+            "button": "P",
+            "strength": "none"
+          }
+        },
+        {
+          "moveId": "yasmine__special_236_K_none",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "none"
+          }
+        }
+      ],
+      "unknown": [],
+      "coverage": {
+        "normal": {
+          "status": "complete",
+          "verification": "unverified"
+        },
+        "special": {
+          "status": "complete",
+          "verification": "unverified"
+        }
+      }
+    },
+    {
+      "id": "zangief",
+      "name": "ザンギエフ",
+      "moves": 14,
+      "adopted": 13,
+      "held": [
+        {
+          "moveId": "zangief__held_special_buttons_LP+MP",
+          "input": {
+            "type": "special",
+            "motion": "none",
+            "button": "P",
+            "strength": "none",
+            "buttonCombination": "LP+MP"
+          },
+          "name": "Double Lariat",
+          "rule": "held-source-input"
+        }
+      ],
+      "uiInputs": 13,
+      "unsupported": [
+        {
+          "moveId": "zangief__held_special_buttons_LP+MP",
+          "input": {
+            "type": "special",
+            "motion": "none",
+            "button": "P",
+            "strength": "none",
+            "buttonCombination": "LP+MP"
+          }
+        }
+      ],
+      "unknown": [
+        {
+          "moveId": "zangief__normal_5_P_H",
+          "input": {
+            "type": "normal",
+            "direction": "5",
+            "button": "P",
+            "strength": "H"
+          },
+          "name": "立ち強P",
+          "field": "startup",
+          "group": "複合値・原典値の不足",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6/Zangief/Frame_data"
+        },
+        {
+          "moveId": "zangief__held_special_buttons_LP+MP",
+          "input": {
+            "type": "special",
+            "motion": "none",
+            "button": "P",
+            "strength": "none",
+            "buttonCombination": "LP+MP"
+          },
+          "name": "Double Lariat",
+          "field": "startup",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "zangief__held_special_buttons_LP+MP",
+          "input": {
+            "type": "special",
+            "motion": "none",
+            "button": "P",
+            "strength": "none",
+            "buttonCombination": "LP+MP"
+          },
+          "name": "Double Lariat",
+          "field": "total",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "zangief__held_special_buttons_LP+MP",
+          "input": {
+            "type": "special",
+            "motion": "none",
+            "button": "P",
+            "strength": "none",
+            "buttonCombination": "LP+MP"
+          },
+          "name": "Double Lariat",
+          "field": "hit",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        },
+        {
+          "moveId": "zangief__held_special_buttons_LP+MP",
+          "input": {
+            "type": "special",
+            "motion": "none",
+            "button": "P",
+            "strength": "none",
+            "buttonCombination": "LP+MP"
+          },
+          "name": "Double Lariat",
+          "field": "block",
+          "group": "通常状態・入力対応の保留",
+          "source": "https://wiki.supercombo.gg/w/Street_Fighter_6"
+        }
+      ],
+      "coverage": {
+        "normal": {
+          "status": "complete",
+          "verification": "unverified"
+        },
+        "special": {
+          "status": "complete",
+          "verification": "unverified"
+        }
+      }
+    }
+  ],
+  "eligible": 32,
+  "moves": 884,
+  "inputs": 52,
+  "candidatesPreserved": 860,
+  "protectedCharacters": [
+    "ken",
+    "marisa"
+  ],
+  "userDecision": "held-source-input",
+  "pilots": [
+    "ryu",
+    "guile",
+    "terry",
+    "aki"
+  ],
+  "sourceInventory": "staging/integration/inventory.json",
+  "verification": "unverified"
+}

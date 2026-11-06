@@ -110,6 +110,10 @@ legend {
   gap: 8px;
   flex-wrap: wrap;
 }
+.characters {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
 .choices label,
 .characters label {
   display: flex;
@@ -653,6 +657,6 @@ summary {
     display: initial;
   }
   .characters {
-    flex-direction: column;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }

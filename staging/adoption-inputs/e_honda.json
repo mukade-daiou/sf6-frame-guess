@@ -1,0 +1,1918 @@
+{
+  "id": "e_honda",
+  "nameJa": "エドモンド本田",
+  "nameEn": "E. Honda",
+  "gameVersion": "UNVERIFIED",
+  "source": {
+    "url": "https://wiki.supercombo.gg/w/Street_Fighter_6",
+    "retrievedAt": "2026-08-19T04:05:24.993Z",
+    "gameVersion": "UNVERIFIED",
+    "kind": "community",
+    "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+    "license": "CC-BY-SA-4.0",
+    "verification": "unverified"
+  },
+  "coverage": {
+    "normal": {
+      "status": "complete",
+      "verification": "unverified"
+    },
+    "special": {
+      "status": "complete",
+      "verification": "unverified"
+    }
+  },
+  "moves": [
+    {
+      "id": "e_honda__normal_2_K_H",
+      "name": "しゃがみ強K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "11",
+          "numeric": 11
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "38",
+          "numeric": 38,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+30",
+          "numeric": 30
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-10",
+          "numeric": -10
+        }
+      },
+      "notes": [
+        "upstreamInput: 2HK",
+        "upstreamName: Dohyo Sweep",
+        "upstreamNotes: Has juggle potential; 2nd hit is behind E. Honda (safe on block and better KD Adv. if it connects); 2nd hit puts airborne opponents into limited juggle state (useful in some side-switch juggles)",
+        "upstreamActive: 3(6)5",
+        "upstreamRecovery: 14",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "e_honda__normal_2_K_L",
+      "name": "しゃがみ弱K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "15",
+          "numeric": 15,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: 2LK",
+        "upstreamName: Crouching Light Kick",
+        "upstreamNotes: Chains into 2LP/2LK; cancelable into 214P with Sumo Spirit enhancement (combos into LP version only)",
+        "upstreamActive: 2",
+        "upstreamRecovery: 9"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "e_honda__normal_2_K_M",
+      "name": "しゃがみ中K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "28",
+          "numeric": 28,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+6",
+          "numeric": 6
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        }
+      },
+      "notes": [
+        "upstreamInput: 2MK",
+        "upstreamName: Crouching Medium Kick",
+        "upstreamNotes: Low poke that can combo after hit (much stronger combo opportunities when used out of Drive Rush); cancelable into 214P with Sumo Spirit enhancement (combos into any strength version)",
+        "upstreamActive: 3",
+        "upstreamRecovery: 17"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "e_honda__normal_2_P_H",
+      "name": "しゃがみ強P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "11",
+          "numeric": 11
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "31",
+          "numeric": 31,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: 2HP",
+        "upstreamName: Crouching Heavy Punch",
+        "upstreamNotes: 2f extra recovery on whiff or if armor absorbed; not a low attack despite the animation; can be spaced to hit on later active frames for improved advantage; cancelable into 214P with Sumo Spirit enhancement (combos into any strength version)",
+        "upstreamActive: 4",
+        "upstreamRecovery: 17"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "e_honda__normal_2_P_L",
+      "name": "しゃがみ弱P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "4",
+          "numeric": 4
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "16",
+          "numeric": 16,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        }
+      },
+      "notes": [
+        "upstreamInput: 2LP",
+        "upstreamName: Crouching Light Punch",
+        "upstreamNotes: Chains into 2LP/2LK; true blockstring when chained into 2LP; topmost hurtbox on frames 1-6 is vulnerable only to aerial strikes (preventing its use as an anti-air)",
+        "upstreamActive: 3",
+        "upstreamRecovery: 10"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "e_honda__normal_2_P_M",
+      "name": "しゃがみ中P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "27",
+          "numeric": 27,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: 2MP",
+        "upstreamName: Crouching Medium Punch",
+        "upstreamNotes: Great bufferable poke with strong hitbox priority; topmost hurtbox on frames 1-11 is vulnerable only to aerial strikes (preventing its use as an anti-air)",
+        "upstreamActive: 4",
+        "upstreamRecovery: 16"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "e_honda__normal_5_K_H",
+      "name": "立ち強K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "36",
+          "numeric": 36,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-5",
+          "numeric": -5
+        }
+      },
+      "notes": [
+        "upstreamInput: 5HK",
+        "upstreamName: Standing Heavy Kick",
+        "upstreamNotes: 1st hit forces stand (can only connect on crouchers at close range); 2nd hit whiffs vs. crouching opponents unless they extend a vertical hurtbox; if 1st hit connects on crouch block and the 2nd hit whiffs, the cancel window of the first hit is extended, making it possible to confirm into a safe special move; 1st hit puts airborne opponents into a free juggle state; 2nd hit puts airborne opponents into a limited juggle state; Counter-hit/Punish Counter advantage carries through both hits; gives Honda a meterless combo into 236K~2P launcher (weaker than 5HP starter, but required in some routes like CH 5MP/2MK or DR~2LP); can frame trap when canceled into 236K~P for safe pressure",
+        "upstreamActive: 2(1)4",
+        "upstreamRecovery: 22"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "e_honda__normal_5_K_L",
+      "name": "立ち弱K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "4",
+          "numeric": 4
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+5",
+          "numeric": 5
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        }
+      },
+      "notes": [
+        "upstreamInput: 5LK",
+        "upstreamName: Standing Light Kick",
+        "upstreamNotes: 4f normal with less range than 2LP, but allows a link into 5LP on hit",
+        "upstreamActive: 2",
+        "upstreamRecovery: 9"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "e_honda__normal_5_K_M",
+      "name": "立ち中K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "29",
+          "numeric": 29,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: 5MK",
+        "upstreamName: Standing Medium Kick",
+        "upstreamNotes: No leg hurtbox (except for back foot) on frames 7-13, making it useful vs. low pokes; cancelable into 214P with Sumo Spirit enhancement (combos into any strength version)",
+        "upstreamActive: 4",
+        "upstreamRecovery: 16"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "e_honda__normal_5_P_H",
+      "name": "立ち強P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "34",
+          "numeric": 34,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        }
+      },
+      "notes": [
+        "upstreamInput: 5HP",
+        "upstreamName: Standing Heavy Punch",
+        "upstreamNotes: 1st active frame only hits above Honda, and 2nd active frame only hits point blank (realistically 10f startup vs. grounded opponents in most scenarios); first 3 active frames are cancelable and a solid anti-air (cannot hit cross-up); Punish Counter causes a crumple vs. grounded opponents, or slams airborne opponents down into a free OTG juggle state (5HP must be canceled to combo afterwards); only the first 3 active frames are cancelable (with Sumo Spirit, later active frames can be canceled into 214P); final 4 active frames make 5HP a solid poke in neutral; extends a hurtbox on frame 10 (1f before longer-range active frames) that is vulnerable to projectiles; special/DR cancel is delayed until after 2nd active frame; Honda's most important meterless route into 236K~2P launcher (higher damage and identical range compared to 5HK 1st hit)",
+        "upstreamActive: 7",
+        "upstreamRecovery: 20"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "e_honda__normal_5_P_L",
+      "name": "立ち弱P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "17",
+          "numeric": 17,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        }
+      },
+      "notes": [
+        "upstreamInput: 5LP",
+        "upstreamName: Standing Light Punch",
+        "upstreamNotes: Good range for a light normal; very lenient hitconfirm window into 5LP~MP Target Combo for a light normal (though the MP can whiff at max range)",
+        "upstreamActive: 3",
+        "upstreamRecovery: 10"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "e_honda__normal_5_P_M",
+      "name": "立ち中P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "26",
+          "numeric": 26,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+6",
+          "numeric": 6
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        }
+      },
+      "notes": [
+        "upstreamInput: 5MP",
+        "upstreamName: Standing Medium Punch",
+        "upstreamNotes: 4f extra recovery on whiff; good poke and pressure starter due to its hitbox priority, distance traveled, and block advantage",
+        "upstreamActive: 4",
+        "upstreamRecovery: 13"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "e_honda__special_[2]8_K_H",
+      "name": "Sumo Smash",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "[2]8",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "11",
+          "numeric": 11
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "59",
+          "numeric": 59,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+23",
+          "numeric": 23
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        }
+      },
+      "notes": [
+        "upstreamInput: [2]8HK",
+        "upstreamName: Sumo Smash",
+        "upstreamNotes: [] refers to damage on cross-up version of downward smash; () refers to total startup on the overhead downward smash vs. standing opponents (2nd hit becomes active mid-air on frame 37); downward smash has 1f better KD Adv. vs. crouching opponents; 40f charge time (holds charge for 12f after releasing down direction); 1st hit whiffs on crouching opponents and cannot hit cross-up; can alter trajectory on the way up by holding forward/back",
+        "upstreamActive: 4(22)6",
+        "upstreamRecovery: 17",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "e_honda__special_[2]8_K_L",
+      "name": "Sumo Smash",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "[2]8",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "11",
+          "numeric": 11
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "65",
+          "numeric": 65,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+23",
+          "numeric": 23
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        }
+      },
+      "notes": [
+        "upstreamInput: [2]8LK",
+        "upstreamName: Sumo Smash",
+        "upstreamNotes: [] refers to damage on cross-up version of downward smash; () refers to total startup on the overhead downward smash vs. standing opponents (2nd hit becomes active mid-air on frame 41); downward smash has 1f better KD Adv. vs. crouching opponents; 40f charge time (holds charge for 12f after releasing down direction); 1st hit whiffs on crouching opponents and cannot hit cross-up; can alter trajectory on the way up by holding forward/back",
+        "upstreamActive: 4(26)8",
+        "upstreamRecovery: 17",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "e_honda__special_[2]8_K_M",
+      "name": "Sumo Smash",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "[2]8",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "11",
+          "numeric": 11
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "62",
+          "numeric": 62,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+23",
+          "numeric": 23
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        }
+      },
+      "notes": [
+        "upstreamInput: [2]8MK",
+        "upstreamName: Sumo Smash",
+        "upstreamNotes: [] refers to damage on cross-up version of downward smash; () refers to total startup on the overhead downward smash vs. standing opponents (2nd hit becomes active mid-air on frame 39); downward smash has 1f better KD Adv. vs. crouching opponents; 40f charge time (holds charge for 12f after releasing down direction); 1st hit whiffs on crouching opponents and cannot hit cross-up; can alter trajectory on the way up by holding forward/back",
+        "upstreamActive: 4(24)7",
+        "upstreamRecovery: 17",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "e_honda__special_[2]8_K_OD",
+      "name": "Sumo Smash",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "[2]8",
+        "button": "K",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "56",
+          "numeric": 56,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+23",
+          "numeric": 23
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        }
+      },
+      "notes": [
+        "upstreamInput: [2]8KK",
+        "upstreamName: Sumo Smash",
+        "upstreamNotes: [] refers to damage on cross-up version of downward smash; () refers to total startup on the overhead downward smash vs. standing opponents (2nd hit becomes active mid-air on frame 31); downward smash has 1f better KD Adv. vs. crouching opponents; 40f charge time (holds charge for 12f after releasing down direction); 1st hit whiffs on crouching opponents and cannot hit cross-up; can alter trajectory on the way up by holding forward/back; holding LK or MK will cause Honda to hang mid-air before starting his descent (LK 4f longer, MK 2f longer)",
+        "upstreamActive: 12(13~17)9",
+        "upstreamRecovery: 17",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "e_honda__special_[4]6_P_H",
+      "name": "Sumo Headbutt",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "[4]6",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "34",
+          "numeric": 34,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: [4]6HP",
+        "upstreamName: Sumo Headbutt",
+        "upstreamNotes: () refers to reduced damage on active frame 5 onward; 2f extra landing recovery on block; 40f charge time (charge lasts 10f after releasing back direction); continues until it reaches opponent or edge of screen (variable Active and Total frame count); only first 4 active frames are cancelable into SA3; always -3 on block regardless of how meaty it connects, and usually in range for opponent's 4f normal to connect; extra pushback on block when opponent is in Burnout; good for chipping at opponent's Drive gauge; if Honda switches sides, he will start landing recovery (11+9 land) after 15 active frames (cannot safely fly under neutral jumps)",
+        "upstreamActive: 1~34",
+        "upstreamRecovery: 2",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +40 as D; original onHit=40; source=https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22E.Honda%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "e_honda__special_[4]6_P_L",
+      "name": "Sumo Headbutt",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "[4]6",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "29",
+          "numeric": 29,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: [4]6LP",
+        "upstreamName: Sumo Headbutt",
+        "upstreamNotes: () refers to reduced damage on active frame 5 onward; 1f less landing recovery on block; 40f charge time (charge lasts 10f after releasing back direction); travels ~50% screen length; only first 4 active frames are cancelable into SA3; always -3 on block regardless of how meaty it connects, and usually in range for opponent's 4f normal to connect; extra pushback on block when opponent is in Burnout; good for chipping at opponent's Drive gauge",
+        "upstreamActive: 1~22",
+        "upstreamRecovery: 2",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +40 as D; original onHit=40; source=https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22E.Honda%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "e_honda__special_[4]6_P_M",
+      "name": "Sumo Headbutt",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "[4]6",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "30",
+          "numeric": 30,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: [4]6MP",
+        "upstreamName: Sumo Headbutt",
+        "upstreamNotes: () refers to reduced damage on active frame 5 onward; 2f extra landing recovery on block; 40f charge time (charge lasts 10f after releasing back direction); travels ~80% screen length; only first 4 active frames are cancelable into SA3; always -3 on block regardless of how meaty it connects, and usually in range for opponent's 4f normal to connect; extra pushback on block when opponent is in Burnout; good for chipping at opponent's Drive gauge",
+        "upstreamActive: 1~24",
+        "upstreamRecovery: 2",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +40 as D; original onHit=40; source=https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22E.Honda%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "e_honda__special_[4]6_P_OD",
+      "name": "Sumo Headbutt",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "[4]6",
+        "button": "P",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "44",
+          "numeric": 44,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+36",
+          "numeric": 36
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-20",
+          "numeric": -20
+        }
+      },
+      "notes": [
+        "upstreamInput: [4]6PP",
+        "upstreamName: Sumo Headbutt",
+        "upstreamNotes: 2 hits if used from close range; 2nd hit continues until it reaches opponent or edge of screen (variable Active and Total frame count); 7f extra landing recovery on block; 40f charge time (charge lasts 10f after releasing back direction); 1 hit of armor before active frames, then another hit of armor that lasts until end of active frames; armor has fixed 7f hitstop that allows it to punish safe jumps using Medium/Heavy air normals (Light safe jumps can still block OD Headbutt); always -20 on block regardless of how meaty it connects; from frame 26 onward, Honda transitions to his 30f recovery animation if he switches sides with the opponent",
+        "upstreamActive: 5,1~30",
+        "upstreamRecovery: 30",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "e_honda__special_214_P_H",
+      "name": "Hundred Hand Slap",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "19",
+          "numeric": 19
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "79",
+          "numeric": 79,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-8",
+          "numeric": -8
+        }
+      },
+      "notes": [
+        "upstreamInput: 214HP",
+        "upstreamName: Hundred Hand Slap",
+        "upstreamNotes: [] refers to enhanced Sumo Spirit version (extra damage, +2 Hit advantage, +4 Block advantage); Counter-hit/Punish Counter bonus advantage carries through all hits; only final hit is Super cancelable; puts airborne opponents into limited juggle state (Enhanced version: causes OTG bounce); combo scaling only applies to Enhanced version",
+        "upstreamActive: 2(4)2(3)1(3)1(3)1(3)1(3)1(3)1(2)1(2)1(2)1(1)2[2(4)2(3)1(3)1(3)1(3)1(3)1(3)1(1)1(1)1(14)2]",
+        "upstreamRecovery: 17"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "e_honda__special_214_P_L",
+      "name": "Hundred Hand Slap",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "45",
+          "numeric": 45,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
+        }
+      },
+      "notes": [
+        "upstreamInput: 214LP",
+        "upstreamName: Hundred Hand Slap",
+        "upstreamNotes: [] refers to enhanced Sumo Spirit version (extra damage, +2 Hit advantage, +4 Block advantage); Counter-hit/Punish Counter bonus advantage carries through all hits; only final hit is Super cancelable; puts airborne opponents into limited juggle state (Enhanced version: causes OTG bounce); combo scaling only applies to Enhanced version",
+        "upstreamActive: 2(4)2(2)1(2)2(1)1(1)2[2(4)2(2)1(1)2(1)1(10)2]",
+        "upstreamRecovery: 14"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "e_honda__special_214_P_M",
+      "name": "Hundred Hand Slap",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "16",
+          "numeric": 16
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "64",
+          "numeric": 64,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-8",
+          "numeric": -8
+        }
+      },
+      "notes": [
+        "upstreamInput: 214MP",
+        "upstreamName: Hundred Hand Slap",
+        "upstreamNotes: [] refers to enhanced Sumo Spirit version (extra damage, +2 Hit advantage, +4 Block advantage); Counter-hit/Punish Counter bonus advantage carries through all hits; only final hit is Super cancelable; puts airborne opponents into limited juggle state (Enhanced version: causes OTG bounce); combo scaling only applies to Enhanced version; combos from 5LP/2LP",
+        "upstreamActive: 2(4)2(1)1(3)1(2)1(3)1(3)1(2)1(2)2[2(4)2(2)1(3)1(2)1(4)1(1)1(14)2]",
+        "upstreamRecovery: 17"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "e_honda__special_214_P_OD",
+      "name": "Hundred Hand Slap",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "19",
+          "numeric": 19
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "73",
+          "numeric": 73,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: 214PP",
+        "upstreamName: Hundred Hand Slap",
+        "upstreamNotes: [] refers to enhanced Sumo Spirit version (extra damage, +2 Hit advantage, +4 Block advantage); Counter-hit/Punish Counter bonus advantage carries through all hits; only final hit is Super cancelable; puts airborne opponents into limited juggle state (Enhanced version: causes OTG bounce)",
+        "upstreamActive: 4(6)2(3)2(3)2(4)2(2)2(2)2(2)2(1)2[4(6)2(3)2(3)2(4)2(1)2(1)1(1)1(10)2]",
+        "upstreamRecovery: 12"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "e_honda__special_22_K_none",
+      "name": "Sumo Spirit",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "22",
+        "button": "K",
+        "strength": "none"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "51",
+          "numeric": 51
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "52",
+          "numeric": 52,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 22K",
+        "upstreamName: Sumo Spirit",
+        "upstreamNotes: Enhances the next Hundred Hand Slap (increases damage and improves frame advantage by +2 on hit and +4 on block); allows 5HP (all active frames), 2HP, and 22P to cancel into Hundred Hand Slap",
+        "upstreamActive: -",
+        "upstreamRecovery: 1"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "e_honda__special_22_P_none",
+      "name": "Neko Damashi",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "22",
+        "button": "P",
+        "strength": "none"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "11",
+          "numeric": 11
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "29",
+          "numeric": 29,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: 22P",
+        "upstreamName: Neko Damashi",
+        "upstreamNotes: Forces stand (allows Sumo Smash confirm on meaty/Counter-hit); has a 1-hit projectile clash hitbox during active frames; useful anti-air for horizontal approaches but cannot hit cross-up; can be spaced out for better hit/block advantage (can lead to extended combos); cancelable into enhanced 214P with Sumo Spirit; 8f hitstop when clashing with projectile",
+        "upstreamActive: 5",
+        "upstreamRecovery: 14"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "e_honda__special_236_K_none",
+      "name": "Sumo Dash",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "none"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "13",
+          "numeric": 13
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "44",
+          "numeric": 44,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "unknown",
+          "display": null
+        },
+        "block": {
+          "status": "unknown",
+          "display": null
+        }
+      },
+      "notes": [
+        "upstreamInput: 236K",
+        "upstreamName: Sumo Dash",
+        "upstreamNotes: Can cancel into 5P on frame 13 or 2P on frame 14 (until the end of recovery); Movement Speed: 0.052",
+        "upstreamActive: -",
+        "upstreamRecovery: 44"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "e_honda__special_236_K_OD",
+      "name": "Sumo Dash",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "13",
+          "numeric": 13
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "34",
+          "numeric": 34,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "unknown",
+          "display": null
+        },
+        "block": {
+          "status": "unknown",
+          "display": null
+        }
+      },
+      "notes": [
+        "upstreamInput: 236KK",
+        "upstreamName: Sumo Dash",
+        "upstreamNotes: Can cancel into 5P follow-up on frames 13-27 or the 2P follow-up on frames 11-27; Movement Speed: 0.067",
+        "upstreamActive: -",
+        "upstreamRecovery: 34"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "e_honda__special_63214_K_H",
+      "name": "Oicho Throw",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "61",
+          "numeric": 61,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+7",
+          "numeric": 7
+        },
+        "block": {
+          "status": "unknown",
+          "display": null
+        }
+      },
+      "notes": [
+        "upstreamInput: 63214HK",
+        "upstreamName: Oicho Throw",
+        "upstreamNotes: Cannot be canceled into from normals; () refers to Punish Counter damage; Range: 0.99",
+        "upstreamActive: 4",
+        "upstreamRecovery: 52"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "e_honda__special_63214_K_L",
+      "name": "Oicho Throw",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "61",
+          "numeric": 61,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+7",
+          "numeric": 7
+        },
+        "block": {
+          "status": "unknown",
+          "display": null
+        }
+      },
+      "notes": [
+        "upstreamInput: 63214LK",
+        "upstreamName: Oicho Throw",
+        "upstreamNotes: Cannot be canceled into from normals; () refers to Punish Counter damage; Range: 1.19",
+        "upstreamActive: 4",
+        "upstreamRecovery: 52"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "e_honda__special_63214_K_M",
+      "name": "Oicho Throw",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "61",
+          "numeric": 61,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+7",
+          "numeric": 7
+        },
+        "block": {
+          "status": "unknown",
+          "display": null
+        }
+      },
+      "notes": [
+        "upstreamInput: 63214MK",
+        "upstreamName: Oicho Throw",
+        "upstreamNotes: Cannot be canceled into from normals; () refers to Punish Counter damage; Range: 1.09",
+        "upstreamActive: 4",
+        "upstreamRecovery: 52"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "e_honda__special_63214_K_OD",
+      "name": "Oicho Throw",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "61",
+          "numeric": 61,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+7",
+          "numeric": 7
+        },
+        "block": {
+          "status": "unknown",
+          "display": null
+        }
+      },
+      "notes": [
+        "upstreamInput: 63214KK",
+        "upstreamName: Oicho Throw",
+        "upstreamNotes: Cannot be canceled into from normals; () refers to Punish Counter damage; Range: 1.19",
+        "upstreamActive: 4",
+        "upstreamRecovery: 52"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    }
+  ],
+  "adoption": {
+    "status": "accepted",
+    "basis": "source-inventory; held-source-input; unverified sources permitted"
+  }
+}

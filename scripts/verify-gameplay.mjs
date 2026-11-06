@@ -1,5 +1,9 @@
 import { execFileSync } from "node:child_process";
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, writeFile, readdir } from "node:fs/promises";
+const rosterIds = (await readdir("data/characters"))
+  .filter((f) => f.endsWith(".json"))
+  .sort()
+  .map((f) => f.slice(0, -5));
 const out = "staging/verification/browser";
 await mkdir(out, { recursive: true });
 const run = (...args) =>
@@ -9,7 +13,12 @@ const run = (...args) =>
     env: { ...process.env, AGENT_BROWSER_SOCKET_DIR: "/tmp/sf6-browser" },
   });
 const evaluate = (fn, arg) =>
-  JSON.parse(run("eval", `(${fn.toString()})(${JSON.stringify(arg)})`));
+  JSON.parse(
+    run(
+      "eval",
+      `(${fn.toString()})(${JSON.stringify(arg?.target ? { ...arg, rosterSize: rosterIds.length, draw: (rosterIds.indexOf(arg.target) + 0.5) / rosterIds.length } : arg)})`,
+    ),
+  );
 async function exercise(config) {
   const tick = () => new Promise((r) => setTimeout(r, 20));
   const assert = (v, message) => {
@@ -78,7 +87,7 @@ async function exercise(config) {
     !document.body.innerText.includes("未検証の実データで試遊（開発専用）"),
     "Development data leaked",
   );
-  Math.random = () => (config.target === "ken" ? 0 : 0.999);
+  Math.random = () => config.draw;
   await click("ゲーム開始");
   assert(
     document.querySelectorAll(".attack-buttons button").length === 8,
@@ -397,7 +406,7 @@ async function earlyAnswer(config) {
     button.click();
     await wait();
   };
-  Math.random = () => (config.target === "ken" ? 0 : 0.999);
+  Math.random = () => config.draw;
   await click("ゲーム開始");
   if (config.mode === "startup") await click("発生のみ");
   for (const button of ["弱P", "中P"].slice(0, config.questions)) {
@@ -406,6 +415,11 @@ async function earlyAnswer(config) {
   }
   const history = document.querySelector("ol.history")?.innerHTML || "";
   await click("回答へ進む");
+  assert(
+    document.querySelectorAll('input[name="answer"]').length ===
+      config.rosterSize,
+    "Answer roster mismatch",
+  );
   assert(
     !document.querySelector(".attack-buttons") &&
       !document.querySelector(".result"),

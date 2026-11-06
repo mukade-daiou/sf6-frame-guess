@@ -1,0 +1,1732 @@
+{
+  "id": "aki",
+  "nameJa": "A.K.I.",
+  "nameEn": "A.K.I.",
+  "gameVersion": "UNVERIFIED",
+  "source": {
+    "url": "https://wiki.supercombo.gg/w/Street_Fighter_6",
+    "retrievedAt": "2026-08-19T04:05:24.993Z",
+    "gameVersion": "UNVERIFIED",
+    "kind": "community",
+    "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+    "license": "CC-BY-SA-4.0",
+    "verification": "unverified"
+  },
+  "coverage": {
+    "normal": {
+      "status": "complete",
+      "verification": "unverified"
+    },
+    "special": {
+      "status": "complete",
+      "verification": "unverified"
+    }
+  },
+  "moves": [
+    {
+      "id": "aki__normal_2_K_H",
+      "name": "しゃがみ強K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "35",
+          "numeric": 35,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "0",
+          "numeric": 0
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: 2HK",
+        "upstreamName: Crouching Heavy Kick",
+        "upstreamNotes: Upper body and kicking leg are anti-air invuln 10-15f (during active frames); decent anti-air but cannot hit cross-up; puts airborne opponents into limited juggle state on Counter-hit/Punish Counter; Punish Counter puts grounded opponents into limited juggle state; has high juggle potential, causing an air reset; Super cancel is delayed until after 2nd active frame; extends a hurtbox 1f before active that is vulnerable to projectiles",
+        "upstreamActive: 6",
+        "upstreamRecovery: 20"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "aki__normal_2_K_L",
+      "name": "しゃがみ弱K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "15",
+          "numeric": 15,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        }
+      },
+      "notes": [
+        "upstreamInput: 2LK",
+        "upstreamName: Crouching Light Kick",
+        "upstreamNotes: Chains into 2LP/2LK; highest range light normal, can be used in 4-hit blockstrings and to stuff grounded approaches",
+        "upstreamActive: 3",
+        "upstreamRecovery: 8"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "aki__normal_2_K_M",
+      "name": "しゃがみ中K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "25",
+          "numeric": 25,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+5",
+          "numeric": 5
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        }
+      },
+      "notes": [
+        "upstreamInput: 2MK",
+        "upstreamName: Crouching Medium Kick",
+        "upstreamNotes: Solid low poke that can be buffered into Super or linked into light normals; good option out of Drive Rush, granting block advantage and a link into 5HK or 5MK",
+        "upstreamActive: 3",
+        "upstreamRecovery: 16"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "aki__normal_2_P_H",
+      "name": "しゃがみ強P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "40",
+          "numeric": 40,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-8",
+          "numeric": -8
+        }
+      },
+      "notes": [
+        "upstreamInput: 2HP",
+        "upstreamName: Xiu She",
+        "upstreamNotes: Hitbox does not move during active frames (cannot space to make it safer in neutral); very disjointed hitbox, but easily punished in neutral; has some juggle potential; poisons the opponent on Punish Counter",
+        "upstreamActive: 3",
+        "upstreamRecovery: 28",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +27 as D; original onHit=27; source=https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22A.K.I.%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "aki__normal_2_P_L",
+      "name": "しゃがみ弱P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "4",
+          "numeric": 4
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        }
+      },
+      "notes": [
+        "upstreamInput: 2LP",
+        "upstreamName: Crouching Light Punch",
+        "upstreamNotes: Chains into 2LP/2LK (true blockstring into 2LP); Sinister Slide cancel: +3/-2; topmost hurtbox on frames 1-5 is vulnerable only to aerial strikes (preventing its use as an anti-air)",
+        "upstreamActive: 2",
+        "upstreamRecovery: 9"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "aki__normal_2_P_M",
+      "name": "しゃがみ中P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "27",
+          "numeric": 27,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: 2MP",
+        "upstreamName: Crouching Medium Punch",
+        "upstreamNotes: Sinister Slide cancel: +10/+6; combo/buffer tool with good range; topmost hurtbox on frames 1-20 is vulnerable only to aerial strikes (preventing its use as an anti-air)",
+        "upstreamActive: 3",
+        "upstreamRecovery: 18"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "aki__normal_5_K_H",
+      "name": "立ち強K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "31",
+          "numeric": 31,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: 5HK",
+        "upstreamName: Standing Heavy Kick",
+        "upstreamNotes: Forces stand on hit; active frames 3-4 whiff on crouching opponents unless they extend a vertical hurtbox; important combo and juggle tool (combos into 2PP~K naturally, and 2PP~P on Punish Counter); staggers opponent on grounded Punish Counter and launches into a high limited juggle state on airborne Punish Counter; good anti-air on frames 10-12 but cannot hit cross-up; head hurtbox is anti-air invuln 5-12f; kicking leg and upper body hurtbox is anti-air invuln on frame 10-12; extends a hurtbox 1f before active that is vulnerable to projectiles; Sinister Slide cancel: +15/+8; DR cancel is delayed until after 2nd active frame",
+        "upstreamActive: 4",
+        "upstreamRecovery: 19"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "aki__normal_5_K_L",
+      "name": "立ち弱K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "4",
+          "numeric": 4
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "18",
+          "numeric": 18,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: 5LK",
+        "upstreamName: Standing Light Kick",
+        "upstreamNotes: Sinister Slide cancel: +6/0; DR cancel is delayed until after 1st recovery frame",
+        "upstreamActive: 3",
+        "upstreamRecovery: 12"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "aki__normal_5_K_M",
+      "name": "立ち中K",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "25",
+          "numeric": 25,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+6",
+          "numeric": 6
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        }
+      },
+      "notes": [
+        "upstreamInput: 5MK",
+        "upstreamName: Standing Medium Kick",
+        "upstreamNotes: 2 extra recovery frames on whiff; useful poke and combo starter",
+        "upstreamActive: 3",
+        "upstreamRecovery: 15"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "aki__normal_5_P_H",
+      "name": "立ち強P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "35",
+          "numeric": 35,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
+        }
+      },
+      "notes": [
+        "upstreamInput: 5HP",
+        "upstreamName: Standing Heavy Punch",
+        "upstreamNotes: Very good poke that can avoid some low attacks; hitconfirmable into 5HP~HP Target Combo, which is especially strong vs. poisoned opponents",
+        "upstreamActive: 3",
+        "upstreamRecovery: 21"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "aki__normal_5_P_L",
+      "name": "立ち弱P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "13",
+          "numeric": 13,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        }
+      },
+      "notes": [
+        "upstreamInput: 5LP",
+        "upstreamName: Standing Light Punch",
+        "upstreamNotes: Sinister Slide cancel: +1/-4; short range and not chainable, primarily used for the 5LP~LP Target Combo",
+        "upstreamActive: 2",
+        "upstreamRecovery: 7"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "aki__normal_5_P_M",
+      "name": "立ち中P",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "24",
+          "numeric": 24,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: 5MP",
+        "upstreamName: Standing Medium Punch",
+        "upstreamNotes: 2 extra recovery frames on whiff/block; Sinister Slide cancel: +9/+5; moves A.K.I. forward; useful combo tool after 5MK or in counter-hit routes but does not combo into 236PP; high active frame count makes it useful as a meaty (up to +7/+1); special/DR cancel is delayed until after 2nd active frame",
+        "upstreamActive: 5",
+        "upstreamRecovery: 14"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "aki__special_2_P_OD",
+      "name": "Sinister Slide",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "2",
+        "button": "P",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "11",
+          "numeric": 11
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "216",
+          "numeric": 216,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 2PP",
+        "upstreamName: Sinister Slide",
+        "upstreamNotes: Semi-low profile 10-15f (crouch height); low profile 16-197f; Cancelable into follow-ups after 11f; can input up to exit stance after 28f (stance exit takes 21f on its own); automatically exits stance after 216f if no input is made (no low profile or projectile invincibility)",
+        "upstreamActive: [185]",
+        "upstreamRecovery: 20"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "aki__special_214_K_H",
+      "name": "Cruel Fate",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "33",
+          "numeric": 33
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "72",
+          "numeric": 72,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: 214HK",
+        "upstreamName: Cruel Fate",
+        "upstreamNotes: Farthest trajectory; cannot hit cross-up; Counter-hit/Punish Counter bonus advantage applies to all hits; landing recovery has a crouch-sized hurtbox despite being in a standing state; first 2 hits will whiff on crouching opponents (less damage, chip, Drive Dmg); can link naturally into 2LP for a follow-up combo; pushback on block keeps A.K.I. out of throw range but also weakens her Burnout pressure; extends a large projectile invincible hurtbox downward on frames 26-32 (makes it easier for opponents to anti-air A.K.I.)",
+        "upstreamActive: 2(5)2(4)2(5)2",
+        "upstreamRecovery: 18"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "aki__special_214_K_L",
+      "name": "Cruel Fate",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "24",
+          "numeric": 24
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "63",
+          "numeric": 63,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: 214LK",
+        "upstreamName: Cruel Fate",
+        "upstreamNotes: Shortest trajectory; cannot hit cross-up; Counter-hit/Punish Counter bonus advantage applies to all hits; landing recovery has a crouch-sized hurtbox despite being in a standing state; first 2 hits will whiff on crouching opponents (less damage, chip, Drive Dmg); gives a strike/throw mixup on hit, a light combo extension on counter-hit, and a 5MP combo extension on Punish Counter (very effective as a throw bait); does not extend a large downward hurtbox during startup like other versions (harder for opponent to anti-air with grounded normals)",
+        "upstreamActive: 2(5)2(4)2(5)2",
+        "upstreamRecovery: 18"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "aki__special_214_K_M",
+      "name": "Cruel Fate",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "28",
+          "numeric": 28
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "67",
+          "numeric": 67,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: 214MK",
+        "upstreamName: Cruel Fate",
+        "upstreamNotes: Medium trajectory; cannot hit cross-up; Counter-hit/Punish Counter bonus advantage applies to all hits; landing recovery has a crouch-sized hurtbox despite being in a standing state; first 2 hits will whiff on crouching opponents (less damage, chip, Drive Dmg); extends a large projectile invincible hurtbox downward on frames 21-27 (makes it easier for opponents to anti-air A.K.I.)",
+        "upstreamActive: 2(5)2(4)2(5)2",
+        "upstreamRecovery: 18"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "aki__special_214_K_OD",
+      "name": "Cruel Fate",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "28",
+          "numeric": 28
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "67",
+          "numeric": 67,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        }
+      },
+      "notes": [
+        "upstreamInput: 214KK",
+        "upstreamName: Cruel Fate",
+        "upstreamNotes: Hold left/right to steer trajectory; cannot hit cross-up; Counter-hit/Punish Counter bonus advantage applies to all hits on non-cinematic version; landing recovery has a crouch-sized hurtbox despite being in a standing state; goes into grab animation on a grounded hit for full damage and follow-up oki, but 3rd/4th hits can get a non-cinematic hit late in the active frames (400~640 damage); poisons opponent on hit (cinematic or non-cinematic); puts airborne opponents into a limited juggle OTG state (KD +51~58); Super cancel works only on non-cinematic version; SA2 cancel will not combo unless LP version lands as a counter-hit or Punish Counter; extends a large projectile invincible hurtbox downward on frames 23-27 (makes it easier for opponents to anti-air A.K.I.)",
+        "upstreamActive: 3(4)2(4)2(5)2",
+        "upstreamRecovery: 18",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored HKD +42 (+2~3) as D; original onHit=42; source=https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22A.K.I.%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "aki__special_214_P_H",
+      "name": "Toxic Wreath",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "13",
+          "numeric": 13
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "51",
+          "numeric": 51,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
+        }
+      },
+      "notes": [
+        "upstreamInput: 214HP",
+        "upstreamName: Toxic Wreath",
+        "upstreamNotes: Strike hitbox (no projectile durability); poisons opponent on hit; puts opponent into limited juggle state; extended arm is projectile invincible 13-21f; useful combo and juggle tool; relatively safe blockstring ender, but can whiff in cancels outside close range; can get significantly better frame advantage on a late meaty connect (up to +4 on block); leaves a 2f blockstring gap when canceled from 5LK, or a 4f gap (trade combo) when canceled from 2LP; 6f hitconfirm window into SA3 refers to 2nd hit only",
+        "upstreamActive: 3(14)9",
+        "upstreamRecovery: 13",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +40 as D; original onHit=40; source=https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22A.K.I.%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "aki__special_214_P_L",
+      "name": "Nightshade Pulse",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "17",
+          "numeric": 17
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "52",
+          "numeric": 52,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "-5",
+          "numeric": -5
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-10",
+          "numeric": -10
+        }
+      },
+      "notes": [
+        "upstreamInput: 214LP",
+        "upstreamName: Nightshade Pulse",
+        "upstreamNotes: Slow-moving 1-hit projectile; can be extremely plus on hit/block from longer ranges or when used with meaty timing; poisons the opponent on hit; extended arm hurtbox is projectile invincible 16-41f; 6P follow-up can be input on frames 30-36 (detonates bubble if it hasn't yet collided with opponent); cancelable into 236KK from frame 36 until end of recovery (can help avoid punishes or advance forward for pressure)",
+        "upstreamActive: -",
+        "upstreamRecovery: 35"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "aki__special_214_P_M",
+      "name": "Orchid Spring",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "26",
+          "numeric": 26
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "46",
+          "numeric": 46,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 214MP",
+        "upstreamName: Orchid Spring",
+        "upstreamNotes: Places a pool of poison on the ground that poisons the opponent; poison cannot be blocked, and is constantly reapplied as long as the opponent is in close proximity; cannot use another 214MP until the first one has dissipated (can exist alongside SA2 poison pool, but the poison damage does not stack between them); A.K.I. is in a counter-hit state for entire 46f attack animation",
+        "upstreamActive: [160]",
+        "upstreamRecovery: 20"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "aki__special_214_P_OD",
+      "name": "Nightshade Pulse",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "16",
+          "numeric": 16
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "44",
+          "numeric": 44,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        }
+      },
+      "notes": [
+        "upstreamInput: 214PP",
+        "upstreamName: Nightshade Pulse",
+        "upstreamNotes: Slow-moving 2-hit OD projectile; can be extremely plus on block from longer ranges or when used with meaty timing; poisons the opponent on hit; 2nd hit knocks opponent into limited juggle state; extended arm hurtbox is projectile invincible 16-36f; 6P follow-up can be input on frames 34-35 (detonates bubble if both hits haven't yet collided with opponent); cancelable into 236KK on frames 32-33 (can help avoid punishes)",
+        "upstreamActive: -",
+        "upstreamRecovery: 28",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +45 as D; original onHit=45; source=https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22A.K.I.%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "aki__special_236_K_H",
+      "name": "Snake Step",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "43",
+          "numeric": 43
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "43",
+          "numeric": 43,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 236HK",
+        "upstreamName: Snake Step",
+        "upstreamNotes: Can switch sides with opponent (cross-up version usually has a fixed 23f recovery after passing through; total time depends on distance from opponent); at a very specific spacing, A.K.I. can cross-up with 43f move duration (extremely ambiguous left/right mixup); counter-hit state for entire move duration; projectile invincibility lasts longer on cross-up version; semi-low profile 11-17f (crouch height); crouching state 17f until end of recovery; low profile 18f until end of recovery; collision box disappears 20-31f to allow cross-up; Distance: 3.18 (3.84 cross-up)",
+        "upstreamActive: -"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "aki__special_236_K_L",
+      "name": "Snake Step",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "37",
+          "numeric": 37
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "37",
+          "numeric": 37,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 236LK",
+        "upstreamName: Snake Step",
+        "upstreamNotes: Feint (starts moving forward before retreating); counter-hit state for entire move duration; 8-13f semi-low profile (crouch height); 14-37f low profile; 14-36f crouching state (4f forced standing after recovery unless a crouching attack is input); Distance: -0.965",
+        "upstreamActive: -"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "aki__special_236_K_M",
+      "name": "Snake Step",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "39",
+          "numeric": 39
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "39",
+          "numeric": 39,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 236MK",
+        "upstreamName: Snake Step",
+        "upstreamNotes: Stays on same side; counter-hit state for entire move duration; semi-low profile (crouch height) 9-15f and 39f; crouching state 14f until end of recovery; low profile 16-38f; Distance: 1.94",
+        "upstreamActive: -"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "aki__special_236_K_OD",
+      "name": "Snake Step",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "42",
+          "numeric": 42
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "42",
+          "numeric": 42,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 236KK",
+        "upstreamName: Snake Step",
+        "upstreamNotes: Entire animation is vulnerable to Punish Counter Throws; crouching state 17f until end of recovery; Same-side version: 42f total animation, 8 recovery frames at the end that are vulnerable to strikes; Cross-up version: the entire animation is strike/projectile invincible; total duration of cross-up version depends on distance from opponent (23f fixed recovery time after passing through); collision box disappears 7-33f to allow cross-up; Distance: 4.06 (3.52 cross-up)",
+        "upstreamActive: -"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "aki__special_236_P_H",
+      "name": "Serpent Lash",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "11",
+          "numeric": 11
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "48",
+          "numeric": 48,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-20",
+          "numeric": -20
+        }
+      },
+      "notes": [
+        "upstreamInput: 236HP",
+        "upstreamName: Serpent Lash",
+        "upstreamNotes: Strike hitbox (no projectile clash); poisons opponent on hit; [Toxic Blossom] causes a higher launch on hit; no head hurtbox on frames 4-8; semi-low profile 9-30f (crouch height); only 1st active frame can realistically hit grounded opponents at close range; can anti-air vs. cross-ups; sets up a strong safe jump on non-TB hit midscreen or in the corner (must use cross-up j.2HP if opponent does not back rise midscreen)",
+        "upstreamActive: 6",
+        "upstreamRecovery: 32",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +44 [KD +53] as D; original onHit=44; source=https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22A.K.I.%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "aki__special_236_P_L",
+      "name": "Serpent Lash",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "36",
+          "numeric": 36,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-8",
+          "numeric": -8
+        }
+      },
+      "notes": [
+        "upstreamInput: 236LP",
+        "upstreamName: Serpent Lash",
+        "upstreamNotes: Strike hitbox with 1-hit projectile durability; poisons opponent on hit; [Toxic Blossom] hit launches opponent into a limited juggle state (can follow up with corner 236HP from close range); 6f extra recovery on whiff; slightly better frame advantage from longer ranges; extended arm is projectile invincible 13-16f; sets up a strong corner safe jump on Toxic Blossom hit but requires sacrificing the extra juggle; Punish Counter crumple puts opponent into limited juggle state (cannot follow up with grounded combo); Toxic Blossom PC juggle gives much stronger juggle follow-ups midscreen",
+        "upstreamActive: 3",
+        "upstreamRecovery: 20"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "aki__special_236_P_M",
+      "name": "Serpent Lash",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "43",
+          "numeric": 43,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-12",
+          "numeric": -12
+        }
+      },
+      "notes": [
+        "upstreamInput: 236MP",
+        "upstreamName: Serpent Lash",
+        "upstreamNotes: Strike hitbox with 1-hit projectile durability; poisons opponent on hit; [Toxic Blossom] causes limited juggle crumple state on grounded hit, and a higher juggle (KD +60~72) on airborne hit; cannot hit crouching opponents (close-range hitbox can hit extended vertical hurtbox); can hit standing opponents from close range only; has a good anti-air hitbox but slow startup; sets up a strong corner safe jump on non-TB hit",
+        "upstreamActive: 9",
+        "upstreamRecovery: 21",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +44 [Crumple +69] as D; original onHit=44; source=https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22A.K.I.%22&limit=500"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    },
+    {
+      "id": "aki__special_236_P_OD",
+      "name": "Serpent Lash",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "21",
+          "numeric": 21
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "50",
+          "numeric": 50,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-14",
+          "numeric": -14
+        }
+      },
+      "notes": [
+        "upstreamInput: 236PP",
+        "upstreamName: Serpent Lash",
+        "upstreamNotes: Strike hitbox with 1-hit OD projectile durability; poisons opponent on hit; A.K.I. pulls herself toward opponent on hit (fully invincible during pull animation); [Toxic Blossom] causes crumple on grounded hit (+5 before opponent becomes airborne, or +9 on Punish Counter) and resets the juggle counter vs. airborne opponents (free juggle state); only the [Toxic Blossom] follow-up is Super cancelable; slightly better block advantage if spaced out (cannot hit on final active frame in neutral, as hitbox doesn't move after 4th active frame); extended arm is projectile invincible 20-25f (great anti-projectile tool due to speed and range); Counter-hit/Punish Counter bonus advantage carries through the follow-up hit; mid-combo damage scaling does not apply to Toxic Blossom version; refunds 2000 Drive gauge on Toxic Blossom hit (after spending the initial 20000, so it will not prevent Burnout if A.K.I. has just under 2 Drive bars)",
+        "upstreamActive: 5",
+        "upstreamRecovery: 25"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-matched candidate"
+      }
+    }
+  ],
+  "adoption": {
+    "status": "accepted",
+    "basis": "source-inventory; held-source-input; unverified sources permitted"
+  }
+}

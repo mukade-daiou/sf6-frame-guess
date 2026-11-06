@@ -69,7 +69,14 @@ it("adopts user-selected 9F for 623 OD kick without marking its source verified"
   expect(input).toBeDefined();
   expect(displayInput(input!)).toBe("623KK");
   for (const mode of ["normal", "startup"] as const) {
-    const game = startGame(production, mode, 5, () => 0);
+    const game = startGame(
+      production,
+      mode,
+      5,
+      () =>
+        (production.eligible.findIndex((c) => c.id === "ken") + 0.5) /
+        production.eligible.length,
+    );
     const next = ask(game, input);
     expect(next.status).toBe("found");
     expect(next.game.history).toHaveLength(1);
@@ -162,9 +169,11 @@ it("excludes motionless/complex inputs from questions without removing the store
       "normal",
     ).status,
   ).toBe("unknown");
-  const dash = production.characters[0].moves.find(
-    (m) => m.input.type === "special" && m.input.motion === "none",
-  )!;
+  const dash = production.characters
+    .find((c) => c.id === "ken")!
+    .moves.find(
+      (m) => m.input.type === "special" && m.input.motion === "none",
+    )!;
   expect(dash).toBeDefined();
   expect(isQuestionInput(dash.input)).toBe(false);
   expect(
