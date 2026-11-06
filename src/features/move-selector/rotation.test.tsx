@@ -6,6 +6,7 @@ import {
   type Direction,
   selectAttack,
   getMotionCandidates,
+  rotationSuggestions,
 } from "./controller";
 import { MoveNotation, RotationIcon } from "../../components/MoveNotation";
 import { production } from "../../lib/frame-data/datasets";
@@ -15,6 +16,23 @@ const rotate = (sequence: string) =>
     (state, d) => trackRotation(state, d as Direction),
     emptyRotation(),
   );
+it("matches both rotational paths while offering one canonical motion", () => {
+  expect(
+    getMotionCandidates(production.inputs, "6").filter((m) => m === "360"),
+  ).toHaveLength(1);
+  expect(rotationSuggestions("6").map((p) => p.sequence)).toEqual([
+    "632147896",
+    "698741236",
+  ]);
+  expect(rotationSuggestions("63214")).toEqual([
+    { sequence: "632147896", clockwise: true },
+  ]);
+  expect(rotationSuggestions("69874")).toEqual([
+    { sequence: "698741236", clockwise: false },
+  ]);
+  expect(rotationSuggestions("636")).toEqual([]);
+  expect(rotationSuggestions("22")).toEqual([]);
+});
 it.each(["632147896", "698741236", "62486", "68426", "65352515457585956"])(
   "recognizes a full continuous or tapped turn: %s",
   (sequence) => {
@@ -46,8 +64,8 @@ it("clear starts a new rotation and both completed directions use one canonical 
     "scale(-1 1)",
   );
   expect(getMotionCandidates(production.inputs, "360")).toEqual(["360"]);
-  expect(getMotionCandidates(production.inputs, "3")).not.toContain("360");
-  expect(getMotionCandidates(production.inputs, "36")).not.toContain("360");
+  expect(getMotionCandidates(production.inputs, "3")).toContain("360");
+  expect(getMotionCandidates(production.inputs, "36")).toContain("360");
   for (const strength of ["L", "M", "H", "OD"] as const) {
     const input = selectAttack(
       production.inputs,

@@ -71,7 +71,12 @@ export function validateDataset(
       hasCompleteScope(c, "special") &&
       (c.adoption?.status === "accepted" ||
         c.source.verification === "verified") &&
-      c.moves.every((m) => isMoveUsable(c, m) || m.adoption?.status === "held"),
+      c.moves.every(
+        (m) =>
+          isMoveUsable(c, m) ||
+          m.adoption?.status === "held" ||
+          m.adoption?.status === "excluded",
+      ),
   );
   const inputs = [
     ...new Map(

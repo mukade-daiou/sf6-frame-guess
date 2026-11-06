@@ -138,14 +138,6 @@ input {
   height: 18px;
   flex-shrink: 0;
 }
-.fixture-toggle {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin: 16px 0;
-  min-height: 48px;
-  font-size: var(--text-body);
-}
 button,
 select {
   font: inherit;

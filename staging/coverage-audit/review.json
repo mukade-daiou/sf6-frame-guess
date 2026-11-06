@@ -517,8 +517,8 @@
           "input": "2PP",
           "name": "Sinister Slide",
           "category": "special",
-          "classification": "recorded",
-          "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
+          "classification": "out_of_scope",
+          "reason": "User scope: non-OD simultaneous two-button special inputs are excluded; never reinterpret as OD.",
           "moveIds": [
             "aki__special_2_P_OD"
           ],
@@ -1050,7 +1050,7 @@
           "verification": "unverified"
         },
         "special": {
-          "status": "partial",
+          "status": "complete",
           "verification": "unverified"
         }
       },
@@ -1777,8 +1777,8 @@
           "input": "4KKK",
           "name": "Ashura Senku (Backward)",
           "category": "special",
-          "classification": "input_unsupported",
-          "reason": "In-scope source input requires an explicit triple-button, multi-direction/no-button model; retained in source, not reinterpreted as OD.",
+          "classification": "out_of_scope",
+          "reason": "User scope: three-button inputs are excluded.",
           "moveIds": [],
           "source": {
             "fetchedAt": "2026-08-19T04:05:26.479Z",
@@ -2127,8 +2127,8 @@
           "input": "6KKK",
           "name": "Ashura Senku (Forward)",
           "category": "special",
-          "classification": "input_unsupported",
-          "reason": "In-scope source input requires an explicit triple-button, multi-direction/no-button model; retained in source, not reinterpreted as OD.",
+          "classification": "out_of_scope",
+          "reason": "User scope: three-button inputs are excluded.",
           "moveIds": [],
           "source": {
             "fetchedAt": "2026-08-19T04:05:26.479Z",
@@ -2143,7 +2143,7 @@
           "name": "Oboro Throw",
           "category": "special",
           "classification": "out_of_scope",
-          "reason": "Follow-up input.",
+          "reason": "User scope: three-button inputs are excluded.",
           "moveIds": [],
           "source": {
             "fetchedAt": "2026-08-19T04:05:26.479Z",
@@ -2483,8 +2483,8 @@
         }
       ],
       "cargoOnly": [],
-      "unresolved": 2,
-      "sourceInventoryComplete": false
+      "unresolved": 0,
+      "sourceInventoryComplete": true
     },
     {
       "id": "alex",
@@ -2768,8 +2768,8 @@
           "input": "2PP",
           "name": "Prowler Stance",
           "category": "special",
-          "classification": "recorded",
-          "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
+          "classification": "out_of_scope",
+          "reason": "User scope: non-OD simultaneous two-button special inputs are excluded; never reinterpret as OD.",
           "moveIds": [
             "alex__special_2_P_OD"
           ],
@@ -4745,7 +4745,7 @@
           "verification": "unverified"
         },
         "special": {
-          "status": "partial",
+          "status": "complete",
           "verification": "unverified"
         }
       },
@@ -5226,8 +5226,8 @@
           "input": "2PP",
           "name": "Coward Crouch",
           "category": "special",
-          "classification": "recorded",
-          "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
+          "classification": "out_of_scope",
+          "reason": "User scope: non-OD simultaneous two-button special inputs are excluded; never reinterpret as OD.",
           "moveIds": [
             "blanka__special_2_P_OD"
           ],
@@ -5416,8 +5416,8 @@
           "input": "4KKK",
           "name": "Surprise Back Hop",
           "category": "special",
-          "classification": "input_unsupported",
-          "reason": "In-scope source input requires an explicit triple-button, multi-direction/no-button model; retained in source, not reinterpreted as OD.",
+          "classification": "out_of_scope",
+          "reason": "User scope: three-button inputs are excluded.",
           "moveIds": [],
           "source": {
             "fetchedAt": "2026-08-19T04:05:26.479Z",
@@ -5766,8 +5766,8 @@
           "input": "6KKK",
           "name": "Surprise Forward Hop",
           "category": "special",
-          "classification": "input_unsupported",
-          "reason": "In-scope source input requires an explicit triple-button, multi-direction/no-button model; retained in source, not reinterpreted as OD.",
+          "classification": "out_of_scope",
+          "reason": "User scope: three-button inputs are excluded.",
           "moveIds": [],
           "source": {
             "fetchedAt": "2026-08-19T04:05:26.479Z",
@@ -6108,8 +6108,8 @@
           "reason": "SA2-only input."
         }
       ],
-      "unresolved": 2,
-      "sourceInventoryComplete": false
+      "unresolved": 0,
+      "sourceInventoryComplete": true
     },
     {
       "id": "cammy",
@@ -11176,7 +11176,7 @@
           "verification": "unverified"
         },
         "special": {
-          "status": "partial",
+          "status": "complete",
           "verification": "unverified"
         }
       },
@@ -11485,8 +11485,8 @@
           "input": "2KK or 3KK",
           "name": "Yoga Float",
           "category": "special",
-          "classification": "input_unsupported",
-          "reason": "In-scope source input requires an explicit triple-button, multi-direction/no-button model; retained in source, not reinterpreted as OD.",
+          "classification": "out_of_scope",
+          "reason": "User scope: non-OD simultaneous two-button special inputs are excluded; never reinterpret as OD.",
           "moveIds": [],
           "source": {
             "fetchedAt": "2026-11-01T00:02:01.290Z",
@@ -11971,8 +11971,8 @@
           "input": "4 or 6 + PPP/KKK",
           "name": "Yoga Teleport",
           "category": "special",
-          "classification": "input_unsupported",
-          "reason": "In-scope source input requires an explicit triple-button, multi-direction/no-button model; retained in source, not reinterpreted as OD.",
+          "classification": "out_of_scope",
+          "reason": "User scope: three-button inputs are excluded.",
           "moveIds": [],
           "source": {
             "fetchedAt": "2026-11-01T00:02:01.290Z",
@@ -12107,7 +12107,7 @@
           "name": "Aerial Yoga Teleport",
           "category": "special",
           "classification": "out_of_scope",
-          "reason": "Air/wall-only move.",
+          "reason": "User scope: three-button inputs are excluded.",
           "moveIds": [],
           "source": {
             "fetchedAt": "2026-11-01T00:02:01.290Z",
@@ -12267,8 +12267,8 @@
         }
       ],
       "cargoOnly": [],
-      "unresolved": 2,
-      "sourceInventoryComplete": false
+      "unresolved": 0,
+      "sourceInventoryComplete": true
     },
     {
       "id": "e_honda",
@@ -13340,7 +13340,7 @@
           "verification": "unverified"
         },
         "special": {
-          "status": "partial",
+          "status": "complete",
           "verification": "unverified"
         }
       },
@@ -13774,8 +13774,8 @@
           "input": "4KK",
           "name": "Kill Rush (Backward)",
           "category": "special",
-          "classification": "recorded",
-          "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
+          "classification": "out_of_scope",
+          "reason": "User scope: non-OD simultaneous two-button special inputs are excluded; never reinterpret as OD.",
           "moveIds": [
             "ed__special_4_K_OD"
           ],
@@ -14156,8 +14156,8 @@
           "input": "5/6KK",
           "name": "Kill Rush (Forward)",
           "category": "special",
-          "classification": "input_unsupported",
-          "reason": "In-scope source input requires an explicit triple-button, multi-direction/no-button model; retained in source, not reinterpreted as OD.",
+          "classification": "out_of_scope",
+          "reason": "User scope: non-OD simultaneous two-button special inputs are excluded; never reinterpret as OD.",
           "moveIds": [],
           "source": {
             "fetchedAt": "2026-11-01T00:02:01.290Z",
@@ -14377,8 +14377,8 @@
         }
       ],
       "cargoOnly": [],
-      "unresolved": 1,
-      "sourceInventoryComplete": false
+      "unresolved": 0,
+      "sourceInventoryComplete": true
     },
     {
       "id": "elena",
@@ -16755,8 +16755,8 @@
           "input": "PP",
           "name": "Sonic Break",
           "category": "special",
-          "classification": "held",
-          "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
+          "classification": "out_of_scope",
+          "reason": "User scope: non-OD simultaneous two-button special inputs are excluded; never reinterpret as OD.",
           "moveIds": [
             "guile__held_special_buttons_LP+MP"
           ],
@@ -16781,7 +16781,7 @@
           "verification": "unverified"
         },
         "special": {
-          "status": "partial",
+          "status": "complete",
           "verification": "unverified"
         }
       },
@@ -17001,7 +17001,7 @@
           "name": "Sunburst Beam",
           "category": "special",
           "classification": "out_of_scope",
-          "reason": "Explicit stock/install/backturn/projectile/other prerequisite; original condition retained.",
+          "reason": "User scope: three-button inputs are excluded.",
           "moveIds": [],
           "source": {
             "fetchedAt": "2026-08-19T04:05:27.013Z",
@@ -17275,8 +17275,8 @@
           "input": "2KKK",
           "name": "Vanishing Sun (Down)",
           "category": "special",
-          "classification": "input_unsupported",
-          "reason": "In-scope source input requires an explicit triple-button, multi-direction/no-button model; retained in source, not reinterpreted as OD.",
+          "classification": "out_of_scope",
+          "reason": "User scope: three-button inputs are excluded.",
           "moveIds": [],
           "source": {
             "fetchedAt": "2026-08-19T04:05:27.533Z",
@@ -17418,8 +17418,8 @@
           "input": "4KKK",
           "name": "Vanishing Sun (Back)",
           "category": "special",
-          "classification": "input_unsupported",
-          "reason": "In-scope source input requires an explicit triple-button, multi-direction/no-button model; retained in source, not reinterpreted as OD.",
+          "classification": "out_of_scope",
+          "reason": "User scope: three-button inputs are excluded.",
           "moveIds": [],
           "source": {
             "fetchedAt": "2026-08-19T04:05:27.533Z",
@@ -17670,8 +17670,8 @@
           "input": "6KKK",
           "name": "Vanishing Sun (Forward)",
           "category": "special",
-          "classification": "input_unsupported",
-          "reason": "In-scope source input requires an explicit triple-button, multi-direction/no-button model; retained in source, not reinterpreted as OD.",
+          "classification": "out_of_scope",
+          "reason": "User scope: three-button inputs are excluded.",
           "moveIds": [],
           "source": {
             "fetchedAt": "2026-08-19T04:05:27.533Z",
@@ -18177,8 +18177,8 @@
           "reason": "Charged super art."
         }
       ],
-      "unresolved": 3,
-      "sourceInventoryComplete": false
+      "unresolved": 0,
+      "sourceInventoryComplete": true
     },
     {
       "id": "jamie",
@@ -23485,8 +23485,8 @@
           "input": "KK",
           "name": "Quick Dash",
           "category": "special",
-          "classification": "recorded_ui_unsupported",
-          "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
+          "classification": "out_of_scope",
+          "reason": "User scope: non-OD simultaneous two-button special inputs are excluded; never reinterpret as OD.",
           "moveIds": [
             "ken_quick_dash_simultaneous"
           ],
@@ -26130,7 +26130,7 @@
           "name": "Condor Dive",
           "category": "special",
           "classification": "out_of_scope",
-          "reason": "Air/wall-only move.",
+          "reason": "User scope: three-button inputs are excluded.",
           "moveIds": [],
           "source": {
             "fetchedAt": "2026-08-19T04:05:28.060Z",
@@ -26145,7 +26145,7 @@
           "name": "Condor Dive (Windclad)",
           "category": "special",
           "classification": "out_of_scope",
-          "reason": "Air/wall-only move.",
+          "reason": "User scope: three-button inputs are excluded.",
           "moveIds": [],
           "source": {
             "fetchedAt": "2026-08-19T04:05:28.060Z",
@@ -26175,7 +26175,7 @@
           "name": "Dive Follow-up",
           "category": "special",
           "classification": "out_of_scope",
-          "reason": "Air/wall-only move.",
+          "reason": "User scope: three-button inputs are excluded.",
           "moveIds": [],
           "source": {
             "fetchedAt": "2026-08-19T04:05:28.060Z",
@@ -28170,7 +28170,7 @@
           "name": "Bison Warp",
           "category": "special",
           "classification": "out_of_scope",
-          "reason": "Explicit stock/install/backturn/projectile/other prerequisite; original condition retained.",
+          "reason": "User scope: three-button inputs are excluded.",
           "moveIds": [],
           "source": {
             "fetchedAt": "2026-11-01T00:02:02.878Z",
@@ -32493,7 +32493,7 @@
           "verification": "unverified"
         },
         "special": {
-          "status": "partial",
+          "status": "complete",
           "verification": "unverified"
         }
       },
@@ -33277,8 +33277,8 @@
           "input": "6[6]",
           "name": "Run",
           "category": "special",
-          "classification": "input_unsupported",
-          "reason": "In-scope source input requires an explicit triple-button, multi-direction/no-button model; retained in source, not reinterpreted as OD.",
+          "classification": "out_of_scope",
+          "reason": "User scope: buttonless Run is excluded.",
           "moveIds": [],
           "source": {
             "fetchedAt": "2026-08-19T04:05:28.060Z",
@@ -33397,8 +33397,8 @@
           "input": "6KK",
           "name": "Side Flip",
           "category": "special",
-          "classification": "recorded",
-          "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
+          "classification": "out_of_scope",
+          "reason": "User scope: non-OD simultaneous two-button special inputs are excluded; never reinterpret as OD.",
           "moveIds": [
             "rashid__special_6_K_OD"
           ],
@@ -33740,8 +33740,8 @@
         }
       ],
       "cargoOnly": [],
-      "unresolved": 1,
-      "sourceInventoryComplete": false
+      "unresolved": 0,
+      "sourceInventoryComplete": true
     },
     {
       "id": "ryu",
@@ -39048,10 +39048,11 @@
           "input": "63214KK (Far)",
           "name": "Siberian Express",
           "category": "special",
-          "classification": "held",
+          "classification": "recorded",
           "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
           "moveIds": [
-            "zangief__coverage_37"
+            "zangief__coverage_37",
+            "zangief__far_63214_K_OD"
           ],
           "source": {
             "fetchedAt": "2026-08-19T04:05:28.570Z",
@@ -39082,10 +39083,11 @@
           "input": "63214HK or 63214K (Close)",
           "name": "Russian Suplex",
           "category": "special",
-          "classification": "held",
+          "classification": "recorded",
           "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
           "moveIds": [
-            "zangief__coverage_39"
+            "zangief__coverage_39",
+            "zangief__far_63214_K_H"
           ],
           "source": {
             "fetchedAt": "2026-08-19T04:05:28.570Z",
@@ -39099,10 +39101,12 @@
           "input": "63214K (Far)",
           "name": "Siberian Express",
           "category": "special",
-          "classification": "held",
+          "classification": "recorded",
           "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
           "moveIds": [
-            "zangief__coverage_40"
+            "zangief__coverage_40",
+            "zangief__far_63214_K_L",
+            "zangief__far_63214_K_M"
           ],
           "source": {
             "fetchedAt": "2026-08-19T04:05:28.570Z",
@@ -39493,8 +39497,8 @@
           "input": "PP",
           "name": "Double Lariat",
           "category": "special",
-          "classification": "held",
-          "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
+          "classification": "out_of_scope",
+          "reason": "User scope: non-OD simultaneous two-button special inputs are excluded; never reinterpret as OD.",
           "moveIds": [
             "zangief__held_special_buttons_LP+MP"
           ],
@@ -39511,7 +39515,7 @@
           "name": "Double Lariat",
           "category": "special",
           "classification": "out_of_scope",
-          "reason": "OD Double Lariat requires three punches, outside the selected weak+medium pair; not the PP move.",
+          "reason": "User scope: three-button inputs are excluded.",
           "moveIds": [],
           "source": {
             "fetchedAt": "2026-08-19T04:05:28.570Z",

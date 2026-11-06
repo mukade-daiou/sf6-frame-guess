@@ -5,6 +5,7 @@ import {
   AttackIcon,
   CommandNotation,
   MoveNotation,
+  RotationIcon,
 } from "../../components/MoveNotation";
 import { Lever } from "./Lever";
 import {
@@ -14,6 +15,7 @@ import {
   getMotionCandidates,
   emptyRotation,
   trackRotation,
+  rotationSuggestions,
   type Direction,
 } from "./controller";
 export function MoveSelector({
@@ -33,14 +35,16 @@ export function MoveSelector({
   const previous = useRef<Direction>("5");
   const [selected, setSelected] = useState<MoveInput>();
   const [unknownMode, setUnknownMode] = useState<Mode | null>(null);
+  const [leverReset, setLeverReset] = useState(0);
   const rotation = useRef(emptyRotation());
+  const [rotationClockwise, setRotationClockwise] = useState(true);
   const motions = getMotionCandidates(inputs, "");
   const suggestions = command ? getMotionCandidates(inputs, command) : [];
   const commandStatus = !command
     ? "未入力"
     : motions.includes(command)
       ? "候補一致"
-      : motions.some((m) => m.startsWith(command))
+      : suggestions.length > 0
         ? "入力途中"
         : "候補不一致・未対応";
   function clear() {
@@ -48,6 +52,7 @@ export function MoveSelector({
     setCommand("");
     previous.current = "5";
     rotation.current = emptyRotation();
+    setRotationClockwise(true);
     setSelected(undefined);
   }
   return (
@@ -57,6 +62,8 @@ export function MoveSelector({
         if (selected) {
           const status = onAsk(selected);
           clear();
+          setDirection("5");
+          setLeverReset((n) => n + 1);
           setUnknownMode(status === "unknown" ? mode : null);
         }
       }}
@@ -80,7 +87,7 @@ export function MoveSelector({
       <div className="arcade-controls">
         <div className="lever-column">
           <Lever
-            key={type}
+            key={`${type}:${leverReset}`}
             normal={type === "normal"}
             selected={direction}
             onDirection={(d) => {
@@ -93,6 +100,8 @@ export function MoveSelector({
               } else {
                 const before = previous.current;
                 rotation.current = trackRotation(rotation.current, d);
+                if (rotation.current.complete)
+                  setRotationClockwise(rotation.current.steps >= 0);
                 setCommand((c) =>
                   rotation.current.complete
                     ? "360"
@@ -112,7 +121,7 @@ export function MoveSelector({
                 <div>
                   <CommandNotation
                     command={command}
-                    clockwise={rotation.current.steps >= 0}
+                    clockwise={rotationClockwise}
                   />
                   <small role="status">{commandStatus}</small>
                 </div>
@@ -126,24 +135,51 @@ export function MoveSelector({
                   role="group"
                   aria-label="コマンド候補"
                 >
-                  {suggestions.map((motion) => (
-                    <button
-                      type="button"
-                      className="motion-suggestion"
-                      key={motion}
-                      aria-label={`コマンド ${motion}`}
-                      aria-pressed={command === motion}
-                      onClick={() => {
-                        setCommand(motion);
-                        rotation.current = emptyRotation();
-                        previous.current = "5";
-                        setSelected(undefined);
-                        setUnknownMode(null);
-                      }}
-                    >
-                      <CommandNotation command={motion} />
-                    </button>
-                  ))}
+                  {suggestions
+                    .flatMap((motion) =>
+                      motion === "360"
+                        ? rotationSuggestions(command)
+                            .slice(0, 1)
+                            .map((path) => ({
+                              motion,
+                              ...path,
+                            }))
+                        : [{ motion, sequence: motion, clockwise: true }],
+                    )
+                    .map(({ motion, sequence, clockwise }) => (
+                      <button
+                        type="button"
+                        className="motion-suggestion"
+                        key={`${motion}:${sequence}`}
+                        aria-label={`コマンド ${motion}`}
+                        aria-pressed={command === motion}
+                        onClick={() => {
+                          setCommand(motion);
+                          setRotationClockwise(clockwise);
+                          rotation.current =
+                            motion === "360"
+                              ? {
+                                  previous: null,
+                                  steps: clockwise ? 8 : -8,
+                                  complete: true,
+                                }
+                              : emptyRotation();
+                          previous.current = "5";
+                          setSelected(undefined);
+                          setUnknownMode(null);
+                        }}
+                      >
+                        {motion === "360" ? (
+                          <>
+                            <CommandNotation command={sequence.slice(0, 5)} />
+                            <span aria-hidden="true">…</span>
+                            <RotationIcon clockwise={clockwise} />
+                          </>
+                        ) : (
+                          <CommandNotation command={motion} />
+                        )}
+                      </button>
+                    ))}
                 </div>
               )}
             </>

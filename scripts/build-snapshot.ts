@@ -45,12 +45,14 @@ for (const d of decisions.characters) {
     : "partial";
   for (const m of c.moves)
     m.adoption = {
-      status:
-        m.variant.kind !== "base" || d.heldMoveIds.includes(m.id)
+      status: d.excludedMoveIds?.includes(m.id)
+        ? "excluded"
+        : m.variant.kind !== "base" || d.heldMoveIds.includes(m.id)
           ? "held"
           : "accepted",
-      basis:
-        "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。",
+      basis: d.excludedMoveIds?.includes(m.id)
+        ? "ユーザー指定の対象外入力。原典・フレーム値は保持し、技なしは採用範囲に限定する。"
+        : "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。",
     };
   files[c.id] = characterSchema.parse(c);
 }

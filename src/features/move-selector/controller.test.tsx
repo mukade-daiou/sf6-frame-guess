@@ -40,9 +40,13 @@ it("suggests unique directional prefixes from all eligible inputs without fuzzy 
   expect(candidates).toContain("214");
   expect(candidates).toContain("22");
   expect(candidates.length).toBe(new Set(candidates).size);
-  expect(getMotionCandidates([...inputs], "23")).toEqual(["236"]);
+  expect(getMotionCandidates([...inputs], "23")).toEqual(
+    expect.arrayContaining(["236", "360"]),
+  );
   expect(getMotionCandidates([...inputs], "6")).toContain("623");
-  expect(getMotionCandidates([...inputs], "236")).toEqual(["236"]);
+  expect(getMotionCandidates([...inputs], "236")).toEqual(
+    expect.arrayContaining(["236", "360"]),
+  );
   expect(getMotionCandidates([...inputs], "2366")).toEqual([]);
   expect(getMotionCandidates([...inputs], "[4]")).toEqual([]);
   expect(getMotionCandidates([...inputs], "none")).toEqual([]);

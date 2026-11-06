@@ -50,13 +50,31 @@ export function getMotionCandidates(
       inputs.flatMap((input) =>
         input.type === "special" &&
         isQuestionInput(input) &&
-        (input.motion !== "360" || prefix === "" || prefix === "360") &&
-        input.motion.startsWith(prefix)
+        (input.motion === "360"
+          ? prefix === "" ||
+            prefix === "360" ||
+            rotationSuggestions(prefix).length > 0
+          : input.motion.startsWith(prefix))
           ? [input.motion]
           : [],
       ),
     ),
   ];
+}
+export function rotationSuggestions(prefix: string) {
+  const start = perimeter.indexOf(
+    (prefix === "360" ? "6" : prefix[0]) as Direction,
+  );
+  if (start < 0) return [];
+  return [1, -1].flatMap((step) => {
+    const sequence = Array.from(
+      { length: 9 },
+      (_, i) => perimeter[(start + step * i + 16) % 8],
+    ).join("");
+    return prefix === "360" || sequence.startsWith(prefix)
+      ? [{ sequence, clockwise: step === 1 }]
+      : [];
+  });
 }
 export function directionAt(x: number, y: number, size: number): Direction {
   const dx = x - size / 2,

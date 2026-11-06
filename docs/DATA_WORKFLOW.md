@@ -1,6 +1,6 @@
 # データの正本と更新手順
 
-現在のゲームが読む正本は`data/metadata.json`と`data/characters/*.json`。32体904レコード（採用875・保留29）、datasetIdは`coverage-repair-2026-11-07-r2`。収録範囲が未完了の6体はpartialとして保持し、抽選対象は26体です。ケン・マリーザの63技とOD龍尾脚9Fは維持しました。信頼性と採用可否の分離はDATA_SPEC.md、判断の再利用はADOPTION_RULES.mdを参照してください。
+現在のゲームが読む正本は`data/metadata.json`と`data/characters/*.json`。32体908レコード（採用873・保留27・明示的対象外8）、datasetIdは`scope-policy-2026-11-07-r1`。全32体が採用範囲でcompleteとなり抽選可能です。ケン・マリーザの63技のフレーム値とOD龍尾脚9Fは維持し、奮迅脚はユーザー指定で対象外へ変更しました。信頼性と採用可否の分離はDATA_SPEC.md、判断の再利用はADOPTION_RULES.mdを参照してください。
 
 | 場所                            | 役割・編集方針                                                      |
 | ------------------------------- | ------------------------------------------------------------------- |
@@ -38,3 +38,5 @@
 現在の`data:check`は原典行の対応・coverageと、スナップショットの再生成を両方検査します。入力不足が残るキャラをcompleteにして検査を通してはいけません。未対応入力へのモデル拡張は原典を確認して別途行い、今回の修復スクリプトを別キャラに無条件で適用しないでください。
 
 今回の補修行だけを明示的に再生成し直す場合は`--write --refresh-added`を指定します。既存884件を対象にせず、coverage用のIDだけを書き換えます。本番スナップショットへの反映には、従来どおり異なるdatasetIdと`--write --update`が必要です。
+
+追加指定の対象外・遠距離方針は`source-scope.ts`と`apply-adoption-policy.ts`で再現します。原典監査→`npx tsx scripts/apply-adoption-policy.ts`で計画確認→明示的な`--write`→監査確認→`data:plan`→`build-snapshot.ts --write --update`の順です。前の補修スクリプトで最新datasetIdを戻さないよう、通常の追加入力は現在の採用入力と判断を出発点にしてください。過去レポート・verification.jsonは保存時点の結果で、現在の追加指定結果はpolicy-changes.jsonとpolicy-verification.jsonを参照します。

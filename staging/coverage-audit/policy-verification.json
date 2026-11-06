@@ -1,0 +1,238 @@
+{
+  "datasetId": "scope-policy-2026-11-07-r1",
+  "characters": 32,
+  "eligible": 32,
+  "records": 908,
+  "accepted": 873,
+  "held": 27,
+  "excluded": 8,
+  "unknownFields": 148,
+  "questionInputs": 53,
+  "sourceScope": {
+    "excludeThreeButtons": true,
+    "excludeNonODTwoButtonSpecials": true,
+    "excludeButtonlessRun": true,
+    "distance": "far"
+  },
+  "preservation": {
+    "original904RecordValuesInputsAndSourcesUnchanged": true,
+    "explicitAdoptionChanges": 8,
+    "original860CandidatesUnchanged": true
+  },
+  "checks": {
+    "typecheck": "passed",
+    "vitest": 84,
+    "dataTests": 2,
+    "dataCheck": "passed",
+    "zod": "passed",
+    "format": "passed",
+    "build": "passed"
+  },
+  "rotationCandidate": {
+    "bothInputDirections": true,
+    "displayedCandidates": 1,
+    "clickCompletes360": true
+  },
+  "browserRotation": [
+    {
+      "width": 1280,
+      "keyboardClockwise": true,
+      "mouseCounterclockwise": true,
+      "touchClockwise": true,
+      "tapsCounterclockwise": true,
+      "spdNormalOD": true,
+      "farDistanceODExpress": true,
+      "history": true,
+      "answer": true,
+      "replay": true
+    },
+    {
+      "width": 768,
+      "keyboardClockwise": true,
+      "mouseCounterclockwise": true,
+      "touchClockwise": true,
+      "tapsCounterclockwise": true,
+      "spdNormalOD": true,
+      "farDistanceODExpress": true,
+      "history": true,
+      "answer": true,
+      "replay": true
+    },
+    {
+      "width": 390,
+      "keyboardClockwise": true,
+      "mouseCounterclockwise": true,
+      "touchClockwise": true,
+      "tapsCounterclockwise": true,
+      "spdNormalOD": true,
+      "farDistanceODExpress": true,
+      "history": true,
+      "answer": true,
+      "replay": true
+    },
+    {
+      "width": 320,
+      "keyboardClockwise": true,
+      "mouseCounterclockwise": true,
+      "touchClockwise": true,
+      "tapsCounterclockwise": true,
+      "spdNormalOD": true,
+      "farDistanceODExpress": true,
+      "history": true,
+      "answer": true,
+      "replay": true
+    }
+  ],
+  "browserGameplay": [
+    {
+      "correct": true,
+      "draw": 0.578125,
+      "earlyAnswer": true,
+      "mode": "normal",
+      "passed": true,
+      "questions": 0,
+      "rosterSize": 32,
+      "target": "ken",
+      "width": 1280
+    },
+    {
+      "correct": false,
+      "draw": 0.796875,
+      "earlyAnswer": true,
+      "mode": "startup",
+      "passed": true,
+      "questions": 2,
+      "rosterSize": 32,
+      "target": "marisa",
+      "width": 320
+    },
+    {
+      "correct": true,
+      "draw": 0.578125,
+      "fixture": false,
+      "history": "1.\n＋\n発生F\n8\n全体F\n不明\nヒット時硬直差\nD\nガード時硬直差\n-10\n2.\n＋\n\n採用データ内に該当する技なし\n\n3.\n＋\n＋\n発生F\n12\n全体F\n40\nヒット時硬直差\n+2\nガード時硬直差\n-2\n4.\n＋\n発生F\n7\n全体F\n66\nヒット時硬直差\nD\nガード時硬直差\n-36\n5.\n＋\n＋\n発生F\n9\n全体F\n47\nヒット時硬直差\n1\nガード時硬直差\n-9",
+      "liveHistoryMode": true,
+      "mode": "normal",
+      "passed": true,
+      "questions": 5,
+      "rosterSize": 32,
+      "target": "ken",
+      "unknownNotConsumed": true,
+      "width": 1280,
+      "replay": true
+    },
+    {
+      "correct": false,
+      "draw": 0.578125,
+      "fixture": false,
+      "history": "1.\n＋\n発生F\n8\n2.\n＋\n\n採用データ内に該当する技なし\n\n3.\n＋\n＋\n発生F\n12\n4.\n＋\n発生F\n7\n5.\n＋\n＋\n発生F\n9",
+      "liveHistoryMode": true,
+      "mode": "startup",
+      "passed": true,
+      "questions": 5,
+      "rosterSize": 32,
+      "target": "ken",
+      "unknownNotConsumed": true,
+      "width": 1280,
+      "replay": true
+    },
+    {
+      "correct": true,
+      "draw": 0.796875,
+      "fixture": false,
+      "history": "1.\n＋\n発生F\n9\n全体F\n不明\nヒット時硬直差\n+5\nガード時硬直差\n-2\n2.\n＋\n発生F\n12\n全体F\n45\nヒット時硬直差\n-3\nガード時硬直差\n-16\n3.\n＋\n＋\n発生F\n19\n全体F\n43\nヒット時硬直差\nD\nガード時硬直差\n-2\n4.\n＋\n発生F\n32\n全体F\n52\nヒット時硬直差\nD\nガード時硬直差\n3\n5.\n発生F\n7\n全体F\n27\nヒット時硬直差\n+2\nガード時硬直差\n-1",
+      "liveHistoryMode": true,
+      "mode": "normal",
+      "passed": true,
+      "questions": 5,
+      "rosterSize": 32,
+      "target": "marisa",
+      "unknownNotConsumed": true,
+      "width": 768,
+      "replay": true
+    },
+    {
+      "correct": false,
+      "draw": 0.796875,
+      "fixture": false,
+      "history": "1.\n＋\n発生F\n9\n2.\n＋\n発生F\n12\n3.\n＋\n＋\n発生F\n19\n4.\n＋\n発生F\n32\n5.\n発生F\n7",
+      "liveHistoryMode": true,
+      "mode": "startup",
+      "passed": true,
+      "questions": 5,
+      "rosterSize": 32,
+      "target": "marisa",
+      "unknownNotConsumed": true,
+      "width": 768,
+      "replay": true
+    },
+    {
+      "correct": true,
+      "draw": 0.796875,
+      "fixture": false,
+      "history": "1.\n＋\n発生F\n9\n全体F\n不明\nヒット時硬直差\n+5\nガード時硬直差\n-2\n2.\n＋\n発生F\n12\n全体F\n45\nヒット時硬直差\n-3\nガード時硬直差\n-16\n3.\n＋\n＋\n発生F\n19\n全体F\n43\nヒット時硬直差\nD\nガード時硬直差\n-2\n4.\n＋\n発生F\n32\n全体F\n52\nヒット時硬直差\nD\nガード時硬直差\n3\n5.\n発生F\n7\n全体F\n27\nヒット時硬直差\n+2\nガード時硬直差\n-1",
+      "liveHistoryMode": true,
+      "mode": "normal",
+      "passed": true,
+      "questions": 5,
+      "rosterSize": 32,
+      "target": "marisa",
+      "unknownNotConsumed": true,
+      "width": 390,
+      "replay": true
+    },
+    {
+      "correct": false,
+      "draw": 0.796875,
+      "fixture": false,
+      "history": "1.\n＋\n発生F\n9\n2.\n＋\n発生F\n12\n3.\n＋\n＋\n発生F\n19\n4.\n＋\n発生F\n32\n5.\n発生F\n7",
+      "liveHistoryMode": true,
+      "mode": "startup",
+      "passed": true,
+      "questions": 5,
+      "rosterSize": 32,
+      "target": "marisa",
+      "unknownNotConsumed": true,
+      "width": 390,
+      "replay": true
+    },
+    {
+      "correct": true,
+      "draw": 0.578125,
+      "fixture": false,
+      "history": "1.\n＋\n発生F\n8\n全体F\n不明\nヒット時硬直差\nD\nガード時硬直差\n-10\n2.\n＋\n\n採用データ内に該当する技なし\n\n3.\n＋\n＋\n発生F\n12\n全体F\n40\nヒット時硬直差\n+2\nガード時硬直差\n-2\n4.\n＋\n発生F\n7\n全体F\n66\nヒット時硬直差\nD\nガード時硬直差\n-36\n5.\n＋\n＋\n発生F\n9\n全体F\n47\nヒット時硬直差\n1\nガード時硬直差\n-9",
+      "liveHistoryMode": true,
+      "mode": "normal",
+      "passed": true,
+      "questions": 5,
+      "rosterSize": 32,
+      "target": "ken",
+      "unknownNotConsumed": true,
+      "width": 320,
+      "replay": true
+    },
+    {
+      "correct": false,
+      "draw": 0.578125,
+      "fixture": false,
+      "history": "1.\n＋\n発生F\n8\n2.\n＋\n\n採用データ内に該当する技なし\n\n3.\n＋\n＋\n発生F\n12\n4.\n＋\n発生F\n7\n5.\n＋\n＋\n発生F\n9",
+      "liveHistoryMode": true,
+      "mode": "startup",
+      "passed": true,
+      "questions": 5,
+      "rosterSize": 32,
+      "target": "ken",
+      "unknownNotConsumed": true,
+      "width": 320,
+      "replay": true
+    },
+    {
+      "nativeMouse236": true,
+      "nativeKeyboard623": true
+    },
+    {
+      "nativeTouch214": true,
+      "nativeTouch22": true
+    }
+  ]
+}

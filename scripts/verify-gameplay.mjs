@@ -50,6 +50,12 @@ async function exercise(config) {
         document.querySelector(".submit-row button[type=submit]").disabled,
         "Ask button still enabled after submission",
       );
+      assert(
+        document
+          .querySelector('.lever-direction[aria-label="中央"]')
+          .getAttribute("aria-pressed") === "true",
+        "Lever did not reset after submission",
+      );
       const strip = document.querySelector(".command-strip [aria-label]");
       if (strip)
         assert(
@@ -89,8 +95,8 @@ async function exercise(config) {
   );
   assert(!document.querySelector(".mode-toggle"), "Start mode selector");
   assert(
-    !document.querySelector("input[type=checkbox]").checked,
-    "Fixture selected",
+    !document.querySelector(".development-options"),
+    "Development data controls remain",
   );
   assert(
     !document.body.innerText.includes("未検証の実データで試遊（開発専用）"),
@@ -428,6 +434,13 @@ async function earlyAnswer(config) {
     document.querySelectorAll('input[name="answer"]').length ===
       config.rosterSize,
     "Answer roster mismatch",
+  );
+  const answerIds = [...document.querySelectorAll('input[name="answer"]')].map(
+    (input) => input.value,
+  );
+  assert(
+    answerIds[0] === "luke" && answerIds.at(-1) === "arjun",
+    "Answer roster release order mismatch",
   );
   assert(
     !document.querySelector(".attack-buttons") &&

@@ -19,6 +19,8 @@ completeは採用の基準とした原典一覧の対象範囲を収録したこ
 
 第10段階でCharacterとMoveへ任意のadoptionを追加しました。`{ "status": "accepted", "basis": "採用の根拠" }`またはstatus heldを指定します。Characterがaccepted、両coverageがcomplete、各技がacceptedまたは明示的heldなら採用対象にできます。heldは出題を保留し、通常状態が不明のvariantもunknownとします。衝突はambiguousで、値がunknownなら必要項目のモードに応じて質問を消費しません。
 
+追加指定により`status: "excluded"`も使用します。仕様上対象外と判断したMoveを値・出典ごと保持し、質問候補・技の検索・強度なしの保留判定から除外します。excludedは未確定のheldとは異なります。Characterがacceptedで収録範囲がcompleteなら、明示的excludedを含んでも抽選できます。`adoption-decisions.json`のexcludedMoveIdsと根拠を正本として再生成します。
+
 source.verificationがunverifiedでも明示的に採用できます。これをverifiedへ書き換える必要はありません。adoptionのない既存Fixture等は従来のverified条件を使い、過去のステージングを自動で採用しません。ODはLP+MP/LK+MKを基本とし、原典上で別性能の入力と明確に分かるものを個別に選別します。
 
 Moveはid、name、category（normal/special）、input、variant、frames、notes（文字列配列）、sourceを持ちます。
@@ -84,6 +86,8 @@ displayは全状態でnullを許します。confirmedでも表示未取得なら
 numericは有限の数値で、displayが符号付き数値文字列として同じ値を表す場合のみ指定できます。
 Dや10-12を数値化しません。unknownの表示に0を代入しません。
 第7段階の標準条件は、通常状態・原則立ちの相手・画面中央・通常ヒット/ガード・非ホールド・派生なしです。全体Fは空振り時を使用します。立ちガードが成立しない下段はしゃがみガードを使用し、非攻撃の構え・移動技では攻撃発生を適用対象外とします。技別の例外と元表記は監査JSONに記録します。
+
+第14段階後の追加指定で、距離依存の技は遠距離の値を標準とします。同じボタンでも距離で性能が変わらない技はその性能を維持します。遠距離と明示した原典値がない場合、近距離値から計算・推測しません。
 
 原典注記から標準条件の値を選択できる場合は、その根拠と元表記を保持して正規化します。条件が残る場合、同じ指標の上下限が確定したときだけconditionalにrangeを付けて`20~30`のように表示します。例（架空の形式例）:
 

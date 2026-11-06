@@ -2,7 +2,7 @@ import { z } from "zod";
 
 const text = z.string().trim().min(1);
 const adoptionSchema = z.object({
-  status: z.enum(["accepted", "held"]),
+  status: z.enum(["accepted", "held", "excluded"]),
   basis: text,
 });
 export const sourceSchema = z.object({

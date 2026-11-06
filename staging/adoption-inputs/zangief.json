@@ -840,8 +840,8 @@
         "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence."
       ],
       "adoption": {
-        "status": "held",
-        "basis": "held-source-input"
+        "status": "excluded",
+        "basis": "User excludes three-button, non-OD two-button special inputs and buttonless Run; source values retained."
       }
     },
     {
@@ -1420,6 +1420,242 @@
       "adoption": {
         "status": "held",
         "basis": "source-coverage-repair"
+      }
+    },
+    {
+      "id": "zangief__far_63214_K_L",
+      "name": "Siberian Express",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "55",
+          "numeric": 55
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "96",
+          "numeric": 96,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 63214K (Far)",
+        "upstreamName: Siberian Express",
+        "coverageSourceRow: 40",
+        "coverageSource: archive/staging/sf6-frame-data/raw/zangief.json",
+        "sourceNotation: {\"chara\":\"Zangief\",\"input\":\"63214K (Far)\",\"startup\":\"55(81)\",\"total\":\"96(123)\",\"hitAdv\":\"HKD +29\",\"blockAdv\":\"-\",\"notes\":\"Activates from beyond ~1/2 screen; armor lasts until throw becomes active; startup increases at farther range; Zangief throws his arms up at the beginning, creating a noticeable visual cue; 3105 damage on Punish Counter; immediately transitions to grab animation after absorbing a strike; Run Speed: 0.094 (31-37f) / 0.090 (38f~) / 0.099 (close proximity)\"}",
+        "strengthMappingEvidence: Can be activated from close proximity with LK/MK or from any range with HK; switches sides on hit; HK version deals 300 less damage but can connect from a range where Siberian Express would normally be triggered; 2990/3335 damage on Punish Counter",
+        "User standard: far distance. LP/MK notation is not inferred: source explicitly limits LK/MK close Suplex to proximity and states HK uses Suplex from any range. LK/MK use Far Express; HK retains its always-Suplex performance. Parenthesis-external representative values follow existing policy."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Zangief/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "User-selected far-distance standard; explicit source button mapping."
+      }
+    },
+    {
+      "id": "zangief__far_63214_K_M",
+      "name": "Siberian Express",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "55",
+          "numeric": 55
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "96",
+          "numeric": 96,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 63214K (Far)",
+        "upstreamName: Siberian Express",
+        "coverageSourceRow: 40",
+        "coverageSource: archive/staging/sf6-frame-data/raw/zangief.json",
+        "sourceNotation: {\"chara\":\"Zangief\",\"input\":\"63214K (Far)\",\"startup\":\"55(81)\",\"total\":\"96(123)\",\"hitAdv\":\"HKD +29\",\"blockAdv\":\"-\",\"notes\":\"Activates from beyond ~1/2 screen; armor lasts until throw becomes active; startup increases at farther range; Zangief throws his arms up at the beginning, creating a noticeable visual cue; 3105 damage on Punish Counter; immediately transitions to grab animation after absorbing a strike; Run Speed: 0.094 (31-37f) / 0.090 (38f~) / 0.099 (close proximity)\"}",
+        "strengthMappingEvidence: Can be activated from close proximity with LK/MK or from any range with HK; switches sides on hit; HK version deals 300 less damage but can connect from a range where Siberian Express would normally be triggered; 2990/3335 damage on Punish Counter",
+        "User standard: far distance. LP/MK notation is not inferred: source explicitly limits LK/MK close Suplex to proximity and states HK uses Suplex from any range. LK/MK use Far Express; HK retains its always-Suplex performance. Parenthesis-external representative values follow existing policy."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Zangief/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "User-selected far-distance standard; explicit source button mapping."
+      }
+    },
+    {
+      "id": "zangief__far_63214_K_H",
+      "name": "Russian Suplex",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "61",
+          "numeric": 61,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 63214HK or 63214K (Close)",
+        "upstreamName: Russian Suplex",
+        "coverageSourceRow: 39",
+        "coverageSource: archive/staging/sf6-frame-data/raw/zangief.json",
+        "sourceNotation: {\"chara\":\"Zangief\",\"input\":\"63214HK or 63214K (Close)\",\"startup\":\"10\",\"total\":\"61\",\"hitAdv\":\"HKD +26\",\"blockAdv\":\"-\",\"notes\":\"Can be activated from close proximity with LK/MK or from any range with HK; switches sides on hit; HK version deals 300 less damage but can connect from a range where Siberian Express would normally be triggered; 2990/3335 damage on Punish Counter\"}",
+        "strengthMappingEvidence: Can be activated from close proximity with LK/MK or from any range with HK; switches sides on hit; HK version deals 300 less damage but can connect from a range where Siberian Express would normally be triggered; 2990/3335 damage on Punish Counter",
+        "User standard: far distance. LP/MK notation is not inferred: source explicitly limits LK/MK close Suplex to proximity and states HK uses Suplex from any range. LK/MK use Far Express; HK retains its always-Suplex performance. Parenthesis-external representative values follow existing policy."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Zangief/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "User-selected far-distance standard; explicit source button mapping."
+      }
+    },
+    {
+      "id": "zangief__far_63214_K_OD",
+      "name": "Siberian Express",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "54",
+          "numeric": 54
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "95",
+          "numeric": 95,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 63214KK (Far)",
+        "upstreamName: Siberian Express",
+        "coverageSourceRow: 37",
+        "coverageSource: archive/staging/sf6-frame-data/raw/zangief.json",
+        "sourceNotation: {\"chara\":\"Zangief\",\"input\":\"63214KK (Far)\",\"startup\":\"54(81)\",\"total\":\"95(123)\",\"hitAdv\":\"HKD +29\",\"blockAdv\":\"-\",\"notes\":\"Activates from beyond ~1/2 screen; 2-hit armor lasts until throw becomes active; startup increases at farther range; Zangief throws his arms up at the beginning, creating a noticeable visual cue; 3450 damage on Punish Counter; immediately transitions to grab animation after absorbing a strike; Run Speed: 0.045 (28-30f) / 0.094 (31-37f) / 0.090 (38f~) / 0.099 (close proximity or after absorbing strike)\"}",
+        "strengthMappingEvidence: Can be activated from close proximity with LK/MK or from any range with HK; switches sides on hit; HK version deals 300 less damage but can connect from a range where Siberian Express would normally be triggered; 2990/3335 damage on Punish Counter",
+        "User standard: far distance. LP/MK notation is not inferred: source explicitly limits LK/MK close Suplex to proximity and states HK uses Suplex from any range. LK/MK use Far Express; HK retains its always-Suplex performance. Parenthesis-external representative values follow existing policy."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Zangief/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "User-selected far-distance standard; explicit source button mapping."
       }
     }
   ],

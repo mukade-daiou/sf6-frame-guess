@@ -32,7 +32,9 @@ export function resolveMove(
 ): Resolution {
   const matches = character.moves.filter(
     (move) =>
-      move.variant.kind === "base" && inputKey(move.input) === inputKey(input),
+      move.adoption?.status !== "excluded" &&
+      move.variant.kind === "base" &&
+      inputKey(move.input) === inputKey(input),
   );
   if (matches.length > 1) return { status: "ambiguous" };
   if (!matches.length) {
@@ -43,13 +45,20 @@ export function resolveMove(
       character.moves.some(
         (m) =>
           m.input.type === "special" &&
+          m.adoption?.status !== "excluded" &&
           m.input.motion === input.motion &&
           m.input.button === input.button &&
           m.input.strength === "none",
       )
     )
       return { status: "unknown" };
-    if (character.moves.some((m) => inputKey(m.input) === inputKey(input)))
+    if (
+      character.moves.some(
+        (m) =>
+          m.adoption?.status !== "excluded" &&
+          inputKey(m.input) === inputKey(input),
+      )
+    )
       return { status: "unknown" };
     return {
       status: hasCompleteScope(character, input.type) ? "not_found" : "unknown",

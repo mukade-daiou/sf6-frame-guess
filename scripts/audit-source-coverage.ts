@@ -1,6 +1,7 @@
 import { readFile, readdir, mkdir, writeFile } from "node:fs/promises";
 import { characterSchema } from "../src/lib/frame-data/schema";
 import { isQuestionInput } from "../src/lib/frame-data/input";
+import { excludedInputReason } from "./source-scope";
 
 const read = async (p: string) => JSON.parse(await readFile(p, "utf8"));
 const out = "staging/coverage-audit";
@@ -35,6 +36,9 @@ for (const file of (await readdir("staging/adoption-inputs"))
       classification = "out_of_scope";
       reason =
         "Command/aerial/hold/target normal, outside the twelve standing/crouching normals.";
+    } else if (excludedInputReason(input)) {
+      classification = "out_of_scope";
+      reason = excludedInputReason(input)!;
     } else if (matches.length) {
       classification = matches.every(
         (m) => m.adoption?.status === "held" || m.variant.kind !== "base",

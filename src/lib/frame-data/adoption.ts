@@ -1,7 +1,12 @@
 import type { Character, Move } from "./schema";
 
 export function isMoveUsable(character: Character, move: Move): boolean {
-  if (character.adoption?.status === "held" || move.adoption?.status === "held")
+  if (
+    character.adoption?.status === "held" ||
+    move.adoption?.status === "held" ||
+    character.adoption?.status === "excluded" ||
+    move.adoption?.status === "excluded"
+  )
     return false;
   if (character.adoption?.status === "accepted")
     return move.adoption?.status === "accepted";
@@ -12,7 +17,11 @@ export function hasCompleteScope(
   category: "normal" | "special",
 ): boolean {
   const coverage = character.coverage[category];
-  if (character.adoption?.status === "held") return false;
+  if (
+    character.adoption?.status === "held" ||
+    character.adoption?.status === "excluded"
+  )
+    return false;
   return (
     coverage.status === "complete" &&
     (character.adoption?.status === "accepted" ||

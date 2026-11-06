@@ -72,24 +72,45 @@ for (const width of [1280, 768, 390, 320]) {
         .querySelector(".command-strip .command-directions")
         .getAttribute("aria-label"),
     ) === "1回転";
-  click("右下");
+  click("右");
   assert(
     evaluate(
       () =>
-        !document.querySelector(
-          '.motion-suggestion[aria-label="コマンド 360"]',
-        ),
+        document.querySelectorAll(
+          '.motion-suggestion[aria-label^="コマンド 360"]',
+        ).length === 1,
     ),
-    "Incomplete turn offered a 360 shortcut",
+    "Rotation candidate must appear exactly once",
   );
+  run("screenshot", `${out}/${width}-rotation-candidates.png`, "--full");
+  click("コマンド 360");
+  assert(completed(), "Clockwise candidate completion failed");
   click("クリア");
+  click("右");
+  click("右上");
+  assert(
+    evaluate(
+      () =>
+        document.querySelectorAll(
+          '.motion-suggestion[aria-label="コマンド 360"]',
+        ).length,
+    ) === 1,
+    "Counterclockwise prefix duplicated/missed rotation candidate",
+  );
+  click("コマンド 360");
+  assert(completed(), "Counterclockwise candidate completion failed");
+  click("クリア");
+  evaluate(() => {
+    document.querySelector(".lever").focus();
+    return true;
+  });
   for (const d of "632147896") run("press", d);
   assert(completed(), "Native keyboard rotation failed");
   assert(
     evaluate(
       () =>
         !!document.querySelector(
-          '.motion-suggestion[aria-label="コマンド 360"] .rotation-icon',
+          '.motion-suggestion[aria-label^="コマンド 360"] .rotation-icon',
         ),
     ),
     "Rotation candidate icon missing",
@@ -189,9 +210,17 @@ for (const width of [1280, 768, 390, 320]) {
     ) === 4,
     "Rotation histories missing",
   );
-  click("通常技");
-  click("弱P");
+  for (const direction of ["右", "右下", "下", "左下", "左"]) click(direction);
+  click("弱K＋中K");
   click("質問する");
+  assert(
+    evaluate(() =>
+      [...document.querySelectorAll("ol.history li:last-child dd")]
+        .map((el) => el.textContent)
+        .join(","),
+    ) === "54,95,D,-",
+    "Far-distance OD Express frames mismatch",
+  );
   evaluate(() => {
     const input = document.querySelector(
       'input[name="answer"][value="zangief"]',
@@ -217,6 +246,7 @@ for (const width of [1280, 768, 390, 320]) {
     touchClockwise: true,
     tapsCounterclockwise: true,
     spdNormalOD: true,
+    farDistanceODExpress: true,
     history: true,
     answer: true,
     replay: true,

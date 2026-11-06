@@ -7,7 +7,7 @@
       "properties": {
         "status": {
           "type": "string",
-          "enum": ["accepted", "held"]
+          "enum": ["accepted", "held", "excluded"]
         },
         "basis": {
           "type": "string",
@@ -124,7 +124,7 @@
             "properties": {
               "status": {
                 "type": "string",
-                "enum": ["accepted", "held"]
+                "enum": ["accepted", "held", "excluded"]
               },
               "basis": {
                 "type": "string",

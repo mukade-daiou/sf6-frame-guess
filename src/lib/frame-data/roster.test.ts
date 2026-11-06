@@ -2,21 +2,15 @@ import { expect, it } from "vitest";
 import { production } from "./datasets";
 import { startGame, ask } from "../../features/game/engine";
 import { resolveMove } from "./resolver";
+import { inputKey } from "./input";
 it("preserves 32 characters and equally selects only complete scopes, keeping held inputs unknown", () => {
   expect(production.errors).toEqual([]);
   expect(production.characters).toHaveLength(32);
-  expect(production.eligible).toHaveLength(26);
+  expect(production.eligible).toHaveLength(32);
   const partial = production.characters.filter(
     (c) => c.coverage.special.status === "partial",
   );
-  expect(partial.map((c) => c.id).sort()).toEqual([
-    "akuma",
-    "blanka",
-    "dhalsim",
-    "ed",
-    "ingrid",
-    "rashid",
-  ]);
+  expect(partial).toEqual([]);
   for (const c of partial) {
     expect(production.eligible).not.toContain(c);
     expect(
@@ -38,7 +32,14 @@ it("preserves 32 characters and equally selects only complete scopes, keeping he
     expect(game.inputs).toEqual(production.inputs);
     expect(game.target.source.verification).toBe("unverified");
     for (const m of game.target.moves.filter(
-      (m) => m.adoption?.status === "held",
+      (m) =>
+        m.adoption?.status === "held" &&
+        !game.target.moves.some(
+          (base) =>
+            base.variant.kind === "base" &&
+            base.adoption?.status === "accepted" &&
+            inputKey(base.input) === inputKey(m.input),
+        ),
     ))
       expect(resolveMove(game.target, m.input, "startup").status).toBe(
         "unknown",
