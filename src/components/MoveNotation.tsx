@@ -16,8 +16,10 @@ export const directionNames: Record<Direction, string> = {
 };
 export function DirectionIcon({
   direction,
+  charged = false,
 }: {
   direction: Exclude<Direction, "5">;
+  charged?: boolean;
 }) {
   const degrees = {
     "8": 0,
@@ -30,11 +32,17 @@ export function DirectionIcon({
     "7": 315,
   };
   return (
-    <svg className="direction-icon" viewBox="0 0 24 24" aria-hidden="true">
+    <svg
+      className={`direction-icon${charged ? " charge-direction" : ""}`}
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+    >
       <path
         transform={`rotate(${degrees[direction]} 12 12)`}
         d="M12 2 2 12h6v10h8V12h6Z"
         fill="currentColor"
+        stroke={charged ? "#876800" : undefined}
+        strokeWidth={charged ? 0.8 : undefined}
       />
     </svg>
   );
@@ -97,28 +105,39 @@ export function CommandNotation({
   command: string;
   clockwise?: boolean;
 }) {
+  const tokens = command.match(/\[[12346789]\]|[12346789]/g) || [];
+  const supported = /^(?:\[[12346789]\]|[12346789])+$/.test(command);
   return (
     <span
       className="command-directions"
       aria-label={
         command === "360"
           ? "1回転"
-          : command
-              .split("")
-              .map((d) => directionNames[d as Direction])
-              .join("、") || "未入力"
+          : supported
+            ? tokens
+                .map((d) =>
+                  d.startsWith("[")
+                    ? `${directionNames[d[1] as Direction]}（溜め）`
+                    : directionNames[d as Direction],
+                )
+                .join("、") || "未入力"
+            : command || "未入力"
       }
     >
       {command === "360" ? (
         <RotationIcon clockwise={clockwise} />
-      ) : command ? (
-        command
-          .split("")
-          .map((d, i) => (
-            <DirectionIcon key={i} direction={d as Exclude<Direction, "5">} />
-          ))
+      ) : command && supported ? (
+        tokens.map((d, i) => (
+          <DirectionIcon
+            key={i}
+            direction={
+              (d.startsWith("[") ? d[1] : d) as Exclude<Direction, "5">
+            }
+            charged={d.startsWith("[")}
+          />
+        ))
       ) : (
-        "—"
+        command || "—"
       )}
     </span>
   );
@@ -136,6 +155,13 @@ export function MoveNotation({ input }: { input: MoveInput }) {
     <span
       className="move-notation"
       role="img"
+      aria-description={
+        input.type === "special" && input.motion === "[4]6"
+          ? "後ろ溜めから前"
+          : input.type === "special" && input.motion === "[2]8"
+            ? "下溜めから上"
+            : undefined
+      }
       aria-label={
         input.type === "special" && input.motion === "360"
           ? `1回転＋${input.strength === "OD" ? `弱${input.button}＋中${input.button}` : `${{ L: "弱", M: "中", H: "強", none: "" }[input.strength]}${input.button}`}（${displayInput(input)}）`
@@ -144,7 +170,8 @@ export function MoveNotation({ input }: { input: MoveInput }) {
     >
       <span aria-hidden="true">
         {command &&
-          (command === "360" || /^[12346789]+$/.test(command) ? (
+          (command === "360" ||
+          /^(?:\[[12346789]\]|[12346789])+$/.test(command) ? (
             <CommandNotation command={command} />
           ) : (
             command

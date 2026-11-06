@@ -48,7 +48,7 @@ it("suggests unique directional prefixes from all eligible inputs without fuzzy 
     expect.arrayContaining(["236", "360"]),
   );
   expect(getMotionCandidates([...inputs], "2366")).toEqual([]);
-  expect(getMotionCandidates([...inputs], "[4]")).toEqual([]);
+  expect(getMotionCandidates([...inputs], "[4]")).toEqual(["[4]6"]);
   expect(getMotionCandidates([...inputs], "none")).toEqual([]);
 });
 
@@ -190,7 +190,7 @@ it("excludes motionless/complex inputs from questions without removing the store
       button: "P",
       strength: "L",
     }),
-  ).toBe(false);
+  ).toBe(true);
   expect(
     isQuestionInput({
       type: "special",

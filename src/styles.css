@@ -235,7 +235,7 @@ footer {
 .game-heading > div {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 12px;
 }
 .game-heading span {
@@ -427,6 +427,24 @@ summary {
 .command-strip > div {
   min-width: 0;
 }
+.start-heading {
+  font-size: 1.125rem;
+  margin-bottom: 12px;
+}
+.start-rules {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--color-warm-mist);
+}
+.start-rules ul {
+  font-size: var(--text-body);
+  line-height: 1.7;
+  padding-left: 1.4em;
+  margin: 8px 0 20px;
+}
+.start-rules li + li {
+  margin-top: 8px;
+}
 .motion-suggestions {
   display: flex;
   flex-wrap: wrap;
@@ -465,6 +483,9 @@ summary {
   height: 24px;
   flex: 0 0 24px;
   vertical-align: middle;
+}
+.charge-direction {
+  color: #e7c136;
 }
 .quiet-button {
   background: transparent;
@@ -628,6 +649,9 @@ summary {
   }
   .game-heading {
     align-items: flex-start;
+  }
+  .game-heading h2 {
+    flex-basis: 100%;
   }
 }
 @media (max-width: 560px) {

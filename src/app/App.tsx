@@ -47,18 +47,53 @@ export default function App() {
       <header>
         <DataInfo dataset={dataset} />
         <h1>
-          SF6 Frame Data
-          <br className="mobile-break" /> Guessing Game
+          SF6
+          <br className="mobile-break" />
+          フレームアキネーター
         </h1>
       </header>
       {!game ? (
-        <section className="panel">
-          <h2>ゲームを始める</h2>
+        <section className="panel" aria-labelledby="description-title">
+          <h2 id="description-title" className="start-heading">
+            ゲームの説明
+          </h2>
           <p>
-            最大{limit}
-            回質問して、キャラクターを1体選んで回答します。分かった時点で、途中でも回答できます。
+            技のフレームデータを調べて、隠されたキャラクターを当てるゲームです。レバーとボタンで技を指定し、質問を重ねて候補を絞ってください。
           </p>
-          <p>質問回数：{limit}回</p>
+          <p>
+            <strong>Normal</strong>
+            ：発生・全体・ヒット時の硬直差・ガード時の硬直差を表示します。
+            <br />
+            <strong>Hard</strong>：発生だけを表示します。
+            <br />
+            プレイ中も切り替えられ、履歴全体の表示が変わります。
+          </p>
+          <section className="start-rules" aria-labelledby="rules-title">
+            <h2 id="rules-title" className="start-heading">
+              ルール・注意事項
+            </h2>
+            <ul>
+              <li>
+                質問は最大{limit}
+                回です。途中でも回答でき、回数が残っていれば質問に戻れます。
+              </li>
+              <li>
+                「不明」は質問回数を消費しません。「技なし」は1回消費します。質問済みの入力は再質問できません。
+              </li>
+              <li>
+                通常状態・画面中央での通常ヒットやガードが基準です。ボタンを長押しする版や派生技は対象外です。
+              </li>
+              <li>
+                ODは弱＋中で入力します。3ボタン同時押しやOD以外の2ボタン同時押し技、特殊技等は対象外です。
+              </li>
+              <li>
+                距離で性能が変わる技は遠距離の値を使います。ダウンは「D」、括弧付き数値は原則として括弧の外の値です。
+              </li>
+              <li>
+                溜め技は左から右、または下から上へ入力します。長押しは不要です。
+              </li>
+            </ul>
+          </section>
           {dataset.eligible.length < 2 && (
             <p role="status">
               開始には、採用済みで収録範囲が確定したキャラクターが2体以上必要です。
@@ -110,7 +145,7 @@ export default function App() {
                         setMessage("");
                       }}
                     >
-                      {m === "normal" ? "ノーマル" : "発生のみ"}
+                      {m === "normal" ? "Normal" : "Hard"}
                     </button>
                   ))}
                 </div>

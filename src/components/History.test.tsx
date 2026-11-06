@@ -42,5 +42,6 @@ it("switches all historical rows to the current mode, including unknown saved fi
   game = changeMode(game, "startup");
   expect((render().match(/<dd>/g) || []).length).toBe(2);
   expect(render()).not.toContain("全体F");
-  expect(render()).not.toContain("ノーマル");
+  expect(render()).not.toContain("Normal");
+  expect(render()).not.toContain("Hard");
 });

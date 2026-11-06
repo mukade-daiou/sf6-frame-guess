@@ -146,7 +146,7 @@ async function exercise(config) {
     document.querySelector(".query-unknown")?.textContent === "不明",
     "Unknown has no visible result",
   );
-  await click("発生のみ");
+  await click("Hard");
   assert(
     !document.querySelector(".query-unknown"),
     "Stale unknown after mode switch",
@@ -167,7 +167,7 @@ async function exercise(config) {
     ) < 1,
     "Startup frame not centered in history",
   );
-  await click("ノーマル");
+  await click("Normal");
   await normal("2", config.target === "ken" ? "強K" : "中K");
   await click("質問する");
   assert(
@@ -180,7 +180,7 @@ async function exercise(config) {
       4 && document.querySelector("ol.history li").textContent.includes("不明"),
     "History did not switch to normal with unknown total",
   );
-  if (config.mode === "startup") await click("発生のみ");
+  if (config.mode === "startup") await click("Hard");
   await click("必殺技");
   assert(
     [...document.querySelectorAll(".attack-buttons button")].every(
@@ -305,14 +305,14 @@ async function exercise(config) {
     ),
     "Answer mode disabled",
   );
-  await click(config.mode === "normal" ? "発生のみ" : "ノーマル");
+  await click(config.mode === "normal" ? "Hard" : "Normal");
   assert(
     count() === 5 &&
       entries[0].querySelectorAll("dd").length ===
         (config.mode === "normal" ? 1 : 4),
     "Answer history did not switch",
   );
-  await click(config.mode === "normal" ? "ノーマル" : "発生のみ");
+  await click(config.mode === "normal" ? "Normal" : "Hard");
   const choice = config.correct
     ? config.target
     : config.target === "ken"
@@ -331,14 +331,14 @@ async function exercise(config) {
       (config.target === "ken" ? "ケン" : "マリーザ"),
     "Wrong target",
   );
-  await click(config.mode === "normal" ? "発生のみ" : "ノーマル");
+  await click(config.mode === "normal" ? "Hard" : "Normal");
   assert(
     count() === 5 &&
       entries[0].querySelectorAll("dd").length ===
         (config.mode === "normal" ? 1 : 4),
     "Result history did not switch",
   );
-  await click(config.mode === "normal" ? "ノーマル" : "発生のみ");
+  await click(config.mode === "normal" ? "Normal" : "Hard");
   document.querySelector(".data-info").open = true;
   await tick();
   assert(
@@ -423,7 +423,7 @@ async function earlyAnswer(config) {
   };
   Math.random = () => config.draw;
   await click("ゲーム開始");
-  if (config.mode === "startup") await click("発生のみ");
+  if (config.mode === "startup") await click("Hard");
   for (const button of ["弱P", "中P"].slice(0, config.questions)) {
     await click(button);
     await click("質問する");
@@ -568,6 +568,8 @@ for (const width of widths)
     };
     run("open", "http://127.0.0.1:4173/");
     run("set", "viewport", String(width), "1000");
+    if (mode === "normal")
+      run("screenshot", `${out}/${width}-start.png`, "--full");
     results.push(evaluate(exercise, config));
     run("screenshot", `${out}/${width}-${mode}-history.png`, "--full");
     results.at(-1).replay = evaluate(replay);

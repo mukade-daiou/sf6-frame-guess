@@ -39,7 +39,9 @@ export function appendDirection(
   previous: Direction,
   next: Direction,
 ): string {
-  return next === "5" || previous === next ? command : command + next;
+  if (next === "5" || previous === next) return command;
+  const result = command + next;
+  return result === "46" ? "[4]6" : result === "28" ? "[2]8" : result;
 }
 export function getMotionCandidates(
   inputs: MoveInput[],
@@ -54,7 +56,8 @@ export function getMotionCandidates(
           ? prefix === "" ||
             prefix === "360" ||
             rotationSuggestions(prefix).length > 0
-          : input.motion.startsWith(prefix))
+          : input.motion.startsWith(prefix) ||
+            input.motion.replace(/[\[\]]/g, "").startsWith(prefix))
           ? [input.motion]
           : [],
       ),

@@ -1,12 +1,13 @@
 import type { MoveInput } from "./schema";
 
 // Question controls support directional motions and six attacks plus OD pairs.
-// Records for simultaneous/charge/complex inputs remain intact in the dataset.
+// Supports the two explicit charge motions; other complex records remain intact.
 export function isQuestionInput(input: MoveInput): boolean {
   return (
     input.type === "normal" ||
     (input.motion !== "none" &&
-      (input.motion === "360" || /^[12346789]+$/.test(input.motion)) &&
+      (["360", "[4]6", "[2]8"].includes(input.motion) ||
+        /^[12346789]+$/.test(input.motion)) &&
       input.strength !== "none")
   );
 }
