@@ -1493,6 +1493,65 @@
         "status": "accepted",
         "basis": "source-matched candidate"
       }
+    },
+    {
+      "id": "kimberly__coverage_5",
+      "name": "Hidden Variable",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "none"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "19",
+          "numeric": 19
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "43",
+          "numeric": 43,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 214P (HOLD OK)",
+        "upstreamName: Hidden Variable",
+        "coverageSourceRow: 5",
+        "coverageSource: archive/staging/sf6-frame-data/raw/kimberly.json",
+        "upstreamNotes: After reappearing, 7f recovery is cancelable into any attack except Parry or another 214P (otherwise 17f recovery); grants forward momentum when canceled into attacks, unlocking some unique combo routes due to pushback (slower attacks do not benefit from this momentum); normals (except 2HK or command normals) performed after reappearing add +3 to the move's Juggle Limit, -1 to the move's Juggle Increase, and put airborne opponents into a limited juggle state (similar to Drive Rush juggles except no free juggle state when starting a combo); can hold the button to make Kimberly reappear a short distance in front of her rather than in front of the opponent (useful for baiting the opponent's defensive options); Distance on held version: 0.984 (no input) / 0.691 (whiff throw) / longer distance if whiffing a normal out of teleport",
+        "cargoSourceNotation: {\"chara\":\"Kimberly\",\"input\":\"214P (HOLD OK)\",\"startup\":\"19\",\"total\":\"43(33)\",\"hitAdv\":\"-\",\"blockAdv\":\"-\",\"notes\":\"After reappearing, 7f recovery is cancelable into any attack except Parry or another 214P (otherwise 17f recovery); grants forward momentum when canceled into attacks, unlocking some unique combo routes due to pushback (slower attacks do not benefit from this momentum); normals (except 2HK or command normals) performed after reappearing add +3 to the move's Juggle Limit, -1 to the move's Juggle Increase, and put airborne opponents into a limited juggle state (similar to Drive Rush juggles except no free juggle state when starting a combo); can hold the button to make Kimberly reappear a short distance in front of her rather than in front of the opponent (useful for baiting the opponent's defensive options); Distance on held version: 0.984 (no input) / 0.691 (whiff throw) / longer distance if whiffing a normal out of teleport\"}",
+        "Saved source repair: explicit plus separator / HOLD OK non-held version; no calculated total or guessed strength."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Kimberly/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-coverage-repair"
+      }
     }
   ],
   "adoption": {

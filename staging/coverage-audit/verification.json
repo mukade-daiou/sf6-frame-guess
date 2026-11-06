@@ -1,0 +1,249 @@
+{
+  "baseline": "341fd79",
+  "datasetId": "coverage-repair-2026-11-07-r2",
+  "recordCounts": {
+    "before": 884,
+    "after": 904,
+    "accepted": 875,
+    "held": 29,
+    "unknownFields": 148,
+    "originalCandidates": 860
+  },
+  "scope": {
+    "stored": 32,
+    "eligible": 26,
+    "partial": [
+      "akuma",
+      "blanka",
+      "dhalsim",
+      "ed",
+      "ingrid",
+      "rashid"
+    ],
+    "unsupportedSourceRows": 11
+  },
+  "preservation": {
+    "all884RecordsUnchanged": true,
+    "kenMarisa63Unchanged": true,
+    "candidatesAndArchiveUnchanged": true,
+    "originalFrameAdoptionDecisionsUnchanged": true
+  },
+  "checks": {
+    "typecheck": "passed",
+    "vitest": 66,
+    "dataTests": 2,
+    "dataCheck": "passed",
+    "zod": "passed",
+    "build": "passed",
+    "format": "passed"
+  },
+  "commitSnapshot": {
+    "vitest": 64,
+    "dataTests": 2,
+    "typecheck": "passed",
+    "dataCheck": "passed",
+    "zod": "passed",
+    "format": "passed",
+    "build": "passed",
+    "isolatedBrowserWidths": [1280, 768, 390, 320],
+    "rotationAndGameplay": "passed"
+  },
+  "rotationBrowser": [
+    {
+      "width": 1280,
+      "keyboardClockwise": true,
+      "mouseCounterclockwise": true,
+      "touchClockwise": true,
+      "tapsCounterclockwise": true,
+      "spdNormalOD": true,
+      "history": true,
+      "answer": true,
+      "replay": true
+    },
+    {
+      "width": 768,
+      "keyboardClockwise": true,
+      "mouseCounterclockwise": true,
+      "touchClockwise": true,
+      "tapsCounterclockwise": true,
+      "spdNormalOD": true,
+      "history": true,
+      "answer": true,
+      "replay": true
+    },
+    {
+      "width": 390,
+      "keyboardClockwise": true,
+      "mouseCounterclockwise": true,
+      "touchClockwise": true,
+      "tapsCounterclockwise": true,
+      "spdNormalOD": true,
+      "history": true,
+      "answer": true,
+      "replay": true
+    },
+    {
+      "width": 320,
+      "keyboardClockwise": true,
+      "mouseCounterclockwise": true,
+      "touchClockwise": true,
+      "tapsCounterclockwise": true,
+      "spdNormalOD": true,
+      "history": true,
+      "answer": true,
+      "replay": true
+    }
+  ],
+  "gameplayBrowser": [
+    {
+      "correct": true,
+      "draw": 0.5192307692307693,
+      "earlyAnswer": true,
+      "mode": "normal",
+      "passed": true,
+      "questions": 0,
+      "rosterSize": 26,
+      "target": "ken",
+      "width": 1280
+    },
+    {
+      "correct": false,
+      "draw": 0.7884615384615384,
+      "earlyAnswer": true,
+      "mode": "startup",
+      "passed": true,
+      "questions": 2,
+      "rosterSize": 26,
+      "target": "marisa",
+      "width": 320
+    },
+    {
+      "correct": true,
+      "draw": 0.5192307692307693,
+      "fixture": false,
+      "history": "1.\n＋\n発生F\n8\n全体F\n不明\nヒット時硬直差\nD\nガード時硬直差\n-10\n2.\n＋\n\n採用データ内に該当する技なし\n\n3.\n＋\n＋\n発生F\n12\n全体F\n40\nヒット時硬直差\n+2\nガード時硬直差\n-2\n4.\n＋\n発生F\n7\n全体F\n66\nヒット時硬直差\nD\nガード時硬直差\n-36\n5.\n＋\n＋\n発生F\n9\n全体F\n47\nヒット時硬直差\n1\nガード時硬直差\n-9",
+      "liveHistoryMode": true,
+      "mode": "normal",
+      "passed": true,
+      "questions": 5,
+      "rosterSize": 26,
+      "target": "ken",
+      "unknownNotConsumed": true,
+      "width": 1280,
+      "replay": true
+    },
+    {
+      "correct": false,
+      "draw": 0.5192307692307693,
+      "fixture": false,
+      "history": "1.\n＋\n発生F\n8\n2.\n＋\n\n採用データ内に該当する技なし\n\n3.\n＋\n＋\n発生F\n12\n4.\n＋\n発生F\n7\n5.\n＋\n＋\n発生F\n9",
+      "liveHistoryMode": true,
+      "mode": "startup",
+      "passed": true,
+      "questions": 5,
+      "rosterSize": 26,
+      "target": "ken",
+      "unknownNotConsumed": true,
+      "width": 1280,
+      "replay": true
+    },
+    {
+      "correct": true,
+      "draw": 0.7884615384615384,
+      "fixture": false,
+      "history": "1.\n＋\n発生F\n9\n全体F\n不明\nヒット時硬直差\n+5\nガード時硬直差\n-2\n2.\n＋\n発生F\n12\n全体F\n45\nヒット時硬直差\n-3\nガード時硬直差\n-16\n3.\n＋\n＋\n発生F\n19\n全体F\n43\nヒット時硬直差\nD\nガード時硬直差\n-2\n4.\n＋\n発生F\n32\n全体F\n52\nヒット時硬直差\nD\nガード時硬直差\n3\n5.\n発生F\n7\n全体F\n27\nヒット時硬直差\n+2\nガード時硬直差\n-1",
+      "liveHistoryMode": true,
+      "mode": "normal",
+      "passed": true,
+      "questions": 5,
+      "rosterSize": 26,
+      "target": "marisa",
+      "unknownNotConsumed": true,
+      "width": 768,
+      "replay": true
+    },
+    {
+      "correct": false,
+      "draw": 0.7884615384615384,
+      "fixture": false,
+      "history": "1.\n＋\n発生F\n9\n2.\n＋\n発生F\n12\n3.\n＋\n＋\n発生F\n19\n4.\n＋\n発生F\n32\n5.\n発生F\n7",
+      "liveHistoryMode": true,
+      "mode": "startup",
+      "passed": true,
+      "questions": 5,
+      "rosterSize": 26,
+      "target": "marisa",
+      "unknownNotConsumed": true,
+      "width": 768,
+      "replay": true
+    },
+    {
+      "correct": true,
+      "draw": 0.7884615384615384,
+      "fixture": false,
+      "history": "1.\n＋\n発生F\n9\n全体F\n不明\nヒット時硬直差\n+5\nガード時硬直差\n-2\n2.\n＋\n発生F\n12\n全体F\n45\nヒット時硬直差\n-3\nガード時硬直差\n-16\n3.\n＋\n＋\n発生F\n19\n全体F\n43\nヒット時硬直差\nD\nガード時硬直差\n-2\n4.\n＋\n発生F\n32\n全体F\n52\nヒット時硬直差\nD\nガード時硬直差\n3\n5.\n発生F\n7\n全体F\n27\nヒット時硬直差\n+2\nガード時硬直差\n-1",
+      "liveHistoryMode": true,
+      "mode": "normal",
+      "passed": true,
+      "questions": 5,
+      "rosterSize": 26,
+      "target": "marisa",
+      "unknownNotConsumed": true,
+      "width": 390,
+      "replay": true
+    },
+    {
+      "correct": false,
+      "draw": 0.7884615384615384,
+      "fixture": false,
+      "history": "1.\n＋\n発生F\n9\n2.\n＋\n発生F\n12\n3.\n＋\n＋\n発生F\n19\n4.\n＋\n発生F\n32\n5.\n発生F\n7",
+      "liveHistoryMode": true,
+      "mode": "startup",
+      "passed": true,
+      "questions": 5,
+      "rosterSize": 26,
+      "target": "marisa",
+      "unknownNotConsumed": true,
+      "width": 390,
+      "replay": true
+    },
+    {
+      "correct": true,
+      "draw": 0.5192307692307693,
+      "fixture": false,
+      "history": "1.\n＋\n発生F\n8\n全体F\n不明\nヒット時硬直差\nD\nガード時硬直差\n-10\n2.\n＋\n\n採用データ内に該当する技なし\n\n3.\n＋\n＋\n発生F\n12\n全体F\n40\nヒット時硬直差\n+2\nガード時硬直差\n-2\n4.\n＋\n発生F\n7\n全体F\n66\nヒット時硬直差\nD\nガード時硬直差\n-36\n5.\n＋\n＋\n発生F\n9\n全体F\n47\nヒット時硬直差\n1\nガード時硬直差\n-9",
+      "liveHistoryMode": true,
+      "mode": "normal",
+      "passed": true,
+      "questions": 5,
+      "rosterSize": 26,
+      "target": "ken",
+      "unknownNotConsumed": true,
+      "width": 320,
+      "replay": true
+    },
+    {
+      "correct": false,
+      "draw": 0.5192307692307693,
+      "fixture": false,
+      "history": "1.\n＋\n発生F\n8\n2.\n＋\n\n採用データ内に該当する技なし\n\n3.\n＋\n＋\n発生F\n12\n4.\n＋\n発生F\n7\n5.\n＋\n＋\n発生F\n9",
+      "liveHistoryMode": true,
+      "mode": "startup",
+      "passed": true,
+      "questions": 5,
+      "rosterSize": 26,
+      "target": "ken",
+      "unknownNotConsumed": true,
+      "width": 320,
+      "replay": true
+    },
+    {
+      "nativeMouse236": true,
+      "nativeKeyboard623": true
+    },
+    {
+      "nativeTouch214": true,
+      "nativeTouch22": true
+    }
+  ]
+}

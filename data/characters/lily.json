@@ -1215,6 +1215,478 @@
         "license": "CC-BY-SA-4.0",
         "verification": "unverified"
       }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "lily__coverage_2",
+      "name": "Condor Wind (attack)",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "25",
+          "numeric": 25
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "53",
+          "numeric": 53,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-8"
+        }
+      },
+      "notes": [
+        "upstreamInput: 214HP (HOLD OK)",
+        "upstreamName: Condor Wind (attack)",
+        "coverageSourceRow: 2",
+        "coverageSource: archive/staging/sf6-frame-data/raw/lily.json",
+        "upstreamNotes: Windclad stock gained on the first active frame (or frames 46, 71 and 90 if held); can delay the attack by holding HP (attack comes out 4f after button release); puts opponents into limited juggle state on hit; cancel into SA3 does not combo (only useful when absorbed by armor); cancels and self-hitstop do not occur until after the 2nd active frame; head hurtbox shrinks during active frames and the first 16 recovery frames",
+        "cargoSourceNotation: {\"chara\":\"Lily\",\"input\":\"214HP (HOLD OK)\",\"startup\":\"25(4)\",\"total\":\"53\",\"hitAdv\":\"KD +30\",\"blockAdv\":\"<span style=\\\"color: #b70c0b;\\\">'''-8'''</span>\",\"notes\":\"Windclad stock gained on the first active frame (or frames 46, 71 and 90 if held); can delay the attack by holding HP (attack comes out 4f after button release); puts opponents into limited juggle state on hit; cancel into SA3 does not combo (only useful when absorbed by armor); cancels and self-hitstop do not occur until after the 2nd active frame; head hurtbox shrinks during active frames and the first 16 recovery frames\"}",
+        "Saved source repair: explicit plus separator / HOLD OK non-held version; no calculated total or guessed strength."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Lily/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "lily__coverage_3",
+      "name": "Condor Wind (attack)",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "19",
+          "numeric": 19
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "47",
+          "numeric": 47,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-8"
+        }
+      },
+      "notes": [
+        "upstreamInput: 214LP (HOLD OK)",
+        "upstreamName: Condor Wind (attack)",
+        "coverageSourceRow: 3",
+        "coverageSource: archive/staging/sf6-frame-data/raw/lily.json",
+        "upstreamNotes: Does not grant a Windclad Stock like the MP/HP/OD Attack versions; holding LP for 16f or longer results in non-attack version instead; puts airborne opponents into OTG bounce state (no juggle but greatly improves KD Advantage); cancel into SA3 does not combo (only useful when absorbed by armor); cancels and self-hitstop do not occur until after the 2nd active frame; head hurtbox shrinks on frames 19-38; true blockstring when canceled from 2HP/4HP/6HP and can be spaced safely against most characters",
+        "cargoSourceNotation: {\"chara\":\"Lily\",\"input\":\"214LP (HOLD OK)\",\"startup\":\"19\",\"total\":\"47\",\"hitAdv\":\"KD +16\",\"blockAdv\":\"<span style=\\\"color: #b70c0b;\\\">'''-8'''</span>\",\"notes\":\"Does not grant a Windclad Stock like the MP/HP/OD Attack versions; holding LP for 16f or longer results in non-attack version instead; puts airborne opponents into OTG bounce state (no juggle but greatly improves KD Advantage); cancel into SA3 does not combo (only useful when absorbed by armor); cancels and self-hitstop do not occur until after the 2nd active frame; head hurtbox shrinks on frames 19-38; true blockstring when canceled from 2HP/4HP/6HP and can be spaced safely against most characters\"}",
+        "Saved source repair: explicit plus separator / HOLD OK non-held version; no calculated total or guessed strength."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Lily/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "lily__coverage_5",
+      "name": "Condor Wind (attack)",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "23",
+          "numeric": 23
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "51",
+          "numeric": 51,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-8"
+        }
+      },
+      "notes": [
+        "upstreamInput: 214MP (HOLD OK)",
+        "upstreamName: Condor Wind (attack)",
+        "coverageSourceRow: 5",
+        "coverageSource: archive/staging/sf6-frame-data/raw/lily.json",
+        "upstreamNotes: Windclad stock gained on the first active frame (or frames 46, 71 and 90 if held); can delay the attack by holding MP (attack comes out 4f after button release); cancels and self-hitstop do not occur until after the 2nd active frame; useful for comboing into SA3 as it leaves the opponent grounded on hit; puts airborne opponents into limited juggle state on hit; head hurtbox shrinks during active frames and the first 16 recovery frames",
+        "cargoSourceNotation: {\"chara\":\"Lily\",\"input\":\"214MP (HOLD OK)\",\"startup\":\"23(4)\",\"total\":\"51\",\"hitAdv\":\"<span style=\\\"color: #32CD32;\\\">+2</span>\",\"blockAdv\":\"<span style=\\\"color: #b70c0b;\\\">'''-8'''</span>\",\"notes\":\"Windclad stock gained on the first active frame (or frames 46, 71 and 90 if held); can delay the attack by holding MP (attack comes out 4f after button release); cancels and self-hitstop do not occur until after the 2nd active frame; useful for comboing into SA3 as it leaves the opponent grounded on hit; puts airborne opponents into limited juggle state on hit; head hurtbox shrinks during active frames and the first 16 recovery frames\"}",
+        "Saved source repair: explicit plus separator / HOLD OK non-held version; no calculated total or guessed strength."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Lily/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "lily__coverage_6",
+      "name": "Condor Wind (attack)",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "19",
+          "numeric": 19
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "45",
+          "numeric": 45,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-5"
+        }
+      },
+      "notes": [
+        "upstreamInput: 214PP (HOLD OK)",
+        "upstreamName: Condor Wind (attack)",
+        "coverageSourceRow: 6",
+        "coverageSource: archive/staging/sf6-frame-data/raw/lily.json",
+        "upstreamNotes: Windclad stock gained on the 1st active frame; holding the buttons for 16-24f increases the startup (attack comes out 4f after button release); puts opponents into limited juggle state on hit (can land a corner follow-up juggle with up to 6f startup); holding for 25f or longer results in non-attack version instead; SA3 cancel does not combo on hit (only useful when absorbed by armor); cancels and self-hitstop do not occur until after the 2nd active frame; head hurtbox shrinks during active frames and the first 16 recovery frames",
+        "cargoSourceNotation: {\"chara\":\"Lily\",\"input\":\"214PP (HOLD OK)\",\"startup\":\"19(4)\",\"total\":\"45\",\"hitAdv\":\"KD +39\",\"blockAdv\":\"<span style=\\\"color: #b70c0b;\\\">'''-5'''</span>\",\"notes\":\"Windclad stock gained on the 1st active frame; holding the buttons for 16-24f increases the startup (attack comes out 4f after button release); puts opponents into limited juggle state on hit (can land a corner follow-up juggle with up to 6f startup); holding for 25f or longer results in non-attack version instead; SA3 cancel does not combo on hit (only useful when absorbed by armor); cancels and self-hitstop do not occur until after the 2nd active frame; head hurtbox shrinks during active frames and the first 16 recovery frames\"}",
+        "Saved source repair: explicit plus separator / HOLD OK non-held version; no calculated total or guessed strength."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Lily/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "lily__coverage_26",
+      "name": "Mexican Typhoon",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "360",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "60",
+          "numeric": 60,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 360+HP",
+        "upstreamName: Mexican Typhoon",
+        "coverageSourceRow: 26",
+        "coverageSource: archive/staging/sf6-frame-data/raw/lily.json",
+        "upstreamNotes: Puts Lily fullscreen after successful grab; Range: 0.98",
+        "cargoSourceNotation: {\"chara\":\"Lily\",\"input\":\"360+HP\",\"startup\":\"5\",\"total\":\"60\",\"hitAdv\":\"HKD +28\",\"blockAdv\":\"-\",\"notes\":\"Puts Lily fullscreen after successful grab; Range: 0.98; 3220 damage on Punish Counter\"}",
+        "Saved source repair: explicit plus separator / HOLD OK non-held version; no calculated total or guessed strength."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Lily/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "lily__coverage_27",
+      "name": "Mexican Typhoon",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "360",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "60",
+          "numeric": 60,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 360+LP",
+        "upstreamName: Mexican Typhoon",
+        "coverageSourceRow: 27",
+        "coverageSource: archive/staging/sf6-frame-data/raw/lily.json",
+        "upstreamNotes: Puts Lily fullscreen after successful grab; Range: 1.38",
+        "cargoSourceNotation: {\"chara\":\"Lily\",\"input\":\"360+LP\",\"startup\":\"5\",\"total\":\"60\",\"hitAdv\":\"HKD +28\",\"blockAdv\":\"-\",\"notes\":\"Puts Lily fullscreen after successful grab; Range: 1.38; 2300 damage on Punish Counter\"}",
+        "Saved source repair: explicit plus separator / HOLD OK non-held version; no calculated total or guessed strength."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Lily/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "lily__coverage_28",
+      "name": "Mexican Typhoon",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "360",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "60",
+          "numeric": 60,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 360+MP",
+        "upstreamName: Mexican Typhoon",
+        "coverageSourceRow: 28",
+        "coverageSource: archive/staging/sf6-frame-data/raw/lily.json",
+        "upstreamNotes: Puts Lily fullscreen after successful grab; Range: 1.23",
+        "cargoSourceNotation: {\"chara\":\"Lily\",\"input\":\"360+MP\",\"startup\":\"5\",\"total\":\"60\",\"hitAdv\":\"HKD +28\",\"blockAdv\":\"-\",\"notes\":\"Puts Lily fullscreen after successful grab; Range: 1.23; 2760 damage on Punish Counter\"}",
+        "Saved source repair: explicit plus separator / HOLD OK non-held version; no calculated total or guessed strength."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Lily/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "id": "lily__coverage_29",
+      "name": "Mexican Typhoon",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "360",
+        "button": "P",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "60",
+          "numeric": 60,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 360+PP",
+        "upstreamName: Mexican Typhoon",
+        "coverageSourceRow: 29",
+        "coverageSource: archive/staging/sf6-frame-data/raw/lily.json",
+        "upstreamNotes: Puts Lily fullscreen after successful grab; Range: 1.38",
+        "cargoSourceNotation: {\"chara\":\"Lily\",\"input\":\"360+PP\",\"startup\":\"5\",\"total\":\"60\",\"hitAdv\":\"HKD +28\",\"blockAdv\":\"-\",\"notes\":\"Puts Lily fullscreen after successful grab; Range: 1.38; 3350 damage on Punish Counter\"}",
+        "Saved source repair: explicit plus separator / HOLD OK non-held version; no calculated total or guessed strength."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Lily/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.060Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      }
     }
   ]
 }

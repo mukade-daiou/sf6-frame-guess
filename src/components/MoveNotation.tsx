@@ -71,24 +71,55 @@ export function AttackIcon({
     </svg>
   );
 }
-export function CommandNotation({ command }: { command: string }) {
+export function RotationIcon({ clockwise = true }: { clockwise?: boolean }) {
+  return (
+    <svg
+      className="direction-icon rotation-icon"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+    >
+      <g transform={clockwise ? undefined : "translate(24 0) scale(-1 1)"}>
+        <path
+          d="M19 10a7 7 0 1 0-1 7"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="4"
+        />
+        <path d="M14 7h9l-4.5 8Z" fill="currentColor" />
+      </g>
+    </svg>
+  );
+}
+export function CommandNotation({
+  command,
+  clockwise = true,
+}: {
+  command: string;
+  clockwise?: boolean;
+}) {
   return (
     <span
       className="command-directions"
       aria-label={
-        command
-          .split("")
-          .map((d) => directionNames[d as Direction])
-          .join("、") || "未入力"
+        command === "360"
+          ? "1回転"
+          : command
+              .split("")
+              .map((d) => directionNames[d as Direction])
+              .join("、") || "未入力"
       }
     >
-      {command
-        ? command
-            .split("")
-            .map((d, i) => (
-              <DirectionIcon key={i} direction={d as Exclude<Direction, "5">} />
-            ))
-        : "—"}
+      {command === "360" ? (
+        <RotationIcon clockwise={clockwise} />
+      ) : command ? (
+        command
+          .split("")
+          .map((d, i) => (
+            <DirectionIcon key={i} direction={d as Exclude<Direction, "5">} />
+          ))
+      ) : (
+        "—"
+      )}
     </span>
   );
 }
@@ -102,10 +133,18 @@ export function MoveNotation({ input }: { input: MoveInput }) {
         ? ""
         : input.motion;
   return (
-    <span className="move-notation" role="img" aria-label={displayInput(input)}>
+    <span
+      className="move-notation"
+      role="img"
+      aria-label={
+        input.type === "special" && input.motion === "360"
+          ? `1回転＋${input.strength === "OD" ? `弱${input.button}＋中${input.button}` : `${{ L: "弱", M: "中", H: "強", none: "" }[input.strength]}${input.button}`}（${displayInput(input)}）`
+          : displayInput(input)
+      }
+    >
       <span aria-hidden="true">
         {command &&
-          (/^[12346789]+$/.test(command) ? (
+          (command === "360" || /^[12346789]+$/.test(command) ? (
             <CommandNotation command={command} />
           ) : (
             command

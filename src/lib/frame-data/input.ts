@@ -6,7 +6,7 @@ export function isQuestionInput(input: MoveInput): boolean {
   return (
     input.type === "normal" ||
     (input.motion !== "none" &&
-      /^[12346789]+$/.test(input.motion) &&
+      (input.motion === "360" || /^[12346789]+$/.test(input.motion)) &&
       input.strength !== "none")
   );
 }

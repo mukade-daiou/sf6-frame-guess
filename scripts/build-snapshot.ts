@@ -1,4 +1,5 @@
 import { mkdir, readFile, writeFile, readdir } from "node:fs/promises";
+import { execFileSync } from "node:child_process";
 import { characterSchema, type Character } from "../src/lib/frame-data/schema";
 import { validateDataset } from "../src/lib/frame-data/loader";
 import { resolveMove } from "../src/lib/frame-data/resolver";
@@ -8,6 +9,13 @@ const save = async (p: string, v: unknown) =>
 const out = "staging/verification";
 await mkdir(out, { recursive: true });
 const decisions = await read("data/adoption-decisions.json");
+// Recompute against the actual inputs before trusting a saved complete flag.
+execFileSync(
+  "node_modules/.bin/tsx",
+  ["scripts/audit-source-coverage.ts", "--check"],
+  { stdio: "pipe" },
+);
+const coverageAudit = await read("staging/coverage-audit/review.json");
 const metadata = {
   schemaVersion: "1.0.0",
   kind: "production",
@@ -19,8 +27,10 @@ const metadata = {
 const files: Record<string, Character> = {};
 for (const d of decisions.characters) {
   const c = characterSchema.parse(await read(d.candidatePath));
-  if (c.id !== d.id || !d.sourceInventoryComplete)
-    throw new Error(`Scope not adopted: ${d.id}`);
+  if (c.id !== d.id) throw new Error(`Character mismatch: ${d.id}`);
+  const audited = coverageAudit.characters.find((row: any) => row.id === c.id);
+  if (!audited || audited.sourceInventoryComplete !== d.sourceInventoryComplete)
+    throw new Error(`Run source coverage audit and review decisions: ${d.id}`);
   const normals = new Set(
     c.moves
       .filter((m) => m.category === "normal" && m.variant.kind === "base")
@@ -30,7 +40,9 @@ for (const d of decisions.characters) {
     throw new Error(`Normal coverage incomplete: ${d.id}`);
   c.adoption = { status: "accepted", basis: d.basis };
   c.coverage.normal.status = "complete";
-  c.coverage.special.status = "complete";
+  c.coverage.special.status = d.sourceInventoryComplete
+    ? "complete"
+    : "partial";
   for (const m of c.moves)
     m.adoption = {
       status:
@@ -45,7 +57,8 @@ for (const d of decisions.characters) {
 const dataset = validateDataset(metadata, files);
 if (
   dataset.errors.length ||
-  dataset.eligible.length !== decisions.characters.length
+  dataset.eligible.length !==
+    decisions.characters.filter((d: any) => d.sourceInventoryComplete).length
 )
   throw new Error(JSON.stringify(dataset.errors));
 const report = {

@@ -843,6 +843,584 @@
         "status": "held",
         "basis": "held-source-input"
       }
+    },
+    {
+      "id": "zangief__coverage_16",
+      "name": "Screw Piledriver",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "360",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "61",
+          "numeric": 61,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 360+HP",
+        "upstreamName: Screw Piledriver",
+        "coverageSourceRow: 16",
+        "coverageSource: archive/staging/sf6-frame-data/raw/zangief.json",
+        "upstreamNotes: Can be input up to 6th jump frame; () refers to Punish Counter damage; highest damage for meterless SPD but shortest range",
+        "cargoSourceNotation: {\"chara\":\"Zangief\",\"input\":\"360+HP\",\"startup\":\"5\",\"total\":\"61\",\"hitAdv\":\"HKD +28\",\"blockAdv\":\"-\",\"notes\":\"Can be input up to 6th jump frame; 3795 damage on Punish Counter; highest damage for meterless SPD but shortest range\"}",
+        "Saved source repair: explicit plus separator / HOLD OK non-held version; no calculated total or guessed strength."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Zangief/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-coverage-repair"
+      }
+    },
+    {
+      "id": "zangief__coverage_17",
+      "name": "Screw Piledriver",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "360",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "61",
+          "numeric": 61,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 360+LP",
+        "upstreamName: Screw Piledriver",
+        "coverageSourceRow: 17",
+        "coverageSource: archive/staging/sf6-frame-data/raw/zangief.json",
+        "upstreamNotes: Can be input up to 6th jump frame; () refers to Punish Counter damage; longest range SPD but least damage",
+        "cargoSourceNotation: {\"chara\":\"Zangief\",\"input\":\"360+LP\",\"startup\":\"5\",\"total\":\"61\",\"hitAdv\":\"HKD +30\",\"blockAdv\":\"-\",\"notes\":\"Can be input up to 6th jump frame; 2875 damage on Punish Counter; longest range SPD but least damage\"}",
+        "Saved source repair: explicit plus separator / HOLD OK non-held version; no calculated total or guessed strength."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Zangief/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-coverage-repair"
+      }
+    },
+    {
+      "id": "zangief__coverage_18",
+      "name": "Screw Piledriver",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "360",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "61",
+          "numeric": 61,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 360+MP",
+        "upstreamName: Screw Piledriver",
+        "coverageSourceRow: 18",
+        "coverageSource: archive/staging/sf6-frame-data/raw/zangief.json",
+        "upstreamNotes: Can be input up to 6th jump frame; () refers to Punish Counter damage; middle ground for range and damage",
+        "cargoSourceNotation: {\"chara\":\"Zangief\",\"input\":\"360+MP\",\"startup\":\"5\",\"total\":\"61\",\"hitAdv\":\"HKD +28\",\"blockAdv\":\"-\",\"notes\":\"Can be input up to 6th jump frame; 3335 damage on Punish Counter; middle ground for range and damage\"}",
+        "Saved source repair: explicit plus separator / HOLD OK non-held version; no calculated total or guessed strength."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Zangief/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-coverage-repair"
+      }
+    },
+    {
+      "id": "zangief__coverage_19",
+      "name": "Screw Piledriver",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "360",
+        "button": "P",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "61",
+          "numeric": 61,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 360+PP",
+        "upstreamName: Screw Piledriver",
+        "coverageSourceRow: 19",
+        "coverageSource: archive/staging/sf6-frame-data/raw/zangief.json",
+        "upstreamNotes: Can be input up to 6th jump frame; () refers to Punish Counter damage; highest damage SPD, slightly less range than LP version",
+        "cargoSourceNotation: {\"chara\":\"Zangief\",\"input\":\"360+PP\",\"startup\":\"5\",\"total\":\"61\",\"hitAdv\":\"HKD +28\",\"blockAdv\":\"-\",\"notes\":\"Can be input up to 6th jump frame; 3910 damage on Punish Counter; highest damage SPD, slightly less range than LP version\"}",
+        "Saved source repair: explicit plus separator / HOLD OK non-held version; no calculated total or guessed strength."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Zangief/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "accepted",
+        "basis": "source-coverage-repair"
+      }
+    },
+    {
+      "id": "zangief__coverage_36",
+      "name": "Russian Suplex",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "conditional",
+        "condition": "Close/Mid/Far distance-dependent variants; no single standard startup/total selected."
+      },
+      "frames": {
+        "startup": {
+          "status": "unknown",
+          "display": null
+        },
+        "total": {
+          "status": "unknown",
+          "display": null,
+          "provenance": null,
+          "calculation": null
+        },
+        "hit": {
+          "status": "unknown",
+          "display": null
+        },
+        "block": {
+          "status": "unknown",
+          "display": null
+        }
+      },
+      "notes": [
+        "upstreamInput: 63214KK (Close)",
+        "upstreamName: Russian Suplex",
+        "coverageSourceRow: 36",
+        "coverageSource: archive/staging/sf6-frame-data/raw/zangief.json",
+        "upstreamNotes: Only activates from close proximity; switches sides on hit; () refers to Punish Counter damage",
+        "cargoSourceNotation: {\"chara\":\"Zangief\",\"input\":\"63214KK (Close)\",\"startup\":\"10\",\"total\":\"61\",\"hitAdv\":\"HKD +27\",\"blockAdv\":\"-\",\"notes\":\"Only activates from close proximity; switches sides on hit; 3680 damage on Punish Counter\"}",
+        "Distance variants are separately held; do not merge performance or assert absence."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Zangief/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "held",
+        "basis": "source-coverage-repair"
+      }
+    },
+    {
+      "id": "zangief__coverage_37",
+      "name": "Siberian Express",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "conditional",
+        "condition": "Close/Mid/Far distance-dependent variants; no single standard startup/total selected."
+      },
+      "frames": {
+        "startup": {
+          "status": "unknown",
+          "display": null
+        },
+        "total": {
+          "status": "unknown",
+          "display": null,
+          "provenance": null,
+          "calculation": null
+        },
+        "hit": {
+          "status": "unknown",
+          "display": null
+        },
+        "block": {
+          "status": "unknown",
+          "display": null
+        }
+      },
+      "notes": [
+        "upstreamInput: 63214KK (Far)",
+        "upstreamName: Siberian Express",
+        "coverageSourceRow: 37",
+        "coverageSource: archive/staging/sf6-frame-data/raw/zangief.json",
+        "upstreamNotes: Activates from beyond ~1/2 screen; 2-hit armor lasts until throw becomes active; startup increases at farther range; Zangief throws his arms up at the beginning, creating a noticeable visual cue; () refers to Punish Counter damage; immediately transitions to grab animation after absorbing a strike; Run Speed: 0.045 (28-30f) / 0.094 (31-37f) / 0.090 (38f~) / 0.099 (close proximity or after absorbing strike)",
+        "cargoSourceNotation: {\"chara\":\"Zangief\",\"input\":\"63214KK (Far)\",\"startup\":\"54(81)\",\"total\":\"95(123)\",\"hitAdv\":\"HKD +29\",\"blockAdv\":\"-\",\"notes\":\"Activates from beyond ~1/2 screen; 2-hit armor lasts until throw becomes active; startup increases at farther range; Zangief throws his arms up at the beginning, creating a noticeable visual cue; 3450 damage on Punish Counter; immediately transitions to grab animation after absorbing a strike; Run Speed: 0.045 (28-30f) / 0.094 (31-37f) / 0.090 (38f~) / 0.099 (close proximity or after absorbing strike)\"}",
+        "Distance variants are separately held; do not merge performance or assert absence."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Zangief/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "held",
+        "basis": "source-coverage-repair"
+      }
+    },
+    {
+      "id": "zangief__coverage_38",
+      "name": "Siberian Express",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "OD"
+      },
+      "variant": {
+        "kind": "conditional",
+        "condition": "Close/Mid/Far distance-dependent variants; no single standard startup/total selected."
+      },
+      "frames": {
+        "startup": {
+          "status": "unknown",
+          "display": null
+        },
+        "total": {
+          "status": "unknown",
+          "display": null,
+          "provenance": null,
+          "calculation": null
+        },
+        "hit": {
+          "status": "unknown",
+          "display": null
+        },
+        "block": {
+          "status": "unknown",
+          "display": null
+        }
+      },
+      "notes": [
+        "upstreamInput: 63214KK (Mid)",
+        "upstreamName: Siberian Express",
+        "coverageSourceRow: 38",
+        "coverageSource: archive/staging/sf6-frame-data/raw/zangief.json",
+        "upstreamNotes: Activates when out of Russian Suplex range but within ~1/2 screen; less damage than Suplex but better KD Adv. and no side switch; () refers to Punish Counter damage; Run Speed: 0.086",
+        "cargoSourceNotation: {\"chara\":\"Zangief\",\"input\":\"63214KK (Mid)\",\"startup\":\"23\",\"total\":\"68\",\"hitAdv\":\"HKD +29\",\"blockAdv\":\"-\",\"notes\":\"Activates when out of Russian Suplex range but within ~1/2 screen; less damage than Suplex but better KD Adv. and no side switch; 3450 damage on Punish Counter; Run Speed: 0.086\"}",
+        "Distance variants are separately held; do not merge performance or assert absence."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Zangief/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "held",
+        "basis": "source-coverage-repair"
+      }
+    },
+    {
+      "id": "zangief__coverage_39",
+      "name": "Russian Suplex",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "none"
+      },
+      "variant": {
+        "kind": "conditional",
+        "condition": "Close/Mid/Far distance-dependent variants; no single standard startup/total selected."
+      },
+      "frames": {
+        "startup": {
+          "status": "unknown",
+          "display": null
+        },
+        "total": {
+          "status": "unknown",
+          "display": null,
+          "provenance": null,
+          "calculation": null
+        },
+        "hit": {
+          "status": "unknown",
+          "display": null
+        },
+        "block": {
+          "status": "unknown",
+          "display": null
+        }
+      },
+      "notes": [
+        "upstreamInput: 63214HK or 63214K (Close)",
+        "upstreamName: Russian Suplex",
+        "coverageSourceRow: 39",
+        "coverageSource: archive/staging/sf6-frame-data/raw/zangief.json",
+        "upstreamNotes: Can be activated from close proximity with LK/MK or from any range with HK; switches sides on hit; HK version deals 300 less damage but can connect from a range where Siberian Express would normally be triggered; () refers to Punish Counter damage",
+        "cargoSourceNotation: {\"chara\":\"Zangief\",\"input\":\"63214HK or 63214K (Close)\",\"startup\":\"10\",\"total\":\"61\",\"hitAdv\":\"HKD +26\",\"blockAdv\":\"-\",\"notes\":\"Can be activated from close proximity with LK/MK or from any range with HK; switches sides on hit; HK version deals 300 less damage but can connect from a range where Siberian Express would normally be triggered; 2990/3335 damage on Punish Counter\"}",
+        "Distance variants are separately held; do not merge performance or assert absence."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Zangief/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "held",
+        "basis": "source-coverage-repair"
+      }
+    },
+    {
+      "id": "zangief__coverage_40",
+      "name": "Siberian Express",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "none"
+      },
+      "variant": {
+        "kind": "conditional",
+        "condition": "Close/Mid/Far distance-dependent variants; no single standard startup/total selected."
+      },
+      "frames": {
+        "startup": {
+          "status": "unknown",
+          "display": null
+        },
+        "total": {
+          "status": "unknown",
+          "display": null,
+          "provenance": null,
+          "calculation": null
+        },
+        "hit": {
+          "status": "unknown",
+          "display": null
+        },
+        "block": {
+          "status": "unknown",
+          "display": null
+        }
+      },
+      "notes": [
+        "upstreamInput: 63214K (Far)",
+        "upstreamName: Siberian Express",
+        "coverageSourceRow: 40",
+        "coverageSource: archive/staging/sf6-frame-data/raw/zangief.json",
+        "upstreamNotes: Activates from beyond ~1/2 screen; armor lasts until throw becomes active; startup increases at farther range; Zangief throws his arms up at the beginning, creating a noticeable visual cue; () refers to Punish Counter damage; immediately transitions to grab animation after absorbing a strike; Run Speed: 0.094 (31-37f) / 0.090 (38f~) / 0.099 (close proximity)",
+        "cargoSourceNotation: {\"chara\":\"Zangief\",\"input\":\"63214K (Far)\",\"startup\":\"55(81)\",\"total\":\"96(123)\",\"hitAdv\":\"HKD +29\",\"blockAdv\":\"-\",\"notes\":\"Activates from beyond ~1/2 screen; armor lasts until throw becomes active; startup increases at farther range; Zangief throws his arms up at the beginning, creating a noticeable visual cue; 3105 damage on Punish Counter; immediately transitions to grab animation after absorbing a strike; Run Speed: 0.094 (31-37f) / 0.090 (38f~) / 0.099 (close proximity)\"}",
+        "Distance variants are separately held; do not merge performance or assert absence."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Zangief/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "held",
+        "basis": "source-coverage-repair"
+      }
+    },
+    {
+      "id": "zangief__coverage_41",
+      "name": "Siberian Express",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "none"
+      },
+      "variant": {
+        "kind": "conditional",
+        "condition": "Close/Mid/Far distance-dependent variants; no single standard startup/total selected."
+      },
+      "frames": {
+        "startup": {
+          "status": "unknown",
+          "display": null
+        },
+        "total": {
+          "status": "unknown",
+          "display": null,
+          "provenance": null,
+          "calculation": null
+        },
+        "hit": {
+          "status": "unknown",
+          "display": null
+        },
+        "block": {
+          "status": "unknown",
+          "display": null
+        }
+      },
+      "notes": [
+        "upstreamInput: 63214K (Mid)",
+        "upstreamName: Siberian Express",
+        "coverageSourceRow: 41",
+        "coverageSource: archive/staging/sf6-frame-data/raw/zangief.json",
+        "upstreamNotes: Activates when out of Russian Suplex range but within ~1/2 screen; less damage than Suplex but better KD Adv. and no side switch; () refers to Punish Counter damage; Run Speed: 0.086",
+        "cargoSourceNotation: {\"chara\":\"Zangief\",\"input\":\"63214K (Mid)\",\"startup\":\"28\",\"total\":\"70\",\"hitAdv\":\"HKD +29\",\"blockAdv\":\"-\",\"notes\":\"Activates when out of Russian Suplex range but within ~1/2 screen; less damage than Suplex but better KD Adv. and no side switch; 3105 damage on Punish Counter; Run Speed: 0.086\"}",
+        "Distance variants are separately held; do not merge performance or assert absence."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Zangief/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "adoption": {
+        "status": "held",
+        "basis": "source-coverage-repair"
+      }
     }
   ],
   "adoption": {

@@ -12,6 +12,8 @@ import {
   appendDirection,
   selectAttack,
   getMotionCandidates,
+  emptyRotation,
+  trackRotation,
   type Direction,
 } from "./controller";
 export function MoveSelector({
@@ -31,6 +33,7 @@ export function MoveSelector({
   const previous = useRef<Direction>("5");
   const [selected, setSelected] = useState<MoveInput>();
   const [unknownMode, setUnknownMode] = useState<Mode | null>(null);
+  const rotation = useRef(emptyRotation());
   const motions = getMotionCandidates(inputs, "");
   const suggestions = command ? getMotionCandidates(inputs, command) : [];
   const commandStatus = !command
@@ -44,6 +47,7 @@ export function MoveSelector({
     setUnknownMode(null);
     setCommand("");
     previous.current = "5";
+    rotation.current = emptyRotation();
     setSelected(undefined);
   }
   return (
@@ -88,7 +92,12 @@ export function MoveSelector({
                 }
               } else {
                 const before = previous.current;
-                setCommand((c) => appendDirection(c, before, d));
+                rotation.current = trackRotation(rotation.current, d);
+                setCommand((c) =>
+                  rotation.current.complete
+                    ? "360"
+                    : appendDirection(c, before, d),
+                );
                 previous.current = d;
                 if (d !== "5") {
                   setSelected(undefined);
@@ -101,7 +110,10 @@ export function MoveSelector({
             <>
               <div className="command-strip">
                 <div>
-                  <CommandNotation command={command} />
+                  <CommandNotation
+                    command={command}
+                    clockwise={rotation.current.steps >= 0}
+                  />
                   <small role="status">{commandStatus}</small>
                 </div>
                 <button type="button" className="quiet-button" onClick={clear}>
@@ -123,6 +135,7 @@ export function MoveSelector({
                       aria-pressed={command === motion}
                       onClick={() => {
                         setCommand(motion);
+                        rotation.current = emptyRotation();
                         previous.current = "5";
                         setSelected(undefined);
                         setUnknownMode(null);

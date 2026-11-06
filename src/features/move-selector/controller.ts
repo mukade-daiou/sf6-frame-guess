@@ -2,6 +2,28 @@ import type { MoveInput } from "../../lib/frame-data/schema";
 import { isQuestionInput } from "../../lib/frame-data/input";
 export { isQuestionInput } from "../../lib/frame-data/input";
 export type Direction = "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9";
+const perimeter: Direction[] = ["6", "3", "2", "1", "4", "7", "8", "9"];
+export type Rotation = {
+  previous: Direction | null;
+  steps: number;
+  complete: boolean;
+};
+export const emptyRotation = (): Rotation => ({
+  previous: null,
+  steps: 0,
+  complete: false,
+});
+export function trackRotation(state: Rotation, next: Direction): Rotation {
+  if (next === "5" || next === state.previous || state.complete) return state;
+  if (state.previous === null) return { ...state, previous: next };
+  const delta =
+    ((perimeter.indexOf(next) - perimeter.indexOf(state.previous) + 12) % 8) -
+    4;
+  // Opposite/large jumps provide no reliable evidence of a traversed arc.
+  if (Math.abs(delta) > 2) return { ...emptyRotation(), previous: next };
+  const steps = state.steps + delta;
+  return { previous: next, steps, complete: Math.abs(steps) >= 8 };
+}
 export const attackButtons = (["P", "K"] as const).flatMap((button) =>
   (["L", "M", "H", "OD"] as const).map((strength) => ({
     button,
@@ -28,6 +50,7 @@ export function getMotionCandidates(
       inputs.flatMap((input) =>
         input.type === "special" &&
         isQuestionInput(input) &&
+        (input.motion !== "360" || prefix === "" || prefix === "360") &&
         input.motion.startsWith(prefix)
           ? [input.motion]
           : [],

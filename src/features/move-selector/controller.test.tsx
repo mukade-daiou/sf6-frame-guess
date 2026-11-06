@@ -209,6 +209,8 @@ it("uses one bold SVG rotated into eight directions and accessible original inpu
   }
   for (const i of production.inputs)
     expect(renderToStaticMarkup(<MoveNotation input={i} />)).toContain(
-      `aria-label="${displayInput(i)}"`,
+      i.type === "special" && i.motion === "360"
+        ? "1回転＋"
+        : `aria-label="${displayInput(i)}"`,
     );
 });

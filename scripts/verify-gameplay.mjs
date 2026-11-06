@@ -1,9 +1,18 @@
 import { execFileSync } from "node:child_process";
-import { mkdir, writeFile, readdir } from "node:fs/promises";
-const rosterIds = (await readdir("data/characters"))
+import { mkdir, writeFile, readdir, readFile } from "node:fs/promises";
+const rosterFiles = (await readdir("data/characters"))
   .filter((f) => f.endsWith(".json"))
   .sort()
   .map((f) => f.slice(0, -5));
+const rosterIds = [];
+for (const id of rosterFiles) {
+  const c = JSON.parse(await readFile(`data/characters/${id}.json`, "utf8"));
+  if (
+    c.coverage.normal.status === "complete" &&
+    c.coverage.special.status === "complete"
+  )
+    rosterIds.push(id);
+}
 const out = "staging/verification/browser";
 await mkdir(out, { recursive: true });
 const run = (...args) =>

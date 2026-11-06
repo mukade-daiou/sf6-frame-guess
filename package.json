@@ -11,6 +11,7 @@
     "test:archive": "node --test --test-concurrency=1 archive/tests/*.test.mjs",
     "data:plan": "tsx scripts/build-snapshot.ts",
     "data:check": "tsx scripts/build-snapshot.ts --check",
+    "data:audit-coverage": "tsx scripts/audit-source-coverage.ts",
     "verify:browser": "node scripts/verify-gameplay.mjs",
     "validate:data": "tsx scripts/validate-data.ts",
     "build": "npm run typecheck && npm run validate:data && vite build",
