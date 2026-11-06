@@ -36,6 +36,19 @@ export function resolveMove(
   );
   if (matches.length > 1) return { status: "ambiguous" };
   if (!matches.length) {
+    // A strengthless source record is not proof that a specific button variant is absent.
+    if (
+      input.type === "special" &&
+      input.strength !== "OD" &&
+      character.moves.some(
+        (m) =>
+          m.input.type === "special" &&
+          m.input.motion === input.motion &&
+          m.input.button === input.button &&
+          m.input.strength === "none",
+      )
+    )
+      return { status: "unknown" };
     if (character.moves.some((m) => inputKey(m.input) === inputKey(input)))
       return { status: "unknown" };
     return {

@@ -7,6 +7,7 @@ import {
 } from "./schema";
 import { inputKey } from "./input";
 import { resolveMove } from "./resolver";
+import { isQuestionInput } from "./input";
 import { hasCompleteScope, isMoveUsable } from "./adoption";
 
 export interface Dataset {
@@ -81,8 +82,10 @@ export function validateDataset(
           .map((m) => [inputKey(m.input), m.input] as const),
       ),
     ).values(),
-  ].filter((input) =>
-    eligible.some((c) => resolveMove(c, input, "startup").status === "found"),
+  ].filter(
+    (input) =>
+      isQuestionInput(input) &&
+      eligible.some((c) => resolveMove(c, input, "startup").status === "found"),
   );
   return { metadata, characters, eligible, inputs, errors };
 }

@@ -20,6 +20,23 @@ export function resolveReviewMove(
       reason: "同一入力の候補が複数あり、選択できません。",
     };
   if (!matches.length) {
+    if (
+      input.type === "special" &&
+      input.strength !== "OD" &&
+      character.moves.some(
+        (m) =>
+          m.input.type === "special" &&
+          m.input.motion === input.motion &&
+          m.input.button === input.button &&
+          m.input.strength === "none",
+      )
+    )
+      return {
+        status: "review",
+        frames: null,
+        assessment: "not_recorded",
+        reason: "強度なしの原典入力と個別ボタンの対応は未確定です。",
+      };
     const absent = absentInputs[character.id]?.includes(key) ?? false;
     return {
       status: "review",

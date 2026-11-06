@@ -1,15 +1,8 @@
 import type { HistoryEntry } from "../features/game/engine";
-import type { Mode } from "../lib/frame-data/schema";
-import { displayInput } from "../lib/frame-data/input";
+import { MoveNotation } from "./MoveNotation";
 import { displayFrame } from "../lib/frame-data/resolver";
 
-export function History({
-  entries,
-  mode,
-}: {
-  entries: HistoryEntry[];
-  mode: Mode;
-}) {
+export function History({ entries }: { entries: HistoryEntry[] }) {
   return (
     <section className="panel">
       <h2>質問履歴</h2>
@@ -27,7 +20,10 @@ export function History({
               <li key={index}>
                 <h3>
                   <span className="muted">{index + 1}.</span>{" "}
-                  <code>{displayInput(entry.input)}</code>
+                  <MoveNotation input={entry.input} />
+                  <span className="history-mode">
+                    {entry.mode === "normal" ? "ノーマル" : "発生のみ"}
+                  </span>
                 </h3>
                 {entry.result.status === "review" && (
                   <p>{entry.result.reason}</p>
@@ -37,7 +33,7 @@ export function History({
                     {(
                       [
                         "startup",
-                        ...(mode === "normal"
+                        ...(entry.mode === "normal"
                           ? (["total", "hit", "block"] as const)
                           : []),
                       ] as const

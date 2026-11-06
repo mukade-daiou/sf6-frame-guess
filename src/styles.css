@@ -46,6 +46,7 @@ main {
 }
 header {
   padding: 32px 0;
+  position: relative;
 }
 h1 {
   font-size: 1.5rem;
@@ -279,6 +280,304 @@ summary {
 }
 .mobile-break {
   display: none;
+}
+.segments {
+  display: inline-flex;
+  border: 1px solid var(--color-warm-mist);
+  border-radius: 999px;
+  padding: 4px;
+  gap: 4px;
+}
+.segments button {
+  background: transparent;
+  color: var(--color-ink);
+  border: 0;
+  border-radius: 999px;
+  min-height: 44px;
+}
+.segments button[aria-pressed="true"] {
+  background: var(--color-deep-teal);
+  color: white;
+}
+.segments button:hover:enabled {
+  background: var(--color-warm-mist);
+  color: var(--color-ink);
+}
+.segments button[aria-pressed="true"]:hover:enabled {
+  background: var(--color-deep-teal);
+  color: white;
+}
+.remaining {
+  text-align: right;
+}
+.type-toggle {
+  margin: 12px 0 24px;
+}
+.arcade-controls {
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+  padding: 16px 0;
+  justify-content: center;
+}
+.lever-column {
+  width: 240px;
+  min-width: 0;
+}
+.lever {
+  width: 156px;
+  height: 156px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  margin: auto;
+  border: 1px solid var(--color-warm-mist);
+  border-radius: 12px;
+  background: var(--color-parchment);
+  touch-action: none;
+  user-select: none;
+}
+.lever-direction {
+  display: grid;
+  place-items: center;
+  min-height: 0;
+  padding: 0;
+  color: var(--color-graphite);
+  border: none;
+  background: transparent;
+  border-radius: 8px;
+  z-index: 1;
+}
+.lever-direction:hover:enabled {
+  color: var(--color-deep-teal);
+  background: transparent;
+}
+.lever-direction:disabled {
+  border: 0;
+  color: var(--color-warm-mist);
+}
+.lever-direction.is-active {
+  color: var(--color-deep-teal);
+}
+.neutral-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: currentColor;
+}
+.lever-drawing {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.lever-drawing line {
+  stroke: var(--color-graphite);
+  stroke-width: 8px;
+}
+.lever-drawing circle {
+  fill: var(--color-deep-teal);
+  stroke: var(--color-soft-paper);
+  stroke-width: 3px;
+}
+.lever-help {
+  text-align: center;
+  font-size: 12px;
+}
+.command-strip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: space-between;
+  border-top: 1px solid var(--color-warm-mist);
+  padding-top: 12px;
+}
+.command-strip > div {
+  min-width: 0;
+}
+.command-directions {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px;
+  vertical-align: middle;
+  max-width: 100%;
+}
+.direction-icon {
+  width: 24px;
+  height: 24px;
+  flex: 0 0 24px;
+  vertical-align: middle;
+}
+.quiet-button {
+  background: transparent;
+  color: var(--color-graphite);
+  border: none;
+  font-size: 12px;
+  white-space: nowrap;
+}
+.quiet-button:hover:enabled {
+  background: var(--color-parchment);
+  color: var(--color-ink);
+}
+.attack-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 64px) 76px;
+  gap: 20px 12px;
+  padding-top: 4px;
+}
+.attack-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  padding: 4px;
+  border-radius: 50%;
+  border: 1px solid var(--color-graphite);
+  color: var(--color-ink);
+  background: var(--attack-color, var(--color-soft-paper));
+  gap: 0;
+}
+.strength-L {
+  --attack-color: #a9dbe9;
+}
+.strength-M {
+  --attack-color: #f3da79;
+}
+.strength-H {
+  --attack-color: #eeaaa1;
+}
+.attack-button.paired {
+  margin-left: 12px;
+  background: var(--color-soft-paper);
+}
+.attack-button:hover:enabled {
+  background: var(--attack-color, var(--color-parchment));
+  border: 2px solid var(--color-ink);
+}
+.attack-button[aria-pressed="true"] {
+  outline: 3px solid var(--color-deep-teal);
+  outline-offset: 3px;
+  border: 2px solid var(--color-ink);
+}
+.attack-button:disabled {
+  border-radius: 50%;
+  background: var(--attack-color, var(--color-soft-paper));
+  opacity: 0.45;
+}
+.attack-button > span:last-child {
+  font-size: 10px;
+  white-space: nowrap;
+}
+.attack-icon {
+  width: 28px;
+  height: 28px;
+  vertical-align: middle;
+}
+.attack-icon circle {
+  fill: var(--attack-color, var(--color-soft-paper));
+  stroke: var(--color-ink);
+  stroke-width: 1.5;
+}
+.attack-icon text {
+  fill: var(--color-ink);
+  font: 500 15px system-ui;
+}
+.button-pair {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+}
+.attack-button .button-pair .attack-icon {
+  width: 20px;
+  height: 24px;
+}
+.attack-button .button-pair {
+  font-size: 9px;
+}
+.input-preview {
+  min-width: 0;
+  font-size: 14px;
+}
+.move-notation {
+  display: inline-block;
+  vertical-align: middle;
+}
+.move-notation > span {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+.history h3 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.history-mode {
+  font-size: 12px;
+  color: var(--color-graphite);
+  margin-left: auto;
+}
+.data-info {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 3;
+}
+.data-info summary {
+  width: 44px;
+  height: 44px;
+  padding: 8px;
+  text-align: center;
+  font-size: 20px;
+  list-style: none;
+}
+.data-info summary::-webkit-details-marker {
+  display: none;
+}
+.info-content {
+  width: min(420px, calc(100vw - 32px));
+  max-height: 70vh;
+  overflow: auto;
+  position: absolute;
+  right: 0;
+  padding: 20px;
+  background: var(--color-soft-paper);
+  border: 1px solid var(--color-warm-mist);
+  border-radius: 16px;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 700px) {
+  .arcade-controls {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .attack-buttons {
+    grid-template-columns: repeat(3, 52px) 64px;
+    gap: 16px 8px;
+  }
+  .attack-button {
+    width: 52px;
+    height: 52px;
+  }
+  .attack-button.paired {
+    margin-left: 8px;
+  }
+  .submit-row {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .game-heading {
+    align-items: flex-start;
+  }
 }
 @media (max-width: 560px) {
   main {

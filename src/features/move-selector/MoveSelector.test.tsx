@@ -8,12 +8,13 @@ it.each([
   [{ type: "special", motion: "[2]8", button: "K", strength: "OD" }, "[2]8KK"],
   [{ type: "special", motion: "360", button: "P", strength: "none" }, "360P"],
 ] satisfies [MoveInput, string][])(
-  "selects the first available input without assuming 5LP: %j",
+  "requires an explicit lever/button selection and does not approximate complex input: %j",
   (input, command) => {
     const html = renderToStaticMarkup(
       <MoveSelector inputs={[input]} onAsk={() => {}} />,
     );
-    expect(html).toContain(`>${command}</output>`);
-    expect(html).not.toContain('disabled=""');
+    expect(html).not.toContain(`>${command}</output>`);
+    expect(html).toContain('disabled="" type="submit"');
+    expect(html).not.toContain("<select");
   },
 );

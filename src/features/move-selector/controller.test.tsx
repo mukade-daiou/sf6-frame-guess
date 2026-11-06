@@ -1,0 +1,135 @@
+import { expect, it } from "vitest";
+import { renderToStaticMarkup } from "react-dom/server";
+import { production } from "../../lib/frame-data/datasets";
+import { inputKey, displayInput } from "../../lib/frame-data/input";
+import {
+  attackButtons,
+  appendDirection,
+  directionAt,
+  isQuestionInput,
+  selectAttack,
+  type Direction,
+} from "./controller";
+import { DirectionIcon, MoveNotation } from "../../components/MoveNotation";
+import { MoveSelector } from "./MoveSelector";
+import { resolveMove } from "../../lib/frame-data/resolver";
+
+it("maps eight fixed buttons and standing/crouching normals without simultaneous normals", () => {
+  expect(attackButtons.map((b) => b.label)).toEqual([
+    "弱P",
+    "中P",
+    "強P",
+    "弱P＋中P",
+    "弱K",
+    "中K",
+    "強K",
+    "弱K＋中K",
+  ]);
+  for (const [direction, button, strength, label] of [
+    ["5", "P", "L", "5LP"],
+    ["5", "P", "H", "5HP"],
+    ["2", "K", "M", "2MK"],
+    ["2", "K", "H", "2HK"],
+  ] as const) {
+    expect(
+      displayInput(
+        selectAttack(production.inputs, "normal", direction, button, strength)!,
+      ),
+    ).toBe(label);
+  }
+  for (const a of attackButtons) {
+    const chosen = selectAttack(
+      production.inputs,
+      "special",
+      "236",
+      a.button,
+      a.strength,
+    );
+    expect(chosen?.button).toBe(a.button);
+    expect(chosen?.strength).toBe(a.strength);
+  }
+  expect(
+    selectAttack(production.inputs, "normal", "5", "P", "OD"),
+  ).toBeUndefined();
+  expect(
+    selectAttack(production.inputs, "special", "", "K", "OD"),
+  ).toBeUndefined();
+});
+it.each(["236", "214", "623", "22"])(
+  "records exact %s without correcting invalid motions",
+  (motion) => {
+    let command = "";
+    for (const d of motion) {
+      command = appendDirection(command, "5", d as Direction);
+      command = appendDirection(command, d as Direction, d as Direction);
+    }
+    expect(command).toBe(motion);
+    expect(appendDirection(command, "2", "5")).toBe(command);
+    expect(
+      selectAttack(production.inputs, "special", "2366", "P", "L"),
+    ).toBeUndefined();
+  },
+);
+it("quantizes all eight directions and neutral consistently for pointer/touch geometry", () => {
+  const positions = [
+    [0, 0, "7"],
+    [78, 0, "8"],
+    [156, 0, "9"],
+    [0, 78, "4"],
+    [78, 78, "5"],
+    [156, 78, "6"],
+    [0, 156, "1"],
+    [78, 156, "2"],
+    [156, 156, "3"],
+  ] as const;
+  for (const [x, y, d] of positions) expect(directionAt(x, y, 156)).toBe(d);
+});
+it("excludes motionless/complex inputs from questions without removing the stored move", () => {
+  expect(
+    resolveMove(
+      production.characters.find((c) => c.id === "marisa")!,
+      { type: "special", motion: "214", button: "K", strength: "L" },
+      "normal",
+    ).status,
+  ).toBe("unknown");
+  const dash = production.characters[0].moves.find(
+    (m) => m.input.type === "special" && m.input.motion === "none",
+  )!;
+  expect(dash).toBeDefined();
+  expect(isQuestionInput(dash.input)).toBe(false);
+  expect(
+    production.inputs.some((i) => inputKey(i) === inputKey(dash.input)),
+  ).toBe(false);
+  expect(
+    isQuestionInput({
+      type: "special",
+      motion: "[4]6",
+      button: "P",
+      strength: "L",
+    }),
+  ).toBe(false);
+  expect(
+    isQuestionInput({
+      type: "special",
+      motion: "5",
+      button: "K",
+      strength: "OD",
+    }),
+  ).toBe(false);
+  const html = renderToStaticMarkup(
+    <MoveSelector inputs={production.inputs} onAsk={() => {}} />,
+  );
+  expect(html).not.toContain("<select");
+  expect(html).not.toContain("KK同時押し");
+});
+it("uses one bold SVG rotated into eight directions and accessible original input notation", () => {
+  for (const d of ["1", "2", "3", "4", "6", "7", "8", "9"] as const) {
+    const html = renderToStaticMarkup(<DirectionIcon direction={d} />);
+    expect(html).toContain("rotate(");
+    expect(html).toContain("M12 2 2 12h6v10h8V12h6Z");
+  }
+  for (const i of production.inputs)
+    expect(renderToStaticMarkup(<MoveNotation input={i} />)).toContain(
+      `aria-label="${displayInput(i)}"`,
+    );
+});

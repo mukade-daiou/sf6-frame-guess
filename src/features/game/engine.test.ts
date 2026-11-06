@@ -4,7 +4,7 @@ import beta from "../../data/fixtures/characters/fixture-2.json";
 import metadata from "../../data/fixtures/metadata.json";
 import { validateDataset } from "../../lib/frame-data/loader";
 import { inputKey } from "../../lib/frame-data/input";
-import { answer, ask, isCorrect, startGame } from "./engine";
+import { answer, ask, isCorrect, startGame, changeMode } from "./engine";
 
 const dataset = () =>
   validateDataset(metadata, {
@@ -67,4 +67,28 @@ it("rejects fewer than two eligible characters and invalid limits", () => {
   data.eligible = data.eligible.slice(0, 1);
   expect(() => startGame(data, "normal")).toThrow();
   expect(() => startGame(dataset(), "normal", 0)).toThrow();
+});
+it("keeps the target, count and immutable question-time mode/results while switching modes", () => {
+  let game = startGame(dataset(), "normal", 2, () => 0);
+  const first = game.inputs[0];
+  game.target.moves[0].frames.total = {
+    status: "unknown",
+    display: null,
+    provenance: null,
+    calculation: null,
+  };
+  expect(ask(game, first).status).toBe("unknown");
+  const switched = changeMode(game, "startup");
+  expect(switched.target).toBe(game.target);
+  expect(switched.history).toBe(game.history);
+  game = ask(switched, first).game;
+  const saved = JSON.stringify(game.history);
+  game = changeMode(game, "normal");
+  expect(game.history[0].mode).toBe("startup");
+  expect(ask(game, first).status).toBe("duplicate");
+  game.target.moves[0].frames.startup.display = "999";
+  expect(JSON.stringify(game.history)).toBe(saved);
+  game = ask(game, game.inputs[1]).game;
+  expect(game.history.map((h) => h.mode)).toEqual(["startup", "normal"]);
+  expect(changeMode(game, "startup")).toBe(game);
 });

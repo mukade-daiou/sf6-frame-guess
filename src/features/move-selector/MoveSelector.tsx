@@ -1,7 +1,17 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import type { MoveInput } from "../../lib/frame-data/schema";
-import { displayInput, inputKey } from "../../lib/frame-data/input";
-
+import {
+  AttackIcon,
+  CommandNotation,
+  MoveNotation,
+} from "../../components/MoveNotation";
+import { Lever } from "./Lever";
+import {
+  attackButtons,
+  appendDirection,
+  selectAttack,
+  type Direction,
+} from "./controller";
 export function MoveSelector({
   inputs,
   onAsk,
@@ -9,138 +19,128 @@ export function MoveSelector({
   inputs: MoveInput[];
   onAsk: (input: MoveInput) => void;
 }) {
-  const initial = inputs[0];
-  const [type, setType] = useState<MoveInput["type"]>(
-    initial?.type ?? "normal",
-  );
-  const [motion, setMotion] = useState(
-    initial?.type === "normal" ? initial.direction : (initial?.motion ?? ""),
-  );
-  const [button, setButton] = useState<string>(initial?.button ?? "P");
-  const [strength, setStrength] = useState<string>(initial?.strength ?? "L");
-  const typed = inputs.filter((input) => input.type === type);
-  const motions = [
-    ...new Set(
-      typed.map((input) =>
-        input.type === "normal" ? input.direction : input.motion,
-      ),
-    ),
-  ];
-  const byMotion = typed.filter(
-    (input) =>
-      (input.type === "normal" ? input.direction : input.motion) === motion,
-  );
-  const buttons = [...new Set(byMotion.map((input) => input.button))];
-  const strengths = [
-    ...new Set(
-      byMotion
-        .filter((input) => input.button === button)
-        .map((input) => input.strength),
-    ),
-  ];
-  const selected = byMotion.find(
-    (input) => input.button === button && input.strength === strength,
-  );
-  function changeType(next: MoveInput["type"]) {
-    setType(next);
-    const first = inputs.find((input) => input.type === next);
-    if (first) {
-      setMotion(first.type === "normal" ? first.direction : first.motion);
-      setButton(first.button);
-      setStrength(first.strength);
-    }
-  }
-  function changeMotion(next: string) {
-    setMotion(next);
-    const first = typed.find(
-      (input) =>
-        (input.type === "normal" ? input.direction : input.motion) === next,
-    );
-    if (first) {
-      setButton(first.button);
-      setStrength(first.strength);
-    }
-  }
-  function changeButton(next: string) {
-    setButton(next);
-    const first = byMotion.find((input) => input.button === next);
-    if (first) setStrength(first.strength);
+  const [type, setType] = useState<"normal" | "special">("normal");
+  const [direction, setDirection] = useState<"5" | "2">("5");
+  const [command, setCommand] = useState("");
+  const previous = useRef<Direction>("5");
+  const [selected, setSelected] = useState<MoveInput>();
+  const motions = inputs
+    .filter(
+      (i) =>
+        i.type === "special" &&
+        i.motion !== "none" &&
+        /^[12346789]+$/.test(i.motion),
+    )
+    .map((i) => (i.type === "special" ? i.motion : ""));
+  const commandStatus = !command
+    ? "未入力"
+    : motions.includes(command)
+      ? "候補一致"
+      : motions.some((m) => m.startsWith(command))
+        ? "入力途中"
+        : "候補不一致・未対応";
+  function clear() {
+    setCommand("");
+    previous.current = "5";
+    setSelected(undefined);
   }
   return (
     <form
-      onSubmit={(event) => {
-        event.preventDefault();
+      onSubmit={(e) => {
+        e.preventDefault();
         if (selected) onAsk(selected);
       }}
     >
-      <fieldset>
-        <legend>技の種類</legend>
-        <div className="choices">
-          {(["normal", "special"] as const).map((value) => (
-            <label key={value}>
-              <input
-                type="radio"
-                name="type"
-                value={value}
-                checked={type === value}
-                onChange={() => changeType(value)}
-              />
-              {value === "normal" ? "通常技" : "必殺技"}
-            </label>
-          ))}
-        </div>
-      </fieldset>
-      <div className="selector-grid">
-        <label>
-          {type === "normal" ? "方向" : "コマンド"}
-          <select value={motion} onChange={(e) => changeMotion(e.target.value)}>
-            {motions.map((value) => (
-              <option key={value} value={value}>
-                {value === "none" ? "同時押し（モーションなし）" : value}
-              </option>
-            ))}
-          </select>
-        </label>
-        <label>
-          ボタン
-          <select value={button} onChange={(e) => changeButton(e.target.value)}>
-            {buttons.map((value) => (
-              <option key={value}>{value}</option>
-            ))}
-          </select>
-        </label>
-        <label>
-          強度
-          <select
-            value={strength}
-            onChange={(e) => setStrength(e.target.value)}
+      <div className="segments type-toggle" role="group" aria-label="技の種類">
+        {(["normal", "special"] as const).map((t) => (
+          <button
+            type="button"
+            key={t}
+            aria-pressed={type === t}
+            onClick={() => {
+              setType(t);
+              setDirection("5");
+              clear();
+            }}
           >
-            {strengths.map((value) => (
-              <option key={value} value={value}>
-                {
-                  { L: "弱", M: "中", H: "強", OD: "OD", none: "強度なし" }[
-                    value
-                  ]
+            {t === "normal" ? "通常技" : "必殺技"}
+          </button>
+        ))}
+      </div>
+      <div className="arcade-controls">
+        <div className="lever-column">
+          <Lever
+            key={type}
+            normal={type === "normal"}
+            selected={direction}
+            onDirection={(d) => {
+              if (type === "normal") {
+                if (d === "2" || d === "5") {
+                  setDirection(d);
+                  setSelected(undefined);
                 }
-              </option>
-            ))}
-          </select>
-        </label>
+              } else {
+                const before = previous.current;
+                setCommand((c) => appendDirection(c, before, d));
+                previous.current = d;
+                if (d !== "5") setSelected(undefined);
+              }
+            }}
+          />
+          {type === "special" && (
+            <div className="command-strip">
+              <div>
+                <CommandNotation command={command} />
+                <small role="status">{commandStatus}</small>
+              </div>
+              <button type="button" className="quiet-button" onClick={clear}>
+                クリア
+              </button>
+            </div>
+          )}
+        </div>
+        <div className="attack-buttons" role="group" aria-label="攻撃ボタン">
+          {attackButtons.map((a) => {
+            const input = selectAttack(
+              inputs,
+              type,
+              type === "normal" ? direction : command,
+              a.button,
+              a.strength,
+            );
+            return (
+              <button
+                type="button"
+                key={a.label}
+                className={`attack-button strength-${a.strength} ${a.strength === "OD" ? "paired" : ""}`}
+                aria-label={a.label}
+                aria-pressed={
+                  !!selected &&
+                  selected.button === a.button &&
+                  selected.strength === a.strength
+                }
+                disabled={!input}
+                onClick={() => setSelected(input)}
+              >
+                <AttackIcon button={a.button} strength={a.strength} />
+                <span>{a.label}</span>
+              </button>
+            );
+          })}
+        </div>
       </div>
       <div className="submit-row">
-        <output
-          className="command"
-          key={selected ? inputKey(selected) : "empty"}
-        >
-          {selected ? displayInput(selected) : "選択できる入力なし"}
+        <output className="input-preview" aria-live="polite">
+          {selected ? (
+            <MoveNotation input={selected} />
+          ) : (
+            "レバーとボタンで技を選択"
+          )}
         </output>
         <button disabled={!selected} type="submit">
           質問する
         </button>
       </div>
-      <p className="muted">
-        候補は出題対象全体から生成しています。相手が持たない技も質問できます。
-      </p>
     </form>
   );
 }

@@ -5,10 +5,12 @@ import { inputSchema } from "../../lib/frame-data/schema";
 import { resolveMove, type Resolution } from "../../lib/frame-data/resolver";
 import { resolveReviewMove } from "../../lib/frame-data/review-resolver";
 import { isDisplayable } from "../../lib/frame-data/resolver";
+import { isQuestionInput } from "../../lib/frame-data/input";
 
 export interface HistoryEntry {
   input: MoveInput;
   result: Resolution;
+  mode: Mode;
 }
 export interface Game {
   review?: Dataset["review"];
@@ -44,7 +46,7 @@ export function startGame(
         )
       ],
     candidates: dataset.eligible,
-    inputs: dataset.inputs,
+    inputs: dataset.inputs.filter(isQuestionInput),
     mode,
     limit,
     history: [],
@@ -88,7 +90,10 @@ export function ask(
     result.status !== "review"
   )
     return { game, status: result.status };
-  const history = [...game.history, { input, result }];
+  const history = [
+    ...game.history,
+    { input, result: structuredClone(result), mode: game.mode },
+  ];
   return {
     game: {
       ...game,
@@ -97,6 +102,9 @@ export function ask(
     },
     status: result.status,
   };
+}
+export function changeMode(game: Game, mode: Mode): Game {
+  return game.phase === "question" ? { ...game, mode } : game;
 }
 export function answer(game: Game, selectedId: string): Game {
   if (

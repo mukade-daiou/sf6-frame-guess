@@ -31,7 +31,12 @@ it("keeps simultaneous input explicit, unique and distinct from OD", () => {
     expect(inputSchema.safeParse(input).success).toBe(false);
   expect(
     renderToStaticMarkup(<MoveSelector inputs={[dash]} onAsk={() => {}} />),
-  ).toContain("同時押し（モーションなし）");
+  ).not.toContain("同時押し（モーションなし）");
+  expect(
+    startGame(reviewDataset, "normal").inputs.some(
+      (i) => inputKey(i) === inputKey(dash),
+    ),
+  ).toBe(false);
 });
 it("does not relax production validation or alter source verification", () => {
   expect(reviewDataset.errors).toEqual([]);
@@ -73,9 +78,7 @@ it.each(["normal", "startup"] as const)(
         ),
       ).toBe(false);
       expect(startGame(reviewDataset, mode).history).toEqual([]);
-      const html = renderToStaticMarkup(
-        <History entries={game.history} mode={mode} />,
-      );
+      const html = renderToStaticMarkup(<History entries={game.history} />);
       expect(html).toContain("未検証");
       expect(html.includes("全体F")).toBe(mode === "normal");
     }
@@ -122,10 +125,9 @@ it("separates audited-source absence, missing data, conditional values and OD pa
   const html = renderToStaticMarkup(
     <History
       entries={[
-        { input: move.input, result: unknownResult },
-        { input: dash, result: conditional },
+        { input: move.input, result: unknownResult, mode: game.mode },
+        { input: dash, result: conditional, mode: game.mode },
       ]}
-      mode={game.mode}
     />,
   );
   expect(html).toContain("不明");
