@@ -2687,6 +2687,189 @@
         },
         "laterAttackStartup": null
       }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      },
+      "id": "chunli__special_214_P_none__strength_L",
+      "name": "Serenity Stream",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14
+        },
+        "total": {
+          "status": "not_applicable",
+          "display": "-",
+          "provenance": null,
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 214P",
+        "upstreamName: Serenity Stream",
+        "upstreamNotes: Crouching state 14-22f, then low profiles until exiting stance; follow-ups can be input on frame 15 at the earliest; counter-hit state for entire animation; if no follow-up, stays crouched for 57f (hold crouch to extend); can block while crouching (cannot block overheads, as this leads to Stance Exit); blocking an attack immediately exits stance and allows a Drive Reversal; can take longer to enter stance when canceled from heavy normals, giving much worse frame advantage if a follow-up is not used immediately",
+        "upstreamActive: [57~]",
+        "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。",
+        "strengthSourceMoveId: chunli__special_214_P_none"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Chun-Li/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "strengthExpansion": {
+        "sourceMoveId": "chunli__special_214_P_none",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      },
+      "id": "chunli__special_214_P_none__strength_M",
+      "name": "Serenity Stream",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14
+        },
+        "total": {
+          "status": "not_applicable",
+          "display": "-",
+          "provenance": null,
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 214P",
+        "upstreamName: Serenity Stream",
+        "upstreamNotes: Crouching state 14-22f, then low profiles until exiting stance; follow-ups can be input on frame 15 at the earliest; counter-hit state for entire animation; if no follow-up, stays crouched for 57f (hold crouch to extend); can block while crouching (cannot block overheads, as this leads to Stance Exit); blocking an attack immediately exits stance and allows a Drive Reversal; can take longer to enter stance when canceled from heavy normals, giving much worse frame advantage if a follow-up is not used immediately",
+        "upstreamActive: [57~]",
+        "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。",
+        "strengthSourceMoveId: chunli__special_214_P_none"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Chun-Li/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "strengthExpansion": {
+        "sourceMoveId": "chunli__special_214_P_none",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      },
+      "id": "chunli__special_214_P_none__strength_H",
+      "name": "Serenity Stream",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14
+        },
+        "total": {
+          "status": "not_applicable",
+          "display": "-",
+          "provenance": null,
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 214P",
+        "upstreamName: Serenity Stream",
+        "upstreamNotes: Crouching state 14-22f, then low profiles until exiting stance; follow-ups can be input on frame 15 at the earliest; counter-hit state for entire animation; if no follow-up, stays crouched for 57f (hold crouch to extend); can block while crouching (cannot block overheads, as this leads to Stance Exit); blocking an attack immediately exits stance and allows a Drive Reversal; can take longer to enter stance when canceled from heavy normals, giving much worse frame advantage if a follow-up is not used immediately",
+        "upstreamActive: [57~]",
+        "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。",
+        "strengthSourceMoveId: chunli__special_214_P_none"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Chun-Li/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "strengthExpansion": {
+        "sourceMoveId": "chunli__special_214_P_none",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      }
     }
   ]
 }

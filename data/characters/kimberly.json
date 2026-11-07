@@ -2262,6 +2262,576 @@
         },
         "laterAttackStartup": null
       }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      },
+      "id": "kimberly__special_22_K_none__strength_L",
+      "name": "Genius at Play",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "22",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "42",
+          "numeric": 42
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "44",
+          "numeric": 44,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 22K",
+        "upstreamName: Genius at Play",
+        "upstreamNotes: Refills 1 spray can; cannot reload if a spray can is currently active on-screen",
+        "upstreamActive: -",
+        "upstreamRecovery: 2",
+        "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。",
+        "strengthSourceMoveId: kimberly__special_22_K_none"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Kimberly/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "strengthExpansion": {
+        "sourceMoveId": "kimberly__special_22_K_none",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      },
+      "id": "kimberly__special_22_K_none__strength_M",
+      "name": "Genius at Play",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "22",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "42",
+          "numeric": 42
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "44",
+          "numeric": 44,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 22K",
+        "upstreamName: Genius at Play",
+        "upstreamNotes: Refills 1 spray can; cannot reload if a spray can is currently active on-screen",
+        "upstreamActive: -",
+        "upstreamRecovery: 2",
+        "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。",
+        "strengthSourceMoveId: kimberly__special_22_K_none"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Kimberly/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "strengthExpansion": {
+        "sourceMoveId": "kimberly__special_22_K_none",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      },
+      "id": "kimberly__special_22_K_none__strength_H",
+      "name": "Genius at Play",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "22",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "42",
+          "numeric": 42
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "44",
+          "numeric": 44,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 22K",
+        "upstreamName: Genius at Play",
+        "upstreamNotes: Refills 1 spray can; cannot reload if a spray can is currently active on-screen",
+        "upstreamActive: -",
+        "upstreamRecovery: 2",
+        "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。",
+        "strengthSourceMoveId: kimberly__special_22_K_none"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Kimberly/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "strengthExpansion": {
+        "sourceMoveId": "kimberly__special_22_K_none",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      },
+      "id": "kimberly__special_236_K_none__strength_L",
+      "name": "Sprint",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "55",
+          "numeric": 55,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 236K",
+        "upstreamName: Sprint",
+        "upstreamNotes: Holding forward causes Kimberly to continue running without activating Arc Step (must not let go of forward input at any point); can hold forward + button to activate follow-up at the earliest possible timing; Movement speed: 0.112/frame during cancelable frames",
+        "upstreamActive: -",
+        "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。",
+        "strengthSourceMoveId: kimberly__special_236_K_none"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Kimberly/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "strengthExpansion": {
+        "sourceMoveId": "kimberly__special_236_K_none",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      },
+      "id": "kimberly__special_236_K_none__strength_M",
+      "name": "Sprint",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "55",
+          "numeric": 55,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 236K",
+        "upstreamName: Sprint",
+        "upstreamNotes: Holding forward causes Kimberly to continue running without activating Arc Step (must not let go of forward input at any point); can hold forward + button to activate follow-up at the earliest possible timing; Movement speed: 0.112/frame during cancelable frames",
+        "upstreamActive: -",
+        "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。",
+        "strengthSourceMoveId: kimberly__special_236_K_none"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Kimberly/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "strengthExpansion": {
+        "sourceMoveId": "kimberly__special_236_K_none",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      },
+      "id": "kimberly__special_236_K_none__strength_H",
+      "name": "Sprint",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "55",
+          "numeric": 55,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 236K",
+        "upstreamName: Sprint",
+        "upstreamNotes: Holding forward causes Kimberly to continue running without activating Arc Step (must not let go of forward input at any point); can hold forward + button to activate follow-up at the earliest possible timing; Movement speed: 0.112/frame during cancelable frames",
+        "upstreamActive: -",
+        "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。",
+        "strengthSourceMoveId: kimberly__special_236_K_none"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Kimberly/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "strengthExpansion": {
+        "sourceMoveId": "kimberly__special_236_K_none",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      },
+      "id": "kimberly__coverage_5__strength_L",
+      "name": "Hidden Variable",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "19",
+          "numeric": 19
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "43",
+          "numeric": 43,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 214P (HOLD OK)",
+        "upstreamName: Hidden Variable",
+        "coverageSourceRow: 5",
+        "coverageSource: archive/staging/sf6-frame-data/raw/kimberly.json",
+        "upstreamNotes: After reappearing, 7f recovery is cancelable into any attack except Parry or another 214P (otherwise 17f recovery); grants forward momentum when canceled into attacks, unlocking some unique combo routes due to pushback (slower attacks do not benefit from this momentum); normals (except 2HK or command normals) performed after reappearing add +3 to the move's Juggle Limit, -1 to the move's Juggle Increase, and put airborne opponents into a limited juggle state (similar to Drive Rush juggles except no free juggle state when starting a combo); can hold the button to make Kimberly reappear a short distance in front of her rather than in front of the opponent (useful for baiting the opponent's defensive options); Distance on held version: 0.984 (no input) / 0.691 (whiff throw) / longer distance if whiffing a normal out of teleport",
+        "cargoSourceNotation: {\"chara\":\"Kimberly\",\"input\":\"214P (HOLD OK)\",\"startup\":\"19\",\"total\":\"43(33)\",\"hitAdv\":\"-\",\"blockAdv\":\"-\",\"notes\":\"After reappearing, 7f recovery is cancelable into any attack except Parry or another 214P (otherwise 17f recovery); grants forward momentum when canceled into attacks, unlocking some unique combo routes due to pushback (slower attacks do not benefit from this momentum); normals (except 2HK or command normals) performed after reappearing add +3 to the move's Juggle Limit, -1 to the move's Juggle Increase, and put airborne opponents into a limited juggle state (similar to Drive Rush juggles except no free juggle state when starting a combo); can hold the button to make Kimberly reappear a short distance in front of her rather than in front of the opponent (useful for baiting the opponent's defensive options); Distance on held version: 0.984 (no input) / 0.691 (whiff throw) / longer distance if whiffing a normal out of teleport\"}",
+        "Saved source repair: explicit plus separator / HOLD OK non-held version; no calculated total or guessed strength.",
+        "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。",
+        "strengthSourceMoveId: kimberly__coverage_5"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Kimberly/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "strengthExpansion": {
+        "sourceMoveId": "kimberly__coverage_5",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      },
+      "id": "kimberly__coverage_5__strength_M",
+      "name": "Hidden Variable",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "19",
+          "numeric": 19
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "43",
+          "numeric": 43,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 214P (HOLD OK)",
+        "upstreamName: Hidden Variable",
+        "coverageSourceRow: 5",
+        "coverageSource: archive/staging/sf6-frame-data/raw/kimberly.json",
+        "upstreamNotes: After reappearing, 7f recovery is cancelable into any attack except Parry or another 214P (otherwise 17f recovery); grants forward momentum when canceled into attacks, unlocking some unique combo routes due to pushback (slower attacks do not benefit from this momentum); normals (except 2HK or command normals) performed after reappearing add +3 to the move's Juggle Limit, -1 to the move's Juggle Increase, and put airborne opponents into a limited juggle state (similar to Drive Rush juggles except no free juggle state when starting a combo); can hold the button to make Kimberly reappear a short distance in front of her rather than in front of the opponent (useful for baiting the opponent's defensive options); Distance on held version: 0.984 (no input) / 0.691 (whiff throw) / longer distance if whiffing a normal out of teleport",
+        "cargoSourceNotation: {\"chara\":\"Kimberly\",\"input\":\"214P (HOLD OK)\",\"startup\":\"19\",\"total\":\"43(33)\",\"hitAdv\":\"-\",\"blockAdv\":\"-\",\"notes\":\"After reappearing, 7f recovery is cancelable into any attack except Parry or another 214P (otherwise 17f recovery); grants forward momentum when canceled into attacks, unlocking some unique combo routes due to pushback (slower attacks do not benefit from this momentum); normals (except 2HK or command normals) performed after reappearing add +3 to the move's Juggle Limit, -1 to the move's Juggle Increase, and put airborne opponents into a limited juggle state (similar to Drive Rush juggles except no free juggle state when starting a combo); can hold the button to make Kimberly reappear a short distance in front of her rather than in front of the opponent (useful for baiting the opponent's defensive options); Distance on held version: 0.984 (no input) / 0.691 (whiff throw) / longer distance if whiffing a normal out of teleport\"}",
+        "Saved source repair: explicit plus separator / HOLD OK non-held version; no calculated total or guessed strength.",
+        "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。",
+        "strengthSourceMoveId: kimberly__coverage_5"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Kimberly/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "strengthExpansion": {
+        "sourceMoveId": "kimberly__coverage_5",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      },
+      "id": "kimberly__coverage_5__strength_H",
+      "name": "Hidden Variable",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "19",
+          "numeric": 19
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "43",
+          "numeric": 43,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "upstreamInput: 214P (HOLD OK)",
+        "upstreamName: Hidden Variable",
+        "coverageSourceRow: 5",
+        "coverageSource: archive/staging/sf6-frame-data/raw/kimberly.json",
+        "upstreamNotes: After reappearing, 7f recovery is cancelable into any attack except Parry or another 214P (otherwise 17f recovery); grants forward momentum when canceled into attacks, unlocking some unique combo routes due to pushback (slower attacks do not benefit from this momentum); normals (except 2HK or command normals) performed after reappearing add +3 to the move's Juggle Limit, -1 to the move's Juggle Increase, and put airborne opponents into a limited juggle state (similar to Drive Rush juggles except no free juggle state when starting a combo); can hold the button to make Kimberly reappear a short distance in front of her rather than in front of the opponent (useful for baiting the opponent's defensive options); Distance on held version: 0.984 (no input) / 0.691 (whiff throw) / longer distance if whiffing a normal out of teleport",
+        "cargoSourceNotation: {\"chara\":\"Kimberly\",\"input\":\"214P (HOLD OK)\",\"startup\":\"19\",\"total\":\"43(33)\",\"hitAdv\":\"-\",\"blockAdv\":\"-\",\"notes\":\"After reappearing, 7f recovery is cancelable into any attack except Parry or another 214P (otherwise 17f recovery); grants forward momentum when canceled into attacks, unlocking some unique combo routes due to pushback (slower attacks do not benefit from this momentum); normals (except 2HK or command normals) performed after reappearing add +3 to the move's Juggle Limit, -1 to the move's Juggle Increase, and put airborne opponents into a limited juggle state (similar to Drive Rush juggles except no free juggle state when starting a combo); can hold the button to make Kimberly reappear a short distance in front of her rather than in front of the opponent (useful for baiting the opponent's defensive options); Distance on held version: 0.984 (no input) / 0.691 (whiff throw) / longer distance if whiffing a normal out of teleport\"}",
+        "Saved source repair: explicit plus separator / HOLD OK non-held version; no calculated total or guessed strength.",
+        "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。",
+        "strengthSourceMoveId: kimberly__coverage_5"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Kimberly/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.533Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "strengthExpansion": {
+        "sourceMoveId": "kimberly__coverage_5",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      }
     }
   ]
 }

@@ -172,7 +172,7 @@ it("excludes motionless/complex inputs from questions without removing the store
       { type: "special", motion: "214", button: "K", strength: "L" },
       "normal",
     ).status,
-  ).toBe("unknown");
+  ).toBe("found");
   const dash = production.characters
     .find((c) => c.id === "ken")!
     .moves.find(

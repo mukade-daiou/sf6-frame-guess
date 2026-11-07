@@ -1,0 +1,27 @@
+{
+  "baselineHead": "d11bb6d2616b5a15e182cbc08ef7556e99f3b5d6",
+  "initialGitStatus": "clean main",
+  "datasetId": "common-special-strengths-2026-11-07-r1",
+  "ciCheckoutFetchDepth": 0,
+  "commands": {
+    "npm run typecheck": "passed",
+    "npm test": "passed: 117 tests",
+    "npm run test:data": "passed: 5 tests",
+    "npm run data:audit-coverage": "passed",
+    "npx tsx scripts/audit-strength-expansion.ts --check": "passed",
+    "npx tsx scripts/audit-super-arts.ts --check": "passed via test:data",
+    "npm run data:check": "passed",
+    "npm run validate:data": "passed",
+    "npm run format:check": "passed",
+    "npm run build": "passed; existing chunk-size warning",
+    "node scripts/verify-common-strengths.mjs": "passed: 1280 and 320px"
+  },
+  "originalRecordsPreserved": 1196,
+  "originalFrameChanges": 0,
+  "saRecordChanges": 0,
+  "generatedStrengthInputs": 96,
+  "generatedODRecords": 0,
+  "afterTotalRecords": 1292,
+  "pushPerformed": false,
+  "deployPerformed": false
+}

@@ -134,6 +134,7 @@ export const moveSchema = z
     }),
     notes: z.array(text),
     source: sourceSchema,
+    strengthExpansion: z.object({ sourceMoveId: text, basis: text }).optional(),
     saEvidence: z
       .object({
         researchRecordId: text,

@@ -2275,6 +2275,402 @@
         },
         "laterAttackStartup": null
       }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      },
+      "id": "ingrid__special_214214_K_none__strength_L",
+      "name": "Sunburst Blow",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214214",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "27",
+          "numeric": 27
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "58",
+          "numeric": 58,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-15",
+          "numeric": -15
+        }
+      },
+      "notes": [
+        "upstreamInput: 214214K",
+        "upstreamName: Sunburst Blow",
+        "upstreamNotes: Dark Ingrid only; immediately puts the opponent into Burnout on hit; cannot be canceled into from normals; hits twice on hit or once on block",
+        "upstreamActive: 7",
+        "upstreamRecovery: 25",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +27 as D; original onHit=27; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ingrid%22&limit=500",
+        "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。",
+        "strengthSourceMoveId: ingrid__special_214214_K_none"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "strengthExpansion": {
+        "sourceMoveId": "ingrid__special_214214_K_none",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      },
+      "id": "ingrid__special_214214_K_none__strength_M",
+      "name": "Sunburst Blow",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214214",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "27",
+          "numeric": 27
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "58",
+          "numeric": 58,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-15",
+          "numeric": -15
+        }
+      },
+      "notes": [
+        "upstreamInput: 214214K",
+        "upstreamName: Sunburst Blow",
+        "upstreamNotes: Dark Ingrid only; immediately puts the opponent into Burnout on hit; cannot be canceled into from normals; hits twice on hit or once on block",
+        "upstreamActive: 7",
+        "upstreamRecovery: 25",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +27 as D; original onHit=27; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ingrid%22&limit=500",
+        "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。",
+        "strengthSourceMoveId: ingrid__special_214214_K_none"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "strengthExpansion": {
+        "sourceMoveId": "ingrid__special_214214_K_none",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      },
+      "id": "ingrid__special_214214_K_none__strength_H",
+      "name": "Sunburst Blow",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214214",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "27",
+          "numeric": 27
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "58",
+          "numeric": 58,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-15",
+          "numeric": -15
+        }
+      },
+      "notes": [
+        "upstreamInput: 214214K",
+        "upstreamName: Sunburst Blow",
+        "upstreamNotes: Dark Ingrid only; immediately puts the opponent into Burnout on hit; cannot be canceled into from normals; hits twice on hit or once on block",
+        "upstreamActive: 7",
+        "upstreamRecovery: 25",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +27 as D; original onHit=27; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ingrid%22&limit=500",
+        "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。",
+        "strengthSourceMoveId: ingrid__special_214214_K_none"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "strengthExpansion": {
+        "sourceMoveId": "ingrid__special_214214_K_none",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      },
+      "id": "ingrid__special_22_K_none__strength_L",
+      "name": "Sun Veil",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "22",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "55",
+          "numeric": 55,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: 22K",
+        "upstreamName: Sun Veil",
+        "upstreamNotes: Counter that can absorb strikes (resulting in a counter-attack) or dissipate 1-hit non-Super projectiles; counter-attack is a strike knockdown that can be blocked if triggered by a low-recovery attack; counter-attack has 12f startup / 3f active / 21f recovery / 45f total animation / 1-14 fully invuln / Armor Break / no collision box 1-14f (some moves can pass through before counter-attack connects); absorbing a projectile results in 28f total recovery (often punishable if done from longer ranges); can be used to counter most strike-based Supers (useful option out of Drive Rush cancel on reaction to opponent's Super freeze); Ingrid is in a counter-hit state on frames 1-5 and a Punish Counter state for the rest of the move's duration; extends a vulnerable arm hurtbox on frames 21-36 if the counter whiffs",
+        "upstreamActive: 15",
+        "upstreamRecovery: 35",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +23 as D; original onHit=23; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ingrid%22&limit=500",
+        "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。",
+        "strengthSourceMoveId: ingrid__special_22_K_none"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "strengthExpansion": {
+        "sourceMoveId": "ingrid__special_22_K_none",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      },
+      "id": "ingrid__special_22_K_none__strength_M",
+      "name": "Sun Veil",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "22",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "55",
+          "numeric": 55,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: 22K",
+        "upstreamName: Sun Veil",
+        "upstreamNotes: Counter that can absorb strikes (resulting in a counter-attack) or dissipate 1-hit non-Super projectiles; counter-attack is a strike knockdown that can be blocked if triggered by a low-recovery attack; counter-attack has 12f startup / 3f active / 21f recovery / 45f total animation / 1-14 fully invuln / Armor Break / no collision box 1-14f (some moves can pass through before counter-attack connects); absorbing a projectile results in 28f total recovery (often punishable if done from longer ranges); can be used to counter most strike-based Supers (useful option out of Drive Rush cancel on reaction to opponent's Super freeze); Ingrid is in a counter-hit state on frames 1-5 and a Punish Counter state for the rest of the move's duration; extends a vulnerable arm hurtbox on frames 21-36 if the counter whiffs",
+        "upstreamActive: 15",
+        "upstreamRecovery: 35",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +23 as D; original onHit=23; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ingrid%22&limit=500",
+        "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。",
+        "strengthSourceMoveId: ingrid__special_22_K_none"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "strengthExpansion": {
+        "sourceMoveId": "ingrid__special_22_K_none",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      },
+      "id": "ingrid__special_22_K_none__strength_H",
+      "name": "Sun Veil",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "22",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "55",
+          "numeric": 55,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "upstreamInput: 22K",
+        "upstreamName: Sun Veil",
+        "upstreamNotes: Counter that can absorb strikes (resulting in a counter-attack) or dissipate 1-hit non-Super projectiles; counter-attack is a strike knockdown that can be blocked if triggered by a low-recovery attack; counter-attack has 12f startup / 3f active / 21f recovery / 45f total animation / 1-14 fully invuln / Armor Break / no collision box 1-14f (some moves can pass through before counter-attack connects); absorbing a projectile results in 28f total recovery (often punishable if done from longer ranges); can be used to counter most strike-based Supers (useful option out of Drive Rush cancel on reaction to opponent's Super freeze); Ingrid is in a counter-hit state on frames 1-5 and a Punish Counter state for the rest of the move's duration; extends a vulnerable arm hurtbox on frames 21-36 if the counter whiffs",
+        "upstreamActive: 15",
+        "upstreamRecovery: 35",
+        "HIT VALUE WARNING: may represent knockdown advantage, not standard hitstun advantage.",
+        "qualityReview: restored KD +23 as D; original onHit=23; source=https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data, https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ingrid%22&limit=500",
+        "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。",
+        "strengthSourceMoveId: ingrid__special_22_K_none"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "strengthExpansion": {
+        "sourceMoveId": "ingrid__special_22_K_none",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      }
     }
   ]
 }

@@ -12,7 +12,10 @@ it("adopts 63 source-matched moves without falsely verifying the source or patch
   expect(d.eligible).toHaveLength(2);
   expect(
     d.characters.map(
-      (c) => c.moves.filter((m) => m.category !== "super_art").length,
+      (c) =>
+        c.moves.filter(
+          (m) => m.category !== "super_art" && !m.strengthExpansion,
+        ).length,
     ),
   ).toEqual([33, 30]);
   expect(d.review).toBeUndefined();

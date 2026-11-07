@@ -17,7 +17,10 @@ test("only the nine authorized frame fields differ from stage B", () => {
       ),
     );
     const after = JSON.parse(readFileSync(path, "utf8"));
-    assert.equal(after.moves.length, before.moves.length);
+    assert.equal(
+      after.moves.filter((m) => !m.strengthExpansion).length,
+      before.moves.length,
+    );
     assert.deepEqual(after.coverage, before.coverage);
     for (const old of before.moves) {
       const m = after.moves.find((m) => m.id === old.id);

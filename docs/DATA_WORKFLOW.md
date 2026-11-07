@@ -2,7 +2,9 @@
 
 ## SA統合後の更新（第15段階B）
 
-現在は32キャラ1196レコード（従来908＋SA288）、datasetId `super-arts-reviewed-2026-11-07-r1`。SA96枠、原典基本101行、個別強度質問288レコードは別の集計単位である。第15段階Cの9項目はdata/adoption-decisions.jsonのsuperArts.frameDecisionsから再生成する。
+現在は32キャラ1292レコード（従来908＋SA288＋共通必殺技の強度展開96）、datasetId `common-special-strengths-2026-11-07-r1`。SA96枠、原典基本101行、個別強度質問288レコードは別の集計単位である。第15段階Cの9項目はdata/adoption-decisions.jsonのsuperArts.frameDecisionsから再生成する。
+
+共通必殺技の展開はsrc/lib/frame-data/strength-expansion.tsで行う。生成元adoption-inputsや原典noneを変更せず、既存build-snapshotの採用処理・SA追加後に追記する。`npx tsx scripts/audit-strength-expansion.ts --check`で全32キャラの分類、明示強度との重複、OD非生成、元1196件とcoverageの不変、再生成の同一性を検査する。件数は監査から算出する。data:plan→新datasetId→--write --update→data:checkの保護を継続する。
 
 調査成果物は固定し、`scripts/super-arts.ts`で保存raw/Cargoとの一致を検査して変換する。`npx tsx scripts/audit-super-arts.ts --pilot`で6キャラを確認し、全体は同コマンドのオプションなしで計画を生成する。`data:plan`→`npx tsx scripts/build-snapshot.ts --write --update`の従来の更新保護を通す。datasetIdの変更が必要。更新後は`npx tsx scripts/audit-super-arts.ts --check`で原典199行分類・96枠・288入力と開始時908レコードを検査する。
 

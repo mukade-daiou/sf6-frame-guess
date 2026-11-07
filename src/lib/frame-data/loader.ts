@@ -106,6 +106,14 @@ export function validateDataset(
         .map((input) => [inputKey(input), input]),
     ).values(),
   ];
+  // An OD question is allowed globally; this is an input candidate, never an OD move.
+  for (const c of eligible)
+    for (const m of c.moves) {
+      if (m.strengthExpansion && m.input.type === "special") {
+        const od: MoveInput = { ...m.input, strength: "OD" };
+        if (!inputs.some((i) => inputKey(i) === inputKey(od))) inputs.push(od);
+      }
+    }
   const commandInputs: MoveInput[] = [
     ...new Map(
       inputs

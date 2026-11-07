@@ -44,20 +44,21 @@ export function resolveMove(
     if (base.length === 1) return resolveMove(character, base[0].input, mode);
     if (
       candidates.length ||
-      character.moves.some(
-        (m) =>
-          m.adoption?.status !== "excluded" &&
-          m.input.type === "special" &&
-          m.input.motion === input.motion &&
-          m.input.button === input.button &&
-          m.input.strength === "none",
-      )
+      (input.strength !== "OD" &&
+        character.moves.some(
+          (m) =>
+            m.adoption?.status !== "excluded" &&
+            m.input.type === "special" &&
+            m.input.motion === input.motion &&
+            m.input.button === input.button &&
+            m.input.strength === "none",
+        ))
     )
       return { status: "unknown" };
     return {
       status:
         hasCompleteScope(character, "special") &&
-        hasCompleteScope(character, "super_art")
+        (input.strength === "OD" || hasCompleteScope(character, "super_art"))
           ? "not_found"
           : "unknown",
     };

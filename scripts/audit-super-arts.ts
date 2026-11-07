@@ -34,7 +34,9 @@ for (const id of pilot
     );
     if (
       !isDeepStrictEqual(
-        c.moves.filter((m: any) => m.category !== "super_art"),
+        c.moves.filter(
+          (m: any) => m.category !== "super_art" && !m.strengthExpansion,
+        ),
         original.moves,
       )
     )
