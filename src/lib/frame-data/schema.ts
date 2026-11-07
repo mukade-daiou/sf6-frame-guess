@@ -142,9 +142,27 @@ export const moveSchema = z
         sourceNotation: z.record(z.string(), z.string().nullable()),
         frameOrigins: z.record(
           z.string(),
-          z.enum(["source", "activation_missing_rule", "unresolved"]),
+          z.enum([
+            "source",
+            "activation_missing_rule",
+            "unresolved",
+            "user_representative",
+          ]),
         ),
         laterAttackStartup: z.string().nullable(),
+        frameDecisions: z
+          .array(
+            z.object({
+              id: text,
+              field: z.enum(["startup", "total", "hit", "block"]),
+              sourceRecordId: text,
+              sourceRef: text,
+              sourceNotation: text,
+              adoptedDisplay: text,
+              reason: text,
+            }),
+          )
+          .optional(),
       })
       .optional(),
   })

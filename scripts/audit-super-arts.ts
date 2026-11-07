@@ -66,8 +66,12 @@ const result = {
   pilot,
   characters: rows,
   sourceRows: classifySARows(inventory),
-  adoptedSourceRows: 101,
-  excludedSourceRows: 98,
+  adoptedSourceRows: classifySARows(inventory).filter(
+    (r: any) => r.classification === "adopted",
+  ).length,
+  excludedSourceRows: classifySARows(inventory).filter(
+    (r: any) => r.classification === "excluded",
+  ).length,
   baseSlots: rows.length * 3,
   inputRecords: rows.length * 9,
   originalRecordsPreserved: process.argv.includes("--check"),

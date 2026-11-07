@@ -1,5 +1,7 @@
 # データ仕様 v1.0.0
 
+第15段階CではSAの項目別代表値をsuperArts.frameDecisionsから適用する。saEvidence.frameDecisionsに判断ID・対象項目・採用元原典行・参照・元表記・採用表示・理由を保持し、frameOrigins=user_representativeで原典の直接採用と区別する。基本行のsourceNotationは上書きしない。発動系の未展開テンプレートも欠損として扱い、activation_missing_ruleとして由来を記録する。
+
 ## 第15段階B：スーパーアーツ
 
 技カテゴリ/input.typeは`super_art`も使用する。SA inputは`saLevel: 1|2|3`、motion、button P/K、strength L/M/H、adoptionBasisを持つ。キーは`super_art:level:motion:button:strength`。**SAは弱・中・強を独立した質問として扱う。ゲーム用フレーム値を共有していても、質問キーは統合しない。**

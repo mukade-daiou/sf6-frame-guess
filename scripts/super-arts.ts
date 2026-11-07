@@ -30,18 +30,24 @@ export function readSAResearch() {
         throw new Error(`Cargo mismatch: ${r.id}`);
     }
   }
+  inventory.frameDecisions =
+    JSON.parse(readFileSync("data/adoption-decisions.json", "utf8")).superArts
+      ?.frameDecisions || [];
   return inventory;
 }
 const unknown = (): FrameValue => ({ status: "unknown", display: null });
+const missingSource = (text: string | null) =>
+  !text?.trim() || text.includes("{{{");
 export function adoptSAFrame(
   text: string | null,
   field: string,
   r: any,
 ): FrameValue {
-  if (!text || text.includes("{{{"))
+  if (missingSource(text))
     return r.saType === "activation" && field !== "startup"
       ? { status: "not_applicable", display: "-" }
       : unknown();
+  if (!text) return unknown();
   if (text === "-") return { status: "not_applicable", display: "-" };
   if (field === "hit" && /\b(?:HKD|KD)\b/.test(text))
     return /\d/.test(text) ? { status: "confirmed", display: "D" } : unknown();
@@ -108,22 +114,58 @@ export function generateSuperArts(inventory: any, characterId: string): Move[] {
           ),
         ]),
       );
-      const total = {
-        ...frames.total,
-        provenance: frames.total.status === "confirmed" ? "source" : null,
-        calculation: null,
-      };
       const origins = Object.fromEntries(
         Object.entries(frames).map(([f, v]) => [
           f,
           v.status === "unknown"
             ? "unresolved"
-            : !r.sourceValues.cargo[0].frames[f].cleanedForComparison &&
-                r.saType === "activation"
+            : missingSource(
+                  r.sourceValues.cargo[0].frames[f].cleanedForComparison,
+                ) && r.saType === "activation"
               ? "activation_missing_rule"
               : "source",
         ]),
       );
+      const frameDecisions = (inventory.frameDecisions || [])
+        .filter(
+          (d: any) => d.characterId === characterId && d.saLevel === saLevel,
+        )
+        .map((d: any) => {
+          const source = inventory.records.find(
+            (s: any) => s.id === d.sourceRecordId,
+          );
+          if (
+            !source ||
+            source.characterId !== characterId ||
+            source.saLevel !== saLevel ||
+            source.edition !== "normal" ||
+            r.sourceValues.cargo[0].frames[d.field]?.cleanedForComparison !==
+              d.expectedBaseNotation ||
+            source.sourceValues.cargo[0].frames[d.field]
+              ?.cleanedForComparison !== d.sourceNotation
+          )
+            throw new Error(`SA adoption evidence mismatch: ${d.id}`);
+          frames[d.field] = {
+            status: "confirmed",
+            display: d.display,
+            ...(d.numeric === undefined ? {} : { numeric: d.numeric }),
+          };
+          origins[d.field] = "user_representative";
+          return {
+            id: d.id,
+            field: d.field,
+            sourceRecordId: source.id,
+            sourceRef: `${source.cargo.path}#${source.cargo.candidates[0].jsonPointer}`,
+            sourceNotation: d.sourceNotation,
+            adoptedDisplay: d.display,
+            reason: d.reason,
+          };
+        });
+      const total = {
+        ...frames.total,
+        provenance: frames.total.status === "confirmed" ? "source" : null,
+        calculation: null,
+      };
       moves.push(
         moveSchema.parse({
           id: `${characterId}__super_art_${saLevel}_${strength}`,
@@ -163,6 +205,7 @@ export function generateSuperArts(inventory: any, characterId: string): Move[] {
             ),
             frameOrigins: origins,
             laterAttackStartup: r.frameMeaning,
+            ...(frameDecisions.length ? { frameDecisions } : {}),
           },
         }),
       );

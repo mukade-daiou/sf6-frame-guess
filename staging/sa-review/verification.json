@@ -1,0 +1,33 @@
+{
+  "baselineHead": "f51c4e29e2661d4292895964df76bce31f264895",
+  "initialGitStatus": "clean main, ahead of origin/main by 1",
+  "datasetId": "super-arts-reviewed-2026-11-07-r1",
+  "commands": {
+    "npm run typecheck": "passed",
+    "npm test": "passed: 105 tests",
+    "npm run test:data": "passed: 4 tests",
+    "npm run data:audit-coverage": "passed",
+    "npx tsx scripts/audit-super-arts.ts --check": "passed",
+    "npm run data:check": "passed",
+    "npm run validate:data": "passed",
+    "npm run format:check": "passed",
+    "npm run build": "passed; pre-existing bundle size warning",
+    "node scripts/verify-sa-review.mjs": "passed: 12 browser cases, 4 widths x 3 characters"
+  },
+  "frameChanges": 9,
+  "otherFrameChanges": 0,
+  "originalNonSARecordsPreserved": 908,
+  "characters": 32,
+  "saSlots": 96,
+  "saRecords": 288,
+  "totalRecords": 1196,
+  "saUnknownFields": 0,
+  "newBrowserEvidence": "browser/results.json; 1280/768/390/320.png",
+  "reusedEvidence": "stage B browser results and native input evidence for unchanged 720/charge/UI; existing rotation and charge unit tests rerun",
+  "independentReviewer": false,
+  "archiveTests": "not rerun: archive transformations unchanged",
+  "sourceRefresh": false,
+  "unresolvedRequiredFixes": [],
+  "pushPerformed": false,
+  "deployPerformed": false
+}

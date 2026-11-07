@@ -983,11 +983,62 @@
                 },
                 "additionalProperties": {
                   "type": "string",
-                  "enum": ["source", "activation_missing_rule", "unresolved"]
+                  "enum": [
+                    "source",
+                    "activation_missing_rule",
+                    "unresolved",
+                    "user_representative"
+                  ]
                 }
               },
               "laterAttackStartup": {
                 "type": ["string", "null"]
+              },
+              "frameDecisions": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "field": {
+                      "type": "string",
+                      "enum": ["startup", "total", "hit", "block"]
+                    },
+                    "sourceRecordId": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "sourceRef": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "sourceNotation": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "adoptedDisplay": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "reason": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "field",
+                    "sourceRecordId",
+                    "sourceRef",
+                    "sourceNotation",
+                    "adoptedDisplay",
+                    "reason"
+                  ],
+                  "additionalProperties": false
+                }
               }
             },
             "required": [

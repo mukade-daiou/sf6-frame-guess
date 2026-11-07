@@ -2,7 +2,7 @@
 
 ## SA統合後の更新（第15段階B）
 
-現在は32キャラ1196レコード（従来908＋SA288）、datasetId `super-arts-2026-11-07-r1`。SA96枠、原典基本101行、個別強度質問288レコードは別の集計単位である。
+現在は32キャラ1196レコード（従来908＋SA288）、datasetId `super-arts-reviewed-2026-11-07-r1`。SA96枠、原典基本101行、個別強度質問288レコードは別の集計単位である。第15段階Cの9項目はdata/adoption-decisions.jsonのsuperArts.frameDecisionsから再生成する。
 
 調査成果物は固定し、`scripts/super-arts.ts`で保存raw/Cargoとの一致を検査して変換する。`npx tsx scripts/audit-super-arts.ts --pilot`で6キャラを確認し、全体は同コマンドのオプションなしで計画を生成する。`data:plan`→`npx tsx scripts/build-snapshot.ts --write --update`の従来の更新保護を通す。datasetIdの変更が必要。更新後は`npx tsx scripts/audit-super-arts.ts --check`で原典199行分類・96枠・288入力と開始時908レコードを検査する。
 

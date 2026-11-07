@@ -105,7 +105,7 @@ it("uses strength-specific values, activation dashes, source startup and unknown
   expect(sa("ingrid", 2, "H").frames.startup).toMatchObject({ numeric: 1 });
   expect(sa("ingrid", 2, "H").saEvidence?.laterAttackStartup).toContain("103");
   expect(sa("jp", 2, "L").frames.startup).toMatchObject({ numeric: 1 });
-  expect(sa("sagat", 2, "L").frames.hit.status).toBe("unknown");
+  expect(sa("sagat", 2, "L").frames.hit.display).toBe("D");
   expect(sa("ryu", 1, "L").frames.hit.display).toBe("D");
   expect(adoptSAFrame(null, "block", { saType: "attack" }).status).toBe(
     "unknown",
