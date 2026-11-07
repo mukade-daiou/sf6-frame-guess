@@ -24,6 +24,10 @@
     "special": {
       "status": "complete",
       "verification": "unverified"
+    },
+    "super_art": {
+      "status": "complete",
+      "verification": "unverified"
     }
   },
   "moves": [
@@ -1912,6 +1916,708 @@
         "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
         "license": "CC-BY-SA-4.0",
         "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "e_honda__super_art_1_L",
+      "name": "Show of Force",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "P",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "59",
+          "numeric": 59,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-33",
+          "numeric": -33
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: Good range makes it useful as a 7f punish tool; KD Adv. depends on distance from the opposite wall",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "e_honda:raw:8",
+        "rawRef": "archive/staging/sf6-frame-data/raw/e_honda.json#/moves/8",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json#/data/cargoquery/12/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "7",
+          "total": "59",
+          "hit": "KD +13(+38)",
+          "block": "-33"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "e_honda__super_art_1_M",
+      "name": "Show of Force",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "P",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "59",
+          "numeric": 59,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-33",
+          "numeric": -33
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: Good range makes it useful as a 7f punish tool; KD Adv. depends on distance from the opposite wall",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "e_honda:raw:8",
+        "rawRef": "archive/staging/sf6-frame-data/raw/e_honda.json#/moves/8",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json#/data/cargoquery/12/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "7",
+          "total": "59",
+          "hit": "KD +13(+38)",
+          "block": "-33"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "e_honda__super_art_1_H",
+      "name": "Show of Force",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "P",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "59",
+          "numeric": 59,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-33",
+          "numeric": -33
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: Good range makes it useful as a 7f punish tool; KD Adv. depends on distance from the opposite wall",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "e_honda:raw:8",
+        "rawRef": "archive/staging/sf6-frame-data/raw/e_honda.json#/moves/8",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json#/data/cargoquery/12/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "7",
+          "total": "59",
+          "hit": "KD +13(+38)",
+          "block": "-33"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "e_honda__super_art_2_L",
+      "name": "Ultimate Killer Head Ram",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "[4]646",
+        "button": "K",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "61",
+          "numeric": 61,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-27",
+          "numeric": -27
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: [4]646K",
+        "upstreamNotes: 40f charge (charge lasts 28f after releasing back direction); travels full screen, making it a useful anti-projectile tool; becomes projectile invincible on hit up until the fully invincible cinematic ender (ensures a full connect even against slow projectiles); first hit has very short range (slightly less damage and Drive damage from longer ranges); from frame 24 onward, Honda transitions to his 45f recovery animation if he switches sides with the opponent; if Honda whiffs entire SA2 without crossing under the opponent, landing recovery becomes 12+33 (total recovery time is unchanged); full dmg distribution: 50,500,100x14,900; detailed charge requirements: first Forward input must be within 28f of releasing charge, next Back input must be within the next 6 frames, next Forward input must be within the next 6 frames, final K input must be within the next 6 frames (slowest possible input takes 48f after releasing charge)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "e_honda:raw:28",
+        "rawRef": "archive/staging/sf6-frame-data/raw/e_honda.json#/moves/28",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json#/data/cargoquery/64/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "12",
+          "total": "61(81)",
+          "hit": "HKD +13",
+          "block": "-27"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "e_honda__super_art_2_M",
+      "name": "Ultimate Killer Head Ram",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "[4]646",
+        "button": "K",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "61",
+          "numeric": 61,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-27",
+          "numeric": -27
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: [4]646K",
+        "upstreamNotes: 40f charge (charge lasts 28f after releasing back direction); travels full screen, making it a useful anti-projectile tool; becomes projectile invincible on hit up until the fully invincible cinematic ender (ensures a full connect even against slow projectiles); first hit has very short range (slightly less damage and Drive damage from longer ranges); from frame 24 onward, Honda transitions to his 45f recovery animation if he switches sides with the opponent; if Honda whiffs entire SA2 without crossing under the opponent, landing recovery becomes 12+33 (total recovery time is unchanged); full dmg distribution: 50,500,100x14,900; detailed charge requirements: first Forward input must be within 28f of releasing charge, next Back input must be within the next 6 frames, next Forward input must be within the next 6 frames, final K input must be within the next 6 frames (slowest possible input takes 48f after releasing charge)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "e_honda:raw:28",
+        "rawRef": "archive/staging/sf6-frame-data/raw/e_honda.json#/moves/28",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json#/data/cargoquery/64/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "12",
+          "total": "61(81)",
+          "hit": "HKD +13",
+          "block": "-27"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "e_honda__super_art_2_H",
+      "name": "Ultimate Killer Head Ram",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "[4]646",
+        "button": "K",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "61",
+          "numeric": 61,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-27",
+          "numeric": -27
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: [4]646K",
+        "upstreamNotes: 40f charge (charge lasts 28f after releasing back direction); travels full screen, making it a useful anti-projectile tool; becomes projectile invincible on hit up until the fully invincible cinematic ender (ensures a full connect even against slow projectiles); first hit has very short range (slightly less damage and Drive damage from longer ranges); from frame 24 onward, Honda transitions to his 45f recovery animation if he switches sides with the opponent; if Honda whiffs entire SA2 without crossing under the opponent, landing recovery becomes 12+33 (total recovery time is unchanged); full dmg distribution: 50,500,100x14,900; detailed charge requirements: first Forward input must be within 28f of releasing charge, next Back input must be within the next 6 frames, next Forward input must be within the next 6 frames, final K input must be within the next 6 frames (slowest possible input takes 48f after releasing charge)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "e_honda:raw:28",
+        "rawRef": "archive/staging/sf6-frame-data/raw/e_honda.json#/moves/28",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json#/data/cargoquery/64/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "12",
+          "total": "61(81)",
+          "hit": "HKD +13",
+          "block": "-27"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "e_honda__super_art_3_L",
+      "name": "The Final Bout",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "214214",
+        "button": "P",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "73",
+          "numeric": 73,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-34",
+          "numeric": -34
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214P",
+        "upstreamNotes: () refers to non-cinematic hit when 1st hit whiffs (1500 less damage, Drive Dmg is unaffected); cinematic time regenerates ~2.4 Drive bars for E. Honda; cinematic hit has around 1/2 screen range (2/3 screen for non-cinematic hit); can use the first hit to force Burnout to ensure a chip KO the 2nd hit",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "e_honda:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/e_honda.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "9",
+          "total": "73",
+          "hit": "HKD +11 (KD +19)",
+          "block": "-34"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "e_honda__super_art_3_M",
+      "name": "The Final Bout",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "214214",
+        "button": "P",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "73",
+          "numeric": 73,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-34",
+          "numeric": -34
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214P",
+        "upstreamNotes: () refers to non-cinematic hit when 1st hit whiffs (1500 less damage, Drive Dmg is unaffected); cinematic time regenerates ~2.4 Drive bars for E. Honda; cinematic hit has around 1/2 screen range (2/3 screen for non-cinematic hit); can use the first hit to force Burnout to ensure a chip KO the 2nd hit",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "e_honda:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/e_honda.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "9",
+          "total": "73",
+          "hit": "HKD +11 (KD +19)",
+          "block": "-34"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "e_honda__super_art_3_H",
+      "name": "The Final Bout",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "214214",
+        "button": "P",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "73",
+          "numeric": 73,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-34",
+          "numeric": -34
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214P",
+        "upstreamNotes: () refers to non-cinematic hit when 1st hit whiffs (1500 less damage, Drive Dmg is unaffected); cinematic time regenerates ~2.4 Drive bars for E. Honda; cinematic hit has around 1/2 screen range (2/3 screen for non-cinematic hit); can use the first hit to force Burnout to ensure a chip KO the 2nd hit",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "e_honda:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/e_honda.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "9",
+          "total": "73",
+          "hit": "HKD +11 (KD +19)",
+          "block": "-34"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
       }
     }
   ]

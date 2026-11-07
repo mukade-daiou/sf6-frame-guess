@@ -24,6 +24,10 @@
     "special": {
       "status": "complete",
       "verification": "unverified"
+    },
+    "super_art": {
+      "status": "complete",
+      "verification": "unverified"
     }
   },
   "moves": [
@@ -1571,6 +1575,705 @@
         "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
         "license": "CC-BY-SA-4.0",
         "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "ingrid__super_art_1_L",
+      "name": "Shining Sun (0 Stock)",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "K",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "11",
+          "numeric": 11
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "129",
+          "numeric": 129,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-99",
+          "numeric": -99
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K (0 Stock)",
+        "upstreamNotes: Can hold the button to spend up to 2 Sun Crests (+400 damage per crest but reduced oki); sends opponent ~1/2 screen away on hit; Ingrid's primary reversal while in Burnout (but slow startup makes it susceptible to safejab pressure); hitbox has a dead zone that can cause it to whiff through high airborne opponents; solid anti-air but cannot hit cross-up; 1st hit deals 400 damage and puts the opponent into a limited juggle state if it trades with a projectile (high float for easy hitconfirm)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "ingrid:raw:14",
+        "rawRef": "archive/staging/sf6-frame-data/raw/ingrid.json#/moves/14",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/ingrid.cargo.json#/data/cargoquery/15/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "11",
+          "total": "129",
+          "hit": "HKD +12",
+          "block": "-99"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "ingrid__super_art_1_M",
+      "name": "Shining Sun (0 Stock)",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "K",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "11",
+          "numeric": 11
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "129",
+          "numeric": 129,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-99",
+          "numeric": -99
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K (0 Stock)",
+        "upstreamNotes: Can hold the button to spend up to 2 Sun Crests (+400 damage per crest but reduced oki); sends opponent ~1/2 screen away on hit; Ingrid's primary reversal while in Burnout (but slow startup makes it susceptible to safejab pressure); hitbox has a dead zone that can cause it to whiff through high airborne opponents; solid anti-air but cannot hit cross-up; 1st hit deals 400 damage and puts the opponent into a limited juggle state if it trades with a projectile (high float for easy hitconfirm)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "ingrid:raw:14",
+        "rawRef": "archive/staging/sf6-frame-data/raw/ingrid.json#/moves/14",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/ingrid.cargo.json#/data/cargoquery/15/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "11",
+          "total": "129",
+          "hit": "HKD +12",
+          "block": "-99"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "ingrid__super_art_1_H",
+      "name": "Shining Sun (0 Stock)",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "K",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "11",
+          "numeric": 11
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "129",
+          "numeric": 129,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-99",
+          "numeric": -99
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K (0 Stock)",
+        "upstreamNotes: Can hold the button to spend up to 2 Sun Crests (+400 damage per crest but reduced oki); sends opponent ~1/2 screen away on hit; Ingrid's primary reversal while in Burnout (but slow startup makes it susceptible to safejab pressure); hitbox has a dead zone that can cause it to whiff through high airborne opponents; solid anti-air but cannot hit cross-up; 1st hit deals 400 damage and puts the opponent into a limited juggle state if it trades with a projectile (high float for easy hitconfirm)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "ingrid:raw:14",
+        "rawRef": "archive/staging/sf6-frame-data/raw/ingrid.json#/moves/14",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/ingrid.cargo.json#/data/cargoquery/15/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "11",
+          "total": "129",
+          "hit": "HKD +12",
+          "block": "-99"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "ingrid__super_art_2_L",
+      "name": "Order of the Sun (0 Stock)",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "P",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "1",
+          "numeric": 1
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "13",
+          "numeric": 13,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214P (0 Stock)",
+        "upstreamNotes: Fires beacon into the air that spawns 3 downward-hitting Super-priority projectiles (these projectiles disappear if Ingrid is hit); button strength determines beacon position (Modern Controls: hold back/neutral/forward to control position); LP version appears in front of the opponent, MP version appears above the opponent, HP version appears behind the opponent (except at fullscreen distance); can hold the button to spend up to 2 Sun Crests for additional projectiles; projectile startup varies based on strength: LP 103f / MP 68f / HP 98f; gap between blocked projectiles is 8f / 7f (varies when switching between stand/crouch block, but always large enough to throw between projectiles); grounded opponents are put into a free juggle state by the 3rd projectile (1st/2nd keep the opponent grounded); airborne opponents are put into a free juggle state or maintain the existing juggle count; Ingrid cannot gain additional Super gauge while the projectiles are active or until the current combo ends; after SA2 activation, can combo after a Forward Throw (limited juggle) or Back Throw (free juggle)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "ingrid:raw:1",
+        "rawRef": "archive/staging/sf6-frame-data/raw/ingrid.json#/moves/1",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/ingrid.cargo.json#/data/cargoquery/1/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "1",
+          "total": "13",
+          "hit": "-",
+          "block": "-"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": "startup=1とtotal=13は表の発動行。注記の弾発生LP103/MP68/HP98とは別指標。どちらを出題するか未決定。"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "ingrid__super_art_2_M",
+      "name": "Order of the Sun (0 Stock)",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "P",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "1",
+          "numeric": 1
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "13",
+          "numeric": 13,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214P (0 Stock)",
+        "upstreamNotes: Fires beacon into the air that spawns 3 downward-hitting Super-priority projectiles (these projectiles disappear if Ingrid is hit); button strength determines beacon position (Modern Controls: hold back/neutral/forward to control position); LP version appears in front of the opponent, MP version appears above the opponent, HP version appears behind the opponent (except at fullscreen distance); can hold the button to spend up to 2 Sun Crests for additional projectiles; projectile startup varies based on strength: LP 103f / MP 68f / HP 98f; gap between blocked projectiles is 8f / 7f (varies when switching between stand/crouch block, but always large enough to throw between projectiles); grounded opponents are put into a free juggle state by the 3rd projectile (1st/2nd keep the opponent grounded); airborne opponents are put into a free juggle state or maintain the existing juggle count; Ingrid cannot gain additional Super gauge while the projectiles are active or until the current combo ends; after SA2 activation, can combo after a Forward Throw (limited juggle) or Back Throw (free juggle)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "ingrid:raw:1",
+        "rawRef": "archive/staging/sf6-frame-data/raw/ingrid.json#/moves/1",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/ingrid.cargo.json#/data/cargoquery/1/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "1",
+          "total": "13",
+          "hit": "-",
+          "block": "-"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": "startup=1とtotal=13は表の発動行。注記の弾発生LP103/MP68/HP98とは別指標。どちらを出題するか未決定。"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "ingrid__super_art_2_H",
+      "name": "Order of the Sun (0 Stock)",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "P",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "1",
+          "numeric": 1
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "13",
+          "numeric": 13,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214P (0 Stock)",
+        "upstreamNotes: Fires beacon into the air that spawns 3 downward-hitting Super-priority projectiles (these projectiles disappear if Ingrid is hit); button strength determines beacon position (Modern Controls: hold back/neutral/forward to control position); LP version appears in front of the opponent, MP version appears above the opponent, HP version appears behind the opponent (except at fullscreen distance); can hold the button to spend up to 2 Sun Crests for additional projectiles; projectile startup varies based on strength: LP 103f / MP 68f / HP 98f; gap between blocked projectiles is 8f / 7f (varies when switching between stand/crouch block, but always large enough to throw between projectiles); grounded opponents are put into a free juggle state by the 3rd projectile (1st/2nd keep the opponent grounded); airborne opponents are put into a free juggle state or maintain the existing juggle count; Ingrid cannot gain additional Super gauge while the projectiles are active or until the current combo ends; after SA2 activation, can combo after a Forward Throw (limited juggle) or Back Throw (free juggle)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "ingrid:raw:1",
+        "rawRef": "archive/staging/sf6-frame-data/raw/ingrid.json#/moves/1",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/ingrid.cargo.json#/data/cargoquery/1/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "1",
+          "total": "13",
+          "hit": "-",
+          "block": "-"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": "startup=1とtotal=13は表の発動行。注記の弾発生LP103/MP68/HP98とは別指標。どちらを出題するか未決定。"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "ingrid__super_art_3_L",
+      "name": "Cosmic Ray",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "P",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "20",
+          "numeric": 20
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "90",
+          "numeric": 90,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-45",
+          "numeric": -45
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: Projectile hitbox that targets the opponent's position 8f before it becomes active (can continue moving slightly upward after this point); the opponent can avoid the projectile by moving quickly (like a fast Drive Rush or jumping after the Super freeze); cinematic time regenerates ~2.1 Drive bars for Ingrid; very slow startup makes it a poor reversal",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "ingrid:raw:17",
+        "rawRef": "archive/staging/sf6-frame-data/raw/ingrid.json#/moves/17",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/ingrid.cargo.json#/data/cargoquery/16/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "20",
+          "total": "90",
+          "hit": "HKD +30",
+          "block": "-45"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "ingrid__super_art_3_M",
+      "name": "Cosmic Ray",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "P",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "20",
+          "numeric": 20
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "90",
+          "numeric": 90,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-45",
+          "numeric": -45
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: Projectile hitbox that targets the opponent's position 8f before it becomes active (can continue moving slightly upward after this point); the opponent can avoid the projectile by moving quickly (like a fast Drive Rush or jumping after the Super freeze); cinematic time regenerates ~2.1 Drive bars for Ingrid; very slow startup makes it a poor reversal",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "ingrid:raw:17",
+        "rawRef": "archive/staging/sf6-frame-data/raw/ingrid.json#/moves/17",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/ingrid.cargo.json#/data/cargoquery/16/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "20",
+          "total": "90",
+          "hit": "HKD +30",
+          "block": "-45"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "ingrid__super_art_3_H",
+      "name": "Cosmic Ray",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "P",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "20",
+          "numeric": 20
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "90",
+          "numeric": 90,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-45",
+          "numeric": -45
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: Projectile hitbox that targets the opponent's position 8f before it becomes active (can continue moving slightly upward after this point); the opponent can avoid the projectile by moving quickly (like a fast Drive Rush or jumping after the Super freeze); cinematic time regenerates ~2.1 Drive bars for Ingrid; very slow startup makes it a poor reversal",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "ingrid:raw:17",
+        "rawRef": "archive/staging/sf6-frame-data/raw/ingrid.json#/moves/17",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/ingrid.cargo.json#/data/cargoquery/16/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "20",
+          "total": "90",
+          "hit": "HKD +30",
+          "block": "-45"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
       }
     }
   ]

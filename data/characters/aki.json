@@ -24,6 +24,10 @@
     "special": {
       "status": "complete",
       "verification": "unverified"
+    },
+    "super_art": {
+      "status": "complete",
+      "verification": "unverified"
     }
   },
   "moves": [
@@ -1726,6 +1730,705 @@
         "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
         "license": "CC-BY-SA-4.0",
         "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "aki__super_art_1_L",
+      "name": "Deadly Implication",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "K",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "80",
+          "numeric": 80,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-46",
+          "numeric": -46
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: Poisons opponent on hit; good anti-air hitbox but cannot hit cross-up; transition to a cinematic on hit; very short horizontal range; if SA1 trades with a projectile right as it hits, opponent will be launched into a high limited juggle float state, allowing a follow-up juggle",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "aki:raw:13",
+        "rawRef": "archive/staging/sf6-frame-data/raw/aki.json#/moves/13",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/aki.cargo.json#/data/cargoquery/13/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10",
+          "total": "80",
+          "hit": "KD +30",
+          "block": "-46"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "aki__super_art_1_M",
+      "name": "Deadly Implication",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "K",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "80",
+          "numeric": 80,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-46",
+          "numeric": -46
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: Poisons opponent on hit; good anti-air hitbox but cannot hit cross-up; transition to a cinematic on hit; very short horizontal range; if SA1 trades with a projectile right as it hits, opponent will be launched into a high limited juggle float state, allowing a follow-up juggle",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "aki:raw:13",
+        "rawRef": "archive/staging/sf6-frame-data/raw/aki.json#/moves/13",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/aki.cargo.json#/data/cargoquery/13/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10",
+          "total": "80",
+          "hit": "KD +30",
+          "block": "-46"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "aki__super_art_1_H",
+      "name": "Deadly Implication",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "K",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "80",
+          "numeric": 80,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-46",
+          "numeric": -46
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: Poisons opponent on hit; good anti-air hitbox but cannot hit cross-up; transition to a cinematic on hit; very short horizontal range; if SA1 trades with a projectile right as it hits, opponent will be launched into a high limited juggle float state, allowing a follow-up juggle",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "aki:raw:13",
+        "rawRef": "archive/staging/sf6-frame-data/raw/aki.json#/moves/13",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/aki.cargo.json#/data/cargoquery/13/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10",
+          "total": "80",
+          "hit": "KD +30",
+          "block": "-46"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "aki__super_art_2_L",
+      "name": "Tainted Talons",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "P",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "153",
+          "numeric": 153,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "unknown",
+          "display": null
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214P",
+        "upstreamNotes: No invincibility; Super-priority projectile hitboxes; button strength determines distance (LP close/mid range, MP mid range to full screen, HP full screen); poisons the opponent on hit; creates a pool that lasts 700f, poisoning opponent while in close proximity; reapplies poison as long as opponent is close to pool; pool placement depends on button strength used; poison pool moves forward after MP/HP versions; SA2 poison pool can exist simultaneously with 214MP pool (poison does not stack); MP version can be used to counter projectiles (if too far, may drop out; if too close, A.K.I. will be hit before projectile dissipates); heavier versions can whiff if used from close range, especially vs. crouching; opponent cannot Drive Reversal until the 2nd to last hit (right before poison detonation)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "aki:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/aki.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/aki.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "7",
+          "total": "153",
+          "hit": "KD +30",
+          "block": "-19~"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "unresolved"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "aki__super_art_2_M",
+      "name": "Tainted Talons",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "P",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "153",
+          "numeric": 153,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "unknown",
+          "display": null
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214P",
+        "upstreamNotes: No invincibility; Super-priority projectile hitboxes; button strength determines distance (LP close/mid range, MP mid range to full screen, HP full screen); poisons the opponent on hit; creates a pool that lasts 700f, poisoning opponent while in close proximity; reapplies poison as long as opponent is close to pool; pool placement depends on button strength used; poison pool moves forward after MP/HP versions; SA2 poison pool can exist simultaneously with 214MP pool (poison does not stack); MP version can be used to counter projectiles (if too far, may drop out; if too close, A.K.I. will be hit before projectile dissipates); heavier versions can whiff if used from close range, especially vs. crouching; opponent cannot Drive Reversal until the 2nd to last hit (right before poison detonation)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "aki:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/aki.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/aki.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "7",
+          "total": "153",
+          "hit": "KD +30",
+          "block": "-19~"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "unresolved"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "aki__super_art_2_H",
+      "name": "Tainted Talons",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "P",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "153",
+          "numeric": 153,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "unknown",
+          "display": null
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214P",
+        "upstreamNotes: No invincibility; Super-priority projectile hitboxes; button strength determines distance (LP close/mid range, MP mid range to full screen, HP full screen); poisons the opponent on hit; creates a pool that lasts 700f, poisoning opponent while in close proximity; reapplies poison as long as opponent is close to pool; pool placement depends on button strength used; poison pool moves forward after MP/HP versions; SA2 poison pool can exist simultaneously with 214MP pool (poison does not stack); MP version can be used to counter projectiles (if too far, may drop out; if too close, A.K.I. will be hit before projectile dissipates); heavier versions can whiff if used from close range, especially vs. crouching; opponent cannot Drive Reversal until the 2nd to last hit (right before poison detonation)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "aki:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/aki.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/aki.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "7",
+          "total": "153",
+          "hit": "KD +30",
+          "block": "-19~"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "unresolved"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "aki__super_art_3_L",
+      "name": "Claws of Ya Zi",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "P",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "70",
+          "numeric": 70,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-36",
+          "numeric": -36
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: Cannot hit cross-up; cinematic time regenerates ~2.2 Drive bars for A.K.I.",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "aki:raw:14",
+        "rawRef": "archive/staging/sf6-frame-data/raw/aki.json#/moves/14",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/aki.cargo.json#/data/cargoquery/15/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10",
+          "total": "70",
+          "hit": "HKD +30",
+          "block": "-36"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "aki__super_art_3_M",
+      "name": "Claws of Ya Zi",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "P",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "70",
+          "numeric": 70,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-36",
+          "numeric": -36
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: Cannot hit cross-up; cinematic time regenerates ~2.2 Drive bars for A.K.I.",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "aki:raw:14",
+        "rawRef": "archive/staging/sf6-frame-data/raw/aki.json#/moves/14",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/aki.cargo.json#/data/cargoquery/15/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10",
+          "total": "70",
+          "hit": "HKD +30",
+          "block": "-36"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "aki__super_art_3_H",
+      "name": "Claws of Ya Zi",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "P",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "70",
+          "numeric": 70,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-36",
+          "numeric": -36
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: Cannot hit cross-up; cinematic time regenerates ~2.2 Drive bars for A.K.I.",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "aki:raw:14",
+        "rawRef": "archive/staging/sf6-frame-data/raw/aki.json#/moves/14",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/aki.cargo.json#/data/cargoquery/15/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10",
+          "total": "70",
+          "hit": "HKD +30",
+          "block": "-36"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
       }
     }
   ]

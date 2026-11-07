@@ -79,7 +79,13 @@ export function AttackIcon({
     </svg>
   );
 }
-export function RotationIcon({ clockwise = true }: { clockwise?: boolean }) {
+export function RotationIcon({
+  clockwise = true,
+  turns = 1,
+}: {
+  clockwise?: boolean;
+  turns?: 1 | 2;
+}) {
   return (
     <svg
       className="direction-icon rotation-icon"
@@ -95,6 +101,18 @@ export function RotationIcon({ clockwise = true }: { clockwise?: boolean }) {
         />
         <path d="M14 7h9l-4.5 8Z" fill="currentColor" />
       </g>
+      {turns === 2 && (
+        <text
+          x="10"
+          y="16"
+          textAnchor="middle"
+          fill="currentColor"
+          fontSize="10"
+          fontWeight="bold"
+        >
+          2
+        </text>
+      )}
     </svg>
   );
 }
@@ -111,8 +129,10 @@ export function CommandNotation({
     <span
       className="command-directions"
       aria-label={
-        command === "360"
-          ? "1回転"
+        command === "360" || command === "720"
+          ? command === "720"
+            ? "2回転"
+            : "1回転"
           : supported
             ? tokens
                 .map((d) =>
@@ -124,8 +144,8 @@ export function CommandNotation({
             : command || "未入力"
       }
     >
-      {command === "360" ? (
-        <RotationIcon clockwise={clockwise} />
+      {command === "360" || command === "720" ? (
+        <RotationIcon clockwise={clockwise} turns={command === "720" ? 2 : 1} />
       ) : command && supported ? (
         tokens.map((d, i) => (
           <DirectionIcon
@@ -156,21 +176,25 @@ export function MoveNotation({ input }: { input: MoveInput }) {
       className="move-notation"
       role="img"
       aria-description={
-        input.type === "special" && input.motion === "[4]6"
+        input.type !== "normal" && input.motion === "[4]6"
           ? "後ろ溜めから前"
-          : input.type === "special" && input.motion === "[2]8"
+          : input.type !== "normal" && input.motion === "[2]8"
             ? "下溜めから上"
             : undefined
       }
       aria-label={
-        input.type === "special" && input.motion === "360"
-          ? `1回転＋${input.strength === "OD" ? `弱${input.button}＋中${input.button}` : `${{ L: "弱", M: "中", H: "強", none: "" }[input.strength]}${input.button}`}（${displayInput(input)}）`
-          : displayInput(input)
+        input.type === "super_art"
+          ? `SA${input.saLevel}：${input.motion === "720" ? "2回転" : input.motion}＋${{ L: "弱", M: "中", H: "強" }[input.strength]}${input.button}（${displayInput(input)}）`
+          : input.type === "special" && input.motion === "360"
+            ? `1回転＋${input.strength === "OD" ? `弱${input.button}＋中${input.button}` : `${{ L: "弱", M: "中", H: "強", none: "" }[input.strength]}${input.button}`}（${displayInput(input)}）`
+            : displayInput(input)
       }
     >
       <span aria-hidden="true">
+        {input.type === "super_art" && `SA${input.saLevel}：`}
         {command &&
           (command === "360" ||
+          command === "720" ||
           /^(?:\[[12346789]\]|[12346789])+$/.test(command) ? (
             <CommandNotation command={command} />
           ) : (

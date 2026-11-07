@@ -1,0 +1,1447 @@
+{
+  "pilot": true,
+  "characters": [
+    {
+      "id": "ryu",
+      "baseSlots": 3,
+      "inputRecords": 9,
+      "common": 9,
+      "unknown": []
+    },
+    {
+      "id": "dhalsim",
+      "baseSlots": 3,
+      "inputRecords": 9,
+      "common": 6,
+      "unknown": []
+    },
+    {
+      "id": "juri",
+      "baseSlots": 3,
+      "inputRecords": 9,
+      "common": 9,
+      "unknown": []
+    },
+    {
+      "id": "ingrid",
+      "baseSlots": 3,
+      "inputRecords": 9,
+      "common": 9,
+      "unknown": []
+    },
+    {
+      "id": "zangief",
+      "baseSlots": 3,
+      "inputRecords": 9,
+      "common": 9,
+      "unknown": []
+    },
+    {
+      "id": "guile",
+      "baseSlots": 3,
+      "inputRecords": 9,
+      "common": 6,
+      "unknown": []
+    }
+  ],
+  "sourceRows": [
+    {
+      "id": "aki:raw:0",
+      "characterId": "aki",
+      "saLevel": 2,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "aki:raw:13",
+      "characterId": "aki",
+      "saLevel": 1,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "aki:raw:14",
+      "characterId": "aki",
+      "saLevel": 3,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "aki:raw:15",
+      "characterId": "aki",
+      "saLevel": 3,
+      "classification": "excluded",
+      "reason": "critical_art"
+    },
+    {
+      "id": "akuma:raw:0",
+      "characterId": "akuma",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "special_state_only"
+    },
+    {
+      "id": "akuma:raw:1",
+      "characterId": "akuma",
+      "saLevel": 2,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "akuma:raw:14",
+      "characterId": "akuma",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "special_state_only"
+    },
+    {
+      "id": "akuma:raw:15",
+      "characterId": "akuma",
+      "saLevel": 3,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "akuma:raw:16",
+      "characterId": "akuma",
+      "saLevel": 3,
+      "classification": "excluded",
+      "reason": "critical_art"
+    },
+    {
+      "id": "akuma:raw:17",
+      "characterId": "akuma",
+      "saLevel": 1,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "akuma:raw:76",
+      "characterId": "akuma",
+      "saLevel": 1,
+      "classification": "excluded",
+      "reason": "airborne_only"
+    },
+    {
+      "id": "akuma:raw:87",
+      "characterId": "akuma",
+      "saLevel": 3,
+      "classification": "excluded",
+      "reason": "critical_art, sequential_input"
+    },
+    {
+      "id": "alex:raw:0",
+      "characterId": "alex",
+      "saLevel": 2,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "alex:raw:1",
+      "characterId": "alex",
+      "saLevel": 1,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "alex:raw:2",
+      "characterId": "alex",
+      "saLevel": 3,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "alex:raw:3",
+      "characterId": "alex",
+      "saLevel": 3,
+      "classification": "excluded",
+      "reason": "critical_art"
+    },
+    {
+      "id": "alex:raw:75",
+      "characterId": "alex",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "follow_up"
+    },
+    {
+      "id": "arjun:raw:0",
+      "characterId": "arjun",
+      "saLevel": 2,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "arjun:raw:6",
+      "characterId": "arjun",
+      "saLevel": 1,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "arjun:raw:7",
+      "characterId": "arjun",
+      "saLevel": 3,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "arjun:raw:8",
+      "characterId": "arjun",
+      "saLevel": 3,
+      "classification": "excluded",
+      "reason": "critical_art"
+    },
+    {
+      "id": "blanka:raw:0",
+      "characterId": "blanka",
+      "saLevel": 2,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "blanka:raw:8",
+      "characterId": "blanka",
+      "saLevel": 3,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "blanka:raw:9",
+      "characterId": "blanka",
+      "saLevel": 3,
+      "classification": "excluded",
+      "reason": "critical_art"
+    },
+    {
+      "id": "blanka:raw:10",
+      "characterId": "blanka",
+      "saLevel": 1,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "blanka:raw:84",
+      "characterId": "blanka",
+      "saLevel": null,
+      "classification": "excluded",
+      "reason": "sa_related_special"
+    },
+    {
+      "id": "cammy:raw:0",
+      "characterId": "cammy",
+      "saLevel": 2,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "cammy:raw:5",
+      "characterId": "cammy",
+      "saLevel": 1,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "cammy:raw:6",
+      "characterId": "cammy",
+      "saLevel": 3,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "cammy:raw:7",
+      "characterId": "cammy",
+      "saLevel": 3,
+      "classification": "excluded",
+      "reason": "critical_art"
+    },
+    {
+      "id": "cammy:raw:60",
+      "characterId": "cammy",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "airborne_only"
+    },
+    {
+      "id": "chunli:raw:0",
+      "characterId": "chunli",
+      "saLevel": 3,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "chunli:raw:1",
+      "characterId": "chunli",
+      "saLevel": 3,
+      "classification": "excluded",
+      "reason": "critical_art"
+    },
+    {
+      "id": "chunli:raw:18",
+      "characterId": "chunli",
+      "saLevel": 2,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "chunli:raw:19",
+      "characterId": "chunli",
+      "saLevel": 1,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "chunli:raw:58",
+      "characterId": "chunli",
+      "saLevel": 1,
+      "classification": "excluded",
+      "reason": "airborne_only"
+    },
+    {
+      "id": "cviper:raw:0",
+      "characterId": "cviper",
+      "saLevel": 3,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "cviper:raw:1",
+      "characterId": "cviper",
+      "saLevel": 3,
+      "classification": "excluded",
+      "reason": "critical_art"
+    },
+    {
+      "id": "cviper:raw:2",
+      "characterId": "cviper",
+      "saLevel": 2,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "cviper:raw:17",
+      "characterId": "cviper",
+      "saLevel": 1,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "dee_jay:raw:0",
+      "characterId": "dee_jay",
+      "saLevel": 3,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "dee_jay:raw:1",
+      "characterId": "dee_jay",
+      "saLevel": 3,
+      "classification": "excluded",
+      "reason": "critical_art"
+    },
+    {
+      "id": "dee_jay:raw:20",
+      "characterId": "dee_jay",
+      "saLevel": 2,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "dee_jay:raw:21",
+      "characterId": "dee_jay",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "follow_up"
+    },
+    {
+      "id": "dee_jay:raw:22",
+      "characterId": "dee_jay",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "follow_up"
+    },
+    {
+      "id": "dee_jay:raw:23",
+      "characterId": "dee_jay",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "follow_up"
+    },
+    {
+      "id": "dee_jay:raw:24",
+      "characterId": "dee_jay",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "follow_up"
+    },
+    {
+      "id": "dee_jay:raw:25",
+      "characterId": "dee_jay",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "follow_up"
+    },
+    {
+      "id": "dee_jay:raw:26",
+      "characterId": "dee_jay",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "follow_up"
+    },
+    {
+      "id": "dee_jay:raw:27",
+      "characterId": "dee_jay",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "follow_up"
+    },
+    {
+      "id": "dee_jay:raw:28",
+      "characterId": "dee_jay",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "follow_up"
+    },
+    {
+      "id": "dee_jay:raw:29",
+      "characterId": "dee_jay",
+      "saLevel": 1,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "dee_jay:raw:30",
+      "characterId": "dee_jay",
+      "saLevel": 2,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "dee_jay:raw:31",
+      "characterId": "dee_jay",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "follow_up"
+    },
+    {
+      "id": "dee_jay:raw:32",
+      "characterId": "dee_jay",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "follow_up"
+    },
+    {
+      "id": "dee_jay:raw:33",
+      "characterId": "dee_jay",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "follow_up"
+    },
+    {
+      "id": "dee_jay:raw:34",
+      "characterId": "dee_jay",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "follow_up"
+    },
+    {
+      "id": "dee_jay:raw:35",
+      "characterId": "dee_jay",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "follow_up"
+    },
+    {
+      "id": "dee_jay:raw:36",
+      "characterId": "dee_jay",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "follow_up"
+    },
+    {
+      "id": "dee_jay:raw:37",
+      "characterId": "dee_jay",
+      "saLevel": 2,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "dee_jay:raw:38",
+      "characterId": "dee_jay",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "follow_up"
+    },
+    {
+      "id": "dee_jay:raw:39",
+      "characterId": "dee_jay",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "follow_up"
+    },
+    {
+      "id": "dee_jay:raw:40",
+      "characterId": "dee_jay",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "follow_up"
+    },
+    {
+      "id": "dee_jay:raw:41",
+      "characterId": "dee_jay",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "follow_up"
+    },
+    {
+      "id": "dee_jay:raw:42",
+      "characterId": "dee_jay",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "follow_up"
+    },
+    {
+      "id": "dee_jay:raw:43",
+      "characterId": "dee_jay",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "follow_up"
+    },
+    {
+      "id": "dee_jay:raw:44",
+      "characterId": "dee_jay",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "follow_up"
+    },
+    {
+      "id": "dee_jay:raw:45",
+      "characterId": "dee_jay",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "follow_up"
+    },
+    {
+      "id": "dhalsim:raw:4",
+      "characterId": "dhalsim",
+      "saLevel": 2,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "dhalsim:raw:5",
+      "characterId": "dhalsim",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "button_hold"
+    },
+    {
+      "id": "dhalsim:raw:6",
+      "characterId": "dhalsim",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "button_hold"
+    },
+    {
+      "id": "dhalsim:raw:7",
+      "characterId": "dhalsim",
+      "saLevel": 1,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "dhalsim:raw:8",
+      "characterId": "dhalsim",
+      "saLevel": 3,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "dhalsim:raw:9",
+      "characterId": "dhalsim",
+      "saLevel": 3,
+      "classification": "excluded",
+      "reason": "critical_art"
+    },
+    {
+      "id": "dhalsim:raw:10",
+      "characterId": "dhalsim",
+      "saLevel": 1,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "dhalsim:raw:11",
+      "characterId": "dhalsim",
+      "saLevel": 1,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "e_honda:raw:0",
+      "characterId": "e_honda",
+      "saLevel": 3,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "e_honda:raw:1",
+      "characterId": "e_honda",
+      "saLevel": 3,
+      "classification": "excluded",
+      "reason": "critical_art"
+    },
+    {
+      "id": "e_honda:raw:8",
+      "characterId": "e_honda",
+      "saLevel": 1,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "e_honda:raw:28",
+      "characterId": "e_honda",
+      "saLevel": 2,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "ed:raw:0",
+      "characterId": "ed",
+      "saLevel": 2,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "ed:raw:5",
+      "characterId": "ed",
+      "saLevel": 1,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "ed:raw:6",
+      "characterId": "ed",
+      "saLevel": 3,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "ed:raw:7",
+      "characterId": "ed",
+      "saLevel": 3,
+      "classification": "excluded",
+      "reason": "critical_art"
+    },
+    {
+      "id": "elena:raw:0",
+      "characterId": "elena",
+      "saLevel": 3,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "elena:raw:1",
+      "characterId": "elena",
+      "saLevel": 3,
+      "classification": "excluded",
+      "reason": "critical_art"
+    },
+    {
+      "id": "elena:raw:12",
+      "characterId": "elena",
+      "saLevel": 1,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "elena:raw:13",
+      "characterId": "elena",
+      "saLevel": 2,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "elena:raw:14",
+      "characterId": "elena",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "follow_up"
+    },
+    {
+      "id": "guile:raw:0",
+      "characterId": "guile",
+      "saLevel": 2,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "guile:raw:24",
+      "characterId": "guile",
+      "saLevel": 1,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "guile:raw:25",
+      "characterId": "guile",
+      "saLevel": 3,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "guile:raw:26",
+      "characterId": "guile",
+      "saLevel": 3,
+      "classification": "excluded",
+      "reason": "critical_art"
+    },
+    {
+      "id": "guile:raw:27",
+      "characterId": "guile",
+      "saLevel": 1,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "ingrid:raw:1",
+      "characterId": "ingrid",
+      "saLevel": 2,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "ingrid:raw:2",
+      "characterId": "ingrid",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "button_hold, stock_or_enhanced"
+    },
+    {
+      "id": "ingrid:raw:3",
+      "characterId": "ingrid",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "button_hold, stock_or_enhanced"
+    },
+    {
+      "id": "ingrid:raw:14",
+      "characterId": "ingrid",
+      "saLevel": 1,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "ingrid:raw:15",
+      "characterId": "ingrid",
+      "saLevel": 1,
+      "classification": "excluded",
+      "reason": "button_hold, stock_or_enhanced"
+    },
+    {
+      "id": "ingrid:raw:16",
+      "characterId": "ingrid",
+      "saLevel": 1,
+      "classification": "excluded",
+      "reason": "button_hold, stock_or_enhanced"
+    },
+    {
+      "id": "ingrid:raw:17",
+      "characterId": "ingrid",
+      "saLevel": 3,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "ingrid:raw:18",
+      "characterId": "ingrid",
+      "saLevel": 3,
+      "classification": "excluded",
+      "reason": "critical_art"
+    },
+    {
+      "id": "ingrid:raw:36",
+      "characterId": "ingrid",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "special_state_only"
+    },
+    {
+      "id": "jamie:raw:0",
+      "characterId": "jamie",
+      "saLevel": 2,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "jamie:raw:12",
+      "characterId": "jamie",
+      "saLevel": 1,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "jamie:raw:13",
+      "characterId": "jamie",
+      "saLevel": 1,
+      "classification": "excluded",
+      "reason": "drink_level_dependency, follow_up"
+    },
+    {
+      "id": "jamie:raw:14",
+      "characterId": "jamie",
+      "saLevel": 3,
+      "classification": "excluded",
+      "reason": "critical_art, drink_level_dependency"
+    },
+    {
+      "id": "jamie:raw:15",
+      "characterId": "jamie",
+      "saLevel": 3,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "jp:raw:0",
+      "characterId": "jp",
+      "saLevel": 2,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "jp:raw:14",
+      "characterId": "jp",
+      "saLevel": 3,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "jp:raw:15",
+      "characterId": "jp",
+      "saLevel": 3,
+      "classification": "excluded",
+      "reason": "critical_art"
+    },
+    {
+      "id": "jp:raw:16",
+      "characterId": "jp",
+      "saLevel": 1,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "juri:raw:0",
+      "characterId": "juri",
+      "saLevel": 3,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "juri:raw:1",
+      "characterId": "juri",
+      "saLevel": 3,
+      "classification": "excluded",
+      "reason": "critical_art"
+    },
+    {
+      "id": "juri:raw:2",
+      "characterId": "juri",
+      "saLevel": 2,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "juri:raw:3",
+      "characterId": "juri",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "button_hold"
+    },
+    {
+      "id": "juri:raw:8",
+      "characterId": "juri",
+      "saLevel": 1,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "juri:raw:9",
+      "characterId": "juri",
+      "saLevel": 1,
+      "classification": "excluded",
+      "reason": "button_hold"
+    },
+    {
+      "id": "ken:raw:0",
+      "characterId": "ken",
+      "saLevel": 1,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "ken:raw:5",
+      "characterId": "ken",
+      "saLevel": 2,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "ken:raw:6",
+      "characterId": "ken",
+      "saLevel": 3,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "ken:raw:7",
+      "characterId": "ken",
+      "saLevel": 3,
+      "classification": "excluded",
+      "reason": "critical_art"
+    },
+    {
+      "id": "kimberly:raw:0",
+      "characterId": "kimberly",
+      "saLevel": 2,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "kimberly:raw:11",
+      "characterId": "kimberly",
+      "saLevel": 1,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "kimberly:raw:12",
+      "characterId": "kimberly",
+      "saLevel": 1,
+      "classification": "excluded",
+      "reason": "button_hold"
+    },
+    {
+      "id": "kimberly:raw:13",
+      "characterId": "kimberly",
+      "saLevel": 3,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "kimberly:raw:14",
+      "characterId": "kimberly",
+      "saLevel": 3,
+      "classification": "excluded",
+      "reason": "critical_art"
+    },
+    {
+      "id": "kimberly:raw:68",
+      "characterId": "kimberly",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "airborne_only"
+    },
+    {
+      "id": "lily:raw:0",
+      "characterId": "lily",
+      "saLevel": 3,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "lily:raw:1",
+      "characterId": "lily",
+      "saLevel": 3,
+      "classification": "excluded",
+      "reason": "critical_art"
+    },
+    {
+      "id": "lily:raw:8",
+      "characterId": "lily",
+      "saLevel": 2,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "lily:raw:9",
+      "characterId": "lily",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "stock_or_enhanced"
+    },
+    {
+      "id": "lily:raw:10",
+      "characterId": "lily",
+      "saLevel": 1,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "lily:raw:56",
+      "characterId": "lily",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "airborne_only"
+    },
+    {
+      "id": "lily:raw:57",
+      "characterId": "lily",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "airborne_only, stock_or_enhanced"
+    },
+    {
+      "id": "luke:raw:0",
+      "characterId": "luke",
+      "saLevel": 2,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "luke:raw:12",
+      "characterId": "luke",
+      "saLevel": 3,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "luke:raw:13",
+      "characterId": "luke",
+      "saLevel": 3,
+      "classification": "excluded",
+      "reason": "critical_art"
+    },
+    {
+      "id": "luke:raw:14",
+      "characterId": "luke",
+      "saLevel": 1,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "m_bison:raw:0",
+      "characterId": "m_bison",
+      "saLevel": 2,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "m_bison:raw:1",
+      "characterId": "m_bison",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "special_state_only"
+    },
+    {
+      "id": "m_bison:raw:10",
+      "characterId": "m_bison",
+      "saLevel": 1,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "m_bison:raw:11",
+      "characterId": "m_bison",
+      "saLevel": 3,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "m_bison:raw:12",
+      "characterId": "m_bison",
+      "saLevel": 3,
+      "classification": "excluded",
+      "reason": "critical_art"
+    },
+    {
+      "id": "mai:raw:0",
+      "characterId": "mai",
+      "saLevel": 3,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "mai:raw:1",
+      "characterId": "mai",
+      "saLevel": 3,
+      "classification": "excluded",
+      "reason": "critical_art"
+    },
+    {
+      "id": "mai:raw:10",
+      "characterId": "mai",
+      "saLevel": 2,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "mai:raw:11",
+      "characterId": "mai",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "stock_or_enhanced"
+    },
+    {
+      "id": "mai:raw:12",
+      "characterId": "mai",
+      "saLevel": 1,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "mai:raw:13",
+      "characterId": "mai",
+      "saLevel": 1,
+      "classification": "excluded",
+      "reason": "stock_or_enhanced"
+    },
+    {
+      "id": "mai:raw:74",
+      "characterId": "mai",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "airborne_only"
+    },
+    {
+      "id": "mai:raw:75",
+      "characterId": "mai",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "airborne_only, stock_or_enhanced"
+    },
+    {
+      "id": "manon:raw:0",
+      "characterId": "manon",
+      "saLevel": 2,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "manon:raw:5",
+      "characterId": "manon",
+      "saLevel": 1,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "manon:raw:6",
+      "characterId": "manon",
+      "saLevel": 3,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "manon:raw:7",
+      "characterId": "manon",
+      "saLevel": 3,
+      "classification": "excluded",
+      "reason": "critical_art"
+    },
+    {
+      "id": "marisa:raw:0",
+      "characterId": "marisa",
+      "saLevel": 2,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "marisa:raw:17",
+      "characterId": "marisa",
+      "saLevel": 3,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "marisa:raw:18",
+      "characterId": "marisa",
+      "saLevel": 3,
+      "classification": "excluded",
+      "reason": "critical_art"
+    },
+    {
+      "id": "marisa:raw:19",
+      "characterId": "marisa",
+      "saLevel": 1,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "marisa:raw:20",
+      "characterId": "marisa",
+      "saLevel": 1,
+      "classification": "excluded",
+      "reason": "button_hold, counter_trigger"
+    },
+    {
+      "id": "marisa:raw:21",
+      "characterId": "marisa",
+      "saLevel": 1,
+      "classification": "excluded",
+      "reason": "button_hold"
+    },
+    {
+      "id": "rashid:raw:0",
+      "characterId": "rashid",
+      "saLevel": 2,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "rashid:raw:16",
+      "characterId": "rashid",
+      "saLevel": 1,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "rashid:raw:17",
+      "characterId": "rashid",
+      "saLevel": 3,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "rashid:raw:18",
+      "characterId": "rashid",
+      "saLevel": 3,
+      "classification": "excluded",
+      "reason": "critical_art"
+    },
+    {
+      "id": "ryu:raw:0",
+      "characterId": "ryu",
+      "saLevel": 2,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "ryu:raw:1",
+      "characterId": "ryu",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "stock_or_enhanced"
+    },
+    {
+      "id": "ryu:raw:2",
+      "characterId": "ryu",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "button_hold, stock_or_enhanced"
+    },
+    {
+      "id": "ryu:raw:3",
+      "characterId": "ryu",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "button_hold, stock_or_enhanced"
+    },
+    {
+      "id": "ryu:raw:4",
+      "characterId": "ryu",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "button_hold"
+    },
+    {
+      "id": "ryu:raw:5",
+      "characterId": "ryu",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "button_hold"
+    },
+    {
+      "id": "ryu:raw:17",
+      "characterId": "ryu",
+      "saLevel": 3,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "ryu:raw:18",
+      "characterId": "ryu",
+      "saLevel": 3,
+      "classification": "excluded",
+      "reason": "critical_art"
+    },
+    {
+      "id": "ryu:raw:19",
+      "characterId": "ryu",
+      "saLevel": 1,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "ryu:raw:20",
+      "characterId": "ryu",
+      "saLevel": 1,
+      "classification": "excluded",
+      "reason": "stock_or_enhanced"
+    },
+    {
+      "id": "sagat:raw:0",
+      "characterId": "sagat",
+      "saLevel": 2,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "sagat:raw:1",
+      "characterId": "sagat",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "follow_up, direction_ender"
+    },
+    {
+      "id": "sagat:raw:2",
+      "characterId": "sagat",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "follow_up, direction_ender"
+    },
+    {
+      "id": "sagat:raw:3",
+      "characterId": "sagat",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "follow_up, direction_ender"
+    },
+    {
+      "id": "sagat:raw:4",
+      "characterId": "sagat",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "follow_up, direction_ender"
+    },
+    {
+      "id": "sagat:raw:15",
+      "characterId": "sagat",
+      "saLevel": 3,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "sagat:raw:16",
+      "characterId": "sagat",
+      "saLevel": 3,
+      "classification": "excluded",
+      "reason": "critical_art"
+    },
+    {
+      "id": "sagat:raw:17",
+      "characterId": "sagat",
+      "saLevel": 1,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "terry:raw:0",
+      "characterId": "terry",
+      "saLevel": 2,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "terry:raw:1",
+      "characterId": "terry",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "follow_up"
+    },
+    {
+      "id": "terry:raw:2",
+      "characterId": "terry",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "follow_up"
+    },
+    {
+      "id": "terry:raw:12",
+      "characterId": "terry",
+      "saLevel": 1,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "terry:raw:13",
+      "characterId": "terry",
+      "saLevel": 3,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "terry:raw:14",
+      "characterId": "terry",
+      "saLevel": 3,
+      "classification": "excluded",
+      "reason": "critical_art"
+    },
+    {
+      "id": "yasmine:raw:0",
+      "characterId": "yasmine",
+      "saLevel": 2,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "yasmine:raw:8",
+      "characterId": "yasmine",
+      "saLevel": 1,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "yasmine:raw:9",
+      "characterId": "yasmine",
+      "saLevel": 3,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "yasmine:raw:10",
+      "characterId": "yasmine",
+      "saLevel": 3,
+      "classification": "excluded",
+      "reason": "critical_art"
+    },
+    {
+      "id": "zangief:raw:5",
+      "characterId": "zangief",
+      "saLevel": 1,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "zangief:raw:6",
+      "characterId": "zangief",
+      "saLevel": 2,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "zangief:raw:7",
+      "characterId": "zangief",
+      "saLevel": 2,
+      "classification": "excluded",
+      "reason": "button_hold"
+    },
+    {
+      "id": "zangief:raw:49",
+      "characterId": "zangief",
+      "saLevel": 3,
+      "classification": "adopted",
+      "reason": "SA-D1/D4 ground base"
+    },
+    {
+      "id": "zangief:raw:50",
+      "characterId": "zangief",
+      "saLevel": 3,
+      "classification": "excluded",
+      "reason": "critical_art"
+    }
+  ],
+  "adoptedSourceRows": 101,
+  "excludedSourceRows": 98,
+  "baseSlots": 18,
+  "inputRecords": 54,
+  "originalRecordsPreserved": false
+}

@@ -676,3 +676,8 @@ summary {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+.sa-level-toggle {
+  display: flex;
+  width: fit-content;
+  margin-top: 0.5rem;
+}

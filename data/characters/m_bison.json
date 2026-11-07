@@ -24,6 +24,10 @@
     "special": {
       "status": "complete",
       "verification": "unverified"
+    },
+    "super_art": {
+      "status": "complete",
+      "verification": "unverified"
     }
   },
   "moves": [
@@ -1623,6 +1627,708 @@
         "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
         "license": "CC-BY-SA-4.0",
         "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "m_bison__super_art_1_L",
+      "name": "Knee Press Nightmare",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "K",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "113",
+          "numeric": 113,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-41",
+          "numeric": -41
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: First hit cause Bison to enter the full animation; connecting with the 2nd-4th hits leads to a weaker version with only 600-1200 damage and much worse KD advantage; causes planted Psycho Mine to disappear; opponents can jump out after Super freeze to escape chip damage (except Dhalsim/Lily/Zangief)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:02.878Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "m_bison:raw:10",
+        "rawRef": "archive/staging/sf6-frame-data/raw/m_bison.json#/moves/10",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json#/data/cargoquery/11/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10",
+          "total": "113",
+          "hit": "KD +11 (KD +2)",
+          "block": "-41"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "m_bison__super_art_1_M",
+      "name": "Knee Press Nightmare",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "K",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "113",
+          "numeric": 113,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-41",
+          "numeric": -41
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: First hit cause Bison to enter the full animation; connecting with the 2nd-4th hits leads to a weaker version with only 600-1200 damage and much worse KD advantage; causes planted Psycho Mine to disappear; opponents can jump out after Super freeze to escape chip damage (except Dhalsim/Lily/Zangief)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:02.878Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "m_bison:raw:10",
+        "rawRef": "archive/staging/sf6-frame-data/raw/m_bison.json#/moves/10",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json#/data/cargoquery/11/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10",
+          "total": "113",
+          "hit": "KD +11 (KD +2)",
+          "block": "-41"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "m_bison__super_art_1_H",
+      "name": "Knee Press Nightmare",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "K",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "113",
+          "numeric": 113,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-41",
+          "numeric": -41
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: First hit cause Bison to enter the full animation; connecting with the 2nd-4th hits leads to a weaker version with only 600-1200 damage and much worse KD advantage; causes planted Psycho Mine to disappear; opponents can jump out after Super freeze to escape chip damage (except Dhalsim/Lily/Zangief)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:02.878Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "m_bison:raw:10",
+        "rawRef": "archive/staging/sf6-frame-data/raw/m_bison.json#/moves/10",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json#/data/cargoquery/11/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10",
+          "total": "113",
+          "hit": "KD +11 (KD +2)",
+          "block": "-41"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "m_bison__super_art_2_L",
+      "name": "Psycho Punisher",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "K",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "24",
+          "numeric": 24
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "82",
+          "numeric": 82,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-34",
+          "numeric": -34
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214K",
+        "upstreamNotes: Can steer left/right during startup; can hit cross-up; causes planted Psycho Mine to disappear; can be used as a fullscreen punish against projectiles or install moves that would normally be safe due to distance; cannot be beaten by air-invuln moves because Bison is technically never considered airborne",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:02.878Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "m_bison:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/m_bison.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "24",
+          "total": "82",
+          "hit": "HKD +23",
+          "block": "-34"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "m_bison__super_art_2_M",
+      "name": "Psycho Punisher",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "K",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "24",
+          "numeric": 24
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "82",
+          "numeric": 82,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-34",
+          "numeric": -34
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214K",
+        "upstreamNotes: Can steer left/right during startup; can hit cross-up; causes planted Psycho Mine to disappear; can be used as a fullscreen punish against projectiles or install moves that would normally be safe due to distance; cannot be beaten by air-invuln moves because Bison is technically never considered airborne",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:02.878Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "m_bison:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/m_bison.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "24",
+          "total": "82",
+          "hit": "HKD +23",
+          "block": "-34"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "m_bison__super_art_2_H",
+      "name": "Psycho Punisher",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "K",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "24",
+          "numeric": 24
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "82",
+          "numeric": 82,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-34",
+          "numeric": -34
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214K",
+        "upstreamNotes: Can steer left/right during startup; can hit cross-up; causes planted Psycho Mine to disappear; can be used as a fullscreen punish against projectiles or install moves that would normally be safe due to distance; cannot be beaten by air-invuln moves because Bison is technically never considered airborne",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:02.878Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "m_bison:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/m_bison.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "24",
+          "total": "82",
+          "hit": "HKD +23",
+          "block": "-34"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "m_bison__super_art_3_L",
+      "name": "Unlimited Psycho Crusher",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "P",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "80",
+          "numeric": 80,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-46",
+          "numeric": -46
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: Travels slightly under 1/2 screen making it a viable projectile counter; opponent cannot jump out after Super freeze to escape chip damage; cinematic time regenerates ~2 Drive bars for M. Bison; causes planted Psycho Mine to disappear; only 5f startup when canceled from special moves",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:02.878Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "m_bison:raw:11",
+        "rawRef": "archive/staging/sf6-frame-data/raw/m_bison.json#/moves/11",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json#/data/cargoquery/12/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10(5)",
+          "total": "80",
+          "hit": "HKD +15",
+          "block": "-46"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "m_bison__super_art_3_M",
+      "name": "Unlimited Psycho Crusher",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "P",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "80",
+          "numeric": 80,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-46",
+          "numeric": -46
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: Travels slightly under 1/2 screen making it a viable projectile counter; opponent cannot jump out after Super freeze to escape chip damage; cinematic time regenerates ~2 Drive bars for M. Bison; causes planted Psycho Mine to disappear; only 5f startup when canceled from special moves",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:02.878Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "m_bison:raw:11",
+        "rawRef": "archive/staging/sf6-frame-data/raw/m_bison.json#/moves/11",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json#/data/cargoquery/12/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10(5)",
+          "total": "80",
+          "hit": "HKD +15",
+          "block": "-46"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "m_bison__super_art_3_H",
+      "name": "Unlimited Psycho Crusher",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "P",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "80",
+          "numeric": 80,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-46",
+          "numeric": -46
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: Travels slightly under 1/2 screen making it a viable projectile counter; opponent cannot jump out after Super freeze to escape chip damage; cinematic time regenerates ~2 Drive bars for M. Bison; causes planted Psycho Mine to disappear; only 5f startup when canceled from special moves",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:02.878Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "m_bison:raw:11",
+        "rawRef": "archive/staging/sf6-frame-data/raw/m_bison.json#/moves/11",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json#/data/cargoquery/12/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10(5)",
+          "total": "80",
+          "hit": "HKD +15",
+          "block": "-46"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
       }
     }
   ]

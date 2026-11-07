@@ -1,5 +1,13 @@
 # データの正本と更新手順
 
+## SA統合後の更新（第15段階B）
+
+現在は32キャラ1196レコード（従来908＋SA288）、datasetId `super-arts-2026-11-07-r1`。SA96枠、原典基本101行、個別強度質問288レコードは別の集計単位である。
+
+調査成果物は固定し、`scripts/super-arts.ts`で保存raw/Cargoとの一致を検査して変換する。`npx tsx scripts/audit-super-arts.ts --pilot`で6キャラを確認し、全体は同コマンドのオプションなしで計画を生成する。`data:plan`→`npx tsx scripts/build-snapshot.ts --write --update`の従来の更新保護を通す。datasetIdの変更が必要。更新後は`npx tsx scripts/audit-super-arts.ts --check`で原典199行分類・96枠・288入力と開始時908レコードを検査する。
+
+従来normal/specialの監査・adoption-inputsは維持し、SAの分類はstaging/sa-integration/coverage.jsonに分離する。build-snapshotは従来の採用処理の後でSAを追加するため、再生成でSAが消えたりheldになったりしない。`test:data`でもこの再現と保護を検査する。SA-D1〜D5の正本はADOPTION_RULESの追補。調査validate.pyは908件だった第15段階A終了時用の固定検証であり、統合後は実行せず、SA監査で原典の不変性を確認する。
+
 現在のゲームが読む正本は`data/metadata.json`と`data/characters/*.json`。32体908レコード（採用873・保留27・明示的対象外8）、datasetIdは`scope-policy-2026-11-07-r1`。全32体が採用範囲でcompleteとなり抽選可能です。ケン・マリーザの63技のフレーム値とOD龍尾脚9Fは維持し、奮迅脚はユーザー指定で対象外へ変更しました。信頼性と採用可否の分離はDATA_SPEC.md、判断の再利用はADOPTION_RULES.mdを参照してください。
 
 | 場所                            | 役割・編集方針                                                      |

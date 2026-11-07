@@ -24,6 +24,10 @@
     "special": {
       "status": "complete",
       "verification": "unverified"
+    },
+    "super_art": {
+      "status": "complete",
+      "verification": "unverified"
     }
   },
   "moves": [
@@ -1624,6 +1628,705 @@
         "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
         "license": "CC-BY-SA-4.0",
         "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "ed__super_art_1_L",
+      "name": "Psycho Storm",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "K",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "13",
+          "numeric": 13
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "123",
+          "numeric": 123,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-32",
+          "numeric": -32
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: High juggle potential; performs final attack on hit only; all hits are a true blockstring (if 1st hit is Perfect Parried, leaves an 8f gap between hits); KD advantage is slightly higher vs. airborne opponents",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "ed:raw:5",
+        "rawRef": "archive/staging/sf6-frame-data/raw/ed.json#/moves/5",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/ed.cargo.json#/data/cargoquery/5/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "13",
+          "total": "123",
+          "hit": "KD +33",
+          "block": "-32"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "ed__super_art_1_M",
+      "name": "Psycho Storm",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "K",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "13",
+          "numeric": 13
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "123",
+          "numeric": 123,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-32",
+          "numeric": -32
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: High juggle potential; performs final attack on hit only; all hits are a true blockstring (if 1st hit is Perfect Parried, leaves an 8f gap between hits); KD advantage is slightly higher vs. airborne opponents",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "ed:raw:5",
+        "rawRef": "archive/staging/sf6-frame-data/raw/ed.json#/moves/5",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/ed.cargo.json#/data/cargoquery/5/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "13",
+          "total": "123",
+          "hit": "KD +33",
+          "block": "-32"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "ed__super_art_1_H",
+      "name": "Psycho Storm",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "K",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "13",
+          "numeric": 13
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "123",
+          "numeric": 123,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-32",
+          "numeric": -32
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: High juggle potential; performs final attack on hit only; all hits are a true blockstring (if 1st hit is Perfect Parried, leaves an 8f gap between hits); KD advantage is slightly higher vs. airborne opponents",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "ed:raw:5",
+        "rawRef": "archive/staging/sf6-frame-data/raw/ed.json#/moves/5",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/ed.cargo.json#/data/cargoquery/5/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "13",
+          "total": "123",
+          "hit": "KD +33",
+          "block": "-32"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "ed__super_art_2_L",
+      "name": "Psycho Cannon",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "P",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "35",
+          "numeric": 35,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "unknown",
+          "display": null
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214P",
+        "upstreamNotes: 7-hit Super-priority projectile; button strength determines projectile speed (LP slow, MP mid, HP fast); Modern Controls: hold direction during Super freeze to determine projectile speed (back / neutral / forward); first 6 hits keep the opponent grounded and do not increase the juggle count; last hit puts opponent into a limited juggle state; if last hit occurs simultaneously with another strike, opponent remains grounded for follow-up combo; KD advantage varies based on range and juggle height; low damage on its own, but fantastic for combos, mixups, pressure, and corner carry; LP version allows extended juggles for huge damage, corner carry, and Drive meter regeneration (on hit, deals all Drive Damage on the final hit to prevent huge swings in Drive meter); scales all Super meter build by 50% until the end of the combo",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "ed:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/ed.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/ed.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "8",
+          "total": "35",
+          "hit": "KD +115~",
+          "block": "+65~"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "unresolved"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "ed__super_art_2_M",
+      "name": "Psycho Cannon",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "P",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "35",
+          "numeric": 35,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "unknown",
+          "display": null
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214P",
+        "upstreamNotes: 7-hit Super-priority projectile; button strength determines projectile speed (LP slow, MP mid, HP fast); Modern Controls: hold direction during Super freeze to determine projectile speed (back / neutral / forward); first 6 hits keep the opponent grounded and do not increase the juggle count; last hit puts opponent into a limited juggle state; if last hit occurs simultaneously with another strike, opponent remains grounded for follow-up combo; KD advantage varies based on range and juggle height; low damage on its own, but fantastic for combos, mixups, pressure, and corner carry; LP version allows extended juggles for huge damage, corner carry, and Drive meter regeneration (on hit, deals all Drive Damage on the final hit to prevent huge swings in Drive meter); scales all Super meter build by 50% until the end of the combo",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "ed:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/ed.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/ed.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "8",
+          "total": "35",
+          "hit": "KD +115~",
+          "block": "+65~"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "unresolved"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "ed__super_art_2_H",
+      "name": "Psycho Cannon",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "P",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "35",
+          "numeric": 35,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "unknown",
+          "display": null
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214P",
+        "upstreamNotes: 7-hit Super-priority projectile; button strength determines projectile speed (LP slow, MP mid, HP fast); Modern Controls: hold direction during Super freeze to determine projectile speed (back / neutral / forward); first 6 hits keep the opponent grounded and do not increase the juggle count; last hit puts opponent into a limited juggle state; if last hit occurs simultaneously with another strike, opponent remains grounded for follow-up combo; KD advantage varies based on range and juggle height; low damage on its own, but fantastic for combos, mixups, pressure, and corner carry; LP version allows extended juggles for huge damage, corner carry, and Drive meter regeneration (on hit, deals all Drive Damage on the final hit to prevent huge swings in Drive meter); scales all Super meter build by 50% until the end of the combo",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "ed:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/ed.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/ed.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "8",
+          "total": "35",
+          "hit": "KD +115~",
+          "block": "+65~"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "unresolved"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "ed__super_art_3_L",
+      "name": "Psycho Chamber",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "P",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "83",
+          "numeric": 83,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-49",
+          "numeric": -49
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: Cinematic time regenerates ~2.2 Drive bars for Ed; only deals 500 damage on the first hit if it trades (only the first 5 active frames are invincible)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "ed:raw:6",
+        "rawRef": "archive/staging/sf6-frame-data/raw/ed.json#/moves/6",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/ed.cargo.json#/data/cargoquery/6/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10",
+          "total": "83",
+          "hit": "HKD +24",
+          "block": "-49"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "ed__super_art_3_M",
+      "name": "Psycho Chamber",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "P",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "83",
+          "numeric": 83,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-49",
+          "numeric": -49
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: Cinematic time regenerates ~2.2 Drive bars for Ed; only deals 500 damage on the first hit if it trades (only the first 5 active frames are invincible)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "ed:raw:6",
+        "rawRef": "archive/staging/sf6-frame-data/raw/ed.json#/moves/6",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/ed.cargo.json#/data/cargoquery/6/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10",
+          "total": "83",
+          "hit": "HKD +24",
+          "block": "-49"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "ed__super_art_3_H",
+      "name": "Psycho Chamber",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "P",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "83",
+          "numeric": 83,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-49",
+          "numeric": -49
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: Cinematic time regenerates ~2.2 Drive bars for Ed; only deals 500 damage on the first hit if it trades (only the first 5 active frames are invincible)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "ed:raw:6",
+        "rawRef": "archive/staging/sf6-frame-data/raw/ed.json#/moves/6",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/ed.cargo.json#/data/cargoquery/6/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10",
+          "total": "83",
+          "hit": "HKD +24",
+          "block": "-49"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
       }
     }
   ]

@@ -24,6 +24,10 @@
     "special": {
       "status": "complete",
       "verification": "unverified"
+    },
+    "super_art": {
+      "status": "complete",
+      "verification": "unverified"
     }
   },
   "moves": [
@@ -1928,6 +1932,708 @@
         "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
         "license": "CC-BY-SA-4.0",
         "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "terry__super_art_1_L",
+      "name": "Buster Wolf",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "K",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "78",
+          "numeric": 78,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-26",
+          "numeric": -26
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: Incurs a fixed 45f recovery on block (advantage is not affected by meaty timing); transitions to projectile follow-up on hit only; fast and long range, making it great for combos and punishes; puts opponent into limited juggle state and can combo into another SA1 if juggled high enough; if first hit trades, deals 500 damage and puts the opponent into a free juggle crumple state (may be able to follow up with moves like 214HP, Dash/DR normals, or another SA1)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "terry:raw:12",
+        "rawRef": "archive/staging/sf6-frame-data/raw/terry.json#/moves/12",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json#/data/cargoquery/12/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "7",
+          "total": "78(52)",
+          "hit": "KD +22",
+          "block": "-26"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "terry__super_art_1_M",
+      "name": "Buster Wolf",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "K",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "78",
+          "numeric": 78,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-26",
+          "numeric": -26
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: Incurs a fixed 45f recovery on block (advantage is not affected by meaty timing); transitions to projectile follow-up on hit only; fast and long range, making it great for combos and punishes; puts opponent into limited juggle state and can combo into another SA1 if juggled high enough; if first hit trades, deals 500 damage and puts the opponent into a free juggle crumple state (may be able to follow up with moves like 214HP, Dash/DR normals, or another SA1)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "terry:raw:12",
+        "rawRef": "archive/staging/sf6-frame-data/raw/terry.json#/moves/12",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json#/data/cargoquery/12/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "7",
+          "total": "78(52)",
+          "hit": "KD +22",
+          "block": "-26"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "terry__super_art_1_H",
+      "name": "Buster Wolf",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "K",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "78",
+          "numeric": 78,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-26",
+          "numeric": -26
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: Incurs a fixed 45f recovery on block (advantage is not affected by meaty timing); transitions to projectile follow-up on hit only; fast and long range, making it great for combos and punishes; puts opponent into limited juggle state and can combo into another SA1 if juggled high enough; if first hit trades, deals 500 damage and puts the opponent into a free juggle crumple state (may be able to follow up with moves like 214HP, Dash/DR normals, or another SA1)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "terry:raw:12",
+        "rawRef": "archive/staging/sf6-frame-data/raw/terry.json#/moves/12",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json#/data/cargoquery/12/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "7",
+          "total": "78(52)",
+          "hit": "KD +22",
+          "block": "-26"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "terry__super_art_2_L",
+      "name": "Power Geyser",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "P",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "13",
+          "numeric": 13
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "79",
+          "numeric": 79,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-27",
+          "numeric": -27
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214P",
+        "upstreamNotes: 1-hit Super-priority projectile hitbox with good anti-air and anti-projectile properties; can follow up with Twin Geyser (3 Drive bars) and Triple Geyser (1 Super bar) on hit only; starter scaling means that follow-ups will be heavily scaled after a reversal or anti-air SA2; can be performed during the last 4 recovery frames of 236MK for a juggle anywhere on screen; can also be input with 21416+MK+HP (cosmetic difference only)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "terry:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/terry.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "13",
+          "total": "79",
+          "hit": "KD +24",
+          "block": "-27"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "terry__super_art_2_M",
+      "name": "Power Geyser",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "P",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "13",
+          "numeric": 13
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "79",
+          "numeric": 79,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-27",
+          "numeric": -27
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214P",
+        "upstreamNotes: 1-hit Super-priority projectile hitbox with good anti-air and anti-projectile properties; can follow up with Twin Geyser (3 Drive bars) and Triple Geyser (1 Super bar) on hit only; starter scaling means that follow-ups will be heavily scaled after a reversal or anti-air SA2; can be performed during the last 4 recovery frames of 236MK for a juggle anywhere on screen; can also be input with 21416+MK+HP (cosmetic difference only)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "terry:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/terry.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "13",
+          "total": "79",
+          "hit": "KD +24",
+          "block": "-27"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "terry__super_art_2_H",
+      "name": "Power Geyser",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "P",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "13",
+          "numeric": 13
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "79",
+          "numeric": 79,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-27",
+          "numeric": -27
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214P",
+        "upstreamNotes: 1-hit Super-priority projectile hitbox with good anti-air and anti-projectile properties; can follow up with Twin Geyser (3 Drive bars) and Triple Geyser (1 Super bar) on hit only; starter scaling means that follow-ups will be heavily scaled after a reversal or anti-air SA2; can be performed during the last 4 recovery frames of 236MK for a juggle anywhere on screen; can also be input with 21416+MK+HP (cosmetic difference only)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "terry:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/terry.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "13",
+          "total": "79",
+          "hit": "KD +24",
+          "block": "-27"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "terry__super_art_3_L",
+      "name": "Rising Fang",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "P",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "91",
+          "numeric": 91,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-50",
+          "numeric": -50
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: Only the first 3 active frames cause cinematic hit; damage distribution on non-cinematic hit is 350(x6-7),550 with no HKD and less KD advantage; cinematic time regenerates ~2.1 Drive bars for Terry; faster 2f startup when canceled from Rising Tackle, Quick Burn, or Burning Knuckle; final hit whiffs on crouch block (reduced chip and Drive damage)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "terry:raw:13",
+        "rawRef": "archive/staging/sf6-frame-data/raw/terry.json#/moves/13",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json#/data/cargoquery/13/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "8(2)",
+          "total": "91",
+          "hit": "HKD +22 (KD +29~31)",
+          "block": "-50(-53)"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "terry__super_art_3_M",
+      "name": "Rising Fang",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "P",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "91",
+          "numeric": 91,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-50",
+          "numeric": -50
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: Only the first 3 active frames cause cinematic hit; damage distribution on non-cinematic hit is 350(x6-7),550 with no HKD and less KD advantage; cinematic time regenerates ~2.1 Drive bars for Terry; faster 2f startup when canceled from Rising Tackle, Quick Burn, or Burning Knuckle; final hit whiffs on crouch block (reduced chip and Drive damage)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "terry:raw:13",
+        "rawRef": "archive/staging/sf6-frame-data/raw/terry.json#/moves/13",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json#/data/cargoquery/13/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "8(2)",
+          "total": "91",
+          "hit": "HKD +22 (KD +29~31)",
+          "block": "-50(-53)"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "terry__super_art_3_H",
+      "name": "Rising Fang",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "P",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "91",
+          "numeric": 91,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-50",
+          "numeric": -50
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: Only the first 3 active frames cause cinematic hit; damage distribution on non-cinematic hit is 350(x6-7),550 with no HKD and less KD advantage; cinematic time regenerates ~2.1 Drive bars for Terry; faster 2f startup when canceled from Rising Tackle, Quick Burn, or Burning Knuckle; final hit whiffs on crouch block (reduced chip and Drive damage)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "terry:raw:13",
+        "rawRef": "archive/staging/sf6-frame-data/raw/terry.json#/moves/13",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json#/data/cargoquery/13/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "8(2)",
+          "total": "91",
+          "hit": "HKD +22 (KD +29~31)",
+          "block": "-50(-53)"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
       }
     }
   ]

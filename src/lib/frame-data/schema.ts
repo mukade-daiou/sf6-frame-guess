@@ -62,6 +62,11 @@ export const frameValueSchema = z
       });
     }
   });
+export const saLevelSchema = z.union([
+  z.literal(1),
+  z.literal(2),
+  z.literal(3),
+]);
 export const inputSchema = z
   .discriminatedUnion("type", [
     z.object({
@@ -79,6 +84,14 @@ export const inputSchema = z
       button: z.enum(["P", "K"]),
       strength: z.enum(["L", "M", "H", "OD", "none"]),
       buttonCombination: z.enum(["LP+MP", "LK+MK"]).optional(),
+    }),
+    z.object({
+      type: z.literal("super_art"),
+      saLevel: saLevelSchema,
+      motion: text.regex(/^(?:[12346789]+|\[4\]646|720)$/),
+      button: z.enum(["P", "K"]),
+      strength: z.enum(["L", "M", "H"]),
+      adoptionBasis: text,
     }),
   ])
   .superRefine((input, ctx) => {
@@ -101,7 +114,7 @@ export const moveSchema = z
     adoption: adoptionSchema.optional(),
     id: text,
     name: text,
-    category: z.enum(["normal", "special"]),
+    category: z.enum(["normal", "special", "super_art"]),
     input: inputSchema,
     variant: z.object({
       kind: z.enum(["base", "conditional"]),
@@ -120,12 +133,31 @@ export const moveSchema = z
     }),
     notes: z.array(text),
     source: sourceSchema,
+    saEvidence: z
+      .object({
+        researchRecordId: text,
+        rawRef: text,
+        cargoRef: text,
+        strengthBasis: z.enum(["explicit", "explicit_group", "user_common"]),
+        sourceNotation: z.record(z.string(), z.string().nullable()),
+        frameOrigins: z.record(
+          z.string(),
+          z.enum(["source", "activation_missing_rule", "unresolved"]),
+        ),
+        laterAttackStartup: z.string().nullable(),
+      })
+      .optional(),
   })
   .superRefine((move, ctx) => {
     if (move.category !== move.input.type)
       ctx.addIssue({
         code: "custom",
         message: "category must match input.type",
+      });
+    if (move.category === "super_art" && !move.saEvidence)
+      ctx.addIssue({
+        code: "custom",
+        message: "SA requires explicit source and adoption evidence",
       });
     if (move.variant.kind === "conditional" && !move.variant.condition)
       ctx.addIssue({
@@ -165,7 +197,11 @@ export const characterSchema = z.object({
   nameEn: text,
   gameVersion: text,
   source: sourceSchema,
-  coverage: z.object({ normal: coverage, special: coverage }),
+  coverage: z.object({
+    normal: coverage,
+    special: coverage,
+    super_art: coverage.optional(),
+  }),
   moves: z.array(moveSchema),
 });
 export const metadataSchema = z.object({

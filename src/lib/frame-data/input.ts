@@ -3,6 +3,7 @@ import type { MoveInput } from "./schema";
 // Question controls support directional motions and six attacks plus OD pairs.
 // Supports the two explicit charge motions; other complex records remain intact.
 export function isQuestionInput(input: MoveInput): boolean {
+  if (input.type === "super_art") return true;
   return (
     input.type === "normal" ||
     (input.motion !== "none" &&
@@ -14,6 +15,8 @@ export function isQuestionInput(input: MoveInput): boolean {
 
 // No alias expansion or guessed motion normalization. Keys retain all input dimensions.
 export function inputKey(input: MoveInput): string {
+  if (input.type === "super_art")
+    return `super_art:${input.saLevel}:${input.motion}:${input.button}:${input.strength}`;
   if (input.type === "special" && input.motion === "none")
     return `special:buttons:${input.buttonCombination}`;
   return input.type === "normal"
@@ -31,5 +34,5 @@ export function displayInput(input: MoveInput): string {
       : input.strength === "none"
         ? input.button
         : `${input.strength}${input.button}`;
-  return `${input.motion}${suffix}`;
+  return `${input.type === "super_art" ? `SA${input.saLevel}：` : ""}${input.motion}${suffix}`;
 }

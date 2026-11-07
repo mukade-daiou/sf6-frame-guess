@@ -1,5 +1,15 @@
 # データ仕様 v1.0.0
 
+## 第15段階B：スーパーアーツ
+
+技カテゴリ/input.typeは`super_art`も使用する。SA inputは`saLevel: 1|2|3`、motion、button P/K、strength L/M/H、adoptionBasisを持つ。キーは`super_art:level:motion:button:strength`。**SAは弱・中・強を独立した質問として扱う。ゲーム用フレーム値を共有していても、質問キーは統合しない。**
+
+地上・通常状態・非ホールドの基本96枠を288レコードへ展開する。明示的強度値を優先し、原典P/K共通値は今回のユーザー指定による代表値として各強度へ採用する。実性能の同一性の確認とは区別する。saEvidenceに原典行、採用根拠、Cargo表記、項目別のsource/activation_missing_rule/unresolved、後続攻撃発生情報を保持する。CA・空中・ホールド・特殊状態・派生・強化・ストック消費版は取り込まない。
+
+coverage.super_artは既存normal/specialと独立し、未設定/partialでは未収録入力を技なしにしない。SA coverageは抽選資格を減らさない。非攻撃発動5種だけ、発生以外の未記載項目を表示規則で`-`にできる。元から明示的な`-`はsourceとして区別し、存在する全体Fは保持する。攻撃系の欠損には適用しない。発動1Fと後続弾発生を分離し、発生欄は原典表の1Fを使用する。
+
+720は専用2回転トークンで360と別。溜めSAは原典どおり`[4]646`を保持する。SAのODはない。以下の従来normal/special専用説明はそのカテゴリの規則として維持する。
+
 実行可能な定義は `src/lib/frame-data/schema.ts`（Zod）です。
 完成した機械可読JSON Schemaは [character.schema.json](character.schema.json) と [metadata.schema.json](metadata.schema.json) です。
 JSON Schemaに加えて、下記の意味的検証をローダーとZodの追加制約で行います。

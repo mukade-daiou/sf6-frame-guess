@@ -1,0 +1,30 @@
+{
+  "baselineHead": "a34d9b847f92b7cbe2433aef2c80d8e884b15d5d",
+  "datasetId": "super-arts-2026-11-07-r1",
+  "commands": {
+    "npm run typecheck": "passed",
+    "npm test": "passed: 99 tests",
+    "npm run test:data": "passed: 3 tests",
+    "npm run data:audit-coverage": "passed",
+    "npx tsx scripts/audit-super-arts.ts --check": "passed",
+    "npm run data:check": "passed",
+    "npm run validate:data": "passed",
+    "npm run format:check": "passed",
+    "npm run build": "passed; existing bundle-size warning",
+    "node scripts/verify-super-arts.mjs": "4-width keyboard/game flow passed (results.json); native inputs subsequently passed via --native-only",
+    "node scripts/verify-super-arts.mjs --native-only": "passed",
+    "node scripts/verify-gameplay.mjs": "passed: 4 widths x Normal/Hard"
+  },
+  "originalRecordsPreserved": 908,
+  "baseSlots": 96,
+  "adoptedSourceRows": 101,
+  "excludedSourceRows": 98,
+  "caImported": 0,
+  "saInputRecords": 288,
+  "totalRecords": 1196,
+  "unknownFields": 9,
+  "researchArtifactsModified": false,
+  "sourceCollection": "offline only",
+  "archiveTests": "not run: archived transformations unchanged",
+  "researchValidator": "stage A immutable validator expects pre-integration 908 records; replaced by source mapping and protection audit for stage B"
+}

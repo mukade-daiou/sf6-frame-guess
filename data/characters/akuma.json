@@ -24,6 +24,10 @@
     "special": {
       "status": "complete",
       "verification": "unverified"
+    },
+    "super_art": {
+      "status": "complete",
+      "verification": "unverified"
     }
   },
   "moves": [
@@ -1796,6 +1800,708 @@
         "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
         "license": "CC-BY-SA-4.0",
         "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "akuma__super_art_1_L",
+      "name": "Messatsu Gohado",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "P",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "106",
+          "numeric": 106,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-41",
+          "numeric": -41
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: 5-hit Super projectile; projectile speed is not affected by button strength; can be used while OD projectiles are on-screen; slower startup allows opponents (except Dhalsim/Lily/Zangief) to avoid with a jump after the screen freeze",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Akuma/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "akuma:raw:17",
+        "rawRef": "archive/staging/sf6-frame-data/raw/akuma.json#/moves/17",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json#/data/cargoquery/17/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10",
+          "total": "106",
+          "hit": "KD +9",
+          "block": "-41"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "akuma__super_art_1_M",
+      "name": "Messatsu Gohado",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "P",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "106",
+          "numeric": 106,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-41",
+          "numeric": -41
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: 5-hit Super projectile; projectile speed is not affected by button strength; can be used while OD projectiles are on-screen; slower startup allows opponents (except Dhalsim/Lily/Zangief) to avoid with a jump after the screen freeze",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Akuma/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "akuma:raw:17",
+        "rawRef": "archive/staging/sf6-frame-data/raw/akuma.json#/moves/17",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json#/data/cargoquery/17/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10",
+          "total": "106",
+          "hit": "KD +9",
+          "block": "-41"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "akuma__super_art_1_H",
+      "name": "Messatsu Gohado",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "P",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "106",
+          "numeric": 106,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-41",
+          "numeric": -41
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: 5-hit Super projectile; projectile speed is not affected by button strength; can be used while OD projectiles are on-screen; slower startup allows opponents (except Dhalsim/Lily/Zangief) to avoid with a jump after the screen freeze",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Akuma/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "akuma:raw:17",
+        "rawRef": "archive/staging/sf6-frame-data/raw/akuma.json#/moves/17",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json#/data/cargoquery/17/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10",
+          "total": "106",
+          "hit": "KD +9",
+          "block": "-41"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "akuma__super_art_2_L",
+      "name": "Empyrean’s End",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "P",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "63",
+          "numeric": 63,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-35",
+          "numeric": -35
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214P",
+        "upstreamNotes: Sends the opponent tumbling ~1/3 screen; causes wallsplat near corner (unless 214PP~6P wallsplat occurred earlier in the combo); the cinematic resets the opponent's juggle counter, allowing a follow-up wallsplat juggle regardless of previous juggle state; wallsplat is similar to Drive Impact, allowing moves to juggle that normally would not be possible; close-range opponent cannot jump away after the Super freeze to avoid chip damage",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Akuma/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "akuma:raw:1",
+        "rawRef": "archive/staging/sf6-frame-data/raw/akuma.json#/moves/1",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json#/data/cargoquery/1/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "9",
+          "total": "63",
+          "hit": "HKD +29 (HKD +97 Wallsplat)",
+          "block": "-35"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "akuma__super_art_2_M",
+      "name": "Empyrean’s End",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "P",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "63",
+          "numeric": 63,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-35",
+          "numeric": -35
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214P",
+        "upstreamNotes: Sends the opponent tumbling ~1/3 screen; causes wallsplat near corner (unless 214PP~6P wallsplat occurred earlier in the combo); the cinematic resets the opponent's juggle counter, allowing a follow-up wallsplat juggle regardless of previous juggle state; wallsplat is similar to Drive Impact, allowing moves to juggle that normally would not be possible; close-range opponent cannot jump away after the Super freeze to avoid chip damage",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Akuma/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "akuma:raw:1",
+        "rawRef": "archive/staging/sf6-frame-data/raw/akuma.json#/moves/1",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json#/data/cargoquery/1/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "9",
+          "total": "63",
+          "hit": "HKD +29 (HKD +97 Wallsplat)",
+          "block": "-35"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "akuma__super_art_2_H",
+      "name": "Empyrean’s End",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "P",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "63",
+          "numeric": 63,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-35",
+          "numeric": -35
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214P",
+        "upstreamNotes: Sends the opponent tumbling ~1/3 screen; causes wallsplat near corner (unless 214PP~6P wallsplat occurred earlier in the combo); the cinematic resets the opponent's juggle counter, allowing a follow-up wallsplat juggle regardless of previous juggle state; wallsplat is similar to Drive Impact, allowing moves to juggle that normally would not be possible; close-range opponent cannot jump away after the Super freeze to avoid chip damage",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Akuma/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "akuma:raw:1",
+        "rawRef": "archive/staging/sf6-frame-data/raw/akuma.json#/moves/1",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json#/data/cargoquery/1/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "9",
+          "total": "63",
+          "hit": "HKD +29 (HKD +97 Wallsplat)",
+          "block": "-35"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "akuma__super_art_3_L",
+      "name": "Sip of Calamity",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "K",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "69",
+          "numeric": 69,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-41",
+          "numeric": -41
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: Cinematic time regenerates ~1.9 Drive bars for Akuma; close-range opponent cannot jump away after the Super freeze to avoid chip damage; only 2f startup when canceled from 623P/214P/214P~6P; leaves opponent in range for microwalk 6HP pressure or Drive Rush oki",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Akuma/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "akuma:raw:15",
+        "rawRef": "archive/staging/sf6-frame-data/raw/akuma.json#/moves/15",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json#/data/cargoquery/15/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "8(2)",
+          "total": "69",
+          "hit": "HKD +18",
+          "block": "-41"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "akuma__super_art_3_M",
+      "name": "Sip of Calamity",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "K",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "69",
+          "numeric": 69,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-41",
+          "numeric": -41
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: Cinematic time regenerates ~1.9 Drive bars for Akuma; close-range opponent cannot jump away after the Super freeze to avoid chip damage; only 2f startup when canceled from 623P/214P/214P~6P; leaves opponent in range for microwalk 6HP pressure or Drive Rush oki",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Akuma/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "akuma:raw:15",
+        "rawRef": "archive/staging/sf6-frame-data/raw/akuma.json#/moves/15",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json#/data/cargoquery/15/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "8(2)",
+          "total": "69",
+          "hit": "HKD +18",
+          "block": "-41"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "akuma__super_art_3_H",
+      "name": "Sip of Calamity",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "K",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "69",
+          "numeric": 69,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-41",
+          "numeric": -41
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: Cinematic time regenerates ~1.9 Drive bars for Akuma; close-range opponent cannot jump away after the Super freeze to avoid chip damage; only 2f startup when canceled from 623P/214P/214P~6P; leaves opponent in range for microwalk 6HP pressure or Drive Rush oki",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Akuma/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:26.479Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "akuma:raw:15",
+        "rawRef": "archive/staging/sf6-frame-data/raw/akuma.json#/moves/15",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json#/data/cargoquery/15/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "8(2)",
+          "total": "69",
+          "hit": "HKD +18",
+          "block": "-41"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
       }
     }
   ]

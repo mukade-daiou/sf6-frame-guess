@@ -1,0 +1,575 @@
+{
+  "researchAt": "2026-11-06T17:42:26.540333+00:00",
+  "baselineHead": "a93b5c3a01c6a1ad4de69aa6e7a2b32842fed456",
+  "startStatusShort": " M README.md\n M docs/DATA_SPEC.md\n M docs/DESIGN_DECISIONS.md\n M docs/GAME_SPEC.md\n M index.html\n M scripts/verify-gameplay.mjs\n M src/app/App.tsx\n M src/components/History.test.tsx\n M src/components/MoveNotation.tsx\n M src/features/move-selector/controller.test.tsx\n M src/features/move-selector/controller.ts\n M src/lib/frame-data/input.ts\n M src/styles.css\n M staging/coverage-audit/review.json\n?? scripts/verify-charge.mjs\n?? src/features/move-selector/charge.test.tsx",
+  "upstream": {
+    "revision": "a0b4105fb368c308699ec0757ee6e4182e5a9d1c",
+    "revisionDiscovery": "GitHub REST commits/main read during research; commit date 2026-11-02T12:16:32Z",
+    "url": "https://github.com/RyoSogawa/sf6-sensei/blob/a0b4105fb368c308699ec0757ee6e4182e5a9d1c/packages/data/src/sa-levels.json",
+    "snapshot": "staging/sa-research/sa-levels.snapshot.json",
+    "authority": "補助対応表。rawの技名・消費ゲージ・注記を照合。公式原典ではない。"
+  },
+  "liveFetches": [
+    {
+      "url": "https://raw.githubusercontent.com/RyoSogawa/sf6-sensei/a0b4105fb368c308699ec0757ee6e4182e5a9d1c/packages/data/src/sa-levels.json",
+      "retrievedAt": "2026-11-06T17:42:26.643504+00:00",
+      "status": 200,
+      "sha256": "65b8c25ef32963060034c93203345a881585ec104ae0f139b493ffefa38fd2ae"
+    },
+    {
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+      "retrievedAt": "2026-11-06T17:42:26.687517+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.streetfighter.com/6/ja-jp/character/ryu/frame",
+      "retrievedAt": "2026-11-06T17:42:27.097242+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ],
+  "webToolFailures": [
+    {
+      "url": "https://github.com/RyoSogawa/sf6-sensei/blob/main/packages/data/src/sa-levels.json",
+      "result": "Cache miss; fixed revision raw retrieval succeeded"
+    },
+    {
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data",
+      "result": "Anubis Access Denied"
+    },
+    {
+      "url": "https://www.streetfighter.com/6/ja-jp/character/ryu/frame",
+      "result": "403 Forbidden"
+    }
+  ],
+  "sources": [
+    {
+      "characterId": "aki",
+      "rawPath": "archive/staging/sf6-frame-data/raw/aki.json",
+      "rawSha256": "a30c1a5af3b4eeb6bf1cea0cc2af3ce76b84fbdf8515c261a9e6617450600016",
+      "rawFetchedAt": [
+        "2026-08-19T04:05:26.479Z"
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/aki.cargo.json",
+      "cargoSha256": "907593d746adc79dd1f3f9e3ec529763df93cba40e0544fa12de457ceb187699",
+      "cargoRetrievedAt": "2026-11-05T09:20:21.356Z",
+      "cargoUrl": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22A.K.I.%22&limit=500",
+      "gameVersion": "UNVERIFIED",
+      "reliability": "community_same_wiki_not_independent"
+    },
+    {
+      "characterId": "akuma",
+      "rawPath": "archive/staging/sf6-frame-data/raw/akuma.json",
+      "rawSha256": "53353932e7a4c5179c5583b2cf797832818ad3110a4a24aa9250453dfb910265",
+      "rawFetchedAt": [
+        "2026-08-19T04:05:26.479Z"
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json",
+      "cargoSha256": "0adb25d1407f2ec5288519a34622598fe6b4a4b734f74a04a22e2e6c742b18b6",
+      "cargoRetrievedAt": "2026-11-05T09:20:21.426Z",
+      "cargoUrl": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Akuma%22&limit=500",
+      "gameVersion": "UNVERIFIED",
+      "reliability": "community_same_wiki_not_independent"
+    },
+    {
+      "characterId": "alex",
+      "rawPath": "archive/staging/sf6-frame-data/raw/alex.json",
+      "rawSha256": "082d0c5019218ce3048dacfee428dfd4251b767352329695da7814d585ee4efd",
+      "rawFetchedAt": [
+        "2026-08-19T04:05:26.479Z"
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/alex.cargo.json",
+      "cargoSha256": "a1ba5e1c098494af9e541a3401f53000177f5e3133376dc71f866497c53757e9",
+      "cargoRetrievedAt": "2026-11-05T09:20:21.430Z",
+      "cargoUrl": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Alex%22&limit=500",
+      "gameVersion": "UNVERIFIED",
+      "reliability": "community_same_wiki_not_independent"
+    },
+    {
+      "characterId": "arjun",
+      "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
+      "rawSha256": "5356d3421ce758e66a28043463c887aa828b91ec8893b8d1132214917b2cc883",
+      "rawFetchedAt": [
+        "2026-10-16T08:05:36.823Z"
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+      "cargoSha256": "26b4dbc2491bf53a488d550c0f7b04564c5c69691394e889da04d9ec1dbc389d",
+      "cargoRetrievedAt": "2026-11-05T09:20:21.434Z",
+      "cargoUrl": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Arjun%22&limit=500",
+      "gameVersion": "UNVERIFIED",
+      "reliability": "community_same_wiki_not_independent"
+    },
+    {
+      "characterId": "blanka",
+      "rawPath": "archive/staging/sf6-frame-data/raw/blanka.json",
+      "rawSha256": "9db0f290d5386cc325b8b855460fa8f4caf134867525f59a5df8c27be6ac0afe",
+      "rawFetchedAt": [
+        "2026-08-19T04:05:26.479Z"
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json",
+      "cargoSha256": "e2a3ea1d387b4a74506ba80ea3dd2cf28dbd07b5c8765ca82b0e48daab82e3fd",
+      "cargoRetrievedAt": "2026-11-05T09:20:25.827Z",
+      "cargoUrl": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Blanka%22&limit=500",
+      "gameVersion": "UNVERIFIED",
+      "reliability": "community_same_wiki_not_independent"
+    },
+    {
+      "characterId": "cammy",
+      "rawPath": "archive/staging/sf6-frame-data/raw/cammy.json",
+      "rawSha256": "918d1f45121ec3ab0436cdd2ba0c56a4cc6f08b93064fc1191a6a27d45b351a7",
+      "rawFetchedAt": [
+        "2026-08-19T04:05:26.479Z"
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/cammy.cargo.json",
+      "cargoSha256": "5ad94533ad6d72956477b725a3205a4ddaa3114ffa7d14726ad58b80bcf24afb",
+      "cargoRetrievedAt": "2026-11-05T09:20:25.829Z",
+      "cargoUrl": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Cammy%22&limit=500",
+      "gameVersion": "UNVERIFIED",
+      "reliability": "community_same_wiki_not_independent"
+    },
+    {
+      "characterId": "chunli",
+      "rawPath": "archive/staging/sf6-frame-data/raw/chunli.json",
+      "rawSha256": "023269a07eacf55bbdccf4e421dee02da6cc3d7098cc0fa4651fff48d29a230d",
+      "rawFetchedAt": [
+        "2026-11-01T00:02:01.290Z"
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/chunli.cargo.json",
+      "cargoSha256": "539524d25b361d2e172e0764c0cc2a69d07c65cc1f86114fa1551885e35271f7",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.115Z",
+      "cargoUrl": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Chun-Li%22&limit=500",
+      "gameVersion": "UNVERIFIED",
+      "reliability": "community_same_wiki_not_independent"
+    },
+    {
+      "characterId": "cviper",
+      "rawPath": "archive/staging/sf6-frame-data/raw/cviper.json",
+      "rawSha256": "6907c50c4db8d1dec31e58ee2e6d6c0b8d4b8200f5fdf5da226bffa4c9eed02a",
+      "rawFetchedAt": [
+        "2026-11-01T00:02:00.758Z"
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json",
+      "cargoSha256": "0d15146e500a2672cc2bd1ece4772479eb0ddb87b9473f99d6ca72db400e8812",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.117Z",
+      "cargoUrl": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22C.Viper%22&limit=500",
+      "gameVersion": "UNVERIFIED",
+      "reliability": "community_same_wiki_not_independent"
+    },
+    {
+      "characterId": "dee_jay",
+      "rawPath": "archive/staging/sf6-frame-data/raw/dee_jay.json",
+      "rawSha256": "1bd6a60197c5bc7ca558ca3ecb98503bade9c1ecc8bec6e58e36b4e50da8d6f2",
+      "rawFetchedAt": [
+        "2026-08-19T04:05:27.013Z"
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/dee_jay.cargo.json",
+      "cargoSha256": "3425c5f20c23697933a39d3ada36158e731d0e58eba24660cf1da43b7d56fd93",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.175Z",
+      "cargoUrl": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Dee_Jay%22&limit=500",
+      "gameVersion": "UNVERIFIED",
+      "reliability": "community_same_wiki_not_independent"
+    },
+    {
+      "characterId": "dhalsim",
+      "rawPath": "archive/staging/sf6-frame-data/raw/dhalsim.json",
+      "rawSha256": "c98677db5797b7ee4580a1c883436fbe23ff74fe35cdfd2c935833c3ac6197cf",
+      "rawFetchedAt": [
+        "2026-11-01T00:02:01.290Z"
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/dhalsim.cargo.json",
+      "cargoSha256": "2da68ecee3d64ec219db1adecd6ad9eae1a7ec7a2e85555dd9c3ab85190373ae",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.187Z",
+      "cargoUrl": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Dhalsim%22&limit=500",
+      "gameVersion": "UNVERIFIED",
+      "reliability": "community_same_wiki_not_independent"
+    },
+    {
+      "characterId": "e_honda",
+      "rawPath": "archive/staging/sf6-frame-data/raw/e_honda.json",
+      "rawSha256": "57088d3dc694b2a3b2b2b04ff4b15d1b0cc7ad38eee1d6bcedf4c00fd2e02680",
+      "rawFetchedAt": [
+        "2026-08-19T04:05:27.013Z"
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+      "cargoSha256": "d1a82e096ff7a770c38d4ec24ed648555d5f73b7730bcb6ef0b845b7242ab7af",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.558Z",
+      "cargoUrl": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22E.Honda%22&limit=500",
+      "gameVersion": "UNVERIFIED",
+      "reliability": "community_same_wiki_not_independent"
+    },
+    {
+      "characterId": "ed",
+      "rawPath": "archive/staging/sf6-frame-data/raw/ed.json",
+      "rawSha256": "df3e0c1b9f0ad7e4265b99219d13c5fe165a3d90fe5b217714d6309cb441c9ec",
+      "rawFetchedAt": [
+        "2026-11-01T00:02:01.290Z"
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/ed.cargo.json",
+      "cargoSha256": "6c52f83ce04f8988a48b662e7b16e8392b2e547d4f111cd96cf86cab7c4de226",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.563Z",
+      "cargoUrl": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ed%22&limit=500",
+      "gameVersion": "UNVERIFIED",
+      "reliability": "community_same_wiki_not_independent"
+    },
+    {
+      "characterId": "elena",
+      "rawPath": "archive/staging/sf6-frame-data/raw/elena.json",
+      "rawSha256": "f462ac399fda6deca1ec27d530d3f12b81d3a8a2ce2284e3d1ac35b55573991a",
+      "rawFetchedAt": [
+        "2026-11-01T00:02:01.290Z"
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/elena.cargo.json",
+      "cargoSha256": "3b47a33be2875507ee232b5ce2ac4cd6c9d61f8f4357541402c6027cc6041a87",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.564Z",
+      "cargoUrl": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Elena%22&limit=500",
+      "gameVersion": "UNVERIFIED",
+      "reliability": "community_same_wiki_not_independent"
+    },
+    {
+      "characterId": "guile",
+      "rawPath": "archive/staging/sf6-frame-data/raw/guile.json",
+      "rawSha256": "d6312f49f95fe335a8ab64626273c1b587162305e272376e0b41399205f4feab",
+      "rawFetchedAt": [
+        "2026-11-01T00:02:01.290Z",
+        "2026-11-01T00:02:02.090Z"
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/guile.cargo.json",
+      "cargoSha256": "47b3e1c6299b84e28cbfddc5d3e8e8721230d1b42f45278bd26dbfdbff52d544",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.568Z",
+      "cargoUrl": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Guile%22&limit=500",
+      "gameVersion": "UNVERIFIED",
+      "reliability": "community_same_wiki_not_independent"
+    },
+    {
+      "characterId": "ingrid",
+      "rawPath": "archive/staging/sf6-frame-data/raw/ingrid.json",
+      "rawSha256": "d8cf1319fe5f4bde55a0842aeca91deb0fe14679b7f54a99e802c2a219c98c27",
+      "rawFetchedAt": [
+        "2026-08-19T04:05:27.013Z",
+        "2026-08-19T04:05:27.533Z"
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/ingrid.cargo.json",
+      "cargoSha256": "07ea604d315e03c63114c04233da9f9b169b7a23b35cd52ef15a954a7b5eb47e",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.956Z",
+      "cargoUrl": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ingrid%22&limit=500",
+      "gameVersion": "UNVERIFIED",
+      "reliability": "community_same_wiki_not_independent"
+    },
+    {
+      "characterId": "jamie",
+      "rawPath": "archive/staging/sf6-frame-data/raw/jamie.json",
+      "rawSha256": "e5fabe8624871f70f44e7c567f31d25cb099babd70c31cd039ba78bd46366359",
+      "rawFetchedAt": [
+        "2026-08-19T04:05:27.533Z"
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+      "cargoSha256": "fcf1ba1a64ebf6895661d80e600b5aaa724bd4b39a69f765b752828701062b5f",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.958Z",
+      "cargoUrl": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Jamie%22&limit=500",
+      "gameVersion": "UNVERIFIED",
+      "reliability": "community_same_wiki_not_independent"
+    },
+    {
+      "characterId": "jp",
+      "rawPath": "archive/staging/sf6-frame-data/raw/jp.json",
+      "rawSha256": "0f8d465b01149792079b785eb3c68aa0f6b6244e373deda60c1812cd4e6016cf",
+      "rawFetchedAt": [
+        "2026-08-19T04:05:27.533Z"
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+      "cargoSha256": "682aba791990c38883d442794fe229f0d41bbb6d834783161dfc021d30117b4e",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.960Z",
+      "cargoUrl": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22JP%22&limit=500",
+      "gameVersion": "UNVERIFIED",
+      "reliability": "community_same_wiki_not_independent"
+    },
+    {
+      "characterId": "juri",
+      "rawPath": "archive/staging/sf6-frame-data/raw/juri.json",
+      "rawSha256": "f14e41c5f6e43fa904064e74f51f905e4077e31b5bf698cb3fa2d5ba980905d8",
+      "rawFetchedAt": [
+        "2026-08-19T04:05:27.533Z"
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/juri.cargo.json",
+      "cargoSha256": "ae055f3211d1fbb70c3a92ac6d069802b136a4c45f2c185eb8171cbb89cea1da",
+      "cargoRetrievedAt": "2026-11-05T09:20:27.351Z",
+      "cargoUrl": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Juri%22&limit=500",
+      "gameVersion": "UNVERIFIED",
+      "reliability": "community_same_wiki_not_independent"
+    },
+    {
+      "characterId": "ken",
+      "rawPath": "archive/staging/sf6-frame-data/raw/ken.json",
+      "rawSha256": "fe7b5108a129913f39800d9a3c6c31332fb846d91ed728007975287b49a642b7",
+      "rawFetchedAt": [
+        "2026-08-19T04:05:27.533Z"
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/ken.cargo.json",
+      "cargoSha256": "3af60cfc0e697ebc24fb767d87ed66cc78f6b72bfc2f10f2d68fc3a2d87f3c8c",
+      "cargoRetrievedAt": "2026-11-05T09:20:27.355Z",
+      "cargoUrl": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ken%22&limit=500",
+      "gameVersion": "UNVERIFIED",
+      "reliability": "community_same_wiki_not_independent"
+    },
+    {
+      "characterId": "kimberly",
+      "rawPath": "archive/staging/sf6-frame-data/raw/kimberly.json",
+      "rawSha256": "903574890042e889e60eeebc67eee85b8aa104f8dd912947f14a6bc701be6196",
+      "rawFetchedAt": [
+        "2026-08-19T04:05:27.533Z"
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/kimberly.cargo.json",
+      "cargoSha256": "1786654986a8c77b33fed4a97cd45842a62dbe326a69166fbbf60d5a1abc96e7",
+      "cargoRetrievedAt": "2026-11-05T09:20:27.359Z",
+      "cargoUrl": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Kimberly%22&limit=500",
+      "gameVersion": "UNVERIFIED",
+      "reliability": "community_same_wiki_not_independent"
+    },
+    {
+      "characterId": "lily",
+      "rawPath": "archive/staging/sf6-frame-data/raw/lily.json",
+      "rawSha256": "fc8c9bd6d4aa340e1c33af36705e5766a05d6fd84ce340ebf0ae2c90af110c41",
+      "rawFetchedAt": [
+        "2026-08-19T04:05:27.533Z",
+        "2026-08-19T04:05:28.060Z"
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json",
+      "cargoSha256": "e5ab97b37b8cddcb31bd34363dc05cf96da8233fb156fb3ed87906c6df37c998",
+      "cargoRetrievedAt": "2026-11-05T09:20:27.778Z",
+      "cargoUrl": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Lily%22&limit=500",
+      "gameVersion": "UNVERIFIED",
+      "reliability": "community_same_wiki_not_independent"
+    },
+    {
+      "characterId": "luke",
+      "rawPath": "archive/staging/sf6-frame-data/raw/luke.json",
+      "rawSha256": "0470ae657f838f0b93f15f5357818a79a0b1d91d36487d3c28d729b636da764a",
+      "rawFetchedAt": [
+        "2026-11-01T00:02:02.878Z"
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/luke.cargo.json",
+      "cargoSha256": "a6c464e8b30b421603d1db4ff0355f044932ddd07ccb4f142d715817e72b884e",
+      "cargoRetrievedAt": "2026-11-05T09:20:27.782Z",
+      "cargoUrl": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Luke%22&limit=500",
+      "gameVersion": "UNVERIFIED",
+      "reliability": "community_same_wiki_not_independent"
+    },
+    {
+      "characterId": "m_bison",
+      "rawPath": "archive/staging/sf6-frame-data/raw/m_bison.json",
+      "rawSha256": "4584980235952fca5059b923f966d007aaf731fd8e314037ac33ffc20a3d6529",
+      "rawFetchedAt": [
+        "2026-11-01T00:02:02.878Z"
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json",
+      "cargoSha256": "a8278dc49d635655a4415634642ef37f845d8a8495751acb0f4fe50408a4e7f0",
+      "cargoRetrievedAt": "2026-11-05T09:20:27.783Z",
+      "cargoUrl": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22M.Bison%22&limit=500",
+      "gameVersion": "UNVERIFIED",
+      "reliability": "community_same_wiki_not_independent"
+    },
+    {
+      "characterId": "mai",
+      "rawPath": "archive/staging/sf6-frame-data/raw/mai.json",
+      "rawSha256": "e15ba7d3ad0a33de90b6701ef5919cc9f8f76bac59941c88e16994b041263d4f",
+      "rawFetchedAt": [
+        "2026-11-01T00:02:02.878Z"
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/mai.cargo.json",
+      "cargoSha256": "232b3b1ce790a6db3afd1438a44e5f8fd9d56b9ee06ed0446f06f4e309ae2015",
+      "cargoRetrievedAt": "2026-11-05T09:20:27.784Z",
+      "cargoUrl": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Mai%22&limit=500",
+      "gameVersion": "UNVERIFIED",
+      "reliability": "community_same_wiki_not_independent"
+    },
+    {
+      "characterId": "manon",
+      "rawPath": "archive/staging/sf6-frame-data/raw/manon.json",
+      "rawSha256": "fcb8b26f884e5e46027d9301ac3146a967f394ab7bb9c687406e38238a18efc1",
+      "rawFetchedAt": [
+        "2026-11-01T00:02:02.878Z"
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/manon.cargo.json",
+      "cargoSha256": "0ec6707323e2b8a3352cd2cd414157783599a8373c8a2cbc1438db31df9dd5f1",
+      "cargoRetrievedAt": "2026-11-05T09:20:28.154Z",
+      "cargoUrl": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Manon%22&limit=500",
+      "gameVersion": "UNVERIFIED",
+      "reliability": "community_same_wiki_not_independent"
+    },
+    {
+      "characterId": "marisa",
+      "rawPath": "archive/staging/sf6-frame-data/raw/marisa.json",
+      "rawSha256": "77f5f4ac841e47e635a76031cd202a94ea9d05017dc436ee794e7f59b4c294f0",
+      "rawFetchedAt": [
+        "2026-08-19T04:05:28.060Z"
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/marisa.cargo.json",
+      "cargoSha256": "ca14d42afca7a1d696abaedac8c9c7f325c155d21cbd6bb0ad6536fd84735c93",
+      "cargoRetrievedAt": "2026-11-05T09:20:28.158Z",
+      "cargoUrl": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Marisa%22&limit=500",
+      "gameVersion": "UNVERIFIED",
+      "reliability": "community_same_wiki_not_independent"
+    },
+    {
+      "characterId": "rashid",
+      "rawPath": "archive/staging/sf6-frame-data/raw/rashid.json",
+      "rawSha256": "1eac69a0e14b856d2adf5ca620a62c83329a602c1a0963bec05bb0c4f12dfcd4",
+      "rawFetchedAt": [
+        "2026-08-19T04:05:28.060Z",
+        "2026-08-19T04:05:28.570Z"
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/rashid.cargo.json",
+      "cargoSha256": "736159f50602c4a218d902b7c8f0c54e93d42ec113c033c79956e112d0fe51d9",
+      "cargoRetrievedAt": "2026-11-05T09:20:28.161Z",
+      "cargoUrl": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Rashid%22&limit=500",
+      "gameVersion": "UNVERIFIED",
+      "reliability": "community_same_wiki_not_independent"
+    },
+    {
+      "characterId": "ryu",
+      "rawPath": "archive/staging/sf6-frame-data/raw/ryu.json",
+      "rawSha256": "d445eb76f90efc1f717beacfc5dac93aed93b623761e59560d7e2c7c3d810b8c",
+      "rawFetchedAt": [
+        "2026-08-19T04:05:28.570Z"
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json",
+      "cargoSha256": "d8336c4de487ddee8b415621635a261be0e67b2052d643485a1aa09e19728e9b",
+      "cargoRetrievedAt": "2026-11-05T09:20:28.408Z",
+      "cargoUrl": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Ryu%22&limit=500",
+      "gameVersion": "UNVERIFIED",
+      "reliability": "community_same_wiki_not_independent"
+    },
+    {
+      "characterId": "sagat",
+      "rawPath": "archive/staging/sf6-frame-data/raw/sagat.json",
+      "rawSha256": "d8de3d48e128789c349b49a65c1bd5d3b3ef76711999cc25dffada5293fd7e90",
+      "rawFetchedAt": [
+        "2026-11-01T00:02:03.381Z"
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/sagat.cargo.json",
+      "cargoSha256": "01da38d7f51dbb8c91538075c76c166b70d11bd8c113e5a17f0628ad33cd1483",
+      "cargoRetrievedAt": "2026-11-05T09:20:28.507Z",
+      "cargoUrl": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Sagat%22&limit=500",
+      "gameVersion": "UNVERIFIED",
+      "reliability": "community_same_wiki_not_independent"
+    },
+    {
+      "characterId": "terry",
+      "rawPath": "archive/staging/sf6-frame-data/raw/terry.json",
+      "rawSha256": "007969c0aa45e43b4f12127349cfed3325158668ea38076b5d1c2f3a746a8fcc",
+      "rawFetchedAt": [
+        "2026-11-01T00:02:03.381Z"
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json",
+      "cargoSha256": "19bcaabbc58fcad510c4f63bbf51fc7216006b1b316da06ca96e1e80ae21b140",
+      "cargoRetrievedAt": "2026-11-05T09:20:28.511Z",
+      "cargoUrl": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Terry%22&limit=500",
+      "gameVersion": "UNVERIFIED",
+      "reliability": "community_same_wiki_not_independent"
+    },
+    {
+      "characterId": "yasmine",
+      "rawPath": "archive/staging/sf6-frame-data/raw/yasmine.json",
+      "rawSha256": "a6f05a6c914746333cf2c03081ee7f468795bb64604c3ec17d8c6176a074b90a",
+      "rawFetchedAt": [
+        "2026-11-01T00:02:03.381Z"
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/yasmine.cargo.json",
+      "cargoSha256": "30c260245296e951503739827cb194e772bf9a910d30b9b3dd7f3cc9d8b9699f",
+      "cargoRetrievedAt": "2026-11-05T09:20:28.513Z",
+      "cargoUrl": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Yasmine%22&limit=500",
+      "gameVersion": "UNVERIFIED",
+      "reliability": "community_same_wiki_not_independent"
+    },
+    {
+      "characterId": "zangief",
+      "rawPath": "archive/staging/sf6-frame-data/raw/zangief.json",
+      "rawSha256": "4936567b2d077cbf9030b6cd709794df58f1e033e6adfc17f3c2509a36e1c271",
+      "rawFetchedAt": [
+        "2026-08-19T04:05:28.570Z"
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/zangief.cargo.json",
+      "cargoSha256": "a96890dd66a67fafba0a793e03b4ad59cfcd0ca95cc884dd776c15a1da03484d",
+      "cargoRetrievedAt": "2026-11-05T09:20:28.778Z",
+      "cargoUrl": "https://srk.shib.live/api.php?action=cargoquery&format=json&tables=SF6_FrameData&fields=chara%2Cinput%2Cstartup%2Ctotal%2ChitAdv%2CblockAdv%2Cnotes&where=chara%3D%22Zangief%22&limit=500",
+      "gameVersion": "UNVERIFIED",
+      "reliability": "community_same_wiki_not_independent"
+    }
+  ],
+  "limitations": [
+    "全対象ゲームバージョン未検証。取得日をパッチ版とみなさない。",
+    "Cargoは同Wiki由来の別時点・別表現。独立した公式照合ではない。",
+    "ライブ原典取得不可のため、全強度で差がないことや現行パッチは確認できていない。",
+    "raw.totalFramesの上流算出過程は未検証。ここでは保存済み値を転記するだけで計算しない。"
+  ],
+  "statistics": {
+    "characters": 32,
+    "rawSuperArtRecords": 199,
+    "mappedRawRecords": 198,
+    "levelGroups": 96,
+    "rawRecordsByLevel": {
+      "2": 87,
+      "1": 46,
+      "3": 65
+    },
+    "strengthDifferentSAGroups": 7,
+    "strengthSameSAGroups": 0,
+    "strengthClassificationByRawRecord": {
+      "strength_different": 39,
+      "strength_unspecified": 159,
+      "strength_uncertain": 1
+    },
+    "saTypeByRawRecord": {
+      "attack": 186,
+      "activation": 5,
+      "mixed": 8
+    },
+    "conditionalRawRecords": 98,
+    "uncertainBaseRawRecords": 0,
+    "caRawRecords": 33,
+    "cargoMatchByRawRecord": {
+      "unique_exact_input": 3,
+      "unique_exact_notes": 194,
+      "unique_input_and_explicit_ca_condition": 2
+    },
+    "frameStatesRaw": {
+      "numeric": 706,
+      "not_recorded": 90
+    },
+    "cargoComparisonFields": {
+      "exact": 443,
+      "kd_semantics_lost_in_raw": 167,
+      "conditional_notation_difference": 79,
+      "both_absent_or_template_placeholder": 21,
+      "raw_missing_cargo_has_value": 6,
+      "raw_null_cargo_explicit_not_applicable": 63,
+      "numeric_equivalent_sign_notation": 17
+    },
+    "motionFamilyByRawRecord": {
+      "214214": 61,
+      "236236": 104,
+      "other": 26,
+      "charge": 5,
+      "360": 1,
+      "720": 2
+    },
+    "supplementalCargoCandidates": 2,
+    "coverageGroupsWithBase": 96,
+    "frameStatesCargo": {
+      "numeric": 460,
+      "special": 139,
+      "multiple_or_conditional": 113,
+      "not_recorded": 21,
+      "explicit_not_applicable": 63
+    },
+    "potentialConflictFields": 0,
+    "relatedSpecialRowsInSuperArt": 1,
+    "supplementalCargoCandidatesResolvedAsSpecial": 2,
+    "baseCandidateRawRecords": 101
+  },
+  "reviewNotes": [
+    "人手で原典注記を確認し、CA判定・SA2派生・強度差・発動/弾発生を照合した。",
+    "通常版は通常SA3の意味。baseStatusは通常状態・地上・非ホールド・非派生の別軸。",
+    "strengthDifferentSAGroupsはcharacterId+SA level単位。派生行やホールド行を重複計数しない。",
+    "rawの数値にKD意味が落ちている箇所をCargoで検出。rawフレームは書き換えていない。"
+  ]
+}

@@ -10,7 +10,11 @@ it("adopts 63 source-matched moves without falsely verifying the source or patch
   const d = data();
   expect(d.errors).toEqual([]);
   expect(d.eligible).toHaveLength(2);
-  expect(d.characters.map((c) => c.moves.length)).toEqual([33, 30]);
+  expect(
+    d.characters.map(
+      (c) => c.moves.filter((m) => m.category !== "super_art").length,
+    ),
+  ).toEqual([33, 30]);
   expect(d.review).toBeUndefined();
   for (const c of d.characters) {
     expect(c.adoption?.status).toBe("accepted");

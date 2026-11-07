@@ -24,6 +24,10 @@
     "special": {
       "status": "complete",
       "verification": "unverified"
+    },
+    "super_art": {
+      "status": "complete",
+      "verification": "unverified"
     }
   },
   "moves": [
@@ -1502,6 +1506,705 @@
         "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
         "license": "CC-BY-SA-4.0",
         "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典の明示的な対象強度を優先。"
+      },
+      "id": "guile__super_art_1_L",
+      "name": "Sonic Hurricane",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "[4]646",
+        "button": "P",
+        "strength": "L",
+        "adoptionBasis": "原典の明示的な対象強度を優先。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "89",
+          "numeric": 89,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-26",
+          "numeric": -26
+        }
+      },
+      "notes": [
+        "原典の明示的な対象強度を優先。",
+        "upstreamInput: [4]646P",
+        "upstreamNotes: 45f charge (charge lasts 22f after releasing back direction); 7-hit Super projectile; can input this horizontal version with LP or MP; cannot be used while Sonic Blade projectile is active on-screen; active frames 1-3 only hits on the shorter-range hitbox in front of Guile, but extends a combo-only hitbox to its full range that connects if the opponent is in hitstun (essentially has 11f startup as a long-range punish tool, like when used against the opponent's projectile); the upper combo-only hitbox applies to strike-based hitstun (e.g. j.MP air-to-air) while the lower combo-only hitbox applies to projectile-based hitstun (e.g. anti-air Sonic Boom); can be juggled into after HP SA1 if the opponent was launched from a grounded state",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Guile/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:02.090Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "guile:raw:27",
+        "rawRef": "archive/staging/sf6-frame-data/raw/guile.json#/moves/27",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/guile.cargo.json#/data/cargoquery/60/title",
+        "strengthBasis": "explicit_group",
+        "sourceNotation": {
+          "startup": "8(11)",
+          "total": "89",
+          "hit": "KD +41",
+          "block": "-26"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典の明示的な対象強度を優先。"
+      },
+      "id": "guile__super_art_1_M",
+      "name": "Sonic Hurricane",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "[4]646",
+        "button": "P",
+        "strength": "M",
+        "adoptionBasis": "原典の明示的な対象強度を優先。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "89",
+          "numeric": 89,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-26",
+          "numeric": -26
+        }
+      },
+      "notes": [
+        "原典の明示的な対象強度を優先。",
+        "upstreamInput: [4]646P",
+        "upstreamNotes: 45f charge (charge lasts 22f after releasing back direction); 7-hit Super projectile; can input this horizontal version with LP or MP; cannot be used while Sonic Blade projectile is active on-screen; active frames 1-3 only hits on the shorter-range hitbox in front of Guile, but extends a combo-only hitbox to its full range that connects if the opponent is in hitstun (essentially has 11f startup as a long-range punish tool, like when used against the opponent's projectile); the upper combo-only hitbox applies to strike-based hitstun (e.g. j.MP air-to-air) while the lower combo-only hitbox applies to projectile-based hitstun (e.g. anti-air Sonic Boom); can be juggled into after HP SA1 if the opponent was launched from a grounded state",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Guile/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:02.090Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "guile:raw:27",
+        "rawRef": "archive/staging/sf6-frame-data/raw/guile.json#/moves/27",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/guile.cargo.json#/data/cargoquery/60/title",
+        "strengthBasis": "explicit_group",
+        "sourceNotation": {
+          "startup": "8(11)",
+          "total": "89",
+          "hit": "KD +41",
+          "block": "-26"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典の明示的な対象強度を優先。"
+      },
+      "id": "guile__super_art_1_H",
+      "name": "Sonic Hurricane",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "[4]646",
+        "button": "P",
+        "strength": "H",
+        "adoptionBasis": "原典の明示的な対象強度を優先。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "75",
+          "numeric": 75,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        }
+      },
+      "notes": [
+        "原典の明示的な対象強度を優先。",
+        "upstreamInput: [4]646HP",
+        "upstreamNotes: 45f charge (charge lasts 22f after releasing back direction); 7-hit Super projectile; primarily used in air juggles (whiffs on crouching opponents unless they extend a vertical hurtbox, can hit standing opponents at close range); puts opponent into limited juggle state; KD Adv. can vary depending on juggle height; cannot be used while Sonic Blade projectile is active on-screen; can follow up with a LP/MP SA1 after hitting a grounded opponent",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Guile/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:02.090Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "guile:raw:24",
+        "rawRef": "archive/staging/sf6-frame-data/raw/guile.json#/moves/24",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/guile.cargo.json#/data/cargoquery/57/title",
+        "strengthBasis": "explicit",
+        "sourceNotation": {
+          "startup": "7",
+          "total": "75",
+          "hit": "KD +70",
+          "block": "-2"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "guile__super_art_2_L",
+      "name": "Solid Puncher",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "P",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "1",
+          "numeric": 1
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214P",
+        "upstreamNotes: Gives access to Sonic Break follow-ups; remaining active time decreases by 200f with each Sonic Break use (maximum 7 uses)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Guile/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "guile:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/guile.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/guile.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "1",
+          "total": "6",
+          "hit": "-",
+          "block": "-"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": "攻撃判定の発生ではなく発動行のstartup=1。totalは発動動作の表記値。効果付与の厳密なフレーム定義・暗転の算入法は保存資料で未確認。"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "guile__super_art_2_M",
+      "name": "Solid Puncher",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "P",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "1",
+          "numeric": 1
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214P",
+        "upstreamNotes: Gives access to Sonic Break follow-ups; remaining active time decreases by 200f with each Sonic Break use (maximum 7 uses)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Guile/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "guile:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/guile.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/guile.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "1",
+          "total": "6",
+          "hit": "-",
+          "block": "-"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": "攻撃判定の発生ではなく発動行のstartup=1。totalは発動動作の表記値。効果付与の厳密なフレーム定義・暗転の算入法は保存資料で未確認。"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "guile__super_art_2_H",
+      "name": "Solid Puncher",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "P",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "1",
+          "numeric": 1
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214P",
+        "upstreamNotes: Gives access to Sonic Break follow-ups; remaining active time decreases by 200f with each Sonic Break use (maximum 7 uses)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Guile/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "guile:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/guile.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/guile.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "1",
+          "total": "6",
+          "hit": "-",
+          "block": "-"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": "攻撃判定の発生ではなく発動行のstartup=1。totalは発動動作の表記値。効果付与の厳密なフレーム定義・暗転の算入法は保存資料で未確認。"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "guile__super_art_3_L",
+      "name": "Crossfire Somersault",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "[4]646",
+        "button": "K",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "84",
+          "numeric": 84,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-59",
+          "numeric": -59
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: [4]646K",
+        "upstreamNotes: 45f charge (charge lasts 22f after releasing back direction); active frames 3-6 give a non-cinematic hit with reduced damage and chip; cannot hit cross-up; cinematic time regenerates ~1.8 Drive bars for Guile",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Guile/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:02.090Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "guile:raw:25",
+        "rawRef": "archive/staging/sf6-frame-data/raw/guile.json#/moves/25",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/guile.cargo.json#/data/cargoquery/58/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "9",
+          "total": "84",
+          "hit": "HKD +16",
+          "block": "-59"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "guile__super_art_3_M",
+      "name": "Crossfire Somersault",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "[4]646",
+        "button": "K",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "84",
+          "numeric": 84,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-59",
+          "numeric": -59
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: [4]646K",
+        "upstreamNotes: 45f charge (charge lasts 22f after releasing back direction); active frames 3-6 give a non-cinematic hit with reduced damage and chip; cannot hit cross-up; cinematic time regenerates ~1.8 Drive bars for Guile",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Guile/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:02.090Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "guile:raw:25",
+        "rawRef": "archive/staging/sf6-frame-data/raw/guile.json#/moves/25",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/guile.cargo.json#/data/cargoquery/58/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "9",
+          "total": "84",
+          "hit": "HKD +16",
+          "block": "-59"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "guile__super_art_3_H",
+      "name": "Crossfire Somersault",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "[4]646",
+        "button": "K",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "84",
+          "numeric": 84,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-59",
+          "numeric": -59
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: [4]646K",
+        "upstreamNotes: 45f charge (charge lasts 22f after releasing back direction); active frames 3-6 give a non-cinematic hit with reduced damage and chip; cannot hit cross-up; cinematic time regenerates ~1.8 Drive bars for Guile",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Guile/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:02.090Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "guile:raw:25",
+        "rawRef": "archive/staging/sf6-frame-data/raw/guile.json#/moves/25",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/guile.cargo.json#/data/cargoquery/58/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "9",
+          "total": "84",
+          "hit": "HKD +16",
+          "block": "-59"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
       }
     }
   ]

@@ -14,9 +14,10 @@ export function isMoveUsable(character: Character, move: Move): boolean {
 }
 export function hasCompleteScope(
   character: Character,
-  category: "normal" | "special",
+  category: Move["category"],
 ): boolean {
   const coverage = character.coverage[category];
+  if (!coverage) return false;
   if (
     character.adoption?.status === "held" ||
     character.adoption?.status === "excluded"

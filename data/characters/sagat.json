@@ -24,6 +24,10 @@
     "special": {
       "status": "complete",
       "verification": "unverified"
+    },
+    "super_art": {
+      "status": "complete",
+      "verification": "unverified"
     }
   },
   "moves": [
@@ -1689,6 +1693,708 @@
         "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
         "license": "CC-BY-SA-4.0",
         "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "sagat__super_art_1_L",
+      "name": "Tiger Cannon",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "P",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "13",
+          "numeric": 13
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "109",
+          "numeric": 109,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-31",
+          "numeric": -31
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: 8-hit Super projectile; can be used while OD Tiger Shot is on-screen (but not meterless Tiger Shot); fast travel speed allows it to be used in long range juggles; projectile speed is not affected by button strength",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "sagat:raw:17",
+        "rawRef": "archive/staging/sf6-frame-data/raw/sagat.json#/moves/17",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/sagat.cargo.json#/data/cargoquery/17/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "13",
+          "total": "109",
+          "hit": "KD +22",
+          "block": "-31"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "sagat__super_art_1_M",
+      "name": "Tiger Cannon",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "P",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "13",
+          "numeric": 13
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "109",
+          "numeric": 109,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-31",
+          "numeric": -31
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: 8-hit Super projectile; can be used while OD Tiger Shot is on-screen (but not meterless Tiger Shot); fast travel speed allows it to be used in long range juggles; projectile speed is not affected by button strength",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "sagat:raw:17",
+        "rawRef": "archive/staging/sf6-frame-data/raw/sagat.json#/moves/17",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/sagat.cargo.json#/data/cargoquery/17/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "13",
+          "total": "109",
+          "hit": "KD +22",
+          "block": "-31"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "sagat__super_art_1_H",
+      "name": "Tiger Cannon",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "P",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "13",
+          "numeric": 13
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "109",
+          "numeric": 109,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-31",
+          "numeric": -31
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: 8-hit Super projectile; can be used while OD Tiger Shot is on-screen (but not meterless Tiger Shot); fast travel speed allows it to be used in long range juggles; projectile speed is not affected by button strength",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "sagat:raw:17",
+        "rawRef": "archive/staging/sf6-frame-data/raw/sagat.json#/moves/17",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/sagat.cargo.json#/data/cargoquery/17/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "13",
+          "total": "109",
+          "hit": "KD +22",
+          "block": "-31"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "sagat__super_art_2_L",
+      "name": "Savage Tiger",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "K",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "87",
+          "numeric": 87,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "unknown",
+          "display": null
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-58",
+          "numeric": -58
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214K",
+        "upstreamNotes: Goes into one of 4 follow-ups after frame 76 on hit (depending on which direction is held while clutching the opponent); Sagat's best reversal Super (but is still slow enough to be baited by an opponent's safejab setup); can be used as a projectile counter from about half screen; Sagat has travel time throughout the active frames (takes longer than SA3 to reach full range)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "sagat:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/sagat.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/sagat.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10",
+          "total": "87",
+          "hit": "HKD ~",
+          "block": "-58"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "unresolved",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "sagat__super_art_2_M",
+      "name": "Savage Tiger",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "K",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "87",
+          "numeric": 87,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "unknown",
+          "display": null
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-58",
+          "numeric": -58
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214K",
+        "upstreamNotes: Goes into one of 4 follow-ups after frame 76 on hit (depending on which direction is held while clutching the opponent); Sagat's best reversal Super (but is still slow enough to be baited by an opponent's safejab setup); can be used as a projectile counter from about half screen; Sagat has travel time throughout the active frames (takes longer than SA3 to reach full range)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "sagat:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/sagat.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/sagat.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10",
+          "total": "87",
+          "hit": "HKD ~",
+          "block": "-58"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "unresolved",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "sagat__super_art_2_H",
+      "name": "Savage Tiger",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "K",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "87",
+          "numeric": 87,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "unknown",
+          "display": null
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-58",
+          "numeric": -58
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214K",
+        "upstreamNotes: Goes into one of 4 follow-ups after frame 76 on hit (depending on which direction is held while clutching the opponent); Sagat's best reversal Super (but is still slow enough to be baited by an opponent's safejab setup); can be used as a projectile counter from about half screen; Sagat has travel time throughout the active frames (takes longer than SA3 to reach full range)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "sagat:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/sagat.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/sagat.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10",
+          "total": "87",
+          "hit": "HKD ~",
+          "block": "-58"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "unresolved",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "sagat__super_art_3_L",
+      "name": "Tiger Vanquisher",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "K",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "82",
+          "numeric": 82,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-51",
+          "numeric": -51
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: Cinematic time regenerates ~1.9 Drive bars for Sagat; only 2f startup when canceled from Tiger Uppercut; can be used as a projectile counter from about half screen; slow startup makes it a risky wakeup reversal option; total damage scaling from anti-air Tiger Uppercut is 20-40% depending on which strength was used (weaker strength gives higher scaling)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "sagat:raw:15",
+        "rawRef": "archive/staging/sf6-frame-data/raw/sagat.json#/moves/15",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/sagat.cargo.json#/data/cargoquery/15/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "12(2)",
+          "total": "82",
+          "hit": "HKD +15",
+          "block": "-51"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "sagat__super_art_3_M",
+      "name": "Tiger Vanquisher",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "K",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "82",
+          "numeric": 82,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-51",
+          "numeric": -51
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: Cinematic time regenerates ~1.9 Drive bars for Sagat; only 2f startup when canceled from Tiger Uppercut; can be used as a projectile counter from about half screen; slow startup makes it a risky wakeup reversal option; total damage scaling from anti-air Tiger Uppercut is 20-40% depending on which strength was used (weaker strength gives higher scaling)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "sagat:raw:15",
+        "rawRef": "archive/staging/sf6-frame-data/raw/sagat.json#/moves/15",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/sagat.cargo.json#/data/cargoquery/15/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "12(2)",
+          "total": "82",
+          "hit": "HKD +15",
+          "block": "-51"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "sagat__super_art_3_H",
+      "name": "Tiger Vanquisher",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "K",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "82",
+          "numeric": 82,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-51",
+          "numeric": -51
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: Cinematic time regenerates ~1.9 Drive bars for Sagat; only 2f startup when canceled from Tiger Uppercut; can be used as a projectile counter from about half screen; slow startup makes it a risky wakeup reversal option; total damage scaling from anti-air Tiger Uppercut is 20-40% depending on which strength was used (weaker strength gives higher scaling)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "sagat:raw:15",
+        "rawRef": "archive/staging/sf6-frame-data/raw/sagat.json#/moves/15",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/sagat.cargo.json#/data/cargoquery/15/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "12(2)",
+          "total": "82",
+          "hit": "HKD +15",
+          "block": "-51"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
       }
     }
   ]

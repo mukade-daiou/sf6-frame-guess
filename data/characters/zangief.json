@@ -24,6 +24,10 @@
     "special": {
       "status": "complete",
       "verification": "unverified"
+    },
+    "super_art": {
+      "status": "complete",
+      "verification": "unverified"
     }
   },
   "moves": [
@@ -1660,6 +1664,702 @@
         "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
         "license": "CC-BY-SA-4.0",
         "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "zangief__super_art_1_L",
+      "name": "Aerial Russian Slam",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "K",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "11",
+          "numeric": 11
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "77",
+          "numeric": 77,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: Can only hit airborne opponents; cannot anti-air cross-ups",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Zangief/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "zangief:raw:5",
+        "rawRef": "archive/staging/sf6-frame-data/raw/zangief.json#/moves/5",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/zangief.cargo.json#/data/cargoquery/5/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "11",
+          "total": "77",
+          "hit": "HKD +29",
+          "block": "-"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "zangief__super_art_1_M",
+      "name": "Aerial Russian Slam",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "K",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "11",
+          "numeric": 11
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "77",
+          "numeric": 77,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: Can only hit airborne opponents; cannot anti-air cross-ups",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Zangief/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "zangief:raw:5",
+        "rawRef": "archive/staging/sf6-frame-data/raw/zangief.json#/moves/5",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/zangief.cargo.json#/data/cargoquery/5/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "11",
+          "total": "77",
+          "hit": "HKD +29",
+          "block": "-"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "zangief__super_art_1_H",
+      "name": "Aerial Russian Slam",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "K",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "11",
+          "numeric": 11
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "77",
+          "numeric": 77,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: Can only hit airborne opponents; cannot anti-air cross-ups",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Zangief/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "zangief:raw:5",
+        "rawRef": "archive/staging/sf6-frame-data/raw/zangief.json#/moves/5",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/zangief.cargo.json#/data/cargoquery/5/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "11",
+          "total": "77",
+          "hit": "HKD +29",
+          "block": "-"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "zangief__super_art_2_L",
+      "name": "Cyclone Lariat",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "236236",
+        "button": "P",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "18",
+          "numeric": 18
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "171",
+          "numeric": 171,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-35",
+          "numeric": -35
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: Switches sides on hit; can hold forward/back on hit to move in that direction, dealing 100 less damage; holding forward keeps opponent on the same side with 4f worse KD Advantage; too slow to work as a reversal against many attacks, but half-screen suction makes it powerful as a projectile counter; can hold button for a fully charged launching version; plays out the held version on block or when juggled into; active frame distribution: vacuum 91f, juggle 1(4)2(7)2(8)2(7)2(8)2(9)2(7)2(9)2(8)3 starting on frame 33",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Zangief/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "zangief:raw:6",
+        "rawRef": "archive/staging/sf6-frame-data/raw/zangief.json#/moves/6",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/zangief.cargo.json#/data/cargoquery/6/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "18",
+          "total": "171",
+          "hit": "HKD +5(+1)",
+          "block": "-35"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "zangief__super_art_2_M",
+      "name": "Cyclone Lariat",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "236236",
+        "button": "P",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "18",
+          "numeric": 18
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "171",
+          "numeric": 171,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-35",
+          "numeric": -35
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: Switches sides on hit; can hold forward/back on hit to move in that direction, dealing 100 less damage; holding forward keeps opponent on the same side with 4f worse KD Advantage; too slow to work as a reversal against many attacks, but half-screen suction makes it powerful as a projectile counter; can hold button for a fully charged launching version; plays out the held version on block or when juggled into; active frame distribution: vacuum 91f, juggle 1(4)2(7)2(8)2(7)2(8)2(9)2(7)2(9)2(8)3 starting on frame 33",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Zangief/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "zangief:raw:6",
+        "rawRef": "archive/staging/sf6-frame-data/raw/zangief.json#/moves/6",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/zangief.cargo.json#/data/cargoquery/6/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "18",
+          "total": "171",
+          "hit": "HKD +5(+1)",
+          "block": "-35"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "zangief__super_art_2_H",
+      "name": "Cyclone Lariat",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "236236",
+        "button": "P",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "18",
+          "numeric": 18
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "171",
+          "numeric": 171,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-35",
+          "numeric": -35
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: Switches sides on hit; can hold forward/back on hit to move in that direction, dealing 100 less damage; holding forward keeps opponent on the same side with 4f worse KD Advantage; too slow to work as a reversal against many attacks, but half-screen suction makes it powerful as a projectile counter; can hold button for a fully charged launching version; plays out the held version on block or when juggled into; active frame distribution: vacuum 91f, juggle 1(4)2(7)2(8)2(7)2(8)2(9)2(7)2(9)2(8)3 starting on frame 33",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Zangief/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "zangief:raw:6",
+        "rawRef": "archive/staging/sf6-frame-data/raw/zangief.json#/moves/6",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/zangief.cargo.json#/data/cargoquery/6/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "18",
+          "total": "171",
+          "hit": "HKD +5(+1)",
+          "block": "-35"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "zangief__super_art_3_L",
+      "name": "Bolshoi Storm Buster",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "720",
+        "button": "P",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "123",
+          "numeric": 123,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 720+P",
+        "upstreamNotes: Command grab Super; opponent cannot jump after the freeze; can only be comboed into with OD Lariat (1st hit), Punish Counter 3HK wall splat, or grounded crumple state; cinematic time regenerates ~2.2 Drive bars for Zangief; Range: 1.56 (2nd active frame, jumpable: 1.60)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Zangief/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "zangief:raw:49",
+        "rawRef": "archive/staging/sf6-frame-data/raw/zangief.json#/moves/49",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/zangief.cargo.json#/data/cargoquery/49/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "6+0",
+          "total": "123",
+          "hit": "HKD +26",
+          "block": "-"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "zangief__super_art_3_M",
+      "name": "Bolshoi Storm Buster",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "720",
+        "button": "P",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "123",
+          "numeric": 123,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 720+P",
+        "upstreamNotes: Command grab Super; opponent cannot jump after the freeze; can only be comboed into with OD Lariat (1st hit), Punish Counter 3HK wall splat, or grounded crumple state; cinematic time regenerates ~2.2 Drive bars for Zangief; Range: 1.56 (2nd active frame, jumpable: 1.60)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Zangief/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "zangief:raw:49",
+        "rawRef": "archive/staging/sf6-frame-data/raw/zangief.json#/moves/49",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/zangief.cargo.json#/data/cargoquery/49/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "6+0",
+          "total": "123",
+          "hit": "HKD +26",
+          "block": "-"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "zangief__super_art_3_H",
+      "name": "Bolshoi Storm Buster",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "720",
+        "button": "P",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "123",
+          "numeric": 123,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 720+P",
+        "upstreamNotes: Command grab Super; opponent cannot jump after the freeze; can only be comboed into with OD Lariat (1st hit), Punish Counter 3HK wall splat, or grounded crumple state; cinematic time regenerates ~2.2 Drive bars for Zangief; Range: 1.56 (2nd active frame, jumpable: 1.60)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Zangief/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:28.570Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "zangief:raw:49",
+        "rawRef": "archive/staging/sf6-frame-data/raw/zangief.json#/moves/49",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/zangief.cargo.json#/data/cargoquery/49/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "6+0",
+          "total": "123",
+          "hit": "HKD +26",
+          "block": "-"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
       }
     }
   ]

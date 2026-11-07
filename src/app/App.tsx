@@ -92,6 +92,9 @@ export default function App() {
               <li>
                 溜め技は左から右、または下から上へ入力します。長押しは不要です。
               </li>
+              <li>
+                SAはレベルを選び、弱・中・強をそれぞれ別の質問として入力します。CAは対象外です。SA3の2回転は候補からも選べます。
+              </li>
             </ul>
           </section>
           {dataset.eligible.length < 2 && (

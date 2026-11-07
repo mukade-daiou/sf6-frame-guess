@@ -3,12 +3,14 @@ import { execFileSync } from "node:child_process";
 import { characterSchema, type Character } from "../src/lib/frame-data/schema";
 import { validateDataset } from "../src/lib/frame-data/loader";
 import { resolveMove } from "../src/lib/frame-data/resolver";
+import { readSAResearch, generateSuperArts } from "./super-arts";
 const read = async (p: string) => JSON.parse(await readFile(p, "utf8"));
 const save = async (p: string, v: unknown) =>
   writeFile(p, JSON.stringify(v, null, 2) + "\n");
 const out = "staging/verification";
 await mkdir(out, { recursive: true });
 const decisions = await read("data/adoption-decisions.json");
+const saResearch = decisions.superArts ? readSAResearch() : null;
 // Recompute against the actual inputs before trusting a saved complete flag.
 execFileSync(
   "node_modules/.bin/tsx",
@@ -54,6 +56,10 @@ for (const d of decisions.characters) {
         ? "ユーザー指定の対象外入力。原典・フレーム値は保持し、技なしは採用範囲に限定する。"
         : "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。",
     };
+  if (saResearch) {
+    c.moves.push(...generateSuperArts(saResearch, c.id));
+    c.coverage.super_art = { status: "complete", verification: "unverified" };
+  }
   files[c.id] = characterSchema.parse(c);
 }
 const dataset = validateDataset(metadata, files);

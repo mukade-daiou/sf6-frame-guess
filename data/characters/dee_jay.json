@@ -24,6 +24,10 @@
     "special": {
       "status": "complete",
       "verification": "unverified"
+    },
+    "super_art": {
+      "status": "complete",
+      "verification": "unverified"
     }
   },
   "moves": [
@@ -1850,6 +1854,711 @@
         "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
         "license": "CC-BY-SA-4.0",
         "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "dee_jay__super_art_1_L",
+      "name": "The Greatest Sobat",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "K",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "43",
+          "numeric": 43,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-12",
+          "numeric": -12
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: Crumples on Counter-hit (HKD +66) and on Punish Counter (HKD +79); after crumple, Dee Jay is +4 on CH and +6 on PC before opponent becomes airborne, after which opponent is in a juggle state; causes sliding Hard Knockdown vs. airborne opponents; Punish Counter vs. airborne opponents causes a wall bounce and free juggle state (opponent can fly over Dee Jay's head if near the corner); 4-14f low crush (not airborne); does not extend hurtbox during attack (can force a trade vs. some projectiles for a follow-up combo); cannot be used as a reversal like most Lv.1 Supers; high pushback on block makes it safe against most characters when spaced",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Dee_Jay/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "dee_jay:raw:29",
+        "rawRef": "archive/staging/sf6-frame-data/raw/dee_jay.json#/moves/29",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/dee_jay.cargo.json#/data/cargoquery/21/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "7",
+          "total": "43",
+          "hit": "HKD +44",
+          "block": "-12"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "dee_jay__super_art_1_M",
+      "name": "The Greatest Sobat",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "K",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "43",
+          "numeric": 43,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-12",
+          "numeric": -12
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: Crumples on Counter-hit (HKD +66) and on Punish Counter (HKD +79); after crumple, Dee Jay is +4 on CH and +6 on PC before opponent becomes airborne, after which opponent is in a juggle state; causes sliding Hard Knockdown vs. airborne opponents; Punish Counter vs. airborne opponents causes a wall bounce and free juggle state (opponent can fly over Dee Jay's head if near the corner); 4-14f low crush (not airborne); does not extend hurtbox during attack (can force a trade vs. some projectiles for a follow-up combo); cannot be used as a reversal like most Lv.1 Supers; high pushback on block makes it safe against most characters when spaced",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Dee_Jay/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "dee_jay:raw:29",
+        "rawRef": "archive/staging/sf6-frame-data/raw/dee_jay.json#/moves/29",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/dee_jay.cargo.json#/data/cargoquery/21/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "7",
+          "total": "43",
+          "hit": "HKD +44",
+          "block": "-12"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "dee_jay__super_art_1_H",
+      "name": "The Greatest Sobat",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "K",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "43",
+          "numeric": 43,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-12",
+          "numeric": -12
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: Crumples on Counter-hit (HKD +66) and on Punish Counter (HKD +79); after crumple, Dee Jay is +4 on CH and +6 on PC before opponent becomes airborne, after which opponent is in a juggle state; causes sliding Hard Knockdown vs. airborne opponents; Punish Counter vs. airborne opponents causes a wall bounce and free juggle state (opponent can fly over Dee Jay's head if near the corner); 4-14f low crush (not airborne); does not extend hurtbox during attack (can force a trade vs. some projectiles for a follow-up combo); cannot be used as a reversal like most Lv.1 Supers; high pushback on block makes it safe against most characters when spaced",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Dee_Jay/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "dee_jay:raw:29",
+        "rawRef": "archive/staging/sf6-frame-data/raw/dee_jay.json#/moves/29",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/dee_jay.cargo.json#/data/cargoquery/21/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "7",
+          "total": "43",
+          "hit": "HKD +44",
+          "block": "-12"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典の明示的な対象強度を優先。"
+      },
+      "id": "dee_jay__super_art_2_L",
+      "name": "Lowkey Sunrise Festival",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "236236",
+        "button": "P",
+        "strength": "L",
+        "adoptionBasis": "原典の明示的な対象強度を優先。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "62",
+          "numeric": 62,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+6",
+          "numeric": 6
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-29",
+          "numeric": -29
+        }
+      },
+      "notes": [
+        "原典の明示的な対象強度を優先。",
+        "upstreamInput: 236236LP",
+        "upstreamNotes: LP~MP~HP~LK~MK~HK follow-ups (on hit only) must be manually timed (LP sequence is easiest but lowest damage and cannot use cinematic HP/HK enders); all follow-ups up to MK are +6 on hit with no additional damage scaling; full invincibility extended 1-29f on hit; KD +27 when juggled into; forces stand; cannot hit cross-up; applies 30% scaling to Super Art gain until end of combo",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Dee_Jay/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "dee_jay:raw:30",
+        "rawRef": "archive/staging/sf6-frame-data/raw/dee_jay.json#/moves/30",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/dee_jay.cargo.json#/data/cargoquery/22/title",
+        "strengthBasis": "explicit",
+        "sourceNotation": {
+          "startup": "12",
+          "total": "62",
+          "hit": "+6",
+          "block": "-29"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典の明示的な対象強度を優先。"
+      },
+      "id": "dee_jay__super_art_2_M",
+      "name": "Marvelous Sunrise Festival",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "236236",
+        "button": "P",
+        "strength": "M",
+        "adoptionBasis": "原典の明示的な対象強度を優先。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "62",
+          "numeric": 62,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+6",
+          "numeric": 6
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-29",
+          "numeric": -29
+        }
+      },
+      "notes": [
+        "原典の明示的な対象強度を優先。",
+        "upstreamInput: 236236MP",
+        "upstreamNotes: LP~MP~HP~LK~MK~HK follow-ups (on hit only) must be manually timed (MP sequence gives medium damage with medium difficulty); perfect rhythm gives more damage; non-perfect rhythm ender cannot follow up after the crumple knockdown; all follow-ups up to MK are +6 on hit with no additional damage scaling; full invincibility extended 1-29f on hit; KD +27 when juggled into; forces stand; cannot hit cross-up; applies 30% scaling to Super Art gain until end of combo",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Dee_Jay/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "dee_jay:raw:37",
+        "rawRef": "archive/staging/sf6-frame-data/raw/dee_jay.json#/moves/37",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/dee_jay.cargo.json#/data/cargoquery/23/title",
+        "strengthBasis": "explicit",
+        "sourceNotation": {
+          "startup": "12",
+          "total": "62",
+          "hit": "+6",
+          "block": "-29"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典の明示的な対象強度を優先。"
+      },
+      "id": "dee_jay__super_art_2_H",
+      "name": "Headliner Sunrise Festival",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "236236",
+        "button": "P",
+        "strength": "H",
+        "adoptionBasis": "原典の明示的な対象強度を優先。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "62",
+          "numeric": 62,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+6",
+          "numeric": 6
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-29",
+          "numeric": -29
+        }
+      },
+      "notes": [
+        "原典の明示的な対象強度を優先。",
+        "upstreamInput: 236236HP",
+        "upstreamNotes: LP~MP~HP~LK~MK~HK follow-ups (on hit only) must be manually timed (HP sequence gives highest damage with hardest difficulty); perfect rhythm gives more damage; non-perfect rhythm ender cannot follow up after the crumple knockdown; all follow-ups up to MK are +6 on hit with no additional damage scaling; full invincibility extended 1-29f on hit; KD +27 when juggled into; forces stand; cannot hit cross-up; applies 30% scaling to Super Art gain until end of combo",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Dee_Jay/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "dee_jay:raw:20",
+        "rawRef": "archive/staging/sf6-frame-data/raw/dee_jay.json#/moves/20",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/dee_jay.cargo.json#/data/cargoquery/20/title",
+        "strengthBasis": "explicit",
+        "sourceNotation": {
+          "startup": "12",
+          "total": "62",
+          "hit": "+6",
+          "block": "-29"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "dee_jay__super_art_3_L",
+      "name": "Weekend Pleasure",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "214214",
+        "button": "P",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "61",
+          "numeric": 61,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-28",
+          "numeric": -28
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214P",
+        "upstreamNotes: Cannot hit cross-up; cinematic time regenerates ~2 Drive bars for Dee Jay",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Dee_Jay/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "dee_jay:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/dee_jay.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/dee_jay.cargo.json#/data/cargoquery/1/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "9",
+          "total": "61",
+          "hit": "HKD +26",
+          "block": "-28"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "dee_jay__super_art_3_M",
+      "name": "Weekend Pleasure",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "214214",
+        "button": "P",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "61",
+          "numeric": 61,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-28",
+          "numeric": -28
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214P",
+        "upstreamNotes: Cannot hit cross-up; cinematic time regenerates ~2 Drive bars for Dee Jay",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Dee_Jay/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "dee_jay:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/dee_jay.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/dee_jay.cargo.json#/data/cargoquery/1/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "9",
+          "total": "61",
+          "hit": "HKD +26",
+          "block": "-28"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "dee_jay__super_art_3_H",
+      "name": "Weekend Pleasure",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "214214",
+        "button": "P",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "61",
+          "numeric": 61,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-28",
+          "numeric": -28
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214P",
+        "upstreamNotes: Cannot hit cross-up; cinematic time regenerates ~2 Drive bars for Dee Jay",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Dee_Jay/Frame_data",
+        "retrievedAt": "2026-08-19T04:05:27.013Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "dee_jay:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/dee_jay.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/dee_jay.cargo.json#/data/cargoquery/1/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "9",
+          "total": "61",
+          "hit": "HKD +26",
+          "block": "-28"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
       }
     }
   ]

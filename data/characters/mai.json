@@ -24,6 +24,10 @@
     "special": {
       "status": "complete",
       "verification": "unverified"
+    },
+    "super_art": {
+      "status": "complete",
+      "verification": "unverified"
     }
   },
   "moves": [
@@ -1689,6 +1693,708 @@
         "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
         "license": "CC-BY-SA-4.0",
         "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "mai__super_art_1_L",
+      "name": "Kagerou no Mai",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "P",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "90",
+          "numeric": 90,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-31",
+          "numeric": -31
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: Grants Mai 5 flame stocks on the last frame of recovery; flame stocks enhance special moves and SA1/SA2 (stocks do not carry over between rounds); short horizontal range but has a good anti-air hitbox that hits on both sides; KD advantage refers to grounded hit (higher advantage vs. airborne but also variable); 8-hit projectile, but Perfect Parry only incurs 1 recovery frame per hit (allows the opponent to interrupt between hits after one Perfect Parry); on hit/block, the last 2 projectile hits have 1 active frame each, occurring consecutively (the remaining frames are converted to \"recovery frames\")",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:02.878Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "mai:raw:12",
+        "rawRef": "archive/staging/sf6-frame-data/raw/mai.json#/moves/12",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/mai.cargo.json#/data/cargoquery/13/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "6",
+          "total": "90",
+          "hit": "KD +26",
+          "block": "-31"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "mai__super_art_1_M",
+      "name": "Kagerou no Mai",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "P",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "90",
+          "numeric": 90,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-31",
+          "numeric": -31
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: Grants Mai 5 flame stocks on the last frame of recovery; flame stocks enhance special moves and SA1/SA2 (stocks do not carry over between rounds); short horizontal range but has a good anti-air hitbox that hits on both sides; KD advantage refers to grounded hit (higher advantage vs. airborne but also variable); 8-hit projectile, but Perfect Parry only incurs 1 recovery frame per hit (allows the opponent to interrupt between hits after one Perfect Parry); on hit/block, the last 2 projectile hits have 1 active frame each, occurring consecutively (the remaining frames are converted to \"recovery frames\")",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:02.878Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "mai:raw:12",
+        "rawRef": "archive/staging/sf6-frame-data/raw/mai.json#/moves/12",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/mai.cargo.json#/data/cargoquery/13/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "6",
+          "total": "90",
+          "hit": "KD +26",
+          "block": "-31"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "mai__super_art_1_H",
+      "name": "Kagerou no Mai",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "P",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "90",
+          "numeric": 90,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-31",
+          "numeric": -31
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: Grants Mai 5 flame stocks on the last frame of recovery; flame stocks enhance special moves and SA1/SA2 (stocks do not carry over between rounds); short horizontal range but has a good anti-air hitbox that hits on both sides; KD advantage refers to grounded hit (higher advantage vs. airborne but also variable); 8-hit projectile, but Perfect Parry only incurs 1 recovery frame per hit (allows the opponent to interrupt between hits after one Perfect Parry); on hit/block, the last 2 projectile hits have 1 active frame each, occurring consecutively (the remaining frames are converted to \"recovery frames\")",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:02.878Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "mai:raw:12",
+        "rawRef": "archive/staging/sf6-frame-data/raw/mai.json#/moves/12",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/mai.cargo.json#/data/cargoquery/13/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "6",
+          "total": "90",
+          "hit": "KD +26",
+          "block": "-31"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "mai__super_art_2_L",
+      "name": "Chou Hissatsu Shinobi Bachi",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "236236",
+        "button": "K",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "68",
+          "numeric": 68,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-24",
+          "numeric": -24
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: 11f extra recovery on block; solid range, but a short invincibility window that makes it difficult to use against slower projectiles; deals less damage from long range due to earlier hits whiffing; good reversal and juggle ender; generally should not be canceled into from OD specials (214PP: manually juggle afterward, 236KK: juggle j.MP > Air SA2)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:02.878Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "mai:raw:10",
+        "rawRef": "archive/staging/sf6-frame-data/raw/mai.json#/moves/10",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/mai.cargo.json#/data/cargoquery/10/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "7",
+          "total": "68(79)",
+          "hit": "KD +33",
+          "block": "-24"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "mai__super_art_2_M",
+      "name": "Chou Hissatsu Shinobi Bachi",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "236236",
+        "button": "K",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "68",
+          "numeric": 68,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-24",
+          "numeric": -24
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: 11f extra recovery on block; solid range, but a short invincibility window that makes it difficult to use against slower projectiles; deals less damage from long range due to earlier hits whiffing; good reversal and juggle ender; generally should not be canceled into from OD specials (214PP: manually juggle afterward, 236KK: juggle j.MP > Air SA2)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:02.878Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "mai:raw:10",
+        "rawRef": "archive/staging/sf6-frame-data/raw/mai.json#/moves/10",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/mai.cargo.json#/data/cargoquery/10/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "7",
+          "total": "68(79)",
+          "hit": "KD +33",
+          "block": "-24"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "mai__super_art_2_H",
+      "name": "Chou Hissatsu Shinobi Bachi",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "236236",
+        "button": "K",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "68",
+          "numeric": 68,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-24",
+          "numeric": -24
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: 11f extra recovery on block; solid range, but a short invincibility window that makes it difficult to use against slower projectiles; deals less damage from long range due to earlier hits whiffing; good reversal and juggle ender; generally should not be canceled into from OD specials (214PP: manually juggle afterward, 236KK: juggle j.MP > Air SA2)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:02.878Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "mai:raw:10",
+        "rawRef": "archive/staging/sf6-frame-data/raw/mai.json#/moves/10",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/mai.cargo.json#/data/cargoquery/10/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "7",
+          "total": "68(79)",
+          "hit": "KD +33",
+          "block": "-24"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "mai__super_art_3_L",
+      "name": "Shiranui Ryuu: Enbu Ada Zakura",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "214214",
+        "button": "P",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "94",
+          "numeric": 94,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-33",
+          "numeric": -33
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214P",
+        "upstreamNotes: 1st hit causes cinematic; non-cinematic version does less damage (varies based on how many hits connect), but can juggle into 623K to recover some lost damage; cinematic time regenerates ~2 Drive bars for Mai; 3f startup when canceled from 236K/KK only; slower startup makes it risky as a reversal (many light normals can be safe with meaty timing)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:02.878Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "mai:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/mai.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/mai.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10(3)",
+          "total": "94",
+          "hit": "HKD +19 (KD +52)",
+          "block": "-33"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "mai__super_art_3_M",
+      "name": "Shiranui Ryuu: Enbu Ada Zakura",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "214214",
+        "button": "P",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "94",
+          "numeric": 94,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-33",
+          "numeric": -33
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214P",
+        "upstreamNotes: 1st hit causes cinematic; non-cinematic version does less damage (varies based on how many hits connect), but can juggle into 623K to recover some lost damage; cinematic time regenerates ~2 Drive bars for Mai; 3f startup when canceled from 236K/KK only; slower startup makes it risky as a reversal (many light normals can be safe with meaty timing)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:02.878Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "mai:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/mai.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/mai.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10(3)",
+          "total": "94",
+          "hit": "HKD +19 (KD +52)",
+          "block": "-33"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "mai__super_art_3_H",
+      "name": "Shiranui Ryuu: Enbu Ada Zakura",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "214214",
+        "button": "P",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "94",
+          "numeric": 94,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-33",
+          "numeric": -33
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214P",
+        "upstreamNotes: 1st hit causes cinematic; non-cinematic version does less damage (varies based on how many hits connect), but can juggle into 623K to recover some lost damage; cinematic time regenerates ~2 Drive bars for Mai; 3f startup when canceled from 236K/KK only; slower startup makes it risky as a reversal (many light normals can be safe with meaty timing)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:02.878Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "mai:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/mai.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/mai.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10(3)",
+          "total": "94",
+          "hit": "HKD +19 (KD +52)",
+          "block": "-33"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
       }
     }
   ]

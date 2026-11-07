@@ -24,6 +24,10 @@
     "special": {
       "status": "complete",
       "verification": "unverified"
+    },
+    "super_art": {
+      "status": "complete",
+      "verification": "unverified"
     }
   },
   "moves": [
@@ -1438,6 +1442,708 @@
         "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
         "license": "CC-BY-SA-4.0",
         "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "cviper__super_art_1_L",
+      "name": "Limit Decoupler",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "K",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "73",
+          "numeric": 73,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-34",
+          "numeric": -34
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: Puts C.Viper into an install state on frame 21 (after active frames) that removes the meter cost of her 1-bar moves (High Jump, extensions from Thunder Dash and Burning Kick) and also causes the 1-bar special follow-ups to build 3000 Drive gauge on hit/block; during Burnout, the install ends after one use of these moves; install lasts for 700 frames (11.7 seconds) and freezes during hitstop or cinematics; cannot build additional Super gauge while install is active; KD advantage varies slightly when used in juggles or as an anti-air; if 1st hit is Perfect Parried, opponent can interrupt 2nd hit with 5f or faster attack that reaches around standing chest-height; if 1st hit trades with a projectile at close range, C. Viper can pick up a juggle into 214HP, SA1, or SA2 depending on the distance and fireball hitstun (useful in blockstrings with a large gap, like Terry 5HP > Round Wave)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:00.758Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "cviper:raw:17",
+        "rawRef": "archive/staging/sf6-frame-data/raw/cviper.json#/moves/17",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json#/data/cargoquery/17/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "8",
+          "total": "73",
+          "hit": "KD +21",
+          "block": "-34"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "cviper__super_art_1_M",
+      "name": "Limit Decoupler",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "K",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "73",
+          "numeric": 73,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-34",
+          "numeric": -34
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: Puts C.Viper into an install state on frame 21 (after active frames) that removes the meter cost of her 1-bar moves (High Jump, extensions from Thunder Dash and Burning Kick) and also causes the 1-bar special follow-ups to build 3000 Drive gauge on hit/block; during Burnout, the install ends after one use of these moves; install lasts for 700 frames (11.7 seconds) and freezes during hitstop or cinematics; cannot build additional Super gauge while install is active; KD advantage varies slightly when used in juggles or as an anti-air; if 1st hit is Perfect Parried, opponent can interrupt 2nd hit with 5f or faster attack that reaches around standing chest-height; if 1st hit trades with a projectile at close range, C. Viper can pick up a juggle into 214HP, SA1, or SA2 depending on the distance and fireball hitstun (useful in blockstrings with a large gap, like Terry 5HP > Round Wave)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:00.758Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "cviper:raw:17",
+        "rawRef": "archive/staging/sf6-frame-data/raw/cviper.json#/moves/17",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json#/data/cargoquery/17/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "8",
+          "total": "73",
+          "hit": "KD +21",
+          "block": "-34"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "cviper__super_art_1_H",
+      "name": "Limit Decoupler",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "K",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "73",
+          "numeric": 73,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-34",
+          "numeric": -34
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: Puts C.Viper into an install state on frame 21 (after active frames) that removes the meter cost of her 1-bar moves (High Jump, extensions from Thunder Dash and Burning Kick) and also causes the 1-bar special follow-ups to build 3000 Drive gauge on hit/block; during Burnout, the install ends after one use of these moves; install lasts for 700 frames (11.7 seconds) and freezes during hitstop or cinematics; cannot build additional Super gauge while install is active; KD advantage varies slightly when used in juggles or as an anti-air; if 1st hit is Perfect Parried, opponent can interrupt 2nd hit with 5f or faster attack that reaches around standing chest-height; if 1st hit trades with a projectile at close range, C. Viper can pick up a juggle into 214HP, SA1, or SA2 depending on the distance and fireball hitstun (useful in blockstrings with a large gap, like Terry 5HP > Round Wave)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:00.758Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "cviper:raw:17",
+        "rawRef": "archive/staging/sf6-frame-data/raw/cviper.json#/moves/17",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json#/data/cargoquery/17/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "8",
+          "total": "73",
+          "hit": "KD +21",
+          "block": "-34"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "cviper__super_art_2_L",
+      "name": "Mission Complete",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "P",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "55",
+          "numeric": 55,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-29",
+          "numeric": -29
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214P",
+        "upstreamNotes: Strong reversal but short range makes it a poor projectile counter; cinematic carries opponent over half screen; cannot be executed using easy input shortcuts when inputting with HP button or immediately after High Jump (to prevent input overlap issues with HP Thunder Dash and Feint cancels)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:00.758Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "cviper:raw:2",
+        "rawRef": "archive/staging/sf6-frame-data/raw/cviper.json#/moves/2",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json#/data/cargoquery/2/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "7",
+          "total": "55",
+          "hit": "HKD +19",
+          "block": "-29"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "cviper__super_art_2_M",
+      "name": "Mission Complete",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "P",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "55",
+          "numeric": 55,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-29",
+          "numeric": -29
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214P",
+        "upstreamNotes: Strong reversal but short range makes it a poor projectile counter; cinematic carries opponent over half screen; cannot be executed using easy input shortcuts when inputting with HP button or immediately after High Jump (to prevent input overlap issues with HP Thunder Dash and Feint cancels)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:00.758Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "cviper:raw:2",
+        "rawRef": "archive/staging/sf6-frame-data/raw/cviper.json#/moves/2",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json#/data/cargoquery/2/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "7",
+          "total": "55",
+          "hit": "HKD +19",
+          "block": "-29"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "cviper__super_art_2_H",
+      "name": "Mission Complete",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "P",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "55",
+          "numeric": 55,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-29",
+          "numeric": -29
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214P",
+        "upstreamNotes: Strong reversal but short range makes it a poor projectile counter; cinematic carries opponent over half screen; cannot be executed using easy input shortcuts when inputting with HP button or immediately after High Jump (to prevent input overlap issues with HP Thunder Dash and Feint cancels)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:00.758Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "cviper:raw:2",
+        "rawRef": "archive/staging/sf6-frame-data/raw/cviper.json#/moves/2",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json#/data/cargoquery/2/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "7",
+          "total": "55",
+          "hit": "HKD +19",
+          "block": "-29"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "cviper__super_art_3_L",
+      "name": "Hard Luck Rejector",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "214214",
+        "button": "K",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "67",
+          "numeric": 67,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-38",
+          "numeric": -38
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214K",
+        "upstreamNotes: Short range makes it a poor projectile counter; cinematic time regenerates ~2 Drive bars for C.Viper",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:00.758Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "cviper:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/cviper.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10",
+          "total": "67",
+          "hit": "HKD +21",
+          "block": "-38"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "cviper__super_art_3_M",
+      "name": "Hard Luck Rejector",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "214214",
+        "button": "K",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "67",
+          "numeric": 67,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-38",
+          "numeric": -38
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214K",
+        "upstreamNotes: Short range makes it a poor projectile counter; cinematic time regenerates ~2 Drive bars for C.Viper",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:00.758Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "cviper:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/cviper.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10",
+          "total": "67",
+          "hit": "HKD +21",
+          "block": "-38"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "cviper__super_art_3_H",
+      "name": "Hard Luck Rejector",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "214214",
+        "button": "K",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "67",
+          "numeric": 67,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-38",
+          "numeric": -38
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214K",
+        "upstreamNotes: Short range makes it a poor projectile counter; cinematic time regenerates ~2 Drive bars for C.Viper",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:00.758Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "cviper:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/cviper.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10",
+          "total": "67",
+          "hit": "HKD +21",
+          "block": "-38"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
       }
     }
   ]

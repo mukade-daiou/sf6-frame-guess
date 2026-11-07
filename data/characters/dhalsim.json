@@ -24,6 +24,10 @@
     "special": {
       "status": "complete",
       "verification": "unverified"
+    },
+    "super_art": {
+      "status": "complete",
+      "verification": "unverified"
     }
   },
   "moves": [
@@ -1451,6 +1455,708 @@
         "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
         "license": "CC-BY-SA-4.0",
         "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典の明示的な対象強度を優先。"
+      },
+      "id": "dhalsim__super_art_1_L",
+      "name": "Yoga Inferno",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "P",
+        "strength": "L",
+        "adoptionBasis": "原典の明示的な対象強度を優先。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "128",
+          "numeric": 128,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-10",
+          "numeric": -10
+        }
+      },
+      "notes": [
+        "原典の明示的な対象強度を優先。",
+        "upstreamInput: 236236LP",
+        "upstreamNotes: Flames are low to the ground with ~1/2 screen range; deals 792 recoverable damage on block; high pushback on block makes it useful for mid-range block pressure against most characters",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Dhalsim/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "dhalsim:raw:10",
+        "rawRef": "archive/staging/sf6-frame-data/raw/dhalsim.json#/moves/10",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/dhalsim.cargo.json#/data/cargoquery/10/title",
+        "strengthBasis": "explicit",
+        "sourceNotation": {
+          "startup": "10",
+          "total": "128",
+          "hit": "KD +29",
+          "block": "-10"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典の明示的な対象強度を優先。"
+      },
+      "id": "dhalsim__super_art_1_M",
+      "name": "Yoga Inferno",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "P",
+        "strength": "M",
+        "adoptionBasis": "原典の明示的な対象強度を優先。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "128",
+          "numeric": 128,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-10",
+          "numeric": -10
+        }
+      },
+      "notes": [
+        "原典の明示的な対象強度を優先。",
+        "upstreamInput: 236236MP",
+        "upstreamNotes: Shorter range than LP version (~1/3 screen), ends with upward angled flame and deals more damage; deals 792 recoverable damage on block",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Dhalsim/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "dhalsim:raw:11",
+        "rawRef": "archive/staging/sf6-frame-data/raw/dhalsim.json#/moves/11",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/dhalsim.cargo.json#/data/cargoquery/11/title",
+        "strengthBasis": "explicit",
+        "sourceNotation": {
+          "startup": "10",
+          "total": "128",
+          "hit": "KD +29",
+          "block": "-10"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "原典の明示的な対象強度を優先。"
+      },
+      "id": "dhalsim__super_art_1_H",
+      "name": "Yoga Inferno",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "P",
+        "strength": "H",
+        "adoptionBasis": "原典の明示的な対象強度を優先。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "133",
+          "numeric": 133,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-22",
+          "numeric": -22
+        }
+      },
+      "notes": [
+        "原典の明示的な対象強度を優先。",
+        "upstreamInput: 236236HP",
+        "upstreamNotes: Upward anti-air angle; crouching hurtbox on frames 1-12; whiffs on crouching opponents unless they extend a vertical hurtbox; deals 792 recoverable damage on block",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Dhalsim/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "dhalsim:raw:7",
+        "rawRef": "archive/staging/sf6-frame-data/raw/dhalsim.json#/moves/7",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/dhalsim.cargo.json#/data/cargoquery/7/title",
+        "strengthBasis": "explicit",
+        "sourceNotation": {
+          "startup": "10",
+          "total": "133",
+          "hit": "KD +27",
+          "block": "-22"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "dhalsim__super_art_2_L",
+      "name": "Yoga Sunburst",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "K",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "67",
+          "numeric": 67,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214K",
+        "upstreamNotes: Button strength determines trajectory; 5-hit projectile; cannot hit crouching opponents on the way up unless they extend a vertical hurtbox (opponent can safely pressure Dhalsim with a crouching meaty attack); automatically releases if the hitbox above Dhalsim's head connects; can hold the button to charge into a more powerful version; upon hitting the floor, creates a larger stationary hitbox that lasts 20f; [] refers to active projectile time after release",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Dhalsim/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "dhalsim:raw:4",
+        "rawRef": "archive/staging/sf6-frame-data/raw/dhalsim.json#/moves/4",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/dhalsim.cargo.json#/data/cargoquery/4/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "7",
+          "total": "67",
+          "hit": "KD +50",
+          "block": "-4"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "dhalsim__super_art_2_M",
+      "name": "Yoga Sunburst",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "K",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "67",
+          "numeric": 67,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214K",
+        "upstreamNotes: Button strength determines trajectory; 5-hit projectile; cannot hit crouching opponents on the way up unless they extend a vertical hurtbox (opponent can safely pressure Dhalsim with a crouching meaty attack); automatically releases if the hitbox above Dhalsim's head connects; can hold the button to charge into a more powerful version; upon hitting the floor, creates a larger stationary hitbox that lasts 20f; [] refers to active projectile time after release",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Dhalsim/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "dhalsim:raw:4",
+        "rawRef": "archive/staging/sf6-frame-data/raw/dhalsim.json#/moves/4",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/dhalsim.cargo.json#/data/cargoquery/4/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "7",
+          "total": "67",
+          "hit": "KD +50",
+          "block": "-4"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "dhalsim__super_art_2_H",
+      "name": "Yoga Sunburst",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "K",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "67",
+          "numeric": 67,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214K",
+        "upstreamNotes: Button strength determines trajectory; 5-hit projectile; cannot hit crouching opponents on the way up unless they extend a vertical hurtbox (opponent can safely pressure Dhalsim with a crouching meaty attack); automatically releases if the hitbox above Dhalsim's head connects; can hold the button to charge into a more powerful version; upon hitting the floor, creates a larger stationary hitbox that lasts 20f; [] refers to active projectile time after release",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Dhalsim/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "dhalsim:raw:4",
+        "rawRef": "archive/staging/sf6-frame-data/raw/dhalsim.json#/moves/4",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/dhalsim.cargo.json#/data/cargoquery/4/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "7",
+          "total": "67",
+          "hit": "KD +50",
+          "block": "-4"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "dhalsim__super_art_3_L",
+      "name": "Merciless Yoga",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "K",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "89",
+          "numeric": 89,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-62",
+          "numeric": -62
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: Cinematic time regenerates ~2 Drive bars for Dhalsim; 2f startup when canceled from 63214P; *Self-hitstop does not occur until 3rd active frame on block (incorrectly appears to have 7 active frames and 20f blockstun)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Dhalsim/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "dhalsim:raw:8",
+        "rawRef": "archive/staging/sf6-frame-data/raw/dhalsim.json#/moves/8",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/dhalsim.cargo.json#/data/cargoquery/8/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10",
+          "total": "89",
+          "hit": "HKD +19",
+          "block": "-62"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "dhalsim__super_art_3_M",
+      "name": "Merciless Yoga",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "K",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "89",
+          "numeric": 89,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-62",
+          "numeric": -62
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: Cinematic time regenerates ~2 Drive bars for Dhalsim; 2f startup when canceled from 63214P; *Self-hitstop does not occur until 3rd active frame on block (incorrectly appears to have 7 active frames and 20f blockstun)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Dhalsim/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "dhalsim:raw:8",
+        "rawRef": "archive/staging/sf6-frame-data/raw/dhalsim.json#/moves/8",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/dhalsim.cargo.json#/data/cargoquery/8/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10",
+          "total": "89",
+          "hit": "HKD +19",
+          "block": "-62"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "dhalsim__super_art_3_H",
+      "name": "Merciless Yoga",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "K",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "89",
+          "numeric": 89,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-62",
+          "numeric": -62
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: Cinematic time regenerates ~2 Drive bars for Dhalsim; 2f startup when canceled from 63214P; *Self-hitstop does not occur until 3rd active frame on block (incorrectly appears to have 7 active frames and 20f blockstun)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Dhalsim/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "dhalsim:raw:8",
+        "rawRef": "archive/staging/sf6-frame-data/raw/dhalsim.json#/moves/8",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/dhalsim.cargo.json#/data/cargoquery/8/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10",
+          "total": "89",
+          "hit": "HKD +19",
+          "block": "-62"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
       }
     }
   ]

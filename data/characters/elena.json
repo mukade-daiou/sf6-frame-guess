@@ -24,6 +24,10 @@
     "special": {
       "status": "complete",
       "verification": "unverified"
+    },
+    "super_art": {
+      "status": "complete",
+      "verification": "unverified"
     }
   },
   "moves": [
@@ -1918,6 +1922,708 @@
         "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
         "license": "CC-BY-SA-4.0",
         "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "elena__super_art_1_L",
+      "name": "Meteor Volley",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "K",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "94",
+          "numeric": 94,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-68",
+          "numeric": -68
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: Good anti-air with air invuln that fully covers the first 2 hits; cannot be used as an invincible reversal against grounded strikes/throws/projectiles (making it much more dangerous to be in Burnout); cannot hit cross-up; puts opponents into limited juggle state (can combo a 236KK full connect after a grounded hit); extreme block disadvantage allows many characters to set activate installs without sacrificing optimal punish starters",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Elena/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "elena:raw:12",
+        "rawRef": "archive/staging/sf6-frame-data/raw/elena.json#/moves/12",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/elena.cargo.json#/data/cargoquery/12/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "7",
+          "total": "94",
+          "hit": "KD +44",
+          "block": "-68"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "elena__super_art_1_M",
+      "name": "Meteor Volley",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "K",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "94",
+          "numeric": 94,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-68",
+          "numeric": -68
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: Good anti-air with air invuln that fully covers the first 2 hits; cannot be used as an invincible reversal against grounded strikes/throws/projectiles (making it much more dangerous to be in Burnout); cannot hit cross-up; puts opponents into limited juggle state (can combo a 236KK full connect after a grounded hit); extreme block disadvantage allows many characters to set activate installs without sacrificing optimal punish starters",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Elena/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "elena:raw:12",
+        "rawRef": "archive/staging/sf6-frame-data/raw/elena.json#/moves/12",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/elena.cargo.json#/data/cargoquery/12/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "7",
+          "total": "94",
+          "hit": "KD +44",
+          "block": "-68"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "elena__super_art_1_H",
+      "name": "Meteor Volley",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "K",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "94",
+          "numeric": 94,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-68",
+          "numeric": -68
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: Good anti-air with air invuln that fully covers the first 2 hits; cannot be used as an invincible reversal against grounded strikes/throws/projectiles (making it much more dangerous to be in Burnout); cannot hit cross-up; puts opponents into limited juggle state (can combo a 236KK full connect after a grounded hit); extreme block disadvantage allows many characters to set activate installs without sacrificing optimal punish starters",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Elena/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "elena:raw:12",
+        "rawRef": "archive/staging/sf6-frame-data/raw/elena.json#/moves/12",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/elena.cargo.json#/data/cargoquery/12/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "7",
+          "total": "94",
+          "hit": "KD +44",
+          "block": "-68"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "elena__super_art_2_L",
+      "name": "Revival Dance",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "236236",
+        "button": "P",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "79",
+          "numeric": 79,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-47",
+          "numeric": -47
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: Excellent anti-fireball tool due to its invincibility and forward movement; slow startup makes it risky as a reversal (can be safely meatied by light normals); leaves Elena farther away than the Healing version, but with more advantage for Lynx Song or Drive Rush pressure; generally a poor anti-air but can catch some mid-range neutral jumps or divekick landing recovery; has a large combo-only hitbox that makes it more consistent in juggles; opponents can jump after the Super freeze to avoid a chip KO",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Elena/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "elena:raw:13",
+        "rawRef": "archive/staging/sf6-frame-data/raw/elena.json#/moves/13",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/elena.cargo.json#/data/cargoquery/13/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "12",
+          "total": "79",
+          "hit": "HKD +25",
+          "block": "-47"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "elena__super_art_2_M",
+      "name": "Revival Dance",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "236236",
+        "button": "P",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "79",
+          "numeric": 79,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-47",
+          "numeric": -47
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: Excellent anti-fireball tool due to its invincibility and forward movement; slow startup makes it risky as a reversal (can be safely meatied by light normals); leaves Elena farther away than the Healing version, but with more advantage for Lynx Song or Drive Rush pressure; generally a poor anti-air but can catch some mid-range neutral jumps or divekick landing recovery; has a large combo-only hitbox that makes it more consistent in juggles; opponents can jump after the Super freeze to avoid a chip KO",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Elena/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "elena:raw:13",
+        "rawRef": "archive/staging/sf6-frame-data/raw/elena.json#/moves/13",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/elena.cargo.json#/data/cargoquery/13/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "12",
+          "total": "79",
+          "hit": "HKD +25",
+          "block": "-47"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "elena__super_art_2_H",
+      "name": "Revival Dance",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "236236",
+        "button": "P",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "79",
+          "numeric": 79,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-47",
+          "numeric": -47
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: Excellent anti-fireball tool due to its invincibility and forward movement; slow startup makes it risky as a reversal (can be safely meatied by light normals); leaves Elena farther away than the Healing version, but with more advantage for Lynx Song or Drive Rush pressure; generally a poor anti-air but can catch some mid-range neutral jumps or divekick landing recovery; has a large combo-only hitbox that makes it more consistent in juggles; opponents can jump after the Super freeze to avoid a chip KO",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Elena/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "elena:raw:13",
+        "rawRef": "archive/staging/sf6-frame-data/raw/elena.json#/moves/13",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/elena.cargo.json#/data/cargoquery/13/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "12",
+          "total": "79",
+          "hit": "HKD +25",
+          "block": "-47"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "elena__super_art_3_L",
+      "name": "Song of the Grasslands",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "214214",
+        "button": "K",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "79",
+          "numeric": 79,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-54",
+          "numeric": -54
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214K",
+        "upstreamNotes: Cinematic time regenerates ~2.1 Drive bars for Elena; large combo-only hitbox makes it more consistent in juggles; reliable but expensive reversal when in Burnout; very consistent anti-air at mid to long range, but cannot hit cross-up and can whiff under closer jumps; opponents cannot avoid a chip KO by jumping after the Super freeze",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Elena/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "elena:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/elena.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/elena.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "8",
+          "total": "79",
+          "hit": "HKD +24",
+          "block": "-54"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "elena__super_art_3_M",
+      "name": "Song of the Grasslands",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "214214",
+        "button": "K",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "79",
+          "numeric": 79,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-54",
+          "numeric": -54
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214K",
+        "upstreamNotes: Cinematic time regenerates ~2.1 Drive bars for Elena; large combo-only hitbox makes it more consistent in juggles; reliable but expensive reversal when in Burnout; very consistent anti-air at mid to long range, but cannot hit cross-up and can whiff under closer jumps; opponents cannot avoid a chip KO by jumping after the Super freeze",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Elena/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "elena:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/elena.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/elena.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "8",
+          "total": "79",
+          "hit": "HKD +24",
+          "block": "-54"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "elena__super_art_3_H",
+      "name": "Song of the Grasslands",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "214214",
+        "button": "K",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "79",
+          "numeric": 79,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-54",
+          "numeric": -54
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214K",
+        "upstreamNotes: Cinematic time regenerates ~2.1 Drive bars for Elena; large combo-only hitbox makes it more consistent in juggles; reliable but expensive reversal when in Burnout; very consistent anti-air at mid to long range, but cannot hit cross-up and can whiff under closer jumps; opponents cannot avoid a chip KO by jumping after the Super freeze",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Elena/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:01.290Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "elena:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/elena.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/elena.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "8",
+          "total": "79",
+          "hit": "HKD +24",
+          "block": "-54"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
       }
     }
   ]

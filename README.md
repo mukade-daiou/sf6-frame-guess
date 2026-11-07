@@ -53,3 +53,7 @@ VITE_BASE_PATH=/your-repository/ npm run preview
 `npm run data:plan`で採用案を検証し、`npm run data:check`で現在のスナップショットとの差を検出します。明示的な更新依頼があるときだけ`build-snapshot.ts --write --update`を使います。キャラ追加のためのstage専用スクリプトは不要です。
 
 過去の再現テストは`npm run test:archive`、import参照検査は`node scripts/check-references.mjs`。ブラウザーの通しプレイはpreviewを127.0.0.1:4173で起動して`npm run verify:browser`を実行します。
+
+# SAの操作（第15段階B）
+
+SAを選び、SA1/2/3とコマンド、弱・中・強の攻撃を指定します。同じフレーム値でも各強度は独立した質問です。CAは対象外。溜めSAは左→右→左→右、SA3の720は2回転または候補クリックで入力できます。Normal/Hardの表示切替と質問済み判定は独立しています。

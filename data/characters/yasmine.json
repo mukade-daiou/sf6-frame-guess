@@ -24,6 +24,10 @@
     "special": {
       "status": "complete",
       "verification": "unverified"
+    },
+    "super_art": {
+      "status": "complete",
+      "verification": "unverified"
     }
   },
   "moves": [
@@ -1677,6 +1681,705 @@
         "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
         "license": "CC-BY-SA-4.0",
         "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "yasmine__super_art_1_L",
+      "name": "Hiwa ng Kalangitan",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "K",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "62",
+          "numeric": 62,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-34",
+          "numeric": -34
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: Puts Yasmine into Bayani Mode on hit; active frames 1-3 transition into a fully invincible cinematic on hit (1st hit can trade for 500 damage); active frames 4-6 perform a non-cinematic hit (1600 damage, KD +18~20 vs. grounded opponents, variable vs. airborne); fast reversal and a strong anti-air even at close ranges; useful juggle ender in any scenario where 623HK can also land",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Yasmine/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "yasmine:raw:8",
+        "rawRef": "archive/staging/sf6-frame-data/raw/yasmine.json#/moves/8",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/yasmine.cargo.json#/data/cargoquery/8/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "7",
+          "total": "62",
+          "hit": "KD +24(+18~20)",
+          "block": "-34"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "yasmine__super_art_1_M",
+      "name": "Hiwa ng Kalangitan",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "K",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "62",
+          "numeric": 62,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-34",
+          "numeric": -34
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: Puts Yasmine into Bayani Mode on hit; active frames 1-3 transition into a fully invincible cinematic on hit (1st hit can trade for 500 damage); active frames 4-6 perform a non-cinematic hit (1600 damage, KD +18~20 vs. grounded opponents, variable vs. airborne); fast reversal and a strong anti-air even at close ranges; useful juggle ender in any scenario where 623HK can also land",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Yasmine/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "yasmine:raw:8",
+        "rawRef": "archive/staging/sf6-frame-data/raw/yasmine.json#/moves/8",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/yasmine.cargo.json#/data/cargoquery/8/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "7",
+          "total": "62",
+          "hit": "KD +24(+18~20)",
+          "block": "-34"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "yasmine__super_art_1_H",
+      "name": "Hiwa ng Kalangitan",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "K",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "62",
+          "numeric": 62,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-34",
+          "numeric": -34
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236K",
+        "upstreamNotes: Puts Yasmine into Bayani Mode on hit; active frames 1-3 transition into a fully invincible cinematic on hit (1st hit can trade for 500 damage); active frames 4-6 perform a non-cinematic hit (1600 damage, KD +18~20 vs. grounded opponents, variable vs. airborne); fast reversal and a strong anti-air even at close ranges; useful juggle ender in any scenario where 623HK can also land",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Yasmine/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "yasmine:raw:8",
+        "rawRef": "archive/staging/sf6-frame-data/raw/yasmine.json#/moves/8",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/yasmine.cargo.json#/data/cargoquery/8/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "7",
+          "total": "62",
+          "hit": "KD +24(+18~20)",
+          "block": "-34"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "yasmine__super_art_2_L",
+      "name": "Nakatagong Lakas",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "P",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "1",
+          "numeric": 1
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214P",
+        "upstreamNotes: Install that keeps Yasmine in Bayani Mode until the timer ends; timer lasts 1500 frames (25 seconds) and freezes during hitstop; cannot build additional Super gauge while the install is active; Yasmine stays in Bayani Mode after install ends (if 236P is activated with at least 1 frame left on the timer, the follow-up enhanced Alon can be used freely without spending the Bayani stock); grants access to a new special move Linya ng Liwanag (fast cross-up slash); changes the properties of OD Alon (new cinematic ender); each activation of an enhanced Bayani Mode special consumes 375f from the install timer (25%); install activation is useful for starting pressure from ranges approaches like 214PP or 236PP~6P (very high pushback and weak pressure when canceled directly from 5MP~MP or 236PP)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Yasmine/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "yasmine:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/yasmine.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/yasmine.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "1",
+          "total": "10",
+          "hit": "-",
+          "block": "-"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": "攻撃判定の発生ではなく発動行のstartup=1。totalは発動動作の表記値。効果付与の厳密なフレーム定義・暗転の算入法は保存資料で未確認。"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "yasmine__super_art_2_M",
+      "name": "Nakatagong Lakas",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "P",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "1",
+          "numeric": 1
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214P",
+        "upstreamNotes: Install that keeps Yasmine in Bayani Mode until the timer ends; timer lasts 1500 frames (25 seconds) and freezes during hitstop; cannot build additional Super gauge while the install is active; Yasmine stays in Bayani Mode after install ends (if 236P is activated with at least 1 frame left on the timer, the follow-up enhanced Alon can be used freely without spending the Bayani stock); grants access to a new special move Linya ng Liwanag (fast cross-up slash); changes the properties of OD Alon (new cinematic ender); each activation of an enhanced Bayani Mode special consumes 375f from the install timer (25%); install activation is useful for starting pressure from ranges approaches like 214PP or 236PP~6P (very high pushback and weak pressure when canceled directly from 5MP~MP or 236PP)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Yasmine/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "yasmine:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/yasmine.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/yasmine.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "1",
+          "total": "10",
+          "hit": "-",
+          "block": "-"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": "攻撃判定の発生ではなく発動行のstartup=1。totalは発動動作の表記値。効果付与の厳密なフレーム定義・暗転の算入法は保存資料で未確認。"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "yasmine__super_art_2_H",
+      "name": "Nakatagong Lakas",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "P",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "1",
+          "numeric": 1
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 214214P",
+        "upstreamNotes: Install that keeps Yasmine in Bayani Mode until the timer ends; timer lasts 1500 frames (25 seconds) and freezes during hitstop; cannot build additional Super gauge while the install is active; Yasmine stays in Bayani Mode after install ends (if 236P is activated with at least 1 frame left on the timer, the follow-up enhanced Alon can be used freely without spending the Bayani stock); grants access to a new special move Linya ng Liwanag (fast cross-up slash); changes the properties of OD Alon (new cinematic ender); each activation of an enhanced Bayani Mode special consumes 375f from the install timer (25%); install activation is useful for starting pressure from ranges approaches like 214PP or 236PP~6P (very high pushback and weak pressure when canceled directly from 5MP~MP or 236PP)",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Yasmine/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "yasmine:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/yasmine.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/yasmine.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "1",
+          "total": "10",
+          "hit": "-",
+          "block": "-"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": "攻撃判定の発生ではなく発動行のstartup=1。totalは発動動作の表記値。効果付与の厳密なフレーム定義・暗転の算入法は保存資料で未確認。"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "yasmine__super_art_3_L",
+      "name": "Pamumukadkad ng Sampaguita",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "P",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "82",
+          "numeric": 82,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-48",
+          "numeric": -48
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: Cinematic time regenerates ~2.2 Drive bars for Yasmine; can be used against projectiles from about round-start distance if it catches an extended hurtbox; tall hitbox can anti-air at long range but whiffs under close/mid range opponents; leaves Yasmine fullscreen on hit even if the opponent was cornered; can still get oki with Drive Rush into a delayed normal but cannot get into throw range; 2f startup when canceled from specials or 5HP",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Yasmine/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "yasmine:raw:9",
+        "rawRef": "archive/staging/sf6-frame-data/raw/yasmine.json#/moves/9",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/yasmine.cargo.json#/data/cargoquery/10/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10(2)",
+          "total": "82",
+          "hit": "HKD +42",
+          "block": "-48"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "yasmine__super_art_3_M",
+      "name": "Pamumukadkad ng Sampaguita",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "P",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "82",
+          "numeric": 82,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-48",
+          "numeric": -48
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: Cinematic time regenerates ~2.2 Drive bars for Yasmine; can be used against projectiles from about round-start distance if it catches an extended hurtbox; tall hitbox can anti-air at long range but whiffs under close/mid range opponents; leaves Yasmine fullscreen on hit even if the opponent was cornered; can still get oki with Drive Rush into a delayed normal but cannot get into throw range; 2f startup when canceled from specials or 5HP",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Yasmine/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "yasmine:raw:9",
+        "rawRef": "archive/staging/sf6-frame-data/raw/yasmine.json#/moves/9",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/yasmine.cargo.json#/data/cargoquery/10/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10(2)",
+          "total": "82",
+          "hit": "HKD +42",
+          "block": "-48"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "id": "yasmine__super_art_3_H",
+      "name": "Pamumukadkad ng Sampaguita",
+      "category": "super_art",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "P",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "82",
+          "numeric": 82,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-48",
+          "numeric": -48
+        }
+      },
+      "notes": [
+        "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。",
+        "upstreamInput: 236236P",
+        "upstreamNotes: Cinematic time regenerates ~2.2 Drive bars for Yasmine; can be used against projectiles from about round-start distance if it catches an extended hurtbox; tall hitbox can anti-air at long range but whiffs under close/mid range opponents; leaves Yasmine fullscreen on hit even if the opponent was cornered; can still get oki with Drive Rush into a delayed normal but cannot get into throw range; 2f startup when canceled from specials or 5HP",
+        "startup compound notation uses saved raw scalar, never computed; freeze definition remains unverified."
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Yasmine/Frame_data",
+        "retrievedAt": "2026-11-01T00:02:03.381Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors",
+        "license": "CC-BY-SA",
+        "verification": "unverified"
+      },
+      "saEvidence": {
+        "researchRecordId": "yasmine:raw:9",
+        "rawRef": "archive/staging/sf6-frame-data/raw/yasmine.json#/moves/9",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/yasmine.cargo.json#/data/cargoquery/10/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10(2)",
+          "total": "82",
+          "hit": "HKD +42",
+          "block": "-48"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
       }
     }
   ]

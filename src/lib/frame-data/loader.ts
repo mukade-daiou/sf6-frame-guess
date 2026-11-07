@@ -78,7 +78,7 @@ export function validateDataset(
           m.adoption?.status === "excluded",
       ),
   );
-  const inputs = [
+  const adoptedInputs = [
     ...new Map(
       eligible.flatMap((c) =>
         c.moves
@@ -87,5 +87,24 @@ export function validateDataset(
       ),
     ).values(),
   ].filter(isQuestionInput);
+  // Expose all six attacks for every globally adopted SA motion/level, including
+  // nonexistent combinations. Button availability never depends on the target.
+  const inputs = [
+    ...new Map(
+      adoptedInputs
+        .flatMap((input): MoveInput[] =>
+          input.type === "super_art"
+            ? (["P", "K"] as const).flatMap((button) =>
+                (["L", "M", "H"] as const).map((strength) => ({
+                  ...input,
+                  button,
+                  strength,
+                })),
+              )
+            : [input],
+        )
+        .map((input) => [inputKey(input), input]),
+    ).values(),
+  ];
   return { metadata, characters, eligible, inputs, errors };
 }

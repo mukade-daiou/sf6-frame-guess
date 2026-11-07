@@ -29,7 +29,8 @@ export function MoveSelector({
   mode?: Mode;
   onAnswer?: () => void;
 }) {
-  const [type, setType] = useState<"normal" | "special">("normal");
+  const [type, setType] = useState<MoveInput["type"]>("normal");
+  const [saLevel, setSaLevel] = useState<1 | 2 | 3>(1);
   const [direction, setDirection] = useState<"5" | "2">("5");
   const [command, setCommand] = useState("");
   const previous = useRef<Direction>("5");
@@ -38,8 +39,12 @@ export function MoveSelector({
   const [leverReset, setLeverReset] = useState(0);
   const rotation = useRef(emptyRotation());
   const [rotationClockwise, setRotationClockwise] = useState(true);
-  const motions = getMotionCandidates(inputs, "");
-  const suggestions = command ? getMotionCandidates(inputs, command) : [];
+  const motionType = type === "super_art" ? "super_art" : "special";
+  const motions = getMotionCandidates(inputs, "", motionType, saLevel);
+  const suggestions = command
+    ? getMotionCandidates(inputs, command, motionType, saLevel)
+    : [];
+  const turns = motions.includes("720") ? 2 : 1;
   const commandStatus = !command
     ? "未入力"
     : motions.includes(command)
@@ -69,7 +74,7 @@ export function MoveSelector({
       }}
     >
       <div className="segments type-toggle" role="group" aria-label="技の種類">
-        {(["normal", "special"] as const).map((t) => (
+        {(["normal", "special", "super_art"] as const).map((t) => (
           <button
             type="button"
             key={t}
@@ -80,14 +85,36 @@ export function MoveSelector({
               clear();
             }}
           >
-            {t === "normal" ? "通常技" : "必殺技"}
+            {t === "normal" ? "通常技" : t === "special" ? "必殺技" : "SA"}
           </button>
         ))}
       </div>
+      {type === "super_art" && (
+        <div
+          className="segments sa-level-toggle"
+          role="group"
+          aria-label="SAレベル"
+        >
+          {([1, 2, 3] as const).map((level) => (
+            <button
+              type="button"
+              key={level}
+              aria-pressed={saLevel === level}
+              onClick={() => {
+                setSaLevel(level);
+                clear();
+                setLeverReset((n) => n + 1);
+              }}
+            >
+              SA{level}
+            </button>
+          ))}
+        </div>
+      )}
       <div className="arcade-controls">
         <div className="lever-column">
           <Lever
-            key={`${type}:${leverReset}`}
+            key={`${type}:${saLevel}:${leverReset}`}
             normal={type === "normal"}
             selected={direction}
             onDirection={(d) => {
@@ -99,12 +126,14 @@ export function MoveSelector({
                 }
               } else {
                 const before = previous.current;
-                rotation.current = trackRotation(rotation.current, d);
+                rotation.current = trackRotation(rotation.current, d, turns);
                 if (rotation.current.complete)
                   setRotationClockwise(rotation.current.steps >= 0);
                 setCommand((c) =>
                   rotation.current.complete
-                    ? "360"
+                    ? turns === 2
+                      ? "720"
+                      : "360"
                     : appendDirection(c, before, d),
                 );
                 previous.current = d;
@@ -115,7 +144,7 @@ export function MoveSelector({
               }
             }}
           />
-          {type === "special" && (
+          {type !== "normal" && (
             <>
               <div className="command-strip">
                 <div>
@@ -137,8 +166,8 @@ export function MoveSelector({
                 >
                   {suggestions
                     .flatMap((motion) =>
-                      motion === "360"
-                        ? rotationSuggestions(command)
+                      motion === "360" || motion === "720"
+                        ? rotationSuggestions(command, motion === "720" ? 2 : 1)
                             .slice(0, 1)
                             .map((path) => ({
                               motion,
@@ -157,10 +186,12 @@ export function MoveSelector({
                           setCommand(motion);
                           setRotationClockwise(clockwise);
                           rotation.current =
-                            motion === "360"
+                            motion === "360" || motion === "720"
                               ? {
                                   previous: null,
-                                  steps: clockwise ? 8 : -8,
+                                  steps:
+                                    (clockwise ? 8 : -8) *
+                                    (motion === "720" ? 2 : 1),
                                   complete: true,
                                 }
                               : emptyRotation();
@@ -169,11 +200,14 @@ export function MoveSelector({
                           setUnknownMode(null);
                         }}
                       >
-                        {motion === "360" ? (
+                        {motion === "360" || motion === "720" ? (
                           <>
                             <CommandNotation command={sequence.slice(0, 5)} />
                             <span aria-hidden="true">…</span>
-                            <RotationIcon clockwise={clockwise} />
+                            <RotationIcon
+                              clockwise={clockwise}
+                              turns={motion === "720" ? 2 : 1}
+                            />
                           </>
                         ) : (
                           <CommandNotation command={motion} />
@@ -193,6 +227,7 @@ export function MoveSelector({
               type === "normal" ? direction : command,
               a.button,
               a.strength,
+              saLevel,
             );
             return (
               <button

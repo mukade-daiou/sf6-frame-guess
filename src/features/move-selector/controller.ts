@@ -13,7 +13,11 @@ export const emptyRotation = (): Rotation => ({
   steps: 0,
   complete: false,
 });
-export function trackRotation(state: Rotation, next: Direction): Rotation {
+export function trackRotation(
+  state: Rotation,
+  next: Direction,
+  turns: 1 | 2 = 1,
+): Rotation {
   if (next === "5" || next === state.previous || state.complete) return state;
   if (state.previous === null) return { ...state, previous: next };
   const delta =
@@ -22,7 +26,7 @@ export function trackRotation(state: Rotation, next: Direction): Rotation {
   // Opposite/large jumps provide no reliable evidence of a traversed arc.
   if (Math.abs(delta) > 2) return { ...emptyRotation(), previous: next };
   const steps = state.steps + delta;
-  return { previous: next, steps, complete: Math.abs(steps) >= 8 };
+  return { previous: next, steps, complete: Math.abs(steps) >= 8 * turns };
 }
 export const attackButtons = (["P", "K"] as const).flatMap((button) =>
   (["L", "M", "H", "OD"] as const).map((strength) => ({
@@ -46,16 +50,20 @@ export function appendDirection(
 export function getMotionCandidates(
   inputs: MoveInput[],
   prefix: string,
+  type: "special" | "super_art" = "special",
+  saLevel: 1 | 2 | 3 = 1,
 ): string[] {
   return [
     ...new Set(
       inputs.flatMap((input) =>
-        input.type === "special" &&
+        input.type === type &&
+        (input.type !== "super_art" || input.saLevel === saLevel) &&
         isQuestionInput(input) &&
-        (input.motion === "360"
+        (["360", "720"].includes(input.motion)
           ? prefix === "" ||
-            prefix === "360" ||
-            rotationSuggestions(prefix).length > 0
+            prefix === input.motion ||
+            rotationSuggestions(prefix, input.motion === "720" ? 2 : 1).length >
+              0
           : input.motion.startsWith(prefix) ||
             input.motion.replace(/[\[\]]/g, "").startsWith(prefix))
           ? [input.motion]
@@ -64,17 +72,19 @@ export function getMotionCandidates(
     ),
   ];
 }
-export function rotationSuggestions(prefix: string) {
+export function rotationSuggestions(prefix: string, turns: 1 | 2 = 1) {
+  const token = turns === 2 ? "720" : "360";
   const start = perimeter.indexOf(
-    (prefix === "360" ? "6" : prefix[0]) as Direction,
+    (prefix === token ? "6" : prefix[0]) as Direction,
   );
   if (start < 0) return [];
   return [1, -1].flatMap((step) => {
     const sequence = Array.from(
-      { length: 9 },
-      (_, i) => perimeter[(start + step * i + 16) % 8],
+      { length: 8 * turns + 1 },
+      (_, i) => perimeter[(start + step * i + 24) % 8],
     ).join("");
-    return prefix === "360" || sequence.startsWith(prefix)
+    return prefix === token ||
+      sequence.startsWith(prefix.replace(/[\[\]]/g, ""))
       ? [{ sequence, clockwise: step === 1 }]
       : [];
   });
@@ -93,11 +103,13 @@ export function selectAttack(
   motion: string,
   button: "P" | "K",
   strength: "L" | "M" | "H" | "OD",
+  saLevel: 1 | 2 | 3 = 1,
 ) {
   return inputs.find(
     (input) =>
       isQuestionInput(input) &&
       input.type === type &&
+      (input.type !== "super_art" || input.saLevel === saLevel) &&
       (input.type === "normal" ? input.direction : input.motion) === motion &&
       input.button === button &&
       input.strength === strength,
