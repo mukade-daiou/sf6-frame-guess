@@ -62,6 +62,7 @@ export function getMotionCandidates(
         (["360", "720"].includes(input.motion)
           ? prefix === "" ||
             prefix === input.motion ||
+            (input.motion === "720" && prefix === "360") ||
             rotationSuggestions(prefix, input.motion === "720" ? 2 : 1).length >
               0
           : input.motion.startsWith(prefix) ||
@@ -75,7 +76,9 @@ export function getMotionCandidates(
 export function rotationSuggestions(prefix: string, turns: 1 | 2 = 1) {
   const token = turns === 2 ? "720" : "360";
   const start = perimeter.indexOf(
-    (prefix === token ? "6" : prefix[0]) as Direction,
+    (prefix === token || (turns === 2 && prefix === "360")
+      ? "6"
+      : prefix[0]) as Direction,
   );
   if (start < 0) return [];
   return [1, -1].flatMap((step) => {
@@ -84,6 +87,7 @@ export function rotationSuggestions(prefix: string, turns: 1 | 2 = 1) {
       (_, i) => perimeter[(start + step * i + 24) % 8],
     ).join("");
     return prefix === token ||
+      (turns === 2 && prefix === "360") ||
       sequence.startsWith(prefix.replace(/[\[\]]/g, ""))
       ? [{ sequence, clockwise: step === 1 }]
       : [];

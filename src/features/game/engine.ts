@@ -125,3 +125,8 @@ export function answer(game: Game, selectedId: string): Game {
 export function isCorrect(game: Game): boolean {
   return game.phase === "result" && game.selectedId === game.target.id;
 }
+export function giveUp(game: Game): Game {
+  return game.phase === "answer"
+    ? { ...game, phase: "result", selectedId: null }
+    : game;
+}

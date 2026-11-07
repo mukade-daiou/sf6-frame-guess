@@ -77,6 +77,7 @@ export const inputSchema = z
     }),
     z.object({
       type: z.literal("special"),
+      includeSuperArts: z.literal(true).optional(),
       motion: text.regex(
         /^(?:[0-9\[\]]+|none)$/,
         "Use an explicit numpad motion; aliases are not normalized",

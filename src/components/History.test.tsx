@@ -38,6 +38,9 @@ it("switches all historical rows to the current mode, including unknown saved fi
     strength: "L",
   }).game;
   expect(game.history.map((h) => h.mode)).toEqual(["startup", "normal"]);
+  expect(render().indexOf('aria-label="5LP"')).toBeLessThan(
+    render().indexOf('aria-label="2HK"'),
+  );
   expect((render().match(/<dd>/g) || []).length).toBe(8);
   game = changeMode(game, "startup");
   expect((render().match(/<dd>/g) || []).length).toBe(2);

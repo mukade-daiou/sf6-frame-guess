@@ -4,6 +4,12 @@ import type { MoveInput } from "./schema";
 // Supports the two explicit charge motions; other complex records remain intact.
 export function isQuestionInput(input: MoveInput): boolean {
   if (input.type === "super_art") return true;
+  if (
+    input.type === "special" &&
+    input.includeSuperArts &&
+    ["720", "[4]646"].includes(input.motion)
+  )
+    return true;
   return (
     input.type === "normal" ||
     (input.motion !== "none" &&
@@ -15,6 +21,8 @@ export function isQuestionInput(input: MoveInput): boolean {
 
 // No alias expansion or guessed motion normalization. Keys retain all input dimensions.
 export function inputKey(input: MoveInput): string {
+  if (input.type === "special" && input.includeSuperArts)
+    return `command:${input.motion}:${input.button}:${input.strength}`;
   if (input.type === "super_art")
     return `super_art:${input.saLevel}:${input.motion}:${input.button}:${input.strength}`;
   if (input.type === "special" && input.motion === "none")

@@ -30,6 +30,38 @@ export function resolveMove(
   input: MoveInput,
   mode: Mode,
 ): Resolution {
+  if (input.type === "special" && input.includeSuperArts) {
+    const candidates = character.moves.filter(
+      (m) =>
+        m.adoption?.status !== "excluded" &&
+        m.input.type !== "normal" &&
+        m.input.motion === input.motion &&
+        m.input.button === input.button &&
+        m.input.strength === input.strength,
+    );
+    const base = candidates.filter((m) => m.variant.kind === "base");
+    if (base.length > 1) return { status: "ambiguous" };
+    if (base.length === 1) return resolveMove(character, base[0].input, mode);
+    if (
+      candidates.length ||
+      character.moves.some(
+        (m) =>
+          m.adoption?.status !== "excluded" &&
+          m.input.type === "special" &&
+          m.input.motion === input.motion &&
+          m.input.button === input.button &&
+          m.input.strength === "none",
+      )
+    )
+      return { status: "unknown" };
+    return {
+      status:
+        hasCompleteScope(character, "special") &&
+        hasCompleteScope(character, "super_art")
+          ? "not_found"
+          : "unknown",
+    };
+  }
   const matches = character.moves.filter(
     (move) =>
       move.adoption?.status !== "excluded" &&

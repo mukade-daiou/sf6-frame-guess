@@ -16,17 +16,18 @@ export function History({
       {entries.length === 0 ? (
         <p className="muted">まだ質問していません。</p>
       ) : (
-        <ol className="history">
-          {entries.map((entry, index) => {
+        <ol className="history" reversed>
+          {[...entries].reverse().map((entry, index) => {
+            const questionNumber = entries.length - index;
             const frames =
               entry.result.status === "found" ||
               entry.result.status === "review"
                 ? entry.result.frames
                 : null;
             return (
-              <li key={index}>
+              <li key={questionNumber}>
                 <h3>
-                  <span className="muted">{index + 1}.</span>{" "}
+                  <span className="muted">{questionNumber}.</span>{" "}
                   <MoveNotation input={entry.input} />
                 </h3>
                 {entry.result.status === "review" && (

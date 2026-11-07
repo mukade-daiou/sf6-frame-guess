@@ -196,6 +196,15 @@ select {
   display: flex;
   gap: 8px;
 }
+.giveup-button {
+  background: #b42318;
+  border-color: #b42318;
+  color: #fff;
+}
+.giveup-button:hover:enabled {
+  background: #912018;
+  border-color: #912018;
+}
 .secondary-button {
   background: transparent;
   color: var(--color-ink);
@@ -337,6 +346,8 @@ summary {
   color: white;
 }
 .remaining {
+  font-size: 1rem;
+  font-weight: 600;
   text-align: right;
   margin: 0;
 }
@@ -483,6 +494,10 @@ summary {
   height: 24px;
   flex: 0 0 24px;
   vertical-align: middle;
+}
+.rotation-pair {
+  flex-wrap: nowrap;
+  flex-shrink: 0;
 }
 .charge-direction {
   color: #e7c136;

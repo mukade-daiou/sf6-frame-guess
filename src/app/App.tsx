@@ -3,6 +3,7 @@ import { production } from "../lib/frame-data/datasets";
 import type { MoveInput } from "../lib/frame-data/schema";
 import {
   answer,
+  giveUp,
   ask,
   isCorrect,
   startGame,
@@ -92,9 +93,7 @@ export default function App() {
               <li>
                 溜め技は左から右、または下から上へ入力します。長押しは不要です。
               </li>
-              <li>
-                SAはレベルを選び、弱・中・強をそれぞれ別の質問として入力します。CAは対象外です。SA3の2回転は候補からも選べます。
-              </li>
+              <li>CAとSAの派生技は対象外です。</li>
             </ul>
           </section>
           {dataset.eligible.length < 2 && (
@@ -208,29 +207,52 @@ export default function App() {
                       ))}
                     </div>
                   </fieldset>
-                  <button disabled={!selection}>回答確定</button>
+                  <div className="question-actions">
+                    <button disabled={!selection}>回答確定</button>
+                    <button
+                      type="button"
+                      className="giveup-button"
+                      onClick={() => {
+                        if (
+                          !window.confirm("ギブアップして正解を表示しますか？")
+                        )
+                          return;
+                        setGame(giveUp(game));
+                        setSelection("");
+                        setMessage("");
+                      }}
+                    >
+                      ギブアップ
+                    </button>
+                  </div>
                 </form>
               </>
             )}
             {game.phase === "result" && (
               <>
                 <p className="verdict">
-                  {isCorrect(game) ? "正解！" : "不正解"}
+                  {game.selectedId === null
+                    ? "ギブアップ"
+                    : isCorrect(game)
+                      ? "正解！"
+                      : "不正解"}
                 </p>
                 <dl className="result">
                   <dt>正解キャラクター</dt>
                   <dd>{game.target.nameJa}</dd>
-                  <dt>選択したキャラクター</dt>
+                  <dt>
+                    {game.selectedId === null ? "回答" : "選択したキャラクター"}
+                  </dt>
                   <dd>
-                    {
-                      game.candidates.find((c) => c.id === game.selectedId)
-                        ?.nameJa
-                    }
+                    {game.selectedId === null
+                      ? "ギブアップ"
+                      : game.candidates.find((c) => c.id === game.selectedId)
+                          ?.nameJa}
                   </dd>
                 </dl>
                 <button
                   onClick={() => {
-                    setGame(null);
+                    setGame(startGame(dataset, game.mode, limit));
                     setSelection("");
                     setMessage("");
                   }}

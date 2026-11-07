@@ -26,7 +26,9 @@ it.each([
     expect(getMotionCandidates(production.inputs, sequence[0])).toContain(
       motion,
     );
-    expect(getMotionCandidates(production.inputs, motion)).toEqual([motion]);
+    expect(getMotionCandidates(production.inputs, motion)).toEqual(
+      motion === "[4]6" ? [motion, "[4]646"] : [motion],
+    );
   },
 );
 it.each(["236", "214", "623", "22", "421"])(

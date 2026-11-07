@@ -193,6 +193,10 @@
                     "type": "string",
                     "const": "special"
                   },
+                  "includeSuperArts": {
+                    "type": "boolean",
+                    "const": true
+                  },
                   "motion": {
                     "type": "string",
                     "minLength": 1,

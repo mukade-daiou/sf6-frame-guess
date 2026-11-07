@@ -106,5 +106,27 @@ export function validateDataset(
         .map((input) => [inputKey(input), input]),
     ).values(),
   ];
-  return { metadata, characters, eligible, inputs, errors };
+  const commandInputs: MoveInput[] = [
+    ...new Map(
+      inputs
+        .filter((i) => i.type !== "normal")
+        .map((i) => {
+          const input = {
+            type: "special" as const,
+            motion: i.motion,
+            button: i.button,
+            strength: i.strength,
+            includeSuperArts: true as const,
+          };
+          return [inputKey(input), input] as const;
+        }),
+    ).values(),
+  ];
+  return {
+    metadata,
+    characters,
+    eligible,
+    inputs: [...inputs, ...commandInputs],
+    errors,
+  };
 }

@@ -1,5 +1,7 @@
 # データ仕様 v1.0.0
 
+共通タブからの質問はspecial入力のincludeSuperArts=trueで表現し、キーはcommand:motion:button:strength。保存済みSA入力のレベルは維持し、共通質問の検索時にのみレベルを指定せず基本必殺技/SAを照合する。原典や288採用レコードの複製・更新は行わない。
+
 第15段階CではSAの項目別代表値をsuperArts.frameDecisionsから適用する。saEvidence.frameDecisionsに判断ID・対象項目・採用元原典行・参照・元表記・採用表示・理由を保持し、frameOrigins=user_representativeで原典の直接採用と区別する。基本行のsourceNotationは上書きしない。発動系の未展開テンプレートも欠損として扱い、activation_missing_ruleとして由来を記録する。
 
 ## 第15段階B：スーパーアーツ

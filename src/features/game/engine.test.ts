@@ -6,6 +6,7 @@ import { validateDataset } from "../../lib/frame-data/loader";
 import { inputKey } from "../../lib/frame-data/input";
 import {
   answer,
+  giveUp,
   ask,
   isCorrect,
   startGame,
@@ -19,6 +20,21 @@ const dataset = () =>
     alpha: structuredClone(alpha),
     beta: structuredClone(beta),
   });
+it("ends a give-up without selecting a character or changing history and allows a fresh game", () => {
+  const game = startGame(dataset(), "normal", 5, () => 0);
+  expect(giveUp(game)).toBe(game);
+  const answering = requestAnswer(game);
+  const ended = giveUp(answering);
+  expect(ended.phase).toBe("result");
+  expect(ended.selectedId).toBeNull();
+  expect(ended.target).toBe(game.target);
+  expect(ended.history).toBe(game.history);
+  expect(isCorrect(ended)).toBe(false);
+  expect(ask(ended, game.inputs[0]).status).toBe("closed");
+  expect(returnToQuestions(ended)).toBe(ended);
+  expect(giveUp(ended)).toBe(ended);
+  expect(startGame(dataset(), ended.mode).phase).toBe("question");
+});
 it.each([0, 2, 4])(
   "allows an early final answer after %i questions without changing the count or target",
   (count) => {

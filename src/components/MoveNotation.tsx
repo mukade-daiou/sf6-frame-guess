@@ -86,6 +86,13 @@ export function RotationIcon({
   clockwise?: boolean;
   turns?: 1 | 2;
 }) {
+  if (turns === 2)
+    return (
+      <span className="command-directions rotation-pair" aria-hidden="true">
+        <RotationIcon clockwise={clockwise} />
+        <RotationIcon clockwise={clockwise} />
+      </span>
+    );
   return (
     <svg
       className="direction-icon rotation-icon"
@@ -101,18 +108,6 @@ export function RotationIcon({
         />
         <path d="M14 7h9l-4.5 8Z" fill="currentColor" />
       </g>
-      {turns === 2 && (
-        <text
-          x="10"
-          y="16"
-          textAnchor="middle"
-          fill="currentColor"
-          fontSize="10"
-          fontWeight="bold"
-        >
-          2
-        </text>
-      )}
     </svg>
   );
 }

@@ -63,7 +63,7 @@ it("clear starts a new rotation and both completed directions use one canonical 
   expect(renderToStaticMarkup(<RotationIcon clockwise={false} />)).toContain(
     "scale(-1 1)",
   );
-  expect(getMotionCandidates(production.inputs, "360")).toEqual(["360"]);
+  expect(getMotionCandidates(production.inputs, "360")).toEqual(["360", "720"]);
   expect(getMotionCandidates(production.inputs, "3")).toContain("360");
   expect(getMotionCandidates(production.inputs, "36")).toContain("360");
   for (const strength of ["L", "M", "H", "OD"] as const) {
