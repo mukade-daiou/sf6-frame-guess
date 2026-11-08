@@ -1,5 +1,7 @@
 # 過去資料の索引
 
+第17段階で、追記形式だった採用ルールを[第16段階までの記録](docs/ADOPTION_RULES_THROUGH_STAGE16.md)へ保存し、現行の[採用ルール](../docs/ADOPTION_RULES.md)を再構成した。旧`report-adoption.ts`もarchive/scriptsへ移動した。これは第13段階スナップショットと876101dの保護基準を必要とする過去専用の報告器であり、現行データから歴史的レポートを更新する用途には使わない。package.json・CI・現行の生成器からの参照はない。
+
 ここは過去段階の保存記録です。現在の採用条件は[DATA_SPEC.md](../docs/DATA_SPEC.md)、作業手順は[DATA_WORKFLOW.md](../docs/DATA_WORKFLOW.md)を優先してください。古い報告書の件数・UI・採用方針は当時の判定です。
 
 - [第2段階の収集報告](docs/FRAME_DATA_COLLECTION_REPORT.md)

@@ -65,7 +65,7 @@ npm run test:archive
 node scripts/check-references.mjs
 ```
 
-通常のスナップショット再生成はbuild-snapshot.tsだけを入口にする。prepare-adoption、apply-adoption-policy、repair-source-coverage、prepare-conditional-specialsは、入力や採用方針自体を明示的に変更するときの準備用。report-adoptionは第13段階の報告生成用で、出力先はarchive/docs。create-fixturesは架空テストデータの保守用であり本番値を作らない。verify-*は領域別ブラウザー確認、audit-*は候補・原典・採用値の検査に使う。
+通常のスナップショット再生成はbuild-snapshot.tsだけを入口にする。prepare-adoption、apply-adoption-policy、repair-source-coverage、prepare-conditional-specialsは、入力や採用方針自体を明示的に変更するときの準備用。report-adoptionは過去専用としてarchive/scriptsに保存し、現在のデータ生成・監査には使わない。create-fixturesは架空テストデータの保守用であり本番値を作らない。verify-*は領域別ブラウザー確認、audit-*は候補・原典・採用値の検査に使う。
 
 調査用staging/sa-researchのPython群・validation.jsonは第15段階Aの再現資料。inventory.jsonとsa-levels.snapshot.json等は現在のSA生成入力でもあるため、まとめて移動・削除しない。stagingの各監査JSONや過去画像も根拠資料として維持し、新しい一時検証はstaging/verificationへ出す。一般のブラウザー通し操作はnpm run verify:browser、Focus Force等はnode scripts/verify-conditional-specials.mjsで確認できる。旧SAレベル選択UI用のverify-super-arts/verify-sa-reviewはarchive/scriptsに保存し、現在の操作検証には使わない。
 

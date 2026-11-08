@@ -27,6 +27,8 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
+      - run: npm run data:check
+      - run: npm run format:check
       - run: npm test
       - name: Build under repository path
         run: npm run build

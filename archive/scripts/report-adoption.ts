@@ -1,7 +1,9 @@
 import { readFile, writeFile, readdir } from "node:fs/promises";
 import { execFileSync } from "node:child_process";
-import { validateDataset } from "../src/lib/frame-data/loader";
-import { isQuestionInput } from "../src/lib/frame-data/input";
+// Historical stage 13 reporter. Requires the stage 13 snapshot and its old protection refs.
+// Do not run against current production data or regenerate history from current values.
+import { validateDataset } from "../../src/lib/frame-data/loader";
+import { isQuestionInput } from "../../src/lib/frame-data/input";
 const read = async (p: string) => JSON.parse(await readFile(p, "utf8"));
 const files = Object.fromEntries(
   await Promise.all(
