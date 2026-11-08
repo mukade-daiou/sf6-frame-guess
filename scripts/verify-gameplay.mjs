@@ -78,7 +78,7 @@ async function exercise(config) {
       .querySelector(".input-preview [role=img]")
       ?.getAttribute("aria-label");
   const command = async (motion) => {
-    await click("必殺技");
+    await click("必殺技・SA");
     await click("クリア");
     for (const d of motion)
       await click({ 2: "下", 3: "右下", 6: "右", 1: "左下", 4: "左" }[d]);
@@ -181,7 +181,7 @@ async function exercise(config) {
     "History did not switch to normal with unknown total",
   );
   if (config.mode === "startup") await click("Hard");
-  await click("必殺技");
+  await click("必殺技・SA");
   assert(
     [...document.querySelectorAll(".attack-buttons button")].every(
       (b) => b.disabled,
@@ -281,7 +281,7 @@ async function exercise(config) {
   assert(count() === 5, "Five questions");
   if (config.target === "ken")
     assert(
-      document.querySelector("ol.history li:last-child dd")?.textContent ===
+      document.querySelector("ol.history li:first-child dd")?.textContent ===
         "9",
       "OD kick startup is not 9",
     );
@@ -371,7 +371,7 @@ async function exercise(config) {
     history,
   };
 }
-async function replay() {
+async function replay(config) {
   const click = async (label) => {
     [...document.querySelectorAll("button")]
       .find(
@@ -382,14 +382,14 @@ async function replay() {
   };
   await click("再プレイ");
   if (document.querySelector("ol.history")) throw new Error("Replay history");
-  await click("ゲーム開始");
+  if (!document.querySelector(".lever"))
+    throw new Error("Replay did not enter play");
   if (
-    document
-      .querySelector(".mode-toggle button")
-      .getAttribute("aria-pressed") !== "true"
+    document.querySelector('.mode-toggle button[aria-pressed="true"]')
+      .textContent !== (config.mode === "normal" ? "Normal" : "Hard")
   )
     throw new Error("Replay mode");
-  await click("必殺技");
+  await click("必殺技・SA");
   for (const label of ["下", "右下", "右", "弱P＋中P"]) await click(label);
   return true;
 }
@@ -520,7 +520,7 @@ async function earlyAnswer(config) {
     "Early answer overflow",
   );
   await click("再プレイ");
-  await click("ゲーム開始");
+  assert(!!document.querySelector(".lever"), "Early replay did not enter play");
   assert(
     !document.querySelector("ol.history li"),
     "Early replay did not reset",
@@ -572,7 +572,7 @@ for (const width of widths)
       run("screenshot", `${out}/${width}-start.png`, "--full");
     results.push(evaluate(exercise, config));
     run("screenshot", `${out}/${width}-${mode}-history.png`, "--full");
-    results.at(-1).replay = evaluate(replay);
+    results.at(-1).replay = evaluate(replay, config);
     run("screenshot", `${out}/${width}-${mode}.png`, "--full");
     evaluate(async () => {
       document.querySelector(".command-strip button").click();
@@ -598,7 +598,7 @@ if (controlsOnly) {
       await new Promise((r) => setTimeout(r, 40));
     };
     await click("ゲーム開始");
-    await click("必殺技");
+    await click("必殺技・SA");
   });
 }
 const box = evaluate(pointerChecks);

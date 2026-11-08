@@ -2,15 +2,15 @@
 
 現在のdatasetIdは`focus-startup-2026-11-09-r1`。32キャラ1298レコードを維持し、Focus Force発生の限定判断をconditionalSpecials.startupDecisionsから再生成する。通常の更新入口はdata:plan→新datasetId→build-snapshot.ts --write --update→data:check。prepare-conditional-specials.tsは初期対応表の準備用であり、通常の再生成では不要。既存datasetIdと後続の採用判断を保持する。
 
-## 第16段階の現在値
+## 現在の生成処理
 
-現在は32キャラ1298レコード（第15段階後1292＋Tenshin/Focus Force通常版のL/M/H計6）、datasetId conditional-specials-2026-11-07-r2。採用条件はconditionalSpecialsを正本とし、scripts/conditional-specials.tsを通常の採用判定後・共通強度展開前に適用する。原典やadoption-inputsは変更しない。scripts/prepare-conditional-specials.ts --writeは保存原典から対応表を機械的に準備するための明示的操作で、通常の再生成には実行不要。
+1298件は従来908件＋SA288件＋共通必殺技の強度展開102件。採用条件はconditionalSpecialsを正本とし、scripts/conditional-specials.tsを通常の採用判定後・共通強度展開前に適用する。原典やadoption-inputsは変更しない。
 
 data:planと--write --updateの更新保護を維持する。scripts/audit-conditional-specials.tsは開始HEADの全1292件と比較し、許可された21件と新規6件以外が不変であることを検査する。既存のSA/共通強度保護検査にも今回の明示的な採用差分だけを適用し、それ以外を引き続き比較する。以下の第15段階の件数はその完了時点の記録。
 
-## SA統合後の更新（第15段階B）
+## SAと共通強度展開
 
-現在は32キャラ1292レコード（従来908＋SA288＋共通必殺技の強度展開96）、datasetId `common-special-strengths-2026-11-07-r1`。SA96枠、原典基本101行、個別強度質問288レコードは別の集計単位である。第15段階Cの9項目はdata/adoption-decisions.jsonのsuperArts.frameDecisionsから再生成する。
+SA96枠、原典基本101行、個別強度質問288レコードは別の集計単位である。第15段階Cの9項目はdata/adoption-decisions.jsonのsuperArts.frameDecisionsから再生成する。段階別の件数・旧datasetIdは各レポートに保存する。
 
 共通必殺技の展開はsrc/lib/frame-data/strength-expansion.tsで行う。生成元adoption-inputsや原典noneを変更せず、既存build-snapshotの採用処理・SA追加後に追記する。`npx tsx scripts/audit-strength-expansion.ts --check`で全32キャラの分類、明示強度との重複、OD非生成、元1196件とcoverageの不変、再生成の同一性を検査する。件数は監査から算出する。data:plan→新datasetId→--write --update→data:checkの保護を継続する。
 
@@ -18,7 +18,9 @@ data:planと--write --updateの更新保護を維持する。scripts/audit-condi
 
 従来normal/specialの監査・adoption-inputsは維持し、SAの分類はstaging/sa-integration/coverage.jsonに分離する。build-snapshotは従来の採用処理の後でSAを追加するため、再生成でSAが消えたりheldになったりしない。`test:data`でもこの再現と保護を検査する。SA-D1〜D5の正本はADOPTION_RULESの追補。調査validate.pyは908件だった第15段階A終了時用の固定検証であり、統合後は実行せず、SA監査で原典の不変性を確認する。
 
-現在のゲームが読む正本は`data/metadata.json`と`data/characters/*.json`。32体908レコード（採用873・保留27・明示的対象外8）、datasetIdは`scope-policy-2026-11-07-r1`。全32体が採用範囲でcompleteとなり抽選可能です。ケン・マリーザの63技のフレーム値とOD龍尾脚9Fは維持し、奮迅脚はユーザー指定で対象外へ変更しました。信頼性と採用可否の分離はDATA_SPEC.md、判断の再利用はADOPTION_RULES.mdを参照してください。
+## 正本と更新手順
+
+ゲームが読む正本は`data/metadata.json`と`data/characters/*.json`。全32体が採用範囲でcompleteとなり抽選可能です。信頼性と採用可否の分離はDATA_SPEC.md、判断の再利用はADOPTION_RULES.mdを参照してください。
 
 | 場所                            | 役割・編集方針                                                      |
 | ------------------------------- | ------------------------------------------------------------------- |
@@ -44,6 +46,28 @@ data:planと--write --updateの更新保護を維持する。scripts/audit-condi
 ## 現行検証と過去の再現
 
 `npm test`はアプリの機能テスト、`npm run test:data`は現行スナップショットの再生成・固定性検査。過去の変換・収集・段階別再現は`npm run test:archive`で別途実行する。検査範囲を削除していない。共有JSONを再生成するためarchive側は直列実行し、進行中の手動編集と同時に実行しない。
+
+現行データ回帰は`a34d9b8`、`f51c4e2`、`d11bb6d`、`571cea0`、`1ec74b4`の履歴も参照するため、shallow cloneではなく全履歴を用意する。CIのfetch-depth: 0を維持する。
+
+```sh
+npm run typecheck
+npm test
+npm run test:data
+npm run data:audit-coverage
+npx tsx scripts/audit-super-arts.ts --check
+npx tsx scripts/audit-strength-expansion.ts --check
+npx tsx scripts/audit-conditional-specials.ts
+npm run data:check
+npm run validate:data
+npm run format:check
+npm run build
+npm run test:archive
+node scripts/check-references.mjs
+```
+
+通常のスナップショット再生成はbuild-snapshot.tsだけを入口にする。prepare-adoption、apply-adoption-policy、repair-source-coverage、prepare-conditional-specialsは、入力や採用方針自体を明示的に変更するときの準備用。report-adoptionは第13段階の報告生成用で、出力先はarchive/docs。create-fixturesは架空テストデータの保守用であり本番値を作らない。verify-*は領域別ブラウザー確認、audit-*は候補・原典・採用値の検査に使う。
+
+調査用staging/sa-researchのPython群・validation.jsonは第15段階Aの再現資料。inventory.jsonとsa-levels.snapshot.json等は現在のSA生成入力でもあるため、まとめて移動・削除しない。stagingの各監査JSONや過去画像も根拠資料として維持し、新しい一時検証はstaging/verificationへ出す。一般のブラウザー通し操作はnpm run verify:browser、Focus Force等はnode scripts/verify-conditional-specials.mjsで確認できる。旧SAレベル選択UI用のverify-super-arts/verify-sa-reviewはarchive/scriptsに保存し、現在の操作検証には使わない。
 
 過去の取得スクリプトはネット取得を伴うものがある。アーカイブ索引から個別に確認し、明示的な調査・更新依頼なしに実行しない。
 

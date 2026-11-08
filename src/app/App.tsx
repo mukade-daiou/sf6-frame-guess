@@ -50,7 +50,7 @@ export default function App() {
         <h1>
           SF6
           <br className="mobile-break" />
-          フレームアキネーター
+          フレーム探偵
         </h1>
       </header>
       {!game ? (

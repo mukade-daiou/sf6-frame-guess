@@ -1,4 +1,4 @@
-# SF6フレームアキネーター
+# SF6フレーム探偵
 
 共通コマンドのフレームデータからキャラクターを推理する、バックエンド不要のReactアプリです。
 **32キャラを通常ゲームで遊べます。原典対応を基準に採用した個人用データで、公式検証・対象パッチは未確認です。** 付属の3体のFixtureは別の架空データです。
@@ -46,14 +46,16 @@ VITE_BASE_PATH=/your-repository/ npm run preview
 
 ## 構成とデータ管理
 
-`src/`はゲーム本体、`data/`は固定スナップショットと採用判断、`staging/candidates/`は元の32体860候補、`staging/adoption-inputs/`は現在の採用入力です。本番は884レコード（採用861・保留23）を保持し、通常の操作では編集しません。[採用ルール](docs/ADOPTION_RULES.md)と[統合報告](docs/CHARACTER_INTEGRATION_REPORT.md)を参照してください。
+`src/`はゲーム本体、`data/`は固定スナップショットと採用判断、`staging/candidates/`は元の32体860候補、`staging/adoption-inputs/`は現在の採用入力です。本番は32キャラ1298レコードで、SA96枠・強度別288入力を含みます。datasetIdは`focus-startup-2026-11-09-r1`、ゲーム版はUNVERIFIEDです。[採用ルール](docs/ADOPTION_RULES.md)と[条件付き必殺技の採用記録](docs/CONDITIONAL_SPECIAL_ADOPTION_REPORT.md)を参照してください。
 
-[データ追加・更新手順](docs/DATA_WORKFLOW.md)、[整理結果](docs/PROJECT_CLEANUP_REPORT.md)、[過去資料の索引](archive/README.md)を参照してください。過去の段階別コード・証拠はarchiveに保存しています。
+[データ追加・更新手順](docs/DATA_WORKFLOW.md)、[今回の整理・検証結果](docs/PROJECT_MAINTENANCE_REPORT.md)、[過去資料の索引](archive/README.md)を参照してください。過去の段階別コード・証拠はarchiveに保存しています。
 
 `npm run data:plan`で採用案を検証し、`npm run data:check`で現在のスナップショットとの差を検出します。明示的な更新依頼があるときだけ`build-snapshot.ts --write --update`を使います。キャラ追加のためのstage専用スクリプトは不要です。
 
 過去の再現テストは`npm run test:archive`、import参照検査は`node scripts/check-references.mjs`。ブラウザーの通しプレイはpreviewを127.0.0.1:4173で起動して`npm run verify:browser`を実行します。
 
-# SAの操作（第15段階B）
+## 必殺技・SAの操作
 
-SAを選び、SA1/2/3とコマンド、弱・中・強の攻撃を指定します。同じフレーム値でも各強度は独立した質問です。CAは対象外。溜めSAは左→右→左→右、SA3の720は2回転または候補クリックで入力できます。Normal/Hardの表示切替と質問済み判定は独立しています。
+「必殺技・SA」タブでコマンドと弱・中・強（またはOD）を指定します。SAレベルの選択は不要です。同じフレーム値でも各強度は独立した質問です。CAとSA派生は対象外。溜めSAは左→右→左→右、720は2回転または候補クリックで入力できます。Normal/Hardの表示切替と質問済み判定は独立しています。
+
+現在のデータ監査には`npm run data:audit-coverage`、`npx tsx scripts/audit-super-arts.ts --check`、`npx tsx scripts/audit-strength-expansion.ts --check`、`npx tsx scripts/audit-conditional-specials.ts`を使います。現行の`npm run test:data`はこれらの回帰検査と過去コミットとの比較を含み、Git全履歴が必要です。過去の段階別再現テストは`npm run test:archive`に分けています。

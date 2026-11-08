@@ -104,7 +104,7 @@ export function MoveSelector({
               } else {
                 const before = previous.current;
                 rotation.current = trackRotation(rotation.current, d, turns);
-                if (rotation.current.complete)
+                if (Math.abs(rotation.current.steps) >= 8)
                   setRotationClockwise(rotation.current.steps >= 0);
                 setCommand((c) =>
                   rotation.current.complete

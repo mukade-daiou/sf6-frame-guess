@@ -1,8 +1,6 @@
 # データ仕様 v1.0.0
 
-2026-11-09更新：Focus Force Lv.1のみユーザー指定の合算代表値を採用する。通常L/M/Hのconfirmed.display/numericは23、ODは20。原典13+10/10+10は保存済みCargoとsourceNotation注記に残し、conditionalSpecials.startupDecisionsから再生成する。以下の複合表記をそのまま表示する記述は、この限定判断で置き換える。他の複合値へ一般化しない。
-
-個別の固定代表条件はMove.representativeConditionにcondition/rawRef/cargoRefを持つ。第16段階で採用したジェイミー・Focus Forceに限り、元のconditional/held理由を注記と監査のbeforeレコードへ保持してbase/acceptedへ変更する。Focus Force Lv.1の発生は原典の固定複合表記13+10/10+10をconfirmed.displayに保存し、numericは付与しない。合計値やraw前半値への変換はしない。他の複合・条件値へ一般化しない。
+個別の固定代表条件はMove.representativeConditionにcondition/rawRef/cargoRefを持つ。第16段階で採用したジェイミー・Focus Forceに限り、元のconditional/held理由を注記と監査のbeforeレコードへ保持してbase/acceptedへ変更する。Focus Force Lv.1は2026-11-09ユーザー指定の合算代表値を採用し、通常L/M/Hのconfirmed.display/numericは23、ODは20。原典13+10/10+10は保存済みCargoとsourceNotation注記に残し、conditionalSpecials.startupDecisionsから再生成する。他の複合・条件値へ一般化しない。
 
 基本必殺技の共通値展開はstrengthExpansion `{sourceMoveId, basis}`を持つ追加レコードとして保存する。元のstrength noneレコードは変更しない。採用済み基本版に限ってL/M/Hへフレーム・出典を複製し、明示強度レコードがある強度は生成しない。ODは入力候補とデータレコードを区別し、共通値からOD性能を生成しない。採用ルールの正本はADOPTION_RULES、再生成の有効化はadoption-decisionsのcommonSpecialStrengths.enabled。
 
@@ -43,7 +41,7 @@ completeは採用の基準とした原典一覧の対象範囲を収録したこ
 
 source.verificationがunverifiedでも明示的に採用できます。これをverifiedへ書き換える必要はありません。adoptionのない既存Fixture等は従来のverified条件を使い、過去のステージングを自動で採用しません。ODはLP+MP/LK+MKを基本とし、原典上で別性能の入力と明確に分かるものを個別に選別します。
 
-Moveはid、name、category（normal/special）、input、variant、frames、notes（文字列配列）、sourceを持ちます。
+Moveはid、name、category（normal/special/super_art）、input、variant、frames、notes（文字列配列）、sourceを持ちます。
 variantは基本版なら `{ "kind": "base", "condition": null }`、特殊条件版なら `{ "kind": "conditional", "condition": "条件の説明" }` です。
 派生、強化、構え専用版をbaseと分類しないでください。技名や条件文はプレイ中には表示しません。
 
@@ -56,7 +54,7 @@ variantは基本版なら `{ "kind": "base", "condition": null }`、特殊条件
 通常技のdirectionは5/2、buttonはP/K、strengthはL/M/Hです。
 必殺技のmotionは数字と角括弧による明示的なテンキー表記、strengthはL/M/H/OD/noneです。
 溜めの[4]6と[2]8は質問UIから利用できます。レバーの46／28という方向列だけを、この既存の入力キーへ明示的に対応付けます。溜め時間は測定しません。元レコードやフレーム値は変更しません。
-`motion: "360"`は1回転を示す専用トークンです。方向3・6・0の列ではありません。時計回り・反時計回りは同じinputKeyを使い、同一技の重複質問を防ぎます。画面は専用回転SVG、読み上げは「1回転＋弱P」等と元表記を使用します。720はデータとして保持できますが今回の質問UIでは未対応です。
+`motion: "360"`は1回転を示す専用トークンです。方向3・6・0の列ではありません。時計回り・反時計回りは同じinputKeyを使い、同一技の重複質問を防ぎます。720は別の2回転トークンで、どちらもUI入力と候補クリックに対応します。画面は回転SVG、読み上げは「1回転＋弱P」等と元表記を使用します。
 コマンド候補を固定列挙しないので、検証済みの新しいテンキー入力をJSONに追加できます。
 特殊な入力形式が表現できない場合はスキーマを明示的に拡張し、推測で既存コマンドに置換しません。
 

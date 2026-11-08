@@ -63,7 +63,7 @@ archive/scripts/、tests/     過去の変換・調査・再現テスト
 
 ## 正本と今後の操作
 
-現在の正本は[DATA_WORKFLOW.md](DATA_WORKFLOW.md)に整理した。採用済みdataを直接編集せず、明示的な依頼を受けて採用入力とdata/adoption-decisions.jsonを更新する。新datasetId・既存キャラの維持・明示的--updateが必要な制約を維持する。自動取得・自動更新は追加していない。
+現在の正本は[DATA_WORKFLOW.md](../../docs/DATA_WORKFLOW.md)に整理した。採用済みdataを直接編集せず、明示的な依頼を受けて採用入力とdata/adoption-decisions.jsonを更新する。新datasetId・既存キャラの維持・明示的--updateが必要な制約を維持する。自動取得・自動更新は追加していない。
 
 ```sh
 npm run data:plan

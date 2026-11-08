@@ -43,7 +43,7 @@ for (const width of [1280, 768, 390, 320]) {
     (roster.indexOf("zangief") + 0.5) / roster.length,
   );
   click("ゲーム開始");
-  click("必殺技");
+  click("必殺技・SA");
   const box = evaluate(() => {
     document.querySelector(".lever").scrollIntoView({ block: "center" });
     document.querySelector(".lever").focus();
@@ -215,7 +215,7 @@ for (const width of [1280, 768, 390, 320]) {
   click("質問する");
   assert(
     evaluate(() =>
-      [...document.querySelectorAll("ol.history li:last-child dd")]
+      [...document.querySelectorAll("ol.history li:first-child dd")]
         .map((el) => el.textContent)
         .join(","),
     ) === "54,95,D,-",

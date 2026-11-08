@@ -31,10 +31,7 @@ const results = [];
 for (const width of [1280, 768, 390, 320]) {
   run("open", "http://127.0.0.1:4173/");
   run("set", "viewport", String(width), "1000");
-  assert(
-    ev(() => document.title) === "SF6フレームアキネーター",
-    "Title mismatch",
-  );
+  assert(ev(() => document.title) === "SF6フレーム探偵", "Title mismatch");
   ev(
     (draw) => {
       Math.random = () => draw;
@@ -43,7 +40,7 @@ for (const width of [1280, 768, 390, 320]) {
     (ids.indexOf("guile") + 0.5) / ids.length,
   );
   click("ゲーム開始");
-  click("必殺技");
+  click("必殺技・SA");
   const box = ev(() => {
     const l = document.querySelector(".lever");
     l.scrollIntoView({ block: "center" });

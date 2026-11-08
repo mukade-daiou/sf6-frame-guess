@@ -1,3 +1,5 @@
+// Historical stage 15B browser procedure: requires the former SA-level UI.
+// Current UI verification starts at scripts/verify-gameplay.mjs.
 import { execFileSync } from "node:child_process";
 import { readdirSync, mkdirSync, writeFileSync } from "node:fs";
 const run = (...a) =>
