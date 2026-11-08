@@ -82,6 +82,8 @@ URL、取得日時、ゲーム版、official/community、帰属・ライセン�
 
 ## 10. 更新と判断履歴
 
+第17段階の未確定値補完はframeResearch.fieldDecisionsに技ID・項目・変更前後・原典表記・採用理由を保存し、ledgerPathの台帳からraw/Cargoの保存行・取得時点を追跡する。明示的な`-`、原典に書かれた全体F、KDのD化だけを対象項目へ適用し、確定済み値や他項目を変更しない。既知値との意味上の矛盾は別途台帳に記録し、無断で修正しない。
+
 生成元と採用判断を更新し、生成済み本番JSONだけを編集しない。data:planで確認し、内容が変わる場合だけ新datasetIdと`--write --update`で更新する。原典・過去基準・既存レコードIDと順序・coverageを保護し、差分は許可したフィールド単位で検査する。
 
 手順は[DATA_WORKFLOW.md](DATA_WORKFLOW.md)、型・値の表現は[DATA_SPEC.md](DATA_SPEC.md)、ゲーム操作は[GAME_SPEC.md](GAME_SPEC.md)を参照する。判断が一意でない新しい問題は現在値を保持し、原典・具体例・候補・適用範囲をまとめて報告する。

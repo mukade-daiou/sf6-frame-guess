@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync, readdirSync } from "node:fs";
 import { execFileSync } from "node:child_process";
+import { restoreResearchFrames } from "./research-projection.mjs";
 test("only the nine authorized frame fields differ from stage B", () => {
   const policy = JSON.parse(
     readFileSync("data/adoption-decisions.json", "utf8"),
@@ -23,7 +24,7 @@ test("only the nine authorized frame fields differ from stage B", () => {
         { encoding: "utf8" },
       ),
     );
-    const after = JSON.parse(readFileSync(path, "utf8"));
+    const after = restoreResearchFrames(JSON.parse(readFileSync(path, "utf8")));
     assert.equal(
       after.moves.filter((m) => !m.strengthExpansion).length,
       before.moves.length,

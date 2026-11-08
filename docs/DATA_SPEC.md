@@ -1,5 +1,7 @@
 # データ仕様 v1.0.0
 
+第17段階のフィールド補完はdata/adoption-decisions.jsonのframeResearch.fieldDecisionsを参照する。変更前のunknown全体と変更後のFrameValue、元レコードID、原典表記、採用理由、調査台帳IDを保存する。台帳はstaging/stage17/frame-ledger.jsonで、原典の行番号・行全体・取得日時・検証状態を保持する。既存Move.sourceやrawを上書きせず、フィールド単位の補完元をこの対応表で追跡する。生成時は原典行・入力・変更前後の一致を検査し、無関係な確定値の置換を拒否する。
+
 個別の固定代表条件はMove.representativeConditionにcondition/rawRef/cargoRefを持つ。第16段階で採用したジェイミー・Focus Forceに限り、元のconditional/held理由を注記と監査のbeforeレコードへ保持してbase/acceptedへ変更する。Focus Force Lv.1は2026-11-09ユーザー指定の合算代表値を採用し、通常L/M/Hのconfirmed.display/numericは23、ODは20。原典13+10/10+10は保存済みCargoとsourceNotation注記に残し、conditionalSpecials.startupDecisionsから再生成する。他の複合・条件値へ一般化しない。
 
 基本必殺技の共通値展開はstrengthExpansion `{sourceMoveId, basis}`を持つ追加レコードとして保存する。元のstrength noneレコードは変更しない。採用済み基本版に限ってL/M/Hへフレーム・出典を複製し、明示強度レコードがある強度は生成しない。ODは入力候補とデータレコードを区別し、共通値からOD性能を生成しない。採用ルールの正本はADOPTION_RULES、再生成の有効化はadoption-decisionsのcommonSpecialStrengths.enabled。

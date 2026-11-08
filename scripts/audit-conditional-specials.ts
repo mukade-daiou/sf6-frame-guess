@@ -3,6 +3,7 @@ import { execFileSync } from "node:child_process";
 import { isDeepStrictEqual } from "node:util";
 import { characterSchema } from "../src/lib/frame-data/schema";
 import { applyConditionalSpecials } from "./conditional-specials";
+import { applyFrameResearch } from "./frame-research";
 import { withStrengthExpansions } from "../src/lib/frame-data/strength-expansion";
 import { resolveMove } from "../src/lib/frame-data/resolver";
 const policy = JSON.parse(
@@ -24,14 +25,18 @@ for (const f of readdirSync("data/characters")
     ),
   );
   const after = characterSchema.parse(JSON.parse(readFileSync(path, "utf8")));
-  const expected = withStrengthExpansions(applyConditionalSpecials(before));
+  const expected = withStrengthExpansions(
+    applyFrameResearch(applyConditionalSpecials(before)),
+  );
   if (!isDeepStrictEqual(expected, after))
     throw new Error(`Unexpected conditional changes: ${f}`);
   beforeCount += before.moves.length;
   afterCount += after.moves.length;
+  const researchBefore = withStrengthExpansions(applyFrameResearch(before));
   for (const old of before.moves) {
     const current = after.moves.find((m) => m.id === old.id)!;
-    if (!isDeepStrictEqual(current, old))
+    const projected = researchBefore.moves.find((m) => m.id === old.id)!;
+    if (!isDeepStrictEqual(current, projected))
       changed.push({ id: old.id, before: old, after: current });
   }
   for (const m of after.moves.filter(

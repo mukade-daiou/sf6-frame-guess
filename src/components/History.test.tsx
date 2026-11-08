@@ -20,6 +20,13 @@ it("switches all historical rows to the current mode, including unknown saved fi
       i.button === "K" &&
       i.strength === "H",
   )!;
+  game = { ...game, target: structuredClone(game.target) };
+  game.target.moves.find((m) => m.id === "ken__normal_2_K_H")!.frames.total = {
+    status: "unknown",
+    display: null,
+    provenance: null,
+    calculation: null,
+  };
   game = ask(game, input).game;
   const history = game.history;
   const render = () =>

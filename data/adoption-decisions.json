@@ -1,5 +1,5 @@
 {
-  "datasetId": "focus-startup-2026-11-09-r1",
+  "datasetId": "frame-research-2026-11-09-r1",
   "commonSpecialStrengths": {
     "enabled": true,
     "protectionRef": "d11bb6d2616b5a15e182cbc08ef7556e99f3b5d6",
@@ -592,6 +592,454 @@
         "sourceNotation": "10+10",
         "numeric": 20,
         "basis": "2026-11-09ユーザー指定: Focus Force Lv.1のみ複合発生を合算したゲーム用代表値を採用。原典表記・未検証状態を保持し、他技へ一般化しない。"
+      }
+    ]
+  },
+  "frameResearch": {
+    "baselinePath": "staging/stage17/baseline.json",
+    "ledgerPath": "staging/stage17/frame-ledger.json",
+    "fieldDecisions": [
+      {
+        "characterId": "alex",
+        "moveId": "alex__special_63214_P_H",
+        "field": "block",
+        "before": {
+          "status": "unknown",
+          "display": null
+        },
+        "value": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "evidenceId": "alex__special_63214_P_H:block",
+        "sourceNotation": "-",
+        "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'."
+      },
+      {
+        "characterId": "alex",
+        "moveId": "alex__special_63214_P_L",
+        "field": "block",
+        "before": {
+          "status": "unknown",
+          "display": null
+        },
+        "value": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "evidenceId": "alex__special_63214_P_L:block",
+        "sourceNotation": "-",
+        "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'."
+      },
+      {
+        "characterId": "alex",
+        "moveId": "alex__special_63214_P_M",
+        "field": "block",
+        "before": {
+          "status": "unknown",
+          "display": null
+        },
+        "value": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "evidenceId": "alex__special_63214_P_M:block",
+        "sourceNotation": "-",
+        "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'."
+      },
+      {
+        "characterId": "alex",
+        "moveId": "alex__special_63214_P_OD",
+        "field": "block",
+        "before": {
+          "status": "unknown",
+          "display": null
+        },
+        "value": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "evidenceId": "alex__special_63214_P_OD:block",
+        "sourceNotation": "-",
+        "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'."
+      },
+      {
+        "characterId": "arjun",
+        "moveId": "arjun__special_22_K_H",
+        "field": "block",
+        "before": {
+          "status": "unknown",
+          "display": null
+        },
+        "value": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "evidenceId": "arjun__special_22_K_H:block",
+        "sourceNotation": "-",
+        "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'."
+      },
+      {
+        "characterId": "arjun",
+        "moveId": "arjun__special_63214_P_none",
+        "field": "block",
+        "before": {
+          "status": "unknown",
+          "display": null
+        },
+        "value": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "evidenceId": "arjun__special_63214_P_none:block",
+        "sourceNotation": "-",
+        "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'."
+      },
+      {
+        "characterId": "arjun",
+        "moveId": "arjun__special_63214_P_OD",
+        "field": "block",
+        "before": {
+          "status": "unknown",
+          "display": null
+        },
+        "value": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "evidenceId": "arjun__special_63214_P_OD:block",
+        "sourceNotation": "-",
+        "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'."
+      },
+      {
+        "characterId": "blanka",
+        "moveId": "blanka__special_236_K_H",
+        "field": "block",
+        "before": {
+          "status": "unknown",
+          "display": null
+        },
+        "value": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "evidenceId": "blanka__special_236_K_H:block",
+        "sourceNotation": "-",
+        "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'."
+      },
+      {
+        "characterId": "blanka",
+        "moveId": "blanka__special_236_K_L",
+        "field": "block",
+        "before": {
+          "status": "unknown",
+          "display": null
+        },
+        "value": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "evidenceId": "blanka__special_236_K_L:block",
+        "sourceNotation": "-",
+        "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'."
+      },
+      {
+        "characterId": "blanka",
+        "moveId": "blanka__special_236_K_M",
+        "field": "block",
+        "before": {
+          "status": "unknown",
+          "display": null
+        },
+        "value": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "evidenceId": "blanka__special_236_K_M:block",
+        "sourceNotation": "-",
+        "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'."
+      },
+      {
+        "characterId": "blanka",
+        "moveId": "blanka__special_236_K_OD",
+        "field": "block",
+        "before": {
+          "status": "unknown",
+          "display": null
+        },
+        "value": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "evidenceId": "blanka__special_236_K_OD:block",
+        "sourceNotation": "-",
+        "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'."
+      },
+      {
+        "characterId": "e_honda",
+        "moveId": "e_honda__special_236_K_none",
+        "field": "hit",
+        "before": {
+          "status": "unknown",
+          "display": null
+        },
+        "value": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "evidenceId": "e_honda__special_236_K_none:hit",
+        "sourceNotation": "-",
+        "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'."
+      },
+      {
+        "characterId": "e_honda",
+        "moveId": "e_honda__special_236_K_none",
+        "field": "block",
+        "before": {
+          "status": "unknown",
+          "display": null
+        },
+        "value": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "evidenceId": "e_honda__special_236_K_none:block",
+        "sourceNotation": "-",
+        "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'."
+      },
+      {
+        "characterId": "e_honda",
+        "moveId": "e_honda__special_236_K_OD",
+        "field": "hit",
+        "before": {
+          "status": "unknown",
+          "display": null
+        },
+        "value": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "evidenceId": "e_honda__special_236_K_OD:hit",
+        "sourceNotation": "-",
+        "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'."
+      },
+      {
+        "characterId": "e_honda",
+        "moveId": "e_honda__special_236_K_OD",
+        "field": "block",
+        "before": {
+          "status": "unknown",
+          "display": null
+        },
+        "value": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "evidenceId": "e_honda__special_236_K_OD:block",
+        "sourceNotation": "-",
+        "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'."
+      },
+      {
+        "characterId": "e_honda",
+        "moveId": "e_honda__special_63214_K_H",
+        "field": "block",
+        "before": {
+          "status": "unknown",
+          "display": null
+        },
+        "value": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "evidenceId": "e_honda__special_63214_K_H:block",
+        "sourceNotation": "-",
+        "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'."
+      },
+      {
+        "characterId": "e_honda",
+        "moveId": "e_honda__special_63214_K_L",
+        "field": "block",
+        "before": {
+          "status": "unknown",
+          "display": null
+        },
+        "value": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "evidenceId": "e_honda__special_63214_K_L:block",
+        "sourceNotation": "-",
+        "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'."
+      },
+      {
+        "characterId": "e_honda",
+        "moveId": "e_honda__special_63214_K_M",
+        "field": "block",
+        "before": {
+          "status": "unknown",
+          "display": null
+        },
+        "value": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "evidenceId": "e_honda__special_63214_K_M:block",
+        "sourceNotation": "-",
+        "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'."
+      },
+      {
+        "characterId": "e_honda",
+        "moveId": "e_honda__special_63214_K_OD",
+        "field": "block",
+        "before": {
+          "status": "unknown",
+          "display": null
+        },
+        "value": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "evidenceId": "e_honda__special_63214_K_OD:block",
+        "sourceNotation": "-",
+        "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'."
+      },
+      {
+        "characterId": "jamie",
+        "moveId": "jamie__special_22_P_none",
+        "field": "hit",
+        "before": {
+          "status": "unknown",
+          "display": null
+        },
+        "value": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "evidenceId": "jamie__special_22_P_none:hit",
+        "sourceNotation": "-",
+        "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'."
+      },
+      {
+        "characterId": "jamie",
+        "moveId": "jamie__special_22_P_none",
+        "field": "block",
+        "before": {
+          "status": "unknown",
+          "display": null
+        },
+        "value": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "evidenceId": "jamie__special_22_P_none:block",
+        "sourceNotation": "-",
+        "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'."
+      },
+      {
+        "characterId": "jp",
+        "moveId": "jp__special_214_K_none",
+        "field": "block",
+        "before": {
+          "status": "unknown",
+          "display": null
+        },
+        "value": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "evidenceId": "jp__special_214_K_none:block",
+        "sourceNotation": "-",
+        "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'."
+      },
+      {
+        "characterId": "jp",
+        "moveId": "jp__special_214_K_OD",
+        "field": "block",
+        "before": {
+          "status": "unknown",
+          "display": null
+        },
+        "value": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "evidenceId": "jp__special_214_K_OD:block",
+        "sourceNotation": "-",
+        "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'."
+      },
+      {
+        "characterId": "jp",
+        "moveId": "jp__special_214_P_none",
+        "field": "hit",
+        "before": {
+          "status": "unknown",
+          "display": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "evidenceId": "jp__special_214_P_none:hit",
+        "sourceNotation": "KD ~",
+        "reason": "Cargo explicitly identifies knockdown. Apply the existing KD-to-D rule without assigning an advantage number. Deferred spike timing remains in the source; no activation-only '-' rule is applied."
+      },
+      {
+        "characterId": "jp",
+        "moveId": "jp__special_214_P_OD",
+        "field": "hit",
+        "before": {
+          "status": "unknown",
+          "display": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "evidenceId": "jp__special_214_P_OD:hit",
+        "sourceNotation": "KD ~",
+        "reason": "Cargo explicitly identifies knockdown. Apply the existing KD-to-D rule without assigning an advantage number. Deferred spike timing remains in the source; no activation-only '-' rule is applied."
+      },
+      {
+        "characterId": "ken",
+        "moveId": "ken__normal_2_K_H",
+        "field": "total",
+        "before": {
+          "status": "unknown",
+          "display": null,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "34",
+          "numeric": 34,
+          "provenance": "source",
+          "calculation": null
+        },
+        "evidenceId": "ken__normal_2_K_H:total",
+        "sourceNotation": "34(37)",
+        "reason": "Cargo explicitly gives 34(37), stored raw totalFrames is 34, and its note separately identifies block-specific recovery. Adopt the outside total 34 under the existing representative rule, without calculating from components."
+      },
+      {
+        "characterId": "marisa",
+        "moveId": "marisa__normal_2_K_M",
+        "field": "total",
+        "before": {
+          "status": "unknown",
+          "display": null,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "29",
+          "numeric": 29,
+          "provenance": "source",
+          "calculation": null
+        },
+        "evidenceId": "marisa__normal_2_K_M:total",
+        "sourceNotation": "29",
+        "reason": "Cargo explicitly gives total 29 and raw totalFrames agrees; whiff/block recovery note is retained. Use the written total, with no formula or extra +1."
       }
     ]
   }

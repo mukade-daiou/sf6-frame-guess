@@ -6,6 +6,7 @@ import { resolveMove } from "../src/lib/frame-data/resolver";
 import { readSAResearch, generateSuperArts } from "./super-arts";
 import { withStrengthExpansions } from "../src/lib/frame-data/strength-expansion";
 import { applyConditionalSpecials } from "./conditional-specials";
+import { applyFrameResearch } from "./frame-research";
 const read = async (p: string) => JSON.parse(await readFile(p, "utf8"));
 const save = async (p: string, v: unknown) =>
   writeFile(p, JSON.stringify(v, null, 2) + "\n");
@@ -64,8 +65,8 @@ for (const d of decisions.characters) {
   }
   files[c.id] = characterSchema.parse(
     decisions.commonSpecialStrengths?.enabled
-      ? withStrengthExpansions(applyConditionalSpecials(c))
-      : applyConditionalSpecials(c),
+      ? withStrengthExpansions(applyFrameResearch(applyConditionalSpecials(c)))
+      : applyFrameResearch(applyConditionalSpecials(c)),
   );
 }
 const dataset = validateDataset(metadata, files);

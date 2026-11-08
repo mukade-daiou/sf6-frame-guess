@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
 import { readFileSync, readdirSync } from "node:fs";
+import { restoreResearchFrames } from "./research-projection.mjs";
 
 test("only Focus Force representative startups differ from stage 16", () => {
   let records = 0;
@@ -17,7 +18,7 @@ test("only Focus Force representative startups differ from stage 16", () => {
         { encoding: "utf8" },
       ),
     );
-    const after = JSON.parse(readFileSync(path, "utf8"));
+    const after = restoreResearchFrames(JSON.parse(readFileSync(path, "utf8")));
     assert.equal(after.moves.length, before.moves.length);
     for (const [i, move] of after.moves.entries()) {
       records++;

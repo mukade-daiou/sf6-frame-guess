@@ -64,9 +64,16 @@ it.each(["e_honda", "blanka", "chunli", "jp", "dee_jay"])(
   },
 );
 it("preserves real missing fields and never expands held, conditional or excluded sources", () => {
-  const jamie = character("jamie");
-  expect(resolveMove(jamie, query("L"), "normal").status).toBe("unknown");
-  expect(resolveMove(jamie, query("L"), "startup").status).toBe("found");
+  const akuma = character("akuma");
+  const input = {
+    type: "special" as const,
+    motion: "236",
+    button: "K" as const,
+    strength: "L" as const,
+    includeSuperArts: true as const,
+  };
+  expect(resolveMove(akuma, input, "normal").status).toBe("unknown");
+  expect(resolveMove(akuma, input, "startup").status).toBe("found");
   for (const id of ["cviper", "jamie", "guile", "ken", "zangief"]) {
     const c = character(id);
     const omitted = new Set(

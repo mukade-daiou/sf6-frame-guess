@@ -1,6 +1,6 @@
 # データの正本と更新手順
 
-現在のdatasetIdは`focus-startup-2026-11-09-r1`。32キャラ1298レコードを維持し、Focus Force発生の限定判断をconditionalSpecials.startupDecisionsから再生成する。通常の更新入口はdata:plan→新datasetId→build-snapshot.ts --write --update→data:check。prepare-conditional-specials.tsは初期対応表の準備用であり、通常の再生成では不要。既存datasetIdと後続の採用判断を保持する。
+現在のdatasetIdは`frame-research-2026-11-09-r1`。32キャラ1298レコードを維持し、Focus Force発生の限定判断をconditionalSpecials.startupDecisionsから再生成する。第17段階の補完はframeResearch.fieldDecisionsとstaging/stage17/frame-ledger.jsonで原典を照合し、個別条件の適用後・共通強度展開前に適用する。通常の更新入口はdata:plan→新datasetId→build-snapshot.ts --write --update→data:check。prepare-conditional-specials.tsは初期対応表の準備用であり、通常の再生成では不要。既存datasetIdと後続の採用判断を保持する。
 
 ## 現在の生成処理
 
@@ -57,6 +57,7 @@ npm run data:audit-coverage
 npx tsx scripts/audit-super-arts.ts --check
 npx tsx scripts/audit-strength-expansion.ts --check
 npx tsx scripts/audit-conditional-specials.ts
+npx tsx scripts/research-missing-frames.ts --check
 npm run data:check
 npm run validate:data
 npm run format:check
@@ -70,6 +71,8 @@ node scripts/check-references.mjs
 調査用staging/sa-researchのPython群・validation.jsonは第15段階Aの再現資料。inventory.jsonとsa-levels.snapshot.json等は現在のSA生成入力でもあるため、まとめて移動・削除しない。stagingの各監査JSONや過去画像も根拠資料として維持し、新しい一時検証はstaging/verificationへ出す。一般のブラウザー通し操作はnpm run verify:browser、Focus Force等はnode scripts/verify-conditional-specials.mjsで確認できる。旧SAレベル選択UI用のverify-super-arts/verify-sa-reviewはarchive/scriptsに保存し、現在の操作検証には使わない。
 
 過去の取得スクリプトはネット取得を伴うものがある。アーカイブ索引から個別に確認し、明示的な調査・更新依頼なしに実行しない。
+
+第17段階の棚卸し・再確認はresearch-missing-frames.ts。開始スナップショットと判断はstaging/stage17/baseline.jsonへ固定保存し、元commitの内容とも照合する。通常実行は台帳を再生成し、--checkは原典・許可フィールド・全1298レコード・既存採用判断を検証する。--write-decisionsは第17段階の補完判断を準備する明示的操作で、日常の再生成に不要。通常の生成はbuild-snapshot.tsだけで再現できる。旧保護基準は更新せず、既存監査に今回の明示フィールド判断だけを適用して比較する。PC/モバイルの補完値・不明・重複・回答・再プレイはnode scripts/verify-frame-research.mjsで確認できる。
 
 ## 収録漏れ監査と保存済み原典の修復
 

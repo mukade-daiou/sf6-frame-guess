@@ -44,6 +44,13 @@ it("distinguishes dataset absence from unknown frames, held moves and missing co
   } as const;
   expect(resolveMove(c, absent, "normal").status).toBe("not_found");
   const unknown = c.moves.find((m) => m.notes.includes("upstreamInput: 2HK"))!;
+  // Explicit missing-value fixture; the production 2HK total is now researched.
+  unknown.frames.total = {
+    status: "unknown",
+    display: null,
+    provenance: null,
+    calculation: null,
+  };
   expect(resolveMove(c, unknown.input, "normal").status).toBe("unknown");
   expect(resolveMove(c, unknown.input, "startup").status).toBe("found");
   const game = startGame(d, "normal", 5, () => 0);

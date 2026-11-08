@@ -2,6 +2,7 @@ import { readFileSync, mkdirSync, writeFileSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import { isDeepStrictEqual } from "node:util";
 import { applyConditionalSpecials } from "./conditional-specials";
+import { applyFrameResearch } from "./frame-research";
 import {
   readSAResearch,
   generateSuperArts,
@@ -38,7 +39,7 @@ for (const id of pilot
         c.moves.filter(
           (m: any) => m.category !== "super_art" && !m.strengthExpansion,
         ),
-        applyConditionalSpecials(original).moves,
+        applyFrameResearch(applyConditionalSpecials(original)).moves,
       )
     )
       throw new Error(`Original records changed: ${id}`);

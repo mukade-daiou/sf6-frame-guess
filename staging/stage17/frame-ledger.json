@@ -1,0 +1,4750 @@
+{
+  "baselineHead": "49c067d2ee7deca275e8a928fa282547098d30a2",
+  "definitions": {
+    "record": "accepted base record, including shared templates and generated strengths",
+    "field": "a frame not displayable under the existing resolver",
+    "target": "sourceMoveId + field, counting expanded strengths only once",
+    "question": "accepted base record satisfying isQuestionInput; source strength none is excluded; per-character input; Normal requires 4 fields, Hard requires startup"
+  },
+  "before": {
+    "characters": 32,
+    "records": 1298,
+    "unknownRecords": 47,
+    "unknownFields": 56,
+    "deduplicatedFieldTargets": 32,
+    "deduplicatedSourceRecords": 29,
+    "normalUnavailableInputs": 41,
+    "hardUnavailableInputs": 1,
+    "saUnknownInputs": 0,
+    "saInputs": 288
+  },
+  "after": {
+    "characters": 32,
+    "records": 1298,
+    "unknownRecords": 8,
+    "unknownFields": 8,
+    "deduplicatedFieldTargets": 5,
+    "deduplicatedSourceRecords": 5,
+    "normalUnavailableInputs": 7,
+    "hardUnavailableInputs": 1,
+    "saUnknownInputs": 0,
+    "saInputs": 288
+  },
+  "sources": [
+    {
+      "id": "akuma__special_236_K_none",
+      "characterId": "akuma",
+      "name": "Demon Raid",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "none"
+      },
+      "sourceInput": "236K",
+      "rawPath": "archive/staging/sf6-frame-data/raw/akuma.json",
+      "rawIndex": 19,
+      "rawRecord": {
+        "active": "-",
+        "afterDriveRush": null,
+        "airborne": "7-45 (FKD)",
+        "aliases": [],
+        "armor": null,
+        "attackRange": null,
+        "blockstun": null,
+        "cancel": [],
+        "category": "special",
+        "characterId": "akuma",
+        "chipDamage": null,
+        "damage": null,
+        "damageText": null,
+        "dmgScaling": null,
+        "driveGauge": null,
+        "driveRushCancel": null,
+        "hitstop": null,
+        "hitstun": null,
+        "id": "akuma__236k",
+        "input": {
+          "numpad": "236K",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": null,
+        "name": {
+          "en": "Demon Raid",
+          "ja": null
+        },
+        "notes": {
+          "en": "Button strength determines trajectory (LK short, MK mid, HK far); counter-hit state for entire duration; cancelable into follow-ups on frames 18-40; on frame 41, automatically transitions to Demon Low Slash (or Demon Swoop if holding Down)",
+          "ja": null
+        },
+        "onBlock": null,
+        "onHit": null,
+        "onPerfectParry": null,
+        "onPunishCounter": null,
+        "projectileSpeed": null,
+        "properties": [
+          "airborne"
+        ],
+        "pushback": null,
+        "recovery": null,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:26.479Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Akuma/Frame_data"
+        },
+        "startup": 18,
+        "superGauge": null,
+        "totalFrames": null
+      },
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json",
+      "cargoIndex": 19,
+      "cargoRecord": {
+        "chara": "Akuma",
+        "input": "236K",
+        "startup": "18~40",
+        "total": "{{{total}}}",
+        "hitAdv": "-",
+        "blockAdv": "-",
+        "notes": "Button strength determines trajectory (LK short, MK mid, HK far); counter-hit state for entire duration; cancelable into follow-ups on frames 18-40; on frame 41, automatically transitions to Demon Low Slash (or Demon Swoop if holding Down)"
+      },
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Akuma/Frame_data",
+      "rawRetrievedAt": "2026-08-19T04:05:26.479Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:21.426Z",
+      "gameVersion": "UNVERIFIED",
+      "kind": "community",
+      "verification": "unverified",
+      "attribution": "SuperCombo Wiki contributors",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "id": "akuma__special_236_K_OD",
+      "characterId": "akuma",
+      "name": "Demon Raid",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "OD"
+      },
+      "sourceInput": "236KK",
+      "rawPath": "archive/staging/sf6-frame-data/raw/akuma.json",
+      "rawIndex": 20,
+      "rawRecord": {
+        "active": "-",
+        "afterDriveRush": null,
+        "airborne": "7-45 (FKD)",
+        "aliases": [],
+        "armor": null,
+        "attackRange": null,
+        "blockstun": null,
+        "cancel": [],
+        "category": "special",
+        "characterId": "akuma",
+        "chipDamage": null,
+        "damage": null,
+        "damageText": null,
+        "dmgScaling": null,
+        "driveGauge": {
+          "dealtOnBlock": null,
+          "dealtOnHit": null,
+          "gain": -20000
+        },
+        "driveRushCancel": null,
+        "hitstop": null,
+        "hitstun": null,
+        "id": "akuma__236kk",
+        "input": {
+          "numpad": "236KK",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": null,
+        "name": {
+          "en": "Demon Raid",
+          "ja": null
+        },
+        "notes": {
+          "en": "Tracks opponent's location regardless of distance; counter-hit state for entire duration; cancelable into follow-ups on frames 16-40 (16-38 for Fireball/Tatsu and Air SA1 follow-ups); on frame 41, automatically transitions to Demon Low Slash (or Demon Swoop if holding Down)",
+          "ja": null
+        },
+        "onBlock": null,
+        "onHit": null,
+        "onPerfectParry": null,
+        "onPunishCounter": null,
+        "projectileSpeed": null,
+        "properties": [
+          "airborne"
+        ],
+        "pushback": null,
+        "recovery": null,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:26.479Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Akuma/Frame_data"
+        },
+        "startup": 16,
+        "superGauge": null,
+        "totalFrames": null
+      },
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json",
+      "cargoIndex": 20,
+      "cargoRecord": {
+        "chara": "Akuma",
+        "input": "236KK",
+        "startup": "16~40",
+        "total": "{{{total}}}",
+        "hitAdv": "-",
+        "blockAdv": "-",
+        "notes": "Tracks opponent's location regardless of distance; counter-hit state for entire duration; cancelable into follow-ups on frames 16-40 (16-38 for Fireball/Tatsu and Air SA1 follow-ups); on frame 41, automatically transitions to Demon Low Slash (or Demon Swoop if holding Down)"
+      },
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Akuma/Frame_data",
+      "rawRetrievedAt": "2026-08-19T04:05:26.479Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:21.426Z",
+      "gameVersion": "UNVERIFIED",
+      "kind": "community",
+      "verification": "unverified",
+      "attribution": "SuperCombo Wiki contributors",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "id": "alex__special_63214_P_H",
+      "characterId": "alex",
+      "name": "Power Bomb",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "P",
+        "strength": "H"
+      },
+      "sourceInput": "63214HP",
+      "rawPath": "archive/staging/sf6-frame-data/raw/alex.json",
+      "rawIndex": 51,
+      "rawRecord": {
+        "active": "3",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": 0.9,
+        "blockstun": null,
+        "cancel": [],
+        "category": "special",
+        "characterId": "alex",
+        "chipDamage": null,
+        "damage": 2500,
+        "damageText": "2500 (2875)",
+        "dmgScaling": "20% Immediate",
+        "driveGauge": {
+          "dealtOnBlock": null,
+          "dealtOnHit": 10000,
+          "gain": 5000
+        },
+        "driveRushCancel": null,
+        "hitstop": null,
+        "hitstun": null,
+        "id": "alex__63214hp",
+        "input": {
+          "numpad": "63214HP",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": null,
+        "name": {
+          "en": "Power Bomb",
+          "ja": null
+        },
+        "notes": {
+          "en": "Shortest range / fastest startup version; turns into Power Drop on backturned opponent; most useful for tick throws when the range allows it (like after 4MK on block at point blank); Alex's strongest meterless Drive Reversal punish (but can whiff when blocked at max range)",
+          "ja": null
+        },
+        "onBlock": null,
+        "onHit": 15,
+        "onPerfectParry": null,
+        "onPunishCounter": 15,
+        "projectileSpeed": null,
+        "properties": [
+          "throw"
+        ],
+        "pushback": null,
+        "recovery": 54,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:26.479Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data"
+        },
+        "startup": 5,
+        "superGauge": {
+          "onBlock": null,
+          "onHit": 3000
+        },
+        "totalFrames": 61
+      },
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/alex.cargo.json",
+      "cargoIndex": 51,
+      "cargoRecord": {
+        "chara": "Alex",
+        "input": "63214HP",
+        "startup": "5",
+        "total": "61",
+        "hitAdv": "HKD +15",
+        "blockAdv": "-",
+        "notes": "Shortest range / fastest startup version; turns into Power Drop on backturned opponent; most useful for tick throws when the range allows it (like after 4MK on block at point blank); Alex's strongest meterless Drive Reversal punish (but can whiff when blocked at max range); 2875 damage on Punish Counter"
+      },
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data",
+      "rawRetrievedAt": "2026-08-19T04:05:26.479Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:21.430Z",
+      "gameVersion": "UNVERIFIED",
+      "kind": "community",
+      "verification": "unverified",
+      "attribution": "SuperCombo Wiki contributors",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "id": "alex__special_63214_P_L",
+      "characterId": "alex",
+      "name": "Power Bomb",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "P",
+        "strength": "L"
+      },
+      "sourceInput": "63214LP",
+      "rawPath": "archive/staging/sf6-frame-data/raw/alex.json",
+      "rawIndex": 52,
+      "rawRecord": {
+        "active": "3",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": 1.24,
+        "blockstun": null,
+        "cancel": [],
+        "category": "special",
+        "characterId": "alex",
+        "chipDamage": null,
+        "damage": 2500,
+        "damageText": "2500 (2875)",
+        "dmgScaling": "20% Immediate",
+        "driveGauge": {
+          "dealtOnBlock": null,
+          "dealtOnHit": 10000,
+          "gain": 5000
+        },
+        "driveRushCancel": null,
+        "hitstop": null,
+        "hitstun": null,
+        "id": "alex__63214lp",
+        "input": {
+          "numpad": "63214LP",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": null,
+        "name": {
+          "en": "Power Bomb",
+          "ja": null
+        },
+        "notes": {
+          "en": "Longest range / slowest startup version; useful in some oki situations (e.g. corner throw + dash) but less useful in tick throw scenarios; turns into Power Drop on backturned opponent",
+          "ja": null
+        },
+        "onBlock": null,
+        "onHit": 15,
+        "onPerfectParry": null,
+        "onPunishCounter": 15,
+        "projectileSpeed": null,
+        "properties": [
+          "throw"
+        ],
+        "pushback": null,
+        "recovery": 50,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:26.479Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data"
+        },
+        "startup": 9,
+        "superGauge": {
+          "onBlock": null,
+          "onHit": 3000
+        },
+        "totalFrames": 61
+      },
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/alex.cargo.json",
+      "cargoIndex": 52,
+      "cargoRecord": {
+        "chara": "Alex",
+        "input": "63214LP",
+        "startup": "9",
+        "total": "61",
+        "hitAdv": "HKD +15",
+        "blockAdv": "-",
+        "notes": "Longest range / slowest startup version; useful in some oki situations (e.g. corner throw + dash) but less useful in tick throw scenarios; turns into Power Drop on backturned opponent; 2875 damage on Punish Counter"
+      },
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data",
+      "rawRetrievedAt": "2026-08-19T04:05:26.479Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:21.430Z",
+      "gameVersion": "UNVERIFIED",
+      "kind": "community",
+      "verification": "unverified",
+      "attribution": "SuperCombo Wiki contributors",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "id": "alex__special_63214_P_M",
+      "characterId": "alex",
+      "name": "Power Bomb",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "P",
+        "strength": "M"
+      },
+      "sourceInput": "63214MP",
+      "rawPath": "archive/staging/sf6-frame-data/raw/alex.json",
+      "rawIndex": 53,
+      "rawRecord": {
+        "active": "3",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": 1.04,
+        "blockstun": null,
+        "cancel": [],
+        "category": "special",
+        "characterId": "alex",
+        "chipDamage": null,
+        "damage": 2500,
+        "damageText": "2500 (2875)",
+        "dmgScaling": "20% Immediate",
+        "driveGauge": {
+          "dealtOnBlock": null,
+          "dealtOnHit": 10000,
+          "gain": 5000
+        },
+        "driveRushCancel": null,
+        "hitstop": null,
+        "hitstun": null,
+        "id": "alex__63214mp",
+        "input": {
+          "numpad": "63214MP",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": null,
+        "name": {
+          "en": "Power Bomb",
+          "ja": null
+        },
+        "notes": {
+          "en": "Medium range / startup version; turns into Power Drop on backturned opponent; can be used in some tick throw situations especially out of Drive Rush normals",
+          "ja": null
+        },
+        "onBlock": null,
+        "onHit": 15,
+        "onPerfectParry": null,
+        "onPunishCounter": 15,
+        "projectileSpeed": null,
+        "properties": [
+          "throw"
+        ],
+        "pushback": null,
+        "recovery": 52,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:26.479Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data"
+        },
+        "startup": 7,
+        "superGauge": {
+          "onBlock": null,
+          "onHit": 3000
+        },
+        "totalFrames": 61
+      },
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/alex.cargo.json",
+      "cargoIndex": 53,
+      "cargoRecord": {
+        "chara": "Alex",
+        "input": "63214MP",
+        "startup": "7",
+        "total": "61",
+        "hitAdv": "HKD +15",
+        "blockAdv": "-",
+        "notes": "Medium range / startup version; turns into Power Drop on backturned opponent; can be used in some tick throw situations especially out of Drive Rush normals; 2875 damage on Punish Counter"
+      },
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data",
+      "rawRetrievedAt": "2026-08-19T04:05:26.479Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:21.430Z",
+      "gameVersion": "UNVERIFIED",
+      "kind": "community",
+      "verification": "unverified",
+      "attribution": "SuperCombo Wiki contributors",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "id": "alex__special_63214_P_OD",
+      "characterId": "alex",
+      "name": "Power Bomb",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "P",
+        "strength": "OD"
+      },
+      "sourceInput": "63214PP",
+      "rawPath": "archive/staging/sf6-frame-data/raw/alex.json",
+      "rawIndex": 54,
+      "rawRecord": {
+        "active": "3",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": 1.14,
+        "blockstun": null,
+        "cancel": [],
+        "category": "special",
+        "characterId": "alex",
+        "chipDamage": null,
+        "damage": 2900,
+        "damageText": "2900 (3335)",
+        "dmgScaling": "20% Immediate",
+        "driveGauge": {
+          "dealtOnBlock": null,
+          "dealtOnHit": 10000,
+          "gain": -20000
+        },
+        "driveRushCancel": null,
+        "hitstop": null,
+        "hitstun": null,
+        "id": "alex__63214pp",
+        "input": {
+          "numpad": "63214PP",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": null,
+        "name": {
+          "en": "Power Bomb",
+          "ja": null
+        },
+        "notes": {
+          "en": "Startup of HP version with range in between LP/MP versions; most useful overall in tick throw scenarios; turns into Power Drop on backturned opponent; more consistent and slightly more damaging as a Drive Reversal punish than HP version",
+          "ja": null
+        },
+        "onBlock": null,
+        "onHit": 15,
+        "onPerfectParry": null,
+        "onPunishCounter": 15,
+        "projectileSpeed": null,
+        "properties": [
+          "throw"
+        ],
+        "pushback": null,
+        "recovery": 54,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:26.479Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data"
+        },
+        "startup": 5,
+        "superGauge": {
+          "onBlock": null,
+          "onHit": 3000
+        },
+        "totalFrames": 61
+      },
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/alex.cargo.json",
+      "cargoIndex": 55,
+      "cargoRecord": {
+        "chara": "Alex",
+        "input": "63214PP",
+        "startup": "5",
+        "total": "61",
+        "hitAdv": "HKD +15",
+        "blockAdv": "-",
+        "notes": "Startup of HP version with range in between LP/MP versions; most useful overall in tick throw scenarios; turns into Power Drop on backturned opponent; more consistent and slightly more damaging as a Drive Reversal punish than HP version; 3335 damage on Punish Counter"
+      },
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data",
+      "rawRetrievedAt": "2026-08-19T04:05:26.479Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:21.430Z",
+      "gameVersion": "UNVERIFIED",
+      "kind": "community",
+      "verification": "unverified",
+      "attribution": "SuperCombo Wiki contributors",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "id": "arjun__special_22_K_H",
+      "characterId": "arjun",
+      "name": "Indomitable Defense",
+      "input": {
+        "type": "special",
+        "motion": "22",
+        "button": "K",
+        "strength": "H"
+      },
+      "sourceInput": "22HK",
+      "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
+      "rawIndex": 4,
+      "rawRecord": {
+        "active": "28~",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": 1.83,
+        "blockstun": null,
+        "cancel": [],
+        "category": "special",
+        "characterId": "arjun",
+        "chipDamage": null,
+        "damage": 1500,
+        "damageText": "1500 recoverable",
+        "dmgScaling": null,
+        "driveGauge": null,
+        "driveRushCancel": null,
+        "hitstop": 17,
+        "hitstun": null,
+        "id": "arjun__22hk",
+        "input": {
+          "numpad": "22HK",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": {
+          "increase": "127",
+          "limit": "99",
+          "start": "128"
+        },
+        "name": {
+          "en": "Indomitable Defense",
+          "ja": null
+        },
+        "notes": {
+          "en": "Absorbs any strike or projectile attack (including Super Arts) without incurring any recoverable damage; automatically performs a counter-attack when absorbing a strike (but not a projectile); can walk forward or backward while holding button (walk speed: 0.02 in either direction); counter-attack will autocorrect to face the opponent if they switch sides",
+          "ja": null
+        },
+        "onBlock": null,
+        "onHit": 29,
+        "onPerfectParry": null,
+        "onPunishCounter": 29,
+        "projectileSpeed": null,
+        "properties": [],
+        "pushback": null,
+        "recovery": 30,
+        "source": {
+          "fetchedAt": "2026-10-16T08:05:36.823Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Arjun/Frame_data"
+        },
+        "startup": 3,
+        "superGauge": null,
+        "totalFrames": 60
+      },
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+      "cargoIndex": 4,
+      "cargoRecord": {
+        "chara": "Arjun",
+        "input": "22HK",
+        "startup": "3",
+        "total": "60~",
+        "hitAdv": "KD +29",
+        "blockAdv": "-",
+        "notes": "Absorbs any strike or projectile attack (including Super Arts) without incurring any recoverable damage; automatically performs a counter-attack when absorbing a strike; absorbing a projectile incurs the usual 30f recovery animation after releasing the button; this counter-attack is a guaranteed punish and cannot be baited with a fast normal; counter-attack deals only recoverable damage and cannot KO the opponent; can walk forward or backward while holding button (walk speed: 0.02 in either direction); counter-attack will autocorrect to face the opponent if they switch sides; Arjun is in a counter-hit state on frames 1-2 and a Punish Counter state for the rest of the move duration (including the Moral Breakdown follow-up); depletes 0.3 Drive bars on hit; useful reversal in some blockstrings (such as Drive Impact blockstrings in Burnout if the gap is 3f or larger)"
+      },
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Arjun/Frame_data",
+      "rawRetrievedAt": "2026-10-16T08:05:36.823Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:21.434Z",
+      "gameVersion": "UNVERIFIED",
+      "kind": "community",
+      "verification": "unverified",
+      "attribution": "SuperCombo Wiki contributors",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "id": "arjun__special_63214_P_none",
+      "characterId": "arjun",
+      "name": "Ghastly Interrogation",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "P",
+        "strength": "none"
+      },
+      "sourceInput": "63214P",
+      "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
+      "rawIndex": 45,
+      "rawRecord": {
+        "active": "3",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": 1,
+        "blockstun": null,
+        "cancel": [],
+        "category": "special",
+        "characterId": "arjun",
+        "chipDamage": null,
+        "damage": 1600,
+        "damageText": "1600 recoverable",
+        "dmgScaling": null,
+        "driveGauge": null,
+        "driveRushCancel": null,
+        "hitstop": null,
+        "hitstun": null,
+        "id": "arjun__63214p",
+        "input": {
+          "numpad": "63214P",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": null,
+        "name": {
+          "en": "Ghastly Interrogation",
+          "ja": null
+        },
+        "notes": {
+          "en": "Deals recoverable damage to the opponent (cannot K.O. a low-health opponent); if the opponent already accumulated any recoverable damage, it instead deals actual damage and can K.O. the opponent; can be comboed into on grounded opponents but cannot be canceled into from normals",
+          "ja": null
+        },
+        "onBlock": null,
+        "onHit": 8,
+        "onPerfectParry": null,
+        "onPunishCounter": 8,
+        "projectileSpeed": null,
+        "properties": [
+          "throw"
+        ],
+        "pushback": null,
+        "recovery": 35,
+        "source": {
+          "fetchedAt": "2026-10-16T08:05:36.823Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Arjun/Frame_data"
+        },
+        "startup": 8,
+        "superGauge": null,
+        "totalFrames": 45
+      },
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+      "cargoIndex": 44,
+      "cargoRecord": {
+        "chara": "Arjun",
+        "input": "63214P",
+        "startup": "8",
+        "total": "45",
+        "hitAdv": "HKD +8(+13)",
+        "blockAdv": "-",
+        "notes": "Deals recoverable damage to the opponent (cannot K.O. a low-health opponent); if the opponent already accumulated any recoverable damage, it instead deals actual damage (+200 additional damage), can K.O. the opponent, and becomes HKD +13 leaving the opponent farther away; can be comboed into on grounded opponents but cannot be canceled into from normals; Punish Counter damage: 1840 rec / 2070"
+      },
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Arjun/Frame_data",
+      "rawRetrievedAt": "2026-10-16T08:05:36.823Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:21.434Z",
+      "gameVersion": "UNVERIFIED",
+      "kind": "community",
+      "verification": "unverified",
+      "attribution": "SuperCombo Wiki contributors",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "id": "arjun__special_63214_P_OD",
+      "characterId": "arjun",
+      "name": "OD Ghastly Interrogation",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "P",
+        "strength": "OD"
+      },
+      "sourceInput": "63214PP",
+      "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
+      "rawIndex": 46,
+      "rawRecord": {
+        "active": "3",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": 2.02,
+        "blockstun": null,
+        "cancel": [],
+        "category": "special",
+        "characterId": "arjun",
+        "chipDamage": null,
+        "damage": 2200,
+        "damageText": "2200 recoverable",
+        "dmgScaling": null,
+        "driveGauge": {
+          "dealtOnBlock": null,
+          "dealtOnHit": null,
+          "gain": -20000
+        },
+        "driveRushCancel": null,
+        "hitstop": null,
+        "hitstun": null,
+        "id": "arjun__63214pp",
+        "input": {
+          "numpad": "63214PP",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": {
+          "increase": "1",
+          "limit": "99",
+          "start": "1"
+        },
+        "name": {
+          "en": "OD Ghastly Interrogation",
+          "ja": null
+        },
+        "notes": {
+          "en": "Deals recoverable damage to the opponent (cannot K.O. a low-health opponent); if the opponent already accumulated any recoverable damage, it instead deals actual damage and can K.O. the opponent; takes a step forward on startup similar to 236PP; can be comboed into on grounded or airborne opponents but cannot be canceled into from normals",
+          "ja": null
+        },
+        "onBlock": null,
+        "onHit": 8,
+        "onPerfectParry": null,
+        "onPunishCounter": 8,
+        "projectileSpeed": null,
+        "properties": [
+          "throw"
+        ],
+        "pushback": null,
+        "recovery": 38,
+        "source": {
+          "fetchedAt": "2026-10-16T08:05:36.823Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Arjun/Frame_data"
+        },
+        "startup": 26,
+        "superGauge": null,
+        "totalFrames": 66
+      },
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+      "cargoIndex": 45,
+      "cargoRecord": {
+        "chara": "Arjun",
+        "input": "63214PP",
+        "startup": "26",
+        "total": "66",
+        "hitAdv": "HKD +8(+13)",
+        "blockAdv": "-",
+        "notes": "Deals recoverable damage to the opponent (cannot K.O. a low-health opponent); if the opponent already accumulated any recoverable damage, it instead deals actual damage (+200 additional damage), can K.O. the opponent, and becomes HKD +13 leaving the opponent farther away; takes a step forward on startup similar to 236PP; can be comboed into on grounded or airborne opponents but cannot be canceled into from normals; Punish Counter damage: 2530 rec / 2730"
+      },
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Arjun/Frame_data",
+      "rawRetrievedAt": "2026-10-16T08:05:36.823Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:21.434Z",
+      "gameVersion": "UNVERIFIED",
+      "kind": "community",
+      "verification": "unverified",
+      "attribution": "SuperCombo Wiki contributors",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "id": "blanka__special_236_K_H",
+      "characterId": "blanka",
+      "name": "Wild Hunt",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "H"
+      },
+      "sourceInput": "236HK",
+      "rawPath": "archive/staging/sf6-frame-data/raw/blanka.json",
+      "rawIndex": 11,
+      "rawRecord": {
+        "active": "3",
+        "afterDriveRush": null,
+        "airborne": "19-36 (FKD)",
+        "aliases": [],
+        "armor": null,
+        "attackRange": 4.24,
+        "blockstun": null,
+        "cancel": [],
+        "category": "special",
+        "characterId": "blanka",
+        "chipDamage": null,
+        "damage": 1800,
+        "damageText": "1800 (2070)",
+        "dmgScaling": null,
+        "driveGauge": {
+          "dealtOnBlock": null,
+          "dealtOnHit": 10000,
+          "gain": 5000
+        },
+        "driveRushCancel": null,
+        "hitstop": null,
+        "hitstun": null,
+        "id": "blanka__236hk",
+        "input": {
+          "numpad": "236HK",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": null,
+        "name": {
+          "en": "Wild Hunt",
+          "ja": null
+        },
+        "notes": {
+          "en": "Slow hopping command grab; Range: 4.24 (longest)",
+          "ja": null
+        },
+        "onBlock": null,
+        "onHit": 35,
+        "onPerfectParry": null,
+        "onPunishCounter": 35,
+        "projectileSpeed": null,
+        "properties": [
+          "throw",
+          "airborne"
+        ],
+        "pushback": null,
+        "recovery": 57,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:26.479Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data"
+        },
+        "startup": 43,
+        "superGauge": {
+          "onBlock": null,
+          "onHit": 3000
+        },
+        "totalFrames": 102
+      },
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json",
+      "cargoIndex": 11,
+      "cargoRecord": {
+        "chara": "Blanka",
+        "input": "236HK",
+        "startup": "43",
+        "total": "102",
+        "hitAdv": "HKD +35",
+        "blockAdv": "-",
+        "notes": "Slow hopping command grab; Range: 4.24 (longest); 2070 damage on Punish Counter"
+      },
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data",
+      "rawRetrievedAt": "2026-08-19T04:05:26.479Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:25.827Z",
+      "gameVersion": "UNVERIFIED",
+      "kind": "community",
+      "verification": "unverified",
+      "attribution": "SuperCombo Wiki contributors",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "id": "blanka__special_236_K_L",
+      "characterId": "blanka",
+      "name": "Wild Hunt",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "L"
+      },
+      "sourceInput": "236LK",
+      "rawPath": "archive/staging/sf6-frame-data/raw/blanka.json",
+      "rawIndex": 13,
+      "rawRecord": {
+        "active": "3",
+        "afterDriveRush": null,
+        "airborne": "9-26 (FKD)",
+        "aliases": [],
+        "armor": null,
+        "attackRange": 2.49,
+        "blockstun": null,
+        "cancel": [],
+        "category": "special",
+        "characterId": "blanka",
+        "chipDamage": null,
+        "damage": 1600,
+        "damageText": "1600 (1840)",
+        "dmgScaling": null,
+        "driveGauge": {
+          "dealtOnBlock": null,
+          "dealtOnHit": 10000,
+          "gain": 5000
+        },
+        "driveRushCancel": null,
+        "hitstop": null,
+        "hitstun": null,
+        "id": "blanka__236lk",
+        "input": {
+          "numpad": "236LK",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": null,
+        "name": {
+          "en": "Wild Hunt",
+          "ja": null
+        },
+        "notes": {
+          "en": "Slow hopping command grab; Range: 2.49 (shortest)",
+          "ja": null
+        },
+        "onBlock": null,
+        "onHit": 35,
+        "onPerfectParry": null,
+        "onPunishCounter": 35,
+        "projectileSpeed": null,
+        "properties": [
+          "throw",
+          "airborne"
+        ],
+        "pushback": null,
+        "recovery": 57,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:26.479Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data"
+        },
+        "startup": 34,
+        "superGauge": {
+          "onBlock": null,
+          "onHit": 3000
+        },
+        "totalFrames": 93
+      },
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json",
+      "cargoIndex": 13,
+      "cargoRecord": {
+        "chara": "Blanka",
+        "input": "236LK",
+        "startup": "34",
+        "total": "93",
+        "hitAdv": "HKD +35",
+        "blockAdv": "-",
+        "notes": "Slow hopping command grab; Range: 2.49 (shortest); 1840 damage on Punish Counter"
+      },
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data",
+      "rawRetrievedAt": "2026-08-19T04:05:26.479Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:25.827Z",
+      "gameVersion": "UNVERIFIED",
+      "kind": "community",
+      "verification": "unverified",
+      "attribution": "SuperCombo Wiki contributors",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "id": "blanka__special_236_K_M",
+      "characterId": "blanka",
+      "name": "Wild Hunt",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "M"
+      },
+      "sourceInput": "236MK",
+      "rawPath": "archive/staging/sf6-frame-data/raw/blanka.json",
+      "rawIndex": 14,
+      "rawRecord": {
+        "active": "3",
+        "afterDriveRush": null,
+        "airborne": "14-33 (FKD)",
+        "aliases": [],
+        "armor": null,
+        "attackRange": 3.41,
+        "blockstun": null,
+        "cancel": [],
+        "category": "special",
+        "characterId": "blanka",
+        "chipDamage": null,
+        "damage": 1700,
+        "damageText": "1700 (1955)",
+        "dmgScaling": null,
+        "driveGauge": {
+          "dealtOnBlock": null,
+          "dealtOnHit": 10000,
+          "gain": 5000
+        },
+        "driveRushCancel": null,
+        "hitstop": null,
+        "hitstun": null,
+        "id": "blanka__236mk",
+        "input": {
+          "numpad": "236MK",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": null,
+        "name": {
+          "en": "Wild Hunt",
+          "ja": null
+        },
+        "notes": {
+          "en": "Slow hopping command grab; Range: 3.41 (mid-range)",
+          "ja": null
+        },
+        "onBlock": null,
+        "onHit": 35,
+        "onPerfectParry": null,
+        "onPunishCounter": 35,
+        "projectileSpeed": null,
+        "properties": [
+          "throw",
+          "airborne"
+        ],
+        "pushback": null,
+        "recovery": 57,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:26.479Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data"
+        },
+        "startup": 39,
+        "superGauge": {
+          "onBlock": null,
+          "onHit": 3000
+        },
+        "totalFrames": 98
+      },
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json",
+      "cargoIndex": 14,
+      "cargoRecord": {
+        "chara": "Blanka",
+        "input": "236MK",
+        "startup": "39",
+        "total": "98",
+        "hitAdv": "HKD +35",
+        "blockAdv": "-",
+        "notes": "Slow hopping command grab; Range: 3.41 (mid-range); 1955 damage on Punish Counter"
+      },
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data",
+      "rawRetrievedAt": "2026-08-19T04:05:26.479Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:25.827Z",
+      "gameVersion": "UNVERIFIED",
+      "kind": "community",
+      "verification": "unverified",
+      "attribution": "SuperCombo Wiki contributors",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "id": "blanka__special_236_K_OD",
+      "characterId": "blanka",
+      "name": "Wild Hunt",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "OD"
+      },
+      "sourceInput": "236KK",
+      "rawPath": "archive/staging/sf6-frame-data/raw/blanka.json",
+      "rawIndex": 12,
+      "rawRecord": {
+        "active": "3",
+        "afterDriveRush": null,
+        "airborne": "9-28 (FKD)",
+        "aliases": [],
+        "armor": null,
+        "attackRange": 3.58,
+        "blockstun": null,
+        "cancel": [],
+        "category": "special",
+        "characterId": "blanka",
+        "chipDamage": null,
+        "damage": 2000,
+        "damageText": "2000 (2300)",
+        "dmgScaling": null,
+        "driveGauge": {
+          "dealtOnBlock": null,
+          "dealtOnHit": 10000,
+          "gain": -20000
+        },
+        "driveRushCancel": null,
+        "hitstop": null,
+        "hitstun": null,
+        "id": "blanka__236kk",
+        "input": {
+          "numpad": "236KK",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": null,
+        "name": {
+          "en": "Wild Hunt",
+          "ja": null
+        },
+        "notes": {
+          "en": "Slow hopping command grab; hurtbox is pulled much higher up than meterless versions, making it better at avoiding attacks; can hold forward/back to control distance (forward momentum is faster than backwards momentum); can be comboed into on grounded or airborne opponents (allows Blanka-chan setups with its high KD Advantage); Range: 2.68~3.58",
+          "ja": null
+        },
+        "onBlock": null,
+        "onHit": 64,
+        "onPerfectParry": null,
+        "onPunishCounter": 64,
+        "projectileSpeed": null,
+        "properties": [
+          "throw",
+          "airborne"
+        ],
+        "pushback": null,
+        "recovery": 57,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:26.479Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data"
+        },
+        "startup": 32,
+        "superGauge": {
+          "onBlock": null,
+          "onHit": 3000
+        },
+        "totalFrames": 91
+      },
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json",
+      "cargoIndex": 12,
+      "cargoRecord": {
+        "chara": "Blanka",
+        "input": "236KK",
+        "startup": "32",
+        "total": "91",
+        "hitAdv": "HKD +64",
+        "blockAdv": "-",
+        "notes": "Slow hopping command grab; hurtbox is pulled much higher up than meterless versions, making it better at avoiding attacks; can hold forward/back to control distance (forward momentum is faster than backwards momentum); can be comboed into on grounded or airborne opponents (allows Blanka-chan setups with its high KD Advantage); Range: 2.68~3.58; 2300 damage on Punish Counter"
+      },
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Blanka/Frame_data",
+      "rawRetrievedAt": "2026-08-19T04:05:26.479Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:25.827Z",
+      "gameVersion": "UNVERIFIED",
+      "kind": "community",
+      "verification": "unverified",
+      "attribution": "SuperCombo Wiki contributors",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "id": "e_honda__special_236_K_none",
+      "characterId": "e_honda",
+      "name": "Sumo Dash",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "none"
+      },
+      "sourceInput": "236K",
+      "rawPath": "archive/staging/sf6-frame-data/raw/e_honda.json",
+      "rawIndex": 9,
+      "rawRecord": {
+        "active": "-",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": null,
+        "blockstun": null,
+        "cancel": [],
+        "category": "special",
+        "characterId": "e_honda",
+        "chipDamage": null,
+        "damage": null,
+        "damageText": null,
+        "dmgScaling": null,
+        "driveGauge": null,
+        "driveRushCancel": null,
+        "hitstop": null,
+        "hitstun": null,
+        "id": "e_honda__236k",
+        "input": {
+          "numpad": "236K",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": null,
+        "name": {
+          "en": "Sumo Dash",
+          "ja": null
+        },
+        "notes": {
+          "en": "Can cancel into 5P on frame 13 or 2P on frame 14 (until the end of recovery); Movement Speed: 0.052",
+          "ja": null
+        },
+        "onBlock": null,
+        "onHit": null,
+        "onPerfectParry": null,
+        "onPunishCounter": null,
+        "projectileSpeed": null,
+        "properties": [],
+        "pushback": null,
+        "recovery": 44,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:27.013Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data"
+        },
+        "startup": 13,
+        "superGauge": null,
+        "totalFrames": 44
+      },
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+      "cargoIndex": 13,
+      "cargoRecord": {
+        "chara": "E.Honda",
+        "input": "236K",
+        "startup": "13(14)",
+        "total": "44",
+        "hitAdv": "-",
+        "blockAdv": "-",
+        "notes": "Can cancel into 5P on frame 13 or 2P on frame 14 (until the end of recovery); Movement Speed: 0.052; Total Distance: 2.22 (0.63 before the earliest Teppo Triple Slap timing)"
+      },
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+      "rawRetrievedAt": "2026-08-19T04:05:27.013Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.558Z",
+      "gameVersion": "UNVERIFIED",
+      "kind": "community",
+      "verification": "unverified",
+      "attribution": "SuperCombo Wiki contributors",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "id": "e_honda__special_236_K_OD",
+      "characterId": "e_honda",
+      "name": "Sumo Dash",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "OD"
+      },
+      "sourceInput": "236KK",
+      "rawPath": "archive/staging/sf6-frame-data/raw/e_honda.json",
+      "rawIndex": 10,
+      "rawRecord": {
+        "active": "-",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": null,
+        "blockstun": null,
+        "cancel": [],
+        "category": "special",
+        "characterId": "e_honda",
+        "chipDamage": null,
+        "damage": null,
+        "damageText": null,
+        "dmgScaling": null,
+        "driveGauge": {
+          "dealtOnBlock": null,
+          "dealtOnHit": null,
+          "gain": -20000
+        },
+        "driveRushCancel": null,
+        "hitstop": null,
+        "hitstun": null,
+        "id": "e_honda__236kk",
+        "input": {
+          "numpad": "236KK",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": null,
+        "name": {
+          "en": "Sumo Dash",
+          "ja": null
+        },
+        "notes": {
+          "en": "Can cancel into 5P follow-up on frames 13-27 or the 2P follow-up on frames 11-27; Movement Speed: 0.067",
+          "ja": null
+        },
+        "onBlock": null,
+        "onHit": null,
+        "onPerfectParry": null,
+        "onPunishCounter": null,
+        "projectileSpeed": null,
+        "properties": [],
+        "pushback": null,
+        "recovery": 34,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:27.013Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data"
+        },
+        "startup": 13,
+        "superGauge": null,
+        "totalFrames": 34
+      },
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+      "cargoIndex": 14,
+      "cargoRecord": {
+        "chara": "E.Honda",
+        "input": "236KK",
+        "startup": "13(11)",
+        "total": "34",
+        "hitAdv": "-",
+        "blockAdv": "-",
+        "notes": "Can cancel into 5P follow-up on frames 13-27 or the 2P follow-up on frames 11-27; Movement Speed: 0.067; Total Distance: 2.17 (0.79 before the earliest Teppo Triple Slap timing)"
+      },
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+      "rawRetrievedAt": "2026-08-19T04:05:27.013Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.558Z",
+      "gameVersion": "UNVERIFIED",
+      "kind": "community",
+      "verification": "unverified",
+      "attribution": "SuperCombo Wiki contributors",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "id": "e_honda__special_63214_K_H",
+      "characterId": "e_honda",
+      "name": "Oicho Throw",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "H"
+      },
+      "sourceInput": "63214HK",
+      "rawPath": "archive/staging/sf6-frame-data/raw/e_honda.json",
+      "rawIndex": 44,
+      "rawRecord": {
+        "active": "4",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": 0.99,
+        "blockstun": null,
+        "cancel": [],
+        "category": "special",
+        "characterId": "e_honda",
+        "chipDamage": null,
+        "damage": 2400,
+        "damageText": "2400 (2760)",
+        "dmgScaling": "20% Immediate",
+        "driveGauge": {
+          "dealtOnBlock": null,
+          "dealtOnHit": 10000,
+          "gain": 2000
+        },
+        "driveRushCancel": null,
+        "hitstop": null,
+        "hitstun": null,
+        "id": "e_honda__63214hk",
+        "input": {
+          "numpad": "63214HK",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": null,
+        "name": {
+          "en": "Oicho Throw",
+          "ja": null
+        },
+        "notes": {
+          "en": "Cannot be canceled into from normals; () refers to Punish Counter damage; Range: 0.99",
+          "ja": null
+        },
+        "onBlock": null,
+        "onHit": 7,
+        "onPerfectParry": null,
+        "onPunishCounter": 7,
+        "projectileSpeed": null,
+        "properties": [
+          "throw"
+        ],
+        "pushback": null,
+        "recovery": 52,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:27.013Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data"
+        },
+        "startup": 6,
+        "superGauge": {
+          "onBlock": null,
+          "onHit": 3000
+        },
+        "totalFrames": 61
+      },
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+      "cargoIndex": 39,
+      "cargoRecord": {
+        "chara": "E.Honda",
+        "input": "63214HK",
+        "startup": "6",
+        "total": "61",
+        "hitAdv": "HKD +7",
+        "blockAdv": "-",
+        "notes": "Cannot be canceled into from normals; 2760 damage on Punish Counter; Range: 0.99"
+      },
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+      "rawRetrievedAt": "2026-08-19T04:05:27.013Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.558Z",
+      "gameVersion": "UNVERIFIED",
+      "kind": "community",
+      "verification": "unverified",
+      "attribution": "SuperCombo Wiki contributors",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "id": "e_honda__special_63214_K_L",
+      "characterId": "e_honda",
+      "name": "Oicho Throw",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "L"
+      },
+      "sourceInput": "63214LK",
+      "rawPath": "archive/staging/sf6-frame-data/raw/e_honda.json",
+      "rawIndex": 46,
+      "rawRecord": {
+        "active": "4",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": 1.19,
+        "blockstun": null,
+        "cancel": [],
+        "category": "special",
+        "characterId": "e_honda",
+        "chipDamage": null,
+        "damage": 2000,
+        "damageText": "2000 (2300)",
+        "dmgScaling": "20% Immediate",
+        "driveGauge": {
+          "dealtOnBlock": null,
+          "dealtOnHit": 10000,
+          "gain": 2000
+        },
+        "driveRushCancel": null,
+        "hitstop": null,
+        "hitstun": null,
+        "id": "e_honda__63214lk",
+        "input": {
+          "numpad": "63214LK",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": null,
+        "name": {
+          "en": "Oicho Throw",
+          "ja": null
+        },
+        "notes": {
+          "en": "Cannot be canceled into from normals; () refers to Punish Counter damage; Range: 1.19",
+          "ja": null
+        },
+        "onBlock": null,
+        "onHit": 7,
+        "onPerfectParry": null,
+        "onPunishCounter": 7,
+        "projectileSpeed": null,
+        "properties": [
+          "throw"
+        ],
+        "pushback": null,
+        "recovery": 52,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:27.013Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data"
+        },
+        "startup": 6,
+        "superGauge": {
+          "onBlock": null,
+          "onHit": 3000
+        },
+        "totalFrames": 61
+      },
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+      "cargoIndex": 41,
+      "cargoRecord": {
+        "chara": "E.Honda",
+        "input": "63214LK",
+        "startup": "6",
+        "total": "61",
+        "hitAdv": "HKD +7",
+        "blockAdv": "-",
+        "notes": "Cannot be canceled into from normals; 2300 damage on Punish Counter; Range: 1.19"
+      },
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+      "rawRetrievedAt": "2026-08-19T04:05:27.013Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.558Z",
+      "gameVersion": "UNVERIFIED",
+      "kind": "community",
+      "verification": "unverified",
+      "attribution": "SuperCombo Wiki contributors",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "id": "e_honda__special_63214_K_M",
+      "characterId": "e_honda",
+      "name": "Oicho Throw",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "M"
+      },
+      "sourceInput": "63214MK",
+      "rawPath": "archive/staging/sf6-frame-data/raw/e_honda.json",
+      "rawIndex": 47,
+      "rawRecord": {
+        "active": "4",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": 1.09,
+        "blockstun": null,
+        "cancel": [],
+        "category": "special",
+        "characterId": "e_honda",
+        "chipDamage": null,
+        "damage": 2200,
+        "damageText": "2200 (2645)",
+        "dmgScaling": "20% Immediate",
+        "driveGauge": {
+          "dealtOnBlock": null,
+          "dealtOnHit": 10000,
+          "gain": 2000
+        },
+        "driveRushCancel": null,
+        "hitstop": null,
+        "hitstun": null,
+        "id": "e_honda__63214mk",
+        "input": {
+          "numpad": "63214MK",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": null,
+        "name": {
+          "en": "Oicho Throw",
+          "ja": null
+        },
+        "notes": {
+          "en": "Cannot be canceled into from normals; () refers to Punish Counter damage; Range: 1.09",
+          "ja": null
+        },
+        "onBlock": null,
+        "onHit": 7,
+        "onPerfectParry": null,
+        "onPunishCounter": 7,
+        "projectileSpeed": null,
+        "properties": [
+          "throw"
+        ],
+        "pushback": null,
+        "recovery": 52,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:27.013Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data"
+        },
+        "startup": 6,
+        "superGauge": {
+          "onBlock": null,
+          "onHit": 3000
+        },
+        "totalFrames": 61
+      },
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+      "cargoIndex": 42,
+      "cargoRecord": {
+        "chara": "E.Honda",
+        "input": "63214MK",
+        "startup": "6",
+        "total": "61",
+        "hitAdv": "HKD +7",
+        "blockAdv": "-",
+        "notes": "Cannot be canceled into from normals; 2645 damage on Punish Counter; Range: 1.09"
+      },
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+      "rawRetrievedAt": "2026-08-19T04:05:27.013Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.558Z",
+      "gameVersion": "UNVERIFIED",
+      "kind": "community",
+      "verification": "unverified",
+      "attribution": "SuperCombo Wiki contributors",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "id": "e_honda__special_63214_K_OD",
+      "characterId": "e_honda",
+      "name": "Oicho Throw",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "OD"
+      },
+      "sourceInput": "63214KK",
+      "rawPath": "archive/staging/sf6-frame-data/raw/e_honda.json",
+      "rawIndex": 45,
+      "rawRecord": {
+        "active": "4",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": 1.19,
+        "blockstun": null,
+        "cancel": [],
+        "category": "special",
+        "characterId": "e_honda",
+        "chipDamage": null,
+        "damage": 2800,
+        "damageText": "2800 (3220)",
+        "dmgScaling": "20% Immediate",
+        "driveGauge": {
+          "dealtOnBlock": null,
+          "dealtOnHit": 10000,
+          "gain": -20000
+        },
+        "driveRushCancel": null,
+        "hitstop": null,
+        "hitstun": null,
+        "id": "e_honda__63214kk",
+        "input": {
+          "numpad": "63214KK",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": null,
+        "name": {
+          "en": "Oicho Throw",
+          "ja": null
+        },
+        "notes": {
+          "en": "Cannot be canceled into from normals; () refers to Punish Counter damage; Range: 1.19",
+          "ja": null
+        },
+        "onBlock": null,
+        "onHit": 7,
+        "onPerfectParry": null,
+        "onPunishCounter": 7,
+        "projectileSpeed": null,
+        "properties": [
+          "throw"
+        ],
+        "pushback": null,
+        "recovery": 52,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:27.013Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data"
+        },
+        "startup": 6,
+        "superGauge": {
+          "onBlock": null,
+          "onHit": 3000
+        },
+        "totalFrames": 61
+      },
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+      "cargoIndex": 40,
+      "cargoRecord": {
+        "chara": "E.Honda",
+        "input": "63214KK",
+        "startup": "6",
+        "total": "61",
+        "hitAdv": "HKD +7",
+        "blockAdv": "-",
+        "notes": "Cannot be canceled into from normals; 3220 damage on Punish Counter; Range: 1.19"
+      },
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data",
+      "rawRetrievedAt": "2026-08-19T04:05:27.013Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.558Z",
+      "gameVersion": "UNVERIFIED",
+      "kind": "community",
+      "verification": "unverified",
+      "attribution": "SuperCombo Wiki contributors",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "id": "jamie__special_22_P_none",
+      "characterId": "jamie",
+      "name": "The Devil Inside",
+      "input": {
+        "type": "special",
+        "motion": "22",
+        "button": "P",
+        "strength": "none"
+      },
+      "sourceInput": "22P",
+      "rawPath": "archive/staging/sf6-frame-data/raw/jamie.json",
+      "rawIndex": 7,
+      "rawRecord": {
+        "active": "-",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": null,
+        "blockstun": null,
+        "cancel": [],
+        "category": "special",
+        "characterId": "jamie",
+        "chipDamage": null,
+        "damage": null,
+        "damageText": null,
+        "dmgScaling": null,
+        "driveGauge": {
+          "dealtOnBlock": null,
+          "dealtOnHit": null,
+          "gain": 2500
+        },
+        "driveRushCancel": null,
+        "hitstop": null,
+        "hitstun": null,
+        "id": "jamie__22p",
+        "input": {
+          "numpad": "22P",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": null,
+        "name": {
+          "en": "The Devil Inside",
+          "ja": null
+        },
+        "notes": {
+          "en": "Increases Jamie's Drink Level by 1 (hold for more levels); builds 0.25 Drive bars per drink; if already at DL4, builds 0.5 Drive bars per drink; can hold the button to continue drinking indefinitely; entire animation is in a counter-hit state; Drink Level affects moveset and base damage scaling (90/95/100/105/110% for DL0-DL4 respectively)",
+          "ja": null
+        },
+        "onBlock": null,
+        "onHit": null,
+        "onPerfectParry": null,
+        "onPunishCounter": null,
+        "projectileSpeed": null,
+        "properties": [],
+        "pushback": null,
+        "recovery": 2,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:27.533Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        },
+        "startup": 48,
+        "superGauge": null,
+        "totalFrames": 50
+      },
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+      "cargoIndex": 7,
+      "cargoRecord": {
+        "chara": "Jamie",
+        "input": "22P",
+        "startup": "48",
+        "total": "50",
+        "hitAdv": "-",
+        "blockAdv": "-",
+        "notes": "Increases Jamie's Drink Level by 1 (hold for more levels); builds 0.25 Drive bars per drink; if already at DL4, builds 0.5 Drive bars per drink; can hold the button to continue drinking indefinitely; entire animation is in a counter-hit state; Drink Level affects moveset and base damage scaling (90/95/100/105/110% for DL0-DL4 respectively); shrinks Jamie's head hurtbox starting on frame 10"
+      },
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+      "rawRetrievedAt": "2026-08-19T04:05:27.533Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.958Z",
+      "gameVersion": "UNVERIFIED",
+      "kind": "community",
+      "verification": "unverified",
+      "attribution": "SuperCombo Wiki contributors",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "id": "jp__special_214_K_none",
+      "characterId": "jp",
+      "name": "Embrace",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "none"
+      },
+      "sourceInput": "214K",
+      "rawPath": "archive/staging/sf6-frame-data/raw/jp.json",
+      "rawIndex": 1,
+      "rawRecord": {
+        "active": "3",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": null,
+        "blockstun": null,
+        "cancel": [],
+        "category": "special",
+        "characterId": "jp",
+        "chipDamage": null,
+        "damage": 1800,
+        "damageText": "1800 (2070)",
+        "dmgScaling": "10% Immediate",
+        "driveGauge": {
+          "dealtOnBlock": null,
+          "dealtOnHit": 10000,
+          "gain": 2500
+        },
+        "driveRushCancel": null,
+        "hitstop": null,
+        "hitstun": null,
+        "id": "jp__214k",
+        "input": {
+          "numpad": "214K",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": null,
+        "name": {
+          "en": "Embrace",
+          "ja": null
+        },
+        "notes": {
+          "en": "1-hit projectile command grab; clashes with non-OD projectiles; can be comboed into against grounded opponents; minimum 72f total animation; startup increases at long range due to projectile grab travel time; cannot be performed if SA2 or a Departure portal are active on the screen; projectile speed decelerates by 0.01/frame when in proximity of opponent",
+          "ja": null
+        },
+        "onBlock": null,
+        "onHit": 18,
+        "onPerfectParry": null,
+        "onPunishCounter": 18,
+        "projectileSpeed": 0.13,
+        "properties": [
+          "throw"
+        ],
+        "pushback": null,
+        "recovery": 44,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:27.533Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/JP/Frame_data"
+        },
+        "startup": 26,
+        "superGauge": {
+          "onBlock": null,
+          "onHit": 3000
+        },
+        "totalFrames": 72
+      },
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+      "cargoIndex": 1,
+      "cargoRecord": {
+        "chara": "JP",
+        "input": "214K",
+        "startup": "26~",
+        "total": "72",
+        "hitAdv": "HKD +18",
+        "blockAdv": "-",
+        "notes": "1-hit projectile command grab; clashes with non-OD projectiles; can be comboed into against grounded opponents; minimum 72f total animation; startup increases at long range due to projectile grab travel time; cannot be performed if SA2 or a Departure portal are active on the screen; projectile speed decelerates by 0.01/frame when in proximity of opponent; 2070 damage on Punish Counter"
+      },
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/JP/Frame_data",
+      "rawRetrievedAt": "2026-08-19T04:05:27.533Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.960Z",
+      "gameVersion": "UNVERIFIED",
+      "kind": "community",
+      "verification": "unverified",
+      "attribution": "SuperCombo Wiki contributors",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "id": "jp__special_214_K_OD",
+      "characterId": "jp",
+      "name": "Embrace",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "OD"
+      },
+      "sourceInput": "214KK",
+      "rawPath": "archive/staging/sf6-frame-data/raw/jp.json",
+      "rawIndex": 2,
+      "rawRecord": {
+        "active": "3",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": null,
+        "blockstun": null,
+        "cancel": [],
+        "category": "special",
+        "characterId": "jp",
+        "chipDamage": null,
+        "damage": 2600,
+        "damageText": "2600 (2990)",
+        "dmgScaling": "10% Immediate",
+        "driveGauge": {
+          "dealtOnBlock": null,
+          "dealtOnHit": 10000,
+          "gain": -20000
+        },
+        "driveRushCancel": null,
+        "hitstop": null,
+        "hitstun": null,
+        "id": "jp__214kk",
+        "input": {
+          "numpad": "214KK",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": null,
+        "name": {
+          "en": "Embrace",
+          "ja": null
+        },
+        "notes": {
+          "en": "1-hit OD projectile command grab; clashes with OD projectiles (can destroy non-OD projectiles, allowing the throw to continue); can be comboed into against grounded opponents; minimum 72f total animation; startup increases at long range due to projectile grab travel time; cannot be performed if SA2 or a Departure portal are active on the screen; projectile speed decelerates by 0.01/frame when in proximity of opponent",
+          "ja": null
+        },
+        "onBlock": null,
+        "onHit": 18,
+        "onPerfectParry": null,
+        "onPunishCounter": 18,
+        "projectileSpeed": 0.13,
+        "properties": [
+          "throw"
+        ],
+        "pushback": null,
+        "recovery": 44,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:27.533Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/JP/Frame_data"
+        },
+        "startup": 26,
+        "superGauge": {
+          "onBlock": null,
+          "onHit": 3000
+        },
+        "totalFrames": 72
+      },
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+      "cargoIndex": 2,
+      "cargoRecord": {
+        "chara": "JP",
+        "input": "214KK",
+        "startup": "26~",
+        "total": "72",
+        "hitAdv": "HKD +18",
+        "blockAdv": "-",
+        "notes": "1-hit OD projectile command grab; clashes with OD projectiles (can destroy non-OD projectiles, allowing the throw to continue); can be comboed into against grounded opponents; minimum 72f total animation; startup increases at long range due to projectile grab travel time; cannot be performed if SA2 or a Departure portal are active on the screen; projectile speed decelerates by 0.01/frame when in proximity of opponent; 2990 damage on Punish Counter"
+      },
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/JP/Frame_data",
+      "rawRetrievedAt": "2026-08-19T04:05:27.533Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.960Z",
+      "gameVersion": "UNVERIFIED",
+      "kind": "community",
+      "verification": "unverified",
+      "attribution": "SuperCombo Wiki contributors",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "id": "jp__special_214_P_none",
+      "characterId": "jp",
+      "name": "Departure",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "none"
+      },
+      "sourceInput": "214P",
+      "rawPath": "archive/staging/sf6-frame-data/raw/jp.json",
+      "rawIndex": 3,
+      "rawRecord": {
+        "active": "[10]",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": null,
+        "blockstun": 31,
+        "cancel": [],
+        "category": "special",
+        "characterId": "jp",
+        "chipDamage": 200,
+        "damage": 800,
+        "damageText": null,
+        "dmgScaling": null,
+        "driveGauge": {
+          "dealtOnBlock": 2500,
+          "dealtOnHit": 3000,
+          "gain": 1000
+        },
+        "driveRushCancel": null,
+        "hitstop": 13,
+        "hitstun": null,
+        "id": "jp__214p",
+        "input": {
+          "numpad": "214P",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": {
+          "increase": "0 / 1",
+          "limit": "50",
+          "start": "0"
+        },
+        "name": {
+          "en": "Departure",
+          "ja": null
+        },
+        "notes": {
+          "en": "Spawns a portal in the air according to button strength (LP close, MP mid, HP far); while the portal is active, JP cannot use 214P command grab; portal disappears if JP is hit or thrown; can manually input 214LP/MP or 214HP follow-up while portal is active; if no follow-up is input, the portal automatically spawns a 1-hit spike projectile toward the opponent 100f after JP recovers (150f total startup); spike puts opponents into a free juggle state; the automatic spike activation allows for strong mixups, as JP is free to move while it occurs (unlike 214P~214HP version where he snaps his fingers); cannot spawn another portal until the first has disappeared; Juggle Increase value becomes 1 when connecting mid-combo against opponent in a Free Juggle state (ensures that opponent will have Juggle Count 1 after the spike connects)",
+          "ja": null
+        },
+        "onBlock": null,
+        "onHit": null,
+        "onPerfectParry": null,
+        "onPunishCounter": null,
+        "projectileSpeed": null,
+        "properties": [
+          "low",
+          "high"
+        ],
+        "pushback": null,
+        "recovery": 50,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:27.533Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/JP/Frame_data"
+        },
+        "startup": 50,
+        "superGauge": {
+          "onBlock": 500,
+          "onHit": 1000
+        },
+        "totalFrames": 50
+      },
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+      "cargoIndex": 3,
+      "cargoRecord": {
+        "chara": "JP",
+        "input": "214P",
+        "startup": "50+100",
+        "total": "50",
+        "hitAdv": "KD ~",
+        "blockAdv": "-",
+        "notes": "Spawns a portal in the air according to button strength (LP close, MP mid, HP far); while the portal is active, JP cannot use 214P command grab; portal disappears if JP is hit or thrown; can manually input 214LP/MP or 214HP follow-up while portal is active; if no follow-up is input, the portal automatically spawns a 1-hit spike projectile toward the opponent 100f after JP recovers (150f total startup); spike puts opponents into a free juggle state; the automatic spike activation allows for strong mixups, as JP is free to move while it occurs (unlike 214P~214HP version where he snaps his fingers); cannot spawn another portal until the first has disappeared; Juggle Increase value becomes 1 when connecting mid-combo against opponent in a Free Juggle state (ensures that opponent will have Juggle Count 1 after the spike connects)"
+      },
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/JP/Frame_data",
+      "rawRetrievedAt": "2026-08-19T04:05:27.533Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.960Z",
+      "gameVersion": "UNVERIFIED",
+      "kind": "community",
+      "verification": "unverified",
+      "attribution": "SuperCombo Wiki contributors",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "id": "jp__special_214_P_OD",
+      "characterId": "jp",
+      "name": "Departure",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "OD"
+      },
+      "sourceInput": "214PP",
+      "rawPath": "archive/staging/sf6-frame-data/raw/jp.json",
+      "rawIndex": 4,
+      "rawRecord": {
+        "active": "[10(20)10]",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": null,
+        "blockstun": 31,
+        "cancel": [],
+        "category": "special",
+        "characterId": "jp",
+        "chipDamage": 125,
+        "damage": 500,
+        "damageText": "500x2",
+        "dmgScaling": null,
+        "driveGauge": {
+          "dealtOnBlock": 1500,
+          "dealtOnHit": 5000,
+          "gain": -20000
+        },
+        "driveRushCancel": null,
+        "hitstop": 13,
+        "hitstun": null,
+        "id": "jp__214pp",
+        "input": {
+          "numpad": "214PP",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": {
+          "increase": "0,0 / 1",
+          "limit": "50,50",
+          "start": "0,0"
+        },
+        "name": {
+          "en": "Departure",
+          "ja": null
+        },
+        "notes": {
+          "en": "Spawns 2 portals in the air according to button strengths used (LP close, MP mid, HP far); while the portals are active, JP cannot use 214P command grab; portals disappear if JP is hit or thrown; can manually input 214LP/MP or 214HP follow-up while portals are active; if no follow-up is input, each portal automatically spawns a 1-hit OD spike projectile (starting with the closest portal) angled toward the opponent 70f after JP recovers (110f total startup); spikes put opponents into a free juggle state; the automatic spike activation allows for strong mixups, as JP is free to move while it occurs (unlike 214PP~214HP version where he snaps his fingers); cannot spawn another portal until both have disappeared; Juggle Increase value becomes 1 when connecting mid-combo against opponent in a Free Juggle state (ensures that opponent will have Juggle Count 1 after the spikes connect)",
+          "ja": null
+        },
+        "onBlock": null,
+        "onHit": null,
+        "onPerfectParry": null,
+        "onPunishCounter": null,
+        "projectileSpeed": null,
+        "properties": [
+          "low",
+          "high"
+        ],
+        "pushback": null,
+        "recovery": 40,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:27.533Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/JP/Frame_data"
+        },
+        "startup": 40,
+        "superGauge": {
+          "onBlock": 200,
+          "onHit": 400
+        },
+        "totalFrames": 40
+      },
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+      "cargoIndex": 4,
+      "cargoRecord": {
+        "chara": "JP",
+        "input": "214PP",
+        "startup": "40+70",
+        "total": "40",
+        "hitAdv": "KD ~",
+        "blockAdv": "-",
+        "notes": "Spawns 2 portals in the air according to button strengths used (LP close, MP mid, HP far); while the portals are active, JP cannot use 214P command grab; portals disappear if JP is hit or thrown; can manually input 214LP/MP or 214HP follow-up while portals are active; if no follow-up is input, each portal automatically spawns a 1-hit OD spike projectile (starting with the closest portal) angled toward the opponent 70f after JP recovers (110f total startup); spikes put opponents into a free juggle state; the automatic spike activation allows for strong mixups, as JP is free to move while it occurs (unlike 214PP~214HP version where he snaps his fingers); cannot spawn another portal until both have disappeared; Juggle Increase value becomes 1 when connecting mid-combo against opponent in a Free Juggle state (ensures that opponent will have Juggle Count 1 after the spikes connect)"
+      },
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/JP/Frame_data",
+      "rawRetrievedAt": "2026-08-19T04:05:27.533Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.960Z",
+      "gameVersion": "UNVERIFIED",
+      "kind": "community",
+      "verification": "unverified",
+      "attribution": "SuperCombo Wiki contributors",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "id": "ken__normal_2_K_H",
+      "characterId": "ken",
+      "name": "しゃがみ強K",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "K",
+        "strength": "H"
+      },
+      "sourceInput": "2HK",
+      "rawPath": "archive/staging/sf6-frame-data/raw/ken.json",
+      "rawIndex": 25,
+      "rawRecord": {
+        "active": "3",
+        "afterDriveRush": {
+          "onBlock": -6,
+          "onHit": 40
+        },
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": 1.645,
+        "blockstun": 18,
+        "cancel": [],
+        "category": "normal",
+        "characterId": "ken",
+        "chipDamage": null,
+        "damage": 900,
+        "damageText": null,
+        "dmgScaling": null,
+        "driveGauge": {
+          "dealtOnBlock": 4000,
+          "dealtOnHit": 10000,
+          "gain": 3000
+        },
+        "driveRushCancel": null,
+        "hitstop": 13,
+        "hitstun": null,
+        "id": "ken__2hk",
+        "input": {
+          "numpad": "2HK",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": {
+          "increase": "1",
+          "limit": "3",
+          "start": "1"
+        },
+        "name": {
+          "en": "Low Spinning Sweep",
+          "ja": null
+        },
+        "notes": {
+          "en": "Has juggle potential; on block, always plays out a fixed 27f recovery (cannot be made safer with meaty timing)",
+          "ja": null
+        },
+        "onBlock": -10,
+        "onHit": 40,
+        "onPerfectParry": -26,
+        "onPunishCounter": 47,
+        "projectileSpeed": null,
+        "properties": [
+          "low"
+        ],
+        "pushback": null,
+        "recovery": 24,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:27.533Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data"
+        },
+        "startup": 8,
+        "superGauge": {
+          "onBlock": 500,
+          "onHit": 1000
+        },
+        "totalFrames": 34
+      },
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/ken.cargo.json",
+      "cargoIndex": 25,
+      "cargoRecord": {
+        "chara": "Ken",
+        "input": "2HK",
+        "startup": "8",
+        "total": "34(37)",
+        "hitAdv": "KD +40",
+        "blockAdv": "<span style=\"color: #b70c0b;\">'''-10'''</span>",
+        "notes": "Has juggle potential; on block, always plays out a fixed 27f recovery (cannot be made safer with meaty timing)"
+      },
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Frame_data",
+      "rawRetrievedAt": "2026-08-19T04:05:27.533Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:27.355Z",
+      "gameVersion": "UNVERIFIED",
+      "kind": "community",
+      "verification": "unverified",
+      "attribution": "SuperCombo Wiki contributors",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "id": "marisa__normal_2_K_M",
+      "characterId": "marisa",
+      "name": "しゃがみ中K",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "K",
+        "strength": "M"
+      },
+      "sourceInput": "2MK",
+      "rawPath": "archive/staging/sf6-frame-data/raw/marisa.json",
+      "rawIndex": 40,
+      "rawRecord": {
+        "active": "3",
+        "afterDriveRush": {
+          "onBlock": 2,
+          "onHit": 9
+        },
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": 1.623,
+        "blockstun": 19,
+        "cancel": [],
+        "category": "normal",
+        "characterId": "marisa",
+        "chipDamage": null,
+        "damage": 600,
+        "damageText": null,
+        "dmgScaling": "20% Starter",
+        "driveGauge": {
+          "dealtOnBlock": 4000,
+          "dealtOnHit": 6000,
+          "gain": 2000
+        },
+        "driveRushCancel": null,
+        "hitstop": 11,
+        "hitstun": 25,
+        "id": "marisa__2mk",
+        "input": {
+          "numpad": "2MK",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": {
+          "increase": "1",
+          "limit": "0",
+          "start": "1"
+        },
+        "name": {
+          "en": "Crouching Medium Kick",
+          "ja": null
+        },
+        "notes": {
+          "en": "1f extra recovery on whiff/block; solid low poke with good range and hitbox priority; strong Drive Rush starter that links into 4HP or 5MP~MP at close range, 2MP at mid range, or 6MP from farther out; topmost hurtboxes on frames 9-16 are projectile invincible (avoids Sagat's MP/HP Tiger Shot but becomes vulnerable on frame 17~)",
+          "ja": null
+        },
+        "onBlock": -2,
+        "onHit": 5,
+        "onPerfectParry": -19,
+        "onPunishCounter": 9,
+        "projectileSpeed": null,
+        "properties": [
+          "low"
+        ],
+        "pushback": null,
+        "recovery": 17,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:28.060Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data"
+        },
+        "startup": 9,
+        "superGauge": {
+          "onBlock": 300,
+          "onHit": 600
+        },
+        "totalFrames": 29
+      },
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/marisa.cargo.json",
+      "cargoIndex": 38,
+      "cargoRecord": {
+        "chara": "Marisa",
+        "input": "2MK",
+        "startup": "9",
+        "total": "29",
+        "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+        "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+        "notes": "1f extra recovery on whiff/block; solid low poke with good range and hitbox priority; strong Drive Rush starter that links into 4HP or 5MP~MP at close range, 2MP at mid range, or 6MP from farther out; topmost hurtboxes on frames 9-16 are projectile invincible (avoids Sagat's MP/HP Tiger Shot but becomes vulnerable on frame 17~)"
+      },
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+      "rawRetrievedAt": "2026-08-19T04:05:28.060Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:28.158Z",
+      "gameVersion": "UNVERIFIED",
+      "kind": "community",
+      "verification": "unverified",
+      "attribution": "SuperCombo Wiki contributors",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "id": "marisa__special_236_K_OD",
+      "characterId": "marisa",
+      "name": "Quadriga",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "OD"
+      },
+      "sourceInput": "236KK",
+      "rawPath": "archive/staging/sf6-frame-data/raw/marisa.json",
+      "rawIndex": 25,
+      "rawRecord": {
+        "active": "4",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": "Break",
+        "attackRange": 3.54,
+        "blockstun": 22,
+        "cancel": [
+          "super"
+        ],
+        "category": "special",
+        "characterId": "marisa",
+        "chipDamage": 375,
+        "damage": 1500,
+        "damageText": null,
+        "dmgScaling": null,
+        "driveGauge": {
+          "dealtOnBlock": 5000,
+          "dealtOnHit": 12000,
+          "gain": -20000
+        },
+        "driveRushCancel": null,
+        "hitstop": 15,
+        "hitstun": null,
+        "id": "marisa__236kk",
+        "input": {
+          "numpad": "236KK",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": {
+          "increase": "1",
+          "limit": "5",
+          "start": "0"
+        },
+        "name": {
+          "en": "Quadriga",
+          "ja": null
+        },
+        "notes": {
+          "en": "Cannot hit cross-up; ~65% screen length; Wall Splat on hit; KD Advantage increases when farther from the wall; significant pushback on block makes it hard to punish when spaced out",
+          "ja": null
+        },
+        "onBlock": -6,
+        "onHit": 50,
+        "onPerfectParry": -26,
+        "onPunishCounter": 50,
+        "projectileSpeed": null,
+        "properties": [
+          "low",
+          "high",
+          "armor"
+        ],
+        "pushback": null,
+        "recovery": 24,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:28.060Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data"
+        },
+        "startup": 24,
+        "superGauge": {
+          "onBlock": 575,
+          "onHit": 1150
+        },
+        "totalFrames": 51
+      },
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/marisa.cargo.json",
+      "cargoIndex": 24,
+      "cargoRecord": {
+        "chara": "Marisa",
+        "input": "236KK",
+        "startup": "24",
+        "total": "51",
+        "hitAdv": "KD +50(68) Wall Splat",
+        "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+        "notes": "Cannot hit cross-up; ~65% screen length; Wall Splat on hit; KD Advantage increases when farther from the wall; significant pushback on block makes it hard to punish when spaced out"
+      },
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+      "rawRetrievedAt": "2026-08-19T04:05:28.060Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:28.158Z",
+      "gameVersion": "UNVERIFIED",
+      "kind": "community",
+      "verification": "unverified",
+      "attribution": "SuperCombo Wiki contributors",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "id": "ryu__special_236_K_OD",
+      "characterId": "ryu",
+      "name": "High Blade Kick",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "OD"
+      },
+      "sourceInput": "236KK",
+      "rawPath": "archive/staging/sf6-frame-data/raw/ryu.json",
+      "rawIndex": 23,
+      "rawRecord": {
+        "active": "5",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": 2.062,
+        "blockstun": 20,
+        "cancel": [
+          "super"
+        ],
+        "category": "special",
+        "characterId": "ryu",
+        "chipDamage": 200,
+        "damage": 800,
+        "damageText": null,
+        "dmgScaling": "Combo (5% extra)",
+        "driveGauge": {
+          "dealtOnBlock": 4000,
+          "dealtOnHit": 5000,
+          "gain": -20000
+        },
+        "driveRushCancel": null,
+        "hitstop": 20,
+        "hitstun": null,
+        "id": "ryu__236kk",
+        "input": {
+          "numpad": "236KK",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": {
+          "increase": "2",
+          "limit": "10",
+          "start": "1"
+        },
+        "name": {
+          "en": "High Blade Kick",
+          "ja": null
+        },
+        "notes": {
+          "en": "Wall Bounce into limited juggle state on hit; if close to corner, opponent flies over Ryu's head",
+          "ja": null
+        },
+        "onBlock": -18,
+        "onHit": null,
+        "onPerfectParry": -36,
+        "onPunishCounter": null,
+        "projectileSpeed": null,
+        "properties": [
+          "low",
+          "high"
+        ],
+        "pushback": null,
+        "recovery": 33,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:28.570Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data"
+        },
+        "startup": 17,
+        "superGauge": {
+          "onBlock": 600,
+          "onHit": 1200
+        },
+        "totalFrames": 54
+      },
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json",
+      "cargoIndex": 21,
+      "cargoRecord": {
+        "chara": "Ryu",
+        "input": "236KK",
+        "startup": "17",
+        "total": "54",
+        "hitAdv": "Wall Bounce +49(65)",
+        "blockAdv": "<span style=\"color: #b70c0b;\">'''-18'''</span>",
+        "notes": "Wall Bounce into limited juggle state on hit; if close to corner, opponent flies over Ryu's head"
+      },
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+      "rawRetrievedAt": "2026-08-19T04:05:28.570Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:28.408Z",
+      "gameVersion": "UNVERIFIED",
+      "kind": "community",
+      "verification": "unverified",
+      "attribution": "SuperCombo Wiki contributors",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "id": "zangief__normal_5_P_H",
+      "characterId": "zangief",
+      "name": "立ち強P",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "P",
+        "strength": "H"
+      },
+      "sourceInput": "5HP",
+      "rawPath": "archive/staging/sf6-frame-data/raw/zangief.json",
+      "rawIndex": 26,
+      "rawRecord": {
+        "active": "3",
+        "afterDriveRush": {
+          "onBlock": 1,
+          "onHit": 7
+        },
+        "airborne": null,
+        "aliases": [],
+        "armor": "4-release (Upper Body)",
+        "attackRange": 2.186,
+        "blockstun": 22,
+        "cancel": [],
+        "category": "normal",
+        "characterId": "zangief",
+        "chipDamage": null,
+        "damage": 1000,
+        "damageText": null,
+        "dmgScaling": null,
+        "driveGauge": {
+          "dealtOnBlock": 6000,
+          "dealtOnHit": 8000,
+          "gain": 3500
+        },
+        "driveRushCancel": null,
+        "hitstop": 13,
+        "hitstun": 28,
+        "id": "zangief__5hp",
+        "input": {
+          "numpad": "5HP",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": {
+          "increase": "1",
+          "limit": "0",
+          "start": "1 air"
+        },
+        "name": {
+          "en": "Standing Heavy Punch",
+          "ja": null
+        },
+        "notes": {
+          "en": "Button can be held up to 22f for armored partial charge (armor loses to hitboxes that connect on Zangief's lower body); 10f startup after button release (total startup 16-32f); 2 extra recovery frames on whiff; counter-hit also gives KD +32; puts airborne opponents into limited juggle state",
+          "ja": null
+        },
+        "onBlock": -3,
+        "onHit": 3,
+        "onPerfectParry": -23,
+        "onPunishCounter": 32,
+        "projectileSpeed": null,
+        "properties": [
+          "low",
+          "high",
+          "armor"
+        ],
+        "pushback": null,
+        "recovery": 22,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:28.570Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Zangief/Frame_data"
+        },
+        "startup": null,
+        "superGauge": {
+          "onBlock": 500,
+          "onHit": 1000
+        },
+        "totalFrames": 40
+      },
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/zangief.cargo.json",
+      "cargoIndex": 26,
+      "cargoRecord": {
+        "chara": "Zangief",
+        "input": "5HP",
+        "startup": "(6~22)+10",
+        "total": "40(42)",
+        "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+        "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+        "notes": "Button can be held up to 22f for armored partial charge (armor loses to hitboxes that connect on Zangief's lower body); 10f startup after button release (total startup 16-32f); 2 extra recovery frames on whiff; counter-hit also gives KD +32; puts airborne opponents into limited juggle state"
+      },
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Zangief/Frame_data",
+      "rawRetrievedAt": "2026-08-19T04:05:28.570Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:28.778Z",
+      "gameVersion": "UNVERIFIED",
+      "kind": "community",
+      "verification": "unverified",
+      "attribution": "SuperCombo Wiki contributors",
+      "license": "CC-BY-SA-4.0"
+    }
+  ],
+  "targets": [
+    {
+      "id": "akuma__special_236_K_none:total",
+      "characterId": "akuma",
+      "sourceMoveId": "akuma__special_236_K_none",
+      "sourceId": "akuma__special_236_K_none",
+      "field": "total",
+      "sourceNotation": "{{{total}}}",
+      "before": {
+        "status": "unknown",
+        "display": null,
+        "provenance": null,
+        "calculation": null
+      },
+      "decision": "retain_unknown",
+      "value": {
+        "status": "unknown",
+        "display": null,
+        "provenance": null,
+        "calculation": null
+      },
+      "reason": "Cargo total is an unexpanded template; automatic follow-up on frame 41 does not establish whiff total. No total is computed from follow-ups.",
+      "oldUnknownReason": "Existing conversion did not establish whiff total",
+      "recordIds": [
+        "akuma__special_236_K_none",
+        "akuma__special_236_K_none__strength_L",
+        "akuma__special_236_K_none__strength_M",
+        "akuma__special_236_K_none__strength_H"
+      ],
+      "questionInputs": [
+        {
+          "moveId": "akuma__special_236_K_none__strength_L",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "L"
+          },
+          "key": "special:236:K:L",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "unknown",
+          "afterHard": "found",
+          "finalField": {
+            "status": "unknown",
+            "display": null,
+            "provenance": null,
+            "calculation": null
+          }
+        },
+        {
+          "moveId": "akuma__special_236_K_none__strength_M",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "M"
+          },
+          "key": "special:236:K:M",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "unknown",
+          "afterHard": "found",
+          "finalField": {
+            "status": "unknown",
+            "display": null,
+            "provenance": null,
+            "calculation": null
+          }
+        },
+        {
+          "moveId": "akuma__special_236_K_none__strength_H",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "H"
+          },
+          "key": "special:236:K:H",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "unknown",
+          "afterHard": "found",
+          "finalField": {
+            "status": "unknown",
+            "display": null,
+            "provenance": null,
+            "calculation": null
+          }
+        }
+      ],
+      "liveChecksPath": "staging/stage17/live-source-checks.json"
+    },
+    {
+      "id": "akuma__special_236_K_OD:total",
+      "characterId": "akuma",
+      "sourceMoveId": "akuma__special_236_K_OD",
+      "sourceId": "akuma__special_236_K_OD",
+      "field": "total",
+      "sourceNotation": "{{{total}}}",
+      "before": {
+        "status": "unknown",
+        "display": null,
+        "provenance": null,
+        "calculation": null
+      },
+      "decision": "retain_unknown",
+      "value": {
+        "status": "unknown",
+        "display": null,
+        "provenance": null,
+        "calculation": null
+      },
+      "reason": "Cargo total is an unexpanded template; automatic follow-up on frame 41 does not establish whiff total. No total is computed from follow-ups.",
+      "oldUnknownReason": "Existing conversion did not establish whiff total",
+      "recordIds": [
+        "akuma__special_236_K_OD"
+      ],
+      "questionInputs": [
+        {
+          "moveId": "akuma__special_236_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "OD"
+          },
+          "key": "special:236:K:OD",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "unknown",
+          "afterHard": "found",
+          "finalField": {
+            "status": "unknown",
+            "display": null,
+            "provenance": null,
+            "calculation": null
+          }
+        }
+      ],
+      "liveChecksPath": "staging/stage17/live-source-checks.json"
+    },
+    {
+      "id": "alex__special_63214_P_H:block",
+      "characterId": "alex",
+      "sourceMoveId": "alex__special_63214_P_H",
+      "sourceId": "alex__special_63214_P_H",
+      "field": "block",
+      "sourceNotation": "-",
+      "before": {
+        "status": "unknown",
+        "display": null
+      },
+      "decision": "adopt",
+      "value": {
+        "status": "not_applicable",
+        "display": "-"
+      },
+      "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'.",
+      "oldUnknownReason": "Raw normalizer omitted a special/non-numeric source notation or condition remained unresolved",
+      "recordIds": [
+        "alex__special_63214_P_H"
+      ],
+      "questionInputs": [
+        {
+          "moveId": "alex__special_63214_P_H",
+          "input": {
+            "type": "special",
+            "motion": "63214",
+            "button": "P",
+            "strength": "H"
+          },
+          "key": "special:63214:P:H",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        }
+      ],
+      "liveChecksPath": "staging/stage17/live-source-checks.json"
+    },
+    {
+      "id": "alex__special_63214_P_L:block",
+      "characterId": "alex",
+      "sourceMoveId": "alex__special_63214_P_L",
+      "sourceId": "alex__special_63214_P_L",
+      "field": "block",
+      "sourceNotation": "-",
+      "before": {
+        "status": "unknown",
+        "display": null
+      },
+      "decision": "adopt",
+      "value": {
+        "status": "not_applicable",
+        "display": "-"
+      },
+      "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'.",
+      "oldUnknownReason": "Raw normalizer omitted a special/non-numeric source notation or condition remained unresolved",
+      "recordIds": [
+        "alex__special_63214_P_L"
+      ],
+      "questionInputs": [
+        {
+          "moveId": "alex__special_63214_P_L",
+          "input": {
+            "type": "special",
+            "motion": "63214",
+            "button": "P",
+            "strength": "L"
+          },
+          "key": "special:63214:P:L",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        }
+      ],
+      "liveChecksPath": "staging/stage17/live-source-checks.json"
+    },
+    {
+      "id": "alex__special_63214_P_M:block",
+      "characterId": "alex",
+      "sourceMoveId": "alex__special_63214_P_M",
+      "sourceId": "alex__special_63214_P_M",
+      "field": "block",
+      "sourceNotation": "-",
+      "before": {
+        "status": "unknown",
+        "display": null
+      },
+      "decision": "adopt",
+      "value": {
+        "status": "not_applicable",
+        "display": "-"
+      },
+      "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'.",
+      "oldUnknownReason": "Raw normalizer omitted a special/non-numeric source notation or condition remained unresolved",
+      "recordIds": [
+        "alex__special_63214_P_M"
+      ],
+      "questionInputs": [
+        {
+          "moveId": "alex__special_63214_P_M",
+          "input": {
+            "type": "special",
+            "motion": "63214",
+            "button": "P",
+            "strength": "M"
+          },
+          "key": "special:63214:P:M",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        }
+      ],
+      "liveChecksPath": "staging/stage17/live-source-checks.json"
+    },
+    {
+      "id": "alex__special_63214_P_OD:block",
+      "characterId": "alex",
+      "sourceMoveId": "alex__special_63214_P_OD",
+      "sourceId": "alex__special_63214_P_OD",
+      "field": "block",
+      "sourceNotation": "-",
+      "before": {
+        "status": "unknown",
+        "display": null
+      },
+      "decision": "adopt",
+      "value": {
+        "status": "not_applicable",
+        "display": "-"
+      },
+      "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'.",
+      "oldUnknownReason": "Raw normalizer omitted a special/non-numeric source notation or condition remained unresolved",
+      "recordIds": [
+        "alex__special_63214_P_OD"
+      ],
+      "questionInputs": [
+        {
+          "moveId": "alex__special_63214_P_OD",
+          "input": {
+            "type": "special",
+            "motion": "63214",
+            "button": "P",
+            "strength": "OD"
+          },
+          "key": "special:63214:P:OD",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        }
+      ],
+      "liveChecksPath": "staging/stage17/live-source-checks.json"
+    },
+    {
+      "id": "arjun__special_22_K_H:block",
+      "characterId": "arjun",
+      "sourceMoveId": "arjun__special_22_K_H",
+      "sourceId": "arjun__special_22_K_H",
+      "field": "block",
+      "sourceNotation": "-",
+      "before": {
+        "status": "unknown",
+        "display": null
+      },
+      "decision": "adopt",
+      "value": {
+        "status": "not_applicable",
+        "display": "-"
+      },
+      "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'.",
+      "oldUnknownReason": "Raw normalizer omitted a special/non-numeric source notation or condition remained unresolved",
+      "recordIds": [
+        "arjun__special_22_K_H"
+      ],
+      "questionInputs": [
+        {
+          "moveId": "arjun__special_22_K_H",
+          "input": {
+            "type": "special",
+            "motion": "22",
+            "button": "K",
+            "strength": "H"
+          },
+          "key": "special:22:K:H",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        }
+      ],
+      "liveChecksPath": "staging/stage17/live-source-checks.json"
+    },
+    {
+      "id": "arjun__special_63214_P_none:block",
+      "characterId": "arjun",
+      "sourceMoveId": "arjun__special_63214_P_none",
+      "sourceId": "arjun__special_63214_P_none",
+      "field": "block",
+      "sourceNotation": "-",
+      "before": {
+        "status": "unknown",
+        "display": null
+      },
+      "decision": "adopt",
+      "value": {
+        "status": "not_applicable",
+        "display": "-"
+      },
+      "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'.",
+      "oldUnknownReason": "Raw normalizer omitted a special/non-numeric source notation or condition remained unresolved",
+      "recordIds": [
+        "arjun__special_63214_P_none",
+        "arjun__special_63214_P_none__strength_L",
+        "arjun__special_63214_P_none__strength_M",
+        "arjun__special_63214_P_none__strength_H"
+      ],
+      "questionInputs": [
+        {
+          "moveId": "arjun__special_63214_P_none__strength_L",
+          "input": {
+            "type": "special",
+            "motion": "63214",
+            "button": "P",
+            "strength": "L"
+          },
+          "key": "special:63214:P:L",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        },
+        {
+          "moveId": "arjun__special_63214_P_none__strength_M",
+          "input": {
+            "type": "special",
+            "motion": "63214",
+            "button": "P",
+            "strength": "M"
+          },
+          "key": "special:63214:P:M",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        },
+        {
+          "moveId": "arjun__special_63214_P_none__strength_H",
+          "input": {
+            "type": "special",
+            "motion": "63214",
+            "button": "P",
+            "strength": "H"
+          },
+          "key": "special:63214:P:H",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        }
+      ],
+      "liveChecksPath": "staging/stage17/live-source-checks.json"
+    },
+    {
+      "id": "arjun__special_63214_P_OD:block",
+      "characterId": "arjun",
+      "sourceMoveId": "arjun__special_63214_P_OD",
+      "sourceId": "arjun__special_63214_P_OD",
+      "field": "block",
+      "sourceNotation": "-",
+      "before": {
+        "status": "unknown",
+        "display": null
+      },
+      "decision": "adopt",
+      "value": {
+        "status": "not_applicable",
+        "display": "-"
+      },
+      "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'.",
+      "oldUnknownReason": "Raw normalizer omitted a special/non-numeric source notation or condition remained unresolved",
+      "recordIds": [
+        "arjun__special_63214_P_OD"
+      ],
+      "questionInputs": [
+        {
+          "moveId": "arjun__special_63214_P_OD",
+          "input": {
+            "type": "special",
+            "motion": "63214",
+            "button": "P",
+            "strength": "OD"
+          },
+          "key": "special:63214:P:OD",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        }
+      ],
+      "liveChecksPath": "staging/stage17/live-source-checks.json"
+    },
+    {
+      "id": "blanka__special_236_K_H:block",
+      "characterId": "blanka",
+      "sourceMoveId": "blanka__special_236_K_H",
+      "sourceId": "blanka__special_236_K_H",
+      "field": "block",
+      "sourceNotation": "-",
+      "before": {
+        "status": "unknown",
+        "display": null
+      },
+      "decision": "adopt",
+      "value": {
+        "status": "not_applicable",
+        "display": "-"
+      },
+      "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'.",
+      "oldUnknownReason": "Raw normalizer omitted a special/non-numeric source notation or condition remained unresolved",
+      "recordIds": [
+        "blanka__special_236_K_H"
+      ],
+      "questionInputs": [
+        {
+          "moveId": "blanka__special_236_K_H",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "H"
+          },
+          "key": "special:236:K:H",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        }
+      ],
+      "liveChecksPath": "staging/stage17/live-source-checks.json"
+    },
+    {
+      "id": "blanka__special_236_K_L:block",
+      "characterId": "blanka",
+      "sourceMoveId": "blanka__special_236_K_L",
+      "sourceId": "blanka__special_236_K_L",
+      "field": "block",
+      "sourceNotation": "-",
+      "before": {
+        "status": "unknown",
+        "display": null
+      },
+      "decision": "adopt",
+      "value": {
+        "status": "not_applicable",
+        "display": "-"
+      },
+      "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'.",
+      "oldUnknownReason": "Raw normalizer omitted a special/non-numeric source notation or condition remained unresolved",
+      "recordIds": [
+        "blanka__special_236_K_L"
+      ],
+      "questionInputs": [
+        {
+          "moveId": "blanka__special_236_K_L",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "L"
+          },
+          "key": "special:236:K:L",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        }
+      ],
+      "liveChecksPath": "staging/stage17/live-source-checks.json"
+    },
+    {
+      "id": "blanka__special_236_K_M:block",
+      "characterId": "blanka",
+      "sourceMoveId": "blanka__special_236_K_M",
+      "sourceId": "blanka__special_236_K_M",
+      "field": "block",
+      "sourceNotation": "-",
+      "before": {
+        "status": "unknown",
+        "display": null
+      },
+      "decision": "adopt",
+      "value": {
+        "status": "not_applicable",
+        "display": "-"
+      },
+      "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'.",
+      "oldUnknownReason": "Raw normalizer omitted a special/non-numeric source notation or condition remained unresolved",
+      "recordIds": [
+        "blanka__special_236_K_M"
+      ],
+      "questionInputs": [
+        {
+          "moveId": "blanka__special_236_K_M",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "M"
+          },
+          "key": "special:236:K:M",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        }
+      ],
+      "liveChecksPath": "staging/stage17/live-source-checks.json"
+    },
+    {
+      "id": "blanka__special_236_K_OD:block",
+      "characterId": "blanka",
+      "sourceMoveId": "blanka__special_236_K_OD",
+      "sourceId": "blanka__special_236_K_OD",
+      "field": "block",
+      "sourceNotation": "-",
+      "before": {
+        "status": "unknown",
+        "display": null
+      },
+      "decision": "adopt",
+      "value": {
+        "status": "not_applicable",
+        "display": "-"
+      },
+      "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'.",
+      "oldUnknownReason": "Raw normalizer omitted a special/non-numeric source notation or condition remained unresolved",
+      "recordIds": [
+        "blanka__special_236_K_OD"
+      ],
+      "questionInputs": [
+        {
+          "moveId": "blanka__special_236_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "OD"
+          },
+          "key": "special:236:K:OD",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        }
+      ],
+      "liveChecksPath": "staging/stage17/live-source-checks.json"
+    },
+    {
+      "id": "e_honda__special_236_K_none:hit",
+      "characterId": "e_honda",
+      "sourceMoveId": "e_honda__special_236_K_none",
+      "sourceId": "e_honda__special_236_K_none",
+      "field": "hit",
+      "sourceNotation": "-",
+      "before": {
+        "status": "unknown",
+        "display": null
+      },
+      "decision": "adopt",
+      "value": {
+        "status": "not_applicable",
+        "display": "-"
+      },
+      "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'.",
+      "oldUnknownReason": "Raw normalizer omitted a special/non-numeric source notation or condition remained unresolved",
+      "recordIds": [
+        "e_honda__special_236_K_none",
+        "e_honda__special_236_K_none__strength_L",
+        "e_honda__special_236_K_none__strength_M",
+        "e_honda__special_236_K_none__strength_H"
+      ],
+      "questionInputs": [
+        {
+          "moveId": "e_honda__special_236_K_none__strength_L",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "L"
+          },
+          "key": "special:236:K:L",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        },
+        {
+          "moveId": "e_honda__special_236_K_none__strength_M",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "M"
+          },
+          "key": "special:236:K:M",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        },
+        {
+          "moveId": "e_honda__special_236_K_none__strength_H",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "H"
+          },
+          "key": "special:236:K:H",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        }
+      ],
+      "liveChecksPath": "staging/stage17/live-source-checks.json"
+    },
+    {
+      "id": "e_honda__special_236_K_none:block",
+      "characterId": "e_honda",
+      "sourceMoveId": "e_honda__special_236_K_none",
+      "sourceId": "e_honda__special_236_K_none",
+      "field": "block",
+      "sourceNotation": "-",
+      "before": {
+        "status": "unknown",
+        "display": null
+      },
+      "decision": "adopt",
+      "value": {
+        "status": "not_applicable",
+        "display": "-"
+      },
+      "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'.",
+      "oldUnknownReason": "Raw normalizer omitted a special/non-numeric source notation or condition remained unresolved",
+      "recordIds": [
+        "e_honda__special_236_K_none",
+        "e_honda__special_236_K_none__strength_L",
+        "e_honda__special_236_K_none__strength_M",
+        "e_honda__special_236_K_none__strength_H"
+      ],
+      "questionInputs": [
+        {
+          "moveId": "e_honda__special_236_K_none__strength_L",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "L"
+          },
+          "key": "special:236:K:L",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        },
+        {
+          "moveId": "e_honda__special_236_K_none__strength_M",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "M"
+          },
+          "key": "special:236:K:M",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        },
+        {
+          "moveId": "e_honda__special_236_K_none__strength_H",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "H"
+          },
+          "key": "special:236:K:H",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        }
+      ],
+      "liveChecksPath": "staging/stage17/live-source-checks.json"
+    },
+    {
+      "id": "e_honda__special_236_K_OD:hit",
+      "characterId": "e_honda",
+      "sourceMoveId": "e_honda__special_236_K_OD",
+      "sourceId": "e_honda__special_236_K_OD",
+      "field": "hit",
+      "sourceNotation": "-",
+      "before": {
+        "status": "unknown",
+        "display": null
+      },
+      "decision": "adopt",
+      "value": {
+        "status": "not_applicable",
+        "display": "-"
+      },
+      "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'.",
+      "oldUnknownReason": "Raw normalizer omitted a special/non-numeric source notation or condition remained unresolved",
+      "recordIds": [
+        "e_honda__special_236_K_OD"
+      ],
+      "questionInputs": [
+        {
+          "moveId": "e_honda__special_236_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "OD"
+          },
+          "key": "special:236:K:OD",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        }
+      ],
+      "liveChecksPath": "staging/stage17/live-source-checks.json"
+    },
+    {
+      "id": "e_honda__special_236_K_OD:block",
+      "characterId": "e_honda",
+      "sourceMoveId": "e_honda__special_236_K_OD",
+      "sourceId": "e_honda__special_236_K_OD",
+      "field": "block",
+      "sourceNotation": "-",
+      "before": {
+        "status": "unknown",
+        "display": null
+      },
+      "decision": "adopt",
+      "value": {
+        "status": "not_applicable",
+        "display": "-"
+      },
+      "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'.",
+      "oldUnknownReason": "Raw normalizer omitted a special/non-numeric source notation or condition remained unresolved",
+      "recordIds": [
+        "e_honda__special_236_K_OD"
+      ],
+      "questionInputs": [
+        {
+          "moveId": "e_honda__special_236_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "OD"
+          },
+          "key": "special:236:K:OD",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        }
+      ],
+      "liveChecksPath": "staging/stage17/live-source-checks.json"
+    },
+    {
+      "id": "e_honda__special_63214_K_H:block",
+      "characterId": "e_honda",
+      "sourceMoveId": "e_honda__special_63214_K_H",
+      "sourceId": "e_honda__special_63214_K_H",
+      "field": "block",
+      "sourceNotation": "-",
+      "before": {
+        "status": "unknown",
+        "display": null
+      },
+      "decision": "adopt",
+      "value": {
+        "status": "not_applicable",
+        "display": "-"
+      },
+      "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'.",
+      "oldUnknownReason": "Raw normalizer omitted a special/non-numeric source notation or condition remained unresolved",
+      "recordIds": [
+        "e_honda__special_63214_K_H"
+      ],
+      "questionInputs": [
+        {
+          "moveId": "e_honda__special_63214_K_H",
+          "input": {
+            "type": "special",
+            "motion": "63214",
+            "button": "K",
+            "strength": "H"
+          },
+          "key": "special:63214:K:H",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        }
+      ],
+      "liveChecksPath": "staging/stage17/live-source-checks.json"
+    },
+    {
+      "id": "e_honda__special_63214_K_L:block",
+      "characterId": "e_honda",
+      "sourceMoveId": "e_honda__special_63214_K_L",
+      "sourceId": "e_honda__special_63214_K_L",
+      "field": "block",
+      "sourceNotation": "-",
+      "before": {
+        "status": "unknown",
+        "display": null
+      },
+      "decision": "adopt",
+      "value": {
+        "status": "not_applicable",
+        "display": "-"
+      },
+      "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'.",
+      "oldUnknownReason": "Raw normalizer omitted a special/non-numeric source notation or condition remained unresolved",
+      "recordIds": [
+        "e_honda__special_63214_K_L"
+      ],
+      "questionInputs": [
+        {
+          "moveId": "e_honda__special_63214_K_L",
+          "input": {
+            "type": "special",
+            "motion": "63214",
+            "button": "K",
+            "strength": "L"
+          },
+          "key": "special:63214:K:L",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        }
+      ],
+      "liveChecksPath": "staging/stage17/live-source-checks.json"
+    },
+    {
+      "id": "e_honda__special_63214_K_M:block",
+      "characterId": "e_honda",
+      "sourceMoveId": "e_honda__special_63214_K_M",
+      "sourceId": "e_honda__special_63214_K_M",
+      "field": "block",
+      "sourceNotation": "-",
+      "before": {
+        "status": "unknown",
+        "display": null
+      },
+      "decision": "adopt",
+      "value": {
+        "status": "not_applicable",
+        "display": "-"
+      },
+      "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'.",
+      "oldUnknownReason": "Raw normalizer omitted a special/non-numeric source notation or condition remained unresolved",
+      "recordIds": [
+        "e_honda__special_63214_K_M"
+      ],
+      "questionInputs": [
+        {
+          "moveId": "e_honda__special_63214_K_M",
+          "input": {
+            "type": "special",
+            "motion": "63214",
+            "button": "K",
+            "strength": "M"
+          },
+          "key": "special:63214:K:M",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        }
+      ],
+      "liveChecksPath": "staging/stage17/live-source-checks.json"
+    },
+    {
+      "id": "e_honda__special_63214_K_OD:block",
+      "characterId": "e_honda",
+      "sourceMoveId": "e_honda__special_63214_K_OD",
+      "sourceId": "e_honda__special_63214_K_OD",
+      "field": "block",
+      "sourceNotation": "-",
+      "before": {
+        "status": "unknown",
+        "display": null
+      },
+      "decision": "adopt",
+      "value": {
+        "status": "not_applicable",
+        "display": "-"
+      },
+      "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'.",
+      "oldUnknownReason": "Raw normalizer omitted a special/non-numeric source notation or condition remained unresolved",
+      "recordIds": [
+        "e_honda__special_63214_K_OD"
+      ],
+      "questionInputs": [
+        {
+          "moveId": "e_honda__special_63214_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "63214",
+            "button": "K",
+            "strength": "OD"
+          },
+          "key": "special:63214:K:OD",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        }
+      ],
+      "liveChecksPath": "staging/stage17/live-source-checks.json"
+    },
+    {
+      "id": "jamie__special_22_P_none:hit",
+      "characterId": "jamie",
+      "sourceMoveId": "jamie__special_22_P_none",
+      "sourceId": "jamie__special_22_P_none",
+      "field": "hit",
+      "sourceNotation": "-",
+      "before": {
+        "status": "unknown",
+        "display": null
+      },
+      "decision": "adopt",
+      "value": {
+        "status": "not_applicable",
+        "display": "-"
+      },
+      "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'.",
+      "oldUnknownReason": "Raw normalizer omitted a special/non-numeric source notation or condition remained unresolved",
+      "recordIds": [
+        "jamie__special_22_P_none",
+        "jamie__special_22_P_none__strength_L",
+        "jamie__special_22_P_none__strength_M",
+        "jamie__special_22_P_none__strength_H"
+      ],
+      "questionInputs": [
+        {
+          "moveId": "jamie__special_22_P_none__strength_L",
+          "input": {
+            "type": "special",
+            "motion": "22",
+            "button": "P",
+            "strength": "L"
+          },
+          "key": "special:22:P:L",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        },
+        {
+          "moveId": "jamie__special_22_P_none__strength_M",
+          "input": {
+            "type": "special",
+            "motion": "22",
+            "button": "P",
+            "strength": "M"
+          },
+          "key": "special:22:P:M",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        },
+        {
+          "moveId": "jamie__special_22_P_none__strength_H",
+          "input": {
+            "type": "special",
+            "motion": "22",
+            "button": "P",
+            "strength": "H"
+          },
+          "key": "special:22:P:H",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        }
+      ],
+      "liveChecksPath": "staging/stage17/live-source-checks.json"
+    },
+    {
+      "id": "jamie__special_22_P_none:block",
+      "characterId": "jamie",
+      "sourceMoveId": "jamie__special_22_P_none",
+      "sourceId": "jamie__special_22_P_none",
+      "field": "block",
+      "sourceNotation": "-",
+      "before": {
+        "status": "unknown",
+        "display": null
+      },
+      "decision": "adopt",
+      "value": {
+        "status": "not_applicable",
+        "display": "-"
+      },
+      "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'.",
+      "oldUnknownReason": "Raw normalizer omitted a special/non-numeric source notation or condition remained unresolved",
+      "recordIds": [
+        "jamie__special_22_P_none",
+        "jamie__special_22_P_none__strength_L",
+        "jamie__special_22_P_none__strength_M",
+        "jamie__special_22_P_none__strength_H"
+      ],
+      "questionInputs": [
+        {
+          "moveId": "jamie__special_22_P_none__strength_L",
+          "input": {
+            "type": "special",
+            "motion": "22",
+            "button": "P",
+            "strength": "L"
+          },
+          "key": "special:22:P:L",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        },
+        {
+          "moveId": "jamie__special_22_P_none__strength_M",
+          "input": {
+            "type": "special",
+            "motion": "22",
+            "button": "P",
+            "strength": "M"
+          },
+          "key": "special:22:P:M",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        },
+        {
+          "moveId": "jamie__special_22_P_none__strength_H",
+          "input": {
+            "type": "special",
+            "motion": "22",
+            "button": "P",
+            "strength": "H"
+          },
+          "key": "special:22:P:H",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        }
+      ],
+      "liveChecksPath": "staging/stage17/live-source-checks.json"
+    },
+    {
+      "id": "jp__special_214_K_none:block",
+      "characterId": "jp",
+      "sourceMoveId": "jp__special_214_K_none",
+      "sourceId": "jp__special_214_K_none",
+      "field": "block",
+      "sourceNotation": "-",
+      "before": {
+        "status": "unknown",
+        "display": null
+      },
+      "decision": "adopt",
+      "value": {
+        "status": "not_applicable",
+        "display": "-"
+      },
+      "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'.",
+      "oldUnknownReason": "Raw normalizer omitted a special/non-numeric source notation or condition remained unresolved",
+      "recordIds": [
+        "jp__special_214_K_none",
+        "jp__special_214_K_none__strength_L",
+        "jp__special_214_K_none__strength_M",
+        "jp__special_214_K_none__strength_H"
+      ],
+      "questionInputs": [
+        {
+          "moveId": "jp__special_214_K_none__strength_L",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "K",
+            "strength": "L"
+          },
+          "key": "special:214:K:L",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        },
+        {
+          "moveId": "jp__special_214_K_none__strength_M",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "K",
+            "strength": "M"
+          },
+          "key": "special:214:K:M",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        },
+        {
+          "moveId": "jp__special_214_K_none__strength_H",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "K",
+            "strength": "H"
+          },
+          "key": "special:214:K:H",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        }
+      ],
+      "liveChecksPath": "staging/stage17/live-source-checks.json"
+    },
+    {
+      "id": "jp__special_214_K_OD:block",
+      "characterId": "jp",
+      "sourceMoveId": "jp__special_214_K_OD",
+      "sourceId": "jp__special_214_K_OD",
+      "field": "block",
+      "sourceNotation": "-",
+      "before": {
+        "status": "unknown",
+        "display": null
+      },
+      "decision": "adopt",
+      "value": {
+        "status": "not_applicable",
+        "display": "-"
+      },
+      "reason": "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'.",
+      "oldUnknownReason": "Raw normalizer omitted a special/non-numeric source notation or condition remained unresolved",
+      "recordIds": [
+        "jp__special_214_K_OD"
+      ],
+      "questionInputs": [
+        {
+          "moveId": "jp__special_214_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "K",
+            "strength": "OD"
+          },
+          "key": "special:214:K:OD",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        }
+      ],
+      "liveChecksPath": "staging/stage17/live-source-checks.json"
+    },
+    {
+      "id": "jp__special_214_P_none:hit",
+      "characterId": "jp",
+      "sourceMoveId": "jp__special_214_P_none",
+      "sourceId": "jp__special_214_P_none",
+      "field": "hit",
+      "sourceNotation": "KD ~",
+      "before": {
+        "status": "unknown",
+        "display": null
+      },
+      "decision": "adopt",
+      "value": {
+        "status": "confirmed",
+        "display": "D"
+      },
+      "reason": "Cargo explicitly identifies knockdown. Apply the existing KD-to-D rule without assigning an advantage number. Deferred spike timing remains in the source; no activation-only '-' rule is applied.",
+      "oldUnknownReason": "Raw normalizer omitted a special/non-numeric source notation or condition remained unresolved",
+      "recordIds": [
+        "jp__special_214_P_none",
+        "jp__special_214_P_none__strength_L",
+        "jp__special_214_P_none__strength_M",
+        "jp__special_214_P_none__strength_H"
+      ],
+      "questionInputs": [
+        {
+          "moveId": "jp__special_214_P_none__strength_L",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "P",
+            "strength": "L"
+          },
+          "key": "special:214:P:L",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "confirmed",
+            "display": "D"
+          }
+        },
+        {
+          "moveId": "jp__special_214_P_none__strength_M",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "P",
+            "strength": "M"
+          },
+          "key": "special:214:P:M",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "confirmed",
+            "display": "D"
+          }
+        },
+        {
+          "moveId": "jp__special_214_P_none__strength_H",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "P",
+            "strength": "H"
+          },
+          "key": "special:214:P:H",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "confirmed",
+            "display": "D"
+          }
+        }
+      ],
+      "liveChecksPath": "staging/stage17/live-source-checks.json"
+    },
+    {
+      "id": "jp__special_214_P_OD:hit",
+      "characterId": "jp",
+      "sourceMoveId": "jp__special_214_P_OD",
+      "sourceId": "jp__special_214_P_OD",
+      "field": "hit",
+      "sourceNotation": "KD ~",
+      "before": {
+        "status": "unknown",
+        "display": null
+      },
+      "decision": "adopt",
+      "value": {
+        "status": "confirmed",
+        "display": "D"
+      },
+      "reason": "Cargo explicitly identifies knockdown. Apply the existing KD-to-D rule without assigning an advantage number. Deferred spike timing remains in the source; no activation-only '-' rule is applied.",
+      "oldUnknownReason": "Raw normalizer omitted a special/non-numeric source notation or condition remained unresolved",
+      "recordIds": [
+        "jp__special_214_P_OD"
+      ],
+      "questionInputs": [
+        {
+          "moveId": "jp__special_214_P_OD",
+          "input": {
+            "type": "special",
+            "motion": "214",
+            "button": "P",
+            "strength": "OD"
+          },
+          "key": "special:214:P:OD",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "confirmed",
+            "display": "D"
+          }
+        }
+      ],
+      "liveChecksPath": "staging/stage17/live-source-checks.json"
+    },
+    {
+      "id": "ken__normal_2_K_H:total",
+      "characterId": "ken",
+      "sourceMoveId": "ken__normal_2_K_H",
+      "sourceId": "ken__normal_2_K_H",
+      "field": "total",
+      "sourceNotation": "34(37)",
+      "before": {
+        "status": "unknown",
+        "display": null,
+        "provenance": "source",
+        "calculation": null
+      },
+      "decision": "adopt",
+      "value": {
+        "status": "confirmed",
+        "display": "34",
+        "numeric": 34,
+        "provenance": "source",
+        "calculation": null
+      },
+      "reason": "Cargo explicitly gives 34(37), stored raw totalFrames is 34, and its note separately identifies block-specific recovery. Adopt the outside total 34 under the existing representative rule, without calculating from components.",
+      "oldUnknownReason": "Existing conversion did not establish whiff total",
+      "recordIds": [
+        "ken__normal_2_K_H"
+      ],
+      "questionInputs": [
+        {
+          "moveId": "ken__normal_2_K_H",
+          "input": {
+            "type": "normal",
+            "direction": "2",
+            "button": "K",
+            "strength": "H"
+          },
+          "key": "normal:2:K:H",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "confirmed",
+            "display": "34",
+            "numeric": 34,
+            "provenance": "source",
+            "calculation": null
+          }
+        }
+      ],
+      "liveChecksPath": "staging/stage17/live-source-checks.json"
+    },
+    {
+      "id": "marisa__normal_2_K_M:total",
+      "characterId": "marisa",
+      "sourceMoveId": "marisa__normal_2_K_M",
+      "sourceId": "marisa__normal_2_K_M",
+      "field": "total",
+      "sourceNotation": "29",
+      "before": {
+        "status": "unknown",
+        "display": null,
+        "provenance": "source",
+        "calculation": null
+      },
+      "decision": "adopt",
+      "value": {
+        "status": "confirmed",
+        "display": "29",
+        "numeric": 29,
+        "provenance": "source",
+        "calculation": null
+      },
+      "reason": "Cargo explicitly gives total 29 and raw totalFrames agrees; whiff/block recovery note is retained. Use the written total, with no formula or extra +1.",
+      "oldUnknownReason": "Existing conversion did not establish whiff total",
+      "recordIds": [
+        "marisa__normal_2_K_M"
+      ],
+      "questionInputs": [
+        {
+          "moveId": "marisa__normal_2_K_M",
+          "input": {
+            "type": "normal",
+            "direction": "2",
+            "button": "K",
+            "strength": "M"
+          },
+          "key": "normal:2:K:M",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "found",
+          "afterHard": "found",
+          "finalField": {
+            "status": "confirmed",
+            "display": "29",
+            "numeric": 29,
+            "provenance": "source",
+            "calculation": null
+          }
+        }
+      ],
+      "liveChecksPath": "staging/stage17/live-source-checks.json"
+    },
+    {
+      "id": "marisa__special_236_K_OD:hit",
+      "characterId": "marisa",
+      "sourceMoveId": "marisa__special_236_K_OD",
+      "sourceId": "marisa__special_236_K_OD",
+      "field": "hit",
+      "sourceNotation": "KD +50(68) Wall Splat",
+      "before": {
+        "status": "unknown",
+        "display": null
+      },
+      "decision": "retain_unknown",
+      "value": {
+        "status": "unknown",
+        "display": null
+      },
+      "reason": "Cargo KD +50(68) Wall Splat is tied to wall outcome/distance. The standard midscreen hit result is not independently established; do not use its number or equate wall splat with ordinary knockdown.",
+      "oldUnknownReason": "Raw normalizer omitted a special/non-numeric source notation or condition remained unresolved",
+      "recordIds": [
+        "marisa__special_236_K_OD"
+      ],
+      "questionInputs": [
+        {
+          "moveId": "marisa__special_236_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "OD"
+          },
+          "key": "special:236:K:OD",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "unknown",
+          "afterHard": "found",
+          "finalField": {
+            "status": "unknown",
+            "display": null
+          }
+        }
+      ],
+      "liveChecksPath": "staging/stage17/live-source-checks.json"
+    },
+    {
+      "id": "ryu__special_236_K_OD:hit",
+      "characterId": "ryu",
+      "sourceMoveId": "ryu__special_236_K_OD",
+      "sourceId": "ryu__special_236_K_OD",
+      "field": "hit",
+      "sourceNotation": "Wall Bounce +49(65)",
+      "before": {
+        "status": "unknown",
+        "display": null
+      },
+      "decision": "retain_unknown",
+      "value": {
+        "status": "unknown",
+        "display": null
+      },
+      "reason": "Cargo Wall Bounce +49(65) describes wall/airborne outcome. No normal midscreen hitstun value or explicit KD result established; keep unknown rather than interpreting +49 as normal advantage.",
+      "oldUnknownReason": "Raw normalizer omitted a special/non-numeric source notation or condition remained unresolved",
+      "recordIds": [
+        "ryu__special_236_K_OD"
+      ],
+      "questionInputs": [
+        {
+          "moveId": "ryu__special_236_K_OD",
+          "input": {
+            "type": "special",
+            "motion": "236",
+            "button": "K",
+            "strength": "OD"
+          },
+          "key": "special:236:K:OD",
+          "beforeNormal": "unknown",
+          "beforeHard": "found",
+          "afterNormal": "unknown",
+          "afterHard": "found",
+          "finalField": {
+            "status": "unknown",
+            "display": null
+          }
+        }
+      ],
+      "liveChecksPath": "staging/stage17/live-source-checks.json"
+    },
+    {
+      "id": "zangief__normal_5_P_H:startup",
+      "characterId": "zangief",
+      "sourceMoveId": "zangief__normal_5_P_H",
+      "sourceId": "zangief__normal_5_P_H",
+      "field": "startup",
+      "sourceNotation": "(6~22)+10",
+      "before": {
+        "status": "unknown",
+        "display": null
+      },
+      "decision": "retain_unknown",
+      "value": {
+        "status": "unknown",
+        "display": null
+      },
+      "reason": "Cargo (6~22)+10 and raw note 16-32 include hold duration. Official/Wiki retrieval failed; search excerpt 16 lacks compatible patch/condition evidence. Do not infer 16 or a standard-condition range from the formula.",
+      "oldUnknownReason": "Compound/hold-dependent expression",
+      "recordIds": [
+        "zangief__normal_5_P_H"
+      ],
+      "questionInputs": [
+        {
+          "moveId": "zangief__normal_5_P_H",
+          "input": {
+            "type": "normal",
+            "direction": "5",
+            "button": "P",
+            "strength": "H"
+          },
+          "key": "normal:5:P:H",
+          "beforeNormal": "unknown",
+          "beforeHard": "unknown",
+          "afterNormal": "unknown",
+          "afterHard": "unknown",
+          "finalField": {
+            "status": "unknown",
+            "display": null
+          }
+        }
+      ],
+      "liveChecksPath": "staging/stage17/live-source-checks.json"
+    }
+  ],
+  "knownValueConflicts": [
+    {
+      "characterId": "alex",
+      "moveId": "alex__special_63214_P_H",
+      "field": "hit",
+      "current": {
+        "status": "confirmed",
+        "display": "+15",
+        "numeric": 15
+      },
+      "sourceNotation": "HKD +15",
+      "reason": "Cargo knockdown notation differs semantically from the existing numeric hit value; outside unknown-only scope; unchanged",
+      "sourceId": "alex__special_63214_P_H"
+    },
+    {
+      "characterId": "alex",
+      "moveId": "alex__special_63214_P_L",
+      "field": "hit",
+      "current": {
+        "status": "confirmed",
+        "display": "+15",
+        "numeric": 15
+      },
+      "sourceNotation": "HKD +15",
+      "reason": "Cargo knockdown notation differs semantically from the existing numeric hit value; outside unknown-only scope; unchanged",
+      "sourceId": "alex__special_63214_P_L"
+    },
+    {
+      "characterId": "alex",
+      "moveId": "alex__special_63214_P_M",
+      "field": "hit",
+      "current": {
+        "status": "confirmed",
+        "display": "+15",
+        "numeric": 15
+      },
+      "sourceNotation": "HKD +15",
+      "reason": "Cargo knockdown notation differs semantically from the existing numeric hit value; outside unknown-only scope; unchanged",
+      "sourceId": "alex__special_63214_P_M"
+    },
+    {
+      "characterId": "alex",
+      "moveId": "alex__special_63214_P_OD",
+      "field": "hit",
+      "current": {
+        "status": "confirmed",
+        "display": "+15",
+        "numeric": 15
+      },
+      "sourceNotation": "HKD +15",
+      "reason": "Cargo knockdown notation differs semantically from the existing numeric hit value; outside unknown-only scope; unchanged",
+      "sourceId": "alex__special_63214_P_OD"
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_22_K_H",
+      "field": "hit",
+      "current": {
+        "status": "confirmed",
+        "display": "+29",
+        "numeric": 29
+      },
+      "sourceNotation": "KD +29",
+      "reason": "Cargo knockdown notation differs semantically from the existing numeric hit value; outside unknown-only scope; unchanged",
+      "sourceId": "arjun__special_22_K_H"
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_63214_P_none",
+      "field": "hit",
+      "current": {
+        "status": "confirmed",
+        "display": "+8",
+        "numeric": 8
+      },
+      "sourceNotation": "HKD +8(+13)",
+      "reason": "Cargo knockdown notation differs semantically from the existing numeric hit value; outside unknown-only scope; unchanged",
+      "sourceId": "arjun__special_63214_P_none"
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_63214_P_OD",
+      "field": "hit",
+      "current": {
+        "status": "confirmed",
+        "display": "+8",
+        "numeric": 8
+      },
+      "sourceNotation": "HKD +8(+13)",
+      "reason": "Cargo knockdown notation differs semantically from the existing numeric hit value; outside unknown-only scope; unchanged",
+      "sourceId": "arjun__special_63214_P_OD"
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_236_K_H",
+      "field": "hit",
+      "current": {
+        "status": "confirmed",
+        "display": "+35",
+        "numeric": 35
+      },
+      "sourceNotation": "HKD +35",
+      "reason": "Cargo knockdown notation differs semantically from the existing numeric hit value; outside unknown-only scope; unchanged",
+      "sourceId": "blanka__special_236_K_H"
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_236_K_L",
+      "field": "hit",
+      "current": {
+        "status": "confirmed",
+        "display": "+35",
+        "numeric": 35
+      },
+      "sourceNotation": "HKD +35",
+      "reason": "Cargo knockdown notation differs semantically from the existing numeric hit value; outside unknown-only scope; unchanged",
+      "sourceId": "blanka__special_236_K_L"
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_236_K_M",
+      "field": "hit",
+      "current": {
+        "status": "confirmed",
+        "display": "+35",
+        "numeric": 35
+      },
+      "sourceNotation": "HKD +35",
+      "reason": "Cargo knockdown notation differs semantically from the existing numeric hit value; outside unknown-only scope; unchanged",
+      "sourceId": "blanka__special_236_K_M"
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_236_K_OD",
+      "field": "hit",
+      "current": {
+        "status": "confirmed",
+        "display": "+64",
+        "numeric": 64
+      },
+      "sourceNotation": "HKD +64",
+      "reason": "Cargo knockdown notation differs semantically from the existing numeric hit value; outside unknown-only scope; unchanged",
+      "sourceId": "blanka__special_236_K_OD"
+    },
+    {
+      "characterId": "e_honda",
+      "moveId": "e_honda__special_63214_K_H",
+      "field": "hit",
+      "current": {
+        "status": "confirmed",
+        "display": "+7",
+        "numeric": 7
+      },
+      "sourceNotation": "HKD +7",
+      "reason": "Cargo knockdown notation differs semantically from the existing numeric hit value; outside unknown-only scope; unchanged",
+      "sourceId": "e_honda__special_63214_K_H"
+    },
+    {
+      "characterId": "e_honda",
+      "moveId": "e_honda__special_63214_K_L",
+      "field": "hit",
+      "current": {
+        "status": "confirmed",
+        "display": "+7",
+        "numeric": 7
+      },
+      "sourceNotation": "HKD +7",
+      "reason": "Cargo knockdown notation differs semantically from the existing numeric hit value; outside unknown-only scope; unchanged",
+      "sourceId": "e_honda__special_63214_K_L"
+    },
+    {
+      "characterId": "e_honda",
+      "moveId": "e_honda__special_63214_K_M",
+      "field": "hit",
+      "current": {
+        "status": "confirmed",
+        "display": "+7",
+        "numeric": 7
+      },
+      "sourceNotation": "HKD +7",
+      "reason": "Cargo knockdown notation differs semantically from the existing numeric hit value; outside unknown-only scope; unchanged",
+      "sourceId": "e_honda__special_63214_K_M"
+    },
+    {
+      "characterId": "e_honda",
+      "moveId": "e_honda__special_63214_K_OD",
+      "field": "hit",
+      "current": {
+        "status": "confirmed",
+        "display": "+7",
+        "numeric": 7
+      },
+      "sourceNotation": "HKD +7",
+      "reason": "Cargo knockdown notation differs semantically from the existing numeric hit value; outside unknown-only scope; unchanged",
+      "sourceId": "e_honda__special_63214_K_OD"
+    },
+    {
+      "characterId": "jp",
+      "moveId": "jp__special_214_K_none",
+      "field": "hit",
+      "current": {
+        "status": "confirmed",
+        "display": "+18",
+        "numeric": 18
+      },
+      "sourceNotation": "HKD +18",
+      "reason": "Cargo knockdown notation differs semantically from the existing numeric hit value; outside unknown-only scope; unchanged",
+      "sourceId": "jp__special_214_K_none"
+    },
+    {
+      "characterId": "jp",
+      "moveId": "jp__special_214_K_OD",
+      "field": "hit",
+      "current": {
+        "status": "confirmed",
+        "display": "+18",
+        "numeric": 18
+      },
+      "sourceNotation": "HKD +18",
+      "reason": "Cargo knockdown notation differs semantically from the existing numeric hit value; outside unknown-only scope; unchanged",
+      "sourceId": "jp__special_214_K_OD"
+    }
+  ],
+  "liveChecks": {
+    "checkedAt": "2026-11-09",
+    "method": "web search and direct public page retrieval; access restrictions were not bypassed",
+    "checks": [
+      {
+        "url": "https://www.streetfighter.com/6/en-us/character/zangief/frame",
+        "kind": "official",
+        "result": "403 Forbidden",
+        "usedForAdoption": false
+      },
+      {
+        "url": "https://www.streetfighter.com/6/en-us/character/ken/frame",
+        "kind": "official",
+        "result": "403 Forbidden",
+        "usedForAdoption": false
+      },
+      {
+        "url": "https://www.streetfighter.com/6/en-us/character/marisa/frame",
+        "kind": "official",
+        "result": "403 Forbidden",
+        "usedForAdoption": false
+      },
+      {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Zangief/Frame_data",
+        "kind": "community",
+        "result": "403 Forbidden",
+        "usedForAdoption": false
+      },
+      {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Akuma/Frame_data",
+        "kind": "community",
+        "result": "403 Forbidden",
+        "usedForAdoption": false
+      },
+      {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Marisa/Frame_data",
+        "kind": "community",
+        "result": "403 Forbidden",
+        "usedForAdoption": false
+      },
+      {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+        "kind": "community",
+        "result": "403 Forbidden",
+        "usedForAdoption": false
+      },
+      {
+        "url": "https://dood.gg/pt/street-fighter-6/zangief/frames/",
+        "kind": "community",
+        "result": "Search excerpt lists standing HP startup 16, but full source, patch and hold condition not independently established",
+        "usedForAdoption": false
+      },
+      {
+        "url": "https://dood.gg/en/street-fighter-6/zangief/frames/",
+        "kind": "community",
+        "result": "Direct page not accessible through web tool",
+        "usedForAdoption": false
+      }
+    ],
+    "conclusion": "Stored raw and Cargo form the adoption evidence. Search excerpts alone do not establish a compatible patch and non-held condition for Zangief HP."
+  }
+}
