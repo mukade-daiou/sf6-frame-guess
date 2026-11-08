@@ -1,5 +1,7 @@
 # データ仕様 v1.0.0
 
+2026-11-09更新：Focus Force Lv.1のみユーザー指定の合算代表値を採用する。通常L/M/Hのconfirmed.display/numericは23、ODは20。原典13+10/10+10は保存済みCargoとsourceNotation注記に残し、conditionalSpecials.startupDecisionsから再生成する。以下の複合表記をそのまま表示する記述は、この限定判断で置き換える。他の複合値へ一般化しない。
+
 個別の固定代表条件はMove.representativeConditionにcondition/rawRef/cargoRefを持つ。第16段階で採用したジェイミー・Focus Forceに限り、元のconditional/held理由を注記と監査のbeforeレコードへ保持してbase/acceptedへ変更する。Focus Force Lv.1の発生は原典の固定複合表記13+10/10+10をconfirmed.displayに保存し、numericは付与しない。合計値やraw前半値への変換はしない。他の複合・条件値へ一般化しない。
 
 基本必殺技の共通値展開はstrengthExpansion `{sourceMoveId, basis}`を持つ追加レコードとして保存する。元のstrength noneレコードは変更しない。採用済み基本版に限ってL/M/Hへフレーム・出典を複製し、明示強度レコードがある強度は生成しない。ODは入力候補とデータレコードを区別し、共通値からOD性能を生成しない。採用ルールの正本はADOPTION_RULES、再生成の有効化はadoption-decisionsのcommonSpecialStrengths.enabled。

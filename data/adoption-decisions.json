@@ -1,5 +1,5 @@
 {
-  "datasetId": "conditional-specials-2026-11-07-r2",
+  "datasetId": "focus-startup-2026-11-09-r1",
   "commonSpecialStrengths": {
     "enabled": true,
     "protectionRef": "d11bb6d2616b5a15e182cbc08ef7556e99f3b5d6",
@@ -578,6 +578,20 @@
         "sourceName": "OD Focus Force (Lv.1)",
         "sourceInput": "214KK",
         "expectedCargoNotes": "Lv.1 version when uncharged or when button is held up to 19f; can hold button longer to charge to a stronger version (20f Lv.2 / 57f Lv.3); 1-hit armor frames cover the full body, ending immediately if button is released after frame 10; absorbing a strike results in an automatic counter-attack with 10f startup (comes out on frame 11 at the earliest); absorbing an attack early in the armor frames makes it possible for the counter-attack to be blocked; C. Viper incurs only 7f armor hitstop from absorbing a strike; armor can absorb projectiles but does not perform counter-attack (C. Viper incurs 10f projectile hitstop during armor); cancelable into Forward Dash from frame 9 until button is released (not possible after absorbing a strike); C. Viper is in a Punish Counter state for entire duration (including Forward Dash cancel); 2f extra knockdown advantage on Punish Counter; only the first hit gains the bonus damage from a Counter-hit/Punish Counter; -17 on Punish Counter if only the first hit of counter-attack reaches opponent (e.g. absorbing a ranged Dhalsim poke)"
+      }
+    ],
+    "startupDecisions": [
+      {
+        "moveId": "cviper__held_special_214_K_none",
+        "sourceNotation": "13+10",
+        "numeric": 23,
+        "basis": "2026-11-09ユーザー指定: Focus Force Lv.1のみ複合発生を合算したゲーム用代表値を採用。原典表記・未検証状態を保持し、他技へ一般化しない。"
+      },
+      {
+        "moveId": "cviper__held_special_214_K_OD",
+        "sourceNotation": "10+10",
+        "numeric": 20,
+        "basis": "2026-11-09ユーザー指定: Focus Force Lv.1のみ複合発生を合算したゲーム用代表値を採用。原典表記・未検証状態を保持し、他技へ一般化しない。"
       }
     ]
   }

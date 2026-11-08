@@ -1,5 +1,7 @@
 # データの正本と更新手順
 
+現在のdatasetIdは`focus-startup-2026-11-09-r1`。32キャラ1298レコードを維持し、Focus Force発生の限定判断をconditionalSpecials.startupDecisionsから再生成する。通常の更新入口はdata:plan→新datasetId→build-snapshot.ts --write --update→data:check。prepare-conditional-specials.tsは初期対応表の準備用であり、通常の再生成では不要。既存datasetIdと後続の採用判断を保持する。
+
 ## 第16段階の現在値
 
 現在は32キャラ1298レコード（第15段階後1292＋Tenshin/Focus Force通常版のL/M/H計6）、datasetId conditional-specials-2026-11-07-r2。採用条件はconditionalSpecialsを正本とし、scripts/conditional-specials.tsを通常の採用判定後・共通強度展開前に適用する。原典やadoption-inputsは変更しない。scripts/prepare-conditional-specials.ts --writeは保存原典から対応表を機械的に準備するための明示的操作で、通常の再生成には実行不要。

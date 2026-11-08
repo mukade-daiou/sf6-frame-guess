@@ -1,5 +1,9 @@
 # データ採用判断の再利用ルール
 
+## 2026-11-09：Focus Force発生の限定更新
+
+ユーザー指定によりFocus Force Lv.1のみ、通常L/M/Hの13+10を23F、ODの10+10を20Fとしてdisplayとnumericに採用する。正本はconditionalSpecials.startupDecisionsの原典表記・数値・採用理由。CargoとsourceNotation注記は変更せず、全体・ヒット・ガード、ゲーム版・verificationも維持する。他の複合表記へ一般化しない。以下の第16段階での「加算せず表示」は今回の2原典行について更新される。
+
 ## 第16段階：個別の代表条件
 
 Speedy Maracas（dee_jay__held_special_22_P_OD）はユーザー指定でexcluded。元の22PPレコードは残し、他の22系を除外しない。

@@ -16,7 +16,8 @@
       "frames": {
         "startup": {
           "status": "confirmed",
-          "display": "10+10"
+          "display": "20",
+          "numeric": 20
         },
         "total": {
           "status": "confirmed",
@@ -55,7 +56,8 @@
       "frames": {
         "startup": {
           "status": "confirmed",
-          "display": "13+10"
+          "display": "23",
+          "numeric": 23
         },
         "total": {
           "status": "confirmed",
@@ -94,7 +96,8 @@
       "frames": {
         "startup": {
           "status": "confirmed",
-          "display": "13+10"
+          "display": "23",
+          "numeric": 23
         },
         "total": {
           "status": "confirmed",
@@ -133,7 +136,8 @@
       "frames": {
         "startup": {
           "status": "confirmed",
-          "display": "13+10"
+          "display": "23",
+          "numeric": 23
         },
         "total": {
           "status": "confirmed",
@@ -1041,7 +1045,8 @@
         "frames": {
           "startup": {
             "status": "confirmed",
-            "display": "13+10"
+            "display": "23",
+            "numeric": 23
           },
           "total": {
             "status": "confirmed",
@@ -1067,7 +1072,8 @@
           "upstreamName: Focus Force (Lv.1)",
           "第16段階: 以前のheld理由を解消。第16段階ユーザー指定: Focus Force Lv.1、最短ホールド（非チャージ/19F以内）。自動反撃・Lv.2/3を選ばない。発生は原典の固定複合表記を加算せず表示。",
           "sourceNotation: {\"chara\":\"C.Viper\",\"input\":\"214K\",\"startup\":\"13+10\",\"total\":\"70\",\"hitAdv\":\"KD +24\",\"blockAdv\":\"<span style=\\\"color: #b70c0b;\\\">'''-16'''</span>\",\"notes\":\"Lv.1 version when uncharged or when button is held up to 19f; can hold button longer to charge to a stronger version (20f Lv.2 / 59f Lv.3); 1-hit armor frames cover the full body, ending immediately if button is released after frame 13; absorbing a strike results in an automatic counter-attack with 10f startup (comes out on frame 14 at the earliest); absorbing an attack early in the armor frames makes it possible for the counter-attack to be blocked; C. Viper incurs only 7f armor hitstop from absorbing a strike; armor can absorb projectiles but does not perform counter-attack (C. Viper incurs 10f projectile hitstop during armor); cancelable into Forward Dash from frame 12 until button is released (not possible after absorbing a strike); C. Viper is in a Punish Counter state for entire duration (including Forward Dash cancel); 2f extra knockdown advantage on Punish Counter; only the first hit gains the bonus damage from a Counter-hit/Punish Counter; -17 on Punish Counter if only the first hit of counter-attack reaches opponent (e.g. absorbing a ranged Dhalsim poke); Focus + Dash can be used to absorb projectiles when Drive gauge is too low for Parry; can be used against Drive Impact while in Burnout (but armor starts too late to work in most DI-cancel blockstrings)\"}",
-          "rawSource: archive/staging/sf6-frame-data/raw/cviper.json#/moves/5"
+          "rawSource: archive/staging/sf6-frame-data/raw/cviper.json#/moves/5",
+          "2026-11-09ユーザー指定: Focus Force Lv.1のみ複合発生を合算したゲーム用代表値を採用。原典表記・未検証状態を保持し、他技へ一般化しない。"
         ],
         "source": {
           "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data",
@@ -1161,7 +1167,8 @@
         "frames": {
           "startup": {
             "status": "confirmed",
-            "display": "10+10"
+            "display": "20",
+            "numeric": 20
           },
           "total": {
             "status": "confirmed",
@@ -1187,7 +1194,8 @@
           "upstreamName: OD Focus Force (Lv.1)",
           "第16段階: 以前のheld理由を解消。第16段階ユーザー指定: Focus Force Lv.1、最短ホールド（非チャージ/19F以内）。自動反撃・Lv.2/3を選ばない。発生は原典の固定複合表記を加算せず表示。",
           "sourceNotation: {\"chara\":\"C.Viper\",\"input\":\"214KK\",\"startup\":\"10+10\",\"total\":\"67\",\"hitAdv\":\"KD +24\",\"blockAdv\":\"<span style=\\\"color: #b70c0b;\\\">'''-16'''</span>\",\"notes\":\"Lv.1 version when uncharged or when button is held up to 19f; can hold button longer to charge to a stronger version (20f Lv.2 / 57f Lv.3); 1-hit armor frames cover the full body, ending immediately if button is released after frame 10; absorbing a strike results in an automatic counter-attack with 10f startup (comes out on frame 11 at the earliest); absorbing an attack early in the armor frames makes it possible for the counter-attack to be blocked; C. Viper incurs only 7f armor hitstop from absorbing a strike; armor can absorb projectiles but does not perform counter-attack (C. Viper incurs 10f projectile hitstop during armor); cancelable into Forward Dash from frame 9 until button is released (not possible after absorbing a strike); C. Viper is in a Punish Counter state for entire duration (including Forward Dash cancel); 2f extra knockdown advantage on Punish Counter; only the first hit gains the bonus damage from a Counter-hit/Punish Counter; -17 on Punish Counter if only the first hit of counter-attack reaches opponent (e.g. absorbing a ranged Dhalsim poke)\"}",
-          "rawSource: archive/staging/sf6-frame-data/raw/cviper.json#/moves/6"
+          "rawSource: archive/staging/sf6-frame-data/raw/cviper.json#/moves/6",
+          "2026-11-09ユーザー指定: Focus Force Lv.1のみ複合発生を合算したゲーム用代表値を採用。原典表記・未検証状態を保持し、他技へ一般化しない。"
         ],
         "source": {
           "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data",

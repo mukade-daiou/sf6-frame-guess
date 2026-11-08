@@ -70,11 +70,12 @@ for (const characterId of ["jamie", "cviper"]) {
 if (selections.length !== 20)
   throw new Error("Expected 18 Jamie and 2 Focus Force records");
 decisions.conditionalSpecials = {
+  ...decisions.conditionalSpecials,
   protectionRef: "571cea0f69dbc8b816dbd8280cf81d173df3b093",
   excludedMoveId: "dee_jay__held_special_22_P_OD",
   selections,
 };
-decisions.datasetId = "conditional-specials-2026-11-07-r2";
+// Existing snapshot revisions and later adoption decisions must survive preparation.
 for (const c of decisions.characters) {
   c.heldMoveIds = c.heldMoveIds.filter(
     (id: string) =>

@@ -1,10 +1,32 @@
 import { expect, it } from "vitest";
 import { production } from "./datasets";
-import { applyConditionalSpecials } from "../../../scripts/conditional-specials";
+import {
+  applyConditionalSpecials,
+  conditionalFrame,
+} from "../../../scripts/conditional-specials";
 import { resolveMove } from "./resolver";
 import { inputKey } from "./input";
 import { ask, startGame, changeMode } from "../../features/game/engine";
 const char = (id: string) => production.characters.find((c) => c.id === id)!;
+it("uses 23F for each normal Focus strength in both modes without generalizing compound startup", () => {
+  const c = char("cviper");
+  for (const strength of ["L", "M", "H"] as const) {
+    for (const mode of ["normal", "startup"] as const)
+      expect(resolveMove(c, query("214", "K", strength), mode)).toMatchObject({
+        status: "found",
+        frames: {
+          startup: { display: "23", numeric: 23 },
+          total: { display: "70" },
+          hit: { display: "D" },
+          block: { display: "-16" },
+        },
+      });
+  }
+  expect(conditionalFrame("13+10", "startup", true)).toEqual({
+    status: "confirmed",
+    display: "13+10",
+  });
+});
 it("rejects an existing basic input instead of silently selecting a representative", () => {
   const c = structuredClone(char("jamie"));
   const m = c.moves.find((m) => m.id === "jamie__held_special_236_P_L")!;
@@ -66,7 +88,7 @@ it("selects DL2 instead of DL4 and keeps all Jamie input keys unique", () => {
 });
 it.each([
   ["jamie", "63214", "K", "8"],
-  ["cviper", "214", "K", "13+10"],
+  ["cviper", "214", "K", "23"],
 ])(
   "keeps shared normal strengths independent for %s",
   (id, motion, button, startup) => {
@@ -90,13 +112,13 @@ it.each([
     expect(g.history).toHaveLength(3);
   },
 );
-it("uses separate OD Focus Force Lv1 evidence and retains its fixed startup expression", () => {
+it("uses the approved OD startup sum while retaining the source expression", () => {
   const c = char("cviper");
   const result = resolveMove(c, query("214", "K", "OD"), "normal");
   expect(result).toMatchObject({
     status: "found",
     frames: {
-      startup: { display: "10+10" },
+      startup: { display: "20", numeric: 20 },
       total: { display: "67" },
       hit: { display: "D" },
       block: { display: "-16" },
@@ -105,4 +127,5 @@ it("uses separate OD Focus Force Lv1 evidence and retains its fixed startup expr
   const m = c.moves.find((m) => m.id === "cviper__held_special_214_K_OD")!;
   expect(m.representativeCondition?.condition).toContain("19F");
   expect(m.source.verification).toBe("unverified");
+  expect(m.notes.some((n) => n.includes('"startup":"10+10"'))).toBe(true);
 });

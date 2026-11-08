@@ -60,7 +60,9 @@ const history = () =>
 const assert = (a, m) => {
   if (!a) throw new Error(m);
 };
-const out = "staging/conditional-specials/browser";
+const out =
+  process.env.SF6_VERIFY_OUTPUT ||
+  "staging/verification/conditional-specials/browser";
 mkdirSync(out, { recursive: true });
 const results = [];
 for (const width of [1280, 320]) {
@@ -94,11 +96,19 @@ for (const width of [1280, 320]) {
   for (const s of ["弱K", "中K", "強K"]) ask("214", s);
   assert(
     history().length === 3 &&
-      history().every((x) => x.frames.join(",") === "13+10,70,D,-16"),
+      history().every((x) => x.frames.join(",") === "23,70,D,-16"),
     "Focus Lv1",
   );
   ask("214", "弱K＋中K");
-  assert(history()[0].frames.join(",") === "10+10,67,D,-16", "OD Focus Lv1");
+  assert(history()[0].frames.join(",") === "20,67,D,-16", "OD Focus Lv1");
+  click("Hard");
+  assert(
+    history()
+      .map((x) => x.frames.join(","))
+      .join(",") === "20,23,23,23",
+    "Focus Hard startup",
+  );
+  click("Normal");
   run("screenshot", `${out}/${width}-cviper.png`, "--full");
   results.push({
     width,

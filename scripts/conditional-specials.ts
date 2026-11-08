@@ -74,6 +74,18 @@ export function applyConditionalSpecials(c: Character): Character {
           conditionalFrame(cargo[k], f, c.id === "cviper"),
         ]),
       );
+      const startupDecision = policy.startupDecisions?.find(
+        (decision: any) => decision.moveId === m.id && c.id === "cviper",
+      );
+      if (startupDecision) {
+        if (cleanSource(cargo.startup) !== startupDecision.sourceNotation)
+          throw new Error(`Startup source mismatch: ${m.id}`);
+        frames.startup = {
+          status: "confirmed",
+          display: String(startupDecision.numeric),
+          numeric: startupDecision.numeric,
+        };
+      }
       return {
         ...m,
         variant: { kind: "base" as const, condition: null },
@@ -100,6 +112,7 @@ export function applyConditionalSpecials(c: Character): Character {
           `第16段階: 以前のheld理由を解消。${d.condition}`,
           `sourceNotation: ${JSON.stringify(cargo)}`,
           `rawSource: ${d.rawPath}#/moves/${d.rawIndex}`,
+          ...(startupDecision ? [startupDecision.basis] : []),
         ],
         representativeCondition: {
           condition: d.condition,

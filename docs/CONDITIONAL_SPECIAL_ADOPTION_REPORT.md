@@ -1,5 +1,7 @@
 # 第16段階：保留技の採用整理とフレーム統合
 
+2026-11-09追補：以下は第16段階完了時点の記録。後続のユーザー指定により、Focus Force Lv.1の発生のみ通常L/M/Hを23F、ODを20Fへ更新した。原典13+10/10+10、その他のフレームと検証状態は保持する。採用判断はconditionalSpecials.startupDecisions、固定比較はtests/focus-startup.test.mjsを参照。
+
 開始HEADは571cea0f69dbc8b816dbd8280cf81d173df3b093。mainはorigin/mainより1コミット先行、作業ツリーはクリーン、1292レコードだった。直前の共通強度展開を維持し、今回の個別採用以外の原典・既存値・UIは変更しない。
 
 ## 採用結果と件数
