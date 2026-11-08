@@ -1,5 +1,11 @@
 # データの正本と更新手順
 
+## 第16段階の現在値
+
+現在は32キャラ1298レコード（第15段階後1292＋Tenshin/Focus Force通常版のL/M/H計6）、datasetId conditional-specials-2026-11-07-r2。採用条件はconditionalSpecialsを正本とし、scripts/conditional-specials.tsを通常の採用判定後・共通強度展開前に適用する。原典やadoption-inputsは変更しない。scripts/prepare-conditional-specials.ts --writeは保存原典から対応表を機械的に準備するための明示的操作で、通常の再生成には実行不要。
+
+data:planと--write --updateの更新保護を維持する。scripts/audit-conditional-specials.tsは開始HEADの全1292件と比較し、許可された21件と新規6件以外が不変であることを検査する。既存のSA/共通強度保護検査にも今回の明示的な採用差分だけを適用し、それ以外を引き続き比較する。以下の第15段階の件数はその完了時点の記録。
+
 ## SA統合後の更新（第15段階B）
 
 現在は32キャラ1292レコード（従来908＋SA288＋共通必殺技の強度展開96）、datasetId `common-special-strengths-2026-11-07-r1`。SA96枠、原典基本101行、個別強度質問288レコードは別の集計単位である。第15段階Cの9項目はdata/adoption-decisions.jsonのsuperArts.frameDecisionsから再生成する。

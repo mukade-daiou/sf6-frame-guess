@@ -1,5 +1,15 @@
 # データ採用判断の再利用ルール
 
+## 第16段階：個別の代表条件
+
+Speedy Maracas（dee_jay__held_special_22_P_OD）はユーザー指定でexcluded。元の22PPレコードは残し、他の22系を除外しない。
+
+ジェイミーの保留18行はDL2のSwagger Step/Bakkai/Freeflow Strikes 1/Arrow Kick、DL3のTenshinを代表条件に採用する。同じコマンドのDL4や派生は混ぜない。DL2という技名だけで使用開始レベルを実証したとはせず、今回は指定されたレベルを固定する。Tenshin通常版noneはL/M/Hへ展開し、ODは専用行を使う。
+
+C.ヴァイパーのFocus Forceは通常・ODともLv.1の最短（原典上は非チャージまたは19F以内）を採用する。自動反撃・Lv.2/Lv.3へ置換しない。Cargoの発生13+10/10+10は固定複合表記をそのまま表示し、rawの前半値13/10だけを攻撃発生として採用したり、合計を計算したりしない。通常版はnoneからL/M/Hを展開し、ODは独自の発生・全体値を保持する。
+
+判断はadoption-decisions.jsonのconditionalSpecials、原典対応はraw/Cargoの行番号と技名・注記で固定する。以前のheldMoveIdsから解決分を外し、生成時に代表条件を明記したbaseへ採用する。原典のパッチ/verificationは未確認を維持する。この例外は他キャラの酔い・ホールド・特殊状態へ自動適用しない。
+
 ## 強度未指定の基本必殺技：共通値の採用
 
 ユーザー指定により、acceptedかつ通常状態のbase必殺技でstrength none・方向モーションありの原典は保持し、ゲーム用L/M/Hを展開する。22以外にも適用する。原典レコードを参照するstrengthExpansionに元moveIdと採用理由を記録する。同じフレームでも質問キーは強度ごとに独立し、実性能の一致を検証したとはしない。

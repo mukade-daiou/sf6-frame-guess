@@ -967,6 +967,25 @@
             "required": ["sourceMoveId", "basis"],
             "additionalProperties": false
           },
+          "representativeCondition": {
+            "type": "object",
+            "properties": {
+              "condition": {
+                "type": "string",
+                "minLength": 1
+              },
+              "rawRef": {
+                "type": "string",
+                "minLength": 1
+              },
+              "cargoRef": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": ["condition", "rawRef", "cargoRef"],
+            "additionalProperties": false
+          },
           "saEvidence": {
             "type": "object",
             "properties": {

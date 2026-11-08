@@ -2,17 +2,17 @@
   "summary": {
     "characters": 32,
     "sourceRows": 40,
-    "expandableSources": 32,
+    "expandableSources": 34,
     "classifications": {
-      "expandable": 32,
-      "held": 5,
-      "excluded": 3
+      "expandable": 34,
+      "excluded": 3,
+      "held": 3
     },
-    "generatedInputs": 96,
+    "generatedInputs": 102,
     "explicitStrengthOverlaps": 0,
     "generatedOD": 0,
     "originalRecordsVerified": 1196,
-    "totalRecords": 1292,
+    "totalRecords": 1298,
     "beforeGlobalQuestionInputs": 85,
     "afterGlobalQuestionInputs": 89,
     "addedGlobalQuestionInputs": 4
@@ -56,7 +56,7 @@
     {
       "id": "cviper",
       "strengthlessRows": 2,
-      "generatedInputs": 3
+      "generatedInputs": 6
     },
     {
       "id": "dee_jay",
@@ -96,7 +96,7 @@
     {
       "id": "jamie",
       "strengthlessRows": 2,
-      "generatedInputs": 3
+      "generatedInputs": 6
     },
     {
       "id": "jp",
@@ -419,12 +419,12 @@
       "sourceMoveId": "cviper__held_special_214_K_none",
       "motion": "214",
       "button": "K",
-      "status": "held",
+      "status": "accepted",
       "variant": {
-        "kind": "conditional",
-        "condition": "Original source input retained; normal-state applicability/performance pending."
+        "kind": "base",
+        "condition": null
       },
-      "classification": "held",
+      "classification": "expandable",
       "strengths": [
         {
           "strength": "L",
@@ -705,12 +705,12 @@
       "sourceMoveId": "jamie__held_special_63214_K_none",
       "motion": "63214",
       "button": "K",
-      "status": "held",
+      "status": "accepted",
       "variant": {
-        "kind": "conditional",
-        "condition": "Original source input retained; normal-state applicability/performance pending."
+        "kind": "base",
+        "condition": null
       },
-      "classification": "held",
+      "classification": "expandable",
       "strengths": [
         {
           "strength": "L",

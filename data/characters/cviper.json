@@ -1340,8 +1340,8 @@
     },
     {
       "adoption": {
-        "status": "held",
-        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+        "status": "accepted",
+        "basis": "第16段階ユーザー指定: Focus Force Lv.1、最短ホールド（非チャージ/19F以内）。自動反撃・Lv.2/3を選ばない。発生は原典の固定複合表記を加算せず表示。"
       },
       "id": "cviper__held_special_214_K_none",
       "name": "Focus Force (Lv.1)",
@@ -1353,48 +1353,59 @@
         "strength": "none"
       },
       "variant": {
-        "kind": "conditional",
-        "condition": "Original source input retained; normal-state applicability/performance pending."
+        "kind": "base",
+        "condition": null
       },
       "frames": {
         "startup": {
-          "status": "unknown",
-          "display": null
+          "status": "confirmed",
+          "display": "13+10"
         },
         "total": {
-          "status": "unknown",
-          "display": null,
-          "provenance": null,
+          "status": "confirmed",
+          "display": "70",
+          "numeric": 70,
+          "provenance": "source",
           "calculation": null
         },
         "hit": {
-          "status": "unknown",
-          "display": null
+          "status": "confirmed",
+          "display": "D"
         },
         "block": {
-          "status": "unknown",
-          "display": null
+          "status": "confirmed",
+          "display": "-16",
+          "numeric": -16
         }
       },
       "notes": [
         "upstreamInput: 214K",
         "Source inventory: archive/staging/sf6-frame-data/raw/cviper.json#cviper__214k",
-        "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence."
+        "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence.",
+        "upstreamName: Focus Force (Lv.1)",
+        "第16段階: 以前のheld理由を解消。第16段階ユーザー指定: Focus Force Lv.1、最短ホールド（非チャージ/19F以内）。自動反撃・Lv.2/3を選ばない。発生は原典の固定複合表記を加算せず表示。",
+        "sourceNotation: {\"chara\":\"C.Viper\",\"input\":\"214K\",\"startup\":\"13+10\",\"total\":\"70\",\"hitAdv\":\"KD +24\",\"blockAdv\":\"<span style=\\\"color: #b70c0b;\\\">'''-16'''</span>\",\"notes\":\"Lv.1 version when uncharged or when button is held up to 19f; can hold button longer to charge to a stronger version (20f Lv.2 / 59f Lv.3); 1-hit armor frames cover the full body, ending immediately if button is released after frame 13; absorbing a strike results in an automatic counter-attack with 10f startup (comes out on frame 14 at the earliest); absorbing an attack early in the armor frames makes it possible for the counter-attack to be blocked; C. Viper incurs only 7f armor hitstop from absorbing a strike; armor can absorb projectiles but does not perform counter-attack (C. Viper incurs 10f projectile hitstop during armor); cancelable into Forward Dash from frame 12 until button is released (not possible after absorbing a strike); C. Viper is in a Punish Counter state for entire duration (including Forward Dash cancel); 2f extra knockdown advantage on Punish Counter; only the first hit gains the bonus damage from a Counter-hit/Punish Counter; -17 on Punish Counter if only the first hit of counter-attack reaches opponent (e.g. absorbing a ranged Dhalsim poke); Focus + Dash can be used to absorb projectiles when Drive gauge is too low for Parry; can be used against Drive Impact while in Burnout (but armor starts too late to work in most DI-cancel blockstrings)\"}",
+        "rawSource: archive/staging/sf6-frame-data/raw/cviper.json#/moves/5"
       ],
       "source": {
-        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6",
-        "retrievedAt": "2026-11-01T00:01:59.250Z",
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data",
+        "retrievedAt": "2026-11-05T09:20:26.117Z",
         "gameVersion": "UNVERIFIED",
         "kind": "community",
         "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
         "license": "CC-BY-SA-4.0",
         "verification": "unverified"
+      },
+      "representativeCondition": {
+        "condition": "第16段階ユーザー指定: Focus Force Lv.1、最短ホールド（非チャージ/19F以内）。自動反撃・Lv.2/3を選ばない。発生は原典の固定複合表記を加算せず表示。",
+        "rawRef": "archive/staging/sf6-frame-data/raw/cviper.json#/moves/5",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json#/data/cargoquery/5/title"
       }
     },
     {
       "adoption": {
-        "status": "held",
-        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+        "status": "accepted",
+        "basis": "第16段階ユーザー指定: Focus Force Lv.1、最短ホールド（非チャージ/19F以内）。自動反撃・Lv.2/3を選ばない。発生は原典の固定複合表記を加算せず表示。"
       },
       "id": "cviper__held_special_214_K_OD",
       "name": "OD Focus Force (Lv.1)",
@@ -1406,42 +1417,53 @@
         "strength": "OD"
       },
       "variant": {
-        "kind": "conditional",
-        "condition": "Original source input retained; normal-state applicability/performance pending."
+        "kind": "base",
+        "condition": null
       },
       "frames": {
         "startup": {
-          "status": "unknown",
-          "display": null
+          "status": "confirmed",
+          "display": "10+10"
         },
         "total": {
-          "status": "unknown",
-          "display": null,
-          "provenance": null,
+          "status": "confirmed",
+          "display": "67",
+          "numeric": 67,
+          "provenance": "source",
           "calculation": null
         },
         "hit": {
-          "status": "unknown",
-          "display": null
+          "status": "confirmed",
+          "display": "D"
         },
         "block": {
-          "status": "unknown",
-          "display": null
+          "status": "confirmed",
+          "display": "-16",
+          "numeric": -16
         }
       },
       "notes": [
         "upstreamInput: 214KK",
         "Source inventory: archive/staging/sf6-frame-data/raw/cviper.json#cviper__214kk",
-        "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence."
+        "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence.",
+        "upstreamName: OD Focus Force (Lv.1)",
+        "第16段階: 以前のheld理由を解消。第16段階ユーザー指定: Focus Force Lv.1、最短ホールド（非チャージ/19F以内）。自動反撃・Lv.2/3を選ばない。発生は原典の固定複合表記を加算せず表示。",
+        "sourceNotation: {\"chara\":\"C.Viper\",\"input\":\"214KK\",\"startup\":\"10+10\",\"total\":\"67\",\"hitAdv\":\"KD +24\",\"blockAdv\":\"<span style=\\\"color: #b70c0b;\\\">'''-16'''</span>\",\"notes\":\"Lv.1 version when uncharged or when button is held up to 19f; can hold button longer to charge to a stronger version (20f Lv.2 / 57f Lv.3); 1-hit armor frames cover the full body, ending immediately if button is released after frame 10; absorbing a strike results in an automatic counter-attack with 10f startup (comes out on frame 11 at the earliest); absorbing an attack early in the armor frames makes it possible for the counter-attack to be blocked; C. Viper incurs only 7f armor hitstop from absorbing a strike; armor can absorb projectiles but does not perform counter-attack (C. Viper incurs 10f projectile hitstop during armor); cancelable into Forward Dash from frame 9 until button is released (not possible after absorbing a strike); C. Viper is in a Punish Counter state for entire duration (including Forward Dash cancel); 2f extra knockdown advantage on Punish Counter; only the first hit gains the bonus damage from a Counter-hit/Punish Counter; -17 on Punish Counter if only the first hit of counter-attack reaches opponent (e.g. absorbing a ranged Dhalsim poke)\"}",
+        "rawSource: archive/staging/sf6-frame-data/raw/cviper.json#/moves/6"
       ],
       "source": {
-        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6",
-        "retrievedAt": "2026-11-01T00:01:59.250Z",
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data",
+        "retrievedAt": "2026-11-05T09:20:26.117Z",
         "gameVersion": "UNVERIFIED",
         "kind": "community",
         "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
         "license": "CC-BY-SA-4.0",
         "verification": "unverified"
+      },
+      "representativeCondition": {
+        "condition": "第16段階ユーザー指定: Focus Force Lv.1、最短ホールド（非チャージ/19F以内）。自動反撃・Lv.2/3を選ばない。発生は原典の固定複合表記を加算せず表示。",
+        "rawRef": "archive/staging/sf6-frame-data/raw/cviper.json#/moves/6",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json#/data/cargoquery/6/title"
       }
     },
     {
@@ -2342,6 +2364,216 @@
       "strengthExpansion": {
         "sourceMoveId": "cviper__special_623_P_none",
         "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      },
+      "id": "cviper__held_special_214_K_none__strength_L",
+      "name": "Focus Force (Lv.1)",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "13+10"
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "70",
+          "numeric": 70,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-16",
+          "numeric": -16
+        }
+      },
+      "notes": [
+        "upstreamInput: 214K",
+        "Source inventory: archive/staging/sf6-frame-data/raw/cviper.json#cviper__214k",
+        "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence.",
+        "upstreamName: Focus Force (Lv.1)",
+        "第16段階: 以前のheld理由を解消。第16段階ユーザー指定: Focus Force Lv.1、最短ホールド（非チャージ/19F以内）。自動反撃・Lv.2/3を選ばない。発生は原典の固定複合表記を加算せず表示。",
+        "sourceNotation: {\"chara\":\"C.Viper\",\"input\":\"214K\",\"startup\":\"13+10\",\"total\":\"70\",\"hitAdv\":\"KD +24\",\"blockAdv\":\"<span style=\\\"color: #b70c0b;\\\">'''-16'''</span>\",\"notes\":\"Lv.1 version when uncharged or when button is held up to 19f; can hold button longer to charge to a stronger version (20f Lv.2 / 59f Lv.3); 1-hit armor frames cover the full body, ending immediately if button is released after frame 13; absorbing a strike results in an automatic counter-attack with 10f startup (comes out on frame 14 at the earliest); absorbing an attack early in the armor frames makes it possible for the counter-attack to be blocked; C. Viper incurs only 7f armor hitstop from absorbing a strike; armor can absorb projectiles but does not perform counter-attack (C. Viper incurs 10f projectile hitstop during armor); cancelable into Forward Dash from frame 12 until button is released (not possible after absorbing a strike); C. Viper is in a Punish Counter state for entire duration (including Forward Dash cancel); 2f extra knockdown advantage on Punish Counter; only the first hit gains the bonus damage from a Counter-hit/Punish Counter; -17 on Punish Counter if only the first hit of counter-attack reaches opponent (e.g. absorbing a ranged Dhalsim poke); Focus + Dash can be used to absorb projectiles when Drive gauge is too low for Parry; can be used against Drive Impact while in Burnout (but armor starts too late to work in most DI-cancel blockstrings)\"}",
+        "rawSource: archive/staging/sf6-frame-data/raw/cviper.json#/moves/5",
+        "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。",
+        "strengthSourceMoveId: cviper__held_special_214_K_none"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data",
+        "retrievedAt": "2026-11-05T09:20:26.117Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "strengthExpansion": {
+        "sourceMoveId": "cviper__held_special_214_K_none",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      },
+      "representativeCondition": {
+        "condition": "第16段階ユーザー指定: Focus Force Lv.1、最短ホールド（非チャージ/19F以内）。自動反撃・Lv.2/3を選ばない。発生は原典の固定複合表記を加算せず表示。",
+        "rawRef": "archive/staging/sf6-frame-data/raw/cviper.json#/moves/5",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json#/data/cargoquery/5/title"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      },
+      "id": "cviper__held_special_214_K_none__strength_M",
+      "name": "Focus Force (Lv.1)",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "13+10"
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "70",
+          "numeric": 70,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-16",
+          "numeric": -16
+        }
+      },
+      "notes": [
+        "upstreamInput: 214K",
+        "Source inventory: archive/staging/sf6-frame-data/raw/cviper.json#cviper__214k",
+        "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence.",
+        "upstreamName: Focus Force (Lv.1)",
+        "第16段階: 以前のheld理由を解消。第16段階ユーザー指定: Focus Force Lv.1、最短ホールド（非チャージ/19F以内）。自動反撃・Lv.2/3を選ばない。発生は原典の固定複合表記を加算せず表示。",
+        "sourceNotation: {\"chara\":\"C.Viper\",\"input\":\"214K\",\"startup\":\"13+10\",\"total\":\"70\",\"hitAdv\":\"KD +24\",\"blockAdv\":\"<span style=\\\"color: #b70c0b;\\\">'''-16'''</span>\",\"notes\":\"Lv.1 version when uncharged or when button is held up to 19f; can hold button longer to charge to a stronger version (20f Lv.2 / 59f Lv.3); 1-hit armor frames cover the full body, ending immediately if button is released after frame 13; absorbing a strike results in an automatic counter-attack with 10f startup (comes out on frame 14 at the earliest); absorbing an attack early in the armor frames makes it possible for the counter-attack to be blocked; C. Viper incurs only 7f armor hitstop from absorbing a strike; armor can absorb projectiles but does not perform counter-attack (C. Viper incurs 10f projectile hitstop during armor); cancelable into Forward Dash from frame 12 until button is released (not possible after absorbing a strike); C. Viper is in a Punish Counter state for entire duration (including Forward Dash cancel); 2f extra knockdown advantage on Punish Counter; only the first hit gains the bonus damage from a Counter-hit/Punish Counter; -17 on Punish Counter if only the first hit of counter-attack reaches opponent (e.g. absorbing a ranged Dhalsim poke); Focus + Dash can be used to absorb projectiles when Drive gauge is too low for Parry; can be used against Drive Impact while in Burnout (but armor starts too late to work in most DI-cancel blockstrings)\"}",
+        "rawSource: archive/staging/sf6-frame-data/raw/cviper.json#/moves/5",
+        "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。",
+        "strengthSourceMoveId: cviper__held_special_214_K_none"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data",
+        "retrievedAt": "2026-11-05T09:20:26.117Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "strengthExpansion": {
+        "sourceMoveId": "cviper__held_special_214_K_none",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      },
+      "representativeCondition": {
+        "condition": "第16段階ユーザー指定: Focus Force Lv.1、最短ホールド（非チャージ/19F以内）。自動反撃・Lv.2/3を選ばない。発生は原典の固定複合表記を加算せず表示。",
+        "rawRef": "archive/staging/sf6-frame-data/raw/cviper.json#/moves/5",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json#/data/cargoquery/5/title"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      },
+      "id": "cviper__held_special_214_K_none__strength_H",
+      "name": "Focus Force (Lv.1)",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "13+10"
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "70",
+          "numeric": 70,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-16",
+          "numeric": -16
+        }
+      },
+      "notes": [
+        "upstreamInput: 214K",
+        "Source inventory: archive/staging/sf6-frame-data/raw/cviper.json#cviper__214k",
+        "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence.",
+        "upstreamName: Focus Force (Lv.1)",
+        "第16段階: 以前のheld理由を解消。第16段階ユーザー指定: Focus Force Lv.1、最短ホールド（非チャージ/19F以内）。自動反撃・Lv.2/3を選ばない。発生は原典の固定複合表記を加算せず表示。",
+        "sourceNotation: {\"chara\":\"C.Viper\",\"input\":\"214K\",\"startup\":\"13+10\",\"total\":\"70\",\"hitAdv\":\"KD +24\",\"blockAdv\":\"<span style=\\\"color: #b70c0b;\\\">'''-16'''</span>\",\"notes\":\"Lv.1 version when uncharged or when button is held up to 19f; can hold button longer to charge to a stronger version (20f Lv.2 / 59f Lv.3); 1-hit armor frames cover the full body, ending immediately if button is released after frame 13; absorbing a strike results in an automatic counter-attack with 10f startup (comes out on frame 14 at the earliest); absorbing an attack early in the armor frames makes it possible for the counter-attack to be blocked; C. Viper incurs only 7f armor hitstop from absorbing a strike; armor can absorb projectiles but does not perform counter-attack (C. Viper incurs 10f projectile hitstop during armor); cancelable into Forward Dash from frame 12 until button is released (not possible after absorbing a strike); C. Viper is in a Punish Counter state for entire duration (including Forward Dash cancel); 2f extra knockdown advantage on Punish Counter; only the first hit gains the bonus damage from a Counter-hit/Punish Counter; -17 on Punish Counter if only the first hit of counter-attack reaches opponent (e.g. absorbing a ranged Dhalsim poke); Focus + Dash can be used to absorb projectiles when Drive gauge is too low for Parry; can be used against Drive Impact while in Burnout (but armor starts too late to work in most DI-cancel blockstrings)\"}",
+        "rawSource: archive/staging/sf6-frame-data/raw/cviper.json#/moves/5",
+        "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。",
+        "strengthSourceMoveId: cviper__held_special_214_K_none"
+      ],
+      "source": {
+        "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data",
+        "retrievedAt": "2026-11-05T09:20:26.117Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "community",
+        "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+        "license": "CC-BY-SA-4.0",
+        "verification": "unverified"
+      },
+      "strengthExpansion": {
+        "sourceMoveId": "cviper__held_special_214_K_none",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      },
+      "representativeCondition": {
+        "condition": "第16段階ユーザー指定: Focus Force Lv.1、最短ホールド（非チャージ/19F以内）。自動反撃・Lv.2/3を選ばない。発生は原典の固定複合表記を加算せず表示。",
+        "rawRef": "archive/staging/sf6-frame-data/raw/cviper.json#/moves/5",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json#/data/cargoquery/5/title"
       }
     }
   ]

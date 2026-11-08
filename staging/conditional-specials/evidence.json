@@ -1,0 +1,1783 @@
+{
+  "records": [
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_214_P_H",
+      "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+      "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/1",
+      "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/1/title",
+      "rawRecord": {
+        "active": "9",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": 3.13,
+        "blockstun": 22,
+        "cancel": [
+          "super"
+        ],
+        "category": "special",
+        "characterId": "jamie",
+        "chipDamage": 300,
+        "damage": 1200,
+        "damageText": null,
+        "dmgScaling": null,
+        "driveGauge": {
+          "dealtOnBlock": 4000,
+          "dealtOnHit": 5000,
+          "gain": 2000
+        },
+        "driveRushCancel": null,
+        "hitstop": 15,
+        "hitstun": null,
+        "id": "jamie__214hp",
+        "input": {
+          "numpad": "214HP",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": {
+          "increase": "1",
+          "limit": "10",
+          "start": "1[0 PC]"
+        },
+        "name": {
+          "en": "Swagger Step (DL2)",
+          "ja": null
+        },
+        "notes": {
+          "en": "Damage DL0-DL4: 1080/1140/1200/1260/1320 (Chip: 270/285/300/315/330); has juggle potential; has 6P follow-up during DL4 only; can be spaced to be plus on block; final active frame will only connect as a meaty (subtract 1f for max advantage when used in neutral); sets up a safe jump when connecting with first active frame on grounded opponent",
+          "ja": null
+        },
+        "onBlock": -3,
+        "onHit": 42,
+        "onPerfectParry": -23,
+        "onPunishCounter": 42,
+        "projectileSpeed": null,
+        "properties": [
+          "low",
+          "high"
+        ],
+        "pushback": null,
+        "recovery": 16,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:27.533Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        },
+        "startup": 25,
+        "superGauge": {
+          "onBlock": 500,
+          "onHit": 1000
+        },
+        "totalFrames": 49
+      },
+      "cargoRecord": {
+        "chara": "Jamie",
+        "input": "214HP",
+        "startup": "25",
+        "total": "49",
+        "hitAdv": "KD +42(+50)",
+        "blockAdv": "<span style=\"color: #ff6347;\">-3</span><span style=\"color: #30D5B8;\">'''(+5)'''</span>",
+        "notes": "Damage DL0-DL4: 1080/1140/1200/1260/1320 (Chip: 270/285/300/315/330); has juggle potential; has 6P follow-up during DL4 only; screen shake occurs if blocked on active frames 5-9 when Jamie has advantage; final active frame will only connect as a meaty (can only be up to +4 oB when spaced in neutral); sets up a safe jump when connecting with first active frame on grounded opponents"
+      },
+      "rawFetchedAt": "2026-08-19T04:05:27.533Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.958Z",
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+      "kind": "community",
+      "gameVersion": "UNVERIFIED",
+      "verification": "unverified"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_214_P_L",
+      "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+      "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/2",
+      "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/2/title",
+      "rawRecord": {
+        "active": "9",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": 2.29,
+        "blockstun": 20,
+        "cancel": [
+          "super"
+        ],
+        "category": "special",
+        "characterId": "jamie",
+        "chipDamage": 225,
+        "damage": 900,
+        "damageText": null,
+        "dmgScaling": null,
+        "driveGauge": {
+          "dealtOnBlock": 4000,
+          "dealtOnHit": 5000,
+          "gain": 2000
+        },
+        "driveRushCancel": null,
+        "hitstop": 15,
+        "hitstun": null,
+        "id": "jamie__214lp",
+        "input": {
+          "numpad": "214LP",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": {
+          "increase": "1",
+          "limit": "10",
+          "start": "1"
+        },
+        "name": {
+          "en": "Swagger Step (DL2)",
+          "ja": null
+        },
+        "notes": {
+          "en": "Damage DL0-DL4: 810/855/900/945/990 (Chip: 202/213/225/236/247); has juggle potential; has 6P follow-up during DL4 only; can be spaced for safety (final active frame will only connect as a meaty; subtract 1f for max advantage when used in neutral)",
+          "ja": null
+        },
+        "onBlock": -6,
+        "onHit": 39,
+        "onPerfectParry": -24,
+        "onPunishCounter": 39,
+        "projectileSpeed": null,
+        "properties": [
+          "low",
+          "high"
+        ],
+        "pushback": null,
+        "recovery": 17,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:27.533Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        },
+        "startup": 17,
+        "superGauge": {
+          "onBlock": 500,
+          "onHit": 1000
+        },
+        "totalFrames": 42
+      },
+      "cargoRecord": {
+        "chara": "Jamie",
+        "input": "214LP",
+        "startup": "17",
+        "total": "42",
+        "hitAdv": "KD +39(+47)",
+        "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span><span style=\"color: #32CD32;\">(+2)</span>",
+        "notes": "Damage DL0-DL4: 810/855/900/945/990 (Chip: 202/213/225/236/247); has juggle potential; has 6P follow-up during DL4 only; screen shake occurs if blocked on active frames 8-9 when Jamie has advantage; final active frame will only connect as a meaty (can only be up to +1 oB when spaced in neutral); active frames 5-7 have reduced range to make it easier to achieve advantage on block"
+      },
+      "rawFetchedAt": "2026-08-19T04:05:27.533Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.958Z",
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+      "kind": "community",
+      "gameVersion": "UNVERIFIED",
+      "verification": "unverified"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_214_P_M",
+      "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+      "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/3",
+      "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/3/title",
+      "rawRecord": {
+        "active": "9",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": 2.77,
+        "blockstun": 20,
+        "cancel": [
+          "super"
+        ],
+        "category": "special",
+        "characterId": "jamie",
+        "chipDamage": 250,
+        "damage": 1000,
+        "damageText": null,
+        "dmgScaling": null,
+        "driveGauge": {
+          "dealtOnBlock": 4000,
+          "dealtOnHit": 5000,
+          "gain": 2000
+        },
+        "driveRushCancel": null,
+        "hitstop": 15,
+        "hitstun": null,
+        "id": "jamie__214mp",
+        "input": {
+          "numpad": "214MP",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": {
+          "increase": "1",
+          "limit": "10",
+          "start": "1"
+        },
+        "name": {
+          "en": "Swagger Step (DL2)",
+          "ja": null
+        },
+        "notes": {
+          "en": "Damage DL0-DL4: 900/950/1000/1050/1100 (Chip: 225/237/250/262/275); has juggle potential; has 6P follow-up during DL4 only; can be spaced for safety (final active frame will only connect as a meaty; subtract 1f for max advantage when used in neutral)",
+          "ja": null
+        },
+        "onBlock": -6,
+        "onHit": 39,
+        "onPerfectParry": -24,
+        "onPunishCounter": 39,
+        "projectileSpeed": null,
+        "properties": [
+          "low",
+          "high"
+        ],
+        "pushback": null,
+        "recovery": 17,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:27.533Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        },
+        "startup": 20,
+        "superGauge": {
+          "onBlock": 500,
+          "onHit": 1000
+        },
+        "totalFrames": 45
+      },
+      "cargoRecord": {
+        "chara": "Jamie",
+        "input": "214MP",
+        "startup": "20",
+        "total": "45",
+        "hitAdv": "KD +39(+47)",
+        "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span><span style=\"color: #32CD32;\">(+2)</span>",
+        "notes": "Damage DL0-DL4: 900/950/1000/1050/1100 (Chip: 225/237/250/262/275); has juggle potential; has 6P follow-up during DL4 only; screen shake occurs if blocked on active frames 8-9 when Jamie has advantage; final active frame will only connect as a meaty (can only be up to +1 oB when spaced in neutral); active frames 5-7 have reduced range to make it easier to achieve advantage on block"
+      },
+      "rawFetchedAt": "2026-08-19T04:05:27.533Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.958Z",
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+      "kind": "community",
+      "gameVersion": "UNVERIFIED",
+      "verification": "unverified"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_214_P_OD",
+      "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+      "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/5",
+      "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/4/title",
+      "rawRecord": {
+        "active": "9",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": 3.25,
+        "blockstun": 23,
+        "cancel": [
+          "super"
+        ],
+        "category": "special",
+        "characterId": "jamie",
+        "chipDamage": 275,
+        "damage": 1100,
+        "damageText": null,
+        "dmgScaling": "20% Starter",
+        "driveGauge": {
+          "dealtOnBlock": 4000,
+          "dealtOnHit": 5000,
+          "gain": -20000
+        },
+        "driveRushCancel": null,
+        "hitstop": 15,
+        "hitstun": null,
+        "id": "jamie__214pp",
+        "input": {
+          "numpad": "214PP",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": {
+          "increase": "1",
+          "limit": "10",
+          "start": "1"
+        },
+        "name": {
+          "en": "Swagger Step (DL2)",
+          "ja": null
+        },
+        "notes": {
+          "en": "Damage DL0-DL4: 990/1045/1100/1155/1210 (Chip: 247/261/275/288/302); has juggle potential; has 6P follow-up during DL4 only; can juggle OTG during Tumble state; Punish Counter near corner causes a crouching Wall Splat that puts opponent into limited juggle state while still grounded (can be thrown; strikes cause opponent to become airborne); can be spaced for plus frames (final active frame will only connect as a meaty; subtract 1f for max advantage when used in neutral); SA2 cancel: KD+89(103)/+15",
+          "ja": null
+        },
+        "onBlock": -1,
+        "onHit": 73,
+        "onPerfectParry": -22,
+        "onPunishCounter": 87,
+        "projectileSpeed": null,
+        "properties": [
+          "low",
+          "high"
+        ],
+        "pushback": null,
+        "recovery": 15,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:27.533Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        },
+        "startup": 20,
+        "superGauge": {
+          "onBlock": 500,
+          "onHit": 1000
+        },
+        "totalFrames": 43
+      },
+      "cargoRecord": {
+        "chara": "Jamie",
+        "input": "214PP",
+        "startup": "20",
+        "total": "43",
+        "hitAdv": "KD +73(+81) Tumble",
+        "blockAdv": "<span style=\"color: #ff6347;\">-1</span><span style=\"color: #30D5B8;\">'''(+7)'''</span>",
+        "notes": "Damage DL0-DL4: 990/1045/1100/1155/1210 (Chip: 247/261/275/288/302); has juggle potential; has 6P follow-up during DL4 only; can juggle OTG during Tumble state; Punish Counter near corner causes a crouching Wall Splat that puts opponent into limited juggle state while still grounded (can be thrown; strikes cause opponent to become airborne); screen shake occurs if blocked on active frames 3-9 when Jamie has advantage; final active frame will only connect as a meaty (can only be up to +6 oB when spaced in neutral); SA2 cancel: KD+89(103)/+15"
+      },
+      "rawFetchedAt": "2026-08-19T04:05:27.533Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.958Z",
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+      "kind": "community",
+      "gameVersion": "UNVERIFIED",
+      "verification": "unverified"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_236_K_H",
+      "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+      "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/16",
+      "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/16/title",
+      "rawRecord": {
+        "active": "3(6)2(6)2(6)2(13)2(7)2(15)2",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": 4.737,
+        "blockstun": 82,
+        "cancel": [
+          "super"
+        ],
+        "category": "special",
+        "characterId": "jamie",
+        "chipDamage": 62,
+        "damage": 250,
+        "damageText": "250x6,300 (1800)",
+        "dmgScaling": null,
+        "driveGauge": {
+          "dealtOnBlock": 500,
+          "dealtOnHit": 4000,
+          "gain": 700
+        },
+        "driveRushCancel": null,
+        "hitstop": 2,
+        "hitstun": null,
+        "id": "jamie__236hk",
+        "input": {
+          "numpad": "236HK",
+          "official": null
+        },
+        "invuln": "5-92 Projectile",
+        "juggle": {
+          "increase": "1x7",
+          "limit": "10x6,15",
+          "start": "1 ground / 1x7 air"
+        },
+        "name": {
+          "en": "Bakkai (DL2)",
+          "ja": null
+        },
+        "notes": {
+          "en": "Damage DL2-DL4: 1800/1887/1980 (Chip: 447/468/490); semi-consistent projectile counter at mid-range (except vs. fireballs with low recovery or with smaller extended hurtboxes)",
+          "ja": null
+        },
+        "onBlock": -17,
+        "onHit": 34,
+        "onPerfectParry": -32,
+        "onPunishCounter": 34,
+        "projectileSpeed": null,
+        "properties": [
+          "low",
+          "high",
+          "invincible"
+        ],
+        "pushback": null,
+        "recovery": 32,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:27.533Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        },
+        "startup": 25,
+        "superGauge": {
+          "onBlock": 250,
+          "onHit": 500
+        },
+        "totalFrames": 124
+      },
+      "cargoRecord": {
+        "chara": "Jamie",
+        "input": "236HK",
+        "startup": "25",
+        "total": "124",
+        "hitAdv": "KD +34",
+        "blockAdv": "<span style=\"color: #b70c0b;\">'''-17'''</span>",
+        "notes": "Damage DL2-DL4: 1800/1887/1980 (Chip: 447/468/490); semi-consistent projectile counter at mid-range (except vs. fireballs with low recovery or with smaller extended hurtboxes)"
+      },
+      "rawFetchedAt": "2026-08-19T04:05:27.533Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.958Z",
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+      "kind": "community",
+      "gameVersion": "UNVERIFIED",
+      "verification": "unverified"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_236_P_H",
+      "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+      "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/23",
+      "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/17/title",
+      "rawRecord": {
+        "active": "2",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": 1.982,
+        "blockstun": 20,
+        "cancel": [
+          "super"
+        ],
+        "category": "special",
+        "characterId": "jamie",
+        "chipDamage": 112,
+        "damage": 450,
+        "damageText": null,
+        "dmgScaling": null,
+        "driveGauge": {
+          "dealtOnBlock": 2500,
+          "dealtOnHit": 4000,
+          "gain": 1500
+        },
+        "driveRushCancel": null,
+        "hitstop": 9,
+        "hitstun": 25,
+        "id": "jamie__236hp",
+        "input": {
+          "numpad": "236HP",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": {
+          "increase": "1",
+          "limit": "1",
+          "start": "1"
+        },
+        "name": {
+          "en": "HP Freeflow Strikes 1 (DL2)",
+          "ja": null
+        },
+        "notes": {
+          "en": "Damage DL0-DL3: 405/427/450/472 (Chip: 100/106/112/117); cancelable into Punch follow-up on hit/block/whiff or Kick follow-up on hit/block; whiff cancel into 6P is delayed by 4f compared to hit/block version",
+          "ja": null
+        },
+        "onBlock": -6,
+        "onHit": -1,
+        "onPerfectParry": -24,
+        "onPunishCounter": 3,
+        "projectileSpeed": null,
+        "properties": [
+          "low",
+          "high"
+        ],
+        "pushback": null,
+        "recovery": 24,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:27.533Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        },
+        "startup": 19,
+        "superGauge": {
+          "onBlock": 150,
+          "onHit": 300
+        },
+        "totalFrames": 44
+      },
+      "cargoRecord": {
+        "chara": "Jamie",
+        "input": "236HP",
+        "startup": "19",
+        "total": "44",
+        "hitAdv": "<span style=\"color: #ff6347;\">-1</span>",
+        "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+        "notes": "Damage DL0-DL3: 405/427/450/472 (Chip: 100/106/112/117); cancelable into Punch follow-up on hit/block/whiff or Kick follow-up on hit/block; whiff cancel into 6P is delayed by 4f compared to hit/block version"
+      },
+      "rawFetchedAt": "2026-08-19T04:05:27.533Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.958Z",
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+      "kind": "community",
+      "gameVersion": "UNVERIFIED",
+      "verification": "unverified"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_236_K_OD",
+      "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+      "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/25",
+      "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/25/title",
+      "rawRecord": {
+        "active": "6(3)2(8)2(3)2(7)2(7)2(12)2(11)2(4)2(4)2",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": 4.09,
+        "blockstun": 96,
+        "cancel": [
+          "super"
+        ],
+        "category": "special",
+        "characterId": "jamie",
+        "chipDamage": 45,
+        "damage": 180,
+        "damageText": "180x9,380 (2000)",
+        "dmgScaling": null,
+        "driveGauge": {
+          "dealtOnBlock": 500,
+          "dealtOnHit": 4000,
+          "gain": -20000
+        },
+        "driveRushCancel": null,
+        "hitstop": 2,
+        "hitstun": null,
+        "id": "jamie__236kk",
+        "input": {
+          "numpad": "236KK",
+          "official": null
+        },
+        "invuln": "3-100 Projectile",
+        "juggle": {
+          "increase": "1x10",
+          "limit": "15x9,20",
+          "start": "3 ground / 1x10 air"
+        },
+        "name": {
+          "en": "Bakkai (DL2)",
+          "ja": null
+        },
+        "notes": {
+          "en": "Damage DL2-DL4: 2000/2100/2200 (Chip: 500/522/545); fairly consistent projectile counter at mid-range (except vs. fireballs with low recovery or with smaller extended hurtboxes); Super cancel occurs on 7th hit; SA2 cancel: +14/+7; -97 if opponent Perfect Parries the 1st hit and then jumps to avoid the rest",
+          "ja": null
+        },
+        "onBlock": -43,
+        "onHit": 23,
+        "onPerfectParry": -64,
+        "onPunishCounter": 23,
+        "projectileSpeed": null,
+        "properties": [
+          "low",
+          "high",
+          "invincible"
+        ],
+        "pushback": null,
+        "recovery": 59,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:27.533Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        },
+        "startup": 18,
+        "superGauge": {
+          "onBlock": 150,
+          "onHit": 300
+        },
+        "totalFrames": 159
+      },
+      "cargoRecord": {
+        "chara": "Jamie",
+        "input": "236KK",
+        "startup": "18",
+        "total": "159",
+        "hitAdv": "KD +23",
+        "blockAdv": "<span style=\"color: #b70c0b;\">'''-43'''</span>",
+        "notes": "Damage DL2-DL4: 2000/2100/2200 (Chip: 500/522/545); fairly consistent projectile counter at mid-range (except vs. fireballs with low recovery or with smaller extended hurtboxes); Super cancel occurs on 7th hit; SA2 cancel: +14/+7; -97 if opponent Perfect Parries the 1st hit and then jumps to avoid the rest"
+      },
+      "rawFetchedAt": "2026-08-19T04:05:27.533Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.958Z",
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+      "kind": "community",
+      "gameVersion": "UNVERIFIED",
+      "verification": "unverified"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_236_K_L",
+      "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+      "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/26",
+      "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/26/title",
+      "rawRecord": {
+        "active": "2(2)3(4)2(11)2",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": 2.714,
+        "blockstun": 38,
+        "cancel": [
+          "super"
+        ],
+        "category": "special",
+        "characterId": "jamie",
+        "chipDamage": 62,
+        "damage": 250,
+        "damageText": "250x3,350 (1400)",
+        "dmgScaling": null,
+        "driveGauge": {
+          "dealtOnBlock": 500,
+          "dealtOnHit": 4000,
+          "gain": 700
+        },
+        "driveRushCancel": null,
+        "hitstop": 2,
+        "hitstun": null,
+        "id": "jamie__236lk",
+        "input": {
+          "numpad": "236LK",
+          "official": null
+        },
+        "invuln": "3-43 Projectile",
+        "juggle": {
+          "increase": "1x4",
+          "limit": "10x3,15",
+          "start": "1 ground / 1x4 air"
+        },
+        "name": {
+          "en": "Bakkai (DL2)",
+          "ja": null
+        },
+        "notes": {
+          "en": "Damage DL2-DL4: 1400/1468/1540 (Chip: 348/365/382); important combo ender for safe jump setups",
+          "ja": null
+        },
+        "onBlock": -12,
+        "onHit": 42,
+        "onPerfectParry": -24,
+        "onPunishCounter": 42,
+        "projectileSpeed": null,
+        "properties": [
+          "low",
+          "high",
+          "invincible"
+        ],
+        "pushback": null,
+        "recovery": 24,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:27.533Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        },
+        "startup": 18,
+        "superGauge": {
+          "onBlock": 250,
+          "onHit": 500
+        },
+        "totalFrames": 67
+      },
+      "cargoRecord": {
+        "chara": "Jamie",
+        "input": "236LK",
+        "startup": "18",
+        "total": "67",
+        "hitAdv": "KD +42",
+        "blockAdv": "<span style=\"color: #b70c0b;\">'''-12'''</span>",
+        "notes": "Damage DL2-DL4: 1400/1468/1540 (Chip: 348/365/382); important combo ender for safe jump setups"
+      },
+      "rawFetchedAt": "2026-08-19T04:05:27.533Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.958Z",
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+      "kind": "community",
+      "gameVersion": "UNVERIFIED",
+      "verification": "unverified"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_236_P_L",
+      "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+      "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/33",
+      "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/27/title",
+      "rawRecord": {
+        "active": "2",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": 1.462,
+        "blockstun": 20,
+        "cancel": [
+          "super"
+        ],
+        "category": "special",
+        "characterId": "jamie",
+        "chipDamage": 87,
+        "damage": 350,
+        "damageText": null,
+        "dmgScaling": null,
+        "driveGauge": {
+          "dealtOnBlock": 2500,
+          "dealtOnHit": 4000,
+          "gain": 1500
+        },
+        "driveRushCancel": null,
+        "hitstop": 9,
+        "hitstun": 25,
+        "id": "jamie__236lp",
+        "input": {
+          "numpad": "236LP",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": {
+          "increase": "1",
+          "limit": "1",
+          "start": "1"
+        },
+        "name": {
+          "en": "LP Freeflow Strikes 1 (DL2)",
+          "ja": null
+        },
+        "notes": {
+          "en": "Damage DL0-DL3: 315/332/350/367 (Chip: 78/82/87/91); cancelable into Punch follow-up on hit/block/whiff or Kick follow-up on hit/block; whiff cancel into 6P is delayed by 4f compared to hit/block version; can be safe if well-spaced",
+          "ja": null
+        },
+        "onBlock": -6,
+        "onHit": -1,
+        "onPerfectParry": -24,
+        "onPunishCounter": 3,
+        "projectileSpeed": null,
+        "properties": [
+          "low",
+          "high"
+        ],
+        "pushback": null,
+        "recovery": 24,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:27.533Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        },
+        "startup": 13,
+        "superGauge": {
+          "onBlock": 150,
+          "onHit": 300
+        },
+        "totalFrames": 38
+      },
+      "cargoRecord": {
+        "chara": "Jamie",
+        "input": "236LP",
+        "startup": "13",
+        "total": "38",
+        "hitAdv": "<span style=\"color: #ff6347;\">-1</span>",
+        "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+        "notes": "Damage DL0-DL3: 315/332/350/367 (Chip: 78/82/87/91); cancelable into Punch follow-up on hit/block/whiff or Kick follow-up on hit/block; whiff cancel into 6P is delayed by 4f compared to hit/block version; can be safe if well-spaced"
+      },
+      "rawFetchedAt": "2026-08-19T04:05:27.533Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.958Z",
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+      "kind": "community",
+      "gameVersion": "UNVERIFIED",
+      "verification": "unverified"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_236_K_M",
+      "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+      "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/35",
+      "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/35/title",
+      "rawRecord": {
+        "active": "2(1)2(3)2(5)2(12)2(5)2",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": 3.908,
+        "blockstun": 53,
+        "cancel": [
+          "super"
+        ],
+        "category": "special",
+        "characterId": "jamie",
+        "chipDamage": 62,
+        "damage": 250,
+        "damageText": "250x5,350 (1600)",
+        "dmgScaling": null,
+        "driveGauge": {
+          "dealtOnBlock": 500,
+          "dealtOnHit": 4000,
+          "gain": 700
+        },
+        "driveRushCancel": null,
+        "hitstop": 2,
+        "hitstun": null,
+        "id": "jamie__236mk",
+        "input": {
+          "numpad": "236MK",
+          "official": null
+        },
+        "invuln": "4-59 Projectile",
+        "juggle": {
+          "increase": "1x6",
+          "limit": "10x5,15",
+          "start": "1 ground / 1x6 air"
+        },
+        "name": {
+          "en": "Bakkai (DL2)",
+          "ja": null
+        },
+        "notes": {
+          "en": "Damage DL2-DL4: 1600/1677/1760 (Chip: 397/416/435)",
+          "ja": null
+        },
+        "onBlock": -16,
+        "onHit": 35,
+        "onPerfectParry": -31,
+        "onPunishCounter": 35,
+        "projectileSpeed": null,
+        "properties": [
+          "low",
+          "high",
+          "invincible"
+        ],
+        "pushback": null,
+        "recovery": 31,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:27.533Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        },
+        "startup": 22,
+        "superGauge": {
+          "onBlock": 250,
+          "onHit": 500
+        },
+        "totalFrames": 90
+      },
+      "cargoRecord": {
+        "chara": "Jamie",
+        "input": "236MK",
+        "startup": "22",
+        "total": "90",
+        "hitAdv": "KD +35",
+        "blockAdv": "<span style=\"color: #b70c0b;\">'''-16'''</span>",
+        "notes": "Damage DL2-DL4: 1600/1677/1760 (Chip: 397/416/435)"
+      },
+      "rawFetchedAt": "2026-08-19T04:05:27.533Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.958Z",
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+      "kind": "community",
+      "gameVersion": "UNVERIFIED",
+      "verification": "unverified"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_236_P_M",
+      "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+      "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/42",
+      "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/36/title",
+      "rawRecord": {
+        "active": "2",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": 1.762,
+        "blockstun": 20,
+        "cancel": [
+          "super"
+        ],
+        "category": "special",
+        "characterId": "jamie",
+        "chipDamage": 100,
+        "damage": 400,
+        "damageText": null,
+        "dmgScaling": null,
+        "driveGauge": {
+          "dealtOnBlock": 2500,
+          "dealtOnHit": 4000,
+          "gain": 1500
+        },
+        "driveRushCancel": null,
+        "hitstop": 9,
+        "hitstun": 25,
+        "id": "jamie__236mp",
+        "input": {
+          "numpad": "236MP",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": {
+          "increase": "1",
+          "limit": "1",
+          "start": "1"
+        },
+        "name": {
+          "en": "MP Freeflow Strikes 1 (DL2)",
+          "ja": null
+        },
+        "notes": {
+          "en": "Damage DL0-DL3: 360/380/400/420 (Chip: 90/95/100/105); cancelable into Punch follow-up on hit/block/whiff or Kick follow-up on hit/block; whiff cancel into 6P is delayed by 4f compared to hit/block version",
+          "ja": null
+        },
+        "onBlock": -6,
+        "onHit": -1,
+        "onPerfectParry": -24,
+        "onPunishCounter": 3,
+        "projectileSpeed": null,
+        "properties": [
+          "low",
+          "high"
+        ],
+        "pushback": null,
+        "recovery": 24,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:27.533Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        },
+        "startup": 16,
+        "superGauge": {
+          "onBlock": 150,
+          "onHit": 300
+        },
+        "totalFrames": 41
+      },
+      "cargoRecord": {
+        "chara": "Jamie",
+        "input": "236MP",
+        "startup": "16",
+        "total": "41",
+        "hitAdv": "<span style=\"color: #ff6347;\">-1</span>",
+        "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span>",
+        "notes": "Damage DL0-DL3: 360/380/400/420 (Chip: 90/95/100/105); cancelable into Punch follow-up on hit/block/whiff or Kick follow-up on hit/block; whiff cancel into 6P is delayed by 4f compared to hit/block version"
+      },
+      "rawFetchedAt": "2026-08-19T04:05:27.533Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.958Z",
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+      "kind": "community",
+      "gameVersion": "UNVERIFIED",
+      "verification": "unverified"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_236_P_OD",
+      "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+      "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/50",
+      "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/44/title",
+      "rawRecord": {
+        "active": "2",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": 1.987,
+        "blockstun": 23,
+        "cancel": [
+          "super"
+        ],
+        "category": "special",
+        "characterId": "jamie",
+        "chipDamage": 112,
+        "damage": 450,
+        "damageText": null,
+        "dmgScaling": "25% StarterCombo (2 hits)(~6P Unscaled)",
+        "driveGauge": {
+          "dealtOnBlock": 2500,
+          "dealtOnHit": 4000,
+          "gain": -20000
+        },
+        "driveRushCancel": null,
+        "hitstop": 9,
+        "hitstun": 27,
+        "id": "jamie__236pp",
+        "input": {
+          "numpad": "236PP",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": {
+          "increase": "1",
+          "limit": "1",
+          "start": "1"
+        },
+        "name": {
+          "en": "OD Freeflow Strikes 1 (DL2)",
+          "ja": null
+        },
+        "notes": {
+          "en": "Damage DL0-DL3: 405/427/450/472 (Chip: 100/106/112/117); cancelable into Punch follow-up on hit/block/whiff or Kick follow-up on hit/block; whiff cancel into 6P is delayed by 5f compared to hit/block version; safe buffer option that allows an easy hitconfirm into follow-ups; all 6P Rekka follow-ups do not count as separate moves for damage scaling (but do apply scaling to other follow-ups after 1st or 3rd rekka); SA2 cancel: +17/+14",
+          "ja": null
+        },
+        "onBlock": -3,
+        "onHit": 1,
+        "onPerfectParry": -24,
+        "onPunishCounter": 5,
+        "projectileSpeed": null,
+        "properties": [
+          "low",
+          "high"
+        ],
+        "pushback": null,
+        "recovery": 24,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:27.533Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        },
+        "startup": 13,
+        "superGauge": {
+          "onBlock": 150,
+          "onHit": 300
+        },
+        "totalFrames": 38
+      },
+      "cargoRecord": {
+        "chara": "Jamie",
+        "input": "236PP",
+        "startup": "13",
+        "total": "38",
+        "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+        "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+        "notes": "Damage DL0-DL3: 405/427/450/472 (Chip: 100/106/112/117); cancelable into Punch follow-up on hit/block/whiff or Kick follow-up on hit/block; whiff cancel into 6P is delayed by 5f compared to hit/block version; safe buffer option that allows an easy hitconfirm into follow-ups; all 6P Rekka follow-ups do not count as separate moves for damage scaling (but do apply scaling to other follow-ups after 1st or 3rd rekka); SA2 cancel: +17/+14"
+      },
+      "rawFetchedAt": "2026-08-19T04:05:27.533Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.958Z",
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+      "kind": "community",
+      "gameVersion": "UNVERIFIED",
+      "verification": "unverified"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_623_K_H",
+      "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+      "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/78",
+      "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/78/title",
+      "rawRecord": {
+        "active": "9",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": 1.247,
+        "blockstun": 17,
+        "cancel": [],
+        "category": "special",
+        "characterId": "jamie",
+        "chipDamage": 350,
+        "damage": 500,
+        "damageText": "500,400,500 (1400)",
+        "dmgScaling": null,
+        "driveGauge": {
+          "dealtOnBlock": 4000,
+          "dealtOnHit": 5000,
+          "gain": 1000
+        },
+        "driveRushCancel": null,
+        "hitstop": 8,
+        "hitstun": null,
+        "id": "jamie__623hk",
+        "input": {
+          "numpad": "623HK",
+          "official": null
+        },
+        "invuln": "1-16 Air, 10-25 Lower Body",
+        "juggle": {
+          "increase": "1,1,5",
+          "limit": "5,10,10",
+          "start": "1"
+        },
+        "name": {
+          "en": "Arrow Kick (DL2)",
+          "ja": null
+        },
+        "notes": {
+          "en": "Damage DL0-DL4: 1260/1330/1400/1470/1540 (Chip: 315/332/350/367/385); on hit, a follow-up occurs with 8f landing recovery (19-42f full invuln, vulnerable to projectiles before invincibility starts); cannot hit cross-up; can juggle into 623KK or SA1 after a high airborne connect in the corner",
+          "ja": null
+        },
+        "onBlock": -43,
+        "onHit": 39,
+        "onPerfectParry": -58,
+        "onPunishCounter": 39,
+        "projectileSpeed": null,
+        "properties": [
+          "low",
+          "high",
+          "invincible"
+        ],
+        "pushback": null,
+        "recovery": 51,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:27.533Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        },
+        "startup": 10,
+        "superGauge": {
+          "onBlock": 250,
+          "onHit": 500
+        },
+        "totalFrames": 69
+      },
+      "cargoRecord": {
+        "chara": "Jamie",
+        "input": "623HK",
+        "startup": "10",
+        "total": "69",
+        "hitAdv": "KD +39",
+        "blockAdv": "<span style=\"color: #b70c0b;\">'''-43'''</span>",
+        "notes": "Damage DL0-DL4: 1260/1330/1400/1470/1540 (Chip: 315/332/350/367/385); on hit, a follow-up occurs with 8f landing recovery (19-42f full invuln, vulnerable to projectiles before invincibility starts); cannot hit cross-up; can juggle into 623KK or SA1 after a high airborne connect in the corner"
+      },
+      "rawFetchedAt": "2026-08-19T04:05:27.533Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.958Z",
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+      "kind": "community",
+      "gameVersion": "UNVERIFIED",
+      "verification": "unverified"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_623_K_OD",
+      "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+      "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/79",
+      "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/79/title",
+      "rawRecord": {
+        "active": "9",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": 1.147,
+        "blockstun": 17,
+        "cancel": [],
+        "category": "special",
+        "characterId": "jamie",
+        "chipDamage": 375,
+        "damage": 500,
+        "damageText": "500,450,550 (1500)",
+        "dmgScaling": null,
+        "driveGauge": {
+          "dealtOnBlock": 4000,
+          "dealtOnHit": null,
+          "gain": -20000
+        },
+        "driveRushCancel": null,
+        "hitstop": 8,
+        "hitstun": null,
+        "id": "jamie__623kk",
+        "input": {
+          "numpad": "623KK",
+          "official": null
+        },
+        "invuln": "1-9 Full, 10-12 Air, 10-21 Lower Body",
+        "juggle": {
+          "increase": "1,1,1",
+          "limit": "10,11,12",
+          "start": "1"
+        },
+        "name": {
+          "en": "Arrow Kick (DL2)",
+          "ja": null
+        },
+        "notes": {
+          "en": "Damage DL0-DL4: 1350/1424/1500/1574/1650 (Chip: 337/356/375/393/412); on hit, a follow-up occurs with 11f landing recovery (15-38f full invuln, vulnerable to projectiles before 2nd hit invincibility starts); Jamie's primary reversal; cannot hit cross-up",
+          "ja": null
+        },
+        "onBlock": -43,
+        "onHit": 40,
+        "onPerfectParry": -58,
+        "onPunishCounter": 40,
+        "projectileSpeed": null,
+        "properties": [
+          "low",
+          "high",
+          "invincible"
+        ],
+        "pushback": null,
+        "recovery": 51,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:27.533Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        },
+        "startup": 6,
+        "superGauge": {
+          "onBlock": 250,
+          "onHit": 500
+        },
+        "totalFrames": 65
+      },
+      "cargoRecord": {
+        "chara": "Jamie",
+        "input": "623KK",
+        "startup": "6",
+        "total": "65",
+        "hitAdv": "KD +40",
+        "blockAdv": "<span style=\"color: #b70c0b;\">'''-43'''</span>",
+        "notes": "Damage DL0-DL4: 1350/1424/1500/1574/1650 (Chip: 337/356/375/393/412); on hit, a follow-up occurs with 11f landing recovery (15-38f full invuln, vulnerable to projectiles before 2nd hit invincibility starts); Jamie's primary reversal; cannot hit cross-up"
+      },
+      "rawFetchedAt": "2026-08-19T04:05:27.533Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.958Z",
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+      "kind": "community",
+      "gameVersion": "UNVERIFIED",
+      "verification": "unverified"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_623_K_L",
+      "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+      "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/80",
+      "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/80/title",
+      "rawRecord": {
+        "active": "10",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": 1.147,
+        "blockstun": 17,
+        "cancel": [],
+        "category": "special",
+        "characterId": "jamie",
+        "chipDamage": 250,
+        "damage": 500,
+        "damageText": "500x2",
+        "dmgScaling": "30% Starter",
+        "driveGauge": {
+          "dealtOnBlock": 4000,
+          "dealtOnHit": 5000,
+          "gain": 1000
+        },
+        "driveRushCancel": null,
+        "hitstop": 8,
+        "hitstun": null,
+        "id": "jamie__623lk",
+        "input": {
+          "numpad": "623LK",
+          "official": null
+        },
+        "invuln": "1-11 Air, 5-22 Lower Body",
+        "juggle": {
+          "increase": "1,5",
+          "limit": "5,10",
+          "start": "1"
+        },
+        "name": {
+          "en": "Arrow Kick (DL2)",
+          "ja": null
+        },
+        "notes": {
+          "en": "Damage DL0-DL4: 900/950/1000/1050/1100 (Chip: 225/237/250/262/275); on hit, a follow-up occurs with 11f landing recovery (16-42f full invuln, vulnerable to projectiles before invincibility starts); cannot hit cross-up; sets up a safe jump in the corner (or midscreen if no back rise); can juggle into 623KK, SA1, or SA3 after a high airborne connect (623KK requires corner positioning)",
+          "ja": null
+        },
+        "onBlock": -44,
+        "onHit": 42,
+        "onPerfectParry": -59,
+        "onPunishCounter": 42,
+        "projectileSpeed": null,
+        "properties": [
+          "low",
+          "high",
+          "invincible"
+        ],
+        "pushback": null,
+        "recovery": 52,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:27.533Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        },
+        "startup": 5,
+        "superGauge": {
+          "onBlock": 250,
+          "onHit": 500
+        },
+        "totalFrames": 66
+      },
+      "cargoRecord": {
+        "chara": "Jamie",
+        "input": "623LK",
+        "startup": "5",
+        "total": "66",
+        "hitAdv": "KD +42",
+        "blockAdv": "<span style=\"color: #b70c0b;\">'''-44'''</span>",
+        "notes": "Damage DL0-DL4: 900/950/1000/1050/1100 (Chip: 225/237/250/262/275); on hit, a follow-up occurs with 11f landing recovery (16-42f full invuln, vulnerable to projectiles before invincibility starts); cannot hit cross-up; sets up a safe jump in the corner (or midscreen if no back rise); can juggle into 623KK, SA1, or SA3 after a high airborne connect (623KK requires corner positioning)"
+      },
+      "rawFetchedAt": "2026-08-19T04:05:27.533Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.958Z",
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+      "kind": "community",
+      "gameVersion": "UNVERIFIED",
+      "verification": "unverified"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_623_K_M",
+      "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+      "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/81",
+      "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/81/title",
+      "rawRecord": {
+        "active": "9",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": 1.197,
+        "blockstun": 17,
+        "cancel": [],
+        "category": "special",
+        "characterId": "jamie",
+        "chipDamage": 300,
+        "damage": 500,
+        "damageText": "500,700 (1200)",
+        "dmgScaling": null,
+        "driveGauge": {
+          "dealtOnBlock": 4000,
+          "dealtOnHit": 5000,
+          "gain": 1000
+        },
+        "driveRushCancel": null,
+        "hitstop": 8,
+        "hitstun": null,
+        "id": "jamie__623mk",
+        "input": {
+          "numpad": "623MK",
+          "official": null
+        },
+        "invuln": "1-14 Air, 8-23 Lower Body",
+        "juggle": {
+          "increase": "1,5",
+          "limit": "5,10",
+          "start": "1"
+        },
+        "name": {
+          "en": "Arrow Kick (DL2)",
+          "ja": null
+        },
+        "notes": {
+          "en": "Damage DL0-DL4: 1080/1140/1200/1260/1320 (Chip: 270/285/300/315/330); on hit, a follow-up occurs with 18f landing recovery (17-40f full invuln, vulnerable to projectiles before invincibility starts); cannot hit cross-up",
+          "ja": null
+        },
+        "onBlock": -43,
+        "onHit": 34,
+        "onPerfectParry": -58,
+        "onPunishCounter": 34,
+        "projectileSpeed": null,
+        "properties": [
+          "low",
+          "high",
+          "invincible"
+        ],
+        "pushback": null,
+        "recovery": 51,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:27.533Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        },
+        "startup": 8,
+        "superGauge": {
+          "onBlock": 250,
+          "onHit": 500
+        },
+        "totalFrames": 67
+      },
+      "cargoRecord": {
+        "chara": "Jamie",
+        "input": "623MK",
+        "startup": "8",
+        "total": "67",
+        "hitAdv": "KD +34",
+        "blockAdv": "<span style=\"color: #b70c0b;\">'''-43'''</span>",
+        "notes": "Damage DL0-DL4: 1080/1140/1200/1260/1320 (Chip: 270/285/300/315/330); on hit, a follow-up occurs with 18f landing recovery (17-40f full invuln, vulnerable to projectiles before invincibility starts); cannot hit cross-up"
+      },
+      "rawFetchedAt": "2026-08-19T04:05:27.533Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.958Z",
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+      "kind": "community",
+      "gameVersion": "UNVERIFIED",
+      "verification": "unverified"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_63214_K_OD",
+      "condition": "第16段階ユーザー指定: 酔いLv.3のTenshinを代表条件に固定。",
+      "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/82",
+      "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/83/title",
+      "rawRecord": {
+        "active": "2",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": 0.96,
+        "blockstun": null,
+        "cancel": [],
+        "category": "special",
+        "characterId": "jamie",
+        "chipDamage": null,
+        "damage": 682,
+        "damageText": null,
+        "dmgScaling": "30% Starter",
+        "driveGauge": {
+          "dealtOnBlock": null,
+          "dealtOnHit": 2500,
+          "gain": -20000
+        },
+        "driveRushCancel": null,
+        "hitstop": null,
+        "hitstun": null,
+        "id": "jamie__63214kk",
+        "input": {
+          "numpad": "63214KK",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": {
+          "increase": "0",
+          "limit": null,
+          "start": "0"
+        },
+        "name": {
+          "en": "Tenshin (DL3)",
+          "ja": null
+        },
+        "notes": {
+          "en": "Damage DL3-DL4: 682/715; cannot be canceled into from normals; Jamie is +28 before crumpled opponent goes airborne into a free juggle state; leaves enough frame advantage to dash or Drive Rush into a grounded combo; does not benefit from Counter/Punish Counter bonus frame advantage; Range: 0.96",
+          "ja": null
+        },
+        "onBlock": null,
+        "onHit": 86,
+        "onPerfectParry": null,
+        "onPunishCounter": 86,
+        "projectileSpeed": null,
+        "properties": [
+          "throw"
+        ],
+        "pushback": null,
+        "recovery": 52,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:27.533Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        },
+        "startup": 8,
+        "superGauge": {
+          "onBlock": null,
+          "onHit": 1000
+        },
+        "totalFrames": 61
+      },
+      "cargoRecord": {
+        "chara": "Jamie",
+        "input": "63214KK",
+        "startup": "8",
+        "total": "61",
+        "hitAdv": "HKD +86 Crumple",
+        "blockAdv": "-",
+        "notes": "Damage DL3-DL4: 682/715; cannot be canceled into from normals; Jamie is <span style=\"color: #30D5B8;\">'''+28'''</span> before crumpled opponent goes airborne into a free juggle state; leaves enough frame advantage to dash or Drive Rush into a grounded combo; does not benefit from Counter/Punish Counter bonus frame advantage; Range: 0.96"
+      },
+      "rawFetchedAt": "2026-08-19T04:05:27.533Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.958Z",
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+      "kind": "community",
+      "gameVersion": "UNVERIFIED",
+      "verification": "unverified"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_63214_K_none",
+      "condition": "第16段階ユーザー指定: 酔いLv.3のTenshinを代表条件に固定。",
+      "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/83",
+      "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/82/title",
+      "rawRecord": {
+        "active": "2",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": null,
+        "attackRange": 0.96,
+        "blockstun": null,
+        "cancel": [],
+        "category": "special",
+        "characterId": "jamie",
+        "chipDamage": null,
+        "damage": 0,
+        "damageText": null,
+        "dmgScaling": "20% Starter (3rd hit); 20% Immediate",
+        "driveGauge": null,
+        "driveRushCancel": null,
+        "hitstop": null,
+        "hitstun": 59,
+        "id": "jamie__63214k",
+        "input": {
+          "numpad": "63214K",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": {
+          "increase": "1",
+          "limit": null,
+          "start": null
+        },
+        "name": {
+          "en": "Tenshin (DL3)",
+          "ja": null
+        },
+        "notes": {
+          "en": "Cannot be canceled into from normals; leaves opponent standing on hit for a grounded combo; does not benefit from Counter/Punish Counter bonus frame advantage; starter scaling is applied to the 3rd hit of the combo, while immediate scaling applies if Tenshin is comboed into (e.g. after Stun, PC Drive Impact, or corner PC 214PP)); Range: 0.96",
+          "ja": null
+        },
+        "onBlock": null,
+        "onHit": 8,
+        "onPerfectParry": null,
+        "onPunishCounter": 8,
+        "projectileSpeed": null,
+        "properties": [
+          "throw"
+        ],
+        "pushback": null,
+        "recovery": 52,
+        "source": {
+          "fetchedAt": "2026-08-19T04:05:27.533Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+        },
+        "startup": 8,
+        "superGauge": {
+          "onBlock": null,
+          "onHit": 1000
+        },
+        "totalFrames": 61
+      },
+      "cargoRecord": {
+        "chara": "Jamie",
+        "input": "63214K",
+        "startup": "8",
+        "total": "61",
+        "hitAdv": "<span style=\"color: #30D5B8;\">'''+8'''</span>",
+        "blockAdv": "-",
+        "notes": "Cannot be canceled into from normals; leaves opponent standing on hit for a grounded combo; does not benefit from Counter/Punish Counter bonus frame advantage; starter scaling is applied to the 3rd hit of the combo, while immediate scaling applies if Tenshin is comboed into (e.g. after Stun, PC Drive Impact, or corner PC 214PP)); Range: 0.96"
+      },
+      "rawFetchedAt": "2026-08-19T04:05:27.533Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.958Z",
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+      "kind": "community",
+      "gameVersion": "UNVERIFIED",
+      "verification": "unverified"
+    },
+    {
+      "characterId": "cviper",
+      "moveId": "cviper__held_special_214_K_none",
+      "condition": "第16段階ユーザー指定: Focus Force Lv.1、最短ホールド（非チャージ/19F以内）。自動反撃・Lv.2/3を選ばない。発生は原典の固定複合表記を加算せず表示。",
+      "rawRef": "archive/staging/sf6-frame-data/raw/cviper.json#/moves/5",
+      "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json#/data/cargoquery/5/title",
+      "rawRecord": {
+        "active": "4(4)4",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": "6-13(19)",
+        "attackRange": 2.42,
+        "blockstun": 21,
+        "cancel": [
+          "dash"
+        ],
+        "category": "special",
+        "characterId": "cviper",
+        "chipDamage": 125,
+        "damage": 500,
+        "damageText": "500x2 (1000)",
+        "dmgScaling": "50% Starter",
+        "driveGauge": {
+          "dealtOnBlock": 2000,
+          "dealtOnHit": 3000,
+          "gain": 2000
+        },
+        "driveRushCancel": null,
+        "hitstop": 10,
+        "hitstun": 27,
+        "id": "cviper__214k",
+        "input": {
+          "numpad": "214K",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": {
+          "increase": "1,1",
+          "limit": "3,4",
+          "start": "1,1"
+        },
+        "name": {
+          "en": "Focus Force (Lv.1)",
+          "ja": null
+        },
+        "notes": {
+          "en": "Lv.1 version when uncharged or when button is held up to 19f; can hold button longer to charge to a stronger version (20f Lv.2 / 59f Lv.3); 1-hit armor frames cover the full body, ending immediately if button is released after frame 13; absorbing a strike results in an automatic counter-attack with 10f startup (comes out on frame 14 at the earliest); absorbing an attack early in the armor frames makes it possible for the counter-attack to be blocked; C. Viper incurs only 7f armor hitstop from absorbing a strike; armor can absorb projectiles but does not perform counter-attack (C. Viper incurs 10f projectile hitstop during armor); cancelable into Forward Dash from frame 12 until button is released (not possible after absorbing a strike); C. Viper is in a Punish Counter state for entire duration (including Forward Dash cancel); 2f extra knockdown advantage on Punish Counter; only the first hit gains the bonus damage from a Counter-hit/Punish Counter; -17 on Punish Counter if only the first hit of counter-attack reaches opponent (e.g. absorbing a ranged Dhalsim poke); Focus + Dash can be used to absorb projectiles when Drive gauge is too low for Parry; can be used against Drive Impact while in Burnout (but armor starts too late to work in most DI-cancel blockstrings)",
+          "ja": null
+        },
+        "onBlock": -16,
+        "onHit": 24,
+        "onPerfectParry": -38,
+        "onPunishCounter": 26,
+        "projectileSpeed": null,
+        "properties": [
+          "low",
+          "high",
+          "armor"
+        ],
+        "pushback": null,
+        "recovery": 36,
+        "source": {
+          "fetchedAt": "2026-11-01T00:02:00.758Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data"
+        },
+        "startup": 13,
+        "superGauge": {
+          "onBlock": 250,
+          "onHit": 500
+        },
+        "totalFrames": 70
+      },
+      "cargoRecord": {
+        "chara": "C.Viper",
+        "input": "214K",
+        "startup": "13+10",
+        "total": "70",
+        "hitAdv": "KD +24",
+        "blockAdv": "<span style=\"color: #b70c0b;\">'''-16'''</span>",
+        "notes": "Lv.1 version when uncharged or when button is held up to 19f; can hold button longer to charge to a stronger version (20f Lv.2 / 59f Lv.3); 1-hit armor frames cover the full body, ending immediately if button is released after frame 13; absorbing a strike results in an automatic counter-attack with 10f startup (comes out on frame 14 at the earliest); absorbing an attack early in the armor frames makes it possible for the counter-attack to be blocked; C. Viper incurs only 7f armor hitstop from absorbing a strike; armor can absorb projectiles but does not perform counter-attack (C. Viper incurs 10f projectile hitstop during armor); cancelable into Forward Dash from frame 12 until button is released (not possible after absorbing a strike); C. Viper is in a Punish Counter state for entire duration (including Forward Dash cancel); 2f extra knockdown advantage on Punish Counter; only the first hit gains the bonus damage from a Counter-hit/Punish Counter; -17 on Punish Counter if only the first hit of counter-attack reaches opponent (e.g. absorbing a ranged Dhalsim poke); Focus + Dash can be used to absorb projectiles when Drive gauge is too low for Parry; can be used against Drive Impact while in Burnout (but armor starts too late to work in most DI-cancel blockstrings)"
+      },
+      "rawFetchedAt": "2026-11-01T00:02:00.758Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.117Z",
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data",
+      "kind": "community",
+      "gameVersion": "UNVERIFIED",
+      "verification": "unverified"
+    },
+    {
+      "characterId": "cviper",
+      "moveId": "cviper__held_special_214_K_OD",
+      "condition": "第16段階ユーザー指定: Focus Force Lv.1、最短ホールド（非チャージ/19F以内）。自動反撃・Lv.2/3を選ばない。発生は原典の固定複合表記を加算せず表示。",
+      "rawRef": "archive/staging/sf6-frame-data/raw/cviper.json#/moves/6",
+      "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json#/data/cargoquery/6/title",
+      "rawRecord": {
+        "active": "4(4)4",
+        "afterDriveRush": null,
+        "airborne": null,
+        "aliases": [],
+        "armor": "3-10(19)",
+        "attackRange": 2.42,
+        "blockstun": 21,
+        "cancel": [
+          "dash"
+        ],
+        "category": "special",
+        "characterId": "cviper",
+        "chipDamage": 187,
+        "damage": 750,
+        "damageText": "750x2 (1500)",
+        "dmgScaling": "50% Starter",
+        "driveGauge": {
+          "dealtOnBlock": 2000,
+          "dealtOnHit": 4000,
+          "gain": -20000
+        },
+        "driveRushCancel": null,
+        "hitstop": 10,
+        "hitstun": 27,
+        "id": "cviper__214kk",
+        "input": {
+          "numpad": "214KK",
+          "official": null
+        },
+        "invuln": null,
+        "juggle": {
+          "increase": "1,1",
+          "limit": "3,4",
+          "start": "1,1"
+        },
+        "name": {
+          "en": "OD Focus Force (Lv.1)",
+          "ja": null
+        },
+        "notes": {
+          "en": "Lv.1 version when uncharged or when button is held up to 19f; can hold button longer to charge to a stronger version (20f Lv.2 / 57f Lv.3); 1-hit armor frames cover the full body, ending immediately if button is released after frame 10; absorbing a strike results in an automatic counter-attack with 10f startup (comes out on frame 11 at the earliest); absorbing an attack early in the armor frames makes it possible for the counter-attack to be blocked; C. Viper incurs only 7f armor hitstop from absorbing a strike; armor can absorb projectiles but does not perform counter-attack (C. Viper incurs 10f projectile hitstop during armor); cancelable into Forward Dash from frame 9 until button is released (not possible after absorbing a strike); C. Viper is in a Punish Counter state for entire duration (including Forward Dash cancel); 2f extra knockdown advantage on Punish Counter; only the first hit gains the bonus damage from a Counter-hit/Punish Counter; -17 on Punish Counter if only the first hit of counter-attack reaches opponent (e.g. absorbing a ranged Dhalsim poke)",
+          "ja": null
+        },
+        "onBlock": -16,
+        "onHit": 24,
+        "onPerfectParry": -38,
+        "onPunishCounter": 26,
+        "projectileSpeed": null,
+        "properties": [
+          "low",
+          "high",
+          "armor"
+        ],
+        "pushback": null,
+        "recovery": 36,
+        "source": {
+          "fetchedAt": "2026-11-01T00:02:00.758Z",
+          "license": "CC-BY-SA",
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data"
+        },
+        "startup": 10,
+        "superGauge": {
+          "onBlock": 250,
+          "onHit": 500
+        },
+        "totalFrames": 67
+      },
+      "cargoRecord": {
+        "chara": "C.Viper",
+        "input": "214KK",
+        "startup": "10+10",
+        "total": "67",
+        "hitAdv": "KD +24",
+        "blockAdv": "<span style=\"color: #b70c0b;\">'''-16'''</span>",
+        "notes": "Lv.1 version when uncharged or when button is held up to 19f; can hold button longer to charge to a stronger version (20f Lv.2 / 57f Lv.3); 1-hit armor frames cover the full body, ending immediately if button is released after frame 10; absorbing a strike results in an automatic counter-attack with 10f startup (comes out on frame 11 at the earliest); absorbing an attack early in the armor frames makes it possible for the counter-attack to be blocked; C. Viper incurs only 7f armor hitstop from absorbing a strike; armor can absorb projectiles but does not perform counter-attack (C. Viper incurs 10f projectile hitstop during armor); cancelable into Forward Dash from frame 9 until button is released (not possible after absorbing a strike); C. Viper is in a Punish Counter state for entire duration (including Forward Dash cancel); 2f extra knockdown advantage on Punish Counter; only the first hit gains the bonus damage from a Counter-hit/Punish Counter; -17 on Punish Counter if only the first hit of counter-attack reaches opponent (e.g. absorbing a ranged Dhalsim poke)"
+      },
+      "rawFetchedAt": "2026-11-01T00:02:00.758Z",
+      "cargoRetrievedAt": "2026-11-05T09:20:26.117Z",
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data",
+      "kind": "community",
+      "gameVersion": "UNVERIFIED",
+      "verification": "unverified"
+    }
+  ],
+  "liveSourceChecks": [
+    {
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/C._Viper/Frame_data",
+      "result": "Anubis Access Denied; stored Cargo used"
+    }
+  ],
+  "note": "DL0-DL3 damage note uniquely associates Freeflow DL2 rows; DL4 has separate 2-hit description. No live values imported."
+}

@@ -1,5 +1,7 @@
 # データ仕様 v1.0.0
 
+個別の固定代表条件はMove.representativeConditionにcondition/rawRef/cargoRefを持つ。第16段階で採用したジェイミー・Focus Forceに限り、元のconditional/held理由を注記と監査のbeforeレコードへ保持してbase/acceptedへ変更する。Focus Force Lv.1の発生は原典の固定複合表記13+10/10+10をconfirmed.displayに保存し、numericは付与しない。合計値やraw前半値への変換はしない。他の複合・条件値へ一般化しない。
+
 基本必殺技の共通値展開はstrengthExpansion `{sourceMoveId, basis}`を持つ追加レコードとして保存する。元のstrength noneレコードは変更しない。採用済み基本版に限ってL/M/Hへフレーム・出典を複製し、明示強度レコードがある強度は生成しない。ODは入力候補とデータレコードを区別し、共通値からOD性能を生成しない。採用ルールの正本はADOPTION_RULES、再生成の有効化はadoption-decisionsのcommonSpecialStrengths.enabled。
 
 共通タブからの質問はspecial入力のincludeSuperArts=trueで表現し、キーはcommand:motion:button:strength。保存済みSA入力のレベルは維持し、共通質問の検索時にのみレベルを指定せず基本必殺技/SAを照合する。原典や288採用レコードの複製・更新は行わない。

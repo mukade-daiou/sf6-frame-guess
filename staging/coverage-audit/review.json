@@ -8665,7 +8665,7 @@
           "input": "214K",
           "name": "Focus Force (Lv.1)",
           "category": "special",
-          "classification": "held",
+          "classification": "recorded_ui_unsupported",
           "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
           "moveIds": [
             "cviper__held_special_214_K_none"
@@ -8682,7 +8682,7 @@
           "input": "214KK",
           "name": "OD Focus Force (Lv.1)",
           "category": "special",
-          "classification": "held",
+          "classification": "recorded",
           "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
           "moveIds": [
             "cviper__held_special_214_K_OD"
@@ -9899,8 +9899,8 @@
           "input": "22PP",
           "name": "Speedy Maracas",
           "category": "special",
-          "classification": "held",
-          "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
+          "classification": "out_of_scope",
+          "reason": "Explicit individual adoption exclusion (Speedy Maracas).",
           "moveIds": [
             "dee_jay__held_special_22_P_OD"
           ],
@@ -9916,8 +9916,8 @@
           "input": "22PP",
           "name": "Speedy Maracas (2+ Bars)",
           "category": "special",
-          "classification": "held",
-          "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
+          "classification": "out_of_scope",
+          "reason": "Explicit individual adoption exclusion (Speedy Maracas).",
           "moveIds": [
             "dee_jay__held_special_22_P_OD"
           ],
@@ -18217,7 +18217,7 @@
           "input": "214HP",
           "name": "Swagger Step (DL2)",
           "category": "special",
-          "classification": "held",
+          "classification": "recorded",
           "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
           "moveIds": [
             "jamie__held_special_214_P_H"
@@ -18234,7 +18234,7 @@
           "input": "214LP",
           "name": "Swagger Step (DL2)",
           "category": "special",
-          "classification": "held",
+          "classification": "recorded",
           "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
           "moveIds": [
             "jamie__held_special_214_P_L"
@@ -18251,7 +18251,7 @@
           "input": "214MP",
           "name": "Swagger Step (DL2)",
           "category": "special",
-          "classification": "held",
+          "classification": "recorded",
           "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
           "moveIds": [
             "jamie__held_special_214_P_M"
@@ -18283,7 +18283,7 @@
           "input": "214PP",
           "name": "Swagger Step (DL2)",
           "category": "special",
-          "classification": "held",
+          "classification": "recorded",
           "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
           "moveIds": [
             "jamie__held_special_214_P_OD"
@@ -18452,7 +18452,7 @@
           "input": "236HK",
           "name": "Bakkai (DL2)",
           "category": "special",
-          "classification": "held",
+          "classification": "recorded",
           "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
           "moveIds": [
             "jamie__held_special_236_K_H"
@@ -18559,7 +18559,7 @@
           "input": "236HP",
           "name": "HP Freeflow Strikes 1 (DL2)",
           "category": "special",
-          "classification": "held",
+          "classification": "recorded",
           "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
           "moveIds": [
             "jamie__held_special_236_P_H"
@@ -18576,11 +18576,9 @@
           "input": "236HP",
           "name": "HP Freeflow Strikes 1 (DL4)",
           "category": "special",
-          "classification": "held",
-          "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
-          "moveIds": [
-            "jamie__held_special_236_P_H"
-          ],
+          "classification": "out_of_scope",
+          "reason": "Explicit stock/install/backturn/projectile/other prerequisite; original condition retained.",
+          "moveIds": [],
           "source": {
             "fetchedAt": "2026-08-19T04:05:27.533Z",
             "license": "CC-BY-SA",
@@ -18593,7 +18591,7 @@
           "input": "236KK",
           "name": "Bakkai (DL2)",
           "category": "special",
-          "classification": "held",
+          "classification": "recorded",
           "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
           "moveIds": [
             "jamie__held_special_236_K_OD"
@@ -18610,7 +18608,7 @@
           "input": "236LK",
           "name": "Bakkai (DL2)",
           "category": "special",
-          "classification": "held",
+          "classification": "recorded",
           "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
           "moveIds": [
             "jamie__held_special_236_K_L"
@@ -18717,7 +18715,7 @@
           "input": "236LP",
           "name": "LP Freeflow Strikes 1 (DL2)",
           "category": "special",
-          "classification": "held",
+          "classification": "recorded",
           "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
           "moveIds": [
             "jamie__held_special_236_P_L"
@@ -18734,11 +18732,9 @@
           "input": "236LP",
           "name": "LP Freeflow Strikes 1 (DL4)",
           "category": "special",
-          "classification": "held",
-          "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
-          "moveIds": [
-            "jamie__held_special_236_P_L"
-          ],
+          "classification": "out_of_scope",
+          "reason": "Explicit stock/install/backturn/projectile/other prerequisite; original condition retained.",
+          "moveIds": [],
           "source": {
             "fetchedAt": "2026-08-19T04:05:27.533Z",
             "license": "CC-BY-SA",
@@ -18751,7 +18747,7 @@
           "input": "236MK",
           "name": "Bakkai (DL2)",
           "category": "special",
-          "classification": "held",
+          "classification": "recorded",
           "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
           "moveIds": [
             "jamie__held_special_236_K_M"
@@ -18858,7 +18854,7 @@
           "input": "236MP",
           "name": "MP Freeflow Strikes 1 (DL2)",
           "category": "special",
-          "classification": "held",
+          "classification": "recorded",
           "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
           "moveIds": [
             "jamie__held_special_236_P_M"
@@ -18875,11 +18871,9 @@
           "input": "236MP",
           "name": "MP Freeflow Strikes 1 (DL4)",
           "category": "special",
-          "classification": "held",
-          "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
-          "moveIds": [
-            "jamie__held_special_236_P_M"
-          ],
+          "classification": "out_of_scope",
+          "reason": "Explicit stock/install/backturn/projectile/other prerequisite; original condition retained.",
+          "moveIds": [],
           "source": {
             "fetchedAt": "2026-08-19T04:05:27.533Z",
             "license": "CC-BY-SA",
@@ -18982,7 +18976,7 @@
           "input": "236PP",
           "name": "OD Freeflow Strikes 1 (DL2)",
           "category": "special",
-          "classification": "held",
+          "classification": "recorded",
           "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
           "moveIds": [
             "jamie__held_special_236_P_OD"
@@ -18999,11 +18993,9 @@
           "input": "236PP",
           "name": "OD Freeflow Strikes 1 (DL4)",
           "category": "special",
-          "classification": "held",
-          "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
-          "moveIds": [
-            "jamie__held_special_236_P_OD"
-          ],
+          "classification": "out_of_scope",
+          "reason": "Explicit stock/install/backturn/projectile/other prerequisite; original condition retained.",
+          "moveIds": [],
           "source": {
             "fetchedAt": "2026-08-19T04:05:27.533Z",
             "license": "CC-BY-SA",
@@ -19430,7 +19422,7 @@
           "input": "623HK",
           "name": "Arrow Kick (DL2)",
           "category": "special",
-          "classification": "held",
+          "classification": "recorded",
           "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
           "moveIds": [
             "jamie__held_special_623_K_H"
@@ -19447,7 +19439,7 @@
           "input": "623KK",
           "name": "Arrow Kick (DL2)",
           "category": "special",
-          "classification": "held",
+          "classification": "recorded",
           "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
           "moveIds": [
             "jamie__held_special_623_K_OD"
@@ -19464,7 +19456,7 @@
           "input": "623LK",
           "name": "Arrow Kick (DL2)",
           "category": "special",
-          "classification": "held",
+          "classification": "recorded",
           "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
           "moveIds": [
             "jamie__held_special_623_K_L"
@@ -19481,7 +19473,7 @@
           "input": "623MK",
           "name": "Arrow Kick (DL2)",
           "category": "special",
-          "classification": "held",
+          "classification": "recorded",
           "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
           "moveIds": [
             "jamie__held_special_623_K_M"
@@ -19498,7 +19490,7 @@
           "input": "63214KK",
           "name": "Tenshin (DL3)",
           "category": "special",
-          "classification": "held",
+          "classification": "recorded",
           "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
           "moveIds": [
             "jamie__held_special_63214_K_OD"
@@ -19515,7 +19507,7 @@
           "input": "63214K",
           "name": "Tenshin (DL3)",
           "category": "special",
-          "classification": "held",
+          "classification": "recorded_ui_unsupported",
           "reason": "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.",
           "moveIds": [
             "jamie__held_special_63214_K_none"

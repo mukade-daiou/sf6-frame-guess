@@ -1,5 +1,5 @@
 {
-  "datasetId": "common-special-strengths-2026-11-07-r1",
+  "datasetId": "conditional-specials-2026-11-07-r2",
   "commonSpecialStrengths": {
     "enabled": true,
     "protectionRef": "d11bb6d2616b5a15e182cbc08ef7556e99f3b5d6",
@@ -135,10 +135,7 @@
     },
     {
       "id": "cviper",
-      "heldMoveIds": [
-        "cviper__held_special_214_K_none",
-        "cviper__held_special_214_K_OD"
-      ],
+      "heldMoveIds": [],
       "sourceInventoryComplete": true,
       "candidatePath": "staging/adoption-inputs/cviper.json",
       "basis": "保存済み原典全行を候補・過去の除外判断へ対応付け。未確定の地上入力はheld-source-input規則で保留登録。",
@@ -146,11 +143,11 @@
     },
     {
       "id": "dee_jay",
-      "heldMoveIds": ["dee_jay__held_special_22_P_OD"],
+      "heldMoveIds": [],
       "sourceInventoryComplete": true,
       "candidatePath": "staging/adoption-inputs/dee_jay.json",
       "basis": "保存済み原典全行を候補・過去の除外判断へ対応付け。未確定の地上入力はheld-source-input規則で保留登録。",
-      "excludedMoveIds": []
+      "excludedMoveIds": ["dee_jay__held_special_22_P_OD"]
     },
     {
       "id": "dhalsim",
@@ -202,26 +199,7 @@
     },
     {
       "id": "jamie",
-      "heldMoveIds": [
-        "jamie__held_special_214_P_H",
-        "jamie__held_special_214_P_L",
-        "jamie__held_special_214_P_M",
-        "jamie__held_special_214_P_OD",
-        "jamie__held_special_236_K_H",
-        "jamie__held_special_236_P_H",
-        "jamie__held_special_236_K_OD",
-        "jamie__held_special_236_K_L",
-        "jamie__held_special_236_P_L",
-        "jamie__held_special_236_K_M",
-        "jamie__held_special_236_P_M",
-        "jamie__held_special_236_P_OD",
-        "jamie__held_special_623_K_H",
-        "jamie__held_special_623_K_OD",
-        "jamie__held_special_623_K_L",
-        "jamie__held_special_623_K_M",
-        "jamie__held_special_63214_K_OD",
-        "jamie__held_special_63214_K_none"
-      ],
+      "heldMoveIds": [],
       "sourceInventoryComplete": true,
       "candidatePath": "staging/adoption-inputs/jamie.json",
       "basis": "保存済み原典全行を候補・過去の除外判断へ対応付け。未確定の地上入力はheld-source-input規則で保留登録。",
@@ -356,5 +334,251 @@
     ],
     "distance": "far",
     "basis": "User instructions after stage 14; original records and evidence retained."
+  },
+  "conditionalSpecials": {
+    "protectionRef": "571cea0f69dbc8b816dbd8280cf81d173df3b093",
+    "excludedMoveId": "dee_jay__held_special_22_P_OD",
+    "selections": [
+      {
+        "characterId": "jamie",
+        "moveId": "jamie__held_special_214_P_H",
+        "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+        "rawPath": "archive/staging/sf6-frame-data/raw/jamie.json",
+        "rawIndex": 1,
+        "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+        "cargoIndex": 1,
+        "sourceName": "Swagger Step (DL2)",
+        "sourceInput": "214HP",
+        "expectedCargoNotes": "Damage DL0-DL4: 1080/1140/1200/1260/1320 (Chip: 270/285/300/315/330); has juggle potential; has 6P follow-up during DL4 only; screen shake occurs if blocked on active frames 5-9 when Jamie has advantage; final active frame will only connect as a meaty (can only be up to +4 oB when spaced in neutral); sets up a safe jump when connecting with first active frame on grounded opponents"
+      },
+      {
+        "characterId": "jamie",
+        "moveId": "jamie__held_special_214_P_L",
+        "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+        "rawPath": "archive/staging/sf6-frame-data/raw/jamie.json",
+        "rawIndex": 2,
+        "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+        "cargoIndex": 2,
+        "sourceName": "Swagger Step (DL2)",
+        "sourceInput": "214LP",
+        "expectedCargoNotes": "Damage DL0-DL4: 810/855/900/945/990 (Chip: 202/213/225/236/247); has juggle potential; has 6P follow-up during DL4 only; screen shake occurs if blocked on active frames 8-9 when Jamie has advantage; final active frame will only connect as a meaty (can only be up to +1 oB when spaced in neutral); active frames 5-7 have reduced range to make it easier to achieve advantage on block"
+      },
+      {
+        "characterId": "jamie",
+        "moveId": "jamie__held_special_214_P_M",
+        "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+        "rawPath": "archive/staging/sf6-frame-data/raw/jamie.json",
+        "rawIndex": 3,
+        "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+        "cargoIndex": 3,
+        "sourceName": "Swagger Step (DL2)",
+        "sourceInput": "214MP",
+        "expectedCargoNotes": "Damage DL0-DL4: 900/950/1000/1050/1100 (Chip: 225/237/250/262/275); has juggle potential; has 6P follow-up during DL4 only; screen shake occurs if blocked on active frames 8-9 when Jamie has advantage; final active frame will only connect as a meaty (can only be up to +1 oB when spaced in neutral); active frames 5-7 have reduced range to make it easier to achieve advantage on block"
+      },
+      {
+        "characterId": "jamie",
+        "moveId": "jamie__held_special_214_P_OD",
+        "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+        "rawPath": "archive/staging/sf6-frame-data/raw/jamie.json",
+        "rawIndex": 5,
+        "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+        "cargoIndex": 4,
+        "sourceName": "Swagger Step (DL2)",
+        "sourceInput": "214PP",
+        "expectedCargoNotes": "Damage DL0-DL4: 990/1045/1100/1155/1210 (Chip: 247/261/275/288/302); has juggle potential; has 6P follow-up during DL4 only; can juggle OTG during Tumble state; Punish Counter near corner causes a crouching Wall Splat that puts opponent into limited juggle state while still grounded (can be thrown; strikes cause opponent to become airborne); screen shake occurs if blocked on active frames 3-9 when Jamie has advantage; final active frame will only connect as a meaty (can only be up to +6 oB when spaced in neutral); SA2 cancel: KD+89(103)/+15"
+      },
+      {
+        "characterId": "jamie",
+        "moveId": "jamie__held_special_236_K_H",
+        "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+        "rawPath": "archive/staging/sf6-frame-data/raw/jamie.json",
+        "rawIndex": 16,
+        "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+        "cargoIndex": 16,
+        "sourceName": "Bakkai (DL2)",
+        "sourceInput": "236HK",
+        "expectedCargoNotes": "Damage DL2-DL4: 1800/1887/1980 (Chip: 447/468/490); semi-consistent projectile counter at mid-range (except vs. fireballs with low recovery or with smaller extended hurtboxes)"
+      },
+      {
+        "characterId": "jamie",
+        "moveId": "jamie__held_special_236_P_H",
+        "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+        "rawPath": "archive/staging/sf6-frame-data/raw/jamie.json",
+        "rawIndex": 23,
+        "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+        "cargoIndex": 17,
+        "sourceName": "HP Freeflow Strikes 1 (DL2)",
+        "sourceInput": "236HP",
+        "expectedCargoNotes": "Damage DL0-DL3: 405/427/450/472 (Chip: 100/106/112/117); cancelable into Punch follow-up on hit/block/whiff or Kick follow-up on hit/block; whiff cancel into 6P is delayed by 4f compared to hit/block version"
+      },
+      {
+        "characterId": "jamie",
+        "moveId": "jamie__held_special_236_K_OD",
+        "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+        "rawPath": "archive/staging/sf6-frame-data/raw/jamie.json",
+        "rawIndex": 25,
+        "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+        "cargoIndex": 25,
+        "sourceName": "Bakkai (DL2)",
+        "sourceInput": "236KK",
+        "expectedCargoNotes": "Damage DL2-DL4: 2000/2100/2200 (Chip: 500/522/545); fairly consistent projectile counter at mid-range (except vs. fireballs with low recovery or with smaller extended hurtboxes); Super cancel occurs on 7th hit; SA2 cancel: +14/+7; -97 if opponent Perfect Parries the 1st hit and then jumps to avoid the rest"
+      },
+      {
+        "characterId": "jamie",
+        "moveId": "jamie__held_special_236_K_L",
+        "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+        "rawPath": "archive/staging/sf6-frame-data/raw/jamie.json",
+        "rawIndex": 26,
+        "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+        "cargoIndex": 26,
+        "sourceName": "Bakkai (DL2)",
+        "sourceInput": "236LK",
+        "expectedCargoNotes": "Damage DL2-DL4: 1400/1468/1540 (Chip: 348/365/382); important combo ender for safe jump setups"
+      },
+      {
+        "characterId": "jamie",
+        "moveId": "jamie__held_special_236_P_L",
+        "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+        "rawPath": "archive/staging/sf6-frame-data/raw/jamie.json",
+        "rawIndex": 33,
+        "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+        "cargoIndex": 27,
+        "sourceName": "LP Freeflow Strikes 1 (DL2)",
+        "sourceInput": "236LP",
+        "expectedCargoNotes": "Damage DL0-DL3: 315/332/350/367 (Chip: 78/82/87/91); cancelable into Punch follow-up on hit/block/whiff or Kick follow-up on hit/block; whiff cancel into 6P is delayed by 4f compared to hit/block version; can be safe if well-spaced"
+      },
+      {
+        "characterId": "jamie",
+        "moveId": "jamie__held_special_236_K_M",
+        "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+        "rawPath": "archive/staging/sf6-frame-data/raw/jamie.json",
+        "rawIndex": 35,
+        "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+        "cargoIndex": 35,
+        "sourceName": "Bakkai (DL2)",
+        "sourceInput": "236MK",
+        "expectedCargoNotes": "Damage DL2-DL4: 1600/1677/1760 (Chip: 397/416/435)"
+      },
+      {
+        "characterId": "jamie",
+        "moveId": "jamie__held_special_236_P_M",
+        "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+        "rawPath": "archive/staging/sf6-frame-data/raw/jamie.json",
+        "rawIndex": 42,
+        "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+        "cargoIndex": 36,
+        "sourceName": "MP Freeflow Strikes 1 (DL2)",
+        "sourceInput": "236MP",
+        "expectedCargoNotes": "Damage DL0-DL3: 360/380/400/420 (Chip: 90/95/100/105); cancelable into Punch follow-up on hit/block/whiff or Kick follow-up on hit/block; whiff cancel into 6P is delayed by 4f compared to hit/block version"
+      },
+      {
+        "characterId": "jamie",
+        "moveId": "jamie__held_special_236_P_OD",
+        "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+        "rawPath": "archive/staging/sf6-frame-data/raw/jamie.json",
+        "rawIndex": 50,
+        "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+        "cargoIndex": 44,
+        "sourceName": "OD Freeflow Strikes 1 (DL2)",
+        "sourceInput": "236PP",
+        "expectedCargoNotes": "Damage DL0-DL3: 405/427/450/472 (Chip: 100/106/112/117); cancelable into Punch follow-up on hit/block/whiff or Kick follow-up on hit/block; whiff cancel into 6P is delayed by 5f compared to hit/block version; safe buffer option that allows an easy hitconfirm into follow-ups; all 6P Rekka follow-ups do not count as separate moves for damage scaling (but do apply scaling to other follow-ups after 1st or 3rd rekka); SA2 cancel: +17/+14"
+      },
+      {
+        "characterId": "jamie",
+        "moveId": "jamie__held_special_623_K_H",
+        "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+        "rawPath": "archive/staging/sf6-frame-data/raw/jamie.json",
+        "rawIndex": 78,
+        "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+        "cargoIndex": 78,
+        "sourceName": "Arrow Kick (DL2)",
+        "sourceInput": "623HK",
+        "expectedCargoNotes": "Damage DL0-DL4: 1260/1330/1400/1470/1540 (Chip: 315/332/350/367/385); on hit, a follow-up occurs with 8f landing recovery (19-42f full invuln, vulnerable to projectiles before invincibility starts); cannot hit cross-up; can juggle into 623KK or SA1 after a high airborne connect in the corner"
+      },
+      {
+        "characterId": "jamie",
+        "moveId": "jamie__held_special_623_K_OD",
+        "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+        "rawPath": "archive/staging/sf6-frame-data/raw/jamie.json",
+        "rawIndex": 79,
+        "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+        "cargoIndex": 79,
+        "sourceName": "Arrow Kick (DL2)",
+        "sourceInput": "623KK",
+        "expectedCargoNotes": "Damage DL0-DL4: 1350/1424/1500/1574/1650 (Chip: 337/356/375/393/412); on hit, a follow-up occurs with 11f landing recovery (15-38f full invuln, vulnerable to projectiles before 2nd hit invincibility starts); Jamie's primary reversal; cannot hit cross-up"
+      },
+      {
+        "characterId": "jamie",
+        "moveId": "jamie__held_special_623_K_L",
+        "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+        "rawPath": "archive/staging/sf6-frame-data/raw/jamie.json",
+        "rawIndex": 80,
+        "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+        "cargoIndex": 80,
+        "sourceName": "Arrow Kick (DL2)",
+        "sourceInput": "623LK",
+        "expectedCargoNotes": "Damage DL0-DL4: 900/950/1000/1050/1100 (Chip: 225/237/250/262/275); on hit, a follow-up occurs with 11f landing recovery (16-42f full invuln, vulnerable to projectiles before invincibility starts); cannot hit cross-up; sets up a safe jump in the corner (or midscreen if no back rise); can juggle into 623KK, SA1, or SA3 after a high airborne connect (623KK requires corner positioning)"
+      },
+      {
+        "characterId": "jamie",
+        "moveId": "jamie__held_special_623_K_M",
+        "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+        "rawPath": "archive/staging/sf6-frame-data/raw/jamie.json",
+        "rawIndex": 81,
+        "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+        "cargoIndex": 81,
+        "sourceName": "Arrow Kick (DL2)",
+        "sourceInput": "623MK",
+        "expectedCargoNotes": "Damage DL0-DL4: 1080/1140/1200/1260/1320 (Chip: 270/285/300/315/330); on hit, a follow-up occurs with 18f landing recovery (17-40f full invuln, vulnerable to projectiles before invincibility starts); cannot hit cross-up"
+      },
+      {
+        "characterId": "jamie",
+        "moveId": "jamie__held_special_63214_K_OD",
+        "condition": "第16段階ユーザー指定: 酔いLv.3のTenshinを代表条件に固定。",
+        "rawPath": "archive/staging/sf6-frame-data/raw/jamie.json",
+        "rawIndex": 82,
+        "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+        "cargoIndex": 83,
+        "sourceName": "Tenshin (DL3)",
+        "sourceInput": "63214KK",
+        "expectedCargoNotes": "Damage DL3-DL4: 682/715; cannot be canceled into from normals; Jamie is <span style=\"color: #30D5B8;\">'''+28'''</span> before crumpled opponent goes airborne into a free juggle state; leaves enough frame advantage to dash or Drive Rush into a grounded combo; does not benefit from Counter/Punish Counter bonus frame advantage; Range: 0.96"
+      },
+      {
+        "characterId": "jamie",
+        "moveId": "jamie__held_special_63214_K_none",
+        "condition": "第16段階ユーザー指定: 酔いLv.3のTenshinを代表条件に固定。",
+        "rawPath": "archive/staging/sf6-frame-data/raw/jamie.json",
+        "rawIndex": 83,
+        "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+        "cargoIndex": 82,
+        "sourceName": "Tenshin (DL3)",
+        "sourceInput": "63214K",
+        "expectedCargoNotes": "Cannot be canceled into from normals; leaves opponent standing on hit for a grounded combo; does not benefit from Counter/Punish Counter bonus frame advantage; starter scaling is applied to the 3rd hit of the combo, while immediate scaling applies if Tenshin is comboed into (e.g. after Stun, PC Drive Impact, or corner PC 214PP)); Range: 0.96"
+      },
+      {
+        "characterId": "cviper",
+        "moveId": "cviper__held_special_214_K_none",
+        "condition": "第16段階ユーザー指定: Focus Force Lv.1、最短ホールド（非チャージ/19F以内）。自動反撃・Lv.2/3を選ばない。発生は原典の固定複合表記を加算せず表示。",
+        "rawPath": "archive/staging/sf6-frame-data/raw/cviper.json",
+        "rawIndex": 5,
+        "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json",
+        "cargoIndex": 5,
+        "sourceName": "Focus Force (Lv.1)",
+        "sourceInput": "214K",
+        "expectedCargoNotes": "Lv.1 version when uncharged or when button is held up to 19f; can hold button longer to charge to a stronger version (20f Lv.2 / 59f Lv.3); 1-hit armor frames cover the full body, ending immediately if button is released after frame 13; absorbing a strike results in an automatic counter-attack with 10f startup (comes out on frame 14 at the earliest); absorbing an attack early in the armor frames makes it possible for the counter-attack to be blocked; C. Viper incurs only 7f armor hitstop from absorbing a strike; armor can absorb projectiles but does not perform counter-attack (C. Viper incurs 10f projectile hitstop during armor); cancelable into Forward Dash from frame 12 until button is released (not possible after absorbing a strike); C. Viper is in a Punish Counter state for entire duration (including Forward Dash cancel); 2f extra knockdown advantage on Punish Counter; only the first hit gains the bonus damage from a Counter-hit/Punish Counter; -17 on Punish Counter if only the first hit of counter-attack reaches opponent (e.g. absorbing a ranged Dhalsim poke); Focus + Dash can be used to absorb projectiles when Drive gauge is too low for Parry; can be used against Drive Impact while in Burnout (but armor starts too late to work in most DI-cancel blockstrings)"
+      },
+      {
+        "characterId": "cviper",
+        "moveId": "cviper__held_special_214_K_OD",
+        "condition": "第16段階ユーザー指定: Focus Force Lv.1、最短ホールド（非チャージ/19F以内）。自動反撃・Lv.2/3を選ばない。発生は原典の固定複合表記を加算せず表示。",
+        "rawPath": "archive/staging/sf6-frame-data/raw/cviper.json",
+        "rawIndex": 6,
+        "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json",
+        "cargoIndex": 6,
+        "sourceName": "OD Focus Force (Lv.1)",
+        "sourceInput": "214KK",
+        "expectedCargoNotes": "Lv.1 version when uncharged or when button is held up to 19f; can hold button longer to charge to a stronger version (20f Lv.2 / 57f Lv.3); 1-hit armor frames cover the full body, ending immediately if button is released after frame 10; absorbing a strike results in an automatic counter-attack with 10f startup (comes out on frame 11 at the earliest); absorbing an attack early in the armor frames makes it possible for the counter-attack to be blocked; C. Viper incurs only 7f armor hitstop from absorbing a strike; armor can absorb projectiles but does not perform counter-attack (C. Viper incurs 10f projectile hitstop during armor); cancelable into Forward Dash from frame 9 until button is released (not possible after absorbing a strike); C. Viper is in a Punish Counter state for entire duration (including Forward Dash cancel); 2f extra knockdown advantage on Punish Counter; only the first hit gains the bonus damage from a Counter-hit/Punish Counter; -17 on Punish Counter if only the first hit of counter-attack reaches opponent (e.g. absorbing a ranged Dhalsim poke)"
+      }
+    ]
   }
 }

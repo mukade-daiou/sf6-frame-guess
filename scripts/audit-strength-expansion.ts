@@ -4,6 +4,7 @@ import { isDeepStrictEqual } from "node:util";
 import { characterSchema } from "../src/lib/frame-data/schema";
 import { validateDataset } from "../src/lib/frame-data/loader";
 import { inputKey } from "../src/lib/frame-data/input";
+import { applyConditionalSpecials } from "./conditional-specials";
 import {
   auditStrengthless,
   generateStrengthExpansions,
@@ -40,7 +41,7 @@ if (process.argv.includes("--check"))
     if (
       !isDeepStrictEqual(
         c.moves.filter((m) => !m.strengthExpansion),
-        old.moves,
+        applyConditionalSpecials(old).moves,
       ) ||
       !isDeepStrictEqual(c.coverage, old.coverage)
     )

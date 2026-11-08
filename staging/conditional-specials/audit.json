@@ -1,0 +1,3499 @@
+{
+  "beforeCount": 1292,
+  "afterCount": 1298,
+  "changedOriginalRecords": 21,
+  "newRecords": 6,
+  "questions": [
+    {
+      "characterId": "cviper",
+      "moveId": "cviper__held_special_214_K_OD",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "OD"
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10+10"
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "67",
+          "numeric": 67,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-16",
+          "numeric": -16
+        }
+      },
+      "condition": {
+        "condition": "第16段階ユーザー指定: Focus Force Lv.1、最短ホールド（非チャージ/19F以内）。自動反撃・Lv.2/3を選ばない。発生は原典の固定複合表記を加算せず表示。",
+        "rawRef": "archive/staging/sf6-frame-data/raw/cviper.json#/moves/6",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json#/data/cargoquery/6/title"
+      },
+      "normal": "found",
+      "hard": "found"
+    },
+    {
+      "characterId": "cviper",
+      "moveId": "cviper__held_special_214_K_none__strength_L",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "L"
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "13+10"
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "70",
+          "numeric": 70,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-16",
+          "numeric": -16
+        }
+      },
+      "condition": {
+        "condition": "第16段階ユーザー指定: Focus Force Lv.1、最短ホールド（非チャージ/19F以内）。自動反撃・Lv.2/3を選ばない。発生は原典の固定複合表記を加算せず表示。",
+        "rawRef": "archive/staging/sf6-frame-data/raw/cviper.json#/moves/5",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json#/data/cargoquery/5/title"
+      },
+      "normal": "found",
+      "hard": "found"
+    },
+    {
+      "characterId": "cviper",
+      "moveId": "cviper__held_special_214_K_none__strength_M",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "M"
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "13+10"
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "70",
+          "numeric": 70,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-16",
+          "numeric": -16
+        }
+      },
+      "condition": {
+        "condition": "第16段階ユーザー指定: Focus Force Lv.1、最短ホールド（非チャージ/19F以内）。自動反撃・Lv.2/3を選ばない。発生は原典の固定複合表記を加算せず表示。",
+        "rawRef": "archive/staging/sf6-frame-data/raw/cviper.json#/moves/5",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json#/data/cargoquery/5/title"
+      },
+      "normal": "found",
+      "hard": "found"
+    },
+    {
+      "characterId": "cviper",
+      "moveId": "cviper__held_special_214_K_none__strength_H",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "H"
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "13+10"
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "70",
+          "numeric": 70,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-16",
+          "numeric": -16
+        }
+      },
+      "condition": {
+        "condition": "第16段階ユーザー指定: Focus Force Lv.1、最短ホールド（非チャージ/19F以内）。自動反撃・Lv.2/3を選ばない。発生は原典の固定複合表記を加算せず表示。",
+        "rawRef": "archive/staging/sf6-frame-data/raw/cviper.json#/moves/5",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json#/data/cargoquery/5/title"
+      },
+      "normal": "found",
+      "hard": "found"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_214_P_H",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "H"
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "25",
+          "numeric": 25
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "49",
+          "numeric": 49,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "condition": {
+        "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+        "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/1",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/1/title"
+      },
+      "normal": "found",
+      "hard": "found"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_214_P_L",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "L"
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "17",
+          "numeric": 17
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "42",
+          "numeric": 42,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        }
+      },
+      "condition": {
+        "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+        "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/2",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/2/title"
+      },
+      "normal": "found",
+      "hard": "found"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_214_P_M",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "M"
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "20",
+          "numeric": 20
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "45",
+          "numeric": 45,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        }
+      },
+      "condition": {
+        "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+        "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/3",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/3/title"
+      },
+      "normal": "found",
+      "hard": "found"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_214_P_OD",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "OD"
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "20",
+          "numeric": 20
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "43",
+          "numeric": 43,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        }
+      },
+      "condition": {
+        "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+        "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/5",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/4/title"
+      },
+      "normal": "found",
+      "hard": "found"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_236_K_H",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "H"
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "25",
+          "numeric": 25
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "124",
+          "numeric": 124,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-17",
+          "numeric": -17
+        }
+      },
+      "condition": {
+        "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+        "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/16",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/16/title"
+      },
+      "normal": "found",
+      "hard": "found"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_236_P_H",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "H"
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "19",
+          "numeric": 19
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "44",
+          "numeric": 44,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        }
+      },
+      "condition": {
+        "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+        "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/23",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/17/title"
+      },
+      "normal": "found",
+      "hard": "found"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_236_K_OD",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "OD"
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "18",
+          "numeric": 18
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "159",
+          "numeric": 159,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-43",
+          "numeric": -43
+        }
+      },
+      "condition": {
+        "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+        "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/25",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/25/title"
+      },
+      "normal": "found",
+      "hard": "found"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_236_K_L",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "L"
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "18",
+          "numeric": 18
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "67",
+          "numeric": 67,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-12",
+          "numeric": -12
+        }
+      },
+      "condition": {
+        "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+        "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/26",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/26/title"
+      },
+      "normal": "found",
+      "hard": "found"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_236_P_L",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "L"
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "13",
+          "numeric": 13
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "38",
+          "numeric": 38,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        }
+      },
+      "condition": {
+        "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+        "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/33",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/27/title"
+      },
+      "normal": "found",
+      "hard": "found"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_236_K_M",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "M"
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "22",
+          "numeric": 22
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "90",
+          "numeric": 90,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-16",
+          "numeric": -16
+        }
+      },
+      "condition": {
+        "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+        "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/35",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/35/title"
+      },
+      "normal": "found",
+      "hard": "found"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_236_P_M",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "M"
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "16",
+          "numeric": 16
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "41",
+          "numeric": 41,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        }
+      },
+      "condition": {
+        "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+        "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/42",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/36/title"
+      },
+      "normal": "found",
+      "hard": "found"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_236_P_OD",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "OD"
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "13",
+          "numeric": 13
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "38",
+          "numeric": 38,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "condition": {
+        "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+        "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/50",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/44/title"
+      },
+      "normal": "found",
+      "hard": "found"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_623_K_H",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "K",
+        "strength": "H"
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "69",
+          "numeric": 69,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-43",
+          "numeric": -43
+        }
+      },
+      "condition": {
+        "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+        "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/78",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/78/title"
+      },
+      "normal": "found",
+      "hard": "found"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_623_K_OD",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "K",
+        "strength": "OD"
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "65",
+          "numeric": 65,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-43",
+          "numeric": -43
+        }
+      },
+      "condition": {
+        "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+        "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/79",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/79/title"
+      },
+      "normal": "found",
+      "hard": "found"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_623_K_L",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "K",
+        "strength": "L"
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "66",
+          "numeric": 66,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-44",
+          "numeric": -44
+        }
+      },
+      "condition": {
+        "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+        "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/80",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/80/title"
+      },
+      "normal": "found",
+      "hard": "found"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_623_K_M",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "K",
+        "strength": "M"
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "67",
+          "numeric": 67,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-43",
+          "numeric": -43
+        }
+      },
+      "condition": {
+        "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+        "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/81",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/81/title"
+      },
+      "normal": "found",
+      "hard": "found"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_63214_K_OD",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "OD"
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "61",
+          "numeric": 61,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "condition": {
+        "condition": "第16段階ユーザー指定: 酔いLv.3のTenshinを代表条件に固定。",
+        "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/82",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/83/title"
+      },
+      "normal": "found",
+      "hard": "found"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_63214_K_none__strength_L",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "L"
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "61",
+          "numeric": 61,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+8",
+          "numeric": 8
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "condition": {
+        "condition": "第16段階ユーザー指定: 酔いLv.3のTenshinを代表条件に固定。",
+        "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/83",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/82/title"
+      },
+      "normal": "found",
+      "hard": "found"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_63214_K_none__strength_M",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "M"
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "61",
+          "numeric": 61,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+8",
+          "numeric": 8
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "condition": {
+        "condition": "第16段階ユーザー指定: 酔いLv.3のTenshinを代表条件に固定。",
+        "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/83",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/82/title"
+      },
+      "normal": "found",
+      "hard": "found"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_63214_K_none__strength_H",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "H"
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "61",
+          "numeric": 61,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+8",
+          "numeric": 8
+        },
+        "block": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      "condition": {
+        "condition": "第16段階ユーザー指定: 酔いLv.3のTenshinを代表条件に固定。",
+        "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/83",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/82/title"
+      },
+      "normal": "found",
+      "hard": "found"
+    }
+  ],
+  "changed": [
+    {
+      "id": "cviper__held_special_214_K_none",
+      "before": {
+        "adoption": {
+          "status": "held",
+          "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+        },
+        "id": "cviper__held_special_214_K_none",
+        "name": "Focus Force (Lv.1)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "214",
+          "button": "K",
+          "strength": "none"
+        },
+        "variant": {
+          "kind": "conditional",
+          "condition": "Original source input retained; normal-state applicability/performance pending."
+        },
+        "frames": {
+          "startup": {
+            "status": "unknown",
+            "display": null
+          },
+          "total": {
+            "status": "unknown",
+            "display": null,
+            "provenance": null,
+            "calculation": null
+          },
+          "hit": {
+            "status": "unknown",
+            "display": null
+          },
+          "block": {
+            "status": "unknown",
+            "display": null
+          }
+        },
+        "notes": [
+          "upstreamInput: 214K",
+          "Source inventory: archive/staging/sf6-frame-data/raw/cviper.json#cviper__214k",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence."
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6",
+          "retrievedAt": "2026-11-01T00:01:59.250Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        }
+      },
+      "after": {
+        "adoption": {
+          "status": "accepted",
+          "basis": "第16段階ユーザー指定: Focus Force Lv.1、最短ホールド（非チャージ/19F以内）。自動反撃・Lv.2/3を選ばない。発生は原典の固定複合表記を加算せず表示。"
+        },
+        "id": "cviper__held_special_214_K_none",
+        "name": "Focus Force (Lv.1)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "214",
+          "button": "K",
+          "strength": "none"
+        },
+        "variant": {
+          "kind": "base",
+          "condition": null
+        },
+        "frames": {
+          "startup": {
+            "status": "confirmed",
+            "display": "13+10"
+          },
+          "total": {
+            "status": "confirmed",
+            "display": "70",
+            "numeric": 70,
+            "provenance": "source",
+            "calculation": null
+          },
+          "hit": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "block": {
+            "status": "confirmed",
+            "display": "-16",
+            "numeric": -16
+          }
+        },
+        "notes": [
+          "upstreamInput: 214K",
+          "Source inventory: archive/staging/sf6-frame-data/raw/cviper.json#cviper__214k",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence.",
+          "upstreamName: Focus Force (Lv.1)",
+          "第16段階: 以前のheld理由を解消。第16段階ユーザー指定: Focus Force Lv.1、最短ホールド（非チャージ/19F以内）。自動反撃・Lv.2/3を選ばない。発生は原典の固定複合表記を加算せず表示。",
+          "sourceNotation: {\"chara\":\"C.Viper\",\"input\":\"214K\",\"startup\":\"13+10\",\"total\":\"70\",\"hitAdv\":\"KD +24\",\"blockAdv\":\"<span style=\\\"color: #b70c0b;\\\">'''-16'''</span>\",\"notes\":\"Lv.1 version when uncharged or when button is held up to 19f; can hold button longer to charge to a stronger version (20f Lv.2 / 59f Lv.3); 1-hit armor frames cover the full body, ending immediately if button is released after frame 13; absorbing a strike results in an automatic counter-attack with 10f startup (comes out on frame 14 at the earliest); absorbing an attack early in the armor frames makes it possible for the counter-attack to be blocked; C. Viper incurs only 7f armor hitstop from absorbing a strike; armor can absorb projectiles but does not perform counter-attack (C. Viper incurs 10f projectile hitstop during armor); cancelable into Forward Dash from frame 12 until button is released (not possible after absorbing a strike); C. Viper is in a Punish Counter state for entire duration (including Forward Dash cancel); 2f extra knockdown advantage on Punish Counter; only the first hit gains the bonus damage from a Counter-hit/Punish Counter; -17 on Punish Counter if only the first hit of counter-attack reaches opponent (e.g. absorbing a ranged Dhalsim poke); Focus + Dash can be used to absorb projectiles when Drive gauge is too low for Parry; can be used against Drive Impact while in Burnout (but armor starts too late to work in most DI-cancel blockstrings)\"}",
+          "rawSource: archive/staging/sf6-frame-data/raw/cviper.json#/moves/5"
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data",
+          "retrievedAt": "2026-11-05T09:20:26.117Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        },
+        "representativeCondition": {
+          "condition": "第16段階ユーザー指定: Focus Force Lv.1、最短ホールド（非チャージ/19F以内）。自動反撃・Lv.2/3を選ばない。発生は原典の固定複合表記を加算せず表示。",
+          "rawRef": "archive/staging/sf6-frame-data/raw/cviper.json#/moves/5",
+          "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json#/data/cargoquery/5/title"
+        }
+      }
+    },
+    {
+      "id": "cviper__held_special_214_K_OD",
+      "before": {
+        "adoption": {
+          "status": "held",
+          "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+        },
+        "id": "cviper__held_special_214_K_OD",
+        "name": "OD Focus Force (Lv.1)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "214",
+          "button": "K",
+          "strength": "OD"
+        },
+        "variant": {
+          "kind": "conditional",
+          "condition": "Original source input retained; normal-state applicability/performance pending."
+        },
+        "frames": {
+          "startup": {
+            "status": "unknown",
+            "display": null
+          },
+          "total": {
+            "status": "unknown",
+            "display": null,
+            "provenance": null,
+            "calculation": null
+          },
+          "hit": {
+            "status": "unknown",
+            "display": null
+          },
+          "block": {
+            "status": "unknown",
+            "display": null
+          }
+        },
+        "notes": [
+          "upstreamInput: 214KK",
+          "Source inventory: archive/staging/sf6-frame-data/raw/cviper.json#cviper__214kk",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence."
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6",
+          "retrievedAt": "2026-11-01T00:01:59.250Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        }
+      },
+      "after": {
+        "adoption": {
+          "status": "accepted",
+          "basis": "第16段階ユーザー指定: Focus Force Lv.1、最短ホールド（非チャージ/19F以内）。自動反撃・Lv.2/3を選ばない。発生は原典の固定複合表記を加算せず表示。"
+        },
+        "id": "cviper__held_special_214_K_OD",
+        "name": "OD Focus Force (Lv.1)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "214",
+          "button": "K",
+          "strength": "OD"
+        },
+        "variant": {
+          "kind": "base",
+          "condition": null
+        },
+        "frames": {
+          "startup": {
+            "status": "confirmed",
+            "display": "10+10"
+          },
+          "total": {
+            "status": "confirmed",
+            "display": "67",
+            "numeric": 67,
+            "provenance": "source",
+            "calculation": null
+          },
+          "hit": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "block": {
+            "status": "confirmed",
+            "display": "-16",
+            "numeric": -16
+          }
+        },
+        "notes": [
+          "upstreamInput: 214KK",
+          "Source inventory: archive/staging/sf6-frame-data/raw/cviper.json#cviper__214kk",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence.",
+          "upstreamName: OD Focus Force (Lv.1)",
+          "第16段階: 以前のheld理由を解消。第16段階ユーザー指定: Focus Force Lv.1、最短ホールド（非チャージ/19F以内）。自動反撃・Lv.2/3を選ばない。発生は原典の固定複合表記を加算せず表示。",
+          "sourceNotation: {\"chara\":\"C.Viper\",\"input\":\"214KK\",\"startup\":\"10+10\",\"total\":\"67\",\"hitAdv\":\"KD +24\",\"blockAdv\":\"<span style=\\\"color: #b70c0b;\\\">'''-16'''</span>\",\"notes\":\"Lv.1 version when uncharged or when button is held up to 19f; can hold button longer to charge to a stronger version (20f Lv.2 / 57f Lv.3); 1-hit armor frames cover the full body, ending immediately if button is released after frame 10; absorbing a strike results in an automatic counter-attack with 10f startup (comes out on frame 11 at the earliest); absorbing an attack early in the armor frames makes it possible for the counter-attack to be blocked; C. Viper incurs only 7f armor hitstop from absorbing a strike; armor can absorb projectiles but does not perform counter-attack (C. Viper incurs 10f projectile hitstop during armor); cancelable into Forward Dash from frame 9 until button is released (not possible after absorbing a strike); C. Viper is in a Punish Counter state for entire duration (including Forward Dash cancel); 2f extra knockdown advantage on Punish Counter; only the first hit gains the bonus damage from a Counter-hit/Punish Counter; -17 on Punish Counter if only the first hit of counter-attack reaches opponent (e.g. absorbing a ranged Dhalsim poke)\"}",
+          "rawSource: archive/staging/sf6-frame-data/raw/cviper.json#/moves/6"
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data",
+          "retrievedAt": "2026-11-05T09:20:26.117Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        },
+        "representativeCondition": {
+          "condition": "第16段階ユーザー指定: Focus Force Lv.1、最短ホールド（非チャージ/19F以内）。自動反撃・Lv.2/3を選ばない。発生は原典の固定複合表記を加算せず表示。",
+          "rawRef": "archive/staging/sf6-frame-data/raw/cviper.json#/moves/6",
+          "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json#/data/cargoquery/6/title"
+        }
+      }
+    },
+    {
+      "id": "dee_jay__held_special_22_P_OD",
+      "before": {
+        "adoption": {
+          "status": "held",
+          "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+        },
+        "id": "dee_jay__held_special_22_P_OD",
+        "name": "Speedy Maracas",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "22",
+          "button": "P",
+          "strength": "OD"
+        },
+        "variant": {
+          "kind": "conditional",
+          "condition": "Original source input retained; normal-state applicability/performance pending."
+        },
+        "frames": {
+          "startup": {
+            "status": "unknown",
+            "display": null
+          },
+          "total": {
+            "status": "unknown",
+            "display": null,
+            "provenance": null,
+            "calculation": null
+          },
+          "hit": {
+            "status": "unknown",
+            "display": null
+          },
+          "block": {
+            "status": "unknown",
+            "display": null
+          }
+        },
+        "notes": [
+          "upstreamInput: 22PP",
+          "Source inventory: archive/staging/sf6-frame-data/raw/dee_jay.json#dee_jay__22pp",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence."
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6",
+          "retrievedAt": "2026-08-19T04:05:24.993Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        }
+      },
+      "after": {
+        "adoption": {
+          "status": "excluded",
+          "basis": "第16段階ユーザー指定: Speedy Maracasのみ対象外。原典を保持。"
+        },
+        "id": "dee_jay__held_special_22_P_OD",
+        "name": "Speedy Maracas",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "22",
+          "button": "P",
+          "strength": "OD"
+        },
+        "variant": {
+          "kind": "conditional",
+          "condition": "Original source input retained; normal-state applicability/performance pending."
+        },
+        "frames": {
+          "startup": {
+            "status": "unknown",
+            "display": null
+          },
+          "total": {
+            "status": "unknown",
+            "display": null,
+            "provenance": null,
+            "calculation": null
+          },
+          "hit": {
+            "status": "unknown",
+            "display": null
+          },
+          "block": {
+            "status": "unknown",
+            "display": null
+          }
+        },
+        "notes": [
+          "upstreamInput: 22PP",
+          "Source inventory: archive/staging/sf6-frame-data/raw/dee_jay.json#dee_jay__22pp",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence."
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6",
+          "retrievedAt": "2026-08-19T04:05:24.993Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        }
+      }
+    },
+    {
+      "id": "jamie__held_special_214_P_H",
+      "before": {
+        "adoption": {
+          "status": "held",
+          "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+        },
+        "id": "jamie__held_special_214_P_H",
+        "name": "Swagger Step (DL2)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "214",
+          "button": "P",
+          "strength": "H"
+        },
+        "variant": {
+          "kind": "conditional",
+          "condition": "Original source input retained; normal-state applicability/performance pending."
+        },
+        "frames": {
+          "startup": {
+            "status": "unknown",
+            "display": null
+          },
+          "total": {
+            "status": "unknown",
+            "display": null,
+            "provenance": null,
+            "calculation": null
+          },
+          "hit": {
+            "status": "unknown",
+            "display": null
+          },
+          "block": {
+            "status": "unknown",
+            "display": null
+          }
+        },
+        "notes": [
+          "upstreamInput: 214HP",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__214hp",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence."
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6",
+          "retrievedAt": "2026-08-19T04:05:24.993Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        }
+      },
+      "after": {
+        "adoption": {
+          "status": "accepted",
+          "basis": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。"
+        },
+        "id": "jamie__held_special_214_P_H",
+        "name": "Swagger Step (DL2)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "214",
+          "button": "P",
+          "strength": "H"
+        },
+        "variant": {
+          "kind": "base",
+          "condition": null
+        },
+        "frames": {
+          "startup": {
+            "status": "confirmed",
+            "display": "25",
+            "numeric": 25
+          },
+          "total": {
+            "status": "confirmed",
+            "display": "49",
+            "numeric": 49,
+            "provenance": "source",
+            "calculation": null
+          },
+          "hit": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "block": {
+            "status": "confirmed",
+            "display": "-3",
+            "numeric": -3
+          }
+        },
+        "notes": [
+          "upstreamInput: 214HP",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__214hp",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence.",
+          "upstreamName: Swagger Step (DL2)",
+          "第16段階: 以前のheld理由を解消。第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+          "sourceNotation: {\"chara\":\"Jamie\",\"input\":\"214HP\",\"startup\":\"25\",\"total\":\"49\",\"hitAdv\":\"KD +42(+50)\",\"blockAdv\":\"<span style=\\\"color: #ff6347;\\\">-3</span><span style=\\\"color: #30D5B8;\\\">'''(+5)'''</span>\",\"notes\":\"Damage DL0-DL4: 1080/1140/1200/1260/1320 (Chip: 270/285/300/315/330); has juggle potential; has 6P follow-up during DL4 only; screen shake occurs if blocked on active frames 5-9 when Jamie has advantage; final active frame will only connect as a meaty (can only be up to +4 oB when spaced in neutral); sets up a safe jump when connecting with first active frame on grounded opponents\"}",
+          "rawSource: archive/staging/sf6-frame-data/raw/jamie.json#/moves/1"
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+          "retrievedAt": "2026-11-05T09:20:26.958Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        },
+        "representativeCondition": {
+          "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+          "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/1",
+          "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/1/title"
+        }
+      }
+    },
+    {
+      "id": "jamie__held_special_214_P_L",
+      "before": {
+        "adoption": {
+          "status": "held",
+          "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+        },
+        "id": "jamie__held_special_214_P_L",
+        "name": "Swagger Step (DL2)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "214",
+          "button": "P",
+          "strength": "L"
+        },
+        "variant": {
+          "kind": "conditional",
+          "condition": "Original source input retained; normal-state applicability/performance pending."
+        },
+        "frames": {
+          "startup": {
+            "status": "unknown",
+            "display": null
+          },
+          "total": {
+            "status": "unknown",
+            "display": null,
+            "provenance": null,
+            "calculation": null
+          },
+          "hit": {
+            "status": "unknown",
+            "display": null
+          },
+          "block": {
+            "status": "unknown",
+            "display": null
+          }
+        },
+        "notes": [
+          "upstreamInput: 214LP",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__214lp",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence."
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6",
+          "retrievedAt": "2026-08-19T04:05:24.993Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        }
+      },
+      "after": {
+        "adoption": {
+          "status": "accepted",
+          "basis": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。"
+        },
+        "id": "jamie__held_special_214_P_L",
+        "name": "Swagger Step (DL2)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "214",
+          "button": "P",
+          "strength": "L"
+        },
+        "variant": {
+          "kind": "base",
+          "condition": null
+        },
+        "frames": {
+          "startup": {
+            "status": "confirmed",
+            "display": "17",
+            "numeric": 17
+          },
+          "total": {
+            "status": "confirmed",
+            "display": "42",
+            "numeric": 42,
+            "provenance": "source",
+            "calculation": null
+          },
+          "hit": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "block": {
+            "status": "confirmed",
+            "display": "-6",
+            "numeric": -6
+          }
+        },
+        "notes": [
+          "upstreamInput: 214LP",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__214lp",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence.",
+          "upstreamName: Swagger Step (DL2)",
+          "第16段階: 以前のheld理由を解消。第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+          "sourceNotation: {\"chara\":\"Jamie\",\"input\":\"214LP\",\"startup\":\"17\",\"total\":\"42\",\"hitAdv\":\"KD +39(+47)\",\"blockAdv\":\"<span style=\\\"color: #b70c0b;\\\">'''-6'''</span><span style=\\\"color: #32CD32;\\\">(+2)</span>\",\"notes\":\"Damage DL0-DL4: 810/855/900/945/990 (Chip: 202/213/225/236/247); has juggle potential; has 6P follow-up during DL4 only; screen shake occurs if blocked on active frames 8-9 when Jamie has advantage; final active frame will only connect as a meaty (can only be up to +1 oB when spaced in neutral); active frames 5-7 have reduced range to make it easier to achieve advantage on block\"}",
+          "rawSource: archive/staging/sf6-frame-data/raw/jamie.json#/moves/2"
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+          "retrievedAt": "2026-11-05T09:20:26.958Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        },
+        "representativeCondition": {
+          "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+          "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/2",
+          "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/2/title"
+        }
+      }
+    },
+    {
+      "id": "jamie__held_special_214_P_M",
+      "before": {
+        "adoption": {
+          "status": "held",
+          "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+        },
+        "id": "jamie__held_special_214_P_M",
+        "name": "Swagger Step (DL2)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "214",
+          "button": "P",
+          "strength": "M"
+        },
+        "variant": {
+          "kind": "conditional",
+          "condition": "Original source input retained; normal-state applicability/performance pending."
+        },
+        "frames": {
+          "startup": {
+            "status": "unknown",
+            "display": null
+          },
+          "total": {
+            "status": "unknown",
+            "display": null,
+            "provenance": null,
+            "calculation": null
+          },
+          "hit": {
+            "status": "unknown",
+            "display": null
+          },
+          "block": {
+            "status": "unknown",
+            "display": null
+          }
+        },
+        "notes": [
+          "upstreamInput: 214MP",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__214mp",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence."
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6",
+          "retrievedAt": "2026-08-19T04:05:24.993Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        }
+      },
+      "after": {
+        "adoption": {
+          "status": "accepted",
+          "basis": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。"
+        },
+        "id": "jamie__held_special_214_P_M",
+        "name": "Swagger Step (DL2)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "214",
+          "button": "P",
+          "strength": "M"
+        },
+        "variant": {
+          "kind": "base",
+          "condition": null
+        },
+        "frames": {
+          "startup": {
+            "status": "confirmed",
+            "display": "20",
+            "numeric": 20
+          },
+          "total": {
+            "status": "confirmed",
+            "display": "45",
+            "numeric": 45,
+            "provenance": "source",
+            "calculation": null
+          },
+          "hit": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "block": {
+            "status": "confirmed",
+            "display": "-6",
+            "numeric": -6
+          }
+        },
+        "notes": [
+          "upstreamInput: 214MP",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__214mp",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence.",
+          "upstreamName: Swagger Step (DL2)",
+          "第16段階: 以前のheld理由を解消。第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+          "sourceNotation: {\"chara\":\"Jamie\",\"input\":\"214MP\",\"startup\":\"20\",\"total\":\"45\",\"hitAdv\":\"KD +39(+47)\",\"blockAdv\":\"<span style=\\\"color: #b70c0b;\\\">'''-6'''</span><span style=\\\"color: #32CD32;\\\">(+2)</span>\",\"notes\":\"Damage DL0-DL4: 900/950/1000/1050/1100 (Chip: 225/237/250/262/275); has juggle potential; has 6P follow-up during DL4 only; screen shake occurs if blocked on active frames 8-9 when Jamie has advantage; final active frame will only connect as a meaty (can only be up to +1 oB when spaced in neutral); active frames 5-7 have reduced range to make it easier to achieve advantage on block\"}",
+          "rawSource: archive/staging/sf6-frame-data/raw/jamie.json#/moves/3"
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+          "retrievedAt": "2026-11-05T09:20:26.958Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        },
+        "representativeCondition": {
+          "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+          "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/3",
+          "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/3/title"
+        }
+      }
+    },
+    {
+      "id": "jamie__held_special_214_P_OD",
+      "before": {
+        "adoption": {
+          "status": "held",
+          "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+        },
+        "id": "jamie__held_special_214_P_OD",
+        "name": "Swagger Step (DL2)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "214",
+          "button": "P",
+          "strength": "OD"
+        },
+        "variant": {
+          "kind": "conditional",
+          "condition": "Original source input retained; normal-state applicability/performance pending."
+        },
+        "frames": {
+          "startup": {
+            "status": "unknown",
+            "display": null
+          },
+          "total": {
+            "status": "unknown",
+            "display": null,
+            "provenance": null,
+            "calculation": null
+          },
+          "hit": {
+            "status": "unknown",
+            "display": null
+          },
+          "block": {
+            "status": "unknown",
+            "display": null
+          }
+        },
+        "notes": [
+          "upstreamInput: 214PP",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__214pp",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence."
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6",
+          "retrievedAt": "2026-08-19T04:05:24.993Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        }
+      },
+      "after": {
+        "adoption": {
+          "status": "accepted",
+          "basis": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。"
+        },
+        "id": "jamie__held_special_214_P_OD",
+        "name": "Swagger Step (DL2)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "214",
+          "button": "P",
+          "strength": "OD"
+        },
+        "variant": {
+          "kind": "base",
+          "condition": null
+        },
+        "frames": {
+          "startup": {
+            "status": "confirmed",
+            "display": "20",
+            "numeric": 20
+          },
+          "total": {
+            "status": "confirmed",
+            "display": "43",
+            "numeric": 43,
+            "provenance": "source",
+            "calculation": null
+          },
+          "hit": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "block": {
+            "status": "confirmed",
+            "display": "-1",
+            "numeric": -1
+          }
+        },
+        "notes": [
+          "upstreamInput: 214PP",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__214pp",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence.",
+          "upstreamName: Swagger Step (DL2)",
+          "第16段階: 以前のheld理由を解消。第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+          "sourceNotation: {\"chara\":\"Jamie\",\"input\":\"214PP\",\"startup\":\"20\",\"total\":\"43\",\"hitAdv\":\"KD +73(+81) Tumble\",\"blockAdv\":\"<span style=\\\"color: #ff6347;\\\">-1</span><span style=\\\"color: #30D5B8;\\\">'''(+7)'''</span>\",\"notes\":\"Damage DL0-DL4: 990/1045/1100/1155/1210 (Chip: 247/261/275/288/302); has juggle potential; has 6P follow-up during DL4 only; can juggle OTG during Tumble state; Punish Counter near corner causes a crouching Wall Splat that puts opponent into limited juggle state while still grounded (can be thrown; strikes cause opponent to become airborne); screen shake occurs if blocked on active frames 3-9 when Jamie has advantage; final active frame will only connect as a meaty (can only be up to +6 oB when spaced in neutral); SA2 cancel: KD+89(103)/+15\"}",
+          "rawSource: archive/staging/sf6-frame-data/raw/jamie.json#/moves/5"
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+          "retrievedAt": "2026-11-05T09:20:26.958Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        },
+        "representativeCondition": {
+          "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+          "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/5",
+          "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/4/title"
+        }
+      }
+    },
+    {
+      "id": "jamie__held_special_236_K_H",
+      "before": {
+        "adoption": {
+          "status": "held",
+          "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+        },
+        "id": "jamie__held_special_236_K_H",
+        "name": "Bakkai (DL2)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "236",
+          "button": "K",
+          "strength": "H"
+        },
+        "variant": {
+          "kind": "conditional",
+          "condition": "Original source input retained; normal-state applicability/performance pending."
+        },
+        "frames": {
+          "startup": {
+            "status": "unknown",
+            "display": null
+          },
+          "total": {
+            "status": "unknown",
+            "display": null,
+            "provenance": null,
+            "calculation": null
+          },
+          "hit": {
+            "status": "unknown",
+            "display": null
+          },
+          "block": {
+            "status": "unknown",
+            "display": null
+          }
+        },
+        "notes": [
+          "upstreamInput: 236HK",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__236hk",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence."
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6",
+          "retrievedAt": "2026-08-19T04:05:24.993Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        }
+      },
+      "after": {
+        "adoption": {
+          "status": "accepted",
+          "basis": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。"
+        },
+        "id": "jamie__held_special_236_K_H",
+        "name": "Bakkai (DL2)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "236",
+          "button": "K",
+          "strength": "H"
+        },
+        "variant": {
+          "kind": "base",
+          "condition": null
+        },
+        "frames": {
+          "startup": {
+            "status": "confirmed",
+            "display": "25",
+            "numeric": 25
+          },
+          "total": {
+            "status": "confirmed",
+            "display": "124",
+            "numeric": 124,
+            "provenance": "source",
+            "calculation": null
+          },
+          "hit": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "block": {
+            "status": "confirmed",
+            "display": "-17",
+            "numeric": -17
+          }
+        },
+        "notes": [
+          "upstreamInput: 236HK",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__236hk",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence.",
+          "upstreamName: Bakkai (DL2)",
+          "第16段階: 以前のheld理由を解消。第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+          "sourceNotation: {\"chara\":\"Jamie\",\"input\":\"236HK\",\"startup\":\"25\",\"total\":\"124\",\"hitAdv\":\"KD +34\",\"blockAdv\":\"<span style=\\\"color: #b70c0b;\\\">'''-17'''</span>\",\"notes\":\"Damage DL2-DL4: 1800/1887/1980 (Chip: 447/468/490); semi-consistent projectile counter at mid-range (except vs. fireballs with low recovery or with smaller extended hurtboxes)\"}",
+          "rawSource: archive/staging/sf6-frame-data/raw/jamie.json#/moves/16"
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+          "retrievedAt": "2026-11-05T09:20:26.958Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        },
+        "representativeCondition": {
+          "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+          "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/16",
+          "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/16/title"
+        }
+      }
+    },
+    {
+      "id": "jamie__held_special_236_P_H",
+      "before": {
+        "adoption": {
+          "status": "held",
+          "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+        },
+        "id": "jamie__held_special_236_P_H",
+        "name": "HP Freeflow Strikes 1 (DL2)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "236",
+          "button": "P",
+          "strength": "H"
+        },
+        "variant": {
+          "kind": "conditional",
+          "condition": "Original source input retained; normal-state applicability/performance pending."
+        },
+        "frames": {
+          "startup": {
+            "status": "unknown",
+            "display": null
+          },
+          "total": {
+            "status": "unknown",
+            "display": null,
+            "provenance": null,
+            "calculation": null
+          },
+          "hit": {
+            "status": "unknown",
+            "display": null
+          },
+          "block": {
+            "status": "unknown",
+            "display": null
+          }
+        },
+        "notes": [
+          "upstreamInput: 236HP",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__236hp",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence."
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6",
+          "retrievedAt": "2026-08-19T04:05:24.993Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        }
+      },
+      "after": {
+        "adoption": {
+          "status": "accepted",
+          "basis": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。"
+        },
+        "id": "jamie__held_special_236_P_H",
+        "name": "HP Freeflow Strikes 1 (DL2)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "236",
+          "button": "P",
+          "strength": "H"
+        },
+        "variant": {
+          "kind": "base",
+          "condition": null
+        },
+        "frames": {
+          "startup": {
+            "status": "confirmed",
+            "display": "19",
+            "numeric": 19
+          },
+          "total": {
+            "status": "confirmed",
+            "display": "44",
+            "numeric": 44,
+            "provenance": "source",
+            "calculation": null
+          },
+          "hit": {
+            "status": "confirmed",
+            "display": "-1",
+            "numeric": -1
+          },
+          "block": {
+            "status": "confirmed",
+            "display": "-6",
+            "numeric": -6
+          }
+        },
+        "notes": [
+          "upstreamInput: 236HP",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__236hp",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence.",
+          "upstreamName: HP Freeflow Strikes 1 (DL2)",
+          "第16段階: 以前のheld理由を解消。第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+          "sourceNotation: {\"chara\":\"Jamie\",\"input\":\"236HP\",\"startup\":\"19\",\"total\":\"44\",\"hitAdv\":\"<span style=\\\"color: #ff6347;\\\">-1</span>\",\"blockAdv\":\"<span style=\\\"color: #b70c0b;\\\">'''-6'''</span>\",\"notes\":\"Damage DL0-DL3: 405/427/450/472 (Chip: 100/106/112/117); cancelable into Punch follow-up on hit/block/whiff or Kick follow-up on hit/block; whiff cancel into 6P is delayed by 4f compared to hit/block version\"}",
+          "rawSource: archive/staging/sf6-frame-data/raw/jamie.json#/moves/23"
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+          "retrievedAt": "2026-11-05T09:20:26.958Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        },
+        "representativeCondition": {
+          "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+          "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/23",
+          "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/17/title"
+        }
+      }
+    },
+    {
+      "id": "jamie__held_special_236_K_OD",
+      "before": {
+        "adoption": {
+          "status": "held",
+          "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+        },
+        "id": "jamie__held_special_236_K_OD",
+        "name": "Bakkai (DL2)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "236",
+          "button": "K",
+          "strength": "OD"
+        },
+        "variant": {
+          "kind": "conditional",
+          "condition": "Original source input retained; normal-state applicability/performance pending."
+        },
+        "frames": {
+          "startup": {
+            "status": "unknown",
+            "display": null
+          },
+          "total": {
+            "status": "unknown",
+            "display": null,
+            "provenance": null,
+            "calculation": null
+          },
+          "hit": {
+            "status": "unknown",
+            "display": null
+          },
+          "block": {
+            "status": "unknown",
+            "display": null
+          }
+        },
+        "notes": [
+          "upstreamInput: 236KK",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__236kk",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence."
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6",
+          "retrievedAt": "2026-08-19T04:05:24.993Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        }
+      },
+      "after": {
+        "adoption": {
+          "status": "accepted",
+          "basis": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。"
+        },
+        "id": "jamie__held_special_236_K_OD",
+        "name": "Bakkai (DL2)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "236",
+          "button": "K",
+          "strength": "OD"
+        },
+        "variant": {
+          "kind": "base",
+          "condition": null
+        },
+        "frames": {
+          "startup": {
+            "status": "confirmed",
+            "display": "18",
+            "numeric": 18
+          },
+          "total": {
+            "status": "confirmed",
+            "display": "159",
+            "numeric": 159,
+            "provenance": "source",
+            "calculation": null
+          },
+          "hit": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "block": {
+            "status": "confirmed",
+            "display": "-43",
+            "numeric": -43
+          }
+        },
+        "notes": [
+          "upstreamInput: 236KK",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__236kk",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence.",
+          "upstreamName: Bakkai (DL2)",
+          "第16段階: 以前のheld理由を解消。第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+          "sourceNotation: {\"chara\":\"Jamie\",\"input\":\"236KK\",\"startup\":\"18\",\"total\":\"159\",\"hitAdv\":\"KD +23\",\"blockAdv\":\"<span style=\\\"color: #b70c0b;\\\">'''-43'''</span>\",\"notes\":\"Damage DL2-DL4: 2000/2100/2200 (Chip: 500/522/545); fairly consistent projectile counter at mid-range (except vs. fireballs with low recovery or with smaller extended hurtboxes); Super cancel occurs on 7th hit; SA2 cancel: +14/+7; -97 if opponent Perfect Parries the 1st hit and then jumps to avoid the rest\"}",
+          "rawSource: archive/staging/sf6-frame-data/raw/jamie.json#/moves/25"
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+          "retrievedAt": "2026-11-05T09:20:26.958Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        },
+        "representativeCondition": {
+          "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+          "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/25",
+          "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/25/title"
+        }
+      }
+    },
+    {
+      "id": "jamie__held_special_236_K_L",
+      "before": {
+        "adoption": {
+          "status": "held",
+          "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+        },
+        "id": "jamie__held_special_236_K_L",
+        "name": "Bakkai (DL2)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "236",
+          "button": "K",
+          "strength": "L"
+        },
+        "variant": {
+          "kind": "conditional",
+          "condition": "Original source input retained; normal-state applicability/performance pending."
+        },
+        "frames": {
+          "startup": {
+            "status": "unknown",
+            "display": null
+          },
+          "total": {
+            "status": "unknown",
+            "display": null,
+            "provenance": null,
+            "calculation": null
+          },
+          "hit": {
+            "status": "unknown",
+            "display": null
+          },
+          "block": {
+            "status": "unknown",
+            "display": null
+          }
+        },
+        "notes": [
+          "upstreamInput: 236LK",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__236lk",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence."
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6",
+          "retrievedAt": "2026-08-19T04:05:24.993Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        }
+      },
+      "after": {
+        "adoption": {
+          "status": "accepted",
+          "basis": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。"
+        },
+        "id": "jamie__held_special_236_K_L",
+        "name": "Bakkai (DL2)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "236",
+          "button": "K",
+          "strength": "L"
+        },
+        "variant": {
+          "kind": "base",
+          "condition": null
+        },
+        "frames": {
+          "startup": {
+            "status": "confirmed",
+            "display": "18",
+            "numeric": 18
+          },
+          "total": {
+            "status": "confirmed",
+            "display": "67",
+            "numeric": 67,
+            "provenance": "source",
+            "calculation": null
+          },
+          "hit": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "block": {
+            "status": "confirmed",
+            "display": "-12",
+            "numeric": -12
+          }
+        },
+        "notes": [
+          "upstreamInput: 236LK",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__236lk",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence.",
+          "upstreamName: Bakkai (DL2)",
+          "第16段階: 以前のheld理由を解消。第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+          "sourceNotation: {\"chara\":\"Jamie\",\"input\":\"236LK\",\"startup\":\"18\",\"total\":\"67\",\"hitAdv\":\"KD +42\",\"blockAdv\":\"<span style=\\\"color: #b70c0b;\\\">'''-12'''</span>\",\"notes\":\"Damage DL2-DL4: 1400/1468/1540 (Chip: 348/365/382); important combo ender for safe jump setups\"}",
+          "rawSource: archive/staging/sf6-frame-data/raw/jamie.json#/moves/26"
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+          "retrievedAt": "2026-11-05T09:20:26.958Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        },
+        "representativeCondition": {
+          "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+          "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/26",
+          "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/26/title"
+        }
+      }
+    },
+    {
+      "id": "jamie__held_special_236_P_L",
+      "before": {
+        "adoption": {
+          "status": "held",
+          "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+        },
+        "id": "jamie__held_special_236_P_L",
+        "name": "LP Freeflow Strikes 1 (DL2)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "236",
+          "button": "P",
+          "strength": "L"
+        },
+        "variant": {
+          "kind": "conditional",
+          "condition": "Original source input retained; normal-state applicability/performance pending."
+        },
+        "frames": {
+          "startup": {
+            "status": "unknown",
+            "display": null
+          },
+          "total": {
+            "status": "unknown",
+            "display": null,
+            "provenance": null,
+            "calculation": null
+          },
+          "hit": {
+            "status": "unknown",
+            "display": null
+          },
+          "block": {
+            "status": "unknown",
+            "display": null
+          }
+        },
+        "notes": [
+          "upstreamInput: 236LP",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__236lp",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence."
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6",
+          "retrievedAt": "2026-08-19T04:05:24.993Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        }
+      },
+      "after": {
+        "adoption": {
+          "status": "accepted",
+          "basis": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。"
+        },
+        "id": "jamie__held_special_236_P_L",
+        "name": "LP Freeflow Strikes 1 (DL2)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "236",
+          "button": "P",
+          "strength": "L"
+        },
+        "variant": {
+          "kind": "base",
+          "condition": null
+        },
+        "frames": {
+          "startup": {
+            "status": "confirmed",
+            "display": "13",
+            "numeric": 13
+          },
+          "total": {
+            "status": "confirmed",
+            "display": "38",
+            "numeric": 38,
+            "provenance": "source",
+            "calculation": null
+          },
+          "hit": {
+            "status": "confirmed",
+            "display": "-1",
+            "numeric": -1
+          },
+          "block": {
+            "status": "confirmed",
+            "display": "-6",
+            "numeric": -6
+          }
+        },
+        "notes": [
+          "upstreamInput: 236LP",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__236lp",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence.",
+          "upstreamName: LP Freeflow Strikes 1 (DL2)",
+          "第16段階: 以前のheld理由を解消。第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+          "sourceNotation: {\"chara\":\"Jamie\",\"input\":\"236LP\",\"startup\":\"13\",\"total\":\"38\",\"hitAdv\":\"<span style=\\\"color: #ff6347;\\\">-1</span>\",\"blockAdv\":\"<span style=\\\"color: #b70c0b;\\\">'''-6'''</span>\",\"notes\":\"Damage DL0-DL3: 315/332/350/367 (Chip: 78/82/87/91); cancelable into Punch follow-up on hit/block/whiff or Kick follow-up on hit/block; whiff cancel into 6P is delayed by 4f compared to hit/block version; can be safe if well-spaced\"}",
+          "rawSource: archive/staging/sf6-frame-data/raw/jamie.json#/moves/33"
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+          "retrievedAt": "2026-11-05T09:20:26.958Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        },
+        "representativeCondition": {
+          "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+          "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/33",
+          "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/27/title"
+        }
+      }
+    },
+    {
+      "id": "jamie__held_special_236_K_M",
+      "before": {
+        "adoption": {
+          "status": "held",
+          "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+        },
+        "id": "jamie__held_special_236_K_M",
+        "name": "Bakkai (DL2)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "236",
+          "button": "K",
+          "strength": "M"
+        },
+        "variant": {
+          "kind": "conditional",
+          "condition": "Original source input retained; normal-state applicability/performance pending."
+        },
+        "frames": {
+          "startup": {
+            "status": "unknown",
+            "display": null
+          },
+          "total": {
+            "status": "unknown",
+            "display": null,
+            "provenance": null,
+            "calculation": null
+          },
+          "hit": {
+            "status": "unknown",
+            "display": null
+          },
+          "block": {
+            "status": "unknown",
+            "display": null
+          }
+        },
+        "notes": [
+          "upstreamInput: 236MK",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__236mk",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence."
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6",
+          "retrievedAt": "2026-08-19T04:05:24.993Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        }
+      },
+      "after": {
+        "adoption": {
+          "status": "accepted",
+          "basis": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。"
+        },
+        "id": "jamie__held_special_236_K_M",
+        "name": "Bakkai (DL2)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "236",
+          "button": "K",
+          "strength": "M"
+        },
+        "variant": {
+          "kind": "base",
+          "condition": null
+        },
+        "frames": {
+          "startup": {
+            "status": "confirmed",
+            "display": "22",
+            "numeric": 22
+          },
+          "total": {
+            "status": "confirmed",
+            "display": "90",
+            "numeric": 90,
+            "provenance": "source",
+            "calculation": null
+          },
+          "hit": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "block": {
+            "status": "confirmed",
+            "display": "-16",
+            "numeric": -16
+          }
+        },
+        "notes": [
+          "upstreamInput: 236MK",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__236mk",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence.",
+          "upstreamName: Bakkai (DL2)",
+          "第16段階: 以前のheld理由を解消。第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+          "sourceNotation: {\"chara\":\"Jamie\",\"input\":\"236MK\",\"startup\":\"22\",\"total\":\"90\",\"hitAdv\":\"KD +35\",\"blockAdv\":\"<span style=\\\"color: #b70c0b;\\\">'''-16'''</span>\",\"notes\":\"Damage DL2-DL4: 1600/1677/1760 (Chip: 397/416/435)\"}",
+          "rawSource: archive/staging/sf6-frame-data/raw/jamie.json#/moves/35"
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+          "retrievedAt": "2026-11-05T09:20:26.958Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        },
+        "representativeCondition": {
+          "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+          "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/35",
+          "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/35/title"
+        }
+      }
+    },
+    {
+      "id": "jamie__held_special_236_P_M",
+      "before": {
+        "adoption": {
+          "status": "held",
+          "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+        },
+        "id": "jamie__held_special_236_P_M",
+        "name": "MP Freeflow Strikes 1 (DL2)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "236",
+          "button": "P",
+          "strength": "M"
+        },
+        "variant": {
+          "kind": "conditional",
+          "condition": "Original source input retained; normal-state applicability/performance pending."
+        },
+        "frames": {
+          "startup": {
+            "status": "unknown",
+            "display": null
+          },
+          "total": {
+            "status": "unknown",
+            "display": null,
+            "provenance": null,
+            "calculation": null
+          },
+          "hit": {
+            "status": "unknown",
+            "display": null
+          },
+          "block": {
+            "status": "unknown",
+            "display": null
+          }
+        },
+        "notes": [
+          "upstreamInput: 236MP",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__236mp",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence."
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6",
+          "retrievedAt": "2026-08-19T04:05:24.993Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        }
+      },
+      "after": {
+        "adoption": {
+          "status": "accepted",
+          "basis": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。"
+        },
+        "id": "jamie__held_special_236_P_M",
+        "name": "MP Freeflow Strikes 1 (DL2)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "236",
+          "button": "P",
+          "strength": "M"
+        },
+        "variant": {
+          "kind": "base",
+          "condition": null
+        },
+        "frames": {
+          "startup": {
+            "status": "confirmed",
+            "display": "16",
+            "numeric": 16
+          },
+          "total": {
+            "status": "confirmed",
+            "display": "41",
+            "numeric": 41,
+            "provenance": "source",
+            "calculation": null
+          },
+          "hit": {
+            "status": "confirmed",
+            "display": "-1",
+            "numeric": -1
+          },
+          "block": {
+            "status": "confirmed",
+            "display": "-6",
+            "numeric": -6
+          }
+        },
+        "notes": [
+          "upstreamInput: 236MP",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__236mp",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence.",
+          "upstreamName: MP Freeflow Strikes 1 (DL2)",
+          "第16段階: 以前のheld理由を解消。第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+          "sourceNotation: {\"chara\":\"Jamie\",\"input\":\"236MP\",\"startup\":\"16\",\"total\":\"41\",\"hitAdv\":\"<span style=\\\"color: #ff6347;\\\">-1</span>\",\"blockAdv\":\"<span style=\\\"color: #b70c0b;\\\">'''-6'''</span>\",\"notes\":\"Damage DL0-DL3: 360/380/400/420 (Chip: 90/95/100/105); cancelable into Punch follow-up on hit/block/whiff or Kick follow-up on hit/block; whiff cancel into 6P is delayed by 4f compared to hit/block version\"}",
+          "rawSource: archive/staging/sf6-frame-data/raw/jamie.json#/moves/42"
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+          "retrievedAt": "2026-11-05T09:20:26.958Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        },
+        "representativeCondition": {
+          "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+          "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/42",
+          "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/36/title"
+        }
+      }
+    },
+    {
+      "id": "jamie__held_special_236_P_OD",
+      "before": {
+        "adoption": {
+          "status": "held",
+          "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+        },
+        "id": "jamie__held_special_236_P_OD",
+        "name": "OD Freeflow Strikes 1 (DL2)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "236",
+          "button": "P",
+          "strength": "OD"
+        },
+        "variant": {
+          "kind": "conditional",
+          "condition": "Original source input retained; normal-state applicability/performance pending."
+        },
+        "frames": {
+          "startup": {
+            "status": "unknown",
+            "display": null
+          },
+          "total": {
+            "status": "unknown",
+            "display": null,
+            "provenance": null,
+            "calculation": null
+          },
+          "hit": {
+            "status": "unknown",
+            "display": null
+          },
+          "block": {
+            "status": "unknown",
+            "display": null
+          }
+        },
+        "notes": [
+          "upstreamInput: 236PP",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__236pp",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence."
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6",
+          "retrievedAt": "2026-08-19T04:05:24.993Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        }
+      },
+      "after": {
+        "adoption": {
+          "status": "accepted",
+          "basis": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。"
+        },
+        "id": "jamie__held_special_236_P_OD",
+        "name": "OD Freeflow Strikes 1 (DL2)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "236",
+          "button": "P",
+          "strength": "OD"
+        },
+        "variant": {
+          "kind": "base",
+          "condition": null
+        },
+        "frames": {
+          "startup": {
+            "status": "confirmed",
+            "display": "13",
+            "numeric": 13
+          },
+          "total": {
+            "status": "confirmed",
+            "display": "38",
+            "numeric": 38,
+            "provenance": "source",
+            "calculation": null
+          },
+          "hit": {
+            "status": "confirmed",
+            "display": "+1",
+            "numeric": 1
+          },
+          "block": {
+            "status": "confirmed",
+            "display": "-3",
+            "numeric": -3
+          }
+        },
+        "notes": [
+          "upstreamInput: 236PP",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__236pp",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence.",
+          "upstreamName: OD Freeflow Strikes 1 (DL2)",
+          "第16段階: 以前のheld理由を解消。第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+          "sourceNotation: {\"chara\":\"Jamie\",\"input\":\"236PP\",\"startup\":\"13\",\"total\":\"38\",\"hitAdv\":\"<span style=\\\"color: #32CD32;\\\">+1</span>\",\"blockAdv\":\"<span style=\\\"color: #ff6347;\\\">-3</span>\",\"notes\":\"Damage DL0-DL3: 405/427/450/472 (Chip: 100/106/112/117); cancelable into Punch follow-up on hit/block/whiff or Kick follow-up on hit/block; whiff cancel into 6P is delayed by 5f compared to hit/block version; safe buffer option that allows an easy hitconfirm into follow-ups; all 6P Rekka follow-ups do not count as separate moves for damage scaling (but do apply scaling to other follow-ups after 1st or 3rd rekka); SA2 cancel: +17/+14\"}",
+          "rawSource: archive/staging/sf6-frame-data/raw/jamie.json#/moves/50"
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+          "retrievedAt": "2026-11-05T09:20:26.958Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        },
+        "representativeCondition": {
+          "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+          "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/50",
+          "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/44/title"
+        }
+      }
+    },
+    {
+      "id": "jamie__held_special_623_K_H",
+      "before": {
+        "adoption": {
+          "status": "held",
+          "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+        },
+        "id": "jamie__held_special_623_K_H",
+        "name": "Arrow Kick (DL2)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "623",
+          "button": "K",
+          "strength": "H"
+        },
+        "variant": {
+          "kind": "conditional",
+          "condition": "Original source input retained; normal-state applicability/performance pending."
+        },
+        "frames": {
+          "startup": {
+            "status": "unknown",
+            "display": null
+          },
+          "total": {
+            "status": "unknown",
+            "display": null,
+            "provenance": null,
+            "calculation": null
+          },
+          "hit": {
+            "status": "unknown",
+            "display": null
+          },
+          "block": {
+            "status": "unknown",
+            "display": null
+          }
+        },
+        "notes": [
+          "upstreamInput: 623HK",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__623hk",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence."
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6",
+          "retrievedAt": "2026-08-19T04:05:24.993Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        }
+      },
+      "after": {
+        "adoption": {
+          "status": "accepted",
+          "basis": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。"
+        },
+        "id": "jamie__held_special_623_K_H",
+        "name": "Arrow Kick (DL2)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "623",
+          "button": "K",
+          "strength": "H"
+        },
+        "variant": {
+          "kind": "base",
+          "condition": null
+        },
+        "frames": {
+          "startup": {
+            "status": "confirmed",
+            "display": "10",
+            "numeric": 10
+          },
+          "total": {
+            "status": "confirmed",
+            "display": "69",
+            "numeric": 69,
+            "provenance": "source",
+            "calculation": null
+          },
+          "hit": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "block": {
+            "status": "confirmed",
+            "display": "-43",
+            "numeric": -43
+          }
+        },
+        "notes": [
+          "upstreamInput: 623HK",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__623hk",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence.",
+          "upstreamName: Arrow Kick (DL2)",
+          "第16段階: 以前のheld理由を解消。第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+          "sourceNotation: {\"chara\":\"Jamie\",\"input\":\"623HK\",\"startup\":\"10\",\"total\":\"69\",\"hitAdv\":\"KD +39\",\"blockAdv\":\"<span style=\\\"color: #b70c0b;\\\">'''-43'''</span>\",\"notes\":\"Damage DL0-DL4: 1260/1330/1400/1470/1540 (Chip: 315/332/350/367/385); on hit, a follow-up occurs with 8f landing recovery (19-42f full invuln, vulnerable to projectiles before invincibility starts); cannot hit cross-up; can juggle into 623KK or SA1 after a high airborne connect in the corner\"}",
+          "rawSource: archive/staging/sf6-frame-data/raw/jamie.json#/moves/78"
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+          "retrievedAt": "2026-11-05T09:20:26.958Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        },
+        "representativeCondition": {
+          "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+          "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/78",
+          "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/78/title"
+        }
+      }
+    },
+    {
+      "id": "jamie__held_special_623_K_OD",
+      "before": {
+        "adoption": {
+          "status": "held",
+          "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+        },
+        "id": "jamie__held_special_623_K_OD",
+        "name": "Arrow Kick (DL2)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "623",
+          "button": "K",
+          "strength": "OD"
+        },
+        "variant": {
+          "kind": "conditional",
+          "condition": "Original source input retained; normal-state applicability/performance pending."
+        },
+        "frames": {
+          "startup": {
+            "status": "unknown",
+            "display": null
+          },
+          "total": {
+            "status": "unknown",
+            "display": null,
+            "provenance": null,
+            "calculation": null
+          },
+          "hit": {
+            "status": "unknown",
+            "display": null
+          },
+          "block": {
+            "status": "unknown",
+            "display": null
+          }
+        },
+        "notes": [
+          "upstreamInput: 623KK",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__623kk",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence."
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6",
+          "retrievedAt": "2026-08-19T04:05:24.993Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        }
+      },
+      "after": {
+        "adoption": {
+          "status": "accepted",
+          "basis": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。"
+        },
+        "id": "jamie__held_special_623_K_OD",
+        "name": "Arrow Kick (DL2)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "623",
+          "button": "K",
+          "strength": "OD"
+        },
+        "variant": {
+          "kind": "base",
+          "condition": null
+        },
+        "frames": {
+          "startup": {
+            "status": "confirmed",
+            "display": "6",
+            "numeric": 6
+          },
+          "total": {
+            "status": "confirmed",
+            "display": "65",
+            "numeric": 65,
+            "provenance": "source",
+            "calculation": null
+          },
+          "hit": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "block": {
+            "status": "confirmed",
+            "display": "-43",
+            "numeric": -43
+          }
+        },
+        "notes": [
+          "upstreamInput: 623KK",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__623kk",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence.",
+          "upstreamName: Arrow Kick (DL2)",
+          "第16段階: 以前のheld理由を解消。第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+          "sourceNotation: {\"chara\":\"Jamie\",\"input\":\"623KK\",\"startup\":\"6\",\"total\":\"65\",\"hitAdv\":\"KD +40\",\"blockAdv\":\"<span style=\\\"color: #b70c0b;\\\">'''-43'''</span>\",\"notes\":\"Damage DL0-DL4: 1350/1424/1500/1574/1650 (Chip: 337/356/375/393/412); on hit, a follow-up occurs with 11f landing recovery (15-38f full invuln, vulnerable to projectiles before 2nd hit invincibility starts); Jamie's primary reversal; cannot hit cross-up\"}",
+          "rawSource: archive/staging/sf6-frame-data/raw/jamie.json#/moves/79"
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+          "retrievedAt": "2026-11-05T09:20:26.958Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        },
+        "representativeCondition": {
+          "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+          "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/79",
+          "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/79/title"
+        }
+      }
+    },
+    {
+      "id": "jamie__held_special_623_K_L",
+      "before": {
+        "adoption": {
+          "status": "held",
+          "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+        },
+        "id": "jamie__held_special_623_K_L",
+        "name": "Arrow Kick (DL2)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "623",
+          "button": "K",
+          "strength": "L"
+        },
+        "variant": {
+          "kind": "conditional",
+          "condition": "Original source input retained; normal-state applicability/performance pending."
+        },
+        "frames": {
+          "startup": {
+            "status": "unknown",
+            "display": null
+          },
+          "total": {
+            "status": "unknown",
+            "display": null,
+            "provenance": null,
+            "calculation": null
+          },
+          "hit": {
+            "status": "unknown",
+            "display": null
+          },
+          "block": {
+            "status": "unknown",
+            "display": null
+          }
+        },
+        "notes": [
+          "upstreamInput: 623LK",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__623lk",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence."
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6",
+          "retrievedAt": "2026-08-19T04:05:24.993Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        }
+      },
+      "after": {
+        "adoption": {
+          "status": "accepted",
+          "basis": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。"
+        },
+        "id": "jamie__held_special_623_K_L",
+        "name": "Arrow Kick (DL2)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "623",
+          "button": "K",
+          "strength": "L"
+        },
+        "variant": {
+          "kind": "base",
+          "condition": null
+        },
+        "frames": {
+          "startup": {
+            "status": "confirmed",
+            "display": "5",
+            "numeric": 5
+          },
+          "total": {
+            "status": "confirmed",
+            "display": "66",
+            "numeric": 66,
+            "provenance": "source",
+            "calculation": null
+          },
+          "hit": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "block": {
+            "status": "confirmed",
+            "display": "-44",
+            "numeric": -44
+          }
+        },
+        "notes": [
+          "upstreamInput: 623LK",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__623lk",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence.",
+          "upstreamName: Arrow Kick (DL2)",
+          "第16段階: 以前のheld理由を解消。第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+          "sourceNotation: {\"chara\":\"Jamie\",\"input\":\"623LK\",\"startup\":\"5\",\"total\":\"66\",\"hitAdv\":\"KD +42\",\"blockAdv\":\"<span style=\\\"color: #b70c0b;\\\">'''-44'''</span>\",\"notes\":\"Damage DL0-DL4: 900/950/1000/1050/1100 (Chip: 225/237/250/262/275); on hit, a follow-up occurs with 11f landing recovery (16-42f full invuln, vulnerable to projectiles before invincibility starts); cannot hit cross-up; sets up a safe jump in the corner (or midscreen if no back rise); can juggle into 623KK, SA1, or SA3 after a high airborne connect (623KK requires corner positioning)\"}",
+          "rawSource: archive/staging/sf6-frame-data/raw/jamie.json#/moves/80"
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+          "retrievedAt": "2026-11-05T09:20:26.958Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        },
+        "representativeCondition": {
+          "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+          "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/80",
+          "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/80/title"
+        }
+      }
+    },
+    {
+      "id": "jamie__held_special_623_K_M",
+      "before": {
+        "adoption": {
+          "status": "held",
+          "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+        },
+        "id": "jamie__held_special_623_K_M",
+        "name": "Arrow Kick (DL2)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "623",
+          "button": "K",
+          "strength": "M"
+        },
+        "variant": {
+          "kind": "conditional",
+          "condition": "Original source input retained; normal-state applicability/performance pending."
+        },
+        "frames": {
+          "startup": {
+            "status": "unknown",
+            "display": null
+          },
+          "total": {
+            "status": "unknown",
+            "display": null,
+            "provenance": null,
+            "calculation": null
+          },
+          "hit": {
+            "status": "unknown",
+            "display": null
+          },
+          "block": {
+            "status": "unknown",
+            "display": null
+          }
+        },
+        "notes": [
+          "upstreamInput: 623MK",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__623mk",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence."
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6",
+          "retrievedAt": "2026-08-19T04:05:24.993Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        }
+      },
+      "after": {
+        "adoption": {
+          "status": "accepted",
+          "basis": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。"
+        },
+        "id": "jamie__held_special_623_K_M",
+        "name": "Arrow Kick (DL2)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "623",
+          "button": "K",
+          "strength": "M"
+        },
+        "variant": {
+          "kind": "base",
+          "condition": null
+        },
+        "frames": {
+          "startup": {
+            "status": "confirmed",
+            "display": "8",
+            "numeric": 8
+          },
+          "total": {
+            "status": "confirmed",
+            "display": "67",
+            "numeric": 67,
+            "provenance": "source",
+            "calculation": null
+          },
+          "hit": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "block": {
+            "status": "confirmed",
+            "display": "-43",
+            "numeric": -43
+          }
+        },
+        "notes": [
+          "upstreamInput: 623MK",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__623mk",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence.",
+          "upstreamName: Arrow Kick (DL2)",
+          "第16段階: 以前のheld理由を解消。第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+          "sourceNotation: {\"chara\":\"Jamie\",\"input\":\"623MK\",\"startup\":\"8\",\"total\":\"67\",\"hitAdv\":\"KD +34\",\"blockAdv\":\"<span style=\\\"color: #b70c0b;\\\">'''-43'''</span>\",\"notes\":\"Damage DL0-DL4: 1080/1140/1200/1260/1320 (Chip: 270/285/300/315/330); on hit, a follow-up occurs with 18f landing recovery (17-40f full invuln, vulnerable to projectiles before invincibility starts); cannot hit cross-up\"}",
+          "rawSource: archive/staging/sf6-frame-data/raw/jamie.json#/moves/81"
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+          "retrievedAt": "2026-11-05T09:20:26.958Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        },
+        "representativeCondition": {
+          "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+          "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/81",
+          "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/81/title"
+        }
+      }
+    },
+    {
+      "id": "jamie__held_special_63214_K_OD",
+      "before": {
+        "adoption": {
+          "status": "held",
+          "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+        },
+        "id": "jamie__held_special_63214_K_OD",
+        "name": "Tenshin (DL3)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "63214",
+          "button": "K",
+          "strength": "OD"
+        },
+        "variant": {
+          "kind": "conditional",
+          "condition": "Original source input retained; normal-state applicability/performance pending."
+        },
+        "frames": {
+          "startup": {
+            "status": "unknown",
+            "display": null
+          },
+          "total": {
+            "status": "unknown",
+            "display": null,
+            "provenance": null,
+            "calculation": null
+          },
+          "hit": {
+            "status": "unknown",
+            "display": null
+          },
+          "block": {
+            "status": "unknown",
+            "display": null
+          }
+        },
+        "notes": [
+          "upstreamInput: 63214KK",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__63214kk",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence."
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6",
+          "retrievedAt": "2026-08-19T04:05:24.993Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        }
+      },
+      "after": {
+        "adoption": {
+          "status": "accepted",
+          "basis": "第16段階ユーザー指定: 酔いLv.3のTenshinを代表条件に固定。"
+        },
+        "id": "jamie__held_special_63214_K_OD",
+        "name": "Tenshin (DL3)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "63214",
+          "button": "K",
+          "strength": "OD"
+        },
+        "variant": {
+          "kind": "base",
+          "condition": null
+        },
+        "frames": {
+          "startup": {
+            "status": "confirmed",
+            "display": "8",
+            "numeric": 8
+          },
+          "total": {
+            "status": "confirmed",
+            "display": "61",
+            "numeric": 61,
+            "provenance": "source",
+            "calculation": null
+          },
+          "hit": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "block": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        },
+        "notes": [
+          "upstreamInput: 63214KK",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__63214kk",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence.",
+          "upstreamName: Tenshin (DL3)",
+          "第16段階: 以前のheld理由を解消。第16段階ユーザー指定: 酔いLv.3のTenshinを代表条件に固定。",
+          "sourceNotation: {\"chara\":\"Jamie\",\"input\":\"63214KK\",\"startup\":\"8\",\"total\":\"61\",\"hitAdv\":\"HKD +86 Crumple\",\"blockAdv\":\"-\",\"notes\":\"Damage DL3-DL4: 682/715; cannot be canceled into from normals; Jamie is <span style=\\\"color: #30D5B8;\\\">'''+28'''</span> before crumpled opponent goes airborne into a free juggle state; leaves enough frame advantage to dash or Drive Rush into a grounded combo; does not benefit from Counter/Punish Counter bonus frame advantage; Range: 0.96\"}",
+          "rawSource: archive/staging/sf6-frame-data/raw/jamie.json#/moves/82"
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+          "retrievedAt": "2026-11-05T09:20:26.958Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        },
+        "representativeCondition": {
+          "condition": "第16段階ユーザー指定: 酔いLv.3のTenshinを代表条件に固定。",
+          "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/82",
+          "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/83/title"
+        }
+      }
+    },
+    {
+      "id": "jamie__held_special_63214_K_none",
+      "before": {
+        "adoption": {
+          "status": "held",
+          "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+        },
+        "id": "jamie__held_special_63214_K_none",
+        "name": "Tenshin (DL3)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "63214",
+          "button": "K",
+          "strength": "none"
+        },
+        "variant": {
+          "kind": "conditional",
+          "condition": "Original source input retained; normal-state applicability/performance pending."
+        },
+        "frames": {
+          "startup": {
+            "status": "unknown",
+            "display": null
+          },
+          "total": {
+            "status": "unknown",
+            "display": null,
+            "provenance": null,
+            "calculation": null
+          },
+          "hit": {
+            "status": "unknown",
+            "display": null
+          },
+          "block": {
+            "status": "unknown",
+            "display": null
+          }
+        },
+        "notes": [
+          "upstreamInput: 63214K",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__63214k",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence."
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6",
+          "retrievedAt": "2026-08-19T04:05:24.993Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        }
+      },
+      "after": {
+        "adoption": {
+          "status": "accepted",
+          "basis": "第16段階ユーザー指定: 酔いLv.3のTenshinを代表条件に固定。"
+        },
+        "id": "jamie__held_special_63214_K_none",
+        "name": "Tenshin (DL3)",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "63214",
+          "button": "K",
+          "strength": "none"
+        },
+        "variant": {
+          "kind": "base",
+          "condition": null
+        },
+        "frames": {
+          "startup": {
+            "status": "confirmed",
+            "display": "8",
+            "numeric": 8
+          },
+          "total": {
+            "status": "confirmed",
+            "display": "61",
+            "numeric": 61,
+            "provenance": "source",
+            "calculation": null
+          },
+          "hit": {
+            "status": "confirmed",
+            "display": "+8",
+            "numeric": 8
+          },
+          "block": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        },
+        "notes": [
+          "upstreamInput: 63214K",
+          "Source inventory: archive/staging/sf6-frame-data/raw/jamie.json#jamie__63214k",
+          "Rule held-source-input: source input exists; normal-state availability/performance is not certified. Keep unknown rather than assert absence.",
+          "upstreamName: Tenshin (DL3)",
+          "第16段階: 以前のheld理由を解消。第16段階ユーザー指定: 酔いLv.3のTenshinを代表条件に固定。",
+          "sourceNotation: {\"chara\":\"Jamie\",\"input\":\"63214K\",\"startup\":\"8\",\"total\":\"61\",\"hitAdv\":\"<span style=\\\"color: #30D5B8;\\\">'''+8'''</span>\",\"blockAdv\":\"-\",\"notes\":\"Cannot be canceled into from normals; leaves opponent standing on hit for a grounded combo; does not benefit from Counter/Punish Counter bonus frame advantage; starter scaling is applied to the 3rd hit of the combo, while immediate scaling applies if Tenshin is comboed into (e.g. after Stun, PC Drive Impact, or corner PC 214PP)); Range: 0.96\"}",
+          "rawSource: archive/staging/sf6-frame-data/raw/jamie.json#/moves/83"
+        ],
+        "source": {
+          "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data",
+          "retrievedAt": "2026-11-05T09:20:26.958Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "community",
+          "attribution": "SuperCombo Wiki contributors; RyoSogawa/sf6-sensei (normalization)",
+          "license": "CC-BY-SA-4.0",
+          "verification": "unverified"
+        },
+        "representativeCondition": {
+          "condition": "第16段階ユーザー指定: 酔いLv.3のTenshinを代表条件に固定。",
+          "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/83",
+          "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/82/title"
+        }
+      }
+    }
+  ]
+}

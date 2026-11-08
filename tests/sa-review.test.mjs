@@ -3,6 +3,13 @@ import assert from "node:assert/strict";
 import { readFileSync, readdirSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 test("only the nine authorized frame fields differ from stage B", () => {
+  const policy = JSON.parse(
+    readFileSync("data/adoption-decisions.json", "utf8"),
+  ).conditionalSpecials;
+  const superseded = new Set([
+    ...(policy?.selections || []).map((s) => s.moveId),
+    policy?.excludedMoveId,
+  ]);
   const changes = [];
   let count = 0;
   for (const f of readdirSync("data/characters").filter((f) =>
@@ -26,6 +33,7 @@ test("only the nine authorized frame fields differ from stage B", () => {
       const m = after.moves.find((m) => m.id === old.id);
       assert.ok(m);
       count++;
+      if (superseded.has(old.id)) continue; // Exact stage-16 changes are independently checked by conditional adoption audit.
       assert.deepEqual(m.source, old.source);
       for (const field of ["startup", "total", "hit", "block"])
         if (

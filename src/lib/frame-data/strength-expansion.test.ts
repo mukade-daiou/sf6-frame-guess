@@ -154,5 +154,5 @@ it("does not turn absent OD into unknown merely due to strength none or SA cover
   expect(
     resolveMove(viper, { ...query("OD"), motion: "214", button: "K" }, "normal")
       .status,
-  ).toBe("unknown");
+  ).toBe("found");
 });

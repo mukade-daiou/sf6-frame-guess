@@ -2,6 +2,7 @@ import { readFile, readdir, mkdir, writeFile } from "node:fs/promises";
 import { characterSchema } from "../src/lib/frame-data/schema";
 import { isQuestionInput } from "../src/lib/frame-data/input";
 import { excludedInputReason } from "./source-scope";
+import { applyConditionalSpecials } from "./conditional-specials";
 
 const read = async (p: string) => JSON.parse(await readFile(p, "utf8"));
 const out = "staging/coverage-audit";
@@ -10,8 +11,8 @@ const characters = [];
 for (const file of (await readdir("staging/adoption-inputs"))
   .filter((f) => f.endsWith(".json"))
   .sort()) {
-  const c = characterSchema.parse(
-    await read(`staging/adoption-inputs/${file}`),
+  const c = applyConditionalSpecials(
+    characterSchema.parse(await read(`staging/adoption-inputs/${file}`)),
   );
   const rawPath = `archive/staging/sf6-frame-data/raw/${file}`;
   const raw = await read(rawPath);
@@ -40,15 +41,20 @@ for (const file of (await readdir("staging/adoption-inputs"))
       classification = "out_of_scope";
       reason = excludedInputReason(input)!;
     } else if (matches.length) {
-      classification = matches.every(
-        (m) => m.adoption?.status === "held" || m.variant.kind !== "base",
-      )
-        ? "held"
-        : matches.some((m) => isQuestionInput(m.input))
-          ? "recorded"
-          : "recorded_ui_unsupported";
-      reason =
-        "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.";
+      if (matches.every((m) => m.adoption?.status === "excluded")) {
+        classification = "out_of_scope";
+        reason = "Explicit individual adoption exclusion (Speedy Maracas).";
+      } else {
+        classification = matches.every(
+          (m) => m.adoption?.status === "held" || m.variant.kind !== "base",
+        )
+          ? "held"
+          : matches.some((m) => isQuestionInput(m.input))
+            ? "recorded"
+            : "recorded_ui_unsupported";
+        reason =
+          "Explicit source-input/source-row mapping; source variants remain distinct in the inventory.";
+      }
     } else if (/j\.|against wall/.test(input)) {
       classification = "out_of_scope";
       reason = "Air/wall-only move.";
