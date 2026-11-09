@@ -113,6 +113,35 @@ for (const width of [1280, 768, 390, 320]) {
     ),
     "Filter persists with character",
   );
+  run("select", "#moves-character", "zangief");
+  for (const filter of ["すべて", "採用", "保留", "複数候補"]) {
+    const records = ev(async (filter) => {
+      const select = document.querySelectorAll("select")[1];
+      select.value = filter;
+      select.dispatchEvent(new Event("change", { bubbles: true }));
+      await new Promise((r) => setTimeout(r, 50));
+      let inputKey;
+      return [...document.querySelectorAll("tbody tr")].flatMap((row) => {
+        inputKey = row.dataset.inputKey ?? inputKey;
+        const id = row
+          .querySelector("small")
+          ?.innerHTML.match(/ID: ([^<]+)/)?.[1];
+        return id ? [`${inputKey}:${id}`] : [];
+      });
+    }, filter);
+    assert(records.length > 0, `Multiple records present: ${filter}`);
+    assert(
+      new Set(records).size === records.length,
+      `No duplicate records per input: ${filter}`,
+    );
+  }
+  ev(async () => {
+    const select = document.querySelectorAll("select")[1];
+    select.value = "除外";
+    select.dispatchEvent(new Event("change", { bubbles: true }));
+    await new Promise((r) => setTimeout(r, 50));
+    return true;
+  });
   run("select", "#moves-character", "dee_jay");
   const scroll = ev(() => {
     const el = document.querySelector(".moves-scroll");

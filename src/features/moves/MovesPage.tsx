@@ -195,7 +195,8 @@ export default function MovesPage() {
                   ? r.records
                       .filter(
                         (m) =>
-                          filter === "複数候補" || matches(recordStatus(m)),
+                          m.id !== r.primary?.id &&
+                          (filter === "複数候補" || matches(recordStatus(m))),
                       )
                       .map((m) => (
                         <tr className="move-detail-row" key={`${key}:${m.id}`}>
