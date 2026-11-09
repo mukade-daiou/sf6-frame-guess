@@ -141,11 +141,7 @@ async function exercise(config) {
   assert(preview() === "2HK", "Crouching HK");
   await normal("2", config.target === "ken" ? "強K" : "中K");
   await click("質問する");
-  assert(count() === 0, "Unknown consumed");
-  assert(
-    document.querySelector(".query-unknown")?.textContent === "不明",
-    "Unknown has no visible result",
-  );
+  assert(count() === 1, "Researched normal question missing");
   await click("Hard");
   assert(
     !document.querySelector(".query-unknown"),
@@ -177,8 +173,9 @@ async function exercise(config) {
   );
   assert(
     document.querySelector("ol.history li").querySelectorAll("dd").length ===
-      4 && document.querySelector("ol.history li").textContent.includes("不明"),
-    "History did not switch to normal with unknown total",
+      4 &&
+      !document.querySelector("ol.history li").textContent.includes("不明"),
+    "Researched history total missing",
   );
   if (config.mode === "startup") await click("Hard");
   await click("必殺技・SA");
@@ -366,7 +363,7 @@ async function exercise(config) {
     passed: true,
     questions: 5,
     liveHistoryMode: true,
-    unknownNotConsumed: true,
+    researchedTotalAndModeDuplicate: true,
     fixture: false,
     history,
   };

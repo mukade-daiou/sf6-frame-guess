@@ -8,6 +8,21 @@ export function DataInfo({ dataset }: { dataset: Dataset }) {
       <div className="info-content">
         <h2>データの出典・帰属</h2>
         <p>
+          非公式のファン制作ゲームです。株式会社カプコンおよび原典サイトによる提供・承認を示すものではありません。Street
+          Fighterおよび関連名称の権利は各権利者に帰属します。
+        </p>
+        <p>
+          原典データを選別・正規化し、代表条件を採用しています。データとその改変部分は{" "}
+          <a
+            href="https://creativecommons.org/licenses/by-sa/4.0/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            CC BY-SA 4.0
+          </a>{" "}
+          として提供します。ライセンスは商標等の権利を許諾するものではありません。
+        </p>
+        <p>
           {dataset.metadata.label} ／ {dataset.metadata.gameVersion}
         </p>
         <p>
