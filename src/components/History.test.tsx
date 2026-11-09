@@ -3,6 +3,45 @@ import { renderToStaticMarkup } from "react-dom/server";
 import { History } from "./History";
 import { production } from "../lib/frame-data/datasets";
 import { startGame, ask, changeMode } from "../features/game/engine";
+import { Frames } from "../features/moves/MovesPage";
+
+it("shows knockdowns in Japanese in history while preserving other values and the inventory notation", () => {
+  let game = startGame(production, "normal", 5, () => 0);
+  const input = game.inputs.find((i) => i.type === "normal")!;
+  game = ask(game, input).game;
+  const entry = game.history[0];
+  if (!entry || entry.result.status !== "found")
+    throw new Error("Expected a found move");
+  const frames = entry.result.frames;
+  frames.startup = { status: "confirmed", display: "4" };
+  frames.total = {
+    status: "not_applicable",
+    display: null,
+    provenance: null,
+    calculation: null,
+  };
+  frames.hit = { status: "confirmed", display: "D" };
+  frames.block = { status: "unknown", display: null };
+  const html = renderToStaticMarkup(
+    <History entries={[entry]} mode="normal" />,
+  );
+  expect(html).toContain("<dd>4</dd>");
+  expect(html).toContain("<dd>対象外</dd>");
+  expect(html).toContain("<dd>ダウン</dd>");
+  expect(html).toContain("<dd>不明</dd>");
+  const move = { ...game.target.moves[0], frames };
+  expect(
+    renderToStaticMarkup(
+      <table>
+        <tbody>
+          <tr>
+            <Frames move={move} />
+          </tr>
+        </tbody>
+      </table>,
+    ),
+  ).toContain(">D</td>");
+});
 
 it("switches all historical rows to the current mode, including unknown saved fields", () => {
   let game = startGame(
