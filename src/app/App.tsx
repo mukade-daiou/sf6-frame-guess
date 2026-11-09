@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { shareUrl } from "../features/game/share";
 import { production } from "../lib/frame-data/datasets";
 import type { MoveInput } from "../lib/frame-data/schema";
 import {
@@ -259,15 +260,28 @@ export default function App() {
                           ?.nameJa}
                   </dd>
                 </dl>
-                <button
-                  onClick={() => {
-                    setGame(startGame(dataset, game.mode, limit));
-                    setSelection("");
-                    setMessage("");
-                  }}
-                >
-                  再プレイ
-                </button>
+                <div className="choices">
+                  <button
+                    onClick={() => {
+                      setGame(startGame(dataset, game.mode, limit));
+                      setSelection("");
+                      setMessage("");
+                    }}
+                  >
+                    再プレイ
+                  </button>
+                  <button
+                    onClick={() =>
+                      window.open(
+                        shareUrl(game),
+                        "_blank",
+                        "noopener,noreferrer",
+                      )
+                    }
+                  >
+                    Xで結果をシェア
+                  </button>
+                </div>
               </>
             )}
             <p className="feedback" role="status" aria-live="polite">
