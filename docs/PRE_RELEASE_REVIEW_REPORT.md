@@ -1,5 +1,7 @@
 # 第18段階：公開前レビュー
 
+完了追記：承認データはa0710f7、レビュー修正は222829cに保存しorigin/mainへ通常pushした。[Actions 42577482920](https://github.com/mukade-daiou/sf6-frame-guess/actions/runs/42577482920)でnpm ci、再生成確認、format、単体、ビルド、data/archive回帰、参照検査、Pages artifact uploadがすべてsuccess、deployジョブはskipped。push後の作業ツリーはクリーンでリモートHEAD一致を確認した。以下の「push後確認」はこの結果で完了。公開判定は権利の未確認を理由に保留を維持し、デプロイはしていない。
+
 開始HEADは69c2241でorigin/mainと一致。開始時には直前のユーザー承認による非ホールド立ち強P16F、壁効果D、百鬼襲入力なし版の未コミット変更があった。これを保護し、過去の「未確定8件」に戻さず、32キャラ1298件・SA288入力・採用済み基本技unknown 0・datasetId demon-raid-no-input-2026-11-09-r1を基準とした。原典のパッチ確認はUNVERIFIEDのまま。
 
 ## 領域別結果
