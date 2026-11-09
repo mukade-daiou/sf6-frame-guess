@@ -271,6 +271,7 @@ export default function App() {
                     再プレイ
                   </button>
                   <button
+                    aria-label="Xで結果をシェア"
                     onClick={() =>
                       window.open(
                         shareUrl(game),
@@ -279,7 +280,19 @@ export default function App() {
                       )
                     }
                   >
-                    Xで結果をシェア
+                    <svg
+                      aria-hidden="true"
+                      width="17"
+                      height="17"
+                      viewBox="0 0 24 24"
+                      style={{ verticalAlign: "-3px", marginRight: "8px" }}
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.5 5.4 22H2.2l7.3-8.4L1.8 2h6.4l4.4 6.8L18.9 2zm-1.1 18h1.7L7.2 3.9H5.4L17.8 20z"
+                      />
+                    </svg>
+                    結果をシェア
                   </button>
                 </div>
               </>

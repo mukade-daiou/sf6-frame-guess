@@ -8,7 +8,13 @@ const weight = (text: string) => twitterText.parseTweet(text).weightedLength;
 
 export function shareText(game: Game): string {
   const correct = game.selectedId === game.target.id;
-  const header = `SF6 フレーム探偵\n${game.selectedId === null ? "ギブアップ" : correct ? "正解" : "不正解"}\n正解：${game.target.nameJa}${game.selectedId !== null && !correct ? `\n回答：${game.candidates.find((c) => c.id === game.selectedId)!.nameJa}` : ""}`;
+  const result =
+    game.selectedId === null
+      ? `ギブアップ｜正解：${game.target.nameJa}`
+      : correct
+        ? `正解！｜${game.target.nameJa}`
+        : `不正解｜回答：${game.candidates.find((c) => c.id === game.selectedId)!.nameJa} → 正解：${game.target.nameJa}`;
+  const header = `SF6 フレーム探偵\n\n${result}\n`;
   const variants = game.history.map(({ input, result }) => {
     const command = displayInput(input);
     if (
@@ -37,6 +43,7 @@ export function shareText(game: Game): string {
         ? variants.slice(0, count).map((v, i) => v[levels[i]])
         : ["質問なし"]),
       ...(count < variants.length ? [`ほか${variants.length - count}問`] : []),
+      "",
       GAME_URL,
     ].join("\n");
   while (weight(compose()) > 280) {

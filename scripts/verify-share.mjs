@@ -18,14 +18,23 @@ for (const width of [1280, 320]) {
     "window.open=(url,target,features)=>{window.shareCapture={url,target,features};return null}; true",
   );
   ev(
-    "(() => { [...document.querySelectorAll('button')].find(b=>b.textContent.trim()==='Xで結果をシェア').click(); return true; })()",
+    "(() => { document.querySelector('button[aria-label=\"Xで結果をシェア\"]').click(); return true; })()",
   );
   const capture = ev("window.shareCapture");
   assert.equal(capture.target, "_blank");
   assert.equal(capture.features, "noopener,noreferrer");
   const url = new URL(capture.url);
   assert.equal(url.origin + url.pathname, "https://twitter.com/intent/tweet");
-  assert.match(url.searchParams.get("text"), /SF6 フレーム探偵\nギブアップ/);
+  assert.match(
+    url.searchParams.get("text"),
+    /SF6 フレーム探偵\n\nギブアップ｜正解：[^\n]+\n\n質問なし\n\nhttps:/,
+  );
+  assert.equal(
+    ev(
+      "document.querySelector('button[aria-label=\"Xで結果をシェア\"] svg').getAttribute('aria-hidden')",
+    ),
+    "true",
+  );
   assert.match(url.searchParams.get("text"), /質問なし/);
   assert.equal(ev("document.documentElement.scrollWidth<=innerWidth"), true);
   run("screenshot", `/tmp/sf6-share-${width}.png`, "--full");

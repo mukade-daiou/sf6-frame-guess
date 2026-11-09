@@ -52,6 +52,13 @@ it("shares all outcomes and zero through five questions using the current mode",
                 },
         }));
         const text = shareText(game);
+        const expected =
+          outcome === "giveup"
+            ? `ギブアップ｜正解：${game.target.nameJa}`
+            : outcome === "correct"
+              ? `正解！｜${game.target.nameJa}`
+              : `不正解｜回答：${game.candidates.find((c) => c.id === game.selectedId)!.nameJa} → 正解：${game.target.nameJa}`;
+        expect(text).toContain(`SF6 フレーム探偵\n\n${expected}\n\n`);
         expect(text).toContain(game.target.nameJa);
         expect(text).toContain(GAME_URL);
         expect(text).toContain(
