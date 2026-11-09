@@ -1,6 +1,7 @@
 import { expect, it } from "vitest";
 import { production } from "./datasets";
 import { inputKey } from "./input";
+import { isMoveUsable } from "./adoption";
 import { resolveMove } from "./resolver";
 import { ask, startGame, changeMode } from "../../features/game/engine";
 import {
@@ -50,7 +51,7 @@ it("keeps L/M/H independent across modes and categories despite shared frame val
     ]).size,
   ).toBe(3);
 });
-it("integrates 96 slots/288 records without CA and exposes identical global six-button inputs", () => {
+it("integrates 96 slots/288 records without CA and exposes only globally existing inputs", () => {
   expect(production.eligible).toHaveLength(32);
   expect(production.errors).toEqual([]);
   expect(
@@ -70,11 +71,56 @@ it("integrates 96 slots/288 records without CA and exposes identical global six-
   const a = startGame(production, "normal", 5, () => 0),
     b = startGame(production, "normal", 5, () => 0.99);
   expect(a.inputs).toEqual(b.inputs);
+  const rotationInputs = a.inputs.filter(
+    (i) => i.type === "super_art" && i.saLevel === 3 && i.motion === "720",
+  );
+  expect(rotationInputs).toHaveLength(3);
+  expect(rotationInputs.every((i) => i.button === "P")).toBe(true);
   expect(
-    a.inputs.filter(
-      (i) => i.type === "super_art" && i.saLevel === 3 && i.motion === "720",
+    a.inputs.some(
+      (i) =>
+        i.type === "special" &&
+        i.includeSuperArts &&
+        i.motion === "720" &&
+        i.button === "K",
     ),
-  ).toHaveLength(6);
+  ).toBe(false);
+  expect(
+    ask(a, {
+      type: "special",
+      includeSuperArts: true,
+      motion: "720",
+      button: "K",
+      strength: "H",
+    }).status,
+  ).toBe("unsupported");
+  expect(
+    a.inputs.some(
+      (i) =>
+        i.type === "special" &&
+        i.includeSuperArts &&
+        i.motion === "22" &&
+        i.button === "P" &&
+        i.strength === "OD",
+    ),
+  ).toBe(true);
+
+  const adoptedBaseInputs = production.eligible.flatMap((c) =>
+    c.moves
+      .filter((m) => m.variant.kind === "base" && isMoveUsable(c, m))
+      .map((m) => m.input),
+  );
+  for (const candidate of a.inputs) {
+    const exists = adoptedBaseInputs.some((move) =>
+      candidate.type === "special" && candidate.includeSuperArts
+        ? move.type !== "normal" &&
+          move.motion === candidate.motion &&
+          move.button === candidate.button &&
+          move.strength === candidate.strength
+        : inputKey(move) === inputKey(candidate),
+    );
+    expect(exists, JSON.stringify(candidate)).toBe(true);
+  }
   expect(
     resolveMove(char("ryu"), input(3, "H", "720", "K"), "normal").status,
   ).toBe("not_found");

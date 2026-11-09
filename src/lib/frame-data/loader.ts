@@ -87,33 +87,9 @@ export function validateDataset(
       ),
     ).values(),
   ].filter(isQuestionInput);
-  // Expose all six attacks for every globally adopted SA motion/level, including
-  // nonexistent combinations. Button availability never depends on the target.
-  const inputs = [
-    ...new Map(
-      adoptedInputs
-        .flatMap((input): MoveInput[] =>
-          input.type === "super_art"
-            ? (["P", "K"] as const).flatMap((button) =>
-                (["L", "M", "H"] as const).map((strength) => ({
-                  ...input,
-                  button,
-                  strength,
-                })),
-              )
-            : [input],
-        )
-        .map((input) => [inputKey(input), input]),
-    ).values(),
-  ];
-  // An OD question is allowed globally; this is an input candidate, never an OD move.
-  for (const c of eligible)
-    for (const m of c.moves) {
-      if (m.strengthExpansion && m.input.type === "special") {
-        const od: MoveInput = { ...m.input, strength: "OD" };
-        if (!inputs.some((i) => inputKey(i) === inputKey(od))) inputs.push(od);
-      }
-    }
+  // Candidate availability depends on a real adopted base move somewhere in the
+  // eligible roster, never on the randomly selected target character.
+  const inputs = adoptedInputs;
   const commandInputs: MoveInput[] = [
     ...new Map(
       inputs
