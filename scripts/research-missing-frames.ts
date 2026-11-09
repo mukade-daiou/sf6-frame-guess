@@ -338,6 +338,7 @@ if (process.argv.includes("--check")) {
   }
   const expectedDecisions = structuredClone(policy);
   delete expectedDecisions.frameResearch;
+  delete expectedDecisions.knockdownCorrections;
   expectedDecisions.datasetId = baseline.decisions.datasetId;
   if (!isDeepStrictEqual(expectedDecisions, baseline.decisions))
     throw new Error("Unrelated adoption decision changed");

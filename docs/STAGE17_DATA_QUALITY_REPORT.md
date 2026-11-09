@@ -1,5 +1,7 @@
 # 第17段階：採用ルール統合・未確定フレーム調査・保守改善
 
+後続の[第17.5段階](STAGE17_5_KNOCKDOWN_REPORT.md)で、記録した17既知値のKD/HKD不一致を訂正した。以下は第17段階完了時点の調査記録として保持する。
+
 2026-11-09実施。開始HEADは`49c067d2ee7deca275e8a928fa282547098d30a2`でmain/origin/mainが一致し、未コミット・未追跡変更はなかった。開始時は32キャラ1298レコード、SA288入力、datasetId `focus-startup-2026-11-09-r1`。比較用の全キャラ・metadata・採用判断を[baseline.json](../staging/stage17/baseline.json)へ固定保存し、元commitの内容とも照合した。
 
 ## 採用ルールと保守修正

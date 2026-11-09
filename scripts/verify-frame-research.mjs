@@ -101,7 +101,7 @@ for (const width of [1280, 390]) {
   click("必殺技・SA");
   ask("63214", "弱P");
   assert(
-    history()[0].frames.join(",") === "9,61,+15,-",
+    history()[0].frames.join(",") === "9,61,D,-",
     "Explicit not-applicable block; existing hit unchanged",
   );
   start("jamie", width);

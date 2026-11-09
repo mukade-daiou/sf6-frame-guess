@@ -1,5 +1,6 @@
 import { readFileSync } from "node:fs";
 import { isDeepStrictEqual } from "node:util";
+import { correctKnockdowns } from "./knockdown-corrections";
 import {
   type Character,
   type Move,
@@ -63,5 +64,5 @@ export function applyFrameResearch(character: Character): Character {
     }
     return result;
   });
-  return characterSchema.parse({ ...character, moves });
+  return characterSchema.parse(correctKnockdowns({ ...character, moves }));
 }

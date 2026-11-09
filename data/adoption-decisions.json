@@ -1,5 +1,5 @@
 {
-  "datasetId": "frame-research-2026-11-09-r1",
+  "datasetId": "knockdown-corrections-2026-11-09-r1",
   "commonSpecialStrengths": {
     "enabled": true,
     "protectionRef": "d11bb6d2616b5a15e182cbc08ef7556e99f3b5d6",
@@ -1040,6 +1040,266 @@
         "evidenceId": "marisa__normal_2_K_M:total",
         "sourceNotation": "29",
         "reason": "Cargo explicitly gives total 29 and raw totalFrames agrees; whiff/block recovery note is retained. Use the written total, with no formula or extra +1."
+      }
+    ]
+  },
+  "knockdownCorrections": {
+    "basis": "第17.5段階ユーザー指定: 既知値のKD/HKD意味訂正。原典の有利値は保持。unknown補完とは別。",
+    "decisions": [
+      {
+        "characterId": "alex",
+        "moveId": "alex__special_63214_P_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+15",
+          "numeric": 15
+        },
+        "sourceNotation": "HKD +15",
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        }
+      },
+      {
+        "characterId": "alex",
+        "moveId": "alex__special_63214_P_L",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+15",
+          "numeric": 15
+        },
+        "sourceNotation": "HKD +15",
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        }
+      },
+      {
+        "characterId": "alex",
+        "moveId": "alex__special_63214_P_M",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+15",
+          "numeric": 15
+        },
+        "sourceNotation": "HKD +15",
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        }
+      },
+      {
+        "characterId": "alex",
+        "moveId": "alex__special_63214_P_OD",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+15",
+          "numeric": 15
+        },
+        "sourceNotation": "HKD +15",
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        }
+      },
+      {
+        "characterId": "arjun",
+        "moveId": "arjun__special_22_K_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+29",
+          "numeric": 29
+        },
+        "sourceNotation": "KD +29",
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        }
+      },
+      {
+        "characterId": "arjun",
+        "moveId": "arjun__special_63214_P_none",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+8",
+          "numeric": 8
+        },
+        "sourceNotation": "HKD +8(+13)",
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        }
+      },
+      {
+        "characterId": "arjun",
+        "moveId": "arjun__special_63214_P_OD",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+8",
+          "numeric": 8
+        },
+        "sourceNotation": "HKD +8(+13)",
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        }
+      },
+      {
+        "characterId": "blanka",
+        "moveId": "blanka__special_236_K_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+35",
+          "numeric": 35
+        },
+        "sourceNotation": "HKD +35",
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        }
+      },
+      {
+        "characterId": "blanka",
+        "moveId": "blanka__special_236_K_L",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+35",
+          "numeric": 35
+        },
+        "sourceNotation": "HKD +35",
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        }
+      },
+      {
+        "characterId": "blanka",
+        "moveId": "blanka__special_236_K_M",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+35",
+          "numeric": 35
+        },
+        "sourceNotation": "HKD +35",
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        }
+      },
+      {
+        "characterId": "blanka",
+        "moveId": "blanka__special_236_K_OD",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+64",
+          "numeric": 64
+        },
+        "sourceNotation": "HKD +64",
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        }
+      },
+      {
+        "characterId": "e_honda",
+        "moveId": "e_honda__special_63214_K_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+7",
+          "numeric": 7
+        },
+        "sourceNotation": "HKD +7",
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        }
+      },
+      {
+        "characterId": "e_honda",
+        "moveId": "e_honda__special_63214_K_L",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+7",
+          "numeric": 7
+        },
+        "sourceNotation": "HKD +7",
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        }
+      },
+      {
+        "characterId": "e_honda",
+        "moveId": "e_honda__special_63214_K_M",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+7",
+          "numeric": 7
+        },
+        "sourceNotation": "HKD +7",
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        }
+      },
+      {
+        "characterId": "e_honda",
+        "moveId": "e_honda__special_63214_K_OD",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+7",
+          "numeric": 7
+        },
+        "sourceNotation": "HKD +7",
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        }
+      },
+      {
+        "characterId": "jp",
+        "moveId": "jp__special_214_K_none",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+18",
+          "numeric": 18
+        },
+        "sourceNotation": "HKD +18",
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        }
+      },
+      {
+        "characterId": "jp",
+        "moveId": "jp__special_214_K_OD",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+18",
+          "numeric": 18
+        },
+        "sourceNotation": "HKD +18",
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        }
       }
     ]
   }

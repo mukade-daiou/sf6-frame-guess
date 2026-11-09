@@ -71,7 +71,7 @@ it("distinguishes explicit Cargo dashes and delayed knockdown from missing value
     status: "found",
     frames: {
       block: { status: "not_applicable", display: "-" },
-      hit: { display: "+15" },
+      hit: { display: "D" },
     },
   });
   expect(
