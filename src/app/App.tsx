@@ -140,30 +140,32 @@ export default function App() {
                     ? "最終回答"
                     : "結果"}
               </h2>
-              <div>
-                <div
-                  className="segments mode-toggle"
-                  role="group"
-                  aria-label="表示モード"
-                >
-                  {(["normal", "startup"] as const).map((m) => (
-                    <button
-                      key={m}
-                      type="button"
-                      aria-pressed={game.mode === m}
-                      onClick={() => {
-                        setGame(changeMode(game, m));
-                        setMessage("");
-                      }}
-                    >
-                      {m === "normal" ? "Normal" : "Hard"}
-                    </button>
-                  ))}
+              {game.phase === "question" && (
+                <div>
+                  <div
+                    className="segments mode-toggle"
+                    role="group"
+                    aria-label="表示モード"
+                  >
+                    {(["normal", "startup"] as const).map((m) => (
+                      <button
+                        key={m}
+                        type="button"
+                        aria-pressed={game.mode === m}
+                        onClick={() => {
+                          setGame(changeMode(game, m));
+                          setMessage("");
+                        }}
+                      >
+                        {m === "normal" ? "Normal" : "Hard"}
+                      </button>
+                    ))}
+                  </div>
+                  <small className="remaining">
+                    残り {game.limit - game.history.length}回
+                  </small>
                 </div>
-                <small className="remaining">
-                  残り {game.limit - game.history.length}回
-                </small>
-              </div>
+              )}
             </div>
             {game.phase === "question" && (
               <MoveSelector
@@ -192,6 +194,19 @@ export default function App() {
                     質問に戻る
                   </button>
                 )}
+                <button
+                  type="button"
+                  className="giveup-button"
+                  onClick={() => {
+                    if (!window.confirm("ギブアップして正解を表示しますか？"))
+                      return;
+                    setGame(giveUp(game));
+                    setSelection("");
+                    setMessage("");
+                  }}
+                >
+                  ギブアップ
+                </button>
                 <form
                   onSubmit={(e) => {
                     e.preventDefault();
@@ -218,21 +233,6 @@ export default function App() {
                   </fieldset>
                   <div className="question-actions">
                     <button disabled={!selection}>回答確定</button>
-                    <button
-                      type="button"
-                      className="giveup-button"
-                      onClick={() => {
-                        if (
-                          !window.confirm("ギブアップして正解を表示しますか？")
-                        )
-                          return;
-                        setGame(giveUp(game));
-                        setSelection("");
-                        setMessage("");
-                      }}
-                    >
-                      ギブアップ
-                    </button>
                   </div>
                 </form>
               </>
