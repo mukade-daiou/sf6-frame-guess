@@ -21,12 +21,12 @@
   "after": {
     "characters": 32,
     "records": 1298,
-    "unknownRecords": 8,
-    "unknownFields": 8,
-    "deduplicatedFieldTargets": 5,
-    "deduplicatedSourceRecords": 5,
-    "normalUnavailableInputs": 7,
-    "hardUnavailableInputs": 1,
+    "unknownRecords": 0,
+    "unknownFields": 0,
+    "deduplicatedFieldTargets": 0,
+    "deduplicatedSourceRecords": 0,
+    "normalUnavailableInputs": 0,
+    "hardUnavailableInputs": 0,
     "saUnknownInputs": 0,
     "saInputs": 288
   },
@@ -2755,14 +2755,15 @@
         "provenance": null,
         "calculation": null
       },
-      "decision": "retain_unknown",
+      "decision": "representative_variant",
       "value": {
-        "status": "unknown",
-        "display": null,
-        "provenance": null,
+        "status": "confirmed",
+        "display": "75",
+        "numeric": 75,
+        "provenance": "source",
         "calculation": null
       },
-      "reason": "Cargo total is an unexpanded template; automatic follow-up on frame 41 does not establish whiff total. No total is computed from follow-ups.",
+      "reason": "ユーザー指定: 追加入力なし。自動Demon Low Slashまで採用。下入力のDemon Swoopではない。 原典71(75)は空振り時4F追加を明示。空振り全体として括弧内75を採用（計算で補完せず明示値を選択）。発生53、HKDはD、ガードは括弧外+2。",
       "oldUnknownReason": "Existing conversion did not establish whiff total",
       "recordIds": [
         "akuma__special_236_K_none",
@@ -2782,12 +2783,13 @@
           "key": "special:236:K:L",
           "beforeNormal": "unknown",
           "beforeHard": "found",
-          "afterNormal": "unknown",
+          "afterNormal": "found",
           "afterHard": "found",
           "finalField": {
-            "status": "unknown",
-            "display": null,
-            "provenance": null,
+            "status": "confirmed",
+            "display": "75",
+            "numeric": 75,
+            "provenance": "source",
             "calculation": null
           }
         },
@@ -2802,12 +2804,13 @@
           "key": "special:236:K:M",
           "beforeNormal": "unknown",
           "beforeHard": "found",
-          "afterNormal": "unknown",
+          "afterNormal": "found",
           "afterHard": "found",
           "finalField": {
-            "status": "unknown",
-            "display": null,
-            "provenance": null,
+            "status": "confirmed",
+            "display": "75",
+            "numeric": 75,
+            "provenance": "source",
             "calculation": null
           }
         },
@@ -2822,17 +2825,150 @@
           "key": "special:236:K:H",
           "beforeNormal": "unknown",
           "beforeHard": "found",
-          "afterNormal": "unknown",
+          "afterNormal": "found",
           "afterHard": "found",
           "finalField": {
-            "status": "unknown",
-            "display": null,
-            "provenance": null,
+            "status": "confirmed",
+            "display": "75",
+            "numeric": 75,
+            "provenance": "source",
             "calculation": null
           }
         }
       ],
-      "liveChecksPath": "staging/stage17/live-source-checks.json"
+      "liveChecksPath": "staging/stage17/live-source-checks.json",
+      "representativeSource": {
+        "moveId": "akuma__special_236_K_none",
+        "input": {
+          "type": "special",
+          "motion": "236",
+          "button": "K",
+          "strength": "none"
+        },
+        "condition": "ユーザー指定: 追加入力なし。自動Demon Low Slashまで採用。下入力のDemon Swoopではない。",
+        "before": {
+          "startup": {
+            "status": "confirmed",
+            "display": "18",
+            "numeric": 18
+          },
+          "total": {
+            "status": "unknown",
+            "display": null,
+            "provenance": null,
+            "calculation": null
+          },
+          "hit": {
+            "status": "not_applicable",
+            "display": "-"
+          },
+          "block": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        },
+        "frames": {
+          "startup": {
+            "status": "confirmed",
+            "display": "53",
+            "numeric": 53
+          },
+          "total": {
+            "status": "confirmed",
+            "display": "75",
+            "numeric": 75,
+            "provenance": "source",
+            "calculation": null
+          },
+          "hit": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "block": {
+            "status": "confirmed",
+            "display": "+2",
+            "numeric": 2
+          }
+        },
+        "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json",
+        "cargoIndex": 28,
+        "cargoRecord": {
+          "chara": "Akuma",
+          "input": "236K~No Input",
+          "startup": "53",
+          "total": "71(75)",
+          "hitAdv": "HKD +39(+42)",
+          "blockAdv": "<span style=\"color: #32CD32;\">+2</span><span style=\"color: #30D5B8;\">'''(+5)'''</span>",
+          "notes": "4f extra recovery on whiff; recovery is in a crouching state until the final frame (final 5f on whiff); causes Akuma to auto-correct if Demon Raid crosses up; can be spaced for better frame advantage"
+        },
+        "rawPath": "archive/staging/sf6-frame-data/raw/akuma.json",
+        "rawIndex": 29,
+        "rawRecord": {
+          "active": "4",
+          "afterDriveRush": null,
+          "airborne": null,
+          "aliases": [],
+          "armor": null,
+          "attackRange": null,
+          "blockstun": 21,
+          "cancel": [],
+          "category": "special",
+          "characterId": "akuma",
+          "chipDamage": 250,
+          "damage": 1000,
+          "damageText": null,
+          "dmgScaling": null,
+          "driveGauge": {
+            "dealtOnBlock": 4000,
+            "dealtOnHit": 10000,
+            "gain": 1000
+          },
+          "driveRushCancel": null,
+          "hitstop": 13,
+          "hitstun": null,
+          "id": "akuma__236knoinput",
+          "input": {
+            "numpad": "236K~No Input",
+            "official": null
+          },
+          "invuln": null,
+          "juggle": {
+            "increase": "1",
+            "limit": "5",
+            "start": "1"
+          },
+          "name": {
+            "en": "Demon Low Slash",
+            "ja": null
+          },
+          "notes": {
+            "en": "4f extra recovery on whiff; recovery is in a crouching state until the final frame (final 5f on whiff); causes Akuma to auto-correct if Demon Raid crosses up; can be spaced for better frame advantage",
+            "ja": null
+          },
+          "onBlock": 2,
+          "onHit": 39,
+          "onPerfectParry": -17,
+          "onPunishCounter": 54,
+          "projectileSpeed": null,
+          "properties": [
+            "low"
+          ],
+          "pushback": null,
+          "recovery": 15,
+          "source": {
+            "fetchedAt": "2026-08-19T04:05:26.479Z",
+            "license": "CC-BY-SA",
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Akuma/Frame_data"
+          },
+          "startup": 53,
+          "superGauge": {
+            "onBlock": 500,
+            "onHit": 1000
+          },
+          "totalFrames": 71
+        },
+        "reason": "原典71(75)は空振り時4F追加を明示。空振り全体として括弧内75を採用（計算で補完せず明示値を選択）。発生53、HKDはD、ガードは括弧外+2。"
+      }
     },
     {
       "id": "akuma__special_236_K_OD:total",
@@ -2847,14 +2983,15 @@
         "provenance": null,
         "calculation": null
       },
-      "decision": "retain_unknown",
+      "decision": "representative_variant",
       "value": {
-        "status": "unknown",
-        "display": null,
-        "provenance": null,
+        "status": "confirmed",
+        "display": "75",
+        "numeric": 75,
+        "provenance": "source",
         "calculation": null
       },
-      "reason": "Cargo total is an unexpanded template; automatic follow-up on frame 41 does not establish whiff total. No total is computed from follow-ups.",
+      "reason": "ユーザー指定: 追加入力なし。自動Demon Low Slashまで採用。下入力のDemon Swoopではない。 原典71(75)は空振り時4F追加を明示。空振り全体として括弧内75を採用（計算で補完せず明示値を選択）。発生53、HKDはD、ガードは括弧外+2。",
       "oldUnknownReason": "Existing conversion did not establish whiff total",
       "recordIds": [
         "akuma__special_236_K_OD"
@@ -2871,17 +3008,150 @@
           "key": "special:236:K:OD",
           "beforeNormal": "unknown",
           "beforeHard": "found",
-          "afterNormal": "unknown",
+          "afterNormal": "found",
           "afterHard": "found",
           "finalField": {
-            "status": "unknown",
-            "display": null,
-            "provenance": null,
+            "status": "confirmed",
+            "display": "75",
+            "numeric": 75,
+            "provenance": "source",
             "calculation": null
           }
         }
       ],
-      "liveChecksPath": "staging/stage17/live-source-checks.json"
+      "liveChecksPath": "staging/stage17/live-source-checks.json",
+      "representativeSource": {
+        "moveId": "akuma__special_236_K_OD",
+        "input": {
+          "type": "special",
+          "motion": "236",
+          "button": "K",
+          "strength": "OD"
+        },
+        "condition": "ユーザー指定: 追加入力なし。自動Demon Low Slashまで採用。下入力のDemon Swoopではない。",
+        "before": {
+          "startup": {
+            "status": "confirmed",
+            "display": "16",
+            "numeric": 16
+          },
+          "total": {
+            "status": "unknown",
+            "display": null,
+            "provenance": null,
+            "calculation": null
+          },
+          "hit": {
+            "status": "not_applicable",
+            "display": "-"
+          },
+          "block": {
+            "status": "not_applicable",
+            "display": "-"
+          }
+        },
+        "frames": {
+          "startup": {
+            "status": "confirmed",
+            "display": "53",
+            "numeric": 53
+          },
+          "total": {
+            "status": "confirmed",
+            "display": "75",
+            "numeric": 75,
+            "provenance": "source",
+            "calculation": null
+          },
+          "hit": {
+            "status": "confirmed",
+            "display": "D"
+          },
+          "block": {
+            "status": "confirmed",
+            "display": "+2",
+            "numeric": 2
+          }
+        },
+        "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json",
+        "cargoIndex": 24,
+        "cargoRecord": {
+          "chara": "Akuma",
+          "input": "236KK~No Input",
+          "startup": "53",
+          "total": "71(75)",
+          "hitAdv": "HKD +39",
+          "blockAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "notes": "4f extra recovery on whiff; recovery is in a crouching state until the final frame (final 5f on whiff); causes Akuma to auto-correct if Demon Raid crosses up"
+        },
+        "rawPath": "archive/staging/sf6-frame-data/raw/akuma.json",
+        "rawIndex": 25,
+        "rawRecord": {
+          "active": "4",
+          "afterDriveRush": null,
+          "airborne": null,
+          "aliases": [],
+          "armor": null,
+          "attackRange": null,
+          "blockstun": 21,
+          "cancel": [],
+          "category": "special",
+          "characterId": "akuma",
+          "chipDamage": 250,
+          "damage": 1000,
+          "damageText": null,
+          "dmgScaling": null,
+          "driveGauge": {
+            "dealtOnBlock": 4000,
+            "dealtOnHit": 10000,
+            "gain": 1000
+          },
+          "driveRushCancel": null,
+          "hitstop": 13,
+          "hitstun": null,
+          "id": "akuma__236kknoinput",
+          "input": {
+            "numpad": "236KK~No Input",
+            "official": null
+          },
+          "invuln": null,
+          "juggle": {
+            "increase": "1",
+            "limit": "5",
+            "start": "1"
+          },
+          "name": {
+            "en": "Demon Low Slash",
+            "ja": null
+          },
+          "notes": {
+            "en": "4f extra recovery on whiff; recovery is in a crouching state until the final frame (final 5f on whiff); causes Akuma to auto-correct if Demon Raid crosses up",
+            "ja": null
+          },
+          "onBlock": 2,
+          "onHit": 39,
+          "onPerfectParry": -17,
+          "onPunishCounter": 54,
+          "projectileSpeed": null,
+          "properties": [
+            "low"
+          ],
+          "pushback": null,
+          "recovery": 15,
+          "source": {
+            "fetchedAt": "2026-08-19T04:05:26.479Z",
+            "license": "CC-BY-SA",
+            "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Akuma/Frame_data"
+          },
+          "startup": 53,
+          "superGauge": {
+            "onBlock": 500,
+            "onHit": 1000
+          },
+          "totalFrames": 71
+        },
+        "reason": "原典71(75)は空振り時4F追加を明示。空振り全体として括弧内75を採用（計算で補完せず明示値を選択）。発生53、HKDはD、ガードは括弧外+2。"
+      }
     },
     {
       "id": "alex__special_63214_P_H:block",
@@ -4344,12 +4614,12 @@
         "status": "unknown",
         "display": null
       },
-      "decision": "retain_unknown",
+      "decision": "adopt",
       "value": {
-        "status": "unknown",
-        "display": null
+        "status": "confirmed",
+        "display": "D"
       },
-      "reason": "Cargo KD +50(68) Wall Splat is tied to wall outcome/distance. The standard midscreen hit result is not independently established; do not use its number or equate wall splat with ordinary knockdown.",
+      "reason": "ユーザー指定: 壁にぶつかるヒット結果はゲーム用表示をダウンDとする。原典の壁条件と有利値は保持し、通常ヒット硬直差の数値へ変換しない。",
       "oldUnknownReason": "Raw normalizer omitted a special/non-numeric source notation or condition remained unresolved",
       "recordIds": [
         "marisa__special_236_K_OD"
@@ -4366,11 +4636,11 @@
           "key": "special:236:K:OD",
           "beforeNormal": "unknown",
           "beforeHard": "found",
-          "afterNormal": "unknown",
+          "afterNormal": "found",
           "afterHard": "found",
           "finalField": {
-            "status": "unknown",
-            "display": null
+            "status": "confirmed",
+            "display": "D"
           }
         }
       ],
@@ -4387,12 +4657,12 @@
         "status": "unknown",
         "display": null
       },
-      "decision": "retain_unknown",
+      "decision": "adopt",
       "value": {
-        "status": "unknown",
-        "display": null
+        "status": "confirmed",
+        "display": "D"
       },
-      "reason": "Cargo Wall Bounce +49(65) describes wall/airborne outcome. No normal midscreen hitstun value or explicit KD result established; keep unknown rather than interpreting +49 as normal advantage.",
+      "reason": "ユーザー指定: 壁にぶつかるヒット結果はゲーム用表示をダウンDとする。原典の壁条件と有利値は保持し、通常ヒット硬直差の数値へ変換しない。",
       "oldUnknownReason": "Raw normalizer omitted a special/non-numeric source notation or condition remained unresolved",
       "recordIds": [
         "ryu__special_236_K_OD"
@@ -4409,11 +4679,11 @@
           "key": "special:236:K:OD",
           "beforeNormal": "unknown",
           "beforeHard": "found",
-          "afterNormal": "unknown",
+          "afterNormal": "found",
           "afterHard": "found",
           "finalField": {
-            "status": "unknown",
-            "display": null
+            "status": "confirmed",
+            "display": "D"
           }
         }
       ],
@@ -4430,12 +4700,13 @@
         "status": "unknown",
         "display": null
       },
-      "decision": "retain_unknown",
+      "decision": "adopt",
       "value": {
-        "status": "unknown",
-        "display": null
+        "status": "confirmed",
+        "display": "16",
+        "numeric": 16
       },
-      "reason": "Cargo (6~22)+10 and raw note 16-32 include hold duration. Official/Wiki retrieval failed; search excerpt 16 lacks compatible patch/condition evidence. Do not infer 16 or a standard-condition range from the formula.",
+      "reason": "ユーザー指定: 非ホールドの立ち強Pを採用。追加公開資料の通常版16Fをゲーム用代表値とし、原典のホールド式と未検証状態を保持する。補助資料: https://frame-search.com/?character_name=Zangief&lang=en-us",
       "oldUnknownReason": "Compound/hold-dependent expression",
       "recordIds": [
         "zangief__normal_5_P_H"
@@ -4452,11 +4723,12 @@
           "key": "normal:5:P:H",
           "beforeNormal": "unknown",
           "beforeHard": "unknown",
-          "afterNormal": "unknown",
-          "afterHard": "unknown",
+          "afterNormal": "found",
+          "afterHard": "found",
           "finalField": {
-            "status": "unknown",
-            "display": null
+            "status": "confirmed",
+            "display": "16",
+            "numeric": 16
           }
         }
       ],

@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync, readdirSync } from "node:fs";
 import { execFileSync } from "node:child_process";
+import { restoreDemonRaid } from "./research-projection.mjs";
 test("only the 17 sourced KD corrections and their generated strengths change", () => {
   const policy = JSON.parse(
     readFileSync("data/adoption-decisions.json"),
@@ -26,8 +27,18 @@ test("only the 17 sourced KD corrections and their generated strengths change", 
   )) {
     const path = `data/characters/${f}`,
       before = JSON.parse(execFileSync("git", ["show", `f199046:${path}`])),
-      after = JSON.parse(readFileSync(path));
+      after = restoreDemonRaid(JSON.parse(readFileSync(path)));
     const expected = structuredClone(before);
+    const representatives =
+      JSON.parse(readFileSync("data/adoption-decisions.json")).frameResearch
+        .representatives || [];
+    for (const d of representatives) {
+      const m = expected.moves.find((m) => m.id === d.moveId);
+      if (m) {
+        assert.equal(m.frames[d.field].status, "unknown");
+        m.frames[d.field] = d.value;
+      }
+    }
     for (const m of expected.moves) {
       count++;
       const id = m.strengthExpansion?.sourceMoveId || m.id;

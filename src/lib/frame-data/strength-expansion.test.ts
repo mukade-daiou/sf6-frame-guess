@@ -64,7 +64,20 @@ it.each(["e_honda", "blanka", "chunli", "jp", "dee_jay"])(
   },
 );
 it("preserves real missing fields and never expands held, conditional or excluded sources", () => {
-  const akuma = character("akuma");
+  const akuma = structuredClone(character("akuma"));
+  // Explicit missing-field fixture after production no-input totals were adopted.
+  for (const m of akuma.moves.filter(
+    (m) =>
+      m.input.type === "special" &&
+      m.input.motion === "236" &&
+      m.input.button === "K",
+  ))
+    m.frames.total = {
+      status: "unknown",
+      display: null,
+      provenance: null,
+      calculation: null,
+    };
   const input = {
     type: "special" as const,
     motion: "236",

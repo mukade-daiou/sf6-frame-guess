@@ -8,7 +8,7 @@ export function restoreResearchFrames(character) {
     readFileSync("data/adoption-decisions.json", "utf8"),
   ).frameResearch;
   if (!policy) return character;
-  const result = structuredClone(character);
+  const result = restoreDemonRaid(character);
   const corrections =
     JSON.parse(readFileSync("data/adoption-decisions.json", "utf8"))
       .knockdownCorrections?.decisions || [];
@@ -30,6 +30,23 @@ export function restoreResearchFrames(character) {
       );
       assert.equal(d.before.status, "unknown");
       move.frames[d.field] = d.before;
+    }
+  }
+  return result;
+}
+
+export function restoreDemonRaid(character) {
+  const result = structuredClone(character),
+    records =
+      JSON.parse(readFileSync("data/adoption-decisions.json", "utf8"))
+        .demonRaidNoInput?.records || [];
+  for (const m of result.moves) {
+    const d = records.find(
+      (d) => d.moveId === (m.strengthExpansion?.sourceMoveId || m.id),
+    );
+    if (d) {
+      assert.deepEqual(m.frames, d.frames);
+      m.frames = d.before;
     }
   }
   return result;

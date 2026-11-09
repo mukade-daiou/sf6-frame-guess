@@ -121,29 +121,49 @@ for (const width of [1280, 390]) {
       history().every((h) => h.frames.join(",") === "48"),
     "Hard duplicate and history",
   );
-  start("ryu", width);
+  for (const id of ["ryu", "marisa"]) {
+    start(id, width);
+    click("必殺技・SA");
+    ask("236", "弱K＋中K");
+    assert(
+      history().length === 1 && history()[0].frames[2] === "D",
+      "User wall representative",
+    );
+    click("Hard");
+    assert(
+      history()[0].frames[0] === (id === "ryu" ? "17" : "24"),
+      "Wall move startup unchanged",
+    );
+  }
+  start("akuma", width);
   click("必殺技・SA");
-  ask("236", "弱K＋中K");
+  for (const button of ["弱K", "中K", "強K", "弱K＋中K"]) ask("236", button);
   assert(
-    history().length === 0 &&
-      ev(() => document.body.textContent.includes("残り 5回")),
-    "Unresolved hit consumes no question",
+    history().length === 4 &&
+      history().every((h) => h.frames.join(",") === "53,75,D,+2"),
+    "No-input automatic slash at every strength and OD",
   );
   click("Hard");
-  ask("236", "弱K＋中K");
+  ask("236", "弱K");
   assert(
-    history().length === 1 && history()[0].frames.join(",") === "17",
-    "Known startup remains usable",
+    history().length === 4 &&
+      history().every((h) => h.frames.join(",") === "53"),
+    "No-input startup and duplicate",
   );
   click("Normal");
-  assert(history()[0].frames.includes("不明"), "Saved unknown remains visible");
-  run("screenshot", `${out}/${width}-unknown.png`, "--full");
+  run("screenshot", `${out}/${width}-demon-no-input.png`, "--full");
   start("zangief", width);
   ask("5", "強P");
-  assert(history().length === 0, "Unresolved HP Normal");
+  assert(
+    history().length === 1 && history()[0].frames[0] === "16",
+    "Non-held HP Normal",
+  );
   click("Hard");
   ask("5", "強P");
-  assert(history().length === 0, "Unresolved HP Hard");
+  assert(
+    history().length === 1 && history()[0].frames.join(",") === "16",
+    "Non-held HP Hard duplicate",
+  );
   assert(
     ev(() => document.documentElement.scrollWidth <= innerWidth),
     "Horizontal overflow",
@@ -154,7 +174,7 @@ for (const width of [1280, 390]) {
     marisaTotal29: true,
     explicitDash: true,
     sharedStrengthsIndependent: true,
-    unknownNotConsumed: true,
+    noInputSlashAllStrengths: true,
     normalHard: true,
     answerAndReplay: true,
   });

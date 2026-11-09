@@ -150,9 +150,19 @@ for (const c of before)
     for (const [field, value] of missing(m)) {
       const notation = clean(q.r[cargoField[field]] || "");
       let adopted: any = null;
+      const representative = read(
+        "data/adoption-decisions.json",
+      ).frameResearch?.representatives?.find(
+        (d: any) => d.moveId === m.id && d.field === field,
+      );
       let reason =
         "Standard-condition value is not established by the stored source; keep unknown.";
-      if (notation === "-") {
+      if (representative) {
+        if (representative.sourceNotation !== notation)
+          throw new Error(`Representative source mismatch: ${m.id}`);
+        adopted = representative.value;
+        reason = representative.reason;
+      } else if (notation === "-") {
         adopted = { status: "not_applicable", display: "-" };
         reason =
           "Saved Cargo explicitly marks this exact field as not applicable; this is not a rule converting missing values to '-'.";
@@ -239,6 +249,18 @@ for (const c of before)
       });
     }
   }
+for (const d of read("data/adoption-decisions.json").demonRaidNoInput
+  ?.records || []) {
+  const target = targets.find(
+    (t) => t.sourceMoveId === d.moveId && t.field === "total",
+  );
+  if (target) {
+    target.decision = "representative_variant";
+    target.value = d.frames.total;
+    target.reason = d.condition + " " + d.reason;
+    target.representativeSource = d;
+  }
+}
 const ledger = {
   baselineHead: baseline.head,
   definitions: {
@@ -274,11 +296,11 @@ if (process.argv.includes("--write-decisions")) {
   if (!fieldDecisions.length)
     throw new Error("No frame decisions; dataset must not be bumped");
   policy.frameResearch = {
+    ...policy.frameResearch,
     baselinePath: "staging/stage17/baseline.json",
     ledgerPath: "staging/stage17/frame-ledger.json",
     fieldDecisions,
   };
-  policy.datasetId = "frame-research-2026-11-09-r1";
   save("data/adoption-decisions.json", policy);
 }
 if (process.argv.includes("--check")) {
@@ -339,6 +361,7 @@ if (process.argv.includes("--check")) {
   const expectedDecisions = structuredClone(policy);
   delete expectedDecisions.frameResearch;
   delete expectedDecisions.knockdownCorrections;
+  delete expectedDecisions.demonRaidNoInput;
   expectedDecisions.datasetId = baseline.decisions.datasetId;
   if (!isDeepStrictEqual(expectedDecisions, baseline.decisions))
     throw new Error("Unrelated adoption decision changed");
@@ -363,7 +386,8 @@ console.log(
       before: ledger.before,
       after: ledger.after,
       adoptedFields: targets.filter((t) => t.decision === "adopt").length,
-      unresolvedTargets: targets.filter((t) => t.decision !== "adopt").length,
+      unresolvedTargets: targets.filter((t) => t.decision === "retain_unknown")
+        .length,
       knownValueConflicts: conflicts.length,
     },
     null,

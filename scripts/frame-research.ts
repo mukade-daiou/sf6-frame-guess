@@ -1,6 +1,7 @@
 import { readFileSync } from "node:fs";
 import { isDeepStrictEqual } from "node:util";
 import { correctKnockdowns } from "./knockdown-corrections";
+import { applyDemonRaid } from "./demon-raid";
 import {
   type Character,
   type Move,
@@ -64,5 +65,7 @@ export function applyFrameResearch(character: Character): Character {
     }
     return result;
   });
-  return characterSchema.parse(correctKnockdowns({ ...character, moves }));
+  return characterSchema.parse(
+    applyDemonRaid(correctKnockdowns({ ...character, moves })),
+  );
 }

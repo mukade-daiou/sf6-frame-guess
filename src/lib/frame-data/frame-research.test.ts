@@ -79,7 +79,11 @@ it("distinguishes explicit Cargo dashes and delayed knockdown from missing value
   ).toMatchObject({ status: "found", frames: { hit: { display: "D" } } });
   for (const id of ["akuma", "marisa", "ryu"]) {
     const input = query("236", "K", id === "akuma" ? "L" : "OD");
-    expect(resolveMove(char(id), input, "normal").status).toBe("unknown");
+    expect(resolveMove(char(id), input, "normal").status).toBe("found");
+    if (id !== "akuma")
+      expect(resolveMove(char(id), input, "normal")).toMatchObject({
+        frames: { hit: { display: "D" } },
+      });
     expect(resolveMove(char(id), input, "startup").status).toBe("found");
   }
   const c = char("zangief"),
@@ -91,8 +95,13 @@ it("distinguishes explicit Cargo dashes and delayed knockdown from missing value
       5,
       () => (production.eligible.indexOf(c) + 0.5) / production.eligible.length,
     );
-    expect(ask(game, m.input).status).toBe("unknown");
-    expect(ask(game, m.input).game.history).toHaveLength(0);
+    expect(ask(game, m.input).status).toBe("found");
+    expect(ask(game, m.input).game.history).toHaveLength(1);
+    expect(m.frames.startup).toEqual({
+      status: "confirmed",
+      display: "16",
+      numeric: 16,
+    });
   }
 });
 it("refuses to overwrite a different known value and remains idempotent", () => {
