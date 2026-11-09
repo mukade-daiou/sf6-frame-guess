@@ -52,6 +52,18 @@ export default function App() {
           <br className="mobile-break" />
           フレーム探偵
         </h1>
+        {game && (
+          <details className="play-rules">
+            <summary>回答時のルール</summary>
+            <ul>
+              <li>通常状態・画面中央が基準。全体Fは空振り時の値。</li>
+              <li>派生がある技は派生しない。長押し・空中版は原則対象外。</li>
+              <li>距離で性能が変わる技は遠距離の値を使う。</li>
+              <li>ODは弱＋中。特殊技や3ボタン同時押しは対象外。</li>
+              <li>ダウンは「D」。括弧付き数値は原則として括弧の外を使う。</li>
+            </ul>
+          </details>
+        )}
       </header>
       {!game ? (
         <section className="panel" aria-labelledby="description-title">

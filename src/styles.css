@@ -780,3 +780,25 @@ summary {
 .move-detail-row {
   background: #f0eeea;
 }
+
+/* Compact reference for the answer conditions, shown only during play. */
+.play-rules {
+  width: min(100%, 520px);
+  font-size: var(--text-body-sm);
+  color: var(--color-graphite);
+}
+.play-rules summary {
+  width: fit-content;
+  padding: 2px 0;
+}
+.play-rules[open] {
+  color: var(--color-ink);
+}
+.play-rules ul {
+  margin: 4px 0 8px;
+  padding-left: 1.5em;
+  line-height: 1.6;
+}
+.play-rules li + li {
+  margin-top: 2px;
+}
