@@ -1,5 +1,13 @@
 # データ仕様 v1.0.0
 
+第3段階のstage3は正式採用状態と独立した調査記録。itemsに原因グループ・取得資料ID・公開データの対応候補・必要証拠・measurement（実施有無と設計条件）を持つ。measurement.performed=falseは実測結果ではない。sourceIdsは本文未取得の候補を含み得るためsources.status/assessmentと合わせて読む。調査記録が存在するだけではFrameValueや候補classificationを変更しない。
+
+第2段階の調査はheld-range-review.jsonのstage2.itemsへ、第1段階からの変更前状態・優先順位・取得資料・結論・次の証拠を保存する。候補reevaluation.stage2にも適用し、既存items300件とD46件を維持する。distanceRanges.decisionsの追加任意属性additionalEvidenceは保存HTMLのpath/url/requiredTextを持ち、公開資料の必要記載を生成時に照合する。ゲームのFrameValue構造は変更しない。
+
+調査台帳の候補に任意の`reevaluation`を追加した。group（A〜D）は調査優先分類であり正式classificationとは独立する。previousClassification/previousReason、currentValues（技IDと再評価前値）、evidenceQuote、checkedSources、nextEvidenceを保存する。これはゲーム用FrameValueやMoveの採用状態を変更する属性ではない。
+
+距離範囲の追補：`conditional.range`のmin/max/evidenceを維持し、符号付き表示も数値と照合する。片側表記は`conditional.openRange: { reference, unspecified: "trailing", evidence }`で原典の基準値と末尾未指定を記録する。数学的上下限は主張しない。range/openRange/numericは併用不可。根拠のないconditionalは引き続き表示不可。
+
 第17段階のフィールド補完はdata/adoption-decisions.jsonのframeResearch.fieldDecisionsを参照する。変更前のunknown全体と変更後のFrameValue、元レコードID、原典表記、採用理由、調査台帳IDを保存する。台帳はstaging/stage17/frame-ledger.jsonで、原典の行番号・行全体・取得日時・検証状態を保持する。既存Move.sourceやrawを上書きせず、フィールド単位の補完元をこの対応表で追跡する。生成時は原典行・入力・変更前後の一致を検査し、無関係な確定値の置換を拒否する。
 
 個別の固定代表条件はMove.representativeConditionにcondition/rawRef/cargoRefを持つ。第16段階で採用したジェイミー・Focus Forceに限り、元のconditional/held理由を注記と監査のbeforeレコードへ保持してbase/acceptedへ変更する。Focus Force Lv.1は2026-11-09ユーザー指定の合算代表値を採用し、通常L/M/Hのconfirmed.display/numericは23、ODは20。原典13+10/10+10は保存済みCargoとsourceNotation注記に残し、conditionalSpecials.startupDecisionsから再生成する。他の複合・条件値へ一般化しない。

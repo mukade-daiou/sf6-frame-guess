@@ -5,6 +5,7 @@
 開発・データ確認用の読み取り一覧は`#/moves`へ直接アクセスできます（Pagesでは`/sf6-frame-guess/#/moves`）。通常ゲームにはリンクを設けていません。認証による非公開ページではありません。全キャラ共通の150入力と保存済み採用状態を表示し、複数レコードは追加行で確認できます。ブラウザー検証はpreview起動後に`node scripts/verify-moves.mjs`を実行します。
 
 共通コマンドのフレームデータからキャラクターを推理する、バックエンド不要のReactアプリです。
+同一入力・代表条件で距離や接触タイミングにより変動する値は、出典で裏付けられた`26~`や`-8~+2`などの範囲を表示します。ホールド・強度・レベル等は既存の固定代表条件を維持します。[調査結果](docs/DISTANCE_RANGE_REPORT.md)に採用81・保留155・対象外501項目の判断を記録しています。
 **32キャラを通常ゲームで遊べます。原典対応を基準に採用した個人用データで、公式検証・対象パッチは未確認です。** 付属の3体のFixtureは別の架空データです。
 
 Node.js 24とnpmを使用します。
@@ -33,9 +34,9 @@ npm run preview
 [ゲーム仕様](docs/GAME_SPEC.md)、[データ仕様](docs/DATA_SPEC.md)、[出典方針](docs/DATA_SOURCES.md)を参照してください。
 
 GitHub PagesではSettings → PagesのSourceをGitHub Actionsに設定します。
-Workflowはmainへのpush・PR・手動実行で検証とビルドを行います。公開は手動実行で `deploy: true` を明示した場合のみです（既定false）。
+Workflowはmainへのpush・PR・手動実行で検証とビルドを行います。mainへの通常pushが成功するとGitHub Pagesへ自動公開します。手動実行の公開は `deploy: true` を明示した場合のみです（既定false）。
 公開前にリポジトリのPages環境の保護設定を確認してください。
-現在の開発・追加手順は[DATA_WORKFLOW.md](docs/DATA_WORKFLOW.md)を参照してください。古い引き継ぎ資料は過去記録です。GitHub Pagesへの公開は実施していません。
+現在の開発・追加手順は[DATA_WORKFLOW.md](docs/DATA_WORKFLOW.md)を参照してください。古い引き継ぎ資料は過去記録です。
 
 ```sh
 VITE_BASE_PATH=/your-repository/ npm run build

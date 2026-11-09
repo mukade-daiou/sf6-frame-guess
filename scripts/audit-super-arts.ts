@@ -3,6 +3,7 @@ import { execFileSync } from "node:child_process";
 import { isDeepStrictEqual } from "node:util";
 import { applyConditionalSpecials } from "./conditional-specials";
 import { applyFrameResearch } from "./frame-research";
+import { applyDistanceRanges } from "./distance-ranges";
 import {
   readSAResearch,
   generateSuperArts,
@@ -39,14 +40,17 @@ for (const id of pilot
         c.moves.filter(
           (m: any) => m.category !== "super_art" && !m.strengthExpansion,
         ),
-        applyFrameResearch(applyConditionalSpecials(original)).moves,
+        applyDistanceRanges(
+          applyFrameResearch(applyConditionalSpecials(original)),
+          { historicalWithoutSA: true },
+        ).moves,
       )
     )
       throw new Error(`Original records changed: ${id}`);
     if (
       !isDeepStrictEqual(
         c.moves.filter((m: any) => m.category === "super_art"),
-        moves,
+        applyDistanceRanges({ ...c, moves }, { superArtsOnly: true }).moves,
       )
     )
       throw new Error(`SA snapshot differs: ${id}`);

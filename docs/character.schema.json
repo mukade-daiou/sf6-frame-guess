@@ -348,6 +348,28 @@
                         "type": "string",
                         "minLength": 1
                       },
+                      "openRange": {
+                        "type": "object",
+                        "properties": {
+                          "reference": {
+                            "type": "number"
+                          },
+                          "unspecified": {
+                            "type": "string",
+                            "const": "trailing"
+                          },
+                          "evidence": {
+                            "minItems": 1,
+                            "type": "array",
+                            "items": {
+                              "type": "string",
+                              "format": "uri"
+                            }
+                          }
+                        },
+                        "required": ["reference", "unspecified", "evidence"],
+                        "additionalProperties": false
+                      },
                       "range": {
                         "type": "object",
                         "properties": {
@@ -519,6 +541,28 @@
                       "condition": {
                         "type": "string",
                         "minLength": 1
+                      },
+                      "openRange": {
+                        "type": "object",
+                        "properties": {
+                          "reference": {
+                            "type": "number"
+                          },
+                          "unspecified": {
+                            "type": "string",
+                            "const": "trailing"
+                          },
+                          "evidence": {
+                            "minItems": 1,
+                            "type": "array",
+                            "items": {
+                              "type": "string",
+                              "format": "uri"
+                            }
+                          }
+                        },
+                        "required": ["reference", "unspecified", "evidence"],
+                        "additionalProperties": false
                       },
                       "range": {
                         "type": "object",
@@ -703,6 +747,28 @@
                         "type": "string",
                         "minLength": 1
                       },
+                      "openRange": {
+                        "type": "object",
+                        "properties": {
+                          "reference": {
+                            "type": "number"
+                          },
+                          "unspecified": {
+                            "type": "string",
+                            "const": "trailing"
+                          },
+                          "evidence": {
+                            "minItems": 1,
+                            "type": "array",
+                            "items": {
+                              "type": "string",
+                              "format": "uri"
+                            }
+                          }
+                        },
+                        "required": ["reference", "unspecified", "evidence"],
+                        "additionalProperties": false
+                      },
                       "range": {
                         "type": "object",
                         "properties": {
@@ -825,6 +891,28 @@
                       "condition": {
                         "type": "string",
                         "minLength": 1
+                      },
+                      "openRange": {
+                        "type": "object",
+                        "properties": {
+                          "reference": {
+                            "type": "number"
+                          },
+                          "unspecified": {
+                            "type": "string",
+                            "const": "trailing"
+                          },
+                          "evidence": {
+                            "minItems": 1,
+                            "type": "array",
+                            "items": {
+                              "type": "string",
+                              "format": "uri"
+                            }
+                          }
+                        },
+                        "required": ["reference", "unspecified", "evidence"],
+                        "additionalProperties": false
                       },
                       "range": {
                         "type": "object",

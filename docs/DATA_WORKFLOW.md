@@ -1,5 +1,13 @@
 # データの正本と更新手順
 
+第3段階は追加資料の調査と実測条件の設計のみで、採用81・保留155・対象外501を維持。本番値が変わらないためdatasetIdは第2段階のまま。prepare-held-range-stage3.mjsは取得済み独立資料候補と公開データを照合してheld-range-review.jsonのstage3と候補reevaluation.stage3へ記録し、通常の段階別再生成でも保持する。ダウンロードしたJavaScriptは実行せずJSON部分だけを読む。report-held-range-stage3.mjsで最新結論を報告冒頭へ出力し、過去の調査は履歴として保存する。
+
+第2段階の現行datasetIdは`distance-held-stage2-2026-11-09-r1`。81原典項目・98フィールドを距離範囲へ採用している。held-range-review.jsonのstage2は第1段階C134件の追加判断で、prepare-held-range-stage2.mjsから再現できる。通常の生成入口は引き続きbuild-snapshot.ts。追加公開資料はstaging/held-range-stage2へ保存し、新規採用では原典行・変更前値に加えて本文の必要記載も生成時に検査する。第1段階の判断と既存D46件は保持する。以下の段階別datasetId・集計は履歴である。
+
+保留再評価第1段階の現行datasetIdは`distance-held-review-2026-11-09-r1`。距離範囲は80原典項目・95フィールド。`distanceRanges.heldReviewPath`が指す調査判断をreview-distance-ranges.mjsが候補台帳へ適用し、解決済みの分類を再生成で戻さない。prepare-held-range-review.mjsは元保留300項目の再評価準備、通常スナップショット生成は従来どおりbuild-snapshot.tsだけで行う。以下のr4は再評価前の履歴である。
+
+距離範囲更新後のdatasetIdは`distance-ranges-2026-11-09-r4`。`distanceRanges.decisions`を個別代表条件適用後・共通強度展開前に適用し、原典レコードと変更前値を照合する。下記の旧datasetIdは以前の更新時点の説明。通常の再生成入口は引き続きbuild-snapshot.ts。review-distance-ranges.mjsは保存原典・既存対応情報に基づく今回の候補分類と判断の再現用、report-distance-ranges.mjsは報告表の生成用。prepare-distance-ranges.mjsは最初のJP一次調査専用で、追加判断後には使用しない。
+
 現在のdatasetIdは`frame-research-2026-11-09-r1`。32キャラ1298レコードを維持し、Focus Force発生の限定判断をconditionalSpecials.startupDecisionsから再生成する。第17段階の補完はframeResearch.fieldDecisionsとstaging/stage17/frame-ledger.jsonで原典を照合し、個別条件の適用後・共通強度展開前に適用する。通常の更新入口はdata:plan→新datasetId→build-snapshot.ts --write --update→data:check。prepare-conditional-specials.tsは初期対応表の準備用であり、通常の再生成では不要。既存datasetIdと後続の採用判断を保持する。
 
 ## 現在の生成処理

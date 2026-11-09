@@ -13,7 +13,7 @@ export type Resolution =
   | { status: "not_found" | "unknown" | "ambiguous" };
 export function displayFrame(value: FrameValue): string {
   if (value.status === "conditional")
-    return value.range ? `${value.range.min}~${value.range.max}` : "不明";
+    return value.range || value.openRange ? value.display! : "不明";
   if (value.status === "unknown") return "不明";
   if (value.display !== null) return value.display;
   return value.status === "not_applicable" ? "対象外" : "不明";
@@ -21,7 +21,9 @@ export function displayFrame(value: FrameValue): string {
 export function isDisplayable(value: FrameValue): boolean {
   return (
     value.status !== "unknown" &&
-    (value.status !== "conditional" || value.range !== undefined) &&
+    (value.status !== "conditional" ||
+      value.range !== undefined ||
+      value.openRange !== undefined) &&
     (value.status === "not_applicable" || value.display !== null)
   );
 }

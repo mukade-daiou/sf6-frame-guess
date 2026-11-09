@@ -1254,9 +1254,16 @@
           "numeric": 45
         },
         "block": {
-          "status": "confirmed",
-          "display": "-4",
-          "numeric": -4
+          "status": "conditional",
+          "display": "-4~-2",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -4,
+            "max": -2,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Dhalsim/Frame_data"
+            ]
+          }
         }
       },
       "notes": [

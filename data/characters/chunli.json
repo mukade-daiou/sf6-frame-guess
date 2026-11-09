@@ -67,9 +67,16 @@
           "display": "D"
         },
         "block": {
-          "status": "confirmed",
-          "display": "-9",
-          "numeric": -9
+          "status": "conditional",
+          "display": "-9~-4",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -9,
+            "max": -4,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Chun-Li/Frame_data"
+            ]
+          }
         }
       },
       "notes": [

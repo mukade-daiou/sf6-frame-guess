@@ -1013,9 +1013,16 @@
           "numeric": 40
         },
         "block": {
-          "status": "confirmed",
-          "display": "-5",
-          "numeric": -5
+          "status": "conditional",
+          "display": "-5~+5",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -5,
+            "max": 5,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data"
+            ]
+          }
         }
       },
       "notes": [
@@ -1073,9 +1080,16 @@
           "numeric": 36
         },
         "block": {
-          "status": "confirmed",
-          "display": "-8",
-          "numeric": -8
+          "status": "conditional",
+          "display": "-8~+2",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -8,
+            "max": 2,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data"
+            ]
+          }
         }
       },
       "notes": [
@@ -1133,9 +1147,16 @@
           "numeric": 39
         },
         "block": {
-          "status": "confirmed",
-          "display": "-7",
-          "numeric": -7
+          "status": "conditional",
+          "display": "-7~+3",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -7,
+            "max": 3,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data"
+            ]
+          }
         }
       },
       "notes": [

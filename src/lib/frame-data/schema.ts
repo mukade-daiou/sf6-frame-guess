@@ -25,6 +25,13 @@ export const frameValueSchema = z
       status: z.literal("conditional"),
       ...valueFields,
       condition: text,
+      openRange: z
+        .object({
+          reference: z.number().finite(),
+          unspecified: z.literal("trailing"),
+          evidence: z.array(z.url()).min(1),
+        })
+        .optional(),
       range: z
         .object({
           min: z.number().finite(),
@@ -38,16 +45,40 @@ export const frameValueSchema = z
   ])
   .superRefine((value, ctx) => {
     if (
+      value.status === "confirmed" &&
+      /^[+-]?\d+(\.\d+)?~(?:[+-]?\d+(\.\d+)?)?$/.test(value.display ?? "")
+    )
+      ctx.addIssue({
+        code: "custom",
+        message:
+          "Range notation requires a conditional value with documented structure",
+      });
+    if (
       value.status === "conditional" &&
       value.range &&
       (value.range.min > value.range.max ||
-        value.display !== `${value.range.min}~${value.range.max}` ||
+        !/^[+-]?\d+(\.\d+)?~[+-]?\d+(\.\d+)?$/.test(value.display ?? "") ||
+        Number(value.display?.split("~")[0]) !== value.range.min ||
+        Number(value.display?.split("~")[1]) !== value.range.max ||
         value.numeric !== undefined)
     )
       ctx.addIssue({
         code: "custom",
         message:
           "A certified range requires ordered bounds, matching min~max display, evidence and no scalar numeric",
+      });
+    if (
+      value.status === "conditional" &&
+      value.openRange &&
+      (value.range ||
+        value.numeric !== undefined ||
+        !/^[+-]?\d+(\.\d+)?~$/.test(value.display ?? "") ||
+        Number(value.display?.slice(0, -1)) !== value.openRange.reference)
+    )
+      ctx.addIssue({
+        code: "custom",
+        message:
+          "Open notation requires a matching reference, evidence and no bounds or scalar",
       });
     if (
       "numeric" in value &&

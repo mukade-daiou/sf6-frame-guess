@@ -4,3 +4,8 @@ coverage/
 *.local
 .env*
 staging/verification/
+# Full-page research caches kept locally; only Luke is required by generation.
+staging/held-range-stage2/*.html
+!staging/held-range-stage2/luke.html
+staging/held-range-stage3/*.html
+staging/held-range-stage3/sf6frame-readme.md

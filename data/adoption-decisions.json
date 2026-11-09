@@ -1,5 +1,5 @@
 {
-  "datasetId": "demon-raid-no-input-2026-11-09-r1",
+  "datasetId": "distance-held-stage2-2026-11-09-r1",
   "commonSpecialStrengths": {
     "enabled": true,
     "protectionRef": "d11bb6d2616b5a15e182cbc08ef7556e99f3b5d6",
@@ -1648,5 +1648,3026 @@
         "reason": "原典71(75)は空振り時4F追加を明示。空振り全体として括弧内75を採用（計算で補完せず明示値を選択）。発生53、HKDはD、ガードは括弧外+2。"
       }
     ]
+  },
+  "distanceRanges": {
+    "protectionRef": "2037769d920ff06b78f2694aaa639393cecf7a13",
+    "ledgerPath": "staging/distance-range-candidates.json",
+    "decisions": [
+      {
+        "characterId": "jp",
+        "moveId": "jp__special_214_K_none",
+        "field": "startup",
+        "before": {
+          "status": "confirmed",
+          "display": "26",
+          "numeric": 26
+        },
+        "sourceNotation": "26~",
+        "variation": "distance/projectile travel time",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+        "sourceIndex": 1,
+        "sourceRecord": {
+          "chara": "JP",
+          "input": "214K",
+          "startup": "26~",
+          "total": "72",
+          "hitAdv": "HKD +18",
+          "blockAdv": "-",
+          "notes": "1-hit projectile command grab; clashes with non-OD projectiles; can be comboed into against grounded opponents; minimum 72f total animation; startup increases at long range due to projectile grab travel time; cannot be performed if SA2 or a Departure portal are active on the screen; projectile speed decelerates by 0.01/frame when in proximity of opponent; 2070 damage on Punish Counter"
+        },
+        "reason": "原典注記が長距離での弾到達時間・硬直差の変動を明示。",
+        "value": {
+          "status": "conditional",
+          "display": "26~",
+          "condition": "距離・弾の到達時間による変動",
+          "openRange": {
+            "reference": 26,
+            "unspecified": "trailing",
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/JP/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "jp",
+        "moveId": "jp__special_214_K_OD",
+        "field": "startup",
+        "before": {
+          "status": "confirmed",
+          "display": "26",
+          "numeric": 26
+        },
+        "sourceNotation": "26~",
+        "variation": "distance/projectile travel time",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+        "sourceIndex": 2,
+        "sourceRecord": {
+          "chara": "JP",
+          "input": "214KK",
+          "startup": "26~",
+          "total": "72",
+          "hitAdv": "HKD +18",
+          "blockAdv": "-",
+          "notes": "1-hit OD projectile command grab; clashes with OD projectiles (can destroy non-OD projectiles, allowing the throw to continue); can be comboed into against grounded opponents; minimum 72f total animation; startup increases at long range due to projectile grab travel time; cannot be performed if SA2 or a Departure portal are active on the screen; projectile speed decelerates by 0.01/frame when in proximity of opponent; 2990 damage on Punish Counter"
+        },
+        "reason": "原典注記が長距離での弾到達時間・硬直差の変動を明示。",
+        "value": {
+          "status": "conditional",
+          "display": "26~",
+          "condition": "距離・弾の到達時間による変動",
+          "openRange": {
+            "reference": 26,
+            "unspecified": "trailing",
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/JP/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "jp",
+        "moveId": "jp__special_236_K_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+6",
+          "numeric": 6
+        },
+        "sourceNotation": "+6~",
+        "variation": "distance/projectile travel time",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+        "sourceIndex": 17,
+        "sourceRecord": {
+          "chara": "JP",
+          "input": "236HK",
+          "startup": "14+12",
+          "total": "50",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+6~'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8~'''</span>",
+          "notes": "Spawns a \"ghost\" that travels toward opponent and clashes with 1-hit non-OD projectiles; upon reaching the opponent, begins an 12f low-hitting projectile attack; if the opponent moves forward quickly, it is possible to dodge the projectile entire since it is not active while traveling; from longer range, total startup increases and grants better frame advantage; cannot be used while SA2 is active; cancel into SA3 won't combo at close range without CH/PC; projectile speed decelerates by 0.01/frame when in proximity of opponent"
+        },
+        "reason": "原典注記が長距離での弾到達時間・硬直差の変動を明示。",
+        "value": {
+          "status": "conditional",
+          "display": "+6~",
+          "condition": "距離・弾の到達時間による変動",
+          "openRange": {
+            "reference": 6,
+            "unspecified": "trailing",
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/JP/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "jp",
+        "moveId": "jp__special_236_K_H",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-8",
+          "numeric": -8
+        },
+        "sourceNotation": "-8~",
+        "variation": "distance/projectile travel time",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+        "sourceIndex": 17,
+        "sourceRecord": {
+          "chara": "JP",
+          "input": "236HK",
+          "startup": "14+12",
+          "total": "50",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+6~'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8~'''</span>",
+          "notes": "Spawns a \"ghost\" that travels toward opponent and clashes with 1-hit non-OD projectiles; upon reaching the opponent, begins an 12f low-hitting projectile attack; if the opponent moves forward quickly, it is possible to dodge the projectile entire since it is not active while traveling; from longer range, total startup increases and grants better frame advantage; cannot be used while SA2 is active; cancel into SA3 won't combo at close range without CH/PC; projectile speed decelerates by 0.01/frame when in proximity of opponent"
+        },
+        "reason": "原典注記が長距離での弾到達時間・硬直差の変動を明示。",
+        "value": {
+          "status": "conditional",
+          "display": "-8~",
+          "condition": "距離・弾の到達時間による変動",
+          "openRange": {
+            "reference": -8,
+            "unspecified": "trailing",
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/JP/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "jp",
+        "moveId": "jp__special_236_K_OD",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "+25",
+          "numeric": 25
+        },
+        "sourceNotation": "+25~",
+        "variation": "distance/projectile travel time",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+        "sourceIndex": 19,
+        "sourceRecord": {
+          "chara": "JP",
+          "input": "236KK",
+          "startup": "14+8",
+          "total": "50",
+          "hitAdv": "KD +66~",
+          "blockAdv": "<span style=\"color: #30D5B8;\">'''+25~'''</span>",
+          "notes": "Spawns a \"ghost\" that travels toward opponent with 2-hit OD projectile priority; upon reaching the opponent, begins an OD projectile attack with 8f startup; after clashing with 1-hit OD projectile, only the 1st hit of the projectile attack will come out; SA2 cancel is a true blockstring or combo into the projectile attacks; if the opponent moves forward quickly, it is possible to dodge the projectile entire since it is not active while traveling; from longer range, total startup increases and grants better frame advantage; cannot be used while SA2 is active; if 1st hit is Perfect Parried, leaves a large gap where JP can be punished if close enough; projectile speed decelerates by 0.01/frame when in proximity of opponent"
+        },
+        "reason": "原典注記が長距離での弾到達時間・硬直差の変動を明示。",
+        "value": {
+          "status": "conditional",
+          "display": "+25~",
+          "condition": "距離・弾の到達時間による変動",
+          "openRange": {
+            "reference": 25,
+            "unspecified": "trailing",
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/JP/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "jp",
+        "moveId": "jp__special_236_K_L",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        },
+        "sourceNotation": "-6~",
+        "variation": "distance/projectile travel time",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+        "sourceIndex": 20,
+        "sourceRecord": {
+          "chara": "JP",
+          "input": "236LK",
+          "startup": "14+8",
+          "total": "50",
+          "hitAdv": "KD +42~",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6~'''</span>",
+          "notes": "Spawns a \"ghost\" that travels toward opponent and clashes with 1-hit non-OD projectiles; upon reaching the opponent, begins an 8f projectile attack; if the opponent moves forward quickly, it is possible to dodge the projectile entire since it is not active while traveling; from longer range, total startup increases and grants better frame advantage; cannot be used while SA2 is active; projectile speed decelerates by 0.01/frame when in proximity of opponent"
+        },
+        "reason": "原典注記が長距離での弾到達時間・硬直差の変動を明示。",
+        "value": {
+          "status": "conditional",
+          "display": "-6~",
+          "condition": "距離・弾の到達時間による変動",
+          "openRange": {
+            "reference": -6,
+            "unspecified": "trailing",
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/JP/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "jp",
+        "moveId": "jp__special_236_K_M",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+6",
+          "numeric": 6
+        },
+        "sourceNotation": "+6~",
+        "variation": "distance/projectile travel time",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+        "sourceIndex": 22,
+        "sourceRecord": {
+          "chara": "JP",
+          "input": "236MK",
+          "startup": "14+12",
+          "total": "50",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+6~'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8~'''</span>",
+          "notes": "Spawns a \"ghost\" that travels toward opponent and clashes with 1-hit non-OD projectiles; upon reaching the opponent, begins an 12f overhead projectile attack; if the opponent moves forward quickly, it is possible to dodge the projectile entire since it is not active while traveling; from longer range, total startup increases and grants better frame advantage; cannot be used while SA2 is active; cancel into SA3 won't combo at close range without CH/PC; projectile speed decelerates by 0.01/frame when in proximity of opponent"
+        },
+        "reason": "原典注記が長距離での弾到達時間・硬直差の変動を明示。",
+        "value": {
+          "status": "conditional",
+          "display": "+6~",
+          "condition": "距離・弾の到達時間による変動",
+          "openRange": {
+            "reference": 6,
+            "unspecified": "trailing",
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/JP/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "jp",
+        "moveId": "jp__special_236_K_M",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-8",
+          "numeric": -8
+        },
+        "sourceNotation": "-8~",
+        "variation": "distance/projectile travel time",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+        "sourceIndex": 22,
+        "sourceRecord": {
+          "chara": "JP",
+          "input": "236MK",
+          "startup": "14+12",
+          "total": "50",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+6~'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8~'''</span>",
+          "notes": "Spawns a \"ghost\" that travels toward opponent and clashes with 1-hit non-OD projectiles; upon reaching the opponent, begins an 12f overhead projectile attack; if the opponent moves forward quickly, it is possible to dodge the projectile entire since it is not active while traveling; from longer range, total startup increases and grants better frame advantage; cannot be used while SA2 is active; cancel into SA3 won't combo at close range without CH/PC; projectile speed decelerates by 0.01/frame when in proximity of opponent"
+        },
+        "reason": "原典注記が長距離での弾到達時間・硬直差の変動を明示。",
+        "value": {
+          "status": "conditional",
+          "display": "-8~",
+          "condition": "距離・弾の到達時間による変動",
+          "openRange": {
+            "reference": -8,
+            "unspecified": "trailing",
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/JP/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "aki",
+        "moveId": "aki__special_214_P_H",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
+        },
+        "sourceNotation": "-4",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/aki.cargo.json",
+        "sourceIndex": 2,
+        "sourceRecord": {
+          "chara": "A.K.I.",
+          "input": "214HP",
+          "startup": "13",
+          "total": "51",
+          "hitAdv": "KD +40",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "Strike hitbox (no projectile durability); poisons opponent on hit; puts opponent into limited juggle state; extended arm is projectile invincible 13-21f; useful combo and juggle tool; relatively safe blockstring ender, but can whiff in cancels outside close range; can get significantly better frame advantage on a late meaty connect (up to +4 on block); leaves a 2f blockstring gap when canceled from 5LK, or a 4f gap (trade combo) when canceled from 2LP; 6f hitconfirm window into SA3 refers to 2nd hit only"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-4~+4",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -4,
+            "max": 4,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "aki",
+        "moveId": "aki__special_236_P_L",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-8",
+          "numeric": -8
+        },
+        "sourceNotation": "-8(-6)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/aki.cargo.json",
+        "sourceIndex": 20,
+        "sourceRecord": {
+          "chara": "A.K.I.",
+          "input": "236LP",
+          "startup": "14",
+          "total": "36(42)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1(+3)</span> [KD +44(46)]",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8(-6)'''</span>",
+          "notes": "Strike hitbox with 1-hit projectile durability; poisons opponent on hit; [Toxic Blossom] hit launches opponent into a limited juggle state (can follow up with corner 236HP from close range); 6f extra recovery on whiff; slightly better frame advantage from longer ranges; extended arm is projectile invincible 13-16f; sets up a strong corner safe jump on Toxic Blossom hit but requires sacrificing the extra juggle; Punish Counter crumple puts opponent into limited juggle state (cannot follow up with grounded combo); Toxic Blossom PC juggle gives much stronger juggle follow-ups midscreen"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-8~-6",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -8,
+            "max": -6,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "aki",
+        "moveId": "aki__special_236_P_OD",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-14",
+          "numeric": -14
+        },
+        "sourceNotation": "-14(-11)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/aki.cargo.json",
+        "sourceIndex": 23,
+        "sourceRecord": {
+          "chara": "A.K.I.",
+          "input": "236PP",
+          "startup": "21",
+          "total": "50",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span> [Crumple +71]",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-14(-11)'''</span>",
+          "notes": "Strike hitbox with 1-hit OD projectile durability; poisons opponent on hit; A.K.I. pulls herself toward opponent on hit (fully invincible during pull animation); [Toxic Blossom] causes crumple on grounded hit (+5 before opponent becomes airborne, or +9 on Punish Counter) and resets the juggle counter vs. airborne opponents (free juggle state); only the [Toxic Blossom] follow-up is Super cancelable; slightly better block advantage if spaced out (cannot hit on final active frame in neutral, as hitbox doesn't move after 4th active frame); extended arm is projectile invincible 20-25f (great anti-projectile tool due to speed and range); Counter-hit/Punish Counter bonus advantage carries through the follow-up hit; mid-combo damage scaling does not apply to Toxic Blossom version; refunds 2000 Drive gauge on Toxic Blossom hit (after spending the initial 20000, so it will not prevent Burnout if A.K.I. has just under 2 Drive bars)"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-14~-11",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -14,
+            "max": -11,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "alex",
+        "moveId": "alex__normal_5_P_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "sourceNotation": "+4",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/alex.cargo.json",
+        "sourceIndex": 37,
+        "sourceRecord": {
+          "chara": "Alex",
+          "input": "5HP",
+          "startup": "12",
+          "total": "35",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Disjointed poke with great range to harass the opponent's Drive gauge; cancelable into Super for a hitconfirm or to punish Drive Impact; extends a wide arm and foot hurtbox on the first 12 recovery frames; high active frame count for meaty setups (up to +8 oH / +1 oB, but high pushback on block); can be held for a stronger, fully cancelable version (uncharged version comes out if button is held up to 15 frames); holding the button 1-7f results in 12f startup; holding the button 8-15f increases the total startup incrementally by 1f (up to a maximum startup of 20f)"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "+4~+8",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 4,
+            "max": 8,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "alex",
+        "moveId": "alex__normal_5_P_H",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        },
+        "sourceNotation": "-3",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/alex.cargo.json",
+        "sourceIndex": 37,
+        "sourceRecord": {
+          "chara": "Alex",
+          "input": "5HP",
+          "startup": "12",
+          "total": "35",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "Disjointed poke with great range to harass the opponent's Drive gauge; cancelable into Super for a hitconfirm or to punish Drive Impact; extends a wide arm and foot hurtbox on the first 12 recovery frames; high active frame count for meaty setups (up to +8 oH / +1 oB, but high pushback on block); can be held for a stronger, fully cancelable version (uncharged version comes out if button is held up to 15 frames); holding the button 1-7f results in 12f startup; holding the button 8-15f increases the total startup incrementally by 1f (up to a maximum startup of 20f)"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-3~+1",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -3,
+            "max": 1,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "alex",
+        "moveId": "alex__normal_5_P_M",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "sourceNotation": "+4",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/alex.cargo.json",
+        "sourceIndex": 41,
+        "sourceRecord": {
+          "chara": "Alex",
+          "input": "5MP",
+          "startup": "7",
+          "total": "24(25/27)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+4</span>",
+          "blockAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+          "notes": "1f extra recovery on block; 2f extra recovery on whiff; extends a wide arm and foot hurtbox on the first 15 recovery frames; can lead to a hitconfirmable TC knockdown; great meaty tool with very low pushback (up to +7 oH / +3 oB)"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "+4~+7",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 4,
+            "max": 7,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "alex",
+        "moveId": "alex__normal_5_P_M",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "0",
+          "numeric": 0
+        },
+        "sourceNotation": "0",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/alex.cargo.json",
+        "sourceIndex": 41,
+        "sourceRecord": {
+          "chara": "Alex",
+          "input": "5MP",
+          "startup": "7",
+          "total": "24(25/27)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+4</span>",
+          "blockAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+          "notes": "1f extra recovery on block; 2f extra recovery on whiff; extends a wide arm and foot hurtbox on the first 15 recovery frames; can lead to a hitconfirmable TC knockdown; great meaty tool with very low pushback (up to +7 oH / +3 oB)"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "0~+3",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 0,
+            "max": 3,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "chunli",
+        "moveId": "chunli__normal_2_K_H",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-9",
+          "numeric": -9
+        },
+        "sourceNotation": "-9",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/chunli.cargo.json",
+        "sourceIndex": 25,
+        "sourceRecord": {
+          "chara": "Chun-Li",
+          "input": "2HK",
+          "startup": "9",
+          "total": "33(35)",
+          "hitAdv": "KD +40",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-9'''</span>",
+          "notes": "2f extra recovery on block; more active frames than most sweeps (can be as safe as -4 with meaty timing); puts airborne opponents into limited juggle state (can juggle after late anti-air 2HK); Stance Cancel: KD/-11 into follow-up, KD/-21 into blocking"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-9~-4",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -9,
+            "max": -4,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Chun-Li/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "cviper",
+        "moveId": "cviper__special_214_P_L",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "sourceNotation": "+2(+5)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json",
+        "sourceIndex": 7,
+        "sourceRecord": {
+          "chara": "C.Viper",
+          "input": "214LP",
+          "startup": "17",
+          "total": "43",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span><span style=\"color: #30D5B8;\">'''(+5)'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span><span style=\"color: #ff6347;\">(-1)</span>",
+          "notes": "Crouch-sized hurtbox on frames 14-43 (standing state); can be spaced meaty for better advantage (very precise spacing required for the final active frame to connect); can duck under projectiles with precise timing (impractical as a reaction to fast fireballs, and can be clipped on her back during recovery against slow fireballs); combos naturally from medium/heavy normals; punishing a projectile can link into 2MP, SA2, 5MK, or 2HP depending on the range; startup can be canceled into Feint by inputting K (feint occurs after 12 startup frames); cancelable into Tracer Combination (6PP) on hit/block only"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "+2~+5",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 2,
+            "max": 5,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "cviper",
+        "moveId": "cviper__special_214_P_L",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
+        },
+        "sourceNotation": "-4(-1)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json",
+        "sourceIndex": 7,
+        "sourceRecord": {
+          "chara": "C.Viper",
+          "input": "214LP",
+          "startup": "17",
+          "total": "43",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span><span style=\"color: #30D5B8;\">'''(+5)'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span><span style=\"color: #ff6347;\">(-1)</span>",
+          "notes": "Crouch-sized hurtbox on frames 14-43 (standing state); can be spaced meaty for better advantage (very precise spacing required for the final active frame to connect); can duck under projectiles with precise timing (impractical as a reaction to fast fireballs, and can be clipped on her back during recovery against slow fireballs); combos naturally from medium/heavy normals; punishing a projectile can link into 2MP, SA2, 5MK, or 2HP depending on the range; startup can be canceled into Feint by inputting K (feint occurs after 12 startup frames); cancelable into Tracer Combination (6PP) on hit/block only"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-4~-1",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -4,
+            "max": -1,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "cviper",
+        "moveId": "cviper__special_214_P_M",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        },
+        "sourceNotation": "+1(+4)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json",
+        "sourceIndex": 9,
+        "sourceRecord": {
+          "chara": "C.Viper",
+          "input": "214MP",
+          "startup": "16",
+          "total": "41",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span><span style=\"color: #30D5B8;\">'''(+4)'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span><span style=\"color: #bcbd0c;\">(0)</span>",
+          "notes": "Less range than LP version but safe on block at all ranges; can be spaced meaty for better advantage; combos from 5LK naturally; startup can be canceled into Feint by inputting K (feint occurs after 8 startup frames); cancelable into Tracer Combination (6PP) on hit/block only; can perform a risky frame trap into follow-up on block (2f gap) unless the move connects on the final 2 active frames"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "+1~+4",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 1,
+            "max": 4,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "cviper",
+        "moveId": "cviper__special_214_P_M",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        },
+        "sourceNotation": "-3(0)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json",
+        "sourceIndex": 9,
+        "sourceRecord": {
+          "chara": "C.Viper",
+          "input": "214MP",
+          "startup": "16",
+          "total": "41",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span><span style=\"color: #30D5B8;\">'''(+4)'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span><span style=\"color: #bcbd0c;\">(0)</span>",
+          "notes": "Less range than LP version but safe on block at all ranges; can be spaced meaty for better advantage; combos from 5LK naturally; startup can be canceled into Feint by inputting K (feint occurs after 8 startup frames); cancelable into Tracer Combination (6PP) on hit/block only; can perform a risky frame trap into follow-up on block (2f gap) unless the move connects on the final 2 active frames"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-3~0",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -3,
+            "max": 0,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "cviper",
+        "moveId": "cviper__special_236_K_H",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        },
+        "sourceNotation": "-2(+2)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json",
+        "sourceIndex": 18,
+        "sourceRecord": {
+          "chara": "C.Viper",
+          "input": "236HK",
+          "startup": "27",
+          "total": "51",
+          "hitAdv": "KD +38",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span><span style=\"color: #32CD32;\">(+2)</span>",
+          "notes": "Farthest trajectory; cannot hit cross-up; Punish Counter gives an extra +5 KD advantage (allows combo into KK follow-up); useful as a safe approach tool from long range (but more likely to land inside opponent's throw range on block); easiest version to space meaty for extra advantage due to forward movement during active frames; works well as a predictive fireball counter due to its range, safety, and lower body projectile invuln frames"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-2~+2",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -2,
+            "max": 2,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "cviper",
+        "moveId": "cviper__special_236_K_OD",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
+        },
+        "sourceNotation": "-4(-1)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json",
+        "sourceIndex": 19,
+        "sourceRecord": {
+          "chara": "C.Viper",
+          "input": "236KK",
+          "startup": "8",
+          "total": "56",
+          "hitAdv": "KD +43",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span><span style=\"color: #ff6347;\">(-1)</span>",
+          "notes": "Best horizontal range for combo consistency; 2 hits (cannot be interrupted on block); cannot hit cross-up; recovery is cancelable into SA2/SA3 after 11f on hit or block; very difficult to space meaty for extra advantage due to minimal forward movement during 2nd hit's active frames; important juggle tool after launches into Air Burning Kick or juggled 5HK ground bounce; combo from 5HK > HJC requires a strict 2f input window (cannot buffer on the first High Jump frame, and results in air version on frame 4 onward)"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-4~-1",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -4,
+            "max": -1,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "dee_jay",
+        "moveId": "dee_jay__normal_5_P_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "sourceNotation": "+3(+8)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/dee_jay.cargo.json",
+        "sourceIndex": 38,
+        "sourceRecord": {
+          "chara": "Dee_Jay",
+          "input": "5HP",
+          "startup": "9",
+          "total": "32",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3<span style=\"color: #30D5B8;\">'''(+8)'''</span></span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4<span style=\"color: #32CD32;\">(+1)</span>'''</span>",
+          "notes": "The first 2 active frames are cancelable, can hit crouching, and force stand (important for [2]8HK combo routes); active frames 3-6 deal 100 less damage and have much longer range, but are not cancelable and whiff on crouching opponents (unless they extend a vertical hurtbox); much better frame advantage on a long-range connect (useful as a shimmy tool and punish starter); [4]6LP cancel: +5/-2; 236LK cancel: 0/-7"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "+3~+8",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 3,
+            "max": 8,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Dee_Jay/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "dee_jay",
+        "moveId": "dee_jay__normal_5_P_H",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
+        },
+        "sourceNotation": "-4(+1)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/dee_jay.cargo.json",
+        "sourceIndex": 38,
+        "sourceRecord": {
+          "chara": "Dee_Jay",
+          "input": "5HP",
+          "startup": "9",
+          "total": "32",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3<span style=\"color: #30D5B8;\">'''(+8)'''</span></span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4<span style=\"color: #32CD32;\">(+1)</span>'''</span>",
+          "notes": "The first 2 active frames are cancelable, can hit crouching, and force stand (important for [2]8HK combo routes); active frames 3-6 deal 100 less damage and have much longer range, but are not cancelable and whiff on crouching opponents (unless they extend a vertical hurtbox); much better frame advantage on a long-range connect (useful as a shimmy tool and punish starter); [4]6LP cancel: +5/-2; 236LK cancel: 0/-7"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-4~+1",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -4,
+            "max": 1,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Dee_Jay/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "dhalsim",
+        "moveId": "dhalsim__special_63214_P_H",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
+        },
+        "sourceNotation": "-4(-2)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/dhalsim.cargo.json",
+        "sourceIndex": 41,
+        "sourceRecord": {
+          "chara": "Dhalsim",
+          "input": "63214HP",
+          "startup": "26",
+          "total": "58",
+          "hitAdv": "KD +45(+47)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4(-2)'''</span>",
+          "notes": "3-hit projectile hitbox (only 1-hit if final active frame connects, otherwise all 3 hits come out); hitbox range increases until reaching max range on 3rd active frame; slightly better advantage at max range; on Perfect Parry, opponent only has 1f recovery despite no screen freeze; SA3 cancel has 2f startup to ensure combo consistency"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-4~-2",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -4,
+            "max": -2,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Dhalsim/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "e_honda",
+        "moveId": "e_honda__special_22_P_none",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "sourceNotation": "+3(+7)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+        "sourceIndex": 11,
+        "sourceRecord": {
+          "chara": "E.Honda",
+          "input": "22P",
+          "startup": "11",
+          "total": "29",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span><span style=\"color: #30D5B8;\">'''(+7)'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span><span style=\"color: #32CD32;\">(+1)</span>",
+          "notes": "Forces stand (allows Sumo Smash confirm on meaty/Counter-hit); has a 1-hit projectile clash hitbox during active frames; useful anti-air for horizontal approaches but cannot hit cross-up; can be spaced out for better hit/block advantage (can lead to extended combos); cancelable into enhanced 214P with Sumo Spirit; 8f hitstop when clashing with projectile"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "+3~+7",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 3,
+            "max": 7,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "e_honda",
+        "moveId": "e_honda__special_22_P_none",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        },
+        "sourceNotation": "-3(+1)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+        "sourceIndex": 11,
+        "sourceRecord": {
+          "chara": "E.Honda",
+          "input": "22P",
+          "startup": "11",
+          "total": "29",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span><span style=\"color: #30D5B8;\">'''(+7)'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span><span style=\"color: #32CD32;\">(+1)</span>",
+          "notes": "Forces stand (allows Sumo Smash confirm on meaty/Counter-hit); has a 1-hit projectile clash hitbox during active frames; useful anti-air for horizontal approaches but cannot hit cross-up; can be spaced out for better hit/block advantage (can lead to extended combos); cancelable into enhanced 214P with Sumo Spirit; 8f hitstop when clashing with projectile"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-3~+1",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -3,
+            "max": 1,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "e_honda",
+        "moveId": "e_honda__normal_2_P_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "sourceNotation": "+3(+5)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+        "sourceIndex": 22,
+        "sourceRecord": {
+          "chara": "E.Honda",
+          "input": "2HP",
+          "startup": "11",
+          "total": "31(33)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span><span style=\"color: #30D5B8;\">'''(+5)'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3(-1)</span>",
+          "notes": "2f extra recovery on whiff or if armor absorbed; not a low attack despite the animation; can be spaced to hit on later active frames for improved advantage; cancelable into 214P with Sumo Spirit enhancement (combos into any strength version)"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "+3~+5",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 3,
+            "max": 5,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "e_honda",
+        "moveId": "e_honda__normal_2_P_H",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        },
+        "sourceNotation": "-3(-1)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+        "sourceIndex": 22,
+        "sourceRecord": {
+          "chara": "E.Honda",
+          "input": "2HP",
+          "startup": "11",
+          "total": "31(33)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span><span style=\"color: #30D5B8;\">'''(+5)'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3(-1)</span>",
+          "notes": "2f extra recovery on whiff or if armor absorbed; not a low attack despite the animation; can be spaced to hit on later active frames for improved advantage; cancelable into 214P with Sumo Spirit enhancement (combos into any strength version)"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-3~-1",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -3,
+            "max": -1,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "ed",
+        "moveId": "ed__special_236_P_none",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "sourceNotation": "+3",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ed.cargo.json",
+        "sourceIndex": 12,
+        "sourceRecord": {
+          "chara": "Ed",
+          "input": "236P",
+          "startup": "14",
+          "total": "33",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+          "notes": "Creates a 1-hit projectile hitbox that can clash with meterless projectiles; cancelable into 6P projectile follow-up on frames 22-28 (canceling on the final 4 frames will not combo); on Perfect Parry, has no screen freeze but only 1f Parry recovery; great meaty due to its high active frame count (up to +14 oH, +6 oB)"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "+3~+14",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 3,
+            "max": 14,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "ed",
+        "moveId": "ed__special_236_P_none",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-5",
+          "numeric": -5
+        },
+        "sourceNotation": "-5",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ed.cargo.json",
+        "sourceIndex": 12,
+        "sourceRecord": {
+          "chara": "Ed",
+          "input": "236P",
+          "startup": "14",
+          "total": "33",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span>",
+          "notes": "Creates a 1-hit projectile hitbox that can clash with meterless projectiles; cancelable into 6P projectile follow-up on frames 22-28 (canceling on the final 4 frames will not combo); on Perfect Parry, has no screen freeze but only 1f Parry recovery; great meaty due to its high active frame count (up to +14 oH, +6 oB)"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-5~+6",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -5,
+            "max": 6,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "ed",
+        "moveId": "ed__special_236_P_OD",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        },
+        "sourceNotation": "-2",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ed.cargo.json",
+        "sourceIndex": 13,
+        "sourceRecord": {
+          "chara": "Ed",
+          "input": "236PP",
+          "startup": "14",
+          "total": "32",
+          "hitAdv": "KD +43",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Creates a 2-hit OD projectile hitbox that can clash with other OD projectiles or outright beat meterless projectiles; cancelable into 6P projectile follow-up on frames 18-28; on Perfect Parry, has no screen freeze but only 1f Parry recovery for each hit; with perfect meaty timing, becomes +16 on hit / +10 on block (no knockdown), but meterless version offers similar advantage with less precision"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-2~+10",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -2,
+            "max": 10,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "ingrid",
+        "moveId": "ingrid__normal_2_P_M",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+6",
+          "numeric": 6
+        },
+        "sourceNotation": "+6",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ingrid.cargo.json",
+        "sourceIndex": 35,
+        "sourceRecord": {
+          "chara": "Ingrid",
+          "input": "2MP",
+          "startup": "7",
+          "total": "22(25)",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+6'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "3f extra recovery on whiff; one of Ingrid's primary buffer tools (less range than 5MK/2HP but also less likely to be whiff punished); links into 5MP on crouching opponents or into 5LK vs. standing/crouching; high active frame count (up to +9 oH / +2 oB with meaty timing); topmost hurtbox on frames 1-10 is vulnerable only to aerial strikes (preventing its use as an anti-air); SA2 cancel: +8/+1"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "+6~+9",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 6,
+            "max": 9,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "ingrid",
+        "moveId": "ingrid__normal_2_P_M",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        },
+        "sourceNotation": "-1",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ingrid.cargo.json",
+        "sourceIndex": 35,
+        "sourceRecord": {
+          "chara": "Ingrid",
+          "input": "2MP",
+          "startup": "7",
+          "total": "22(25)",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+6'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "3f extra recovery on whiff; one of Ingrid's primary buffer tools (less range than 5MK/2HP but also less likely to be whiff punished); links into 5MP on crouching opponents or into 5LK vs. standing/crouching; high active frame count (up to +9 oH / +2 oB with meaty timing); topmost hurtbox on frames 1-10 is vulnerable only to aerial strikes (preventing its use as an anti-air); SA2 cancel: +8/+1"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-1~+2",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -1,
+            "max": 2,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "ingrid",
+        "moveId": "ingrid__normal_5_P_M",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        },
+        "sourceNotation": "+1",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ingrid.cargo.json",
+        "sourceIndex": 50,
+        "sourceRecord": {
+          "chara": "Ingrid",
+          "input": "5MP",
+          "startup": "6",
+          "total": "23",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+          "notes": "Strong meaty option due to high active frame count (up to +5 oH / +4 oB); true blockstring when chained into 5MP~MK even at max delay; SA2 cancel: +5/+4"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "+1~+5",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 1,
+            "max": 5,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "ingrid",
+        "moveId": "ingrid__normal_5_P_M",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "0",
+          "numeric": 0
+        },
+        "sourceNotation": "0",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ingrid.cargo.json",
+        "sourceIndex": 50,
+        "sourceRecord": {
+          "chara": "Ingrid",
+          "input": "5MP",
+          "startup": "6",
+          "total": "23",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "blockAdv": "<span style=\"color: #bcbd0c;\">0</span>",
+          "notes": "Strong meaty option due to high active frame count (up to +5 oH / +4 oB); true blockstring when chained into 5MP~MK even at max delay; SA2 cancel: +5/+4"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "0~+4",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 0,
+            "max": 4,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "juri",
+        "moveId": "juri__normal_5_K_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "sourceNotation": "+2(+5)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/juri.cargo.json",
+        "sourceIndex": 35,
+        "sourceRecord": {
+          "chara": "Juri",
+          "input": "5HK",
+          "startup": "17",
+          "total": "39",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span><span style=\"color: #30D5B8;\">'''(+5)'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span><span style=\"color: #bcbd0c;\">(0)</span>",
+          "notes": "Not airborne despite the animation; Counter-Hit/Punish Counter puts airborne opponents into limited juggle state; Punish Counter also puts grounded opponents into limited juggle state (can follow up, including Supers or DR~2LP); long range and safe on block makes it great in neutral; better frame advantage when well spaced (very difficult to connect with the final active frame); extends a hurtbox 1f before active that is vulnerable to projectiles"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "+2~+5",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 2,
+            "max": 5,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Juri/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "juri",
+        "moveId": "juri__normal_5_K_H",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        },
+        "sourceNotation": "-3(0)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/juri.cargo.json",
+        "sourceIndex": 35,
+        "sourceRecord": {
+          "chara": "Juri",
+          "input": "5HK",
+          "startup": "17",
+          "total": "39",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span><span style=\"color: #30D5B8;\">'''(+5)'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span><span style=\"color: #bcbd0c;\">(0)</span>",
+          "notes": "Not airborne despite the animation; Counter-Hit/Punish Counter puts airborne opponents into limited juggle state; Punish Counter also puts grounded opponents into limited juggle state (can follow up, including Supers or DR~2LP); long range and safe on block makes it great in neutral; better frame advantage when well spaced (very difficult to connect with the final active frame); extends a hurtbox 1f before active that is vulnerable to projectiles"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-3~0",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -3,
+            "max": 0,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Juri/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "juri",
+        "moveId": "juri__normal_5_P_L",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+5",
+          "numeric": 5
+        },
+        "sourceNotation": "+5",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/juri.cargo.json",
+        "sourceIndex": 41,
+        "sourceRecord": {
+          "chara": "Juri",
+          "input": "5LP",
+          "startup": "4",
+          "total": "14",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Chains into 5LP/2LP/2LK; high active frame count makes it a useful meaty (up to +8/+1); SA2 cancel: +8/+1; DR cancel is delayed until after 3rd active frame"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "+5~+8",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 5,
+            "max": 8,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Juri/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "juri",
+        "moveId": "juri__normal_5_P_L",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        },
+        "sourceNotation": "-2",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/juri.cargo.json",
+        "sourceIndex": 41,
+        "sourceRecord": {
+          "chara": "Juri",
+          "input": "5LP",
+          "startup": "4",
+          "total": "14",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Chains into 5LP/2LP/2LK; high active frame count makes it a useful meaty (up to +8/+1); SA2 cancel: +8/+1; DR cancel is delayed until after 3rd active frame"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-2~+1",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -2,
+            "max": 1,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Juri/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "kimberly",
+        "moveId": "kimberly__normal_2_P_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "sourceNotation": "+3",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/kimberly.cargo.json",
+        "sourceIndex": 36,
+        "sourceRecord": {
+          "chara": "Kimberly",
+          "input": "2HP",
+          "startup": "8",
+          "total": "30",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Forces stand on hit; good anti-air but cannot hit cross-up; in Drive Rush juggles, opponent is kept high enough to connect instant j.236PP for a ground bounce; can be up to +8/+3 meaty; best button for Run pressure (cancel into Arc Step beats 4f light normals); Run~Stop cancel: +3/-2 (OD: +6/+1)"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "+3~+8",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 3,
+            "max": 8,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Kimberly/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "kimberly",
+        "moveId": "kimberly__normal_2_P_H",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        },
+        "sourceNotation": "-2",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/kimberly.cargo.json",
+        "sourceIndex": 36,
+        "sourceRecord": {
+          "chara": "Kimberly",
+          "input": "2HP",
+          "startup": "8",
+          "total": "30",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-2</span>",
+          "notes": "Forces stand on hit; good anti-air but cannot hit cross-up; in Drive Rush juggles, opponent is kept high enough to connect instant j.236PP for a ground bounce; can be up to +8/+3 meaty; best button for Run pressure (cancel into Arc Step beats 4f light normals); Run~Stop cancel: +3/-2 (OD: +6/+1)"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-2~+3",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -2,
+            "max": 3,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Kimberly/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "lily",
+        "moveId": "lily__special_236_K_H",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-8",
+          "numeric": -8
+        },
+        "sourceNotation": "-8(+4)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json",
+        "sourceIndex": 11,
+        "sourceRecord": {
+          "chara": "Lily",
+          "input": "236HK",
+          "startup": "25",
+          "total": "53",
+          "hitAdv": "KD +37(+49)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span><span style=\"color: #30D5B8;\">'''(+4)'''</span>",
+          "notes": "Can be spaced out for better frame advantage, allowing a strike/throw mixup on block; puts opponent into limited juggle state on hit (corner juggle follow-up is possible when hitting on active frame 9 or later)"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-8~+4",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -8,
+            "max": 4,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Lily/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "lily",
+        "moveId": "lily__special_236_K_OD",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-8",
+          "numeric": -8
+        },
+        "sourceNotation": "-8(+4)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json",
+        "sourceIndex": 12,
+        "sourceRecord": {
+          "chara": "Lily",
+          "input": "236KK",
+          "startup": "15",
+          "total": "40",
+          "hitAdv": "KD +43(+55)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span><span style=\"color: #30D5B8;\">'''(+4)'''</span>",
+          "notes": "Button combination determines travel distance; far version MK+HK (Modern A[3S]), short version LK+MK / LK+HK (Modern A[2S] / A[1S]); can be spaced out for better frame advantage, allowing a strike/throw mixup on block; short version is easier to space on later active frames for frame advantage (extends a proximity guard box beyond its max range); puts opponent into limited juggle state on hit (corner juggle follow-up is possible when hitting on active frame 5 or later); SA2 hitconfirm time decreases when connecting from longer ranges"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-8~+4",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -8,
+            "max": 4,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Lily/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "lily",
+        "moveId": "lily__special_236_K_L",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-8",
+          "numeric": -8
+        },
+        "sourceNotation": "-8(+4)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json",
+        "sourceIndex": 13,
+        "sourceRecord": {
+          "chara": "Lily",
+          "input": "236LK",
+          "startup": "17",
+          "total": "45",
+          "hitAdv": "KD +33(+45)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span><span style=\"color: #30D5B8;\">'''(+4)'''</span>",
+          "notes": "Can be spaced out for better frame advantage, allowing a strike/throw mixup on block; puts opponent into limited juggle state on hit (corner juggle follow-up is possible only vs. airborne opponents at longer ranges)"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-8~+4",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -8,
+            "max": 4,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Lily/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "lily",
+        "moveId": "lily__special_236_K_M",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-8",
+          "numeric": -8
+        },
+        "sourceNotation": "-8(+4)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json",
+        "sourceIndex": 14,
+        "sourceRecord": {
+          "chara": "Lily",
+          "input": "236MK",
+          "startup": "21",
+          "total": "49",
+          "hitAdv": "KD +37(+49)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span><span style=\"color: #30D5B8;\">'''(+4)'''</span>",
+          "notes": "Can be spaced out for better frame advantage, allowing a strike/throw mixup on block; puts opponent into limited juggle state on hit (corner juggle follow-up is possible when hitting on active frame 10 or later)"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-8~+4",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -8,
+            "max": 4,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Lily/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "luke",
+        "moveId": "luke__normal_2_P_M",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+5",
+          "numeric": 5
+        },
+        "sourceNotation": "+5",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/luke.cargo.json",
+        "sourceIndex": 29,
+        "sourceRecord": {
+          "chara": "Luke",
+          "input": "2MP",
+          "startup": "6",
+          "total": "21(24)",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "notes": "3f extra recovery on whiff; great pressure tool with high reward on counter-hit or when canceled to Drive Rush; up to +7/+3 with meaty timing; has an extended hurtbox on whiff until the end of recovery; topmost hurtbox on frames 1-7 is vulnerable only to aerial strikes (preventing its use as an anti-air)"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "+5~+7",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 5,
+            "max": 7,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Luke/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "luke",
+        "moveId": "luke__normal_2_P_M",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        },
+        "sourceNotation": "+1",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/luke.cargo.json",
+        "sourceIndex": 29,
+        "sourceRecord": {
+          "chara": "Luke",
+          "input": "2MP",
+          "startup": "6",
+          "total": "21(24)",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1</span>",
+          "notes": "3f extra recovery on whiff; great pressure tool with high reward on counter-hit or when canceled to Drive Rush; up to +7/+3 with meaty timing; has an extended hurtbox on whiff until the end of recovery; topmost hurtbox on frames 1-7 is vulnerable only to aerial strikes (preventing its use as an anti-air)"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "+1~+3",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 1,
+            "max": 3,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Luke/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "luke",
+        "moveId": "luke__normal_5_K_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "sourceNotation": "+2(+8)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/luke.cargo.json",
+        "sourceIndex": 34,
+        "sourceRecord": {
+          "chara": "Luke",
+          "input": "5HK",
+          "startup": "10",
+          "total": "32",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span><span style=\"color: #30D5B8;\">'''(+8)'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span><span style=\"color: #32CD32;\">(+1)</span>",
+          "notes": "8-15f Low Crush (feet are strike invincible); puts airborne opponents into limited juggle state; Punish Counter launches opponent high into a limited juggle state; can be spaced for significantly better advantage; extends a hurtbox 1f before active that is vulnerable to projectiles; first 2 active frames have shorter range (makes it easier to space properly); causes camera shake effect on block when connecting with final active frame (easier to tell when Luke has advantage)"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "+2~+8",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 2,
+            "max": 8,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Luke/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "luke",
+        "moveId": "luke__normal_5_K_H",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-5",
+          "numeric": -5
+        },
+        "sourceNotation": "-5(+1)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/luke.cargo.json",
+        "sourceIndex": 34,
+        "sourceRecord": {
+          "chara": "Luke",
+          "input": "5HK",
+          "startup": "10",
+          "total": "32",
+          "hitAdv": "<span style=\"color: #32CD32;\">+2</span><span style=\"color: #30D5B8;\">'''(+8)'''</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span><span style=\"color: #32CD32;\">(+1)</span>",
+          "notes": "8-15f Low Crush (feet are strike invincible); puts airborne opponents into limited juggle state; Punish Counter launches opponent high into a limited juggle state; can be spaced for significantly better advantage; extends a hurtbox 1f before active that is vulnerable to projectiles; first 2 active frames have shorter range (makes it easier to space properly); causes camera shake effect on block when connecting with final active frame (easier to tell when Luke has advantage)"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-5~+1",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -5,
+            "max": 1,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Luke/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "m_bison",
+        "moveId": "m_bison__normal_5_P_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+5",
+          "numeric": 5
+        },
+        "sourceNotation": "+5(+7)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json",
+        "sourceIndex": 29,
+        "sourceRecord": {
+          "chara": "M.Bison",
+          "input": "5HP",
+          "startup": "19",
+          "total": "38(41)",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5(+7)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1(+3)</span>",
+          "notes": "Slow advancing poke with good hitbox priority; 3f extra recovery on whiff/armor; can be spaced for better frame advantage (but gains no links at this range due to pushback); can be hitconfirmed into Super; slams airborne opponents down into limited juggle OTG state (higher bounce on Punish Counter allows more juggle follow-ups); extends a hurtbox 1f before active that is vulnerable to projectiles"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "+5~+7",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 5,
+            "max": 7,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "m_bison",
+        "moveId": "m_bison__normal_5_P_H",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        },
+        "sourceNotation": "+1(+3)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json",
+        "sourceIndex": 29,
+        "sourceRecord": {
+          "chara": "M.Bison",
+          "input": "5HP",
+          "startup": "19",
+          "total": "38(41)",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5(+7)'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+1(+3)</span>",
+          "notes": "Slow advancing poke with good hitbox priority; 3f extra recovery on whiff/armor; can be spaced for better frame advantage (but gains no links at this range due to pushback); can be hitconfirmed into Super; slams airborne opponents down into limited juggle OTG state (higher bounce on Punish Counter allows more juggle follow-ups); extends a hurtbox 1f before active that is vulnerable to projectiles"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "+1~+3",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 1,
+            "max": 3,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "m_bison",
+        "moveId": "m_bison__special_[2]8_K_OD",
+        "field": "startup",
+        "before": {
+          "status": "confirmed",
+          "display": "16",
+          "numeric": 16
+        },
+        "sourceNotation": "16~47",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json",
+        "sourceIndex": 59,
+        "sourceRecord": {
+          "chara": "M.Bison",
+          "input": "[2]8KK",
+          "startup": "16~47",
+          "total": "54",
+          "hitAdv": "-",
+          "blockAdv": "-",
+          "notes": "40f charge time (charge lasts 10f after releasing down direction); automatically tracks opponent's location; horizontal travel speed depends on distance from opponent (much faster than HK Shadow Rise when used from longer ranges); follow-ups will become their respective OD versions without spending additional Drive gauge; Bison is in a crouching state on the final landing recovery frame"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "16~47",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 16,
+            "max": 47,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "ryu",
+        "moveId": "ryu__special_236_K_H",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        },
+        "sourceNotation": "-3(+5)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json",
+        "sourceIndex": 19,
+        "sourceRecord": {
+          "chara": "Ryu",
+          "input": "236HK",
+          "startup": "27",
+          "total": "50",
+          "hitAdv": "KD +45~51",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span><span style=\"color: #32CD32;\">(+5)</span>",
+          "notes": "Puts opponent into limited juggle state on hit (can follow up with 623MP, 623PP, or SA3 in corner); Punish Counter tumble state can be hit OTG; has great range and forward movement, making it a useful poke in neutral; the last 3 active frames have identical range (the listed best-case frame advantage is when spaced at max range, active frame 7)"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-3~+5",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -3,
+            "max": 5,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "ryu",
+        "moveId": "ryu__special_236_K_L",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-11",
+          "numeric": -11
+        },
+        "sourceNotation": "-11(-7)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json",
+        "sourceIndex": 22,
+        "sourceRecord": {
+          "chara": "Ryu",
+          "input": "236LK",
+          "startup": "14",
+          "total": "41",
+          "hitAdv": "KD +42~46",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-11(-7)'''</span>",
+          "notes": "Puts opponent into limited juggle state on hit; sets up auto-timed safe jump against cornered opponents; can combo when canceled from any normal except 5LP; the last 2 active frames have identical range (the listed best-case frame advantage is when spaced at max range, active frame 5)"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-11~-7",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -11,
+            "max": -7,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "ryu",
+        "moveId": "ryu__special_236_K_M",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-8",
+          "numeric": -8
+        },
+        "sourceNotation": "-8(-2)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json",
+        "sourceIndex": 24,
+        "sourceRecord": {
+          "chara": "Ryu",
+          "input": "236MK",
+          "startup": "18",
+          "total": "45(48)",
+          "hitAdv": "KD +40~46",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span><span style=\"color: #ff6347;\">(-2)</span>",
+          "notes": "Puts opponent into limited juggle state on hit; can be spaced safely due to its range and high active frame count; 3 extra recovery frames on whiff; the last 3 active frames have identical range (the listed best-case frame advantage is when spaced at max range, active frame 7)"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-8~-2",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -8,
+            "max": -2,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "sagat",
+        "moveId": "sagat__special_236_K_H",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-5",
+          "numeric": -5
+        },
+        "sourceNotation": "-5(+5)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/sagat.cargo.json",
+        "sourceIndex": 18,
+        "sourceRecord": {
+          "chara": "Sagat",
+          "input": "236HK",
+          "startup": "22",
+          "total": "58",
+          "hitAdv": "KD +40~41<br>(KD +37~47)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-5'''</span><span style=\"color: #30D5B8;\">'''(+5)'''</span>",
+          "notes": "Furthest horizontal distance; much better block advantage when spaced at max range; 2nd hit active frames 1-9 whiff on crouching opponents; this means that if the Knee is spaced out so the first hit whiffs, it connects on the 2nd to last active frame vs. crouching opponents (+4 on block); if the 1st hit is crouch blocked, opponent cannot switch to stand block the 2nd hit; puts opponent into a limited juggle state (in the corner, can juggle 623LP if the last 6 active frames connect, or 623MP / SA2 if the final active frame connects); blocked Knee causes a screen shake when Sagat has frame advantage; Sweet Spot occurs when juggling into the 3rd or 4th active frame, dealing 1300 damage (single hit) with a higher spinning juggle launch (ensures a follow-up juggle is possible even midscreen); the 2nd hit's extended Knee hitbox is too high to connect on standing characters on active frames 2-7 (tall characters: active frames 4-6); sets up corner safe jump in certain juggle scenarios (e.g. after juggled 2MP~HP)"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-5~+5",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -5,
+            "max": 5,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "sagat",
+        "moveId": "sagat__special_236_K_L",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-8",
+          "numeric": -8
+        },
+        "sourceNotation": "-8(+2)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/sagat.cargo.json",
+        "sourceIndex": 21,
+        "sourceRecord": {
+          "chara": "Sagat",
+          "input": "236LK",
+          "startup": "14",
+          "total": "42(45)",
+          "hitAdv": "KD +36(+46)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span><span style=\"color: #32CD32;\">(+2)</span>",
+          "notes": "Shortest horizontal distance; no front leg hurtbox on frames 10-12 (helps avoid low pokes); 3f extra landing recovery when absorbed by armor; much better block advantage (up to +2) when spaced at max range; active frames 2-10 whiff on crouching opponents; this means that if the Knee is spaced out so the first active frame whiffs, it always connects on the last active frame vs. crouching opponents (+2 on block, 623LP juggle on hit); puts opponent into a limited juggle state (in the corner, can juggle 623LP if the last active frame connects); blocked Knee causes a screen shake when Sagat has frame advantage; can be whiffed in some situations for a side switch vs. knocked down opponents"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-8~+2",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -8,
+            "max": 2,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "sagat",
+        "moveId": "sagat__special_236_K_M",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-7",
+          "numeric": -7
+        },
+        "sourceNotation": "-7(+3)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/sagat.cargo.json",
+        "sourceIndex": 24,
+        "sourceRecord": {
+          "chara": "Sagat",
+          "input": "236MK",
+          "startup": "18",
+          "total": "46(49)",
+          "hitAdv": "KD +39(+49)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-7'''</span><span style=\"color: #32CD32;\">(+3)</span>",
+          "notes": "Medium horizontal distance; no front leg hurtbox on frames 14-15 (helps avoid low pokes); 3f extra landing recovery when absorbed by armor; much better block advantage (up to +3) when spaced at max range; active frames 2-9 whiff on crouching opponents; this means that if the Knee is spaced out so the first active frame whiffs, it connects on the 2nd to last active frame vs. crouching opponents (+2 on block, 623LP juggle on hit); puts opponent into a limited juggle state (in the corner, can juggle 623LP if the last 4 active frames connect); blocked Knee causes a screen shake when Sagat has frame advantage; can be whiffed in some situations for a side switch vs. knocked down opponents; sets up midscreen safe jump in certain juggle scenarios (e.g. after juggled 2MP~HP)"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-7~+3",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -7,
+            "max": 3,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "terry",
+        "moveId": "terry__normal_2_P_M",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        },
+        "sourceNotation": "-1",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json",
+        "sourceIndex": 29,
+        "sourceRecord": {
+          "chara": "Terry",
+          "input": "2MP",
+          "startup": "6",
+          "total": "22(23/24)",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+5'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "2f extra recovery on whiff; 1f extra recovery on block; great poke, counterpoke, meaty, and combo tool that can be up to +3 on block; topmost hurtbox on frames 1-9 is vulnerable only to aerial strikes (preventing its use as an anti-air)"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-1~+3",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -1,
+            "max": 3,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "yasmine",
+        "moveId": "yasmine__normal_2_P_L",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "sourceNotation": "+4",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/yasmine.cargo.json",
+        "sourceIndex": 32,
+        "sourceRecord": {
+          "chara": "Yasmine",
+          "input": "2LP",
+          "startup": "4",
+          "total": "14",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Chains into 5LP/2LP/2LK; Yasmine's only 4f option with fairly short range; up to +6 oH / +1 oB with meaty timing (allows stronger links or block pressure); topmost hurtbox on frames 1-6 is vulnerable only to aerial strikes (preventing its use as an anti-air); SA2 cancel: +4/-1"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "+4~+6",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 4,
+            "max": 6,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Yasmine/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "yasmine",
+        "moveId": "yasmine__normal_2_P_L",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        },
+        "sourceNotation": "-1",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/yasmine.cargo.json",
+        "sourceIndex": 32,
+        "sourceRecord": {
+          "chara": "Yasmine",
+          "input": "2LP",
+          "startup": "4",
+          "total": "14",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+4'''</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Chains into 5LP/2LP/2LK; Yasmine's only 4f option with fairly short range; up to +6 oH / +1 oB with meaty timing (allows stronger links or block pressure); topmost hurtbox on frames 1-6 is vulnerable only to aerial strikes (preventing its use as an anti-air); SA2 cancel: +4/-1"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-1~+1",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -1,
+            "max": 1,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Yasmine/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "aki",
+        "moveId": "aki__normal_5_P_M",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "sourceNotation": "+3",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/aki.cargo.json",
+        "sourceIndex": 45,
+        "sourceRecord": {
+          "chara": "A.K.I.",
+          "input": "5MP",
+          "startup": "6",
+          "total": "24(26)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "2 extra recovery frames on whiff/block; Sinister Slide cancel: +9/+5; moves A.K.I. forward; useful combo tool after 5MK or in counter-hit routes but does not combo into 236PP; high active frame count makes it useful as a meaty (up to +7/+1); special/DR/DI cancel is delayed until after 2nd active frame"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "+3~+7",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 3,
+            "max": 7,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "aki",
+        "moveId": "aki__normal_5_P_M",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        },
+        "sourceNotation": "-3",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/aki.cargo.json",
+        "sourceIndex": 45,
+        "sourceRecord": {
+          "chara": "A.K.I.",
+          "input": "5MP",
+          "startup": "6",
+          "total": "24(26)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span>",
+          "notes": "2 extra recovery frames on whiff/block; Sinister Slide cancel: +9/+5; moves A.K.I. forward; useful combo tool after 5MK or in counter-hit routes but does not combo into 236PP; high active frame count makes it useful as a meaty (up to +7/+1); special/DR/DI cancel is delayed until after 2nd active frame"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-3~+1",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -3,
+            "max": 1,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "jamie",
+        "moveId": "jamie__held_special_214_P_H",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        },
+        "sourceNotation": "-3(+5)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+        "sourceIndex": 1,
+        "sourceRecord": {
+          "chara": "Jamie",
+          "input": "214HP",
+          "startup": "25",
+          "total": "49",
+          "hitAdv": "KD +42(+50)",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3</span><span style=\"color: #30D5B8;\">'''(+5)'''</span>",
+          "notes": "Damage DL0-DL4: 1080/1140/1200/1260/1320 (Chip: 270/285/300/315/330); has juggle potential; has 6P follow-up during DL4 only; screen shake occurs if blocked on active frames 5-9 when Jamie has advantage; final active frame will only connect as a meaty (can only be up to +4 oB when spaced in neutral); sets up a safe jump when connecting with first active frame on grounded opponents"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-3~+5",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -3,
+            "max": 5,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "jamie",
+        "moveId": "jamie__held_special_214_P_L",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        },
+        "sourceNotation": "-6(+2)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+        "sourceIndex": 2,
+        "sourceRecord": {
+          "chara": "Jamie",
+          "input": "214LP",
+          "startup": "17",
+          "total": "42",
+          "hitAdv": "KD +39(+47)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span><span style=\"color: #32CD32;\">(+2)</span>",
+          "notes": "Damage DL0-DL4: 810/855/900/945/990 (Chip: 202/213/225/236/247); has juggle potential; has 6P follow-up during DL4 only; screen shake occurs if blocked on active frames 8-9 when Jamie has advantage; final active frame will only connect as a meaty (can only be up to +1 oB when spaced in neutral); active frames 5-7 have reduced range to make it easier to achieve advantage on block"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-6~+2",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -6,
+            "max": 2,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "jamie",
+        "moveId": "jamie__held_special_214_P_M",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        },
+        "sourceNotation": "-6(+2)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+        "sourceIndex": 3,
+        "sourceRecord": {
+          "chara": "Jamie",
+          "input": "214MP",
+          "startup": "20",
+          "total": "45",
+          "hitAdv": "KD +39(+47)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span><span style=\"color: #32CD32;\">(+2)</span>",
+          "notes": "Damage DL0-DL4: 900/950/1000/1050/1100 (Chip: 225/237/250/262/275); has juggle potential; has 6P follow-up during DL4 only; screen shake occurs if blocked on active frames 8-9 when Jamie has advantage; final active frame will only connect as a meaty (can only be up to +1 oB when spaced in neutral); active frames 5-7 have reduced range to make it easier to achieve advantage on block"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-6~+2",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -6,
+            "max": 2,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "jamie",
+        "moveId": "jamie__held_special_214_P_OD",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        },
+        "sourceNotation": "-1(+7)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+        "sourceIndex": 4,
+        "sourceRecord": {
+          "chara": "Jamie",
+          "input": "214PP",
+          "startup": "20",
+          "total": "43",
+          "hitAdv": "KD +73(+81) Tumble",
+          "blockAdv": "<span style=\"color: #ff6347;\">-1</span><span style=\"color: #30D5B8;\">'''(+7)'''</span>",
+          "notes": "Damage DL0-DL4: 990/1045/1100/1155/1210 (Chip: 247/261/275/288/302); has juggle potential; has 6P follow-up during DL4 only; can juggle OTG during Tumble state; Punish Counter near corner causes a crouching Wall Splat that puts opponent into limited juggle state while still grounded (can be thrown; strikes cause opponent to become airborne); screen shake occurs if blocked on active frames 3-9 when Jamie has advantage; final active frame will only connect as a meaty (can only be up to +6 oB when spaced in neutral); SA2 cancel: KD+89(103)/+15"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-1~+7",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -1,
+            "max": 7,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "jamie",
+        "moveId": "jamie__normal_5_P_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        },
+        "sourceNotation": "+1(+3)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+        "sourceIndex": 68,
+        "sourceRecord": {
+          "chara": "Jamie",
+          "input": "5HP",
+          "startup": "5",
+          "total": "34",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1(+3)</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3(-1)</span>",
+          "notes": "Damage DL0-DL4: 810/855/900/945/990; very fast startup for heavy normal; 3 hits (can break Drive Impact from close range); great option out of Drive Rush (forward momentum, plus on block, combo on hit) or vs. opponent in Burnout; 3rd hit has longer range (effectively 12f startup with better frame advantage when spaced out); all hits receive counter-hit/Punish Counter advantage; Punish Counter Drive damage will not occur if the attack is canceled; all 3 hits put airborne opponent into limited juggle state (juggling into last 2 hits will maintain juggle state); SA2 cancel: +11/+5; Drink cancel: -33/-39; special/DR/DI cancel is delayed until after 3rd recovery frame on 2nd hit"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "+1~+3",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 1,
+            "max": 3,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "jamie",
+        "moveId": "jamie__normal_5_P_H",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        },
+        "sourceNotation": "-3(-1)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+        "sourceIndex": 68,
+        "sourceRecord": {
+          "chara": "Jamie",
+          "input": "5HP",
+          "startup": "5",
+          "total": "34",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1(+3)</span>",
+          "blockAdv": "<span style=\"color: #ff6347;\">-3(-1)</span>",
+          "notes": "Damage DL0-DL4: 810/855/900/945/990; very fast startup for heavy normal; 3 hits (can break Drive Impact from close range); great option out of Drive Rush (forward momentum, plus on block, combo on hit) or vs. opponent in Burnout; 3rd hit has longer range (effectively 12f startup with better frame advantage when spaced out); all hits receive counter-hit/Punish Counter advantage; Punish Counter Drive damage will not occur if the attack is canceled; all 3 hits put airborne opponent into limited juggle state (juggling into last 2 hits will maintain juggle state); SA2 cancel: +11/+5; Drink cancel: -33/-39; special/DR/DI cancel is delayed until after 3rd recovery frame on 2nd hit"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-3~-1",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -3,
+            "max": -1,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "juri",
+        "moveId": "juri__normal_5_P_M",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+7",
+          "numeric": 7
+        },
+        "sourceNotation": "+7",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/juri.cargo.json",
+        "sourceIndex": 45,
+        "sourceRecord": {
+          "chara": "Juri",
+          "input": "5MP",
+          "startup": "6",
+          "total": "21",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+7'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "notes": "Strong combo/pressure starter and meaty tool, especially out of Drive Rush to minimize pushback; meaty timing can be up to +10/+5; SA2 cancel: +14/+9; special/DR/DI cancel is delayed until after 2nd active frame"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "+7~+10",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 7,
+            "max": 10,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Juri/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "juri",
+        "moveId": "juri__normal_5_P_M",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "sourceNotation": "+2",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/juri.cargo.json",
+        "sourceIndex": 45,
+        "sourceRecord": {
+          "chara": "Juri",
+          "input": "5MP",
+          "startup": "6",
+          "total": "21",
+          "hitAdv": "<span style=\"color: #30D5B8;\">'''+7'''</span>",
+          "blockAdv": "<span style=\"color: #32CD32;\">+2</span>",
+          "notes": "Strong combo/pressure starter and meaty tool, especially out of Drive Rush to minimize pushback; meaty timing can be up to +10/+5; SA2 cancel: +14/+9; special/DR/DI cancel is delayed until after 2nd active frame"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "+2~+5",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 2,
+            "max": 5,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Juri/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "aki",
+        "moveId": "aki__special_236_P_L",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        },
+        "sourceNotation": "+1(+3) [KD +44(46)]",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/aki.cargo.json",
+        "sourceIndex": 20,
+        "sourceRecord": {
+          "chara": "A.K.I.",
+          "input": "236LP",
+          "startup": "14",
+          "total": "36(42)",
+          "hitAdv": "<span style=\"color: #32CD32;\">+1(+3)</span> [KD +44(46)]",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8(-6)'''</span>",
+          "notes": "Strike hitbox with 1-hit projectile durability; poisons opponent on hit; [Toxic Blossom] hit launches opponent into a limited juggle state (can follow up with corner 236HP from close range); 6f extra recovery on whiff; slightly better frame advantage from longer ranges; extended arm is projectile invincible 13-16f; sets up a strong corner safe jump on Toxic Blossom hit but requires sacrificing the extra juggle; Punish Counter crumple puts opponent into limited juggle state (cannot follow up with grounded combo); Toxic Blossom PC juggle gives much stronger juggle follow-ups midscreen"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "+1~+3",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 1,
+            "max": 3,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "mai",
+        "moveId": "mai__special_214_P_L",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "sourceNotation": "+3",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/mai.cargo.json",
+        "sourceIndex": 4,
+        "sourceRecord": {
+          "chara": "Mai",
+          "input": "214LP",
+          "startup": "14",
+          "total": "35",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "Low Crush 7-14f; strike hitbox that can dissipate standard 1-hit projectiles during active frames; becomes KD +35 on Counter-hit/Punish Counter; leaves opponent standing on hit just outside throw range (must walk 1-2f to throw, or more if spaced far away); safe when well spaced in neutral; when canceled from a normal on block, its safe range is character-specific (max range 2MK offers the best pushback); useful oki tool that can be up to +9/+2 when meaty (e.g. 2HK, whiff 5LK, 214LP) and can also lead to a juggle on meaty Counter-hit; extends a forward hurtbox on whiff until the end of recovery"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "+3~+9",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 3,
+            "max": 9,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "mai",
+        "moveId": "mai__special_214_P_L",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
+        },
+        "sourceNotation": "-4",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/mai.cargo.json",
+        "sourceIndex": 4,
+        "sourceRecord": {
+          "chara": "Mai",
+          "input": "214LP",
+          "startup": "14",
+          "total": "35",
+          "hitAdv": "<span style=\"color: #32CD32;\">+3</span>",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-4'''</span>",
+          "notes": "Low Crush 7-14f; strike hitbox that can dissipate standard 1-hit projectiles during active frames; becomes KD +35 on Counter-hit/Punish Counter; leaves opponent standing on hit just outside throw range (must walk 1-2f to throw, or more if spaced far away); safe when well spaced in neutral; when canceled from a normal on block, its safe range is character-specific (max range 2MK offers the best pushback); useful oki tool that can be up to +9/+2 when meaty (e.g. 2HK, whiff 5LK, 214LP) and can also lead to a juggle on meaty Counter-hit; extends a forward hurtbox on whiff until the end of recovery"
+        },
+        "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-4~+2",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -4,
+            "max": 2,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "cammy",
+        "moveId": "cammy__special_236_K_L",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-12",
+          "numeric": -12
+        },
+        "sourceNotation": "-12(0)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cammy.cargo.json",
+        "sourceIndex": 10,
+        "sourceRecord": {
+          "chara": "Cammy",
+          "input": "236LK",
+          "startup": "9",
+          "total": "42",
+          "hitAdv": "KD +26(+48)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-12<span style=\"color: #bcbd0c;\">(0)</span>'''</span>",
+          "notes": "Can be spaced safely; useful in corner juggle routes after 5HP~HK, DR~4HK > 4HK, or blocked Drive Impact"
+        },
+        "reason": "表に明示された-12(0)の両値と注記「Can be spaced safely」が同一強度の間合い・接触依存に対応。端点を計算せず採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-12~0",
+          "condition": "同一強度・代表条件での間合いと接触タイミング",
+          "range": {
+            "min": -12,
+            "max": 0,
+            "evidence": ["https://wiki.supercombo.gg/w/Street_Fighter_6"]
+          }
+        }
+      },
+      {
+        "characterId": "cammy",
+        "moveId": "cammy__special_236_K_M",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-14",
+          "numeric": -14
+        },
+        "sourceNotation": "-14(0)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cammy.cargo.json",
+        "sourceIndex": 11,
+        "sourceRecord": {
+          "chara": "Cammy",
+          "input": "236MK",
+          "startup": "9",
+          "total": "44",
+          "hitAdv": "KD +26(+48)",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-14<span style=\"color: #bcbd0c;\">(0)</span>'''</span>",
+          "notes": "Can be spaced safely; best version for buffers in neutral; useful in corner juggle routes into 623K"
+        },
+        "reason": "表に明示された-14(0)の両値と注記「Can be spaced safely」が同一強度の間合い・接触依存に対応。端点を計算せず採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-14~0",
+          "condition": "同一強度・代表条件での間合いと接触タイミング",
+          "range": {
+            "min": -14,
+            "max": 0,
+            "evidence": ["https://wiki.supercombo.gg/w/Street_Fighter_6"]
+          }
+        }
+      },
+      {
+        "characterId": "dee_jay",
+        "moveId": "dee_jay__special_236_K_M",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        },
+        "sourceNotation": "-6(-4)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/dee_jay.cargo.json",
+        "sourceIndex": 27,
+        "sourceRecord": {
+          "chara": "Dee_Jay",
+          "input": "236MK",
+          "startup": "12",
+          "total": "37",
+          "hitAdv": "KD +34",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6(-4)'''</span>",
+          "notes": "Good neutral and whiff punish tool, especially against low pokes; can be spaced to be safe on block"
+        },
+        "reason": "表に明示された-6(-4)の両値と注記「can be spaced to be safe on block」が同一強度の間合い・接触依存に対応。端点を計算せず採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-6~-4",
+          "condition": "同一強度・代表条件での間合いと接触タイミング",
+          "range": {
+            "min": -6,
+            "max": -4,
+            "evidence": ["https://wiki.supercombo.gg/w/Street_Fighter_6"]
+          }
+        }
+      },
+      {
+        "characterId": "terry",
+        "moveId": "terry__special_214_P_H",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-8",
+          "numeric": -8
+        },
+        "sourceNotation": "-8(+5)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json",
+        "sourceIndex": 4,
+        "sourceRecord": {
+          "chara": "Terry",
+          "input": "214HP",
+          "startup": "23",
+          "total": "53",
+          "hitAdv": "KD +28~41",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-8'''</span><span style=\"color: #30D5B8;\">'''(+5)'''</span>",
+          "notes": "Travels about 80% of the screen; can be spaced to be plus on block from farther ranges (causing a screen shake); good approach tool vs. opponents in Burnout, but no screen shake when +1~4 vs. Burnout; useful approach when following behind Power Wave; Terry raises his hands for a reactable visual cue; only cancelable on active frames 1-5 (cannot cancel on a farther range connect); puts airborne opponents into limited juggle state (can juggle after very late connect)"
+        },
+        "reason": "表に明示された-8(+5)の両値と注記「can be spaced to be plus on block from farther ranges (causing a screen shake)」が同一強度の間合い・接触依存に対応。端点を計算せず採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-8~+5",
+          "condition": "同一強度・代表条件での間合いと接触タイミング",
+          "range": {
+            "min": -8,
+            "max": 5,
+            "evidence": ["https://wiki.supercombo.gg/w/Street_Fighter_6"]
+          }
+        }
+      },
+      {
+        "characterId": "terry",
+        "moveId": "terry__special_214_P_M",
+        "field": "block",
+        "before": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        },
+        "sourceNotation": "-6(+2)",
+        "variation": "distance/contact timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json",
+        "sourceIndex": 10,
+        "sourceRecord": {
+          "chara": "Terry",
+          "input": "214MP",
+          "startup": "14",
+          "total": "42",
+          "hitAdv": "KD +30~42",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-6'''</span><span style=\"color: #32CD32;\">(+2)</span>",
+          "notes": "Travels about 50% of the screen; can be spaced to be plus on block from farther ranges (causing a screen shake); good approach tool vs. opponents in Burnout, but no screen shake when +1~4 vs. Burnout; only cancelable on 1st active frame (cannot cancel on a farther range connect); grants a safe jump on hit if final active frame connects; puts airborne opponents into limited juggle state (can juggle after very late connect); topmost hitbox whiffs on standard-sized crouching opponents making it easier to space in neutral vs. crouch block"
+        },
+        "reason": "表に明示された-6(+2)の両値と注記「can be spaced to be plus on block from farther ranges (causing a screen shake)」が同一強度の間合い・接触依存に対応。端点を計算せず採用。",
+        "value": {
+          "status": "conditional",
+          "display": "-6~+2",
+          "condition": "同一強度・代表条件での間合いと接触タイミング",
+          "range": {
+            "min": -6,
+            "max": 2,
+            "evidence": ["https://wiki.supercombo.gg/w/Street_Fighter_6"]
+          }
+        }
+      },
+      {
+        "characterId": "luke",
+        "moveId": "luke__super_art_3_L",
+        "field": "startup",
+        "before": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "sourceNotation": "10(27)",
+        "variation": "distance/arrival timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/luke.cargo.json",
+        "sourceIndex": 9,
+        "sourceRecord": {
+          "chara": "Luke",
+          "input": "236236K",
+          "startup": "10(27)",
+          "total": "122",
+          "hitAdv": "HKD +18",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-42'''</span>",
+          "notes": "Luke runs forward; active frames occur upon reaching the opponent or on frame 27 (whichever occurs first) but invincibility is not extended when far from opponent; has juggle potential; on block, bounces away with a fixed recovery period (whiff recovery is 26f slower); cinematic time regenerates ~2 Drive bars for Luke; takes opponent to Memphis"
+        },
+        "reason": "保存10(27)と公開Pale Rider本文を照合。相手到達または27Fで攻撃が出る距離依存で、通常版に10/27の両端が明記される。",
+        "additionalEvidence": {
+          "path": "staging/held-range-stage2/luke.html",
+          "url": "https://shoryu.site/character/luke",
+          "meaning": "Pale Rider startup 10(27); reach opponent or frame 27",
+          "gameVersion": "UNVERIFIED",
+          "requiredText": [
+            "Pale Rider</div>",
+            "10(27)",
+            "active frames occur upon reaching the opponent or on frame 27 (whichever occurs first)"
+          ]
+        },
+        "value": {
+          "status": "conditional",
+          "display": "10~27",
+          "condition": "通常SA3・同一強度の相手到達距離",
+          "range": {
+            "min": 10,
+            "max": 27,
+            "evidence": [
+              "https://shoryu.site/character/luke",
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Luke/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "luke",
+        "moveId": "luke__super_art_3_M",
+        "field": "startup",
+        "before": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "sourceNotation": "10(27)",
+        "variation": "distance/arrival timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/luke.cargo.json",
+        "sourceIndex": 9,
+        "sourceRecord": {
+          "chara": "Luke",
+          "input": "236236K",
+          "startup": "10(27)",
+          "total": "122",
+          "hitAdv": "HKD +18",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-42'''</span>",
+          "notes": "Luke runs forward; active frames occur upon reaching the opponent or on frame 27 (whichever occurs first) but invincibility is not extended when far from opponent; has juggle potential; on block, bounces away with a fixed recovery period (whiff recovery is 26f slower); cinematic time regenerates ~2 Drive bars for Luke; takes opponent to Memphis"
+        },
+        "reason": "保存10(27)と公開Pale Rider本文を照合。相手到達または27Fで攻撃が出る距離依存で、通常版に10/27の両端が明記される。",
+        "additionalEvidence": {
+          "path": "staging/held-range-stage2/luke.html",
+          "url": "https://shoryu.site/character/luke",
+          "meaning": "Pale Rider startup 10(27); reach opponent or frame 27",
+          "gameVersion": "UNVERIFIED",
+          "requiredText": [
+            "Pale Rider</div>",
+            "10(27)",
+            "active frames occur upon reaching the opponent or on frame 27 (whichever occurs first)"
+          ]
+        },
+        "value": {
+          "status": "conditional",
+          "display": "10~27",
+          "condition": "通常SA3・同一強度の相手到達距離",
+          "range": {
+            "min": 10,
+            "max": 27,
+            "evidence": [
+              "https://shoryu.site/character/luke",
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Luke/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "luke",
+        "moveId": "luke__super_art_3_H",
+        "field": "startup",
+        "before": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "sourceNotation": "10(27)",
+        "variation": "distance/arrival timing",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/luke.cargo.json",
+        "sourceIndex": 9,
+        "sourceRecord": {
+          "chara": "Luke",
+          "input": "236236K",
+          "startup": "10(27)",
+          "total": "122",
+          "hitAdv": "HKD +18",
+          "blockAdv": "<span style=\"color: #b70c0b;\">'''-42'''</span>",
+          "notes": "Luke runs forward; active frames occur upon reaching the opponent or on frame 27 (whichever occurs first) but invincibility is not extended when far from opponent; has juggle potential; on block, bounces away with a fixed recovery period (whiff recovery is 26f slower); cinematic time regenerates ~2 Drive bars for Luke; takes opponent to Memphis"
+        },
+        "reason": "保存10(27)と公開Pale Rider本文を照合。相手到達または27Fで攻撃が出る距離依存で、通常版に10/27の両端が明記される。",
+        "additionalEvidence": {
+          "path": "staging/held-range-stage2/luke.html",
+          "url": "https://shoryu.site/character/luke",
+          "meaning": "Pale Rider startup 10(27); reach opponent or frame 27",
+          "gameVersion": "UNVERIFIED",
+          "requiredText": [
+            "Pale Rider</div>",
+            "10(27)",
+            "active frames occur upon reaching the opponent or on frame 27 (whichever occurs first)"
+          ]
+        },
+        "value": {
+          "status": "conditional",
+          "display": "10~27",
+          "condition": "通常SA3・同一強度の相手到達距離",
+          "range": {
+            "min": 10,
+            "max": 27,
+            "evidence": [
+              "https://shoryu.site/character/luke",
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Luke/Frame_data"
+            ]
+          }
+        }
+      }
+    ],
+    "heldReviewPath": "staging/held-range-review.json"
   }
 }

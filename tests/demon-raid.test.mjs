@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync, readdirSync } from "node:fs";
 import { execFileSync } from "node:child_process";
+import { restoreDistanceRanges } from "./research-projection.mjs";
 test("no-input automatic slash changes only its five source/strength records", () => {
   const policy = JSON.parse(readFileSync("data/adoption-decisions.json"));
   let changed = 0;
@@ -10,7 +11,7 @@ test("no-input automatic slash changes only its five source/strength records", (
   )) {
     const path = `data/characters/${file}`,
       expected = JSON.parse(execFileSync("git", ["show", `69c2241:${path}`])),
-      actual = JSON.parse(readFileSync(path));
+      actual = restoreDistanceRanges(JSON.parse(readFileSync(path)));
     for (const m of expected.moves) {
       for (const r of policy.frameResearch.representatives)
         if (m.id === r.moveId) m.frames[r.field] = r.value;

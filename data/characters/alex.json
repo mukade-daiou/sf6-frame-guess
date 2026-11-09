@@ -595,14 +595,28 @@
           "calculation": null
         },
         "hit": {
-          "status": "confirmed",
-          "display": "+4",
-          "numeric": 4
+          "status": "conditional",
+          "display": "+4~+8",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 4,
+            "max": 8,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data"
+            ]
+          }
         },
         "block": {
-          "status": "confirmed",
-          "display": "-3",
-          "numeric": -3
+          "status": "conditional",
+          "display": "-3~+1",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -3,
+            "max": 1,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data"
+            ]
+          }
         }
       },
       "notes": [
@@ -713,14 +727,28 @@
           "calculation": null
         },
         "hit": {
-          "status": "confirmed",
-          "display": "+4",
-          "numeric": 4
+          "status": "conditional",
+          "display": "+4~+7",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 4,
+            "max": 7,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data"
+            ]
+          }
         },
         "block": {
-          "status": "confirmed",
-          "display": "0",
-          "numeric": 0
+          "status": "conditional",
+          "display": "0~+3",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 0,
+            "max": 3,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data"
+            ]
+          }
         }
       },
       "notes": [

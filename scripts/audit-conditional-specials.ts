@@ -4,6 +4,7 @@ import { isDeepStrictEqual } from "node:util";
 import { characterSchema } from "../src/lib/frame-data/schema";
 import { applyConditionalSpecials } from "./conditional-specials";
 import { applyFrameResearch } from "./frame-research";
+import { applyDistanceRanges } from "./distance-ranges";
 import { withStrengthExpansions } from "../src/lib/frame-data/strength-expansion";
 import { resolveMove } from "../src/lib/frame-data/resolver";
 const policy = JSON.parse(
@@ -26,7 +27,7 @@ for (const f of readdirSync("data/characters")
   );
   const after = characterSchema.parse(JSON.parse(readFileSync(path, "utf8")));
   const expected = withStrengthExpansions(
-    applyFrameResearch(applyConditionalSpecials(before)),
+    applyDistanceRanges(applyFrameResearch(applyConditionalSpecials(before))),
   );
   if (!isDeepStrictEqual(expected, after))
     throw new Error(`Unexpected conditional changes: ${f}`);
@@ -34,7 +35,23 @@ for (const f of readdirSync("data/characters")
   afterCount += after.moves.length;
   const researchBefore = withStrengthExpansions(applyFrameResearch(before));
   for (const old of before.moves) {
-    const current = after.moves.find((m) => m.id === old.id)!;
+    const current = structuredClone(after.moves.find((m) => m.id === old.id)!);
+    const ranges = JSON.parse(
+      readFileSync("data/adoption-decisions.json", "utf8"),
+    ).distanceRanges.decisions;
+    for (const d of ranges.filter(
+      (d: any) =>
+        d.moveId === (current.strengthExpansion?.sourceMoveId || current.id),
+    )) {
+      if (
+        !isDeepStrictEqual(
+          current.frames[d.field as keyof typeof current.frames],
+          d.value,
+        )
+      )
+        throw new Error(`Unexpected distance range: ${current.id}`);
+      (current.frames as any)[d.field] = d.before;
+    }
     const projected = researchBefore.moves.find((m) => m.id === old.id)!;
     if (!isDeepStrictEqual(current, projected))
       changed.push({ id: old.id, before: old, after: current });

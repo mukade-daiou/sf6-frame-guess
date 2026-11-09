@@ -1248,14 +1248,28 @@
           "calculation": null
         },
         "hit": {
-          "status": "confirmed",
-          "display": "+3",
-          "numeric": 3
+          "status": "conditional",
+          "display": "+3~+14",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 3,
+            "max": 14,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data"
+            ]
+          }
         },
         "block": {
-          "status": "confirmed",
-          "display": "-5",
-          "numeric": -5
+          "status": "conditional",
+          "display": "-5~+6",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -5,
+            "max": 6,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data"
+            ]
+          }
         }
       },
       "notes": [
@@ -1311,9 +1325,16 @@
           "display": "D"
         },
         "block": {
-          "status": "confirmed",
-          "display": "-2",
-          "numeric": -2
+          "status": "conditional",
+          "display": "-2~+10",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -2,
+            "max": 10,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data"
+            ]
+          }
         }
       },
       "notes": [
@@ -2397,14 +2418,28 @@
           "calculation": null
         },
         "hit": {
-          "status": "confirmed",
-          "display": "+3",
-          "numeric": 3
+          "status": "conditional",
+          "display": "+3~+14",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 3,
+            "max": 14,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data"
+            ]
+          }
         },
         "block": {
-          "status": "confirmed",
-          "display": "-5",
-          "numeric": -5
+          "status": "conditional",
+          "display": "-5~+6",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -5,
+            "max": 6,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data"
+            ]
+          }
         }
       },
       "notes": [
@@ -2462,14 +2497,28 @@
           "calculation": null
         },
         "hit": {
-          "status": "confirmed",
-          "display": "+3",
-          "numeric": 3
+          "status": "conditional",
+          "display": "+3~+14",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 3,
+            "max": 14,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data"
+            ]
+          }
         },
         "block": {
-          "status": "confirmed",
-          "display": "-5",
-          "numeric": -5
+          "status": "conditional",
+          "display": "-5~+6",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -5,
+            "max": 6,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data"
+            ]
+          }
         }
       },
       "notes": [
@@ -2527,14 +2576,28 @@
           "calculation": null
         },
         "hit": {
-          "status": "confirmed",
-          "display": "+3",
-          "numeric": 3
+          "status": "conditional",
+          "display": "+3~+14",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 3,
+            "max": 14,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data"
+            ]
+          }
         },
         "block": {
-          "status": "confirmed",
-          "display": "-5",
-          "numeric": -5
+          "status": "conditional",
+          "display": "-5~+6",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -5,
+            "max": 6,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data"
+            ]
+          }
         }
       },
       "notes": [

@@ -40,6 +40,7 @@ export function restoreDemonRaid(character) {
     records =
       JSON.parse(readFileSync("data/adoption-decisions.json", "utf8"))
         .demonRaidNoInput?.records || [];
+  restoreDistanceRanges(result);
   for (const m of result.moves) {
     const d = records.find(
       (d) => d.moveId === (m.strengthExpansion?.sourceMoveId || m.id),
@@ -47,6 +48,17 @@ export function restoreDemonRaid(character) {
     if (d) {
       assert.deepEqual(m.frames, d.frames);
       m.frames = d.before;
+    }
+  }
+  return result;
+}
+
+export function restoreDistanceRanges(result) {
+  const ranges = JSON.parse(readFileSync("data/adoption-decisions.json", "utf8")).distanceRanges?.decisions || [];
+  for (const m of result.moves) {
+    for (const d of ranges.filter(d => d.characterId === result.id && d.moveId === (m.strengthExpansion?.sourceMoveId || m.id))) {
+      assert.deepEqual(m.frames[d.field], d.value);
+      m.frames[d.field] = d.before;
     }
   }
   return result;

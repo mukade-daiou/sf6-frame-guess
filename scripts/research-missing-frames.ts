@@ -6,6 +6,7 @@ import { isQuestionInput, inputKey } from "../src/lib/frame-data/input";
 import { resolveMove, isDisplayable } from "../src/lib/frame-data/resolver";
 import { withStrengthExpansions } from "../src/lib/frame-data/strength-expansion";
 import { applyFrameResearch } from "./frame-research";
+import { applyDistanceRanges } from "./distance-ranges";
 
 const read = (path: string) => JSON.parse(readFileSync(path, "utf8"));
 const save = (path: string, data: unknown) =>
@@ -353,13 +354,16 @@ if (process.argv.includes("--check")) {
     );
     if (!isDeepStrictEqual(old, historical))
       throw new Error(`Baseline changed: ${old.id}`);
-    const expected = withStrengthExpansions(applyFrameResearch(old));
+    const expected = withStrengthExpansions(
+      applyDistanceRanges(applyFrameResearch(old)),
+    );
     const actual = current.find((c) => c.id === old.id);
     if (!isDeepStrictEqual(expected, actual))
       throw new Error(`Unauthorized stage17 record change: ${old.id}`);
   }
   const expectedDecisions = structuredClone(policy);
   delete expectedDecisions.frameResearch;
+  delete expectedDecisions.distanceRanges;
   delete expectedDecisions.knockdownCorrections;
   delete expectedDecisions.demonRaidNoInput;
   expectedDecisions.datasetId = baseline.decisions.datasetId;

@@ -418,14 +418,28 @@
           "calculation": null
         },
         "hit": {
-          "status": "confirmed",
-          "display": "+2",
-          "numeric": 2
+          "status": "conditional",
+          "display": "+2~+5",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 2,
+            "max": 5,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Juri/Frame_data"
+            ]
+          }
         },
         "block": {
-          "status": "confirmed",
-          "display": "-3",
-          "numeric": -3
+          "status": "conditional",
+          "display": "-3~0",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -3,
+            "max": 0,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Juri/Frame_data"
+            ]
+          }
         }
       },
       "notes": [
@@ -654,14 +668,28 @@
           "calculation": null
         },
         "hit": {
-          "status": "confirmed",
-          "display": "+5",
-          "numeric": 5
+          "status": "conditional",
+          "display": "+5~+8",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 5,
+            "max": 8,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Juri/Frame_data"
+            ]
+          }
         },
         "block": {
-          "status": "confirmed",
-          "display": "-2",
-          "numeric": -2
+          "status": "conditional",
+          "display": "-2~+1",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -2,
+            "max": 1,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Juri/Frame_data"
+            ]
+          }
         }
       },
       "notes": [
@@ -713,14 +741,28 @@
           "calculation": null
         },
         "hit": {
-          "status": "confirmed",
-          "display": "+7",
-          "numeric": 7
+          "status": "conditional",
+          "display": "+7~+10",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 7,
+            "max": 10,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Juri/Frame_data"
+            ]
+          }
         },
         "block": {
-          "status": "confirmed",
-          "display": "+2",
-          "numeric": 2
+          "status": "conditional",
+          "display": "+2~+5",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 2,
+            "max": 5,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Juri/Frame_data"
+            ]
+          }
         }
       },
       "notes": [

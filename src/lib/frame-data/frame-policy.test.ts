@@ -13,6 +13,45 @@ const range: FrameValue = {
     evidence: ["https://example.invalid/range-fixture"],
   },
 };
+it("rejects scalar confirmed values carrying undocumented range notation", () => {
+  for (const display of ["26~", "-19~", "+3~+8", "-8~+2"])
+    expect(
+      frameValueSchema.safeParse({ status: "confirmed", display }).success,
+    ).toBe(false);
+});
+it("preserves signed closed and source-only open notation", () => {
+  for (const [display, min, max] of [
+    ["+3~+8", 3, 8],
+    ["-8~+2", -8, 2],
+    ["0~0", 0, 0],
+  ] as const) {
+    const value = { ...range, display, range: { ...range.range!, min, max } };
+    expect(frameValueSchema.safeParse(value).success).toBe(true);
+    expect(displayFrame(value)).toBe(display);
+  }
+  for (const reference of [-19, 0, 26]) {
+    const value = {
+      status: "conditional" as const,
+      display: `${reference}~`,
+      condition: "distance",
+      openRange: {
+        reference,
+        unspecified: "trailing" as const,
+        evidence: ["https://example.invalid"],
+      },
+    };
+    expect(frameValueSchema.safeParse(value).success).toBe(true);
+    expect(displayFrame(value)).toBe(`${reference}~`);
+    for (const invalid of [
+      { ...value, numeric: reference },
+      { ...value, display: "26~∞" },
+      { ...value, openRange: { ...value.openRange, reference: Infinity } },
+      { ...value, openRange: { ...value.openRange, evidence: [] } },
+      { ...value, range: range.range },
+    ])
+      expect(frameValueSchema.safeParse(invalid).success).toBe(false);
+  }
+});
 it("accepts only documented ordered ranges, never infers from parentheses", () => {
   expect(frameValueSchema.safeParse(range).success).toBe(true);
   expect(displayFrame(range)).toBe("20~30");

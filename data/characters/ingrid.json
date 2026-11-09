@@ -359,14 +359,28 @@
           "calculation": null
         },
         "hit": {
-          "status": "confirmed",
-          "display": "+6",
-          "numeric": 6
+          "status": "conditional",
+          "display": "+6~+9",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 6,
+            "max": 9,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data"
+            ]
+          }
         },
         "block": {
-          "status": "confirmed",
-          "display": "-1",
-          "numeric": -1
+          "status": "conditional",
+          "display": "-1~+2",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -1,
+            "max": 2,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data"
+            ]
+          }
         }
       },
       "notes": [
@@ -713,14 +727,28 @@
           "calculation": null
         },
         "hit": {
-          "status": "confirmed",
-          "display": "+1",
-          "numeric": 1
+          "status": "conditional",
+          "display": "+1~+5",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 1,
+            "max": 5,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data"
+            ]
+          }
         },
         "block": {
-          "status": "confirmed",
-          "display": "0",
-          "numeric": 0
+          "status": "conditional",
+          "display": "0~+4",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 0,
+            "max": 4,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data"
+            ]
+          }
         }
       },
       "notes": [

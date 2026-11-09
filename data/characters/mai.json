@@ -832,14 +832,28 @@
           "calculation": null
         },
         "hit": {
-          "status": "confirmed",
-          "display": "+3",
-          "numeric": 3
+          "status": "conditional",
+          "display": "+3~+9",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": 3,
+            "max": 9,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data"
+            ]
+          }
         },
         "block": {
-          "status": "confirmed",
-          "display": "-4",
-          "numeric": -4
+          "status": "conditional",
+          "display": "-4~+2",
+          "condition": "同一入力の距離または持続接触タイミング",
+          "range": {
+            "min": -4,
+            "max": 2,
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data"
+            ]
+          }
         }
       },
       "notes": [
