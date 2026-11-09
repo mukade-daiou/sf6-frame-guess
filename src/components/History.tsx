@@ -56,7 +56,11 @@ export function History({
                             }[key]
                           }
                         </dt>
-                        <dd>{displayFrame(frames[key])}</dd>
+                        <dd>
+                          {displayFrame(frames[key]) === "D"
+                            ? "ダウン"
+                            : displayFrame(frames[key])}
+                        </dd>
                       </div>
                     ))}
                   </dl>
