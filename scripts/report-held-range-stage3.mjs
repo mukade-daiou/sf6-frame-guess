@@ -1,4 +1,5 @@
 import { readFileSync, writeFileSync } from "node:fs";
+import { reportContactRollback } from "./report-contact-timing-rollback.mjs";
 export function appendStage3Report() {
   const review = JSON.parse(
     readFileSync("staging/held-range-review.json", "utf8"),
@@ -78,4 +79,5 @@ export function appendStage3Report() {
     history,
   ];
   writeFileSync(path, out.join("\n"));
+  if (review.contactTimingRollback) reportContactRollback();
 }

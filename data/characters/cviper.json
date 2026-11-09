@@ -832,28 +832,14 @@
           "calculation": null
         },
         "hit": {
-          "status": "conditional",
-          "display": "+2~+5",
-          "condition": "同一入力の距離または持続接触タイミング",
-          "range": {
-            "min": 2,
-            "max": 5,
-            "evidence": [
-              "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data"
-            ]
-          }
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
         },
         "block": {
-          "status": "conditional",
-          "display": "-4~-1",
-          "condition": "同一入力の距離または持続接触タイミング",
-          "range": {
-            "min": -4,
-            "max": -1,
-            "evidence": [
-              "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data"
-            ]
-          }
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
         }
       },
       "notes": [
@@ -905,28 +891,14 @@
           "calculation": null
         },
         "hit": {
-          "status": "conditional",
-          "display": "+1~+4",
-          "condition": "同一入力の距離または持続接触タイミング",
-          "range": {
-            "min": 1,
-            "max": 4,
-            "evidence": [
-              "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data"
-            ]
-          }
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
         },
         "block": {
-          "status": "conditional",
-          "display": "-3~0",
-          "condition": "同一入力の距離または持続接触タイミング",
-          "range": {
-            "min": -3,
-            "max": 0,
-            "evidence": [
-              "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data"
-            ]
-          }
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
         }
       },
       "notes": [
@@ -1042,16 +1014,9 @@
           "display": "D"
         },
         "block": {
-          "status": "conditional",
-          "display": "-2~+2",
-          "condition": "同一入力の距離または持続接触タイミング",
-          "range": {
-            "min": -2,
-            "max": 2,
-            "evidence": [
-              "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data"
-            ]
-          }
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
         }
       },
       "notes": [
@@ -1229,16 +1194,9 @@
           "display": "D"
         },
         "block": {
-          "status": "conditional",
-          "display": "-4~-1",
-          "condition": "同一入力の距離または持続接触タイミング",
-          "range": {
-            "min": -4,
-            "max": -1,
-            "evidence": [
-              "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data"
-            ]
-          }
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
         }
       },
       "notes": [

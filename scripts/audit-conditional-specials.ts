@@ -5,6 +5,7 @@ import { characterSchema } from "../src/lib/frame-data/schema";
 import { applyConditionalSpecials } from "./conditional-specials";
 import { applyFrameResearch } from "./frame-research";
 import { applyDistanceRanges } from "./distance-ranges";
+import { expectedDistanceValue } from "./contact-timing-policy.mjs";
 import { withStrengthExpansions } from "../src/lib/frame-data/strength-expansion";
 import { resolveMove } from "../src/lib/frame-data/resolver";
 const policy = JSON.parse(
@@ -46,7 +47,10 @@ for (const f of readdirSync("data/characters")
       if (
         !isDeepStrictEqual(
           current.frames[d.field as keyof typeof current.frames],
-          d.value,
+          expectedDistanceValue(
+            JSON.parse(readFileSync("data/adoption-decisions.json", "utf8")),
+            d,
+          ),
         )
       )
         throw new Error(`Unexpected distance range: ${current.id}`);

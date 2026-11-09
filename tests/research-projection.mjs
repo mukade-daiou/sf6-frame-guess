@@ -1,5 +1,6 @@
 import { readFileSync } from "node:fs";
 import assert from "node:assert/strict";
+import { expectedDistanceValue } from "../scripts/contact-timing-policy.mjs";
 
 // Restore only the exact field changes authorized by stage 17, including their
 // generated strengths, before running an older independent protection test.
@@ -57,7 +58,7 @@ export function restoreDistanceRanges(result) {
   const ranges = JSON.parse(readFileSync("data/adoption-decisions.json", "utf8")).distanceRanges?.decisions || [];
   for (const m of result.moves) {
     for (const d of ranges.filter(d => d.characterId === result.id && d.moveId === (m.strengthExpansion?.sourceMoveId || m.id))) {
-      assert.deepEqual(m.frames[d.field], d.value);
+      assert.deepEqual(m.frames[d.field], expectedDistanceValue(JSON.parse(readFileSync("data/adoption-decisions.json")),d));
       m.frames[d.field] = d.before;
     }
   }

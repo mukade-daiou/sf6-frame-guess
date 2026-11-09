@@ -39,6 +39,21 @@ export function applyHeldReviews(candidates, reviews) {
       throw Error(`Stage3 baseline changed: ${r.key}`);
     c.reevaluation.stage3 = r;
   }
+  for (const r of reviews.contactTimingRollback?.candidates || []) {
+    const c = candidates.find((c) => key(c) === r.key);
+    if (
+      !c ||
+      !(
+        c.classification === r.before ||
+        (c.classification === "excluded" &&
+          isDeepStrictEqual(c.reevaluation?.contactTimingRollback, r))
+      )
+    )
+      throw Error(`Rollback baseline mismatch: ${r.key}`);
+    c.classification = "excluded";
+    c.reason = r.reason;
+    c.reevaluation = { ...c.reevaluation, contactTimingRollback: r };
+  }
 }
 export function prepareHeldReviews() {
   const policy = read("data/adoption-decisions.json"),
@@ -238,6 +253,9 @@ export function prepareHeldReviews() {
       }
   }
   const review = {
+    ...(existing?.contactTimingRollback
+      ? { contactTimingRollback: existing.contactTimingRollback }
+      : {}),
     ...(existing?.stage3 ? { stage3: existing.stage3 } : {}),
     ...(existing?.stage2 ? { stage2: existing.stage2 } : {}),
     baseline: {
@@ -266,7 +284,7 @@ export function prepareHeldReviews() {
     items,
   };
   policy.distanceRanges.heldReviewPath = reviewPath;
-  if (!existing?.stage2)
+  if (!existing?.stage2 && !existing?.contactTimingRollback)
     policy.datasetId = "distance-held-review-2026-11-09-r1";
   applyHeldReviews(ledger.candidates, review);
   writeFileSync(reviewPath, JSON.stringify(review, null, 2) + "\n");

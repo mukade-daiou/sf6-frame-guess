@@ -713,28 +713,14 @@
           "calculation": null
         },
         "hit": {
-          "status": "conditional",
-          "display": "+3~+7",
-          "condition": "同一入力の距離または持続接触タイミング",
-          "range": {
-            "min": 3,
-            "max": 7,
-            "evidence": [
-              "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data"
-            ]
-          }
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
         },
         "block": {
-          "status": "conditional",
-          "display": "-3~+1",
-          "condition": "同一入力の距離または持続接触タイミング",
-          "range": {
-            "min": -3,
-            "max": 1,
-            "evidence": [
-              "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data"
-            ]
-          }
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
         }
       },
       "notes": [
@@ -1084,16 +1070,9 @@
           "display": "D"
         },
         "block": {
-          "status": "conditional",
-          "display": "-4~+4",
-          "condition": "同一入力の距離または持続接触タイミング",
-          "range": {
-            "min": -4,
-            "max": 4,
-            "evidence": [
-              "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data"
-            ]
-          }
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
         }
       },
       "notes": [
@@ -1607,28 +1586,14 @@
           "calculation": null
         },
         "hit": {
-          "status": "conditional",
-          "display": "+1~+3",
-          "condition": "同一入力の距離または持続接触タイミング",
-          "range": {
-            "min": 1,
-            "max": 3,
-            "evidence": [
-              "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data"
-            ]
-          }
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
         },
         "block": {
-          "status": "conditional",
-          "display": "-8~-6",
-          "condition": "同一入力の距離または持続接触タイミング",
-          "range": {
-            "min": -8,
-            "max": -6,
-            "evidence": [
-              "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data"
-            ]
-          }
+          "status": "confirmed",
+          "display": "-8",
+          "numeric": -8
         }
       },
       "notes": [
@@ -1745,16 +1710,9 @@
           "numeric": 4
         },
         "block": {
-          "status": "conditional",
-          "display": "-14~-11",
-          "condition": "同一入力の距離または持続接触タイミング",
-          "range": {
-            "min": -14,
-            "max": -11,
-            "evidence": [
-              "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data"
-            ]
-          }
+          "status": "confirmed",
+          "display": "-14",
+          "numeric": -14
         }
       },
       "notes": [

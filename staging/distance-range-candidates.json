@@ -24822,8 +24822,8 @@
       "sourceIndex": 2,
       "field": "block",
       "notation": "-4",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "A.K.I.",
         "input": "214HP",
@@ -24836,7 +24836,14 @@
       "moveIds": [
         "aki__special_214_P_H"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "aki/2/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "aki",
@@ -26330,8 +26337,8 @@
       "sourceIndex": 20,
       "field": "hit",
       "notation": "+1(+3) [KD +44(46)]",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "A.K.I.",
         "input": "236LP",
@@ -26344,7 +26351,14 @@
       "moveIds": [
         "aki__special_236_P_L"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "aki/20/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "aki",
@@ -26352,8 +26366,8 @@
       "sourceIndex": 20,
       "field": "block",
       "notation": "-8(-6)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "A.K.I.",
         "input": "236LP",
@@ -26366,7 +26380,14 @@
       "moveIds": [
         "aki__special_236_P_L"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "aki/20/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "aki",
@@ -26623,8 +26644,8 @@
       "sourceIndex": 23,
       "field": "block",
       "notation": "-14(-11)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "A.K.I.",
         "input": "236PP",
@@ -26637,7 +26658,14 @@
       "moveIds": [
         "aki__special_236_P_OD"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "aki/23/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "aki",
@@ -26959,8 +26987,8 @@
       "sourceIndex": 45,
       "field": "hit",
       "notation": "+3",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "A.K.I.",
         "input": "5MP",
@@ -26973,7 +27001,14 @@
       "moveIds": [
         "aki__normal_5_P_M"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "aki/45/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "aki",
@@ -26981,8 +27016,8 @@
       "sourceIndex": 45,
       "field": "block",
       "notation": "-3",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "A.K.I.",
         "input": "5MP",
@@ -26995,7 +27030,14 @@
       "moveIds": [
         "aki__normal_5_P_M"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "aki/45/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "aki",
@@ -28257,8 +28299,8 @@
       "sourceIndex": 12,
       "field": "hit",
       "notation": "+1",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがhitの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Akuma",
         "input": "214PP",
@@ -28368,6 +28410,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "akuma/12/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -28377,8 +28424,8 @@
       "sourceIndex": 12,
       "field": "block",
       "notation": "-3",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがblockの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Akuma",
         "input": "214PP",
@@ -28488,6 +28535,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "akuma/12/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -30083,8 +30135,8 @@
       "sourceIndex": 53,
       "field": "hit",
       "notation": "+3",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがhitの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Akuma",
         "input": "5MK",
@@ -30194,6 +30246,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "akuma/53/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -30203,8 +30260,8 @@
       "sourceIndex": 53,
       "field": "block",
       "notation": "-3",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがblockの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Akuma",
         "input": "5MK",
@@ -30314,6 +30371,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "akuma/53/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -31640,8 +31702,8 @@
       "sourceIndex": 37,
       "field": "hit",
       "notation": "+4",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Alex",
         "input": "5HP",
@@ -31654,7 +31716,14 @@
       "moveIds": [
         "alex__normal_5_P_H"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "alex/37/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "alex",
@@ -31662,8 +31731,8 @@
       "sourceIndex": 37,
       "field": "block",
       "notation": "-3",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Alex",
         "input": "5HP",
@@ -31676,7 +31745,14 @@
       "moveIds": [
         "alex__normal_5_P_H"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "alex/37/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "alex",
@@ -31741,8 +31817,8 @@
       "sourceIndex": 41,
       "field": "hit",
       "notation": "+4",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Alex",
         "input": "5MP",
@@ -31755,7 +31831,14 @@
       "moveIds": [
         "alex__normal_5_P_M"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "alex/41/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "alex",
@@ -31763,8 +31846,8 @@
       "sourceIndex": 41,
       "field": "block",
       "notation": "0",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Alex",
         "input": "5MP",
@@ -31777,7 +31860,14 @@
       "moveIds": [
         "alex__normal_5_P_M"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "alex/41/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "alex",
@@ -34683,8 +34773,8 @@
       "sourceIndex": 20,
       "field": "hit",
       "notation": "-1",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがhitの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Arjun",
         "input": "2HP",
@@ -34786,6 +34876,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "arjun/20/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -34795,8 +34890,8 @@
       "sourceIndex": 20,
       "field": "block",
       "notation": "-5",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがblockの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Arjun",
         "input": "2HP",
@@ -34898,6 +34993,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "arjun/20/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -37142,8 +37242,8 @@
       "sourceIndex": 20,
       "field": "hit",
       "notation": "-1",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがhitの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Blanka",
         "input": "2MP",
@@ -37253,6 +37353,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "blanka/20/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -37262,8 +37367,8 @@
       "sourceIndex": 20,
       "field": "block",
       "notation": "-5",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがblockの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Blanka",
         "input": "2MP",
@@ -37373,6 +37478,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "blanka/20/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -37619,8 +37729,8 @@
       "sourceIndex": 29,
       "field": "hit",
       "notation": "+6",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがhitの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Blanka",
         "input": "5HK",
@@ -37730,6 +37840,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "blanka/29/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -37739,8 +37854,8 @@
       "sourceIndex": 29,
       "field": "block",
       "notation": "-4",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがblockの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Blanka",
         "input": "5HK",
@@ -37850,6 +37965,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "blanka/29/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -42151,8 +42271,8 @@
       "sourceIndex": 10,
       "field": "block",
       "notation": "-12(0)",
-      "classification": "accepted",
-      "reason": "表に明示された-12(0)の両値と注記「Can be spaced safely」が同一強度の間合い・接触依存に対応。端点を計算せず採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Cammy",
         "input": "236LK",
@@ -42197,7 +42317,12 @@
           }
         ],
         "previousClassification": "held",
-        "previousReason": "注記と条件を確認済み。今回の標準条件での端点または片側表記が明示されないため、計算・推測せず現在値を保持。"
+        "previousReason": "注記と条件を確認済み。今回の標準条件での端点または片側表記が明示されないため、計算・推測せず現在値を保持。",
+        "contactTimingRollback": {
+          "key": "cammy/10/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
       }
     },
     {
@@ -42228,8 +42353,8 @@
       "sourceIndex": 11,
       "field": "block",
       "notation": "-14(0)",
-      "classification": "accepted",
-      "reason": "表に明示された-14(0)の両値と注記「Can be spaced safely」が同一強度の間合い・接触依存に対応。端点を計算せず採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Cammy",
         "input": "236MK",
@@ -42274,7 +42399,12 @@
           }
         ],
         "previousClassification": "held",
-        "previousReason": "注記と条件を確認済み。今回の標準条件での端点または片側表記が明示されないため、計算・推測せず現在値を保持。"
+        "previousReason": "注記と条件を確認済み。今回の標準条件での端点または片側表記が明示されないため、計算・推測せず現在値を保持。",
+        "contactTimingRollback": {
+          "key": "cammy/11/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
       }
     },
     {
@@ -43047,8 +43177,8 @@
       "sourceIndex": 32,
       "field": "hit",
       "notation": "+7",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがhitの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Cammy",
         "input": "2HP",
@@ -43158,6 +43288,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "cammy/32/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -43167,8 +43302,8 @@
       "sourceIndex": 32,
       "field": "block",
       "notation": "+1",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがblockの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Cammy",
         "input": "2HP",
@@ -43278,6 +43413,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "cammy/32/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -43699,8 +43839,8 @@
       "sourceIndex": 48,
       "field": "hit",
       "notation": "+6",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがhitの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Cammy",
         "input": "5MP",
@@ -43810,6 +43950,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "cammy/48/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -43819,8 +43964,8 @@
       "sourceIndex": 48,
       "field": "block",
       "notation": "-1",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがblockの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Cammy",
         "input": "5MP",
@@ -43930,6 +44075,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "cammy/48/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -44538,8 +44688,8 @@
       "sourceIndex": 4,
       "field": "block",
       "notation": "-4",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがblockの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Chun-Li",
         "input": "214LK",
@@ -44649,6 +44799,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "chunli/4/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -44884,8 +45039,8 @@
       "sourceIndex": 25,
       "field": "block",
       "notation": "-9",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Chun-Li",
         "input": "2HK",
@@ -44898,7 +45053,14 @@
       "moveIds": [
         "chunli__normal_2_K_H"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "chunli/25/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "chunli",
@@ -46092,8 +46254,8 @@
       "sourceIndex": 7,
       "field": "hit",
       "notation": "+2(+5)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "C.Viper",
         "input": "214LP",
@@ -46106,7 +46268,14 @@
       "moveIds": [
         "cviper__special_214_P_L"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "cviper/7/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "cviper",
@@ -46114,8 +46283,8 @@
       "sourceIndex": 7,
       "field": "block",
       "notation": "-4(-1)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "C.Viper",
         "input": "214LP",
@@ -46128,7 +46297,14 @@
       "moveIds": [
         "cviper__special_214_P_L"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "cviper/7/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "cviper",
@@ -46158,8 +46334,8 @@
       "sourceIndex": 9,
       "field": "hit",
       "notation": "+1(+4)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "C.Viper",
         "input": "214MP",
@@ -46172,7 +46348,14 @@
       "moveIds": [
         "cviper__special_214_P_M"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "cviper/9/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "cviper",
@@ -46180,8 +46363,8 @@
       "sourceIndex": 9,
       "field": "block",
       "notation": "-3(0)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "C.Viper",
         "input": "214MP",
@@ -46194,7 +46377,14 @@
       "moveIds": [
         "cviper__special_214_P_M"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "cviper/9/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "cviper",
@@ -46368,8 +46558,8 @@
       "sourceIndex": 18,
       "field": "block",
       "notation": "-2(+2)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "C.Viper",
         "input": "236HK",
@@ -46382,7 +46572,14 @@
       "moveIds": [
         "cviper__special_236_K_H"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "cviper/18/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "cviper",
@@ -46412,8 +46609,8 @@
       "sourceIndex": 19,
       "field": "block",
       "notation": "-4(-1)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "C.Viper",
         "input": "236KK",
@@ -46426,7 +46623,14 @@
       "moveIds": [
         "cviper__special_236_K_OD"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "cviper/19/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "cviper",
@@ -47936,8 +48140,8 @@
       "sourceIndex": 27,
       "field": "block",
       "notation": "-6(-4)",
-      "classification": "accepted",
-      "reason": "表に明示された-6(-4)の両値と注記「can be spaced to be safe on block」が同一強度の間合い・接触依存に対応。端点を計算せず採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Dee_Jay",
         "input": "236MK",
@@ -47982,7 +48186,12 @@
           }
         ],
         "previousClassification": "held",
-        "previousReason": "注記と条件を確認済み。今回の標準条件での端点または片側表記が明示されないため、計算・推測せず現在値を保持。"
+        "previousReason": "注記と条件を確認済み。今回の標準条件での端点または片側表記が明示されないため、計算・推測せず現在値を保持。",
+        "contactTimingRollback": {
+          "key": "dee_jay/27/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
       }
     },
     {
@@ -48288,8 +48497,8 @@
       "sourceIndex": 33,
       "field": "hit",
       "notation": "+5",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがhitの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Dee_Jay",
         "input": "2MP",
@@ -48399,6 +48608,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "dee_jay/33/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -48408,8 +48622,8 @@
       "sourceIndex": 33,
       "field": "block",
       "notation": "-1",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがblockの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Dee_Jay",
         "input": "2MP",
@@ -48519,6 +48733,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "dee_jay/33/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -48605,8 +48824,8 @@
       "sourceIndex": 38,
       "field": "hit",
       "notation": "+3(+8)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Dee_Jay",
         "input": "5HP",
@@ -48619,7 +48838,14 @@
       "moveIds": [
         "dee_jay__normal_5_P_H"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "dee_jay/38/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "dee_jay",
@@ -48627,8 +48853,8 @@
       "sourceIndex": 38,
       "field": "block",
       "notation": "-4(+1)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Dee_Jay",
         "input": "5HP",
@@ -48641,7 +48867,14 @@
       "moveIds": [
         "dee_jay__normal_5_P_H"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "dee_jay/38/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "dee_jay",
@@ -49799,8 +50032,8 @@
       "sourceIndex": 15,
       "field": "block",
       "notation": "-3",
-      "classification": "held",
-      "reason": "距離依存は注記で明示されるが、端点とODボタン組み合わせ内の条件は未記載。単一-3から末尾~は新作しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Dhalsim",
         "input": "236PP",
@@ -50012,6 +50245,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "dhalsim/15/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -51568,8 +51806,8 @@
       "sourceIndex": 41,
       "field": "block",
       "notation": "-4(-2)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Dhalsim",
         "input": "63214HP",
@@ -51582,7 +51820,14 @@
       "moveIds": [
         "dhalsim__special_63214_P_H"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "dhalsim/41/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "dhalsim",
@@ -52295,8 +52540,8 @@
       "sourceIndex": 11,
       "field": "hit",
       "notation": "+3(+7)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "E.Honda",
         "input": "22P",
@@ -52309,7 +52554,14 @@
       "moveIds": [
         "e_honda__special_22_P_none"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "e_honda/11/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "e_honda",
@@ -52317,8 +52569,8 @@
       "sourceIndex": 11,
       "field": "block",
       "notation": "-3(+1)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "E.Honda",
         "input": "22P",
@@ -52331,7 +52583,14 @@
       "moveIds": [
         "e_honda__special_22_P_none"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "e_honda/11/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "e_honda",
@@ -52797,8 +53056,8 @@
       "sourceIndex": 22,
       "field": "hit",
       "notation": "+3(+5)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "E.Honda",
         "input": "2HP",
@@ -52811,7 +53070,14 @@
       "moveIds": [
         "e_honda__normal_2_P_H"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "e_honda/22/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "e_honda",
@@ -52819,8 +53085,8 @@
       "sourceIndex": 22,
       "field": "block",
       "notation": "-3(-1)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "E.Honda",
         "input": "2HP",
@@ -52833,7 +53099,14 @@
       "moveIds": [
         "e_honda__normal_2_P_H"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "e_honda/22/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "e_honda",
@@ -55099,8 +55372,8 @@
       "sourceIndex": 12,
       "field": "hit",
       "notation": "+3",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Ed",
         "input": "236P",
@@ -55113,7 +55386,14 @@
       "moveIds": [
         "ed__special_236_P_none"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "ed/12/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "ed",
@@ -55121,8 +55401,8 @@
       "sourceIndex": 12,
       "field": "block",
       "notation": "-5",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Ed",
         "input": "236P",
@@ -55135,7 +55415,14 @@
       "moveIds": [
         "ed__special_236_P_none"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "ed/12/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "ed",
@@ -55165,8 +55452,8 @@
       "sourceIndex": 13,
       "field": "block",
       "notation": "-2",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Ed",
         "input": "236PP",
@@ -55179,7 +55466,14 @@
       "moveIds": [
         "ed__special_236_P_OD"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "ed/13/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "ed",
@@ -59023,8 +59317,8 @@
       "sourceIndex": 47,
       "field": "hit",
       "notation": "+2",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがhitの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Elena",
         "input": "5HK",
@@ -59126,6 +59420,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "elena/47/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -59135,8 +59434,8 @@
       "sourceIndex": 47,
       "field": "block",
       "notation": "-4",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがblockの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Elena",
         "input": "5HK",
@@ -59238,6 +59537,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "elena/47/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -59830,8 +60134,8 @@
       "sourceIndex": 4,
       "field": "block",
       "notation": "+1",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがblockの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Guile",
         "input": "214PP",
@@ -59941,6 +60245,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "guile/4/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -61405,8 +61714,8 @@
       "sourceIndex": 35,
       "field": "hit",
       "notation": "+6",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Ingrid",
         "input": "2MP",
@@ -61419,7 +61728,14 @@
       "moveIds": [
         "ingrid__normal_2_P_M"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "ingrid/35/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "ingrid",
@@ -61427,8 +61743,8 @@
       "sourceIndex": 35,
       "field": "block",
       "notation": "-1",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Ingrid",
         "input": "2MP",
@@ -61441,7 +61757,14 @@
       "moveIds": [
         "ingrid__normal_2_P_M"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "ingrid/35/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "ingrid",
@@ -61586,8 +61909,8 @@
       "sourceIndex": 50,
       "field": "hit",
       "notation": "+1",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Ingrid",
         "input": "5MP",
@@ -61600,7 +61923,14 @@
       "moveIds": [
         "ingrid__normal_5_P_M"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "ingrid/50/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "ingrid",
@@ -61608,8 +61938,8 @@
       "sourceIndex": 50,
       "field": "block",
       "notation": "0",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Ingrid",
         "input": "5MP",
@@ -61622,7 +61952,14 @@
       "moveIds": [
         "ingrid__normal_5_P_M"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "ingrid/50/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "ingrid",
@@ -62392,8 +62729,8 @@
       "sourceIndex": 1,
       "field": "block",
       "notation": "-3(+5)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Jamie",
         "input": "214HP",
@@ -62406,7 +62743,14 @@
       "moveIds": [
         "jamie__held_special_214_P_H"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "jamie/1/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "jamie",
@@ -62436,8 +62780,8 @@
       "sourceIndex": 2,
       "field": "block",
       "notation": "-6(+2)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Jamie",
         "input": "214LP",
@@ -62450,7 +62794,14 @@
       "moveIds": [
         "jamie__held_special_214_P_L"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "jamie/2/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "jamie",
@@ -62480,8 +62831,8 @@
       "sourceIndex": 3,
       "field": "block",
       "notation": "-6(+2)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Jamie",
         "input": "214MP",
@@ -62494,7 +62845,14 @@
       "moveIds": [
         "jamie__held_special_214_P_M"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "jamie/3/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "jamie",
@@ -62524,8 +62882,8 @@
       "sourceIndex": 4,
       "field": "block",
       "notation": "-1(+7)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Jamie",
         "input": "214PP",
@@ -62538,7 +62896,14 @@
       "moveIds": [
         "jamie__held_special_214_P_OD"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "jamie/4/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "jamie",
@@ -63391,8 +63756,8 @@
       "sourceIndex": 68,
       "field": "hit",
       "notation": "+1(+3)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Jamie",
         "input": "5HP",
@@ -63405,7 +63770,14 @@
       "moveIds": [
         "jamie__normal_5_P_H"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "jamie/68/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "jamie",
@@ -63413,8 +63785,8 @@
       "sourceIndex": 68,
       "field": "block",
       "notation": "-3(-1)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Jamie",
         "input": "5HP",
@@ -63427,7 +63799,14 @@
       "moveIds": [
         "jamie__normal_5_P_H"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "jamie/68/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "jamie",
@@ -65120,8 +65499,8 @@
       "sourceIndex": 12,
       "field": "block",
       "notation": "-2",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがblockの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "JP",
         "input": "22P",
@@ -65253,6 +65632,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "jp/12/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -65284,8 +65668,8 @@
       "sourceIndex": 13,
       "field": "block",
       "notation": "+3",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがblockの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "JP",
         "input": "22PP",
@@ -65387,6 +65771,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "jp/13/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -65948,8 +66337,8 @@
       "sourceIndex": 17,
       "field": "hit",
       "notation": "+6~",
-      "classification": "accepted",
-      "reason": "原典注記が長距離での弾到達時間・硬直差の変動を明示。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "JP",
         "input": "236HK",
@@ -65962,7 +66351,14 @@
       "moveIds": [
         "jp__special_236_K_H"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "jp/17/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "jp",
@@ -65970,8 +66366,8 @@
       "sourceIndex": 17,
       "field": "block",
       "notation": "-8~",
-      "classification": "accepted",
-      "reason": "原典注記が長距離での弾到達時間・硬直差の変動を明示。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "JP",
         "input": "236HK",
@@ -65984,7 +66380,14 @@
       "moveIds": [
         "jp__special_236_K_H"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "jp/17/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "jp",
@@ -66254,8 +66657,8 @@
       "sourceIndex": 19,
       "field": "block",
       "notation": "+25~",
-      "classification": "accepted",
-      "reason": "原典注記が長距離での弾到達時間・硬直差の変動を明示。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "JP",
         "input": "236KK",
@@ -66268,7 +66671,14 @@
       "moveIds": [
         "jp__special_236_K_OD"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "jp/19/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "jp",
@@ -66516,8 +66926,8 @@
       "sourceIndex": 20,
       "field": "block",
       "notation": "-6~",
-      "classification": "accepted",
-      "reason": "原典注記が長距離での弾到達時間・硬直差の変動を明示。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "JP",
         "input": "236LK",
@@ -66530,7 +66940,14 @@
       "moveIds": [
         "jp__special_236_K_L"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "jp/20/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "jp",
@@ -66756,8 +67173,8 @@
       "sourceIndex": 22,
       "field": "hit",
       "notation": "+6~",
-      "classification": "accepted",
-      "reason": "原典注記が長距離での弾到達時間・硬直差の変動を明示。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "JP",
         "input": "236MK",
@@ -66770,7 +67187,14 @@
       "moveIds": [
         "jp__special_236_K_M"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "jp/22/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "jp",
@@ -66778,8 +67202,8 @@
       "sourceIndex": 22,
       "field": "block",
       "notation": "-8~",
-      "classification": "accepted",
-      "reason": "原典注記が長距離での弾到達時間・硬直差の変動を明示。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "JP",
         "input": "236MK",
@@ -66792,7 +67216,14 @@
       "moveIds": [
         "jp__special_236_K_M"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "jp/22/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "jp",
@@ -67787,8 +68218,8 @@
       "sourceIndex": 35,
       "field": "hit",
       "notation": "+2(+5)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Juri",
         "input": "5HK",
@@ -67801,7 +68232,14 @@
       "moveIds": [
         "juri__normal_5_K_H"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "juri/35/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "juri",
@@ -67809,8 +68247,8 @@
       "sourceIndex": 35,
       "field": "block",
       "notation": "-3(0)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Juri",
         "input": "5HK",
@@ -67823,7 +68261,14 @@
       "moveIds": [
         "juri__normal_5_K_H"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "juri/35/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "juri",
@@ -67831,8 +68276,8 @@
       "sourceIndex": 41,
       "field": "hit",
       "notation": "+5",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Juri",
         "input": "5LP",
@@ -67845,7 +68290,14 @@
       "moveIds": [
         "juri__normal_5_P_L"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "juri/41/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "juri",
@@ -67853,8 +68305,8 @@
       "sourceIndex": 41,
       "field": "block",
       "notation": "-2",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Juri",
         "input": "5LP",
@@ -67867,7 +68319,14 @@
       "moveIds": [
         "juri__normal_5_P_L"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "juri/41/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "juri",
@@ -67917,8 +68376,8 @@
       "sourceIndex": 45,
       "field": "hit",
       "notation": "+7",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Juri",
         "input": "5MP",
@@ -67931,7 +68390,14 @@
       "moveIds": [
         "juri__normal_5_P_M"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "juri/45/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "juri",
@@ -67939,8 +68405,8 @@
       "sourceIndex": 45,
       "field": "block",
       "notation": "+2",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Juri",
         "input": "5MP",
@@ -67953,7 +68419,14 @@
       "moveIds": [
         "juri__normal_5_P_M"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "juri/45/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "juri",
@@ -69255,8 +69728,8 @@
       "sourceIndex": 21,
       "field": "hit",
       "notation": "-1",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがhitの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Ken",
         "input": "236LP",
@@ -69366,6 +69839,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "ken/21/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -69375,8 +69853,8 @@
       "sourceIndex": 21,
       "field": "block",
       "notation": "-7",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがblockの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Ken",
         "input": "236LP",
@@ -69486,6 +69964,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "ken/21/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -69932,8 +70415,8 @@
       "sourceIndex": 34,
       "field": "hit",
       "notation": "+3",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがhitの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Ken",
         "input": "5HP",
@@ -70043,6 +70526,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "ken/34/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -70052,8 +70540,8 @@
       "sourceIndex": 34,
       "field": "block",
       "notation": "-2",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがblockの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Ken",
         "input": "5HP",
@@ -70163,6 +70651,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "ken/34/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -73148,8 +73641,8 @@
       "sourceIndex": 36,
       "field": "hit",
       "notation": "+3",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Kimberly",
         "input": "2HP",
@@ -73162,7 +73655,14 @@
       "moveIds": [
         "kimberly__normal_2_P_H"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "kimberly/36/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "kimberly",
@@ -73170,8 +73670,8 @@
       "sourceIndex": 36,
       "field": "block",
       "notation": "-2",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Kimberly",
         "input": "2HP",
@@ -73184,7 +73684,14 @@
       "moveIds": [
         "kimberly__normal_2_P_H"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "kimberly/36/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "kimberly",
@@ -74572,8 +75079,8 @@
       "sourceIndex": 11,
       "field": "block",
       "notation": "-8(+4)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Lily",
         "input": "236HK",
@@ -74586,7 +75093,14 @@
       "moveIds": [
         "lily__special_236_K_H"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "lily/11/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "lily",
@@ -74616,8 +75130,8 @@
       "sourceIndex": 12,
       "field": "block",
       "notation": "-8(+4)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Lily",
         "input": "236KK",
@@ -74630,7 +75144,14 @@
       "moveIds": [
         "lily__special_236_K_OD"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "lily/12/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "lily",
@@ -74660,8 +75181,8 @@
       "sourceIndex": 13,
       "field": "block",
       "notation": "-8(+4)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Lily",
         "input": "236LK",
@@ -74674,7 +75195,14 @@
       "moveIds": [
         "lily__special_236_K_L"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "lily/13/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "lily",
@@ -74704,8 +75232,8 @@
       "sourceIndex": 14,
       "field": "block",
       "notation": "-8(+4)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Lily",
         "input": "236MK",
@@ -74718,7 +75246,14 @@
       "moveIds": [
         "lily__special_236_K_M"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "lily/14/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "lily",
@@ -76846,8 +77381,8 @@
       "sourceIndex": 23,
       "field": "block",
       "notation": "-9",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがblockの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Luke",
         "input": "2HK",
@@ -76957,6 +77492,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "luke/23/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -77023,8 +77563,8 @@
       "sourceIndex": 29,
       "field": "hit",
       "notation": "+5",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Luke",
         "input": "2MP",
@@ -77037,7 +77577,14 @@
       "moveIds": [
         "luke__normal_2_P_M"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "luke/29/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "luke",
@@ -77045,8 +77592,8 @@
       "sourceIndex": 29,
       "field": "block",
       "notation": "+1",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Luke",
         "input": "2MP",
@@ -77059,7 +77606,14 @@
       "moveIds": [
         "luke__normal_2_P_M"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "luke/29/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "luke",
@@ -77127,8 +77681,8 @@
       "sourceIndex": 34,
       "field": "hit",
       "notation": "+2(+8)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Luke",
         "input": "5HK",
@@ -77141,7 +77695,14 @@
       "moveIds": [
         "luke__normal_5_K_H"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "luke/34/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "luke",
@@ -77149,8 +77710,8 @@
       "sourceIndex": 34,
       "field": "block",
       "notation": "-5(+1)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Luke",
         "input": "5HK",
@@ -77163,7 +77724,14 @@
       "moveIds": [
         "luke__normal_5_K_H"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "luke/34/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "luke",
@@ -78378,8 +78946,8 @@
       "sourceIndex": 7,
       "field": "block",
       "notation": "-15",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがblockの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "M.Bison",
         "input": "214MP",
@@ -78496,6 +79064,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "m_bison/7/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -80367,8 +80940,8 @@
       "sourceIndex": 29,
       "field": "hit",
       "notation": "+5(+7)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "M.Bison",
         "input": "5HP",
@@ -80381,7 +80954,14 @@
       "moveIds": [
         "m_bison__normal_5_P_H"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "m_bison/29/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "m_bison",
@@ -80389,8 +80969,8 @@
       "sourceIndex": 29,
       "field": "block",
       "notation": "+1(+3)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "M.Bison",
         "input": "5HP",
@@ -80403,7 +80983,14 @@
       "moveIds": [
         "m_bison__normal_5_P_H"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "m_bison/29/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "m_bison",
@@ -81814,8 +82401,8 @@
       "sourceIndex": 0,
       "field": "block",
       "notation": "-33",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがblockの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Mai",
         "input": "214214P",
@@ -81973,6 +82560,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "mai/0/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -82079,8 +82671,8 @@
       "sourceIndex": 1,
       "field": "block",
       "notation": "-33",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがblockの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Mai",
         "input": "214214P",
@@ -82238,6 +82830,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "mai/1/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -82496,8 +83093,8 @@
       "sourceIndex": 4,
       "field": "hit",
       "notation": "+3",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Mai",
         "input": "214LP",
@@ -82510,7 +83107,14 @@
       "moveIds": [
         "mai__special_214_P_L"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "mai/4/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "mai",
@@ -82518,8 +83122,8 @@
       "sourceIndex": 4,
       "field": "block",
       "notation": "-4",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Mai",
         "input": "214LP",
@@ -82532,7 +83136,14 @@
       "moveIds": [
         "mai__special_214_P_L"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "mai/4/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "mai",
@@ -88902,8 +89513,8 @@
       "sourceIndex": 24,
       "field": "block",
       "notation": "-6",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがblockの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Marisa",
         "input": "236KK",
@@ -89013,6 +89624,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "marisa/24/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -90854,8 +91470,8 @@
       "sourceIndex": 12,
       "field": "block",
       "notation": "-10",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがblockの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Rashid",
         "input": "214PP",
@@ -90965,6 +91581,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "rashid/12/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -93348,8 +93969,8 @@
       "sourceIndex": 19,
       "field": "block",
       "notation": "-3(+5)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Ryu",
         "input": "236HK",
@@ -93362,7 +93983,14 @@
       "moveIds": [
         "ryu__special_236_K_H"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "ryu/19/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "ryu",
@@ -93545,8 +94173,8 @@
       "sourceIndex": 22,
       "field": "block",
       "notation": "-11(-7)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Ryu",
         "input": "236LK",
@@ -93559,7 +94187,14 @@
       "moveIds": [
         "ryu__special_236_K_L"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "ryu/22/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "ryu",
@@ -93646,8 +94281,8 @@
       "sourceIndex": 24,
       "field": "block",
       "notation": "-8(-2)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Ryu",
         "input": "236MK",
@@ -93660,7 +94295,14 @@
       "moveIds": [
         "ryu__special_236_K_M"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "ryu/24/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "ryu",
@@ -93971,8 +94613,8 @@
       "sourceIndex": 28,
       "field": "hit",
       "notation": "+1",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがhitの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Ryu",
         "input": "2HP",
@@ -94082,6 +94724,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "ryu/28/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -94091,8 +94738,8 @@
       "sourceIndex": 28,
       "field": "block",
       "notation": "-7",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがblockの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Ryu",
         "input": "2HP",
@@ -94202,6 +94849,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "ryu/28/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -95392,8 +96044,8 @@
       "sourceIndex": 18,
       "field": "block",
       "notation": "-5(+5)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Sagat",
         "input": "236HK",
@@ -95406,7 +96058,14 @@
       "moveIds": [
         "sagat__special_236_K_H"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "sagat/18/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "sagat",
@@ -95414,8 +96073,8 @@
       "sourceIndex": 19,
       "field": "hit",
       "notation": "-1",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがhitの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Sagat",
         "input": "236HP",
@@ -95517,6 +96176,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "sagat/19/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -95526,8 +96190,8 @@
       "sourceIndex": 19,
       "field": "block",
       "notation": "-1",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがblockの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Sagat",
         "input": "236HP",
@@ -95629,6 +96293,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "sagat/19/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -95726,8 +96395,8 @@
       "sourceIndex": 21,
       "field": "block",
       "notation": "-8(+2)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Sagat",
         "input": "236LK",
@@ -95740,7 +96409,14 @@
       "moveIds": [
         "sagat__special_236_K_L"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "sagat/21/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "sagat",
@@ -95792,8 +96468,8 @@
       "sourceIndex": 24,
       "field": "block",
       "notation": "-7(+3)",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Sagat",
         "input": "236MK",
@@ -95806,7 +96482,14 @@
       "moveIds": [
         "sagat__special_236_K_M"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "sagat/24/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "sagat",
@@ -95814,8 +96497,8 @@
       "sourceIndex": 25,
       "field": "hit",
       "notation": "+3",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがhitの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Sagat",
         "input": "236MP",
@@ -95917,6 +96600,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "sagat/25/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -95926,8 +96614,8 @@
       "sourceIndex": 25,
       "field": "block",
       "notation": "+3",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがblockの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Sagat",
         "input": "236MP",
@@ -96029,6 +96717,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "sagat/25/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -97831,8 +98524,8 @@
       "sourceIndex": 3,
       "field": "block",
       "notation": "-1",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがblockの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Terry",
         "input": "214HK",
@@ -97942,6 +98635,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "terry/3/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -97973,8 +98671,8 @@
       "sourceIndex": 4,
       "field": "block",
       "notation": "-8(+5)",
-      "classification": "accepted",
-      "reason": "表に明示された-8(+5)の両値と注記「can be spaced to be plus on block from farther ranges (causing a screen shake)」が同一強度の間合い・接触依存に対応。端点を計算せず採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Terry",
         "input": "214HP",
@@ -98019,7 +98717,12 @@
           }
         ],
         "previousClassification": "held",
-        "previousReason": "注記と条件を確認済み。今回の標準条件での端点または片側表記が明示されないため、計算・推測せず現在値を保持。"
+        "previousReason": "注記と条件を確認済み。今回の標準条件での端点または片側表記が明示されないため、計算・推測せず現在値を保持。",
+        "contactTimingRollback": {
+          "key": "terry/4/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
       }
     },
     {
@@ -98890,8 +99593,8 @@
       "sourceIndex": 10,
       "field": "block",
       "notation": "-6(+2)",
-      "classification": "accepted",
-      "reason": "表に明示された-6(+2)の両値と注記「can be spaced to be plus on block from farther ranges (causing a screen shake)」が同一強度の間合い・接触依存に対応。端点を計算せず採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Terry",
         "input": "214MP",
@@ -98936,7 +99639,12 @@
           }
         ],
         "previousClassification": "held",
-        "previousReason": "注記と条件を確認済み。今回の標準条件での端点または片側表記が明示されないため、計算・推測せず現在値を保持。"
+        "previousReason": "注記と条件を確認済み。今回の標準条件での端点または片側表記が明示されないため、計算・推測せず現在値を保持。",
+        "contactTimingRollback": {
+          "key": "terry/10/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
       }
     },
     {
@@ -99441,8 +100149,8 @@
       "sourceIndex": 16,
       "field": "hit",
       "notation": "+8",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがhitの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Terry",
         "input": "236HP",
@@ -99552,6 +100260,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "terry/16/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -99561,8 +100274,8 @@
       "sourceIndex": 16,
       "field": "block",
       "notation": "+5",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがblockの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Terry",
         "input": "236HP",
@@ -99672,6 +100385,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "terry/16/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -99870,8 +100588,8 @@
       "sourceIndex": 24,
       "field": "hit",
       "notation": "+1",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがhitの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Terry",
         "input": "2HP",
@@ -99981,6 +100699,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "terry/24/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -99990,8 +100713,8 @@
       "sourceIndex": 24,
       "field": "block",
       "notation": "-4",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがblockの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Terry",
         "input": "2HP",
@@ -100101,6 +100824,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "terry/24/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -100167,8 +100895,8 @@
       "sourceIndex": 29,
       "field": "hit",
       "notation": "+5",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがhitの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Terry",
         "input": "2MP",
@@ -100278,6 +101006,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "terry/29/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -100287,8 +101020,8 @@
       "sourceIndex": 29,
       "field": "block",
       "notation": "-1",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Terry",
         "input": "2MP",
@@ -100301,7 +101034,14 @@
       "moveIds": [
         "terry__normal_2_P_M"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "terry/29/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "terry",
@@ -102106,8 +102846,8 @@
       "sourceIndex": 32,
       "field": "hit",
       "notation": "+4",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Yasmine",
         "input": "2LP",
@@ -102120,7 +102860,14 @@
       "moveIds": [
         "yasmine__normal_2_P_L"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "yasmine/32/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "yasmine",
@@ -102128,8 +102875,8 @@
       "sourceIndex": 32,
       "field": "block",
       "notation": "-1",
-      "classification": "accepted",
-      "reason": "同一入力の距離・持続接触タイミング依存を注記が明示。表・括弧・注記に書かれた端点のみを採用。",
+      "classification": "excluded",
+      "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。",
       "sourceRecord": {
         "chara": "Yasmine",
         "input": "2LP",
@@ -102142,7 +102889,14 @@
       "moveIds": [
         "yasmine__normal_2_P_L"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "reevaluation": {
+        "contactTimingRollback": {
+          "key": "yasmine/32/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        }
+      }
     },
     {
       "characterId": "yasmine",
@@ -102207,8 +102961,8 @@
       "sourceIndex": 35,
       "field": "hit",
       "notation": "+4",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがhitの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Yasmine",
         "input": "2MP",
@@ -102310,6 +103064,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "yasmine/35/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },
@@ -102319,8 +103078,8 @@
       "sourceIndex": 35,
       "field": "block",
       "notation": "0",
-      "classification": "held",
-      "reason": "接触タイミング・間合いの説明はあるがblockの端点は明示されない。別技・キャンセル先の数値も転用しない。",
+      "classification": "excluded",
+      "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。",
       "sourceRecord": {
         "chara": "Yasmine",
         "input": "2MP",
@@ -102422,6 +103181,11 @@
             "unknown": "この指標の同一代表条件内の端点・括弧の定義。基準値はcases.current参照",
             "requiredResult": "最初/最後だけでなく途中の持続も走査し、通常ヒット/ガードの明示値と条件付き録画を提出。サンプルの最小最大を全条件の端点と断定しない。KDは通常硬直差にせず、全体Fは空振り試行を別収録"
           }
+        },
+        "contactTimingRollback": {
+          "key": "yasmine/35/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
         }
       }
     },

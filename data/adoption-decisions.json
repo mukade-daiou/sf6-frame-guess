@@ -1,5 +1,5 @@
 {
-  "datasetId": "distance-held-stage2-2026-11-09-r1",
+  "datasetId": "arrival-startup-only-2026-11-09-r1",
   "commonSpecialStrengths": {
     "enabled": true,
     "protectionRef": "d11bb6d2616b5a15e182cbc08ef7556e99f3b5d6",
@@ -4668,6 +4668,2548 @@
         }
       }
     ],
-    "heldReviewPath": "staging/held-range-review.json"
+    "heldReviewPath": "staging/held-range-review.json",
+    "contactTimingRollback": {
+      "baselineCommit": "0e8606004c0f2c85366da51d7c9a1dabeb523ce9",
+      "revoked": [
+        {
+          "characterId": "jp",
+          "moveId": "jp__special_236_K_H",
+          "field": "hit",
+          "before": {
+            "status": "conditional",
+            "display": "+6~",
+            "condition": "距離・弾の到達時間による変動",
+            "openRange": {
+              "reference": 6,
+              "unspecified": "trailing",
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/JP/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "+6",
+            "numeric": 6
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+          "sourceIndex": 17,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "jp",
+          "moveId": "jp__special_236_K_H",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-8~",
+            "condition": "距離・弾の到達時間による変動",
+            "openRange": {
+              "reference": -8,
+              "unspecified": "trailing",
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/JP/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-8",
+            "numeric": -8
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+          "sourceIndex": 17,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "jp",
+          "moveId": "jp__special_236_K_OD",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "+25~",
+            "condition": "距離・弾の到達時間による変動",
+            "openRange": {
+              "reference": 25,
+              "unspecified": "trailing",
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/JP/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "+25",
+            "numeric": 25
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+          "sourceIndex": 19,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "jp",
+          "moveId": "jp__special_236_K_L",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-6~",
+            "condition": "距離・弾の到達時間による変動",
+            "openRange": {
+              "reference": -6,
+              "unspecified": "trailing",
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/JP/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-6",
+            "numeric": -6
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+          "sourceIndex": 20,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "jp",
+          "moveId": "jp__special_236_K_M",
+          "field": "hit",
+          "before": {
+            "status": "conditional",
+            "display": "+6~",
+            "condition": "距離・弾の到達時間による変動",
+            "openRange": {
+              "reference": 6,
+              "unspecified": "trailing",
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/JP/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "+6",
+            "numeric": 6
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+          "sourceIndex": 22,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "jp",
+          "moveId": "jp__special_236_K_M",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-8~",
+            "condition": "距離・弾の到達時間による変動",
+            "openRange": {
+              "reference": -8,
+              "unspecified": "trailing",
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/JP/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-8",
+            "numeric": -8
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+          "sourceIndex": 22,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "aki",
+          "moveId": "aki__special_214_P_H",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-4~+4",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -4,
+              "max": 4,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-4",
+            "numeric": -4
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/aki.cargo.json",
+          "sourceIndex": 2,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "aki",
+          "moveId": "aki__special_236_P_L",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-8~-6",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -8,
+              "max": -6,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-8",
+            "numeric": -8
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/aki.cargo.json",
+          "sourceIndex": 20,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "aki",
+          "moveId": "aki__special_236_P_OD",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-14~-11",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -14,
+              "max": -11,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-14",
+            "numeric": -14
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/aki.cargo.json",
+          "sourceIndex": 23,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "alex",
+          "moveId": "alex__normal_5_P_H",
+          "field": "hit",
+          "before": {
+            "status": "conditional",
+            "display": "+4~+8",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": 4,
+              "max": 8,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "+4",
+            "numeric": 4
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/alex.cargo.json",
+          "sourceIndex": 37,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "alex",
+          "moveId": "alex__normal_5_P_H",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-3~+1",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -3,
+              "max": 1,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-3",
+            "numeric": -3
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/alex.cargo.json",
+          "sourceIndex": 37,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "alex",
+          "moveId": "alex__normal_5_P_M",
+          "field": "hit",
+          "before": {
+            "status": "conditional",
+            "display": "+4~+7",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": 4,
+              "max": 7,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "+4",
+            "numeric": 4
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/alex.cargo.json",
+          "sourceIndex": 41,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "alex",
+          "moveId": "alex__normal_5_P_M",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "0~+3",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": 0,
+              "max": 3,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Alex/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "0",
+            "numeric": 0
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/alex.cargo.json",
+          "sourceIndex": 41,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "chunli",
+          "moveId": "chunli__normal_2_K_H",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-9~-4",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -9,
+              "max": -4,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Chun-Li/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-9",
+            "numeric": -9
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/chunli.cargo.json",
+          "sourceIndex": 25,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "cviper",
+          "moveId": "cviper__special_214_P_L",
+          "field": "hit",
+          "before": {
+            "status": "conditional",
+            "display": "+2~+5",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": 2,
+              "max": 5,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "+2",
+            "numeric": 2
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json",
+          "sourceIndex": 7,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "cviper",
+          "moveId": "cviper__special_214_P_L",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-4~-1",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -4,
+              "max": -1,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-4",
+            "numeric": -4
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json",
+          "sourceIndex": 7,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "cviper",
+          "moveId": "cviper__special_214_P_M",
+          "field": "hit",
+          "before": {
+            "status": "conditional",
+            "display": "+1~+4",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": 1,
+              "max": 4,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "+1",
+            "numeric": 1
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json",
+          "sourceIndex": 9,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "cviper",
+          "moveId": "cviper__special_214_P_M",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-3~0",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -3,
+              "max": 0,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-3",
+            "numeric": -3
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json",
+          "sourceIndex": 9,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "cviper",
+          "moveId": "cviper__special_236_K_H",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-2~+2",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -2,
+              "max": 2,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-2",
+            "numeric": -2
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json",
+          "sourceIndex": 18,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "cviper",
+          "moveId": "cviper__special_236_K_OD",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-4~-1",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -4,
+              "max": -1,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/C.Viper/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-4",
+            "numeric": -4
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json",
+          "sourceIndex": 19,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "dee_jay",
+          "moveId": "dee_jay__normal_5_P_H",
+          "field": "hit",
+          "before": {
+            "status": "conditional",
+            "display": "+3~+8",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": 3,
+              "max": 8,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Dee_Jay/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "+3",
+            "numeric": 3
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/dee_jay.cargo.json",
+          "sourceIndex": 38,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "dee_jay",
+          "moveId": "dee_jay__normal_5_P_H",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-4~+1",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -4,
+              "max": 1,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Dee_Jay/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-4",
+            "numeric": -4
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/dee_jay.cargo.json",
+          "sourceIndex": 38,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "dhalsim",
+          "moveId": "dhalsim__special_63214_P_H",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-4~-2",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -4,
+              "max": -2,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Dhalsim/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-4",
+            "numeric": -4
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/dhalsim.cargo.json",
+          "sourceIndex": 41,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "e_honda",
+          "moveId": "e_honda__special_22_P_none",
+          "field": "hit",
+          "before": {
+            "status": "conditional",
+            "display": "+3~+7",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": 3,
+              "max": 7,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "+3",
+            "numeric": 3
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+          "sourceIndex": 11,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "e_honda",
+          "moveId": "e_honda__special_22_P_none",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-3~+1",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -3,
+              "max": 1,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-3",
+            "numeric": -3
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+          "sourceIndex": 11,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "e_honda",
+          "moveId": "e_honda__normal_2_P_H",
+          "field": "hit",
+          "before": {
+            "status": "conditional",
+            "display": "+3~+5",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": 3,
+              "max": 5,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "+3",
+            "numeric": 3
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+          "sourceIndex": 22,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "e_honda",
+          "moveId": "e_honda__normal_2_P_H",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-3~-1",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -3,
+              "max": -1,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/E.Honda/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-3",
+            "numeric": -3
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+          "sourceIndex": 22,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "ed",
+          "moveId": "ed__special_236_P_none",
+          "field": "hit",
+          "before": {
+            "status": "conditional",
+            "display": "+3~+14",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": 3,
+              "max": 14,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "+3",
+            "numeric": 3
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ed.cargo.json",
+          "sourceIndex": 12,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "ed",
+          "moveId": "ed__special_236_P_none",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-5~+6",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -5,
+              "max": 6,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-5",
+            "numeric": -5
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ed.cargo.json",
+          "sourceIndex": 12,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "ed",
+          "moveId": "ed__special_236_P_OD",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-2~+10",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -2,
+              "max": 10,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Ed/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-2",
+            "numeric": -2
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ed.cargo.json",
+          "sourceIndex": 13,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "ingrid",
+          "moveId": "ingrid__normal_2_P_M",
+          "field": "hit",
+          "before": {
+            "status": "conditional",
+            "display": "+6~+9",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": 6,
+              "max": 9,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "+6",
+            "numeric": 6
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ingrid.cargo.json",
+          "sourceIndex": 35,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "ingrid",
+          "moveId": "ingrid__normal_2_P_M",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-1~+2",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -1,
+              "max": 2,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-1",
+            "numeric": -1
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ingrid.cargo.json",
+          "sourceIndex": 35,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "ingrid",
+          "moveId": "ingrid__normal_5_P_M",
+          "field": "hit",
+          "before": {
+            "status": "conditional",
+            "display": "+1~+5",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": 1,
+              "max": 5,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "+1",
+            "numeric": 1
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ingrid.cargo.json",
+          "sourceIndex": 50,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "ingrid",
+          "moveId": "ingrid__normal_5_P_M",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "0~+4",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": 0,
+              "max": 4,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Ingrid/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "0",
+            "numeric": 0
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ingrid.cargo.json",
+          "sourceIndex": 50,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "juri",
+          "moveId": "juri__normal_5_K_H",
+          "field": "hit",
+          "before": {
+            "status": "conditional",
+            "display": "+2~+5",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": 2,
+              "max": 5,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Juri/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "+2",
+            "numeric": 2
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/juri.cargo.json",
+          "sourceIndex": 35,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "juri",
+          "moveId": "juri__normal_5_K_H",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-3~0",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -3,
+              "max": 0,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Juri/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-3",
+            "numeric": -3
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/juri.cargo.json",
+          "sourceIndex": 35,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "juri",
+          "moveId": "juri__normal_5_P_L",
+          "field": "hit",
+          "before": {
+            "status": "conditional",
+            "display": "+5~+8",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": 5,
+              "max": 8,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Juri/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "+5",
+            "numeric": 5
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/juri.cargo.json",
+          "sourceIndex": 41,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "juri",
+          "moveId": "juri__normal_5_P_L",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-2~+1",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -2,
+              "max": 1,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Juri/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-2",
+            "numeric": -2
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/juri.cargo.json",
+          "sourceIndex": 41,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "kimberly",
+          "moveId": "kimberly__normal_2_P_H",
+          "field": "hit",
+          "before": {
+            "status": "conditional",
+            "display": "+3~+8",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": 3,
+              "max": 8,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Kimberly/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "+3",
+            "numeric": 3
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/kimberly.cargo.json",
+          "sourceIndex": 36,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "kimberly",
+          "moveId": "kimberly__normal_2_P_H",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-2~+3",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -2,
+              "max": 3,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Kimberly/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-2",
+            "numeric": -2
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/kimberly.cargo.json",
+          "sourceIndex": 36,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "lily",
+          "moveId": "lily__special_236_K_H",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-8~+4",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -8,
+              "max": 4,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Lily/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-8",
+            "numeric": -8
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json",
+          "sourceIndex": 11,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "lily",
+          "moveId": "lily__special_236_K_OD",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-8~+4",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -8,
+              "max": 4,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Lily/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-8",
+            "numeric": -8
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json",
+          "sourceIndex": 12,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "lily",
+          "moveId": "lily__special_236_K_L",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-8~+4",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -8,
+              "max": 4,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Lily/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-8",
+            "numeric": -8
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json",
+          "sourceIndex": 13,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "lily",
+          "moveId": "lily__special_236_K_M",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-8~+4",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -8,
+              "max": 4,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Lily/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-8",
+            "numeric": -8
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json",
+          "sourceIndex": 14,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "luke",
+          "moveId": "luke__normal_2_P_M",
+          "field": "hit",
+          "before": {
+            "status": "conditional",
+            "display": "+5~+7",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": 5,
+              "max": 7,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Luke/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "+5",
+            "numeric": 5
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/luke.cargo.json",
+          "sourceIndex": 29,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "luke",
+          "moveId": "luke__normal_2_P_M",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "+1~+3",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": 1,
+              "max": 3,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Luke/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "+1",
+            "numeric": 1
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/luke.cargo.json",
+          "sourceIndex": 29,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "luke",
+          "moveId": "luke__normal_5_K_H",
+          "field": "hit",
+          "before": {
+            "status": "conditional",
+            "display": "+2~+8",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": 2,
+              "max": 8,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Luke/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "+2",
+            "numeric": 2
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/luke.cargo.json",
+          "sourceIndex": 34,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "luke",
+          "moveId": "luke__normal_5_K_H",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-5~+1",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -5,
+              "max": 1,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Luke/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-5",
+            "numeric": -5
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/luke.cargo.json",
+          "sourceIndex": 34,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "m_bison",
+          "moveId": "m_bison__normal_5_P_H",
+          "field": "hit",
+          "before": {
+            "status": "conditional",
+            "display": "+5~+7",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": 5,
+              "max": 7,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "+5",
+            "numeric": 5
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json",
+          "sourceIndex": 29,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "m_bison",
+          "moveId": "m_bison__normal_5_P_H",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "+1~+3",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": 1,
+              "max": 3,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "+1",
+            "numeric": 1
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json",
+          "sourceIndex": 29,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "ryu",
+          "moveId": "ryu__special_236_K_H",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-3~+5",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -3,
+              "max": 5,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-3",
+            "numeric": -3
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json",
+          "sourceIndex": 19,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "ryu",
+          "moveId": "ryu__special_236_K_L",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-11~-7",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -11,
+              "max": -7,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-11",
+            "numeric": -11
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json",
+          "sourceIndex": 22,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "ryu",
+          "moveId": "ryu__special_236_K_M",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-8~-2",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -8,
+              "max": -2,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-8",
+            "numeric": -8
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json",
+          "sourceIndex": 24,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "sagat",
+          "moveId": "sagat__special_236_K_H",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-5~+5",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -5,
+              "max": 5,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-5",
+            "numeric": -5
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/sagat.cargo.json",
+          "sourceIndex": 18,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "sagat",
+          "moveId": "sagat__special_236_K_L",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-8~+2",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -8,
+              "max": 2,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-8",
+            "numeric": -8
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/sagat.cargo.json",
+          "sourceIndex": 21,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "sagat",
+          "moveId": "sagat__special_236_K_M",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-7~+3",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -7,
+              "max": 3,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Sagat/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-7",
+            "numeric": -7
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/sagat.cargo.json",
+          "sourceIndex": 24,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "terry",
+          "moveId": "terry__normal_2_P_M",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-1~+3",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -1,
+              "max": 3,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Terry/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-1",
+            "numeric": -1
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json",
+          "sourceIndex": 29,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "yasmine",
+          "moveId": "yasmine__normal_2_P_L",
+          "field": "hit",
+          "before": {
+            "status": "conditional",
+            "display": "+4~+6",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": 4,
+              "max": 6,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Yasmine/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "+4",
+            "numeric": 4
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/yasmine.cargo.json",
+          "sourceIndex": 32,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "yasmine",
+          "moveId": "yasmine__normal_2_P_L",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-1~+1",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -1,
+              "max": 1,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Yasmine/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-1",
+            "numeric": -1
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/yasmine.cargo.json",
+          "sourceIndex": 32,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "aki",
+          "moveId": "aki__normal_5_P_M",
+          "field": "hit",
+          "before": {
+            "status": "conditional",
+            "display": "+3~+7",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": 3,
+              "max": 7,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "+3",
+            "numeric": 3
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/aki.cargo.json",
+          "sourceIndex": 45,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "aki",
+          "moveId": "aki__normal_5_P_M",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-3~+1",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -3,
+              "max": 1,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-3",
+            "numeric": -3
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/aki.cargo.json",
+          "sourceIndex": 45,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "jamie",
+          "moveId": "jamie__held_special_214_P_H",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-3~+5",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -3,
+              "max": 5,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-3",
+            "numeric": -3
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+          "sourceIndex": 1,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "jamie",
+          "moveId": "jamie__held_special_214_P_L",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-6~+2",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -6,
+              "max": 2,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-6",
+            "numeric": -6
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+          "sourceIndex": 2,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "jamie",
+          "moveId": "jamie__held_special_214_P_M",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-6~+2",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -6,
+              "max": 2,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-6",
+            "numeric": -6
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+          "sourceIndex": 3,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "jamie",
+          "moveId": "jamie__held_special_214_P_OD",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-1~+7",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -1,
+              "max": 7,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-1",
+            "numeric": -1
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+          "sourceIndex": 4,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "jamie",
+          "moveId": "jamie__normal_5_P_H",
+          "field": "hit",
+          "before": {
+            "status": "conditional",
+            "display": "+1~+3",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": 1,
+              "max": 3,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "+1",
+            "numeric": 1
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+          "sourceIndex": 68,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "jamie",
+          "moveId": "jamie__normal_5_P_H",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-3~-1",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -3,
+              "max": -1,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Jamie/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-3",
+            "numeric": -3
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+          "sourceIndex": 68,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "juri",
+          "moveId": "juri__normal_5_P_M",
+          "field": "hit",
+          "before": {
+            "status": "conditional",
+            "display": "+7~+10",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": 7,
+              "max": 10,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Juri/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "+7",
+            "numeric": 7
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/juri.cargo.json",
+          "sourceIndex": 45,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "juri",
+          "moveId": "juri__normal_5_P_M",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "+2~+5",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": 2,
+              "max": 5,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Juri/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "+2",
+            "numeric": 2
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/juri.cargo.json",
+          "sourceIndex": 45,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "aki",
+          "moveId": "aki__special_236_P_L",
+          "field": "hit",
+          "before": {
+            "status": "conditional",
+            "display": "+1~+3",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": 1,
+              "max": 3,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/A.K.I./Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "+1",
+            "numeric": 1
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/aki.cargo.json",
+          "sourceIndex": 20,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "mai",
+          "moveId": "mai__special_214_P_L",
+          "field": "hit",
+          "before": {
+            "status": "conditional",
+            "display": "+3~+9",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": 3,
+              "max": 9,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "+3",
+            "numeric": 3
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/mai.cargo.json",
+          "sourceIndex": 4,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "mai",
+          "moveId": "mai__special_214_P_L",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-4~+2",
+            "condition": "同一入力の距離または持続接触タイミング",
+            "range": {
+              "min": -4,
+              "max": 2,
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6/Mai/Frame_data"
+              ]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-4",
+            "numeric": -4
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/mai.cargo.json",
+          "sourceIndex": 4,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "cammy",
+          "moveId": "cammy__special_236_K_L",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-12~0",
+            "condition": "同一強度・代表条件での間合いと接触タイミング",
+            "range": {
+              "min": -12,
+              "max": 0,
+              "evidence": ["https://wiki.supercombo.gg/w/Street_Fighter_6"]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-12",
+            "numeric": -12
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cammy.cargo.json",
+          "sourceIndex": 10,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "cammy",
+          "moveId": "cammy__special_236_K_M",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-14~0",
+            "condition": "同一強度・代表条件での間合いと接触タイミング",
+            "range": {
+              "min": -14,
+              "max": 0,
+              "evidence": ["https://wiki.supercombo.gg/w/Street_Fighter_6"]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-14",
+            "numeric": -14
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cammy.cargo.json",
+          "sourceIndex": 11,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "dee_jay",
+          "moveId": "dee_jay__special_236_K_M",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-6~-4",
+            "condition": "同一強度・代表条件での間合いと接触タイミング",
+            "range": {
+              "min": -6,
+              "max": -4,
+              "evidence": ["https://wiki.supercombo.gg/w/Street_Fighter_6"]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-6",
+            "numeric": -6
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/dee_jay.cargo.json",
+          "sourceIndex": 27,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "terry",
+          "moveId": "terry__special_214_P_H",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-8~+5",
+            "condition": "同一強度・代表条件での間合いと接触タイミング",
+            "range": {
+              "min": -8,
+              "max": 5,
+              "evidence": ["https://wiki.supercombo.gg/w/Street_Fighter_6"]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-8",
+            "numeric": -8
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json",
+          "sourceIndex": 4,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        },
+        {
+          "characterId": "terry",
+          "moveId": "terry__special_214_P_M",
+          "field": "block",
+          "before": {
+            "status": "conditional",
+            "display": "-6~+2",
+            "condition": "同一強度・代表条件での間合いと接触タイミング",
+            "range": {
+              "min": -6,
+              "max": 2,
+              "evidence": ["https://wiki.supercombo.gg/w/Street_Fighter_6"]
+            }
+          },
+          "value": {
+            "status": "confirmed",
+            "display": "-6",
+            "numeric": -6
+          },
+          "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json",
+          "sourceIndex": 10,
+          "reason": "仕様変更：接触・後半持続によるヒット/ガード硬直差を範囲化しない。到達時間と接触の根拠が混在する場合も元の代表値を維持。"
+        }
+      ],
+      "candidates": [
+        {
+          "key": "aki/2/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "aki/20/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "aki/20/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "aki/23/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "aki/45/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "aki/45/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "akuma/12/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "akuma/12/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "akuma/53/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "akuma/53/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "alex/37/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "alex/37/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "alex/41/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "alex/41/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "arjun/20/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "arjun/20/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "blanka/20/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "blanka/20/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "blanka/29/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "blanka/29/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "cammy/10/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "cammy/11/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "cammy/32/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "cammy/32/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "cammy/48/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "cammy/48/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "chunli/4/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "chunli/25/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "cviper/7/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "cviper/7/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "cviper/9/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "cviper/9/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "cviper/18/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "cviper/19/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "dee_jay/27/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "dee_jay/33/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "dee_jay/33/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "dee_jay/38/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "dee_jay/38/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "dhalsim/15/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "dhalsim/41/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "e_honda/11/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "e_honda/11/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "e_honda/22/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "e_honda/22/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "ed/12/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "ed/12/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "ed/13/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "elena/47/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "elena/47/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "guile/4/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "ingrid/35/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "ingrid/35/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "ingrid/50/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "ingrid/50/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "jamie/1/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "jamie/2/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "jamie/3/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "jamie/4/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "jamie/68/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "jamie/68/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "jp/12/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "jp/13/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "jp/17/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "jp/17/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "jp/19/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "jp/20/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "jp/22/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "jp/22/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "juri/35/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "juri/35/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "juri/41/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "juri/41/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "juri/45/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "juri/45/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "ken/21/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "ken/21/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "ken/34/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "ken/34/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "kimberly/36/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "kimberly/36/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "lily/11/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "lily/12/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "lily/13/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "lily/14/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "luke/23/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "luke/29/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "luke/29/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "luke/34/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "luke/34/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "m_bison/7/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "m_bison/29/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "m_bison/29/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "mai/0/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "mai/1/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "mai/4/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "mai/4/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "marisa/24/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "rashid/12/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "ryu/19/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "ryu/22/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "ryu/24/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "ryu/28/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "ryu/28/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "sagat/18/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "sagat/19/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "sagat/19/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "sagat/21/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "sagat/24/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "sagat/25/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "sagat/25/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "terry/3/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "terry/4/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "terry/10/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "terry/16/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "terry/16/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "terry/24/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "terry/24/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "terry/29/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "terry/29/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "yasmine/32/hit",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "yasmine/32/block",
+          "before": "accepted",
+          "reason": "採用撤回：接触タイミングによる硬直差は範囲化対象外。元の代表値へ戻す。"
+        },
+        {
+          "key": "yasmine/35/hit",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        },
+        {
+          "key": "yasmine/35/block",
+          "before": "held",
+          "reason": "持続当ての端点待ちだった項目。新基準では範囲化対象外。本番値・技の採用状態は維持。"
+        }
+      ]
+    }
   }
 }

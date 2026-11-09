@@ -1,15 +1,23 @@
 import { readFileSync } from "node:fs";
 import { isDeepStrictEqual } from "node:util";
 import { characterSchema, type Character } from "../src/lib/frame-data/schema";
+import { isContactRevoked } from "./contact-timing-policy.mjs";
 
 // Applied after individual representative decisions, before common strengths.
 export function applyDistanceRanges(
   character: Character,
   options: { historicalWithoutSA?: boolean; superArtsOnly?: boolean } = {},
 ): Character {
-  const decisions =
-    JSON.parse(readFileSync("data/adoption-decisions.json", "utf8"))
-      .distanceRanges?.decisions || [];
+  const policy = JSON.parse(
+    readFileSync("data/adoption-decisions.json", "utf8"),
+  );
+  const decisions = (policy.distanceRanges?.decisions || []).filter(
+    (d: any) => !isContactRevoked(policy, d),
+  );
+  if (decisions.some((d: any) => d.field !== "startup"))
+    throw new Error(
+      "Only arrival/distance-dependent startup ranges may be applied",
+    );
   const result = structuredClone(character);
   for (const d of decisions.filter(
     (d: any) => d.characterId === character.id,

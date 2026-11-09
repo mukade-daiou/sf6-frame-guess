@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { execFileSync } from "node:child_process";
+import { rollbackClassification } from "../scripts/contact-timing-policy.mjs";
 const read=p=>JSON.parse(readFileSync(p,"utf8"));
 test("all original 300 held fields have separate triage and evidenced resolutions",()=>{
  const r=read("staging/held-range-review.json"), l=read("staging/distance-range-candidates.json"), p=read("data/adoption-decisions.json");
@@ -18,7 +19,7 @@ test("all original 300 held fields have separate triage and evidenced resolution
   assert.deepEqual(i.currentValues.map(v=>v.moveId),i.before.moveIds);
   const candidate=l.candidates.find(c=>`${c.characterId}/${c.sourceIndex}/${c.field}`===i.key);
   const stage2=r.stage2?.items.find(x=>x.key===i.key);
-  assert.equal(candidate.classification,stage2?.resolution ?? i.resolution);
+  assert.equal(candidate.classification,rollbackClassification(p,i.key,stage2?.resolution ?? i.resolution));
   if((stage2?.resolution ?? i.resolution)!=="accepted")for(const v of i.currentValues){
    const c=read(`data/characters/${i.before.characterId}.json`);
    const d=p.distanceRanges.decisions.slice(80).find(d=>d.moveId===v.moveId&&d.field===i.before.field);
@@ -30,6 +31,7 @@ test("all original 300 held fields have separate triage and evidenced resolution
  assert.equal(production.length,737);
  const expected=[80,180,477];
  for (const x of r.stage2?.items || []) if (x.resolution !== "held") { expected[1]--; expected[x.resolution === "accepted" ? 0 : 2]++; }
+ for(const x of p.distanceRanges.contactTimingRollback?.candidates||[]){expected[x.before==="accepted"?0:1]--;expected[2]++;}
  assert.deepEqual(["accepted","held","excluded"].map(s=>production.filter(c=>c.classification===s).length),expected);
 });
 test("review and ledger can be regenerated without losing resolved classifications",()=>{

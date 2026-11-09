@@ -300,28 +300,14 @@
           "calculation": null
         },
         "hit": {
-          "status": "conditional",
-          "display": "+4~+6",
-          "condition": "同一入力の距離または持続接触タイミング",
-          "range": {
-            "min": 4,
-            "max": 6,
-            "evidence": [
-              "https://wiki.supercombo.gg/w/Street_Fighter_6/Yasmine/Frame_data"
-            ]
-          }
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
         },
         "block": {
-          "status": "conditional",
-          "display": "-1~+1",
-          "condition": "同一入力の距離または持続接触タイミング",
-          "range": {
-            "min": -1,
-            "max": 1,
-            "evidence": [
-              "https://wiki.supercombo.gg/w/Street_Fighter_6/Yasmine/Frame_data"
-            ]
-          }
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
         }
       },
       "notes": [

@@ -7,6 +7,10 @@ const run = (...args) =>
     env: { ...process.env, AGENT_BROWSER_SOCKET_DIR: "/tmp/sf6-distance" },
   });
 const ev = (code) => JSON.parse(run("eval", code));
+const frames = () =>
+  ev(
+    "[...document.querySelectorAll('.move-frame')].map(e => e.textContent).join(' ')",
+  );
 const click = (label) =>
   ev(
     `(() => { const b = [...document.querySelectorAll('button')].find(b => b.textContent.trim() === ${JSON.stringify(label)}); if (!b) throw Error('button'); b.click(); return true; })()`,
@@ -17,7 +21,7 @@ const ids = readdirSync("data/characters")
   .sort();
 mkdirSync("staging/verification/distance-ranges", { recursive: true });
 for (const width of [1280, 320]) {
-  run("open", "http://127.0.0.1:4173/");
+  run("open", process.env.VERIFY_URL || "http://127.0.0.1:4173/");
   run("set", "viewport", String(width), "1000");
   ev(`Math.random = () => ${(ids.indexOf("jp") + 0.5) / 32}; true`);
   click("ゲーム開始");
@@ -26,26 +30,30 @@ for (const width of [1280, 320]) {
   for (const d of "236") run("press", d);
   click("強K");
   click("質問する");
-  assert.match(ev("document.querySelector('ol.history').textContent"), /\+6~/);
-  assert.match(ev("document.querySelector('ol.history').textContent"), /-8~/);
+  assert.match(ev("document.querySelector('ol.history').textContent"), /\+6/);
+  assert.match(ev("document.querySelector('ol.history').textContent"), /-8/);
+  assert.doesNotMatch(
+    ev("document.querySelector('ol.history').textContent"),
+    /~/,
+  );
   click("Hard");
   assert.doesNotMatch(
     ev("document.querySelector('ol.history').textContent"),
-    /-8~/,
+    /-8/,
   );
   click("Normal");
-  assert.match(ev("document.querySelector('ol.history').textContent"), /-8~/);
+  assert.match(ev("document.querySelector('ol.history').textContent"), /-8/);
   assert.equal(ev("document.documentElement.scrollWidth <= innerWidth"), true);
   run(
     "screenshot",
     `staging/verification/distance-ranges/${width}.png`,
     "--full",
   );
-  run("open", "http://127.0.0.1:4173/#/moves");
+  run("open", `${process.env.VERIFY_URL || "http://127.0.0.1:4173/"}#/moves`);
   run("wait", "#moves-character");
   run("select", "#moves-character", "jp");
   run("fill", 'input[type="search"]', "214");
-  assert.match(ev("document.querySelector('.moves-table').textContent"), /26~/);
+  assert.match(frames(), /26~/);
   ev(
     "(() => { const s = document.querySelector('.moves-scroll'); s.scrollLeft += document.querySelector('.move-frame').getBoundingClientRect().left - s.getBoundingClientRect().left; return true; })()",
   );
@@ -56,11 +64,9 @@ for (const width of [1280, 320]) {
     "--full",
   );
   run("fill", 'input[type="search"]', "236");
-  assert.match(
-    ev("document.querySelector('.moves-table').textContent"),
-    /\+6~/,
-  );
-  assert.match(ev("document.querySelector('.moves-table').textContent"), /-8~/);
+  assert.match(frames(), /\+6/);
+  assert.match(frames(), /-8/);
+  assert.doesNotMatch(frames(), /~/);
   ev(
     "(() => { const s = document.querySelector('.moves-scroll'); s.scrollLeft += document.querySelector('.move-frame').getBoundingClientRect().left - s.getBoundingClientRect().left; return true; })()",
   );
@@ -72,10 +78,7 @@ for (const width of [1280, 320]) {
   );
   run("select", "#moves-character", "m_bison");
   run("fill", 'input[type="search"]', "[2]8");
-  assert.match(
-    ev("document.querySelector('.moves-table').textContent"),
-    /16~47/,
-  );
+  assert.match(frames(), /16~47/);
   ev(
     "(() => { const s = document.querySelector('.moves-scroll'); s.scrollLeft += document.querySelector('.move-frame').getBoundingClientRect().left - s.getBoundingClientRect().left; return true; })()",
   );
@@ -86,17 +89,13 @@ for (const width of [1280, 320]) {
     "--full",
   );
   for (const [id, search, values] of [
-    ["cammy", "236", ["-12~0", "-14~0"]],
-    ["terry", "214", ["-8~+5", "-6~+2"]],
+    ["cammy", "236", ["-12", "-14"]],
+    ["terry", "214", ["-8", "-6"]],
   ]) {
     run("select", "#moves-character", id);
     run("fill", 'input[type="search"]', search);
-    for (const value of values)
-      assert.ok(
-        ev("document.querySelector('.moves-table').textContent").includes(
-          value,
-        ),
-      );
+    for (const value of values) assert.ok(frames().includes(value));
+    assert.doesNotMatch(frames(), /~/);
     ev(
       "(() => { const s = document.querySelector('.moves-scroll'); s.scrollLeft += document.querySelector('.move-frame').getBoundingClientRect().left - s.getBoundingClientRect().left; return true; })()",
     );
@@ -111,9 +110,11 @@ for (const width of [1280, 320]) {
     );
   }
 }
-console.log("PC/320px signed ranges and mode history passed");
+console.log(
+  "PC/320px restored representatives, retained startup ranges and mode history passed",
+);
 for (const width of [1280, 320]) {
-  run("open", "http://127.0.0.1:4173/");
+  run("open", process.env.VERIFY_URL || "http://127.0.0.1:4173/");
   run("set", "viewport", String(width), "1000");
   ev(`Math.random = () => ${(ids.indexOf("luke") + 0.5) / 32}; true`);
   click("ゲーム開始");
@@ -136,13 +137,11 @@ for (const width of [1280, 320]) {
     `staging/verification/distance-ranges/${width}-stage2-game.png`,
     "--full",
   );
-  run("open", "http://127.0.0.1:4173/#/moves");
+  run("open", `${process.env.VERIFY_URL || "http://127.0.0.1:4173/"}#/moves`);
   run("wait", "#moves-character");
   run("select", "#moves-character", "luke");
   run("fill", 'input[type="search"]', "236236");
-  assert.ok(
-    ev("document.querySelector('.moves-table').textContent").includes("10~27"),
-  );
+  assert.ok(frames().includes("10~27"));
   ev(
     "(() => { const s = document.querySelector('.moves-scroll'); s.scrollLeft += document.querySelector('.move-frame').getBoundingClientRect().left - s.getBoundingClientRect().left; return true; })()",
   );

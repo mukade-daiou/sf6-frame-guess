@@ -1,5 +1,122 @@
 # 距離範囲対応・保存原典調査報告
 
+## 現在の仕様：持続当て範囲の撤回
+
+飛び道具の到達時間・移動技の移動距離で発生が変わる範囲のみを採用する。持続の何F目でヒット/ガードしたかによる硬直差は、距離で後半持続が当たる場合も範囲化しない。到達時間と接触の根拠が混在する硬直差も元の代表値へ戻す。新規調査・実測は行っていない。
+
+| 状態   | 変更前 | 増減 | 変更後 |
+| ------ | -----: | ---: | -----: |
+| 採用   |     81 |  -77 |      4 |
+| 保留   |    155 |  -47 |    108 |
+| 対象外 |    501 | +124 |    625 |
+| 合計   |    737 |    0 |    737 |
+
+77原典項目の範囲採用を撤回し、共通強度展開を含む59技レコード・89フィールドを元の代表値へ戻した。残る範囲は4原典項目・9技レコード・9発生フィールド：JP214K/214KKの26~、ベガOD[2]8KKの16~47、通常ルークSA3の10~27（SAは3強度の独立入力）。全体Fを変更していない。Moveの採用状態・質問候補、D、unknown、verification、固定代表条件、32体・1298技・SA288独立入力を維持する。datasetIdはarrival-startup-only-2026-11-09-r1。
+
+保留のD47件は以前から持続・距離接触の硬直差端点待ちとして記録されていたため、範囲化対象外へ移した。本番値は維持。C108件は条件未分離のまま保留を維持し、範囲化対象外を技そのものの除外に使わない。
+
+正本distanceRanges.decisionsは過去の採用記録として保持し、contactTimingRollback.revokedに撤回前後の値・原典参照・理由を保存する。生成時は撤回された判断を適用しない。候補台帳への状態変更はcontactTimingRollback.candidatesに保存し、既存の調査段階の結論は書き換えず現在の上書き判断として適用する。過去基準比較も撤回値/復元値を厳密に検証してから比較する。
+
+### 単一値へ戻したフィールド（生成レコードを含む）
+
+| キャラ / 技ID                                    | 項目  | 撤回前  | 代表値へ復元 |
+| ------------------------------------------------ | ----- | ------- | ------------ |
+| jp / jp__special_236_K_H                         | hit   | +6~     | +6           |
+| jp / jp__special_236_K_H                         | block | -8~     | -8           |
+| jp / jp__special_236_K_L                         | block | -6~     | -6           |
+| jp / jp__special_236_K_M                         | hit   | +6~     | +6           |
+| jp / jp__special_236_K_M                         | block | -8~     | -8           |
+| jp / jp__special_236_K_OD                        | block | +25~    | +25          |
+| aki / aki__normal_5_P_M                          | hit   | +3~+7   | +3           |
+| aki / aki__normal_5_P_M                          | block | -3~+1   | -3           |
+| aki / aki__special_214_P_H                       | block | -4~+4   | -4           |
+| aki / aki__special_236_P_L                       | block | -8~-6   | -8           |
+| aki / aki__special_236_P_L                       | hit   | +1~+3   | +1           |
+| aki / aki__special_236_P_OD                      | block | -14~-11 | -14          |
+| alex / alex__normal_5_P_H                        | hit   | +4~+8   | +4           |
+| alex / alex__normal_5_P_H                        | block | -3~+1   | -3           |
+| alex / alex__normal_5_P_M                        | hit   | +4~+7   | +4           |
+| alex / alex__normal_5_P_M                        | block | 0~+3    | 0            |
+| chunli / chunli__normal_2_K_H                    | block | -9~-4   | -9           |
+| cviper / cviper__special_214_P_L                 | hit   | +2~+5   | +2           |
+| cviper / cviper__special_214_P_L                 | block | -4~-1   | -4           |
+| cviper / cviper__special_214_P_M                 | hit   | +1~+4   | +1           |
+| cviper / cviper__special_214_P_M                 | block | -3~0    | -3           |
+| cviper / cviper__special_236_K_H                 | block | -2~+2   | -2           |
+| cviper / cviper__special_236_K_OD                | block | -4~-1   | -4           |
+| dee_jay / dee_jay__normal_5_P_H                  | hit   | +3~+8   | +3           |
+| dee_jay / dee_jay__normal_5_P_H                  | block | -4~+1   | -4           |
+| dee_jay / dee_jay__special_236_K_M               | block | -6~-4   | -6           |
+| dhalsim / dhalsim__special_63214_P_H             | block | -4~-2   | -4           |
+| e_honda / e_honda__normal_2_P_H                  | hit   | +3~+5   | +3           |
+| e_honda / e_honda__normal_2_P_H                  | block | -3~-1   | -3           |
+| e_honda / e_honda__special_22_P_none             | hit   | +3~+7   | +3           |
+| e_honda / e_honda__special_22_P_none             | block | -3~+1   | -3           |
+| e_honda / e_honda__special_22_P_none__strength_L | hit   | +3~+7   | +3           |
+| e_honda / e_honda__special_22_P_none__strength_L | block | -3~+1   | -3           |
+| e_honda / e_honda__special_22_P_none__strength_M | hit   | +3~+7   | +3           |
+| e_honda / e_honda__special_22_P_none__strength_M | block | -3~+1   | -3           |
+| e_honda / e_honda__special_22_P_none__strength_H | hit   | +3~+7   | +3           |
+| e_honda / e_honda__special_22_P_none__strength_H | block | -3~+1   | -3           |
+| ed / ed__special_236_P_none                      | hit   | +3~+14  | +3           |
+| ed / ed__special_236_P_none                      | block | -5~+6   | -5           |
+| ed / ed__special_236_P_OD                        | block | -2~+10  | -2           |
+| ed / ed__special_236_P_none__strength_L          | hit   | +3~+14  | +3           |
+| ed / ed__special_236_P_none__strength_L          | block | -5~+6   | -5           |
+| ed / ed__special_236_P_none__strength_M          | hit   | +3~+14  | +3           |
+| ed / ed__special_236_P_none__strength_M          | block | -5~+6   | -5           |
+| ed / ed__special_236_P_none__strength_H          | hit   | +3~+14  | +3           |
+| ed / ed__special_236_P_none__strength_H          | block | -5~+6   | -5           |
+| ingrid / ingrid__normal_2_P_M                    | hit   | +6~+9   | +6           |
+| ingrid / ingrid__normal_2_P_M                    | block | -1~+2   | -1           |
+| ingrid / ingrid__normal_5_P_M                    | hit   | +1~+5   | +1           |
+| ingrid / ingrid__normal_5_P_M                    | block | 0~+4    | 0            |
+| juri / juri__normal_5_K_H                        | hit   | +2~+5   | +2           |
+| juri / juri__normal_5_K_H                        | block | -3~0    | -3           |
+| juri / juri__normal_5_P_L                        | hit   | +5~+8   | +5           |
+| juri / juri__normal_5_P_L                        | block | -2~+1   | -2           |
+| juri / juri__normal_5_P_M                        | hit   | +7~+10  | +7           |
+| juri / juri__normal_5_P_M                        | block | +2~+5   | +2           |
+| kimberly / kimberly__normal_2_P_H                | hit   | +3~+8   | +3           |
+| kimberly / kimberly__normal_2_P_H                | block | -2~+3   | -2           |
+| lily / lily__special_236_K_H                     | block | -8~+4   | -8           |
+| lily / lily__special_236_K_L                     | block | -8~+4   | -8           |
+| lily / lily__special_236_K_M                     | block | -8~+4   | -8           |
+| lily / lily__special_236_K_OD                    | block | -8~+4   | -8           |
+| luke / luke__normal_2_P_M                        | hit   | +5~+7   | +5           |
+| luke / luke__normal_2_P_M                        | block | +1~+3   | +1           |
+| luke / luke__normal_5_K_H                        | hit   | +2~+8   | +2           |
+| luke / luke__normal_5_K_H                        | block | -5~+1   | -5           |
+| m_bison / m_bison__normal_5_P_H                  | hit   | +5~+7   | +5           |
+| m_bison / m_bison__normal_5_P_H                  | block | +1~+3   | +1           |
+| ryu / ryu__special_236_K_H                       | block | -3~+5   | -3           |
+| ryu / ryu__special_236_K_L                       | block | -11~-7  | -11          |
+| ryu / ryu__special_236_K_M                       | block | -8~-2   | -8           |
+| sagat / sagat__special_236_K_H                   | block | -5~+5   | -5           |
+| sagat / sagat__special_236_K_L                   | block | -8~+2   | -8           |
+| sagat / sagat__special_236_K_M                   | block | -7~+3   | -7           |
+| terry / terry__normal_2_P_M                      | block | -1~+3   | -1           |
+| terry / terry__special_214_P_H                   | block | -8~+5   | -8           |
+| terry / terry__special_214_P_M                   | block | -6~+2   | -6           |
+| yasmine / yasmine__normal_2_P_L                  | hit   | +4~+6   | +4           |
+| yasmine / yasmine__normal_2_P_L                  | block | -1~+1   | -1           |
+| jamie / jamie__normal_5_P_H                      | hit   | +1~+3   | +1           |
+| jamie / jamie__normal_5_P_H                      | block | -3~-1   | -3           |
+| jamie / jamie__held_special_214_P_H              | block | -3~+5   | -3           |
+| jamie / jamie__held_special_214_P_L              | block | -6~+2   | -6           |
+| jamie / jamie__held_special_214_P_M              | block | -6~+2   | -6           |
+| jamie / jamie__held_special_214_P_OD             | block | -1~+7   | -1           |
+| mai / mai__special_214_P_L                       | hit   | +3~+9   | +3           |
+| mai / mai__special_214_P_L                       | block | -4~+2   | -4           |
+| cammy / cammy__special_236_K_L                   | block | -12~0   | -12          |
+| cammy / cammy__special_236_K_M                   | block | -14~0   | -14          |
+
+### 検証
+
+typecheck、アプリ144テスト・データ21テスト・archive29テスト、data:plan/data:check、validate:data、coverage、SA・共通強度・個別代表条件監査（--check）、format:check、build、参照整合性検査が成功。履歴依存テストを省略せず、新規回帰検査で公開前commit0e86060からの差分が89フィールドだけであること、撤回対象以外の完全一致と残る9範囲フィールドを検査した。PC1280px/320pxの実ブラウザーで持続範囲を戻したゲーム・技一覧表示、維持する発生範囲、Normal/Hard切替後の履歴とページ横はみ出しがないことを確認。スクリーンショットは従来どおりローカル保持のstaging/verification/distance-ranges。既存のchunkサイズ警告あり。
+
+## 撤回前の履歴
+
 ## 現在の結論（第3段階終了）
 
 今回、新規採用・新規対象外はともに0件。C108・D47の155項目は保留を維持する。独自の攻略解説・判定観察記事の本文や公開GitHubデータを取得したが、同一入力・強度・状態・相手姿勢で距離/接触だけを変えた端点を保証する独立検証結果は得られなかった。検索断片や転載だけで範囲を追加していない。実機測定は未実施。
@@ -185,8 +302,8 @@ typecheck、アプリテスト、データテスト、data:plan/data:check、val
 
 前回の190項目に、括弧付き値と距離・接触タイミングを説明する注記の候補を加えた。過剰抽出を含む原典候補は2211項目。本番採用基本技に対応する候補は737項目。候補は技数ではなく、原典行×フレーム項目で数える。単に範囲が存在しない項目も、注記との条件照合対象として含める。
 
-- 全原典候補の採用 / 保留 / 対象外：75 / 300 / 1836。
-- 本番対象候補の採用 / 保留 / 対象外：75 / 300 / 362。
+- 全原典候補の採用 / 保留 / 対象外：3 / 300 / 1836。
+- 本番対象候補の採用 / 保留 / 対象外：3 / 300 / 362。
 - 採用75原典項目、51元技レコード。共通強度展開後は60技レコード・90フレーム項目を変更。
 - 前回JPの8原典項目・9技レコード・11フィールドを維持。今回追加は67原典項目・51技レコード・79フィールド。
 - 32キャラ、1298技レコード、SA288独立入力を維持。全体F・D・verification・UNVERIFIEDは変更しない。
@@ -287,37 +404,37 @@ typecheck、アプリテスト、データテスト、data:plan/data:check、val
 
 | キャラ   | Cargo行数 | 採用 / 保留 / 対象外 |
 | -------- | --------- | -------------------- |
-| aki      | 64        | 6 / 10 / 47          |
+| aki      | 64        | 0 / 10 / 47          |
 | akuma    | 91        | 0 / 19 / 97          |
-| alex     | 76        | 4 / 6 / 37           |
+| alex     | 76        | 0 / 6 / 37           |
 | arjun    | 62        | 0 / 16 / 43          |
 | blanka   | 85        | 0 / 17 / 72          |
 | cammy    | 74        | 0 / 13 / 76          |
-| chunli   | 79        | 1 / 2 / 48           |
-| cviper   | 64        | 6 / 6 / 49           |
-| dee_jay  | 98        | 2 / 6 / 55           |
-| dhalsim  | 69        | 1 / 8 / 61           |
-| e_honda  | 69        | 4 / 6 / 58           |
-| ed       | 65        | 3 / 10 / 46          |
+| chunli   | 79        | 0 / 2 / 48           |
+| cviper   | 64        | 0 / 6 / 49           |
+| dee_jay  | 98        | 0 / 6 / 55           |
+| dhalsim  | 69        | 0 / 8 / 61           |
+| e_honda  | 69        | 0 / 6 / 58           |
+| ed       | 65        | 0 / 10 / 46          |
 | elena    | 82        | 0 / 5 / 91           |
 | guile    | 67        | 0 / 2 / 38           |
-| ingrid   | 83        | 4 / 4 / 49           |
-| jamie    | 115       | 6 / 5 / 75           |
-| jp       | 64        | 8 / 7 / 43           |
-| juri     | 87        | 6 / 3 / 50           |
+| ingrid   | 83        | 0 / 4 / 49           |
+| jamie    | 115       | 0 / 5 / 75           |
+| jp       | 64        | 2 / 7 / 43           |
+| juri     | 87        | 0 / 3 / 50           |
 | ken      | 75        | 0 / 21 / 48          |
-| kimberly | 84        | 2 / 2 / 69           |
-| lily     | 76        | 4 / 1 / 75           |
-| luke     | 74        | 4 / 7 / 54           |
-| m_bison  | 75        | 3 / 16 / 61          |
-| mai      | 87        | 2 / 20 / 88          |
+| kimberly | 84        | 0 / 2 / 69           |
+| lily     | 76        | 0 / 1 / 75           |
+| luke     | 74        | 0 / 7 / 54           |
+| m_bison  | 75        | 1 / 16 / 61          |
+| mai      | 87        | 0 / 20 / 88          |
 | manon    | 60        | 0 / 7 / 40           |
 | marisa   | 90        | 0 / 9 / 65           |
 | rashid   | 79        | 0 / 8 / 57           |
-| ryu      | 77        | 3 / 14 / 50          |
-| sagat    | 69        | 3 / 13 / 48          |
-| terry    | 66        | 1 / 23 / 53          |
-| yasmine  | 71        | 2 / 8 / 51           |
+| ryu      | 77        | 0 / 14 / 50          |
+| sagat    | 69        | 0 / 13 / 48          |
+| terry    | 66        | 0 / 23 / 53          |
+| yasmine  | 71        | 0 / 8 / 51           |
 | zangief  | 68        | 0 / 6 / 42           |
 
 ## 検証

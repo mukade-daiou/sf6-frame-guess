@@ -1,5 +1,7 @@
 # データ仕様 v1.0.0
 
+現行の範囲採用対象は、同一入力・代表条件で飛び道具の到達時間または移動距離により変動する発生Fに限る。持続接触によるヒット・ガード硬直差は元の単一代表値を維持する。`distanceRanges.contactTimingRollback`に旧採用範囲、復元値、原典対応、撤回理由と候補分類変更を保存し、旧`decisions`や段階別調査記録は履歴として保持する。範囲値の型自体は引き続き符号付き値も検証するが、その型の存在は採用許可を意味しない。以降の段階別調査記述は各時点の履歴である。
+
 第3段階のstage3は正式採用状態と独立した調査記録。itemsに原因グループ・取得資料ID・公開データの対応候補・必要証拠・measurement（実施有無と設計条件）を持つ。measurement.performed=falseは実測結果ではない。sourceIdsは本文未取得の候補を含み得るためsources.status/assessmentと合わせて読む。調査記録が存在するだけではFrameValueや候補classificationを変更しない。
 
 第2段階の調査はheld-range-review.jsonのstage2.itemsへ、第1段階からの変更前状態・優先順位・取得資料・結論・次の証拠を保存する。候補reevaluation.stage2にも適用し、既存items300件とD46件を維持する。distanceRanges.decisionsの追加任意属性additionalEvidenceは保存HTMLのpath/url/requiredTextを持ち、公開資料の必要記載を生成時に照合する。ゲームのFrameValue構造は変更しない。

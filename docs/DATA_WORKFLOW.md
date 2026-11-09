@@ -1,5 +1,7 @@
 # データの正本と更新手順
 
+現行datasetIdは`arrival-startup-only-2026-11-09-r1`。持続当ての範囲化撤回により採用4・保留108・対象外625原典項目、範囲値は9技レコード・9発生フィールドとなった。通常の生成入口は`build-snapshot.ts`で、旧`distanceRanges.decisions`から`contactTimingRollback.revoked`を除いた判断だけを適用し、共通強度展開へ渡す。旧判断の`before`が単一代表値の復元元である。撤回正本と保留台帳の分類上書きは`prepare-contact-timing-rollback.mjs`で準備し、候補台帳は段階別判断の最後に撤回を適用する。報告は`report-distance-ranges.mjs`から最新方針を冒頭へ出力する。以下のdatasetId・集計は履歴として読む。
+
 第3段階は追加資料の調査と実測条件の設計のみで、採用81・保留155・対象外501を維持。本番値が変わらないためdatasetIdは第2段階のまま。prepare-held-range-stage3.mjsは取得済み独立資料候補と公開データを照合してheld-range-review.jsonのstage3と候補reevaluation.stage3へ記録し、通常の段階別再生成でも保持する。ダウンロードしたJavaScriptは実行せずJSON部分だけを読む。report-held-range-stage3.mjsで最新結論を報告冒頭へ出力し、過去の調査は履歴として保存する。
 
 第2段階の現行datasetIdは`distance-held-stage2-2026-11-09-r1`。81原典項目・98フィールドを距離範囲へ採用している。held-range-review.jsonのstage2は第1段階C134件の追加判断で、prepare-held-range-stage2.mjsから再現できる。通常の生成入口は引き続きbuild-snapshot.ts。追加公開資料はstaging/held-range-stage2へ保存し、新規採用では原典行・変更前値に加えて本文の必要記載も生成時に検査する。第1段階の判断と既存D46件は保持する。以下の段階別datasetId・集計は履歴である。

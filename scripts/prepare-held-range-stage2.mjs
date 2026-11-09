@@ -262,7 +262,8 @@ for (const d of policy.distanceRanges.decisions.slice(80))
       "10(27)",
       "active frames occur upon reaching the opponent or on frame 27 (whichever occurs first)",
     ];
-policy.datasetId = "distance-held-stage2-2026-11-09-r1";
+if (!policy.distanceRanges.contactTimingRollback)
+  policy.datasetId = "distance-held-stage2-2026-11-09-r1";
 applyHeldReviews(ledger.candidates, review);
 writeFileSync(
   "staging/held-range-review.json",
