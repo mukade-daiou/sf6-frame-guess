@@ -10,6 +10,7 @@ import {
   type MoveStatus,
 } from "./inventory";
 import type { Move, MoveInput } from "../../lib/frame-data/schema";
+import { japaneseMoveName } from "./names";
 const characters = sortCharactersForDisplay(production.characters);
 const patterns = inventoryPatterns(production.characters, production.inputs);
 function label(i: MoveInput) {
@@ -22,11 +23,9 @@ function label(i: MoveInput) {
       .replace(/LK/g, "弱K")
       .replace(/MK/g, "中K")
       .replace(/HK/g, "強K") +
-    (i.type === "special" && i.includeSuperArts
-      ? "（統合）"
-      : i.type === "special" && i.strength === "none"
-        ? "（保存・強度未指定）"
-        : "")
+    (i.type === "special" && i.strength === "none"
+      ? "（保存・強度未指定）"
+      : "")
   );
 }
 export function Frames({ move }: { move?: Move }) {
@@ -44,13 +43,15 @@ export function Frames({ move }: { move?: Move }) {
     </>
   );
 }
-function Name({ move }: { move?: Move }) {
+function Name({ move, characterId }: { move?: Move; characterId: string }) {
   return move ? (
     <>
-      <span>{move.name}</span>
+      <span>{japaneseMoveName(characterId, move)}</span>
       <details>
         <summary>詳細</summary>
         <small>
+          原典名: {move.name}
+          <br />
           ID: {move.id}
           <br />
           カテゴリ: {move.category}
@@ -90,7 +91,7 @@ export default function MovesPage() {
     const term = search.trim().toLowerCase();
     return (
       (!term ||
-        `${label(r.input)} ${displayInput(r.input)} ${r.records.map((m) => m.name).join(" ")}`
+        `${label(r.input)} ${displayInput(r.input)} ${r.records.map((m) => `${m.name} ${japaneseMoveName(character.id, m)}`).join(" ")}`
           .toLowerCase()
           .includes(term)) &&
       (matches(r.status) || r.records.some((m) => matches(recordStatus(m))))
@@ -100,7 +101,7 @@ export default function MovesPage() {
     <main className="moves-page">
       <h1>技データ一覧</h1>
       <p>
-        読み取り専用。統合はゲームのコマンド、SA行はレベル別データです。保存済みの対象外入力も含みます。
+        読み取り専用。SA行はレベル別データです。保存済みの対象外入力も含みます。原典名は詳細から確認できます。
       </p>
       <div className="moves-controls">
         <label>
@@ -176,7 +177,7 @@ export default function MovesPage() {
                     <tr key={`${key}:${m.id}`} data-input-key={key}>
                       <th scope="row">{label(r.input)}</th>
                       <td>
-                        <Name move={m} />
+                        <Name move={m} characterId={id} />
                       </td>
                       <Frames move={m} />
                       <td>{recordStatus(m)}</td>
@@ -186,7 +187,7 @@ export default function MovesPage() {
                 <tr key={key} data-input-key={key}>
                   <th scope="row">{label(r.input)}</th>
                   <td>
-                    <Name move={r.primary} />
+                    <Name move={r.primary} characterId={id} />
                   </td>
                   <Frames move={r.primary} />
                   <td>{r.status}</td>
@@ -207,7 +208,7 @@ export default function MovesPage() {
                               : "保存行"}
                           </th>
                           <td>
-                            <Name move={m} />
+                            <Name move={m} characterId={id} />
                           </td>
                           <Frames move={m} />
                           <td>{recordStatus(m)}</td>

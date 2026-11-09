@@ -98,6 +98,9 @@ it("distinguishes absence from incomplete scope without changing game data", () 
 it("renders seven columns and saved excluded values in their regular frame cells", () => {
   const html = renderToStaticMarkup(<MovesPage />);
   expect(html).toContain("技データ一覧");
+  expect(html).toContain("バルカンブラスト");
+  expect(html).toContain("Vulcan Blast");
+  expect(html).not.toContain("（統合）");
   expect(html).toContain("対象外");
   expect((html.match(/scope="col"/g) || []).length).toBe(7);
   const c = production.characters.find((c) => c.id === "dee_jay")!;
