@@ -9,6 +9,7 @@ import { applyFrameResearch } from "./frame-research";
 import { applyDistanceRanges } from "./distance-ranges";
 import { applyCompoundStartup } from "./compound-startup";
 import { applyKdHkdCorrections } from "./kd-hkd-corrections";
+import { restoreWhiffTotalCorrections } from "./whiff-total-corrections";
 import {
   auditStrengthless,
   generateStrengthExpansions,
@@ -29,7 +30,8 @@ const rows = characters.flatMap(auditStrengthless);
 let originals = 0;
 const beforeFiles: Record<string, unknown> = {};
 if (process.argv.includes("--check"))
-  for (const c of characters) {
+  for (const current of characters) {
+    const c = restoreWhiffTotalCorrections(current);
     const old = JSON.parse(
       execFileSync(
         "git",

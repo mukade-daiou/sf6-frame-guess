@@ -35,6 +35,14 @@ export function restoreCompoundStartup(character: Character): Character {
   );
   const result = structuredClone(character);
   for (const move of result.moves) {
+    const total = (policy.whiffTotalCorrections?.decisions ?? []).find(
+      (item: any) => item.characterId === result.id && item.moveId === move.id,
+    );
+    if (total) {
+      if (!isDeepStrictEqual(move.frames.total, total.value))
+        throw new Error(`Unexpected whiff total: ${move.id}`);
+      move.frames.total = total.before;
+    }
     const kd = (policy.kdHkdCorrections?.decisions ?? []).find(
       (item: any) => item.characterId === result.id && item.moveId === move.id,
     );

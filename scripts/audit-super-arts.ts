@@ -6,6 +6,7 @@ import { applyFrameResearch } from "./frame-research";
 import { applyDistanceRanges } from "./distance-ranges";
 import { applyCompoundStartup } from "./compound-startup";
 import { applyKdHkdCorrections } from "./kd-hkd-corrections";
+import { restoreWhiffTotalCorrections } from "./whiff-total-corrections";
 import {
   readSAResearch,
   generateSuperArts,
@@ -26,7 +27,9 @@ for (const id of pilot
   const moves = generateSuperArts(inventory, id);
   if (moves.length !== 9) throw new Error(`SA inputs incomplete: ${id}`);
   if (process.argv.includes("--check")) {
-    const c = JSON.parse(readFileSync(`data/characters/${id}.json`, "utf8"));
+    const c = restoreWhiffTotalCorrections(
+      JSON.parse(readFileSync(`data/characters/${id}.json`, "utf8")),
+    );
     const original = JSON.parse(
       execFileSync(
         "git",

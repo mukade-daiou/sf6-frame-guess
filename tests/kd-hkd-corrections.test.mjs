@@ -17,6 +17,8 @@ test("66 KD/HKD corrections preserve all other records", () => {
     const after = read(path);
     records += before.moves.length;
     for (const m of before.moves) {
+      const total = read("data/adoption-decisions.json").whiffTotalCorrections.decisions.find((x) => x.characterId === before.id && x.moveId === m.id);
+      if (total) { assert.deepEqual(m.frames.total, total.before); m.frames.total = total.value; }
       const d = decisions.find((x) => x.characterId === before.id && x.moveId === m.id);
       if (!d) continue;
       assert.equal(d.field, "hit");

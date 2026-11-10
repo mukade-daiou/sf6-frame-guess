@@ -10,6 +10,7 @@ import { applyFrameResearch } from "./frame-research";
 import { applyDistanceRanges } from "./distance-ranges";
 import { applyCompoundStartup } from "./compound-startup";
 import { applyKdHkdCorrections } from "./kd-hkd-corrections";
+import { applyWhiffTotalCorrections } from "./whiff-total-corrections";
 const read = async (p: string) => JSON.parse(await readFile(p, "utf8"));
 const save = async (p: string, v: unknown) =>
   writeFile(p, JSON.stringify(v, null, 2) + "\n");
@@ -67,23 +68,25 @@ for (const d of decisions.characters) {
     c.coverage.super_art = { status: "complete", verification: "unverified" };
   }
   files[c.id] = characterSchema.parse(
-    decisions.commonSpecialStrengths?.enabled
-      ? withStrengthExpansions(
-          applyKdHkdCorrections(
+    applyWhiffTotalCorrections(
+      decisions.commonSpecialStrengths?.enabled
+        ? withStrengthExpansions(
+            applyKdHkdCorrections(
+              applyCompoundStartup(
+                applyDistanceRanges(
+                  applyFrameResearch(applyConditionalSpecials(c)),
+                ),
+              ),
+            ),
+          )
+        : applyKdHkdCorrections(
             applyCompoundStartup(
               applyDistanceRanges(
                 applyFrameResearch(applyConditionalSpecials(c)),
               ),
             ),
           ),
-        )
-      : applyKdHkdCorrections(
-          applyCompoundStartup(
-            applyDistanceRanges(
-              applyFrameResearch(applyConditionalSpecials(c)),
-            ),
-          ),
-        ),
+    ),
   );
 }
 const dataset = validateDataset(metadata, files);

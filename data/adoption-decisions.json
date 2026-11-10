@@ -1,5 +1,5 @@
 {
-  "datasetId": "kd-hkd-corrections-2026-11-11-r1",
+  "datasetId": "whiff-total-corrections-2026-11-11-r1",
   "compoundStartup": {
     "basis": "ユーザー指定: 弾出現と距離依存の攻撃発生を区別。公式取得2026-11-10、パッチ未確認。",
     "decisions": [
@@ -10165,6 +10165,2025 @@
           "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
         },
         "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      }
+    ]
+  },
+  "whiffTotalCorrections": {
+    "basis": "ユーザー承認済みtotal 53件。非ホールド・派生なし・空振りの動作終了。公式資料2026-11-10取得、パッチUNVERIFIED。",
+    "decisions": [
+      {
+        "characterId": "aki",
+        "moveId": "aki__normal_5_K_M",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "25",
+          "numeric": 25,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "27",
+          "numeric": 27,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/aki.cargo.json",
+        "sourceIndex": 44,
+        "sourceInput": "5MK",
+        "sourceNotation": "25(27)",
+        "sourceNotes": "2 extra recovery frames on whiff; useful poke and combo starter",
+        "officialPath": "staging/official-verification/sources/aki.json",
+        "officialRows": [
+          {
+            "row": 5,
+            "name": "立ち中K （蛇蝎蹴）",
+            "startup": "8",
+            "active": "8-10",
+            "recovery": "15",
+            "notes": "空振り時硬直2F増加"
+          }
+        ],
+        "reason": "Cargo 25(27)、備考に空振り追加2F、raw 25。非ホールド空振り条件で25+2=27。公式 持続 8-10 の最終F 10 + 硬直 15 + 空振り時硬直2F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "aki",
+        "moveId": "aki__normal_5_P_M",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "24",
+          "numeric": 24,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "26",
+          "numeric": 26,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/aki.cargo.json",
+        "sourceIndex": 45,
+        "sourceInput": "5MP",
+        "sourceNotation": "24(26)",
+        "sourceNotes": "2 extra recovery frames on whiff/block; Sinister Slide cancel: +9/+5; moves A.K.I. forward; useful combo tool after 5MK or in counter-hit routes but does not combo into 236PP; high active frame count makes it useful as a meaty (up to +7/+1); special/DR/DI cancel is delayed until after 2nd active frame",
+        "officialPath": "staging/official-verification/sources/aki.json",
+        "officialRows": [
+          {
+            "row": 4,
+            "name": "立ち中P （蛇咬手）",
+            "startup": "6",
+            "active": "6-10",
+            "recovery": "14",
+            "notes": "ガード、空振り時硬直2F増加"
+          }
+        ],
+        "reason": "Cargo 24(26)、空振り・ガードで硬直2F追加。raw備考との差はDR/DI表現のみで空振り条件は一致。公式最終10+硬直14+空振り2=26。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "aki",
+        "moveId": "aki__special_236_P_L",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "36",
+          "numeric": 36,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "42",
+          "numeric": 42,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/aki.cargo.json",
+        "sourceIndex": 20,
+        "sourceInput": "236LP",
+        "sourceNotation": "36(42)",
+        "sourceNotes": "Strike hitbox with 1-hit projectile durability; poisons opponent on hit; [Toxic Blossom] hit launches opponent into a limited juggle state (can follow up with corner 236HP from close range); 6f extra recovery on whiff; slightly better frame advantage from longer ranges; extended arm is projectile invincible 13-16f; sets up a strong corner safe jump on Toxic Blossom hit but requires sacrificing the extra juggle; Punish Counter crumple puts opponent into limited juggle state (cannot follow up with grounded combo); Toxic Blossom PC juggle gives much stronger juggle follow-ups midscreen",
+        "officialPath": "staging/official-verification/sources/aki.json",
+        "officialRows": [
+          {
+            "row": 36,
+            "name": "弱 蛇頭鞭",
+            "startup": "14",
+            "active": "14-16",
+            "recovery": "26",
+            "notes": "ヒット時毒状態\n毒状態中にヒット時毒破裂\n※毒破裂時ダメージ800/吹き飛びダウン\n飛び道具相殺判定あり（1回）\nパニッシュカウンター時に膝崩れダウンに　＋16\n※毒破裂時＋22"
+          }
+        ],
+        "reason": "Cargo 36(42)、備考に空振り追加6F、raw 36。非ホールド空振り条件で36+6=42。公式 持続 14-16 の最終F 16 + 硬直 26。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "akuma",
+        "moveId": "akuma__normal_2_P_M",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "22",
+          "numeric": 22,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "24",
+          "numeric": 24,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json",
+        "sourceIndex": 42,
+        "sourceInput": "2MP",
+        "sourceNotation": "22(24)",
+        "sourceNotes": "2f extra recovery on whiff; excellent button for combos, midscreen buffers, and Drive Rush pressure (more rewarding than 5MP); topmost hurtbox on frames 1-8 is vulnerable only to aerial strikes (preventing its use as an anti-air); extends a wider hurtbox until the end of recovery",
+        "officialPath": "staging/official-verification/sources/akuma.json",
+        "officialRows": [
+          {
+            "row": 10,
+            "name": "しゃがみ中P（膝折り豪掌）",
+            "startup": "6",
+            "active": "6-8",
+            "recovery": "14",
+            "notes": "空振り時硬直2F増加"
+          }
+        ],
+        "reason": "Cargo 22(24)、備考に空振り追加2F、raw 22。非ホールド空振り条件で22+2=24。公式 持続 6-8 の最終F 8 + 硬直 14 + 空振り時硬直2F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "akuma",
+        "moveId": "akuma__normal_5_K_H",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "42",
+          "numeric": 42,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "43",
+          "numeric": 43,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json",
+        "sourceIndex": 49,
+        "sourceInput": "5HK",
+        "sourceNotation": "42(43)",
+        "sourceNotes": "2 hits; 1st hit forces stand (important for combos); both the 2nd hit and the farthest-reaching hitbox of 1st hit whiff on crouching opponents unless they extend a vertical hurtbox; if 1st hit is stand blocked, both hits will connect on block; 1f extra recovery when 2nd hit whiffs; Counter-hit/Punish Counter advantage carries through both hits; great punish starter since scaling doesn't apply; both hits put airborne opponents into limited juggle state",
+        "officialPath": "staging/official-verification/sources/akuma.json",
+        "officialRows": [
+          {
+            "row": 7,
+            "name": "立ち強K（首撥ね）",
+            "startup": "13",
+            "active": "13-27",
+            "recovery": "15",
+            "notes": "強制立ち効果\n空振り時硬直1F増加"
+          }
+        ],
+        "reason": "Cargo 42(43)、2段目が空振りすると1F追加。全段空振りではその条件が成立し43F。公式も空振り1F追加、最終27+硬直15+1=43。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "akuma",
+        "moveId": "akuma__normal_5_P_M",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "20",
+          "numeric": 20,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "22",
+          "numeric": 22,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json",
+        "sourceIndex": 55,
+        "sourceInput": "5MP",
+        "sourceNotation": "20(22)",
+        "sourceNotes": "2f extra recovery on whiff; primary tool for block pressure (high active frame count makes it strong for oki); leads into much stronger combos on counter-hit",
+        "officialPath": "staging/official-verification/sources/akuma.json",
+        "officialRows": [
+          {
+            "row": 4,
+            "name": "立ち中P（豪掌）",
+            "startup": "6",
+            "active": "6-9",
+            "recovery": "11",
+            "notes": "空振り時硬直2F増加"
+          }
+        ],
+        "reason": "Cargo 20(22)、備考に空振り追加2F、raw 20。非ホールド空振り条件で20+2=22。公式 持続 6-9 の最終F 9 + 硬直 11 + 空振り時硬直2F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "akuma",
+        "moveId": "akuma__special_214_K_L",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "34",
+          "numeric": 34,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "40",
+          "numeric": 40,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json",
+        "sourceIndex": 6,
+        "sourceInput": "214LK",
+        "sourceNotation": "34(40)",
+        "sourceNotes": "6f extra recovery on block/whiff; whiffs on crouching opponents (for consistency, cancel from 5MK or 2HP); cannot hit cross-up; puts opponent into limited juggle state; allows juggle into 623P (close range), 2HK (safe jump setup), or any Super",
+        "officialPath": "staging/official-verification/sources/akuma.json",
+        "officialRows": [
+          {
+            "row": 50,
+            "name": "弱 竜巻斬空脚",
+            "startup": "12",
+            "active": "12-13",
+            "recovery": "21",
+            "notes": "5-27F　空中判定\n空振り時硬直6F増加"
+          }
+        ],
+        "reason": "Cargo 34(40)、備考に空振り追加6F、raw 34。非ホールド空振り条件で34+6=40。公式 持続 12-13 の最終F 13 + 硬直 21 + 空振り時硬直6F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "akuma",
+        "moveId": "akuma__special_214_P_H",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "44",
+          "numeric": 44,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "46",
+          "numeric": 46,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json",
+        "sourceIndex": 3,
+        "sourceInput": "214HP",
+        "sourceNotation": "44(46)",
+        "sourceNotes": "2f extra recovery on whiff; extra advantage on Punish Counter (+12) makes it a strong shimmy tool; 6P follow-up is a true blockstring even at max delay; can be spaced in neutral for +1f better advantage (very precise); foot hurtbox is pulled back on frames 6-18 (can make low attacks whiff); has more pushback on block vs. Burnout",
+        "officialPath": "staging/official-verification/sources/akuma.json",
+        "officialRows": [
+          {
+            "row": 60,
+            "name": "強 金剛灼火（1段目）",
+            "startup": "23",
+            "active": "23-25",
+            "recovery": "19",
+            "notes": "27-30F ヒット時専用技に派生可\n空振り時硬直2F増加\nパニッシュカウンター時+12F"
+          }
+        ],
+        "reason": "Cargo 44(46)、備考に空振り追加2F、raw 44。非ホールド空振り条件で44+2=46。公式 持続 23-25 の最終F 25 + 硬直 19 + 空振り時硬直2F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "akuma",
+        "moveId": "akuma__special_214_P_M",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "41",
+          "numeric": 41,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "44",
+          "numeric": 44,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json",
+        "sourceIndex": 10,
+        "sourceInput": "214MP",
+        "sourceNotation": "41(44)",
+        "sourceNotes": "3f extra recovery on whiff; extra advantage on Punish Counter (+10) makes it a strong shimmy tool; 6P follow-up is a true blockstring even at max delay; can be spaced in neutral for +1f better advantage (very precise); foot hurtbox is pulled back on frames 6-15 (can make low attacks whiff)",
+        "officialPath": "staging/official-verification/sources/akuma.json",
+        "officialRows": [
+          {
+            "row": 58,
+            "name": "中 金剛灼火（1段目）",
+            "startup": "19",
+            "active": "19-21",
+            "recovery": "20",
+            "notes": "23-26F ヒット時専用技に派生可\n空振り時硬直3F増加\nパニッシュカウンター時+10F"
+          }
+        ],
+        "reason": "Cargo 41(44)、備考に空振り追加3F、raw 41。非ホールド空振り条件で41+3=44。公式 持続 19-21 の最終F 21 + 硬直 20 + 空振り時硬直3F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "alex",
+        "moveId": "alex__normal_2_P_M",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "25",
+          "numeric": 25,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "29",
+          "numeric": 29,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/alex.cargo.json",
+        "sourceIndex": 15,
+        "sourceInput": "2MP",
+        "sourceNotation": "25(29)",
+        "sourceNotes": "4f extra recovery on whiff; topmost hurtbox on frames 1-9 is vulnerable only to aerial attacks (preventing its use as an anti-air) and is projectile invincible to avoid High Tiger Shot; Special/DR/DI cancel is delayed until after active frames; relatively poor DR Cancel options (no natural combo into 2HP > 236HP, max range cannot cancel to 4MK > 2HP, and only a true blockstring into 5LP/2LP/2LK)",
+        "officialPath": "staging/official-verification/sources/alex.json",
+        "officialRows": [
+          {
+            "row": 12,
+            "name": "しゃがみ中P（地獄突き）",
+            "startup": "8",
+            "active": "8-9",
+            "recovery": "16",
+            "notes": "空振り時硬直4F増加"
+          }
+        ],
+        "reason": "Cargo 25(29)、備考に空振り追加4F、raw 25。非ホールド空振り条件で25+4=29。公式 持続 8-9 の最終F 9 + 硬直 16 + 空振り時硬直4F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "blanka",
+        "moveId": "blanka__normal_5_K_M",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "27",
+          "numeric": 27,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "30",
+          "numeric": 30,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json",
+        "sourceIndex": 33,
+        "sourceInput": "5MK",
+        "sourceNotation": "27(30)",
+        "sourceNotes": "3f extra recovery on whiff; forward movement makes it more consistent in cancels like OD Backstep Roll; SA2 cancel: +14/+7; Forward Hop cancel: -3/-10; Coward Crouch cancel: +6/-1",
+        "officialPath": "staging/official-verification/sources/blanka.json",
+        "officialRows": [
+          {
+            "row": 5,
+            "name": "立ち中K （ブラッディーテイル）",
+            "startup": "8",
+            "active": "8-10",
+            "recovery": "17",
+            "notes": "空振り時硬直3F増加"
+          }
+        ],
+        "reason": "Cargo 27(30)、備考に空振り追加3F、raw 27。非ホールド空振り条件で27+3=30。公式 持続 8-10 の最終F 10 + 硬直 17 + 空振り時硬直3F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "blanka",
+        "moveId": "blanka__normal_5_P_H",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "33",
+          "numeric": 33,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "38",
+          "numeric": 38,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json",
+        "sourceIndex": 30,
+        "sourceInput": "5HP",
+        "sourceNotation": "33(38)",
+        "sourceNotes": "Combo tool with enough hitstun to follow up with Coward Crouch + Wild Lift; forces stand; 5f extra recovery on whiff; final 2 active frames only hit airborne opponents above Blanka; SA2 cancel: +16/+10; Forward Hop cancel: -1/-7; Coward Crouch cancel: +8/+2",
+        "officialPath": "staging/official-verification/sources/blanka.json",
+        "officialRows": [
+          {
+            "row": 6,
+            "name": "立ち強P （ジャングルアーチ）",
+            "startup": "10",
+            "active": "10-16",
+            "recovery": "22",
+            "notes": "強制立ち効果"
+          }
+        ],
+        "reason": "Cargo 33(38)、備考に空振り追加5F、raw 33。非ホールド空振り条件で33+5=38。公式 持続 10-16 の最終F 16 + 硬直 22。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "cammy",
+        "moveId": "cammy__normal_2_P_M",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "23",
+          "numeric": 23,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "26",
+          "numeric": 26,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cammy.cargo.json",
+        "sourceIndex": 36,
+        "sourceInput": "2MP",
+        "sourceNotation": "23(26)",
+        "sourceNotes": "Good counterpoke and useful combo filler after 2HP or CH 5LP/2LP/5MP; 3f extra recovery on whiff; extends a wide hurtbox during recovery on whiff",
+        "officialPath": "staging/official-verification/sources/cammy.json",
+        "officialRows": [
+          {
+            "row": 10,
+            "name": "しゃがみ中P（ライトグレネード）",
+            "startup": "7",
+            "active": "7-9",
+            "recovery": "14",
+            "notes": "空振り時硬直3F増加"
+          }
+        ],
+        "reason": "Cargo 23(26)、備考に空振り追加3F、raw 23。非ホールド空振り条件で23+3=26。公式 持続 7-9 の最終F 9 + 硬直 14 + 空振り時硬直3F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "chunli",
+        "moveId": "chunli__normal_2_P_M",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "22",
+          "numeric": 22,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "23",
+          "numeric": 23,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/chunli.cargo.json",
+        "sourceIndex": 30,
+        "sourceInput": "2MP",
+        "sourceNotation": "22(23)",
+        "sourceNotes": "1f extra recovery on whiff; decent range and hitbox disjoint for a poke; Stance Cancel: +6/+1; topmost hurtbox on frames 1-9 is vulnerable only to aerial strikes (preventing its use as an anti-air)",
+        "officialPath": "staging/official-verification/sources/chunli.json",
+        "officialRows": [
+          {
+            "row": 10,
+            "name": "しゃがみ中P（丹頂拳）",
+            "startup": "6",
+            "active": "6-9",
+            "recovery": "13",
+            "notes": "空振り時硬直1F増加"
+          }
+        ],
+        "reason": "Cargo 22(23)、備考に空振り追加1F、raw 22。非ホールド空振り条件で22+1=23。公式 持続 6-9 の最終F 9 + 硬直 13 + 空振り時硬直1F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "chunli",
+        "moveId": "chunli__special_214_K_H",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "50",
+          "numeric": 50,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "52",
+          "numeric": 52,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/chunli.cargo.json",
+        "sourceIndex": 2,
+        "sourceInput": "214HK",
+        "sourceNotation": "50(52)",
+        "sourceNotes": "2f extra recovery on whiff; crouching state during recovery; cannot hit cross-up",
+        "officialPath": "staging/official-verification/sources/chunli.json",
+        "officialRows": [
+          {
+            "row": 58,
+            "name": "強 覇山蹴",
+            "startup": "32",
+            "active": "32-34",
+            "recovery": "18",
+            "notes": "7～26F　下半分飛び道具無敵\n6～29F　空中判定"
+          }
+        ],
+        "reason": "Cargo 50(52)、備考に空振り追加2F、raw 50。非ホールド空振り条件で50+2=52。公式 持続 32-34 の最終F 34 + 硬直 18。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "cviper",
+        "moveId": "cviper__normal_5_K_M",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "28",
+          "numeric": 28,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "30",
+          "numeric": 30,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json",
+        "sourceIndex": 37,
+        "sourceInput": "5MK",
+        "sourceNotation": "28(30)",
+        "sourceNotes": "Strong poke that can combo into specials with a High Jump cancel (214HP can whiff at farther ranges); can link into SA2 on counter-hit from around the max range of 2MP; 2f extra recovery on whiff; HJC~214HP Feint cancel: +5 oH / -3 oB",
+        "officialPath": "staging/official-verification/sources/cviper.json",
+        "officialRows": [
+          {
+            "row": 5,
+            "name": "立ち中K（フロントキック）",
+            "startup": "8",
+            "active": "8-10",
+            "recovery": "18",
+            "notes": "空振り時硬直2F増加\nハイジャンプキャンセル可能"
+          }
+        ],
+        "reason": "Cargo 28(30)、備考に空振り追加2F、raw 28。非ホールド空振り条件で28+2=30。公式 持続 8-10 の最終F 10 + 硬直 18 + 空振り時硬直2F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "dhalsim",
+        "moveId": "dhalsim__normal_2_P_H",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "42",
+          "numeric": 42,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "46",
+          "numeric": 46,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/dhalsim.cargo.json",
+        "sourceIndex": 18,
+        "sourceInput": "2HP",
+        "sourceNotation": "42(46)",
+        "sourceNotes": "Low Profile 11-46f (until recovery); can be used to punish projectiles from long range; 4f extra recovery on whiff and Perfect Parry",
+        "officialPath": "staging/official-verification/sources/dhalsim.json",
+        "officialRows": [
+          {
+            "row": 12,
+            "name": "しゃがみ強P（ダブルヨガパンチ）",
+            "startup": "19",
+            "active": "19-22",
+            "recovery": "20",
+            "notes": "空振り時硬直4F増加"
+          }
+        ],
+        "reason": "Cargo 42(46)、備考に空振り追加4F、raw 42。非ホールド空振り条件で42+4=46。公式 持続 19-22 の最終F 22 + 硬直 20 + 空振り時硬直4F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "dhalsim",
+        "moveId": "dhalsim__special_63214_P_OD",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "61",
+          "numeric": 61,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "66",
+          "numeric": 66,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/dhalsim.cargo.json",
+        "sourceIndex": 47,
+        "sourceInput": "63214PP",
+        "sourceNotation": "61(66)",
+        "sourceNotes": "5-hit OD projectile hitbox that launches opponent upward into a limited juggle state; 5f extra recovery on whiff/block; causes free juggle state if only the 5th hit connects vs. airborne opponent; 5th hit does not connect on grounded opponents (only 4 hits on block); SA3 cancel has 2f startup to ensure combo consistency; can juggle into immediate j.MP to extend the combo",
+        "officialPath": "staging/official-verification/sources/dhalsim.json",
+        "officialRows": [
+          {
+            "row": 53,
+            "name": "OD ヨガフレイム",
+            "startup": "18",
+            "active": "18-42",
+            "recovery": "全体 66",
+            "notes": "ヒット時硬直5F減少"
+          }
+        ],
+        "reason": "Cargo 61(66)、備考に空振り追加5F、raw 61。非ホールド空振り条件で61+5=66。公式 全体 66。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "e_honda",
+        "moveId": "e_honda__normal_5_P_M",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "26",
+          "numeric": 26,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "30",
+          "numeric": 30,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+        "sourceIndex": 36,
+        "sourceInput": "5MP",
+        "sourceNotation": "26(30)",
+        "sourceNotes": "4f extra recovery on whiff; good poke and pressure starter due to its hitbox priority, distance traveled, and block advantage",
+        "officialPath": "staging/official-verification/sources/e_honda.json",
+        "officialRows": [
+          {
+            "row": 4,
+            "name": "立ち中P（突っ張り）",
+            "startup": "10",
+            "active": "10-13",
+            "recovery": "13",
+            "notes": "空振り時硬直4F増加"
+          }
+        ],
+        "reason": "Cargo 26(30)、備考に空振り追加4F、raw 26。非ホールド空振り条件で26+4=30。公式 持続 10-13 の最終F 13 + 硬直 13 + 空振り時硬直4F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "ed",
+        "moveId": "ed__normal_2_K_H",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "32",
+          "numeric": 32,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "34",
+          "numeric": 34,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ed.cargo.json",
+        "sourceIndex": 19,
+        "sourceInput": "2HK",
+        "sourceNotation": "32(34)",
+        "sourceNotes": "2f extra recovery on whiff; good range buffer tool with a hitconfirmable Target Combo follow-up; Kill Rush (Forward/Back) cancel advantage: -12/-17",
+        "officialPath": "staging/official-verification/sources/ed.json",
+        "officialRows": [
+          {
+            "row": 13,
+            "name": "しゃがみ強K（ローフリッカー）",
+            "startup": "12",
+            "active": "12-13",
+            "recovery": "19",
+            "notes": "空振り時硬直2F増加"
+          }
+        ],
+        "reason": "Cargo 32(34)、備考に空振り追加2F、raw 32。非ホールド空振り条件で32+2=34。公式 持続 12-13 の最終F 13 + 硬直 19 + 空振り時硬直2F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "ed",
+        "moveId": "ed__normal_2_K_M",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "26",
+          "numeric": 26,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "29",
+          "numeric": 29,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ed.cargo.json",
+        "sourceIndex": 24,
+        "sourceInput": "2MK",
+        "sourceNotation": "26(29)",
+        "sourceNotes": "Forces stand; whiffs vs. crouching opponents at longer ranges unless they extend a vertical hurtbox; 3f extra recovery on whiff and extends a wide hurtbox until the end of recovery; good range for combos and buffers; situational anti-air but loses or trades with stronger jump-ins; Kill Rush (Forward/Back) cancel advantage: -6/-15",
+        "officialPath": "staging/official-verification/sources/ed.json",
+        "officialRows": [
+          {
+            "row": 11,
+            "name": "しゃがみ中K（オーバーフリッカー）",
+            "startup": "9",
+            "active": "9-10",
+            "recovery": "16",
+            "notes": "空振り時硬直3F増加\n強制立ち効果"
+          }
+        ],
+        "reason": "Cargo 26(29)、備考に空振り追加3F、raw 26。非ホールド空振り条件で26+3=29。公式 持続 9-10 の最終F 10 + 硬直 16 + 空振り時硬直3F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "ed",
+        "moveId": "ed__normal_5_K_M",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "27",
+          "numeric": 27,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "31",
+          "numeric": 31,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ed.cargo.json",
+        "sourceIndex": 38,
+        "sourceInput": "5MK",
+        "sourceNotation": "27(31)",
+        "sourceNotes": "4f extra recovery on whiff; no true blockstring when DR canceled (weaker as an approach tool); great range with a relatively safe Target Combo when spaced out; extends a strike-only hurtbox on frames 4-9 (easier to counter-poke but not affected by projectiles); extends a wide hurtbox until the end of recovery; Kill Rush (Forward/Back) cancel advantage: -14/-19",
+        "officialPath": "staging/official-verification/sources/ed.json",
+        "officialRows": [
+          {
+            "row": 5,
+            "name": "立ち中K（ヒットマンフリッカー）",
+            "startup": "10",
+            "active": "10-11",
+            "recovery": "16",
+            "notes": "空振り時硬直4F増加"
+          }
+        ],
+        "reason": "Cargo 27(31)、備考に空振り追加4F、raw 27。非ホールド空振り条件で27+4=31。公式 持続 10-11 の最終F 11 + 硬直 16 + 空振り時硬直4F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "elena",
+        "moveId": "elena__normal_5_K_M",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "22",
+          "numeric": 22,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "24",
+          "numeric": 24,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/elena.cargo.json",
+        "sourceIndex": 52,
+        "sourceInput": "5MK",
+        "sourceNotation": "22(24)",
+        "sourceNotes": "2f extra recovery on whiff; useful combo and frame trap tool; short range for a 6-frame medium",
+        "officialPath": "staging/official-verification/sources/elena.json",
+        "officialRows": [
+          {
+            "row": 5,
+            "name": "立ち中K（スプルースベンド）",
+            "startup": "6",
+            "active": "6-9",
+            "recovery": "13",
+            "notes": "空振り時硬直2F増加"
+          }
+        ],
+        "reason": "Cargo 22(24)、備考に空振り追加2F、raw 22。非ホールド空振り条件で22+2=24。公式 持続 6-9 の最終F 9 + 硬直 13 + 空振り時硬直2F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "guile",
+        "moveId": "guile__normal_2_P_M",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "21",
+          "numeric": 21,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "24",
+          "numeric": 24,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/guile.cargo.json",
+        "sourceIndex": 16,
+        "sourceInput": "2MP",
+        "sourceNotation": "21(24)",
+        "sourceNotes": "3f extra recovery on whiff; low pushback on hit; chains into itself for a launching Target Combo; has an extended hurtbox on whiff until the end of recovery; SA2 cancel: +13/+7; topmost hurtbox on frames 1-8 is vulnerable only to aerial strikes (preventing its use as an anti-air)",
+        "officialPath": "staging/official-verification/sources/guile.json",
+        "officialRows": [
+          {
+            "row": 10,
+            "name": "しゃがみ中P （ストレート）",
+            "startup": "6",
+            "active": "6-8",
+            "recovery": "13",
+            "notes": "※空振り時硬直3F増加"
+          }
+        ],
+        "reason": "Cargo 21(24)、備考に空振り追加3F、raw 21。非ホールド空振り条件で21+3=24。公式 持続 6-8 の最終F 8 + 硬直 13 + 空振り時硬直3F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "ingrid",
+        "moveId": "ingrid__normal_2_P_M",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "22",
+          "numeric": 22,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "25",
+          "numeric": 25,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ingrid.cargo.json",
+        "sourceIndex": 35,
+        "sourceInput": "2MP",
+        "sourceNotation": "22(25)",
+        "sourceNotes": "3f extra recovery on whiff; one of Ingrid's primary buffer tools (less range than 5MK/2HP but also less likely to be whiff punished); links into 5MP on crouching opponents or into 5LK vs. standing/crouching; high active frame count (up to +9 oH / +2 oB with meaty timing); topmost hurtbox on frames 1-10 is vulnerable only to aerial strikes (preventing its use as an anti-air); SA2 cancel: +8/+1",
+        "officialPath": "staging/official-verification/sources/ingrid.json",
+        "officialRows": [
+          {
+            "row": 10,
+            "name": "しゃがみ中P（アンダートーチ）",
+            "startup": "7",
+            "active": "7-10",
+            "recovery": "12",
+            "notes": "空振り時硬直3F増加"
+          }
+        ],
+        "reason": "Cargo 22(25)、備考に空振り追加3F、raw 22。非ホールド空振り条件で22+3=25。公式 持続 7-10 の最終F 10 + 硬直 12 + 空振り時硬直3F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "moveId": "jamie__normal_2_P_M",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "21",
+          "numeric": 21,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "23",
+          "numeric": 23,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+        "sourceIndex": 60,
+        "sourceInput": "2MP",
+        "sourceNotation": "21(23)",
+        "sourceNotes": "Damage DL0-DL4: 540/570/600/630/660; 2f extra recovery on whiff; decent tool for buffers, combos, and frame traps; extends a hurtbox on whiff until the end of recovery; SA2 cancel: +14/+8; Drink cancel: -30/-36",
+        "officialPath": "staging/official-verification/sources/jamie.json",
+        "officialRows": [
+          {
+            "row": 10,
+            "name": "しゃがみ中P（透骨拳）",
+            "startup": "6",
+            "active": "6-8",
+            "recovery": "13",
+            "notes": "空振り時硬直2F増加"
+          }
+        ],
+        "reason": "Cargo 21(23)、備考に空振り追加2F、raw 21。非ホールド空振り条件で21+2=23。公式 持続 6-8 の最終F 8 + 硬直 13 + 空振り時硬直2F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "jamie",
+        "moveId": "jamie__normal_5_K_M",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "28",
+          "numeric": 28,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "29",
+          "numeric": 29,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+        "sourceIndex": 74,
+        "sourceInput": "5MK",
+        "sourceNotation": "28(29)",
+        "sourceNotes": "Damage DL0-DL4: 540/570/600/630/660; good poke and mid-range buffer; lifts up leg hurtbox on frames 4-12 (can avoid low pokes); 1f extra recovery on whiff; can combo naturally into 214MP/214PP; extends a wider hurtbox on whiff until the end of recovery; SA2 cancel: +15/+10; Drink cancel: -29/-34",
+        "officialPath": "staging/official-verification/sources/jamie.json",
+        "officialRows": [
+          {
+            "row": 5,
+            "name": "立ち中K（瞬歩脚）",
+            "startup": "9",
+            "active": "9-11",
+            "recovery": "17",
+            "notes": "空振り時硬直1F増加"
+          }
+        ],
+        "reason": "Cargo 28(29)、備考に空振り追加1F、raw 28。非ホールド空振り条件で28+1=29。公式 持続 9-11 の最終F 11 + 硬直 17 + 空振り時硬直1F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "juri",
+        "moveId": "juri__normal_2_P_M",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "23",
+          "numeric": 23,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "24",
+          "numeric": 24,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/juri.cargo.json",
+        "sourceIndex": 29,
+        "sourceInput": "2MP",
+        "sourceNotation": "23(24)",
+        "sourceNotes": "1f extra recovery on whiff and extends a wider hurtbox until the end of recovery; good combo tool and useful when buffered in neutral; good anti-air for horizontal approaches (hitbox is above her extended fist); SA2 cancel: +15/+8",
+        "officialPath": "staging/official-verification/sources/juri.json",
+        "officialRows": [
+          {
+            "row": 18,
+            "name": "しゃがみ中P（妖撞）",
+            "startup": "6",
+            "active": "6-9",
+            "recovery": "14",
+            "notes": "空振り時硬直1F増加"
+          }
+        ],
+        "reason": "Cargo 23(24)、備考に空振り追加1F、raw 23。非ホールド空振り条件で23+1=24。公式 持続 6-9 の最終F 9 + 硬直 14 + 空振り時硬直1F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "kimberly",
+        "moveId": "kimberly__normal_2_P_M",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "21",
+          "numeric": 21,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "23",
+          "numeric": 23,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/kimberly.cargo.json",
+        "sourceIndex": 40,
+        "sourceInput": "2MP",
+        "sourceNotation": "21(23)",
+        "sourceNotes": "2f extra recovery on whiff; important combo tool; Run~Stop cancel: -1/-9 (OD: +2/-6); special/DR/DI cancel is delayed until after 2nd active frame; extends a hurtbox on whiff until the end of recovery (feet 6-23f, arm 6-15f with partial retraction 16-23f)",
+        "officialPath": "staging/official-verification/sources/kimberly.json",
+        "officialRows": [
+          {
+            "row": 10,
+            "name": "しゃがみ中P（水平手刀）",
+            "startup": "6",
+            "active": "6-8",
+            "recovery": "13",
+            "notes": "空振り時硬直2F増加"
+          }
+        ],
+        "reason": "Cargo 21(23)とraw備考に空振り2F追加。備考の差はDR/DI表現のみ。公式最終8+硬直13+空振り2=23。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "m_bison",
+        "moveId": "m_bison__normal_2_P_M",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "22",
+          "numeric": 22,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "25",
+          "numeric": 25,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json",
+        "sourceIndex": 23,
+        "sourceInput": "2MP",
+        "sourceNotation": "22(25)",
+        "sourceNotes": "3f extra recovery on whiff; great range for a 6f medium (great for buffers and combos); topmost hurtbox on frames 1-8 is vulnerable only to aerial strikes (preventing its use as an anti-air)",
+        "officialPath": "staging/official-verification/sources/m_bison.json",
+        "officialRows": [
+          {
+            "row": 10,
+            "name": "しゃがみ中P（ストレート）",
+            "startup": "6",
+            "active": "6-8",
+            "recovery": "14",
+            "notes": "※空振り時硬直3F増加"
+          }
+        ],
+        "reason": "Cargo 22(25)、備考に空振り追加3F、raw 22。非ホールド空振り条件で22+3=25。公式 持続 6-8 の最終F 8 + 硬直 14 + 空振り時硬直3F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "m_bison",
+        "moveId": "m_bison__special_[2]8_K_none__strength_M",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "53",
+          "numeric": 53,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "58",
+          "numeric": 58,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json",
+        "sourceIndex": 58,
+        "sourceInput": "[2]8K",
+        "sourceNotation": "53/58/63",
+        "sourceNotes": "40f charge time (charge lasts 10f after releasing down direction); button strength determines trajectory (LK close, MK mid, HK far); landing recovery and total frame refers to LK/MK/HK version respectively; Bison is in a crouching state on the final landing recovery frame; can use the OD versions of follow-ups by pressing PP or KK; foot hurtbox is projectile invincible",
+        "officialPath": "staging/official-verification/sources/m_bison.json",
+        "officialRows": [
+          {
+            "row": 50,
+            "name": "中 シャドウライズ",
+            "startup": "",
+            "active": "",
+            "recovery": "全体 58",
+            "notes": "18F～46Fまで、ヘッドプレス(OD版を含む)、デビルリバース(OD版を含む)に派生可能\n9F以降、空中判定"
+          }
+        ],
+        "reason": "同一Cargo [2]8K行58は53/58/63が弱/中/強それぞれの着地後までの全体Fと明記。中の58Fがraw先頭53と共通強度展開で失われ、公式中も58。元noneは弱の53を保持し中展開のみ58。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "m_bison",
+        "moveId": "m_bison__special_[2]8_K_none__strength_H",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "53",
+          "numeric": 53,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "63",
+          "numeric": 63,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json",
+        "sourceIndex": 58,
+        "sourceInput": "[2]8K",
+        "sourceNotation": "53/58/63",
+        "sourceNotes": "40f charge time (charge lasts 10f after releasing down direction); button strength determines trajectory (LK close, MK mid, HK far); landing recovery and total frame refers to LK/MK/HK version respectively; Bison is in a crouching state on the final landing recovery frame; can use the OD versions of follow-ups by pressing PP or KK; foot hurtbox is projectile invincible",
+        "officialPath": "staging/official-verification/sources/m_bison.json",
+        "officialRows": [
+          {
+            "row": 51,
+            "name": "強 シャドウライズ",
+            "startup": "",
+            "active": "",
+            "recovery": "全体 63",
+            "notes": "18F～46Fまで、ヘッドプレス(OD版を含む)、デビルリバース(OD版を含む)に派生可能\n9F以降、空中判定"
+          }
+        ],
+        "reason": "同一Cargo [2]8K行58は53/58/63が弱/中/強それぞれの着地後までの全体Fと明記。強の63Fがraw先頭53と共通強度展開で失われ、公式強も63。元noneは弱の53を保持し強展開のみ63。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "mai",
+        "moveId": "mai__normal_2_K_H",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "33",
+          "numeric": 33,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "36",
+          "numeric": 36,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/mai.cargo.json",
+        "sourceIndex": 36,
+        "sourceInput": "2HK",
+        "sourceNotation": "33(34/36)",
+        "sourceNotes": "1f extra recovery on block; 3f extra recovery on whiff; good hitbox priority vs. low attacks (can low crush many low pokes); has an extended hurtbox on whiff until the end of recovery",
+        "officialPath": "staging/official-verification/sources/mai.json",
+        "officialRows": [
+          {
+            "row": 13,
+            "name": "しゃがみ強K（反り蹴り）",
+            "startup": "9",
+            "active": "9-11",
+            "recovery": "22",
+            "notes": "パニッシュカウンター時ダウン時間増加、ハードノックダウン\n空振り時硬直3F増加\nガード時硬直1F増加"
+          }
+        ],
+        "reason": "Cargo 33(34/36)、備考に空振り追加3F、raw 33。非ホールド空振り条件で33+3=36。公式 持続 9-11 の最終F 11 + 硬直 22 + 空振り時硬直3F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "mai",
+        "moveId": "mai__normal_2_P_M",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "24",
+          "numeric": 24,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "26",
+          "numeric": 26,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/mai.cargo.json",
+        "sourceIndex": 41,
+        "sourceInput": "2MP",
+        "sourceNotation": "24(26)",
+        "sourceNotes": "2f extra recovery on whiff; good range for a cancelable 6f medium; the forward movement makes it riskier to whiff than similar attacks",
+        "officialPath": "staging/official-verification/sources/mai.json",
+        "officialRows": [
+          {
+            "row": 10,
+            "name": "しゃがみ中P（背面ひじ打ち）",
+            "startup": "6",
+            "active": "6-9",
+            "recovery": "15",
+            "notes": "空振り時硬直2F増加"
+          }
+        ],
+        "reason": "Cargo 24(26)、備考に空振り追加2F、raw 24。非ホールド空振り条件で24+2=26。公式 持続 6-9 の最終F 9 + 硬直 15 + 空振り時硬直2F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "mai",
+        "moveId": "mai__normal_5_K_H",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "35",
+          "numeric": 35,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "38",
+          "numeric": 38,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/mai.cargo.json",
+        "sourceIndex": 47,
+        "sourceInput": "5HK",
+        "sourceNotation": "35(38)",
+        "sourceNotes": "3f extra recovery on whiff; Great range for a safe poke; Mai lifts up her leg hurtbox on frames 10-16 making it decent vs. low attacks; grounded Punish Counter causes a crumple state (opponent is airborne for all follow-up hits); airborne Punish Counter puts opponents into limited juggle state; extends a hurtbox 1f before active that is vulnerable to projectiles; extends a hurtbox at mid-height for the first 17 recovery frames, making it more whiff punishable by standing or high-angled crouching buttons",
+        "officialPath": "staging/official-verification/sources/mai.json",
+        "officialRows": [
+          {
+            "row": 7,
+            "name": "立ち強K（背面蹴り）",
+            "startup": "14",
+            "active": "14-16",
+            "recovery": "19",
+            "notes": "空振り時硬直3F増加\nパニッシュカウンター時に膝崩れダウンに　＋22"
+          }
+        ],
+        "reason": "Cargo 35(38)、備考に空振り追加3F、raw 35。非ホールド空振り条件で35+3=38。公式 持続 14-16 の最終F 16 + 硬直 19 + 空振り時硬直3F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "mai",
+        "moveId": "mai__normal_5_P_M",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "26",
+          "numeric": 26,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "28",
+          "numeric": 28,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/mai.cargo.json",
+        "sourceIndex": 54,
+        "sourceInput": "5MP",
+        "sourceNotation": "26(28)",
+        "sourceNotes": "Great range for a cancelable poke; 2f extra recovery on whiff; solid hitbox priority; important combo tool from Punish Counter 2LP (works from max range); has an extended body hurtbox on whiff until the end of recovery and an extended arm hurtbox until frame 15 of recovery",
+        "officialPath": "staging/official-verification/sources/mai.json",
+        "officialRows": [
+          {
+            "row": 4,
+            "name": "立ち中P（扇子突き）",
+            "startup": "8",
+            "active": "8-11",
+            "recovery": "15",
+            "notes": "空振り時硬直2F増加"
+          }
+        ],
+        "reason": "Cargo 26(28)、備考に空振り追加2F、raw 26。非ホールド空振り条件で26+2=28。公式 持続 8-11 の最終F 11 + 硬直 15 + 空振り時硬直2F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "manon",
+        "moveId": "manon__normal_2_P_M",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "20",
+          "numeric": 20,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "24",
+          "numeric": 24,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/manon.cargo.json",
+        "sourceIndex": 26,
+        "sourceInput": "2MP",
+        "sourceNotation": "20(24)",
+        "sourceNotes": "4f extra recovery on whiff; Manon's primary combo starter",
+        "officialPath": "staging/official-verification/sources/manon.json",
+        "officialRows": [
+          {
+            "row": 10,
+            "name": "しゃがみ中P（ヒキテ）",
+            "startup": "7",
+            "active": "7-9",
+            "recovery": "11",
+            "notes": "空振り時硬直4F増加"
+          }
+        ],
+        "reason": "Cargo 20(24)、備考に空振り追加4F、raw 20。非ホールド空振り条件で20+4=24。公式 持続 7-9 の最終F 9 + 硬直 11 + 空振り時硬直4F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "manon",
+        "moveId": "manon__normal_5_K_H",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "40",
+          "numeric": 40,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "43",
+          "numeric": 43,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/manon.cargo.json",
+        "sourceIndex": 33,
+        "sourceInput": "5HK",
+        "sourceNotation": "40(43)",
+        "sourceNotes": "3f extra recovery on block/whiff; incredibly long range poke that can combo into 214LK/214MK on Punish Counter from max range; Punish Counter puts airborne opponents into spinning free juggle state; extends a hurtbox 1f before active that is vulnerable to projectiles; the slow startup and recovery makes it especially vulnerable to Drive Impact",
+        "officialPath": "staging/official-verification/sources/manon.json",
+        "officialRows": [
+          {
+            "row": 7,
+            "name": "立ち強K（ピエ・ドンジュ）",
+            "startup": "15",
+            "active": "15-17",
+            "recovery": "26",
+            "notes": "※地上パニッシュカウンター時+17F\n空中パニッシュカウンター時吹き飛びダウン"
+          }
+        ],
+        "reason": "Cargo 40(43)、備考に空振り追加3F、raw 40。非ホールド空振り条件で40+3=43。公式 持続 15-17 の最終F 17 + 硬直 26。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "manon",
+        "moveId": "manon__special_236_K_H",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "44",
+          "numeric": 44,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "46",
+          "numeric": 46,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/manon.cargo.json",
+        "sourceIndex": 8,
+        "sourceInput": "236HK",
+        "sourceNotation": "44(46)",
+        "sourceNotes": "Strong anti-air but cannot hit cross-up; the 1st hit can combo into SA3 vs. grounded opponents (causes SA3 to incur 15% immediate damage scaling instead of the usual 5%); the final 2 recovery frames can be canceled into any special or super on hit (allows for better juggles); puts opponents into limited juggle state with a higher float state than other meterless versions (but still requires an airborne hit to combo into a follow-up)",
+        "officialPath": "staging/official-verification/sources/manon.json",
+        "officialRows": [
+          {
+            "row": 35,
+            "name": "強 ロン・ポワン",
+            "startup": "14",
+            "active": "14-22",
+            "recovery": "24",
+            "notes": "9-22F　上半身のみ空中判定の打撃・空弾属性に対して無敵\n44-46F　ヒット時に、必殺技、SAキャンセル可能\n初段のみSA3/CAでキャンセル可能"
+          }
+        ],
+        "reason": "Cargo 44(46)で、ヒット時に最後2Fを必殺技へキャンセル可能と明記。公式は最終持続22+硬直24=46、44–46Fはヒット時キャンセル可能区間。派生せず空振りする全体46F。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "manon",
+        "moveId": "manon__special_236_K_OD",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "41",
+          "numeric": 41,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "46",
+          "numeric": 46,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/manon.cargo.json",
+        "sourceIndex": 10,
+        "sourceInput": "236KK",
+        "sourceNotation": "41(46)",
+        "sourceNotes": "Strong anti-air with an enormous hitbox, but cannot hit cross-up; 2nd hit does 400 damage if 1st hit whiffs; the final 5 recovery frames can be canceled into any special or super on hit (allows for better juggles); puts opponents into limited juggle state (has consistent juggle follow-ups); 1st hit can combo into SA3 when canceled (causes SA3 to incur 15% immediate damage scaling instead of the usual 5%); 2nd hit juggles into SA2 when canceled (SA3 cancel only useful if attack is absorbed by armor); the 1st hit has extra range against grounded opponents",
+        "officialPath": "staging/official-verification/sources/manon.json",
+        "officialRows": [
+          {
+            "row": 36,
+            "name": "OD ロン・ポワン",
+            "startup": "8",
+            "active": "8-16",
+            "recovery": "30",
+            "notes": "4-16F　空中判定の打撃・空弾属性に対して無敵\n41-46F　ヒット時に、必殺技、SAキャンセル可能"
+          }
+        ],
+        "reason": "Cargo 41(46)で、ヒット時に最後5Fを必殺技へキャンセル可能と明記。公式は最終持続16+硬直30=46、41–46Fはヒット時キャンセル可能区間。派生せず空振りする全体46F。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "rashid",
+        "moveId": "rashid__normal_2_P_H",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "35",
+          "numeric": 35,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "37",
+          "numeric": 37,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/rashid.cargo.json",
+        "sourceIndex": 33,
+        "sourceInput": "2HP",
+        "sourceNotation": "35(37)",
+        "sourceNotes": "Decent poke that is safe at most ranges and can be buffered into supers; good close range Punish Counter starter (combos into 5HP), but high pushback makes it less reliable at longer ranges; 2 extra recovery frames on whiff; topmost hurtboxes on frames 8-14 are projectile invincible (avoids Sagat's MP/HP Tiger Shot)",
+        "officialPath": "staging/official-verification/sources/rashid.json",
+        "officialRows": [
+          {
+            "row": 12,
+            "name": "しゃがみ強P （グランドスラスト）",
+            "startup": "12",
+            "active": "12-14",
+            "recovery": "21",
+            "notes": "空振り時硬直2F増加"
+          }
+        ],
+        "reason": "Cargo 35(37)、備考に空振り追加2F、raw 35。非ホールド空振り条件で35+2=37。公式 持続 12-14 の最終F 14 + 硬直 21 + 空振り時硬直2F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "rashid",
+        "moveId": "rashid__normal_5_K_M",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "27",
+          "numeric": 27,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "29",
+          "numeric": 29,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/rashid.cargo.json",
+        "sourceIndex": 44,
+        "sourceInput": "5MK",
+        "sourceNotation": "27(29)",
+        "sourceNotes": "Combo starter that links into 5MP or into itself on counter-hit; 2 extra recovery frames on whiff",
+        "officialPath": "staging/official-verification/sources/rashid.json",
+        "officialRows": [
+          {
+            "row": 5,
+            "name": "立ち中K （スコーピオンテイル）",
+            "startup": "8",
+            "active": "8-10",
+            "recovery": "17",
+            "notes": "空振り時硬直2F増加"
+          }
+        ],
+        "reason": "Cargo 27(29)、備考に空振り追加2F、raw 27。非ホールド空振り条件で27+2=29。公式 持続 8-10 の最終F 10 + 硬直 17 + 空振り時硬直2F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "rashid",
+        "moveId": "rashid__special_236_P_L",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "42",
+          "numeric": 42,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "47",
+          "numeric": 47,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/rashid.cargo.json",
+        "sourceIndex": 24,
+        "sourceInput": "236LP",
+        "sourceNotation": "42(47)",
+        "sourceNotes": "Great pressure tool that is safe on block and can blow throw armor; 5f extra recovery on whiff; Counter-hit/Punish Counter bonus advantage applies through all hits (allows for follow-up combo); can be affected by Air Current on frames 2-16; if the 3rd hit whiffs in a Burnout pressure sequence, Rashid is safe at -3 oB",
+        "officialPath": "staging/official-verification/sources/rashid.json",
+        "officialRows": [
+          {
+            "row": 34,
+            "name": "弱 スピニング・ミキサー",
+            "startup": "8",
+            "active": "8-23",
+            "recovery": "19",
+            "notes": "2-17F 気流干渉により性能変化\n空振り時硬直5F増加"
+          }
+        ],
+        "reason": "Cargo 42(47)、備考に空振り追加5F、raw 42。非ホールド空振り条件で42+5=47。公式 持続 8-23 の最終F 23 + 硬直 19 + 空振り時硬直5F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "ryu",
+        "moveId": "ryu__normal_2_P_M",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "22",
+          "numeric": 22,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "24",
+          "numeric": 24,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json",
+        "sourceIndex": 32,
+        "sourceInput": "2MP",
+        "sourceNotation": "22(24)",
+        "sourceNotes": "2f extra recovery on whiff; combo and pressure tool; topmost hurtbox on frames 1-9 is vulnerable only to aerial strikes (preventing its use as an anti-air); extends a wider hurtbox until the end of recovery",
+        "officialPath": "staging/official-verification/sources/ryu.json",
+        "officialRows": [
+          {
+            "row": 10,
+            "name": "しゃがみ中P（ストレート）",
+            "startup": "6",
+            "active": "6-9",
+            "recovery": "13",
+            "notes": "空振り時硬直2F増加"
+          }
+        ],
+        "reason": "Cargo 22(24)、備考に空振り追加2F、raw 22。非ホールド空振り条件で22+2=24。公式 持続 6-9 の最終F 9 + 硬直 13 + 空振り時硬直2F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "ryu",
+        "moveId": "ryu__normal_5_P_M",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "20",
+          "numeric": 20,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "22",
+          "numeric": 22,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json",
+        "sourceIndex": 44,
+        "sourceInput": "5MP",
+        "sourceNotation": "20(22)",
+        "sourceNotes": "2f extra recovery on whiff; useful combo tool with a Target Combo follow-up; extends a wider body hurtbox until the end of recovery",
+        "officialPath": "staging/official-verification/sources/ryu.json",
+        "officialRows": [
+          {
+            "row": 4,
+            "name": "立ち中P（鉤突き）",
+            "startup": "6",
+            "active": "6-9",
+            "recovery": "11",
+            "notes": "空振り時硬直2F増加"
+          }
+        ],
+        "reason": "Cargo 20(22)、備考に空振り追加2F、raw 20。非ホールド空振り条件で20+2=22。公式 持続 6-9 の最終F 9 + 硬直 11 + 空振り時硬直2F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "sagat",
+        "moveId": "sagat__normal_2_P_M",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "25",
+          "numeric": 25,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "28",
+          "numeric": 28,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/sagat.cargo.json",
+        "sourceIndex": 32,
+        "sourceInput": "2MP",
+        "sourceNotation": "25(26/28)",
+        "sourceNotes": "Solid mid-range cancelable poke and buffer tool; 1f extra recovery on block; 3f extra recovery on whiff; significantly more range on active frames 2-3 (more effective linking from +8 or punishing -8 moves); cancelable into 2 different Target Combo follow-ups with different hitconfirm timings (requires Punish Counter or Drive Rush for 2MP~HP combo); topmost hurtbox is vulnerable only to aerial strikes on frames 1-9 (preventing its use as an anti-air), and is projectile invincible on frames 1-14 to avoid High Tiger Shot (frames 15-26 are still vulnerable)",
+        "officialPath": "staging/official-verification/sources/sagat.json",
+        "officialRows": [
+          {
+            "row": 10,
+            "name": "しゃがみ中P（ミドルフック）",
+            "startup": "7",
+            "active": "7-9",
+            "recovery": "16",
+            "notes": "ガード時硬直1F増加\n空振り時硬直3F増加"
+          }
+        ],
+        "reason": "Cargo 25(26/28)、備考に空振り追加3F、raw 25。非ホールド空振り条件で25+3=28。公式 持続 7-9 の最終F 9 + 硬直 16 + 空振り時硬直3F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "sagat",
+        "moveId": "sagat__normal_5_K_H",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "36",
+          "numeric": 36,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "40",
+          "numeric": 40,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/sagat.cargo.json",
+        "sourceIndex": 38,
+        "sourceInput": "5HK",
+        "sourceNotation": "36(40)",
+        "sourceNotes": "Upper Body/Leg hurtbox is anti-air invincible on frames 9-15 (solid anti-air against midrange jumps); cannot hit cross-up; 1st hit forces stand on hit; 2nd hit whiffs on crouching opponents (2f worse on block); 4f extra recovery if both hits whiff; 1st hit deals extra hitstun, allowing a natural combo into 214HK; deals full damage / Drive damage / Meter gain even if only the 2nd hit connects; 1st hit puts airborne opponents into a free juggle state (limited juggle if comboed from a wallsplat or airborne crumple), then air resets on the 2nd hit; 2nd hit only has juggle potential after the 1st hit connects; the first 11 recovery frames extend a wide leg hurtbox making it more easily whiff punished by standing normals; carries counter-hit/Punish Counter advantage through both hits",
+        "officialPath": "staging/official-verification/sources/sagat.json",
+        "officialRows": [
+          {
+            "row": 7,
+            "name": "立ち強K（ハイキック）",
+            "startup": "10",
+            "active": "10-15",
+            "recovery": "21",
+            "notes": "空振り時硬直4F増加\n強制立ち効果"
+          }
+        ],
+        "reason": "Cargo 36(40)、両段空振り時に4F追加。公式も空振り4F増加、最終15+硬直21+4=40。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "sagat",
+        "moveId": "sagat__normal_5_K_L",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "23",
+          "numeric": 23,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "25",
+          "numeric": 25,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/sagat.cargo.json",
+        "sourceIndex": 41,
+        "sourceInput": "5LK",
+        "sourceNotation": "23(25)",
+        "sourceNotes": "Long range but slow startup (more comparable to a medium normal); 2f extra recovery on whiff; great whiff punish tool that combos consistently into 623HP on Punish Counter; input overlap with 6LK Low Step Kick makes it harder to walk forward and poke in neutral; DR cancel is delayed until after 3rd recovery frame",
+        "officialPath": "staging/official-verification/sources/sagat.json",
+        "officialRows": [
+          {
+            "row": 3,
+            "name": "立ち弱K（ローキック）",
+            "startup": "7",
+            "active": "7-8",
+            "recovery": "15",
+            "notes": "空振り時硬直2F増加"
+          }
+        ],
+        "reason": "Cargo 23(25)、備考に空振り追加2F、raw 23。非ホールド空振り条件で23+2=25。公式 持続 7-8 の最終F 8 + 硬直 15 + 空振り時硬直2F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "sagat",
+        "moveId": "sagat__normal_5_P_H",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "40",
+          "numeric": 40,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "43",
+          "numeric": 43,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/sagat.cargo.json",
+        "sourceIndex": 39,
+        "sourceInput": "5HP",
+        "sourceNotation": "40(43)",
+        "sourceNotes": "3f extra recovery on whiff; huge range poke with a hitconfirmable TC follow-up; the first 10 recovery frames extend a wide arm-height hurtbox making it easily whiff punished by standing normals",
+        "officialPath": "staging/official-verification/sources/sagat.json",
+        "officialRows": [
+          {
+            "row": 6,
+            "name": "立ち強P（タイガーストレート）",
+            "startup": "15",
+            "active": "15-18",
+            "recovery": "22",
+            "notes": "空振り時硬直3F増加"
+          }
+        ],
+        "reason": "Cargo 40(43)、備考に空振り追加3F、raw 40。非ホールド空振り条件で40+3=43。公式 持続 15-18 の最終F 18 + 硬直 22 + 空振り時硬直3F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "terry",
+        "moveId": "terry__normal_2_P_M",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "22",
+          "numeric": 22,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "24",
+          "numeric": 24,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json",
+        "sourceIndex": 29,
+        "sourceInput": "2MP",
+        "sourceNotation": "22(23/24)",
+        "sourceNotes": "2f extra recovery on whiff; 1f extra recovery on block; great poke, counterpoke, meaty, and combo tool that can be up to +3 on block; topmost hurtbox on frames 1-9 is vulnerable only to aerial strikes (preventing its use as an anti-air)",
+        "officialPath": "staging/official-verification/sources/terry.json",
+        "officialRows": [
+          {
+            "row": 10,
+            "name": "しゃがみ中P （しゃがみストレート）",
+            "startup": "6",
+            "active": "6-9",
+            "recovery": "13",
+            "notes": "ガード時硬直1F増加\n空振り時硬直2F増加"
+          }
+        ],
+        "reason": "Cargo 22(23/24)、備考に空振り追加2F、raw 22。非ホールド空振り条件で22+2=24。公式 持続 6-9 の最終F 9 + 硬直 13 + 空振り時硬直2F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "yasmine",
+        "moveId": "yasmine__normal_2_P_M",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "24",
+          "numeric": 24,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "26",
+          "numeric": 26,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/yasmine.cargo.json",
+        "sourceIndex": 35,
+        "sourceInput": "2MP",
+        "sourceNotation": "24(22/26)",
+        "sourceNotes": "2f less recovery on block compared to on hit; 2f extra recovery on whiff; great neutral buffer with good range for a 6f medium but slightly more whiff punishable than most similar normals; great pressure tool when used as a meaty or with bonus advantage from Drive Rush or Burnout; Yasmine's only medium button that combos naturally into 236HP and 214MP; topmost hurtbox on frames 1-8 is vulnerable only to aerial strikes (preventing its use as an anti-air); SA2 cancel: +12/+6",
+        "officialPath": "staging/official-verification/sources/yasmine.json",
+        "officialRows": [
+          {
+            "row": 10,
+            "name": "しゃがみ中P（カルモット）",
+            "startup": "6",
+            "active": "6-8",
+            "recovery": "16",
+            "notes": "空振り時硬直2F増加\nガード時硬直2F減少"
+          }
+        ],
+        "reason": "Cargo 24(22/26)、備考に空振り追加2F、raw 24。非ホールド空振り条件で24+2=26。公式 持続 6-8 の最終F 8 + 硬直 16 + 空振り時硬直2F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "yasmine",
+        "moveId": "yasmine__normal_5_P_L",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "15",
+          "numeric": 15,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/yasmine.cargo.json",
+        "sourceIndex": 42,
+        "sourceInput": "5LP",
+        "sourceNotation": "14(15)",
+        "sourceNotes": "Chains into 5LP/2LP/2LK (delay required for consecutive 5LPs) or the 5LP~LP TC if chained quickly; 1f extra recovery on whiff; significantly less pushback on hit/block compared to 2LP for tick throw or DR pressure; SA2 cancel: +3/-2",
+        "officialPath": "staging/official-verification/sources/yasmine.json",
+        "officialRows": [
+          {
+            "row": 2,
+            "name": "立ち弱P（マガアン・ナ・パグラスラス）",
+            "startup": "5",
+            "active": "5-7",
+            "recovery": "7",
+            "notes": "連打キャンセル対応\n空振り時硬直1F増加"
+          }
+        ],
+        "reason": "Cargo 14(15)、備考に空振り追加1F、raw 14。非ホールド空振り条件で14+1=15。公式 持続 5-7 の最終F 7 + 硬直 7 + 空振り時硬直1F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "zangief",
+        "moveId": "zangief__normal_5_P_H",
+        "field": "total",
+        "before": {
+          "status": "confirmed",
+          "display": "40",
+          "numeric": 40,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "42",
+          "numeric": 42,
+          "provenance": "source",
+          "calculation": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/zangief.cargo.json",
+        "sourceIndex": 26,
+        "sourceInput": "5HP",
+        "sourceNotation": "40(42)",
+        "sourceNotes": "Button can be held up to 22f for armored partial charge (armor loses to hitboxes that connect on Zangief's lower body); 10f startup after button release (total startup 16-32f); 2 extra recovery frames on whiff; counter-hit also gives KD +32; puts airborne opponents into limited juggle state",
+        "officialPath": "staging/official-verification/sources/zangief.json",
+        "officialRows": [
+          {
+            "row": 7,
+            "name": "立ち強P（ダイナマイトパンチ）",
+            "startup": "16",
+            "active": "16-18",
+            "recovery": "22",
+            "notes": "カウンター/パニッシュカウンター時吹き飛びダウン\n空振り時硬直2F増加\nボタンホールド時、4F～上半身アーマー判定（1回）\n23F以上ホールドすると性能変化"
+          }
+        ],
+        "reason": "Cargo 40(42)、備考に空振り追加2F、raw 40。非ホールド空振り条件で40+2=42。公式 持続 16-18 の最終F 18 + 硬直 22 + 空振り時硬直2F増加。括弧外を採用した経路で空振り値が落ちた。",
+        "condition": "通常状態・非ホールド・派生なし・空振り",
         "patch": "UNVERIFIED"
       }
     ]

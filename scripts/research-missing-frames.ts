@@ -2,6 +2,7 @@ import { readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { isDeepStrictEqual } from "node:util";
 import { applyCompoundStartup } from "./compound-startup";
 import { applyKdHkdCorrections } from "./kd-hkd-corrections";
+import { restoreWhiffTotalCorrections } from "./whiff-total-corrections";
 import { execFileSync } from "node:child_process";
 import { characterSchema, type Character } from "../src/lib/frame-data/schema";
 import { isQuestionInput, inputKey } from "../src/lib/frame-data/input";
@@ -361,7 +362,9 @@ if (process.argv.includes("--check")) {
         applyCompoundStartup(applyDistanceRanges(applyFrameResearch(old))),
       ),
     );
-    const actual = current.find((c) => c.id === old.id);
+    const currentCharacter = current.find((c) => c.id === old.id);
+    const actual =
+      currentCharacter && restoreWhiffTotalCorrections(currentCharacter);
     if (!isDeepStrictEqual(expected, actual))
       throw new Error(`Unauthorized stage17 record change: ${old.id}`);
   }
@@ -372,6 +375,7 @@ if (process.argv.includes("--check")) {
   delete expectedDecisions.demonRaidNoInput;
   delete expectedDecisions.compoundStartup;
   delete expectedDecisions.kdHkdCorrections;
+  delete expectedDecisions.whiffTotalCorrections;
   expectedDecisions.datasetId = baseline.decisions.datasetId;
   if (!isDeepStrictEqual(expectedDecisions, baseline.decisions))
     throw new Error("Unrelated adoption decision changed");

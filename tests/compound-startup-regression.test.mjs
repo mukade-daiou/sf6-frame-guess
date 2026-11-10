@@ -23,6 +23,8 @@ test("compound corrections preserve every other production field", () => {
     const before = JSON.parse(execFileSync("git", ["show", `${baselineRef}:${path}`]));
     const after = read(path);
     for (const move of before.moves) {
+      const total = read("data/adoption-decisions.json").whiffTotalCorrections.decisions.find((x) => x.characterId === id && x.moveId === move.id);
+      if (total) { assert.deepEqual(move.frames.total, total.before); move.frames.total = total.value; }
       const kd = read("data/adoption-decisions.json").kdHkdCorrections.decisions.find((x) => x.characterId === id && x.moveId === move.id);
       if (kd) {
         assert.deepEqual(move.frames.hit, kd.before);

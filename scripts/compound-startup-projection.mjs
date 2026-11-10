@@ -10,7 +10,18 @@ export function restoreCompoundStartup(character) {
   const kdDecisions =
     JSON.parse(readFileSync("data/adoption-decisions.json", "utf8"))
       .kdHkdCorrections?.decisions || [];
+  const totalDecisions =
+    JSON.parse(readFileSync("data/adoption-decisions.json", "utf8"))
+      .whiffTotalCorrections?.decisions || [];
   for (const move of result.moves) {
+    const total = totalDecisions.find(
+      (d) => d.characterId === result.id && d.moveId === move.id,
+    );
+    if (total) {
+      if (!isDeepStrictEqual(move.frames.total, total.value))
+        throw new Error(`Unauthorized whiff total: ${move.id}`);
+      move.frames.total = structuredClone(total.before);
+    }
     const kd = kdDecisions.find(
       (d) => d.characterId === result.id && d.moveId === move.id,
     );
