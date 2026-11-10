@@ -35,6 +35,14 @@ export function restoreCompoundStartup(character: Character): Character {
   );
   const result = structuredClone(character);
   for (const move of result.moves) {
+    const kd = (policy.kdHkdCorrections?.decisions ?? []).find(
+      (item: any) => item.characterId === result.id && item.moveId === move.id,
+    );
+    if (kd) {
+      if (!isDeepStrictEqual(move.frames.hit, kd.value))
+        throw new Error(`Unexpected KD/HKD: ${move.id}`);
+      move.frames.hit = kd.before;
+    }
     const sourceId = move.strengthExpansion?.sourceMoveId || move.id;
     const d = (policy.compoundStartup?.decisions ?? []).find(
       (item: any) => item.characterId === result.id && item.moveId === sourceId,

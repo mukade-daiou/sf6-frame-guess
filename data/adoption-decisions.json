@@ -1,5 +1,5 @@
 {
-  "datasetId": "compound-startup-2026-11-11-r1",
+  "datasetId": "kd-hkd-corrections-2026-11-11-r1",
   "compoundStartup": {
     "basis": "ユーザー指定: 弾出現と距離依存の攻撃発生を区別。公式取得2026-11-10、パッチ未確認。",
     "decisions": [
@@ -13,8 +13,16 @@
         "officialRows": [50, 53, 56],
         "officialValue": "17",
         "reason": "非ホールドの弾出現17F。距離到達時間と区別。",
-        "before": { "status": "confirmed", "display": "11", "numeric": 11 },
-        "value": { "status": "confirmed", "display": "17", "numeric": 17 }
+        "before": {
+          "status": "confirmed",
+          "display": "11",
+          "numeric": 11
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "17",
+          "numeric": 17
+        }
       },
       {
         "characterId": "ed",
@@ -26,8 +34,16 @@
         "officialRows": [47],
         "officialValue": "16",
         "reason": "公式の弱・非ホールド発生。",
-        "before": { "status": "confirmed", "display": "11", "numeric": 11 },
-        "value": { "status": "confirmed", "display": "16", "numeric": 16 }
+        "before": {
+          "status": "confirmed",
+          "display": "11",
+          "numeric": 11
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "16",
+          "numeric": 16
+        }
       },
       {
         "characterId": "ed",
@@ -39,8 +55,16 @@
         "officialRows": [49],
         "officialValue": "20",
         "reason": "公式の中・非ホールド発生。",
-        "before": { "status": "confirmed", "display": "15", "numeric": 15 },
-        "value": { "status": "confirmed", "display": "20", "numeric": 20 }
+        "before": {
+          "status": "confirmed",
+          "display": "15",
+          "numeric": 15
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "20",
+          "numeric": 20
+        }
       },
       {
         "characterId": "ed",
@@ -52,8 +76,16 @@
         "officialRows": [51],
         "officialValue": "17",
         "reason": "公式の強・非ホールド発生。",
-        "before": { "status": "confirmed", "display": "12", "numeric": 12 },
-        "value": { "status": "confirmed", "display": "17", "numeric": 17 }
+        "before": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "17",
+          "numeric": 17
+        }
       },
       {
         "characterId": "jp",
@@ -65,7 +97,11 @@
         "officialRows": [50],
         "officialValue": "22",
         "reason": "相手に到達後8Fで攻撃、長距離では増加。",
-        "before": { "status": "confirmed", "display": "14", "numeric": 14 },
+        "before": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14
+        },
         "value": {
           "status": "conditional",
           "display": "22~",
@@ -89,7 +125,11 @@
         "officialRows": [51],
         "officialValue": "26",
         "reason": "相手に到達後12Fで攻撃、長距離では増加。",
-        "before": { "status": "confirmed", "display": "14", "numeric": 14 },
+        "before": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14
+        },
         "value": {
           "status": "conditional",
           "display": "26~",
@@ -113,7 +153,11 @@
         "officialRows": [52],
         "officialValue": "26",
         "reason": "相手に到達後12Fで攻撃、長距離では増加。",
-        "before": { "status": "confirmed", "display": "14", "numeric": 14 },
+        "before": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14
+        },
         "value": {
           "status": "conditional",
           "display": "26~",
@@ -7340,5 +7384,2789 @@
         }
       ]
     }
+  },
+  "kdHkdCorrections": {
+    "basis": "保存原典のKD/HKD後有利Fを通常ヒット値へ誤変換。公式資料取得2026-11-10、対象パッチUNVERIFIED。",
+    "decisions": [
+      {
+        "characterId": "akuma",
+        "moveId": "akuma__normal_2_K_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+40",
+          "numeric": 40
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json",
+        "sourceIndex": 37,
+        "sourceInput": "2HK",
+        "sourceNotation": "KD +40(+37)",
+        "sourceNotes": "6f extra recovery on block; good range and hitbox priority; has some juggle potential (no Hard Knockdown when juggled into); KD +37 when juggled into (like after 214LK); on block, always plays out a fixed 29f recovery (cannot be made safer with meaty timing)",
+        "official": {
+          "path": "staging/official-verification/sources/akuma.json",
+          "rows": [
+            {
+              "row": 13,
+              "name": "しゃがみ強K（刎脚）",
+              "hit": "D",
+              "notes": "パニッシュカウンター時ダウン時間増加、ハードノックダウン",
+              "commands": [
+                {
+                  "motion": "2",
+                  "button": "K",
+                  "strength": "H",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "akuma",
+        "moveId": "akuma__special_214_K_M",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+41",
+          "numeric": 41
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json",
+        "sourceIndex": 9,
+        "sourceInput": "214MK",
+        "sourceNotation": "KD +41(38)",
+        "sourceNotes": "2 hits; whiffs on crouching opponents; cannot hit cross-up; puts opponent into limited juggle state (follow-up requires higher juggle connect, like after wallsplat); 2nd hit has 3f worse KD advantage; -28 oB refers to fuzzy guard scenario where 1st hit can connect vs. crouch block",
+        "official": {
+          "path": "staging/official-verification/sources/akuma.json",
+          "rows": [
+            {
+              "row": 51,
+              "name": "中 竜巻斬空脚",
+              "hit": "D",
+              "notes": "5-38F　空中判定",
+              "commands": [
+                {
+                  "motion": "214",
+                  "button": "K",
+                  "strength": "M",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "akuma",
+        "moveId": "akuma__special_236_P_OD",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+55",
+          "numeric": 55
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json",
+        "sourceIndex": 33,
+        "sourceInput": "236PP",
+        "sourceNotation": "KD +55",
+        "sourceNotes": "2-hit OD projectile; holding buttons for 24f gives the fully charged 3-hit version; holding button 9-23f extends the startup while still giving uncharged version; projectile hitbox comes out 4f after button release; puts airborne opponents into limited juggle state; slight hurtbox extension on legs from frame 12~ and on arms (projectile invuln) from frame 16~",
+        "official": {
+          "path": "staging/official-verification/sources/akuma.json",
+          "rows": [
+            {
+              "row": 40,
+              "name": "OD 豪波動拳",
+              "hit": "D",
+              "notes": "25F以上ホールドすると性能変化",
+              "commands": [
+                {
+                  "motion": "236",
+                  "button": "P",
+                  "strength": "OD",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "cammy",
+        "moveId": "cammy__special_236_K_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+29",
+          "numeric": 29
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cammy.cargo.json",
+        "sourceIndex": 8,
+        "sourceInput": "236HK",
+        "sourceNotation": "KD +29(+48)",
+        "sourceNotes": "Only 1st hit is super cancelable (very low damage route); holding HK results in a powered up version",
+        "official": {
+          "path": "staging/official-verification/sources/cammy.json",
+          "rows": [
+            {
+              "row": 29,
+              "name": "強 スパイラルアロー",
+              "hit": "D",
+              "notes": "18-33F　空中判定",
+              "commands": [
+                {
+                  "motion": "236",
+                  "button": "K",
+                  "strength": "H",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "cammy",
+        "moveId": "cammy__special_236_K_L",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+26",
+          "numeric": 26
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cammy.cargo.json",
+        "sourceIndex": 10,
+        "sourceInput": "236LK",
+        "sourceNotation": "KD +26(+48)",
+        "sourceNotes": "Can be spaced safely; useful in corner juggle routes after 5HP~HK, DR~4HK > 4HK, or blocked Drive Impact",
+        "official": {
+          "path": "staging/official-verification/sources/cammy.json",
+          "rows": [
+            {
+              "row": 27,
+              "name": "弱 スパイラルアロー",
+              "hit": "D",
+              "notes": "9-24F　空中判定",
+              "commands": [
+                {
+                  "motion": "236",
+                  "button": "K",
+                  "strength": "L",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "cammy",
+        "moveId": "cammy__special_236_K_M",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+26",
+          "numeric": 26
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cammy.cargo.json",
+        "sourceIndex": 11,
+        "sourceInput": "236MK",
+        "sourceNotation": "KD +26(+48)",
+        "sourceNotes": "Can be spaced safely; best version for buffers in neutral; useful in corner juggle routes into 623K",
+        "official": {
+          "path": "staging/official-verification/sources/cammy.json",
+          "rows": [
+            {
+              "row": 28,
+              "name": "中 スパイラルアロー",
+              "hit": "D",
+              "notes": "9-26F　空中判定",
+              "commands": [
+                {
+                  "motion": "236",
+                  "button": "K",
+                  "strength": "M",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "chunli",
+        "moveId": "chunli__special_[2]8_K_OD",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+55",
+          "numeric": 55
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/chunli.cargo.json",
+        "sourceIndex": 72,
+        "sourceInput": "[2]8KK",
+        "sourceNotation": "KD +55(+41)",
+        "sourceNotes": "30f charge time (charge lasts 12f after releasing down direction); no charge required if canceled from Stance normals; puts opponent into limited juggle state (juggle follow-up only possible vs. grounded opponents); combos from medium normals; cannot hit cross-up",
+        "official": {
+          "path": "staging/official-verification/sources/chunli.json",
+          "rows": [
+            {
+              "row": 55,
+              "name": "OD スピニングバードキック",
+              "hit": "D",
+              "notes": "14～63F　空中判定",
+              "commands": [
+                {
+                  "motion": "28",
+                  "button": "K",
+                  "strength": "OD",
+                  "unknown": [],
+                  "charge": true
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "cviper",
+        "moveId": "cviper__special_214_P_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+21",
+          "numeric": 21
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json",
+        "sourceIndex": 3,
+        "sourceInput": "214HP",
+        "sourceNotation": "KD +21<br>(KD +18~35)",
+        "sourceNotes": "Upward trajectory for juggles and anti-airs; cannot hit cross-up; combos from all light normals; can whiff in long-range cancels like 5MK > HJC 214HP; startup can be canceled into Feint by inputting K (feint occurs after 6 startup frames, leading to the best advantage of all feint cancels); feint-canceled version still maintains anti-air invincibility on frames 1-6, allowing C.Viper to \"spot dodge\" some airborne attacks with precise timing for a better punish; variable knockdown advantage on airborne opponents; cancelable into Tracer Combination (6PP) on hit only (can whiff on high juggled opponents)",
+        "official": {
+          "path": "staging/official-verification/sources/cviper.json",
+          "rows": [
+            {
+              "row": 29,
+              "name": "強 サンダースラップ",
+              "hit": "D",
+              "notes": "1-9F　空中判定の打撃・空弾属性に対して無敵\n9-31F　空中判定\n6F目にフェイントに派生可\n17F目にヒット時専用技に派生可",
+              "commands": [
+                {
+                  "motion": "214",
+                  "button": "P",
+                  "strength": "H",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "dee_jay",
+        "moveId": "dee_jay__normal_2_K_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+33",
+          "numeric": 33
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/dee_jay.cargo.json",
+        "sourceIndex": 28,
+        "sourceInput": "2HK",
+        "sourceNotation": "HKD +33(+42)",
+        "sourceNotes": "Can anti-air (solid hitbox, but slow startup); puts airborne opponents into limited juggle state (better juggle adv. on CH/PC)",
+        "official": {
+          "path": "staging/official-verification/sources/dee_jay.json",
+          "rows": [
+            {
+              "row": 13,
+              "name": "しゃがみ強K （スライディングヒールアッパー）",
+              "hit": "D",
+              "notes": "カウンター/パニッシュカウンター時ダウン時間延長",
+              "commands": [
+                {
+                  "motion": "2",
+                  "button": "K",
+                  "strength": "H",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "dee_jay",
+        "moveId": "dee_jay__special_[2]8_K_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+42",
+          "numeric": 42
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/dee_jay.cargo.json",
+        "sourceIndex": 68,
+        "sourceInput": "[2]8HK",
+        "sourceNotation": "KD +42(+37)",
+        "sourceNotes": "40f charge time (holds charge for 12f after release); whiffs on crouching opponents unless they extend a vertical attack hurtbox; gives a perfect safe jump setup when connecting vs. grounded opponents; when juggled after [2]8MK, the +37 KD Adv. sets up a safe jump with j.2LK; last hit ends juggle state due to +100 juggle count increase; cannot hit cross-up",
+        "official": {
+          "path": "staging/official-verification/sources/dee_jay.json",
+          "rows": [
+            {
+              "row": 41,
+              "name": "強 ジャックナイフマキシマム",
+              "hit": "D",
+              "notes": "5-51F 空中判定\n1-9F 空中判定の打撃・空弾属性に対して無敵\n5-6F　投げに対して無敵",
+              "commands": [
+                {
+                  "motion": "28",
+                  "button": "K",
+                  "strength": "H",
+                  "unknown": [],
+                  "charge": true
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "dhalsim",
+        "moveId": "dhalsim__normal_2_K_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+22",
+          "numeric": 22
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/dhalsim.cargo.json",
+        "sourceIndex": 17,
+        "sourceInput": "2HK",
+        "sourceNotation": "HKD +22(+37)",
+        "sourceNotes": "Long range slide; low profile 8-39f; best version of slide for countering projectiles; has juggle potential (no longer a Hard Knockdown if juggled into)",
+        "official": {
+          "path": "staging/official-verification/sources/dhalsim.json",
+          "rows": [
+            {
+              "row": 13,
+              "name": "しゃがみ強K（ロングスライディング）",
+              "hit": "D",
+              "notes": "カウンター/パニッシュカウンター時ダウン時間増加",
+              "commands": [
+                {
+                  "motion": "2",
+                  "button": "K",
+                  "strength": "H",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "dhalsim",
+        "moveId": "dhalsim__special_63214_P_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+45",
+          "numeric": 45
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/dhalsim.cargo.json",
+        "sourceIndex": 41,
+        "sourceInput": "63214HP",
+        "sourceNotation": "KD +45(+47)",
+        "sourceNotes": "3-hit projectile hitbox (only 1-hit if final active frame connects, otherwise all 3 hits come out); hitbox range increases until reaching max range on 3rd active frame; slightly better advantage at max range; on Perfect Parry, opponent only has 1f recovery despite no screen freeze; SA3 cancel has 2f startup to ensure combo consistency",
+        "official": {
+          "path": "staging/official-verification/sources/dhalsim.json",
+          "rows": [
+            {
+              "row": 52,
+              "name": "強 ヨガフレイム",
+              "hit": "D",
+              "notes": "",
+              "commands": [
+                {
+                  "motion": "63214",
+                  "button": "P",
+                  "strength": "H",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "e_honda",
+        "moveId": "e_honda__normal_2_K_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+30",
+          "numeric": 30
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+        "sourceIndex": 21,
+        "sourceInput": "2HK",
+        "sourceNotation": "KD +30(+39)",
+        "sourceNotes": "Has juggle potential; 2nd hit is behind E. Honda (safe on block and better KD Adv. if it connects); 2nd hit puts airborne opponents into limited juggle state (useful in some side-switch juggles)",
+        "official": {
+          "path": "staging/official-verification/sources/e_honda.json",
+          "rows": [
+            {
+              "row": 13,
+              "name": "しゃがみ強K（土俵払い）",
+              "hit": "D",
+              "notes": "パニッシュカウンター時ダウン時間増加、ハードノックダウン",
+              "commands": [
+                {
+                  "motion": "2",
+                  "button": "K",
+                  "strength": "H",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "e_honda",
+        "moveId": "e_honda__special_[2]8_K_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+23",
+          "numeric": 23
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+        "sourceIndex": 60,
+        "sourceInput": "[2]8HK",
+        "sourceNotation": "HKD +23[+27]",
+        "sourceNotes": "[] refers to damage on cross-up version of downward smash; () refers to total startup on the overhead downward smash vs. standing opponents (2nd hit becomes active mid-air on frame 37); downward smash has 1f better KD Adv. vs. crouching opponents; 40f charge time (holds charge for 12f after releasing down direction); 1st hit whiffs on crouching opponents and cannot hit cross-up; can alter trajectory on the way up by holding forward/back",
+        "official": {
+          "path": "staging/official-verification/sources/e_honda.json",
+          "rows": [
+            {
+              "row": 42,
+              "name": "強 スーパー百貫落とし",
+              "hit": "D",
+              "notes": "めくり性能\n7-42F　空中判定\n下降部分のみパニッシュカウンターで、床バウンド\n下降のめくり部分は個別ダメージ（800）\n下降部分ヒット時、ハードノックダウン",
+              "commands": [
+                {
+                  "motion": "28",
+                  "button": "K",
+                  "strength": "H",
+                  "unknown": [],
+                  "charge": true
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "e_honda",
+        "moveId": "e_honda__special_[2]8_K_L",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+23",
+          "numeric": 23
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+        "sourceIndex": 62,
+        "sourceInput": "[2]8LK",
+        "sourceNotation": "HKD +23[+27]",
+        "sourceNotes": "[] refers to damage on cross-up version of downward smash; () refers to total startup on the overhead downward smash vs. standing opponents (2nd hit becomes active mid-air on frame 41); downward smash has 1f better KD Adv. vs. crouching opponents; 40f charge time (holds charge for 12f after releasing down direction); 1st hit whiffs on crouching opponents and cannot hit cross-up; can alter trajectory on the way up by holding forward/back",
+        "official": {
+          "path": "staging/official-verification/sources/e_honda.json",
+          "rows": [
+            {
+              "row": 40,
+              "name": "弱 スーパー百貫落とし",
+              "hit": "D",
+              "notes": "めくり性能\n7-48F　空中判定\n下降部分のみパニッシュカウンターで、床バウンド\n下降のめくり部分は個別ダメージ（800）\n下降部分ヒット時、ハードノックダウン",
+              "commands": [
+                {
+                  "motion": "28",
+                  "button": "K",
+                  "strength": "L",
+                  "unknown": [],
+                  "charge": true
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "e_honda",
+        "moveId": "e_honda__special_[2]8_K_M",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+23",
+          "numeric": 23
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+        "sourceIndex": 63,
+        "sourceInput": "[2]8MK",
+        "sourceNotation": "HKD +23[+27]",
+        "sourceNotes": "[] refers to damage on cross-up version of downward smash; () refers to total startup on the overhead downward smash vs. standing opponents (2nd hit becomes active mid-air on frame 39); downward smash has 1f better KD Adv. vs. crouching opponents; 40f charge time (holds charge for 12f after releasing down direction); 1st hit whiffs on crouching opponents and cannot hit cross-up; can alter trajectory on the way up by holding forward/back",
+        "official": {
+          "path": "staging/official-verification/sources/e_honda.json",
+          "rows": [
+            {
+              "row": 41,
+              "name": "中 スーパー百貫落とし",
+              "hit": "D",
+              "notes": "めくり性能\n7-45F　空中判定\n下降部分のみパニッシュカウンターで、床バウンド\n下降のめくり部分は個別ダメージ（800）\n下降部分ヒット時、ハードノックダウン",
+              "commands": [
+                {
+                  "motion": "28",
+                  "button": "K",
+                  "strength": "M",
+                  "unknown": [],
+                  "charge": true
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "e_honda",
+        "moveId": "e_honda__special_[2]8_K_OD",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+23",
+          "numeric": 23
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+        "sourceIndex": 61,
+        "sourceInput": "[2]8KK",
+        "sourceNotation": "HKD +23[+27]",
+        "sourceNotes": "[] refers to damage on cross-up version of downward smash; () refers to total startup on the overhead downward smash vs. standing opponents (2nd hit becomes active mid-air on frame 31); downward smash has 1f better KD Adv. vs. crouching opponents; 40f charge time (holds charge for 12f after releasing down direction); 1st hit whiffs on crouching opponents and cannot hit cross-up; can alter trajectory on the way up by holding forward/back; holding LK or MK will cause Honda to hang mid-air before starting his descent (LK 4f longer, MK 2f longer)",
+        "official": {
+          "path": "staging/official-verification/sources/e_honda.json",
+          "rows": [
+            {
+              "row": 43,
+              "name": "OD スーパー百貫落とし",
+              "hit": "D",
+              "notes": "めくり性能\n5-17F　空中判定の打撃・空弾属性に対して無敵\n5-13F　投げに対して無敵\n5-39F　空中判定\n下降部分のみパニッシュカウンターで、床バウンド\n下降のめくり部分は個別ダメージ（800）\n下降部分ヒット時、ハードノックダウン",
+              "commands": [
+                {
+                  "motion": "28",
+                  "button": "K",
+                  "strength": "OD",
+                  "unknown": [],
+                  "charge": true
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "e_honda",
+        "moveId": "e_honda__special_[4]6_P_OD",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+36",
+          "numeric": 36
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+        "sourceIndex": 68,
+        "sourceInput": "[4]6PP",
+        "sourceNotation": "KD +36(+37)",
+        "sourceNotes": "2 hits if used from close range; 2nd hit continues until it reaches opponent or edge of screen (variable Active and Total frame count); 7f extra landing recovery on block; 40f charge time (charge lasts 10f after releasing back direction); 1 hit of armor before active frames, then another hit of armor that lasts until end of active frames; armor has fixed 7f hitstop that allows it to punish safe jumps using Medium/Heavy air normals (Light safe jumps can still block OD Headbutt); always -20 on block regardless of how meaty it connects; from frame 26 onward, Honda transitions to his 30f recovery animation if he switches sides with the opponent",
+        "official": {
+          "path": "staging/official-verification/sources/e_honda.json",
+          "rows": [
+            {
+              "row": 39,
+              "name": "OD スーパー頭突き",
+              "hit": "D",
+              "notes": "1-持続終了　 アーマー判定（2回）\n26F目以降で相手との位置関係が入れ替わった場合、画面端に到達した場合、終了アクションへ移行\n14-　空中判定\n動作中常に被パニッシュカウンター判定",
+              "commands": [
+                {
+                  "motion": "46",
+                  "button": "P",
+                  "strength": "OD",
+                  "unknown": [],
+                  "charge": true
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "elena",
+        "moveId": "elena__special_236_K_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+40",
+          "numeric": 40
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/elena.cargo.json",
+        "sourceIndex": 15,
+        "sourceInput": "236HK",
+        "sourceNotation": "KD +40~45",
+        "sourceNotes": "Farthest distance; whiffs on crouching opponents; Low Crush 23-43f; puts opponents into limited juggle state with follow-ups like 623HK possible in the corner; 4f extra recovery on block/whiff; KD Advantage refers to grounded hits (varies against airborne opponents)",
+        "official": {
+          "path": "staging/official-verification/sources/elena.json",
+          "rows": [
+            {
+              "row": 37,
+              "name": "強 ライノホーン",
+              "hit": "D",
+              "notes": "21-45F　空中判定\nヒット時硬直4F減少",
+              "commands": [
+                {
+                  "motion": "236",
+                  "button": "K",
+                  "strength": "H",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "elena",
+        "moveId": "elena__special_236_K_L",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+39",
+          "numeric": 39
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/elena.cargo.json",
+        "sourceIndex": 18,
+        "sourceInput": "236LK",
+        "sourceNotation": "KD +39~44",
+        "sourceNotes": "Shortest distance; whiffs on crouching opponents; Low Crush 15-34f; puts opponents into limited juggle state with follow-ups possible in the corner; 3f extra recovery on block/whiff; KD Advantage refers to grounded hits (varies against airborne opponents)",
+        "official": {
+          "path": "staging/official-verification/sources/elena.json",
+          "rows": [
+            {
+              "row": 35,
+              "name": "弱 ライノホーン",
+              "hit": "D",
+              "notes": "13-36F　空中判定\nヒット時硬直3F減少",
+              "commands": [
+                {
+                  "motion": "236",
+                  "button": "K",
+                  "strength": "L",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "elena",
+        "moveId": "elena__special_236_K_M",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+39",
+          "numeric": 39
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/elena.cargo.json",
+        "sourceIndex": 20,
+        "sourceInput": "236MK",
+        "sourceNotation": "KD +39~44",
+        "sourceNotes": "Medium distance; whiffs on crouching opponents; Low Crush 19-39f; puts opponents into limited juggle state with follow-ups possible in the corner; 4f extra recovery on block/whiff; KD Advantage refers to grounded hits (varies against airborne opponents)",
+        "official": {
+          "path": "staging/official-verification/sources/elena.json",
+          "rows": [
+            {
+              "row": 36,
+              "name": "中 ライノホーン",
+              "hit": "D",
+              "notes": "17-41F　空中判定\nヒット時硬直4F減少",
+              "commands": [
+                {
+                  "motion": "236",
+                  "button": "K",
+                  "strength": "M",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "elena",
+        "moveId": "elena__special_236_K_OD",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+43",
+          "numeric": 43
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/elena.cargo.json",
+        "sourceIndex": 17,
+        "sourceInput": "236KK",
+        "sourceNotation": "KD +43~49",
+        "sourceNotes": "Whiffs on crouching opponents; Low Crush 13-35f; puts opponents into limited juggle state with follow-ups possible anywhere on the screen; some hits can whiff under high airborne opponents (at certain heights, allows a sideswitch juggle); 6f extra recovery on block/whiff; KD Advantage refers to grounded hits (varies against airborne opponents)",
+        "official": {
+          "path": "staging/official-verification/sources/elena.json",
+          "rows": [
+            {
+              "row": 38,
+              "name": "OD ライノホーン",
+              "hit": "D",
+              "notes": "11-38F　空中判定\nヒット時硬直6F減少",
+              "commands": [
+                {
+                  "motion": "236",
+                  "button": "K",
+                  "strength": "OD",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "jp",
+        "moveId": "jp__special_22_P_OD",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+57",
+          "numeric": 57
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+        "sourceIndex": 13,
+        "sourceInput": "22PP",
+        "sourceNotation": "KD +57(+50)",
+        "sourceNotes": "Spawns two separate 1-hit OD projectiles; spike position depends on button combination (LP+MP close, LP+HP mid, MP+HP far); each spike appears from the ground and travels upward (takes 3f to reach max height); in the corner, all versions stop at the edge of the screen; puts opponent into limited juggle state on hit (can juggle into a meterless Triglav afterward); useful tool for zoning, juggles, and block pressure (can be very plus on block with meaty timing); frame advantage can increase slightly if the 2 spike hits are staggered",
+        "official": {
+          "path": "staging/official-verification/sources/jp.json",
+          "rows": [
+            {
+              "row": 33,
+              "name": "OD 弱 トリグラフ",
+              "hit": "D",
+              "notes": "",
+              "commands": [
+                {
+                  "motion": "22",
+                  "button": "P",
+                  "strength": "OD",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "OD基本は弱P+中P。公式OD弱の入力画像と対応"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "jp",
+        "moveId": "jp__special_236_K_L",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+42",
+          "numeric": 42
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+        "sourceIndex": 20,
+        "sourceInput": "236LK",
+        "sourceNotation": "KD +42~",
+        "sourceNotes": "Spawns a \"ghost\" that travels toward opponent and clashes with 1-hit non-OD projectiles; upon reaching the opponent, begins an 8f projectile attack; if the opponent moves forward quickly, it is possible to dodge the projectile entire since it is not active while traveling; from longer range, total startup increases and grants better frame advantage; cannot be used while SA2 is active; projectile speed decelerates by 0.01/frame when in proximity of opponent",
+        "official": {
+          "path": "staging/official-verification/sources/jp.json",
+          "rows": [
+            {
+              "row": 50,
+              "name": "弱 トルバラン",
+              "hit": "D",
+              "notes": "発生は密着で発動した場合の数値",
+              "commands": [
+                {
+                  "motion": "236",
+                  "button": "K",
+                  "strength": "L",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "jp",
+        "moveId": "jp__special_236_K_OD",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+66",
+          "numeric": 66
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+        "sourceIndex": 19,
+        "sourceInput": "236KK",
+        "sourceNotation": "KD +66~",
+        "sourceNotes": "Spawns a \"ghost\" that travels toward opponent with 2-hit OD projectile priority; upon reaching the opponent, begins an OD projectile attack with 8f startup; after clashing with 1-hit OD projectile, only the 1st hit of the projectile attack will come out; SA2 cancel is a true blockstring or combo into the projectile attacks; if the opponent moves forward quickly, it is possible to dodge the projectile entire since it is not active while traveling; from longer range, total startup increases and grants better frame advantage; cannot be used while SA2 is active; if 1st hit is Perfect Parried, leaves a large gap where JP can be punished if close enough; projectile speed decelerates by 0.01/frame when in proximity of opponent",
+        "official": {
+          "path": "staging/official-verification/sources/jp.json",
+          "rows": [
+            {
+              "row": 53,
+              "name": "OD トルバラン",
+              "hit": "D",
+              "notes": "発生は密着で発動した場合の数値\n初段のみSA2/SA3/CAでキャンセル可能",
+              "commands": [
+                {
+                  "motion": "236",
+                  "button": "K",
+                  "strength": "OD",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "jp",
+        "moveId": "jp__special_236_P_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+67",
+          "numeric": 67
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+        "sourceIndex": 18,
+        "sourceInput": "236HP",
+        "sourceNotation": "KD +67(+87)",
+        "sourceNotes": "1st hit is a strike hitbox that clashes with non-OD projectiles; 2nd hit is a 1-hit non-OD projectile (but can be Perfect Parried like a strike); together, both hits can nullify a 2-hit non-OD projectile (though the large gap between hits makes this impractical); 2nd hit has more range than the 1st hit; causes a wall bounce on hit (limited juggle state); cannot hit cross-up (behind JP); direct SA3 cancel will not usually juggle; 8f hitstop when clashing with opponent's projectile; 1st hit has 3f extra recovery when Perfect Parried, allowing a Drive Impact punish (recovery is unchanged if the 2nd attack hits opponent); 2nd hit expands if the 1st hit connects (for combo consistency)",
+        "official": {
+          "path": "staging/official-verification/sources/jp.json",
+          "rows": [
+            {
+              "row": 38,
+              "name": "強 ストリボーグ",
+              "hit": "D",
+              "notes": "ジャストパリィ時はドライブゲージを10000増加\n飛び道具相殺判定あり（1回）\nジャストパリィ時硬直3F増加",
+              "commands": [
+                {
+                  "motion": "236",
+                  "button": "P",
+                  "strength": "H",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "jp",
+        "moveId": "jp__special_236_P_OD",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+56",
+          "numeric": 56
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+        "sourceIndex": 24,
+        "sourceInput": "236PP",
+        "sourceNotation": "KD +56(+72)",
+        "sourceNotes": "1st hit is a strike hitbox that clashes with OD projectiles; 2nd hit is a 1-hit OD projectile (but can be Perfect Parried like a strike); together, both hits can nullify a 2-hit OD projectile; 2nd hit has more range than the 1st hit; causes a wall bounce on hit (limited juggle state); cannot hit cross-up (behind JP); SA3 cancel will whiff at point blank (but works consistently after canceling normals into 236PP); 8f hitstop when clashing with opponent's projectile; 1st hit has 3f extra recovery when Perfect Parried, allowing a Drive Impact punish (recovery is unchanged if the 2nd attack hits opponent); 2nd hit expands if the 1st hit connects (for combo consistency); 2nd hit does double damage when the 1st hit whiffs",
+        "official": {
+          "path": "staging/official-verification/sources/jp.json",
+          "rows": [
+            {
+              "row": 39,
+              "name": "OD ストリボーグ",
+              "hit": "D",
+              "notes": "ジャストパリィ時はドライブゲージを10000増加\n飛び道具相殺判定あり（1回）\nジャストパリィ時硬直3F増加\n初段のみSA2/SA3/CAでキャンセル可能",
+              "commands": [
+                {
+                  "motion": "236",
+                  "button": "P",
+                  "strength": "OD",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "kimberly",
+        "moveId": "kimberly__special_236_P_M",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+37",
+          "numeric": 37
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/kimberly.cargo.json",
+        "sourceIndex": 33,
+        "sourceInput": "236MP",
+        "sourceNotation": "KD +37<br>(KD +26)",
+        "sourceNotes": "2nd hit only comes out on hit; () refers to reduced KD Adv. when juggled into; (note: frame display shows 3f extra block recovery, but this is a bug - total frame count remains unchanged)",
+        "official": {
+          "path": "staging/official-verification/sources/kimberly.json",
+          "rows": [
+            {
+              "row": 57,
+              "name": "中 流転一文字",
+              "hit": "D",
+              "notes": "※ヒット時のみ2段目派生",
+              "commands": [
+                {
+                  "motion": "236",
+                  "button": "P",
+                  "strength": "M",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "lily",
+        "moveId": "lily__special_236_K_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+37",
+          "numeric": 37
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json",
+        "sourceIndex": 11,
+        "sourceInput": "236HK",
+        "sourceNotation": "KD +37(+49)",
+        "sourceNotes": "Can be spaced out for better frame advantage, allowing a strike/throw mixup on block; puts opponent into limited juggle state on hit (corner juggle follow-up is possible when hitting on active frame 9 or later)",
+        "official": {
+          "path": "staging/official-verification/sources/lily.json",
+          "rows": [
+            {
+              "row": 35,
+              "name": "強 コンドルスパイア",
+              "hit": "D",
+              "notes": "11-39F　空中判定",
+              "commands": [
+                {
+                  "motion": "236",
+                  "button": "K",
+                  "strength": "H",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "lily",
+        "moveId": "lily__special_236_K_L",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+33",
+          "numeric": 33
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json",
+        "sourceIndex": 13,
+        "sourceInput": "236LK",
+        "sourceNotation": "KD +33(+45)",
+        "sourceNotes": "Can be spaced out for better frame advantage, allowing a strike/throw mixup on block; puts opponent into limited juggle state on hit (corner juggle follow-up is possible only vs. airborne opponents at longer ranges)",
+        "official": {
+          "path": "staging/official-verification/sources/lily.json",
+          "rows": [
+            {
+              "row": 33,
+              "name": "弱 コンドルスパイア",
+              "hit": "D",
+              "notes": "8-30F　空中判定",
+              "commands": [
+                {
+                  "motion": "236",
+                  "button": "K",
+                  "strength": "L",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "lily",
+        "moveId": "lily__special_236_K_M",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+37",
+          "numeric": 37
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json",
+        "sourceIndex": 14,
+        "sourceInput": "236MK",
+        "sourceNotation": "KD +37(+49)",
+        "sourceNotes": "Can be spaced out for better frame advantage, allowing a strike/throw mixup on block; puts opponent into limited juggle state on hit (corner juggle follow-up is possible when hitting on active frame 10 or later)",
+        "official": {
+          "path": "staging/official-verification/sources/lily.json",
+          "rows": [
+            {
+              "row": 34,
+              "name": "中 コンドルスパイア",
+              "hit": "D",
+              "notes": "9-35F　空中判定",
+              "commands": [
+                {
+                  "motion": "236",
+                  "button": "K",
+                  "strength": "M",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "lily",
+        "moveId": "lily__special_236_K_OD",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+43",
+          "numeric": 43
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json",
+        "sourceIndex": 12,
+        "sourceInput": "236KK",
+        "sourceNotation": "KD +43(+55)",
+        "sourceNotes": "Button combination determines travel distance; far version MK+HK (Modern A[3S]), short version LK+MK / LK+HK (Modern A[2S] / A[1S]); can be spaced out for better frame advantage, allowing a strike/throw mixup on block; short version is easier to space on later active frames for frame advantage (extends a proximity guard box beyond its max range); puts opponent into limited juggle state on hit (corner juggle follow-up is possible when hitting on active frame 5 or later); SA2 hitconfirm time decreases when connecting from longer ranges",
+        "official": {
+          "path": "staging/official-verification/sources/lily.json",
+          "rows": [
+            {
+              "row": 36,
+              "name": "OD 弱 コンドルスパイア",
+              "hit": "D",
+              "notes": "7-29F　空中判定\n※SA2 スカイサンダーバードでのみキャンセル可能",
+              "commands": [
+                {
+                  "motion": "236",
+                  "button": "K",
+                  "strength": "OD",
+                  "unknown": [],
+                  "charge": false
+                },
+                {
+                  "motion": "236",
+                  "button": "K",
+                  "strength": "OD",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "OD基本は弱K+中K。公式OD弱の選択肢画像と対応。中K+強Kの強版を使わない"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "lily",
+        "moveId": "lily__special_623_P_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+36",
+          "numeric": 36
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json",
+        "sourceIndex": 36,
+        "sourceInput": "623HP",
+        "sourceNotation": "KD +36(+41)",
+        "sourceNotes": "Puts opponent into limited juggle state on hit; cannot hit cross-up",
+        "official": {
+          "path": "staging/official-verification/sources/lily.json",
+          "rows": [
+            {
+              "row": 45,
+              "name": "強 トマホークバスター",
+              "hit": "D",
+              "notes": "1-14F　空中判定の打撃・空弾属性に対して無敵\n11-49F　空中判定",
+              "commands": [
+                {
+                  "motion": "623",
+                  "button": "P",
+                  "strength": "H",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "lily",
+        "moveId": "lily__special_623_P_L",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+36",
+          "numeric": 36
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json",
+        "sourceIndex": 37,
+        "sourceInput": "623LP",
+        "sourceNotation": "KD +36(+41)",
+        "sourceNotes": "Puts opponent into limited juggle state on hit; cannot hit cross-up",
+        "official": {
+          "path": "staging/official-verification/sources/lily.json",
+          "rows": [
+            {
+              "row": 43,
+              "name": "弱 トマホークバスター",
+              "hit": "D",
+              "notes": "1-10F　空中判定の打撃・空弾属性に対して無敵\n7-37F　空中判定",
+              "commands": [
+                {
+                  "motion": "623",
+                  "button": "P",
+                  "strength": "L",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "lily",
+        "moveId": "lily__special_623_P_M",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+36",
+          "numeric": 36
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json",
+        "sourceIndex": 38,
+        "sourceInput": "623MP",
+        "sourceNotation": "KD +36(+42)",
+        "sourceNotes": "Puts opponent into limited juggle state on hit; cannot hit cross-up",
+        "official": {
+          "path": "staging/official-verification/sources/lily.json",
+          "rows": [
+            {
+              "row": 44,
+              "name": "中 トマホークバスター",
+              "hit": "D",
+              "notes": "1-12F　空中判定の打撃・空弾属性に対して無敵\n9-44F　空中判定",
+              "commands": [
+                {
+                  "motion": "623",
+                  "button": "P",
+                  "strength": "M",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "lily",
+        "moveId": "lily__special_623_P_OD",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+32",
+          "numeric": 32
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json",
+        "sourceIndex": 39,
+        "sourceInput": "623PP",
+        "sourceNotation": "KD +32(+37)",
+        "sourceNotes": "Puts opponent into limited juggle state on hit (cancelable into OD Condor Dive for extra damage at the cost of 2 Drive bars); cannot hit cross-up",
+        "official": {
+          "path": "staging/official-verification/sources/lily.json",
+          "rows": [
+            {
+              "row": 46,
+              "name": "OD トマホークバスター",
+              "hit": "D",
+              "notes": "1-10F　空中判定の打撃・空弾属性に対して無敵\n1-10F　投げに対して無敵\n7-45F　空中判定\n※OD コンドルダイブへのみ派生可能",
+              "commands": [
+                {
+                  "motion": "623",
+                  "button": "P",
+                  "strength": "OD",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "luke",
+        "moveId": "luke__special_214_P_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+42",
+          "numeric": 42
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/luke.cargo.json",
+        "sourceIndex": 1,
+        "sourceInput": "214HP",
+        "sourceNotation": "KD +42(+31)",
+        "sourceNotes": "Puts opponent into limited juggle state (can only juggle into canceled SA3); worse KD advantage vs. airborne opponents (+31 when juggled after 5LP~MP~HP); can cancel into SA3 on reaction if opponent attempts a Drive Impact; pulls back hurtbox on frames 5-15",
+        "official": {
+          "path": "staging/official-verification/sources/luke.json",
+          "rows": [
+            {
+              "row": 44,
+              "name": "強 フラッシュナックル",
+              "hit": "D",
+              "notes": "18F以上ボタンホールドすると性能変化\n18-20Fの間に離すとジャスト版が発生",
+              "commands": [
+                {
+                  "motion": "214",
+                  "button": "P",
+                  "strength": "H",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "m_bison",
+        "moveId": "m_bison__special_[4]6_P_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+14",
+          "numeric": 14
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json",
+        "sourceIndex": 67,
+        "sourceInput": "[4]6HP",
+        "sourceNotation": "KD +14(+39)",
+        "sourceNotes": "45f charge time (charge lasts 8f after releasing back direction, and must be holding forward when HP is input); 1-hit projectile clash hitbox on frames 24-49",
+        "official": {
+          "path": "staging/official-verification/sources/m_bison.json",
+          "rows": [
+            {
+              "row": 32,
+              "name": "強 サイコクラッシャーアタック",
+              "hit": "D",
+              "notes": "6-25F　空中判定の打撃・空弾属性に対して無敵\n30-49F　空中判定\n飛び道具相殺判定あり（1回）",
+              "commands": [
+                {
+                  "motion": "46",
+                  "button": "P",
+                  "strength": "H",
+                  "unknown": [],
+                  "charge": true
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "m_bison",
+        "moveId": "m_bison__special_[4]6_P_L",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+24",
+          "numeric": 24
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json",
+        "sourceIndex": 69,
+        "sourceInput": "[4]6LP",
+        "sourceNotation": "KD +24(+39)",
+        "sourceNotes": "45f charge time (charge lasts 8f after releasing back direction, and must be holding forward when LP is input); 1-hit projectile clash hitbox on frames 14-29",
+        "official": {
+          "path": "staging/official-verification/sources/m_bison.json",
+          "rows": [
+            {
+              "row": 28,
+              "name": "弱 サイコクラッシャーアタック",
+              "hit": "D",
+              "notes": "6-15F　空中判定の打撃・空弾属性に対して無敵\n20-29F　空中判定\n飛び道具相殺判定あり（1回）",
+              "commands": [
+                {
+                  "motion": "46",
+                  "button": "P",
+                  "strength": "L",
+                  "unknown": [],
+                  "charge": true
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "m_bison",
+        "moveId": "m_bison__special_[4]6_P_M",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+24",
+          "numeric": 24
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json",
+        "sourceIndex": 71,
+        "sourceInput": "[4]6MP",
+        "sourceNotation": "KD +24(+39)",
+        "sourceNotes": "45f charge time (charge lasts 8f after releasing back direction, and must be holding forward when MP is input); 1-hit projectile clash hitbox on frames 20-35",
+        "official": {
+          "path": "staging/official-verification/sources/m_bison.json",
+          "rows": [
+            {
+              "row": 30,
+              "name": "中 サイコクラッシャーアタック",
+              "hit": "D",
+              "notes": "6-21F　空中判定の打撃・空弾属性に対して無敵\n26-45F　空中判定\n飛び道具相殺判定あり（1回）",
+              "commands": [
+                {
+                  "motion": "46",
+                  "button": "P",
+                  "strength": "M",
+                  "unknown": [],
+                  "charge": true
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "m_bison",
+        "moveId": "m_bison__special_[4]6_P_OD",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+35",
+          "numeric": 35
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json",
+        "sourceIndex": 73,
+        "sourceInput": "[4]6PP",
+        "sourceNotation": "KD +35(+37)",
+        "sourceNotes": "45f charge time (charge lasts 8f after releasing back direction, and must be holding forward when PP is input); cancel into SA2 does not combo",
+        "official": {
+          "path": "staging/official-verification/sources/m_bison.json",
+          "rows": [
+            {
+              "row": 34,
+              "name": "OD サイコクラッシャーアタック",
+              "hit": "D",
+              "notes": "7-17F　空中判定の打撃・空弾属性に対して無敵\n13-31F　飛び道具無敵\n20-31F　空中判定",
+              "commands": [
+                {
+                  "motion": "46",
+                  "button": "P",
+                  "strength": "OD",
+                  "unknown": [],
+                  "charge": true
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "mai",
+        "moveId": "mai__special_214_P_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+43",
+          "numeric": 43
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/mai.cargo.json",
+        "sourceIndex": 3,
+        "sourceInput": "214HP",
+        "sourceNotation": "KD +43",
+        "sourceNotes": "2 hits, () refers to startup of 2nd hit from longer range; whiffs on crouching opponents unless they extend a vertical hurtbox (unsafe on hit if 1st hit connects like this); puts opponent into a limited juggle state; head hurtbox is anti-air invincible on frames 6-17 (slow but rewarding anti-air); 2nd hit (frames 27-36) is a strike hitbox that can dissipate standard 1-hit projectiles",
+        "official": {
+          "path": "staging/official-verification/sources/mai.json",
+          "rows": [
+            {
+              "row": 57,
+              "name": "強 龍炎舞",
+              "hit": "D",
+              "notes": "",
+              "commands": [
+                {
+                  "motion": "214",
+                  "button": "P",
+                  "strength": "H",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "mai",
+        "moveId": "mai__special_214_P_M",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+35",
+          "numeric": 35
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/mai.cargo.json",
+        "sourceIndex": 6,
+        "sourceInput": "214MP",
+        "sourceNotation": "KD +35",
+        "sourceNotes": "2 hits, () refers to startup of 2nd hit from longer range; similar utility to LP version but grants a knockdown instead of a standing reset; combos from 5LP as a decent light chain ender; 1st hit can whiff when canceled from ranged pokes, making it unsafe; 2nd hit (frames 25-31) is a strike hitbox that can dissipate standard 1-hit projectiles; can be spaced relatively safely on block (only Ken SA2 can punish at max range)",
+        "official": {
+          "path": "staging/official-verification/sources/mai.json",
+          "rows": [
+            {
+              "row": 55,
+              "name": "中 龍炎舞",
+              "hit": "D",
+              "notes": "",
+              "commands": [
+                {
+                  "motion": "214",
+                  "button": "P",
+                  "strength": "M",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "mai",
+        "moveId": "mai__special_236_K_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+22",
+          "numeric": 22
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/mai.cargo.json",
+        "sourceIndex": 14,
+        "sourceInput": "236HK",
+        "sourceNotation": "KD +22(+38)",
+        "sourceNotes": "Only the first 3 active frames of the 2nd hit are SA3 cancelable; puts the opponent into a limited juggle state (allows some follow-ups after high-connect juggles); SA3 cancel can occur on whiff when the first cartwheel connects (allows SA3 to connect during these high-connect juggles when the cancel window would normally have passed); combos from medium/heavy normals and Punish Counter 5LP, making it a solid combo ender and a great corner carry tool; reaches beyond full screen length; can be very plus if spaced perfectly or timed as a meaty (but very reactable startup in this scenario); 2nd hit active frames 7-15 whiff on crouching opponents unless they extend a vertical hurtbox; this makes it more interruptible by crouching attacks at long range, but makes it at least +2 when crouch blocked",
+        "official": {
+          "path": "staging/official-verification/sources/mai.json",
+          "rows": [
+            {
+              "row": 65,
+              "name": "強 必殺忍蜂",
+              "hit": "D",
+              "notes": "",
+              "commands": [
+                {
+                  "motion": "236",
+                  "button": "K",
+                  "strength": "H",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "mai",
+        "moveId": "mai__special_236_K_L",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+27",
+          "numeric": 27
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/mai.cargo.json",
+        "sourceIndex": 20,
+        "sourceInput": "236LK",
+        "sourceNotation": "KD +27(+43)",
+        "sourceNotes": "Only the first 6 active frames of the 2nd hit are SA3 cancelable; puts the opponent into a limited juggle state (allows some follow-ups after high-connect juggles); SA3 cancel can occur on whiff when the first cartwheel connects (allows SA3 to connect during these high-connect juggles when the cancel window would normally have passed); combos from any light normal, making it Mai's most consistent combo ender and a great corner carry tool; reaches about 80% screen length; can be very plus if spaced perfectly or timed as a meaty (but very reactable startup in this scenario); 2nd hit active frames 7-13 whiff on crouching opponents unless they extend a vertical hurtbox; this makes it more interruptible by crouching attacks at long range, but makes it at least +3 when crouch blocked",
+        "official": {
+          "path": "staging/official-verification/sources/mai.json",
+          "rows": [
+            {
+              "row": 61,
+              "name": "弱 必殺忍蜂",
+              "hit": "D",
+              "notes": "",
+              "commands": [
+                {
+                  "motion": "236",
+                  "button": "K",
+                  "strength": "L",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "mai",
+        "moveId": "mai__special_236_K_M",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+23",
+          "numeric": 23
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/mai.cargo.json",
+        "sourceIndex": 24,
+        "sourceInput": "236MK",
+        "sourceNotation": "KD +23(+39)",
+        "sourceNotes": "Only the first 3 active frames of the 2nd hit are SA3 cancelable; puts the opponent into a limited juggle state (allows some follow-ups after high-connect juggles); SA3 cancel can occur on whiff when the first cartwheel connects (allows SA3 to connect during these high-connect juggles when the cancel window would normally have passed); combos from medium/heavy normals and Punish Counter light normals, making it a solid combo ender and a great corner carry tool; reaches about 99% screen length (barely whiffs on fullscreen standing opponents); can be very plus if spaced perfectly or timed as a meaty (but very reactable startup in this scenario); 2nd hit active frames 7-15 whiff on crouching opponents unless they extend a vertical hurtbox; this makes it more interruptible by crouching attacks at long range, but makes it at least +3 when crouch blocked; sets up a safe jab vs. 9f or slower reversals (close range hit grounded hit into Dash + 5LP or 2LP)",
+        "official": {
+          "path": "staging/official-verification/sources/mai.json",
+          "rows": [
+            {
+              "row": 63,
+              "name": "中 必殺忍蜂",
+              "hit": "D",
+              "notes": "",
+              "commands": [
+                {
+                  "motion": "236",
+                  "button": "K",
+                  "strength": "M",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "rashid",
+        "moveId": "rashid__special_214_K_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+56",
+          "numeric": 56
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/rashid.cargo.json",
+        "sourceIndex": 2,
+        "sourceInput": "214HK",
+        "sourceNotation": "KD +56(+68)",
+        "sourceNotes": "Puts opponent into limited juggle state on hit; on block, bounces off opponent with extra recovery (frame advantage unaffected by which active frame connects); on hit, Rashid gets better KD Advantage on later active frames; opponent slides on the ground for great corner carry; can be affected by Air Current on frames 6-30",
+        "official": {
+          "path": "staging/official-verification/sources/rashid.json",
+          "rows": [
+            {
+              "row": 46,
+              "name": "強 イーグル・スパイク",
+              "hit": "D",
+              "notes": "6-31F 気流干渉により性能変化\n15-44F　空中判定",
+              "commands": [
+                {
+                  "motion": "214",
+                  "button": "K",
+                  "strength": "H",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "rashid",
+        "moveId": "rashid__special_214_K_L",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+30",
+          "numeric": 30
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/rashid.cargo.json",
+        "sourceIndex": 7,
+        "sourceInput": "214LK",
+        "sourceNotation": "KD +30(+42)",
+        "sourceNotes": "Puts opponent into limited juggle state on hit (can lead to follow-up juggles if well spaced); on block, bounces off opponent with extra recovery (frame advantage unaffected by which active frame connects); on hit, Rashid gets better KD Advantage on later active frames; can be affected by Air Current on frames 4-14; SA3 cancel occurs on hit only, allowing it to be freely buffered for extra damage",
+        "official": {
+          "path": "staging/official-verification/sources/rashid.json",
+          "rows": [
+            {
+              "row": 42,
+              "name": "弱 イーグル・スパイク",
+              "hit": "D",
+              "notes": "4-15F 気流干渉により性能変化\n9-38F　空中判定\n※ヒット時のみSA3でキャンセル可能",
+              "commands": [
+                {
+                  "motion": "214",
+                  "button": "K",
+                  "strength": "L",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "rashid",
+        "moveId": "rashid__special_214_K_M",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+52",
+          "numeric": 52
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/rashid.cargo.json",
+        "sourceIndex": 10,
+        "sourceInput": "214MK",
+        "sourceNotation": "KD +52(+64)",
+        "sourceNotes": "Puts opponent into limited juggle state on hit; on block, bounces off opponent with extra recovery (frame advantage unaffected by which active frame connects); on hit, Rashid gets better KD Advantage on later active frames; opponent slides on the ground for great corner carry; can be affected by Air Current on frames 6-27",
+        "official": {
+          "path": "staging/official-verification/sources/rashid.json",
+          "rows": [
+            {
+              "row": 44,
+              "name": "中 イーグル・スパイク",
+              "hit": "D",
+              "notes": "6-28F 気流干渉により性能変化\n12-38F　空中判定",
+              "commands": [
+                {
+                  "motion": "214",
+                  "button": "K",
+                  "strength": "M",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "rashid",
+        "moveId": "rashid__special_214_K_OD",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+53",
+          "numeric": 53
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/rashid.cargo.json",
+        "sourceIndex": 5,
+        "sourceInput": "214KK",
+        "sourceNotation": "KD +53(+65)",
+        "sourceNotes": "Puts opponent into limited juggle state on hit and side switches if the opponent is not cornered; on block, bounces off opponent with extra recovery (frame advantage unaffected by which active frame connects); on hit, Rashid gets better KD Advantage on later active frames; can be affected by Air Current on frames 6-29",
+        "official": {
+          "path": "staging/official-verification/sources/rashid.json",
+          "rows": [
+            {
+              "row": 48,
+              "name": "OD イーグル・スパイク",
+              "hit": "D",
+              "notes": "6-30F 気流干渉により性能変化\n12-40F　空中判定",
+              "commands": [
+                {
+                  "motion": "214",
+                  "button": "K",
+                  "strength": "OD",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "ryu",
+        "moveId": "ryu__special_214_K_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+20",
+          "numeric": 20
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json",
+        "sourceIndex": 6,
+        "sourceInput": "214HK",
+        "sourceNotation": "KD +20(+35)(+50)",
+        "sourceNotes": "Only 1st hit can connect on crouching (stand blocking any hit forces next hit to be blocked, even if crouching); later hits have better KD Advantage; puts opponent into limited juggle state (can juggle afterward if 3rd hit connects)",
+        "official": {
+          "path": "staging/official-verification/sources/ryu.json",
+          "rows": [
+            {
+              "row": 42,
+              "name": "強 竜巻旋風脚",
+              "hit": "D",
+              "notes": "10-61F 空中判定",
+              "commands": [
+                {
+                  "motion": "214",
+                  "button": "K",
+                  "strength": "H",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "ryu",
+        "moveId": "ryu__special_214_K_M",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+23",
+          "numeric": 23
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json",
+        "sourceIndex": 11,
+        "sourceInput": "214MK",
+        "sourceNotation": "KD +23(+38)",
+        "sourceNotes": "Only 1st hit can connect on crouching (stand blocking 1st hit forces 2nd hit to be blocked, even if crouching); later hits have better KD Advantage",
+        "official": {
+          "path": "staging/official-verification/sources/ryu.json",
+          "rows": [
+            {
+              "row": 41,
+              "name": "中 竜巻旋風脚",
+              "hit": "D",
+              "notes": "8-41F　空中判定",
+              "commands": [
+                {
+                  "motion": "214",
+                  "button": "K",
+                  "strength": "M",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "ryu",
+        "moveId": "ryu__special_236_K_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+45",
+          "numeric": 45
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json",
+        "sourceIndex": 19,
+        "sourceInput": "236HK",
+        "sourceNotation": "KD +45~51",
+        "sourceNotes": "Puts opponent into limited juggle state on hit (can follow up with 623MP, 623PP, or SA3 in corner); Punish Counter tumble state can be hit OTG; has great range and forward movement, making it a useful poke in neutral; the last 3 active frames have identical range (the listed best-case frame advantage is when spaced at max range, active frame 7)",
+        "official": {
+          "path": "staging/official-verification/sources/ryu.json",
+          "rows": [
+            {
+              "row": 48,
+              "name": "強 上段足刀蹴り",
+              "hit": "D",
+              "notes": "パニッシュカウンター時吹き飛び時間延長",
+              "commands": [
+                {
+                  "motion": "236",
+                  "button": "K",
+                  "strength": "H",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "ryu",
+        "moveId": "ryu__special_236_K_L",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+42",
+          "numeric": 42
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json",
+        "sourceIndex": 22,
+        "sourceInput": "236LK",
+        "sourceNotation": "KD +42~46",
+        "sourceNotes": "Puts opponent into limited juggle state on hit; sets up auto-timed safe jump against cornered opponents; can combo when canceled from any normal except 5LP; the last 2 active frames have identical range (the listed best-case frame advantage is when spaced at max range, active frame 5)",
+        "official": {
+          "path": "staging/official-verification/sources/ryu.json",
+          "rows": [
+            {
+              "row": 46,
+              "name": "弱 上段足刀蹴り",
+              "hit": "D",
+              "notes": "",
+              "commands": [
+                {
+                  "motion": "236",
+                  "button": "K",
+                  "strength": "L",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "ryu",
+        "moveId": "ryu__special_236_K_M",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+40",
+          "numeric": 40
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json",
+        "sourceIndex": 24,
+        "sourceInput": "236MK",
+        "sourceNotation": "KD +40~46",
+        "sourceNotes": "Puts opponent into limited juggle state on hit; can be spaced safely due to its range and high active frame count; 3 extra recovery frames on whiff; the last 3 active frames have identical range (the listed best-case frame advantage is when spaced at max range, active frame 7)",
+        "official": {
+          "path": "staging/official-verification/sources/ryu.json",
+          "rows": [
+            {
+              "row": 47,
+              "name": "中 上段足刀蹴り",
+              "hit": "D",
+              "notes": "",
+              "commands": [
+                {
+                  "motion": "236",
+                  "button": "K",
+                  "strength": "M",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "ryu",
+        "moveId": "ryu__special_623_P_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+37",
+          "numeric": 37
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json",
+        "sourceIndex": 48,
+        "sourceInput": "623HP",
+        "sourceNotation": "KD +37(+29)",
+        "sourceNotes": "Has juggle potential; cannot hit cross-up; does reduced damage and higher juggle limit on active frames 3-10 (weaker as a high-connect anti-air); higher knockdown advantage on the first 2 active frames (+37 refers to 1st active frame, +29 refers to anti-air with 3rd active frame; actual advantage varies based on height/distance)",
+        "official": {
+          "path": "staging/official-verification/sources/ryu.json",
+          "rows": [
+            {
+              "row": 38,
+              "name": "強 昇龍拳",
+              "hit": "D",
+              "notes": "1-8F　空中判定の打撃・空弾属性に対して無敵\n9-49F　空中判定\n※持続の2F目以降は個別ダメージ（800）",
+              "commands": [
+                {
+                  "motion": "623",
+                  "button": "P",
+                  "strength": "H",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "sagat",
+        "moveId": "sagat__special_236_K_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+40",
+          "numeric": 40
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/sagat.cargo.json",
+        "sourceIndex": 18,
+        "sourceInput": "236HK",
+        "sourceNotation": "KD +40~41<br>(KD +37~47)",
+        "sourceNotes": "Furthest horizontal distance; much better block advantage when spaced at max range; 2nd hit active frames 1-9 whiff on crouching opponents; this means that if the Knee is spaced out so the first hit whiffs, it connects on the 2nd to last active frame vs. crouching opponents (+4 on block); if the 1st hit is crouch blocked, opponent cannot switch to stand block the 2nd hit; puts opponent into a limited juggle state (in the corner, can juggle 623LP if the last 6 active frames connect, or 623MP / SA2 if the final active frame connects); blocked Knee causes a screen shake when Sagat has frame advantage; Sweet Spot occurs when juggling into the 3rd or 4th active frame, dealing 1300 damage (single hit) with a higher spinning juggle launch (ensures a follow-up juggle is possible even midscreen); the 2nd hit's extended Knee hitbox is too high to connect on standing characters on active frames 2-7 (tall characters: active frames 4-6); sets up corner safe jump in certain juggle scenarios (e.g. after juggled 2MP~HP)",
+        "official": {
+          "path": "staging/official-verification/sources/sagat.json",
+          "rows": [
+            {
+              "row": 42,
+              "name": "強 タイガーニークラッシュ",
+              "hit": "D",
+              "notes": "24-43F　空中判定\n初段の攻撃持続3～4F目に特定の位置でヒット時、1300ダメージに変化し吹き飛び時間延長",
+              "commands": [
+                {
+                  "motion": "236",
+                  "button": "K",
+                  "strength": "H",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "sagat",
+        "moveId": "sagat__special_236_K_L",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+36",
+          "numeric": 36
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/sagat.cargo.json",
+        "sourceIndex": 21,
+        "sourceInput": "236LK",
+        "sourceNotation": "KD +36(+46)",
+        "sourceNotes": "Shortest horizontal distance; no front leg hurtbox on frames 10-12 (helps avoid low pokes); 3f extra landing recovery when absorbed by armor; much better block advantage (up to +2) when spaced at max range; active frames 2-10 whiff on crouching opponents; this means that if the Knee is spaced out so the first active frame whiffs, it always connects on the last active frame vs. crouching opponents (+2 on block, 623LP juggle on hit); puts opponent into a limited juggle state (in the corner, can juggle 623LP if the last active frame connects); blocked Knee causes a screen shake when Sagat has frame advantage; can be whiffed in some situations for a side switch vs. knocked down opponents",
+        "official": {
+          "path": "staging/official-verification/sources/sagat.json",
+          "rows": [
+            {
+              "row": 40,
+              "name": "弱 タイガーニークラッシュ",
+              "hit": "D",
+              "notes": "13-27F　空中判定\nアーマーヒット時硬直3F増加",
+              "commands": [
+                {
+                  "motion": "236",
+                  "button": "K",
+                  "strength": "L",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "sagat",
+        "moveId": "sagat__special_236_K_M",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+39",
+          "numeric": 39
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/sagat.cargo.json",
+        "sourceIndex": 24,
+        "sourceInput": "236MK",
+        "sourceNotation": "KD +39(+49)",
+        "sourceNotes": "Medium horizontal distance; no front leg hurtbox on frames 14-15 (helps avoid low pokes); 3f extra landing recovery when absorbed by armor; much better block advantage (up to +3) when spaced at max range; active frames 2-9 whiff on crouching opponents; this means that if the Knee is spaced out so the first active frame whiffs, it connects on the 2nd to last active frame vs. crouching opponents (+2 on block, 623LP juggle on hit); puts opponent into a limited juggle state (in the corner, can juggle 623LP if the last 4 active frames connect); blocked Knee causes a screen shake when Sagat has frame advantage; can be whiffed in some situations for a side switch vs. knocked down opponents; sets up midscreen safe jump in certain juggle scenarios (e.g. after juggled 2MP~HP)",
+        "official": {
+          "path": "staging/official-verification/sources/sagat.json",
+          "rows": [
+            {
+              "row": 41,
+              "name": "中 タイガーニークラッシュ",
+              "hit": "D",
+              "notes": "16-31F　空中判定\nアーマーヒット時硬直3F増加",
+              "commands": [
+                {
+                  "motion": "236",
+                  "button": "K",
+                  "strength": "M",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "terry",
+        "moveId": "terry__special_214_K_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+43",
+          "numeric": 43
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json",
+        "sourceIndex": 3,
+        "sourceInput": "214HK",
+        "sourceNotation": "KD +43~45",
+        "sourceNotes": "2 hits vs. grounded, up to 3 hits vs. airborne; first 7 active frames can only hit airborne opponents (functionally 30f startup); cannot hit cross-up; puts airborne opponent into limited juggle state; kicking leg is anti-air invuln on frames 28-30; can be spaced out to hit once with 2f better advantage; technically has 4 hits, but up to 3 can land at once; damage is highly variable depending on which hits connect (last hit does most damage, but landing all 3 airborne hits allows strong juggle extensions); can hop over many grounded attacks (even some standing); can be used for a sideswitch mid-combo or a corpse hop on downed opponents; strong vs. Burnout, dealing chip while staying close range with frame advantage (but too slow to cancel into for Burnout loops); last hit is lower to the ground than other versions and can beat moves that low profile other versions",
+        "official": {
+          "path": "staging/official-verification/sources/terry.json",
+          "rows": [
+            {
+              "row": 45,
+              "name": "強 クラックシュート",
+              "hit": "D",
+              "notes": "12-34F　空中判定",
+              "commands": [
+                {
+                  "motion": "214",
+                  "button": "K",
+                  "strength": "H",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "terry",
+        "moveId": "terry__special_214_K_OD",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+29",
+          "numeric": 29
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json",
+        "sourceIndex": 5,
+        "sourceInput": "214KK",
+        "sourceNotation": "KD +29",
+        "sourceNotes": "Puts airborne opponents into limited juggle OTG state; first active frame does not connect on grounded opponents (functionally 21f startup); first 2 active frames have a good anti-air hitbox; can hop over many grounded attacks (even some standing); very strong vs. Burnout, dealing chip while staying close range with frame advantage (often required to get point blank after 2 reps of meterless Burnout loop)",
+        "official": {
+          "path": "staging/official-verification/sources/terry.json",
+          "rows": [
+            {
+              "row": 46,
+              "name": "OD クラックシュート",
+              "hit": "D",
+              "notes": "8-25F　空中判定\nパニッシュカウンター時ハードノックダウン\n空中ヒット時床バウンド",
+              "commands": [
+                {
+                  "motion": "214",
+                  "button": "K",
+                  "strength": "OD",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "terry",
+        "moveId": "terry__special_214_P_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+28",
+          "numeric": 28
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json",
+        "sourceIndex": 4,
+        "sourceInput": "214HP",
+        "sourceNotation": "KD +28~41",
+        "sourceNotes": "Travels about 80% of the screen; can be spaced to be plus on block from farther ranges (causing a screen shake); good approach tool vs. opponents in Burnout, but no screen shake when +1~4 vs. Burnout; useful approach when following behind Power Wave; Terry raises his hands for a reactable visual cue; only cancelable on active frames 1-5 (cannot cancel on a farther range connect); puts airborne opponents into limited juggle state (can juggle after very late connect)",
+        "official": {
+          "path": "staging/official-verification/sources/terry.json",
+          "rows": [
+            {
+              "row": 37,
+              "name": "強 バーンナックル",
+              "hit": "D",
+              "notes": "",
+              "commands": [
+                {
+                  "motion": "214",
+                  "button": "P",
+                  "strength": "H",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "terry",
+        "moveId": "terry__special_214_P_M",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+30",
+          "numeric": 30
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json",
+        "sourceIndex": 10,
+        "sourceInput": "214MP",
+        "sourceNotation": "KD +30~42",
+        "sourceNotes": "Travels about 50% of the screen; can be spaced to be plus on block from farther ranges (causing a screen shake); good approach tool vs. opponents in Burnout, but no screen shake when +1~4 vs. Burnout; only cancelable on 1st active frame (cannot cancel on a farther range connect); grants a safe jump on hit if final active frame connects; puts airborne opponents into limited juggle state (can juggle after very late connect); topmost hitbox whiffs on standard-sized crouching opponents making it easier to space in neutral vs. crouch block",
+        "official": {
+          "path": "staging/official-verification/sources/terry.json",
+          "rows": [
+            {
+              "row": 36,
+              "name": "中 バーンナックル",
+              "hit": "D",
+              "notes": "",
+              "commands": [
+                {
+                  "motion": "214",
+                  "button": "P",
+                  "strength": "M",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "terry",
+        "moveId": "terry__special_236_K_H",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+37",
+          "numeric": 37
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json",
+        "sourceIndex": 15,
+        "sourceInput": "236HK",
+        "sourceNotation": "KD +37~45",
+        "sourceNotes": "Farthest travel distance; cancelable on frames 26-45 into special moves (except Power Charge) on hit only; delaying the special cancel allows different conversions or more optimal damage; puts opponent into limited juggle state (airborne opponents are not launched as high, resulting in more limited follow-ups); only combos naturally from the first hit of 5HP",
+        "official": {
+          "path": "staging/official-verification/sources/terry.json",
+          "rows": [
+            {
+              "row": 41,
+              "name": "強 パワーチャージ",
+              "hit": "D",
+              "notes": "空中ヒット時吹き飛び変化\nヒット時のみパワーチャージを除く必殺技にキャンセル可能",
+              "commands": [
+                {
+                  "motion": "236",
+                  "button": "K",
+                  "strength": "H",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "terry",
+        "moveId": "terry__special_236_K_M",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+42",
+          "numeric": 42
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json",
+        "sourceIndex": 20,
+        "sourceInput": "236MK",
+        "sourceNotation": "KD +42~47",
+        "sourceNotes": "Medium travel distance; comboable from 2MP or heavy normals; puts opponent into limited juggle state (airborne opponents are launched higher than the HK version); can juggle SA1 anywhere on screen; final 4 recovery frames are cancelable into SA2 on hit, allowing a juggle anywhere on screen; sets up a safe jump setup on a close range grounded hit",
+        "official": {
+          "path": "staging/official-verification/sources/terry.json",
+          "rows": [
+            {
+              "row": 40,
+              "name": "中 パワーチャージ",
+              "hit": "D",
+              "notes": "",
+              "commands": [
+                {
+                  "motion": "236",
+                  "button": "K",
+                  "strength": "M",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      },
+      {
+        "characterId": "terry",
+        "moveId": "terry__special_236_K_OD",
+        "field": "hit",
+        "before": {
+          "status": "confirmed",
+          "display": "+55",
+          "numeric": 55
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json",
+        "sourceIndex": 17,
+        "sourceInput": "236KK",
+        "sourceNotation": "KD +55~76 Wall Bounce",
+        "sourceNotes": "Causes Wall Bounce on hit; cancelable on frames 20-39 into special moves (except Power Charge) on hit only (useful for midscreen positioning or keeping opponent cornered after wall bounce); if used twice in a combo, 2nd hit will cause a quick wall splat that drops straight to the ground; KD advantage varies based on distance from wall (farther away gives higher advantage); wall bounce may not come out after a delayed cancel into 214K (can scroll the screen forward to prevent the opponent from hitting the wall)",
+        "official": {
+          "path": "staging/official-verification/sources/terry.json",
+          "rows": [
+            {
+              "row": 42,
+              "name": "OD パワーチャージ",
+              "hit": "D",
+              "notes": "ヒット時のみパワーチャージを除く必殺技にキャンセル可能",
+              "commands": [
+                {
+                  "motion": "236",
+                  "button": "K",
+                  "strength": "OD",
+                  "unknown": [],
+                  "charge": false
+                }
+              ]
+            }
+          ],
+          "mapping": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合"
+        },
+        "reason": "同じ入力・技名・備考のrawと一意Cargoを対応付け、KD/HKD後の数値がonHitへ保存されたこと、公式の基本状態・強度のDを確認。",
+        "patch": "UNVERIFIED"
+      }
+    ]
   }
 }

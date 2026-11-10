@@ -7,7 +7,18 @@ export function restoreCompoundStartup(character) {
     JSON.parse(readFileSync("data/adoption-decisions.json", "utf8"))
       .compoundStartup?.decisions || [];
   const result = structuredClone(character);
+  const kdDecisions =
+    JSON.parse(readFileSync("data/adoption-decisions.json", "utf8"))
+      .kdHkdCorrections?.decisions || [];
   for (const move of result.moves) {
+    const kd = kdDecisions.find(
+      (d) => d.characterId === result.id && d.moveId === move.id,
+    );
+    if (kd) {
+      if (!isDeepStrictEqual(move.frames.hit, kd.value))
+        throw new Error(`Unauthorized KD/HKD: ${move.id}`);
+      move.frames.hit = structuredClone(kd.before);
+    }
     const sourceId = move.strengthExpansion?.sourceMoveId || move.id;
     const d = decisions.find(
       (item) => item.characterId === result.id && item.moveId === sourceId,

@@ -8,6 +8,7 @@ import { applyConditionalSpecials } from "./conditional-specials";
 import { applyFrameResearch } from "./frame-research";
 import { applyDistanceRanges } from "./distance-ranges";
 import { applyCompoundStartup } from "./compound-startup";
+import { applyKdHkdCorrections } from "./kd-hkd-corrections";
 import {
   auditStrengthless,
   generateStrengthExpansions,
@@ -44,9 +45,11 @@ if (process.argv.includes("--check"))
     if (
       !isDeepStrictEqual(
         c.moves.filter((m) => !m.strengthExpansion),
-        applyCompoundStartup(
-          applyDistanceRanges(
-            applyFrameResearch(applyConditionalSpecials(old)),
+        applyKdHkdCorrections(
+          applyCompoundStartup(
+            applyDistanceRanges(
+              applyFrameResearch(applyConditionalSpecials(old)),
+            ),
           ),
         ).moves,
       ) ||

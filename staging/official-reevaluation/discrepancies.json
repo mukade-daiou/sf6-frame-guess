@@ -1,0 +1,4765 @@
+[
+  {
+    "characterId": "aki",
+    "moveId": "aki__normal_5_K_M",
+    "name": "立ち中K",
+    "input": {
+      "type": "normal",
+      "direction": "5",
+      "button": "K",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "25",
+    "official": "27",
+    "officialName": "立ち中K （蛇蝎蹴）",
+    "officialRows": [
+      5
+    ],
+    "reason": "持続 8-10 の最終F 10 + 硬直 15 + 空振り時硬直2F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "aki",
+    "moveId": "aki__normal_5_P_M",
+    "name": "立ち中P",
+    "input": {
+      "type": "normal",
+      "direction": "5",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "24",
+    "official": "26",
+    "officialName": "立ち中P （蛇咬手）",
+    "officialRows": [
+      4
+    ],
+    "reason": "持続 6-10 の最終F 10 + 硬直 14 + 空振り時硬直2F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "aki",
+    "moveId": "aki__special_236_P_L",
+    "name": "Serpent Lash",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "P",
+      "strength": "L"
+    },
+    "field": "total",
+    "local": "36",
+    "official": "42",
+    "officialName": "弱 蛇頭鞭",
+    "officialRows": [
+      36
+    ],
+    "reason": "持続 14-16 の最終F 16 + 硬直 26",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "akuma",
+    "moveId": "akuma__normal_2_K_H",
+    "name": "しゃがみ強K",
+    "input": {
+      "type": "normal",
+      "direction": "2",
+      "button": "K",
+      "strength": "H"
+    },
+    "field": "hit",
+    "local": "+40",
+    "official": "D",
+    "officialName": "しゃがみ強K（刎脚）",
+    "officialRows": [
+      13
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json",
+      "index": 37,
+      "input": "2HK",
+      "hitAdv": "KD +40(+37)"
+    }
+  },
+  {
+    "characterId": "akuma",
+    "moveId": "akuma__normal_2_P_M",
+    "name": "しゃがみ中P",
+    "input": {
+      "type": "normal",
+      "direction": "2",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "22",
+    "official": "24",
+    "officialName": "しゃがみ中P（膝折り豪掌）",
+    "officialRows": [
+      10
+    ],
+    "reason": "持続 6-8 の最終F 8 + 硬直 14 + 空振り時硬直2F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "akuma",
+    "moveId": "akuma__normal_5_K_H",
+    "name": "立ち強K",
+    "input": {
+      "type": "normal",
+      "direction": "5",
+      "button": "K",
+      "strength": "H"
+    },
+    "field": "total",
+    "local": "42",
+    "official": "43",
+    "officialName": "立ち強K（首撥ね）",
+    "officialRows": [
+      7
+    ],
+    "reason": "持続 13-27 の最終F 27 + 硬直 15 + 空振り時硬直1F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "akuma",
+    "moveId": "akuma__normal_5_P_M",
+    "name": "立ち中P",
+    "input": {
+      "type": "normal",
+      "direction": "5",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "20",
+    "official": "22",
+    "officialName": "立ち中P（豪掌）",
+    "officialRows": [
+      4
+    ],
+    "reason": "持続 6-9 の最終F 9 + 硬直 11 + 空振り時硬直2F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "akuma",
+    "moveId": "akuma__special_214_K_L",
+    "name": "Tatsumaki Zanku-Kyaku",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "K",
+      "strength": "L"
+    },
+    "field": "total",
+    "local": "34",
+    "official": "40",
+    "officialName": "弱 竜巻斬空脚",
+    "officialRows": [
+      50
+    ],
+    "reason": "持続 12-13 の最終F 13 + 硬直 21 + 空振り時硬直6F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "akuma",
+    "moveId": "akuma__special_214_K_M",
+    "name": "Tatsumaki Zanku-Kyaku",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "K",
+      "strength": "M"
+    },
+    "field": "hit",
+    "local": "+41",
+    "official": "D",
+    "officialName": "中 竜巻斬空脚",
+    "officialRows": [
+      51
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json",
+      "index": 9,
+      "input": "214MK",
+      "hitAdv": "KD +41(38)"
+    }
+  },
+  {
+    "characterId": "akuma",
+    "moveId": "akuma__special_214_P_H",
+    "name": "Adamant Flame",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "P",
+      "strength": "H"
+    },
+    "field": "total",
+    "local": "44",
+    "official": "46",
+    "officialName": "強 金剛灼火（1段目）",
+    "officialRows": [
+      60
+    ],
+    "reason": "持続 23-25 の最終F 25 + 硬直 19 + 空振り時硬直2F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "akuma",
+    "moveId": "akuma__special_214_P_M",
+    "name": "Adamant Flame",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "41",
+    "official": "44",
+    "officialName": "中 金剛灼火（1段目）",
+    "officialRows": [
+      58
+    ],
+    "reason": "持続 19-21 の最終F 21 + 硬直 20 + 空振り時硬直3F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "akuma",
+    "moveId": "akuma__special_236_P_OD",
+    "name": "Gou Hadoken",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "P",
+      "strength": "OD"
+    },
+    "field": "hit",
+    "local": "+55",
+    "official": "D",
+    "officialName": "OD 豪波動拳",
+    "officialRows": [
+      40
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json",
+      "index": 33,
+      "input": "236PP",
+      "hitAdv": "KD +55"
+    }
+  },
+  {
+    "characterId": "akuma",
+    "moveId": "akuma__special_623_P_OD",
+    "name": "Gou Shoryuken",
+    "input": {
+      "type": "special",
+      "motion": "623",
+      "button": "P",
+      "strength": "OD"
+    },
+    "field": "block",
+    "local": "-41",
+    "official": "-39",
+    "officialName": "OD 豪昇龍拳",
+    "officialRows": [
+      49
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "alex",
+    "moveId": "alex__normal_2_P_M",
+    "name": "しゃがみ中P",
+    "input": {
+      "type": "normal",
+      "direction": "2",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "25",
+    "official": "29",
+    "officialName": "しゃがみ中P（地獄突き）",
+    "officialRows": [
+      12
+    ],
+    "reason": "持続 8-9 の最終F 9 + 硬直 16 + 空振り時硬直4F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "alex",
+    "moveId": "alex__normal_5_P_M",
+    "name": "立ち中P",
+    "input": {
+      "type": "normal",
+      "direction": "5",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "24",
+    "official": "27",
+    "officialName": "立ち中P（ボディーブロー）",
+    "officialRows": [
+      4
+    ],
+    "reason": "持続 7-10 の最終F 10 + 硬直 14 + 空振り時硬直3F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "arjun",
+    "moveId": "arjun__normal_2_P_M",
+    "name": "しゃがみ中P",
+    "input": {
+      "type": "normal",
+      "direction": "2",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "hit",
+    "local": "+27",
+    "official": "D",
+    "officialName": "しゃがみ中P（はらう）",
+    "officialRows": [
+      10
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "arjun",
+    "moveId": "arjun__normal_5_K_H",
+    "name": "立ち強K",
+    "input": {
+      "type": "normal",
+      "direction": "5",
+      "button": "K",
+      "strength": "H"
+    },
+    "field": "hit",
+    "local": "+43",
+    "official": "D",
+    "officialName": "立ち強K（ぶっ飛ばす）",
+    "officialRows": [
+      7
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "arjun",
+    "moveId": "arjun__special_214_K_none",
+    "name": "Divine Pillar",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "K",
+      "strength": "none"
+    },
+    "field": "hit",
+    "local": "+42",
+    "official": "D",
+    "officialName": "弱 神気の巨巌",
+    "officialRows": [
+      52,
+      53,
+      54
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "arjun",
+    "moveId": "arjun__special_214_K_OD",
+    "name": "OD Divine Pillar",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "K",
+      "strength": "OD"
+    },
+    "field": "hit",
+    "local": "+42",
+    "official": "D",
+    "officialName": "OD 弱 神気の巨巌",
+    "officialRows": [
+      56
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "arjun",
+    "moveId": "arjun__special_22_K_H",
+    "name": "Indomitable Defense",
+    "input": {
+      "type": "special",
+      "motion": "22",
+      "button": "K",
+      "strength": "H"
+    },
+    "field": "total",
+    "local": "60",
+    "official": "58",
+    "officialName": "不撓の警衛",
+    "officialRows": [
+      62
+    ],
+    "reason": "持続 3-28 の最終F 28 + 硬直 30",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "arjun",
+    "moveId": "arjun__special_236_K_none",
+    "name": "Breathing Ring",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "K",
+      "strength": "none"
+    },
+    "field": "hit",
+    "local": "+42",
+    "official": "D",
+    "officialName": "息吹の円筒",
+    "officialRows": [
+      42
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "arjun",
+    "moveId": "arjun__special_236_P_H",
+    "name": "HP Arm of Justice",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "P",
+      "strength": "H"
+    },
+    "field": "total",
+    "local": "50",
+    "official": "56",
+    "officialName": "強 大義の巨腕",
+    "officialRows": [
+      32
+    ],
+    "reason": "持続 28-33 の最終F 33 + 硬直 20 + 空振り時硬直3F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "arjun",
+    "moveId": "arjun__special_236_P_H",
+    "name": "HP Arm of Justice",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "P",
+      "strength": "H"
+    },
+    "field": "hit",
+    "local": "+43",
+    "official": "D",
+    "officialName": "強 大義の巨腕",
+    "officialRows": [
+      32
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "arjun",
+    "moveId": "arjun__special_236_P_OD",
+    "name": "OD Arm of Justice",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "P",
+      "strength": "OD"
+    },
+    "field": "total",
+    "local": "45",
+    "official": "51",
+    "officialName": "OD 大義の巨腕",
+    "officialRows": [
+      34
+    ],
+    "reason": "持続 23-28 の最終F 28 + 硬直 20 + 空振り時硬直3F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "arjun",
+    "moveId": "arjun__special_236_P_OD",
+    "name": "OD Arm of Justice",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "P",
+      "strength": "OD"
+    },
+    "field": "hit",
+    "local": "+43",
+    "official": "D",
+    "officialName": "OD 大義の巨腕",
+    "officialRows": [
+      34
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "arjun",
+    "moveId": "arjun__special_623_P_H",
+    "name": "HP Cruel Shoulder",
+    "input": {
+      "type": "special",
+      "motion": "623",
+      "button": "P",
+      "strength": "H"
+    },
+    "field": "hit",
+    "local": "+42",
+    "official": "D",
+    "officialName": "強 厳酷な岩肩",
+    "officialRows": [
+      38
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "arjun",
+    "moveId": "arjun__special_623_P_L",
+    "name": "LP Cruel Shoulder",
+    "input": {
+      "type": "special",
+      "motion": "623",
+      "button": "P",
+      "strength": "L"
+    },
+    "field": "hit",
+    "local": "+60",
+    "official": "D",
+    "officialName": "弱 厳酷な岩肩",
+    "officialRows": [
+      36
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "arjun",
+    "moveId": "arjun__special_623_P_M",
+    "name": "MP Cruel Shoulder",
+    "input": {
+      "type": "special",
+      "motion": "623",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "hit",
+    "local": "+64",
+    "official": "D",
+    "officialName": "中 厳酷な岩肩",
+    "officialRows": [
+      37
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "arjun",
+    "moveId": "arjun__special_623_P_OD",
+    "name": "OD Cruel Shoulder",
+    "input": {
+      "type": "special",
+      "motion": "623",
+      "button": "P",
+      "strength": "OD"
+    },
+    "field": "hit",
+    "local": "+42",
+    "official": "D",
+    "officialName": "OD 厳酷な岩肩",
+    "officialRows": [
+      40
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "arjun",
+    "moveId": "arjun__special_214_K_none__strength_L",
+    "name": "Divine Pillar",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "K",
+      "strength": "L"
+    },
+    "field": "hit",
+    "local": "+42",
+    "official": "D",
+    "officialName": "弱 神気の巨巌",
+    "officialRows": [
+      52
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "arjun",
+    "moveId": "arjun__special_214_K_none__strength_M",
+    "name": "Divine Pillar",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "K",
+      "strength": "M"
+    },
+    "field": "hit",
+    "local": "+42",
+    "official": "D",
+    "officialName": "中 神気の巨巌",
+    "officialRows": [
+      53
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "arjun",
+    "moveId": "arjun__special_214_K_none__strength_H",
+    "name": "Divine Pillar",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "K",
+      "strength": "H"
+    },
+    "field": "hit",
+    "local": "+42",
+    "official": "D",
+    "officialName": "強 神気の巨巌",
+    "officialRows": [
+      54
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "arjun",
+    "moveId": "arjun__special_236_K_none__strength_L",
+    "name": "Breathing Ring",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "K",
+      "strength": "L"
+    },
+    "field": "hit",
+    "local": "+42",
+    "official": "D",
+    "officialName": "息吹の円筒",
+    "officialRows": [
+      42
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "arjun",
+    "moveId": "arjun__special_236_K_none__strength_M",
+    "name": "Breathing Ring",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "K",
+      "strength": "M"
+    },
+    "field": "hit",
+    "local": "+42",
+    "official": "D",
+    "officialName": "息吹の円筒",
+    "officialRows": [
+      42
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "arjun",
+    "moveId": "arjun__special_236_K_none__strength_H",
+    "name": "Breathing Ring",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "K",
+      "strength": "H"
+    },
+    "field": "hit",
+    "local": "+42",
+    "official": "D",
+    "officialName": "息吹の円筒",
+    "officialRows": [
+      42
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "blanka",
+    "moveId": "blanka__normal_5_K_M",
+    "name": "立ち中K",
+    "input": {
+      "type": "normal",
+      "direction": "5",
+      "button": "K",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "27",
+    "official": "30",
+    "officialName": "立ち中K （ブラッディーテイル）",
+    "officialRows": [
+      5
+    ],
+    "reason": "持続 8-10 の最終F 10 + 硬直 17 + 空振り時硬直3F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "blanka",
+    "moveId": "blanka__normal_5_P_H",
+    "name": "立ち強P",
+    "input": {
+      "type": "normal",
+      "direction": "5",
+      "button": "P",
+      "strength": "H"
+    },
+    "field": "total",
+    "local": "33",
+    "official": "38",
+    "officialName": "立ち強P （ジャングルアーチ）",
+    "officialRows": [
+      6
+    ],
+    "reason": "持続 10-16 の最終F 16 + 硬直 22",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "blanka",
+    "moveId": "blanka__special_[2]8_K_H",
+    "name": "Vertical Rolling Attack",
+    "input": {
+      "type": "special",
+      "motion": "[2]8",
+      "button": "K",
+      "strength": "H"
+    },
+    "field": "total",
+    "local": "74",
+    "official": "75",
+    "officialName": "強 バーチカルローリング",
+    "officialRows": [
+      49
+    ],
+    "reason": "持続 8-27 の最終F 27 + 硬直 31+着地後17",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "blanka",
+    "moveId": "blanka__special_[2]8_K_L",
+    "name": "Vertical Rolling Attack",
+    "input": {
+      "type": "special",
+      "motion": "[2]8",
+      "button": "K",
+      "strength": "L"
+    },
+    "field": "total",
+    "local": "74",
+    "official": "75",
+    "officialName": "弱 バーチカルローリング",
+    "officialRows": [
+      45
+    ],
+    "reason": "持続 8-27 の最終F 27 + 硬直 31+着地後17",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "blanka",
+    "moveId": "blanka__special_[2]8_K_M",
+    "name": "Vertical Rolling Attack",
+    "input": {
+      "type": "special",
+      "motion": "[2]8",
+      "button": "K",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "74",
+    "official": "75",
+    "officialName": "中 バーチカルローリング",
+    "officialRows": [
+      47
+    ],
+    "reason": "持続 8-27 の最終F 27 + 硬直 31+着地後17",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "blanka",
+    "moveId": "blanka__special_[4]6_P_H",
+    "name": "Rolling Attack",
+    "input": {
+      "type": "special",
+      "motion": "[4]6",
+      "button": "P",
+      "strength": "H"
+    },
+    "field": "total",
+    "local": "66",
+    "official": "67",
+    "officialName": "強 ローリングアタック",
+    "officialRows": [
+      41
+    ],
+    "reason": "持続 22-41 の最終F 41 + 硬直 26",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "blanka",
+    "moveId": "blanka__special_214_P_none",
+    "name": "Electric Thunder",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "P",
+      "strength": "none"
+    },
+    "field": "total",
+    "local": "25",
+    "official": "38",
+    "officialName": "エレクトリックサンダー",
+    "officialRows": [
+      33
+    ],
+    "reason": "持続 10-21 の最終F 21 + 硬直 17",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "blanka",
+    "moveId": "blanka__special_214_P_OD",
+    "name": "Electric Thunder",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "P",
+      "strength": "OD"
+    },
+    "field": "total",
+    "local": "25",
+    "official": "38",
+    "officialName": "OD エレクトリックサンダー",
+    "officialRows": [
+      35
+    ],
+    "reason": "持続 10-21 の最終F 21 + 硬直 17",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "blanka",
+    "moveId": "blanka__special_63214_K_H",
+    "name": "Backstep Rolling Attack",
+    "input": {
+      "type": "special",
+      "motion": "63214",
+      "button": "K",
+      "strength": "H"
+    },
+    "field": "hit",
+    "local": "+7",
+    "official": "8",
+    "officialName": "強 バックステップローリング",
+    "officialRows": [
+      57
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "blanka",
+    "moveId": "blanka__special_63214_K_H",
+    "name": "Backstep Rolling Attack",
+    "input": {
+      "type": "special",
+      "motion": "63214",
+      "button": "K",
+      "strength": "H"
+    },
+    "field": "block",
+    "local": "+3",
+    "official": "4",
+    "officialName": "強 バックステップローリング",
+    "officialRows": [
+      57
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "blanka",
+    "moveId": "blanka__special_63214_K_L",
+    "name": "Backstep Rolling Attack",
+    "input": {
+      "type": "special",
+      "motion": "63214",
+      "button": "K",
+      "strength": "L"
+    },
+    "field": "hit",
+    "local": "+8",
+    "official": "9",
+    "officialName": "弱 バックステップローリング",
+    "officialRows": [
+      53
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "blanka",
+    "moveId": "blanka__special_63214_K_L",
+    "name": "Backstep Rolling Attack",
+    "input": {
+      "type": "special",
+      "motion": "63214",
+      "button": "K",
+      "strength": "L"
+    },
+    "field": "block",
+    "local": "+2",
+    "official": "3",
+    "officialName": "弱 バックステップローリング",
+    "officialRows": [
+      53
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "blanka",
+    "moveId": "blanka__special_63214_K_M",
+    "name": "Backstep Rolling Attack",
+    "input": {
+      "type": "special",
+      "motion": "63214",
+      "button": "K",
+      "strength": "M"
+    },
+    "field": "hit",
+    "local": "+7",
+    "official": "8",
+    "officialName": "中 バックステップローリング",
+    "officialRows": [
+      55
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "blanka",
+    "moveId": "blanka__special_63214_K_M",
+    "name": "Backstep Rolling Attack",
+    "input": {
+      "type": "special",
+      "motion": "63214",
+      "button": "K",
+      "strength": "M"
+    },
+    "field": "block",
+    "local": "+1",
+    "official": "2",
+    "officialName": "中 バックステップローリング",
+    "officialRows": [
+      55
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "blanka",
+    "moveId": "blanka__special_214_P_none__strength_L",
+    "name": "Electric Thunder",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "P",
+      "strength": "L"
+    },
+    "field": "total",
+    "local": "25",
+    "official": "38",
+    "officialName": "エレクトリックサンダー",
+    "officialRows": [
+      33
+    ],
+    "reason": "持続 10-21 の最終F 21 + 硬直 17",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "blanka",
+    "moveId": "blanka__special_214_P_none__strength_M",
+    "name": "Electric Thunder",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "25",
+    "official": "38",
+    "officialName": "エレクトリックサンダー",
+    "officialRows": [
+      33
+    ],
+    "reason": "持続 10-21 の最終F 21 + 硬直 17",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "blanka",
+    "moveId": "blanka__special_214_P_none__strength_H",
+    "name": "Electric Thunder",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "P",
+      "strength": "H"
+    },
+    "field": "total",
+    "local": "25",
+    "official": "38",
+    "officialName": "エレクトリックサンダー",
+    "officialRows": [
+      33
+    ],
+    "reason": "持続 10-21 の最終F 21 + 硬直 17",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "cammy",
+    "moveId": "cammy__normal_2_P_M",
+    "name": "しゃがみ中P",
+    "input": {
+      "type": "normal",
+      "direction": "2",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "23",
+    "official": "26",
+    "officialName": "しゃがみ中P（ライトグレネード）",
+    "officialRows": [
+      10
+    ],
+    "reason": "持続 7-9 の最終F 9 + 硬直 14 + 空振り時硬直3F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "cammy",
+    "moveId": "cammy__special_236_K_H",
+    "name": "Spiral Arrow",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "K",
+      "strength": "H"
+    },
+    "field": "hit",
+    "local": "+29",
+    "official": "D",
+    "officialName": "強 スパイラルアロー",
+    "officialRows": [
+      29
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/cammy.cargo.json",
+      "index": 8,
+      "input": "236HK",
+      "hitAdv": "KD +29(+48)"
+    }
+  },
+  {
+    "characterId": "cammy",
+    "moveId": "cammy__special_236_K_L",
+    "name": "Spiral Arrow",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "K",
+      "strength": "L"
+    },
+    "field": "hit",
+    "local": "+26",
+    "official": "D",
+    "officialName": "弱 スパイラルアロー",
+    "officialRows": [
+      27
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/cammy.cargo.json",
+      "index": 10,
+      "input": "236LK",
+      "hitAdv": "KD +26(+48)"
+    }
+  },
+  {
+    "characterId": "cammy",
+    "moveId": "cammy__special_236_K_M",
+    "name": "Spiral Arrow",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "K",
+      "strength": "M"
+    },
+    "field": "hit",
+    "local": "+26",
+    "official": "D",
+    "officialName": "中 スパイラルアロー",
+    "officialRows": [
+      28
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/cammy.cargo.json",
+      "index": 11,
+      "input": "236MK",
+      "hitAdv": "KD +26(+48)"
+    }
+  },
+  {
+    "characterId": "chunli",
+    "moveId": "chunli__normal_2_P_M",
+    "name": "しゃがみ中P",
+    "input": {
+      "type": "normal",
+      "direction": "2",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "22",
+    "official": "23",
+    "officialName": "しゃがみ中P（丹頂拳）",
+    "officialRows": [
+      10
+    ],
+    "reason": "持続 6-9 の最終F 9 + 硬直 13 + 空振り時硬直1F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "chunli",
+    "moveId": "chunli__special_[2]8_K_OD",
+    "name": "OD Spinning Bird Kick",
+    "input": {
+      "type": "special",
+      "motion": "[2]8",
+      "button": "K",
+      "strength": "OD"
+    },
+    "field": "hit",
+    "local": "+55",
+    "official": "D",
+    "officialName": "OD スピニングバードキック",
+    "officialRows": [
+      55
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/chunli.cargo.json",
+      "index": 72,
+      "input": "[2]8KK",
+      "hitAdv": "KD +55(+41)"
+    }
+  },
+  {
+    "characterId": "chunli",
+    "moveId": "chunli__special_214_K_H",
+    "name": "HK Hazanshu",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "K",
+      "strength": "H"
+    },
+    "field": "total",
+    "local": "50",
+    "official": "52",
+    "officialName": "強 覇山蹴",
+    "officialRows": [
+      58
+    ],
+    "reason": "持続 32-34 の最終F 34 + 硬直 18",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "chunli",
+    "moveId": "chunli__special_214_P_none",
+    "name": "Serenity Stream",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "P",
+      "strength": "none"
+    },
+    "field": "total",
+    "local": "-",
+    "official": "89",
+    "officialName": "行雲流水",
+    "officialRows": [
+      31
+    ],
+    "reason": "全体 89",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "chunli",
+    "moveId": "chunli__special_214_P_none__strength_L",
+    "name": "Serenity Stream",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "P",
+      "strength": "L"
+    },
+    "field": "total",
+    "local": "-",
+    "official": "89",
+    "officialName": "行雲流水",
+    "officialRows": [
+      31
+    ],
+    "reason": "全体 89",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "chunli",
+    "moveId": "chunli__special_214_P_none__strength_M",
+    "name": "Serenity Stream",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "-",
+    "official": "89",
+    "officialName": "行雲流水",
+    "officialRows": [
+      31
+    ],
+    "reason": "全体 89",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "chunli",
+    "moveId": "chunli__special_214_P_none__strength_H",
+    "name": "Serenity Stream",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "P",
+      "strength": "H"
+    },
+    "field": "total",
+    "local": "-",
+    "official": "89",
+    "officialName": "行雲流水",
+    "officialRows": [
+      31
+    ],
+    "reason": "全体 89",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "cviper",
+    "moveId": "cviper__normal_5_K_M",
+    "name": "立ち中K",
+    "input": {
+      "type": "normal",
+      "direction": "5",
+      "button": "K",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "28",
+    "official": "30",
+    "officialName": "立ち中K（フロントキック）",
+    "officialRows": [
+      5
+    ],
+    "reason": "持続 8-10 の最終F 10 + 硬直 18 + 空振り時硬直2F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "cviper",
+    "moveId": "cviper__special_214_P_H",
+    "name": "HP Thunder Dash",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "P",
+      "strength": "H"
+    },
+    "field": "hit",
+    "local": "+21",
+    "official": "D",
+    "officialName": "強 サンダースラップ",
+    "officialRows": [
+      29
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json",
+      "index": 3,
+      "input": "214HP",
+      "hitAdv": "KD +21<br>(KD +18~35)"
+    }
+  },
+  {
+    "characterId": "dee_jay",
+    "moveId": "dee_jay__normal_2_K_H",
+    "name": "しゃがみ強K",
+    "input": {
+      "type": "normal",
+      "direction": "2",
+      "button": "K",
+      "strength": "H"
+    },
+    "field": "hit",
+    "local": "+33",
+    "official": "D",
+    "officialName": "しゃがみ強K （スライディングヒールアッパー）",
+    "officialRows": [
+      13
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/dee_jay.cargo.json",
+      "index": 28,
+      "input": "2HK",
+      "hitAdv": "HKD +33(+42)"
+    }
+  },
+  {
+    "characterId": "dee_jay",
+    "moveId": "dee_jay__special_[2]8_K_H",
+    "name": "Jackknife Maximum",
+    "input": {
+      "type": "special",
+      "motion": "[2]8",
+      "button": "K",
+      "strength": "H"
+    },
+    "field": "hit",
+    "local": "+42",
+    "official": "D",
+    "officialName": "強 ジャックナイフマキシマム",
+    "officialRows": [
+      41
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/dee_jay.cargo.json",
+      "index": 68,
+      "input": "[2]8HK",
+      "hitAdv": "KD +42(+37)"
+    }
+  },
+  {
+    "characterId": "dee_jay",
+    "moveId": "dee_jay__special_[4]6_P_OD",
+    "name": "Air Slasher",
+    "input": {
+      "type": "special",
+      "motion": "[4]6",
+      "button": "P",
+      "strength": "OD"
+    },
+    "field": "total",
+    "local": "45",
+    "official": "46",
+    "officialName": "OD エアスラッシャー",
+    "officialRows": [
+      37
+    ],
+    "reason": "全体 46",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "dhalsim",
+    "moveId": "dhalsim__normal_2_K_H",
+    "name": "しゃがみ強K",
+    "input": {
+      "type": "normal",
+      "direction": "2",
+      "button": "K",
+      "strength": "H"
+    },
+    "field": "hit",
+    "local": "+22",
+    "official": "D",
+    "officialName": "しゃがみ強K（ロングスライディング）",
+    "officialRows": [
+      13
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/dhalsim.cargo.json",
+      "index": 17,
+      "input": "2HK",
+      "hitAdv": "HKD +22(+37)"
+    }
+  },
+  {
+    "characterId": "dhalsim",
+    "moveId": "dhalsim__normal_2_P_H",
+    "name": "しゃがみ強P",
+    "input": {
+      "type": "normal",
+      "direction": "2",
+      "button": "P",
+      "strength": "H"
+    },
+    "field": "total",
+    "local": "42",
+    "official": "46",
+    "officialName": "しゃがみ強P（ダブルヨガパンチ）",
+    "officialRows": [
+      12
+    ],
+    "reason": "持続 19-22 の最終F 22 + 硬直 20 + 空振り時硬直4F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "dhalsim",
+    "moveId": "dhalsim__special_63214_K_H",
+    "name": "HK Yoga Blast",
+    "input": {
+      "type": "special",
+      "motion": "63214",
+      "button": "K",
+      "strength": "H"
+    },
+    "field": "block",
+    "local": "-1",
+    "official": "-3",
+    "officialName": "強 ヨガブラスト",
+    "officialRows": [
+      56
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "dhalsim",
+    "moveId": "dhalsim__special_63214_P_H",
+    "name": "HP Yoga Flame",
+    "input": {
+      "type": "special",
+      "motion": "63214",
+      "button": "P",
+      "strength": "H"
+    },
+    "field": "hit",
+    "local": "+45",
+    "official": "D",
+    "officialName": "強 ヨガフレイム",
+    "officialRows": [
+      52
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/dhalsim.cargo.json",
+      "index": 41,
+      "input": "63214HP",
+      "hitAdv": "KD +45(+47)"
+    }
+  },
+  {
+    "characterId": "dhalsim",
+    "moveId": "dhalsim__special_63214_P_OD",
+    "name": "OD Yoga Flame",
+    "input": {
+      "type": "special",
+      "motion": "63214",
+      "button": "P",
+      "strength": "OD"
+    },
+    "field": "total",
+    "local": "61",
+    "official": "66",
+    "officialName": "OD ヨガフレイム",
+    "officialRows": [
+      53
+    ],
+    "reason": "全体 66",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "e_honda",
+    "moveId": "e_honda__normal_2_K_H",
+    "name": "しゃがみ強K",
+    "input": {
+      "type": "normal",
+      "direction": "2",
+      "button": "K",
+      "strength": "H"
+    },
+    "field": "hit",
+    "local": "+30",
+    "official": "D",
+    "officialName": "しゃがみ強K（土俵払い）",
+    "officialRows": [
+      13
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+      "index": 21,
+      "input": "2HK",
+      "hitAdv": "KD +30(+39)"
+    }
+  },
+  {
+    "characterId": "e_honda",
+    "moveId": "e_honda__normal_5_P_M",
+    "name": "立ち中P",
+    "input": {
+      "type": "normal",
+      "direction": "5",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "26",
+    "official": "30",
+    "officialName": "立ち中P（突っ張り）",
+    "officialRows": [
+      4
+    ],
+    "reason": "持続 10-13 の最終F 13 + 硬直 13 + 空振り時硬直4F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "e_honda",
+    "moveId": "e_honda__special_[2]8_K_H",
+    "name": "Sumo Smash",
+    "input": {
+      "type": "special",
+      "motion": "[2]8",
+      "button": "K",
+      "strength": "H"
+    },
+    "field": "hit",
+    "local": "+23",
+    "official": "D",
+    "officialName": "強 スーパー百貫落とし",
+    "officialRows": [
+      42
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+      "index": 60,
+      "input": "[2]8HK",
+      "hitAdv": "HKD +23[+27]"
+    }
+  },
+  {
+    "characterId": "e_honda",
+    "moveId": "e_honda__special_[2]8_K_L",
+    "name": "Sumo Smash",
+    "input": {
+      "type": "special",
+      "motion": "[2]8",
+      "button": "K",
+      "strength": "L"
+    },
+    "field": "hit",
+    "local": "+23",
+    "official": "D",
+    "officialName": "弱 スーパー百貫落とし",
+    "officialRows": [
+      40
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+      "index": 62,
+      "input": "[2]8LK",
+      "hitAdv": "HKD +23[+27]"
+    }
+  },
+  {
+    "characterId": "e_honda",
+    "moveId": "e_honda__special_[2]8_K_M",
+    "name": "Sumo Smash",
+    "input": {
+      "type": "special",
+      "motion": "[2]8",
+      "button": "K",
+      "strength": "M"
+    },
+    "field": "hit",
+    "local": "+23",
+    "official": "D",
+    "officialName": "中 スーパー百貫落とし",
+    "officialRows": [
+      41
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+      "index": 63,
+      "input": "[2]8MK",
+      "hitAdv": "HKD +23[+27]"
+    }
+  },
+  {
+    "characterId": "e_honda",
+    "moveId": "e_honda__special_[2]8_K_OD",
+    "name": "Sumo Smash",
+    "input": {
+      "type": "special",
+      "motion": "[2]8",
+      "button": "K",
+      "strength": "OD"
+    },
+    "field": "hit",
+    "local": "+23",
+    "official": "D",
+    "officialName": "OD スーパー百貫落とし",
+    "officialRows": [
+      43
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+      "index": 61,
+      "input": "[2]8KK",
+      "hitAdv": "HKD +23[+27]"
+    }
+  },
+  {
+    "characterId": "e_honda",
+    "moveId": "e_honda__special_[4]6_P_H",
+    "name": "Sumo Headbutt",
+    "input": {
+      "type": "special",
+      "motion": "[4]6",
+      "button": "P",
+      "strength": "H"
+    },
+    "field": "total",
+    "local": "34",
+    "official": "56",
+    "officialName": "強 スーパー頭突き",
+    "officialRows": [
+      38
+    ],
+    "reason": "持続 14-36 の最終F 36 + 硬直 20",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "e_honda",
+    "moveId": "e_honda__special_[4]6_P_L",
+    "name": "Sumo Headbutt",
+    "input": {
+      "type": "special",
+      "motion": "[4]6",
+      "button": "P",
+      "strength": "L"
+    },
+    "field": "total",
+    "local": "29",
+    "official": "51",
+    "officialName": "弱 スーパー頭突き",
+    "officialRows": [
+      36
+    ],
+    "reason": "持続 10-31 の最終F 31 + 硬直 20",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "e_honda",
+    "moveId": "e_honda__special_[4]6_P_M",
+    "name": "Sumo Headbutt",
+    "input": {
+      "type": "special",
+      "motion": "[4]6",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "30",
+    "official": "53",
+    "officialName": "中 スーパー頭突き",
+    "officialRows": [
+      37
+    ],
+    "reason": "持続 10-33 の最終F 33 + 硬直 20",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "e_honda",
+    "moveId": "e_honda__special_[4]6_P_OD",
+    "name": "Sumo Headbutt",
+    "input": {
+      "type": "special",
+      "motion": "[4]6",
+      "button": "P",
+      "strength": "OD"
+    },
+    "field": "total",
+    "local": "44",
+    "official": "76",
+    "officialName": "OD スーパー頭突き",
+    "officialRows": [
+      39
+    ],
+    "reason": "持続 9-56 の最終F 56 + 硬直 20",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "e_honda",
+    "moveId": "e_honda__special_[4]6_P_OD",
+    "name": "Sumo Headbutt",
+    "input": {
+      "type": "special",
+      "motion": "[4]6",
+      "button": "P",
+      "strength": "OD"
+    },
+    "field": "hit",
+    "local": "+36",
+    "official": "D",
+    "officialName": "OD スーパー頭突き",
+    "officialRows": [
+      39
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+      "index": 68,
+      "input": "[4]6PP",
+      "hitAdv": "KD +36(+37)"
+    }
+  },
+  {
+    "characterId": "ed",
+    "moveId": "ed__normal_2_K_H",
+    "name": "しゃがみ強K",
+    "input": {
+      "type": "normal",
+      "direction": "2",
+      "button": "K",
+      "strength": "H"
+    },
+    "field": "total",
+    "local": "32",
+    "official": "34",
+    "officialName": "しゃがみ強K（ローフリッカー）",
+    "officialRows": [
+      13
+    ],
+    "reason": "持続 12-13 の最終F 13 + 硬直 19 + 空振り時硬直2F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "ed",
+    "moveId": "ed__normal_2_K_M",
+    "name": "しゃがみ中K",
+    "input": {
+      "type": "normal",
+      "direction": "2",
+      "button": "K",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "26",
+    "official": "29",
+    "officialName": "しゃがみ中K（オーバーフリッカー）",
+    "officialRows": [
+      11
+    ],
+    "reason": "持続 9-10 の最終F 10 + 硬直 16 + 空振り時硬直3F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "ed",
+    "moveId": "ed__normal_5_K_M",
+    "name": "立ち中K",
+    "input": {
+      "type": "normal",
+      "direction": "5",
+      "button": "K",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "27",
+    "official": "31",
+    "officialName": "立ち中K（ヒットマンフリッカー）",
+    "officialRows": [
+      5
+    ],
+    "reason": "持続 10-11 の最終F 11 + 硬直 16 + 空振り時硬直4F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "elena",
+    "moveId": "elena__normal_5_K_M",
+    "name": "立ち中K",
+    "input": {
+      "type": "normal",
+      "direction": "5",
+      "button": "K",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "22",
+    "official": "24",
+    "officialName": "立ち中K（スプルースベンド）",
+    "officialRows": [
+      5
+    ],
+    "reason": "持続 6-9 の最終F 9 + 硬直 13 + 空振り時硬直2F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "elena",
+    "moveId": "elena__special_236_K_H",
+    "name": "HK Rhino Horn",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "K",
+      "strength": "H"
+    },
+    "field": "hit",
+    "local": "+40",
+    "official": "D",
+    "officialName": "強 ライノホーン",
+    "officialRows": [
+      37
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/elena.cargo.json",
+      "index": 15,
+      "input": "236HK",
+      "hitAdv": "KD +40~45"
+    }
+  },
+  {
+    "characterId": "elena",
+    "moveId": "elena__special_236_K_L",
+    "name": "LK Rhino Horn",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "K",
+      "strength": "L"
+    },
+    "field": "hit",
+    "local": "+39",
+    "official": "D",
+    "officialName": "弱 ライノホーン",
+    "officialRows": [
+      35
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/elena.cargo.json",
+      "index": 18,
+      "input": "236LK",
+      "hitAdv": "KD +39~44"
+    }
+  },
+  {
+    "characterId": "elena",
+    "moveId": "elena__special_236_K_M",
+    "name": "MK Rhino Horn",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "K",
+      "strength": "M"
+    },
+    "field": "hit",
+    "local": "+39",
+    "official": "D",
+    "officialName": "中 ライノホーン",
+    "officialRows": [
+      36
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/elena.cargo.json",
+      "index": 20,
+      "input": "236MK",
+      "hitAdv": "KD +39~44"
+    }
+  },
+  {
+    "characterId": "elena",
+    "moveId": "elena__special_236_K_OD",
+    "name": "OD Rhino Horn",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "K",
+      "strength": "OD"
+    },
+    "field": "hit",
+    "local": "+43",
+    "official": "D",
+    "officialName": "OD ライノホーン",
+    "officialRows": [
+      38
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/elena.cargo.json",
+      "index": 17,
+      "input": "236KK",
+      "hitAdv": "KD +43~49"
+    }
+  },
+  {
+    "characterId": "guile",
+    "moveId": "guile__normal_2_P_M",
+    "name": "しゃがみ中P",
+    "input": {
+      "type": "normal",
+      "direction": "2",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "21",
+    "official": "24",
+    "officialName": "しゃがみ中P （ストレート）",
+    "officialRows": [
+      10
+    ],
+    "reason": "持続 6-8 の最終F 8 + 硬直 13 + 空振り時硬直3F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "ingrid",
+    "moveId": "ingrid__normal_2_P_M",
+    "name": "しゃがみ中P",
+    "input": {
+      "type": "normal",
+      "direction": "2",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "22",
+    "official": "25",
+    "officialName": "しゃがみ中P（アンダートーチ）",
+    "officialRows": [
+      10
+    ],
+    "reason": "持続 7-10 の最終F 10 + 硬直 12 + 空振り時硬直3F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "ingrid",
+    "moveId": "ingrid__special_236_P_OD",
+    "name": "Sun Shot (L/M)",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "P",
+      "strength": "OD"
+    },
+    "field": "hit",
+    "local": "+52",
+    "official": "D",
+    "officialName": "OD 弱 サンシュート",
+    "officialRows": [
+      33
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "jamie",
+    "moveId": "jamie__normal_2_P_M",
+    "name": "しゃがみ中P",
+    "input": {
+      "type": "normal",
+      "direction": "2",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "21",
+    "official": "23",
+    "officialName": "しゃがみ中P（透骨拳）",
+    "officialRows": [
+      10
+    ],
+    "reason": "持続 6-8 の最終F 8 + 硬直 13 + 空振り時硬直2F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "jamie",
+    "moveId": "jamie__normal_5_K_M",
+    "name": "立ち中K",
+    "input": {
+      "type": "normal",
+      "direction": "5",
+      "button": "K",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "28",
+    "official": "29",
+    "officialName": "立ち中K（瞬歩脚）",
+    "officialRows": [
+      5
+    ],
+    "reason": "持続 9-11 の最終F 11 + 硬直 17 + 空振り時硬直1F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "jamie",
+    "moveId": "jamie__held_special_623_K_L",
+    "name": "Arrow Kick (DL2)",
+    "input": {
+      "type": "special",
+      "motion": "623",
+      "button": "K",
+      "strength": "L"
+    },
+    "field": "block",
+    "local": "-44",
+    "official": "-45",
+    "officialName": "弱 張弓腿",
+    "officialRows": [
+      75
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "jp",
+    "moveId": "jp__special_22_P_OD",
+    "name": "Triglav",
+    "input": {
+      "type": "special",
+      "motion": "22",
+      "button": "P",
+      "strength": "OD"
+    },
+    "field": "hit",
+    "local": "+57",
+    "official": "D",
+    "officialName": "OD 弱 トリグラフ",
+    "officialRows": [
+      33
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+      "index": 13,
+      "input": "22PP",
+      "hitAdv": "KD +57(+50)"
+    }
+  },
+  {
+    "characterId": "jp",
+    "moveId": "jp__special_236_K_L",
+    "name": "Torbalan",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "K",
+      "strength": "L"
+    },
+    "field": "hit",
+    "local": "+42",
+    "official": "D",
+    "officialName": "弱 トルバラン",
+    "officialRows": [
+      50
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+      "index": 20,
+      "input": "236LK",
+      "hitAdv": "KD +42~"
+    }
+  },
+  {
+    "characterId": "jp",
+    "moveId": "jp__special_236_K_OD",
+    "name": "Torbalan",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "K",
+      "strength": "OD"
+    },
+    "field": "hit",
+    "local": "+66",
+    "official": "D",
+    "officialName": "OD トルバラン",
+    "officialRows": [
+      53
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+      "index": 19,
+      "input": "236KK",
+      "hitAdv": "KD +66~"
+    }
+  },
+  {
+    "characterId": "jp",
+    "moveId": "jp__special_236_P_H",
+    "name": "Stribog",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "P",
+      "strength": "H"
+    },
+    "field": "hit",
+    "local": "+67",
+    "official": "D",
+    "officialName": "強 ストリボーグ",
+    "officialRows": [
+      38
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+      "index": 18,
+      "input": "236HP",
+      "hitAdv": "KD +67(+87)"
+    }
+  },
+  {
+    "characterId": "jp",
+    "moveId": "jp__special_236_P_OD",
+    "name": "Stribog",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "P",
+      "strength": "OD"
+    },
+    "field": "hit",
+    "local": "+56",
+    "official": "D",
+    "officialName": "OD ストリボーグ",
+    "officialRows": [
+      39
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+      "index": 24,
+      "input": "236PP",
+      "hitAdv": "KD +56(+72)"
+    }
+  },
+  {
+    "characterId": "juri",
+    "moveId": "juri__normal_2_P_M",
+    "name": "しゃがみ中P",
+    "input": {
+      "type": "normal",
+      "direction": "2",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "23",
+    "official": "24",
+    "officialName": "しゃがみ中P（妖撞）",
+    "officialRows": [
+      18
+    ],
+    "reason": "持続 6-9 の最終F 9 + 硬直 14 + 空振り時硬直1F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "juri",
+    "moveId": "juri__special_236_K_OD",
+    "name": "Saihasho",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "K",
+      "strength": "OD"
+    },
+    "field": "hit",
+    "local": "+39",
+    "official": "D",
+    "officialName": "OD 歳破衝",
+    "officialRows": [
+      58
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "juri",
+    "moveId": "juri__super_art_3_L",
+    "name": "Kaisen Dankai Raku",
+    "input": {
+      "type": "super_art",
+      "saLevel": 3,
+      "motion": "214214",
+      "button": "K",
+      "strength": "L",
+      "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+    },
+    "field": "block",
+    "local": "-36",
+    "official": "-31",
+    "officialName": "SA3 回旋断界落",
+    "officialRows": [
+      77
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "juri",
+    "moveId": "juri__super_art_3_M",
+    "name": "Kaisen Dankai Raku",
+    "input": {
+      "type": "super_art",
+      "saLevel": 3,
+      "motion": "214214",
+      "button": "K",
+      "strength": "M",
+      "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+    },
+    "field": "block",
+    "local": "-36",
+    "official": "-31",
+    "officialName": "SA3 回旋断界落",
+    "officialRows": [
+      77
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "juri",
+    "moveId": "juri__super_art_3_H",
+    "name": "Kaisen Dankai Raku",
+    "input": {
+      "type": "super_art",
+      "saLevel": 3,
+      "motion": "214214",
+      "button": "K",
+      "strength": "H",
+      "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+    },
+    "field": "block",
+    "local": "-36",
+    "official": "-31",
+    "officialName": "SA3 回旋断界落",
+    "officialRows": [
+      77
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "ken",
+    "moveId": "ken__special_623_K_L",
+    "name": "Dragonlash Kick",
+    "input": {
+      "type": "special",
+      "motion": "623",
+      "button": "K",
+      "strength": "L"
+    },
+    "field": "total",
+    "local": "45",
+    "official": "44",
+    "officialName": "弱 龍尾脚",
+    "officialRows": [
+      46
+    ],
+    "reason": "持続 18-23 の最終F 23 + 硬直 21",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "ken",
+    "moveId": "ken__special_623_K_OD",
+    "name": "Dragonlash Kick",
+    "input": {
+      "type": "special",
+      "motion": "623",
+      "button": "K",
+      "strength": "OD"
+    },
+    "field": "total",
+    "local": "47",
+    "official": "48",
+    "officialName": "OD 龍尾脚",
+    "officialRows": [
+      49
+    ],
+    "reason": "持続 9-24 の最終F 24 + 硬直 24",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "kimberly",
+    "moveId": "kimberly__normal_2_P_M",
+    "name": "しゃがみ中P",
+    "input": {
+      "type": "normal",
+      "direction": "2",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "21",
+    "official": "23",
+    "officialName": "しゃがみ中P（水平手刀）",
+    "officialRows": [
+      10
+    ],
+    "reason": "持続 6-8 の最終F 8 + 硬直 13 + 空振り時硬直2F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "kimberly",
+    "moveId": "kimberly__special_236_P_M",
+    "name": "Vagabond Edge",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "hit",
+    "local": "+37",
+    "official": "D",
+    "officialName": "中 流転一文字",
+    "officialRows": [
+      57
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/kimberly.cargo.json",
+      "index": 33,
+      "input": "236MP",
+      "hitAdv": "KD +37<br>(KD +26)"
+    }
+  },
+  {
+    "characterId": "kimberly",
+    "moveId": "kimberly__super_art_1_L",
+    "name": "Bushin Beats",
+    "input": {
+      "type": "super_art",
+      "saLevel": 1,
+      "motion": "236236",
+      "button": "K",
+      "strength": "L",
+      "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+    },
+    "field": "total",
+    "local": "66",
+    "official": "64",
+    "officialName": "SA1 武神乱拍子",
+    "officialRows": [
+      73
+    ],
+    "reason": "持続 10-24 の最終F 24 + 硬直 40",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "kimberly",
+    "moveId": "kimberly__super_art_1_M",
+    "name": "Bushin Beats",
+    "input": {
+      "type": "super_art",
+      "saLevel": 1,
+      "motion": "236236",
+      "button": "K",
+      "strength": "M",
+      "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+    },
+    "field": "total",
+    "local": "66",
+    "official": "64",
+    "officialName": "SA1 武神乱拍子",
+    "officialRows": [
+      73
+    ],
+    "reason": "持続 10-24 の最終F 24 + 硬直 40",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "kimberly",
+    "moveId": "kimberly__super_art_1_H",
+    "name": "Bushin Beats",
+    "input": {
+      "type": "super_art",
+      "saLevel": 1,
+      "motion": "236236",
+      "button": "K",
+      "strength": "H",
+      "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+    },
+    "field": "total",
+    "local": "66",
+    "official": "64",
+    "officialName": "SA1 武神乱拍子",
+    "officialRows": [
+      73
+    ],
+    "reason": "持続 10-24 の最終F 24 + 硬直 40",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "kimberly",
+    "moveId": "kimberly__super_art_2_L",
+    "name": "Bushin Scramble",
+    "input": {
+      "type": "super_art",
+      "saLevel": 2,
+      "motion": "214214",
+      "button": "P",
+      "strength": "L",
+      "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+    },
+    "field": "block",
+    "local": "-26",
+    "official": "-25",
+    "officialName": "SA2 武神天翔亢竜",
+    "officialRows": [
+      75
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "kimberly",
+    "moveId": "kimberly__super_art_2_M",
+    "name": "Bushin Scramble",
+    "input": {
+      "type": "super_art",
+      "saLevel": 2,
+      "motion": "214214",
+      "button": "P",
+      "strength": "M",
+      "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+    },
+    "field": "block",
+    "local": "-26",
+    "official": "-25",
+    "officialName": "SA2 武神天翔亢竜",
+    "officialRows": [
+      75
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "kimberly",
+    "moveId": "kimberly__super_art_2_H",
+    "name": "Bushin Scramble",
+    "input": {
+      "type": "super_art",
+      "saLevel": 2,
+      "motion": "214214",
+      "button": "P",
+      "strength": "H",
+      "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+    },
+    "field": "block",
+    "local": "-26",
+    "official": "-25",
+    "officialName": "SA2 武神天翔亢竜",
+    "officialRows": [
+      75
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "lily",
+    "moveId": "lily__special_236_K_H",
+    "name": "Condor Spire",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "K",
+      "strength": "H"
+    },
+    "field": "hit",
+    "local": "+37",
+    "official": "D",
+    "officialName": "強 コンドルスパイア",
+    "officialRows": [
+      35
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json",
+      "index": 11,
+      "input": "236HK",
+      "hitAdv": "KD +37(+49)"
+    }
+  },
+  {
+    "characterId": "lily",
+    "moveId": "lily__special_236_K_L",
+    "name": "Condor Spire",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "K",
+      "strength": "L"
+    },
+    "field": "hit",
+    "local": "+33",
+    "official": "D",
+    "officialName": "弱 コンドルスパイア",
+    "officialRows": [
+      33
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json",
+      "index": 13,
+      "input": "236LK",
+      "hitAdv": "KD +33(+45)"
+    }
+  },
+  {
+    "characterId": "lily",
+    "moveId": "lily__special_236_K_M",
+    "name": "Condor Spire",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "K",
+      "strength": "M"
+    },
+    "field": "hit",
+    "local": "+37",
+    "official": "D",
+    "officialName": "中 コンドルスパイア",
+    "officialRows": [
+      34
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json",
+      "index": 14,
+      "input": "236MK",
+      "hitAdv": "KD +37(+49)"
+    }
+  },
+  {
+    "characterId": "lily",
+    "moveId": "lily__special_236_K_OD",
+    "name": "Condor Spire",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "K",
+      "strength": "OD"
+    },
+    "field": "hit",
+    "local": "+43",
+    "official": "D",
+    "officialName": "OD 弱 コンドルスパイア",
+    "officialRows": [
+      36
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json",
+      "index": 12,
+      "input": "236KK",
+      "hitAdv": "KD +43(+55)"
+    }
+  },
+  {
+    "characterId": "lily",
+    "moveId": "lily__special_623_P_H",
+    "name": "Tomahawk Buster",
+    "input": {
+      "type": "special",
+      "motion": "623",
+      "button": "P",
+      "strength": "H"
+    },
+    "field": "total",
+    "local": "61",
+    "official": "60",
+    "officialName": "強 トマホークバスター",
+    "officialRows": [
+      45
+    ],
+    "reason": "持続 10-23 の最終F 23 + 硬直 25+着地後12",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "lily",
+    "moveId": "lily__special_623_P_H",
+    "name": "Tomahawk Buster",
+    "input": {
+      "type": "special",
+      "motion": "623",
+      "button": "P",
+      "strength": "H"
+    },
+    "field": "hit",
+    "local": "+36",
+    "official": "D",
+    "officialName": "強 トマホークバスター",
+    "officialRows": [
+      45
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json",
+      "index": 36,
+      "input": "623HP",
+      "hitAdv": "KD +36(+41)"
+    }
+  },
+  {
+    "characterId": "lily",
+    "moveId": "lily__special_623_P_L",
+    "name": "Tomahawk Buster",
+    "input": {
+      "type": "special",
+      "motion": "623",
+      "button": "P",
+      "strength": "L"
+    },
+    "field": "total",
+    "local": "49",
+    "official": "48",
+    "officialName": "弱 トマホークバスター",
+    "officialRows": [
+      43
+    ],
+    "reason": "持続 6-16 の最終F 16 + 硬直 20+着地後12",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "lily",
+    "moveId": "lily__special_623_P_L",
+    "name": "Tomahawk Buster",
+    "input": {
+      "type": "special",
+      "motion": "623",
+      "button": "P",
+      "strength": "L"
+    },
+    "field": "hit",
+    "local": "+36",
+    "official": "D",
+    "officialName": "弱 トマホークバスター",
+    "officialRows": [
+      43
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json",
+      "index": 37,
+      "input": "623LP",
+      "hitAdv": "KD +36(+41)"
+    }
+  },
+  {
+    "characterId": "lily",
+    "moveId": "lily__special_623_P_M",
+    "name": "Tomahawk Buster",
+    "input": {
+      "type": "special",
+      "motion": "623",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "56",
+    "official": "55",
+    "officialName": "中 トマホークバスター",
+    "officialRows": [
+      44
+    ],
+    "reason": "持続 8-19 の最終F 19 + 硬直 24+着地後12",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "lily",
+    "moveId": "lily__special_623_P_M",
+    "name": "Tomahawk Buster",
+    "input": {
+      "type": "special",
+      "motion": "623",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "hit",
+    "local": "+36",
+    "official": "D",
+    "officialName": "中 トマホークバスター",
+    "officialRows": [
+      44
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json",
+      "index": 38,
+      "input": "623MP",
+      "hitAdv": "KD +36(+42)"
+    }
+  },
+  {
+    "characterId": "lily",
+    "moveId": "lily__special_623_P_OD",
+    "name": "Tomahawk Buster",
+    "input": {
+      "type": "special",
+      "motion": "623",
+      "button": "P",
+      "strength": "OD"
+    },
+    "field": "total",
+    "local": "60",
+    "official": "59",
+    "officialName": "OD トマホークバスター",
+    "officialRows": [
+      46
+    ],
+    "reason": "持続 6-17 の最終F 17 + 硬直 27+着地後15",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "lily",
+    "moveId": "lily__special_623_P_OD",
+    "name": "Tomahawk Buster",
+    "input": {
+      "type": "special",
+      "motion": "623",
+      "button": "P",
+      "strength": "OD"
+    },
+    "field": "hit",
+    "local": "+32",
+    "official": "D",
+    "officialName": "OD トマホークバスター",
+    "officialRows": [
+      46
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json",
+      "index": 39,
+      "input": "623PP",
+      "hitAdv": "KD +32(+37)"
+    }
+  },
+  {
+    "characterId": "lily",
+    "moveId": "lily__super_art_3_L",
+    "name": "Raging Typhoon",
+    "input": {
+      "type": "super_art",
+      "saLevel": 3,
+      "motion": "214214",
+      "button": "P",
+      "strength": "L",
+      "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+    },
+    "field": "startup",
+    "local": "5",
+    "official": "7",
+    "officialName": "SA3 レイジングタイフーン",
+    "officialRows": [
+      65
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "lily",
+    "moveId": "lily__super_art_3_M",
+    "name": "Raging Typhoon",
+    "input": {
+      "type": "super_art",
+      "saLevel": 3,
+      "motion": "214214",
+      "button": "P",
+      "strength": "M",
+      "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+    },
+    "field": "startup",
+    "local": "5",
+    "official": "7",
+    "officialName": "SA3 レイジングタイフーン",
+    "officialRows": [
+      65
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "lily",
+    "moveId": "lily__super_art_3_H",
+    "name": "Raging Typhoon",
+    "input": {
+      "type": "super_art",
+      "saLevel": 3,
+      "motion": "214214",
+      "button": "P",
+      "strength": "H",
+      "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+    },
+    "field": "startup",
+    "local": "5",
+    "official": "7",
+    "officialName": "SA3 レイジングタイフーン",
+    "officialRows": [
+      65
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "luke",
+    "moveId": "luke__special_214_P_H",
+    "name": "HP Flash Knuckle",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "P",
+      "strength": "H"
+    },
+    "field": "hit",
+    "local": "+42",
+    "official": "D",
+    "officialName": "強 フラッシュナックル",
+    "officialRows": [
+      44
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/luke.cargo.json",
+      "index": 1,
+      "input": "214HP",
+      "hitAdv": "KD +42(+31)"
+    }
+  },
+  {
+    "characterId": "luke",
+    "moveId": "luke__super_art_3_L",
+    "name": "Pale Rider",
+    "input": {
+      "type": "super_art",
+      "saLevel": 3,
+      "motion": "236236",
+      "button": "K",
+      "strength": "L",
+      "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+    },
+    "field": "total",
+    "local": "122",
+    "official": "105",
+    "officialName": "SA3 ペイルライダー",
+    "officialRows": [
+      67
+    ],
+    "reason": "持続 10-13 の最終F 13 + 硬直 92",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "luke",
+    "moveId": "luke__super_art_3_M",
+    "name": "Pale Rider",
+    "input": {
+      "type": "super_art",
+      "saLevel": 3,
+      "motion": "236236",
+      "button": "K",
+      "strength": "M",
+      "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+    },
+    "field": "total",
+    "local": "122",
+    "official": "105",
+    "officialName": "SA3 ペイルライダー",
+    "officialRows": [
+      67
+    ],
+    "reason": "持続 10-13 の最終F 13 + 硬直 92",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "luke",
+    "moveId": "luke__super_art_3_H",
+    "name": "Pale Rider",
+    "input": {
+      "type": "super_art",
+      "saLevel": 3,
+      "motion": "236236",
+      "button": "K",
+      "strength": "H",
+      "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+    },
+    "field": "total",
+    "local": "122",
+    "official": "105",
+    "officialName": "SA3 ペイルライダー",
+    "officialRows": [
+      67
+    ],
+    "reason": "持続 10-13 の最終F 13 + 硬直 92",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "m_bison",
+    "moveId": "m_bison__normal_2_P_M",
+    "name": "しゃがみ中P",
+    "input": {
+      "type": "normal",
+      "direction": "2",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "22",
+    "official": "25",
+    "officialName": "しゃがみ中P（ストレート）",
+    "officialRows": [
+      10
+    ],
+    "reason": "持続 6-8 の最終F 8 + 硬直 14 + 空振り時硬直3F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "m_bison",
+    "moveId": "m_bison__special_[2]8_K_OD",
+    "name": "OD Shadow Rise",
+    "input": {
+      "type": "special",
+      "motion": "[2]8",
+      "button": "K",
+      "strength": "OD"
+    },
+    "field": "total",
+    "local": "54",
+    "official": "55",
+    "officialName": "OD シャドウライズ",
+    "officialRows": [
+      52
+    ],
+    "reason": "全体 55",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "m_bison",
+    "moveId": "m_bison__special_[4]6_P_H",
+    "name": "HP Psycho Crusher Attack",
+    "input": {
+      "type": "special",
+      "motion": "[4]6",
+      "button": "P",
+      "strength": "H"
+    },
+    "field": "hit",
+    "local": "+14",
+    "official": "D",
+    "officialName": "強 サイコクラッシャーアタック",
+    "officialRows": [
+      32
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json",
+      "index": 67,
+      "input": "[4]6HP",
+      "hitAdv": "KD +14(+39)"
+    }
+  },
+  {
+    "characterId": "m_bison",
+    "moveId": "m_bison__special_[4]6_P_L",
+    "name": "LP Psycho Crusher Attack",
+    "input": {
+      "type": "special",
+      "motion": "[4]6",
+      "button": "P",
+      "strength": "L"
+    },
+    "field": "hit",
+    "local": "+24",
+    "official": "D",
+    "officialName": "弱 サイコクラッシャーアタック",
+    "officialRows": [
+      28
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json",
+      "index": 69,
+      "input": "[4]6LP",
+      "hitAdv": "KD +24(+39)"
+    }
+  },
+  {
+    "characterId": "m_bison",
+    "moveId": "m_bison__special_[4]6_P_M",
+    "name": "MP Psycho Crusher Attack",
+    "input": {
+      "type": "special",
+      "motion": "[4]6",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "hit",
+    "local": "+24",
+    "official": "D",
+    "officialName": "中 サイコクラッシャーアタック",
+    "officialRows": [
+      30
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json",
+      "index": 71,
+      "input": "[4]6MP",
+      "hitAdv": "KD +24(+39)"
+    }
+  },
+  {
+    "characterId": "m_bison",
+    "moveId": "m_bison__special_[4]6_P_OD",
+    "name": "OD Psycho Crusher Attack",
+    "input": {
+      "type": "special",
+      "motion": "[4]6",
+      "button": "P",
+      "strength": "OD"
+    },
+    "field": "hit",
+    "local": "+35",
+    "official": "D",
+    "officialName": "OD サイコクラッシャーアタック",
+    "officialRows": [
+      34
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json",
+      "index": 73,
+      "input": "[4]6PP",
+      "hitAdv": "KD +35(+37)"
+    }
+  },
+  {
+    "characterId": "m_bison",
+    "moveId": "m_bison__special_[2]8_K_none__strength_M",
+    "name": "Shadow Rise",
+    "input": {
+      "type": "special",
+      "motion": "[2]8",
+      "button": "K",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "53",
+    "official": "58",
+    "officialName": "中 シャドウライズ",
+    "officialRows": [
+      50
+    ],
+    "reason": "全体 58",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "m_bison",
+    "moveId": "m_bison__special_[2]8_K_none__strength_H",
+    "name": "Shadow Rise",
+    "input": {
+      "type": "special",
+      "motion": "[2]8",
+      "button": "K",
+      "strength": "H"
+    },
+    "field": "total",
+    "local": "53",
+    "official": "63",
+    "officialName": "強 シャドウライズ",
+    "officialRows": [
+      51
+    ],
+    "reason": "全体 63",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "mai",
+    "moveId": "mai__normal_2_K_H",
+    "name": "しゃがみ強K",
+    "input": {
+      "type": "normal",
+      "direction": "2",
+      "button": "K",
+      "strength": "H"
+    },
+    "field": "total",
+    "local": "33",
+    "official": "36",
+    "officialName": "しゃがみ強K（反り蹴り）",
+    "officialRows": [
+      13
+    ],
+    "reason": "持続 9-11 の最終F 11 + 硬直 22 + 空振り時硬直3F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "mai",
+    "moveId": "mai__normal_2_P_M",
+    "name": "しゃがみ中P",
+    "input": {
+      "type": "normal",
+      "direction": "2",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "24",
+    "official": "26",
+    "officialName": "しゃがみ中P（背面ひじ打ち）",
+    "officialRows": [
+      10
+    ],
+    "reason": "持続 6-9 の最終F 9 + 硬直 15 + 空振り時硬直2F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "mai",
+    "moveId": "mai__normal_5_K_H",
+    "name": "立ち強K",
+    "input": {
+      "type": "normal",
+      "direction": "5",
+      "button": "K",
+      "strength": "H"
+    },
+    "field": "total",
+    "local": "35",
+    "official": "38",
+    "officialName": "立ち強K（背面蹴り）",
+    "officialRows": [
+      7
+    ],
+    "reason": "持続 14-16 の最終F 16 + 硬直 19 + 空振り時硬直3F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "mai",
+    "moveId": "mai__normal_5_P_M",
+    "name": "立ち中P",
+    "input": {
+      "type": "normal",
+      "direction": "5",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "26",
+    "official": "28",
+    "officialName": "立ち中P（扇子突き）",
+    "officialRows": [
+      4
+    ],
+    "reason": "持続 8-11 の最終F 11 + 硬直 15 + 空振り時硬直2F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "mai",
+    "moveId": "mai__special_214_P_H",
+    "name": "HP Ryuuenbu",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "P",
+      "strength": "H"
+    },
+    "field": "hit",
+    "local": "+43",
+    "official": "D",
+    "officialName": "強 龍炎舞",
+    "officialRows": [
+      57
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/mai.cargo.json",
+      "index": 3,
+      "input": "214HP",
+      "hitAdv": "KD +43"
+    }
+  },
+  {
+    "characterId": "mai",
+    "moveId": "mai__special_214_P_M",
+    "name": "MP Ryuuenbu",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "hit",
+    "local": "+35",
+    "official": "D",
+    "officialName": "中 龍炎舞",
+    "officialRows": [
+      55
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/mai.cargo.json",
+      "index": 6,
+      "input": "214MP",
+      "hitAdv": "KD +35"
+    }
+  },
+  {
+    "characterId": "mai",
+    "moveId": "mai__special_236_K_H",
+    "name": "HK Hissatsu Shinobi Bachi",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "K",
+      "strength": "H"
+    },
+    "field": "hit",
+    "local": "+22",
+    "official": "D",
+    "officialName": "強 必殺忍蜂",
+    "officialRows": [
+      65
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/mai.cargo.json",
+      "index": 14,
+      "input": "236HK",
+      "hitAdv": "KD +22(+38)"
+    }
+  },
+  {
+    "characterId": "mai",
+    "moveId": "mai__special_236_K_L",
+    "name": "LK Hissatsu Shinobi Bachi",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "K",
+      "strength": "L"
+    },
+    "field": "hit",
+    "local": "+27",
+    "official": "D",
+    "officialName": "弱 必殺忍蜂",
+    "officialRows": [
+      61
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/mai.cargo.json",
+      "index": 20,
+      "input": "236LK",
+      "hitAdv": "KD +27(+43)"
+    }
+  },
+  {
+    "characterId": "mai",
+    "moveId": "mai__special_236_K_M",
+    "name": "MK Hissatsu Shinobi Bachi",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "K",
+      "strength": "M"
+    },
+    "field": "hit",
+    "local": "+23",
+    "official": "D",
+    "officialName": "中 必殺忍蜂",
+    "officialRows": [
+      63
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/mai.cargo.json",
+      "index": 24,
+      "input": "236MK",
+      "hitAdv": "KD +23(+39)"
+    }
+  },
+  {
+    "characterId": "mai",
+    "moveId": "mai__special_623_K_H",
+    "name": "HK Hishou Ryuuenjin",
+    "input": {
+      "type": "special",
+      "motion": "623",
+      "button": "K",
+      "strength": "H"
+    },
+    "field": "block",
+    "local": "-28",
+    "official": "-31",
+    "officialName": "強 飛翔龍炎陣",
+    "officialRows": [
+      49
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "manon",
+    "moveId": "manon__normal_2_P_M",
+    "name": "しゃがみ中P",
+    "input": {
+      "type": "normal",
+      "direction": "2",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "20",
+    "official": "24",
+    "officialName": "しゃがみ中P（ヒキテ）",
+    "officialRows": [
+      10
+    ],
+    "reason": "持続 7-9 の最終F 9 + 硬直 11 + 空振り時硬直4F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "manon",
+    "moveId": "manon__normal_5_K_H",
+    "name": "立ち強K",
+    "input": {
+      "type": "normal",
+      "direction": "5",
+      "button": "K",
+      "strength": "H"
+    },
+    "field": "total",
+    "local": "40",
+    "official": "43",
+    "officialName": "立ち強K（ピエ・ドンジュ）",
+    "officialRows": [
+      7
+    ],
+    "reason": "持続 15-17 の最終F 17 + 硬直 26",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "manon",
+    "moveId": "manon__special_236_K_H",
+    "name": "HK Rond-point",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "K",
+      "strength": "H"
+    },
+    "field": "total",
+    "local": "44",
+    "official": "46",
+    "officialName": "強 ロン・ポワン",
+    "officialRows": [
+      35
+    ],
+    "reason": "持続 14-22 の最終F 22 + 硬直 24",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "manon",
+    "moveId": "manon__special_236_K_OD",
+    "name": "OD Rond-point",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "K",
+      "strength": "OD"
+    },
+    "field": "total",
+    "local": "41",
+    "official": "46",
+    "officialName": "OD ロン・ポワン",
+    "officialRows": [
+      36
+    ],
+    "reason": "持続 8-16 の最終F 16 + 硬直 30",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "manon",
+    "moveId": "manon__super_art_3_L",
+    "name": "Pas de Deux",
+    "input": {
+      "type": "super_art",
+      "saLevel": 3,
+      "motion": "236236",
+      "button": "P",
+      "strength": "L",
+      "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+    },
+    "field": "startup",
+    "local": "6",
+    "official": "7",
+    "officialName": "SA3 パ・ド・ドゥ",
+    "officialRows": [
+      50
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "manon",
+    "moveId": "manon__super_art_3_M",
+    "name": "Pas de Deux",
+    "input": {
+      "type": "super_art",
+      "saLevel": 3,
+      "motion": "236236",
+      "button": "P",
+      "strength": "M",
+      "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+    },
+    "field": "startup",
+    "local": "6",
+    "official": "7",
+    "officialName": "SA3 パ・ド・ドゥ",
+    "officialRows": [
+      50
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "manon",
+    "moveId": "manon__super_art_3_H",
+    "name": "Pas de Deux",
+    "input": {
+      "type": "super_art",
+      "saLevel": 3,
+      "motion": "236236",
+      "button": "P",
+      "strength": "H",
+      "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+    },
+    "field": "startup",
+    "local": "6",
+    "official": "7",
+    "officialName": "SA3 パ・ド・ドゥ",
+    "officialRows": [
+      50
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "marisa",
+    "moveId": "marisa__special_214_P_M",
+    "name": "Dimachaerus",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "49",
+    "official": "50",
+    "officialName": "中 ディマカイルス（1段目）",
+    "officialRows": [
+      55
+    ],
+    "reason": "持続 16-20 の最終F 20 + 硬直 30",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "rashid",
+    "moveId": "rashid__normal_2_P_H",
+    "name": "しゃがみ強P",
+    "input": {
+      "type": "normal",
+      "direction": "2",
+      "button": "P",
+      "strength": "H"
+    },
+    "field": "total",
+    "local": "35",
+    "official": "37",
+    "officialName": "しゃがみ強P （グランドスラスト）",
+    "officialRows": [
+      12
+    ],
+    "reason": "持続 12-14 の最終F 14 + 硬直 21 + 空振り時硬直2F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "rashid",
+    "moveId": "rashid__normal_5_K_M",
+    "name": "立ち中K",
+    "input": {
+      "type": "normal",
+      "direction": "5",
+      "button": "K",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "27",
+    "official": "29",
+    "officialName": "立ち中K （スコーピオンテイル）",
+    "officialRows": [
+      5
+    ],
+    "reason": "持続 8-10 の最終F 10 + 硬直 17 + 空振り時硬直2F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "rashid",
+    "moveId": "rashid__special_214_K_H",
+    "name": "Eagle Spike",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "K",
+      "strength": "H"
+    },
+    "field": "hit",
+    "local": "+56",
+    "official": "D",
+    "officialName": "強 イーグル・スパイク",
+    "officialRows": [
+      46
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/rashid.cargo.json",
+      "index": 2,
+      "input": "214HK",
+      "hitAdv": "KD +56(+68)"
+    }
+  },
+  {
+    "characterId": "rashid",
+    "moveId": "rashid__special_214_K_L",
+    "name": "Eagle Spike",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "K",
+      "strength": "L"
+    },
+    "field": "hit",
+    "local": "+30",
+    "official": "D",
+    "officialName": "弱 イーグル・スパイク",
+    "officialRows": [
+      42
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/rashid.cargo.json",
+      "index": 7,
+      "input": "214LK",
+      "hitAdv": "KD +30(+42)"
+    }
+  },
+  {
+    "characterId": "rashid",
+    "moveId": "rashid__special_214_K_M",
+    "name": "Eagle Spike",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "K",
+      "strength": "M"
+    },
+    "field": "hit",
+    "local": "+52",
+    "official": "D",
+    "officialName": "中 イーグル・スパイク",
+    "officialRows": [
+      44
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/rashid.cargo.json",
+      "index": 10,
+      "input": "214MK",
+      "hitAdv": "KD +52(+64)"
+    }
+  },
+  {
+    "characterId": "rashid",
+    "moveId": "rashid__special_214_K_OD",
+    "name": "Eagle Spike",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "K",
+      "strength": "OD"
+    },
+    "field": "hit",
+    "local": "+53",
+    "official": "D",
+    "officialName": "OD イーグル・スパイク",
+    "officialRows": [
+      48
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/rashid.cargo.json",
+      "index": 5,
+      "input": "214KK",
+      "hitAdv": "KD +53(+65)"
+    }
+  },
+  {
+    "characterId": "rashid",
+    "moveId": "rashid__special_214_P_OD",
+    "name": "Arabian Cyclone",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "P",
+      "strength": "OD"
+    },
+    "field": "total",
+    "local": "49",
+    "official": "53",
+    "officialName": "OD アラビアン・サイクロン",
+    "officialRows": [
+      64
+    ],
+    "reason": "全体 53",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "rashid",
+    "moveId": "rashid__special_236_P_L",
+    "name": "Spinning Mixer",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "P",
+      "strength": "L"
+    },
+    "field": "total",
+    "local": "42",
+    "official": "47",
+    "officialName": "弱 スピニング・ミキサー",
+    "officialRows": [
+      34
+    ],
+    "reason": "持続 8-23 の最終F 23 + 硬直 19 + 空振り時硬直5F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "rashid",
+    "moveId": "rashid__special_236_P_OD",
+    "name": "Spinning Mixer",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "P",
+      "strength": "OD"
+    },
+    "field": "block",
+    "local": "-53",
+    "official": "-42",
+    "officialName": "OD スピニング・ミキサー",
+    "officialRows": [
+      40
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "ryu",
+    "moveId": "ryu__normal_2_P_H",
+    "name": "しゃがみ強P",
+    "input": {
+      "type": "normal",
+      "direction": "2",
+      "button": "P",
+      "strength": "H"
+    },
+    "field": "total",
+    "local": "35",
+    "official": "36",
+    "officialName": "しゃがみ強P（突き上げアッパー）",
+    "officialRows": [
+      12
+    ],
+    "reason": "持続 9-14 の最終F 14 + 硬直 22",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "ryu",
+    "moveId": "ryu__normal_2_P_M",
+    "name": "しゃがみ中P",
+    "input": {
+      "type": "normal",
+      "direction": "2",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "22",
+    "official": "24",
+    "officialName": "しゃがみ中P（ストレート）",
+    "officialRows": [
+      10
+    ],
+    "reason": "持続 6-9 の最終F 9 + 硬直 13 + 空振り時硬直2F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "ryu",
+    "moveId": "ryu__normal_5_P_M",
+    "name": "立ち中P",
+    "input": {
+      "type": "normal",
+      "direction": "5",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "20",
+    "official": "22",
+    "officialName": "立ち中P（鉤突き）",
+    "officialRows": [
+      4
+    ],
+    "reason": "持続 6-9 の最終F 9 + 硬直 11 + 空振り時硬直2F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "ryu",
+    "moveId": "ryu__special_214_K_H",
+    "name": "Tatsumaki Senpu-kyaku",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "K",
+      "strength": "H"
+    },
+    "field": "hit",
+    "local": "+20",
+    "official": "D",
+    "officialName": "強 竜巻旋風脚",
+    "officialRows": [
+      42
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json",
+      "index": 6,
+      "input": "214HK",
+      "hitAdv": "KD +20(+35)(+50)"
+    }
+  },
+  {
+    "characterId": "ryu",
+    "moveId": "ryu__special_214_K_M",
+    "name": "Tatsumaki Senpu-kyaku",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "K",
+      "strength": "M"
+    },
+    "field": "hit",
+    "local": "+23",
+    "official": "D",
+    "officialName": "中 竜巻旋風脚",
+    "officialRows": [
+      41
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json",
+      "index": 11,
+      "input": "214MK",
+      "hitAdv": "KD +23(+38)"
+    }
+  },
+  {
+    "characterId": "ryu",
+    "moveId": "ryu__special_214_P_OD",
+    "name": "Hashogeki",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "P",
+      "strength": "OD"
+    },
+    "field": "total",
+    "local": "43",
+    "official": "42",
+    "officialName": "OD 波掌撃",
+    "officialRows": [
+      54
+    ],
+    "reason": "持続 18-22 の最終F 22 + 硬直 20",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "ryu",
+    "moveId": "ryu__special_236_K_H",
+    "name": "High Blade Kick",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "K",
+      "strength": "H"
+    },
+    "field": "hit",
+    "local": "+45",
+    "official": "D",
+    "officialName": "強 上段足刀蹴り",
+    "officialRows": [
+      48
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json",
+      "index": 19,
+      "input": "236HK",
+      "hitAdv": "KD +45~51"
+    }
+  },
+  {
+    "characterId": "ryu",
+    "moveId": "ryu__special_236_K_L",
+    "name": "High Blade Kick",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "K",
+      "strength": "L"
+    },
+    "field": "hit",
+    "local": "+42",
+    "official": "D",
+    "officialName": "弱 上段足刀蹴り",
+    "officialRows": [
+      46
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json",
+      "index": 22,
+      "input": "236LK",
+      "hitAdv": "KD +42~46"
+    }
+  },
+  {
+    "characterId": "ryu",
+    "moveId": "ryu__special_236_K_M",
+    "name": "High Blade Kick",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "K",
+      "strength": "M"
+    },
+    "field": "hit",
+    "local": "+40",
+    "official": "D",
+    "officialName": "中 上段足刀蹴り",
+    "officialRows": [
+      47
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json",
+      "index": 24,
+      "input": "236MK",
+      "hitAdv": "KD +40~46"
+    }
+  },
+  {
+    "characterId": "ryu",
+    "moveId": "ryu__special_623_P_H",
+    "name": "Shoryuken",
+    "input": {
+      "type": "special",
+      "motion": "623",
+      "button": "P",
+      "strength": "H"
+    },
+    "field": "hit",
+    "local": "+37",
+    "official": "D",
+    "officialName": "強 昇龍拳",
+    "officialRows": [
+      38
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json",
+      "index": 48,
+      "input": "623HP",
+      "hitAdv": "KD +37(+29)"
+    }
+  },
+  {
+    "characterId": "ryu",
+    "moveId": "ryu__special_623_P_H",
+    "name": "Shoryuken",
+    "input": {
+      "type": "special",
+      "motion": "623",
+      "button": "P",
+      "strength": "H"
+    },
+    "field": "block",
+    "local": "-39",
+    "official": "-36",
+    "officialName": "強 昇龍拳",
+    "officialRows": [
+      38
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "ryu",
+    "moveId": "ryu__super_art_3_L",
+    "name": "Shin Shoryuken",
+    "input": {
+      "type": "super_art",
+      "saLevel": 3,
+      "motion": "236236",
+      "button": "K",
+      "strength": "L",
+      "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+    },
+    "field": "block",
+    "local": "-50",
+    "official": "-52",
+    "officialName": "SA3 真・昇龍拳",
+    "officialRows": [
+      66
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "ryu",
+    "moveId": "ryu__super_art_3_M",
+    "name": "Shin Shoryuken",
+    "input": {
+      "type": "super_art",
+      "saLevel": 3,
+      "motion": "236236",
+      "button": "K",
+      "strength": "M",
+      "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+    },
+    "field": "block",
+    "local": "-50",
+    "official": "-52",
+    "officialName": "SA3 真・昇龍拳",
+    "officialRows": [
+      66
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "ryu",
+    "moveId": "ryu__super_art_3_H",
+    "name": "Shin Shoryuken",
+    "input": {
+      "type": "super_art",
+      "saLevel": 3,
+      "motion": "236236",
+      "button": "K",
+      "strength": "H",
+      "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+    },
+    "field": "block",
+    "local": "-50",
+    "official": "-52",
+    "officialName": "SA3 真・昇龍拳",
+    "officialRows": [
+      66
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "sagat",
+    "moveId": "sagat__normal_2_P_M",
+    "name": "しゃがみ中P",
+    "input": {
+      "type": "normal",
+      "direction": "2",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "25",
+    "official": "28",
+    "officialName": "しゃがみ中P（ミドルフック）",
+    "officialRows": [
+      10
+    ],
+    "reason": "持続 7-9 の最終F 9 + 硬直 16 + 空振り時硬直3F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "sagat",
+    "moveId": "sagat__normal_5_K_H",
+    "name": "立ち強K",
+    "input": {
+      "type": "normal",
+      "direction": "5",
+      "button": "K",
+      "strength": "H"
+    },
+    "field": "total",
+    "local": "36",
+    "official": "40",
+    "officialName": "立ち強K（ハイキック）",
+    "officialRows": [
+      7
+    ],
+    "reason": "持続 10-15 の最終F 15 + 硬直 21 + 空振り時硬直4F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "sagat",
+    "moveId": "sagat__normal_5_K_L",
+    "name": "立ち弱K",
+    "input": {
+      "type": "normal",
+      "direction": "5",
+      "button": "K",
+      "strength": "L"
+    },
+    "field": "total",
+    "local": "23",
+    "official": "25",
+    "officialName": "立ち弱K（ローキック）",
+    "officialRows": [
+      3
+    ],
+    "reason": "持続 7-8 の最終F 8 + 硬直 15 + 空振り時硬直2F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "sagat",
+    "moveId": "sagat__normal_5_P_H",
+    "name": "立ち強P",
+    "input": {
+      "type": "normal",
+      "direction": "5",
+      "button": "P",
+      "strength": "H"
+    },
+    "field": "total",
+    "local": "40",
+    "official": "43",
+    "officialName": "立ち強P（タイガーストレート）",
+    "officialRows": [
+      6
+    ],
+    "reason": "持続 15-18 の最終F 18 + 硬直 22 + 空振り時硬直3F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "sagat",
+    "moveId": "sagat__special_236_K_H",
+    "name": "HK Tiger Knee Crush",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "K",
+      "strength": "H"
+    },
+    "field": "hit",
+    "local": "+40",
+    "official": "D",
+    "officialName": "強 タイガーニークラッシュ",
+    "officialRows": [
+      42
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/sagat.cargo.json",
+      "index": 18,
+      "input": "236HK",
+      "hitAdv": "KD +40~41<br>(KD +37~47)"
+    }
+  },
+  {
+    "characterId": "sagat",
+    "moveId": "sagat__special_236_K_L",
+    "name": "LK Tiger Knee Crush",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "K",
+      "strength": "L"
+    },
+    "field": "hit",
+    "local": "+36",
+    "official": "D",
+    "officialName": "弱 タイガーニークラッシュ",
+    "officialRows": [
+      40
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/sagat.cargo.json",
+      "index": 21,
+      "input": "236LK",
+      "hitAdv": "KD +36(+46)"
+    }
+  },
+  {
+    "characterId": "sagat",
+    "moveId": "sagat__special_236_K_M",
+    "name": "MK Tiger Knee Crush",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "K",
+      "strength": "M"
+    },
+    "field": "hit",
+    "local": "+39",
+    "official": "D",
+    "officialName": "中 タイガーニークラッシュ",
+    "officialRows": [
+      41
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/sagat.cargo.json",
+      "index": 24,
+      "input": "236MK",
+      "hitAdv": "KD +39(+49)"
+    }
+  },
+  {
+    "characterId": "sagat",
+    "moveId": "sagat__special_236_P_OD",
+    "name": "OD Low Tiger Shot",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "P",
+      "strength": "OD"
+    },
+    "field": "hit",
+    "local": "+52",
+    "official": "D",
+    "officialName": "OD グランドタイガーショット",
+    "officialRows": [
+      34
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "terry",
+    "moveId": "terry__normal_2_P_M",
+    "name": "しゃがみ中P",
+    "input": {
+      "type": "normal",
+      "direction": "2",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "22",
+    "official": "24",
+    "officialName": "しゃがみ中P （しゃがみストレート）",
+    "officialRows": [
+      10
+    ],
+    "reason": "持続 6-9 の最終F 9 + 硬直 13 + 空振り時硬直2F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "terry",
+    "moveId": "terry__special_214_K_H",
+    "name": "HK Crack Shoot",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "K",
+      "strength": "H"
+    },
+    "field": "hit",
+    "local": "+43",
+    "official": "D",
+    "officialName": "強 クラックシュート",
+    "officialRows": [
+      45
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json",
+      "index": 3,
+      "input": "214HK",
+      "hitAdv": "KD +43~45"
+    }
+  },
+  {
+    "characterId": "terry",
+    "moveId": "terry__special_214_K_OD",
+    "name": "OD Crack Shoot",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "K",
+      "strength": "OD"
+    },
+    "field": "hit",
+    "local": "+29",
+    "official": "D",
+    "officialName": "OD クラックシュート",
+    "officialRows": [
+      46
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json",
+      "index": 5,
+      "input": "214KK",
+      "hitAdv": "KD +29"
+    }
+  },
+  {
+    "characterId": "terry",
+    "moveId": "terry__special_214_P_H",
+    "name": "HP Burning Knuckle",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "P",
+      "strength": "H"
+    },
+    "field": "hit",
+    "local": "+28",
+    "official": "D",
+    "officialName": "強 バーンナックル",
+    "officialRows": [
+      37
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json",
+      "index": 4,
+      "input": "214HP",
+      "hitAdv": "KD +28~41"
+    }
+  },
+  {
+    "characterId": "terry",
+    "moveId": "terry__special_214_P_M",
+    "name": "MP Burning Knuckle",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "hit",
+    "local": "+30",
+    "official": "D",
+    "officialName": "中 バーンナックル",
+    "officialRows": [
+      36
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json",
+      "index": 10,
+      "input": "214MP",
+      "hitAdv": "KD +30~42"
+    }
+  },
+  {
+    "characterId": "terry",
+    "moveId": "terry__special_236_K_H",
+    "name": "HK Power Charge",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "K",
+      "strength": "H"
+    },
+    "field": "hit",
+    "local": "+37",
+    "official": "D",
+    "officialName": "強 パワーチャージ",
+    "officialRows": [
+      41
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json",
+      "index": 15,
+      "input": "236HK",
+      "hitAdv": "KD +37~45"
+    }
+  },
+  {
+    "characterId": "terry",
+    "moveId": "terry__special_236_K_M",
+    "name": "MK Power Charge",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "K",
+      "strength": "M"
+    },
+    "field": "hit",
+    "local": "+42",
+    "official": "D",
+    "officialName": "中 パワーチャージ",
+    "officialRows": [
+      40
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json",
+      "index": 20,
+      "input": "236MK",
+      "hitAdv": "KD +42~47"
+    }
+  },
+  {
+    "characterId": "terry",
+    "moveId": "terry__special_236_K_OD",
+    "name": "OD Power Charge",
+    "input": {
+      "type": "special",
+      "motion": "236",
+      "button": "K",
+      "strength": "OD"
+    },
+    "field": "hit",
+    "local": "+55",
+    "official": "D",
+    "officialName": "OD パワーチャージ",
+    "officialRows": [
+      42
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "本番データの誤りと判断できるもの",
+    "cargo": {
+      "path": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json",
+      "index": 17,
+      "input": "236KK",
+      "hitAdv": "KD +55~76 Wall Bounce"
+    }
+  },
+  {
+    "characterId": "terry",
+    "moveId": "terry__special_623_P_L",
+    "name": "LP Rising Tackle",
+    "input": {
+      "type": "special",
+      "motion": "623",
+      "button": "P",
+      "strength": "L"
+    },
+    "field": "block",
+    "local": "-23",
+    "official": "-25",
+    "officialName": "弱 ライジングタックル",
+    "officialRows": [
+      47
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "terry",
+    "moveId": "terry__special_214_P_OD",
+    "name": "OD Quick Burn",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "P",
+      "strength": "OD"
+    },
+    "field": "hit",
+    "local": "+33",
+    "official": "D",
+    "officialName": "OD クイックバーン",
+    "officialRows": [
+      35
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "yasmine",
+    "moveId": "yasmine__normal_2_P_M",
+    "name": "しゃがみ中P",
+    "input": {
+      "type": "normal",
+      "direction": "2",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "total",
+    "local": "24",
+    "official": "26",
+    "officialName": "しゃがみ中P（カルモット）",
+    "officialRows": [
+      10
+    ],
+    "reason": "持続 6-8 の最終F 8 + 硬直 16 + 空振り時硬直2F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "yasmine",
+    "moveId": "yasmine__normal_5_P_L",
+    "name": "立ち弱P",
+    "input": {
+      "type": "normal",
+      "direction": "5",
+      "button": "P",
+      "strength": "L"
+    },
+    "field": "total",
+    "local": "14",
+    "official": "15",
+    "officialName": "立ち弱P（マガアン・ナ・パグラスラス）",
+    "officialRows": [
+      2
+    ],
+    "reason": "持続 5-7 の最終F 7 + 硬直 7 + 空振り時硬直1F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "yasmine",
+    "moveId": "yasmine__special_214_P_M",
+    "name": "MP Talim ng Hangin",
+    "input": {
+      "type": "special",
+      "motion": "214",
+      "button": "P",
+      "strength": "M"
+    },
+    "field": "hit",
+    "local": "+2",
+    "official": "D",
+    "officialName": "中 タリム・ン・ハンギン",
+    "officialRows": [
+      47
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "zangief",
+    "moveId": "zangief__normal_5_P_H",
+    "name": "立ち強P",
+    "input": {
+      "type": "normal",
+      "direction": "5",
+      "button": "P",
+      "strength": "H"
+    },
+    "field": "total",
+    "local": "40",
+    "official": "42",
+    "officialName": "立ち強P（ダイナマイトパンチ）",
+    "officialRows": [
+      7
+    ],
+    "reason": "持続 16-18 の最終F 18 + 硬直 22 + 空振り時硬直2F増加",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  },
+  {
+    "characterId": "zangief",
+    "moveId": "zangief__special_22_K_H",
+    "name": "Tundra Storm",
+    "input": {
+      "type": "special",
+      "motion": "22",
+      "button": "K",
+      "strength": "H"
+    },
+    "field": "startup",
+    "local": "6",
+    "official": "5",
+    "officialName": "ツンドラストーム",
+    "officialRows": [
+      53
+    ],
+    "reason": "公式表の対応欄",
+    "classification": "根拠不足で判定不能",
+    "cargo": null
+  }
+]

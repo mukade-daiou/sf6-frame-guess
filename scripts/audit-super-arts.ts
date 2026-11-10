@@ -5,6 +5,7 @@ import { applyConditionalSpecials } from "./conditional-specials";
 import { applyFrameResearch } from "./frame-research";
 import { applyDistanceRanges } from "./distance-ranges";
 import { applyCompoundStartup } from "./compound-startup";
+import { applyKdHkdCorrections } from "./kd-hkd-corrections";
 import {
   readSAResearch,
   generateSuperArts,
@@ -41,10 +42,12 @@ for (const id of pilot
         c.moves.filter(
           (m: any) => m.category !== "super_art" && !m.strengthExpansion,
         ),
-        applyCompoundStartup(
-          applyDistanceRanges(
-            applyFrameResearch(applyConditionalSpecials(original)),
-            { historicalWithoutSA: true },
+        applyKdHkdCorrections(
+          applyCompoundStartup(
+            applyDistanceRanges(
+              applyFrameResearch(applyConditionalSpecials(original)),
+              { historicalWithoutSA: true },
+            ),
           ),
         ).moves,
       )
