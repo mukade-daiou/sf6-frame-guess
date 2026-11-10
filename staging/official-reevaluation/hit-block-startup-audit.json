@@ -1,0 +1,3773 @@
+{
+  "baseline": "9b34299a3f4146e189fe53137021bb4ef678b59d",
+  "datasetId": "whiff-total-corrections-2026-11-11-r1",
+  "counts": {
+    "hit": {
+      "A": 21,
+      "B": 4,
+      "C": 0
+    },
+    "block": {
+      "A": 0,
+      "B": 19,
+      "C": 0
+    },
+    "startup": {
+      "A": 0,
+      "B": 7,
+      "C": 0
+    }
+  },
+  "unprocessed": 0,
+  "records": [
+    {
+      "characterId": "akuma",
+      "moveId": "akuma__special_623_P_OD",
+      "name": "Gou Shoryuken",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "OD"
+      },
+      "field": "block",
+      "current": "-41",
+      "proposal": null,
+      "officialValue": "-39",
+      "classification": "B",
+      "group": "通常ガード値・持続接続または版差",
+      "reason": "Cargo 623PP のガード欄<span style=\"color: #b70c0b;\">'''-41'''</span>はraw・本番-41に整合。公式-39との差を説明する同一接続段・高さ・版の根拠がない。",
+      "missingEvidence": "同一ガード接続段・相手条件・対象版の証拠。",
+      "sourceMoveId": null,
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/akuma.json",
+      "raw": [
+        {
+          "index": 61,
+          "id": "akuma__623pp",
+          "name": "Gou Shoryuken",
+          "input": "623PP",
+          "value": -41,
+          "notes": "Can only hit twice vs. grounded opponents (will not break DI armor); cannot hit cross-up; transitions to follow-up slam on hit if either of the first 2 hits connect (active frames 1-4); if only 3rd hit connects, does not perform the slam and does only 300 damage; recovery/total refers to whiff/block version"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json",
+      "cargo": [
+        {
+          "index": 61,
+          "input": "623PP",
+          "notation": "<span style=\"color: #b70c0b;\">'''-41'''</span>",
+          "notes": "Can only hit twice vs. grounded opponents (will not break DI armor); cannot hit cross-up; transitions to follow-up slam on hit if either of the first 2 hits connect (active frames 1-4); if only 3rd hit connects, does not perform the slam and does only 300 damage; recovery/total refers to whiff/block version"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/akuma.json",
+      "official": [
+        {
+          "row": 49,
+          "name": "OD 豪昇龍拳",
+          "value": "-39",
+          "notes": "1-8F　完全無敵\n8-53F　空中判定",
+          "commandText": "",
+          "commands": [
+            {
+              "motion": "623",
+              "button": "P",
+              "strength": "OD",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__normal_2_P_M",
+      "name": "しゃがみ中P",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "M"
+      },
+      "field": "hit",
+      "current": "+27",
+      "proposal": "D",
+      "officialValue": "D",
+      "classification": "A",
+      "group": "KD/HKD状態情報の欠落",
+      "reason": "Cargo 2MP の通常hit KD +27からKD後の数値だけがraw 27と本番+27へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "missingEvidence": null,
+      "sourceMoveId": null,
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
+      "raw": [
+        {
+          "index": 25,
+          "id": "arjun__2mp",
+          "name": "Crouching Medium Punch",
+          "input": "2MP",
+          "value": 27
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+      "cargo": [
+        {
+          "index": 24,
+          "input": "2MP",
+          "notation": "KD +27",
+          "notes": "Sweep that can be spaced safely and leaves Arjun neutral on block vs. Burnout for great low pressure"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/arjun.json",
+      "official": [
+        {
+          "row": 10,
+          "name": "しゃがみ中P（はらう）",
+          "value": "D",
+          "notes": "パニッシュカウンター時ハードノックダウン",
+          "commandText": "中",
+          "commands": [
+            {
+              "motion": "2",
+              "button": "P",
+              "strength": "M",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__normal_5_K_H",
+      "name": "立ち強K",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "K",
+        "strength": "H"
+      },
+      "field": "hit",
+      "current": "+43",
+      "proposal": "D",
+      "officialValue": "D",
+      "classification": "A",
+      "group": "KD/HKD状態情報の欠落",
+      "reason": "Cargo 5HK の通常hit KD +43からKD後の数値だけがraw 43と本番+43へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "missingEvidence": null,
+      "sourceMoveId": null,
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
+      "raw": [
+        {
+          "index": 28,
+          "id": "arjun__5hk",
+          "name": "Standing Heavy Kick",
+          "input": "5HK",
+          "value": 43,
+          "notes": "; extends a hurtbox 1f before active that is vulnerable to projectiles"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+      "cargo": [
+        {
+          "index": 27,
+          "input": "5HK",
+          "notation": "KD +43",
+          "notes": "Head and kicking leg hurtboxes are anti-air invuln on frames 11-17; solid anti-air but has slow startup and cannot hit cross-up; whiffs on crouching opponents unless they extend a vertical hurtbox; puts opponent into a limited juggle state (grounded hit only juggles into SA1); Punish Counter launched opponents high into the air (allows stronger follow-up juggles like a fully charged 5HK~HP Target Combo); extends a hurtbox 1f before active that is vulnerable to projectiles"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/arjun.json",
+      "official": [
+        {
+          "row": 7,
+          "name": "立ち強K（ぶっ飛ばす）",
+          "value": "D",
+          "notes": "パニッシュカウンター時吹き飛び時間延長",
+          "commandText": "強",
+          "commands": [
+            {
+              "motion": "",
+              "button": "K",
+              "strength": "H",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_214_K_none",
+      "name": "Divine Pillar",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "none"
+      },
+      "field": "hit",
+      "current": "+42",
+      "proposal": "D",
+      "officialValue": "D",
+      "classification": "A",
+      "group": "KD/HKD状態情報の欠落",
+      "reason": "Cargo 214K の通常hit KD +42からKD後の数値だけがraw 42と本番+42へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "missingEvidence": null,
+      "sourceMoveId": null,
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
+      "raw": [
+        {
+          "index": 1,
+          "id": "arjun__214k",
+          "name": "Divine Pillar",
+          "input": "214K",
+          "value": 42,
+          "notes": "Button strength determines pillar distance (LK close, MK middle, HK far); holding the button results in a delayed activation"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+      "cargo": [
+        {
+          "index": 1,
+          "input": "214K",
+          "notation": "KD +42",
+          "notes": "Button strength determines pillar distance (LK close, MK middle, HK far); holding the button results in a delayed activation with a screen shake effect; second pillar puts the opponent into a limited juggle OTG state (can follow up with Justice Beyond); can be auto-spaced for safety on block against most characters by canceling from 2HP (also creates a frame trap)"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/arjun.json",
+      "official": [
+        {
+          "row": 52,
+          "name": "弱 神気の巨巌",
+          "value": "D",
+          "notes": "ガード時に500のリカバリアブルダメージを与える\nバーンアウト中の相手にガードさせた時の相手Dゲージ増加量(5000)",
+          "commandText": "弱",
+          "commands": [
+            {
+              "motion": "214",
+              "button": "K",
+              "strength": "L",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        },
+        {
+          "row": 53,
+          "name": "中 神気の巨巌",
+          "value": "D",
+          "notes": "ガード時に500のリカバリアブルダメージを与える\nバーンアウト中の相手にガードさせた時の相手Dゲージ増加量(5000)",
+          "commandText": "中",
+          "commands": [
+            {
+              "motion": "214",
+              "button": "K",
+              "strength": "M",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        },
+        {
+          "row": 54,
+          "name": "強 神気の巨巌",
+          "value": "D",
+          "notes": "ガード時に500のリカバリアブルダメージを与える\nバーンアウト中の相手にガードさせた時の相手Dゲージ増加量(5000)",
+          "commandText": "強",
+          "commands": [
+            {
+              "motion": "214",
+              "button": "K",
+              "strength": "H",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "214K共通元レコードを公式の弱中強すべてと比較",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_214_K_OD",
+      "name": "OD Divine Pillar",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "OD"
+      },
+      "field": "hit",
+      "current": "+42",
+      "proposal": "D",
+      "officialValue": "D",
+      "classification": "A",
+      "group": "KD/HKD状態情報の欠落",
+      "reason": "Cargo 214KK の通常hit KD +42からKD後の数値だけがraw 42と本番+42へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "missingEvidence": null,
+      "sourceMoveId": null,
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
+      "raw": [
+        {
+          "index": 2,
+          "id": "arjun__214kk",
+          "name": "OD Divine Pillar",
+          "input": "214KK",
+          "value": 42,
+          "notes": "Button combination determines pillar distance (LK+MK close, LK+HK middle, MK+HK far); holding the buttons results in a delayed activation"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+      "cargo": [
+        {
+          "index": 2,
+          "input": "214KK",
+          "notation": "KD +42",
+          "notes": "Button combination determines pillar distance (LK+MK close, LK+HK middle, MK+HK far); holding the buttons results in a delayed activation with a screen shake effect; second pillar puts the opponent into a limited juggle OTG state (can follow up with Justice Beyond); can be auto-spaced for safety on block against most characters by canceling from 2HP (also creates a frame trap)"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/arjun.json",
+      "official": [
+        {
+          "row": 56,
+          "name": "OD 弱 神気の巨巌",
+          "value": "D",
+          "notes": "ガード時に500のリカバリアブルダメージを与える\nバーンアウト中の相手にガードさせた時の相手Dゲージ増加量(5000)",
+          "commandText": "弱\n中",
+          "commands": [
+            {
+              "motion": "214",
+              "button": "K",
+              "strength": "OD",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "OD基本は弱+中。公式OD弱の画像は弱K+中K",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_236_K_none",
+      "name": "Breathing Ring",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "none"
+      },
+      "field": "hit",
+      "current": "+42",
+      "proposal": "D",
+      "officialValue": "D",
+      "classification": "A",
+      "group": "KD/HKD状態情報の欠落",
+      "reason": "Cargo 236K の通常hit KD +42からKD後の数値だけがraw 42と本番+42へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "missingEvidence": null,
+      "sourceMoveId": null,
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
+      "raw": [
+        {
+          "index": 10,
+          "id": "arjun__236k",
+          "name": "Breathing Ring",
+          "input": "236K",
+          "value": 42,
+          "notes": "No difference between button strengths; projectile dissipates on contact with opponent"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+      "cargo": [
+        {
+          "index": 10,
+          "input": "236K",
+          "notation": "KD +42",
+          "notes": "No difference between button strengths; projectile dissipates on contact with opponent; the final cancel frame into SA3 does not combo"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/arjun.json",
+      "official": [
+        {
+          "row": 42,
+          "name": "息吹の円筒",
+          "value": "D",
+          "notes": "ガード時に300のリカバリアブルダメージを与える\nバーンアウト中の相手にガードさせた時の相手Dゲージ増加量(2000)\n26-36Fまで、息吹の震撼に派生可",
+          "commandText": "",
+          "commands": [
+            {
+              "motion": "236",
+              "button": "K",
+              "strength": "none",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_236_P_H",
+      "name": "HP Arm of Justice",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "H"
+      },
+      "field": "hit",
+      "current": "+43",
+      "proposal": "D",
+      "officialValue": "D",
+      "classification": "A",
+      "group": "KD/HKD状態情報の欠落",
+      "reason": "Cargo 236HP の通常hit KD +43(+48)からKD後の数値だけがraw 43と本番+43へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "missingEvidence": null,
+      "sourceMoveId": null,
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
+      "raw": [
+        {
+          "index": 9,
+          "id": "arjun__236hp",
+          "name": "HP Arm of Justice",
+          "input": "236HP",
+          "value": 43,
+          "notes": "3f extra recovery on whiff"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+      "cargo": [
+        {
+          "index": 9,
+          "input": "236HP",
+          "notation": "KD +43(+48)",
+          "notes": "3f extra recovery on whiff; hitstop increased by 7f on Counter-hit / 12f on Punish Counter (increases the hitconfirm window into ~6P or SA3 by the same amount)"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/arjun.json",
+      "official": [
+        {
+          "row": 32,
+          "name": "強 大義の巨腕",
+          "value": "D",
+          "notes": "飛び道具相殺判定あり（1回）\n空振り時硬直3F増加\nガード時に800のリカバリアブルダメージを与える\nバーンアウト中の相手にガードさせた時の相手Dゲージ増加量(6000)\nカウンターヒット時吹き飛び時間延長\nパニッシュカウンター時膝崩れダウン+26",
+          "commandText": "強",
+          "commands": [
+            {
+              "motion": "236",
+              "button": "P",
+              "strength": "H",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_236_P_OD",
+      "name": "OD Arm of Justice",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "OD"
+      },
+      "field": "hit",
+      "current": "+43",
+      "proposal": "D",
+      "officialValue": "D",
+      "classification": "A",
+      "group": "KD/HKD状態情報の欠落",
+      "reason": "Cargo 236PP の通常hit KD +43(+48)からKD後の数値だけがraw 43と本番+43へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "missingEvidence": null,
+      "sourceMoveId": null,
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
+      "raw": [
+        {
+          "index": 16,
+          "id": "arjun__236pp",
+          "name": "OD Arm of Justice",
+          "input": "236PP",
+          "value": 43,
+          "notes": "3f extra recovery on whiff"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+      "cargo": [
+        {
+          "index": 16,
+          "input": "236PP",
+          "notation": "KD +43(+48)",
+          "notes": "3f extra recovery on whiff; hitstop increased by 7f on Counter-hit / Punish Counter (increases the hitconfirm window into ~6P or SA3 by the same amount)"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/arjun.json",
+      "official": [
+        {
+          "row": 34,
+          "name": "OD 大義の巨腕",
+          "value": "D",
+          "notes": "飛び道具相殺判定あり（2回）\n空振り時硬直3F増加\nガード時に800のリカバリアブルダメージを与える\nバーンアウト中の相手にガードさせた時の相手Dゲージ増加量(6000)\nカウンター/パニッシュカウンター時吹き飛び時間延長",
+          "commandText": "",
+          "commands": [
+            {
+              "motion": "236",
+              "button": "P",
+              "strength": "OD",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_623_P_H",
+      "name": "HP Cruel Shoulder",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "H"
+      },
+      "field": "hit",
+      "current": "+42",
+      "proposal": "D",
+      "officialValue": "D",
+      "classification": "A",
+      "group": "KD/HKD状態情報の欠落",
+      "reason": "Cargo 623HP の通常hit KD +42(+62)からKD後の数値だけがraw 42と本番+42へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "missingEvidence": null,
+      "sourceMoveId": null,
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
+      "raw": [
+        {
+          "index": 41,
+          "id": "arjun__623hp",
+          "name": "HP Cruel Shoulder",
+          "input": "623HP",
+          "value": 42,
+          "notes": "Reaches fullscreen; launches opponent upward followed by a limited juggle OTG bounce state; transitions into Justice Beyond when colliding with an active Divine Pillar; deals 800 recoverable damage on block (stacks with chip damage if the opponent is in Burnout); the active frames end immediately on block/parry or when absorbed by armor followed by a fixed 23f recovery (cannot gain extra block advantage with meaty timing)"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+      "cargo": [
+        {
+          "index": 40,
+          "input": "623HP",
+          "notation": "KD +42(+62)",
+          "notes": "Reaches fullscreen; launches opponent upward followed by a limited juggle OTG bounce state; switches sides on a midscreen hit unless used from near fullscreen range; transitions into Justice Beyond when colliding with an active Divine Pillar; deals 800 recoverable damage on block (stacks with chip damage if the opponent is in Burnout); the active frames end immediately on block/parry or when absorbed by armor followed by a fixed 23f recovery (cannot gain extra block advantage with meaty timing); Super cancelable on active frames 1-5 (cannot cancel from longer ranges)"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/arjun.json",
+      "official": [
+        {
+          "row": 38,
+          "name": "強 厳酷な岩肩",
+          "value": "D",
+          "notes": "ガード時に800のリカバリアブルダメージを与える\nバーンアウト中の相手にガードさせた時の相手Dゲージ増加量(6000)\n岩に触れると「過剰な正義」に派生",
+          "commandText": "強",
+          "commands": [
+            {
+              "motion": "623",
+              "button": "P",
+              "strength": "H",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_623_P_L",
+      "name": "LP Cruel Shoulder",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "L"
+      },
+      "field": "hit",
+      "current": "+60",
+      "proposal": "D",
+      "officialValue": "D",
+      "classification": "A",
+      "group": "KD/HKD状態情報の欠落",
+      "reason": "Cargo 623LP の通常hit KD +60(+75)からKD後の数値だけがraw 60と本番+60へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "missingEvidence": null,
+      "sourceMoveId": null,
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
+      "raw": [
+        {
+          "index": 42,
+          "id": "arjun__623lp",
+          "name": "LP Cruel Shoulder",
+          "input": "623LP",
+          "value": 60,
+          "notes": "Launches opponent slightly upward followed by a limited juggle OTG bounce state; transitions into Justice Beyond when colliding with an active Divine Pillar; deals 600 recoverable damage on block (stacks with chip damage if the opponent is in Burnout); the active frames end immediately on block/parry or when absorbed by armor followed by a fixed 23f recovery (cannot be made safer on block with meaty timing)"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+      "cargo": [
+        {
+          "index": 41,
+          "input": "623LP",
+          "notation": "KD +60(+75)",
+          "notes": "Launches opponent slightly upward followed by a limited juggle OTG tumble state (can get follow-up near the corner if spaced out); transitions into Justice Beyond when colliding with an active Divine Pillar; deals 600 recoverable damage on block (stacks with chip damage if the opponent is in Burnout); the active frames end immediately on block/parry or when absorbed by armor followed by a fixed 23f recovery (cannot be made safer on block with meaty timing); Super cancelable on active frames 1-5 (cannot cancel from longer ranges)"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/arjun.json",
+      "official": [
+        {
+          "row": 36,
+          "name": "弱 厳酷な岩肩",
+          "value": "D",
+          "notes": "6-23F　空中判定の打撃・空弾属性に対して無敵\nガード時に600のリカバリアブルダメージを与える\nバーンアウト中の相手にガードさせた時の相手Dゲージ増加量(5000)\n岩に触れると「過剰な正義」に派生",
+          "commandText": "弱",
+          "commands": [
+            {
+              "motion": "623",
+              "button": "P",
+              "strength": "L",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_623_P_M",
+      "name": "MP Cruel Shoulder",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "M"
+      },
+      "field": "hit",
+      "current": "+64",
+      "proposal": "D",
+      "officialValue": "D",
+      "classification": "A",
+      "group": "KD/HKD状態情報の欠落",
+      "reason": "Cargo 623MP の通常hit KD +64(+82)からKD後の数値だけがraw 64と本番+64へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "missingEvidence": null,
+      "sourceMoveId": null,
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
+      "raw": [
+        {
+          "index": 43,
+          "id": "arjun__623mp",
+          "name": "MP Cruel Shoulder",
+          "input": "623MP",
+          "value": 64,
+          "notes": "Launches opponent slightly upward followed by a limited juggle OTG bounce state; transitions into Justice Beyond when colliding with an active Divine Pillar; deals 700 recoverable damage on block (stacks with chip damage if the opponent is in Burnout); the active frames end immediately on block/parry or when absorbed by armor followed by a fixed 23f recovery (cannot be made safer on block with meaty timing)"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+      "cargo": [
+        {
+          "index": 42,
+          "input": "623MP",
+          "notation": "KD +64(+82)",
+          "notes": "Launches opponent slightly upward followed by a limited juggle OTG tumble state (can get follow-up near the corner if spaced out); transitions into Justice Beyond when colliding with an active Divine Pillar; deals 700 recoverable damage on block (stacks with chip damage if the opponent is in Burnout); the active frames end immediately on block/parry or when absorbed by armor followed by a fixed 23f recovery (cannot be made safer on block with meaty timing); Super cancelable on active frames 1-5 (cannot cancel from longer ranges)"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/arjun.json",
+      "official": [
+        {
+          "row": 37,
+          "name": "中 厳酷な岩肩",
+          "value": "D",
+          "notes": "6-27F　空中判定の打撃・空弾属性に対して無敵\nガード時に700のリカバリアブルダメージを与える\nバーンアウト中の相手にガードさせた時の相手Dゲージ増加量(5000)\n岩に触れると「過剰な正義」に派生",
+          "commandText": "中",
+          "commands": [
+            {
+              "motion": "623",
+              "button": "P",
+              "strength": "M",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_623_P_OD",
+      "name": "OD Cruel Shoulder",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "OD"
+      },
+      "field": "hit",
+      "current": "+42",
+      "proposal": "D",
+      "officialValue": "D",
+      "classification": "A",
+      "group": "KD/HKD状態情報の欠落",
+      "reason": "Cargo 623PP の通常hit KD +42(+62)からKD後の数値だけがraw 42と本番+42へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "missingEvidence": null,
+      "sourceMoveId": null,
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
+      "raw": [
+        {
+          "index": 44,
+          "id": "arjun__623pp",
+          "name": "OD Cruel Shoulder",
+          "input": "623PP",
+          "value": 42,
+          "notes": "Reaches fullscreen; launches opponent upward followed by a limited juggle OTG bounce state; transitions into Justice Beyond when colliding with an active Divine Pillar; deals 800 recoverable damage on block (stacks with chip damage if the opponent is in Burnout); the active frames end immediately on block/parry or when absorbed by armor followed by a fixed 23f recovery (cannot gain extra block advantage with meaty timing)"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+      "cargo": [
+        {
+          "index": 43,
+          "input": "623PP",
+          "notation": "KD +42(+62)",
+          "notes": "Reaches fullscreen; launches opponent upward followed by a limited juggle OTG bounce state; switches sides on a midscreen hit unless used from near fullscreen range; transitions into Justice Beyond when colliding with an active Divine Pillar; deals 800 recoverable damage on block (stacks with chip damage if the opponent is in Burnout); the active frames end immediately on block/parry or when absorbed by armor followed by a fixed 23f recovery (cannot gain extra block advantage with meaty timing); Super cancelable on active frames 1-5 (cannot cancel from longer ranges)"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/arjun.json",
+      "official": [
+        {
+          "row": 40,
+          "name": "OD 厳酷な岩肩",
+          "value": "D",
+          "notes": "ガード時に800のリカバリアブルダメージを与える\nバーンアウト中の相手にガードさせた時の相手Dゲージ増加量(6000)\n岩に触れると「OD過剰な正義」に派生",
+          "commandText": "",
+          "commands": [
+            {
+              "motion": "623",
+              "button": "P",
+              "strength": "OD",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_214_K_none__strength_L",
+      "name": "Divine Pillar",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "L"
+      },
+      "field": "hit",
+      "current": "+42",
+      "proposal": "D",
+      "officialValue": "D",
+      "classification": "A",
+      "group": "KD/HKD状態情報の欠落",
+      "reason": "Cargo 214K の通常hit KD +42からKD後の数値だけがraw 42と本番+42へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "missingEvidence": null,
+      "sourceMoveId": "arjun__special_214_K_none",
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
+      "raw": [
+        {
+          "index": 1,
+          "id": "arjun__214k",
+          "name": "Divine Pillar",
+          "input": "214K",
+          "value": 42,
+          "notes": "Button strength determines pillar distance (LK close, MK middle, HK far); holding the button results in a delayed activation"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+      "cargo": [
+        {
+          "index": 1,
+          "input": "214K",
+          "notation": "KD +42",
+          "notes": "Button strength determines pillar distance (LK close, MK middle, HK far); holding the button results in a delayed activation with a screen shake effect; second pillar puts the opponent into a limited juggle OTG state (can follow up with Justice Beyond); can be auto-spaced for safety on block against most characters by canceling from 2HP (also creates a frame trap)"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/arjun.json",
+      "official": [
+        {
+          "row": 52,
+          "name": "弱 神気の巨巌",
+          "value": "D",
+          "notes": "ガード時に500のリカバリアブルダメージを与える\nバーンアウト中の相手にガードさせた時の相手Dゲージ増加量(5000)",
+          "commandText": "弱",
+          "commands": [
+            {
+              "motion": "214",
+              "button": "K",
+              "strength": "L",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_214_K_none__strength_M",
+      "name": "Divine Pillar",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "M"
+      },
+      "field": "hit",
+      "current": "+42",
+      "proposal": "D",
+      "officialValue": "D",
+      "classification": "A",
+      "group": "KD/HKD状態情報の欠落",
+      "reason": "Cargo 214K の通常hit KD +42からKD後の数値だけがraw 42と本番+42へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "missingEvidence": null,
+      "sourceMoveId": "arjun__special_214_K_none",
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
+      "raw": [
+        {
+          "index": 1,
+          "id": "arjun__214k",
+          "name": "Divine Pillar",
+          "input": "214K",
+          "value": 42,
+          "notes": "Button strength determines pillar distance (LK close, MK middle, HK far); holding the button results in a delayed activation"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+      "cargo": [
+        {
+          "index": 1,
+          "input": "214K",
+          "notation": "KD +42",
+          "notes": "Button strength determines pillar distance (LK close, MK middle, HK far); holding the button results in a delayed activation with a screen shake effect; second pillar puts the opponent into a limited juggle OTG state (can follow up with Justice Beyond); can be auto-spaced for safety on block against most characters by canceling from 2HP (also creates a frame trap)"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/arjun.json",
+      "official": [
+        {
+          "row": 53,
+          "name": "中 神気の巨巌",
+          "value": "D",
+          "notes": "ガード時に500のリカバリアブルダメージを与える\nバーンアウト中の相手にガードさせた時の相手Dゲージ増加量(5000)",
+          "commandText": "中",
+          "commands": [
+            {
+              "motion": "214",
+              "button": "K",
+              "strength": "M",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_214_K_none__strength_H",
+      "name": "Divine Pillar",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "H"
+      },
+      "field": "hit",
+      "current": "+42",
+      "proposal": "D",
+      "officialValue": "D",
+      "classification": "A",
+      "group": "KD/HKD状態情報の欠落",
+      "reason": "Cargo 214K の通常hit KD +42からKD後の数値だけがraw 42と本番+42へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "missingEvidence": null,
+      "sourceMoveId": "arjun__special_214_K_none",
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
+      "raw": [
+        {
+          "index": 1,
+          "id": "arjun__214k",
+          "name": "Divine Pillar",
+          "input": "214K",
+          "value": 42,
+          "notes": "Button strength determines pillar distance (LK close, MK middle, HK far); holding the button results in a delayed activation"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+      "cargo": [
+        {
+          "index": 1,
+          "input": "214K",
+          "notation": "KD +42",
+          "notes": "Button strength determines pillar distance (LK close, MK middle, HK far); holding the button results in a delayed activation with a screen shake effect; second pillar puts the opponent into a limited juggle OTG state (can follow up with Justice Beyond); can be auto-spaced for safety on block against most characters by canceling from 2HP (also creates a frame trap)"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/arjun.json",
+      "official": [
+        {
+          "row": 54,
+          "name": "強 神気の巨巌",
+          "value": "D",
+          "notes": "ガード時に500のリカバリアブルダメージを与える\nバーンアウト中の相手にガードさせた時の相手Dゲージ増加量(5000)",
+          "commandText": "強",
+          "commands": [
+            {
+              "motion": "214",
+              "button": "K",
+              "strength": "H",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_236_K_none__strength_L",
+      "name": "Breathing Ring",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "L"
+      },
+      "field": "hit",
+      "current": "+42",
+      "proposal": "D",
+      "officialValue": "D",
+      "classification": "A",
+      "group": "KD/HKD状態情報の欠落",
+      "reason": "Cargo 236K の通常hit KD +42からKD後の数値だけがraw 42と本番+42へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "missingEvidence": null,
+      "sourceMoveId": "arjun__special_236_K_none",
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
+      "raw": [
+        {
+          "index": 10,
+          "id": "arjun__236k",
+          "name": "Breathing Ring",
+          "input": "236K",
+          "value": 42,
+          "notes": "No difference between button strengths; projectile dissipates on contact with opponent"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+      "cargo": [
+        {
+          "index": 10,
+          "input": "236K",
+          "notation": "KD +42",
+          "notes": "No difference between button strengths; projectile dissipates on contact with opponent; the final cancel frame into SA3 does not combo"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/arjun.json",
+      "official": [
+        {
+          "row": 42,
+          "name": "息吹の円筒",
+          "value": "D",
+          "notes": "ガード時に300のリカバリアブルダメージを与える\nバーンアウト中の相手にガードさせた時の相手Dゲージ増加量(2000)\n26-36Fまで、息吹の震撼に派生可",
+          "commandText": "",
+          "commands": [
+            {
+              "motion": "236",
+              "button": "K",
+              "strength": "none",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_236_K_none__strength_M",
+      "name": "Breathing Ring",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "M"
+      },
+      "field": "hit",
+      "current": "+42",
+      "proposal": "D",
+      "officialValue": "D",
+      "classification": "A",
+      "group": "KD/HKD状態情報の欠落",
+      "reason": "Cargo 236K の通常hit KD +42からKD後の数値だけがraw 42と本番+42へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "missingEvidence": null,
+      "sourceMoveId": "arjun__special_236_K_none",
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
+      "raw": [
+        {
+          "index": 10,
+          "id": "arjun__236k",
+          "name": "Breathing Ring",
+          "input": "236K",
+          "value": 42,
+          "notes": "No difference between button strengths; projectile dissipates on contact with opponent"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+      "cargo": [
+        {
+          "index": 10,
+          "input": "236K",
+          "notation": "KD +42",
+          "notes": "No difference between button strengths; projectile dissipates on contact with opponent; the final cancel frame into SA3 does not combo"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/arjun.json",
+      "official": [
+        {
+          "row": 42,
+          "name": "息吹の円筒",
+          "value": "D",
+          "notes": "ガード時に300のリカバリアブルダメージを与える\nバーンアウト中の相手にガードさせた時の相手Dゲージ増加量(2000)\n26-36Fまで、息吹の震撼に派生可",
+          "commandText": "",
+          "commands": [
+            {
+              "motion": "236",
+              "button": "K",
+              "strength": "none",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_236_K_none__strength_H",
+      "name": "Breathing Ring",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "H"
+      },
+      "field": "hit",
+      "current": "+42",
+      "proposal": "D",
+      "officialValue": "D",
+      "classification": "A",
+      "group": "KD/HKD状態情報の欠落",
+      "reason": "Cargo 236K の通常hit KD +42からKD後の数値だけがraw 42と本番+42へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "missingEvidence": null,
+      "sourceMoveId": "arjun__special_236_K_none",
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
+      "raw": [
+        {
+          "index": 10,
+          "id": "arjun__236k",
+          "name": "Breathing Ring",
+          "input": "236K",
+          "value": 42,
+          "notes": "No difference between button strengths; projectile dissipates on contact with opponent"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+      "cargo": [
+        {
+          "index": 10,
+          "input": "236K",
+          "notation": "KD +42",
+          "notes": "No difference between button strengths; projectile dissipates on contact with opponent; the final cancel frame into SA3 does not combo"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/arjun.json",
+      "official": [
+        {
+          "row": 42,
+          "name": "息吹の円筒",
+          "value": "D",
+          "notes": "ガード時に300のリカバリアブルダメージを与える\nバーンアウト中の相手にガードさせた時の相手Dゲージ増加量(2000)\n26-36Fまで、息吹の震撼に派生可",
+          "commandText": "",
+          "commands": [
+            {
+              "motion": "236",
+              "button": "K",
+              "strength": "none",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_63214_K_H",
+      "name": "Backstep Rolling Attack",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "H"
+      },
+      "field": "hit",
+      "current": "+7",
+      "proposal": null,
+      "officialValue": "8",
+      "classification": "B",
+      "group": "空中軌道・接触条件と1F差",
+      "reason": "通常版をSA2版から備考で分離。Cargo hit <span style=\"color: #30D5B8;\">'''+7(+13)'''</span>とrawの先頭値は整合。操舵・接触高度による値を含み公式8との差1Fだけでは誤変換でない。",
+      "missingEvidence": "同じ操舵・接触高度・相手条件と対象版での計数。",
+      "sourceMoveId": null,
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/blanka.json",
+      "raw": [
+        {
+          "index": 52,
+          "id": "blanka__63214hk",
+          "name": "Backstep Rolling Attack",
+          "input": "63214HK",
+          "value": 7,
+          "notes": "Farthest trajectory; can steer forward/backward (forward momentum is faster than backward); can hit cross-up"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json",
+      "cargo": [
+        {
+          "index": 36,
+          "input": "63214HK",
+          "notation": "<span style=\"color: #30D5B8;\">'''+7(+13)'''</span>",
+          "notes": "Farthest trajectory; can steer forward/backward (forward momentum is faster than backward); can hit cross-up"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/blanka.json",
+      "official": [
+        {
+          "row": 57,
+          "name": "強 バックステップローリング",
+          "value": "8",
+          "notes": "",
+          "commandText": "強",
+          "commands": [
+            {
+              "motion": "63214",
+              "button": "K",
+              "strength": "H",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_63214_K_H",
+      "name": "Backstep Rolling Attack",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "H"
+      },
+      "field": "block",
+      "current": "+3",
+      "proposal": null,
+      "officialValue": "4",
+      "classification": "B",
+      "group": "空中軌道・接触条件と1F差",
+      "reason": "通常版のCargo <span style=\"color: #32CD32;\">+3</span><span style=\"color: #30D5B8;\">'''(+9)'''</span>にraw・本番+3が整合。操舵で接触が変わり、公式4との差1Fの原因は確定できない。",
+      "missingEvidence": "同一操舵・接触高さ・対象版でのガード値。",
+      "sourceMoveId": null,
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/blanka.json",
+      "raw": [
+        {
+          "index": 52,
+          "id": "blanka__63214hk",
+          "name": "Backstep Rolling Attack",
+          "input": "63214HK",
+          "value": 3,
+          "notes": "Farthest trajectory; can steer forward/backward (forward momentum is faster than backward); can hit cross-up"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json",
+      "cargo": [
+        {
+          "index": 36,
+          "input": "63214HK",
+          "notation": "<span style=\"color: #32CD32;\">+3</span><span style=\"color: #30D5B8;\">'''(+9)'''</span>",
+          "notes": "Farthest trajectory; can steer forward/backward (forward momentum is faster than backward); can hit cross-up"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/blanka.json",
+      "official": [
+        {
+          "row": 57,
+          "name": "強 バックステップローリング",
+          "value": "4",
+          "notes": "",
+          "commandText": "強",
+          "commands": [
+            {
+              "motion": "63214",
+              "button": "K",
+              "strength": "H",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_63214_K_L",
+      "name": "Backstep Rolling Attack",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "L"
+      },
+      "field": "hit",
+      "current": "+8",
+      "proposal": null,
+      "officialValue": "9",
+      "classification": "B",
+      "group": "空中軌道・接触条件と1F差",
+      "reason": "通常版をSA2版から備考で分離。Cargo hit <span style=\"color: #30D5B8;\">'''+8(+14)'''</span>とrawの先頭値は整合。操舵・接触高度による値を含み公式9との差1Fだけでは誤変換でない。",
+      "missingEvidence": "同じ操舵・接触高度・相手条件と対象版での計数。",
+      "sourceMoveId": null,
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/blanka.json",
+      "raw": [
+        {
+          "index": 56,
+          "id": "blanka__63214lk",
+          "name": "Backstep Rolling Attack",
+          "input": "63214LK",
+          "value": 8,
+          "notes": "Shortest trajectory; can steer forward/backward (forward momentum is faster than backward); can hit cross-up"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json",
+      "cargo": [
+        {
+          "index": 40,
+          "input": "63214LK",
+          "notation": "<span style=\"color: #30D5B8;\">'''+8(+14)'''</span>",
+          "notes": "Shortest trajectory; can steer forward/backward (forward momentum is faster than backward); can hit cross-up"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/blanka.json",
+      "official": [
+        {
+          "row": 53,
+          "name": "弱 バックステップローリング",
+          "value": "9",
+          "notes": "",
+          "commandText": "弱",
+          "commands": [
+            {
+              "motion": "63214",
+              "button": "K",
+              "strength": "L",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_63214_K_L",
+      "name": "Backstep Rolling Attack",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "L"
+      },
+      "field": "block",
+      "current": "+2",
+      "proposal": null,
+      "officialValue": "3",
+      "classification": "B",
+      "group": "空中軌道・接触条件と1F差",
+      "reason": "通常版のCargo <span style=\"color: #30D5B8;\">'''+2'''</span><span style=\"color: #30D5B8;\">'''(+8)'''</span>にraw・本番+2が整合。操舵で接触が変わり、公式3との差1Fの原因は確定できない。",
+      "missingEvidence": "同一操舵・接触高さ・対象版でのガード値。",
+      "sourceMoveId": null,
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/blanka.json",
+      "raw": [
+        {
+          "index": 56,
+          "id": "blanka__63214lk",
+          "name": "Backstep Rolling Attack",
+          "input": "63214LK",
+          "value": 2,
+          "notes": "Shortest trajectory; can steer forward/backward (forward momentum is faster than backward); can hit cross-up"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json",
+      "cargo": [
+        {
+          "index": 40,
+          "input": "63214LK",
+          "notation": "<span style=\"color: #30D5B8;\">'''+2'''</span><span style=\"color: #30D5B8;\">'''(+8)'''</span>",
+          "notes": "Shortest trajectory; can steer forward/backward (forward momentum is faster than backward); can hit cross-up"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/blanka.json",
+      "official": [
+        {
+          "row": 53,
+          "name": "弱 バックステップローリング",
+          "value": "3",
+          "notes": "",
+          "commandText": "弱",
+          "commands": [
+            {
+              "motion": "63214",
+              "button": "K",
+              "strength": "L",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_63214_K_M",
+      "name": "Backstep Rolling Attack",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "M"
+      },
+      "field": "hit",
+      "current": "+7",
+      "proposal": null,
+      "officialValue": "8",
+      "classification": "B",
+      "group": "空中軌道・接触条件と1F差",
+      "reason": "通常版をSA2版から備考で分離。Cargo hit <span style=\"color: #30D5B8;\">'''+7(+14)'''</span>とrawの先頭値は整合。操舵・接触高度による値を含み公式8との差1Fだけでは誤変換でない。",
+      "missingEvidence": "同じ操舵・接触高度・相手条件と対象版での計数。",
+      "sourceMoveId": null,
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/blanka.json",
+      "raw": [
+        {
+          "index": 58,
+          "id": "blanka__63214mk",
+          "name": "Backstep Rolling Attack",
+          "input": "63214MK",
+          "value": 7,
+          "notes": "Medium trajectory; can steer forward/backward (forward momentum is faster than backward); can hit cross-up"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json",
+      "cargo": [
+        {
+          "index": 42,
+          "input": "63214MK",
+          "notation": "<span style=\"color: #30D5B8;\">'''+7(+14)'''</span>",
+          "notes": "Medium trajectory; can steer forward/backward (forward momentum is faster than backward); can hit cross-up"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/blanka.json",
+      "official": [
+        {
+          "row": 55,
+          "name": "中 バックステップローリング",
+          "value": "8",
+          "notes": "",
+          "commandText": "中",
+          "commands": [
+            {
+              "motion": "63214",
+              "button": "K",
+              "strength": "M",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_63214_K_M",
+      "name": "Backstep Rolling Attack",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "M"
+      },
+      "field": "block",
+      "current": "+1",
+      "proposal": null,
+      "officialValue": "2",
+      "classification": "B",
+      "group": "空中軌道・接触条件と1F差",
+      "reason": "通常版のCargo <span style=\"color: #30D5B8;\">'''+1'''</span><span style=\"color: #30D5B8;\">'''(+8)'''</span>にraw・本番+1が整合。操舵で接触が変わり、公式2との差1Fの原因は確定できない。",
+      "missingEvidence": "同一操舵・接触高さ・対象版でのガード値。",
+      "sourceMoveId": null,
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/blanka.json",
+      "raw": [
+        {
+          "index": 58,
+          "id": "blanka__63214mk",
+          "name": "Backstep Rolling Attack",
+          "input": "63214MK",
+          "value": 1,
+          "notes": "Medium trajectory; can steer forward/backward (forward momentum is faster than backward); can hit cross-up"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json",
+      "cargo": [
+        {
+          "index": 42,
+          "input": "63214MK",
+          "notation": "<span style=\"color: #30D5B8;\">'''+1'''</span><span style=\"color: #30D5B8;\">'''(+8)'''</span>",
+          "notes": "Medium trajectory; can steer forward/backward (forward momentum is faster than backward); can hit cross-up"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/blanka.json",
+      "official": [
+        {
+          "row": 55,
+          "name": "中 バックステップローリング",
+          "value": "2",
+          "notes": "",
+          "commandText": "中",
+          "commands": [
+            {
+              "motion": "63214",
+              "button": "K",
+              "strength": "M",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "dhalsim",
+      "moveId": "dhalsim__special_63214_K_H",
+      "name": "HK Yoga Blast",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "H"
+      },
+      "field": "block",
+      "current": "-1",
+      "proposal": null,
+      "officialValue": "-3",
+      "classification": "B",
+      "group": "通常ガード値・持続接続または版差",
+      "reason": "Cargo 63214HK のガード欄<span style=\"color: #ff6347;\">-1</span>はraw・本番-1に整合。公式-3との差を説明する同一接続段・高さ・版の根拠がない。",
+      "missingEvidence": "同一ガード接続段・相手条件・対象版の証拠。",
+      "sourceMoveId": null,
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/dhalsim.json",
+      "raw": [
+        {
+          "index": 38,
+          "id": "dhalsim__63214hk",
+          "name": "HK Yoga Blast",
+          "input": "63214HK",
+          "value": -1,
+          "notes": "Strike hitbox with 1-hit projectile nullification; head hurtbox disappears on frames 3-44 (hurtbox shrinks even lower on frames 17-26 while active); useful anti-air that can hit cross-up; steps forward during startup; puts opponent into limited juggle state on hit; whiffs on crouching opponents unless they extend a vertical hurtbox; can always juggle into SA1 on hit (MP for damage, LP if spaced at max range for consistency)"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/dhalsim.cargo.json",
+      "cargo": [
+        {
+          "index": 40,
+          "input": "63214HK",
+          "notation": "<span style=\"color: #ff6347;\">-1</span>",
+          "notes": "Strike hitbox with 1-hit projectile nullification; head hurtbox disappears on frames 3-44 (hurtbox shrinks even lower on frames 17-26 while active); useful anti-air that can hit cross-up; steps forward during startup; puts opponent into limited juggle state on hit; whiffs on crouching opponents unless they extend a vertical hurtbox; can always juggle into SA1 on hit (MP for damage, LP if spaced at max range for consistency)"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/dhalsim.json",
+      "official": [
+        {
+          "row": 56,
+          "name": "強 ヨガブラスト",
+          "value": "-3",
+          "notes": "",
+          "commandText": "強",
+          "commands": [
+            {
+              "motion": "63214",
+              "button": "K",
+              "strength": "H",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__special_236_P_OD",
+      "name": "Sun Shot (L/M)",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "OD"
+      },
+      "field": "hit",
+      "current": "+52",
+      "proposal": "D",
+      "officialValue": "D",
+      "classification": "A",
+      "group": "KD/HKD状態情報の欠落",
+      "reason": "Cargo 236LPMP or 236LPHP の通常hit KD +52からKD後の数値だけがraw 52と本番+52へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "missingEvidence": null,
+      "sourceMoveId": null,
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/ingrid.json",
+      "raw": [
+        {
+          "index": 24,
+          "id": "ingrid__236lpmpor236lphp",
+          "name": "Sun Shot (L/M)",
+          "input": "236LPMP or 236LPHP",
+          "value": 52,
+          "notes": "2-hit OD projectile; LP+MP gives the shorter/slower 236LP version (most useful for approaching from midrange); LP+HP gives the farther/faster 236MP version (more useful as a traditional zoning projectile); hold button 17f for charged version (faster ending projectile speed); 2nd hit puts opponents into a limited juggle state; can only have 1 OD Sun Shot on-screen at a time (but can be used in conjunction with another meterless Sun Shot); projectile disappears 1f after Ingrid is hit; extends a slight projectile invuln hand hitbox on frames 18-44 and a foot hurtbox on frames 18-45; SA2 cancel: KD+61/+10"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/ingrid.cargo.json",
+      "cargo": [
+        {
+          "index": 25,
+          "input": "236LPMP or 236LPHP",
+          "notation": "KD +52",
+          "notes": "2-hit OD projectile; LP+MP gives the shorter/slower 236LP version (most useful for approaching from midrange); LP+HP gives the farther/faster 236MP version (more useful as a traditional zoning projectile); hold button 17f for charged version (faster ending projectile speed); 2nd hit puts opponents into a limited juggle state; can only have 1 OD Sun Shot on-screen at a time (but can be used in conjunction with another meterless Sun Shot); projectile disappears 1f after Ingrid is hit; extends a slight projectile invuln hand hitbox on frames 18-44 and a foot hurtbox on frames 18-45; SA2 cancel: KD+61/+10"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/ingrid.json",
+      "official": [
+        {
+          "row": 33,
+          "name": "OD 弱 サンシュート",
+          "value": "D",
+          "notes": "17F以上ホールドすると性能変化",
+          "commandText": "弱\n中",
+          "commands": [
+            {
+              "motion": "236",
+              "button": "P",
+              "strength": "OD",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "OD基本は弱P+中P。公式OD弱サンシュート",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_623_K_L",
+      "name": "Arrow Kick (DL2)",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "K",
+        "strength": "L"
+      },
+      "field": "block",
+      "current": "-44",
+      "proposal": null,
+      "officialValue": "-45",
+      "classification": "B",
+      "group": "固定代表酔いLvとガード値",
+      "reason": "既存のLv.2代表条件を保持。CargoはDL0–4のダメージを併記するがガード欄は-44、rawも-44。公式-45に換えるガード条件の証拠なし。",
+      "missingEvidence": "Lv.2同一条件・対象版でのガード値。",
+      "sourceMoveId": null,
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/jamie.json",
+      "raw": [
+        {
+          "index": 80,
+          "id": "jamie__623lk",
+          "name": "Arrow Kick (DL2)",
+          "input": "623LK",
+          "value": -44,
+          "notes": "Damage DL0-DL4: 900/950/1000/1050/1100 (Chip: 225/237/250/262/275); on hit, a follow-up occurs with 11f landing recovery (16-42f full invuln, vulnerable to projectiles before invincibility starts); cannot hit cross-up; sets up a safe jump in the corner (or midscreen if no back rise); can juggle into 623KK, SA1, or SA3 after a high airborne connect (623KK requires corner positioning)"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+      "cargo": [
+        {
+          "index": 80,
+          "input": "623LK",
+          "notation": "<span style=\"color: #b70c0b;\">'''-44'''</span>",
+          "notes": "Damage DL0-DL4: 900/950/1000/1050/1100 (Chip: 225/237/250/262/275); on hit, a follow-up occurs with 11f landing recovery (16-42f full invuln, vulnerable to projectiles before invincibility starts); cannot hit cross-up; sets up a safe jump in the corner (or midscreen if no back rise); can juggle into 623KK, SA1, or SA3 after a high airborne connect (623KK requires corner positioning)"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/jamie.json",
+      "official": [
+        {
+          "row": 75,
+          "name": "弱 張弓腿",
+          "value": "-45",
+          "notes": "1-12F　空中判定の打撃・空弾属性に対して無敵\n※2段目以降は初段ヒット時のみ派生",
+          "commandText": "弱",
+          "commands": [
+            {
+              "motion": "623",
+              "button": "K",
+              "strength": "L",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "condition": "第16段階ユーザー指定: 酔いLv.2を代表条件に固定。DL4性能・派生は採用しない。",
+        "rawRef": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/80",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/80/title"
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "juri",
+      "moveId": "juri__special_236_K_OD",
+      "name": "Saihasho",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "OD"
+      },
+      "field": "hit",
+      "current": "+39",
+      "proposal": "D",
+      "officialValue": "D",
+      "classification": "A",
+      "group": "KD/HKD状態情報の欠落",
+      "reason": "Cargo 236LKMK の通常hit KD +39からKD後の数値だけがraw 39と本番+39へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "missingEvidence": null,
+      "sourceMoveId": null,
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/juri.json",
+      "raw": [
+        {
+          "index": 14,
+          "id": "juri__236lkmk",
+          "name": "Saihasho",
+          "input": "236LKMK",
+          "value": 39,
+          "notes": "2-hit OD projectile; only the 2nd hit knocks down; can press MK or HK to cancel into other OD 236K specials for 1 Fuha stock and 1 Drive bar; SA2 cancel: KD+57/+17"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/juri.cargo.json",
+      "cargo": [
+        {
+          "index": 15,
+          "input": "236LKMK",
+          "notation": "KD +39",
+          "notes": "2-hit OD projectile; only the 2nd hit knocks down; can press MK or HK to cancel into other OD 236K specials for 1 Fuha stock and 1 Drive bar; SA2 cancel: KD+57/+17"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/juri.json",
+      "official": [
+        {
+          "row": 58,
+          "name": "OD 歳破衝",
+          "value": "D",
+          "notes": "※風破ストックがある時にOD暗剣殺 or OD五黄殺 に派生可能\n　同じ技は2回使えない",
+          "commandText": "弱\n中",
+          "commands": [
+            {
+              "motion": "236",
+              "button": "K",
+              "strength": "OD",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "juri",
+      "moveId": "juri__super_art_3_L",
+      "name": "Kaisen Dankai Raku",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "214214",
+        "button": "K",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "field": "block",
+      "current": "-36",
+      "proposal": null,
+      "officialValue": "-31",
+      "classification": "B",
+      "group": "SAガード値・版差",
+      "reason": "通常SA3をCAから分離したCargoもrawも-36。公式-31に対応する別条件や計算は保存資料にない。",
+      "missingEvidence": "同一パッチでのガード値または変更履歴。",
+      "sourceMoveId": null,
+      "saSource": {
+        "researchRecordId": "juri:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/juri.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/juri.cargo.json#/data/cargoquery/1/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10",
+          "total": "65",
+          "hit": "HKD +22",
+          "block": "-36"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      },
+      "rawPath": "archive/staging/sf6-frame-data/raw/juri.json",
+      "raw": [
+        {
+          "index": 0,
+          "id": "juri__214214k",
+          "name": "Kaisen Dankai Raku",
+          "input": "214214K",
+          "value": -36,
+          "notes": "Cinematic time regenerates ~2 Drive bars for Juri"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/juri.cargo.json",
+      "cargo": [
+        {
+          "index": 1,
+          "input": "214214K",
+          "notation": "<span style=\"color: #b70c0b;\">'''-36'''</span>",
+          "notes": "Cinematic time regenerates ~2 Drive bars for Juri"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/juri.json",
+      "official": [
+        {
+          "row": 77,
+          "name": "SA3 回旋断界落",
+          "value": "-31",
+          "notes": "1-13F　完全無敵\n最低保障ダメージ50％\nカウンター/パニッシュカウンターで数値が変動しない\n※必殺技キャンセル時のみ適用",
+          "commandText": "",
+          "commands": [
+            {
+              "motion": "214214",
+              "button": "K",
+              "strength": "none",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "juri",
+      "moveId": "juri__super_art_3_M",
+      "name": "Kaisen Dankai Raku",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "214214",
+        "button": "K",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "field": "block",
+      "current": "-36",
+      "proposal": null,
+      "officialValue": "-31",
+      "classification": "B",
+      "group": "SAガード値・版差",
+      "reason": "通常SA3をCAから分離したCargoもrawも-36。公式-31に対応する別条件や計算は保存資料にない。",
+      "missingEvidence": "同一パッチでのガード値または変更履歴。",
+      "sourceMoveId": null,
+      "saSource": {
+        "researchRecordId": "juri:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/juri.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/juri.cargo.json#/data/cargoquery/1/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10",
+          "total": "65",
+          "hit": "HKD +22",
+          "block": "-36"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      },
+      "rawPath": "archive/staging/sf6-frame-data/raw/juri.json",
+      "raw": [
+        {
+          "index": 0,
+          "id": "juri__214214k",
+          "name": "Kaisen Dankai Raku",
+          "input": "214214K",
+          "value": -36,
+          "notes": "Cinematic time regenerates ~2 Drive bars for Juri"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/juri.cargo.json",
+      "cargo": [
+        {
+          "index": 1,
+          "input": "214214K",
+          "notation": "<span style=\"color: #b70c0b;\">'''-36'''</span>",
+          "notes": "Cinematic time regenerates ~2 Drive bars for Juri"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/juri.json",
+      "official": [
+        {
+          "row": 77,
+          "name": "SA3 回旋断界落",
+          "value": "-31",
+          "notes": "1-13F　完全無敵\n最低保障ダメージ50％\nカウンター/パニッシュカウンターで数値が変動しない\n※必殺技キャンセル時のみ適用",
+          "commandText": "",
+          "commands": [
+            {
+              "motion": "214214",
+              "button": "K",
+              "strength": "none",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "juri",
+      "moveId": "juri__super_art_3_H",
+      "name": "Kaisen Dankai Raku",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "214214",
+        "button": "K",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "field": "block",
+      "current": "-36",
+      "proposal": null,
+      "officialValue": "-31",
+      "classification": "B",
+      "group": "SAガード値・版差",
+      "reason": "通常SA3をCAから分離したCargoもrawも-36。公式-31に対応する別条件や計算は保存資料にない。",
+      "missingEvidence": "同一パッチでのガード値または変更履歴。",
+      "sourceMoveId": null,
+      "saSource": {
+        "researchRecordId": "juri:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/juri.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/juri.cargo.json#/data/cargoquery/1/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "10",
+          "total": "65",
+          "hit": "HKD +22",
+          "block": "-36"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      },
+      "rawPath": "archive/staging/sf6-frame-data/raw/juri.json",
+      "raw": [
+        {
+          "index": 0,
+          "id": "juri__214214k",
+          "name": "Kaisen Dankai Raku",
+          "input": "214214K",
+          "value": -36,
+          "notes": "Cinematic time regenerates ~2 Drive bars for Juri"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/juri.cargo.json",
+      "cargo": [
+        {
+          "index": 1,
+          "input": "214214K",
+          "notation": "<span style=\"color: #b70c0b;\">'''-36'''</span>",
+          "notes": "Cinematic time regenerates ~2 Drive bars for Juri"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/juri.json",
+      "official": [
+        {
+          "row": 77,
+          "name": "SA3 回旋断界落",
+          "value": "-31",
+          "notes": "1-13F　完全無敵\n最低保障ダメージ50％\nカウンター/パニッシュカウンターで数値が変動しない\n※必殺技キャンセル時のみ適用",
+          "commandText": "",
+          "commands": [
+            {
+              "motion": "214214",
+              "button": "K",
+              "strength": "none",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__super_art_2_L",
+      "name": "Bushin Scramble",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "P",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "field": "block",
+      "current": "-26",
+      "proposal": null,
+      "officialValue": "-25",
+      "classification": "B",
+      "group": "空中SA・ガード接続条件",
+      "reason": "Cargo通常SA2は-26(-20)、rawは-26。空中化と多段接続を含む一方、公式-25は両原典値と異なる。",
+      "missingEvidence": "括弧の接続条件、相手姿勢、空中硬直と対象版の対応。",
+      "sourceMoveId": null,
+      "saSource": {
+        "researchRecordId": "kimberly:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/kimberly.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/kimberly.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "13",
+          "total": "59",
+          "hit": "KD +22",
+          "block": "-26(-20)"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      },
+      "rawPath": "archive/staging/sf6-frame-data/raw/kimberly.json",
+      "raw": [
+        {
+          "index": 0,
+          "id": "kimberly__214214p",
+          "name": "Bushin Scramble",
+          "input": "214214P",
+          "value": -26,
+          "notes": "Becomes airborne during screen freeze (can dodge grounded attacks despite not having invincibility); screen freeze causes active spraycans to disappear; first hit before cinematic does 300 damage"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/kimberly.cargo.json",
+      "cargo": [
+        {
+          "index": 0,
+          "input": "214214P",
+          "notation": "<span style=\"color: #b70c0b;\">'''-26(-20)'''</span>",
+          "notes": "Becomes airborne during screen freeze (can dodge grounded attacks despite not having invincibility); screen freeze causes active spraycans to disappear; first hit before cinematic does 300 damage"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/kimberly.json",
+      "official": [
+        {
+          "row": 75,
+          "name": "SA2 武神天翔亢竜",
+          "value": "-25",
+          "notes": "1F　完全無敵\n1-20F　空中判定\n最低保障ダメージ40％\nカウンター/パニッシュカウンターで数値が変動しない",
+          "commandText": "",
+          "commands": [
+            {
+              "motion": "214214",
+              "button": "P",
+              "strength": "none",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__super_art_2_M",
+      "name": "Bushin Scramble",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "P",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "field": "block",
+      "current": "-26",
+      "proposal": null,
+      "officialValue": "-25",
+      "classification": "B",
+      "group": "空中SA・ガード接続条件",
+      "reason": "Cargo通常SA2は-26(-20)、rawは-26。空中化と多段接続を含む一方、公式-25は両原典値と異なる。",
+      "missingEvidence": "括弧の接続条件、相手姿勢、空中硬直と対象版の対応。",
+      "sourceMoveId": null,
+      "saSource": {
+        "researchRecordId": "kimberly:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/kimberly.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/kimberly.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "13",
+          "total": "59",
+          "hit": "KD +22",
+          "block": "-26(-20)"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      },
+      "rawPath": "archive/staging/sf6-frame-data/raw/kimberly.json",
+      "raw": [
+        {
+          "index": 0,
+          "id": "kimberly__214214p",
+          "name": "Bushin Scramble",
+          "input": "214214P",
+          "value": -26,
+          "notes": "Becomes airborne during screen freeze (can dodge grounded attacks despite not having invincibility); screen freeze causes active spraycans to disappear; first hit before cinematic does 300 damage"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/kimberly.cargo.json",
+      "cargo": [
+        {
+          "index": 0,
+          "input": "214214P",
+          "notation": "<span style=\"color: #b70c0b;\">'''-26(-20)'''</span>",
+          "notes": "Becomes airborne during screen freeze (can dodge grounded attacks despite not having invincibility); screen freeze causes active spraycans to disappear; first hit before cinematic does 300 damage"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/kimberly.json",
+      "official": [
+        {
+          "row": 75,
+          "name": "SA2 武神天翔亢竜",
+          "value": "-25",
+          "notes": "1F　完全無敵\n1-20F　空中判定\n最低保障ダメージ40％\nカウンター/パニッシュカウンターで数値が変動しない",
+          "commandText": "",
+          "commands": [
+            {
+              "motion": "214214",
+              "button": "P",
+              "strength": "none",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__super_art_2_H",
+      "name": "Bushin Scramble",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "P",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "field": "block",
+      "current": "-26",
+      "proposal": null,
+      "officialValue": "-25",
+      "classification": "B",
+      "group": "空中SA・ガード接続条件",
+      "reason": "Cargo通常SA2は-26(-20)、rawは-26。空中化と多段接続を含む一方、公式-25は両原典値と異なる。",
+      "missingEvidence": "括弧の接続条件、相手姿勢、空中硬直と対象版の対応。",
+      "sourceMoveId": null,
+      "saSource": {
+        "researchRecordId": "kimberly:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/kimberly.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/kimberly.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "13",
+          "total": "59",
+          "hit": "KD +22",
+          "block": "-26(-20)"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      },
+      "rawPath": "archive/staging/sf6-frame-data/raw/kimberly.json",
+      "raw": [
+        {
+          "index": 0,
+          "id": "kimberly__214214p",
+          "name": "Bushin Scramble",
+          "input": "214214P",
+          "value": -26,
+          "notes": "Becomes airborne during screen freeze (can dodge grounded attacks despite not having invincibility); screen freeze causes active spraycans to disappear; first hit before cinematic does 300 damage"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/kimberly.cargo.json",
+      "cargo": [
+        {
+          "index": 0,
+          "input": "214214P",
+          "notation": "<span style=\"color: #b70c0b;\">'''-26(-20)'''</span>",
+          "notes": "Becomes airborne during screen freeze (can dodge grounded attacks despite not having invincibility); screen freeze causes active spraycans to disappear; first hit before cinematic does 300 damage"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/kimberly.json",
+      "official": [
+        {
+          "row": 75,
+          "name": "SA2 武神天翔亢竜",
+          "value": "-25",
+          "notes": "1F　完全無敵\n1-20F　空中判定\n最低保障ダメージ40％\nカウンター/パニッシュカウンターで数値が変動しない",
+          "commandText": "",
+          "commands": [
+            {
+              "motion": "214214",
+              "button": "P",
+              "strength": "none",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "lily",
+      "moveId": "lily__super_art_3_L",
+      "name": "Raging Typhoon",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "214214",
+        "button": "P",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "field": "startup",
+      "current": "5",
+      "proposal": null,
+      "officialValue": "7",
+      "classification": "B",
+      "group": "SA暗転前後の複合発生",
+      "reason": "5+2の先頭5がraw・本番へ保存され、公式7は合計と一致。通常SA3をCAからsaEvidenceで分離。後半が暗転後成立までの期間か、ゲーム用発動値として何を含めるかは未確認。",
+      "missingEvidence": "暗転前後の発生・投げ成立の定義と、既存SA代表値方針との適用判断。一般加算では確定しない。",
+      "sourceMoveId": null,
+      "saSource": {
+        "researchRecordId": "lily:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/lily.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "5+2",
+          "total": "114",
+          "hit": "HKD +4",
+          "block": "-"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      },
+      "rawPath": "archive/staging/sf6-frame-data/raw/lily.json",
+      "raw": [
+        {
+          "index": 0,
+          "id": "lily__214214p",
+          "name": "Raging Typhoon",
+          "input": "214214P",
+          "value": 5,
+          "notes": "Can be jumped out of during startup; can be comboed into like a hit-grab (immediate damage scaling applies to any combo into SA3); cinematic time regenerates ~1.7 Drive bars for Lily; Range: 1.728 (1.755 on 2nd active frame)"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json",
+      "cargo": [
+        {
+          "index": 0,
+          "input": "214214P",
+          "notation": "5+2",
+          "notes": "Can be jumped out of during startup; can be comboed into like a hit-grab (immediate damage scaling applies to any combo into SA3); cinematic time regenerates ~1.7 Drive bars for Lily; Range: 1.728 (1.755 on 2nd active frame)"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/lily.json",
+      "official": [
+        {
+          "row": 65,
+          "name": "SA3 レイジングタイフーン",
+          "value": "7",
+          "notes": "1-8F　完全無敵\n最低保障ダメージ50％\nカウンター/パニッシュカウンターで数値が変動しない\n※必殺技からキャンセル時のみ20％",
+          "commandText": "（近距離で）",
+          "commands": [
+            {
+              "motion": "214214",
+              "button": "P",
+              "strength": "none",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "lily",
+      "moveId": "lily__super_art_3_M",
+      "name": "Raging Typhoon",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "214214",
+        "button": "P",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "field": "startup",
+      "current": "5",
+      "proposal": null,
+      "officialValue": "7",
+      "classification": "B",
+      "group": "SA暗転前後の複合発生",
+      "reason": "5+2の先頭5がraw・本番へ保存され、公式7は合計と一致。通常SA3をCAからsaEvidenceで分離。後半が暗転後成立までの期間か、ゲーム用発動値として何を含めるかは未確認。",
+      "missingEvidence": "暗転前後の発生・投げ成立の定義と、既存SA代表値方針との適用判断。一般加算では確定しない。",
+      "sourceMoveId": null,
+      "saSource": {
+        "researchRecordId": "lily:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/lily.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "5+2",
+          "total": "114",
+          "hit": "HKD +4",
+          "block": "-"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      },
+      "rawPath": "archive/staging/sf6-frame-data/raw/lily.json",
+      "raw": [
+        {
+          "index": 0,
+          "id": "lily__214214p",
+          "name": "Raging Typhoon",
+          "input": "214214P",
+          "value": 5,
+          "notes": "Can be jumped out of during startup; can be comboed into like a hit-grab (immediate damage scaling applies to any combo into SA3); cinematic time regenerates ~1.7 Drive bars for Lily; Range: 1.728 (1.755 on 2nd active frame)"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json",
+      "cargo": [
+        {
+          "index": 0,
+          "input": "214214P",
+          "notation": "5+2",
+          "notes": "Can be jumped out of during startup; can be comboed into like a hit-grab (immediate damage scaling applies to any combo into SA3); cinematic time regenerates ~1.7 Drive bars for Lily; Range: 1.728 (1.755 on 2nd active frame)"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/lily.json",
+      "official": [
+        {
+          "row": 65,
+          "name": "SA3 レイジングタイフーン",
+          "value": "7",
+          "notes": "1-8F　完全無敵\n最低保障ダメージ50％\nカウンター/パニッシュカウンターで数値が変動しない\n※必殺技からキャンセル時のみ20％",
+          "commandText": "（近距離で）",
+          "commands": [
+            {
+              "motion": "214214",
+              "button": "P",
+              "strength": "none",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "lily",
+      "moveId": "lily__super_art_3_H",
+      "name": "Raging Typhoon",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "214214",
+        "button": "P",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "field": "startup",
+      "current": "5",
+      "proposal": null,
+      "officialValue": "7",
+      "classification": "B",
+      "group": "SA暗転前後の複合発生",
+      "reason": "5+2の先頭5がraw・本番へ保存され、公式7は合計と一致。通常SA3をCAからsaEvidenceで分離。後半が暗転後成立までの期間か、ゲーム用発動値として何を含めるかは未確認。",
+      "missingEvidence": "暗転前後の発生・投げ成立の定義と、既存SA代表値方針との適用判断。一般加算では確定しない。",
+      "sourceMoveId": null,
+      "saSource": {
+        "researchRecordId": "lily:raw:0",
+        "rawRef": "archive/staging/sf6-frame-data/raw/lily.json#/moves/0",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json#/data/cargoquery/0/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "5+2",
+          "total": "114",
+          "hit": "HKD +4",
+          "block": "-"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      },
+      "rawPath": "archive/staging/sf6-frame-data/raw/lily.json",
+      "raw": [
+        {
+          "index": 0,
+          "id": "lily__214214p",
+          "name": "Raging Typhoon",
+          "input": "214214P",
+          "value": 5,
+          "notes": "Can be jumped out of during startup; can be comboed into like a hit-grab (immediate damage scaling applies to any combo into SA3); cinematic time regenerates ~1.7 Drive bars for Lily; Range: 1.728 (1.755 on 2nd active frame)"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json",
+      "cargo": [
+        {
+          "index": 0,
+          "input": "214214P",
+          "notation": "5+2",
+          "notes": "Can be jumped out of during startup; can be comboed into like a hit-grab (immediate damage scaling applies to any combo into SA3); cinematic time regenerates ~1.7 Drive bars for Lily; Range: 1.728 (1.755 on 2nd active frame)"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/lily.json",
+      "official": [
+        {
+          "row": 65,
+          "name": "SA3 レイジングタイフーン",
+          "value": "7",
+          "notes": "1-8F　完全無敵\n最低保障ダメージ50％\nカウンター/パニッシュカウンターで数値が変動しない\n※必殺技からキャンセル時のみ20％",
+          "commandText": "（近距離で）",
+          "commands": [
+            {
+              "motion": "214214",
+              "button": "P",
+              "strength": "none",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "mai",
+      "moveId": "mai__special_623_K_H",
+      "name": "HK Hishou Ryuuenjin",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "K",
+        "strength": "H"
+      },
+      "field": "block",
+      "current": "-28",
+      "proposal": null,
+      "officialValue": "-31",
+      "classification": "B",
+      "group": "相手体格・多段ガード",
+      "reason": "通常非ストック版のCargo -28(-31)。2段目が大半の相手でガード時に空振りし、特定の高身長5キャラは例外と明記。公式-31の相手条件が不明。現在値は括弧外採用規則に沿うが通常立ち相手の代表を特定できない。",
+      "missingEvidence": "公式の測定相手と、どの段がガードされたか。",
+      "sourceMoveId": null,
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/mai.json",
+      "raw": [
+        {
+          "index": 57,
+          "id": "mai__623hk",
+          "name": "HK Hishou Ryuuenjin",
+          "input": "623HK",
+          "value": -28,
+          "notes": "Mid/farther range anti-air and juggle ender (slower startup limits its use in some juggle routes); cannot hit cross-up; puts opponents into limited juggle state on hit; first hit can whiff if used too early as an anti-air; second hit whiffs on block (except vs. standing Dee Jay/JP/Marisa/Sagat/Zangief) resulting in worse block advantage and reduced chip/drive damage"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/mai.cargo.json",
+      "cargo": [
+        {
+          "index": 57,
+          "input": "623HK",
+          "notation": "<span style=\"color: #b70c0b;\">'''-28(-31)'''</span>",
+          "notes": "Mid/farther range anti-air and juggle ender (slower startup limits its use in some juggle routes); cannot hit cross-up; puts opponents into limited juggle state on hit; first hit can whiff if used too early as an anti-air; second hit whiffs on block (except vs. standing Dee Jay/JP/Marisa/Sagat/Zangief) resulting in worse block advantage and reduced chip/drive damage"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/mai.json",
+      "official": [
+        {
+          "row": 49,
+          "name": "強 飛翔龍炎陣",
+          "value": "-31",
+          "notes": "1-11F　空中判定の打撃・空弾属性に対して無敵\n9-38F　空中判定",
+          "commandText": "強",
+          "commands": [
+            {
+              "motion": "623",
+              "button": "K",
+              "strength": "H",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "manon",
+      "moveId": "manon__super_art_3_L",
+      "name": "Pas de Deux",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "P",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "field": "startup",
+      "current": "6",
+      "proposal": null,
+      "officialValue": "7",
+      "classification": "B",
+      "group": "SA暗転前後の複合発生",
+      "reason": "6+1の先頭6がraw・本番へ保存され、公式7は合計と一致。通常SA3をCAからsaEvidenceで分離。後半が暗転後成立までの期間か、ゲーム用発動値として何を含めるかは未確認。",
+      "missingEvidence": "暗転前後の発生・投げ成立の定義と、既存SA代表値方針との適用判断。一般加算では確定しない。",
+      "sourceMoveId": null,
+      "saSource": {
+        "researchRecordId": "manon:raw:6",
+        "rawRef": "archive/staging/sf6-frame-data/raw/manon.json#/moves/6",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/manon.cargo.json#/data/cargoquery/6/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "6+1",
+          "total": "80",
+          "hit": "HKD +16",
+          "block": "-"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      },
+      "rawPath": "archive/staging/sf6-frame-data/raw/manon.json",
+      "raw": [
+        {
+          "index": 6,
+          "id": "manon__236236p",
+          "name": "Pas de Deux",
+          "input": "236236P",
+          "value": 6,
+          "notes": "Command throw that can be comboed into; opponent can jump on reaction after the Super freeze; damage at Medal Lv. 1-5: 4000/4100/4200/4400/4600; cannot hit opponents behind Manon; juggles into meterless 236P grant a restand that combos into SA3; cinematic time regenerates ~2.2 Drive bars for Manon; Range: 1.463 (2nd active frame 1.489)"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/manon.cargo.json",
+      "cargo": [
+        {
+          "index": 6,
+          "input": "236236P",
+          "notation": "6+1",
+          "notes": "Command throw that can be comboed into; opponent can jump on reaction after the Super freeze; damage at Medal Lv. 1-5: 4000/4100/4200/4400/4600; cannot hit opponents behind Manon; juggles into meterless 236P grant a restand that combos into SA3; cinematic time regenerates ~2.2 Drive bars for Manon; Range: 1.463 (2nd active frame 1.489)"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/manon.json",
+      "official": [
+        {
+          "row": 50,
+          "name": "SA3 パ・ド・ドゥ",
+          "value": "7",
+          "notes": "1-8F　完全無敵\n最低保障ダメージ50％\nカウンター/パニッシュカウンターで数値が変動しない\n※立ち強P、ロン・ポワンからキャンセル時のみ15％\n※メダルLvに応じてダメージが上昇\nメダルLv1　4000\nメダルLv2　4100\nメダルLv3　4200\nメダルLv4　4400\nメダルLv5　4600",
+          "commandText": "（近距離で）",
+          "commands": [
+            {
+              "motion": "236236",
+              "button": "P",
+              "strength": "none",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "manon",
+      "moveId": "manon__super_art_3_M",
+      "name": "Pas de Deux",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "P",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "field": "startup",
+      "current": "6",
+      "proposal": null,
+      "officialValue": "7",
+      "classification": "B",
+      "group": "SA暗転前後の複合発生",
+      "reason": "6+1の先頭6がraw・本番へ保存され、公式7は合計と一致。通常SA3をCAからsaEvidenceで分離。後半が暗転後成立までの期間か、ゲーム用発動値として何を含めるかは未確認。",
+      "missingEvidence": "暗転前後の発生・投げ成立の定義と、既存SA代表値方針との適用判断。一般加算では確定しない。",
+      "sourceMoveId": null,
+      "saSource": {
+        "researchRecordId": "manon:raw:6",
+        "rawRef": "archive/staging/sf6-frame-data/raw/manon.json#/moves/6",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/manon.cargo.json#/data/cargoquery/6/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "6+1",
+          "total": "80",
+          "hit": "HKD +16",
+          "block": "-"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      },
+      "rawPath": "archive/staging/sf6-frame-data/raw/manon.json",
+      "raw": [
+        {
+          "index": 6,
+          "id": "manon__236236p",
+          "name": "Pas de Deux",
+          "input": "236236P",
+          "value": 6,
+          "notes": "Command throw that can be comboed into; opponent can jump on reaction after the Super freeze; damage at Medal Lv. 1-5: 4000/4100/4200/4400/4600; cannot hit opponents behind Manon; juggles into meterless 236P grant a restand that combos into SA3; cinematic time regenerates ~2.2 Drive bars for Manon; Range: 1.463 (2nd active frame 1.489)"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/manon.cargo.json",
+      "cargo": [
+        {
+          "index": 6,
+          "input": "236236P",
+          "notation": "6+1",
+          "notes": "Command throw that can be comboed into; opponent can jump on reaction after the Super freeze; damage at Medal Lv. 1-5: 4000/4100/4200/4400/4600; cannot hit opponents behind Manon; juggles into meterless 236P grant a restand that combos into SA3; cinematic time regenerates ~2.2 Drive bars for Manon; Range: 1.463 (2nd active frame 1.489)"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/manon.json",
+      "official": [
+        {
+          "row": 50,
+          "name": "SA3 パ・ド・ドゥ",
+          "value": "7",
+          "notes": "1-8F　完全無敵\n最低保障ダメージ50％\nカウンター/パニッシュカウンターで数値が変動しない\n※立ち強P、ロン・ポワンからキャンセル時のみ15％\n※メダルLvに応じてダメージが上昇\nメダルLv1　4000\nメダルLv2　4100\nメダルLv3　4200\nメダルLv4　4400\nメダルLv5　4600",
+          "commandText": "（近距離で）",
+          "commands": [
+            {
+              "motion": "236236",
+              "button": "P",
+              "strength": "none",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "manon",
+      "moveId": "manon__super_art_3_H",
+      "name": "Pas de Deux",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "P",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "field": "startup",
+      "current": "6",
+      "proposal": null,
+      "officialValue": "7",
+      "classification": "B",
+      "group": "SA暗転前後の複合発生",
+      "reason": "6+1の先頭6がraw・本番へ保存され、公式7は合計と一致。通常SA3をCAからsaEvidenceで分離。後半が暗転後成立までの期間か、ゲーム用発動値として何を含めるかは未確認。",
+      "missingEvidence": "暗転前後の発生・投げ成立の定義と、既存SA代表値方針との適用判断。一般加算では確定しない。",
+      "sourceMoveId": null,
+      "saSource": {
+        "researchRecordId": "manon:raw:6",
+        "rawRef": "archive/staging/sf6-frame-data/raw/manon.json#/moves/6",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/manon.cargo.json#/data/cargoquery/6/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "6+1",
+          "total": "80",
+          "hit": "HKD +16",
+          "block": "-"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      },
+      "rawPath": "archive/staging/sf6-frame-data/raw/manon.json",
+      "raw": [
+        {
+          "index": 6,
+          "id": "manon__236236p",
+          "name": "Pas de Deux",
+          "input": "236236P",
+          "value": 6,
+          "notes": "Command throw that can be comboed into; opponent can jump on reaction after the Super freeze; damage at Medal Lv. 1-5: 4000/4100/4200/4400/4600; cannot hit opponents behind Manon; juggles into meterless 236P grant a restand that combos into SA3; cinematic time regenerates ~2.2 Drive bars for Manon; Range: 1.463 (2nd active frame 1.489)"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/manon.cargo.json",
+      "cargo": [
+        {
+          "index": 6,
+          "input": "236236P",
+          "notation": "6+1",
+          "notes": "Command throw that can be comboed into; opponent can jump on reaction after the Super freeze; damage at Medal Lv. 1-5: 4000/4100/4200/4400/4600; cannot hit opponents behind Manon; juggles into meterless 236P grant a restand that combos into SA3; cinematic time regenerates ~2.2 Drive bars for Manon; Range: 1.463 (2nd active frame 1.489)"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/manon.json",
+      "official": [
+        {
+          "row": 50,
+          "name": "SA3 パ・ド・ドゥ",
+          "value": "7",
+          "notes": "1-8F　完全無敵\n最低保障ダメージ50％\nカウンター/パニッシュカウンターで数値が変動しない\n※立ち強P、ロン・ポワンからキャンセル時のみ15％\n※メダルLvに応じてダメージが上昇\nメダルLv1　4000\nメダルLv2　4100\nメダルLv3　4200\nメダルLv4　4400\nメダルLv5　4600",
+          "commandText": "（近距離で）",
+          "commands": [
+            {
+              "motion": "236236",
+              "button": "P",
+              "strength": "none",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "rashid",
+      "moveId": "rashid__special_236_P_OD",
+      "name": "Spinning Mixer",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "OD"
+      },
+      "field": "block",
+      "current": "-53",
+      "proposal": null,
+      "officialValue": "-42",
+      "classification": "B",
+      "group": "気流・地上接続・ガード時短縮",
+      "reason": "同入力の気流強化行を除外し、通常ODのCargo -53・raw -53を選択。備考には地上2ヒットとガード時短い着地硬直。公式-42との11F差の条件・版を確定できない。",
+      "missingEvidence": "気流なし・同一相手姿勢のガード時アニメーションと対象版。",
+      "sourceMoveId": null,
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/rashid.json",
+      "raw": [
+        {
+          "index": 30,
+          "id": "rashid__236pp",
+          "name": "Spinning Mixer",
+          "input": "236PP",
+          "value": -53,
+          "notes": "Shorter animation with less landing recovery on block only; cannot anti-air cross-ups; can only hit twice vs. grounded opponents (will not break DI armor); 5f extra knockdown advantage if the final hit whiffs (keeps Rashid safe); can be affected by Air Current on frames 2-8"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/rashid.cargo.json",
+      "cargo": [
+        {
+          "index": 28,
+          "input": "236PP",
+          "notation": "<span style=\"color: #b70c0b;\">'''-53'''</span>",
+          "notes": "Shorter animation with less landing recovery on block only; cannot anti-air cross-ups; can only hit twice vs. grounded opponents (will not break DI armor); 5f extra knockdown advantage if the final hit whiffs (keeps Rashid safe); can be affected by Air Current on frames 2-8"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/rashid.json",
+      "official": [
+        {
+          "row": 40,
+          "name": "OD スピニング・ミキサー",
+          "value": "-42",
+          "notes": "1-8F 完全無敵\n9-13F　空中判定の打撃・空弾属性に対して無敵\n2-9F 気流干渉により性能変化",
+          "commandText": "",
+          "commands": [
+            {
+              "motion": "236",
+              "button": "P",
+              "strength": "OD",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "ryu",
+      "moveId": "ryu__special_623_P_H",
+      "name": "Shoryuken",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "H"
+      },
+      "field": "block",
+      "current": "-39",
+      "proposal": null,
+      "officialValue": "-36",
+      "classification": "B",
+      "group": "通常ガード値・持続接続または版差",
+      "reason": "Cargo 623HP のガード欄<span style=\"color: #b70c0b;\">'''-39'''</span>はraw・本番-39に整合。公式-36との差を説明する同一接続段・高さ・版の根拠がない。",
+      "missingEvidence": "同一ガード接続段・相手条件・対象版の証拠。",
+      "sourceMoveId": null,
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/ryu.json",
+      "raw": [
+        {
+          "index": 52,
+          "id": "ryu__623hp",
+          "name": "Shoryuken",
+          "input": "623HP",
+          "value": -39,
+          "notes": "Has juggle potential; cannot hit cross-up; does reduced damage and higher juggle limit on active frames 3-10 (weaker as a high-connect anti-air); higher knockdown advantage on the first 2 active frames (+37 refers to 1st active frame, +29 refers to anti-air with 3rd active frame; actual advantage varies based on height/distance)"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json",
+      "cargo": [
+        {
+          "index": 48,
+          "input": "623HP",
+          "notation": "<span style=\"color: #b70c0b;\">'''-39'''</span>",
+          "notes": "Has juggle potential; cannot hit cross-up; does reduced damage and higher juggle limit on active frames 3-10 (weaker as a high-connect anti-air); higher knockdown advantage on the first 2 active frames (+37 refers to 1st active frame, +29 refers to anti-air with 3rd active frame; actual advantage varies based on height/distance)"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/ryu.json",
+      "official": [
+        {
+          "row": 38,
+          "name": "強 昇龍拳",
+          "value": "-36",
+          "notes": "1-8F　空中判定の打撃・空弾属性に対して無敵\n9-49F　空中判定\n※持続の2F目以降は個別ダメージ（800）",
+          "commandText": "強",
+          "commands": [
+            {
+              "motion": "623",
+              "button": "P",
+              "strength": "H",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "ryu",
+      "moveId": "ryu__super_art_3_L",
+      "name": "Shin Shoryuken",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "K",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "field": "block",
+      "current": "-50",
+      "proposal": null,
+      "officialValue": "-52",
+      "classification": "B",
+      "group": "相手体格・多段ガードと版差",
+      "reason": "通常SA3のCargo -50(-54)は背の高い立ち相手で接続段数が増える注記。rawは括弧外-50、公式-52は原典のどちらとも違う。CAと分離済み。",
+      "missingEvidence": "公式の相手体格・接続段数・対象版を合わせた測定条件。",
+      "sourceMoveId": null,
+      "saSource": {
+        "researchRecordId": "ryu:raw:17",
+        "rawRef": "archive/staging/sf6-frame-data/raw/ryu.json#/moves/17",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json#/data/cargoquery/15/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "5(2)",
+          "total": "87",
+          "hit": "HKD +14",
+          "block": "-50(-54)"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      },
+      "rawPath": "archive/staging/sf6-frame-data/raw/ryu.json",
+      "raw": [
+        {
+          "index": 17,
+          "id": "ryu__236236k",
+          "name": "Shin Shoryuken",
+          "input": "236236K",
+          "value": -50,
+          "notes": "More hits connect on block vs. tall standing characters (these extra hits do not deal any additional Drive Damage on block); active frames 3-12 cause a non-cinematic hit that does reduced damage (400x4,2000); cannot anti-air cross-ups; starts up faster only when canceled from HP Shoryuken; cinematic time regenerates ~2.2 Drive bars for Ryu"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json",
+      "cargo": [
+        {
+          "index": 15,
+          "input": "236236K",
+          "notation": "<span style=\"color: #b70c0b;\">'''-50(-54)'''</span>",
+          "notes": "More hits connect on block vs. tall standing characters (these extra hits do not deal any additional Drive Damage on block); active frames 3-12 cause a non-cinematic hit that does reduced damage (400x4,2000); cannot anti-air cross-ups; starts up faster only when canceled from HP Shoryuken; cinematic time regenerates ~2.2 Drive bars for Ryu"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/ryu.json",
+      "official": [
+        {
+          "row": 66,
+          "name": "SA3 真・昇龍拳",
+          "value": "-52",
+          "notes": "1-16F 完全無敵\n最低保障ダメージ50％\nカウンター/パニッシュカウンターで数値が変動しない\n※必殺技キャンセル時のみ適用",
+          "commandText": "",
+          "commands": [
+            {
+              "motion": "236236",
+              "button": "K",
+              "strength": "none",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "ryu",
+      "moveId": "ryu__super_art_3_M",
+      "name": "Shin Shoryuken",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "K",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "field": "block",
+      "current": "-50",
+      "proposal": null,
+      "officialValue": "-52",
+      "classification": "B",
+      "group": "相手体格・多段ガードと版差",
+      "reason": "通常SA3のCargo -50(-54)は背の高い立ち相手で接続段数が増える注記。rawは括弧外-50、公式-52は原典のどちらとも違う。CAと分離済み。",
+      "missingEvidence": "公式の相手体格・接続段数・対象版を合わせた測定条件。",
+      "sourceMoveId": null,
+      "saSource": {
+        "researchRecordId": "ryu:raw:17",
+        "rawRef": "archive/staging/sf6-frame-data/raw/ryu.json#/moves/17",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json#/data/cargoquery/15/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "5(2)",
+          "total": "87",
+          "hit": "HKD +14",
+          "block": "-50(-54)"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      },
+      "rawPath": "archive/staging/sf6-frame-data/raw/ryu.json",
+      "raw": [
+        {
+          "index": 17,
+          "id": "ryu__236236k",
+          "name": "Shin Shoryuken",
+          "input": "236236K",
+          "value": -50,
+          "notes": "More hits connect on block vs. tall standing characters (these extra hits do not deal any additional Drive Damage on block); active frames 3-12 cause a non-cinematic hit that does reduced damage (400x4,2000); cannot anti-air cross-ups; starts up faster only when canceled from HP Shoryuken; cinematic time regenerates ~2.2 Drive bars for Ryu"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json",
+      "cargo": [
+        {
+          "index": 15,
+          "input": "236236K",
+          "notation": "<span style=\"color: #b70c0b;\">'''-50(-54)'''</span>",
+          "notes": "More hits connect on block vs. tall standing characters (these extra hits do not deal any additional Drive Damage on block); active frames 3-12 cause a non-cinematic hit that does reduced damage (400x4,2000); cannot anti-air cross-ups; starts up faster only when canceled from HP Shoryuken; cinematic time regenerates ~2.2 Drive bars for Ryu"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/ryu.json",
+      "official": [
+        {
+          "row": 66,
+          "name": "SA3 真・昇龍拳",
+          "value": "-52",
+          "notes": "1-16F 完全無敵\n最低保障ダメージ50％\nカウンター/パニッシュカウンターで数値が変動しない\n※必殺技キャンセル時のみ適用",
+          "commandText": "",
+          "commands": [
+            {
+              "motion": "236236",
+              "button": "K",
+              "strength": "none",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "ryu",
+      "moveId": "ryu__super_art_3_H",
+      "name": "Shin Shoryuken",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "K",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "field": "block",
+      "current": "-50",
+      "proposal": null,
+      "officialValue": "-52",
+      "classification": "B",
+      "group": "相手体格・多段ガードと版差",
+      "reason": "通常SA3のCargo -50(-54)は背の高い立ち相手で接続段数が増える注記。rawは括弧外-50、公式-52は原典のどちらとも違う。CAと分離済み。",
+      "missingEvidence": "公式の相手体格・接続段数・対象版を合わせた測定条件。",
+      "sourceMoveId": null,
+      "saSource": {
+        "researchRecordId": "ryu:raw:17",
+        "rawRef": "archive/staging/sf6-frame-data/raw/ryu.json#/moves/17",
+        "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json#/data/cargoquery/15/title",
+        "strengthBasis": "user_common",
+        "sourceNotation": {
+          "startup": "5(2)",
+          "total": "87",
+          "hit": "HKD +14",
+          "block": "-50(-54)"
+        },
+        "frameOrigins": {
+          "startup": "source",
+          "total": "source",
+          "hit": "source",
+          "block": "source"
+        },
+        "laterAttackStartup": null
+      },
+      "rawPath": "archive/staging/sf6-frame-data/raw/ryu.json",
+      "raw": [
+        {
+          "index": 17,
+          "id": "ryu__236236k",
+          "name": "Shin Shoryuken",
+          "input": "236236K",
+          "value": -50,
+          "notes": "More hits connect on block vs. tall standing characters (these extra hits do not deal any additional Drive Damage on block); active frames 3-12 cause a non-cinematic hit that does reduced damage (400x4,2000); cannot anti-air cross-ups; starts up faster only when canceled from HP Shoryuken; cinematic time regenerates ~2.2 Drive bars for Ryu"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json",
+      "cargo": [
+        {
+          "index": 15,
+          "input": "236236K",
+          "notation": "<span style=\"color: #b70c0b;\">'''-50(-54)'''</span>",
+          "notes": "More hits connect on block vs. tall standing characters (these extra hits do not deal any additional Drive Damage on block); active frames 3-12 cause a non-cinematic hit that does reduced damage (400x4,2000); cannot anti-air cross-ups; starts up faster only when canceled from HP Shoryuken; cinematic time regenerates ~2.2 Drive bars for Ryu"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/ryu.json",
+      "official": [
+        {
+          "row": 66,
+          "name": "SA3 真・昇龍拳",
+          "value": "-52",
+          "notes": "1-16F 完全無敵\n最低保障ダメージ50％\nカウンター/パニッシュカウンターで数値が変動しない\n※必殺技キャンセル時のみ適用",
+          "commandText": "",
+          "commands": [
+            {
+              "motion": "236236",
+              "button": "K",
+              "strength": "none",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "sagat",
+      "moveId": "sagat__special_236_P_OD",
+      "name": "OD Low Tiger Shot",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "OD"
+      },
+      "field": "hit",
+      "current": "+52",
+      "proposal": "D",
+      "officialValue": "D",
+      "classification": "A",
+      "group": "KD/HKD状態情報の欠落",
+      "reason": "Cargo 236LPMP or 236LPHP の通常hit KD +52からKD後の数値だけがraw 52と本番+52へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "missingEvidence": null,
+      "sourceMoveId": null,
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/sagat.json",
+      "raw": [
+        {
+          "index": 23,
+          "id": "sagat__236lpmpor236lphp",
+          "name": "OD Low Tiger Shot",
+          "input": "236LPMP or 236LPHP",
+          "value": 52,
+          "notes": "Fast 2-hit OD projectile; can hit crouching opponents; can be used while a meterless Tiger Shot is still on-screen; the projectile travels low to the ground, preventing many low profile attacks from avoiding it (e.g. Kimberly's slide, A.K.I.'s Sinister Slide); Sagat is in a crouching state for the entire move duration with crouch-sized hurtboxes; puts opponents into a limited juggle state; extends a slight projectile invincible arm hurtbox on frames 16-37 and a leg hurtbox on frames 12-44; topmost hurtboxes are vulnerable only to air attacks on frames 1-44 (more vulnerable to jump-ins despite crouching) and are projectile invincible on frames 1-29 to avoid High Tiger Shot (frames 30-44 are still vulnerable); starter scaling does not apply if only the 2nd hit connects (e.g. clashing with 1-hit OD fireball or breaking Drive Impact armor)"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/sagat.cargo.json",
+      "cargo": [
+        {
+          "index": 23,
+          "input": "236LPMP or 236LPHP",
+          "notation": "KD +52",
+          "notes": "Fast 2-hit OD projectile; can hit crouching opponents; can be used while a meterless Tiger Shot is still on-screen; the projectile travels low to the ground, preventing many low profile attacks from avoiding it (e.g. Kimberly's slide, A.K.I.'s Sinister Slide); Sagat is in a crouching state for the entire move duration with crouch-sized hurtboxes; puts opponents into a limited juggle state; extends a slight projectile invincible arm hurtbox on frames 16-37 and a leg hurtbox on frames 12-44; topmost hurtboxes are vulnerable only to air attacks on frames 1-44 (more vulnerable to jump-ins despite crouching) and are projectile invincible on frames 1-29 to avoid High Tiger Shot (frames 30-44 are still vulnerable); starter scaling does not apply if only the 2nd hit connects (e.g. clashing with 1-hit OD fireball or breaking Drive Impact armor)"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/sagat.json",
+      "official": [
+        {
+          "row": 34,
+          "name": "OD グランドタイガーショット",
+          "value": "D",
+          "notes": "",
+          "commandText": "",
+          "commands": [
+            {
+              "motion": "236",
+              "button": "P",
+              "strength": "OD",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "terry",
+      "moveId": "terry__special_623_P_L",
+      "name": "LP Rising Tackle",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "L"
+      },
+      "field": "block",
+      "current": "-23",
+      "proposal": null,
+      "officialValue": "-25",
+      "classification": "B",
+      "group": "通常ガード値・持続接続または版差",
+      "reason": "Cargo 623LP のガード欄<span style=\"color: #b70c0b;\">'''-23'''</span>はraw・本番-23に整合。公式-25との差を説明する同一接続段・高さ・版の根拠がない。",
+      "missingEvidence": "同一ガード接続段・相手条件・対象版の証拠。",
+      "sourceMoveId": null,
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/terry.json",
+      "raw": [
+        {
+          "index": 48,
+          "id": "terry__623lp",
+          "name": "LP Rising Tackle",
+          "input": "623LP",
+          "value": -23,
+          "notes": "Very short horizontal range (hits straight above Terry to anti-air close jumps); cannot hit cross-up; active frames 3-10 do reduced damage; only 1st active frame is cancelable (cancel may be impossible in combos from too far away); puts opponent into limited juggle state (allows follow-up juggles on a high connect)"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json",
+      "cargo": [
+        {
+          "index": 48,
+          "input": "623LP",
+          "notation": "<span style=\"color: #b70c0b;\">'''-23'''</span>",
+          "notes": "Very short horizontal range (hits straight above Terry to anti-air close jumps); cannot hit cross-up; active frames 3-10 do reduced damage; only 1st active frame is cancelable (cancel may be impossible in combos from too far away); puts opponent into limited juggle state (allows follow-up juggles on a high connect)"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/terry.json",
+      "official": [
+        {
+          "row": 47,
+          "name": "弱 ライジングタックル",
+          "value": "-25",
+          "notes": "1-14F　空中判定の打撃・空弾属性に対して無敵\n6-35F　空中判定",
+          "commandText": "弱",
+          "commands": [
+            {
+              "motion": "623",
+              "button": "P",
+              "strength": "L",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "terry",
+      "moveId": "terry__special_214_P_OD",
+      "name": "OD Quick Burn",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "OD"
+      },
+      "field": "hit",
+      "current": "+33",
+      "proposal": "D",
+      "officialValue": "D",
+      "classification": "A",
+      "group": "KD/HKD状態情報の欠落",
+      "reason": "Cargo 214LPMP or 214LPHP の通常hit KD +33からKD後の数値だけがraw 33と本番+33へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "missingEvidence": null,
+      "sourceMoveId": null,
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/terry.json",
+      "raw": [
+        {
+          "index": 8,
+          "id": "terry__214lpmpor214lphp",
+          "name": "OD Quick Burn",
+          "input": "214LPMP or 214LPHP",
+          "value": 33,
+          "notes": "2 hits that transition to a 3rd attack on hit only; functionally 22f startup as an overhead; gives solid damage and oki from light normals"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json",
+      "cargo": [
+        {
+          "index": 8,
+          "input": "214LPMP or 214LPHP",
+          "notation": "KD +33",
+          "notes": "2 hits that transition to a 3rd attack on hit only; functionally 22f startup as an overhead; gives solid damage and oki from light normals"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/terry.json",
+      "official": [
+        {
+          "row": 35,
+          "name": "OD クイックバーン",
+          "value": "D",
+          "notes": "",
+          "commandText": "弱\n中",
+          "commands": [
+            {
+              "motion": "214",
+              "button": "P",
+              "strength": "OD",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_214_P_M",
+      "name": "MP Talim ng Hangin",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "M"
+      },
+      "field": "hit",
+      "current": "+2",
+      "proposal": null,
+      "officialValue": "D",
+      "classification": "B",
+      "group": "ヒット時自動派生と代表ヒット",
+      "reason": "Cargo通常MPは+2を直接記載し、rawも+2。備考は最後2ヒットがヒット時のみ自動継続と説明し、公式も2段目以降はヒット時派生。初段と全段の代表条件が一致するか未確定。",
+      "missingEvidence": "初段・全段完走のどちらを通常ヒットの代表値とするかと、その明示値。",
+      "sourceMoveId": null,
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/yasmine.json",
+      "raw": [
+        {
+          "index": 4,
+          "id": "yasmine__214mp",
+          "name": "MP Talim ng Hangin",
+          "input": "214MP",
+          "value": 2,
+          "notes": "Puts Yasmine into Bayani Mode on hit (this occurs after the hitstop of the 1st hit ends, so it will be granted when Super canceled but not if it trades with opponent's attack); safe on block advancing special; last 2 hits only play out on hit and are not cancelable (listed recovery refers to the blocked version); 3f extra recovery on whiff; 4f extra recovery when absorbed by armor (guaranteed punish when absorbed by Drive Impact unless canceled into SA3); counter-hit/Punish Counter bonus advantage carries through both hits (gives light confirms on CH and medium confirms on PC); puts airborne opponents into a limited juggle state (follow-ups are usually only possible in the corner)"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/yasmine.cargo.json",
+      "cargo": [
+        {
+          "index": 4,
+          "input": "214MP",
+          "notation": "<span style=\"color: #32CD32;\">+2</span>",
+          "notes": "Puts Yasmine into Bayani Mode on hit (this occurs after the hitstop of the 1st hit ends, so it will be granted when Super canceled but not if it trades with opponent's attack); safe on block advancing special; last 2 hits only play out on hit and are not cancelable (listed recovery refers to the blocked version); 3f extra recovery on whiff; 4f extra recovery when absorbed by armor (guaranteed punish when absorbed by Drive Impact unless canceled into SA3); counter-hit/Punish Counter bonus advantage carries through both hits (gives light confirms on CH and medium confirms on PC); puts airborne opponents into a limited juggle state (follow-ups are usually only possible in the corner)"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/yasmine.json",
+      "official": [
+        {
+          "row": 47,
+          "name": "中 タリム・ン・ハンギン",
+          "value": "D",
+          "notes": "ガード時硬直3F減少\nアーマーヒット時硬直1F増加\n2段目以降はヒット時のみ派生",
+          "commandText": "中",
+          "commands": [
+            {
+              "motion": "214",
+              "button": "P",
+              "strength": "M",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    },
+    {
+      "characterId": "zangief",
+      "moveId": "zangief__special_22_K_H",
+      "name": "Tundra Storm",
+      "input": {
+        "type": "special",
+        "motion": "22",
+        "button": "K",
+        "strength": "H"
+      },
+      "field": "startup",
+      "current": "6",
+      "proposal": null,
+      "officialValue": "5",
+      "classification": "B",
+      "group": "当身受付の定義・版差",
+      "reason": "CargoはCounter active 6–55Fと明記しraw6に整合。公式発生5だが当身受付開始との測定定義・版の関係が未確認。",
+      "missingEvidence": "当身受付開始と公式発生の定義、または対象版の変更根拠。",
+      "sourceMoveId": null,
+      "saSource": null,
+      "rawPath": "archive/staging/sf6-frame-data/raw/zangief.json",
+      "raw": [
+        {
+          "index": 1,
+          "id": "zangief__22hk",
+          "name": "Tundra Storm",
+          "input": "22HK",
+          "value": 6,
+          "notes": "Counter is active 6-55f; only activates vs. kick attacks that connect with the hitbox between Zangief's arms (can work against normals, specials, and Drive moves); cannot counter low-hitting kicks; on successful counter, the attack uses a throw hitbox, causing it to whiff vs. airborne or throw invincible opponents"
+        }
+      ],
+      "cargoPath": "archive/staging/sf6-frame-data-quality/evidence/zangief.cargo.json",
+      "cargo": [
+        {
+          "index": 1,
+          "input": "22HK",
+          "notation": "6",
+          "notes": "Counter is active 6-55f; only activates vs. kick attacks that connect with the hitbox between Zangief's arms (can work against normals, specials, and Drive moves); cannot counter low-hitting kicks; on successful counter, the attack uses a throw hitbox, causing it to whiff vs. airborne or throw invincible opponents"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/zangief.json",
+      "official": [
+        {
+          "row": 53,
+          "name": "ツンドラストーム",
+          "value": "5",
+          "notes": "当身判定は地上の蹴り技にのみ反応する",
+          "commandText": "強",
+          "commands": [
+            {
+              "motion": "22",
+              "button": "K",
+              "strength": "H",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "mappingReason": "日本語技名・CLASSICコマンド画像・強度・基本状態を照合",
+      "conditions": {
+        "kind": "base",
+        "condition": null
+      },
+      "patch": "UNVERIFIED",
+      "currentPatchVerified": false
+    }
+  ]
+}

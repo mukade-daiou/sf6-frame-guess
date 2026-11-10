@@ -39,6 +39,8 @@ test("authorized 53 totals are the only production differences", () => {
     const after = read(path);
     records += before.moves.length;
     for (const m of before.moves) {
+      const extra = read("data/adoption-decisions.json").kdHkdCorrections.additionalDecisions.find((x) => x.characterId === before.id && x.moveId === (m.strengthExpansion?.sourceMoveId || m.id));
+      if (extra) { assert.deepEqual(m.frames.hit, extra.before); m.frames.hit = extra.value; }
       const d = ds.find((x) => x.characterId === before.id && x.moveId === m.id);
       if (!d) continue;
       assert.equal(d.field, "total");

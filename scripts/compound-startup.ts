@@ -43,9 +43,16 @@ export function restoreCompoundStartup(character: Character): Character {
         throw new Error(`Unexpected whiff total: ${move.id}`);
       move.frames.total = total.before;
     }
-    const kd = (policy.kdHkdCorrections?.decisions ?? []).find(
-      (item: any) => item.characterId === result.id && item.moveId === move.id,
-    );
+    const kd =
+      (policy.kdHkdCorrections?.additionalDecisions ?? []).find(
+        (item: any) =>
+          item.characterId === result.id &&
+          item.moveId === (move.strengthExpansion?.sourceMoveId || move.id),
+      ) ||
+      (policy.kdHkdCorrections?.decisions ?? []).find(
+        (item: any) =>
+          item.characterId === result.id && item.moveId === move.id,
+      );
     if (kd) {
       if (!isDeepStrictEqual(move.frames.hit, kd.value))
         throw new Error(`Unexpected KD/HKD: ${move.id}`);

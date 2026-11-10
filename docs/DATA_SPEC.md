@@ -1,5 +1,7 @@
 # データ仕様 v1.0.0
 
+`kdHkdCorrections.additionalDecisions` は追加15元技の旧値・Cargo/raw・公式対応を保持する。既存66件の検証を維持し、元技へ適用後に通常の共通強度展開で合計21フィールドへ反映する。
+
 `whiffTotalCorrections` は空振り全体Fの個別判断53件を保持し、共通強度展開後に対象ID・旧値・Cargo行を照合して適用する。公式行と対象パッチ未確認の状態も残す。
 
 `kdHkdCorrections` はKD/HKDの原典と旧値を検証して66技のhitをDへ訂正する。保存原典の行と公式照合情報、旧値、新値を採用判断に残す。

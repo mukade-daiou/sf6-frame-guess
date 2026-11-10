@@ -10,6 +10,9 @@ export function restoreCompoundStartup(character) {
   const kdDecisions =
     JSON.parse(readFileSync("data/adoption-decisions.json", "utf8"))
       .kdHkdCorrections?.decisions || [];
+  const additionalKd =
+    JSON.parse(readFileSync("data/adoption-decisions.json", "utf8"))
+      .kdHkdCorrections?.additionalDecisions || [];
   const totalDecisions =
     JSON.parse(readFileSync("data/adoption-decisions.json", "utf8"))
       .whiffTotalCorrections?.decisions || [];
@@ -22,9 +25,15 @@ export function restoreCompoundStartup(character) {
         throw new Error(`Unauthorized whiff total: ${move.id}`);
       move.frames.total = structuredClone(total.before);
     }
-    const kd = kdDecisions.find(
-      (d) => d.characterId === result.id && d.moveId === move.id,
-    );
+    const kd =
+      additionalKd.find(
+        (d) =>
+          d.characterId === result.id &&
+          d.moveId === (move.strengthExpansion?.sourceMoveId || move.id),
+      ) ||
+      kdDecisions.find(
+        (d) => d.characterId === result.id && d.moveId === move.id,
+      );
     if (kd) {
       if (!isDeepStrictEqual(move.frames.hit, kd.value))
         throw new Error(`Unauthorized KD/HKD: ${move.id}`);

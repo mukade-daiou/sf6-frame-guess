@@ -1,0 +1,958 @@
+{
+  "status": "prepared-not-applied",
+  "sourceLedger": "staging/official-reevaluation/hit-block-startup-audit.json",
+  "entries": [
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__normal_2_P_M",
+      "field": "hit",
+      "before": {
+        "status": "confirmed",
+        "display": "+27",
+        "numeric": 27
+      },
+      "value": {
+        "status": "confirmed",
+        "display": "D"
+      },
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+      "sourceIndex": 24,
+      "sourceInput": "2MP",
+      "sourceNotation": "KD +27",
+      "sourceNotes": "Sweep that can be spaced safely and leaves Arjun neutral on block vs. Burnout for great low pressure",
+      "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
+      "raw": [
+        {
+          "index": 25,
+          "id": "arjun__2mp",
+          "name": "Crouching Medium Punch",
+          "input": "2MP",
+          "value": 27
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/arjun.json",
+      "officialRows": [
+        {
+          "row": 10,
+          "name": "しゃがみ中P（はらう）",
+          "value": "D",
+          "notes": "パニッシュカウンター時ハードノックダウン",
+          "commandText": "中",
+          "commands": [
+            {
+              "motion": "2",
+              "button": "P",
+              "strength": "M",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "M"
+      },
+      "condition": "通常状態・非ホールド・通常ヒット",
+      "affectedMoveIds": [
+        "arjun__normal_2_P_M"
+      ],
+      "reason": "Cargo 2MP の通常hit KD +27からKD後の数値だけがraw 27と本番+27へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__normal_5_K_H",
+      "field": "hit",
+      "before": {
+        "status": "confirmed",
+        "display": "+43",
+        "numeric": 43
+      },
+      "value": {
+        "status": "confirmed",
+        "display": "D"
+      },
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+      "sourceIndex": 27,
+      "sourceInput": "5HK",
+      "sourceNotation": "KD +43",
+      "sourceNotes": "Head and kicking leg hurtboxes are anti-air invuln on frames 11-17; solid anti-air but has slow startup and cannot hit cross-up; whiffs on crouching opponents unless they extend a vertical hurtbox; puts opponent into a limited juggle state (grounded hit only juggles into SA1); Punish Counter launched opponents high into the air (allows stronger follow-up juggles like a fully charged 5HK~HP Target Combo); extends a hurtbox 1f before active that is vulnerable to projectiles",
+      "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
+      "raw": [
+        {
+          "index": 28,
+          "id": "arjun__5hk",
+          "name": "Standing Heavy Kick",
+          "input": "5HK",
+          "value": 43,
+          "notes": "; extends a hurtbox 1f before active that is vulnerable to projectiles"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/arjun.json",
+      "officialRows": [
+        {
+          "row": 7,
+          "name": "立ち強K（ぶっ飛ばす）",
+          "value": "D",
+          "notes": "パニッシュカウンター時吹き飛び時間延長",
+          "commandText": "強",
+          "commands": [
+            {
+              "motion": "",
+              "button": "K",
+              "strength": "H",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "K",
+        "strength": "H"
+      },
+      "condition": "通常状態・非ホールド・通常ヒット",
+      "affectedMoveIds": [
+        "arjun__normal_5_K_H"
+      ],
+      "reason": "Cargo 5HK の通常hit KD +43からKD後の数値だけがraw 43と本番+43へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_214_K_none",
+      "field": "hit",
+      "before": {
+        "status": "confirmed",
+        "display": "+42",
+        "numeric": 42
+      },
+      "value": {
+        "status": "confirmed",
+        "display": "D"
+      },
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+      "sourceIndex": 1,
+      "sourceInput": "214K",
+      "sourceNotation": "KD +42",
+      "sourceNotes": "Button strength determines pillar distance (LK close, MK middle, HK far); holding the button results in a delayed activation with a screen shake effect; second pillar puts the opponent into a limited juggle OTG state (can follow up with Justice Beyond); can be auto-spaced for safety on block against most characters by canceling from 2HP (also creates a frame trap)",
+      "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
+      "raw": [
+        {
+          "index": 1,
+          "id": "arjun__214k",
+          "name": "Divine Pillar",
+          "input": "214K",
+          "value": 42,
+          "notes": "Button strength determines pillar distance (LK close, MK middle, HK far); holding the button results in a delayed activation"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/arjun.json",
+      "officialRows": [
+        {
+          "row": 52,
+          "name": "弱 神気の巨巌",
+          "value": "D",
+          "notes": "ガード時に500のリカバリアブルダメージを与える\nバーンアウト中の相手にガードさせた時の相手Dゲージ増加量(5000)",
+          "commandText": "弱",
+          "commands": [
+            {
+              "motion": "214",
+              "button": "K",
+              "strength": "L",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        },
+        {
+          "row": 53,
+          "name": "中 神気の巨巌",
+          "value": "D",
+          "notes": "ガード時に500のリカバリアブルダメージを与える\nバーンアウト中の相手にガードさせた時の相手Dゲージ増加量(5000)",
+          "commandText": "中",
+          "commands": [
+            {
+              "motion": "214",
+              "button": "K",
+              "strength": "M",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        },
+        {
+          "row": 54,
+          "name": "強 神気の巨巌",
+          "value": "D",
+          "notes": "ガード時に500のリカバリアブルダメージを与える\nバーンアウト中の相手にガードさせた時の相手Dゲージ増加量(5000)",
+          "commandText": "強",
+          "commands": [
+            {
+              "motion": "214",
+              "button": "K",
+              "strength": "H",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "none"
+      },
+      "condition": "通常状態・非ホールド・通常ヒット",
+      "affectedMoveIds": [
+        "arjun__special_214_K_none",
+        "arjun__special_214_K_none__strength_L",
+        "arjun__special_214_K_none__strength_M",
+        "arjun__special_214_K_none__strength_H"
+      ],
+      "reason": "Cargo 214K の通常hit KD +42からKD後の数値だけがraw 42と本番+42へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_214_K_OD",
+      "field": "hit",
+      "before": {
+        "status": "confirmed",
+        "display": "+42",
+        "numeric": 42
+      },
+      "value": {
+        "status": "confirmed",
+        "display": "D"
+      },
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+      "sourceIndex": 2,
+      "sourceInput": "214KK",
+      "sourceNotation": "KD +42",
+      "sourceNotes": "Button combination determines pillar distance (LK+MK close, LK+HK middle, MK+HK far); holding the buttons results in a delayed activation with a screen shake effect; second pillar puts the opponent into a limited juggle OTG state (can follow up with Justice Beyond); can be auto-spaced for safety on block against most characters by canceling from 2HP (also creates a frame trap)",
+      "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
+      "raw": [
+        {
+          "index": 2,
+          "id": "arjun__214kk",
+          "name": "OD Divine Pillar",
+          "input": "214KK",
+          "value": 42,
+          "notes": "Button combination determines pillar distance (LK+MK close, LK+HK middle, MK+HK far); holding the buttons results in a delayed activation"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/arjun.json",
+      "officialRows": [
+        {
+          "row": 56,
+          "name": "OD 弱 神気の巨巌",
+          "value": "D",
+          "notes": "ガード時に500のリカバリアブルダメージを与える\nバーンアウト中の相手にガードさせた時の相手Dゲージ増加量(5000)",
+          "commandText": "弱\n中",
+          "commands": [
+            {
+              "motion": "214",
+              "button": "K",
+              "strength": "OD",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "K",
+        "strength": "OD"
+      },
+      "condition": "通常状態・非ホールド・通常ヒット",
+      "affectedMoveIds": [
+        "arjun__special_214_K_OD"
+      ],
+      "reason": "Cargo 214KK の通常hit KD +42からKD後の数値だけがraw 42と本番+42へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_236_K_none",
+      "field": "hit",
+      "before": {
+        "status": "confirmed",
+        "display": "+42",
+        "numeric": 42
+      },
+      "value": {
+        "status": "confirmed",
+        "display": "D"
+      },
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+      "sourceIndex": 10,
+      "sourceInput": "236K",
+      "sourceNotation": "KD +42",
+      "sourceNotes": "No difference between button strengths; projectile dissipates on contact with opponent; the final cancel frame into SA3 does not combo",
+      "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
+      "raw": [
+        {
+          "index": 10,
+          "id": "arjun__236k",
+          "name": "Breathing Ring",
+          "input": "236K",
+          "value": 42,
+          "notes": "No difference between button strengths; projectile dissipates on contact with opponent"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/arjun.json",
+      "officialRows": [
+        {
+          "row": 42,
+          "name": "息吹の円筒",
+          "value": "D",
+          "notes": "ガード時に300のリカバリアブルダメージを与える\nバーンアウト中の相手にガードさせた時の相手Dゲージ増加量(2000)\n26-36Fまで、息吹の震撼に派生可",
+          "commandText": "",
+          "commands": [
+            {
+              "motion": "236",
+              "button": "K",
+              "strength": "none",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "none"
+      },
+      "condition": "通常状態・非ホールド・通常ヒット",
+      "affectedMoveIds": [
+        "arjun__special_236_K_none",
+        "arjun__special_236_K_none__strength_L",
+        "arjun__special_236_K_none__strength_M",
+        "arjun__special_236_K_none__strength_H"
+      ],
+      "reason": "Cargo 236K の通常hit KD +42からKD後の数値だけがraw 42と本番+42へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_236_P_H",
+      "field": "hit",
+      "before": {
+        "status": "confirmed",
+        "display": "+43",
+        "numeric": 43
+      },
+      "value": {
+        "status": "confirmed",
+        "display": "D"
+      },
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+      "sourceIndex": 9,
+      "sourceInput": "236HP",
+      "sourceNotation": "KD +43(+48)",
+      "sourceNotes": "3f extra recovery on whiff; hitstop increased by 7f on Counter-hit / 12f on Punish Counter (increases the hitconfirm window into ~6P or SA3 by the same amount)",
+      "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
+      "raw": [
+        {
+          "index": 9,
+          "id": "arjun__236hp",
+          "name": "HP Arm of Justice",
+          "input": "236HP",
+          "value": 43,
+          "notes": "3f extra recovery on whiff"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/arjun.json",
+      "officialRows": [
+        {
+          "row": 32,
+          "name": "強 大義の巨腕",
+          "value": "D",
+          "notes": "飛び道具相殺判定あり（1回）\n空振り時硬直3F増加\nガード時に800のリカバリアブルダメージを与える\nバーンアウト中の相手にガードさせた時の相手Dゲージ増加量(6000)\nカウンターヒット時吹き飛び時間延長\nパニッシュカウンター時膝崩れダウン+26",
+          "commandText": "強",
+          "commands": [
+            {
+              "motion": "236",
+              "button": "P",
+              "strength": "H",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "H"
+      },
+      "condition": "通常状態・非ホールド・通常ヒット",
+      "affectedMoveIds": [
+        "arjun__special_236_P_H"
+      ],
+      "reason": "Cargo 236HP の通常hit KD +43(+48)からKD後の数値だけがraw 43と本番+43へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_236_P_OD",
+      "field": "hit",
+      "before": {
+        "status": "confirmed",
+        "display": "+43",
+        "numeric": 43
+      },
+      "value": {
+        "status": "confirmed",
+        "display": "D"
+      },
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+      "sourceIndex": 16,
+      "sourceInput": "236PP",
+      "sourceNotation": "KD +43(+48)",
+      "sourceNotes": "3f extra recovery on whiff; hitstop increased by 7f on Counter-hit / Punish Counter (increases the hitconfirm window into ~6P or SA3 by the same amount)",
+      "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
+      "raw": [
+        {
+          "index": 16,
+          "id": "arjun__236pp",
+          "name": "OD Arm of Justice",
+          "input": "236PP",
+          "value": 43,
+          "notes": "3f extra recovery on whiff"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/arjun.json",
+      "officialRows": [
+        {
+          "row": 34,
+          "name": "OD 大義の巨腕",
+          "value": "D",
+          "notes": "飛び道具相殺判定あり（2回）\n空振り時硬直3F増加\nガード時に800のリカバリアブルダメージを与える\nバーンアウト中の相手にガードさせた時の相手Dゲージ増加量(6000)\nカウンター/パニッシュカウンター時吹き飛び時間延長",
+          "commandText": "",
+          "commands": [
+            {
+              "motion": "236",
+              "button": "P",
+              "strength": "OD",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "OD"
+      },
+      "condition": "通常状態・非ホールド・通常ヒット",
+      "affectedMoveIds": [
+        "arjun__special_236_P_OD"
+      ],
+      "reason": "Cargo 236PP の通常hit KD +43(+48)からKD後の数値だけがraw 43と本番+43へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_623_P_H",
+      "field": "hit",
+      "before": {
+        "status": "confirmed",
+        "display": "+42",
+        "numeric": 42
+      },
+      "value": {
+        "status": "confirmed",
+        "display": "D"
+      },
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+      "sourceIndex": 40,
+      "sourceInput": "623HP",
+      "sourceNotation": "KD +42(+62)",
+      "sourceNotes": "Reaches fullscreen; launches opponent upward followed by a limited juggle OTG bounce state; switches sides on a midscreen hit unless used from near fullscreen range; transitions into Justice Beyond when colliding with an active Divine Pillar; deals 800 recoverable damage on block (stacks with chip damage if the opponent is in Burnout); the active frames end immediately on block/parry or when absorbed by armor followed by a fixed 23f recovery (cannot gain extra block advantage with meaty timing); Super cancelable on active frames 1-5 (cannot cancel from longer ranges)",
+      "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
+      "raw": [
+        {
+          "index": 41,
+          "id": "arjun__623hp",
+          "name": "HP Cruel Shoulder",
+          "input": "623HP",
+          "value": 42,
+          "notes": "Reaches fullscreen; launches opponent upward followed by a limited juggle OTG bounce state; transitions into Justice Beyond when colliding with an active Divine Pillar; deals 800 recoverable damage on block (stacks with chip damage if the opponent is in Burnout); the active frames end immediately on block/parry or when absorbed by armor followed by a fixed 23f recovery (cannot gain extra block advantage with meaty timing)"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/arjun.json",
+      "officialRows": [
+        {
+          "row": 38,
+          "name": "強 厳酷な岩肩",
+          "value": "D",
+          "notes": "ガード時に800のリカバリアブルダメージを与える\nバーンアウト中の相手にガードさせた時の相手Dゲージ増加量(6000)\n岩に触れると「過剰な正義」に派生",
+          "commandText": "強",
+          "commands": [
+            {
+              "motion": "623",
+              "button": "P",
+              "strength": "H",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "H"
+      },
+      "condition": "通常状態・非ホールド・通常ヒット",
+      "affectedMoveIds": [
+        "arjun__special_623_P_H"
+      ],
+      "reason": "Cargo 623HP の通常hit KD +42(+62)からKD後の数値だけがraw 42と本番+42へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_623_P_L",
+      "field": "hit",
+      "before": {
+        "status": "confirmed",
+        "display": "+60",
+        "numeric": 60
+      },
+      "value": {
+        "status": "confirmed",
+        "display": "D"
+      },
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+      "sourceIndex": 41,
+      "sourceInput": "623LP",
+      "sourceNotation": "KD +60(+75)",
+      "sourceNotes": "Launches opponent slightly upward followed by a limited juggle OTG tumble state (can get follow-up near the corner if spaced out); transitions into Justice Beyond when colliding with an active Divine Pillar; deals 600 recoverable damage on block (stacks with chip damage if the opponent is in Burnout); the active frames end immediately on block/parry or when absorbed by armor followed by a fixed 23f recovery (cannot be made safer on block with meaty timing); Super cancelable on active frames 1-5 (cannot cancel from longer ranges)",
+      "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
+      "raw": [
+        {
+          "index": 42,
+          "id": "arjun__623lp",
+          "name": "LP Cruel Shoulder",
+          "input": "623LP",
+          "value": 60,
+          "notes": "Launches opponent slightly upward followed by a limited juggle OTG bounce state; transitions into Justice Beyond when colliding with an active Divine Pillar; deals 600 recoverable damage on block (stacks with chip damage if the opponent is in Burnout); the active frames end immediately on block/parry or when absorbed by armor followed by a fixed 23f recovery (cannot be made safer on block with meaty timing)"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/arjun.json",
+      "officialRows": [
+        {
+          "row": 36,
+          "name": "弱 厳酷な岩肩",
+          "value": "D",
+          "notes": "6-23F　空中判定の打撃・空弾属性に対して無敵\nガード時に600のリカバリアブルダメージを与える\nバーンアウト中の相手にガードさせた時の相手Dゲージ増加量(5000)\n岩に触れると「過剰な正義」に派生",
+          "commandText": "弱",
+          "commands": [
+            {
+              "motion": "623",
+              "button": "P",
+              "strength": "L",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "L"
+      },
+      "condition": "通常状態・非ホールド・通常ヒット",
+      "affectedMoveIds": [
+        "arjun__special_623_P_L"
+      ],
+      "reason": "Cargo 623LP の通常hit KD +60(+75)からKD後の数値だけがraw 60と本番+60へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_623_P_M",
+      "field": "hit",
+      "before": {
+        "status": "confirmed",
+        "display": "+64",
+        "numeric": 64
+      },
+      "value": {
+        "status": "confirmed",
+        "display": "D"
+      },
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+      "sourceIndex": 42,
+      "sourceInput": "623MP",
+      "sourceNotation": "KD +64(+82)",
+      "sourceNotes": "Launches opponent slightly upward followed by a limited juggle OTG tumble state (can get follow-up near the corner if spaced out); transitions into Justice Beyond when colliding with an active Divine Pillar; deals 700 recoverable damage on block (stacks with chip damage if the opponent is in Burnout); the active frames end immediately on block/parry or when absorbed by armor followed by a fixed 23f recovery (cannot be made safer on block with meaty timing); Super cancelable on active frames 1-5 (cannot cancel from longer ranges)",
+      "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
+      "raw": [
+        {
+          "index": 43,
+          "id": "arjun__623mp",
+          "name": "MP Cruel Shoulder",
+          "input": "623MP",
+          "value": 64,
+          "notes": "Launches opponent slightly upward followed by a limited juggle OTG bounce state; transitions into Justice Beyond when colliding with an active Divine Pillar; deals 700 recoverable damage on block (stacks with chip damage if the opponent is in Burnout); the active frames end immediately on block/parry or when absorbed by armor followed by a fixed 23f recovery (cannot be made safer on block with meaty timing)"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/arjun.json",
+      "officialRows": [
+        {
+          "row": 37,
+          "name": "中 厳酷な岩肩",
+          "value": "D",
+          "notes": "6-27F　空中判定の打撃・空弾属性に対して無敵\nガード時に700のリカバリアブルダメージを与える\nバーンアウト中の相手にガードさせた時の相手Dゲージ増加量(5000)\n岩に触れると「過剰な正義」に派生",
+          "commandText": "中",
+          "commands": [
+            {
+              "motion": "623",
+              "button": "P",
+              "strength": "M",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "M"
+      },
+      "condition": "通常状態・非ホールド・通常ヒット",
+      "affectedMoveIds": [
+        "arjun__special_623_P_M"
+      ],
+      "reason": "Cargo 623MP の通常hit KD +64(+82)からKD後の数値だけがraw 64と本番+64へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_623_P_OD",
+      "field": "hit",
+      "before": {
+        "status": "confirmed",
+        "display": "+42",
+        "numeric": 42
+      },
+      "value": {
+        "status": "confirmed",
+        "display": "D"
+      },
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+      "sourceIndex": 43,
+      "sourceInput": "623PP",
+      "sourceNotation": "KD +42(+62)",
+      "sourceNotes": "Reaches fullscreen; launches opponent upward followed by a limited juggle OTG bounce state; switches sides on a midscreen hit unless used from near fullscreen range; transitions into Justice Beyond when colliding with an active Divine Pillar; deals 800 recoverable damage on block (stacks with chip damage if the opponent is in Burnout); the active frames end immediately on block/parry or when absorbed by armor followed by a fixed 23f recovery (cannot gain extra block advantage with meaty timing); Super cancelable on active frames 1-5 (cannot cancel from longer ranges)",
+      "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
+      "raw": [
+        {
+          "index": 44,
+          "id": "arjun__623pp",
+          "name": "OD Cruel Shoulder",
+          "input": "623PP",
+          "value": 42,
+          "notes": "Reaches fullscreen; launches opponent upward followed by a limited juggle OTG bounce state; transitions into Justice Beyond when colliding with an active Divine Pillar; deals 800 recoverable damage on block (stacks with chip damage if the opponent is in Burnout); the active frames end immediately on block/parry or when absorbed by armor followed by a fixed 23f recovery (cannot gain extra block advantage with meaty timing)"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/arjun.json",
+      "officialRows": [
+        {
+          "row": 40,
+          "name": "OD 厳酷な岩肩",
+          "value": "D",
+          "notes": "ガード時に800のリカバリアブルダメージを与える\nバーンアウト中の相手にガードさせた時の相手Dゲージ増加量(6000)\n岩に触れると「OD過剰な正義」に派生",
+          "commandText": "",
+          "commands": [
+            {
+              "motion": "623",
+              "button": "P",
+              "strength": "OD",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "OD"
+      },
+      "condition": "通常状態・非ホールド・通常ヒット",
+      "affectedMoveIds": [
+        "arjun__special_623_P_OD"
+      ],
+      "reason": "Cargo 623PP の通常hit KD +42(+62)からKD後の数値だけがraw 42と本番+42へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__special_236_P_OD",
+      "field": "hit",
+      "before": {
+        "status": "confirmed",
+        "display": "+52",
+        "numeric": 52
+      },
+      "value": {
+        "status": "confirmed",
+        "display": "D"
+      },
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ingrid.cargo.json",
+      "sourceIndex": 25,
+      "sourceInput": "236LPMP or 236LPHP",
+      "sourceNotation": "KD +52",
+      "sourceNotes": "2-hit OD projectile; LP+MP gives the shorter/slower 236LP version (most useful for approaching from midrange); LP+HP gives the farther/faster 236MP version (more useful as a traditional zoning projectile); hold button 17f for charged version (faster ending projectile speed); 2nd hit puts opponents into a limited juggle state; can only have 1 OD Sun Shot on-screen at a time (but can be used in conjunction with another meterless Sun Shot); projectile disappears 1f after Ingrid is hit; extends a slight projectile invuln hand hitbox on frames 18-44 and a foot hurtbox on frames 18-45; SA2 cancel: KD+61/+10",
+      "rawPath": "archive/staging/sf6-frame-data/raw/ingrid.json",
+      "raw": [
+        {
+          "index": 24,
+          "id": "ingrid__236lpmpor236lphp",
+          "name": "Sun Shot (L/M)",
+          "input": "236LPMP or 236LPHP",
+          "value": 52,
+          "notes": "2-hit OD projectile; LP+MP gives the shorter/slower 236LP version (most useful for approaching from midrange); LP+HP gives the farther/faster 236MP version (more useful as a traditional zoning projectile); hold button 17f for charged version (faster ending projectile speed); 2nd hit puts opponents into a limited juggle state; can only have 1 OD Sun Shot on-screen at a time (but can be used in conjunction with another meterless Sun Shot); projectile disappears 1f after Ingrid is hit; extends a slight projectile invuln hand hitbox on frames 18-44 and a foot hurtbox on frames 18-45; SA2 cancel: KD+61/+10"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/ingrid.json",
+      "officialRows": [
+        {
+          "row": 33,
+          "name": "OD 弱 サンシュート",
+          "value": "D",
+          "notes": "17F以上ホールドすると性能変化",
+          "commandText": "弱\n中",
+          "commands": [
+            {
+              "motion": "236",
+              "button": "P",
+              "strength": "OD",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "OD"
+      },
+      "condition": "通常状態・非ホールド・通常ヒット",
+      "affectedMoveIds": [
+        "ingrid__special_236_P_OD"
+      ],
+      "reason": "Cargo 236LPMP or 236LPHP の通常hit KD +52からKD後の数値だけがraw 52と本番+52へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "juri",
+      "moveId": "juri__special_236_K_OD",
+      "field": "hit",
+      "before": {
+        "status": "confirmed",
+        "display": "+39",
+        "numeric": 39
+      },
+      "value": {
+        "status": "confirmed",
+        "display": "D"
+      },
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/juri.cargo.json",
+      "sourceIndex": 15,
+      "sourceInput": "236LKMK",
+      "sourceNotation": "KD +39",
+      "sourceNotes": "2-hit OD projectile; only the 2nd hit knocks down; can press MK or HK to cancel into other OD 236K specials for 1 Fuha stock and 1 Drive bar; SA2 cancel: KD+57/+17",
+      "rawPath": "archive/staging/sf6-frame-data/raw/juri.json",
+      "raw": [
+        {
+          "index": 14,
+          "id": "juri__236lkmk",
+          "name": "Saihasho",
+          "input": "236LKMK",
+          "value": 39,
+          "notes": "2-hit OD projectile; only the 2nd hit knocks down; can press MK or HK to cancel into other OD 236K specials for 1 Fuha stock and 1 Drive bar; SA2 cancel: KD+57/+17"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/juri.json",
+      "officialRows": [
+        {
+          "row": 58,
+          "name": "OD 歳破衝",
+          "value": "D",
+          "notes": "※風破ストックがある時にOD暗剣殺 or OD五黄殺 に派生可能\n　同じ技は2回使えない",
+          "commandText": "弱\n中",
+          "commands": [
+            {
+              "motion": "236",
+              "button": "K",
+              "strength": "OD",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "K",
+        "strength": "OD"
+      },
+      "condition": "通常状態・非ホールド・通常ヒット",
+      "affectedMoveIds": [
+        "juri__special_236_K_OD"
+      ],
+      "reason": "Cargo 236LKMK の通常hit KD +39からKD後の数値だけがraw 39と本番+39へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "sagat",
+      "moveId": "sagat__special_236_P_OD",
+      "field": "hit",
+      "before": {
+        "status": "confirmed",
+        "display": "+52",
+        "numeric": 52
+      },
+      "value": {
+        "status": "confirmed",
+        "display": "D"
+      },
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/sagat.cargo.json",
+      "sourceIndex": 23,
+      "sourceInput": "236LPMP or 236LPHP",
+      "sourceNotation": "KD +52",
+      "sourceNotes": "Fast 2-hit OD projectile; can hit crouching opponents; can be used while a meterless Tiger Shot is still on-screen; the projectile travels low to the ground, preventing many low profile attacks from avoiding it (e.g. Kimberly's slide, A.K.I.'s Sinister Slide); Sagat is in a crouching state for the entire move duration with crouch-sized hurtboxes; puts opponents into a limited juggle state; extends a slight projectile invincible arm hurtbox on frames 16-37 and a leg hurtbox on frames 12-44; topmost hurtboxes are vulnerable only to air attacks on frames 1-44 (more vulnerable to jump-ins despite crouching) and are projectile invincible on frames 1-29 to avoid High Tiger Shot (frames 30-44 are still vulnerable); starter scaling does not apply if only the 2nd hit connects (e.g. clashing with 1-hit OD fireball or breaking Drive Impact armor)",
+      "rawPath": "archive/staging/sf6-frame-data/raw/sagat.json",
+      "raw": [
+        {
+          "index": 23,
+          "id": "sagat__236lpmpor236lphp",
+          "name": "OD Low Tiger Shot",
+          "input": "236LPMP or 236LPHP",
+          "value": 52,
+          "notes": "Fast 2-hit OD projectile; can hit crouching opponents; can be used while a meterless Tiger Shot is still on-screen; the projectile travels low to the ground, preventing many low profile attacks from avoiding it (e.g. Kimberly's slide, A.K.I.'s Sinister Slide); Sagat is in a crouching state for the entire move duration with crouch-sized hurtboxes; puts opponents into a limited juggle state; extends a slight projectile invincible arm hurtbox on frames 16-37 and a leg hurtbox on frames 12-44; topmost hurtboxes are vulnerable only to air attacks on frames 1-44 (more vulnerable to jump-ins despite crouching) and are projectile invincible on frames 1-29 to avoid High Tiger Shot (frames 30-44 are still vulnerable); starter scaling does not apply if only the 2nd hit connects (e.g. clashing with 1-hit OD fireball or breaking Drive Impact armor)"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/sagat.json",
+      "officialRows": [
+        {
+          "row": 34,
+          "name": "OD グランドタイガーショット",
+          "value": "D",
+          "notes": "",
+          "commandText": "",
+          "commands": [
+            {
+              "motion": "236",
+              "button": "P",
+              "strength": "OD",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "OD"
+      },
+      "condition": "通常状態・非ホールド・通常ヒット",
+      "affectedMoveIds": [
+        "sagat__special_236_P_OD"
+      ],
+      "reason": "Cargo 236LPMP or 236LPHP の通常hit KD +52からKD後の数値だけがraw 52と本番+52へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "terry",
+      "moveId": "terry__special_214_P_OD",
+      "field": "hit",
+      "before": {
+        "status": "confirmed",
+        "display": "+33",
+        "numeric": 33
+      },
+      "value": {
+        "status": "confirmed",
+        "display": "D"
+      },
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json",
+      "sourceIndex": 8,
+      "sourceInput": "214LPMP or 214LPHP",
+      "sourceNotation": "KD +33",
+      "sourceNotes": "2 hits that transition to a 3rd attack on hit only; functionally 22f startup as an overhead; gives solid damage and oki from light normals",
+      "rawPath": "archive/staging/sf6-frame-data/raw/terry.json",
+      "raw": [
+        {
+          "index": 8,
+          "id": "terry__214lpmpor214lphp",
+          "name": "OD Quick Burn",
+          "input": "214LPMP or 214LPHP",
+          "value": 33,
+          "notes": "2 hits that transition to a 3rd attack on hit only; functionally 22f startup as an overhead; gives solid damage and oki from light normals"
+        }
+      ],
+      "officialPath": "staging/official-verification/sources/terry.json",
+      "officialRows": [
+        {
+          "row": 35,
+          "name": "OD クイックバーン",
+          "value": "D",
+          "notes": "",
+          "commandText": "弱\n中",
+          "commands": [
+            {
+              "motion": "214",
+              "button": "P",
+              "strength": "OD",
+              "unknown": [],
+              "charge": false
+            }
+          ]
+        }
+      ],
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "OD"
+      },
+      "condition": "通常状態・非ホールド・通常ヒット",
+      "affectedMoveIds": [
+        "terry__special_214_P_OD"
+      ],
+      "reason": "Cargo 214LPMP or 214LPHP の通常hit KD +33からKD後の数値だけがraw 33と本番+33へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
+      "patch": "UNVERIFIED"
+    }
+  ]
+}
