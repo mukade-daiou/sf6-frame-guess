@@ -4,6 +4,7 @@ import { isDeepStrictEqual } from "node:util";
 import { applyConditionalSpecials } from "./conditional-specials";
 import { applyFrameResearch } from "./frame-research";
 import { applyDistanceRanges } from "./distance-ranges";
+import { applyCompoundStartup } from "./compound-startup";
 import {
   readSAResearch,
   generateSuperArts,
@@ -40,9 +41,11 @@ for (const id of pilot
         c.moves.filter(
           (m: any) => m.category !== "super_art" && !m.strengthExpansion,
         ),
-        applyDistanceRanges(
-          applyFrameResearch(applyConditionalSpecials(original)),
-          { historicalWithoutSA: true },
+        applyCompoundStartup(
+          applyDistanceRanges(
+            applyFrameResearch(applyConditionalSpecials(original)),
+            { historicalWithoutSA: true },
+          ),
         ).moves,
       )
     )

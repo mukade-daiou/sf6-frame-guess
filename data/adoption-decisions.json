@@ -1,5 +1,134 @@
 {
-  "datasetId": "arrival-startup-only-2026-11-09-r1",
+  "datasetId": "compound-startup-2026-11-11-r1",
+  "compoundStartup": {
+    "basis": "ユーザー指定: 弾出現と距離依存の攻撃発生を区別。公式取得2026-11-10、パッチ未確認。",
+    "decisions": [
+      {
+        "characterId": "rashid",
+        "moveId": "rashid__special_236_K_none",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/rashid.cargo.json",
+        "sourceIndex": 21,
+        "sourceInput": "236K",
+        "sourceNotation": "11+6",
+        "officialRows": [50, 53, 56],
+        "officialValue": "17",
+        "reason": "非ホールドの弾出現17F。距離到達時間と区別。",
+        "before": { "status": "confirmed", "display": "11", "numeric": 11 },
+        "value": { "status": "confirmed", "display": "17", "numeric": 17 }
+      },
+      {
+        "characterId": "ed",
+        "moveId": "ed__special_236_K_L",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ed.cargo.json",
+        "sourceIndex": 10,
+        "sourceInput": "236LK",
+        "sourceNotation": "11+5",
+        "officialRows": [47],
+        "officialValue": "16",
+        "reason": "公式の弱・非ホールド発生。",
+        "before": { "status": "confirmed", "display": "11", "numeric": 11 },
+        "value": { "status": "confirmed", "display": "16", "numeric": 16 }
+      },
+      {
+        "characterId": "ed",
+        "moveId": "ed__special_236_K_M",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ed.cargo.json",
+        "sourceIndex": 11,
+        "sourceInput": "236MK",
+        "sourceNotation": "15+5",
+        "officialRows": [49],
+        "officialValue": "20",
+        "reason": "公式の中・非ホールド発生。",
+        "before": { "status": "confirmed", "display": "15", "numeric": 15 },
+        "value": { "status": "confirmed", "display": "20", "numeric": 20 }
+      },
+      {
+        "characterId": "ed",
+        "moveId": "ed__special_236_K_H",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ed.cargo.json",
+        "sourceIndex": 8,
+        "sourceInput": "236HK",
+        "sourceNotation": "12+5",
+        "officialRows": [51],
+        "officialValue": "17",
+        "reason": "公式の強・非ホールド発生。",
+        "before": { "status": "confirmed", "display": "12", "numeric": 12 },
+        "value": { "status": "confirmed", "display": "17", "numeric": 17 }
+      },
+      {
+        "characterId": "jp",
+        "moveId": "jp__special_236_K_L",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+        "sourceIndex": 20,
+        "sourceInput": "236LK",
+        "sourceNotation": "14+8",
+        "officialRows": [50],
+        "officialValue": "22",
+        "reason": "相手に到達後8Fで攻撃、長距離では増加。",
+        "before": { "status": "confirmed", "display": "14", "numeric": 14 },
+        "value": {
+          "status": "conditional",
+          "display": "22~",
+          "condition": "距離・弾の到達時間による変動",
+          "openRange": {
+            "reference": 22,
+            "unspecified": "trailing",
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/JP/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "jp",
+        "moveId": "jp__special_236_K_M",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+        "sourceIndex": 22,
+        "sourceInput": "236MK",
+        "sourceNotation": "14+12",
+        "officialRows": [51],
+        "officialValue": "26",
+        "reason": "相手に到達後12Fで攻撃、長距離では増加。",
+        "before": { "status": "confirmed", "display": "14", "numeric": 14 },
+        "value": {
+          "status": "conditional",
+          "display": "26~",
+          "condition": "距離・弾の到達時間による変動",
+          "openRange": {
+            "reference": 26,
+            "unspecified": "trailing",
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/JP/Frame_data"
+            ]
+          }
+        }
+      },
+      {
+        "characterId": "jp",
+        "moveId": "jp__special_236_K_H",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+        "sourceIndex": 17,
+        "sourceInput": "236HK",
+        "sourceNotation": "14+12",
+        "officialRows": [52],
+        "officialValue": "26",
+        "reason": "相手に到達後12Fで攻撃、長距離では増加。",
+        "before": { "status": "confirmed", "display": "14", "numeric": 14 },
+        "value": {
+          "status": "conditional",
+          "display": "26~",
+          "condition": "距離・弾の到達時間による変動",
+          "openRange": {
+            "reference": 26,
+            "unspecified": "trailing",
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6/JP/Frame_data"
+            ]
+          }
+        }
+      }
+    ]
+  },
   "commonSpecialStrengths": {
     "enabled": true,
     "protectionRef": "d11bb6d2616b5a15e182cbc08ef7556e99f3b5d6",

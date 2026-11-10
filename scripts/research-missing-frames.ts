@@ -1,5 +1,6 @@
 import { readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { isDeepStrictEqual } from "node:util";
+import { applyCompoundStartup } from "./compound-startup";
 import { execFileSync } from "node:child_process";
 import { characterSchema, type Character } from "../src/lib/frame-data/schema";
 import { isQuestionInput, inputKey } from "../src/lib/frame-data/input";
@@ -355,7 +356,7 @@ if (process.argv.includes("--check")) {
     if (!isDeepStrictEqual(old, historical))
       throw new Error(`Baseline changed: ${old.id}`);
     const expected = withStrengthExpansions(
-      applyDistanceRanges(applyFrameResearch(old)),
+      applyCompoundStartup(applyDistanceRanges(applyFrameResearch(old))),
     );
     const actual = current.find((c) => c.id === old.id);
     if (!isDeepStrictEqual(expected, actual))
@@ -366,6 +367,7 @@ if (process.argv.includes("--check")) {
   delete expectedDecisions.distanceRanges;
   delete expectedDecisions.knockdownCorrections;
   delete expectedDecisions.demonRaidNoInput;
+  delete expectedDecisions.compoundStartup;
   expectedDecisions.datasetId = baseline.decisions.datasetId;
   if (!isDeepStrictEqual(expectedDecisions, baseline.decisions))
     throw new Error("Unrelated adoption decision changed");

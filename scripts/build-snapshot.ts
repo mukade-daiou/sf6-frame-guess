@@ -8,6 +8,7 @@ import { withStrengthExpansions } from "../src/lib/frame-data/strength-expansion
 import { applyConditionalSpecials } from "./conditional-specials";
 import { applyFrameResearch } from "./frame-research";
 import { applyDistanceRanges } from "./distance-ranges";
+import { applyCompoundStartup } from "./compound-startup";
 const read = async (p: string) => JSON.parse(await readFile(p, "utf8"));
 const save = async (p: string, v: unknown) =>
   writeFile(p, JSON.stringify(v, null, 2) + "\n");
@@ -67,9 +68,15 @@ for (const d of decisions.characters) {
   files[c.id] = characterSchema.parse(
     decisions.commonSpecialStrengths?.enabled
       ? withStrengthExpansions(
-          applyDistanceRanges(applyFrameResearch(applyConditionalSpecials(c))),
+          applyCompoundStartup(
+            applyDistanceRanges(
+              applyFrameResearch(applyConditionalSpecials(c)),
+            ),
+          ),
         )
-      : applyDistanceRanges(applyFrameResearch(applyConditionalSpecials(c))),
+      : applyCompoundStartup(
+          applyDistanceRanges(applyFrameResearch(applyConditionalSpecials(c))),
+        ),
   );
 }
 const dataset = validateDataset(metadata, files);

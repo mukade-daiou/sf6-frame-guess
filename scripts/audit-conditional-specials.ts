@@ -5,6 +5,7 @@ import { characterSchema } from "../src/lib/frame-data/schema";
 import { applyConditionalSpecials } from "./conditional-specials";
 import { applyFrameResearch } from "./frame-research";
 import { applyDistanceRanges } from "./distance-ranges";
+import { restoreCompoundStartup } from "./compound-startup";
 import { expectedDistanceValue } from "./contact-timing-policy.mjs";
 import { withStrengthExpansions } from "../src/lib/frame-data/strength-expansion";
 import { resolveMove } from "../src/lib/frame-data/resolver";
@@ -26,7 +27,9 @@ for (const f of readdirSync("data/characters")
       }),
     ),
   );
-  const after = characterSchema.parse(JSON.parse(readFileSync(path, "utf8")));
+  const after = restoreCompoundStartup(
+    characterSchema.parse(JSON.parse(readFileSync(path, "utf8"))),
+  );
   const expected = withStrengthExpansions(
     applyDistanceRanges(applyFrameResearch(applyConditionalSpecials(before))),
   );

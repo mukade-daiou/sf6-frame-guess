@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync, readdirSync } from "node:fs";
 import { execFileSync } from "node:child_process";
+import { restoreCompoundStartup } from "./research-projection.mjs";
 test("contact rollback changes only the 89 authorized fields and preserves all move attributes", () => {
   const p = JSON.parse(readFileSync("data/adoption-decisions.json")),
     r = p.distanceRanges.contactTimingRollback;
@@ -31,7 +32,7 @@ test("contact rollback changes only the 89 authorized fields and preserves all m
       before = JSON.parse(
         execFileSync("git", ["show", `${r.baselineCommit}:${path}`]),
       ),
-      after = JSON.parse(readFileSync(path));
+      after = restoreCompoundStartup(JSON.parse(readFileSync(path)));
     for (const m of before.moves) {
       records++;
       if (m.category === "super_art") sa++;

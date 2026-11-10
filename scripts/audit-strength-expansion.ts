@@ -7,6 +7,7 @@ import { inputKey } from "../src/lib/frame-data/input";
 import { applyConditionalSpecials } from "./conditional-specials";
 import { applyFrameResearch } from "./frame-research";
 import { applyDistanceRanges } from "./distance-ranges";
+import { applyCompoundStartup } from "./compound-startup";
 import {
   auditStrengthless,
   generateStrengthExpansions,
@@ -43,8 +44,11 @@ if (process.argv.includes("--check"))
     if (
       !isDeepStrictEqual(
         c.moves.filter((m) => !m.strengthExpansion),
-        applyDistanceRanges(applyFrameResearch(applyConditionalSpecials(old)))
-          .moves,
+        applyCompoundStartup(
+          applyDistanceRanges(
+            applyFrameResearch(applyConditionalSpecials(old)),
+          ),
+        ).moves,
       ) ||
       !isDeepStrictEqual(c.coverage, old.coverage)
     )

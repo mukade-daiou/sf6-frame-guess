@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import { rollbackClassification } from "../scripts/contact-timing-policy.mjs";
+import { restoreCompoundStartup } from "./research-projection.mjs";
 const read=p=>JSON.parse(readFileSync(p,"utf8"));
 test("all original 300 held fields have separate triage and evidenced resolutions",()=>{
  const r=read("staging/held-range-review.json"), l=read("staging/distance-range-candidates.json"), p=read("data/adoption-decisions.json");
@@ -21,7 +22,7 @@ test("all original 300 held fields have separate triage and evidenced resolution
   const stage2=r.stage2?.items.find(x=>x.key===i.key);
   assert.equal(candidate.classification,rollbackClassification(p,i.key,stage2?.resolution ?? i.resolution));
   if((stage2?.resolution ?? i.resolution)!=="accepted")for(const v of i.currentValues){
-   const c=read(`data/characters/${i.before.characterId}.json`);
+   const c=restoreCompoundStartup(read(`data/characters/${i.before.characterId}.json`));
    const d=p.distanceRanges.decisions.slice(80).find(d=>d.moveId===v.moveId&&d.field===i.before.field);
    if (d) assert.deepEqual(d.before,v.value);
    assert.deepEqual(c.moves.find(m=>m.id===v.moveId).frames[i.before.field],d?.value ?? v.value);

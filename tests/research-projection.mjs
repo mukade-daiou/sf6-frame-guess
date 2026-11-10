@@ -1,6 +1,9 @@
 import { readFileSync } from "node:fs";
 import assert from "node:assert/strict";
 import { expectedDistanceValue } from "../scripts/contact-timing-policy.mjs";
+import { restoreCompoundStartup } from "../scripts/compound-startup-projection.mjs";
+export { restoreCompoundStartup } from "../scripts/compound-startup-projection.mjs";
+
 
 // Restore only the exact field changes authorized by stage 17, including their
 // generated strengths, before running an older independent protection test.
@@ -37,11 +40,10 @@ export function restoreResearchFrames(character) {
 }
 
 export function restoreDemonRaid(character) {
-  const result = structuredClone(character),
+  const result = restoreDistanceRanges(structuredClone(character)),
     records =
       JSON.parse(readFileSync("data/adoption-decisions.json", "utf8"))
         .demonRaidNoInput?.records || [];
-  restoreDistanceRanges(result);
   for (const m of result.moves) {
     const d = records.find(
       (d) => d.moveId === (m.strengthExpansion?.sourceMoveId || m.id),
@@ -55,6 +57,7 @@ export function restoreDemonRaid(character) {
 }
 
 export function restoreDistanceRanges(result) {
+  result = restoreCompoundStartup(result);
   const ranges = JSON.parse(readFileSync("data/adoption-decisions.json", "utf8")).distanceRanges?.decisions || [];
   for (const m of result.moves) {
     for (const d of ranges.filter(d => d.characterId === result.id && d.moveId === (m.strengthExpansion?.sourceMoveId || m.id))) {

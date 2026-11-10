@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import { readFileSync, readdirSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import { expectedDistanceValue, isContactRevoked } from "../scripts/contact-timing-policy.mjs";
+import { restoreCompoundStartup } from "./research-projection.mjs";
 test("distance decisions change only exact authorized fields and generated strengths", () => {
   const decisions = JSON.parse(readFileSync("data/adoption-decisions.json")).distanceRanges.decisions;
   const policy=JSON.parse(readFileSync("data/adoption-decisions.json"));
@@ -16,7 +17,7 @@ test("distance decisions change only exact authorized fields and generated stren
       move.frames[d.field] = expectedDistanceValue(policy,d);
       fields++;
     }
-    assert.deepEqual(JSON.parse(readFileSync(path)), before);
+    assert.deepEqual(restoreCompoundStartup(JSON.parse(readFileSync(path))), before);
   }
   assert.equal(fields, 98);
   const ledger = JSON.parse(readFileSync("staging/distance-range-candidates.json"));
