@@ -11,5 +11,5 @@ test("Japanese display names reproduce from saved references without treating mi
     for (const name of Object.values(entries))
       assert.match(name, /[\u3040-\u30ff\u3400-\u9fff]/);
   assert.equal(names.ryu.ryu__special_236_P_L, "波動拳");
-  assert.equal(names.arjun.arjun__special_22_K_H, undefined);
+  assert.equal(names.arjun.arjun__special_22_K_H, "不撓の警衛");
 });

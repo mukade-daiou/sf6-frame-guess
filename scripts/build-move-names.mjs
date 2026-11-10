@@ -4,6 +4,7 @@ const japanese = (s) =>
   typeof s === "string" && /[\u3040-\u30ff\u3400-\u9fff]/.test(s);
 const dictionary = read("staging/move-names/translations.json");
 const supplemental = read("staging/move-names/supplemental.json");
+const official = read("staging/move-names/official.json");
 const rows = readFileSync("staging/move-names/ja-names.tsv", "utf8")
   .trim()
   .split("\n")
@@ -27,6 +28,14 @@ for (const f of readdirSync("data/characters")
   const c = read(`data/characters/${f}`);
   names[c.id] = {};
   for (const m of c.moves) {
+    const verifiedName = official.entries[m.id];
+    if (verifiedName) {
+      if (verifiedName.characterId !== c.id || !japanese(verifiedName.name))
+        throw Error(`Invalid official name: ${m.id}`);
+      names[c.id][m.id] = verifiedName.name;
+      translated++;
+      continue;
+    }
     if (japanese(m.name)) {
       alreadyJapanese++;
       continue;
@@ -80,6 +89,13 @@ const source = {
   retrievedOn: "2026-11-09",
   verification: "community mapping, not official verification",
   supplementalSources: supplemental,
+  officialSources: {
+    path: "staging/move-names/official.json",
+    retrievedOn: official.retrievedOn,
+    gameVersion: official.gameVersion,
+    control: official.control,
+    resolvedRecords: Object.keys(official.entries).length,
+  },
   translated,
   alreadyJapanese,
   unresolved,
