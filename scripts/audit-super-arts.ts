@@ -51,6 +51,7 @@ for (const id of pilot
               applyFrameResearch(applyConditionalSpecials(original)),
               { historicalWithoutSA: true },
             ),
+            "withoutSA",
           ),
         ).moves,
       )
@@ -59,7 +60,10 @@ for (const id of pilot
     if (
       !isDeepStrictEqual(
         c.moves.filter((m: any) => m.category === "super_art"),
-        applyDistanceRanges({ ...c, moves }, { superArtsOnly: true }).moves,
+        applyCompoundStartup(
+          applyDistanceRanges({ ...c, moves }, { superArtsOnly: true }),
+          "saOnly",
+        ).moves,
       )
     )
       throw new Error(`SA snapshot differs: ${id}`);

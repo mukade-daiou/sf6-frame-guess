@@ -1,5 +1,5 @@
 {
-  "datasetId": "additional-kd-corrections-2026-11-11-r1",
+  "datasetId": "airborne-kd-scutum-2026-11-11-r1",
   "compoundStartup": {
     "basis": "ユーザー指定: 弾出現と距離依存の攻撃発生を区別。公式取得2026-11-10、パッチ未確認。",
     "decisions": [
@@ -169,6 +169,317 @@
               "https://wiki.supercombo.gg/w/Street_Fighter_6/JP/Frame_data"
             ]
           }
+        }
+      }
+    ],
+    "saDecisions": [
+      {
+        "characterId": "lily",
+        "moveId": "lily__super_art_3_L",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json",
+        "sourceIndex": 0,
+        "sourceInput": "214214P",
+        "sourceNotation": "5+2",
+        "officialPath": "staging/official-verification/sources/lily.json",
+        "officialRows": [65],
+        "officialValue": "7",
+        "rawRef": "archive/staging/sf6-frame-data/raw/lily.json#/moves/0",
+        "sourceResearchId": "lily:raw:0",
+        "reason": "ユーザー指定のSA複合発生合計を、同一通常SA3の公式7Fに対応させる。公式対象パッチはUNVERIFIED。",
+        "before": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        }
+      },
+      {
+        "characterId": "lily",
+        "moveId": "lily__super_art_3_M",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json",
+        "sourceIndex": 0,
+        "sourceInput": "214214P",
+        "sourceNotation": "5+2",
+        "officialPath": "staging/official-verification/sources/lily.json",
+        "officialRows": [65],
+        "officialValue": "7",
+        "rawRef": "archive/staging/sf6-frame-data/raw/lily.json#/moves/0",
+        "sourceResearchId": "lily:raw:0",
+        "reason": "ユーザー指定のSA複合発生合計を、同一通常SA3の公式7Fに対応させる。公式対象パッチはUNVERIFIED。",
+        "before": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        }
+      },
+      {
+        "characterId": "lily",
+        "moveId": "lily__super_art_3_H",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json",
+        "sourceIndex": 0,
+        "sourceInput": "214214P",
+        "sourceNotation": "5+2",
+        "officialPath": "staging/official-verification/sources/lily.json",
+        "officialRows": [65],
+        "officialValue": "7",
+        "rawRef": "archive/staging/sf6-frame-data/raw/lily.json#/moves/0",
+        "sourceResearchId": "lily:raw:0",
+        "reason": "ユーザー指定のSA複合発生合計を、同一通常SA3の公式7Fに対応させる。公式対象パッチはUNVERIFIED。",
+        "before": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        }
+      },
+      {
+        "characterId": "manon",
+        "moveId": "manon__super_art_3_L",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/manon.cargo.json",
+        "sourceIndex": 6,
+        "sourceInput": "236236P",
+        "sourceNotation": "6+1",
+        "officialPath": "staging/official-verification/sources/manon.json",
+        "officialRows": [50],
+        "officialValue": "7",
+        "rawRef": "archive/staging/sf6-frame-data/raw/manon.json#/moves/6",
+        "sourceResearchId": "manon:raw:6",
+        "reason": "ユーザー指定のSA複合発生合計を、同一通常SA3の公式7Fに対応させる。公式対象パッチはUNVERIFIED。",
+        "before": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        }
+      },
+      {
+        "characterId": "manon",
+        "moveId": "manon__super_art_3_M",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/manon.cargo.json",
+        "sourceIndex": 6,
+        "sourceInput": "236236P",
+        "sourceNotation": "6+1",
+        "officialPath": "staging/official-verification/sources/manon.json",
+        "officialRows": [50],
+        "officialValue": "7",
+        "rawRef": "archive/staging/sf6-frame-data/raw/manon.json#/moves/6",
+        "sourceResearchId": "manon:raw:6",
+        "reason": "ユーザー指定のSA複合発生合計を、同一通常SA3の公式7Fに対応させる。公式対象パッチはUNVERIFIED。",
+        "before": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        }
+      },
+      {
+        "characterId": "manon",
+        "moveId": "manon__super_art_3_H",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/manon.cargo.json",
+        "sourceIndex": 6,
+        "sourceInput": "236236P",
+        "sourceNotation": "6+1",
+        "officialPath": "staging/official-verification/sources/manon.json",
+        "officialRows": [50],
+        "officialValue": "7",
+        "rawRef": "archive/staging/sf6-frame-data/raw/manon.json#/moves/6",
+        "sourceResearchId": "manon:raw:6",
+        "reason": "ユーザー指定のSA複合発生合計を、同一通常SA3の公式7Fに対応させる。公式対象パッチはUNVERIFIED。",
+        "before": {
+          "status": "confirmed",
+          "display": "6",
+          "numeric": 6
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        }
+      }
+    ],
+    "indicatorDecisions": [
+      {
+        "characterId": "aki",
+        "moveId": "aki__special_236_K_L",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/aki.cargo.json",
+        "sourceIndex": 19,
+        "sourceInput": "236LK",
+        "sourceNotation": "37 total",
+        "officialPath": "staging/official-verification/sources/aki.json",
+        "officialRows": [44],
+        "rawRef": "archive/staging/sf6-frame-data/raw/aki.json#/moves/19",
+        "reason": "ユーザー確認：37は全体時間。独立した発生・効果成立時刻が未確認のため発生は対象外とする。公式パッチUNVERIFIED。",
+        "before": {
+          "status": "confirmed",
+          "display": "37",
+          "numeric": 37
+        },
+        "value": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      {
+        "characterId": "aki",
+        "moveId": "aki__special_236_K_M",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/aki.cargo.json",
+        "sourceIndex": 21,
+        "sourceInput": "236MK",
+        "sourceNotation": "39 total",
+        "sourceNotes": "Stays on same side; counter-hit state for entire move duration; semi-low profile (crouch height) 9-15f and 39f; crouching state 14f until end of recovery; low profile 16-38f; Distance: 1.94",
+        "officialPath": "staging/official-verification/sources/aki.json",
+        "officialRows": [45],
+        "rawRef": "archive/staging/sf6-frame-data/raw/aki.json#/moves/21",
+        "reason": "Cargo発生欄が全体時間と明記。効果成立時刻は未確定。公式版UNVERIFIED。",
+        "before": {
+          "status": "confirmed",
+          "display": "39",
+          "numeric": 39
+        },
+        "value": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      {
+        "characterId": "aki",
+        "moveId": "aki__special_236_K_H",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/aki.cargo.json",
+        "sourceIndex": 16,
+        "sourceInput": "236HK",
+        "sourceNotation": "43(50~54) total",
+        "sourceNotes": "Can switch sides with opponent (cross-up version usually has a fixed 23f recovery after passing through; total time depends on distance from opponent); at a very specific spacing, A.K.I. can cross-up with 43f move duration (extremely ambiguous left/right mixup); counter-hit state for entire move duration; projectile invincibility lasts longer on cross-up version; semi-low profile 11-17f (crouch height); crouching state 17f until end of recovery; low profile 18f until end of recovery; collision box disappears 20-31f to allow cross-up; Distance: 3.18 (3.84 cross-up)",
+        "officialPath": "staging/official-verification/sources/aki.json",
+        "officialRows": [46],
+        "rawRef": "archive/staging/sf6-frame-data/raw/aki.json#/moves/16",
+        "reason": "Cargo発生欄が全体時間と明記。効果成立時刻は未確定。公式版UNVERIFIED。",
+        "before": {
+          "status": "confirmed",
+          "display": "43",
+          "numeric": 43
+        },
+        "value": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      {
+        "characterId": "aki",
+        "moveId": "aki__special_236_K_OD",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/aki.cargo.json",
+        "sourceIndex": 18,
+        "sourceInput": "236KK",
+        "sourceNotation": "42(48~57)",
+        "sourceNotes": "Entire animation is vulnerable to Punish Counter Throws; crouching state 17f until end of recovery; Same-side version: 42f total animation, 8 recovery frames at the end that are vulnerable to strikes; Cross-up version: the entire animation is strike/projectile invincible; total duration of cross-up version depends on distance from opponent (23f fixed recovery time after passing through); collision box disappears 7-33f to allow cross-up; Distance: 4.06 (3.52 cross-up)",
+        "officialPath": "staging/official-verification/sources/aki.json",
+        "officialRows": [47],
+        "rawRef": "archive/staging/sf6-frame-data/raw/aki.json#/moves/18",
+        "reason": "原典備考が同じ側に移動する版の全体動作42Fと明記。効果成立時刻は未確定。公式版UNVERIFIED。",
+        "before": {
+          "status": "confirmed",
+          "display": "42",
+          "numeric": 42
+        },
+        "value": {
+          "status": "not_applicable",
+          "display": "-"
+        }
+      },
+      {
+        "characterId": "ingrid",
+        "moveId": "ingrid__coverage_6",
+        "field": "startup",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ingrid.cargo.json",
+        "sourceIndex": 7,
+        "sourceInput": "214LP (HOLD OK)",
+        "sourceNotation": "-",
+        "sourceNotes": "Builds Sun Crests up to a maximum of 4 stocks; can hold the button to extend the move and build stocks slightly more quickly (ends automatically upon reaching 4 stocks); Lv.1 (unheld version): 48F total, stock is built on frame 47 (or frame 42 when continuing to Lv.2 Hold); Lv.2 Hold: 94F total, button must be held 23F, 2nd stock is built on frame 93 (or frame 88 when continuing to Lv.3 Hold); Lv.3 Hold: 140F total, button must be held 85F, 3rd stock is built on frame 139 (or frame 134 when continuing to Lv.4 Hold); Lv.4 Hold: 186F total, button must be held 131F, 4th stock is built on frame 182; if activated with 4 Sun Crests, Ingrid instead builds 3000 Drive gauge every 46 frames (frame data is identical to the regular version but the button can be held indefinitely); Ingrid is in a counter-hit state for the entire duration; hurtbox expands upward on frames 10-44 (Lv.1) / 10-84 (Lv.2) / 10-130 (Lv.3) / 10-184 (Lv.4)",
+        "officialPath": "staging/official-verification/sources/ingrid.json",
+        "officialRows": [36],
+        "officialStartup": "",
+        "officialNotes": "47F目にサンシンボルストックが1増加\nサンシンボルストックが4つある場合47F目にDゲージ3000回復\nボタンホールドで動作継続を行い、サンシンボルストックorDゲージが増加する\n1段階ホールドした場合、全体動作が94Fとなる",
+        "rawRef": "archive/staging/sf6-frame-data/raw/ingrid.json#/moves/6",
+        "condition": "通常・地上・弱・非ホールド・ストック未満",
+        "reason": "非ホールド時の効果成立47F。公式発生欄は空欄だが備考も47F。パッチUNVERIFIED。",
+        "before": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "47",
+          "numeric": 47
+        }
+      },
+      {
+        "characterId": "marisa",
+        "moveId": "marisa__special_214_K_none",
+        "field": "startup",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/marisa.cargo.json",
+        "sourceIndex": 3,
+        "sourceInput": "214K",
+        "sourceNotation": "3(8)",
+        "sourceNotes": "Stance with 1-hit armor can be extended an extra 90f by holding the button, followed by 26 unarmored recovery frames; no armor on lower half of body; cancelable into follow-ups after 8f; stance cannot be canceled into from other attacks; absorbing an attack automatically triggers counterattack follow-up; Marisa takes a fixed 6f hitstop when absorbing attacks (causing the counterattack to often land as a Counter-hit rather than a Punish Counter against medium/heavy attacks)",
+        "officialPath": "staging/official-verification/sources/marisa.json",
+        "officialRows": [69],
+        "officialStartup": "",
+        "officialNotes": "動作中常に被パニッシュカウンター判定\n3-28　上半身アーマー判定(1回)\nアーマー判定で攻撃を受け止めた際、専用技に自動派生\n9-14F　各派生技に移行可\nボタンホールドで動作延長可",
+        "condition": "通常状態・非ホールド・構え本体",
+        "reason": "ユーザー指定：アーマー受付開始を主要機能の成立時点とする。攻撃発生・無敵開始とは区別。公式対象版UNVERIFIED。",
+        "before": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "3",
+          "numeric": 3
+        }
+      },
+      {
+        "characterId": "marisa",
+        "moveId": "marisa__special_214_K_OD",
+        "field": "startup",
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/marisa.cargo.json",
+        "sourceIndex": 5,
+        "sourceInput": "214KK",
+        "sourceNotation": "1",
+        "sourceNotes": "Stance with 2-hit full-body armor can be extended an extra 30f by holding a kick button, followed by 29 unarmored recovery frames; cancelable into follow-ups after 8f; stance cannot be canceled into from other attacks; absorbing an attack automatically triggers counterattack follow-up; Marisa takes a fixed 6f hitstop when absorbing attacks (causing the counterattack to often land as a Counter-hit rather than a Punish Counter against medium/heavy attacks)",
+        "officialPath": "staging/official-verification/sources/marisa.json",
+        "officialRows": [71],
+        "officialStartup": "",
+        "officialNotes": "動作中常に被パニッシュカウンター判定\n1-28F　アーマー判定(2回)\nアーマー判定で攻撃を受け止めた際、専用技に自動派生\n9-14F　各派生技に移行可\nボタンホールドで動作延長可",
+        "condition": "通常状態・非ホールド・構え本体",
+        "reason": "ユーザー指定：アーマー受付開始を主要機能の成立時点とする。攻撃発生・無敵開始とは区別。公式対象版UNVERIFIED。",
+        "before": {
+          "status": "not_applicable",
+          "display": "-"
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "1",
+          "numeric": 1
         }
       }
     ]
@@ -11094,6 +11405,36 @@
         "affectedMoveIds": ["terry__special_214_P_OD"],
         "reason": "Cargo 214LPMP or 214LPHP の通常hit KD +33からKD後の数値だけがraw 33と本番+33へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
         "patch": "UNVERIFIED"
+      }
+    ],
+    "airborneDecisions": [
+      {
+        "characterId": "ed",
+        "moveId": "ed__special_236_K_H",
+        "field": "hit",
+        "input": {
+          "type": "special",
+          "motion": "236",
+          "button": "K",
+          "strength": "H"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ed.cargo.json",
+        "sourceIndex": 8,
+        "sourceInput": "236HK",
+        "sourceNotation": "KD +51(+63)",
+        "sourceNotes": "1-hit projectile hitbox; can only hit airborne opponents (puts opponent into limited juggle state); KD advantage varies based on height; must hold HK at least 30f to get enhanced version (releasing early results in delayed regular version); extends a forward hurtbox on frame 1 until the end of recovery (this hurtbox is projectile invuln until the first active frame); cancelable into 6KK/4KK on hit only (comes out after 15 recovery frames), giving Ed better oki after midscreen anti-air 236HK, or a juggle after corner anti-air 236HK",
+        "officialPath": "staging/official-verification/sources/ed.json",
+        "officialRows": [51],
+        "reason": "空中専用技の通常ヒット結果KD。後続数値はKD後の有利F。公式ヒット欄は空欄、版UNVERIFIED。",
+        "before": {
+          "status": "confirmed",
+          "display": "+51",
+          "numeric": 51
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "D"
+        }
       }
     ]
   },

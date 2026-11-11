@@ -1,0 +1,40 @@
+{
+  "reviewedOn": "2026-11-11",
+  "officialRetrievedOn": "2026-11-10",
+  "officialGameVersion": "UNVERIFIED",
+  "currentGameVersion": "UNVERIFIED",
+  "superComboGameVersion": "UNVERIFIED",
+  "savedEvidence": "staging/official-verification/version-evidence.json",
+  "savedEvidenceAssessment": "保存記録の2026.10.13 updateは更新履歴ページの選択日付。FRAME DATAの対象版を独立に識別する証拠ではない。保存sourcesのgameVersion/versionEvidenceも版未確認。",
+  "requests": [
+    {
+      "url": "https://www.streetfighter.com/6/ja-jp/character/ryu/frame",
+      "result": "403 Forbidden"
+    },
+    {
+      "url": "https://www.streetfighter.com/6/buckler/ja-jp/battle_change/20261013",
+      "result": "403 Forbidden"
+    },
+    {
+      "url": "https://www.streetfighter.com/6/buckler/ja-jp/information/detail/update20261013",
+      "result": "403 Forbidden"
+    },
+    {
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Glossary",
+      "result": "Anubis Access Denied"
+    }
+  ],
+  "targetedSearches": [
+    "site:wiki.supercombo.gg Lily 5+2",
+    "site:wiki.supercombo.gg Manon 6+1",
+    "site:wiki.supercombo.gg Electric Thunder 38",
+    "site:streetfighter.com フレーム 暗転"
+  ],
+  "targetedSearchResult": "利用可能な結果なし。一般検索の二次情報・更新日から保存表の版は推定しない。",
+  "limitations": [
+    "版が明示された過去表との比較に使える一次資料を今回取得できなかった。",
+    "Cargo retrievedAtはAPI取得日時であり、Wiki編集日時・性能の対象版ではない。ページ履歴の更新日時は未確認。",
+    "本番source.retrievedAtも出典取得日時であり対象版ではない。",
+    "アクセス制限の回避、全キャラ再取得、現行ゲームでの測定は実施していない。"
+  ]
+}

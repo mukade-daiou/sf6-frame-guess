@@ -1,5 +1,13 @@
 # データ仕様 v1.0.0
 
+`kdHkdCorrections.airborneDecisions` はエド強の空中ヒットKDを保持する。`compoundStartup.indicatorDecisions` のマリーザ2元技は公式備考のアーマー受付開始を保持し、共通強度展開により5フィールドへ適用する。公式の通常欄は空欄のままであり一致扱いしない。
+
+弱サンフレアの発生47Fは `compoundStartup.indicatorDecisions` に保存原典・通常非ホールド条件・公式の空欄と備考を記録する。全体48Fを維持し、履歴投影では旧値 `-` を保つ。
+
+`compoundStartup.indicatorDecisions` は蛇軽功の4強度の旧発生・原典表記・採用後 `-` と公式行を保持する。生成前の値とCargo行を照合し、履歴監査では値を検証してから旧値へ投影する。
+
+`compoundStartup.saDecisions` はリリー・マノン通常SA3の共通原典行と公式行、各L/M/Hの変更前後を保持する。生成・履歴監査で6個別IDのみ適用する。
+
 `kdHkdCorrections.additionalDecisions` は追加15元技の旧値・Cargo/raw・公式対応を保持する。既存66件の検証を維持し、元技へ適用後に通常の共通強度展開で合計21フィールドへ反映する。
 
 `whiffTotalCorrections` は空振り全体Fの個別判断53件を保持し、共通強度展開後に対象ID・旧値・Cargo行を照合して適用する。公式行と対象パッチ未確認の状態も残す。

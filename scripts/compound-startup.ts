@@ -3,20 +3,42 @@ import { isDeepStrictEqual } from "node:util";
 import { characterSchema, type Character } from "../src/lib/frame-data/schema";
 
 // Applied to source records before common-strength expansion.
-export function applyCompoundStartup(character: Character): Character {
+export function applyCompoundStartup(
+  character: Character,
+  mode: "all" | "saOnly" | "withoutSA" = "all",
+): Character {
   const policy = JSON.parse(
     readFileSync("data/adoption-decisions.json", "utf8"),
   );
   const result = structuredClone(character);
-  for (const d of policy.compoundStartup?.decisions ?? []) {
+  for (const d of [
+    ...(mode === "saOnly" ? [] : (policy.compoundStartup?.decisions ?? [])),
+    ...(mode === "saOnly"
+      ? []
+      : (policy.compoundStartup?.indicatorDecisions ?? [])),
+    ...(mode === "withoutSA"
+      ? []
+      : (policy.compoundStartup?.saDecisions ?? [])),
+  ]) {
     if (d.characterId !== character.id) continue;
     const move = result.moves.find((m) => m.id === d.moveId);
     const source = JSON.parse(readFileSync(d.sourcePath, "utf8")).data
       .cargoquery[d.sourceIndex].title;
+    const official =
+      d.officialNotes === undefined
+        ? null
+        : JSON.parse(readFileSync(d.officialPath, "utf8")).rows.find(
+            (r: any) => r.row === d.officialRows[0],
+          );
     if (
       !move ||
       source.input !== d.sourceInput ||
       source.startup !== d.sourceNotation ||
+      (d.sourceNotes !== undefined && source.notes !== d.sourceNotes) ||
+      (d.officialNotes !== undefined &&
+        (!official ||
+          official.notes !== d.officialNotes ||
+          official.startup !== d.officialStartup)) ||
       !isDeepStrictEqual(move.frames.startup, d.before)
     ) {
       throw new Error(
@@ -44,6 +66,10 @@ export function restoreCompoundStartup(character: Character): Character {
       move.frames.total = total.before;
     }
     const kd =
+      (policy.kdHkdCorrections?.airborneDecisions ?? []).find(
+        (item: any) =>
+          item.characterId === result.id && item.moveId === move.id,
+      ) ||
       (policy.kdHkdCorrections?.additionalDecisions ?? []).find(
         (item: any) =>
           item.characterId === result.id &&
@@ -59,7 +85,11 @@ export function restoreCompoundStartup(character: Character): Character {
       move.frames.hit = kd.before;
     }
     const sourceId = move.strengthExpansion?.sourceMoveId || move.id;
-    const d = (policy.compoundStartup?.decisions ?? []).find(
+    const d = [
+      ...(policy.compoundStartup?.decisions ?? []),
+      ...(policy.compoundStartup?.saDecisions ?? []),
+      ...(policy.compoundStartup?.indicatorDecisions ?? []),
+    ].find(
       (item: any) => item.characterId === result.id && item.moveId === sourceId,
     );
     if (!d) continue;

@@ -3,9 +3,14 @@ import { isDeepStrictEqual } from "node:util";
 
 // Historical audits must validate the authorized new value before restoring the old one.
 export function restoreCompoundStartup(character) {
-  const decisions =
-    JSON.parse(readFileSync("data/adoption-decisions.json", "utf8"))
-      .compoundStartup?.decisions || [];
+  const compound = JSON.parse(
+    readFileSync("data/adoption-decisions.json", "utf8"),
+  ).compoundStartup;
+  const decisions = [
+    ...(compound?.decisions || []),
+    ...(compound?.saDecisions || []),
+    ...(compound?.indicatorDecisions || []),
+  ];
   const result = structuredClone(character);
   const kdDecisions =
     JSON.parse(readFileSync("data/adoption-decisions.json", "utf8"))
@@ -13,6 +18,9 @@ export function restoreCompoundStartup(character) {
   const additionalKd =
     JSON.parse(readFileSync("data/adoption-decisions.json", "utf8"))
       .kdHkdCorrections?.additionalDecisions || [];
+  const airborneKd =
+    JSON.parse(readFileSync("data/adoption-decisions.json", "utf8"))
+      .kdHkdCorrections?.airborneDecisions || [];
   const totalDecisions =
     JSON.parse(readFileSync("data/adoption-decisions.json", "utf8"))
       .whiffTotalCorrections?.decisions || [];
@@ -26,6 +34,9 @@ export function restoreCompoundStartup(character) {
       move.frames.total = structuredClone(total.before);
     }
     const kd =
+      airborneKd.find(
+        (d) => d.characterId === result.id && d.moveId === move.id,
+      ) ||
       additionalKd.find(
         (d) =>
           d.characterId === result.id &&

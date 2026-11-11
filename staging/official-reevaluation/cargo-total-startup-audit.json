@@ -1,0 +1,3022 @@
+{
+  "description": "Cargo発生欄にtotalを含む全保存行と、本番のupstreamInput完全一致候補。未一致は未対応であり不採用の証明ではない。",
+  "totalRows": 115,
+  "matchedRows": 4,
+  "classifications": {
+    "採用済み技と対応": 3,
+    "非採用技と対応": 1,
+    "収録対象外": 111,
+    "対応不明": 0
+  },
+  "records": [
+    {
+      "characterId": "aki",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/aki.cargo.json",
+      "sourceIndex": 16,
+      "input": "236HK",
+      "startup": "43(50~54) total",
+      "total": "43(50~54)",
+      "notes": "Can switch sides with opponent (cross-up version usually has a fixed 23f recovery after passing through; total time depends on distance from opponent); at a very specific spacing, A.K.I. can cross-up with 43f move duration (extremely ambiguous left/right mixup); counter-hit state for entire move duration; projectile invincibility lasts longer on cross-up version; semi-low profile 11-17f (crouch height); crouching state 17f until end of recovery; low profile 18f until end of recovery; collision box disappears 20-31f to allow cross-up; Distance: 3.18 (3.84 cross-up)",
+      "classification": "採用済み技と対応",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/aki.json#/moves/16",
+          "id": "aki__236hk",
+          "input": "236HK",
+          "name": "Snake Step",
+          "category": "special",
+          "notes": "Can switch sides with opponent (cross-up version usually has a fixed 23f recovery after passing through; total time depends on distance from opponent); at a very specific spacing, A.K.I. can cross-up with 43f move duration (extremely ambiguous left/right mixup); counter-hit state for entire move duration; projectile invincibility lasts longer on cross-up version; semi-low profile 11-17f (crouch height); crouching state 17f until end of recovery; low profile 18f until end of recovery; collision box disappears 20-31f to allow cross-up; Distance: 3.18 (3.84 cross-up)"
+        }
+      ],
+      "scopeEvidence": null,
+      "matches": [
+        {
+          "moveId": "aki__special_236_K_H",
+          "name": "Snake Step",
+          "adoption": {
+            "status": "accepted",
+            "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+          },
+          "startup": { "status": "not_applicable", "display": "-" },
+          "total": {
+            "status": "confirmed",
+            "display": "43",
+            "numeric": 43,
+            "provenance": "source",
+            "calculation": null
+          },
+          "variant": { "kind": "base", "condition": null },
+          "strengthExpansion": null
+        }
+      ],
+      "review": "原典入力の一致候補。状態・条件は別途確認"
+    },
+    {
+      "characterId": "aki",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/aki.cargo.json",
+      "sourceIndex": 19,
+      "input": "236LK",
+      "startup": "37 total",
+      "total": "37",
+      "notes": "Feint (starts moving forward before retreating); counter-hit state for entire move duration; 8-13f semi-low profile (crouch height); 14-37f low profile; 14-36f crouching state (4f forced standing after recovery unless a crouching attack is input); Distance: -0.965",
+      "classification": "採用済み技と対応",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/aki.json#/moves/19",
+          "id": "aki__236lk",
+          "input": "236LK",
+          "name": "Snake Step",
+          "category": "special",
+          "notes": "Feint (starts moving forward before retreating); counter-hit state for entire move duration; 8-13f semi-low profile (crouch height); 14-37f low profile; 14-36f crouching state (4f forced standing after recovery unless a crouching attack is input); Distance: -0.965"
+        }
+      ],
+      "scopeEvidence": null,
+      "matches": [
+        {
+          "moveId": "aki__special_236_K_L",
+          "name": "Snake Step",
+          "adoption": {
+            "status": "accepted",
+            "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+          },
+          "startup": { "status": "not_applicable", "display": "-" },
+          "total": {
+            "status": "confirmed",
+            "display": "37",
+            "numeric": 37,
+            "provenance": "source",
+            "calculation": null
+          },
+          "variant": { "kind": "base", "condition": null },
+          "strengthExpansion": null
+        }
+      ],
+      "review": "原典入力の一致候補。状態・条件は別途確認"
+    },
+    {
+      "characterId": "aki",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/aki.cargo.json",
+      "sourceIndex": 21,
+      "input": "236MK",
+      "startup": "39 total",
+      "total": "39",
+      "notes": "Stays on same side; counter-hit state for entire move duration; semi-low profile (crouch height) 9-15f and 39f; crouching state 14f until end of recovery; low profile 16-38f; Distance: 1.94",
+      "classification": "採用済み技と対応",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/aki.json#/moves/21",
+          "id": "aki__236mk",
+          "input": "236MK",
+          "name": "Snake Step",
+          "category": "special",
+          "notes": "Stays on same side; counter-hit state for entire move duration; semi-low profile (crouch height) 9-15f and 39f; crouching state 14f until end of recovery; low profile 16-38f; Distance: 1.94"
+        }
+      ],
+      "scopeEvidence": null,
+      "matches": [
+        {
+          "moveId": "aki__special_236_K_M",
+          "name": "Snake Step",
+          "adoption": {
+            "status": "accepted",
+            "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+          },
+          "startup": { "status": "not_applicable", "display": "-" },
+          "total": {
+            "status": "confirmed",
+            "display": "39",
+            "numeric": 39,
+            "provenance": "source",
+            "calculation": null
+          },
+          "variant": { "kind": "base", "condition": null },
+          "strengthExpansion": null
+        }
+      ],
+      "review": "原典入力の一致候補。状態・条件は別途確認"
+    },
+    {
+      "characterId": "aki",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/aki.cargo.json",
+      "sourceIndex": 46,
+      "input": "5PPPKKK",
+      "startup": "611 (total)",
+      "total": "611",
+      "notes": "\"The master's prized poison... ahh, a perfect, beautiful, most brilliantly crafted poison! Now you'll get a taste.\"; builds 1 bar of Super gauge after 411f (1000 Super gauge on frames 303, 324, 346, 363, 383, then 5000 Super gauge on frame 411)",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/aki.json#/moves/46",
+          "id": "aki__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt",
+          "category": "taunt",
+          "notes": "\"The master's prized poison... ahh, a perfect, beautiful, most brilliantly crafted poison! Now you'll get a taste.\"; builds 1 bar of Super gauge after 411f (1000 Super gauge on frames 303, 324, 346, 363, 383, then 5000 Super gauge on frame 411)"
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "aki",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/aki.cargo.json",
+      "sourceIndex": 51,
+      "input": "6PPPKKK",
+      "startup": "484 (total)",
+      "total": "484",
+      "notes": "\"Time for some experimentation... I bet poison would work wonders on you.\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/aki.json#/moves/51",
+          "id": "aki__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt",
+          "category": "taunt",
+          "notes": "\"Time for some experimentation... I bet poison would work wonders on you.\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "akuma",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json",
+      "sourceIndex": 43,
+      "input": "2PPPKKK",
+      "startup": "123 (total)",
+      "total": "123",
+      "notes": "\"滅 (Metsu!)\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/akuma.json#/moves/43",
+          "id": "akuma__2pppkkk",
+          "input": "2PPPKKK",
+          "name": "Down Taunt",
+          "category": "taunt",
+          "notes": "\"滅 (Metsu!)\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "akuma",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json",
+      "sourceIndex": 47,
+      "input": "4PPPKKK",
+      "startup": "765 (total)",
+      "total": "765",
+      "notes": "\"You have piqued my interest. Attack if you dare.\" \"How disappointing.\" (if no attack); inputting a Down Taunt (2PPPKKK) on frames 592-628 causes Akuma to pull out a rice ball (gains 3 bars of Super meter and becomes Shin Akuma if fully consumed)",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/akuma.json#/moves/47",
+          "id": "akuma__4pppkkk",
+          "input": "4PPPKKK",
+          "name": "Back Taunt",
+          "category": "taunt",
+          "notes": "\"You have piqued my interest. Attack if you dare.\" \"How disappointing.\" (if no attack); inputting a Down Taunt (2PPPKKK) on frames 592-628 causes Akuma to pull out a rice ball (gains 3 bars of Super meter and becomes Shin Akuma if fully consumed)"
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "akuma",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json",
+      "sourceIndex": 57,
+      "input": "5PPPKKK",
+      "startup": "433 (total)",
+      "total": "433",
+      "notes": "\"Witness the abyss before you.\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/akuma.json#/moves/57",
+          "id": "akuma__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt",
+          "category": "taunt",
+          "notes": "\"Witness the abyss before you.\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "akuma",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json",
+      "sourceIndex": 71,
+      "input": "6PPPKKK",
+      "startup": "570(514) (total)",
+      "total": "570(514)",
+      "notes": "Fullscreen proximity guard box on frames 107-570 (prevents opponent from walking back); \"Are you prepared to tread down this path? If you are afraid... run.\"; \"Hmph... you are a disgrace.\" (after opponent switches sides, resulting in shorter taunt animation)",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/akuma.json#/moves/71",
+          "id": "akuma__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt",
+          "category": "taunt",
+          "notes": "Fullscreen proximity guard box on frames 107-570 (prevents opponent from walking back); \"Are you prepared to tread down this path? If you are afraid... run.\"; \"Hmph... you are a disgrace.\" (after opponent switches sides, resulting in shorter taunt animation)"
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "alex",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/alex.cargo.json",
+      "sourceIndex": 34,
+      "input": "4PPPKKK",
+      "startup": "310 (total)",
+      "total": "310",
+      "notes": "\"Let's do this!\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/alex.json#/moves/34",
+          "id": "alex__4pppkkk",
+          "input": "4PPPKKK",
+          "name": "Back Taunt",
+          "category": "taunt",
+          "notes": "\"Let's do this!\""
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/alex.json#/moves/35",
+          "id": "alex__4pppkkk",
+          "input": "4PPPKKK",
+          "name": "Back Taunt (Omega Wing Buster)",
+          "category": "taunt",
+          "notes": "\"Aaalex. Aaaalex! AAAALEX!!! AAHHHH!!\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "alex",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/alex.cargo.json",
+      "sourceIndex": 35,
+      "input": "4PPPKKK",
+      "startup": "460 (total)",
+      "total": "460",
+      "notes": "\"Aaalex. Aaaalex! AAAALEX!!! AAHHHH!!\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/alex.json#/moves/34",
+          "id": "alex__4pppkkk",
+          "input": "4PPPKKK",
+          "name": "Back Taunt",
+          "category": "taunt",
+          "notes": "\"Let's do this!\""
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/alex.json#/moves/35",
+          "id": "alex__4pppkkk",
+          "input": "4PPPKKK",
+          "name": "Back Taunt (Omega Wing Buster)",
+          "category": "taunt",
+          "notes": "\"Aaalex. Aaaalex! AAAALEX!!! AAHHHH!!\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "alex",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/alex.cargo.json",
+      "sourceIndex": 43,
+      "input": "5PPPKKK",
+      "startup": "256 (total)",
+      "total": "256",
+      "notes": "\"... BOOM!\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/alex.json#/moves/45",
+          "id": "alex__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt",
+          "category": "taunt",
+          "notes": "\"Mind if... I loosen up... a bit?\""
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/alex.json#/moves/46",
+          "id": "alex__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt (Omega Wing Buster)",
+          "category": "taunt",
+          "notes": "\"... BOOM!\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "alex",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/alex.cargo.json",
+      "sourceIndex": 44,
+      "input": "5PPPKKK",
+      "startup": "370 (total)",
+      "total": "370",
+      "notes": "\"Mind if... I loosen up... a bit?\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/alex.json#/moves/45",
+          "id": "alex__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt",
+          "category": "taunt",
+          "notes": "\"Mind if... I loosen up... a bit?\""
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/alex.json#/moves/46",
+          "id": "alex__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt (Omega Wing Buster)",
+          "category": "taunt",
+          "notes": "\"... BOOM!\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "alex",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/alex.cargo.json",
+      "sourceIndex": 62,
+      "input": "6PPPKKK",
+      "startup": "350 (total)",
+      "total": "350",
+      "notes": "\"Bring it.\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/alex.json#/moves/61",
+          "id": "alex__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt",
+          "category": "taunt",
+          "notes": "\"You know what I'm gonna do to you once I'm warmed up? THIS!\""
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/alex.json#/moves/62",
+          "id": "alex__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt (Omega Wing Buster)",
+          "category": "taunt",
+          "notes": "\"Bring it.\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "alex",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/alex.cargo.json",
+      "sourceIndex": 63,
+      "input": "6PPPKKK",
+      "startup": "405 (total)",
+      "total": "405",
+      "notes": "\"You know what I'm gonna do to you once I'm warmed up? THIS!\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/alex.json#/moves/61",
+          "id": "alex__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt",
+          "category": "taunt",
+          "notes": "\"You know what I'm gonna do to you once I'm warmed up? THIS!\""
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/alex.json#/moves/62",
+          "id": "alex__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt (Omega Wing Buster)",
+          "category": "taunt",
+          "notes": "\"Bring it.\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "arjun",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+      "sourceIndex": 39,
+      "input": "5PPPKKK",
+      "startup": "1364 (total)",
+      "total": "1364",
+      "notes": "\"You challenge me? You stand no chance. Ahh... haha. Your move. Your lack of rhythm disturbs me.\"; can change which dance Arjun performs by holding a direction (forward/back/up/down) and extend the taunt indefinitely",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/arjun.json#/moves/40",
+          "id": "arjun__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt",
+          "category": "taunt",
+          "notes": "\"You challenge me? You stand no chance. Ahh... haha. Your move. Your lack of rhythm disturbs me.\"; can change which dance Arjun performs by holding a direction (forward/back/up/down) and extend the taunt indefinitely"
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "arjun",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+      "sourceIndex": 50,
+      "input": "6PPPKKK",
+      "startup": "975 (total)",
+      "total": "975",
+      "notes": "\"One moment. There. Many thanks.\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/arjun.json#/moves/51",
+          "id": "arjun__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt",
+          "category": "taunt",
+          "notes": "\"One moment. There. Many thanks.\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "blanka",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json",
+      "sourceIndex": 25,
+      "input": "4KKK",
+      "startup": "32(35) total",
+      "total": "32(35)",
+      "notes": "Distance: 1.86; () refers to 4KKK done from Coward Crouch (3f extra recovery)",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/blanka.json#/moves/41",
+          "id": "blanka__4kkk",
+          "input": "4KKK",
+          "name": "Surprise Back Hop",
+          "category": "special",
+          "notes": "Distance: 186.108; () refers to 4KKK done from Coward Crouch (3f extra recovery)"
+        }
+      ],
+      "scopeEvidence": "docs/ADOPTION_RULES.md §2：3ボタン・ホールド版・派生は原則対象外。raw技名と入力を確認。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "blanka",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json",
+      "sourceIndex": 35,
+      "input": "5PPPKKK",
+      "startup": "145 (total)",
+      "total": "145",
+      "notes": "\"Peekaboo!\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/blanka.json#/moves/51",
+          "id": "blanka__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt",
+          "category": "taunt",
+          "notes": "\"Peekaboo!\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "blanka",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json",
+      "sourceIndex": 47,
+      "input": "6KKK",
+      "startup": "27(30) total",
+      "total": "27(30)",
+      "notes": "Distance: 2.31; () refers to 6KKK done from Coward Crouch (3f extra recovery); no collision box on frames 4-22 (can pass through opponents); no head hurtbox on frames 4-11; semi-low crush on frames 12-22 (will not go over all low attacks)",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/blanka.json#/moves/63",
+          "id": "blanka__6kkk",
+          "input": "6KKK",
+          "name": "Surprise Forward Hop",
+          "category": "special",
+          "notes": "Distance: 230.945; () refers to 6KKK done from Coward Crouch (3f extra recovery); no collision box on frames 4-22 (can pass through opponents); no head hurtbox on frames 4-11; semi-low crush on frames 12-22 (will not go over all low attacks)"
+        }
+      ],
+      "scopeEvidence": "docs/ADOPTION_RULES.md §2：3ボタン・ホールド版・派生は原則対象外。raw技名と入力を確認。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "blanka",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json",
+      "sourceIndex": 50,
+      "input": "6PPPKKK",
+      "startup": "150 (total)",
+      "total": "150",
+      "notes": "\"Ha ha... uhuhuhuhuh\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/blanka.json#/moves/66",
+          "id": "blanka__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt",
+          "category": "taunt",
+          "notes": "\"Ha ha... uhuhuhuhuh\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "cammy",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cammy.cargo.json",
+      "sourceIndex": 41,
+      "input": "4PPPKKK",
+      "startup": "340 (total)",
+      "total": "340",
+      "notes": "\"(Biiiig stretch)\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/cammy.json#/moves/41",
+          "id": "cammy__4pppkkk",
+          "input": "4PPPKKK",
+          "name": "Back Taunt",
+          "category": "taunt",
+          "notes": "\"(Biiiig stretch)\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "cammy",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cammy.cargo.json",
+      "sourceIndex": 49,
+      "input": "5PPPKKK",
+      "startup": "335 (total)",
+      "total": "335",
+      "notes": "\"Sigh... Do you plan to fight at all?\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/cammy.json#/moves/49",
+          "id": "cammy__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt",
+          "category": "taunt",
+          "notes": "\"Sigh... Do you plan to fight at all?\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "cammy",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cammy.cargo.json",
+      "sourceIndex": 58,
+      "input": "6PPPKKK",
+      "startup": "255 (total)",
+      "total": "255",
+      "notes": "\"Time to meet your maker.\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/cammy.json#/moves/58",
+          "id": "cammy__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt",
+          "category": "taunt",
+          "notes": "\"Time to meet your maker.\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "chunli",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/chunli.cargo.json",
+      "sourceIndex": 36,
+      "input": "4PPPKKK",
+      "startup": "401 (total)",
+      "total": "401",
+      "notes": "\"Yawn... are you ready yet?\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/chunli.json#/moves/43",
+          "id": "chunli__4pppkkk",
+          "input": "4PPPKKK",
+          "name": "Back Taunt",
+          "category": "taunt",
+          "notes": "\"Yawn... are you ready yet?\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "chunli",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/chunli.cargo.json",
+      "sourceIndex": 47,
+      "input": "6PPPKKK",
+      "startup": "273 (total)",
+      "total": "273",
+      "notes": "\"Welcome!\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/chunli.json#/moves/55",
+          "id": "chunli__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt",
+          "category": "taunt",
+          "notes": "\"Welcome!\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "cviper",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json",
+      "sourceIndex": 32,
+      "input": "4PPPKKK",
+      "startup": "965 (total)",
+      "total": "965",
+      "notes": "Begins with \"You're a stubborn one —\" / \"You're becoming a pain in —\" / \"I have a few new tricks up —\" / \"Decouple power limiters —\" / \"This is going on far too —\" / \"I think it's about time I —\"; after being interrupted, plays out one of 6 potential phone conversations.",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/cviper.json#/moves/32",
+          "id": "cviper__4pppkkk",
+          "input": "4PPPKKK",
+          "name": "Back Taunt",
+          "category": "taunt",
+          "notes": "Begins with \"You're a stubborn one —\" / \"You're becoming a pain in —\" / \"I have a few new tricks up —\" / \"Decouple power limiters —\" / \"This is going on far too —\" / \"I think it's about time I —\"; after being interrupted, plays out one of 6 potential phone conversations."
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "cviper",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json",
+      "sourceIndex": 39,
+      "input": "5PPPKKK",
+      "startup": "605 (total)",
+      "total": "605",
+      "notes": "\"Ugh, could you just like, give up now? I have other work to do.\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/cviper.json#/moves/39",
+          "id": "cviper__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt",
+          "category": "taunt",
+          "notes": "\"Ugh, could you just like, give up now? I have other work to do.\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "cviper",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json",
+      "sourceIndex": 47,
+      "input": "6PPPKKK",
+      "startup": "740 (total)",
+      "total": "740",
+      "notes": "\"I hate to admit, you're not half bad! Even messed up my makeup. Hmm, alright, all done up.\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/cviper.json#/moves/47",
+          "id": "cviper__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt",
+          "category": "taunt",
+          "notes": "\"I hate to admit, you're not half bad! Even messed up my makeup. Hmm, alright, all done up.\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "dee_jay",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/dee_jay.cargo.json",
+      "sourceIndex": 36,
+      "input": "4PPPKKK",
+      "startup": "429 (total)",
+      "total": "429",
+      "notes": "\"Ey, wah gwan? Ya feelin' down?\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/dee_jay.json#/moves/66",
+          "id": "dee_jay__4pppkkk",
+          "input": "4PPPKKK",
+          "name": "Back Taunt",
+          "category": "taunt",
+          "notes": "\"Ey, wah gwan? Ya feelin' down?\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "dee_jay",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/dee_jay.cargo.json",
+      "sourceIndex": 50,
+      "input": "5PPPKKK",
+      "startup": "264 (total)",
+      "total": "264",
+      "notes": "\"Come on, let's dance!\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/dee_jay.json#/moves/80",
+          "id": "dee_jay__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt",
+          "category": "taunt",
+          "notes": "\"Come on, let's dance!\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "dee_jay",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/dee_jay.cargo.json",
+      "sourceIndex": 54,
+      "input": "6PPPKKK",
+      "startup": "550 (total)",
+      "total": "550",
+      "notes": "\"Seriously, your rhythm is not cool mon. *whistles*\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/dee_jay.json#/moves/84",
+          "id": "dee_jay__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt",
+          "category": "taunt",
+          "notes": "\"Seriously, your rhythm is not cool mon. *whistles*\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "dhalsim",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/dhalsim.cargo.json",
+      "sourceIndex": 32,
+      "input": "4PPPKKK",
+      "startup": "430 (total)",
+      "total": "430",
+      "notes": "\"I am in no hurry. Everything flows as one.\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/dhalsim.json#/moves/30",
+          "id": "dhalsim__4pppkkk",
+          "input": "4PPPKKK",
+          "name": "Back Taunt",
+          "category": "taunt",
+          "notes": "\"I am in no hurry. Everything flows as one.\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "dhalsim",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/dhalsim.cargo.json",
+      "sourceIndex": 39,
+      "input": "5PPPKKK",
+      "startup": "190 (total)",
+      "total": "190",
+      "notes": "\"What is it... already finished?\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/dhalsim.json#/moves/37",
+          "id": "dhalsim__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt",
+          "category": "taunt",
+          "notes": "\"What is it... already finished?\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "dhalsim",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/dhalsim.cargo.json",
+      "sourceIndex": 50,
+      "input": "6PPPKKK",
+      "startup": "380 (total)",
+      "total": "380",
+      "notes": "\"Unleash your heart!\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/dhalsim.json#/moves/48",
+          "id": "dhalsim__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt",
+          "category": "taunt",
+          "notes": "\"Unleash your heart!\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "e_honda",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+      "sourceIndex": 29,
+      "input": "4PPPKKK",
+      "startup": "205 (total)",
+      "total": "205",
+      "notes": "\"You know what? I'm all fired up!\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/e_honda.json#/moves/34",
+          "id": "e_honda__4pppkkk",
+          "input": "4PPPKKK",
+          "name": "Back Taunt",
+          "category": "taunt",
+          "notes": "\"You know what? I'm all fired up!\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "e_honda",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+      "sourceIndex": 46,
+      "input": "6PPPKKK",
+      "startup": "100 (total)",
+      "total": "100",
+      "notes": "\"You ready to rumble, chump?\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/e_honda.json#/moves/51",
+          "id": "e_honda__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt",
+          "category": "taunt",
+          "notes": "\"You ready to rumble, chump?\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "ed",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ed.cargo.json",
+      "sourceIndex": 28,
+      "input": "4PPPKKK",
+      "startup": "370 (total)",
+      "total": "370",
+      "notes": "\"Hahaha, I'd be scared too.\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/ed.json#/moves/28",
+          "id": "ed__4pppkkk",
+          "input": "4PPPKKK",
+          "name": "Back Taunt",
+          "category": "taunt",
+          "notes": "\"Hahaha, I'd be scared too.\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "ed",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ed.cargo.json",
+      "sourceIndex": 43,
+      "input": "5PPPKKK",
+      "startup": "192 (total)",
+      "total": "192",
+      "notes": "\"You ready yet?\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/ed.json#/moves/42",
+          "id": "ed__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt",
+          "category": "taunt",
+          "notes": "\"You ready yet?\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "ed",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ed.cargo.json",
+      "sourceIndex": 53,
+      "input": "6PPPKKK",
+      "startup": "304 (total)",
+      "total": "304",
+      "notes": "\"I'd take this seriously if I were you.\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/ed.json#/moves/53",
+          "id": "ed__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt",
+          "category": "taunt",
+          "notes": "\"I'd take this seriously if I were you.\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "elena",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/elena.cargo.json",
+      "sourceIndex": 44,
+      "input": "4PPPKKK",
+      "startup": "470 (total)",
+      "total": "470",
+      "notes": "\"And up!\"; can hold forward or back to transition into a hand-walking animation on frames 181-370",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/elena.json#/moves/44",
+          "id": "elena__4pppkkk",
+          "input": "4PPPKKK",
+          "name": "Back Taunt",
+          "category": "taunt",
+          "notes": "\"And up!\"; can hold forward or back to transition into a hand-walking animation on frames 181-370"
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "elena",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/elena.cargo.json",
+      "sourceIndex": 45,
+      "input": "4PPPKKK~4",
+      "startup": "549~738 (total)",
+      "total": "549~738",
+      "notes": "\"Hehe, over here!\"; cannot change walk animation once it has begun; total animation time depends on when Back was input during the initial Back Taunt",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/elena.json#/moves/45",
+          "id": "elena__4pppkkk4",
+          "input": "4PPPKKK~4",
+          "name": "Back Taunt ~ Back Walk",
+          "category": "taunt",
+          "notes": "\"Hehe, over here!\"; cannot change walk animation once it has begun; total animation time depends on when Back was input during the initial Back Taunt"
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "elena",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/elena.cargo.json",
+      "sourceIndex": 46,
+      "input": "4PPPKKK~6",
+      "startup": "586~775 (total)",
+      "total": "586~775",
+      "notes": "\"Cool right? Give it a try!\"; cannot change walk animation once it has begun; total animation time depends on when Forward was input during the initial Back Taunt",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/elena.json#/moves/46",
+          "id": "elena__4pppkkk6",
+          "input": "4PPPKKK~6",
+          "name": "Back Taunt ~ Forward Walk",
+          "category": "taunt",
+          "notes": "\"Cool right? Give it a try!\"; cannot change walk animation once it has begun; total animation time depends on when Forward was input during the initial Back Taunt"
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "elena",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/elena.cargo.json",
+      "sourceIndex": 56,
+      "input": "5PPPKKK",
+      "startup": "685 (total)",
+      "total": "685",
+      "notes": "\"It's such a lovely day. And I hope you're having a good one too!\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/elena.json#/moves/56",
+          "id": "elena__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt",
+          "category": "taunt",
+          "notes": "\"It's such a lovely day. And I hope you're having a good one too!\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "elena",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/elena.cargo.json",
+      "sourceIndex": 68,
+      "input": "6PPPKKK",
+      "startup": "799 (total)",
+      "total": "799",
+      "notes": "\"One, two, and spin! What do you say? How about you dance with me!\"; overrides the current background music with the Reniala Remains stage theme with increased volume",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/elena.json#/moves/68",
+          "id": "elena__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt",
+          "category": "taunt",
+          "notes": "\"One, two, and spin! What do you say? How about you dance with me!\"; overrides the current background music with the Reniala Remains stage theme with increased volume"
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "guile",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/guile.cargo.json",
+      "sourceIndex": 18,
+      "input": "2PPPKKK",
+      "startup": "73 (total)",
+      "total": "73",
+      "notes": "\"Come on!\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/guile.json#/moves/22",
+          "id": "guile__2pppkkk",
+          "input": "2PPPKKK",
+          "name": "Down Taunt",
+          "category": "taunt",
+          "notes": "\"Come on!\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "guile",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/guile.cargo.json",
+      "sourceIndex": 24,
+      "input": "4PPPKKK",
+      "startup": "325 (total)",
+      "total": "325",
+      "notes": "\"This is a war, and I'm ready for you.\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/guile.json#/moves/38",
+          "id": "guile__4pppkkk",
+          "input": "4PPPKKK",
+          "name": "Back Taunt",
+          "category": "taunt",
+          "notes": "\"This is a war, and I'm ready for you.\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "guile",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/guile.cargo.json",
+      "sourceIndex": 32,
+      "input": "5PPPKKK",
+      "startup": "116 (total)",
+      "total": "116",
+      "notes": "\"Got you in my sights.\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/guile.json#/moves/46",
+          "id": "guile__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt",
+          "category": "taunt",
+          "notes": "\"Got you in my sights.\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "guile",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/guile.cargo.json",
+      "sourceIndex": 38,
+      "input": "6PPPKKK",
+      "startup": "225 (total)",
+      "total": "225",
+      "notes": "\"You won't know what hit you.\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/guile.json#/moves/52",
+          "id": "guile__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt",
+          "category": "taunt",
+          "notes": "\"You won't know what hit you.\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "ingrid",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ingrid.cargo.json",
+      "sourceIndex": 36,
+      "input": "2PPPKKK",
+      "startup": "123 (total)",
+      "total": "123",
+      "notes": "\"You're done!\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/ingrid.json#/moves/35",
+          "id": "ingrid__2pppkkk",
+          "input": "2PPPKKK",
+          "name": "Down Taunt",
+          "category": "taunt",
+          "notes": "\"You're done!\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "ingrid",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ingrid.cargo.json",
+      "sourceIndex": 44,
+      "input": "4PPPKKK",
+      "startup": "425(914) (total)",
+      "total": "425(914)",
+      "notes": "\"Oop, I forgot I have an urgent matter. You, babysit this one for a while.\"; summons a controllable Monoid that cannot block and has access to 6 attacks; LP or LK is a divekick-like move that hits low, MP or MK is an overhead, HP or HK is a high strike, HP+HK performs a beam attack, any aerial button in the air performs an aerial strike, and 214236+HP or HK performs a 3-bar Super; the Monoid is fully controllable mid-air; Ingrid comes back if the Monoid stands still or after hitting with Super; when Ingrid returns and high fives the Monoid, input LP~LP~4~LK~HK (Modern: L~L~4~M~H) to absorb the Monoid and transform into a more powerful version (\"Dark Ingrid\"); this transformation also fully heals Ingrid, fills her Super gauge, and grants 4 Sun Crests; Dark Ingrid gains access to 2 new Hidden Art special moves (22PPP and 214214K) and a new SA2 (360+KK)",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/ingrid.json#/moves/43",
+          "id": "ingrid__4pppkkk",
+          "input": "4PPPKKK",
+          "name": "Back Taunt",
+          "category": "taunt",
+          "notes": "\"Oop, I forgot I have an urgent matter. You, babysit this one for a while.\"; summons a controllable Monoid that cannot block and has access to 6 attacks; LP or LK is a divekick-like move that hits low, MP or MK is an overhead, HP or HK is a high strike, HP+HK performs a beam attack, any aerial button in the air performs an aerial strike, and 214236+HP or HK performs a 3-bar Super; the Monoid is fully controllable mid-air; Ingrid comes back if the Monoid stands still or after hitting with Super; when Ingrid returns and high fives the Monoid, input LP~LP~4~LK~HK (Modern: L~L~4~M~H) to absorb the Monoid and transform into a more powerful version (\"Dark Ingrid\"); this transformation also fully heals Ingrid, fills her Super gauge, and grants 4 Sun Crests; Dark Ingrid gains access to 2 new Hidden Art special moves (22PPP and 214214K) and a new SA2 (360+KK)"
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "ingrid",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ingrid.cargo.json",
+      "sourceIndex": 52,
+      "input": "5PPPKKK",
+      "startup": "1540 (total)",
+      "total": "1540",
+      "notes": "\"Ahhh, time for a break I guess. Hmm? You too little one? Oh, you're such a little nice Monoid. Yes you are, yes you are, yes you are! See ya later!\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/ingrid.json#/moves/51",
+          "id": "ingrid__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt",
+          "category": "taunt",
+          "notes": "\"Ahhh, time for a break I guess. Hmm? You too little one? Oh, you're such a little nice Monoid. Yes you are, yes you are, yes you are! See ya later!\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "jamie",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+      "sourceIndex": 66,
+      "input": "4PPPKKK",
+      "startup": "608 (total)",
+      "total": "608",
+      "notes": "\"Listen! Da na, da na da na, da da da... right!\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/66",
+          "id": "jamie__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Back Taunt",
+          "category": "taunt",
+          "notes": "\"Listen! Da na, da na da na, da da da... right!\""
+        }
+      ],
+      "scopeEvidence": "Cargoは4PPPKKK、rawは5PPPKKKと入力表記が矛盾するが、raw名Back Taunt・発言全文・全体608Fが一致。入力矛盾は未解決、挑発カテゴリは対象外。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "jamie",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+      "sourceIndex": 76,
+      "input": "5PPPKKK",
+      "startup": "'''434 (total)'''",
+      "total": "434",
+      "notes": "\"Where's my bed? You're putting me to sleep, man.\"; has a different variation at Drink Lv.4",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/66",
+          "id": "jamie__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Back Taunt",
+          "category": "taunt",
+          "notes": "\"Listen! Da na, da na da na, da da da... right!\""
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/76",
+          "id": "jamie__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt (DL0-DL3)",
+          "category": "taunt",
+          "notes": "\"Where's my bed? You're putting me to sleep, man.\"; has a different variation at Drink Lv.4"
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/77",
+          "id": "jamie__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt (DL4)",
+          "category": "taunt",
+          "notes": "\"You're still here? This... is your last chance.\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "jamie",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+      "sourceIndex": 77,
+      "input": "5PPPKKK",
+      "startup": "'''599 (total)'''",
+      "total": "599",
+      "notes": "\"You're still here? This... is your last chance.\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/66",
+          "id": "jamie__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Back Taunt",
+          "category": "taunt",
+          "notes": "\"Listen! Da na, da na da na, da da da... right!\""
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/76",
+          "id": "jamie__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt (DL0-DL3)",
+          "category": "taunt",
+          "notes": "\"Where's my bed? You're putting me to sleep, man.\"; has a different variation at Drink Lv.4"
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/77",
+          "id": "jamie__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt (DL4)",
+          "category": "taunt",
+          "notes": "\"You're still here? This... is your last chance.\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "jamie",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+      "sourceIndex": 96,
+      "input": "6PPPKKK",
+      "startup": "'''116 (total)'''",
+      "total": "116",
+      "notes": "\"Bring it!\"; Changes with each Drink Level",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/96",
+          "id": "jamie__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt (DL0)",
+          "category": "taunt",
+          "notes": "\"Bring it!\"; Changes with each Drink Level"
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/97",
+          "id": "jamie__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt (DL1)",
+          "category": "taunt",
+          "notes": "\"Come on, let me see your sick flow!\"; Changes with each Drink Level"
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/98",
+          "id": "jamie__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt (DL2)",
+          "category": "taunt",
+          "notes": "\"You gonna show me some moves? Don't screw up!\"; Changes with each Drink Level"
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/99",
+          "id": "jamie__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt (DL3)",
+          "category": "taunt",
+          "notes": "\"You think you knew what I'm gonna do next?\"; Changes with each Drink Level"
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/100",
+          "id": "jamie__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt (DL4)",
+          "category": "taunt",
+          "notes": "\"I ain't through with you.... zzz ... oh man, oh man.\"; Changes with each Drink Level"
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "jamie",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+      "sourceIndex": 97,
+      "input": "6PPPKKK",
+      "startup": "'''169 (total)'''",
+      "total": "169",
+      "notes": "\"Come on, let me see your sick flow!\"; Changes with each Drink Level",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/96",
+          "id": "jamie__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt (DL0)",
+          "category": "taunt",
+          "notes": "\"Bring it!\"; Changes with each Drink Level"
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/97",
+          "id": "jamie__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt (DL1)",
+          "category": "taunt",
+          "notes": "\"Come on, let me see your sick flow!\"; Changes with each Drink Level"
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/98",
+          "id": "jamie__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt (DL2)",
+          "category": "taunt",
+          "notes": "\"You gonna show me some moves? Don't screw up!\"; Changes with each Drink Level"
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/99",
+          "id": "jamie__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt (DL3)",
+          "category": "taunt",
+          "notes": "\"You think you knew what I'm gonna do next?\"; Changes with each Drink Level"
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/100",
+          "id": "jamie__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt (DL4)",
+          "category": "taunt",
+          "notes": "\"I ain't through with you.... zzz ... oh man, oh man.\"; Changes with each Drink Level"
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "jamie",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+      "sourceIndex": 98,
+      "input": "6PPPKKK",
+      "startup": "'''243 (total)'''",
+      "total": "243",
+      "notes": "\"You gonna show me some moves? Don't screw up!\"; Changes with each Drink Level",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/96",
+          "id": "jamie__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt (DL0)",
+          "category": "taunt",
+          "notes": "\"Bring it!\"; Changes with each Drink Level"
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/97",
+          "id": "jamie__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt (DL1)",
+          "category": "taunt",
+          "notes": "\"Come on, let me see your sick flow!\"; Changes with each Drink Level"
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/98",
+          "id": "jamie__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt (DL2)",
+          "category": "taunt",
+          "notes": "\"You gonna show me some moves? Don't screw up!\"; Changes with each Drink Level"
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/99",
+          "id": "jamie__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt (DL3)",
+          "category": "taunt",
+          "notes": "\"You think you knew what I'm gonna do next?\"; Changes with each Drink Level"
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/100",
+          "id": "jamie__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt (DL4)",
+          "category": "taunt",
+          "notes": "\"I ain't through with you.... zzz ... oh man, oh man.\"; Changes with each Drink Level"
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "jamie",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+      "sourceIndex": 99,
+      "input": "6PPPKKK",
+      "startup": "'''255 (total)'''",
+      "total": "255",
+      "notes": "\"You think you knew what I'm gonna do next?\"; Changes with each Drink Level",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/96",
+          "id": "jamie__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt (DL0)",
+          "category": "taunt",
+          "notes": "\"Bring it!\"; Changes with each Drink Level"
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/97",
+          "id": "jamie__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt (DL1)",
+          "category": "taunt",
+          "notes": "\"Come on, let me see your sick flow!\"; Changes with each Drink Level"
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/98",
+          "id": "jamie__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt (DL2)",
+          "category": "taunt",
+          "notes": "\"You gonna show me some moves? Don't screw up!\"; Changes with each Drink Level"
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/99",
+          "id": "jamie__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt (DL3)",
+          "category": "taunt",
+          "notes": "\"You think you knew what I'm gonna do next?\"; Changes with each Drink Level"
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/100",
+          "id": "jamie__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt (DL4)",
+          "category": "taunt",
+          "notes": "\"I ain't through with you.... zzz ... oh man, oh man.\"; Changes with each Drink Level"
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "jamie",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json",
+      "sourceIndex": 100,
+      "input": "6PPPKKK",
+      "startup": "'''738 (total)'''",
+      "total": "738",
+      "notes": "\"I ain't through with you.... zzz ... oh man, oh man.\"; Changes with each Drink Level",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/96",
+          "id": "jamie__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt (DL0)",
+          "category": "taunt",
+          "notes": "\"Bring it!\"; Changes with each Drink Level"
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/97",
+          "id": "jamie__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt (DL1)",
+          "category": "taunt",
+          "notes": "\"Come on, let me see your sick flow!\"; Changes with each Drink Level"
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/98",
+          "id": "jamie__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt (DL2)",
+          "category": "taunt",
+          "notes": "\"You gonna show me some moves? Don't screw up!\"; Changes with each Drink Level"
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/99",
+          "id": "jamie__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt (DL3)",
+          "category": "taunt",
+          "notes": "\"You think you knew what I'm gonna do next?\"; Changes with each Drink Level"
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jamie.json#/moves/100",
+          "id": "jamie__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt (DL4)",
+          "category": "taunt",
+          "notes": "\"I ain't through with you.... zzz ... oh man, oh man.\"; Changes with each Drink Level"
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "jp",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+      "sourceIndex": 25,
+      "input": "236[K]",
+      "startup": "34 total",
+      "total": "34",
+      "notes": "Great tool for baiting the opponent into whiffing Parry, jumping, or using anti-projectile attack",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jp.json#/moves/20",
+          "id": "jp__236[k]",
+          "input": "236[K]",
+          "name": "Torbalan Feint",
+          "category": "special",
+          "notes": "Great tool for baiting the opponent into whiffing Parry, jumping, or using anti-projectile attack"
+        }
+      ],
+      "scopeEvidence": "docs/ADOPTION_RULES.md §2：3ボタン・ホールド版・派生は原則対象外。raw技名と入力を確認。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "jp",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+      "sourceIndex": 36,
+      "input": "4PPPKKK",
+      "startup": "202 (total)",
+      "total": "202",
+      "notes": "\"Is this fight not what you wanted?\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jp.json#/moves/36",
+          "id": "jp__4pppkkk",
+          "input": "4PPPKKK",
+          "name": "Back Taunt",
+          "category": "taunt",
+          "notes": "\"Is this fight not what you wanted?\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "jp",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+      "sourceIndex": 46,
+      "input": "5PPPKKK",
+      "startup": "220 (total)",
+      "total": "220",
+      "notes": "\"Is... something the matter?\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jp.json#/moves/46",
+          "id": "jp__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt",
+          "category": "taunt",
+          "notes": "\"Is... something the matter?\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "jp",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/jp.cargo.json",
+      "sourceIndex": 51,
+      "input": "6PPPKKK",
+      "startup": "395 (total)",
+      "total": "395",
+      "notes": "\"Do you need to take a rest?\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/jp.json#/moves/51",
+          "id": "jp__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt",
+          "category": "taunt",
+          "notes": "\"Do you need to take a rest?\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "juri",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/juri.cargo.json",
+      "sourceIndex": 34,
+      "input": "4PPPKKK",
+      "startup": "185 (total)",
+      "total": "185",
+      "notes": "\"What are you waiting for?\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/juri.json#/moves/34",
+          "id": "juri__4pppkkk",
+          "input": "4PPPKKK",
+          "name": "Back Taunt",
+          "category": "taunt",
+          "notes": "\"What are you waiting for?\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "juri",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/juri.cargo.json",
+      "sourceIndex": 49,
+      "input": "5PPPKKK",
+      "startup": "294 (total)",
+      "total": "294",
+      "notes": "\"You gonna keep me waiting, babe?\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/juri.json#/moves/49",
+          "id": "juri__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt",
+          "category": "taunt",
+          "notes": "\"You gonna keep me waiting, babe?\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "juri",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/juri.cargo.json",
+      "sourceIndex": 62,
+      "input": "6PPPKKK",
+      "startup": "199 (total)",
+      "total": "199",
+      "notes": "\"Killer beam! Or whatever.\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/juri.json#/moves/62",
+          "id": "juri__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt",
+          "category": "taunt",
+          "notes": "\"Killer beam! Or whatever.\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "ken",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ken.cargo.json",
+      "sourceIndex": 32,
+      "input": "4PPPKKK",
+      "startup": "215 (total)",
+      "total": "215",
+      "notes": "\"Now's not the time for jokes.\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/ken.json#/moves/32",
+          "id": "ken__4pppkkk",
+          "input": "4PPPKKK",
+          "name": "Back Taunt",
+          "category": "taunt",
+          "notes": "\"Now's not the time for jokes.\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "ken",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ken.cargo.json",
+      "sourceIndex": 42,
+      "input": "5PPPKKK",
+      "startup": "96 (total)",
+      "total": "96",
+      "notes": "\"Bring it!\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/ken.json#/moves/42",
+          "id": "ken__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt",
+          "category": "taunt",
+          "notes": "\"Bring it!\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "ken",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ken.cargo.json",
+      "sourceIndex": 53,
+      "input": "6PPPKKK",
+      "startup": "205 (total)",
+      "total": "205",
+      "notes": "\"What's up, having second thoughts?\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/ken.json#/moves/53",
+          "id": "ken__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt",
+          "category": "taunt",
+          "notes": "\"What's up, having second thoughts?\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "kimberly",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/kimberly.cargo.json",
+      "sourceIndex": 44,
+      "input": "4PPPKKK",
+      "startup": "328 (total)",
+      "total": "328",
+      "notes": "\"Rin Pyo To Sha Kai Jin Retsu Zai Zen!\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/kimberly.json#/moves/44",
+          "id": "kimberly__4pppkkk",
+          "input": "4PPPKKK",
+          "name": "Back Taunt",
+          "category": "taunt",
+          "notes": "\"Rin Pyo To Sha Kai Jin Retsu Zai Zen!\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "kimberly",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/kimberly.cargo.json",
+      "sourceIndex": 58,
+      "input": "5PPPKKK",
+      "startup": "200 (total)",
+      "total": "200",
+      "notes": "\"Man, come on, I'm ready to go!\"; during SA3 install, this taunt can be input with 2PPPKKK instead",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/kimberly.json#/moves/58",
+          "id": "kimberly__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt",
+          "category": "taunt",
+          "notes": "\"Man, come on, I'm ready to go!\"; during SA3 install, this taunt can be input with 2PPPKKK instead"
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/kimberly.json#/moves/59",
+          "id": "kimberly__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt",
+          "category": "taunt",
+          "notes": "(Dance animation during SA3 only)"
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "kimberly",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/kimberly.cargo.json",
+      "sourceIndex": 59,
+      "input": "5PPPKKK",
+      "startup": "545 (total)",
+      "total": "545",
+      "notes": "(Dance animation during SA3 only)",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/kimberly.json#/moves/58",
+          "id": "kimberly__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt",
+          "category": "taunt",
+          "notes": "\"Man, come on, I'm ready to go!\"; during SA3 install, this taunt can be input with 2PPPKKK instead"
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/kimberly.json#/moves/59",
+          "id": "kimberly__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt",
+          "category": "taunt",
+          "notes": "(Dance animation during SA3 only)"
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "kimberly",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/kimberly.cargo.json",
+      "sourceIndex": 66,
+      "input": "6PPPKKK",
+      "startup": "290 (total)",
+      "total": "290",
+      "notes": "\"Dōmo arigatō, from the Bushinryu!\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/kimberly.json#/moves/66",
+          "id": "kimberly__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt",
+          "category": "taunt",
+          "notes": "\"Dōmo arigatō, from the Bushinryu!\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "lily",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json",
+      "sourceIndex": 28,
+      "input": "4PPPKKK",
+      "startup": "144 (total)",
+      "total": "144",
+      "notes": "\"Come on! I'm ready to fight!\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/lily.json#/moves/33",
+          "id": "lily__4pppkkk",
+          "input": "4PPPKKK",
+          "name": "Back Taunt",
+          "category": "taunt",
+          "notes": "\"Come on! I'm ready to fight!\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "lily",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json",
+      "sourceIndex": 45,
+      "input": "6PPPKKK",
+      "startup": "338 (total)",
+      "total": "338",
+      "notes": "\"Hey! Is there anyone that wants to duke it out with me? Oh wait, you're here.\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/lily.json#/moves/54",
+          "id": "lily__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt",
+          "category": "taunt",
+          "notes": "\"Hey! Is there anyone that wants to duke it out with me? Oh wait, you're here.\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "luke",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/luke.cargo.json",
+      "sourceIndex": 33,
+      "input": "4PPPKKK",
+      "startup": "109 (total)",
+      "total": "109",
+      "notes": "\"Hadooken!\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/luke.json#/moves/36",
+          "id": "luke__4pppkkk",
+          "input": "4PPPKKK",
+          "name": "Back Taunt",
+          "category": "taunt",
+          "notes": "\"Hadooken!\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "luke",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/luke.cargo.json",
+      "sourceIndex": 45,
+      "input": "5PPPKKK",
+      "startup": "96 (total)",
+      "total": "96",
+      "notes": "\"Come on!\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/luke.json#/moves/48",
+          "id": "luke__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt",
+          "category": "taunt",
+          "notes": "\"Come on!\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "luke",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/luke.cargo.json",
+      "sourceIndex": 56,
+      "input": "6PPPKKK",
+      "startup": "180 (total)",
+      "total": "180",
+      "notes": "\"Yeah! Let's let it fly!\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/luke.json#/moves/59",
+          "id": "luke__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt",
+          "category": "taunt",
+          "notes": "\"Yeah! Let's let it fly!\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "m_bison",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json",
+      "sourceIndex": 27,
+      "input": "4PPPKKK",
+      "startup": "400+42 (792 total)",
+      "total": "442(792)",
+      "notes": "\"My power howls. Face me!\"; if opponent steps within range, Bison unleashes an unblockable strike that knocks down for no damage (\"Not yet.\"); attack still comes out even if opponent stands behind Bison; if opponent does not approach: \"Hmm. Coward.\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/m_bison.json#/moves/44",
+          "id": "m_bison__4pppkkk",
+          "input": "4PPPKKK",
+          "name": "Back Taunt",
+          "category": "taunt",
+          "notes": "\"My power howls. Face me!\"; if opponent steps within range, Bison unleashes an unblockable strike that knocks down for no damage (\"Not yet.\"); attack still comes out even if opponent stands behind Bison; if opponent does not approach: \"Hmm. Coward.\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "m_bison",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json",
+      "sourceIndex": 36,
+      "input": "5PPPKKK",
+      "startup": "544 (total)",
+      "total": "544",
+      "notes": "\"A gnat like you will be buried here.\"; can change to alternate taunts by holding Up or Down on frame 235",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/m_bison.json#/moves/53",
+          "id": "m_bison__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt",
+          "category": "taunt",
+          "notes": "\"A gnat like you will be buried here.\"; can change to alternate taunts by holding Up or Down on frame 235"
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "m_bison",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json",
+      "sourceIndex": 37,
+      "input": "5PPPKKK~2",
+      "startup": "770 (total)",
+      "total": "770",
+      "notes": "\"A gnat like you has no value to anyone. You're a worthless piece of trash!\"; must be holding Down on frame 235 of Neutral Taunt",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/m_bison.json#/moves/54",
+          "id": "m_bison__5pppkkk2",
+          "input": "5PPPKKK~2",
+          "name": "Neutral Taunt (Down)",
+          "category": "taunt",
+          "notes": "\"A gnat like you has no value to anyone. You're a worthless piece of trash!\"; must be holding Down on frame 235 of Neutral Taunt"
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "m_bison",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json",
+      "sourceIndex": 38,
+      "input": "5PPPKKK~8",
+      "startup": "475 (total)",
+      "total": "475",
+      "notes": "\"A gnat like you is of no use to me.\"; must be holding Up on frame 235 of Neutral Taunt",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/m_bison.json#/moves/55",
+          "id": "m_bison__5pppkkk8",
+          "input": "5PPPKKK~8",
+          "name": "Neutral Taunt (Up)",
+          "category": "taunt",
+          "notes": "\"A gnat like you is of no use to me.\"; must be holding Up on frame 235 of Neutral Taunt"
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "m_bison",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json",
+      "sourceIndex": 45,
+      "input": "6PPPKKK",
+      "startup": "411 (total)",
+      "total": "411",
+      "notes": "\"Hmph. Do you fear me?\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/m_bison.json#/moves/60",
+          "id": "m_bison__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt",
+          "category": "taunt",
+          "notes": "\"Hmph. Do you fear me?\""
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/m_bison.json#/moves/61",
+          "id": "m_bison__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt (Mine)",
+          "category": "taunt",
+          "notes": "\"Three. Two. One. BOOM! Hahahaha.\"; detonates a planted Psycho Mine at the end of the countdown; taunt activation can overwrite the previous explosion timer"
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "mai",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/mai.cargo.json",
+      "sourceIndex": 55,
+      "input": "5PPPKKK",
+      "startup": "279 (total)",
+      "total": "279",
+      "notes": "\"Hey, don't mess up!\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/mai.json#/moves/55",
+          "id": "mai__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt",
+          "category": "taunt",
+          "notes": "\"Hey, don't mess up!\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "mai",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/mai.cargo.json",
+      "sourceIndex": 56,
+      "input": "5PPPKKK~2PPPKKK",
+      "startup": "363 (total)",
+      "total": "363",
+      "notes": "\"Hey, what are you looking at? Up here.\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/mai.json#/moves/56",
+          "id": "mai__5pppkkk2pppkkk",
+          "input": "5PPPKKK~2PPPKKK",
+          "name": "Neutral Taunt (Alt)",
+          "category": "taunt",
+          "notes": "\"Hey, what are you looking at? Up here.\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "mai",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/mai.cargo.json",
+      "sourceIndex": 68,
+      "input": "6PPPKKK",
+      "startup": "405 (total)",
+      "total": "405",
+      "notes": "\"I like my fighters like I like my tea... very strong.\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/mai.json#/moves/68",
+          "id": "mai__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt",
+          "category": "taunt",
+          "notes": "\"I like my fighters like I like my tea... very strong.\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "manon",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/manon.cargo.json",
+      "sourceIndex": 32,
+      "input": "4PPPKKK",
+      "startup": "582 (total)",
+      "total": "582",
+      "notes": "\"Hmm, how boring. I could be at my favorite salon right now.\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/manon.json#/moves/32",
+          "id": "manon__4pppkkk",
+          "input": "4PPPKKK",
+          "name": "Back Taunt",
+          "category": "taunt",
+          "notes": "\"Hmm, how boring. I could be at my favorite salon right now.\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "manon",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/manon.cargo.json",
+      "sourceIndex": 41,
+      "input": "5PPPKKK",
+      "startup": "252 (total)",
+      "total": "252",
+      "notes": "\"No no, begin again from the plié.\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/manon.json#/moves/41",
+          "id": "manon__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt",
+          "category": "taunt",
+          "notes": "\"No no, begin again from the plié.\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "manon",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/manon.cargo.json",
+      "sourceIndex": 48,
+      "input": "6PPPKKK",
+      "startup": "364 (total)",
+      "total": "364",
+      "notes": "\"Un deux trois, un deux trois, un deux trois.\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/manon.json#/moves/48",
+          "id": "manon__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt",
+          "category": "taunt",
+          "notes": "\"Un deux trois, un deux trois, un deux trois.\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "marisa",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/marisa.cargo.json",
+      "sourceIndex": 47,
+      "input": "4PPPKKK",
+      "startup": "184 (total)",
+      "total": "184",
+      "notes": "\"This will be fun! *crack*\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/marisa.json#/moves/48",
+          "id": "marisa__4pppkkk",
+          "input": "4PPPKKK",
+          "name": "Back Taunt",
+          "category": "taunt",
+          "notes": "\"This will be fun! *crack*\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "marisa",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/marisa.cargo.json",
+      "sourceIndex": 58,
+      "input": "5PPPKKK",
+      "startup": "242 (total)",
+      "total": "242",
+      "notes": "\"I may need a second helping of you!\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/marisa.json#/moves/60",
+          "id": "marisa__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt",
+          "category": "taunt",
+          "notes": "\"I may need a second helping of you!\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "rashid",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/rashid.cargo.json",
+      "sourceIndex": 39,
+      "input": "4PPPKKK",
+      "startup": "220 (total)",
+      "total": "220",
+      "notes": "\"Check this out! Now you try.\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/rashid.json#/moves/39",
+          "id": "rashid__4pppkkk",
+          "input": "4PPPKKK",
+          "name": "Back Taunt",
+          "category": "taunt",
+          "notes": "\"Check this out! Now you try.\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "rashid",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/rashid.cargo.json",
+      "sourceIndex": 47,
+      "input": "5PPPKKK",
+      "startup": "534 (total)",
+      "total": "534",
+      "notes": "\"Do this... and this... and this. It's easy as pie.\"; hurtbox shifts as Rashid moves (lower body invuln frames 52-74, 83-107, 208-236; low profile 121-141, 169-186)",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/rashid.json#/moves/47",
+          "id": "rashid__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt",
+          "category": "taunt",
+          "notes": "\"Do this... and this... and this. It's easy as pie.\"; hurtbox shifts as Rashid moves (lower body invuln frames 52-74, 83-107, 208-236; low profile 121-141, 169-186)"
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "rashid",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/rashid.cargo.json",
+      "sourceIndex": 52,
+      "input": "6KK",
+      "startup": "32 total",
+      "total": "32",
+      "notes": "Can input 4KK/5KK/6KK follow-up on frames 19-25; collision box disappears frames 8-23, allowing Rashid to pass through opponents; can be affected by Air Current on frames 2-20, traveling nearly fullscreen; travel distance: 1.7 (3.62 enhanced)",
+      "classification": "非採用技と対応",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/rashid.json#/moves/56",
+          "id": "rashid__6kk",
+          "input": "6KK",
+          "name": "Side Flip",
+          "category": "special",
+          "notes": "Can input 4KK/5KK/6KK follow-up on frames 19-25; collision box disappears frames 8-23, allowing Rashid to pass through opponents; can be affected by Air Current on frames 2-20, traveling nearly fullscreen; travel distance: 1.7 (3.62 enhanced)"
+        }
+      ],
+      "scopeEvidence": null,
+      "matches": [
+        {
+          "moveId": "rashid__special_6_K_OD",
+          "name": "Side Flip",
+          "adoption": {
+            "status": "excluded",
+            "basis": "ユーザー指定の対象外入力。原典・フレーム値は保持し、技なしは採用範囲に限定する。"
+          },
+          "startup": { "status": "confirmed", "display": "32", "numeric": 32 },
+          "total": {
+            "status": "confirmed",
+            "display": "32",
+            "numeric": 32,
+            "provenance": "source",
+            "calculation": null
+          },
+          "variant": { "kind": "base", "condition": null },
+          "strengthExpansion": null
+        }
+      ],
+      "review": "原典入力の一致候補。状態・条件は別途確認"
+    },
+    {
+      "characterId": "rashid",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/rashid.cargo.json",
+      "sourceIndex": 53,
+      "input": "6KK~KK",
+      "startup": "18+51 total",
+      "total": "51",
+      "notes": "Input during 6KK; holding forward/back/neutral direction affects flip distance; can use any air attack frames 22-40; can be affected by Air Current on frames 1-36, traveling forward fullscreen",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/rashid.json#/moves/57",
+          "id": "rashid__6kkkk",
+          "input": "6KK~KK",
+          "name": "Front Flip",
+          "category": "special",
+          "notes": "Input during 6KK; holding forward/back/neutral direction affects flip distance; can use any air attack frames 22-40; can be affected by Air Current on frames 1-36, traveling forward fullscreen"
+        }
+      ],
+      "scopeEvidence": "docs/ADOPTION_RULES.md §2：3ボタン・ホールド版・派生は原則対象外。raw技名と入力を確認。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "rashid",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/rashid.cargo.json",
+      "sourceIndex": 55,
+      "input": "6PPPKKK",
+      "startup": "545 (total)",
+      "total": "545",
+      "notes": "\"Hmm? Hey look, just relax and have fun, alright?\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/rashid.json#/moves/59",
+          "id": "rashid__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt",
+          "category": "taunt",
+          "notes": "\"Hmm? Hey look, just relax and have fun, alright?\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "ryu",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json",
+      "sourceIndex": 33,
+      "input": "2PPPKKK",
+      "startup": "154 (total)",
+      "total": "154",
+      "notes": "\"Come!\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/ryu.json#/moves/37",
+          "id": "ryu__2pppkkk",
+          "input": "2PPPKKK",
+          "name": "Down Taunt",
+          "category": "taunt",
+          "notes": "\"Come!\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "ryu",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json",
+      "sourceIndex": 37,
+      "input": "4PPPKKK",
+      "startup": "209 (total)",
+      "total": "209",
+      "notes": "\"Your footwork's sloppy.\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/ryu.json#/moves/41",
+          "id": "ryu__4pppkkk",
+          "input": "4PPPKKK",
+          "name": "Back Taunt",
+          "category": "taunt",
+          "notes": "\"Your footwork's sloppy.\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "ryu",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json",
+      "sourceIndex": 47,
+      "input": "5PPPKKK",
+      "startup": "210 (total)",
+      "total": "210",
+      "notes": "\"Come on!\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/ryu.json#/moves/51",
+          "id": "ryu__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt",
+          "category": "taunt",
+          "notes": "\"Come on!\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "ryu",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json",
+      "sourceIndex": 59,
+      "input": "6PPPKKK",
+      "startup": "124 (total)",
+      "total": "124",
+      "notes": "*Slaps face*",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/ryu.json#/moves/63",
+          "id": "ryu__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt",
+          "category": "taunt",
+          "notes": "*Slaps face*"
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "sagat",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/sagat.cargo.json",
+      "sourceIndex": 37,
+      "input": "4PPPKKK",
+      "startup": "435 (total)",
+      "total": "435",
+      "notes": "\"If you're on a path to attain strength, show me your worth!\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/sagat.json#/moves/37",
+          "id": "sagat__4pppkkk",
+          "input": "4PPPKKK",
+          "name": "Back Taunt",
+          "category": "taunt",
+          "notes": "\"If you're on a path to attain strength, show me your worth!\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "sagat",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/sagat.cargo.json",
+      "sourceIndex": 46,
+      "input": "5PPPKKK",
+      "startup": "487 (total)",
+      "total": "487",
+      "notes": "\"If you desire the throne, stand tall against the emperor.\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/sagat.json#/moves/46",
+          "id": "sagat__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt",
+          "category": "taunt",
+          "notes": "\"If you desire the throne, stand tall against the emperor.\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "sagat",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/sagat.cargo.json",
+      "sourceIndex": 57,
+      "input": "6PPPKKK",
+      "startup": "650 (total)",
+      "total": "650",
+      "notes": "\"The emperor's strength is peerless. However, it would be my pleasure to test your strength!\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/sagat.json#/moves/57",
+          "id": "sagat__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt",
+          "category": "taunt",
+          "notes": "\"The emperor's strength is peerless. However, it would be my pleasure to test your strength!\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "terry",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json",
+      "sourceIndex": 31,
+      "input": "4PPPKKK",
+      "startup": "499 (total)",
+      "total": "499",
+      "notes": "\"We gonna fight or what? I don't have all day. *whistle* Jeez.\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/terry.json#/moves/31",
+          "id": "terry__4pppkkk",
+          "input": "4PPPKKK",
+          "name": "Back Taunt",
+          "category": "taunt",
+          "notes": "\"We gonna fight or what? I don't have all day. *whistle* Jeez.\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "terry",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json",
+      "sourceIndex": 45,
+      "input": "5PPPKKK",
+      "startup": "300 (total)",
+      "total": "300",
+      "notes": "\"Hey, come on, come on!\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/terry.json#/moves/45",
+          "id": "terry__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt",
+          "category": "taunt",
+          "notes": "\"Hey, come on, come on!\""
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/terry.json#/moves/46",
+          "id": "terry__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt (Burnout)",
+          "category": "taunt",
+          "notes": "\"Hey buddy, I got tons of fight left in me!\"; only occurs when Terry is in Burnout"
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "terry",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json",
+      "sourceIndex": 46,
+      "input": "5PPPKKK",
+      "startup": "370 (total)",
+      "total": "370",
+      "notes": "\"Hey buddy, I got tons of fight left in me!\"; only occurs when Terry is in Burnout",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/terry.json#/moves/45",
+          "id": "terry__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt",
+          "category": "taunt",
+          "notes": "\"Hey, come on, come on!\""
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/terry.json#/moves/46",
+          "id": "terry__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt (Burnout)",
+          "category": "taunt",
+          "notes": "\"Hey buddy, I got tons of fight left in me!\"; only occurs when Terry is in Burnout"
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "terry",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json",
+      "sourceIndex": 54,
+      "input": "6PPPKKK",
+      "startup": "205 (total)",
+      "total": "205",
+      "notes": "\"No line here? Alright\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/terry.json#/moves/54",
+          "id": "terry__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt",
+          "category": "taunt",
+          "notes": "\"No line here? Alright\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "yasmine",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/yasmine.cargo.json",
+      "sourceIndex": 38,
+      "input": "4PPPKKK",
+      "startup": "796 (total)",
+      "total": "796",
+      "notes": "\"Hoy! You're not taking this seriously! Underestimate me and I'll make a big meanie face like this, then I'll walk all over you! Don't sandbag me!\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/yasmine.json#/moves/38",
+          "id": "yasmine__4pppkkk",
+          "input": "4PPPKKK",
+          "name": "Back Taunt",
+          "category": "taunt",
+          "notes": "\"Hoy! You're not taking this seriously! Underestimate me and I'll make a big meanie face like this, then I'll walk all over you! Don't sandbag me!\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "yasmine",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/yasmine.cargo.json",
+      "sourceIndex": 49,
+      "input": "5PPPKKK",
+      "startup": "1221 (total)",
+      "total": "1221",
+      "notes": "\"I'm starving... Oh, I almost forgot! Aha! Want some? Really? Your loss! Alright, ready to go!\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/yasmine.json#/moves/49",
+          "id": "yasmine__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt",
+          "category": "taunt",
+          "notes": "\"I've been practicing this a lot! Gotcha! Cool, right?\"; Yasmine attacks with a kick while catching the knife; gives a shorter knockdown on Punish Counter"
+        },
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/yasmine.json#/moves/50",
+          "id": "yasmine__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt (Burnout)",
+          "category": "taunt",
+          "notes": "\"I'm starving... Oh, I almost forgot! Aha! Want some? Really? Your loss! Alright, ready to go!\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "yasmine",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/yasmine.cargo.json",
+      "sourceIndex": 58,
+      "input": "6PPPKKK",
+      "startup": "853 (total)",
+      "total": "853",
+      "notes": "\"Watch this! Haaaaaaaahhhhhh! Oh, um... hehehe...\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/yasmine.json#/moves/58",
+          "id": "yasmine__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt",
+          "category": "taunt",
+          "notes": "\"Watch this! Haaaaaaaahhhhhh! Oh, um... hehehe...\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "zangief",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/zangief.cargo.json",
+      "sourceIndex": 15,
+      "input": "2PPPKKK",
+      "startup": "210 (total)",
+      "total": "210",
+      "notes": "\"The power of Zangief is limitless!\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/zangief.json#/moves/15",
+          "id": "zangief__2pppkkk",
+          "input": "2PPPKKK",
+          "name": "Down Taunt",
+          "category": "taunt",
+          "notes": "\"The power of Zangief is limitless!\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "zangief",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/zangief.cargo.json",
+      "sourceIndex": 24,
+      "input": "4PPPKKK",
+      "startup": "202 (total)",
+      "total": "202",
+      "notes": "\"You're lacking, just bring it!\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/zangief.json#/moves/24",
+          "id": "zangief__4pppkkk",
+          "input": "4PPPKKK",
+          "name": "Back Taunt",
+          "category": "taunt",
+          "notes": "\"You're lacking, just bring it!\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "zangief",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/zangief.cargo.json",
+      "sourceIndex": 34,
+      "input": "5PPPKKK",
+      "startup": "194 (total)",
+      "total": "194",
+      "notes": "\"My beautiful body is built better!\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/zangief.json#/moves/35",
+          "id": "zangief__5pppkkk",
+          "input": "5PPPKKK",
+          "name": "Neutral Taunt",
+          "category": "taunt",
+          "notes": "\"My beautiful body is built better!\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    },
+    {
+      "characterId": "zangief",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/zangief.cargo.json",
+      "sourceIndex": 48,
+      "input": "6PPPKKK",
+      "startup": "227 (total)",
+      "total": "227",
+      "notes": "\"You'd be right at home in the ring!\"",
+      "classification": "収録対象外",
+      "rawCandidates": [
+        {
+          "ref": "archive/staging/sf6-frame-data/raw/zangief.json#/moves/48",
+          "id": "zangief__6pppkkk",
+          "input": "6PPPKKK",
+          "name": "Forward Taunt",
+          "category": "taunt",
+          "notes": "\"You'd be right at home in the ring!\""
+        }
+      ],
+      "scopeEvidence": "保存rawの全同一入力候補がtaunt、本番技種はnormal/special/super_art。",
+      "matches": [],
+      "review": "入力注記の完全一致なし。未採用と断定しない"
+    }
+  ]
+}

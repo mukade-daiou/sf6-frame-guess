@@ -14,9 +14,15 @@ test("source inventory is checked independently from generic historical exclusio
   assert.equal(repairs.length, 20);
   for (const repair of repairs) {
     const snapshot = read(`data/characters/${repair.characterId}.json`);
+    const expected = structuredClone(repair.frames);
+    const decision = read("data/adoption-decisions.json").compoundStartup.indicatorDecisions.find((d) => d.characterId === repair.characterId && d.moveId === repair.moveId);
+    if (decision) {
+      assert.deepEqual(expected.startup, decision.before);
+      expected.startup = decision.value;
+    }
     assert.deepEqual(
       snapshot.moves.find((m) => m.id === repair.moveId).frames,
-      repair.frames,
+      expected,
     );
   }
   execFileSync("node_modules/.bin/tsx", [

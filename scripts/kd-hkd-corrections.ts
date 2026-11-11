@@ -14,11 +14,14 @@ export function applyKdHkdCorrections(character: Character): Character {
       .size !== 66
   )
     throw new Error("Invalid KD/HKD decisions");
-  const combined = [...entries, ...additional];
+  const airborne = policy.kdHkdCorrections?.airborneDecisions ?? [];
+  const combined = [...entries, ...additional, ...airborne];
   if (
     additional.length !== 15 ||
     new Set(combined.map((d: any) => `${d.characterId}/${d.moveId}/${d.field}`))
-      .size !== 81
+      .size !==
+      81 + airborne.length ||
+    airborne.length !== 1
   )
     throw new Error("Invalid additional KD/HKD decisions");
   const result = structuredClone(character);
