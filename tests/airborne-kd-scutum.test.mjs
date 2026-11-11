@@ -1,3 +1,4 @@
+import { applyUserConfirmedToBaseline } from "./helpers/apply-user-confirmed.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync, readdirSync } from "node:fs";
@@ -22,6 +23,8 @@ test("fixed baseline differs only in seventeen approved fields", () => {
       const kd = hit.find((x) => x.characterId === before.id && x.moveId === m.id);
       if (kd) { assert.deepEqual(m.frames.hit, kd.before); m.frames.hit = kd.value; count++; }
     }
+    for (const m of before.moves) { const d = read("data/adoption-decisions.json").whiffTotalCorrections.additionalDecisions.find(x => x.characterId === before.id && x.moveId === m.id); if (d) { assert.deepEqual(m.frames.total, d.before); m.frames.total = d.value; } }
+    applyUserConfirmedToBaseline(before);
     assert.deepEqual(after, before);
   }
   assert.equal(records, 1298);

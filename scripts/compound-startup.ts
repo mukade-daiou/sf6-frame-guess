@@ -1,6 +1,7 @@
 import { readFileSync } from "node:fs";
 import { isDeepStrictEqual } from "node:util";
 import { characterSchema, type Character } from "../src/lib/frame-data/schema";
+import { restoreUserConfirmedFrames } from "./user-confirmed-frames";
 
 // Applied to source records before common-strength expansion.
 export function applyCompoundStartup(
@@ -55,9 +56,12 @@ export function restoreCompoundStartup(character: Character): Character {
   const policy = JSON.parse(
     readFileSync("data/adoption-decisions.json", "utf8"),
   );
-  const result = structuredClone(character);
+  const result = restoreUserConfirmedFrames(character);
   for (const move of result.moves) {
-    const total = (policy.whiffTotalCorrections?.decisions ?? []).find(
+    const total = [
+      ...(policy.whiffTotalCorrections?.decisions ?? []),
+      ...(policy.whiffTotalCorrections?.additionalDecisions ?? []),
+    ].find(
       (item: any) => item.characterId === result.id && item.moveId === move.id,
     );
     if (total) {

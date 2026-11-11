@@ -1,3 +1,4 @@
+import { applyUserConfirmedToBaseline } from "./helpers/apply-user-confirmed.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync, readdirSync } from "node:fs";
@@ -24,7 +25,10 @@ test("approved totals match the reviewed ledger and 39 held totals remain unchan
       assert.equal(move.frames.total.display, row.proposal);
     } else {
       assert.equal(decision, undefined);
-      assert.equal(move.frames.total.display, row.current);
+      const correction = read("data/adoption-decisions.json").whiffTotalCorrections.additionalDecisions.find((d) => d.characterId === row.characterId && d.moveId === row.moveId);
+      if (correction) assert.equal(correction.before.display, row.current);
+      const user = read("data/adoption-decisions.json").userConfirmedFrames.decisions.find((d) => d.characterId === row.characterId && d.moveId === row.moveId && d.field === "total");
+      assert.equal(move.frames.total.display, user ? user.value.display : correction ? correction.value.display : row.current);
     }
   }
 });
@@ -56,6 +60,8 @@ test("authorized 53 totals are the only production differences", () => {
       changed++;
     }
     for (const m of before.moves) { const d = read("data/adoption-decisions.json").kdHkdCorrections.airborneDecisions.find(x => x.characterId === before.id && x.moveId === m.id); if (d) { assert.deepEqual(m.frames.hit, d.before); m.frames.hit = d.value; } }
+    for (const m of before.moves) { const d = read("data/adoption-decisions.json").whiffTotalCorrections.additionalDecisions.find(x => x.characterId === before.id && x.moveId === m.id); if (d) { assert.deepEqual(m.frames.total, d.before); m.frames.total = d.value; } }
+    applyUserConfirmedToBaseline(before);
     assert.deepEqual(after, before);
   }
   assert.equal(records, 1298);

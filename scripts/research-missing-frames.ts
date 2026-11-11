@@ -376,6 +376,7 @@ if (process.argv.includes("--check")) {
   delete expectedDecisions.compoundStartup;
   delete expectedDecisions.kdHkdCorrections;
   delete expectedDecisions.whiffTotalCorrections;
+  delete expectedDecisions.userConfirmedFrames;
   expectedDecisions.datasetId = baseline.decisions.datasetId;
   if (!isDeepStrictEqual(expectedDecisions, baseline.decisions))
     throw new Error("Unrelated adoption decision changed");

@@ -1,5 +1,9 @@
 # データ仕様 v1.0.0
 
+`userConfirmedFrames.decisions` はリュウ強昇龍拳のblockとアレックス立ち中Pのtotalについて、ユーザー確認値と旧値・入力・未報告の測定条件を保持する。生成後に明示IDへ適用し、履歴監査で承認値を検証して旧値へ投影する。`unchangedConfirmations` はヤスミンとラシードの維持判断を記録する。
+
+`whiffTotalCorrections.additionalDecisions` はアルジュン強・OD大義の巨腕の旧値・空振り値・Cargo行・公式行を保持する。従来の53件を固定したまま2フィールドを追加し、履歴投影時には新値と旧値を検査する。
+
 `kdHkdCorrections.airborneDecisions` はエド強の空中ヒットKDを保持する。`compoundStartup.indicatorDecisions` のマリーザ2元技は公式備考のアーマー受付開始を保持し、共通強度展開により5フィールドへ適用する。公式の通常欄は空欄のままであり一致扱いしない。
 
 弱サンフレアの発生47Fは `compoundStartup.indicatorDecisions` に保存原典・通常非ホールド条件・公式の空欄と備考を記録する。全体48Fを維持し、履歴投影では旧値 `-` を保つ。

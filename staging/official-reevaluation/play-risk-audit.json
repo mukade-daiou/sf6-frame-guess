@@ -1,0 +1,2789 @@
+{
+  "baseline": "148d6dabf0792b4477051a3f9034a6007b075ed3",
+  "datasetId": "user-verified-frames-2026-11-11-r1",
+  "priorities": { "高": 17, "中": 25, "低": 21 },
+  "detailedJudgments": { "保留": 11, "修正確定": 4, "現状維持": 2 },
+  "remainingNotDetailed": 46,
+  "comparison": {
+    "一致": 4459,
+    "確認不能": 570,
+    "条件違い": 42,
+    "不一致": 61,
+    "caveat": "保存済み比較処理を一時コピーで再実行した集計。発生欄が空の修正は確認不能。最新パッチとの比較ではない。"
+  },
+  "access": [
+    {
+      "url": "https://www.streetfighter.com/6/ja-jp/character/ryu/frame",
+      "result": "403 Forbidden"
+    },
+    {
+      "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Frame_data",
+      "result": "403 Forbidden"
+    },
+    {
+      "url": "https://www.streetfighter.com/6/buckler/ja-jp/battle_change/20261013",
+      "result": "403 Forbidden"
+    }
+  ],
+  "conditions": [
+    {
+      "characterId": "akuma",
+      "moveId": "akuma__special_236_K_none",
+      "field": "startup",
+      "current": "53",
+      "official": "8",
+      "reason": "公式8Fは百鬼豪斬単体の相対発生。百鬼襲開始からの発生53Fと直接比較できない"
+    },
+    {
+      "characterId": "akuma",
+      "moveId": "akuma__special_236_K_none",
+      "field": "total",
+      "current": "75",
+      "official": "30",
+      "reason": "公式は百鬼豪斬単体の動作。百鬼襲全体の空振り75Fは算出不能"
+    },
+    {
+      "characterId": "akuma",
+      "moveId": "akuma__special_236_K_OD",
+      "field": "startup",
+      "current": "53",
+      "official": "8",
+      "reason": "公式8Fは百鬼豪斬単体の相対発生。百鬼襲開始からの発生53Fと直接比較できない"
+    },
+    {
+      "characterId": "akuma",
+      "moveId": "akuma__special_236_K_OD",
+      "field": "total",
+      "current": "75",
+      "official": "30",
+      "reason": "公式は百鬼豪斬単体の動作。百鬼襲全体の空振り75Fは算出不能"
+    },
+    {
+      "characterId": "akuma",
+      "moveId": "akuma__special_236_K_none__strength_L",
+      "field": "startup",
+      "current": "53",
+      "official": "8",
+      "reason": "公式8Fは百鬼豪斬単体の相対発生。百鬼襲開始からの発生53Fと直接比較できない"
+    },
+    {
+      "characterId": "akuma",
+      "moveId": "akuma__special_236_K_none__strength_L",
+      "field": "total",
+      "current": "75",
+      "official": "30",
+      "reason": "公式は百鬼豪斬単体の動作。百鬼襲全体の空振り75Fは算出不能"
+    },
+    {
+      "characterId": "akuma",
+      "moveId": "akuma__special_236_K_none__strength_M",
+      "field": "startup",
+      "current": "53",
+      "official": "8",
+      "reason": "公式8Fは百鬼豪斬単体の相対発生。百鬼襲開始からの発生53Fと直接比較できない"
+    },
+    {
+      "characterId": "akuma",
+      "moveId": "akuma__special_236_K_none__strength_M",
+      "field": "total",
+      "current": "75",
+      "official": "30",
+      "reason": "公式は百鬼豪斬単体の動作。百鬼襲全体の空振り75Fは算出不能"
+    },
+    {
+      "characterId": "akuma",
+      "moveId": "akuma__special_236_K_none__strength_H",
+      "field": "startup",
+      "current": "53",
+      "official": "8",
+      "reason": "公式8Fは百鬼豪斬単体の相対発生。百鬼襲開始からの発生53Fと直接比較できない"
+    },
+    {
+      "characterId": "akuma",
+      "moveId": "akuma__special_236_K_none__strength_H",
+      "field": "total",
+      "current": "75",
+      "official": "30",
+      "reason": "公式は百鬼豪斬単体の動作。百鬼襲全体の空振り75Fは算出不能"
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_22_K_H",
+      "field": "hit",
+      "current": "D",
+      "official": "D",
+      "reason": "公式のダウンは当身成立後の反撃条件。無条件の通常ヒットとして検証しない"
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_22_K_H",
+      "field": "block",
+      "current": "-",
+      "official": "-3",
+      "reason": "公式のガード硬直差は当身後の反撃・ホールド中派生との条件分離が必要"
+    },
+    {
+      "characterId": "jp",
+      "moveId": "jp__special_214_K_none",
+      "field": "startup",
+      "current": "26~",
+      "official": "26",
+      "reason": "ローカルの条件付き・距離範囲と公式の単一代表条件を同一視しない"
+    },
+    {
+      "characterId": "jp",
+      "moveId": "jp__special_214_K_OD",
+      "field": "startup",
+      "current": "26~",
+      "official": "26",
+      "reason": "ローカルの条件付き・距離範囲と公式の単一代表条件を同一視しない"
+    },
+    {
+      "characterId": "jp",
+      "moveId": "jp__special_214_P_none",
+      "field": "startup",
+      "current": "50",
+      "official": "150",
+      "reason": "ローカルは設置発動の50F/40F、公式は自動攻撃の150F/110F。原典の設置後遅延注記と対応し、定義を混ぜない"
+    },
+    {
+      "characterId": "jp",
+      "moveId": "jp__special_214_P_OD",
+      "field": "startup",
+      "current": "40",
+      "official": "110",
+      "reason": "ローカルは設置発動の50F/40F、公式は自動攻撃の150F/110F。原典の設置後遅延注記と対応し、定義を混ぜない"
+    },
+    {
+      "characterId": "jp",
+      "moveId": "jp__special_236_K_H",
+      "field": "startup",
+      "current": "26~",
+      "official": "26",
+      "reason": "ローカルの条件付き・距離範囲と公式の単一代表条件を同一視しない"
+    },
+    {
+      "characterId": "jp",
+      "moveId": "jp__special_236_K_L",
+      "field": "startup",
+      "current": "22~",
+      "official": "22",
+      "reason": "ローカルの条件付き・距離範囲と公式の単一代表条件を同一視しない"
+    },
+    {
+      "characterId": "jp",
+      "moveId": "jp__special_236_K_M",
+      "field": "startup",
+      "current": "26~",
+      "official": "26",
+      "reason": "ローカルの条件付き・距離範囲と公式の単一代表条件を同一視しない"
+    },
+    {
+      "characterId": "jp",
+      "moveId": "jp__super_art_2_L",
+      "field": "startup",
+      "current": "1",
+      "official": "29",
+      "reason": "ローカル1Fは発動値。公式29Fは攻撃発生であり、承認済みの発動値を置換しない"
+    },
+    {
+      "characterId": "jp",
+      "moveId": "jp__super_art_2_M",
+      "field": "startup",
+      "current": "1",
+      "official": "29",
+      "reason": "ローカル1Fは発動値。公式29Fは攻撃発生であり、承認済みの発動値を置換しない"
+    },
+    {
+      "characterId": "jp",
+      "moveId": "jp__super_art_2_H",
+      "field": "startup",
+      "current": "1",
+      "official": "29",
+      "reason": "ローカル1Fは発動値。公式29Fは攻撃発生であり、承認済みの発動値を置換しない"
+    },
+    {
+      "characterId": "jp",
+      "moveId": "jp__special_214_K_none__strength_L",
+      "field": "startup",
+      "current": "26~",
+      "official": "26",
+      "reason": "ローカルの条件付き・距離範囲と公式の単一代表条件を同一視しない"
+    },
+    {
+      "characterId": "jp",
+      "moveId": "jp__special_214_K_none__strength_M",
+      "field": "startup",
+      "current": "26~",
+      "official": "26",
+      "reason": "ローカルの条件付き・距離範囲と公式の単一代表条件を同一視しない"
+    },
+    {
+      "characterId": "jp",
+      "moveId": "jp__special_214_K_none__strength_H",
+      "field": "startup",
+      "current": "26~",
+      "official": "26",
+      "reason": "ローカルの条件付き・距離範囲と公式の単一代表条件を同一視しない"
+    },
+    {
+      "characterId": "jp",
+      "moveId": "jp__special_214_P_none__strength_L",
+      "field": "startup",
+      "current": "50",
+      "official": "150",
+      "reason": "ローカルは設置発動の50F/40F、公式は自動攻撃の150F/110F。原典の設置後遅延注記と対応し、定義を混ぜない"
+    },
+    {
+      "characterId": "jp",
+      "moveId": "jp__special_214_P_none__strength_M",
+      "field": "startup",
+      "current": "50",
+      "official": "150",
+      "reason": "ローカルは設置発動の50F/40F、公式は自動攻撃の150F/110F。原典の設置後遅延注記と対応し、定義を混ぜない"
+    },
+    {
+      "characterId": "jp",
+      "moveId": "jp__special_214_P_none__strength_H",
+      "field": "startup",
+      "current": "50",
+      "official": "150",
+      "reason": "ローカルは設置発動の50F/40F、公式は自動攻撃の150F/110F。原典の設置後遅延注記と対応し、定義を混ぜない"
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__special_623_K_H",
+      "field": "startup",
+      "current": "30",
+      "official": "28",
+      "reason": "公式の発生Fと地上接触の発生Fが異なる。備考の地上に当たらない初期持続を参照し、数値の自動置換はしない"
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__special_623_K_L",
+      "field": "startup",
+      "current": "21",
+      "official": "18",
+      "reason": "公式の発生Fと地上接触の発生Fが異なる。備考の地上に当たらない初期持続を参照し、数値の自動置換はしない"
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__special_623_K_M",
+      "field": "startup",
+      "current": "25",
+      "official": "23",
+      "reason": "公式の発生Fと地上接触の発生Fが異なる。備考の地上に当たらない初期持続を参照し、数値の自動置換はしない"
+    },
+    {
+      "characterId": "luke",
+      "moveId": "luke__special_214_P_OD",
+      "field": "hit",
+      "current": "D",
+      "official": "-",
+      "reason": "公式初段のヒット欄は『-』。ローカルDは自動派生後の結果であり、初段の欄へ置換しない"
+    },
+    {
+      "characterId": "luke",
+      "moveId": "luke__super_art_3_L",
+      "field": "startup",
+      "current": "10~27",
+      "official": "10",
+      "reason": "ローカルの条件付き・距離範囲と公式の単一代表条件を同一視しない"
+    },
+    {
+      "characterId": "luke",
+      "moveId": "luke__super_art_3_M",
+      "field": "startup",
+      "current": "10~27",
+      "official": "10",
+      "reason": "ローカルの条件付き・距離範囲と公式の単一代表条件を同一視しない"
+    },
+    {
+      "characterId": "luke",
+      "moveId": "luke__super_art_3_H",
+      "field": "startup",
+      "current": "10~27",
+      "official": "10",
+      "reason": "ローカルの条件付き・距離範囲と公式の単一代表条件を同一視しない"
+    },
+    {
+      "characterId": "m_bison",
+      "moveId": "m_bison__special_[2]8_K_none",
+      "field": "total",
+      "current": "53",
+      "official": null,
+      "reason": "共通強度の元レコードに対して公式の強度別値が異なる"
+    },
+    {
+      "characterId": "zangief",
+      "moveId": "zangief__far_63214_K_L",
+      "field": "startup",
+      "current": "55",
+      "official": "55",
+      "reason": "公式は遠距離版の最短移動距離。ローカルの遠距離代表と距離を一致させる根拠不足"
+    },
+    {
+      "characterId": "zangief",
+      "moveId": "zangief__far_63214_K_L",
+      "field": "total",
+      "current": "96",
+      "official": "96",
+      "reason": "公式は遠距離版の最短移動距離。空振り全体も移動距離依存のため直接比較を保留"
+    },
+    {
+      "characterId": "zangief",
+      "moveId": "zangief__far_63214_K_M",
+      "field": "startup",
+      "current": "55",
+      "official": "55",
+      "reason": "公式は遠距離版の最短移動距離。ローカルの遠距離代表と距離を一致させる根拠不足"
+    },
+    {
+      "characterId": "zangief",
+      "moveId": "zangief__far_63214_K_M",
+      "field": "total",
+      "current": "96",
+      "official": "96",
+      "reason": "公式は遠距離版の最短移動距離。空振り全体も移動距離依存のため直接比較を保留"
+    },
+    {
+      "characterId": "zangief",
+      "moveId": "zangief__far_63214_K_OD",
+      "field": "startup",
+      "current": "54",
+      "official": "54",
+      "reason": "公式は遠距離版の最短移動距離。ローカルの遠距離代表と距離を一致させる根拠不足"
+    },
+    {
+      "characterId": "zangief",
+      "moveId": "zangief__far_63214_K_OD",
+      "field": "total",
+      "current": "95",
+      "official": "95",
+      "reason": "公式は遠距離版の最短移動距離。空振り全体も移動距離依存のため直接比較を保留"
+    }
+  ],
+  "records": [
+    {
+      "characterId": "akuma",
+      "moveId": "akuma__special_623_P_OD",
+      "name": "Gou Shoryuken",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "OD"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "block",
+      "current": "-41",
+      "previousValue": "-41",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "-39",
+      "priority": "高",
+      "priorityReason": "通常条件で使用される技または出題に直接影響するため優先。差が1Fでも除外しない。",
+      "normalOrHard": "Normal",
+      "detailed": true,
+      "classification": "保留",
+      "classificationBasis": "保存raw・Cargo・公式行・現行入力を再照合。対象版と同一測定条件の独立証拠が不足。公式との差または原典との一致だけでは決定できない。",
+      "previousReason": "Cargo 623PP のガード欄<span style=\"color: #b70c0b;\">'''-41'''</span>はraw・本番-41に整合。公式-39との差を説明する同一接続段・高さ・版の根拠がない。",
+      "unresolved": "同一ガード接続段・相手条件・対象版の証拠。",
+      "source": "staging/official-reevaluation/hit-block-startup-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/akuma.json#/moves/61"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json#/data/cargoquery/61/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/akuma.json#row=49"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "alex",
+      "moveId": "alex__normal_5_P_M",
+      "name": "立ち中P",
+      "input": {
+        "type": "normal",
+        "direction": "5",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "27",
+      "previousValue": "24",
+      "proposedCorrection": "27",
+      "comparisonStatusNow": "一致",
+      "userConfirmation": {
+        "reportedValue": "27",
+        "basis": "ユーザーによるゲーム内確認",
+        "gameVersion": null,
+        "opponent": null,
+        "distance": null,
+        "contactFrame": null,
+        "reportedCondition": "空振り"
+      },
+      "official": "27",
+      "priority": "高",
+      "priorityReason": "通常条件で使用される技または出題に直接影響するため優先。差が1Fでも除外しない。",
+      "normalOrHard": "Normal",
+      "detailed": true,
+      "classification": "修正確定",
+      "classificationBasis": "ユーザーによるゲーム内確認値を採用。詳細な測定条件とゲーム版は未報告。",
+      "previousReason": "Cargo 24(25/27)はガード+1・空振り+2と備考にあるが、24+2=26に対し括弧27、公式は空振り+3で27。保存原典内で食い違うため採用値を確定できない。",
+      "unresolved": "ユーザー確認時のゲームバージョン・相手・距離・接触段は未報告。公式資料の対象パッチも未確認。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/alex.json#/moves/43"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/alex.cargo.json#/data/cargoquery/41/title"
+      ],
+      "officialRows": ["staging/official-verification/sources/alex.json#row=4"],
+      "external": [
+        {
+          "url": "https://shoryu.site/character/alex",
+          "finding": "5MPに24(25/27)と空振り硬直+2を併記し、保存原典と同じ内部矛盾。文言が同一で独立測定とは扱えない。",
+          "version": "UNVERIFIED"
+        }
+      ],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_22_K_H",
+      "name": "Indomitable Defense",
+      "input": {
+        "type": "special",
+        "motion": "22",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "60",
+      "previousValue": "60",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "58",
+      "priority": "中",
+      "priorityReason": "SAまたは特殊な終了条件を持つ技。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "Cargo 60~はホールド延長可能な当身、公式3–28+硬直30=58。ホールド解除・動作終了の基準と版差が未確定。",
+      "unresolved": "同一対象版と同一終了条件による空振り全体Fの独立証拠。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/arjun.json#/moves/4"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json#/data/cargoquery/4/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/arjun.json#row=62"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_236_P_H",
+      "name": "HP Arm of Justice",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "53",
+      "previousValue": "50",
+      "proposedCorrection": "53",
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "56",
+      "priority": "高",
+      "priorityReason": "通常条件で使用される技または出題に直接影響するため優先。差が1Fでも除外しない。",
+      "normalOrHard": "Normal",
+      "detailed": true,
+      "classification": "修正確定",
+      "classificationBasis": "保存Cargoの括弧内と空振り追加3Fが一致し、空振り全体の採用規則に反する旧値を修正した。公式値は異なり版・条件は未確定。",
+      "previousReason": "Cargo 50の空振り+3は53、公式の最終持続+硬直+3は56。空振り値自体が食い違い、版差・動作条件の確認が必要。",
+      "unresolved": "同一対象版と同一終了条件による空振り全体Fの独立証拠。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/arjun.json#/moves/9"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json#/data/cargoquery/9/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/arjun.json#row=32"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_236_P_OD",
+      "name": "OD Arm of Justice",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "OD"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "48",
+      "previousValue": "45",
+      "proposedCorrection": "48",
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "51",
+      "priority": "高",
+      "priorityReason": "通常条件で使用される技または出題に直接影響するため優先。差が1Fでも除外しない。",
+      "normalOrHard": "Normal",
+      "detailed": true,
+      "classification": "修正確定",
+      "classificationBasis": "保存Cargoの括弧内と空振り追加3Fが一致し、空振り全体の採用規則に反する旧値を修正した。公式値は異なり版・条件は未確定。",
+      "previousReason": "Cargo 45の空振り+3は48、公式の最終持続+硬直+3は51。空振り値自体が食い違い、版差・動作条件の確認が必要。",
+      "unresolved": "同一対象版と同一終了条件による空振り全体Fの独立証拠。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/arjun.json#/moves/16"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json#/data/cargoquery/16/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/arjun.json#row=34"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_[2]8_K_H",
+      "name": "Vertical Rolling Attack",
+      "input": {
+        "type": "special",
+        "motion": "[2]8",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "74",
+      "previousValue": "74",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "75",
+      "priority": "低",
+      "priorityReason": "空中・着地・多段・距離または相手条件に依存。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "同入力に通常版とSA2版があるため備考と技名で通常版を選別。Cargo 74、公式は持続最終27+空中硬直31+着地後17=75。着地境界の1Fと対象版の同一性が未確認。",
+      "unresolved": "着地したフレームを空中硬直と着地後硬直のどちらに含めるか、同一版での最初の行動可能F。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/blanka.json#/moves/15"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json#/data/cargoquery/69/title",
+        "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json#/data/cargoquery/70/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/blanka.json#row=49"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_[2]8_K_L",
+      "name": "Vertical Rolling Attack",
+      "input": {
+        "type": "special",
+        "motion": "[2]8",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "74",
+      "previousValue": "74",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "75",
+      "priority": "低",
+      "priorityReason": "空中・着地・多段・距離または相手条件に依存。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "同入力に通常版とSA2版があるため備考と技名で通常版を選別。Cargo 74、公式は持続最終27+空中硬直31+着地後17=75。着地境界の1Fと対象版の同一性が未確認。",
+      "unresolved": "着地したフレームを空中硬直と着地後硬直のどちらに含めるか、同一版での最初の行動可能F。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/blanka.json#/moves/19"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json#/data/cargoquery/73/title",
+        "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json#/data/cargoquery/74/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/blanka.json#row=45"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_[2]8_K_M",
+      "name": "Vertical Rolling Attack",
+      "input": {
+        "type": "special",
+        "motion": "[2]8",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "74",
+      "previousValue": "74",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "75",
+      "priority": "低",
+      "priorityReason": "空中・着地・多段・距離または相手条件に依存。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "同入力に通常版とSA2版があるため備考と技名で通常版を選別。Cargo 74、公式は持続最終27+空中硬直31+着地後17=75。着地境界の1Fと対象版の同一性が未確認。",
+      "unresolved": "着地したフレームを空中硬直と着地後硬直のどちらに含めるか、同一版での最初の行動可能F。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/blanka.json#/moves/21"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json#/data/cargoquery/75/title",
+        "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json#/data/cargoquery/76/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/blanka.json#row=47"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_[4]6_P_H",
+      "name": "Rolling Attack",
+      "input": {
+        "type": "special",
+        "motion": "[4]6",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "66",
+      "previousValue": "66",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "67",
+      "priority": "低",
+      "priorityReason": "空中・着地・多段・距離または相手条件に依存。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "Cargo 66は通常版、同入力SA2版を除外。公式最終41+硬直26=67。空中移動の終了境界・対象版により1F差を説明できる証拠が不足。",
+      "unresolved": "着地したフレームを空中硬直と着地後硬直のどちらに含めるか、同一版での最初の行動可能F。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/blanka.json#/moves/33"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json#/data/cargoquery/77/title",
+        "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json#/data/cargoquery/78/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/blanka.json#row=41"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_214_P_none",
+      "name": "Electric Thunder",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "none"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "25",
+      "previousValue": "25",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "38",
+      "priority": "中",
+      "priorityReason": "SAまたは特殊な終了条件を持つ技。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "通常版はCargo 25(38)、ODは25(38~95)。空振り時延長可能で2F追加も記載され、25→38の13Fを単純な2F加算では説明できない。非ホールド時の3段動作終了・括弧の意味を確認する。通常noneからL/M/Hは同値を展開、ODは独立。",
+      "unresolved": "同一対象版と同一終了条件による空振り全体Fの独立証拠。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/blanka.json#/moves/1"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json#/data/cargoquery/1/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/blanka.json#row=33"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_214_P_OD",
+      "name": "Electric Thunder",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "OD"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "25",
+      "previousValue": "25",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "38",
+      "priority": "中",
+      "priorityReason": "SAまたは特殊な終了条件を持つ技。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "通常版はCargo 25(38)、ODは25(38~95)。空振り時延長可能で2F追加も記載され、25→38の13Fを単純な2F加算では説明できない。非ホールド時の3段動作終了・括弧の意味を確認する。通常noneからL/M/Hは同値を展開、ODは独立。",
+      "unresolved": "同一対象版と同一終了条件による空振り全体Fの独立証拠。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/blanka.json#/moves/2"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json#/data/cargoquery/2/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/blanka.json#row=35"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_63214_K_H",
+      "name": "Backstep Rolling Attack",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "hit",
+      "current": "+7",
+      "previousValue": "+7",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "8",
+      "priority": "低",
+      "priorityReason": "空中・着地・多段・距離または相手条件に依存。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "通常版をSA2版から備考で分離。Cargo hit <span style=\"color: #30D5B8;\">'''+7(+13)'''</span>とrawの先頭値は整合。操舵・接触高度による値を含み公式8との差1Fだけでは誤変換でない。",
+      "unresolved": "着地したフレームを空中硬直と着地後硬直のどちらに含めるか、同一版での最初の行動可能F。",
+      "source": "staging/official-reevaluation/hit-block-startup-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/blanka.json#/moves/52"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json#/data/cargoquery/36/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/blanka.json#row=57"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_63214_K_H",
+      "name": "Backstep Rolling Attack",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "block",
+      "current": "+3",
+      "previousValue": "+3",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "4",
+      "priority": "低",
+      "priorityReason": "空中・着地・多段・距離または相手条件に依存。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "通常版のCargo <span style=\"color: #32CD32;\">+3</span><span style=\"color: #30D5B8;\">'''(+9)'''</span>にraw・本番+3が整合。操舵で接触が変わり、公式4との差1Fの原因は確定できない。",
+      "unresolved": "着地したフレームを空中硬直と着地後硬直のどちらに含めるか、同一版での最初の行動可能F。",
+      "source": "staging/official-reevaluation/hit-block-startup-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/blanka.json#/moves/52"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json#/data/cargoquery/36/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/blanka.json#row=57"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_63214_K_L",
+      "name": "Backstep Rolling Attack",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "hit",
+      "current": "+8",
+      "previousValue": "+8",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "9",
+      "priority": "低",
+      "priorityReason": "空中・着地・多段・距離または相手条件に依存。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "通常版をSA2版から備考で分離。Cargo hit <span style=\"color: #30D5B8;\">'''+8(+14)'''</span>とrawの先頭値は整合。操舵・接触高度による値を含み公式9との差1Fだけでは誤変換でない。",
+      "unresolved": "着地したフレームを空中硬直と着地後硬直のどちらに含めるか、同一版での最初の行動可能F。",
+      "source": "staging/official-reevaluation/hit-block-startup-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/blanka.json#/moves/56"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json#/data/cargoquery/40/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/blanka.json#row=53"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_63214_K_L",
+      "name": "Backstep Rolling Attack",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "block",
+      "current": "+2",
+      "previousValue": "+2",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "3",
+      "priority": "低",
+      "priorityReason": "空中・着地・多段・距離または相手条件に依存。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "通常版のCargo <span style=\"color: #30D5B8;\">'''+2'''</span><span style=\"color: #30D5B8;\">'''(+8)'''</span>にraw・本番+2が整合。操舵で接触が変わり、公式3との差1Fの原因は確定できない。",
+      "unresolved": "着地したフレームを空中硬直と着地後硬直のどちらに含めるか、同一版での最初の行動可能F。",
+      "source": "staging/official-reevaluation/hit-block-startup-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/blanka.json#/moves/56"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json#/data/cargoquery/40/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/blanka.json#row=53"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_63214_K_M",
+      "name": "Backstep Rolling Attack",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "hit",
+      "current": "+7",
+      "previousValue": "+7",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "8",
+      "priority": "低",
+      "priorityReason": "空中・着地・多段・距離または相手条件に依存。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "通常版をSA2版から備考で分離。Cargo hit <span style=\"color: #30D5B8;\">'''+7(+14)'''</span>とrawの先頭値は整合。操舵・接触高度による値を含み公式8との差1Fだけでは誤変換でない。",
+      "unresolved": "着地したフレームを空中硬直と着地後硬直のどちらに含めるか、同一版での最初の行動可能F。",
+      "source": "staging/official-reevaluation/hit-block-startup-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/blanka.json#/moves/58"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json#/data/cargoquery/42/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/blanka.json#row=55"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_63214_K_M",
+      "name": "Backstep Rolling Attack",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "block",
+      "current": "+1",
+      "previousValue": "+1",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "2",
+      "priority": "低",
+      "priorityReason": "空中・着地・多段・距離または相手条件に依存。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "通常版のCargo <span style=\"color: #30D5B8;\">'''+1'''</span><span style=\"color: #30D5B8;\">'''(+8)'''</span>にraw・本番+1が整合。操舵で接触が変わり、公式2との差1Fの原因は確定できない。",
+      "unresolved": "着地したフレームを空中硬直と着地後硬直のどちらに含めるか、同一版での最初の行動可能F。",
+      "source": "staging/official-reevaluation/hit-block-startup-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/blanka.json#/moves/58"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json#/data/cargoquery/42/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/blanka.json#row=55"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_214_P_none__strength_L",
+      "name": "Electric Thunder",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "25",
+      "previousValue": "25",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "38",
+      "priority": "中",
+      "priorityReason": "SAまたは特殊な終了条件を持つ技。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "通常版はCargo 25(38)、ODは25(38~95)。空振り時延長可能で2F追加も記載され、25→38の13Fを単純な2F加算では説明できない。非ホールド時の3段動作終了・括弧の意味を確認する。通常noneからL/M/Hは同値を展開、ODは独立。",
+      "unresolved": "同一対象版と同一終了条件による空振り全体Fの独立証拠。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/blanka.json#/moves/1"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json#/data/cargoquery/1/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/blanka.json#row=33"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_214_P_none__strength_M",
+      "name": "Electric Thunder",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "25",
+      "previousValue": "25",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "38",
+      "priority": "中",
+      "priorityReason": "SAまたは特殊な終了条件を持つ技。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "通常版はCargo 25(38)、ODは25(38~95)。空振り時延長可能で2F追加も記載され、25→38の13Fを単純な2F加算では説明できない。非ホールド時の3段動作終了・括弧の意味を確認する。通常noneからL/M/Hは同値を展開、ODは独立。",
+      "unresolved": "同一対象版と同一終了条件による空振り全体Fの独立証拠。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/blanka.json#/moves/1"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json#/data/cargoquery/1/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/blanka.json#row=33"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_214_P_none__strength_H",
+      "name": "Electric Thunder",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "25",
+      "previousValue": "25",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "38",
+      "priority": "中",
+      "priorityReason": "SAまたは特殊な終了条件を持つ技。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "通常版はCargo 25(38)、ODは25(38~95)。空振り時延長可能で2F追加も記載され、25→38の13Fを単純な2F加算では説明できない。非ホールド時の3段動作終了・括弧の意味を確認する。通常noneからL/M/Hは同値を展開、ODは独立。",
+      "unresolved": "同一対象版と同一終了条件による空振り全体Fの独立証拠。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/blanka.json#/moves/1"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json#/data/cargoquery/1/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/blanka.json#row=33"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "chunli",
+      "moveId": "chunli__special_214_P_none",
+      "name": "Serenity Stream",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "none"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "-",
+      "previousValue": "-",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "89",
+      "priority": "中",
+      "priorityReason": "SAまたは特殊な終了条件を持つ技。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "Cargoは全体欄-、rawはnull。公式の全体89は構え解除までを示すが、Cargoは派生・中断・保持可能と記述。非ホールド・派生なしの終了と-の意味を確認し、89へ置換できるか判断する。noneの3強度展開は元判断に従う。",
+      "unresolved": "同一対象版と同一終了条件による空振り全体Fの独立証拠。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/chunli.json#/moves/6"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/chunli.cargo.json#/data/cargoquery/6/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/chunli.json#row=31"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "chunli",
+      "moveId": "chunli__special_214_P_none__strength_L",
+      "name": "Serenity Stream",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "-",
+      "previousValue": "-",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "89",
+      "priority": "中",
+      "priorityReason": "SAまたは特殊な終了条件を持つ技。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "Cargoは全体欄-、rawはnull。公式の全体89は構え解除までを示すが、Cargoは派生・中断・保持可能と記述。非ホールド・派生なしの終了と-の意味を確認し、89へ置換できるか判断する。noneの3強度展開は元判断に従う。",
+      "unresolved": "同一対象版と同一終了条件による空振り全体Fの独立証拠。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/chunli.json#/moves/6"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/chunli.cargo.json#/data/cargoquery/6/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/chunli.json#row=31"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "chunli",
+      "moveId": "chunli__special_214_P_none__strength_M",
+      "name": "Serenity Stream",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "-",
+      "previousValue": "-",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "89",
+      "priority": "中",
+      "priorityReason": "SAまたは特殊な終了条件を持つ技。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "Cargoは全体欄-、rawはnull。公式の全体89は構え解除までを示すが、Cargoは派生・中断・保持可能と記述。非ホールド・派生なしの終了と-の意味を確認し、89へ置換できるか判断する。noneの3強度展開は元判断に従う。",
+      "unresolved": "同一対象版と同一終了条件による空振り全体Fの独立証拠。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/chunli.json#/moves/6"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/chunli.cargo.json#/data/cargoquery/6/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/chunli.json#row=31"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "chunli",
+      "moveId": "chunli__special_214_P_none__strength_H",
+      "name": "Serenity Stream",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "-",
+      "previousValue": "-",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "89",
+      "priority": "中",
+      "priorityReason": "SAまたは特殊な終了条件を持つ技。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "Cargoは全体欄-、rawはnull。公式の全体89は構え解除までを示すが、Cargoは派生・中断・保持可能と記述。非ホールド・派生なしの終了と-の意味を確認し、89へ置換できるか判断する。noneの3強度展開は元判断に従う。",
+      "unresolved": "同一対象版と同一終了条件による空振り全体Fの独立証拠。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/chunli.json#/moves/6"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/chunli.cargo.json#/data/cargoquery/6/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/chunli.json#row=31"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "dee_jay",
+      "moveId": "dee_jay__special_[4]6_P_OD",
+      "name": "Air Slasher",
+      "input": {
+        "type": "special",
+        "motion": "[4]6",
+        "button": "P",
+        "strength": "OD"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "45",
+      "previousValue": "45",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "46",
+      "priority": "高",
+      "priorityReason": "通常条件で使用される技または出題に直接影響するため優先。差が1Fでも除外しない。",
+      "normalOrHard": "Normal",
+      "detailed": true,
+      "classification": "保留",
+      "classificationBasis": "保存raw・Cargo・公式行・現行入力を再照合。対象版と同一測定条件の独立証拠が不足。公式との差または原典との一致だけでは決定できない。",
+      "previousReason": "Cargo/raw 45、公式は全体46を直接表示。発射後の動作・キャンセルを区別し、1F差が版差・計数差かを確認する独立証拠が必要。",
+      "unresolved": "同一対象版と同一終了条件による空振り全体Fの独立証拠。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/dee_jay.json#/moves/63"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/dee_jay.cargo.json#/data/cargoquery/75/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/dee_jay.json#row=37"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "dhalsim",
+      "moveId": "dhalsim__special_63214_K_H",
+      "name": "HK Yoga Blast",
+      "input": {
+        "type": "special",
+        "motion": "63214",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "block",
+      "current": "-1",
+      "previousValue": "-1",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "-3",
+      "priority": "高",
+      "priorityReason": "通常条件で使用される技または出題に直接影響するため優先。差が1Fでも除外しない。",
+      "normalOrHard": "Normal",
+      "detailed": true,
+      "classification": "保留",
+      "classificationBasis": "保存raw・Cargo・公式行・現行入力を再照合。対象版と同一測定条件の独立証拠が不足。公式との差または原典との一致だけでは決定できない。",
+      "previousReason": "Cargo 63214HK のガード欄<span style=\"color: #ff6347;\">-1</span>はraw・本番-1に整合。公式-3との差を説明する同一接続段・高さ・版の根拠がない。",
+      "unresolved": "同一ガード接続段・相手条件・対象版の証拠。",
+      "source": "staging/official-reevaluation/hit-block-startup-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/dhalsim.json#/moves/38"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/dhalsim.cargo.json#/data/cargoquery/40/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/dhalsim.json#row=56"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "e_honda",
+      "moveId": "e_honda__special_[4]6_P_H",
+      "name": "Sumo Headbutt",
+      "input": {
+        "type": "special",
+        "motion": "[4]6",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "34",
+      "previousValue": "34",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "56",
+      "priority": "低",
+      "priorityReason": "空中・着地・多段・距離または相手条件に依存。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "Cargo 34(67)、公式最終持続+硬直=56。弱中は固定距離、強ODは距離や画面端で終了が変わり、着地硬直・接触と空振りの条件が異なる。括弧を無条件に空振り値と断定できない。",
+      "unresolved": "着地したフレームを空中硬直と着地後硬直のどちらに含めるか、同一版での最初の行動可能F。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/e_honda.json#/moves/29"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json#/data/cargoquery/65/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/e_honda.json#row=38"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "e_honda",
+      "moveId": "e_honda__special_[4]6_P_L",
+      "name": "Sumo Headbutt",
+      "input": {
+        "type": "special",
+        "motion": "[4]6",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "29",
+      "previousValue": "29",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "51",
+      "priority": "低",
+      "priorityReason": "空中・着地・多段・距離または相手条件に依存。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "Cargo 29(51)、公式最終持続+硬直=51。弱中は固定距離、強ODは距離や画面端で終了が変わり、着地硬直・接触と空振りの条件が異なる。括弧を無条件に空振り値と断定できない。",
+      "unresolved": "着地したフレームを空中硬直と着地後硬直のどちらに含めるか、同一版での最初の行動可能F。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/e_honda.json#/moves/30"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json#/data/cargoquery/66/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/e_honda.json#row=36"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "e_honda",
+      "moveId": "e_honda__special_[4]6_P_M",
+      "name": "Sumo Headbutt",
+      "input": {
+        "type": "special",
+        "motion": "[4]6",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "30",
+      "previousValue": "30",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "53",
+      "priority": "低",
+      "priorityReason": "空中・着地・多段・距離または相手条件に依存。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "Cargo 30(53)、公式最終持続+硬直=53。弱中は固定距離、強ODは距離や画面端で終了が変わり、着地硬直・接触と空振りの条件が異なる。括弧を無条件に空振り値と断定できない。",
+      "unresolved": "着地したフレームを空中硬直と着地後硬直のどちらに含めるか、同一版での最初の行動可能F。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/e_honda.json#/moves/31"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json#/data/cargoquery/67/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/e_honda.json#row=37"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "e_honda",
+      "moveId": "e_honda__special_[4]6_P_OD",
+      "name": "Sumo Headbutt",
+      "input": {
+        "type": "special",
+        "motion": "[4]6",
+        "button": "P",
+        "strength": "OD"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "44",
+      "previousValue": "44",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "76",
+      "priority": "低",
+      "priorityReason": "空中・着地・多段・距離または相手条件に依存。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "Cargo 44(73)、公式最終持続+硬直=76。弱中は固定距離、強ODは距離や画面端で終了が変わり、着地硬直・接触と空振りの条件が異なる。括弧を無条件に空振り値と断定できない。",
+      "unresolved": "着地したフレームを空中硬直と着地後硬直のどちらに含めるか、同一版での最初の行動可能F。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/e_honda.json#/moves/32"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json#/data/cargoquery/68/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/e_honda.json#row=39"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_623_K_L",
+      "name": "Arrow Kick (DL2)",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "block",
+      "current": "-44",
+      "previousValue": "-44",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "-45",
+      "priority": "高",
+      "priorityReason": "通常条件で使用される技または出題に直接影響するため優先。差が1Fでも除外しない。",
+      "normalOrHard": "Normal",
+      "detailed": true,
+      "classification": "保留",
+      "classificationBasis": "保存raw・Cargo・公式行・現行入力を再照合。対象版と同一測定条件の独立証拠が不足。公式との差または原典との一致だけでは決定できない。",
+      "previousReason": "既存のLv.2代表条件を保持。CargoはDL0–4のダメージを併記するがガード欄は-44、rawも-44。公式-45に換えるガード条件の証拠なし。",
+      "unresolved": "Lv.2同一条件・対象版でのガード値。",
+      "source": "staging/official-reevaluation/hit-block-startup-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/jamie.json#/moves/80"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/jamie.cargo.json#/data/cargoquery/80/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/jamie.json#row=75"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "juri",
+      "moveId": "juri__super_art_3_L",
+      "name": "Kaisen Dankai Raku",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "214214",
+        "button": "K",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "block",
+      "current": "-36",
+      "previousValue": "-36",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "-31",
+      "priority": "中",
+      "priorityReason": "SAまたは特殊な終了条件を持つ技。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "通常SA3をCAから分離したCargoもrawも-36。公式-31に対応する別条件や計算は保存資料にない。",
+      "unresolved": "同一パッチでのガード値または変更履歴。",
+      "source": "staging/official-reevaluation/hit-block-startup-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/juri.json#/moves/0"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/juri.cargo.json#/data/cargoquery/1/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/juri.json#row=77"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "juri",
+      "moveId": "juri__super_art_3_M",
+      "name": "Kaisen Dankai Raku",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "214214",
+        "button": "K",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "block",
+      "current": "-36",
+      "previousValue": "-36",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "-31",
+      "priority": "中",
+      "priorityReason": "SAまたは特殊な終了条件を持つ技。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "通常SA3をCAから分離したCargoもrawも-36。公式-31に対応する別条件や計算は保存資料にない。",
+      "unresolved": "同一パッチでのガード値または変更履歴。",
+      "source": "staging/official-reevaluation/hit-block-startup-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/juri.json#/moves/0"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/juri.cargo.json#/data/cargoquery/1/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/juri.json#row=77"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "juri",
+      "moveId": "juri__super_art_3_H",
+      "name": "Kaisen Dankai Raku",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "214214",
+        "button": "K",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "block",
+      "current": "-36",
+      "previousValue": "-36",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "-31",
+      "priority": "中",
+      "priorityReason": "SAまたは特殊な終了条件を持つ技。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "通常SA3をCAから分離したCargoもrawも-36。公式-31に対応する別条件や計算は保存資料にない。",
+      "unresolved": "同一パッチでのガード値または変更履歴。",
+      "source": "staging/official-reevaluation/hit-block-startup-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/juri.json#/moves/0"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/juri.cargo.json#/data/cargoquery/1/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/juri.json#row=77"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__special_623_K_L",
+      "name": "Dragonlash Kick",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "45",
+      "previousValue": "45",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "44",
+      "priority": "低",
+      "priorityReason": "空中・着地・多段・距離または相手条件に依存。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "Cargo/raw 45、公式の最終持続+硬直は44。地上に当たらない初期持続と空中終了を区別し、±1Fの計数・版差を確認する必要がある。",
+      "unresolved": "着地したフレームを空中硬直と着地後硬直のどちらに含めるか、同一版での最初の行動可能F。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/ken.json#/moves/46"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/ken.cargo.json#/data/cargoquery/46/title"
+      ],
+      "officialRows": ["staging/official-verification/sources/ken.json#row=46"],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__special_623_K_OD",
+      "name": "Dragonlash Kick",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "K",
+        "strength": "OD"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "47",
+      "previousValue": "47",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "48",
+      "priority": "低",
+      "priorityReason": "空中・着地・多段・距離または相手条件に依存。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "Cargo/raw 47、公式の最終持続+硬直は48。地上に当たらない初期持続と空中終了を区別し、±1Fの計数・版差を確認する必要がある。",
+      "unresolved": "着地したフレームを空中硬直と着地後硬直のどちらに含めるか、同一版での最初の行動可能F。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/ken.json#/moves/45"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/ken.cargo.json#/data/cargoquery/45/title"
+      ],
+      "officialRows": ["staging/official-verification/sources/ken.json#row=49"],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__super_art_1_L",
+      "name": "Bushin Beats",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "K",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "66",
+      "previousValue": "66",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "64",
+      "priority": "中",
+      "priorityReason": "SAまたは特殊な終了条件を持つ技。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "通常SA1をCAやホールド缶派生と区別。Cargo/raw 66、公式最終24+硬直40=64。暗転・多段・移動終了の計数または版差の特定に足る根拠がない。3強度は同じ通常SA原典で独立本番レコード。",
+      "unresolved": "同一対象版と同一終了条件による空振り全体Fの独立証拠。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/kimberly.json#/moves/11"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/kimberly.cargo.json#/data/cargoquery/11/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/kimberly.json#row=73"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__super_art_1_M",
+      "name": "Bushin Beats",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "K",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "66",
+      "previousValue": "66",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "64",
+      "priority": "中",
+      "priorityReason": "SAまたは特殊な終了条件を持つ技。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "通常SA1をCAやホールド缶派生と区別。Cargo/raw 66、公式最終24+硬直40=64。暗転・多段・移動終了の計数または版差の特定に足る根拠がない。3強度は同じ通常SA原典で独立本番レコード。",
+      "unresolved": "同一対象版と同一終了条件による空振り全体Fの独立証拠。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/kimberly.json#/moves/11"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/kimberly.cargo.json#/data/cargoquery/11/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/kimberly.json#row=73"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__super_art_1_H",
+      "name": "Bushin Beats",
+      "input": {
+        "type": "super_art",
+        "saLevel": 1,
+        "motion": "236236",
+        "button": "K",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "66",
+      "previousValue": "66",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "64",
+      "priority": "中",
+      "priorityReason": "SAまたは特殊な終了条件を持つ技。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "通常SA1をCAやホールド缶派生と区別。Cargo/raw 66、公式最終24+硬直40=64。暗転・多段・移動終了の計数または版差の特定に足る根拠がない。3強度は同じ通常SA原典で独立本番レコード。",
+      "unresolved": "同一対象版と同一終了条件による空振り全体Fの独立証拠。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/kimberly.json#/moves/11"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/kimberly.cargo.json#/data/cargoquery/11/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/kimberly.json#row=73"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__super_art_2_L",
+      "name": "Bushin Scramble",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "P",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "block",
+      "current": "-26",
+      "previousValue": "-26",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "-25",
+      "priority": "中",
+      "priorityReason": "SAまたは特殊な終了条件を持つ技。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "Cargo通常SA2は-26(-20)、rawは-26。空中化と多段接続を含む一方、公式-25は両原典値と異なる。",
+      "unresolved": "着地したフレームを空中硬直と着地後硬直のどちらに含めるか、同一版での最初の行動可能F。",
+      "source": "staging/official-reevaluation/hit-block-startup-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/kimberly.json#/moves/0"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/kimberly.cargo.json#/data/cargoquery/0/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/kimberly.json#row=75"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__super_art_2_M",
+      "name": "Bushin Scramble",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "P",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "block",
+      "current": "-26",
+      "previousValue": "-26",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "-25",
+      "priority": "中",
+      "priorityReason": "SAまたは特殊な終了条件を持つ技。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "Cargo通常SA2は-26(-20)、rawは-26。空中化と多段接続を含む一方、公式-25は両原典値と異なる。",
+      "unresolved": "着地したフレームを空中硬直と着地後硬直のどちらに含めるか、同一版での最初の行動可能F。",
+      "source": "staging/official-reevaluation/hit-block-startup-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/kimberly.json#/moves/0"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/kimberly.cargo.json#/data/cargoquery/0/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/kimberly.json#row=75"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__super_art_2_H",
+      "name": "Bushin Scramble",
+      "input": {
+        "type": "super_art",
+        "saLevel": 2,
+        "motion": "214214",
+        "button": "P",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "block",
+      "current": "-26",
+      "previousValue": "-26",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "-25",
+      "priority": "中",
+      "priorityReason": "SAまたは特殊な終了条件を持つ技。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "Cargo通常SA2は-26(-20)、rawは-26。空中化と多段接続を含む一方、公式-25は両原典値と異なる。",
+      "unresolved": "着地したフレームを空中硬直と着地後硬直のどちらに含めるか、同一版での最初の行動可能F。",
+      "source": "staging/official-reevaluation/hit-block-startup-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/kimberly.json#/moves/0"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/kimberly.cargo.json#/data/cargoquery/0/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/kimberly.json#row=75"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "lily",
+      "moveId": "lily__special_623_P_H",
+      "name": "Tomahawk Buster",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "61",
+      "previousValue": "61",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "60",
+      "priority": "低",
+      "priorityReason": "空中・着地・多段・距離または相手条件に依存。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "Cargo/raw 61、公式の最終持続+空中硬直+着地後硬直は60。各強度・ODとも1F差があり、着地境界の数え方または版差を特定できない。",
+      "unresolved": "着地したフレームを空中硬直と着地後硬直のどちらに含めるか、同一版での最初の行動可能F。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/lily.json#/moves/41"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json#/data/cargoquery/36/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/lily.json#row=45"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "lily",
+      "moveId": "lily__special_623_P_L",
+      "name": "Tomahawk Buster",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "49",
+      "previousValue": "49",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "48",
+      "priority": "低",
+      "priorityReason": "空中・着地・多段・距離または相手条件に依存。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "Cargo/raw 49、公式の最終持続+空中硬直+着地後硬直は48。各強度・ODとも1F差があり、着地境界の数え方または版差を特定できない。",
+      "unresolved": "着地したフレームを空中硬直と着地後硬直のどちらに含めるか、同一版での最初の行動可能F。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/lily.json#/moves/43"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json#/data/cargoquery/37/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/lily.json#row=43"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "lily",
+      "moveId": "lily__special_623_P_M",
+      "name": "Tomahawk Buster",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "56",
+      "previousValue": "56",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "55",
+      "priority": "低",
+      "priorityReason": "空中・着地・多段・距離または相手条件に依存。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "Cargo/raw 56、公式の最終持続+空中硬直+着地後硬直は55。各強度・ODとも1F差があり、着地境界の数え方または版差を特定できない。",
+      "unresolved": "着地したフレームを空中硬直と着地後硬直のどちらに含めるか、同一版での最初の行動可能F。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/lily.json#/moves/45"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json#/data/cargoquery/38/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/lily.json#row=44"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "lily",
+      "moveId": "lily__special_623_P_OD",
+      "name": "Tomahawk Buster",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "OD"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "60",
+      "previousValue": "60",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "59",
+      "priority": "低",
+      "priorityReason": "空中・着地・多段・距離または相手条件に依存。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "Cargo/raw 60、公式の最終持続+空中硬直+着地後硬直は59。各強度・ODとも1F差があり、着地境界の数え方または版差を特定できない。",
+      "unresolved": "着地したフレームを空中硬直と着地後硬直のどちらに含めるか、同一版での最初の行動可能F。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/lily.json#/moves/47"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/lily.cargo.json#/data/cargoquery/39/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/lily.json#row=46"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "luke",
+      "moveId": "luke__super_art_3_L",
+      "name": "Pale Rider",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "K",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "122",
+      "previousValue": "122",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "105",
+      "priority": "中",
+      "priorityReason": "SAまたは特殊な終了条件を持つ技。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "通常SA3をCAと区別。Cargo/raw 122、公式は近距離発生10・最遠27、表示計算13+92=105。差17は距離差と同数だが、空振り・最終持続・終了条件の公式根拠は不十分で、122が遠距離条件であることを確定できない。3強度は同じ通常SA原典。",
+      "unresolved": "同一対象版と同一終了条件による空振り全体Fの独立証拠。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": [
+        "archive/staging/sf6-frame-data/raw/luke.json#/moves/12",
+        "archive/staging/sf6-frame-data/raw/luke.json#/moves/13"
+      ],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/luke.cargo.json#/data/cargoquery/9/title",
+        "archive/staging/sf6-frame-data-quality/evidence/luke.cargo.json#/data/cargoquery/10/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/luke.json#row=67"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "luke",
+      "moveId": "luke__super_art_3_M",
+      "name": "Pale Rider",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "K",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "122",
+      "previousValue": "122",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "105",
+      "priority": "中",
+      "priorityReason": "SAまたは特殊な終了条件を持つ技。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "通常SA3をCAと区別。Cargo/raw 122、公式は近距離発生10・最遠27、表示計算13+92=105。差17は距離差と同数だが、空振り・最終持続・終了条件の公式根拠は不十分で、122が遠距離条件であることを確定できない。3強度は同じ通常SA原典。",
+      "unresolved": "同一対象版と同一終了条件による空振り全体Fの独立証拠。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": [
+        "archive/staging/sf6-frame-data/raw/luke.json#/moves/12",
+        "archive/staging/sf6-frame-data/raw/luke.json#/moves/13"
+      ],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/luke.cargo.json#/data/cargoquery/9/title",
+        "archive/staging/sf6-frame-data-quality/evidence/luke.cargo.json#/data/cargoquery/10/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/luke.json#row=67"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "luke",
+      "moveId": "luke__super_art_3_H",
+      "name": "Pale Rider",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "K",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "122",
+      "previousValue": "122",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "105",
+      "priority": "中",
+      "priorityReason": "SAまたは特殊な終了条件を持つ技。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "通常SA3をCAと区別。Cargo/raw 122、公式は近距離発生10・最遠27、表示計算13+92=105。差17は距離差と同数だが、空振り・最終持続・終了条件の公式根拠は不十分で、122が遠距離条件であることを確定できない。3強度は同じ通常SA原典。",
+      "unresolved": "同一対象版と同一終了条件による空振り全体Fの独立証拠。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": [
+        "archive/staging/sf6-frame-data/raw/luke.json#/moves/12",
+        "archive/staging/sf6-frame-data/raw/luke.json#/moves/13"
+      ],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/luke.cargo.json#/data/cargoquery/9/title",
+        "archive/staging/sf6-frame-data-quality/evidence/luke.cargo.json#/data/cargoquery/10/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/luke.json#row=67"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "m_bison",
+      "moveId": "m_bison__special_[2]8_K_OD",
+      "name": "OD Shadow Rise",
+      "input": {
+        "type": "special",
+        "motion": "[2]8",
+        "button": "K",
+        "strength": "OD"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "54",
+      "previousValue": "54",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "55",
+      "priority": "低",
+      "priorityReason": "空中・着地・多段・距離または相手条件に依存。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "通常OD行を通常強度と区別。Cargo/raw 54、公式全体55。追加入力なし着地までの1F差が版差か終了境界か不明。",
+      "unresolved": "着地したフレームを空中硬直と着地後硬直のどちらに含めるか、同一版での最初の行動可能F。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/m_bison.json#/moves/18"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json#/data/cargoquery/59/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/m_bison.json#row=52"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "mai",
+      "moveId": "mai__special_623_K_H",
+      "name": "HK Hishou Ryuuenjin",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "block",
+      "current": "-28",
+      "previousValue": "-28",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "-31",
+      "priority": "高",
+      "priorityReason": "通常条件で使用される技または出題に直接影響するため優先。差が1Fでも除外しない。",
+      "normalOrHard": "Normal",
+      "detailed": true,
+      "classification": "保留",
+      "classificationBasis": "保存raw・Cargo・公式行・現行入力を再照合。対象版と同一測定条件の独立証拠が不足。公式との差または原典との一致だけでは決定できない。",
+      "previousReason": "通常非ストック版のCargo -28(-31)。2段目が大半の相手でガード時に空振りし、特定の高身長5キャラは例外と明記。公式-31の相手条件が不明。現在値は括弧外採用規則に沿うが通常立ち相手の代表を特定できない。",
+      "unresolved": "公式の測定相手と、どの段がガードされたか。",
+      "source": "staging/official-reevaluation/hit-block-startup-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/mai.json#/moves/57"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/mai.cargo.json#/data/cargoquery/57/title"
+      ],
+      "officialRows": ["staging/official-verification/sources/mai.json#row=49"],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "marisa",
+      "moveId": "marisa__special_214_P_M",
+      "name": "Dimachaerus",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "49",
+      "previousValue": "49",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "50",
+      "priority": "高",
+      "priorityReason": "通常条件で使用される技または出題に直接影響するため優先。差が1Fでも除外しない。",
+      "normalOrHard": "Normal",
+      "detailed": true,
+      "classification": "保留",
+      "classificationBasis": "保存raw・Cargo・公式行・現行入力を再照合。対象版と同一測定条件の独立証拠が不足。公式との差または原典との一致だけでは決定できない。",
+      "previousReason": "中・初段のCargo/raw 49に対し公式の最終20+硬直30=50。ヒット時派生と空振りを区別しても、1F差の計数または版差を確定できない。",
+      "unresolved": "同一対象版と同一終了条件による空振り全体Fの独立証拠。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/marisa.json#/moves/13"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/marisa.cargo.json#/data/cargoquery/13/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/marisa.json#row=55"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "rashid",
+      "moveId": "rashid__special_214_P_OD",
+      "name": "Arabian Cyclone",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "OD"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "49",
+      "previousValue": "49",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "53",
+      "priority": "高",
+      "priorityReason": "通常条件で使用される技または出題に直接影響するため優先。差が1Fでも除外しない。",
+      "normalOrHard": "Normal",
+      "detailed": true,
+      "classification": "保留",
+      "classificationBasis": "保存raw・Cargo・公式行・現行入力を再照合。対象版と同一測定条件の独立証拠が不足。公式との差または原典との一致だけでは決定できない。",
+      "previousReason": "OD原典49(53)の括弧値は備考のガード時4F追加に対応する可能性が高い。公式は全体53・ガード時3F追加。空振り値と版差を確認せず53を採用できない。",
+      "unresolved": "同一対象版と同一終了条件による空振り全体Fの独立証拠。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/rashid.json#/moves/12"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/rashid.cargo.json#/data/cargoquery/12/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/rashid.json#row=64"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "rashid",
+      "moveId": "rashid__special_236_P_OD",
+      "name": "Spinning Mixer",
+      "input": {
+        "type": "special",
+        "motion": "236",
+        "button": "P",
+        "strength": "OD"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "block",
+      "current": "-53",
+      "previousValue": "-53",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": {
+        "reportedValue": "-53",
+        "basis": "ユーザーによるゲーム内確認",
+        "gameVersion": null,
+        "opponent": null,
+        "distance": null,
+        "contactFrame": null
+      },
+      "official": "-42",
+      "priority": "高",
+      "priorityReason": "通常条件で使用される技または出題に直接影響するため優先。差が1Fでも除外しない。",
+      "normalOrHard": "Normal",
+      "detailed": true,
+      "classification": "現状維持",
+      "classificationBasis": "ユーザー確認値と現行値が一致。保存公式とは不一致のまま、理由は未確定。",
+      "previousReason": "同入力の気流強化行を除外し、通常ODのCargo -53・raw -53を選択。備考には地上2ヒットとガード時短い着地硬直。公式-42との11F差の条件・版を確定できない。",
+      "unresolved": "ユーザー確認時のゲームバージョン・相手・距離・接触段は未報告。公式資料の対象パッチも未確認。",
+      "source": "staging/official-reevaluation/hit-block-startup-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/rashid.json#/moves/30"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/rashid.cargo.json#/data/cargoquery/28/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/rashid.json#row=40"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "ryu",
+      "moveId": "ryu__normal_2_P_H",
+      "name": "しゃがみ強P",
+      "input": {
+        "type": "normal",
+        "direction": "2",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "35",
+      "previousValue": "35",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "36",
+      "priority": "高",
+      "priorityReason": "通常条件で使用される技または出題に直接影響するため優先。差が1Fでも除外しない。",
+      "normalOrHard": "Normal",
+      "detailed": true,
+      "classification": "保留",
+      "classificationBasis": "保存raw・Cargo・公式行・現行入力を再照合。対象版と同一測定条件の独立証拠が不足。公式との差または原典との一致だけでは決定できない。",
+      "previousReason": "Cargo/raw 35、公式最終14+硬直22=36。初段のヒット時キャンセルや残り持続を区別しても、空振りの1F差の原因・版を確定できない。",
+      "unresolved": "同一対象版と同一終了条件による空振り全体Fの独立証拠。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/ryu.json#/moves/32"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json#/data/cargoquery/28/title"
+      ],
+      "officialRows": ["staging/official-verification/sources/ryu.json#row=12"],
+      "external": [
+        {
+          "url": "https://robkof.com/sf6-frame-data/?character=ryu",
+          "finding": "2HPの発生9・持続6・硬直21を掲載。基準版・元データの独立性は未確認で、公式硬直22の対象版を特定できない。",
+          "version": "UNVERIFIED"
+        }
+      ],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "ryu",
+      "moveId": "ryu__special_214_P_OD",
+      "name": "Hashogeki",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "OD"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "total",
+      "current": "43",
+      "previousValue": "43",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "42",
+      "priority": "高",
+      "priorityReason": "通常条件で使用される技または出題に直接影響するため優先。差が1Fでも除外しない。",
+      "normalOrHard": "Normal",
+      "detailed": true,
+      "classification": "保留",
+      "classificationBasis": "保存raw・Cargo・公式行・現行入力を再照合。対象版と同一測定条件の独立証拠が不足。公式との差または原典との一致だけでは決定できない。",
+      "previousReason": "OD波掌撃はCargo/raw 43、公式最終22+硬直20=42。空振りの終了条件・1Fの数え方または版差を特定できない。",
+      "unresolved": "同一対象版と同一終了条件による空振り全体Fの独立証拠。",
+      "source": "staging/official-reevaluation/total-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/ryu.json#/moves/14"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json#/data/cargoquery/13/title"
+      ],
+      "officialRows": ["staging/official-verification/sources/ryu.json#row=54"],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "ryu",
+      "moveId": "ryu__special_623_P_H",
+      "name": "Shoryuken",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "block",
+      "current": "-36",
+      "previousValue": "-39",
+      "proposedCorrection": "-36",
+      "comparisonStatusNow": "一致",
+      "userConfirmation": {
+        "reportedValue": "-36",
+        "basis": "ユーザーによるゲーム内確認",
+        "gameVersion": null,
+        "opponent": null,
+        "distance": null,
+        "contactFrame": null,
+        "reportedCondition": "ガード"
+      },
+      "official": "-36",
+      "priority": "高",
+      "priorityReason": "通常条件で使用される技または出題に直接影響するため優先。差が1Fでも除外しない。",
+      "normalOrHard": "Normal",
+      "detailed": true,
+      "classification": "修正確定",
+      "classificationBasis": "ユーザーによるゲーム内確認値を採用。詳細な測定条件とゲーム版は未報告。",
+      "previousReason": "Cargo 623HP のガード欄<span style=\"color: #b70c0b;\">'''-39'''</span>はraw・本番-39に整合。公式-36との差を説明する同一接続段・高さ・版の根拠がない。",
+      "unresolved": "ユーザー確認時のゲームバージョン・相手・距離・接触段は未報告。公式資料の対象パッチも未確認。",
+      "source": "staging/official-reevaluation/hit-block-startup-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/ryu.json#/moves/52"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json#/data/cargoquery/48/title"
+      ],
+      "officialRows": ["staging/official-verification/sources/ryu.json#row=38"],
+      "external": [
+        {
+          "url": "https://robkof.com/sf6-frame-data/?character=ryu",
+          "finding": "623HPのガード-39を掲載。収録データの由来と版が未確認。",
+          "version": "UNVERIFIED"
+        },
+        {
+          "url": "https://dood.gg/ko/%EC%8A%A4%ED%8A%B8%EB%A6%AC%ED%8A%B8%20%ED%8C%8C%EC%9D%B4%ED%84%B0%206/ryu/frames/",
+          "finding": "623HPのガード-36を掲載。公式と同値だが元資料や版の独立性は未確認。",
+          "version": "UNVERIFIED"
+        }
+      ],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "ryu",
+      "moveId": "ryu__super_art_3_L",
+      "name": "Shin Shoryuken",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "K",
+        "strength": "L",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "block",
+      "current": "-50",
+      "previousValue": "-50",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "-52",
+      "priority": "中",
+      "priorityReason": "SAまたは特殊な終了条件を持つ技。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "通常SA3のCargo -50(-54)は背の高い立ち相手で接続段数が増える注記。rawは括弧外-50、公式-52は原典のどちらとも違う。CAと分離済み。",
+      "unresolved": "公式の相手体格・接続段数・対象版を合わせた測定条件。",
+      "source": "staging/official-reevaluation/hit-block-startup-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/ryu.json#/moves/17"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json#/data/cargoquery/15/title"
+      ],
+      "officialRows": ["staging/official-verification/sources/ryu.json#row=66"],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "ryu",
+      "moveId": "ryu__super_art_3_M",
+      "name": "Shin Shoryuken",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "K",
+        "strength": "M",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "block",
+      "current": "-50",
+      "previousValue": "-50",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "-52",
+      "priority": "中",
+      "priorityReason": "SAまたは特殊な終了条件を持つ技。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "通常SA3のCargo -50(-54)は背の高い立ち相手で接続段数が増える注記。rawは括弧外-50、公式-52は原典のどちらとも違う。CAと分離済み。",
+      "unresolved": "公式の相手体格・接続段数・対象版を合わせた測定条件。",
+      "source": "staging/official-reevaluation/hit-block-startup-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/ryu.json#/moves/17"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json#/data/cargoquery/15/title"
+      ],
+      "officialRows": ["staging/official-verification/sources/ryu.json#row=66"],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "ryu",
+      "moveId": "ryu__super_art_3_H",
+      "name": "Shin Shoryuken",
+      "input": {
+        "type": "super_art",
+        "saLevel": 3,
+        "motion": "236236",
+        "button": "K",
+        "strength": "H",
+        "adoptionBasis": "SA-D1: 原典共通値を各強度のゲーム用代表値へ採用。実性能の同一性を保証しない。"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "block",
+      "current": "-50",
+      "previousValue": "-50",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "-52",
+      "priority": "中",
+      "priorityReason": "SAまたは特殊な終了条件を持つ技。",
+      "normalOrHard": "Normal",
+      "detailed": false,
+      "classification": "保留",
+      "classificationBasis": "既存保留を継承。今回の優先詳細検証対象外。",
+      "previousReason": "通常SA3のCargo -50(-54)は背の高い立ち相手で接続段数が増える注記。rawは括弧外-50、公式-52は原典のどちらとも違う。CAと分離済み。",
+      "unresolved": "公式の相手体格・接続段数・対象版を合わせた測定条件。",
+      "source": "staging/official-reevaluation/hit-block-startup-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/ryu.json#/moves/17"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json#/data/cargoquery/15/title"
+      ],
+      "officialRows": ["staging/official-verification/sources/ryu.json#row=66"],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "terry",
+      "moveId": "terry__special_623_P_L",
+      "name": "LP Rising Tackle",
+      "input": {
+        "type": "special",
+        "motion": "623",
+        "button": "P",
+        "strength": "L"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "block",
+      "current": "-23",
+      "previousValue": "-23",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "-25",
+      "priority": "高",
+      "priorityReason": "通常条件で使用される技または出題に直接影響するため優先。差が1Fでも除外しない。",
+      "normalOrHard": "Normal",
+      "detailed": true,
+      "classification": "保留",
+      "classificationBasis": "保存raw・Cargo・公式行・現行入力を再照合。対象版と同一測定条件の独立証拠が不足。公式との差または原典との一致だけでは決定できない。",
+      "previousReason": "Cargo 623LP のガード欄<span style=\"color: #b70c0b;\">'''-23'''</span>はraw・本番-23に整合。公式-25との差を説明する同一接続段・高さ・版の根拠がない。",
+      "unresolved": "同一ガード接続段・相手条件・対象版の証拠。",
+      "source": "staging/official-reevaluation/hit-block-startup-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/terry.json#/moves/48"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/terry.cargo.json#/data/cargoquery/48/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/terry.json#row=47"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_214_P_M",
+      "name": "MP Talim ng Hangin",
+      "input": {
+        "type": "special",
+        "motion": "214",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "hit",
+      "current": "+2",
+      "previousValue": "+2",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": {
+        "reportedValue": "+2",
+        "basis": "ユーザーによるゲーム内確認",
+        "gameVersion": null,
+        "opponent": null,
+        "distance": null,
+        "contactFrame": null
+      },
+      "official": "D",
+      "priority": "高",
+      "priorityReason": "通常条件で使用される技または出題に直接影響するため優先。差が1Fでも除外しない。",
+      "normalOrHard": "Normal",
+      "detailed": true,
+      "classification": "現状維持",
+      "classificationBasis": "ユーザー確認値と現行値が一致。保存公式とは不一致のまま、理由は未確定。",
+      "previousReason": "Cargo通常MPは+2を直接記載し、rawも+2。備考は最後2ヒットがヒット時のみ自動継続と説明し、公式も2段目以降はヒット時派生。初段と全段の代表条件が一致するか未確定。",
+      "unresolved": "ユーザー確認時のゲームバージョン・相手・距離・接触段は未報告。公式資料の対象パッチも未確認。",
+      "source": "staging/official-reevaluation/hit-block-startup-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/yasmine.json#/moves/4"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/yasmine.cargo.json#/data/cargoquery/4/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/yasmine.json#row=47"
+      ],
+      "external": [],
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "zangief",
+      "moveId": "zangief__special_22_K_H",
+      "name": "Tundra Storm",
+      "input": {
+        "type": "special",
+        "motion": "22",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": { "kind": "base", "condition": null },
+      "field": "startup",
+      "current": "6",
+      "previousValue": "6",
+      "proposedCorrection": null,
+      "comparisonStatusNow": "不一致",
+      "userConfirmation": null,
+      "official": "5",
+      "priority": "高",
+      "priorityReason": "通常条件で使用される技または出題に直接影響するため優先。差が1Fでも除外しない。",
+      "normalOrHard": "Normal・Hard",
+      "detailed": true,
+      "classification": "保留",
+      "classificationBasis": "保存raw・Cargo・公式行・現行入力を再照合。対象版と同一測定条件の独立証拠が不足。公式との差または原典との一致だけでは決定できない。",
+      "previousReason": "CargoはCounter active 6–55Fと明記しraw6に整合。公式発生5だが当身受付開始との測定定義・版の関係が未確認。",
+      "unresolved": "当身受付開始と公式発生の定義、または対象版の変更根拠。",
+      "source": "staging/official-reevaluation/hit-block-startup-audit.json",
+      "rawRows": ["archive/staging/sf6-frame-data/raw/zangief.json#/moves/1"],
+      "cargoRows": [
+        "archive/staging/sf6-frame-data-quality/evidence/zangief.cargo.json#/data/cargoquery/1/title"
+      ],
+      "officialRows": [
+        "staging/official-verification/sources/zangief.json#row=53"
+      ],
+      "external": [
+        {
+          "url": "https://shoryu.site/character/zangief",
+          "finding": "6–55F受付と記載。保存Cargoと文言が一致し、独立測定とは扱えない。",
+          "version": "UNVERIFIED"
+        },
+        {
+          "url": "https://robkof.com/sf6-frame-data/?character=zangief",
+          "finding": "22HKのstartup 6を掲載するが出典・対象版・公式の5との定義差は未確認。",
+          "version": "UNVERIFIED"
+        }
+      ],
+      "patch": "UNVERIFIED"
+    }
+  ]
+}

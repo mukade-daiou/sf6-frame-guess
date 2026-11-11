@@ -1,5 +1,5 @@
 {
-  "datasetId": "airborne-kd-scutum-2026-11-11-r1",
+  "datasetId": "user-verified-frames-2026-11-11-r1",
   "compoundStartup": {
     "basis": "ユーザー指定: 弾出現と距離依存の攻撃発生を区別。公式取得2026-11-10、パッチ未確認。",
     "decisions": [
@@ -13454,6 +13454,200 @@
         "reason": "Cargo 40(42)、備考に空振り追加2F、raw 40。非ホールド空振り条件で40+2=42。公式 持続 16-18 の最終F 18 + 硬直 22 + 空振り時硬直2F増加。括弧外を採用した経路で空振り値が落ちた。",
         "condition": "通常状態・非ホールド・派生なし・空振り",
         "patch": "UNVERIFIED"
+      }
+    ],
+    "additionalDecisions": [
+      {
+        "characterId": "arjun",
+        "moveId": "arjun__special_236_P_H",
+        "field": "total",
+        "input": {
+          "type": "special",
+          "motion": "236",
+          "button": "P",
+          "strength": "H"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+        "sourceIndex": 9,
+        "sourceInput": "236HP",
+        "sourceNotation": "50(53)",
+        "sourceNotes": "3f extra recovery on whiff; hitstop increased by 7f on Counter-hit / 12f on Punish Counter (increases the hitconfirm window into ~6P or SA3 by the same amount)",
+        "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
+        "rawIndex": 9,
+        "officialPath": "staging/official-verification/sources/arjun.json",
+        "officialRows": [32],
+        "officialValue": "56",
+        "condition": "通常状態・非ホールド・空振り",
+        "reason": "保存Cargoの空振り時3F追加と括弧内の値が一致。公式は3F長く、版・条件は未解決。公式対象版UNVERIFIED。",
+        "before": {
+          "status": "confirmed",
+          "display": "50",
+          "numeric": 50,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "53",
+          "numeric": 53,
+          "provenance": "source",
+          "calculation": null
+        }
+      },
+      {
+        "characterId": "arjun",
+        "moveId": "arjun__special_236_P_OD",
+        "field": "total",
+        "input": {
+          "type": "special",
+          "motion": "236",
+          "button": "P",
+          "strength": "OD"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/arjun.cargo.json",
+        "sourceIndex": 16,
+        "sourceInput": "236PP",
+        "sourceNotation": "45(48)",
+        "sourceNotes": "3f extra recovery on whiff; hitstop increased by 7f on Counter-hit / Punish Counter (increases the hitconfirm window into ~6P or SA3 by the same amount)",
+        "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
+        "rawIndex": 16,
+        "officialPath": "staging/official-verification/sources/arjun.json",
+        "officialRows": [34],
+        "officialValue": "51",
+        "condition": "通常状態・非ホールド・空振り",
+        "reason": "保存Cargoの空振り時3F追加と括弧内の値が一致。公式は3F長く、版・条件は未解決。公式対象版UNVERIFIED。",
+        "before": {
+          "status": "confirmed",
+          "display": "45",
+          "numeric": 45,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "48",
+          "numeric": 48,
+          "provenance": "source",
+          "calculation": null
+        }
+      }
+    ]
+  },
+  "userConfirmedFrames": {
+    "decisions": [
+      {
+        "characterId": "ryu",
+        "moveId": "ryu__special_623_P_H",
+        "field": "block",
+        "input": {
+          "type": "special",
+          "motion": "623",
+          "button": "P",
+          "strength": "H"
+        },
+        "variant": {
+          "kind": "base",
+          "condition": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json",
+        "sourceIndex": 48,
+        "officialPath": "staging/official-verification/sources/ryu.json",
+        "officialRows": [38],
+        "basis": "ユーザーによるゲーム内確認",
+        "measurement": {
+          "gameVersion": null,
+          "opponent": null,
+          "distance": null,
+          "contactFrame": null,
+          "reportedCondition": "ガード",
+          "reportedValue": "-36"
+        },
+        "officialPatch": "UNVERIFIED",
+        "notes": "通常強昇龍拳に限定。強度・状態を拡張しない。",
+        "before": {
+          "status": "confirmed",
+          "display": "-39",
+          "numeric": -39
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "-36",
+          "numeric": -36
+        }
+      },
+      {
+        "characterId": "alex",
+        "moveId": "alex__normal_5_P_M",
+        "field": "total",
+        "input": {
+          "type": "normal",
+          "direction": "5",
+          "button": "P",
+          "strength": "M"
+        },
+        "variant": {
+          "kind": "base",
+          "condition": null
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/alex.cargo.json",
+        "sourceIndex": 41,
+        "officialPath": "staging/official-verification/sources/alex.json",
+        "officialRows": [4],
+        "basis": "ユーザーによるゲーム内確認",
+        "measurement": {
+          "gameVersion": null,
+          "opponent": null,
+          "distance": null,
+          "contactFrame": null,
+          "reportedCondition": "空振り",
+          "reportedValue": "27"
+        },
+        "officialPatch": "UNVERIFIED",
+        "notes": "Cargo 24(25/27)と備考の空振り追加2Fは矛盾。27Fはユーザー確認を採用。",
+        "before": {
+          "status": "confirmed",
+          "display": "24",
+          "numeric": 24,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "27",
+          "numeric": 27,
+          "provenance": "source",
+          "calculation": null
+        }
+      }
+    ],
+    "unchangedConfirmations": [
+      {
+        "characterId": "yasmine",
+        "moveId": "yasmine__special_214_P_M",
+        "field": "hit",
+        "reportedValue": "+2",
+        "basis": "ユーザーによるゲーム内確認",
+        "measurement": {
+          "gameVersion": null,
+          "opponent": null,
+          "distance": null,
+          "contactFrame": null
+        },
+        "officialPatch": "UNVERIFIED"
+      },
+      {
+        "characterId": "rashid",
+        "moveId": "rashid__special_236_P_OD",
+        "field": "block",
+        "reportedValue": "-53",
+        "basis": "ユーザーによるゲーム内確認",
+        "measurement": {
+          "gameVersion": null,
+          "opponent": null,
+          "distance": null,
+          "contactFrame": null
+        },
+        "officialPatch": "UNVERIFIED"
       }
     ]
   }

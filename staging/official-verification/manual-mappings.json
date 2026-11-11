@@ -1,0 +1,320 @@
+{
+  "ryu__special_22_P_none": {
+    "row": 56,
+    "reason": "22P 共通強度の電刃錬気。非攻撃発動技のため発生・硬直差の空欄は補完しない"
+  },
+  "ryu__super_art_2_L": {
+    "row": 60,
+    "reason": "214214P SA2 非ホールドLv1。Lv2/3・電刃版を除外"
+  },
+  "ryu__super_art_2_M": {
+    "row": 60,
+    "reason": "214214P SA2 非ホールドLv1。Lv2/3・電刃版を除外"
+  },
+  "ryu__super_art_2_H": {
+    "row": 60,
+    "reason": "214214P SA2 非ホールドLv1。Lv2/3・電刃版を除外"
+  },
+  "ryu__special_22_P_none__strength_L": {
+    "row": 56,
+    "reason": "22P 共通強度の電刃錬気。非攻撃発動技のため発生・硬直差の空欄は補完しない"
+  },
+  "ryu__special_22_P_none__strength_M": {
+    "row": 56,
+    "reason": "22P 共通強度の電刃錬気。非攻撃発動技のため発生・硬直差の空欄は補完しない"
+  },
+  "ryu__special_22_P_none__strength_H": {
+    "row": 56,
+    "reason": "22P 共通強度の電刃錬気。非攻撃発動技のため発生・硬直差の空欄は補完しない"
+  },
+  "arjun__special_214_K_none": {
+    "rows": [52, 53, 54],
+    "reason": "214K共通元レコードを公式の弱中強すべてと比較"
+  },
+  "arjun__special_214_K_OD": {
+    "rows": [56],
+    "reason": "OD基本は弱+中。公式OD弱の画像は弱K+中K"
+  },
+  "arjun__special_22_K_H": {
+    "rows": [62],
+    "reason": "22強Kの不撓の警衛。自動反撃のヒット/ガード値を構え自体と混同しない",
+    "conditions": {
+      "hit": "公式のダウンは当身成立後の反撃条件。無条件の通常ヒットとして検証しない",
+      "block": "公式のガード硬直差は当身後の反撃・ホールド中派生との条件分離が必要"
+    }
+  },
+  "ingrid__special_214_P_M": {
+    "rows": [37],
+    "reason": "公式は214中Pとストック無し214強Pの2コマンド併記。中PのLv1行を対応"
+  },
+  "ingrid__special_236_P_OD": {
+    "rows": [33],
+    "reason": "OD基本は弱P+中P。公式OD弱サンシュート"
+  },
+  "jp__special_214_P_none": {
+    "rows": [40, 41, 42],
+    "reason": "214P共通元レコードを設置前の弱中強ヴィーハトと比較。派生を除外",
+    "conditions": {
+      "startup": "ローカルは設置発動の50F/40F、公式は自動攻撃の150F/110F。原典の設置後遅延注記と対応し、定義を混ぜない"
+    }
+  },
+  "jp__special_214_P_OD": {
+    "rows": [43],
+    "reason": "OD基本は弱P+中P。公式OD弱の入力画像と対応",
+    "conditions": {
+      "startup": "ローカルは設置発動の50F/40F、公式は自動攻撃の150F/110F。原典の設置後遅延注記と対応し、定義を混ぜない"
+    }
+  },
+  "jp__special_22_P_none": {
+    "rows": [30, 31, 32],
+    "reason": "22P共通元レコードを公式の弱中強トリグラフと比較"
+  },
+  "jp__special_22_P_OD": {
+    "rows": [33],
+    "reason": "OD基本は弱P+中P。公式OD弱の入力画像と対応"
+  },
+  "jp__super_art_2_L": {
+    "rows": [58],
+    "reason": "SA2ラヴーシュカ。発動値と遅延攻撃発生を分離",
+    "conditions": {
+      "startup": "ローカル1Fは発動値。公式29Fは攻撃発生であり、承認済みの発動値を置換しない"
+    }
+  },
+  "jp__super_art_2_M": {
+    "rows": [58],
+    "reason": "SA2ラヴーシュカ。発動値と遅延攻撃発生を分離",
+    "conditions": {
+      "startup": "ローカル1Fは発動値。公式29Fは攻撃発生であり、承認済みの発動値を置換しない"
+    }
+  },
+  "jp__super_art_2_H": {
+    "rows": [58],
+    "reason": "SA2ラヴーシュカ。発動値と遅延攻撃発生を分離",
+    "conditions": {
+      "startup": "ローカル1Fは発動値。公式29Fは攻撃発生であり、承認済みの発動値を置換しない"
+    }
+  },
+  "jp__special_214_P_none__strength_L": {
+    "rows": [40],
+    "reason": "公式の強度別ヴィーハト設置と対応",
+    "conditions": {
+      "startup": "ローカルは設置発動の50F/40F、公式は自動攻撃の150F/110F。原典の設置後遅延注記と対応し、定義を混ぜない"
+    }
+  },
+  "jp__special_214_P_none__strength_M": {
+    "rows": [41],
+    "reason": "公式の強度別ヴィーハト設置と対応",
+    "conditions": {
+      "startup": "ローカルは設置発動の50F/40F、公式は自動攻撃の150F/110F。原典の設置後遅延注記と対応し、定義を混ぜない"
+    }
+  },
+  "jp__special_214_P_none__strength_H": {
+    "rows": [42],
+    "reason": "公式の強度別ヴィーハト設置と対応",
+    "conditions": {
+      "startup": "ローカルは設置発動の50F/40F、公式は自動攻撃の150F/110F。原典の設置後遅延注記と対応し、定義を混ぜない"
+    }
+  },
+  "m_bison__special_[2]8_K_none": {
+    "rows": [49, 50, 51],
+    "reason": "溜め28K共通元レコードを公式の弱中強シャドウライズと比較。派生前"
+  },
+  "ken__special_623_K_H": {
+    "rows": [48],
+    "reason": "通常龍尾脚。公式の初期持続は地上の相手に当たらず、ローカルは地上接触発生",
+    "conditions": {
+      "startup": "公式の発生Fと地上接触の発生Fが異なる。備考の地上に当たらない初期持続を参照し、数値の自動置換はしない"
+    }
+  },
+  "ken__special_623_K_L": {
+    "rows": [46],
+    "reason": "通常龍尾脚。公式の初期持続は地上の相手に当たらず、ローカルは地上接触発生",
+    "conditions": {
+      "startup": "公式の発生Fと地上接触の発生Fが異なる。備考の地上に当たらない初期持続を参照し、数値の自動置換はしない"
+    }
+  },
+  "ken__special_623_K_M": {
+    "rows": [47],
+    "reason": "通常龍尾脚。公式の初期持続は地上の相手に当たらず、ローカルは地上接触発生",
+    "conditions": {
+      "startup": "公式の発生Fと地上接触の発生Fが異なる。備考の地上に当たらない初期持続を参照し、数値の自動置換はしない"
+    }
+  },
+  "dhalsim__special_236_K_OD": {
+    "rows": [47],
+    "reason": "OD基本は弱+中。公式OD弱のボタン画像と対応"
+  },
+  "dhalsim__special_236_P_none": {
+    "rows": [35, 37, 39],
+    "reason": "236P共通元レコード。非ホールドの弱中強すべてを比較"
+  },
+  "dhalsim__special_236_P_OD": {
+    "rows": [41],
+    "reason": "OD基本は弱+中。公式OD弱のボタン画像と対応"
+  },
+  "lily__special_236_K_OD": {
+    "rows": [36],
+    "reason": "OD基本は弱K+中K。公式OD弱の選択肢画像と対応。中K+強Kの強版を使わない"
+  },
+  "guile__special_214_P_OD": {
+    "rows": [51],
+    "reason": "OD基本は弱P+中P。公式OD弱ソニックブレイド"
+  },
+  "guile__super_art_1_L": {
+    "rows": [67],
+    "reason": "公式の横版は溜め4646+弱Pまたは中P。強Pの上版と区別"
+  },
+  "guile__super_art_1_M": {
+    "rows": [67],
+    "reason": "公式の横版は溜め4646+弱Pまたは中P。強Pの上版と区別"
+  },
+  "luke__special_214_P_OD": {
+    "rows": [47],
+    "reason": "ODフラッシュナックルの初段。ヒット後に2段目へ自動派生",
+    "conditions": {
+      "hit": "公式初段のヒット欄は『-』。ローカルDは自動派生後の結果であり、初段の欄へ置換しない"
+    }
+  },
+  "zangief__far_63214_K_L": {
+    "rows": [51],
+    "reason": "公式遠距離版・LK/MKまたはODに対応。公式備考は遠距離版の最短移動距離",
+    "conditions": {
+      "startup": "公式は遠距離版の最短移動距離。ローカルの遠距離代表と距離を一致させる根拠不足",
+      "total": "公式は遠距離版の最短移動距離。空振り全体も移動距離依存のため直接比較を保留"
+    }
+  },
+  "zangief__far_63214_K_M": {
+    "rows": [51],
+    "reason": "公式遠距離版・LK/MKまたはODに対応。公式備考は遠距離版の最短移動距離",
+    "conditions": {
+      "startup": "公式は遠距離版の最短移動距離。ローカルの遠距離代表と距離を一致させる根拠不足",
+      "total": "公式は遠距離版の最短移動距離。空振り全体も移動距離依存のため直接比較を保留"
+    }
+  },
+  "zangief__far_63214_K_OD": {
+    "rows": [52],
+    "reason": "公式遠距離版・LK/MKまたはODに対応。公式備考は遠距離版の最短移動距離",
+    "conditions": {
+      "startup": "公式は遠距離版の最短移動距離。ローカルの遠距離代表と距離を一致させる根拠不足",
+      "total": "公式は遠距離版の最短移動距離。空振り全体も移動距離依存のため直接比較を保留"
+    }
+  },
+  "zangief__super_art_2_L": {
+    "rows": [57],
+    "reason": "非ホールド・左右入力なしのその場版。ホールド版の発生/全体/ガード値を流用しない"
+  },
+  "zangief__super_art_2_M": {
+    "rows": [57],
+    "reason": "非ホールド・左右入力なしのその場版。ホールド版の発生/全体/ガード値を流用しない"
+  },
+  "zangief__super_art_2_H": {
+    "rows": [57],
+    "reason": "非ホールド・左右入力なしのその場版。ホールド版の発生/全体/ガード値を流用しない"
+  },
+  "yasmine__special_22_P_none": {
+    "rows": [62, 63, 64],
+    "reason": "22P共通元レコードを公式の弱中強と比較"
+  },
+  "yasmine__special_22_P_OD": {
+    "rows": [65],
+    "reason": "OD基本は弱P+中P。公式OD弱の入力画像と対応"
+  },
+  "yasmine__special_236_K_none": {
+    "rows": [50, 51, 52],
+    "reason": "236K共通元レコードを弱中強の派生前動作と比較"
+  },
+  "akuma__special_236_K_none": {
+    "rows": [64, 68],
+    "reason": "承認済み代表条件は百鬼襲から追加入力なしの百鬼豪斬。飛行部と着地派生を分離",
+    "conditions": {
+      "startup": "公式8Fは百鬼豪斬単体の相対発生。百鬼襲開始からの発生53Fと直接比較できない",
+      "total": "公式は百鬼豪斬単体の動作。百鬼襲全体の空振り75Fは算出不能"
+    },
+    "fieldRows": {
+      "startup": [68],
+      "total": [68],
+      "hit": [68],
+      "block": [68]
+    }
+  },
+  "akuma__special_236_K_OD": {
+    "rows": [67, 68],
+    "reason": "承認済み代表条件は百鬼襲から追加入力なしの百鬼豪斬。飛行部と着地派生を分離",
+    "conditions": {
+      "startup": "公式8Fは百鬼豪斬単体の相対発生。百鬼襲開始からの発生53Fと直接比較できない",
+      "total": "公式は百鬼豪斬単体の動作。百鬼襲全体の空振り75Fは算出不能"
+    },
+    "fieldRows": {
+      "startup": [68],
+      "total": [68],
+      "hit": [68],
+      "block": [68]
+    }
+  },
+  "akuma__special_236_K_none__strength_L": {
+    "rows": [64, 68],
+    "reason": "承認済み代表条件は百鬼襲から追加入力なしの百鬼豪斬。飛行部と着地派生を分離",
+    "conditions": {
+      "startup": "公式8Fは百鬼豪斬単体の相対発生。百鬼襲開始からの発生53Fと直接比較できない",
+      "total": "公式は百鬼豪斬単体の動作。百鬼襲全体の空振り75Fは算出不能"
+    },
+    "fieldRows": {
+      "startup": [68],
+      "total": [68],
+      "hit": [68],
+      "block": [68]
+    }
+  },
+  "akuma__special_236_K_none__strength_M": {
+    "rows": [65, 68],
+    "reason": "承認済み代表条件は百鬼襲から追加入力なしの百鬼豪斬。飛行部と着地派生を分離",
+    "conditions": {
+      "startup": "公式8Fは百鬼豪斬単体の相対発生。百鬼襲開始からの発生53Fと直接比較できない",
+      "total": "公式は百鬼豪斬単体の動作。百鬼襲全体の空振り75Fは算出不能"
+    },
+    "fieldRows": {
+      "startup": [68],
+      "total": [68],
+      "hit": [68],
+      "block": [68]
+    }
+  },
+  "akuma__special_236_K_none__strength_H": {
+    "rows": [66, 68],
+    "reason": "承認済み代表条件は百鬼襲から追加入力なしの百鬼豪斬。飛行部と着地派生を分離",
+    "conditions": {
+      "startup": "公式8Fは百鬼豪斬単体の相対発生。百鬼襲開始からの発生53Fと直接比較できない",
+      "total": "公式は百鬼豪斬単体の動作。百鬼襲全体の空振り75Fは算出不能"
+    },
+    "fieldRows": {
+      "startup": [68],
+      "total": [68],
+      "hit": [68],
+      "block": [68]
+    }
+  },
+  "cviper__special_623_P_none": {
+    "rows": [45, 46, 47],
+    "reason": "623P共通元レコードを公式の弱中強すべてと比較"
+  },
+  "chunli__special_214_P_none": {
+    "rows": [31],
+    "reason": "214P共通入力の行雲流水は公式の特殊技区分。派生前の構え"
+  },
+  "chunli__special_214_P_none__strength_L": {
+    "rows": [31],
+    "reason": "214P共通入力の行雲流水は公式の特殊技区分。派生前の構え"
+  },
+  "chunli__special_214_P_none__strength_M": {
+    "rows": [31],
+    "reason": "214P共通入力の行雲流水は公式の特殊技区分。派生前の構え"
+  },
+  "chunli__special_214_P_none__strength_H": {
+    "rows": [31],
+    "reason": "214P共通入力の行雲流水は公式の特殊技区分。派生前の構え"
+  },
+  "rashid__special_236_K_none": {
+    "rows": [50, 53, 56],
+    "reason": "236K共通元レコードを非ホールドの弱中強と比較"
+  }
+}

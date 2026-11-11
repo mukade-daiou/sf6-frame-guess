@@ -1,3 +1,4 @@
+import { applyUserConfirmedToBaseline } from "./helpers/apply-user-confirmed.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync, readdirSync } from "node:fs";
@@ -13,6 +14,8 @@ test("15 source corrections change exactly 21 hits across all 1298 records",()=>
   for(const m of before.moves){const d=ds.find(d=>d.characterId===before.id&&d.moveId===(m.strengthExpansion?.sourceMoveId||m.id));if(d){assert.deepEqual(m.frames.hit,d.before);assert.deepEqual(d.value,{status:"confirmed",display:"D"});m.frames.hit=d.value;changed++;} const sa=read("data/adoption-decisions.json").compoundStartup.saDecisions.find(d=>d.characterId===before.id&&d.moveId===m.id);if(sa){assert.deepEqual(m.frames.startup,sa.before);m.frames.startup=sa.value;}}
   for(const m of before.moves){const d=read("data/adoption-decisions.json").compoundStartup.indicatorDecisions.find(x=>x.characterId===before.id&&x.moveId===(m.strengthExpansion?.sourceMoveId||m.id));if(d){assert.deepEqual(m.frames.startup,d.before);m.frames.startup=d.value;}}
   for(const m of before.moves){const d=read("data/adoption-decisions.json").kdHkdCorrections.airborneDecisions.find(x=>x.characterId===before.id&&x.moveId===m.id);if(d){assert.deepEqual(m.frames.hit,d.before);m.frames.hit=d.value;}}
+  for(const m of before.moves){const d=read("data/adoption-decisions.json").whiffTotalCorrections.additionalDecisions.find(x=>x.characterId===before.id&&x.moveId===m.id);if(d){assert.deepEqual(m.frames.total,d.before);m.frames.total=d.value;}}
+    applyUserConfirmedToBaseline(before);
   assert.deepEqual(after,before);
  }
  assert.equal(changed,21);assert.equal(n,1298);

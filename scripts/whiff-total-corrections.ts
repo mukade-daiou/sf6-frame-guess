@@ -1,6 +1,7 @@
 import { readFileSync } from "node:fs";
 import { isDeepStrictEqual } from "node:util";
 import { characterSchema, type Character } from "../src/lib/frame-data/schema";
+import { restoreUserConfirmedFrames } from "./user-confirmed-frames";
 
 // Individual decisions are applied after strength expansion, including explicit expansion IDs.
 export function applyWhiffTotalCorrections(character: Character): Character {
@@ -8,15 +9,24 @@ export function applyWhiffTotalCorrections(character: Character): Character {
     readFileSync("data/adoption-decisions.json", "utf8"),
   );
   const decisions = policy.whiffTotalCorrections?.decisions ?? [];
+  const additional = policy.whiffTotalCorrections?.additionalDecisions ?? [];
   if (
     decisions.length !== 53 ||
     new Set(
       decisions.map((d: any) => `${d.characterId}/${d.moveId}/${d.field}`),
-    ).size !== 53
+    ).size !== 53 ||
+    additional.length !== 2 ||
+    new Set(
+      [...decisions, ...additional].map(
+        (d: any) => `${d.characterId}/${d.moveId}/${d.field}`,
+      ),
+    ).size !== 55
   )
     throw new Error("Invalid whiff total decisions");
   const result = structuredClone(character);
-  for (const d of decisions.filter((d: any) => d.characterId === result.id)) {
+  for (const d of [...decisions, ...additional].filter(
+    (d: any) => d.characterId === result.id,
+  )) {
     const m = result.moves.find((m) => m.id === d.moveId);
     const row = JSON.parse(readFileSync(d.sourcePath, "utf8")).data.cargoquery[
       d.sourceIndex
@@ -41,8 +51,11 @@ export function restoreWhiffTotalCorrections(character: Character): Character {
   const policy = JSON.parse(
     readFileSync("data/adoption-decisions.json", "utf8"),
   );
-  const result = structuredClone(character);
-  for (const d of policy.whiffTotalCorrections?.decisions ?? []) {
+  const result = restoreUserConfirmedFrames(character);
+  for (const d of [
+    ...(policy.whiffTotalCorrections?.decisions ?? []),
+    ...(policy.whiffTotalCorrections?.additionalDecisions ?? []),
+  ]) {
     if (d.characterId !== result.id) continue;
     const m = result.moves.find((item) => item.id === d.moveId);
     if (!m || !isDeepStrictEqual(m.frames.total, d.value))

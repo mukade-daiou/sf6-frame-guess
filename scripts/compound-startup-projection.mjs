@@ -12,6 +12,15 @@ export function restoreCompoundStartup(character) {
     ...(compound?.indicatorDecisions || []),
   ];
   const result = structuredClone(character);
+  const userDecisions =
+    JSON.parse(readFileSync("data/adoption-decisions.json", "utf8"))
+      .userConfirmedFrames?.decisions || [];
+  for (const d of userDecisions.filter((x) => x.characterId === result.id)) {
+    const move = result.moves.find((m) => m.id === d.moveId);
+    if (!move || !isDeepStrictEqual(move.frames[d.field], d.value))
+      throw new Error(`Unauthorized user-confirmed frame: ${d.moveId}`);
+    move.frames[d.field] = structuredClone(d.before);
+  }
   const kdDecisions =
     JSON.parse(readFileSync("data/adoption-decisions.json", "utf8"))
       .kdHkdCorrections?.decisions || [];
@@ -21,9 +30,13 @@ export function restoreCompoundStartup(character) {
   const airborneKd =
     JSON.parse(readFileSync("data/adoption-decisions.json", "utf8"))
       .kdHkdCorrections?.airborneDecisions || [];
-  const totalDecisions =
-    JSON.parse(readFileSync("data/adoption-decisions.json", "utf8"))
-      .whiffTotalCorrections?.decisions || [];
+  const totals = JSON.parse(
+    readFileSync("data/adoption-decisions.json", "utf8"),
+  ).whiffTotalCorrections;
+  const totalDecisions = [
+    ...(totals?.decisions || []),
+    ...(totals?.additionalDecisions || []),
+  ];
   for (const move of result.moves) {
     const total = totalDecisions.find(
       (d) => d.characterId === result.id && d.moveId === move.id,
