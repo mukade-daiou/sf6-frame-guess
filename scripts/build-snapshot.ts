@@ -64,6 +64,21 @@ for (const d of decisions.characters) {
         ? "ユーザー指定の対象外入力。原典・フレーム値は保持し、技なしは採用範囲に限定する。"
         : "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。",
     };
+  for (const special of (decisions.specialStateExclusions ?? []).filter(
+    (x: any) => x.characterId === c.id,
+  )) {
+    const move = c.moves.find((m) => m.id === special.moveId);
+    const cargo = await read(special.sourcePath);
+    const row = cargo.data.cargoquery[special.sourceIndex]?.title;
+    if (
+      !move ||
+      !d.excludedMoveIds.includes(move.id) ||
+      row?.input !== special.sourceInput ||
+      !row.notes.includes("Shin Bison only")
+    )
+      throw new Error(`Invalid special-state exclusion: ${special.moveId}`);
+    move.adoption = special.value;
+  }
   if (saResearch) {
     c.moves.push(...generateSuperArts(saResearch, c.id));
     c.coverage.super_art = { status: "complete", verification: "unverified" };

@@ -377,6 +377,17 @@ if (process.argv.includes("--check")) {
   delete expectedDecisions.kdHkdCorrections;
   delete expectedDecisions.whiffTotalCorrections;
   delete expectedDecisions.userConfirmedFrames;
+  for (const d of expectedDecisions.specialStateExclusions ?? []) {
+    const character = expectedDecisions.characters.find(
+      (c: any) => c.id === d.characterId,
+    );
+    if (!character?.excludedMoveIds.includes(d.moveId))
+      throw new Error(`Missing authorized exclusion: ${d.moveId}`);
+    character.excludedMoveIds = character.excludedMoveIds.filter(
+      (id: string) => id !== d.moveId,
+    );
+  }
+  delete expectedDecisions.specialStateExclusions;
   expectedDecisions.datasetId = baseline.decisions.datasetId;
   if (!isDeepStrictEqual(expectedDecisions, baseline.decisions))
     throw new Error("Unrelated adoption decision changed");

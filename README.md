@@ -53,7 +53,7 @@ VITE_BASE_PATH=/your-repository/ npm run preview
 
 ## 構成とデータ管理
 
-`src/`はゲーム本体、`data/`は固定スナップショットと採用判断、`staging/candidates/`は元の32体860候補、`staging/adoption-inputs/`は現在の採用入力です。本番は32キャラ1298レコードで、SA96枠・強度別288入力を含みます。datasetIdは`focus-startup-2026-11-09-r1`、ゲーム版はUNVERIFIEDです。[採用ルール](docs/ADOPTION_RULES.md)と[条件付き必殺技の採用記録](docs/CONDITIONAL_SPECIAL_ADOPTION_REPORT.md)を参照してください。
+`src/`はゲーム本体、`data/`は固定スナップショットと採用判断、`staging/candidates/`は元の32体860候補、`staging/adoption-inputs/`は現在の採用入力です。本番は32キャラ1298レコードで、SA96枠・強度別288入力を含みます。datasetIdは`unverifiable-risk-corrections-2026-11-14-r1`、ゲーム版はUNVERIFIEDです。[採用ルール](docs/ADOPTION_RULES.md)と[条件付き必殺技の採用記録](docs/CONDITIONAL_SPECIAL_ADOPTION_REPORT.md)を参照してください。
 
 [データ追加・更新手順](docs/DATA_WORKFLOW.md)、[今回の整理・検証結果](docs/PROJECT_MAINTENANCE_REPORT.md)、[過去資料の索引](archive/README.md)を参照してください。過去の段階別コード・証拠はarchiveに保存しています。
 

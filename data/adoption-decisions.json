@@ -1,5 +1,5 @@
 {
-  "datasetId": "user-verified-frames-2026-11-11-r1",
+  "datasetId": "unverifiable-risk-corrections-2026-11-14-r1",
   "compoundStartup": {
     "basis": "ユーザー指定: 弾出現と距離依存の攻撃発生を区別。公式取得2026-11-10、パッチ未確認。",
     "decisions": [
@@ -10,7 +10,11 @@
         "sourceIndex": 21,
         "sourceInput": "236K",
         "sourceNotation": "11+6",
-        "officialRows": [50, 53, 56],
+        "officialRows": [
+          50,
+          53,
+          56
+        ],
         "officialValue": "17",
         "reason": "非ホールドの弾出現17F。距離到達時間と区別。",
         "before": {
@@ -31,7 +35,9 @@
         "sourceIndex": 10,
         "sourceInput": "236LK",
         "sourceNotation": "11+5",
-        "officialRows": [47],
+        "officialRows": [
+          47
+        ],
         "officialValue": "16",
         "reason": "公式の弱・非ホールド発生。",
         "before": {
@@ -52,7 +58,9 @@
         "sourceIndex": 11,
         "sourceInput": "236MK",
         "sourceNotation": "15+5",
-        "officialRows": [49],
+        "officialRows": [
+          49
+        ],
         "officialValue": "20",
         "reason": "公式の中・非ホールド発生。",
         "before": {
@@ -73,7 +81,9 @@
         "sourceIndex": 8,
         "sourceInput": "236HK",
         "sourceNotation": "12+5",
-        "officialRows": [51],
+        "officialRows": [
+          51
+        ],
         "officialValue": "17",
         "reason": "公式の強・非ホールド発生。",
         "before": {
@@ -94,7 +104,9 @@
         "sourceIndex": 20,
         "sourceInput": "236LK",
         "sourceNotation": "14+8",
-        "officialRows": [50],
+        "officialRows": [
+          50
+        ],
         "officialValue": "22",
         "reason": "相手に到達後8Fで攻撃、長距離では増加。",
         "before": {
@@ -122,7 +134,9 @@
         "sourceIndex": 22,
         "sourceInput": "236MK",
         "sourceNotation": "14+12",
-        "officialRows": [51],
+        "officialRows": [
+          51
+        ],
         "officialValue": "26",
         "reason": "相手に到達後12Fで攻撃、長距離では増加。",
         "before": {
@@ -150,7 +164,9 @@
         "sourceIndex": 17,
         "sourceInput": "236HK",
         "sourceNotation": "14+12",
-        "officialRows": [52],
+        "officialRows": [
+          52
+        ],
         "officialValue": "26",
         "reason": "相手に到達後12Fで攻撃、長距離では増加。",
         "before": {
@@ -181,7 +197,9 @@
         "sourceInput": "214214P",
         "sourceNotation": "5+2",
         "officialPath": "staging/official-verification/sources/lily.json",
-        "officialRows": [65],
+        "officialRows": [
+          65
+        ],
         "officialValue": "7",
         "rawRef": "archive/staging/sf6-frame-data/raw/lily.json#/moves/0",
         "sourceResearchId": "lily:raw:0",
@@ -205,7 +223,9 @@
         "sourceInput": "214214P",
         "sourceNotation": "5+2",
         "officialPath": "staging/official-verification/sources/lily.json",
-        "officialRows": [65],
+        "officialRows": [
+          65
+        ],
         "officialValue": "7",
         "rawRef": "archive/staging/sf6-frame-data/raw/lily.json#/moves/0",
         "sourceResearchId": "lily:raw:0",
@@ -229,7 +249,9 @@
         "sourceInput": "214214P",
         "sourceNotation": "5+2",
         "officialPath": "staging/official-verification/sources/lily.json",
-        "officialRows": [65],
+        "officialRows": [
+          65
+        ],
         "officialValue": "7",
         "rawRef": "archive/staging/sf6-frame-data/raw/lily.json#/moves/0",
         "sourceResearchId": "lily:raw:0",
@@ -253,7 +275,9 @@
         "sourceInput": "236236P",
         "sourceNotation": "6+1",
         "officialPath": "staging/official-verification/sources/manon.json",
-        "officialRows": [50],
+        "officialRows": [
+          50
+        ],
         "officialValue": "7",
         "rawRef": "archive/staging/sf6-frame-data/raw/manon.json#/moves/6",
         "sourceResearchId": "manon:raw:6",
@@ -277,7 +301,9 @@
         "sourceInput": "236236P",
         "sourceNotation": "6+1",
         "officialPath": "staging/official-verification/sources/manon.json",
-        "officialRows": [50],
+        "officialRows": [
+          50
+        ],
         "officialValue": "7",
         "rawRef": "archive/staging/sf6-frame-data/raw/manon.json#/moves/6",
         "sourceResearchId": "manon:raw:6",
@@ -301,7 +327,9 @@
         "sourceInput": "236236P",
         "sourceNotation": "6+1",
         "officialPath": "staging/official-verification/sources/manon.json",
-        "officialRows": [50],
+        "officialRows": [
+          50
+        ],
         "officialValue": "7",
         "rawRef": "archive/staging/sf6-frame-data/raw/manon.json#/moves/6",
         "sourceResearchId": "manon:raw:6",
@@ -327,7 +355,9 @@
         "sourceInput": "236LK",
         "sourceNotation": "37 total",
         "officialPath": "staging/official-verification/sources/aki.json",
-        "officialRows": [44],
+        "officialRows": [
+          44
+        ],
         "rawRef": "archive/staging/sf6-frame-data/raw/aki.json#/moves/19",
         "reason": "ユーザー確認：37は全体時間。独立した発生・効果成立時刻が未確認のため発生は対象外とする。公式パッチUNVERIFIED。",
         "before": {
@@ -349,7 +379,9 @@
         "sourceNotation": "39 total",
         "sourceNotes": "Stays on same side; counter-hit state for entire move duration; semi-low profile (crouch height) 9-15f and 39f; crouching state 14f until end of recovery; low profile 16-38f; Distance: 1.94",
         "officialPath": "staging/official-verification/sources/aki.json",
-        "officialRows": [45],
+        "officialRows": [
+          45
+        ],
         "rawRef": "archive/staging/sf6-frame-data/raw/aki.json#/moves/21",
         "reason": "Cargo発生欄が全体時間と明記。効果成立時刻は未確定。公式版UNVERIFIED。",
         "before": {
@@ -371,7 +403,9 @@
         "sourceNotation": "43(50~54) total",
         "sourceNotes": "Can switch sides with opponent (cross-up version usually has a fixed 23f recovery after passing through; total time depends on distance from opponent); at a very specific spacing, A.K.I. can cross-up with 43f move duration (extremely ambiguous left/right mixup); counter-hit state for entire move duration; projectile invincibility lasts longer on cross-up version; semi-low profile 11-17f (crouch height); crouching state 17f until end of recovery; low profile 18f until end of recovery; collision box disappears 20-31f to allow cross-up; Distance: 3.18 (3.84 cross-up)",
         "officialPath": "staging/official-verification/sources/aki.json",
-        "officialRows": [46],
+        "officialRows": [
+          46
+        ],
         "rawRef": "archive/staging/sf6-frame-data/raw/aki.json#/moves/16",
         "reason": "Cargo発生欄が全体時間と明記。効果成立時刻は未確定。公式版UNVERIFIED。",
         "before": {
@@ -393,7 +427,9 @@
         "sourceNotation": "42(48~57)",
         "sourceNotes": "Entire animation is vulnerable to Punish Counter Throws; crouching state 17f until end of recovery; Same-side version: 42f total animation, 8 recovery frames at the end that are vulnerable to strikes; Cross-up version: the entire animation is strike/projectile invincible; total duration of cross-up version depends on distance from opponent (23f fixed recovery time after passing through); collision box disappears 7-33f to allow cross-up; Distance: 4.06 (3.52 cross-up)",
         "officialPath": "staging/official-verification/sources/aki.json",
-        "officialRows": [47],
+        "officialRows": [
+          47
+        ],
         "rawRef": "archive/staging/sf6-frame-data/raw/aki.json#/moves/18",
         "reason": "原典備考が同じ側に移動する版の全体動作42Fと明記。効果成立時刻は未確定。公式版UNVERIFIED。",
         "before": {
@@ -416,7 +452,9 @@
         "sourceNotation": "-",
         "sourceNotes": "Builds Sun Crests up to a maximum of 4 stocks; can hold the button to extend the move and build stocks slightly more quickly (ends automatically upon reaching 4 stocks); Lv.1 (unheld version): 48F total, stock is built on frame 47 (or frame 42 when continuing to Lv.2 Hold); Lv.2 Hold: 94F total, button must be held 23F, 2nd stock is built on frame 93 (or frame 88 when continuing to Lv.3 Hold); Lv.3 Hold: 140F total, button must be held 85F, 3rd stock is built on frame 139 (or frame 134 when continuing to Lv.4 Hold); Lv.4 Hold: 186F total, button must be held 131F, 4th stock is built on frame 182; if activated with 4 Sun Crests, Ingrid instead builds 3000 Drive gauge every 46 frames (frame data is identical to the regular version but the button can be held indefinitely); Ingrid is in a counter-hit state for the entire duration; hurtbox expands upward on frames 10-44 (Lv.1) / 10-84 (Lv.2) / 10-130 (Lv.3) / 10-184 (Lv.4)",
         "officialPath": "staging/official-verification/sources/ingrid.json",
-        "officialRows": [36],
+        "officialRows": [
+          36
+        ],
         "officialStartup": "",
         "officialNotes": "47F目にサンシンボルストックが1増加\nサンシンボルストックが4つある場合47F目にDゲージ3000回復\nボタンホールドで動作継続を行い、サンシンボルストックorDゲージが増加する\n1段階ホールドした場合、全体動作が94Fとなる",
         "rawRef": "archive/staging/sf6-frame-data/raw/ingrid.json#/moves/6",
@@ -442,7 +480,9 @@
         "sourceNotation": "3(8)",
         "sourceNotes": "Stance with 1-hit armor can be extended an extra 90f by holding the button, followed by 26 unarmored recovery frames; no armor on lower half of body; cancelable into follow-ups after 8f; stance cannot be canceled into from other attacks; absorbing an attack automatically triggers counterattack follow-up; Marisa takes a fixed 6f hitstop when absorbing attacks (causing the counterattack to often land as a Counter-hit rather than a Punish Counter against medium/heavy attacks)",
         "officialPath": "staging/official-verification/sources/marisa.json",
-        "officialRows": [69],
+        "officialRows": [
+          69
+        ],
         "officialStartup": "",
         "officialNotes": "動作中常に被パニッシュカウンター判定\n3-28　上半身アーマー判定(1回)\nアーマー判定で攻撃を受け止めた際、専用技に自動派生\n9-14F　各派生技に移行可\nボタンホールドで動作延長可",
         "condition": "通常状態・非ホールド・構え本体",
@@ -467,7 +507,9 @@
         "sourceNotation": "1",
         "sourceNotes": "Stance with 2-hit full-body armor can be extended an extra 30f by holding a kick button, followed by 29 unarmored recovery frames; cancelable into follow-ups after 8f; stance cannot be canceled into from other attacks; absorbing an attack automatically triggers counterattack follow-up; Marisa takes a fixed 6f hitstop when absorbing attacks (causing the counterattack to often land as a Counter-hit rather than a Punish Counter against medium/heavy attacks)",
         "officialPath": "staging/official-verification/sources/marisa.json",
-        "officialRows": [71],
+        "officialRows": [
+          71
+        ],
         "officialStartup": "",
         "officialNotes": "動作中常に被パニッシュカウンター判定\n1-28F　アーマー判定(2回)\nアーマー判定で攻撃を受け止めた際、専用技に自動派生\n9-14F　各派生技に移行可\nボタンホールドで動作延長可",
         "condition": "通常状態・非ホールド・構え本体",
@@ -551,7 +593,9 @@
       "sourceInventoryComplete": true,
       "basis": "第5～第8段階で原典行と採用範囲を対応付け。第10段階の個人用採用方針に基づく。",
       "heldMoveIds": [],
-      "excludedMoveIds": ["ken_quick_dash_simultaneous"]
+      "excludedMoveIds": [
+        "ken_quick_dash_simultaneous"
+      ]
     },
     {
       "id": "marisa",
@@ -567,7 +611,9 @@
       "sourceInventoryComplete": true,
       "candidatePath": "staging/adoption-inputs/aki.json",
       "basis": "保存済み原典全行を候補・過去の除外判断へ対応付け。未確定の地上入力はheld-source-input規則で保留登録。",
-      "excludedMoveIds": ["aki__special_2_P_OD"]
+      "excludedMoveIds": [
+        "aki__special_2_P_OD"
+      ]
     },
     {
       "id": "akuma",
@@ -583,7 +629,9 @@
       "sourceInventoryComplete": true,
       "candidatePath": "staging/adoption-inputs/alex.json",
       "basis": "保存済み原典全行を候補・過去の除外判断へ対応付け。未確定の地上入力はheld-source-input規則で保留登録。",
-      "excludedMoveIds": ["alex__special_2_P_OD"]
+      "excludedMoveIds": [
+        "alex__special_2_P_OD"
+      ]
     },
     {
       "id": "arjun",
@@ -599,7 +647,9 @@
       "sourceInventoryComplete": true,
       "candidatePath": "staging/adoption-inputs/blanka.json",
       "basis": "保存済み原典全行を候補・過去の除外判断へ対応付け。未確定の地上入力はheld-source-input規則で保留登録。",
-      "excludedMoveIds": ["blanka__special_2_P_OD"]
+      "excludedMoveIds": [
+        "blanka__special_2_P_OD"
+      ]
     },
     {
       "id": "cammy",
@@ -631,7 +681,9 @@
       "sourceInventoryComplete": true,
       "candidatePath": "staging/adoption-inputs/dee_jay.json",
       "basis": "保存済み原典全行を候補・過去の除外判断へ対応付け。未確定の地上入力はheld-source-input規則で保留登録。",
-      "excludedMoveIds": ["dee_jay__held_special_22_P_OD"]
+      "excludedMoveIds": [
+        "dee_jay__held_special_22_P_OD"
+      ]
     },
     {
       "id": "dhalsim",
@@ -655,7 +707,9 @@
       "sourceInventoryComplete": true,
       "candidatePath": "staging/adoption-inputs/ed.json",
       "basis": "保存済み原典全行を候補・過去の除外判断へ対応付け。未確定の地上入力はheld-source-input規則で保留登録。",
-      "excludedMoveIds": ["ed__special_4_K_OD"]
+      "excludedMoveIds": [
+        "ed__special_4_K_OD"
+      ]
     },
     {
       "id": "elena",
@@ -667,11 +721,15 @@
     },
     {
       "id": "guile",
-      "heldMoveIds": ["guile__held_special_buttons_LP+MP"],
+      "heldMoveIds": [
+        "guile__held_special_buttons_LP+MP"
+      ],
       "sourceInventoryComplete": true,
       "candidatePath": "staging/adoption-inputs/guile.json",
       "basis": "保存済み原典全行を候補・過去の除外判断へ対応付け。未確定の地上入力はheld-source-input規則で保留登録。",
-      "excludedMoveIds": ["guile__held_special_buttons_LP+MP"]
+      "excludedMoveIds": [
+        "guile__held_special_buttons_LP+MP"
+      ]
     },
     {
       "id": "ingrid",
@@ -735,7 +793,9 @@
       "sourceInventoryComplete": true,
       "candidatePath": "staging/adoption-inputs/m_bison.json",
       "basis": "保存済み原典全行を候補・過去の除外判断へ対応付け。未確定の地上入力はheld-source-input規則で保留登録。",
-      "excludedMoveIds": []
+      "excludedMoveIds": [
+        "m_bison__special_623_P_OD"
+      ]
     },
     {
       "id": "mai",
@@ -759,7 +819,9 @@
       "sourceInventoryComplete": true,
       "candidatePath": "staging/adoption-inputs/rashid.json",
       "basis": "保存済み原典全行を候補・過去の除外判断へ対応付け。未確定の地上入力はheld-source-input規則で保留登録。",
-      "excludedMoveIds": ["rashid__special_6_K_OD"]
+      "excludedMoveIds": [
+        "rashid__special_6_K_OD"
+      ]
     },
     {
       "id": "ryu",
@@ -807,7 +869,9 @@
       "sourceInventoryComplete": true,
       "candidatePath": "staging/adoption-inputs/zangief.json",
       "basis": "保存済み原典全行を候補・過去の除外判断へ対応付け。未確定の地上入力はheld-source-input規則で保留登録。",
-      "excludedMoveIds": ["zangief__held_special_buttons_LP+MP"]
+      "excludedMoveIds": [
+        "zangief__held_special_buttons_LP+MP"
+      ]
     }
   ],
   "scopePolicy": {
@@ -1984,7 +2048,9 @@
           "onPerfectParry": -17,
           "onPunishCounter": 54,
           "projectileSpeed": null,
-          "properties": ["low"],
+          "properties": [
+            "low"
+          ],
           "pushback": null,
           "recovery": 15,
           "source": {
@@ -2114,7 +2180,9 @@
           "onPerfectParry": -17,
           "onPunishCounter": 54,
           "projectileSpeed": null,
-          "properties": ["low"],
+          "properties": [
+            "low"
+          ],
           "pushback": null,
           "recovery": 15,
           "source": {
@@ -4867,7 +4935,9 @@
           "range": {
             "min": -12,
             "max": 0,
-            "evidence": ["https://wiki.supercombo.gg/w/Street_Fighter_6"]
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6"
+            ]
           }
         }
       },
@@ -4901,7 +4971,9 @@
           "range": {
             "min": -14,
             "max": 0,
-            "evidence": ["https://wiki.supercombo.gg/w/Street_Fighter_6"]
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6"
+            ]
           }
         }
       },
@@ -4935,7 +5007,9 @@
           "range": {
             "min": -6,
             "max": -4,
-            "evidence": ["https://wiki.supercombo.gg/w/Street_Fighter_6"]
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6"
+            ]
           }
         }
       },
@@ -4969,7 +5043,9 @@
           "range": {
             "min": -8,
             "max": 5,
-            "evidence": ["https://wiki.supercombo.gg/w/Street_Fighter_6"]
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6"
+            ]
           }
         }
       },
@@ -5003,7 +5079,9 @@
           "range": {
             "min": -6,
             "max": 2,
-            "evidence": ["https://wiki.supercombo.gg/w/Street_Fighter_6"]
+            "evidence": [
+              "https://wiki.supercombo.gg/w/Street_Fighter_6"
+            ]
           }
         }
       },
@@ -6967,7 +7045,9 @@
             "range": {
               "min": -12,
               "max": 0,
-              "evidence": ["https://wiki.supercombo.gg/w/Street_Fighter_6"]
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6"
+              ]
             }
           },
           "value": {
@@ -6990,7 +7070,9 @@
             "range": {
               "min": -14,
               "max": 0,
-              "evidence": ["https://wiki.supercombo.gg/w/Street_Fighter_6"]
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6"
+              ]
             }
           },
           "value": {
@@ -7013,7 +7095,9 @@
             "range": {
               "min": -6,
               "max": -4,
-              "evidence": ["https://wiki.supercombo.gg/w/Street_Fighter_6"]
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6"
+              ]
             }
           },
           "value": {
@@ -7036,7 +7120,9 @@
             "range": {
               "min": -8,
               "max": 5,
-              "evidence": ["https://wiki.supercombo.gg/w/Street_Fighter_6"]
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6"
+              ]
             }
           },
           "value": {
@@ -7059,7 +7145,9 @@
             "range": {
               "min": -6,
               "max": 2,
-              "evidence": ["https://wiki.supercombo.gg/w/Street_Fighter_6"]
+              "evidence": [
+                "https://wiki.supercombo.gg/w/Street_Fighter_6"
+              ]
             }
           },
           "value": {
@@ -10534,7 +10622,9 @@
           "strength": "M"
         },
         "condition": "通常状態・非ホールド・通常ヒット",
-        "affectedMoveIds": ["arjun__normal_2_P_M"],
+        "affectedMoveIds": [
+          "arjun__normal_2_P_M"
+        ],
         "reason": "Cargo 2MP の通常hit KD +27からKD後の数値だけがraw 27と本番+27へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
         "patch": "UNVERIFIED"
       },
@@ -10593,7 +10683,9 @@
           "strength": "H"
         },
         "condition": "通常状態・非ホールド・通常ヒット",
-        "affectedMoveIds": ["arjun__normal_5_K_H"],
+        "affectedMoveIds": [
+          "arjun__normal_5_K_H"
+        ],
         "reason": "Cargo 5HK の通常hit KD +43からKD後の数値だけがraw 43と本番+43へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
         "patch": "UNVERIFIED"
       },
@@ -10748,7 +10840,9 @@
           "strength": "OD"
         },
         "condition": "通常状態・非ホールド・通常ヒット",
-        "affectedMoveIds": ["arjun__special_214_K_OD"],
+        "affectedMoveIds": [
+          "arjun__special_214_K_OD"
+        ],
         "reason": "Cargo 214KK の通常hit KD +42からKD後の数値だけがraw 42と本番+42へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
         "patch": "UNVERIFIED"
       },
@@ -10871,7 +10965,9 @@
           "strength": "H"
         },
         "condition": "通常状態・非ホールド・通常ヒット",
-        "affectedMoveIds": ["arjun__special_236_P_H"],
+        "affectedMoveIds": [
+          "arjun__special_236_P_H"
+        ],
         "reason": "Cargo 236HP の通常hit KD +43(+48)からKD後の数値だけがraw 43と本番+43へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
         "patch": "UNVERIFIED"
       },
@@ -10930,7 +11026,9 @@
           "strength": "OD"
         },
         "condition": "通常状態・非ホールド・通常ヒット",
-        "affectedMoveIds": ["arjun__special_236_P_OD"],
+        "affectedMoveIds": [
+          "arjun__special_236_P_OD"
+        ],
         "reason": "Cargo 236PP の通常hit KD +43(+48)からKD後の数値だけがraw 43と本番+43へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
         "patch": "UNVERIFIED"
       },
@@ -10989,7 +11087,9 @@
           "strength": "H"
         },
         "condition": "通常状態・非ホールド・通常ヒット",
-        "affectedMoveIds": ["arjun__special_623_P_H"],
+        "affectedMoveIds": [
+          "arjun__special_623_P_H"
+        ],
         "reason": "Cargo 623HP の通常hit KD +42(+62)からKD後の数値だけがraw 42と本番+42へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
         "patch": "UNVERIFIED"
       },
@@ -11048,7 +11148,9 @@
           "strength": "L"
         },
         "condition": "通常状態・非ホールド・通常ヒット",
-        "affectedMoveIds": ["arjun__special_623_P_L"],
+        "affectedMoveIds": [
+          "arjun__special_623_P_L"
+        ],
         "reason": "Cargo 623LP の通常hit KD +60(+75)からKD後の数値だけがraw 60と本番+60へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
         "patch": "UNVERIFIED"
       },
@@ -11107,7 +11209,9 @@
           "strength": "M"
         },
         "condition": "通常状態・非ホールド・通常ヒット",
-        "affectedMoveIds": ["arjun__special_623_P_M"],
+        "affectedMoveIds": [
+          "arjun__special_623_P_M"
+        ],
         "reason": "Cargo 623MP の通常hit KD +64(+82)からKD後の数値だけがraw 64と本番+64へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
         "patch": "UNVERIFIED"
       },
@@ -11166,7 +11270,9 @@
           "strength": "OD"
         },
         "condition": "通常状態・非ホールド・通常ヒット",
-        "affectedMoveIds": ["arjun__special_623_P_OD"],
+        "affectedMoveIds": [
+          "arjun__special_623_P_OD"
+        ],
         "reason": "Cargo 623PP の通常hit KD +42(+62)からKD後の数値だけがraw 42と本番+42へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
         "patch": "UNVERIFIED"
       },
@@ -11225,7 +11331,9 @@
           "strength": "OD"
         },
         "condition": "通常状態・非ホールド・通常ヒット",
-        "affectedMoveIds": ["ingrid__special_236_P_OD"],
+        "affectedMoveIds": [
+          "ingrid__special_236_P_OD"
+        ],
         "reason": "Cargo 236LPMP or 236LPHP の通常hit KD +52からKD後の数値だけがraw 52と本番+52へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
         "patch": "UNVERIFIED"
       },
@@ -11284,7 +11392,9 @@
           "strength": "OD"
         },
         "condition": "通常状態・非ホールド・通常ヒット",
-        "affectedMoveIds": ["juri__special_236_K_OD"],
+        "affectedMoveIds": [
+          "juri__special_236_K_OD"
+        ],
         "reason": "Cargo 236LKMK の通常hit KD +39からKD後の数値だけがraw 39と本番+39へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
         "patch": "UNVERIFIED"
       },
@@ -11343,7 +11453,9 @@
           "strength": "OD"
         },
         "condition": "通常状態・非ホールド・通常ヒット",
-        "affectedMoveIds": ["sagat__special_236_P_OD"],
+        "affectedMoveIds": [
+          "sagat__special_236_P_OD"
+        ],
         "reason": "Cargo 236LPMP or 236LPHP の通常hit KD +52からKD後の数値だけがraw 52と本番+52へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
         "patch": "UNVERIFIED"
       },
@@ -11402,7 +11514,9 @@
           "strength": "OD"
         },
         "condition": "通常状態・非ホールド・通常ヒット",
-        "affectedMoveIds": ["terry__special_214_P_OD"],
+        "affectedMoveIds": [
+          "terry__special_214_P_OD"
+        ],
         "reason": "Cargo 214LPMP or 214LPHP の通常hit KD +33からKD後の数値だけがraw 33と本番+33へ保存。公式の対応する基本行もD。CH/PC・空中・派生の注記は通常KDとは別。",
         "patch": "UNVERIFIED"
       }
@@ -11424,7 +11538,9 @@
         "sourceNotation": "KD +51(+63)",
         "sourceNotes": "1-hit projectile hitbox; can only hit airborne opponents (puts opponent into limited juggle state); KD advantage varies based on height; must hold HK at least 30f to get enhanced version (releasing early results in delayed regular version); extends a forward hurtbox on frame 1 until the end of recovery (this hurtbox is projectile invuln until the first active frame); cancelable into 6KK/4KK on hit only (comes out after 15 recovery frames), giving Ed better oki after midscreen anti-air 236HK, or a juggle after corner anti-air 236HK",
         "officialPath": "staging/official-verification/sources/ed.json",
-        "officialRows": [51],
+        "officialRows": [
+          51
+        ],
         "reason": "空中専用技の通常ヒット結果KD。後続数値はKD後の有利F。公式ヒット欄は空欄、版UNVERIFIED。",
         "before": {
           "status": "confirmed",
@@ -13475,7 +13591,9 @@
         "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
         "rawIndex": 9,
         "officialPath": "staging/official-verification/sources/arjun.json",
-        "officialRows": [32],
+        "officialRows": [
+          32
+        ],
         "officialValue": "56",
         "condition": "通常状態・非ホールド・空振り",
         "reason": "保存Cargoの空振り時3F追加と括弧内の値が一致。公式は3F長く、版・条件は未解決。公式対象版UNVERIFIED。",
@@ -13512,7 +13630,9 @@
         "rawPath": "archive/staging/sf6-frame-data/raw/arjun.json",
         "rawIndex": 16,
         "officialPath": "staging/official-verification/sources/arjun.json",
-        "officialRows": [34],
+        "officialRows": [
+          34
+        ],
         "officialValue": "51",
         "condition": "通常状態・非ホールド・空振り",
         "reason": "保存Cargoの空振り時3F追加と括弧内の値が一致。公式は3F長く、版・条件は未解決。公式対象版UNVERIFIED。",
@@ -13527,6 +13647,710 @@
           "status": "confirmed",
           "display": "48",
           "numeric": 48,
+          "provenance": "source",
+          "calculation": null
+        }
+      }
+    ],
+    "unverifiableDecisions": [
+      {
+        "characterId": "blanka",
+        "moveId": "blanka__normal_2_K_M",
+        "field": "total",
+        "input": {
+          "type": "normal",
+          "direction": "2",
+          "button": "K",
+          "strength": "M"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/blanka.cargo.json",
+        "sourceIndex": 19,
+        "sourceInput": "2MK",
+        "sourceNotation": "26(28)",
+        "sourceNotes": "2f extra recovery on block/whiff; cancelable low poke with good frame advantage on hit (can link after Drive Rush into 2MK without spending extra meter); SA2 cancel: +13/+5; Forward Hop cancel: -4/-12; Coward Crouch cancel: +5/-3; the absolute range is comparable to Ryu's 2MK, but Blanka's wider hurtbox gives it shorter relative range in neutral",
+        "rawPath": "archive/staging/sf6-frame-data/raw/blanka.json",
+        "rawIndex": 27,
+        "officialPath": "staging/official-verification/sources/blanka.json",
+        "officialRows": [
+          11
+        ],
+        "condition": "通常状態・非ホールド・空振り",
+        "reason": "同一入力のCargo括弧値と空振り追加硬直の注記が一致し、空振り全体Fの採用規則に反する現行値を特定。保存データ基準の修正案。",
+        "patch": "UNVERIFIED",
+        "before": {
+          "status": "confirmed",
+          "display": "26",
+          "numeric": 26,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "28",
+          "numeric": 28,
+          "provenance": "source",
+          "calculation": null
+        }
+      },
+      {
+        "characterId": "cammy",
+        "moveId": "cammy__normal_5_K_H",
+        "field": "total",
+        "input": {
+          "type": "normal",
+          "direction": "5",
+          "button": "K",
+          "strength": "H"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cammy.cargo.json",
+        "sourceIndex": 42,
+        "sourceInput": "5HK",
+        "sourceNotation": "32(34)",
+        "sourceNotes": "2f extra recovery on whiff; great ranged poke; Punish Counter knockdown gives great corner carry and can juggle into Cannon Spike in the corner (623MK is most consistent but can whiff at longer ranges); extends a hurtbox 1f before active that is vulnerable to projectiles; crouch-sized hurtbox on frames 1-28; particularly vulnerable to Drive Impact in neutral; can anti-air some long range jump-ins; has high juggle potential (causes air reset when juggled into)",
+        "rawPath": "archive/staging/sf6-frame-data/raw/cammy.json",
+        "rawIndex": 42,
+        "officialPath": "staging/official-verification/sources/cammy.json",
+        "officialRows": [
+          7
+        ],
+        "condition": "通常状態・非ホールド・空振り",
+        "reason": "同一入力のCargo括弧値と空振り追加硬直の注記が一致し、空振り全体Fの採用規則に反する現行値を特定。保存データ基準の修正案。",
+        "patch": "UNVERIFIED",
+        "before": {
+          "status": "confirmed",
+          "display": "32",
+          "numeric": 32,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "34",
+          "numeric": 34,
+          "provenance": "source",
+          "calculation": null
+        }
+      },
+      {
+        "characterId": "dee_jay",
+        "moveId": "dee_jay__normal_2_P_M",
+        "field": "total",
+        "input": {
+          "type": "normal",
+          "direction": "2",
+          "button": "P",
+          "strength": "M"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/dee_jay.cargo.json",
+        "sourceIndex": 33,
+        "sourceInput": "2MP",
+        "sourceNotation": "23(24)",
+        "sourceNotes": "1f extra recovery on whiff; good combo/buffer tool and meaty normal; good hitbox priority against low pokes; very long special hitconfirm window (but only 13f when canceling to 214MP or 18f into 236KK); when used out of Drive Rush, can link to 5HP on crouching opponents; [4]6LP cancel: +1/-5; 236LK cancel: -4/-10",
+        "rawPath": "archive/staging/sf6-frame-data/raw/dee_jay.json",
+        "rawIndex": 59,
+        "officialPath": "staging/official-verification/sources/dee_jay.json",
+        "officialRows": [
+          10
+        ],
+        "condition": "通常状態・非ホールド・空振り",
+        "reason": "同一入力のCargo括弧値と空振り追加硬直の注記が一致し、空振り全体Fの採用規則に反する現行値を特定。保存データ基準の修正案。",
+        "patch": "UNVERIFIED",
+        "before": {
+          "status": "confirmed",
+          "display": "23",
+          "numeric": 23,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "24",
+          "numeric": 24,
+          "provenance": "source",
+          "calculation": null
+        }
+      },
+      {
+        "characterId": "dee_jay",
+        "moveId": "dee_jay__normal_5_K_H",
+        "field": "total",
+        "input": {
+          "type": "normal",
+          "direction": "5",
+          "button": "K",
+          "strength": "H"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/dee_jay.cargo.json",
+        "sourceIndex": 37,
+        "sourceInput": "5HK",
+        "sourceNotation": "36(40)",
+        "sourceNotes": "Great poke that leads to full Drive Rush conversions on Punish Counter (or a spinning limited juggle state on airborne Punish Counter); 4f extra recovery on whiff; extends a hurtbox 1f before active that is vulnerable to projectiles",
+        "rawPath": "archive/staging/sf6-frame-data/raw/dee_jay.json",
+        "rawIndex": 67,
+        "officialPath": "staging/official-verification/sources/dee_jay.json",
+        "officialRows": [
+          7
+        ],
+        "condition": "通常状態・非ホールド・空振り",
+        "reason": "同一入力のCargo括弧値と空振り追加硬直の注記が一致し、空振り全体Fの採用規則に反する現行値を特定。保存データ基準の修正案。",
+        "patch": "UNVERIFIED",
+        "before": {
+          "status": "confirmed",
+          "display": "36",
+          "numeric": 36,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "40",
+          "numeric": 40,
+          "provenance": "source",
+          "calculation": null
+        }
+      },
+      {
+        "characterId": "e_honda",
+        "moveId": "e_honda__normal_2_P_H",
+        "field": "total",
+        "input": {
+          "type": "normal",
+          "direction": "2",
+          "button": "P",
+          "strength": "H"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+        "sourceIndex": 22,
+        "sourceInput": "2HP",
+        "sourceNotation": "31(33)",
+        "sourceNotes": "2f extra recovery on whiff or if armor absorbed; not a low attack despite the animation; can be spaced to hit on later active frames for improved advantage; cancelable into 214P with Sumo Spirit enhancement (combos into any strength version)",
+        "rawPath": "archive/staging/sf6-frame-data/raw/e_honda.json",
+        "rawIndex": 22,
+        "officialPath": "staging/official-verification/sources/e_honda.json",
+        "officialRows": [
+          12
+        ],
+        "condition": "通常状態・非ホールド・空振り",
+        "reason": "同一入力のCargo括弧値と空振り追加硬直の注記が一致し、空振り全体Fの採用規則に反する現行値を特定。保存データ基準の修正案。",
+        "patch": "UNVERIFIED",
+        "before": {
+          "status": "confirmed",
+          "display": "31",
+          "numeric": 31,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "33",
+          "numeric": 33,
+          "provenance": "source",
+          "calculation": null
+        }
+      },
+      {
+        "characterId": "elena",
+        "moveId": "elena__normal_2_K_M",
+        "field": "total",
+        "input": {
+          "type": "normal",
+          "direction": "2",
+          "button": "K",
+          "strength": "M"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/elena.cargo.json",
+        "sourceIndex": 37,
+        "sourceInput": "2MK",
+        "sourceNotation": "27(29)",
+        "sourceNotes": "2f extra recovery on whiff/block; good combo starter out of Drive Rush that leaves Elena +1 on block slightly out of throw range; moves Elena forward and can combo naturally into 2LP",
+        "rawPath": "archive/staging/sf6-frame-data/raw/elena.json",
+        "rawIndex": 37,
+        "officialPath": "staging/official-verification/sources/elena.json",
+        "officialRows": [
+          11
+        ],
+        "condition": "通常状態・非ホールド・空振り",
+        "reason": "同一入力のCargo括弧値と空振り追加硬直の注記が一致し、空振り全体Fの採用規則に反する現行値を特定。保存データ基準の修正案。",
+        "patch": "UNVERIFIED",
+        "before": {
+          "status": "confirmed",
+          "display": "27",
+          "numeric": 27,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "29",
+          "numeric": 29,
+          "provenance": "source",
+          "calculation": null
+        }
+      },
+      {
+        "characterId": "elena",
+        "moveId": "elena__special_236_K_H",
+        "field": "total",
+        "input": {
+          "type": "special",
+          "motion": "236",
+          "button": "K",
+          "strength": "H"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/elena.cargo.json",
+        "sourceIndex": 15,
+        "sourceInput": "236HK",
+        "sourceNotation": "58(62)",
+        "sourceNotes": "Farthest distance; whiffs on crouching opponents; Low Crush 23-43f; puts opponents into limited juggle state with follow-ups like 623HK possible in the corner; 4f extra recovery on block/whiff; KD Advantage refers to grounded hits (varies against airborne opponents)",
+        "rawPath": "archive/staging/sf6-frame-data/raw/elena.json",
+        "rawIndex": 15,
+        "officialPath": "staging/official-verification/sources/elena.json",
+        "officialRows": [
+          37
+        ],
+        "condition": "通常状態・非ホールド・空振り",
+        "reason": "同一入力のCargo括弧値と空振り追加硬直の注記が一致し、空振り全体Fの採用規則に反する現行値を特定。保存データ基準の修正案。",
+        "patch": "UNVERIFIED",
+        "before": {
+          "status": "confirmed",
+          "display": "58",
+          "numeric": 58,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "62",
+          "numeric": 62,
+          "provenance": "source",
+          "calculation": null
+        }
+      },
+      {
+        "characterId": "elena",
+        "moveId": "elena__special_236_K_L",
+        "field": "total",
+        "input": {
+          "type": "special",
+          "motion": "236",
+          "button": "K",
+          "strength": "L"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/elena.cargo.json",
+        "sourceIndex": 18,
+        "sourceInput": "236LK",
+        "sourceNotation": "49(52)",
+        "sourceNotes": "Shortest distance; whiffs on crouching opponents; Low Crush 15-34f; puts opponents into limited juggle state with follow-ups possible in the corner; 3f extra recovery on block/whiff; KD Advantage refers to grounded hits (varies against airborne opponents)",
+        "rawPath": "archive/staging/sf6-frame-data/raw/elena.json",
+        "rawIndex": 18,
+        "officialPath": "staging/official-verification/sources/elena.json",
+        "officialRows": [
+          35
+        ],
+        "condition": "通常状態・非ホールド・空振り",
+        "reason": "同一入力のCargo括弧値と空振り追加硬直の注記が一致し、空振り全体Fの採用規則に反する現行値を特定。保存データ基準の修正案。",
+        "patch": "UNVERIFIED",
+        "before": {
+          "status": "confirmed",
+          "display": "49",
+          "numeric": 49,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "52",
+          "numeric": 52,
+          "provenance": "source",
+          "calculation": null
+        }
+      },
+      {
+        "characterId": "elena",
+        "moveId": "elena__special_236_K_M",
+        "field": "total",
+        "input": {
+          "type": "special",
+          "motion": "236",
+          "button": "K",
+          "strength": "M"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/elena.cargo.json",
+        "sourceIndex": 20,
+        "sourceInput": "236MK",
+        "sourceNotation": "54(58)",
+        "sourceNotes": "Medium distance; whiffs on crouching opponents; Low Crush 19-39f; puts opponents into limited juggle state with follow-ups possible in the corner; 4f extra recovery on block/whiff; KD Advantage refers to grounded hits (varies against airborne opponents)",
+        "rawPath": "archive/staging/sf6-frame-data/raw/elena.json",
+        "rawIndex": 20,
+        "officialPath": "staging/official-verification/sources/elena.json",
+        "officialRows": [
+          36
+        ],
+        "condition": "通常状態・非ホールド・空振り",
+        "reason": "同一入力のCargo括弧値と空振り追加硬直の注記が一致し、空振り全体Fの採用規則に反する現行値を特定。保存データ基準の修正案。",
+        "patch": "UNVERIFIED",
+        "before": {
+          "status": "confirmed",
+          "display": "54",
+          "numeric": 54,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "58",
+          "numeric": 58,
+          "provenance": "source",
+          "calculation": null
+        }
+      },
+      {
+        "characterId": "elena",
+        "moveId": "elena__special_236_K_OD",
+        "field": "total",
+        "input": {
+          "type": "special",
+          "motion": "236",
+          "button": "K",
+          "strength": "OD"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/elena.cargo.json",
+        "sourceIndex": 17,
+        "sourceInput": "236KK",
+        "sourceNotation": "48(54)",
+        "sourceNotes": "Whiffs on crouching opponents; Low Crush 13-35f; puts opponents into limited juggle state with follow-ups possible anywhere on the screen; some hits can whiff under high airborne opponents (at certain heights, allows a sideswitch juggle); 6f extra recovery on block/whiff; KD Advantage refers to grounded hits (varies against airborne opponents)",
+        "rawPath": "archive/staging/sf6-frame-data/raw/elena.json",
+        "rawIndex": 17,
+        "officialPath": "staging/official-verification/sources/elena.json",
+        "officialRows": [
+          38
+        ],
+        "condition": "通常状態・非ホールド・空振り",
+        "reason": "同一入力のCargo括弧値と空振り追加硬直の注記が一致し、空振り全体Fの採用規則に反する現行値を特定。保存データ基準の修正案。",
+        "patch": "UNVERIFIED",
+        "before": {
+          "status": "confirmed",
+          "display": "48",
+          "numeric": 48,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "54",
+          "numeric": 54,
+          "provenance": "source",
+          "calculation": null
+        }
+      },
+      {
+        "characterId": "ingrid",
+        "moveId": "ingrid__normal_5_P_H",
+        "field": "total",
+        "input": {
+          "type": "normal",
+          "direction": "5",
+          "button": "P",
+          "strength": "H"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ingrid.cargo.json",
+        "sourceIndex": 46,
+        "sourceInput": "5HP",
+        "sourceNotation": "34(35)",
+        "sourceNotes": "1f extra recovery on whiff and block; long range whiff punish tool (links to 6HP at nearly any range on Punish Counter); extends a hurtbox 1f before active that is vulnerable to projectiles",
+        "rawPath": "archive/staging/sf6-frame-data/raw/ingrid.json",
+        "rawIndex": 45,
+        "officialPath": "staging/official-verification/sources/ingrid.json",
+        "officialRows": [
+          6
+        ],
+        "condition": "通常状態・非ホールド・空振り",
+        "reason": "同一入力のCargo括弧値と空振り追加硬直の注記が一致し、空振り全体Fの採用規則に反する現行値を特定。保存データ基準の修正案。",
+        "patch": "UNVERIFIED",
+        "before": {
+          "status": "confirmed",
+          "display": "34",
+          "numeric": 34,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "35",
+          "numeric": 35,
+          "provenance": "source",
+          "calculation": null
+        }
+      },
+      {
+        "characterId": "ingrid",
+        "moveId": "ingrid__special_236_P_H",
+        "field": "total",
+        "input": {
+          "type": "special",
+          "motion": "236",
+          "button": "P",
+          "strength": "H"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ingrid.cargo.json",
+        "sourceIndex": 21,
+        "sourceInput": "236HP",
+        "sourceNotation": "46(48)",
+        "sourceNotes": "1-hit projectile; uncharged version has 2f extra whiff recovery if the projectile does not connect within the first 40 frames; sends a projectile upward that stays active for 39f, then descends for another 20f; hold button 15f for charged version that instead flies straight forward mid-air; puts airborne opponents into a limited juggle state; charged version is useful for baiting a whiffed parry or punishing opponents trying to jump out of Ingrid's projectile zoning; uncharged version can be used to safely stock a Sun Crest at mid range if the opponent doesn't jump over it; can only have 1 meterless Sun Shot on-screen at a time (but can be used in conjunction with OD Sun Shot); projectile disappears 1f after Ingrid is hit; extends a slight projectile invuln hand hitbox on frames 16-45 and a foot hurtbox on frames 16-44",
+        "rawPath": "archive/staging/sf6-frame-data/raw/ingrid.json",
+        "rawIndex": 20,
+        "officialPath": "staging/official-verification/sources/ingrid.json",
+        "officialRows": [
+          32
+        ],
+        "condition": "通常状態・非ホールド・空振り",
+        "reason": "同一入力のCargo括弧値と空振り追加硬直の注記が一致し、空振り全体Fの採用規則に反する現行値を特定。保存データ基準の修正案。",
+        "patch": "UNVERIFIED",
+        "before": {
+          "status": "confirmed",
+          "display": "46",
+          "numeric": 46,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "48",
+          "numeric": 48,
+          "provenance": "source",
+          "calculation": null
+        }
+      },
+      {
+        "characterId": "juri",
+        "moveId": "juri__special_214_K_L",
+        "field": "total",
+        "input": {
+          "type": "special",
+          "motion": "214",
+          "button": "K",
+          "strength": "L"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/juri.cargo.json",
+        "sourceIndex": 6,
+        "sourceInput": "214LK",
+        "sourceNotation": "32(34)",
+        "sourceNotes": "Gains 1 Fuha stock on hit/block/whiff on frame 10; 1-hit projectile clash hitbox on frames 8-13; puts opponent into limited juggle state (only combos into SA3); does not move forward during startup; 2f extra recovery on whiff; 8f hitstop when clashing with projectile",
+        "rawPath": "archive/staging/sf6-frame-data/raw/juri.json",
+        "rawIndex": 6,
+        "officialPath": "staging/official-verification/sources/juri.json",
+        "officialRows": [
+          52
+        ],
+        "condition": "通常状態・非ホールド・空振り",
+        "reason": "同一入力のCargo括弧値と空振り追加硬直の注記が一致し、空振り全体Fの採用規則に反する現行値を特定。保存データ基準の修正案。",
+        "patch": "UNVERIFIED",
+        "before": {
+          "status": "confirmed",
+          "display": "32",
+          "numeric": 32,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "34",
+          "numeric": 34,
+          "provenance": "source",
+          "calculation": null
+        }
+      },
+      {
+        "characterId": "luke",
+        "moveId": "luke__normal_2_P_M",
+        "field": "total",
+        "input": {
+          "type": "normal",
+          "direction": "2",
+          "button": "P",
+          "strength": "M"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/luke.cargo.json",
+        "sourceIndex": 29,
+        "sourceInput": "2MP",
+        "sourceNotation": "21(24)",
+        "sourceNotes": "3f extra recovery on whiff; great pressure tool with high reward on counter-hit or when canceled to Drive Rush; up to +7/+3 with meaty timing; has an extended hurtbox on whiff until the end of recovery; topmost hurtbox on frames 1-7 is vulnerable only to aerial strikes (preventing its use as an anti-air)",
+        "rawPath": "archive/staging/sf6-frame-data/raw/luke.json",
+        "rawIndex": 32,
+        "officialPath": "staging/official-verification/sources/luke.json",
+        "officialRows": [
+          10
+        ],
+        "condition": "通常状態・非ホールド・空振り",
+        "reason": "同一入力のCargo括弧値と空振り追加硬直の注記が一致し、空振り全体Fの採用規則に反する現行値を特定。保存データ基準の修正案。",
+        "patch": "UNVERIFIED",
+        "before": {
+          "status": "confirmed",
+          "display": "21",
+          "numeric": 21,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "24",
+          "numeric": 24,
+          "provenance": "source",
+          "calculation": null
+        }
+      },
+      {
+        "characterId": "luke",
+        "moveId": "luke__normal_5_K_M",
+        "field": "total",
+        "input": {
+          "type": "normal",
+          "direction": "5",
+          "button": "K",
+          "strength": "M"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/luke.cargo.json",
+        "sourceIndex": 40,
+        "sourceInput": "5MK",
+        "sourceNotation": "26(29)",
+        "sourceNotes": "Good neutral poke; 3f extra recovery on whiff; lifts up leg hurtbox on frames 4-11, making it strong vs. low attacks",
+        "rawPath": "archive/staging/sf6-frame-data/raw/luke.json",
+        "rawIndex": 43,
+        "officialPath": "staging/official-verification/sources/luke.json",
+        "officialRows": [
+          5
+        ],
+        "condition": "通常状態・非ホールド・空振り",
+        "reason": "同一入力のCargo括弧値と空振り追加硬直の注記が一致し、空振り全体Fの採用規則に反する現行値を特定。保存データ基準の修正案。",
+        "patch": "UNVERIFIED",
+        "before": {
+          "status": "confirmed",
+          "display": "26",
+          "numeric": 26,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "29",
+          "numeric": 29,
+          "provenance": "source",
+          "calculation": null
+        }
+      },
+      {
+        "characterId": "luke",
+        "moveId": "luke__normal_5_P_L",
+        "field": "total",
+        "input": {
+          "type": "normal",
+          "direction": "5",
+          "button": "P",
+          "strength": "L"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/luke.cargo.json",
+        "sourceIndex": 37,
+        "sourceInput": "5LP",
+        "sourceNotation": "19(22)",
+        "sourceNotes": "Long range for a cancelable light normal, good whiff punish tool; 3f extra recovery on whiff; greatly extends hurtbox for 3f before active, making it susceptible to counterpokes; special/DR/DI cancel is delayed until after active frames",
+        "rawPath": "archive/staging/sf6-frame-data/raw/luke.json",
+        "rawIndex": 40,
+        "officialPath": "staging/official-verification/sources/luke.json",
+        "officialRows": [
+          2
+        ],
+        "condition": "通常状態・非ホールド・空振り",
+        "reason": "同一入力のCargo括弧値と空振り追加硬直の注記が一致し、空振り全体Fの採用規則に反する現行値を特定。保存データ基準の修正案。",
+        "patch": "UNVERIFIED",
+        "before": {
+          "status": "confirmed",
+          "display": "19",
+          "numeric": 19,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "22",
+          "numeric": 22,
+          "provenance": "source",
+          "calculation": null
+        }
+      },
+      {
+        "characterId": "m_bison",
+        "moveId": "m_bison__normal_5_P_H",
+        "field": "total",
+        "input": {
+          "type": "normal",
+          "direction": "5",
+          "button": "P",
+          "strength": "H"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json",
+        "sourceIndex": 29,
+        "sourceInput": "5HP",
+        "sourceNotation": "38(41)",
+        "sourceNotes": "Slow advancing poke with good hitbox priority; 3f extra recovery on whiff/armor; can be spaced for better frame advantage (but gains no links at this range due to pushback); can be hitconfirmed into Super; slams airborne opponents down into limited juggle OTG state (higher bounce on Punish Counter allows more juggle follow-ups); extends a hurtbox 1f before active that is vulnerable to projectiles",
+        "rawPath": "archive/staging/sf6-frame-data/raw/m_bison.json",
+        "rawIndex": 46,
+        "officialPath": "staging/official-verification/sources/m_bison.json",
+        "officialRows": [
+          6
+        ],
+        "condition": "通常状態・非ホールド・空振り",
+        "reason": "同一入力のCargo括弧値と空振り追加硬直の注記が一致し、空振り全体Fの採用規則に反する現行値を特定。保存データ基準の修正案。",
+        "patch": "UNVERIFIED",
+        "before": {
+          "status": "confirmed",
+          "display": "38",
+          "numeric": 38,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "41",
+          "numeric": 41,
+          "provenance": "source",
+          "calculation": null
+        }
+      },
+      {
+        "characterId": "yasmine",
+        "moveId": "yasmine__special_214_P_M",
+        "field": "total",
+        "input": {
+          "type": "special",
+          "motion": "214",
+          "button": "P",
+          "strength": "M"
+        },
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/yasmine.cargo.json",
+        "sourceIndex": 4,
+        "sourceInput": "214MP",
+        "sourceNotation": "43(46)",
+        "sourceNotes": "Puts Yasmine into Bayani Mode on hit (this occurs after the hitstop of the 1st hit ends, so it will be granted when Super canceled but not if it trades with opponent's attack); safe on block advancing special; last 2 hits only play out on hit and are not cancelable (listed recovery refers to the blocked version); 3f extra recovery on whiff; 4f extra recovery when absorbed by armor (guaranteed punish when absorbed by Drive Impact unless canceled into SA3); counter-hit/Punish Counter bonus advantage carries through both hits (gives light confirms on CH and medium confirms on PC); puts airborne opponents into a limited juggle state (follow-ups are usually only possible in the corner)",
+        "rawPath": "archive/staging/sf6-frame-data/raw/yasmine.json",
+        "rawIndex": 4,
+        "officialPath": "staging/official-verification/sources/yasmine.json",
+        "officialRows": [
+          47
+        ],
+        "condition": "通常状態・非ホールド・空振り",
+        "reason": "同一入力のCargo括弧値と空振り追加硬直の注記が一致し、空振り全体Fの採用規則に反する現行値を特定。保存データ基準の修正案。",
+        "patch": "UNVERIFIED",
+        "before": {
+          "status": "confirmed",
+          "display": "43",
+          "numeric": 43,
+          "provenance": "source",
+          "calculation": null
+        },
+        "value": {
+          "status": "confirmed",
+          "display": "46",
+          "numeric": 46,
           "provenance": "source",
           "calculation": null
         }
@@ -13552,7 +14376,9 @@
         "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ryu.cargo.json",
         "sourceIndex": 48,
         "officialPath": "staging/official-verification/sources/ryu.json",
-        "officialRows": [38],
+        "officialRows": [
+          38
+        ],
         "basis": "ユーザーによるゲーム内確認",
         "measurement": {
           "gameVersion": null,
@@ -13592,7 +14418,9 @@
         "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/alex.cargo.json",
         "sourceIndex": 41,
         "officialPath": "staging/official-verification/sources/alex.json",
-        "officialRows": [4],
+        "officialRows": [
+          4
+        ],
         "basis": "ユーザーによるゲーム内確認",
         "measurement": {
           "gameVersion": null,
@@ -13650,5 +14478,24 @@
         "officialPatch": "UNVERIFIED"
       }
     ]
-  }
+  },
+  "specialStateExclusions": [
+    {
+      "characterId": "m_bison",
+      "moveId": "m_bison__special_623_P_OD",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json",
+      "sourceIndex": 40,
+      "sourceInput": "623PP",
+      "reason": "サイコマインを付けた相手への前挑発後に使用可能なShin Bison限定技。",
+      "before": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "value": {
+        "status": "excluded",
+        "basis": "Shin Bison限定。通常状態を対象とする採用規則では対象外。原典とフレーム値は保持する。"
+      },
+      "patch": "UNVERIFIED"
+    }
+  ]
 }

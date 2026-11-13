@@ -10,21 +10,23 @@ export function applyWhiffTotalCorrections(character: Character): Character {
   );
   const decisions = policy.whiffTotalCorrections?.decisions ?? [];
   const additional = policy.whiffTotalCorrections?.additionalDecisions ?? [];
+  const reviewed = policy.whiffTotalCorrections?.unverifiableDecisions ?? [];
   if (
     decisions.length !== 53 ||
     new Set(
       decisions.map((d: any) => `${d.characterId}/${d.moveId}/${d.field}`),
     ).size !== 53 ||
     additional.length !== 2 ||
+    reviewed.length !== 18 ||
     new Set(
-      [...decisions, ...additional].map(
+      [...decisions, ...additional, ...reviewed].map(
         (d: any) => `${d.characterId}/${d.moveId}/${d.field}`,
       ),
-    ).size !== 55
+    ).size !== 73
   )
     throw new Error("Invalid whiff total decisions");
   const result = structuredClone(character);
-  for (const d of [...decisions, ...additional].filter(
+  for (const d of [...decisions, ...additional, ...reviewed].filter(
     (d: any) => d.characterId === result.id,
   )) {
     const m = result.moves.find((m) => m.id === d.moveId);
@@ -55,6 +57,7 @@ export function restoreWhiffTotalCorrections(character: Character): Character {
   for (const d of [
     ...(policy.whiffTotalCorrections?.decisions ?? []),
     ...(policy.whiffTotalCorrections?.additionalDecisions ?? []),
+    ...(policy.whiffTotalCorrections?.unverifiableDecisions ?? []),
   ]) {
     if (d.characterId !== result.id) continue;
     const m = result.moves.find((item) => item.id === d.moveId);

@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import { readFileSync, readdirSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import { restoreCompoundStartup } from "../scripts/compound-startup-projection.mjs";
+import { applyRiskCorrectionsToBaseline } from "./helpers/apply-user-confirmed.mjs";
 
 const read = (p) => JSON.parse(readFileSync(p, "utf8"));
 test("four approved fields are the only changes from the published baseline", () => {
@@ -22,6 +23,7 @@ test("four approved fields are the only changes from the published baseline", ()
       move.frames[d.field] = d.value;
       changed++;
     }
+    applyRiskCorrectionsToBaseline(before);
     assert.deepEqual(read(path), before);
   }
   assert.equal(records, 1298);

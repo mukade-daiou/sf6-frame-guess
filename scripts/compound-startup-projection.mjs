@@ -12,6 +12,15 @@ export function restoreCompoundStartup(character) {
     ...(compound?.indicatorDecisions || []),
   ];
   const result = structuredClone(character);
+  const special =
+    JSON.parse(readFileSync("data/adoption-decisions.json", "utf8"))
+      .specialStateExclusions || [];
+  for (const d of special.filter((x) => x.characterId === result.id)) {
+    const move = result.moves.find((m) => m.id === d.moveId);
+    if (!move || !isDeepStrictEqual(move.adoption, d.value))
+      throw new Error(`Unauthorized special-state exclusion: ${d.moveId}`);
+    move.adoption = structuredClone(d.before);
+  }
   const userDecisions =
     JSON.parse(readFileSync("data/adoption-decisions.json", "utf8"))
       .userConfirmedFrames?.decisions || [];
@@ -36,6 +45,7 @@ export function restoreCompoundStartup(character) {
   const totalDecisions = [
     ...(totals?.decisions || []),
     ...(totals?.additionalDecisions || []),
+    ...(totals?.unverifiableDecisions || []),
   ];
   for (const move of result.moves) {
     const total = totalDecisions.find(

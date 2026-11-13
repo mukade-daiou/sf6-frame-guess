@@ -27,15 +27,34 @@ it("keeps excluded source records but removes them from question inputs and abse
       .filter((m) => m.adoption?.status === "excluded")
       .map((m) => ({ c, m })),
   );
-  expect(excluded).toHaveLength(9);
+  expect(excluded).toHaveLength(10);
   for (const { c, m } of excluded) {
     expect(m.source.verification).toBe("unverified");
-    if (m.id !== "dee_jay__held_special_22_P_OD")
+    if (
+      !["dee_jay__held_special_22_P_OD", "m_bison__special_623_P_OD"].includes(
+        m.id,
+      )
+    )
       expect(
         production.inputs.some((i) => inputKey(i) === inputKey(m.input)),
       ).toBe(false);
     expect(resolveMove(c, m.input, "normal").status).toBe("not_found");
   }
+});
+it("excludes Shin Bison's Psycho Burst while retaining the shared input", () => {
+  const bison = production.eligible.find((c) => c.id === "m_bison")!;
+  const input = {
+    type: "special",
+    motion: "623",
+    button: "P",
+    strength: "OD",
+    includeSuperArts: true,
+  } as const;
+  expect(production.inputs.some((i) => inputKey(i) === inputKey(input))).toBe(
+    true,
+  );
+  expect(resolveMove(bison, input, "normal").status).toBe("not_found");
+  expect(resolveMove(bison, input, "startup").status).toBe("not_found");
 });
 it("selects far-distance values with explicitly different HK behavior", () => {
   const c = production.characters.find((c) => c.id === "zangief")!;

@@ -1,0 +1,3154 @@
+{
+  "scope": "前回の未詳細調査のうち数値・Dとして出題される209フィールド。文字列検索は候補抽出であり、フラグは誤りの判定ではない。",
+  "count": 209,
+  "bisonAcceptedShinMentions": [],
+  "findings": [
+    {
+      "id": "ed__special_236_K_L/total",
+      "finding": "Cargo 45(43)、空振り時2F短縮と明記。現行45、空振り43の可能性。強化版とホールド条件の対応を追加確認する。",
+      "source": "archive/staging/sf6-frame-data-quality/evidence/ed.cargo.json#/data/cargoquery/10/title"
+    },
+    {
+      "id": "ed__special_236_K_M/total",
+      "finding": "Cargo 49(48)、空振り時1F短縮と明記。現行49、空振り48の可能性。強化版とホールド条件の対応を追加確認する。",
+      "source": "archive/staging/sf6-frame-data-quality/evidence/ed.cargo.json#/data/cargoquery/11/title"
+    },
+    {
+      "id": "ken__normal_5_K_H/total",
+      "finding": "空振り追加2Fは現行38に反映済み。修正候補ではない。"
+    },
+    {
+      "id": "blanka__special_22_P_none__strength_L/startup",
+      "finding": "原典の設置と後続効果の指標差。既存の中優先度で、空振り追加硬直の誤採用は示さない。"
+    }
+  ],
+  "records": [
+    {
+      "characterId": "aki",
+      "moveId": "aki__special_214_K_H",
+      "field": "total",
+      "current": "72",
+      "sourceMoveId": "aki__special_214_K_H",
+      "flags": {
+        "whiff": true,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Farthest trajectory; cannot hit cross-up; Counter-hit/Punish Counter bonus advantage applies to all hits; landing recovery has a crouch-sized hurtbox despite being in a standing state; first 2 hits will whiff on crouching opponents (less damage, chip, Drive Dmg); can link naturally into 2LP for a follow-up combo; pushback on block keeps A.K.I. out of throw range but also weakens her Burnout pressure; extends a large projectile invincible hurtbox downward on frames 26-32 (makes it easier for opponents to anti-air A.K.I.)"
+      ]
+    },
+    {
+      "characterId": "aki",
+      "moveId": "aki__special_214_K_L",
+      "field": "total",
+      "current": "63",
+      "sourceMoveId": "aki__special_214_K_L",
+      "flags": {
+        "whiff": true,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Shortest trajectory; cannot hit cross-up; Counter-hit/Punish Counter bonus advantage applies to all hits; landing recovery has a crouch-sized hurtbox despite being in a standing state; first 2 hits will whiff on crouching opponents (less damage, chip, Drive Dmg); gives a strike/throw mixup on hit, a light combo extension on counter-hit, and a 5MP combo extension on Punish Counter (very effective as a throw bait); does not extend a large downward hurtbox during startup like other versions (harder for opponent to anti-air with grounded normals)"
+      ]
+    },
+    {
+      "characterId": "aki",
+      "moveId": "aki__special_214_K_M",
+      "field": "total",
+      "current": "67",
+      "sourceMoveId": "aki__special_214_K_M",
+      "flags": {
+        "whiff": true,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Medium trajectory; cannot hit cross-up; Counter-hit/Punish Counter bonus advantage applies to all hits; landing recovery has a crouch-sized hurtbox despite being in a standing state; first 2 hits will whiff on crouching opponents (less damage, chip, Drive Dmg); extends a large projectile invincible hurtbox downward on frames 21-27 (makes it easier for opponents to anti-air A.K.I.)"
+      ]
+    },
+    {
+      "characterId": "aki",
+      "moveId": "aki__special_214_K_OD",
+      "field": "total",
+      "current": "67",
+      "sourceMoveId": "aki__special_214_K_OD",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Hold left/right to steer trajectory; cannot hit cross-up; Counter-hit/Punish Counter bonus advantage applies to all hits on non-cinematic version; landing recovery has a crouch-sized hurtbox despite being in a standing state; goes into grab animation on a grounded hit for full damage and follow-up oki, but 3rd/4th hits can get a non-cinematic hit late in the active frames (400~640 damage); poisons opponent on hit (cinematic or non-cinematic); puts airborne opponents into a limited juggle OTG state (KD +51~58); Super cancel works only on non-cinematic version; SA2 cancel will not combo unless LP version lands as a counter-hit or Punish Counter; extends a large projectile invincible hurtbox downward on frames 23-27 (makes it easier for opponents to anti-air A.K.I.)"
+      ]
+    },
+    {
+      "characterId": "aki",
+      "moveId": "aki__special_236_K_H",
+      "field": "total",
+      "current": "43",
+      "sourceMoveId": "aki__special_236_K_H",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Can switch sides with opponent (cross-up version usually has a fixed 23f recovery after passing through; total time depends on distance from opponent); at a very specific spacing, A.K.I. can cross-up with 43f move duration (extremely ambiguous left/right mixup); counter-hit state for entire move duration; projectile invincibility lasts longer on cross-up version; semi-low profile 11-17f (crouch height); crouching state 17f until end of recovery; low profile 18f until end of recovery; collision box disappears 20-31f to allow cross-up; Distance: 3.18 (3.84 cross-up)"
+      ]
+    },
+    {
+      "characterId": "aki",
+      "moveId": "aki__special_236_K_OD",
+      "field": "total",
+      "current": "42",
+      "sourceMoveId": "aki__special_236_K_OD",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Entire animation is vulnerable to Punish Counter Throws; crouching state 17f until end of recovery; Same-side version: 42f total animation, 8 recovery frames at the end that are vulnerable to strikes; Cross-up version: the entire animation is strike/projectile invincible; total duration of cross-up version depends on distance from opponent (23f fixed recovery time after passing through); collision box disappears 7-33f to allow cross-up; Distance: 4.06 (3.52 cross-up)"
+      ]
+    },
+    {
+      "characterId": "aki",
+      "moveId": "aki__super_art_2_L",
+      "field": "total",
+      "current": "153",
+      "sourceMoveId": "aki:raw:0",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: No invincibility; Super-priority projectile hitboxes; button strength determines distance (LP close/mid range, MP mid range to full screen, HP full screen); poisons the opponent on hit; creates a pool that lasts 700f, poisoning opponent while in close proximity; reapplies poison as long as opponent is close to pool; pool placement depends on button strength used; poison pool moves forward after MP/HP versions; SA2 poison pool can exist simultaneously with 214MP pool (poison does not stack); MP version can be used to counter projectiles (if too far, may drop out; if too close, A.K.I. will be hit before projectile dissipates); heavier versions can whiff if used from close range, especially vs. crouching; opponent cannot Drive Reversal until the 2nd to last hit (right before poison detonation)"
+      ]
+    },
+    {
+      "characterId": "aki",
+      "moveId": "aki__super_art_2_M",
+      "field": "total",
+      "current": "153",
+      "sourceMoveId": "aki:raw:0",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: No invincibility; Super-priority projectile hitboxes; button strength determines distance (LP close/mid range, MP mid range to full screen, HP full screen); poisons the opponent on hit; creates a pool that lasts 700f, poisoning opponent while in close proximity; reapplies poison as long as opponent is close to pool; pool placement depends on button strength used; poison pool moves forward after MP/HP versions; SA2 poison pool can exist simultaneously with 214MP pool (poison does not stack); MP version can be used to counter projectiles (if too far, may drop out; if too close, A.K.I. will be hit before projectile dissipates); heavier versions can whiff if used from close range, especially vs. crouching; opponent cannot Drive Reversal until the 2nd to last hit (right before poison detonation)"
+      ]
+    },
+    {
+      "characterId": "aki",
+      "moveId": "aki__super_art_2_H",
+      "field": "total",
+      "current": "153",
+      "sourceMoveId": "aki:raw:0",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: No invincibility; Super-priority projectile hitboxes; button strength determines distance (LP close/mid range, MP mid range to full screen, HP full screen); poisons the opponent on hit; creates a pool that lasts 700f, poisoning opponent while in close proximity; reapplies poison as long as opponent is close to pool; pool placement depends on button strength used; poison pool moves forward after MP/HP versions; SA2 poison pool can exist simultaneously with 214MP pool (poison does not stack); MP version can be used to counter projectiles (if too far, may drop out; if too close, A.K.I. will be hit before projectile dissipates); heavier versions can whiff if used from close range, especially vs. crouching; opponent cannot Drive Reversal until the 2nd to last hit (right before poison detonation)"
+      ]
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__normal_5_K_M",
+      "field": "total",
+      "current": "28",
+      "sourceMoveId": "arjun__normal_5_K_M",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: 2f less recovery on block"
+      ]
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__normal_5_P_H",
+      "field": "total",
+      "current": "40",
+      "sourceMoveId": "arjun__normal_5_P_H",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: 1f less recovery on block"
+      ]
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_63214_K_H",
+      "field": "total",
+      "current": "74",
+      "sourceMoveId": "blanka__special_63214_K_H",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Farthest trajectory; can steer forward/backward (forward momentum is faster than backward); can hit cross-up"
+      ]
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_63214_K_L",
+      "field": "total",
+      "current": "69",
+      "sourceMoveId": "blanka__special_63214_K_L",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Shortest trajectory; can steer forward/backward (forward momentum is faster than backward); can hit cross-up"
+      ]
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_63214_K_M",
+      "field": "total",
+      "current": "72",
+      "sourceMoveId": "blanka__special_63214_K_M",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Medium trajectory; can steer forward/backward (forward momentum is faster than backward); can hit cross-up"
+      ]
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_63214_K_OD",
+      "field": "total",
+      "current": "70",
+      "sourceMoveId": "blanka__special_63214_K_OD",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Can steer forward/backward (forward momentum is faster than backward); can hit cross-up on the way down; 1st hit is SA2/SA3 cancelable, works in juggles, and only connects at very close range; () startup refers to the downward hit; downward hit connects twice vs. standing opponents or once vs. crouching opponents; SA2 cancel: KD +68/+6"
+      ]
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__super_art_2_L",
+      "field": "startup",
+      "current": "1",
+      "sourceMoveId": "blanka:raw:0",
+      "flags": {
+        "whiff": false,
+        "specialState": true,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Improves properties/damage special moves (except 236K) and SA1; gains access to Rolling Cannon after ball-type specials ([4]6P, j.[4]6P, [2]8K, 63214K); all ball-type specials gain electricity to activate Blanka-Chan bomb; while active, Blanka no longer requires charge when canceling into charge specials; using any ball-type special depletes install time by 100f (6.7%), and Rolling Cannon depletes timer by 200f (13.3%)"
+      ]
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__super_art_2_M",
+      "field": "startup",
+      "current": "1",
+      "sourceMoveId": "blanka:raw:0",
+      "flags": {
+        "whiff": false,
+        "specialState": true,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Improves properties/damage special moves (except 236K) and SA1; gains access to Rolling Cannon after ball-type specials ([4]6P, j.[4]6P, [2]8K, 63214K); all ball-type specials gain electricity to activate Blanka-Chan bomb; while active, Blanka no longer requires charge when canceling into charge specials; using any ball-type special depletes install time by 100f (6.7%), and Rolling Cannon depletes timer by 200f (13.3%)"
+      ]
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__super_art_2_H",
+      "field": "startup",
+      "current": "1",
+      "sourceMoveId": "blanka:raw:0",
+      "flags": {
+        "whiff": false,
+        "specialState": true,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Improves properties/damage special moves (except 236K) and SA1; gains access to Rolling Cannon after ball-type specials ([4]6P, j.[4]6P, [2]8K, 63214K); all ball-type specials gain electricity to activate Blanka-Chan bomb; while active, Blanka no longer requires charge when canceling into charge specials; using any ball-type special depletes install time by 100f (6.7%), and Rolling Cannon depletes timer by 200f (13.3%)"
+      ]
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_22_P_none__strength_L",
+      "field": "startup",
+      "current": "39",
+      "sourceMoveId": "blanka__special_22_P_none",
+      "flags": {
+        "whiff": false,
+        "specialState": true,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Doll is consumed on frame 25, and spawns on frame 39 (if Blanka is hit between frames 25-38, loses the doll completely); after spawning, takes 35f to reach the ground and become active; doll despawns after 1000f or if completely off-screen; Blanka is in a counter-hit state for entire move duration; starts each round with 3 dolls (only 1 can be active at a time); Back Taunt is the only way to restore dolls mid-round; button strength determines throw distance (LP close, MP mid, HP far); doll can be activated with any source of electricity, with different effects depending on meterless/OD/SA1 electricity type (SA2 install specials count as meterless or OD moves for this purpose); once activated, doll is considered a projectile; doll disappears if Blanka is hit after activating (does not apply to un-activated doll)"
+      ]
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_22_P_none__strength_M",
+      "field": "startup",
+      "current": "39",
+      "sourceMoveId": "blanka__special_22_P_none",
+      "flags": {
+        "whiff": false,
+        "specialState": true,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Doll is consumed on frame 25, and spawns on frame 39 (if Blanka is hit between frames 25-38, loses the doll completely); after spawning, takes 35f to reach the ground and become active; doll despawns after 1000f or if completely off-screen; Blanka is in a counter-hit state for entire move duration; starts each round with 3 dolls (only 1 can be active at a time); Back Taunt is the only way to restore dolls mid-round; button strength determines throw distance (LP close, MP mid, HP far); doll can be activated with any source of electricity, with different effects depending on meterless/OD/SA1 electricity type (SA2 install specials count as meterless or OD moves for this purpose); once activated, doll is considered a projectile; doll disappears if Blanka is hit after activating (does not apply to un-activated doll)"
+      ]
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_22_P_none__strength_H",
+      "field": "startup",
+      "current": "39",
+      "sourceMoveId": "blanka__special_22_P_none",
+      "flags": {
+        "whiff": false,
+        "specialState": true,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Doll is consumed on frame 25, and spawns on frame 39 (if Blanka is hit between frames 25-38, loses the doll completely); after spawning, takes 35f to reach the ground and become active; doll despawns after 1000f or if completely off-screen; Blanka is in a counter-hit state for entire move duration; starts each round with 3 dolls (only 1 can be active at a time); Back Taunt is the only way to restore dolls mid-round; button strength determines throw distance (LP close, MP mid, HP far); doll can be activated with any source of electricity, with different effects depending on meterless/OD/SA1 electricity type (SA2 install specials count as meterless or OD moves for this purpose); once activated, doll is considered a projectile; doll disappears if Blanka is hit after activating (does not apply to un-activated doll)"
+      ]
+    },
+    {
+      "characterId": "cammy",
+      "moveId": "cammy__special_236_P_OD",
+      "field": "startup",
+      "current": "20",
+      "sourceMoveId": "cammy__special_236_P_OD",
+      "flags": {
+        "whiff": false,
+        "specialState": true,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Startup refers to earliest/latest follow-up input timings; button combination affects trajectory (LP+MP=LP, LP+HP=MP, MP+HP=HP); follow-ups have enhanced OD properties"
+      ]
+    },
+    {
+      "characterId": "cammy",
+      "moveId": "cammy__super_art_1_L",
+      "field": "total",
+      "current": "62",
+      "sourceMoveId": "cammy:raw:5",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Great combo tool with high juggle potential and corner carry; 5th hits transitions into launching follow-up on hit only; damage distribution: 100,200x3,100,200,1000"
+      ]
+    },
+    {
+      "characterId": "cammy",
+      "moveId": "cammy__super_art_1_M",
+      "field": "total",
+      "current": "62",
+      "sourceMoveId": "cammy:raw:5",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Great combo tool with high juggle potential and corner carry; 5th hits transitions into launching follow-up on hit only; damage distribution: 100,200x3,100,200,1000"
+      ]
+    },
+    {
+      "characterId": "cammy",
+      "moveId": "cammy__super_art_1_H",
+      "field": "total",
+      "current": "62",
+      "sourceMoveId": "cammy:raw:5",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Great combo tool with high juggle potential and corner carry; 5th hits transitions into launching follow-up on hit only; damage distribution: 100,200x3,100,200,1000"
+      ]
+    },
+    {
+      "characterId": "cammy",
+      "moveId": "cammy__special_236_P_none__strength_L",
+      "field": "startup",
+      "current": "20",
+      "sourceMoveId": "cammy__special_236_P_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Startup refers to earliest/latest follow-up input timings; trajectory depends on button strength (LP short/high, MP middle, HP far/low); LP and MP versions can cross over close standing opponents; HP version can cross over close crouching opponents"
+      ]
+    },
+    {
+      "characterId": "cammy",
+      "moveId": "cammy__special_236_P_none__strength_M",
+      "field": "startup",
+      "current": "20",
+      "sourceMoveId": "cammy__special_236_P_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Startup refers to earliest/latest follow-up input timings; trajectory depends on button strength (LP short/high, MP middle, HP far/low); LP and MP versions can cross over close standing opponents; HP version can cross over close crouching opponents"
+      ]
+    },
+    {
+      "characterId": "cammy",
+      "moveId": "cammy__special_236_P_none__strength_H",
+      "field": "startup",
+      "current": "20",
+      "sourceMoveId": "cammy__special_236_P_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Startup refers to earliest/latest follow-up input timings; trajectory depends on button strength (LP short/high, MP middle, HP far/low); LP and MP versions can cross over close standing opponents; HP version can cross over close crouching opponents"
+      ]
+    },
+    {
+      "characterId": "chunli",
+      "moveId": "chunli__special_22_K_OD",
+      "field": "total",
+      "current": "57",
+      "sourceMoveId": "chunli__special_22_K_OD",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Active/Recovery frames listed are for whiff/block (follow-up attack only occurs after 2nd hit connects); cannot hit cross-up; the final landing recovery frame is in a crouching state"
+      ]
+    },
+    {
+      "characterId": "chunli",
+      "moveId": "chunli__special_214_P_none__strength_L",
+      "field": "startup",
+      "current": "14",
+      "sourceMoveId": "chunli__special_214_P_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Crouching state 14-22f, then low profiles until exiting stance; follow-ups can be input on frame 15 at the earliest; counter-hit state for entire animation; if no follow-up, stays crouched for 57f (hold crouch to extend); can block while crouching (cannot block overheads, as this leads to Stance Exit); blocking an attack immediately exits stance and allows a Drive Reversal; can take longer to enter stance when canceled from heavy normals, giving much worse frame advantage if a follow-up is not used immediately"
+      ]
+    },
+    {
+      "characterId": "chunli",
+      "moveId": "chunli__special_214_P_none__strength_M",
+      "field": "startup",
+      "current": "14",
+      "sourceMoveId": "chunli__special_214_P_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Crouching state 14-22f, then low profiles until exiting stance; follow-ups can be input on frame 15 at the earliest; counter-hit state for entire animation; if no follow-up, stays crouched for 57f (hold crouch to extend); can block while crouching (cannot block overheads, as this leads to Stance Exit); blocking an attack immediately exits stance and allows a Drive Reversal; can take longer to enter stance when canceled from heavy normals, giving much worse frame advantage if a follow-up is not used immediately"
+      ]
+    },
+    {
+      "characterId": "chunli",
+      "moveId": "chunli__special_214_P_none__strength_H",
+      "field": "startup",
+      "current": "14",
+      "sourceMoveId": "chunli__special_214_P_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Crouching state 14-22f, then low profiles until exiting stance; follow-ups can be input on frame 15 at the earliest; counter-hit state for entire animation; if no follow-up, stays crouched for 57f (hold crouch to extend); can block while crouching (cannot block overheads, as this leads to Stance Exit); blocking an attack immediately exits stance and allows a Drive Reversal; can take longer to enter stance when canceled from heavy normals, giving much worse frame advantage if a follow-up is not used immediately"
+      ]
+    },
+    {
+      "characterId": "dee_jay",
+      "moveId": "dee_jay__normal_2_K_M",
+      "field": "hit",
+      "current": "D",
+      "sourceMoveId": "dee_jay__normal_2_K_M",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Acts like a sweep, but safer (difficult for many characters to punish); HKD on Punish Counter only; good hitbox priority; has an extended hurtbox on whiff until the end of recovery"
+      ]
+    },
+    {
+      "characterId": "dee_jay",
+      "moveId": "dee_jay__special_[2]8_K_L",
+      "field": "startup",
+      "current": "23",
+      "sourceMoveId": "dee_jay__special_[2]8_K_L",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: 40f charge time (holds charge for 12f after release); startup refers to earliest air normal timing; 6f landing recovery only applies to empty jump version (air normals have the usual 3f landing recovery); can hold back mid-air to shorten jump trajectory; Distance: 1.51~1.63"
+      ]
+    },
+    {
+      "characterId": "dee_jay",
+      "moveId": "dee_jay__special_[2]8_K_L",
+      "field": "total",
+      "current": "51",
+      "sourceMoveId": "dee_jay__special_[2]8_K_L",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: 40f charge time (holds charge for 12f after release); startup refers to earliest air normal timing; 6f landing recovery only applies to empty jump version (air normals have the usual 3f landing recovery); can hold back mid-air to shorten jump trajectory; Distance: 1.51~1.63"
+      ]
+    },
+    {
+      "characterId": "dee_jay",
+      "moveId": "dee_jay__special_[2]8_K_OD",
+      "field": "total",
+      "current": "77",
+      "sourceMoveId": "dee_jay__special_[2]8_K_OD",
+      "flags": {
+        "whiff": true,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: 40f charge time (holds charge for 12f after release); 2nd/3rd hits whiff on crouching opponents unless they extend a vertical hurtbox; puts opponent into limited juggle state; cannot hit cross-up; at close range, may cross over opponents on whiff/block; on hit only, Dee Jay performs 2 extra hits that spike the opponent to the ground"
+      ]
+    },
+    {
+      "characterId": "dee_jay",
+      "moveId": "dee_jay__special_214_K_OD",
+      "field": "total",
+      "current": "48",
+      "sourceMoveId": "dee_jay__special_214_K_OD",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: 1f extra recovery on block; can input attack follow-ups on frames 25-37 (frames 13-25 of the sway itself), and can input 6P dash follow-up after frame 19; puts opponent into limited juggle state; attack follow-ups can be input 3f earlier on block, allowing for 4f frame trap with LK follow-up; Distance: 0.74 back"
+      ]
+    },
+    {
+      "characterId": "dee_jay",
+      "moveId": "dee_jay__special_214_P_H",
+      "field": "total",
+      "current": "66",
+      "sourceMoveId": "dee_jay__special_214_P_H",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Damage Distribution: 100x4,150x4,100x4,180x3,260; () refers to damage on high juggle (puts opponent into limited juggle state, and can potentially link SA3 for huge damage); combo/juggle tool; requires CH/PC/DR 5HP or 4HK(1st) to combo on the ground; doesn't play out full animation on block or on high juggle connect; cancels on 1st or 13th hit; Punish Counter Drive dmg refers to before and after Super cancelable hit; good anti-air hitbox but cannot hit cross-up and is too slow for practical AA purposes"
+      ]
+    },
+    {
+      "characterId": "dee_jay",
+      "moveId": "dee_jay__special_214_P_L",
+      "field": "total",
+      "current": "53",
+      "sourceMoveId": "dee_jay__special_214_P_L",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Damage Distribution: 150x5,200x3,300; () refers to damage on high juggle (puts opponent into limited juggle state); combo/juggle tool; combos naturally from 2MP; doesn't play out full animation on block or on high juggle connect; cancels on 1st or 8th hit; Punish Counter Drive Dmg refers to before and after Super cancelable hit; good anti-air hitbox but cannot hit cross-up and is too slow for practical AA purposes"
+      ]
+    },
+    {
+      "characterId": "dee_jay",
+      "moveId": "dee_jay__special_214_P_M",
+      "field": "total",
+      "current": "60",
+      "sourceMoveId": "dee_jay__special_214_P_M",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Damage Distribution: 100x5,150x3,200x3,350; () refers to damage on high juggle (puts opponent into limited juggle state); combo/juggle tool; combos naturally from 5HP; doesn't play out full animation on block or on high juggle connect; cancels on 1st or 11th hit; Punish Counter Drive dmg refers to before and after Super cancelable hit; good anti-air hitbox but cannot hit cross-up and is too slow for practical AA purposes"
+      ]
+    },
+    {
+      "characterId": "dee_jay",
+      "moveId": "dee_jay__special_214_P_OD",
+      "field": "total",
+      "current": "64",
+      "sourceMoveId": "dee_jay__special_214_P_OD",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Damage Distribution: 100x12,150x3,200,650; () refers to damage on high juggle; combo/juggle tool; only combos naturally from 5HP or 4HK (1st hit), or from 2MP after Punish Counter or Drive Rush; doesn't play out full animation on block or on high juggle connect; cancel occurs on 1st or 2nd to last hit; Punish Counter Drive dmg refers to before and after Super cancelable hit; good anti-air hitbox but cannot hit cross-up and is too slow for practical AA purposes; gives incredible oki anywhere on the screen (2 dashes leaves Dee Jay at HKD +14, and can use DR~6MK to become +11/+7 and safe to Drive Reversal)"
+      ]
+    },
+    {
+      "characterId": "dee_jay",
+      "moveId": "dee_jay__super_art_2_L",
+      "field": "total",
+      "current": "62",
+      "sourceMoveId": "dee_jay:raw:30",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: LP~MP~HP~LK~MK~HK follow-ups (on hit only) must be manually timed (LP sequence is easiest but lowest damage and cannot use cinematic HP/HK enders); all follow-ups up to MK are +6 on hit with no additional damage scaling; full invincibility extended 1-29f on hit; KD +27 when juggled into; forces stand; cannot hit cross-up; applies 30% scaling to Super Art gain until end of combo"
+      ]
+    },
+    {
+      "characterId": "dee_jay",
+      "moveId": "dee_jay__super_art_2_M",
+      "field": "total",
+      "current": "62",
+      "sourceMoveId": "dee_jay:raw:37",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: LP~MP~HP~LK~MK~HK follow-ups (on hit only) must be manually timed (MP sequence gives medium damage with medium difficulty); perfect rhythm gives more damage; non-perfect rhythm ender cannot follow up after the crumple knockdown; all follow-ups up to MK are +6 on hit with no additional damage scaling; full invincibility extended 1-29f on hit; KD +27 when juggled into; forces stand; cannot hit cross-up; applies 30% scaling to Super Art gain until end of combo"
+      ]
+    },
+    {
+      "characterId": "dee_jay",
+      "moveId": "dee_jay__super_art_2_H",
+      "field": "total",
+      "current": "62",
+      "sourceMoveId": "dee_jay:raw:20",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: LP~MP~HP~LK~MK~HK follow-ups (on hit only) must be manually timed (HP sequence gives highest damage with hardest difficulty); perfect rhythm gives more damage; non-perfect rhythm ender cannot follow up after the crumple knockdown; all follow-ups up to MK are +6 on hit with no additional damage scaling; full invincibility extended 1-29f on hit; KD +27 when juggled into; forces stand; cannot hit cross-up; applies 30% scaling to Super Art gain until end of combo"
+      ]
+    },
+    {
+      "characterId": "dee_jay",
+      "moveId": "dee_jay__special_214_K_none__strength_L",
+      "field": "startup",
+      "current": "13",
+      "sourceMoveId": "dee_jay__special_214_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Can input follow-ups on frames 13-25 (variable timing allows stronger mixups and reaction to opponent's response); useful shimmy tool that can be canceled into to bait the opponent's defensive button press; Distance: 0.602 back"
+      ]
+    },
+    {
+      "characterId": "dee_jay",
+      "moveId": "dee_jay__special_214_K_none__strength_M",
+      "field": "startup",
+      "current": "13",
+      "sourceMoveId": "dee_jay__special_214_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Can input follow-ups on frames 13-25 (variable timing allows stronger mixups and reaction to opponent's response); useful shimmy tool that can be canceled into to bait the opponent's defensive button press; Distance: 0.602 back"
+      ]
+    },
+    {
+      "characterId": "dee_jay",
+      "moveId": "dee_jay__special_214_K_none__strength_H",
+      "field": "startup",
+      "current": "13",
+      "sourceMoveId": "dee_jay__special_214_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Can input follow-ups on frames 13-25 (variable timing allows stronger mixups and reaction to opponent's response); useful shimmy tool that can be canceled into to bait the opponent's defensive button press; Distance: 0.602 back"
+      ]
+    },
+    {
+      "characterId": "dhalsim",
+      "moveId": "dhalsim__super_art_2_L",
+      "field": "hit",
+      "current": "D",
+      "sourceMoveId": "dhalsim:raw:4",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Button strength determines trajectory; 5-hit projectile; cannot hit crouching opponents on the way up unless they extend a vertical hurtbox (opponent can safely pressure Dhalsim with a crouching meaty attack); automatically releases if the hitbox above Dhalsim's head connects; can hold the button to charge into a more powerful version; upon hitting the floor, creates a larger stationary hitbox that lasts 20f; [] refers to active projectile time after release"
+      ]
+    },
+    {
+      "characterId": "dhalsim",
+      "moveId": "dhalsim__super_art_2_L",
+      "field": "block",
+      "current": "-4",
+      "sourceMoveId": "dhalsim:raw:4",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Button strength determines trajectory; 5-hit projectile; cannot hit crouching opponents on the way up unless they extend a vertical hurtbox (opponent can safely pressure Dhalsim with a crouching meaty attack); automatically releases if the hitbox above Dhalsim's head connects; can hold the button to charge into a more powerful version; upon hitting the floor, creates a larger stationary hitbox that lasts 20f; [] refers to active projectile time after release"
+      ]
+    },
+    {
+      "characterId": "dhalsim",
+      "moveId": "dhalsim__super_art_2_M",
+      "field": "hit",
+      "current": "D",
+      "sourceMoveId": "dhalsim:raw:4",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Button strength determines trajectory; 5-hit projectile; cannot hit crouching opponents on the way up unless they extend a vertical hurtbox (opponent can safely pressure Dhalsim with a crouching meaty attack); automatically releases if the hitbox above Dhalsim's head connects; can hold the button to charge into a more powerful version; upon hitting the floor, creates a larger stationary hitbox that lasts 20f; [] refers to active projectile time after release"
+      ]
+    },
+    {
+      "characterId": "dhalsim",
+      "moveId": "dhalsim__super_art_2_M",
+      "field": "block",
+      "current": "-4",
+      "sourceMoveId": "dhalsim:raw:4",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Button strength determines trajectory; 5-hit projectile; cannot hit crouching opponents on the way up unless they extend a vertical hurtbox (opponent can safely pressure Dhalsim with a crouching meaty attack); automatically releases if the hitbox above Dhalsim's head connects; can hold the button to charge into a more powerful version; upon hitting the floor, creates a larger stationary hitbox that lasts 20f; [] refers to active projectile time after release"
+      ]
+    },
+    {
+      "characterId": "dhalsim",
+      "moveId": "dhalsim__super_art_2_H",
+      "field": "hit",
+      "current": "D",
+      "sourceMoveId": "dhalsim:raw:4",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Button strength determines trajectory; 5-hit projectile; cannot hit crouching opponents on the way up unless they extend a vertical hurtbox (opponent can safely pressure Dhalsim with a crouching meaty attack); automatically releases if the hitbox above Dhalsim's head connects; can hold the button to charge into a more powerful version; upon hitting the floor, creates a larger stationary hitbox that lasts 20f; [] refers to active projectile time after release"
+      ]
+    },
+    {
+      "characterId": "dhalsim",
+      "moveId": "dhalsim__super_art_2_H",
+      "field": "block",
+      "current": "-4",
+      "sourceMoveId": "dhalsim:raw:4",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Button strength determines trajectory; 5-hit projectile; cannot hit crouching opponents on the way up unless they extend a vertical hurtbox (opponent can safely pressure Dhalsim with a crouching meaty attack); automatically releases if the hitbox above Dhalsim's head connects; can hold the button to charge into a more powerful version; upon hitting the floor, creates a larger stationary hitbox that lasts 20f; [] refers to active projectile time after release"
+      ]
+    },
+    {
+      "characterId": "e_honda",
+      "moveId": "e_honda__special_[2]8_K_H",
+      "field": "total",
+      "current": "59",
+      "sourceMoveId": "e_honda__special_[2]8_K_H",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: [] refers to damage on cross-up version of downward smash; () refers to total startup on the overhead downward smash vs. standing opponents (2nd hit becomes active mid-air on frame 37); downward smash has 1f better KD Adv. vs. crouching opponents; 40f charge time (holds charge for 12f after releasing down direction); 1st hit whiffs on crouching opponents and cannot hit cross-up; can alter trajectory on the way up by holding forward/back"
+      ]
+    },
+    {
+      "characterId": "e_honda",
+      "moveId": "e_honda__special_[2]8_K_L",
+      "field": "total",
+      "current": "65",
+      "sourceMoveId": "e_honda__special_[2]8_K_L",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: [] refers to damage on cross-up version of downward smash; () refers to total startup on the overhead downward smash vs. standing opponents (2nd hit becomes active mid-air on frame 41); downward smash has 1f better KD Adv. vs. crouching opponents; 40f charge time (holds charge for 12f after releasing down direction); 1st hit whiffs on crouching opponents and cannot hit cross-up; can alter trajectory on the way up by holding forward/back"
+      ]
+    },
+    {
+      "characterId": "e_honda",
+      "moveId": "e_honda__special_[2]8_K_M",
+      "field": "total",
+      "current": "62",
+      "sourceMoveId": "e_honda__special_[2]8_K_M",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: [] refers to damage on cross-up version of downward smash; () refers to total startup on the overhead downward smash vs. standing opponents (2nd hit becomes active mid-air on frame 39); downward smash has 1f better KD Adv. vs. crouching opponents; 40f charge time (holds charge for 12f after releasing down direction); 1st hit whiffs on crouching opponents and cannot hit cross-up; can alter trajectory on the way up by holding forward/back"
+      ]
+    },
+    {
+      "characterId": "e_honda",
+      "moveId": "e_honda__special_[2]8_K_OD",
+      "field": "total",
+      "current": "56",
+      "sourceMoveId": "e_honda__special_[2]8_K_OD",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: [] refers to damage on cross-up version of downward smash; () refers to total startup on the overhead downward smash vs. standing opponents (2nd hit becomes active mid-air on frame 31); downward smash has 1f better KD Adv. vs. crouching opponents; 40f charge time (holds charge for 12f after releasing down direction); 1st hit whiffs on crouching opponents and cannot hit cross-up; can alter trajectory on the way up by holding forward/back; holding LK or MK will cause Honda to hang mid-air before starting his descent (LK 4f longer, MK 2f longer)"
+      ]
+    },
+    {
+      "characterId": "e_honda",
+      "moveId": "e_honda__special_236_K_OD",
+      "field": "startup",
+      "current": "13",
+      "sourceMoveId": "e_honda__special_236_K_OD",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Can cancel into 5P follow-up on frames 13-27 or the 2P follow-up on frames 11-27; Movement Speed: 0.067"
+      ]
+    },
+    {
+      "characterId": "e_honda",
+      "moveId": "e_honda__super_art_2_L",
+      "field": "total",
+      "current": "61",
+      "sourceMoveId": "e_honda:raw:28",
+      "flags": {
+        "whiff": true,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: 40f charge (charge lasts 28f after releasing back direction); travels full screen, making it a useful anti-projectile tool; becomes projectile invincible on hit up until the fully invincible cinematic ender (ensures a full connect even against slow projectiles); first hit has very short range (slightly less damage and Drive damage from longer ranges); from frame 24 onward, Honda transitions to his 45f recovery animation if he switches sides with the opponent; if Honda whiffs entire SA2 without crossing under the opponent, landing recovery becomes 12+33 (total recovery time is unchanged); full dmg distribution: 50,500,100x14,900; detailed charge requirements: first Forward input must be within 28f of releasing charge, next Back input must be within the next 6 frames, next Forward input must be within the next 6 frames, final K input must be within the next 6 frames (slowest possible input takes 48f after releasing charge)"
+      ]
+    },
+    {
+      "characterId": "e_honda",
+      "moveId": "e_honda__super_art_2_M",
+      "field": "total",
+      "current": "61",
+      "sourceMoveId": "e_honda:raw:28",
+      "flags": {
+        "whiff": true,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: 40f charge (charge lasts 28f after releasing back direction); travels full screen, making it a useful anti-projectile tool; becomes projectile invincible on hit up until the fully invincible cinematic ender (ensures a full connect even against slow projectiles); first hit has very short range (slightly less damage and Drive damage from longer ranges); from frame 24 onward, Honda transitions to his 45f recovery animation if he switches sides with the opponent; if Honda whiffs entire SA2 without crossing under the opponent, landing recovery becomes 12+33 (total recovery time is unchanged); full dmg distribution: 50,500,100x14,900; detailed charge requirements: first Forward input must be within 28f of releasing charge, next Back input must be within the next 6 frames, next Forward input must be within the next 6 frames, final K input must be within the next 6 frames (slowest possible input takes 48f after releasing charge)"
+      ]
+    },
+    {
+      "characterId": "e_honda",
+      "moveId": "e_honda__super_art_2_H",
+      "field": "total",
+      "current": "61",
+      "sourceMoveId": "e_honda:raw:28",
+      "flags": {
+        "whiff": true,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: 40f charge (charge lasts 28f after releasing back direction); travels full screen, making it a useful anti-projectile tool; becomes projectile invincible on hit up until the fully invincible cinematic ender (ensures a full connect even against slow projectiles); first hit has very short range (slightly less damage and Drive damage from longer ranges); from frame 24 onward, Honda transitions to his 45f recovery animation if he switches sides with the opponent; if Honda whiffs entire SA2 without crossing under the opponent, landing recovery becomes 12+33 (total recovery time is unchanged); full dmg distribution: 50,500,100x14,900; detailed charge requirements: first Forward input must be within 28f of releasing charge, next Back input must be within the next 6 frames, next Forward input must be within the next 6 frames, final K input must be within the next 6 frames (slowest possible input takes 48f after releasing charge)"
+      ]
+    },
+    {
+      "characterId": "e_honda",
+      "moveId": "e_honda__special_22_K_none__strength_L",
+      "field": "startup",
+      "current": "51",
+      "sourceMoveId": "e_honda__special_22_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Enhances the next Hundred Hand Slap (increases damage and improves frame advantage by +2 on hit and +4 on block); allows 5HP (all active frames), 2HP, and 22P to cancel into Hundred Hand Slap"
+      ]
+    },
+    {
+      "characterId": "e_honda",
+      "moveId": "e_honda__special_22_K_none__strength_M",
+      "field": "startup",
+      "current": "51",
+      "sourceMoveId": "e_honda__special_22_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Enhances the next Hundred Hand Slap (increases damage and improves frame advantage by +2 on hit and +4 on block); allows 5HP (all active frames), 2HP, and 22P to cancel into Hundred Hand Slap"
+      ]
+    },
+    {
+      "characterId": "e_honda",
+      "moveId": "e_honda__special_22_K_none__strength_H",
+      "field": "startup",
+      "current": "51",
+      "sourceMoveId": "e_honda__special_22_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Enhances the next Hundred Hand Slap (increases damage and improves frame advantage by +2 on hit and +4 on block); allows 5HP (all active frames), 2HP, and 22P to cancel into Hundred Hand Slap"
+      ]
+    },
+    {
+      "characterId": "e_honda",
+      "moveId": "e_honda__special_236_K_none__strength_L",
+      "field": "startup",
+      "current": "13",
+      "sourceMoveId": "e_honda__special_236_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Can cancel into 5P on frame 13 or 2P on frame 14 (until the end of recovery); Movement Speed: 0.052"
+      ]
+    },
+    {
+      "characterId": "e_honda",
+      "moveId": "e_honda__special_236_K_none__strength_M",
+      "field": "startup",
+      "current": "13",
+      "sourceMoveId": "e_honda__special_236_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Can cancel into 5P on frame 13 or 2P on frame 14 (until the end of recovery); Movement Speed: 0.052"
+      ]
+    },
+    {
+      "characterId": "e_honda",
+      "moveId": "e_honda__special_236_K_none__strength_H",
+      "field": "startup",
+      "current": "13",
+      "sourceMoveId": "e_honda__special_236_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Can cancel into 5P on frame 13 or 2P on frame 14 (until the end of recovery); Movement Speed: 0.052"
+      ]
+    },
+    {
+      "characterId": "ed",
+      "moveId": "ed__special_236_K_H",
+      "field": "hit",
+      "current": "D",
+      "sourceMoveId": "ed__special_236_K_H",
+      "flags": {
+        "whiff": false,
+        "specialState": true,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: 1-hit projectile hitbox; can only hit airborne opponents (puts opponent into limited juggle state); KD advantage varies based on height; must hold HK at least 30f to get enhanced version (releasing early results in delayed regular version); extends a forward hurtbox on frame 1 until the end of recovery (this hurtbox is projectile invuln until the first active frame); cancelable into 6KK/4KK on hit only (comes out after 15 recovery frames), giving Ed better oki after midscreen anti-air 236HK, or a juggle after corner anti-air 236HK"
+      ]
+    },
+    {
+      "characterId": "ed",
+      "moveId": "ed__special_236_K_L",
+      "field": "total",
+      "current": "45",
+      "sourceMoveId": "ed__special_236_K_L",
+      "flags": {
+        "whiff": true,
+        "specialState": true,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: 1-hit projectile hitbox (causes screen freeze on Perfect Parry); Punish Counter crumple state leaves opponent airborne (+21 before opponent hits the ground, can follow up with Drive Rush combo); puts airborne opponents into limited juggle state; total recovery is 2f faster on whiff; must hold LK at least 26f to get enhanced version (releasing early results in delayed regular version); when Super canceled, the SA3 incurs 30% immediate damage scaling; extends a forward hurtbox on frame 1 until the end of recovery (this hurtbox is projectile invuln until the first active frame); cancelable into 6KK/4KK on hit only (comes out after 15 recovery frames), giving Ed a juggle or improved oki after Punish Counter 236LK; Kill Rush Forward/Back cancel data: -18 oH, KD +42 on PC (+3 before opponent is knocked down after full dash animation)"
+      ]
+    },
+    {
+      "characterId": "ed",
+      "moveId": "ed__special_236_K_M",
+      "field": "total",
+      "current": "49",
+      "sourceMoveId": "ed__special_236_K_M",
+      "flags": {
+        "whiff": true,
+        "specialState": true,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: 1-hit projectile hitbox (causes screen freeze on Perfect Parry); Counter-Hit: KD +36; Punish Counter crumple state leaves opponent airborne (+23 before opponent hits the ground, can follow up with Drive Rush combo); puts airborne opponents into limited juggle state; total recovery is 1f faster on whiff; must hold MK at least 30f to get enhanced version (releasing early results in delayed regular version); when Super canceled, the SA3 incurs 30% immediate damage scaling; extends a forward hurtbox on frame 1 until the end of recovery (this hurtbox is projectile invuln until the first active frame); cancelable into 6KK/4KK on hit only (comes out after 17 recovery frames), giving Ed better oki after Counter-hit 236MK or a meterless juggle after Punish Counter 236MK; Kill Rush Forward/Back cancel data: -17 oH, KD +16 on CH, KD +42 on PC (+3 before opponent is knocked down after full dash animation)"
+      ]
+    },
+    {
+      "characterId": "ed",
+      "moveId": "ed__super_art_1_L",
+      "field": "total",
+      "current": "123",
+      "sourceMoveId": "ed:raw:5",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: High juggle potential; performs final attack on hit only; all hits are a true blockstring (if 1st hit is Perfect Parried, leaves an 8f gap between hits); KD advantage is slightly higher vs. airborne opponents"
+      ]
+    },
+    {
+      "characterId": "ed",
+      "moveId": "ed__super_art_1_M",
+      "field": "total",
+      "current": "123",
+      "sourceMoveId": "ed:raw:5",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: High juggle potential; performs final attack on hit only; all hits are a true blockstring (if 1st hit is Perfect Parried, leaves an 8f gap between hits); KD advantage is slightly higher vs. airborne opponents"
+      ]
+    },
+    {
+      "characterId": "ed",
+      "moveId": "ed__super_art_1_H",
+      "field": "total",
+      "current": "123",
+      "sourceMoveId": "ed:raw:5",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: High juggle potential; performs final attack on hit only; all hits are a true blockstring (if 1st hit is Perfect Parried, leaves an 8f gap between hits); KD advantage is slightly higher vs. airborne opponents"
+      ]
+    },
+    {
+      "characterId": "elena",
+      "moveId": "elena__special_236_P_H",
+      "field": "startup",
+      "current": "16",
+      "sourceMoveId": "elena__special_236_P_H",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Longest total distance (2.21); 16f/1.08 distance before 6LK; 19f/1.35 distance before 6MK/6HK/6P; crouch-sized hurtbox 3-26f (but still considered standing); can execute the 6LK follow-up 3f earlier than the other follow-ups; Elena is in a Counter-hit state for the entire roll duration"
+      ]
+    },
+    {
+      "characterId": "elena",
+      "moveId": "elena__special_236_P_L",
+      "field": "startup",
+      "current": "13",
+      "sourceMoveId": "elena__special_236_P_L",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Shortest total distance (1.37); 13f/0.72 distance before 6LK; 16f/0.87 distance before 6MK/6HK/6P; crouch-sized hurtbox 3-26f (but still considered standing); can execute the 6LK follow-up 3f earlier than the other follow-ups; Elena is in a Counter-hit state for the entire roll duration"
+      ]
+    },
+    {
+      "characterId": "elena",
+      "moveId": "elena__special_236_P_M",
+      "field": "startup",
+      "current": "13",
+      "sourceMoveId": "elena__special_236_P_M",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Medium total distance (1.72); 13f/0.66 distance before 6LK; 18f/0.98 distance before 6MK/6HK/6P; crouch-sized hurtbox 3-26f (but still considered standing); can execute the 6LK follow-up 5f earlier than the other follow-ups; Elena is in a Counter-hit state for the entire roll duration"
+      ]
+    },
+    {
+      "characterId": "elena",
+      "moveId": "elena__special_236_P_OD",
+      "field": "startup",
+      "current": "15",
+      "sourceMoveId": "elena__special_236_P_OD",
+      "flags": {
+        "whiff": false,
+        "specialState": true,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Follow-ups are enhanced like the Lynx Whirl versions after only one spin; total distance is between the MP/HP versions (2.075); 15f/1.01 distance before 6LK; 18f/1.28 distance before 6MK/6HK/6P; crouch-sized hurtbox 3-26f (but still considered standing); can execute the 6LK follow-up 3f earlier than the other follow-ups; this version is good for combos, pressuring from neutral, and punishing projectiles due to the faster startup on enhanced follow-ups; Elena is in a Counter-hit state for the entire roll duration"
+      ]
+    },
+    {
+      "characterId": "elena",
+      "moveId": "elena__super_art_1_L",
+      "field": "total",
+      "current": "94",
+      "sourceMoveId": "elena:raw:12",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Good anti-air with air invuln that fully covers the first 2 hits; cannot be used as an invincible reversal against grounded strikes/throws/projectiles (making it much more dangerous to be in Burnout); cannot hit cross-up; puts opponents into limited juggle state (can combo a 236KK full connect after a grounded hit); extreme block disadvantage allows many characters to set activate installs without sacrificing optimal punish starters"
+      ]
+    },
+    {
+      "characterId": "elena",
+      "moveId": "elena__super_art_1_M",
+      "field": "total",
+      "current": "94",
+      "sourceMoveId": "elena:raw:12",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Good anti-air with air invuln that fully covers the first 2 hits; cannot be used as an invincible reversal against grounded strikes/throws/projectiles (making it much more dangerous to be in Burnout); cannot hit cross-up; puts opponents into limited juggle state (can combo a 236KK full connect after a grounded hit); extreme block disadvantage allows many characters to set activate installs without sacrificing optimal punish starters"
+      ]
+    },
+    {
+      "characterId": "elena",
+      "moveId": "elena__super_art_1_H",
+      "field": "total",
+      "current": "94",
+      "sourceMoveId": "elena:raw:12",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Good anti-air with air invuln that fully covers the first 2 hits; cannot be used as an invincible reversal against grounded strikes/throws/projectiles (making it much more dangerous to be in Burnout); cannot hit cross-up; puts opponents into limited juggle state (can combo a 236KK full connect after a grounded hit); extreme block disadvantage allows many characters to set activate installs without sacrificing optimal punish starters"
+      ]
+    },
+    {
+      "characterId": "guile",
+      "moveId": "guile__special_[4]6_P_OD",
+      "field": "hit",
+      "current": "D",
+      "sourceMoveId": "guile__special_[4]6_P_OD",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: 2-hit OD projectile; 45f charge (charge lasts 13f after releasing back direction); does not have a Perfect timing version; puts opponents into limited juggle state; can follow up with Sonic Break (6P) during SA2; SA2 cancel: KD+65/+25"
+      ]
+    },
+    {
+      "characterId": "guile",
+      "moveId": "guile__super_art_1_H",
+      "field": "hit",
+      "current": "D",
+      "sourceMoveId": "guile:raw:24",
+      "flags": {
+        "whiff": true,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: 45f charge (charge lasts 22f after releasing back direction); 7-hit Super projectile; primarily used in air juggles (whiffs on crouching opponents unless they extend a vertical hurtbox, can hit standing opponents at close range); puts opponent into limited juggle state; KD Adv. can vary depending on juggle height; cannot be used while Sonic Blade projectile is active on-screen; can follow up with a LP/MP SA1 after hitting a grounded opponent"
+      ]
+    },
+    {
+      "characterId": "guile",
+      "moveId": "guile__super_art_2_L",
+      "field": "startup",
+      "current": "1",
+      "sourceMoveId": "guile:raw:0",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Gives access to Sonic Break follow-ups; remaining active time decreases by 200f with each Sonic Break use (maximum 7 uses)"
+      ]
+    },
+    {
+      "characterId": "guile",
+      "moveId": "guile__super_art_2_M",
+      "field": "startup",
+      "current": "1",
+      "sourceMoveId": "guile:raw:0",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Gives access to Sonic Break follow-ups; remaining active time decreases by 200f with each Sonic Break use (maximum 7 uses)"
+      ]
+    },
+    {
+      "characterId": "guile",
+      "moveId": "guile__super_art_2_H",
+      "field": "startup",
+      "current": "1",
+      "sourceMoveId": "guile:raw:0",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Gives access to Sonic Break follow-ups; remaining active time decreases by 200f with each Sonic Break use (maximum 7 uses)"
+      ]
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__special_236_K_OD",
+      "field": "total",
+      "current": "56",
+      "sourceMoveId": "ingrid__special_236_K_OD",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: 4 hits (only 3 hits on block/whiff); Low Crush 14-26f (not airborne); safe buffer option that becomes +1 vs. Burnout; forces stand on the first 3 hits; carries over Counter-Hit / Punish Counter bonus frame advantage through the first 3 hits (affects SA2 cancel advantage); SA2 cancel: +15/+5"
+      ]
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__coverage_6",
+      "field": "startup",
+      "current": "47",
+      "sourceMoveId": "ingrid__coverage_6",
+      "flags": {
+        "whiff": false,
+        "specialState": true,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Builds Sun Crests up to a maximum of 4 stocks; can hold the button to extend the move and build stocks slightly more quickly (ends automatically upon reaching 4 stocks); Lv.1 (unheld version): 48F total, stock is built on frame 47 (or frame 42 when continuing to Lv.2 Hold); Lv.2 Hold: 94F total, button must be held 23F, 2nd stock is built on frame 93 (or frame 88 when continuing to Lv.3 Hold); Lv.3 Hold: 140F total, button must be held 85F, 3rd stock is built on frame 139 (or frame 134 when continuing to Lv.4 Hold); Lv.4 Hold: 186F total, button must be held 131F, 4th stock is built on frame 182; if activated with 4 Sun Crests, Ingrid instead builds 3000 Drive gauge every 46 frames (frame data is identical to the regular version but the button can be held indefinitely); Ingrid is in a counter-hit state for the entire duration; hurtbox expands upward on frames 10-44 (Lv.1) / 10-84 (Lv.2) / 10-130 (Lv.3) / 10-184 (Lv.4)"
+      ]
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__super_art_1_L",
+      "field": "total",
+      "current": "129",
+      "sourceMoveId": "ingrid:raw:14",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Can hold the button to spend up to 2 Sun Crests (+400 damage per crest but reduced oki); sends opponent ~1/2 screen away on hit; Ingrid's primary reversal while in Burnout (but slow startup makes it susceptible to safejab pressure); hitbox has a dead zone that can cause it to whiff through high airborne opponents; solid anti-air but cannot hit cross-up; 1st hit deals 400 damage and puts the opponent into a limited juggle state if it trades with a projectile (high float for easy hitconfirm)"
+      ]
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__super_art_1_M",
+      "field": "total",
+      "current": "129",
+      "sourceMoveId": "ingrid:raw:14",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Can hold the button to spend up to 2 Sun Crests (+400 damage per crest but reduced oki); sends opponent ~1/2 screen away on hit; Ingrid's primary reversal while in Burnout (but slow startup makes it susceptible to safejab pressure); hitbox has a dead zone that can cause it to whiff through high airborne opponents; solid anti-air but cannot hit cross-up; 1st hit deals 400 damage and puts the opponent into a limited juggle state if it trades with a projectile (high float for easy hitconfirm)"
+      ]
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__super_art_1_H",
+      "field": "total",
+      "current": "129",
+      "sourceMoveId": "ingrid:raw:14",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Can hold the button to spend up to 2 Sun Crests (+400 damage per crest but reduced oki); sends opponent ~1/2 screen away on hit; Ingrid's primary reversal while in Burnout (but slow startup makes it susceptible to safejab pressure); hitbox has a dead zone that can cause it to whiff through high airborne opponents; solid anti-air but cannot hit cross-up; 1st hit deals 400 damage and puts the opponent into a limited juggle state if it trades with a projectile (high float for easy hitconfirm)"
+      ]
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__special_214214_K_none__strength_L",
+      "field": "startup",
+      "current": "27",
+      "sourceMoveId": "ingrid__special_214214_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Dark Ingrid only; immediately puts the opponent into Burnout on hit; cannot be canceled into from normals; hits twice on hit or once on block"
+      ]
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__special_214214_K_none__strength_L",
+      "field": "total",
+      "current": "58",
+      "sourceMoveId": "ingrid__special_214214_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Dark Ingrid only; immediately puts the opponent into Burnout on hit; cannot be canceled into from normals; hits twice on hit or once on block"
+      ]
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__special_214214_K_none__strength_L",
+      "field": "hit",
+      "current": "D",
+      "sourceMoveId": "ingrid__special_214214_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Dark Ingrid only; immediately puts the opponent into Burnout on hit; cannot be canceled into from normals; hits twice on hit or once on block"
+      ]
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__special_214214_K_none__strength_L",
+      "field": "block",
+      "current": "-15",
+      "sourceMoveId": "ingrid__special_214214_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Dark Ingrid only; immediately puts the opponent into Burnout on hit; cannot be canceled into from normals; hits twice on hit or once on block"
+      ]
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__special_214214_K_none__strength_M",
+      "field": "startup",
+      "current": "27",
+      "sourceMoveId": "ingrid__special_214214_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Dark Ingrid only; immediately puts the opponent into Burnout on hit; cannot be canceled into from normals; hits twice on hit or once on block"
+      ]
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__special_214214_K_none__strength_M",
+      "field": "total",
+      "current": "58",
+      "sourceMoveId": "ingrid__special_214214_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Dark Ingrid only; immediately puts the opponent into Burnout on hit; cannot be canceled into from normals; hits twice on hit or once on block"
+      ]
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__special_214214_K_none__strength_M",
+      "field": "hit",
+      "current": "D",
+      "sourceMoveId": "ingrid__special_214214_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Dark Ingrid only; immediately puts the opponent into Burnout on hit; cannot be canceled into from normals; hits twice on hit or once on block"
+      ]
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__special_214214_K_none__strength_M",
+      "field": "block",
+      "current": "-15",
+      "sourceMoveId": "ingrid__special_214214_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Dark Ingrid only; immediately puts the opponent into Burnout on hit; cannot be canceled into from normals; hits twice on hit or once on block"
+      ]
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__special_214214_K_none__strength_H",
+      "field": "startup",
+      "current": "27",
+      "sourceMoveId": "ingrid__special_214214_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Dark Ingrid only; immediately puts the opponent into Burnout on hit; cannot be canceled into from normals; hits twice on hit or once on block"
+      ]
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__special_214214_K_none__strength_H",
+      "field": "total",
+      "current": "58",
+      "sourceMoveId": "ingrid__special_214214_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Dark Ingrid only; immediately puts the opponent into Burnout on hit; cannot be canceled into from normals; hits twice on hit or once on block"
+      ]
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__special_214214_K_none__strength_H",
+      "field": "hit",
+      "current": "D",
+      "sourceMoveId": "ingrid__special_214214_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Dark Ingrid only; immediately puts the opponent into Burnout on hit; cannot be canceled into from normals; hits twice on hit or once on block"
+      ]
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__special_214214_K_none__strength_H",
+      "field": "block",
+      "current": "-15",
+      "sourceMoveId": "ingrid__special_214214_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Dark Ingrid only; immediately puts the opponent into Burnout on hit; cannot be canceled into from normals; hits twice on hit or once on block"
+      ]
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__normal_2_K_H",
+      "field": "total",
+      "current": "43",
+      "sourceMoveId": "jamie__normal_2_K_H",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Damage DL0-DL4: 360x2/380x2/400x2/420x2/440x2; 1f extra recovery on block; has 2 hits, allowing ample hitconfirm time into Target Combo; 2nd hit has more range and can be blocked standing if the 1st hit is blocked; can be spaced safely vs. most characters; first active frame of 2nd hit is a large juggle-only hitbox; high juggle potential; Target Combo follow-up gives time for Drink without sacrificing corner oki"
+      ]
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_623_K_H",
+      "field": "total",
+      "current": "69",
+      "sourceMoveId": "jamie__held_special_623_K_H",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": []
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_623_K_OD",
+      "field": "total",
+      "current": "65",
+      "sourceMoveId": "jamie__held_special_623_K_OD",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": []
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_623_K_L",
+      "field": "total",
+      "current": "66",
+      "sourceMoveId": "jamie__held_special_623_K_L",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": []
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_623_K_M",
+      "field": "total",
+      "current": "67",
+      "sourceMoveId": "jamie__held_special_623_K_M",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": []
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__super_art_1_L",
+      "field": "total",
+      "current": "208",
+      "sourceMoveId": "jamie:raw:12",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Damage DL0-DL4: 1980/2084/2200/2304/2420 (Chip: 450/472/500/522/550); holding Down will result in a Drink ender; cannot hit cross-up; leaves 16f blockstring gap before 2nd set of kicks (12f in Burnout)"
+      ]
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__super_art_1_M",
+      "field": "total",
+      "current": "208",
+      "sourceMoveId": "jamie:raw:12",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Damage DL0-DL4: 1980/2084/2200/2304/2420 (Chip: 450/472/500/522/550); holding Down will result in a Drink ender; cannot hit cross-up; leaves 16f blockstring gap before 2nd set of kicks (12f in Burnout)"
+      ]
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__super_art_1_H",
+      "field": "total",
+      "current": "208",
+      "sourceMoveId": "jamie:raw:12",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Damage DL0-DL4: 1980/2084/2200/2304/2420 (Chip: 450/472/500/522/550); holding Down will result in a Drink ender; cannot hit cross-up; leaves 16f blockstring gap before 2nd set of kicks (12f in Burnout)"
+      ]
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__super_art_2_L",
+      "field": "startup",
+      "current": "1",
+      "sourceMoveId": "jamie:raw:0",
+      "flags": {
+        "whiff": false,
+        "specialState": true,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: When activated at DL0-DL3, puts Jamie at DL4 until the timer runs out (damage scaling is set to 105% rather than the usual 110%); timer lasts 900 frames (15 seconds) and does not drain during attack hit/block freeze; cannot build more Super meter while timer is active; returns to previous Drink Level after install timer expires; immediately builds 1 Drive bar; if already at DL4, builds 3 Drive bars and has no install timer, so Jamie can immediately resume building Super meter; useful in combo extension or for safety when canceling from OD special moves"
+      ]
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__super_art_2_M",
+      "field": "startup",
+      "current": "1",
+      "sourceMoveId": "jamie:raw:0",
+      "flags": {
+        "whiff": false,
+        "specialState": true,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: When activated at DL0-DL3, puts Jamie at DL4 until the timer runs out (damage scaling is set to 105% rather than the usual 110%); timer lasts 900 frames (15 seconds) and does not drain during attack hit/block freeze; cannot build more Super meter while timer is active; returns to previous Drink Level after install timer expires; immediately builds 1 Drive bar; if already at DL4, builds 3 Drive bars and has no install timer, so Jamie can immediately resume building Super meter; useful in combo extension or for safety when canceling from OD special moves"
+      ]
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__super_art_2_H",
+      "field": "startup",
+      "current": "1",
+      "sourceMoveId": "jamie:raw:0",
+      "flags": {
+        "whiff": false,
+        "specialState": true,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: When activated at DL0-DL3, puts Jamie at DL4 until the timer runs out (damage scaling is set to 105% rather than the usual 110%); timer lasts 900 frames (15 seconds) and does not drain during attack hit/block freeze; cannot build more Super meter while timer is active; returns to previous Drink Level after install timer expires; immediately builds 1 Drive bar; if already at DL4, builds 3 Drive bars and has no install timer, so Jamie can immediately resume building Super meter; useful in combo extension or for safety when canceling from OD special moves"
+      ]
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__special_22_P_none__strength_L",
+      "field": "startup",
+      "current": "48",
+      "sourceMoveId": "jamie__special_22_P_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Increases Jamie's Drink Level by 1 (hold for more levels); builds 0.25 Drive bars per drink; if already at DL4, builds 0.5 Drive bars per drink; can hold the button to continue drinking indefinitely; entire animation is in a counter-hit state; Drink Level affects moveset and base damage scaling (90/95/100/105/110% for DL0-DL4 respectively)"
+      ]
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__special_22_P_none__strength_M",
+      "field": "startup",
+      "current": "48",
+      "sourceMoveId": "jamie__special_22_P_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Increases Jamie's Drink Level by 1 (hold for more levels); builds 0.25 Drive bars per drink; if already at DL4, builds 0.5 Drive bars per drink; can hold the button to continue drinking indefinitely; entire animation is in a counter-hit state; Drink Level affects moveset and base damage scaling (90/95/100/105/110% for DL0-DL4 respectively)"
+      ]
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__special_22_P_none__strength_H",
+      "field": "startup",
+      "current": "48",
+      "sourceMoveId": "jamie__special_22_P_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Increases Jamie's Drink Level by 1 (hold for more levels); builds 0.25 Drive bars per drink; if already at DL4, builds 0.5 Drive bars per drink; can hold the button to continue drinking indefinitely; entire animation is in a counter-hit state; Drink Level affects moveset and base damage scaling (90/95/100/105/110% for DL0-DL4 respectively)"
+      ]
+    },
+    {
+      "characterId": "jp",
+      "moveId": "jp__special_214_K_OD",
+      "field": "hit",
+      "current": "D",
+      "sourceMoveId": "jp__special_214_K_OD",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: 1-hit OD projectile command grab; clashes with OD projectiles (can destroy non-OD projectiles, allowing the throw to continue); can be comboed into against grounded opponents; minimum 72f total animation; startup increases at long range due to projectile grab travel time; cannot be performed if SA2 or a Departure portal are active on the screen; projectile speed decelerates by 0.01/frame when in proximity of opponent"
+      ]
+    },
+    {
+      "characterId": "jp",
+      "moveId": "jp__special_214_K_none__strength_L",
+      "field": "hit",
+      "current": "D",
+      "sourceMoveId": "jp__special_214_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: 1-hit projectile command grab; clashes with non-OD projectiles; can be comboed into against grounded opponents; minimum 72f total animation; startup increases at long range due to projectile grab travel time; cannot be performed if SA2 or a Departure portal are active on the screen; projectile speed decelerates by 0.01/frame when in proximity of opponent"
+      ]
+    },
+    {
+      "characterId": "jp",
+      "moveId": "jp__special_214_K_none__strength_M",
+      "field": "hit",
+      "current": "D",
+      "sourceMoveId": "jp__special_214_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: 1-hit projectile command grab; clashes with non-OD projectiles; can be comboed into against grounded opponents; minimum 72f total animation; startup increases at long range due to projectile grab travel time; cannot be performed if SA2 or a Departure portal are active on the screen; projectile speed decelerates by 0.01/frame when in proximity of opponent"
+      ]
+    },
+    {
+      "characterId": "jp",
+      "moveId": "jp__special_214_K_none__strength_H",
+      "field": "hit",
+      "current": "D",
+      "sourceMoveId": "jp__special_214_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: 1-hit projectile command grab; clashes with non-OD projectiles; can be comboed into against grounded opponents; minimum 72f total animation; startup increases at long range due to projectile grab travel time; cannot be performed if SA2 or a Departure portal are active on the screen; projectile speed decelerates by 0.01/frame when in proximity of opponent"
+      ]
+    },
+    {
+      "characterId": "juri",
+      "moveId": "juri__special_623_P_H",
+      "field": "total",
+      "current": "62",
+      "sourceMoveId": "juri__special_623_P_H",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Only 1 hit connects vs. crouch block (4f worse oB, less chip damage); strong combo ender and anti-air but cannot hit cross-up; slightly more horizontal range than 623MP"
+      ]
+    },
+    {
+      "characterId": "juri",
+      "moveId": "juri__special_623_P_M",
+      "field": "total",
+      "current": "62",
+      "sourceMoveId": "juri__special_623_P_M",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Strong anti-air but cannot hit cross-up; slightly less horizontal range than 623HP"
+      ]
+    },
+    {
+      "characterId": "juri",
+      "moveId": "juri__special_623_P_OD",
+      "field": "total",
+      "current": "75",
+      "sourceMoveId": "juri__special_623_P_OD",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Juri's primary reversal option; final attack comes out on hit only; cannot hit cross-up"
+      ]
+    },
+    {
+      "characterId": "juri",
+      "moveId": "juri__super_art_2_L",
+      "field": "startup",
+      "current": "1",
+      "sourceMoveId": "juri:raw:2",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Lasts 600 frames (10 seconds); timer stops counting down during attack hit/block freeze; allows Juri to chain into normals of equal or ascending strength (cannot chain back into the same attack); chains change the properties of certain moves (6MK and Heavy normals become knockdowns); 5HK/2LK/2HK/6MK become cancelable"
+      ]
+    },
+    {
+      "characterId": "juri",
+      "moveId": "juri__super_art_2_M",
+      "field": "startup",
+      "current": "1",
+      "sourceMoveId": "juri:raw:2",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Lasts 600 frames (10 seconds); timer stops counting down during attack hit/block freeze; allows Juri to chain into normals of equal or ascending strength (cannot chain back into the same attack); chains change the properties of certain moves (6MK and Heavy normals become knockdowns); 5HK/2LK/2HK/6MK become cancelable"
+      ]
+    },
+    {
+      "characterId": "juri",
+      "moveId": "juri__super_art_2_H",
+      "field": "startup",
+      "current": "1",
+      "sourceMoveId": "juri:raw:2",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Lasts 600 frames (10 seconds); timer stops counting down during attack hit/block freeze; allows Juri to chain into normals of equal or ascending strength (cannot chain back into the same attack); chains change the properties of certain moves (6MK and Heavy normals become knockdowns); 5HK/2LK/2HK/6MK become cancelable"
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__normal_2_K_H",
+      "field": "total",
+      "current": "34",
+      "sourceMoveId": "ken__normal_2_K_H",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Has juggle potential; on block, always plays out a fixed 27f recovery (cannot be made safer with meaty timing)"
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__normal_5_K_H",
+      "field": "total",
+      "current": "38",
+      "sourceMoveId": "ken__normal_5_K_H",
+      "flags": {
+        "whiff": true,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Excellent ranged poke and whiff punish tool; even at max range, can convert Punish Counter spinning juggle state into 623KK or Drive Rush 5HP juggles; 2 extra recovery frames on whiff; extends a hurtbox 1f before active that is vulnerable to projectiles"
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__super_art_2_L",
+      "field": "total",
+      "current": "89",
+      "sourceMoveId": "ken:raw:5",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Fast startup and good range, making it good for punishes and juggle combos; completely safe on block due to pushback; great chip tool vs. opponents in Burnout (can continue dealing more chip after being safely blocked); benefits from 20% Counter-hit/Punish Counter damage increase unlike most Supers; Full Dmg distribution: 300x4,200x5,600"
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__super_art_2_M",
+      "field": "total",
+      "current": "89",
+      "sourceMoveId": "ken:raw:5",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Fast startup and good range, making it good for punishes and juggle combos; completely safe on block due to pushback; great chip tool vs. opponents in Burnout (can continue dealing more chip after being safely blocked); benefits from 20% Counter-hit/Punish Counter damage increase unlike most Supers; Full Dmg distribution: 300x4,200x5,600"
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__super_art_2_H",
+      "field": "total",
+      "current": "89",
+      "sourceMoveId": "ken:raw:5",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Fast startup and good range, making it good for punishes and juggle combos; completely safe on block due to pushback; great chip tool vs. opponents in Burnout (can continue dealing more chip after being safely blocked); benefits from 20% Counter-hit/Punish Counter damage increase unlike most Supers; Full Dmg distribution: 300x4,200x5,600"
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__super_art_3_L",
+      "field": "total",
+      "current": "100",
+      "sourceMoveId": "ken:raw:6",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: 1st hit leads to full animation (non-cinematic damage varies based on juggle height, and allows a follow-up juggle); 2 hits whiff on crouch block (reduced chip, slightly worse advantage); cinematic time regenerates ~2 Drive bars for Ken"
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__super_art_3_M",
+      "field": "total",
+      "current": "100",
+      "sourceMoveId": "ken:raw:6",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: 1st hit leads to full animation (non-cinematic damage varies based on juggle height, and allows a follow-up juggle); 2 hits whiff on crouch block (reduced chip, slightly worse advantage); cinematic time regenerates ~2 Drive bars for Ken"
+      ]
+    },
+    {
+      "characterId": "ken",
+      "moveId": "ken__super_art_3_H",
+      "field": "total",
+      "current": "100",
+      "sourceMoveId": "ken:raw:6",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: 1st hit leads to full animation (non-cinematic damage varies based on juggle height, and allows a follow-up juggle); 2 hits whiff on crouch block (reduced chip, slightly worse advantage); cinematic time regenerates ~2 Drive bars for Ken"
+      ]
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__special_214_K_H",
+      "field": "total",
+      "current": "66",
+      "sourceMoveId": "kimberly__special_214_K_H",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Cannot hit cross-up; often too slow to work in juggles; if first hit (active frames 1-6) whiffs, still hits 3 times but the first hit only does 180 damage"
+      ]
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__special_214_K_L",
+      "field": "total",
+      "current": "59",
+      "sourceMoveId": "kimberly__special_214_K_L",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Cannot hit cross-up; if first hit (active frames 1-6) whiffs, still hits 3 times but the first hit only does 90 damage"
+      ]
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__special_214_K_M",
+      "field": "total",
+      "current": "62",
+      "sourceMoveId": "kimberly__special_214_K_M",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Cannot hit cross-up; if first hit (active frames 1-6) whiffs, still hits 3 times but the first hit only does 90 damage"
+      ]
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__special_214_K_OD",
+      "field": "total",
+      "current": "64",
+      "sourceMoveId": "kimberly__special_214_K_OD",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Cannot hit cross-up; higher juggle potential than other versions; other than SA2 cancel, starter scaling only occurs if Spraycan detonates immediately after first grounded hit, or after a high-connect 4-hit 214KK"
+      ]
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__special_214_P_OD",
+      "field": "total",
+      "current": "45",
+      "sourceMoveId": "kimberly__special_214_P_OD",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: After reappearing, can act after 7f recovery; air follow-ups have the same properties as regular jump attacks (including 3 landing recovery frames); if Kimberly does not act, she has 1 punishable landing recovery frame, then 2 landing frames where she can block or cancel into an attack; cannot use j.236P after reappearing mid-air"
+      ]
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__special_22_K_OD",
+      "field": "startup",
+      "current": "42",
+      "sourceMoveId": "kimberly__special_22_K_OD",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Fully replenishes spraycans; cannot be used while 2 or more spraycans are stocked or if a spraycan is currently active on-screen"
+      ]
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__special_236_K_OD",
+      "field": "startup",
+      "current": "8",
+      "sourceMoveId": "kimberly__special_236_K_OD",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Holding forward causes Kimberly to continue running without activating Arc Step (must not let go of forward input at any point); cancels into follow-ups after 8 frames minimum (can cancel into Emergency Stop 2f earlier); Movement speed: 0.135/frame during cancelable frames"
+      ]
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__special_236_P_H",
+      "field": "total",
+      "current": "53",
+      "sourceMoveId": "kimberly__special_236_P_H",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Puts opponent into limited juggle state; very limited juggle potential, so it won't combo from 5MP~HP; 2nd hit only comes out on hit; forward jump cancelable on hit only; (note: frame display shows 3f extra block recovery, but this is a bug - total frame count remains unchanged)"
+      ]
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__special_236_P_M",
+      "field": "total",
+      "current": "46",
+      "sourceMoveId": "kimberly__special_236_P_M",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: 2nd hit only comes out on hit; () refers to reduced KD Adv. when juggled into; (note: frame display shows 3f extra block recovery, but this is a bug - total frame count remains unchanged)"
+      ]
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__special_236_P_OD",
+      "field": "total",
+      "current": "46",
+      "sourceMoveId": "kimberly__special_236_P_OD",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Puts opponent into limited juggle state; 2nd hit only comes out on hit; forward jump cancelable on hit only; gives the launch of 236HP with the startup and juggle potential of 236MP; (note: frame display shows 3f extra block recovery, but this is a bug - total frame count remains unchanged)"
+      ]
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__super_art_2_L",
+      "field": "total",
+      "current": "59",
+      "sourceMoveId": "kimberly:raw:0",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Becomes airborne during screen freeze (can dodge grounded attacks despite not having invincibility); screen freeze causes active spraycans to disappear; first hit before cinematic does 300 damage"
+      ]
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__super_art_2_M",
+      "field": "total",
+      "current": "59",
+      "sourceMoveId": "kimberly:raw:0",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Becomes airborne during screen freeze (can dodge grounded attacks despite not having invincibility); screen freeze causes active spraycans to disappear; first hit before cinematic does 300 damage"
+      ]
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__super_art_2_H",
+      "field": "total",
+      "current": "59",
+      "sourceMoveId": "kimberly:raw:0",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Becomes airborne during screen freeze (can dodge grounded attacks despite not having invincibility); screen freeze causes active spraycans to disappear; first hit before cinematic does 300 damage"
+      ]
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__special_22_K_none__strength_L",
+      "field": "startup",
+      "current": "42",
+      "sourceMoveId": "kimberly__special_22_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Refills 1 spray can; cannot reload if a spray can is currently active on-screen"
+      ]
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__special_22_K_none__strength_M",
+      "field": "startup",
+      "current": "42",
+      "sourceMoveId": "kimberly__special_22_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Refills 1 spray can; cannot reload if a spray can is currently active on-screen"
+      ]
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__special_22_K_none__strength_H",
+      "field": "startup",
+      "current": "42",
+      "sourceMoveId": "kimberly__special_22_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Refills 1 spray can; cannot reload if a spray can is currently active on-screen"
+      ]
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__special_236_K_none__strength_L",
+      "field": "startup",
+      "current": "8",
+      "sourceMoveId": "kimberly__special_236_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Holding forward causes Kimberly to continue running without activating Arc Step (must not let go of forward input at any point); can hold forward + button to activate follow-up at the earliest possible timing; Movement speed: 0.112/frame during cancelable frames"
+      ]
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__special_236_K_none__strength_M",
+      "field": "startup",
+      "current": "8",
+      "sourceMoveId": "kimberly__special_236_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Holding forward causes Kimberly to continue running without activating Arc Step (must not let go of forward input at any point); can hold forward + button to activate follow-up at the earliest possible timing; Movement speed: 0.112/frame during cancelable frames"
+      ]
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__special_236_K_none__strength_H",
+      "field": "startup",
+      "current": "8",
+      "sourceMoveId": "kimberly__special_236_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Holding forward causes Kimberly to continue running without activating Arc Step (must not let go of forward input at any point); can hold forward + button to activate follow-up at the earliest possible timing; Movement speed: 0.112/frame during cancelable frames"
+      ]
+    },
+    {
+      "characterId": "lily",
+      "moveId": "lily__super_art_1_L",
+      "field": "total",
+      "current": "101",
+      "sourceMoveId": "lily:raw:10",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: First 2 hits give full animation; partial connect gives reduced damage and KD advantage; Dmg distribution: 80x13,1160 (full animation), 80x2,1680 (partial animation)"
+      ]
+    },
+    {
+      "characterId": "lily",
+      "moveId": "lily__super_art_1_M",
+      "field": "total",
+      "current": "101",
+      "sourceMoveId": "lily:raw:10",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: First 2 hits give full animation; partial connect gives reduced damage and KD advantage; Dmg distribution: 80x13,1160 (full animation), 80x2,1680 (partial animation)"
+      ]
+    },
+    {
+      "characterId": "lily",
+      "moveId": "lily__super_art_1_H",
+      "field": "total",
+      "current": "101",
+      "sourceMoveId": "lily:raw:10",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: First 2 hits give full animation; partial connect gives reduced damage and KD advantage; Dmg distribution: 80x13,1160 (full animation), 80x2,1680 (partial animation)"
+      ]
+    },
+    {
+      "characterId": "luke",
+      "moveId": "luke__normal_5_P_H",
+      "field": "total",
+      "current": "35",
+      "sourceMoveId": "luke__normal_5_P_H",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Good whiff punish tool due to its long range and cancelability; extends a vertical collision box to reduce the risk of whiffing under opponent mid-juggle; safe and a true blockstring when canceled into 236MP for solid Drive chip pressure"
+      ]
+    },
+    {
+      "characterId": "luke",
+      "moveId": "luke__special_214_P_OD",
+      "field": "total",
+      "current": "56",
+      "sourceMoveId": "luke__special_214_P_OD",
+      "flags": {
+        "whiff": true,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Puts opponent into limited juggle state; active frames 3-4 can nullify normal 1-hit projectiles; listed recovery is for blocked/whiffed version (on hit, automatically transitions to 2nd hit); 1st hit is cancelable into PP follow-up for 1 extra Drive bar on hit only; can juggle directly into any Super (canceling into Super will cause SA3 to whiff; SA2 will whiff on final cancelable frame)"
+      ]
+    },
+    {
+      "characterId": "luke",
+      "moveId": "luke__special_236_K_OD",
+      "field": "startup",
+      "current": "11",
+      "sourceMoveId": "luke__special_236_K_OD",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Armor does not apply to follow-up attacks; follow-up P or K can be input up to frame 32; follow-up can start immediately after armor hit freeze without waiting for any additional Avenger startup frames to occur; Luke is in a Punish Counter state for entire duration; Total Distance: 2.47 (0.75 before the earliest follow-up timing)"
+      ]
+    },
+    {
+      "characterId": "luke",
+      "moveId": "luke__super_art_2_L",
+      "field": "total",
+      "current": "58",
+      "sourceMoveId": "luke:raw:0",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Extremely fast super that works well in juggles; in the corner, gives Luke an auto-timed strike/throw/shimmy mixup; on hit, the animation is not invincible until the very end (can be hit by delayed projectiles like Kimberly Spraycan or JP Amnesia orbs); Full Dmg distribution: 300x3,200x6,900"
+      ]
+    },
+    {
+      "characterId": "luke",
+      "moveId": "luke__super_art_2_M",
+      "field": "total",
+      "current": "58",
+      "sourceMoveId": "luke:raw:0",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Extremely fast super that works well in juggles; in the corner, gives Luke an auto-timed strike/throw/shimmy mixup; on hit, the animation is not invincible until the very end (can be hit by delayed projectiles like Kimberly Spraycan or JP Amnesia orbs); Full Dmg distribution: 300x3,200x6,900"
+      ]
+    },
+    {
+      "characterId": "luke",
+      "moveId": "luke__super_art_2_H",
+      "field": "total",
+      "current": "58",
+      "sourceMoveId": "luke:raw:0",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Extremely fast super that works well in juggles; in the corner, gives Luke an auto-timed strike/throw/shimmy mixup; on hit, the animation is not invincible until the very end (can be hit by delayed projectiles like Kimberly Spraycan or JP Amnesia orbs); Full Dmg distribution: 300x3,200x6,900"
+      ]
+    },
+    {
+      "characterId": "luke",
+      "moveId": "luke__special_236_K_none__strength_L",
+      "field": "startup",
+      "current": "12",
+      "sourceMoveId": "luke__special_236_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Follow-up P or K can be input on frames 12-32; Luke is in a counter-hit state for entire duration; Total Distance: 2.23 (0.82 before the earliest follow-up timing)"
+      ]
+    },
+    {
+      "characterId": "luke",
+      "moveId": "luke__special_236_K_none__strength_M",
+      "field": "startup",
+      "current": "12",
+      "sourceMoveId": "luke__special_236_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Follow-up P or K can be input on frames 12-32; Luke is in a counter-hit state for entire duration; Total Distance: 2.23 (0.82 before the earliest follow-up timing)"
+      ]
+    },
+    {
+      "characterId": "luke",
+      "moveId": "luke__special_236_K_none__strength_H",
+      "field": "startup",
+      "current": "12",
+      "sourceMoveId": "luke__special_236_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Follow-up P or K can be input on frames 12-32; Luke is in a counter-hit state for entire duration; Total Distance: 2.23 (0.82 before the earliest follow-up timing)"
+      ]
+    },
+    {
+      "characterId": "m_bison",
+      "moveId": "m_bison__special_[2]8_K_OD",
+      "field": "startup",
+      "current": "16~47",
+      "sourceMoveId": "m_bison__special_[2]8_K_OD",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: 40f charge time (charge lasts 10f after releasing down direction); automatically tracks opponent's location; horizontal travel speed depends on distance from opponent (much faster than HK Shadow Rise when used from longer ranges); follow-ups will become their respective OD versions without spending additional Drive gauge; Bison is in a crouching state on the final landing recovery frame"
+      ]
+    },
+    {
+      "characterId": "m_bison",
+      "moveId": "m_bison__special_214_P_L",
+      "field": "total",
+      "current": "54",
+      "sourceMoveId": "m_bison__special_214_P_L",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Plants Psycho Mine onto opponent on 2nd hit (detonates after 300f or when another Backfist Combo, Psycho Crusher, or Devil Reverse connects); useful ender for many juggles (higher KD advantage in high-connect juggles); 3f extra recovery on hit"
+      ]
+    },
+    {
+      "characterId": "m_bison",
+      "moveId": "m_bison__special_214_P_M",
+      "field": "total",
+      "current": "59",
+      "sourceMoveId": "m_bison__special_214_P_M",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Plants Psycho Mine onto opponent on 2nd hit (detonates after 300f or when another Backfist Combo, Psycho Crusher, or Devil Reverse connects); useful ender for some juggles (higher KD advantage in high-connect juggles); +23 KD Advantage sets up a dash into strike/throw mixup, or a perfectly meaty 6HP (+5 oH / -1 oB); 3f extra recovery on hit"
+      ]
+    },
+    {
+      "characterId": "m_bison",
+      "moveId": "m_bison__special_[2]8_K_none__strength_L",
+      "field": "startup",
+      "current": "18",
+      "sourceMoveId": "m_bison__special_[2]8_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: 40f charge time (charge lasts 10f after releasing down direction); button strength determines trajectory (LK close, MK mid, HK far); landing recovery and total frame refers to LK/MK/HK version respectively; Bison is in a crouching state on the final landing recovery frame; can use the OD versions of follow-ups by pressing PP or KK; foot hurtbox is projectile invincible"
+      ]
+    },
+    {
+      "characterId": "m_bison",
+      "moveId": "m_bison__special_[2]8_K_none__strength_M",
+      "field": "startup",
+      "current": "18",
+      "sourceMoveId": "m_bison__special_[2]8_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: 40f charge time (charge lasts 10f after releasing down direction); button strength determines trajectory (LK close, MK mid, HK far); landing recovery and total frame refers to LK/MK/HK version respectively; Bison is in a crouching state on the final landing recovery frame; can use the OD versions of follow-ups by pressing PP or KK; foot hurtbox is projectile invincible"
+      ]
+    },
+    {
+      "characterId": "m_bison",
+      "moveId": "m_bison__special_[2]8_K_none__strength_H",
+      "field": "startup",
+      "current": "18",
+      "sourceMoveId": "m_bison__special_[2]8_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: 40f charge time (charge lasts 10f after releasing down direction); button strength determines trajectory (LK close, MK mid, HK far); landing recovery and total frame refers to LK/MK/HK version respectively; Bison is in a crouching state on the final landing recovery frame; can use the OD versions of follow-ups by pressing PP or KK; foot hurtbox is projectile invincible"
+      ]
+    },
+    {
+      "characterId": "mai",
+      "moveId": "mai__special_214_P_L",
+      "field": "total",
+      "current": "35",
+      "sourceMoveId": "mai__special_214_P_L",
+      "flags": {
+        "whiff": true,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Low Crush 7-14f; strike hitbox that can dissipate standard 1-hit projectiles during active frames; becomes KD +35 on Counter-hit/Punish Counter; leaves opponent standing on hit just outside throw range (must walk 1-2f to throw, or more if spaced far away); safe when well spaced in neutral; when canceled from a normal on block, its safe range is character-specific (max range 2MK offers the best pushback); useful oki tool that can be up to +9/+2 when meaty (e.g. 2HK, whiff 5LK, 214LP) and can also lead to a juggle on meaty Counter-hit; extends a forward hurtbox on whiff until the end of recovery"
+      ]
+    },
+    {
+      "characterId": "mai",
+      "moveId": "mai__special_623_K_OD",
+      "field": "total",
+      "current": "57",
+      "sourceMoveId": "mai__special_623_K_OD",
+      "flags": {
+        "whiff": true,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Mai's primary reversal, as well as an anti-air and strong juggle ender; cannot hit cross-up; puts opponents into limited juggle state on hit; first hit can whiff if used too early as an anti-air; second hit whiffs on crouch block resulting in worse block advantage and reduced chip/drive damage; 7f extra landing recovery on block"
+      ]
+    },
+    {
+      "characterId": "marisa",
+      "moveId": "marisa__special_214_K_OD",
+      "field": "startup",
+      "current": "1",
+      "sourceMoveId": "marisa__special_214_K_OD",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Stance with 2-hit full-body armor can be extended an extra 30f by holding a kick button, followed by 29 unarmored recovery frames; cancelable into follow-ups after 8f; stance cannot be canceled into from other attacks; absorbing an attack automatically triggers counterattack follow-up; Marisa takes a fixed 6f hitstop when absorbing attacks (causing the counterattack to often land as a Counter-hit rather than a Punish Counter against medium/heavy attacks)"
+      ]
+    },
+    {
+      "characterId": "marisa",
+      "moveId": "marisa__special_214_K_none__strength_L",
+      "field": "startup",
+      "current": "3",
+      "sourceMoveId": "marisa__special_214_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Stance with 1-hit armor can be extended an extra 90f by holding the button, followed by 26 unarmored recovery frames; no armor on lower half of body; cancelable into follow-ups after 8f; stance cannot be canceled into from other attacks; absorbing an attack automatically triggers counterattack follow-up; Marisa takes a fixed 6f hitstop when absorbing attacks (causing the counterattack to often land as a Counter-hit rather than a Punish Counter against medium/heavy attacks)"
+      ]
+    },
+    {
+      "characterId": "marisa",
+      "moveId": "marisa__special_214_K_none__strength_M",
+      "field": "startup",
+      "current": "3",
+      "sourceMoveId": "marisa__special_214_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Stance with 1-hit armor can be extended an extra 90f by holding the button, followed by 26 unarmored recovery frames; no armor on lower half of body; cancelable into follow-ups after 8f; stance cannot be canceled into from other attacks; absorbing an attack automatically triggers counterattack follow-up; Marisa takes a fixed 6f hitstop when absorbing attacks (causing the counterattack to often land as a Counter-hit rather than a Punish Counter against medium/heavy attacks)"
+      ]
+    },
+    {
+      "characterId": "marisa",
+      "moveId": "marisa__special_214_K_none__strength_H",
+      "field": "startup",
+      "current": "3",
+      "sourceMoveId": "marisa__special_214_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Stance with 1-hit armor can be extended an extra 90f by holding the button, followed by 26 unarmored recovery frames; no armor on lower half of body; cancelable into follow-ups after 8f; stance cannot be canceled into from other attacks; absorbing an attack automatically triggers counterattack follow-up; Marisa takes a fixed 6f hitstop when absorbing attacks (causing the counterattack to often land as a Counter-hit rather than a Punish Counter against medium/heavy attacks)"
+      ]
+    },
+    {
+      "characterId": "rashid",
+      "moveId": "rashid__special_236_P_H",
+      "field": "total",
+      "current": "77",
+      "sourceMoveId": "rashid__special_236_P_H",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Good anti-air that can hit cross-ups; can be affected by Air Current on frames 2-5; if the final hit whiffs as an anti-air, Rashid can get a follow-up juggle"
+      ]
+    },
+    {
+      "characterId": "rashid",
+      "moveId": "rashid__special_236_P_M",
+      "field": "total",
+      "current": "74",
+      "sourceMoveId": "rashid__special_236_P_M",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: The last 11f of landing recovery is cancelable into special moves or supers on hit only; 4f worse advantage and 1 less hit when crouch blocked; cannot anti-air cross-ups; can be affected by Air Current on frames 2-8"
+      ]
+    },
+    {
+      "characterId": "rashid",
+      "moveId": "rashid__special_236_P_OD",
+      "field": "total",
+      "current": "110",
+      "sourceMoveId": "rashid__special_236_P_OD",
+      "flags": {
+        "whiff": true,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Shorter animation with less landing recovery on block only; cannot anti-air cross-ups; can only hit twice vs. grounded opponents (will not break DI armor); 5f extra knockdown advantage if the final hit whiffs (keeps Rashid safe); can be affected by Air Current on frames 2-8"
+      ]
+    },
+    {
+      "characterId": "ryu",
+      "moveId": "ryu__special_22_P_none__strength_L",
+      "field": "startup",
+      "current": "50",
+      "sourceMoveId": "ryu__special_22_P_none",
+      "flags": {
+        "whiff": false,
+        "specialState": true,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Charges up next fireball-based move (Hadoken, Hashogeki, SA1, SA2) into a more powerful Denjin version; Ryu is in a counter-hit state for the entire animation; gains the Denjin charge on frame 50; can only store 1 stock at a time (does not persist between rounds); can also be performed after 5HP~HK or 5MP~LK~HK (on hit) by inputting 2P"
+      ]
+    },
+    {
+      "characterId": "ryu",
+      "moveId": "ryu__special_22_P_none__strength_M",
+      "field": "startup",
+      "current": "50",
+      "sourceMoveId": "ryu__special_22_P_none",
+      "flags": {
+        "whiff": false,
+        "specialState": true,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Charges up next fireball-based move (Hadoken, Hashogeki, SA1, SA2) into a more powerful Denjin version; Ryu is in a counter-hit state for the entire animation; gains the Denjin charge on frame 50; can only store 1 stock at a time (does not persist between rounds); can also be performed after 5HP~HK or 5MP~LK~HK (on hit) by inputting 2P"
+      ]
+    },
+    {
+      "characterId": "ryu",
+      "moveId": "ryu__special_22_P_none__strength_H",
+      "field": "startup",
+      "current": "50",
+      "sourceMoveId": "ryu__special_22_P_none",
+      "flags": {
+        "whiff": false,
+        "specialState": true,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Charges up next fireball-based move (Hadoken, Hashogeki, SA1, SA2) into a more powerful Denjin version; Ryu is in a counter-hit state for the entire animation; gains the Denjin charge on frame 50; can only store 1 stock at a time (does not persist between rounds); can also be performed after 5HP~HK or 5MP~LK~HK (on hit) by inputting 2P"
+      ]
+    },
+    {
+      "characterId": "sagat",
+      "moveId": "sagat__special_214_K_L",
+      "field": "total",
+      "current": "42",
+      "sourceMoveId": "sagat__special_214_K_L",
+      "flags": {
+        "whiff": true,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: 1f extra recovery vs. armor (DI is a guaranteed punish if not canceled to SA3); the only strength of 214K that can combo naturally from 5LP (3-light confirm can reach if point blank, but results in weaker mixup from ~6LK ender); does not frame trap when canceled on block (except from Light normals with Drive Rush or Burnout); combos into 6LK/6MK follow-ups; canceling into the 6HK follow-up leaves a 2f gap on hit / 9f gap on block (loses to 4f normals even in Burnout); Counter-hit/Punish Counter puts the opponent into a limited juggle state that allows the 6HK follow-up to combo; cannot perform follow-up attacks on whiff; opponents can beat all follow-ups with invincible reversals (but standard 6f reversals will not punish 214LK); if the opponent attempts to punish 214LK, the 6LK follow-up will frame trap on block (must delay 6LK vs. Burnout)"
+      ]
+    },
+    {
+      "characterId": "sagat",
+      "moveId": "sagat__special_214_K_M",
+      "field": "total",
+      "current": "45",
+      "sourceMoveId": "sagat__special_214_K_M",
+      "flags": {
+        "whiff": true,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: 1f extra recovery vs. armor (DI is a guaranteed punish if not canceled to SA3); combos into 6LK/6MK follow-ups; canceling into the 6HK follow-up leaves a 2f gap on hit / 9f gap on block (loses to 4f normals even in Burnout); Counter-hit/Punish Counter puts the opponent into a limited juggle state that allows the 6HK follow-up to combo; 214MK combos from canceled 2MP/2HP/5HK (these cancels also frame trap on block); cannot perform follow-up attacks on whiff; lacks natural juggle potential but can juggle after DR~4HP (free juggle state) for a powerful 1-bar corner combo (DR~4HP > 214MK, 4HP > 236HK, 623MP); opponents can beat all follow-ups with invincible reversals (but standard 6f reversals will not punish 214MK); if the opponent attempts to punish 214MK, the 6LK follow-up will frame trap on block (must delay 6LK vs. Burnout)"
+      ]
+    },
+    {
+      "characterId": "sagat",
+      "moveId": "sagat__special_236_K_L",
+      "field": "total",
+      "current": "42",
+      "sourceMoveId": "sagat__special_236_K_L",
+      "flags": {
+        "whiff": true,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Shortest horizontal distance; no front leg hurtbox on frames 10-12 (helps avoid low pokes); 3f extra landing recovery when absorbed by armor; much better block advantage (up to +2) when spaced at max range; active frames 2-10 whiff on crouching opponents; this means that if the Knee is spaced out so the first active frame whiffs, it always connects on the last active frame vs. crouching opponents (+2 on block, 623LP juggle on hit); puts opponent into a limited juggle state (in the corner, can juggle 623LP if the last active frame connects); blocked Knee causes a screen shake when Sagat has frame advantage; can be whiffed in some situations for a side switch vs. knocked down opponents"
+      ]
+    },
+    {
+      "characterId": "sagat",
+      "moveId": "sagat__special_236_K_M",
+      "field": "total",
+      "current": "46",
+      "sourceMoveId": "sagat__special_236_K_M",
+      "flags": {
+        "whiff": true,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Medium horizontal distance; no front leg hurtbox on frames 14-15 (helps avoid low pokes); 3f extra landing recovery when absorbed by armor; much better block advantage (up to +3) when spaced at max range; active frames 2-9 whiff on crouching opponents; this means that if the Knee is spaced out so the first active frame whiffs, it connects on the 2nd to last active frame vs. crouching opponents (+2 on block, 623LP juggle on hit); puts opponent into a limited juggle state (in the corner, can juggle 623LP if the last 4 active frames connect); blocked Knee causes a screen shake when Sagat has frame advantage; can be whiffed in some situations for a side switch vs. knocked down opponents; sets up midscreen safe jump in certain juggle scenarios (e.g. after juggled 2MP~HP)"
+      ]
+    },
+    {
+      "characterId": "terry",
+      "moveId": "terry__normal_2_P_H",
+      "field": "total",
+      "current": "35",
+      "sourceMoveId": "terry__normal_2_P_H",
+      "flags": {
+        "whiff": true,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Forces stand; good anti-air on frames 10-13 but cannot hit cross-up; very short horizontal range; only first 2 active frames are cancelable; if the attack connects on the first 2 active frames, it has 2 fewer active and recovery frames (meaty timing can be up to 2f worse on hit/block if 3rd active frame connects); active frames 4-6 whiff on crouching opponents unless they extend a vertical hurtbox; delaying the cancel into 236PP can grant better frame advantage for combo extensions"
+      ]
+    },
+    {
+      "characterId": "terry",
+      "moveId": "terry__normal_5_P_H",
+      "field": "total",
+      "current": "30",
+      "sourceMoveId": "terry__normal_5_P_H",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: 2 hits; 2f less recovery on block; both hits are cancelable, making it easy to hitconfirm; 1st hit has more hitstun, allowing combos into 236HK; Counter-hit/Punish Counter advantage carries through both hits; short range but good hitbox priority for counterpoking; 1st hit has much less range (only 2nd hit will connect as a ranged poke); when used out of Drive Rush on block, Terry is left slightly out of throw range but can microwalk + throw to beat 4f light normals"
+      ]
+    },
+    {
+      "characterId": "terry",
+      "moveId": "terry__special_214_K_H",
+      "field": "total",
+      "current": "52",
+      "sourceMoveId": "terry__special_214_K_H",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: 2 hits vs. grounded, up to 3 hits vs. airborne; first 7 active frames can only hit airborne opponents (functionally 30f startup); cannot hit cross-up; puts airborne opponent into limited juggle state; kicking leg is anti-air invuln on frames 28-30; can be spaced out to hit once with 2f better advantage; technically has 4 hits, but up to 3 can land at once; damage is highly variable depending on which hits connect (last hit does most damage, but landing all 3 airborne hits allows strong juggle extensions); can hop over many grounded attacks (even some standing); can be used for a sideswitch mid-combo or a corpse hop on downed opponents; strong vs. Burnout, dealing chip while staying close range with frame advantage (but too slow to cancel into for Burnout loops); last hit is lower to the ground than other versions and can beat moves that low profile other versions"
+      ]
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_214_P_H",
+      "field": "total",
+      "current": "48",
+      "sourceMoveId": "yasmine__special_214_P_H",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Puts Yasmine into Bayani Mode on hit (this occurs after the hitstop of the 1st hit ends, so it will be granted when Super canceled but not if it trades with opponent's attack); plus on block advancing special; slow startup makes it reactable and only combos naturally from 2HP; last 2 hits only play out on hit and are not cancelable (listed recovery refers to the blocked/whiffed version); puts opponents into a limited juggle state (follow-ups only possible when juggled on airborne opponents)"
+      ]
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_214_P_OD",
+      "field": "total",
+      "current": "49",
+      "sourceMoveId": "yasmine__special_214_P_OD",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Puts Yasmine into Bayani Mode on hit (this occurs after the hitstop of the 1st hit ends, so it will be granted when Super canceled but not if it trades with opponent's attack); last 2 hits only play out on hit and are not cancelable (listed recovery refers to the blocked/whiffed version); puts opponents into a limited juggle state; useful approach tool when buffered into SA2; SA2 cancel: +15/+5"
+      ]
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_236_K_OD",
+      "field": "startup",
+      "current": "23",
+      "sourceMoveId": "yasmine__special_236_K_OD",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Enhances the properties of follow-up attacks (improved hit and block advantage, can be input with no extra meter cost); can be steered by holding back/neutral/forward before the follow-up starts (no input gives the same trajectory as 236LK); gives more freedom to control Yasmine's trajectory compared to the meterless flip; follow-ups can be input on frames 24-46; Yasmine is in a standing state with a standing-sized hurtbox during landing recovery"
+      ]
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_623_K_H",
+      "field": "total",
+      "current": "55",
+      "sourceMoveId": "yasmine__special_623_K_H",
+      "flags": {
+        "whiff": true,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Only the first 2 hits come out on block/whiff; cannot hit cross-up; has the most horizontal range of meterless versions (works from max range 5LK cancel except in whiff punish scenarios)"
+      ]
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_623_K_L",
+      "field": "total",
+      "current": "53",
+      "sourceMoveId": "yasmine__special_623_K_L",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Only the first 2 hits come out on block/whiff; cannot hit cross-up; best overall anti-air due to speed and invuln; very short horizontal range"
+      ]
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_623_K_M",
+      "field": "total",
+      "current": "54",
+      "sourceMoveId": "yasmine__special_623_K_M",
+      "flags": {
+        "whiff": true,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Only the first 2 hits come out on block/whiff; cannot hit cross-up; slightly more horizontal range than 623LK"
+      ]
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_623_K_OD",
+      "field": "total",
+      "current": "61",
+      "sourceMoveId": "yasmine__special_623_K_OD",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": false
+      },
+      "notes": [
+        "upstreamNotes: Only the first 2 hits come out on block/whiff; cannot hit cross-up; Yasmine's primary reversal option; has the most horizontal range of all versions"
+      ]
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__super_art_2_L",
+      "field": "startup",
+      "current": "1",
+      "sourceMoveId": "yasmine:raw:0",
+      "flags": {
+        "whiff": false,
+        "specialState": true,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Install that keeps Yasmine in Bayani Mode until the timer ends; timer lasts 1500 frames (25 seconds) and freezes during hitstop; cannot build additional Super gauge while the install is active; Yasmine stays in Bayani Mode after install ends (if 236P is activated with at least 1 frame left on the timer, the follow-up enhanced Alon can be used freely without spending the Bayani stock); grants access to a new special move Linya ng Liwanag (fast cross-up slash); changes the properties of OD Alon (new cinematic ender); each activation of an enhanced Bayani Mode special consumes 375f from the install timer (25%); install activation is useful for starting pressure from ranges approaches like 214PP or 236PP~6P (very high pushback and weak pressure when canceled directly from 5MP~MP or 236PP)"
+      ]
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__super_art_2_M",
+      "field": "startup",
+      "current": "1",
+      "sourceMoveId": "yasmine:raw:0",
+      "flags": {
+        "whiff": false,
+        "specialState": true,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Install that keeps Yasmine in Bayani Mode until the timer ends; timer lasts 1500 frames (25 seconds) and freezes during hitstop; cannot build additional Super gauge while the install is active; Yasmine stays in Bayani Mode after install ends (if 236P is activated with at least 1 frame left on the timer, the follow-up enhanced Alon can be used freely without spending the Bayani stock); grants access to a new special move Linya ng Liwanag (fast cross-up slash); changes the properties of OD Alon (new cinematic ender); each activation of an enhanced Bayani Mode special consumes 375f from the install timer (25%); install activation is useful for starting pressure from ranges approaches like 214PP or 236PP~6P (very high pushback and weak pressure when canceled directly from 5MP~MP or 236PP)"
+      ]
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__super_art_2_H",
+      "field": "startup",
+      "current": "1",
+      "sourceMoveId": "yasmine:raw:0",
+      "flags": {
+        "whiff": false,
+        "specialState": true,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Install that keeps Yasmine in Bayani Mode until the timer ends; timer lasts 1500 frames (25 seconds) and freezes during hitstop; cannot build additional Super gauge while the install is active; Yasmine stays in Bayani Mode after install ends (if 236P is activated with at least 1 frame left on the timer, the follow-up enhanced Alon can be used freely without spending the Bayani stock); grants access to a new special move Linya ng Liwanag (fast cross-up slash); changes the properties of OD Alon (new cinematic ender); each activation of an enhanced Bayani Mode special consumes 375f from the install timer (25%); install activation is useful for starting pressure from ranges approaches like 214PP or 236PP~6P (very high pushback and weak pressure when canceled directly from 5MP~MP or 236PP)"
+      ]
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_236_K_none__strength_L",
+      "field": "startup",
+      "current": "23",
+      "sourceMoveId": "yasmine__special_236_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Button strength determines trajectory (LK short, MK mid, HK far); cannot be steered manually after activation; follow-ups can be input starting on frame 24, and as late as frame 45 (236LK) / frame 42 (236MK) / frame 43 (236HK); can input OD follow-up with PP or KK for 2 Drive bars (safer on block); empty HK flip can have 1f longer or shorter aerial animation when crossing over the opponent at certain ranges; Yasmine is in a standing state with a standing-sized hurtbox during landing recovery"
+      ]
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_236_K_none__strength_M",
+      "field": "startup",
+      "current": "23",
+      "sourceMoveId": "yasmine__special_236_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Button strength determines trajectory (LK short, MK mid, HK far); cannot be steered manually after activation; follow-ups can be input starting on frame 24, and as late as frame 45 (236LK) / frame 42 (236MK) / frame 43 (236HK); can input OD follow-up with PP or KK for 2 Drive bars (safer on block); empty HK flip can have 1f longer or shorter aerial animation when crossing over the opponent at certain ranges; Yasmine is in a standing state with a standing-sized hurtbox during landing recovery"
+      ]
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_236_K_none__strength_H",
+      "field": "startup",
+      "current": "23",
+      "sourceMoveId": "yasmine__special_236_K_none",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Button strength determines trajectory (LK short, MK mid, HK far); cannot be steered manually after activation; follow-ups can be input starting on frame 24, and as late as frame 45 (236LK) / frame 42 (236MK) / frame 43 (236HK); can input OD follow-up with PP or KK for 2 Drive bars (safer on block); empty HK flip can have 1f longer or shorter aerial animation when crossing over the opponent at certain ranges; Yasmine is in a standing state with a standing-sized hurtbox during landing recovery"
+      ]
+    },
+    {
+      "characterId": "zangief",
+      "moveId": "zangief__super_art_2_L",
+      "field": "total",
+      "current": "171",
+      "sourceMoveId": "zangief:raw:6",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Switches sides on hit; can hold forward/back on hit to move in that direction, dealing 100 less damage; holding forward keeps opponent on the same side with 4f worse KD Advantage; too slow to work as a reversal against many attacks, but half-screen suction makes it powerful as a projectile counter; can hold button for a fully charged launching version; plays out the held version on block or when juggled into; active frame distribution: vacuum 91f, juggle 1(4)2(7)2(8)2(7)2(8)2(9)2(7)2(9)2(8)3 starting on frame 33"
+      ]
+    },
+    {
+      "characterId": "zangief",
+      "moveId": "zangief__super_art_2_M",
+      "field": "total",
+      "current": "171",
+      "sourceMoveId": "zangief:raw:6",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Switches sides on hit; can hold forward/back on hit to move in that direction, dealing 100 less damage; holding forward keeps opponent on the same side with 4f worse KD Advantage; too slow to work as a reversal against many attacks, but half-screen suction makes it powerful as a projectile counter; can hold button for a fully charged launching version; plays out the held version on block or when juggled into; active frame distribution: vacuum 91f, juggle 1(4)2(7)2(8)2(7)2(8)2(9)2(7)2(9)2(8)3 starting on frame 33"
+      ]
+    },
+    {
+      "characterId": "zangief",
+      "moveId": "zangief__super_art_2_H",
+      "field": "total",
+      "current": "171",
+      "sourceMoveId": "zangief:raw:6",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Switches sides on hit; can hold forward/back on hit to move in that direction, dealing 100 less damage; holding forward keeps opponent on the same side with 4f worse KD Advantage; too slow to work as a reversal against many attacks, but half-screen suction makes it powerful as a projectile counter; can hold button for a fully charged launching version; plays out the held version on block or when juggled into; active frame distribution: vacuum 91f, juggle 1(4)2(7)2(8)2(7)2(8)2(9)2(7)2(9)2(8)3 starting on frame 33"
+      ]
+    },
+    {
+      "characterId": "zangief",
+      "moveId": "zangief__super_art_3_L",
+      "field": "startup",
+      "current": "6",
+      "sourceMoveId": "zangief:raw:49",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Command grab Super; opponent cannot jump after the freeze; can only be comboed into with OD Lariat (1st hit), Punish Counter 3HK wall splat, or grounded crumple state; cinematic time regenerates ~2.2 Drive bars for Zangief; Range: 1.56 (2nd active frame, jumpable: 1.60)"
+      ]
+    },
+    {
+      "characterId": "zangief",
+      "moveId": "zangief__super_art_3_M",
+      "field": "startup",
+      "current": "6",
+      "sourceMoveId": "zangief:raw:49",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Command grab Super; opponent cannot jump after the freeze; can only be comboed into with OD Lariat (1st hit), Punish Counter 3HK wall splat, or grounded crumple state; cinematic time regenerates ~2.2 Drive bars for Zangief; Range: 1.56 (2nd active frame, jumpable: 1.60)"
+      ]
+    },
+    {
+      "characterId": "zangief",
+      "moveId": "zangief__super_art_3_H",
+      "field": "startup",
+      "current": "6",
+      "sourceMoveId": "zangief:raw:49",
+      "flags": {
+        "whiff": false,
+        "specialState": false,
+        "strengthODHold": true
+      },
+      "notes": [
+        "upstreamNotes: Command grab Super; opponent cannot jump after the freeze; can only be comboed into with OD Lariat (1st hit), Punish Counter 3HK wall splat, or grounded crumple state; cinematic time regenerates ~2.2 Drive bars for Zangief; Range: 1.56 (2nd active frame, jumpable: 1.60)"
+      ]
+    }
+  ]
+}

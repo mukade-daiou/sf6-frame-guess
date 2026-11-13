@@ -61,6 +61,7 @@ export function restoreCompoundStartup(character: Character): Character {
     const total = [
       ...(policy.whiffTotalCorrections?.decisions ?? []),
       ...(policy.whiffTotalCorrections?.additionalDecisions ?? []),
+      ...(policy.whiffTotalCorrections?.unverifiableDecisions ?? []),
     ].find(
       (item: any) => item.characterId === result.id && item.moveId === move.id,
     );

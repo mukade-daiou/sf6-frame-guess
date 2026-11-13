@@ -35,6 +35,14 @@ export function restoreUserConfirmedFrames(character: Character): Character {
     readFileSync("data/adoption-decisions.json", "utf8"),
   );
   const result = structuredClone(character);
+  for (const d of (policy.specialStateExclusions ?? []).filter(
+    (x: any) => x.characterId === result.id,
+  )) {
+    const move = result.moves.find((m) => m.id === d.moveId);
+    if (!move || !isDeepStrictEqual(move.adoption, d.value))
+      throw new Error(`Unauthorized special-state exclusion: ${d.moveId}`);
+    move.adoption = d.before;
+  }
   for (const d of (policy.userConfirmedFrames?.decisions ?? []).filter(
     (x: any) => x.characterId === result.id,
   )) {
