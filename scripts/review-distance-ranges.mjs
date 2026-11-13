@@ -69,6 +69,16 @@ for (const file of readdirSync("data/characters").filter((f) =>
     source = read(sourcePath),
     raw = read(audit.rawPath),
     rows = [];
+  // The saved distance review predates these narrowly scoped exclusions.
+  // Restore their verified historical adoption only for this audit projection.
+  for (const d of (policy.specialStateExclusions || []).filter(
+    (x) => x.characterId === c.id,
+  )) {
+    const move = c.moves.find((m) => m.id === d.moveId);
+    if (!move || JSON.stringify(move.adoption) !== JSON.stringify(d.value))
+      throw new Error(`Unauthorized special-state exclusion: ${d.moveId}`);
+    move.adoption = d.before;
+  }
   for (const [
     sourceIndex,
     { title: row },
