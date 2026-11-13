@@ -1,5 +1,7 @@
 # SF6フレーム探偵
 
+現行データは `unverifiable-risk-corrections-2026-11-14-r1`、32キャラ・1298レコード（採用1282）です。保存公式との照合5128フィールドは一致4459・不一致61・条件違い42・確認不能566で、公式資料の対象パッチはUNVERIFIEDです。全体Fは原則として通常条件の空振り時を採用します。[照合結果](docs/OFFICIAL_VERIFICATION_REEVALUATION.md)
+
 結果画面の「Xで結果をシェア」から、結果と質問順の履歴を入力した投稿画面を別タブで開けます。自動投稿はしません。共有時のNormal/Hardに合わせて表示し、twitter-textの重み付き280文字に収まるよう長い履歴行から短縮します。必要な場合だけ末尾の質問を「ほかN問」にまとめます。
 
 技一覧の日本語名は上流対応表から表示用に生成し、原典英語名は詳細と検索に保持します。未確認の名前は英語のままです。`node scripts/build-move-names.mjs --check`で保存済み資料と照合でき、資料のrevisionと未翻訳一覧は`staging/move-names/source-summary.json`に記録します。フレームデータのnameや採用状態は変更しません。
@@ -53,7 +55,7 @@ VITE_BASE_PATH=/your-repository/ npm run preview
 
 ## 構成とデータ管理
 
-`src/`はゲーム本体、`data/`は固定スナップショットと採用判断、`staging/candidates/`は元の32体860候補、`staging/adoption-inputs/`は現在の採用入力です。本番は32キャラ1298レコードで、SA96枠・強度別288入力を含みます。datasetIdは`unverifiable-risk-corrections-2026-11-14-r1`、ゲーム版はUNVERIFIEDです。[採用ルール](docs/ADOPTION_RULES.md)と[条件付き必殺技の採用記録](docs/CONDITIONAL_SPECIAL_ADOPTION_REPORT.md)を参照してください。
+`src/`はゲーム本体、`data/`は固定スナップショットと採用判断、`staging/candidates/`は元の32体860候補、`staging/adoption-inputs/`は現在の採用入力です。本番レコードにはSA96枠・強度別288入力を含みます。[採用ルール](docs/ADOPTION_RULES.md)と[条件付き必殺技の採用記録](docs/CONDITIONAL_SPECIAL_ADOPTION_REPORT.md)を参照してください。
 
 [データ追加・更新手順](docs/DATA_WORKFLOW.md)、[今回の整理・検証結果](docs/PROJECT_MAINTENANCE_REPORT.md)、[過去資料の索引](archive/README.md)を参照してください。過去の段階別コード・証拠はarchiveに保存しています。
 

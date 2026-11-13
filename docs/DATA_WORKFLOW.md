@@ -1,16 +1,24 @@
 # データの正本と更新手順
 
-現行datasetIdは`arrival-startup-only-2026-11-09-r1`。持続当ての範囲化撤回により採用4・保留108・対象外625原典項目、範囲値は9技レコード・9発生フィールドとなった。通常の生成入口は`build-snapshot.ts`で、旧`distanceRanges.decisions`から`contactTimingRollback.revoked`を除いた判断だけを適用し、共通強度展開へ渡す。旧判断の`before`が単一代表値の復元元である。撤回正本と保留台帳の分類上書きは`prepare-contact-timing-rollback.mjs`で準備し、候補台帳は段階別判断の最後に撤回を適用する。報告は`report-distance-ranges.mjs`から最新方針を冒頭へ出力する。以下のdatasetId・集計は履歴として読む。
+現行datasetIdは`unverifiable-risk-corrections-2026-11-14-r1`。32キャラ・1298レコードのうち1282レコードを採用している。保存公式との照合5128フィールドは一致4459・不一致61・条件違い42・確認不能566で、公式資料の対象パッチはUNVERIFIED。全体Fは原則として通常条件の空振り時を採用する。[照合結果](OFFICIAL_VERIFICATION_REEVALUATION.md)と[個別監査](../staging/official-reevaluation/unverifiable-play-risk-report.md)を参照。
+
+通常の生成入口は`build-snapshot.ts`。空振り全体Fの18件は`whiffTotalCorrections.unverifiableDecisions`、特殊状態限定技の除外は`specialStateExclusions`で再生成し、旧値と原典を検証する。エド弱・中サイコフリッカーの空振り全体45F・49Fはユーザーのゲーム内確認に基づき維持し、確認条件の未報告部分は[監査記録](../staging/official-reevaluation/remaining-screen.json)に残す。
+
+## 過去の段階別更新履歴
+
+以下の段階別datasetId・集計は各時点の履歴であり、上記の現行データを置き換えない。
+
+持続当ての範囲化を撤回した時点のdatasetIdは`arrival-startup-only-2026-11-09-r1`。採用4・保留108・対象外625原典項目、範囲値は9技レコード・9発生フィールドとなった。通常の生成入口は`build-snapshot.ts`で、旧`distanceRanges.decisions`から`contactTimingRollback.revoked`を除いた判断だけを適用し、共通強度展開へ渡す。旧判断の`before`が単一代表値の復元元である。撤回正本と保留台帳の分類上書きは`prepare-contact-timing-rollback.mjs`で準備し、候補台帳は段階別判断の最後に撤回を適用する。報告は`report-distance-ranges.mjs`から方針を出力する。
 
 第3段階は追加資料の調査と実測条件の設計のみで、採用81・保留155・対象外501を維持。本番値が変わらないためdatasetIdは第2段階のまま。prepare-held-range-stage3.mjsは取得済み独立資料候補と公開データを照合してheld-range-review.jsonのstage3と候補reevaluation.stage3へ記録し、通常の段階別再生成でも保持する。ダウンロードしたJavaScriptは実行せずJSON部分だけを読む。report-held-range-stage3.mjsで最新結論を報告冒頭へ出力し、過去の調査は履歴として保存する。
 
-第2段階の現行datasetIdは`distance-held-stage2-2026-11-09-r1`。81原典項目・98フィールドを距離範囲へ採用している。held-range-review.jsonのstage2は第1段階C134件の追加判断で、prepare-held-range-stage2.mjsから再現できる。通常の生成入口は引き続きbuild-snapshot.ts。追加公開資料はstaging/held-range-stage2へ保存し、新規採用では原典行・変更前値に加えて本文の必要記載も生成時に検査する。第1段階の判断と既存D46件は保持する。以下の段階別datasetId・集計は履歴である。
+第2段階のdatasetIdは`distance-held-stage2-2026-11-09-r1`。当時は81原典項目・98フィールドを距離範囲へ採用した。held-range-review.jsonのstage2は第1段階C134件の追加判断で、prepare-held-range-stage2.mjsから再現できる。通常の生成入口は引き続きbuild-snapshot.ts。追加公開資料はstaging/held-range-stage2へ保存し、新規採用では原典行・変更前値に加えて本文の必要記載も生成時に検査する。第1段階の判断と既存D46件は保持する。以下の段階別datasetId・集計は履歴である。
 
-保留再評価第1段階の現行datasetIdは`distance-held-review-2026-11-09-r1`。距離範囲は80原典項目・95フィールド。`distanceRanges.heldReviewPath`が指す調査判断をreview-distance-ranges.mjsが候補台帳へ適用し、解決済みの分類を再生成で戻さない。prepare-held-range-review.mjsは元保留300項目の再評価準備、通常スナップショット生成は従来どおりbuild-snapshot.tsだけで行う。以下のr4は再評価前の履歴である。
+保留再評価第1段階のdatasetIdは`distance-held-review-2026-11-09-r1`。当時の距離範囲は80原典項目・95フィールド。`distanceRanges.heldReviewPath`が指す調査判断をreview-distance-ranges.mjsが候補台帳へ適用し、解決済みの分類を再生成で戻さない。prepare-held-range-review.mjsは元保留300項目の再評価準備、通常スナップショット生成は従来どおりbuild-snapshot.tsだけで行う。以下のr4は再評価前の履歴である。
 
 距離範囲更新後のdatasetIdは`distance-ranges-2026-11-09-r4`。`distanceRanges.decisions`を個別代表条件適用後・共通強度展開前に適用し、原典レコードと変更前値を照合する。下記の旧datasetIdは以前の更新時点の説明。通常の再生成入口は引き続きbuild-snapshot.ts。review-distance-ranges.mjsは保存原典・既存対応情報に基づく今回の候補分類と判断の再現用、report-distance-ranges.mjsは報告表の生成用。prepare-distance-ranges.mjsは最初のJP一次調査専用で、追加判断後には使用しない。
 
-現在のdatasetIdは`frame-research-2026-11-09-r1`。32キャラ1298レコードを維持し、Focus Force発生の限定判断をconditionalSpecials.startupDecisionsから再生成する。第17段階の補完はframeResearch.fieldDecisionsとstaging/stage17/frame-ledger.jsonで原典を照合し、個別条件の適用後・共通強度展開前に適用する。通常の更新入口はdata:plan→新datasetId→build-snapshot.ts --write --update→data:check。prepare-conditional-specials.tsは初期対応表の準備用であり、通常の再生成では不要。既存datasetIdと後続の採用判断を保持する。
+第17段階のdatasetIdは`frame-research-2026-11-09-r1`。32キャラ1298レコードを維持し、Focus Force発生の限定判断をconditionalSpecials.startupDecisionsから再生成した。第17段階の補完はframeResearch.fieldDecisionsとstaging/stage17/frame-ledger.jsonで原典を照合し、個別条件の適用後・共通強度展開前に適用する。通常の更新入口はdata:plan→新datasetId→build-snapshot.ts --write --update→data:check。prepare-conditional-specials.tsは初期対応表の準備用であり、通常の再生成では不要。後続の採用判断を保持する。
 
 ## 現在の生成処理
 
@@ -32,15 +40,15 @@ SA96枠、原典基本101行、個別強度質問288レコードは別の集計�
 
 ゲームが読む正本は`data/metadata.json`と`data/characters/*.json`。全32体が採用範囲でcompleteとなり抽選可能です。信頼性と採用可否の分離はDATA_SPEC.md、判断の再利用はADOPTION_RULES.mdを参照してください。
 
-| 場所                            | 役割・編集方針                                                      |
-| ------------------------------- | ------------------------------------------------------------------- |
-| data/characters/、metadata.json | 固定済みの実行スナップショット。通常は編集しない                    |
-| data/adoption-decisions.json    | 採用・保留と入力候補の参照先の正本。今後の追加判断をここへまとめる  |
-| staging/candidates/             | 32体860技の未採用候補。過去の収集結果を引き継ぐ出発点               |
-| staging/adoption-inputs/        | 採用判断で参照する、標準条件と保留を整理した現在の32体の入力        |
-| staging/dev-review-policy.json  | 既存の開発専用試遊で使う入力スコープ。ゲーム本番では読まない        |
-| staging/verification/           | 現在の検査レポート・ブラウザー画像。次回検証で再生成可能            |
-| archive/staging/                | 第2～第10段階の原典・証拠・判断・スナップショット。現行正本ではない |
+| 場所                            | 役割・編集方針                                                     |
+| ------------------------------- | ------------------------------------------------------------------ |
+| data/characters/、metadata.json | 固定済みの実行スナップショット。通常は編集しない                   |
+| data/adoption-decisions.json    | 採用・保留と入力候補の参照先の正本。今後の追加判断をここへまとめる |
+| staging/candidates/             | 32体860技の未採用候補。過去の収集結果を引き継ぐ出発点              |
+| staging/adoption-inputs/        | 採用判断で参照する、標準条件と保留を整理した現在の32体の入力       |
+| staging/dev-review-policy.json  | 既存の開発専用試遊で使う入力スコープ。ゲーム本番では読まない       |
+| staging/verification/           | 現在の検査レポート・ブラウザー画像。次回検証で再生成可能           |
+| archive/staging/                | 過去段階の原典・証拠・判断・スナップショット。現行生成も一部を参照 |
 
 採用入力2ファイルと過去の第7段階の2ファイルは同じ内容から開始しているが、目的が異なる。過去のスナップショットは変更せず、今後の明示的な更新では現在の入力を編集する。
 

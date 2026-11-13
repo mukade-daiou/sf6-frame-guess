@@ -5,12 +5,14 @@
   "findings": [
     {
       "id": "ed__special_236_K_L/total",
-      "finding": "Cargo 45(43)、空振り時2F短縮と明記。現行45、空振り43の可能性。強化版とホールド条件の対応を追加確認する。",
+      "judgment": "現状維持確定",
+      "finding": "Cargo 45(43)の43候補は採用しない。ユーザーのゲーム内確認では空振り全体45F。ゲーム版・相手・距離・ホールド条件は未報告。",
       "source": "archive/staging/sf6-frame-data-quality/evidence/ed.cargo.json#/data/cargoquery/10/title"
     },
     {
       "id": "ed__special_236_K_M/total",
-      "finding": "Cargo 49(48)、空振り時1F短縮と明記。現行49、空振り48の可能性。強化版とホールド条件の対応を追加確認する。",
+      "judgment": "現状維持確定",
+      "finding": "Cargo 49(48)の48候補は採用しない。ユーザーのゲーム内確認では空振り全体49F。ゲーム版・相手・距離・ホールド条件は未報告。",
       "source": "archive/staging/sf6-frame-data-quality/evidence/ed.cargo.json#/data/cargoquery/11/title"
     },
     {
@@ -1056,7 +1058,18 @@
       },
       "notes": [
         "upstreamNotes: 1-hit projectile hitbox (causes screen freeze on Perfect Parry); Punish Counter crumple state leaves opponent airborne (+21 before opponent hits the ground, can follow up with Drive Rush combo); puts airborne opponents into limited juggle state; total recovery is 2f faster on whiff; must hold LK at least 26f to get enhanced version (releasing early results in delayed regular version); when Super canceled, the SA3 incurs 30% immediate damage scaling; extends a forward hurtbox on frame 1 until the end of recovery (this hurtbox is projectile invuln until the first active frame); cancelable into 6KK/4KK on hit only (comes out after 15 recovery frames), giving Ed a juggle or improved oki after Punish Counter 236LK; Kill Rush Forward/Back cancel data: -18 oH, KD +42 on PC (+3 before opponent is knocked down after full dash animation)"
-      ]
+      ],
+      "judgment": "現状維持確定",
+      "userConfirmation": {
+        "basis": "ユーザーによるゲーム内確認",
+        "condition": "空振り全体F",
+        "reportedValue": "45",
+        "gameVersion": null,
+        "opponent": null,
+        "distance": null,
+        "holdCondition": null
+      },
+      "unresolved": "測定時のゲーム版・相手・距離・ホールド条件は未報告。Cargoの括弧表記との差の原因は未確定。"
     },
     {
       "characterId": "ed",
@@ -1071,7 +1084,18 @@
       },
       "notes": [
         "upstreamNotes: 1-hit projectile hitbox (causes screen freeze on Perfect Parry); Counter-Hit: KD +36; Punish Counter crumple state leaves opponent airborne (+23 before opponent hits the ground, can follow up with Drive Rush combo); puts airborne opponents into limited juggle state; total recovery is 1f faster on whiff; must hold MK at least 30f to get enhanced version (releasing early results in delayed regular version); when Super canceled, the SA3 incurs 30% immediate damage scaling; extends a forward hurtbox on frame 1 until the end of recovery (this hurtbox is projectile invuln until the first active frame); cancelable into 6KK/4KK on hit only (comes out after 17 recovery frames), giving Ed better oki after Counter-hit 236MK or a meterless juggle after Punish Counter 236MK; Kill Rush Forward/Back cancel data: -17 oH, KD +16 on CH, KD +42 on PC (+3 before opponent is knocked down after full dash animation)"
-      ]
+      ],
+      "judgment": "現状維持確定",
+      "userConfirmation": {
+        "basis": "ユーザーによるゲーム内確認",
+        "condition": "空振り全体F",
+        "reportedValue": "49",
+        "gameVersion": null,
+        "opponent": null,
+        "distance": null,
+        "holdCondition": null
+      },
+      "unresolved": "測定時のゲーム版・相手・距離・ホールド条件は未報告。Cargoの括弧表記との差の原因は未確定。"
     },
     {
       "characterId": "ed",

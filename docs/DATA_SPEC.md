@@ -1,5 +1,9 @@
 # データ仕様 v1.0.0
 
+現行datasetIdは `unverifiable-risk-corrections-2026-11-14-r1`。32キャラ・1298レコードのうち1282レコードを採用し、保存公式との5128フィールドの照合は一致4459・不一致61・条件違い42・確認不能566。公式資料の対象パッチはUNVERIFIED。全体Fは原則として通常条件の空振り時を採用する。詳細は[データ更新手順](DATA_WORKFLOW.md)と[公式照合](OFFICIAL_VERIFICATION_REEVALUATION.md)を参照。
+
+`whiffTotalCorrections.unverifiableDecisions` は空振り全体Fの追加18件、`specialStateExclusions` は特殊状態限定技の除外を保持し、生成・履歴監査で検証する。エド弱・中サイコフリッカーの空振り全体45F・49Fはユーザーのゲーム内確認に基づき維持する。測定条件の未報告部分は[監査記録](../staging/official-reevaluation/remaining-screen.json)を参照。
+
 `userConfirmedFrames.decisions` はリュウ強昇龍拳のblockとアレックス立ち中Pのtotalについて、ユーザー確認値と旧値・入力・未報告の測定条件を保持する。生成後に明示IDへ適用し、履歴監査で承認値を検証して旧値へ投影する。`unchangedConfirmations` はヤスミンとラシードの維持判断を記録する。
 
 `whiffTotalCorrections.additionalDecisions` はアルジュン強・OD大義の巨腕の旧値・空振り値・Cargo行・公式行を保持する。従来の53件を固定したまま2フィールドを追加し、履歴投影時には新値と旧値を検査する。
@@ -14,7 +18,7 @@
 
 `kdHkdCorrections.additionalDecisions` は追加15元技の旧値・Cargo/raw・公式対応を保持する。既存66件の検証を維持し、元技へ適用後に通常の共通強度展開で合計21フィールドへ反映する。
 
-`whiffTotalCorrections` は空振り全体Fの個別判断53件を保持し、共通強度展開後に対象ID・旧値・Cargo行を照合して適用する。公式行と対象パッチ未確認の状態も残す。
+`whiffTotalCorrections.decisions` は先行する空振り全体Fの個別判断53件を保持し、共通強度展開後に対象ID・旧値・Cargo行を照合して適用する。公式行と対象パッチ未確認の状態も残す。
 
 `kdHkdCorrections` はKD/HKDの原典と旧値を検証して66技のhitをDへ訂正する。保存原典の行と公式照合情報、旧値、新値を採用判断に残す。
 
