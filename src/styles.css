@@ -1035,6 +1035,10 @@ summary {
   border-bottom-color: var(--color-deep-teal);
   font-weight: 600;
 }
+.play-screen .type-toggle button:hover:enabled {
+  background: transparent;
+  color: var(--color-deep-teal);
+}
 .play-screen .arcade-controls {
   display: grid;
   grid-template-columns: 240px 292px;
@@ -1060,6 +1064,10 @@ summary {
 }
 .play-screen .command-strip {
   grid-row: 2;
+  justify-content: flex-start;
+}
+.play-screen .command-strip .quiet-button {
+  flex-shrink: 0;
 }
 .play-screen .motion-suggestions {
   grid-row: 3;
