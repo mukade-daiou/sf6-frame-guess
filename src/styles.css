@@ -1109,6 +1109,111 @@ summary {
   width: fit-content;
   margin-top: 0.5rem;
 }
+.answer-screen {
+  margin: 24px 0 32px;
+  padding: 20px 0 24px;
+  border-block: 1px solid var(--color-warm-mist);
+}
+.answer-screen .game-heading h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.answer-screen fieldset {
+  margin: 24px 0;
+}
+.answer-screen .characters {
+  gap: 8px;
+}
+.answer-screen .characters label {
+  position: relative;
+  min-height: 52px;
+  border-radius: 8px;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 12px;
+  line-height: 1.4;
+  background: var(--color-soft-paper);
+}
+.answer-screen .characters input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+}
+.answer-screen .characters label:has(input:checked) {
+  border-color: var(--color-deep-teal);
+  background: #edf5f3;
+  color: var(--color-deep-teal);
+  font-weight: 600;
+}
+.answer-screen .characters label:has(input:focus-visible) {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 2px;
+}
+.answer-screen .characters label:hover {
+  border-color: var(--color-deep-teal);
+}
+.answer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+.answer-current {
+  display: none;
+}
+.answer-actions button {
+  border-radius: 8px;
+}
+.answer-actions > button:first-child {
+  min-width: 144px;
+}
+.answer-screen .giveup-button {
+  margin-left: auto;
+  background: transparent;
+  border-color: transparent;
+  color: var(--color-graphite);
+}
+.answer-screen .giveup-button:hover:enabled {
+  border-color: var(--color-warm-mist);
+  background: var(--color-parchment);
+  color: var(--color-ink);
+}
+@media (max-width: 560px) {
+  .answer-screen {
+    padding-right: 16px;
+  }
+  .answer-screen .characters label {
+    min-height: 48px;
+    padding-inline: 8px;
+  }
+  .answer-screen .characters {
+    max-height: min(380px, 46dvh);
+    overflow-y: scroll;
+    align-content: start;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-graphite) var(--color-parchment);
+    padding: 3px;
+    scroll-padding-block: 3px;
+  }
+  .answer-screen fieldset {
+    margin-bottom: 0;
+  }
+  .answer-current {
+    display: block;
+    min-height: 2.8em;
+    margin: 8px 0;
+    font-size: 14px;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+    color: var(--color-deep-teal);
+  }
+  .answer-actions > button:first-child {
+    width: 100%;
+  }
+}
 :root .moves-page {
   max-width: 1400px;
   min-width: 0;

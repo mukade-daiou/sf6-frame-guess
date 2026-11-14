@@ -176,7 +176,7 @@ export default function App() {
                 ? "result-screen"
                 : game.phase === "question"
                   ? "play-screen"
-                  : "panel"
+                  : "answer-screen"
             }
           >
             <div className="game-heading">
@@ -237,32 +237,6 @@ export default function App() {
             {game.phase === "answer" && (
               <>
                 <p>隠されたキャラクターを選んでください。</p>
-                {game.history.length < game.limit && (
-                  <button
-                    type="button"
-                    className="secondary-button"
-                    onClick={() => {
-                      setGame(returnToQuestions(game));
-                      setSelection("");
-                      setMessage("");
-                    }}
-                  >
-                    質問に戻る
-                  </button>
-                )}
-                <button
-                  type="button"
-                  className="giveup-button"
-                  onClick={() => {
-                    if (!window.confirm("ギブアップして正解を表示しますか？"))
-                      return;
-                    setGame(giveUp(game));
-                    setSelection("");
-                    setMessage("");
-                  }}
-                >
-                  ギブアップ
-                </button>
                 <form
                   onSubmit={(e) => {
                     e.preventDefault();
@@ -287,8 +261,47 @@ export default function App() {
                       ))}
                     </div>
                   </fieldset>
-                  <div className="question-actions">
+                  <p className="answer-current" aria-live="polite">
+                    {selection && (
+                      <>
+                        選択中：
+                        {
+                          game.candidates.find((c) => c.id === selection)
+                            ?.nameJa
+                        }
+                      </>
+                    )}
+                  </p>
+                  <div className="answer-actions">
                     <button disabled={!selection}>回答確定</button>
+                    {game.history.length < game.limit && (
+                      <button
+                        type="button"
+                        className="secondary-button"
+                        onClick={() => {
+                          setGame(returnToQuestions(game));
+                          setSelection("");
+                          setMessage("");
+                        }}
+                      >
+                        質問に戻る
+                      </button>
+                    )}
+                    <button
+                      type="button"
+                      className="giveup-button"
+                      onClick={() => {
+                        if (
+                          !window.confirm("ギブアップして正解を表示しますか？")
+                        )
+                          return;
+                        setGame(giveUp(game));
+                        setSelection("");
+                        setMessage("");
+                      }}
+                    >
+                      ギブアップ
+                    </button>
                   </div>
                 </form>
               </>
