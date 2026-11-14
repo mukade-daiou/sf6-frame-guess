@@ -16,6 +16,7 @@ import {
 import { MoveSelector } from "../features/move-selector/MoveSelector";
 import { History } from "../components/History";
 import { DataInfo } from "../components/DataInfo";
+import { MoveNotation } from "../components/MoveNotation";
 import { sortCharactersForDisplay } from "../features/game/character-order";
 
 export default function App() {
@@ -66,25 +67,74 @@ export default function App() {
         )}
       </header>
       {!game ? (
-        <section className="panel" aria-labelledby="description-title">
-          <h2 id="description-title" className="start-heading">
-            ゲームの説明
-          </h2>
-          <p>
-            技のフレームデータを調べて、隠されたキャラクターを当てるゲームです。レバーとボタンで技を指定し、質問を重ねて候補を絞ってください。
-          </p>
-          <p>
-            <strong>Normal</strong>
-            ：発生・全体・ヒット時の硬直差・ガード時の硬直差を表示します。
-            <br />
-            <strong>Hard</strong>：発生だけを表示します。
-            <br />
-            難易度は最初の質問前に選択し、質問後は変更できません。
-          </p>
-          <section className="start-rules" aria-labelledby="rules-title">
-            <h2 id="rules-title" className="start-heading">
-              ルール・注意事項
-            </h2>
+        <section className="start-screen" aria-labelledby="description-title">
+          <div className="start-layout">
+            <div className="start-intro">
+              <h2 id="description-title">フレームからキャラを当てる</h2>
+              <p>技を指定してフレームを確認。質問は最大{limit}回。</p>
+            </div>
+            <figure className="start-example">
+              <figcaption>表示例（サンプル値）</figcaption>
+              <div className="start-example-input">
+                <MoveNotation
+                  input={{
+                    type: "normal",
+                    direction: "2",
+                    button: "P",
+                    strength: "L",
+                  }}
+                />
+                <span>しゃがみ弱P</span>
+              </div>
+              <dl className="start-example-frames">
+                <div>
+                  <dt>発生F</dt>
+                  <dd>4</dd>
+                </div>
+                <div>
+                  <dt>全体F</dt>
+                  <dd>16</dd>
+                </div>
+                <div>
+                  <dt>ヒット時硬直差</dt>
+                  <dd>+4</dd>
+                </div>
+                <div>
+                  <dt>ガード時硬直差</dt>
+                  <dd>-1</dd>
+                </div>
+              </dl>
+            </figure>
+            <div className="start-actions">
+              <button
+                disabled={
+                  dataset.eligible.length < 2 || dataset.inputs.length === 0
+                }
+                onClick={() => {
+                  setGame(startGame(dataset, "normal", limit));
+                  setSelection("");
+                  setMessage("");
+                }}
+              >
+                ゲーム開始
+              </button>
+            </div>
+          </div>
+          <div className="start-modes">
+            <dl>
+              <div>
+                <dt>Normal</dt>
+                <dd>発生・全体・ヒット時／ガード時の硬直差</dd>
+              </div>
+              <div>
+                <dt>Hard</dt>
+                <dd>発生のみ</dd>
+              </div>
+            </dl>
+            <p>難易度は質問後に変更不可</p>
+          </div>
+          <details className="start-rules">
+            <summary>ルール・注意事項</summary>
             <ul>
               <li>
                 質問は最大{limit}
@@ -105,24 +155,12 @@ export default function App() {
               </li>
               <li>CAとSAの派生技は対象外です。</li>
             </ul>
-          </section>
+          </details>
           {dataset.eligible.length < 2 && (
             <p role="status">
               開始には、採用済みで収録範囲が確定したキャラクターが2体以上必要です。
             </p>
           )}
-          <button
-            disabled={
-              dataset.eligible.length < 2 || dataset.inputs.length === 0
-            }
-            onClick={() => {
-              setGame(startGame(dataset, "normal", limit));
-              setSelection("");
-              setMessage("");
-            }}
-          >
-            ゲーム開始
-          </button>
           {dataset.errors.length > 0 && (
             <p role="alert">
               データ検証で問題が見つかりました。管理者は validate:data
@@ -132,7 +170,15 @@ export default function App() {
         </section>
       ) : (
         <>
-          <section className="panel">
+          <section
+            className={
+              game.phase === "result"
+                ? "result-screen"
+                : game.phase === "question"
+                  ? "play-screen"
+                  : "answer-screen"
+            }
+          >
             <div className="game-heading">
               <h2>
                 {game.phase === "question"
@@ -141,6 +187,14 @@ export default function App() {
                     ? "最終回答"
                     : "結果"}
               </h2>
+              {game.phase === "result" && (
+                <p className="result-session">
+                  <span>{game.mode === "normal" ? "Normal" : "Hard"}</span>
+                  <span>
+                    質問 <strong>{game.history.length}</strong> / {game.limit}回
+                  </span>
+                </p>
+              )}
               {game.phase === "question" && (
                 <div>
                   <div
@@ -183,32 +237,6 @@ export default function App() {
             {game.phase === "answer" && (
               <>
                 <p>隠されたキャラクターを選んでください。</p>
-                {game.history.length < game.limit && (
-                  <button
-                    type="button"
-                    className="secondary-button"
-                    onClick={() => {
-                      setGame(returnToQuestions(game));
-                      setSelection("");
-                      setMessage("");
-                    }}
-                  >
-                    質問に戻る
-                  </button>
-                )}
-                <button
-                  type="button"
-                  className="giveup-button"
-                  onClick={() => {
-                    if (!window.confirm("ギブアップして正解を表示しますか？"))
-                      return;
-                    setGame(giveUp(game));
-                    setSelection("");
-                    setMessage("");
-                  }}
-                >
-                  ギブアップ
-                </button>
                 <form
                   onSubmit={(e) => {
                     e.preventDefault();
@@ -233,35 +261,81 @@ export default function App() {
                       ))}
                     </div>
                   </fieldset>
-                  <div className="question-actions">
+                  <p className="answer-current" aria-live="polite">
+                    {selection && (
+                      <>
+                        選択中：
+                        {
+                          game.candidates.find((c) => c.id === selection)
+                            ?.nameJa
+                        }
+                      </>
+                    )}
+                  </p>
+                  <div className="answer-actions">
                     <button disabled={!selection}>回答確定</button>
+                    {game.history.length < game.limit && (
+                      <button
+                        type="button"
+                        className="secondary-button"
+                        onClick={() => {
+                          setGame(returnToQuestions(game));
+                          setSelection("");
+                          setMessage("");
+                        }}
+                      >
+                        質問に戻る
+                      </button>
+                    )}
+                    <button
+                      type="button"
+                      className="giveup-button"
+                      onClick={() => {
+                        if (
+                          !window.confirm("ギブアップして正解を表示しますか？")
+                        )
+                          return;
+                        setGame(giveUp(game));
+                        setSelection("");
+                        setMessage("");
+                      }}
+                    >
+                      ギブアップ
+                    </button>
                   </div>
                 </form>
               </>
             )}
             {game.phase === "result" && (
               <>
-                <p className="verdict">
+                <p
+                  className={`verdict result-verdict${isCorrect(game) ? " is-correct" : ""}`}
+                >
                   {game.selectedId === null
                     ? "ギブアップ"
                     : isCorrect(game)
                       ? "正解！"
                       : "不正解"}
                 </p>
-                <dl className="result">
-                  <dt>正解キャラクター</dt>
-                  <dd>{game.target.nameJa}</dd>
-                  <dt>
-                    {game.selectedId === null ? "回答" : "選択したキャラクター"}
-                  </dt>
-                  <dd>
-                    {game.selectedId === null
-                      ? "ギブアップ"
-                      : game.candidates.find((c) => c.id === game.selectedId)
-                          ?.nameJa}
-                  </dd>
+                <dl className="result-identities">
+                  <div className="result-answer">
+                    <dt>正解キャラクター</dt>
+                    <dd>{game.target.nameJa}</dd>
+                  </div>
+                  {!isCorrect(game) && (
+                    <div className="result-selection">
+                      <dt>あなたの回答</dt>
+                      <dd>
+                        {game.selectedId === null
+                          ? "ギブアップ"
+                          : game.candidates.find(
+                              (c) => c.id === game.selectedId,
+                            )?.nameJa}
+                      </dd>
+                    </div>
+                  )}
                 </dl>
-                <div className="choices">
+                <div className="result-actions">
                   <button
                     onClick={() => {
                       setGame(startGame(dataset, game.mode, limit));
@@ -272,6 +346,7 @@ export default function App() {
                     再プレイ
                   </button>
                   <button
+                    className="secondary-button"
                     aria-label="Xで結果をシェア"
                     onClick={() =>
                       window.open(

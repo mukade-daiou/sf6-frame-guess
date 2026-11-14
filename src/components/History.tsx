@@ -11,7 +11,9 @@ export function History({
   mode: Mode;
 }) {
   return (
-    <section className="panel">
+    <section
+      className={`panel history-section${mode === "startup" ? " history-startup" : ""}`}
+    >
       <h2>質問履歴</h2>
       {entries.length === 0 ? (
         <p className="muted">まだ質問していません。</p>
