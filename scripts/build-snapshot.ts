@@ -18,6 +18,9 @@ const save = async (p: string, v: unknown) =>
 const out = "staging/verification";
 await mkdir(out, { recursive: true });
 const decisions = await read("data/adoption-decisions.json");
+const deferredExclusions = (decisions.specialStateExclusions ?? []).filter(
+  (x: any) => x.afterStrengthExpansion,
+);
 const saResearch = decisions.superArts ? readSAResearch() : null;
 // Recompute against the actual inputs before trusting a saved complete flag.
 execFileSync(
@@ -55,17 +58,21 @@ for (const d of decisions.characters) {
     : "partial";
   for (const m of c.moves)
     m.adoption = {
-      status: d.excludedMoveIds?.includes(m.id)
-        ? "excluded"
-        : m.variant.kind !== "base" || d.heldMoveIds.includes(m.id)
-          ? "held"
-          : "accepted",
-      basis: d.excludedMoveIds?.includes(m.id)
-        ? "ユーザー指定の対象外入力。原典・フレーム値は保持し、技なしは採用範囲に限定する。"
-        : "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。",
+      status:
+        d.excludedMoveIds?.includes(m.id) &&
+        !deferredExclusions.some((x: any) => x.moveId === m.id)
+          ? "excluded"
+          : m.variant.kind !== "base" || d.heldMoveIds.includes(m.id)
+            ? "held"
+            : "accepted",
+      basis:
+        d.excludedMoveIds?.includes(m.id) &&
+        !deferredExclusions.some((x: any) => x.moveId === m.id)
+          ? "ユーザー指定の対象外入力。原典・フレーム値は保持し、技なしは採用範囲に限定する。"
+          : "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。",
     };
   for (const special of (decisions.specialStateExclusions ?? []).filter(
-    (x: any) => x.characterId === c.id,
+    (x: any) => x.characterId === c.id && !x.afterStrengthExpansion,
   )) {
     const move = c.moves.find((m) => m.id === special.moveId);
     const cargo = await read(special.sourcePath);
@@ -106,6 +113,25 @@ for (const d of decisions.characters) {
       ),
     ),
   );
+  for (const special of deferredExclusions.filter(
+    (x: any) => x.characterId === c.id,
+  )) {
+    const move = files[c.id].moves.find((m) => m.id === special.moveId);
+    const row = (await read(special.sourcePath)).data.cargoquery[
+      special.sourceIndex
+    ]?.title;
+    if (
+      !move ||
+      !d.excludedMoveIds.includes(move.id) ||
+      JSON.stringify(move.adoption) !== JSON.stringify(special.before) ||
+      row?.input !== special.sourceInput ||
+      !row.notes.includes(special.sourceCondition)
+    )
+      throw new Error(
+        `Invalid deferred special-state exclusion: ${special.moveId}`,
+      );
+    move.adoption = special.value;
+  }
 }
 const dataset = validateDataset(metadata, files);
 if (

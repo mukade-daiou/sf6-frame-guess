@@ -17,7 +17,8 @@ test("strength expansion preserves all pre-existing records, coverage and is rep
     rows
       .filter((r) => r.classification === "expandable")
       .flatMap((r) => r.strengths)
-      .filter((s) => !s.explicitMoveIds.length).length,
+      .filter((s) => !s.explicitMoveIds.length).length +
+      summary.excludedGeneratedInputs,
   );
   assert.equal(
     summary.totalRecords,

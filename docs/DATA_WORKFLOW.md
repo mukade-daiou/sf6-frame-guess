@@ -1,8 +1,12 @@
 # データの正本と更新手順
 
-現行datasetIdは`unverifiable-risk-corrections-2026-11-14-r1`。32キャラ・1298レコードのうち1282レコードを採用している。保存公式との照合5128フィールドは一致4459・不一致61・条件違い42・確認不能566で、公式資料の対象パッチはUNVERIFIED。全体Fは原則として通常条件の空振り時を採用する。[照合結果](OFFICIAL_VERIFICATION_REEVALUATION.md)と[個別監査](../staging/official-reevaluation/unverifiable-play-risk-report.md)を参照。
+現行datasetIdは`nonattacking-parent-startup-2026-11-14-r1`。非攻撃の派生親技21元・48欄を`parentStartupDecisions`で発生「なし」にし、生成の最終フレーム適用段階と既存履歴投影で保護する。原典・旧値と全体/hit/blockは保持。次段落のdatasetIdは除外時点の履歴、件数は現行も同じ。
+
+現行datasetIdは`dark-ingrid-exclusion-2026-11-14-r1`。32キャラ・1298レコードのうち1278レコードを採用している。保存公式との照合5112フィールドは一致4459・不一致61・条件違い42・確認不能550で、公式資料の対象パッチはUNVERIFIED。全体Fは原則として通常条件の空振り時を採用する。[照合結果](OFFICIAL_VERIFICATION_REEVALUATION.md)と[個別監査](../staging/official-reevaluation/unverifiable-play-risk-report.md)を参照。
 
 通常の生成入口は`build-snapshot.ts`。空振り全体Fの18件は`whiffTotalCorrections.unverifiableDecisions`、特殊状態限定技の除外は`specialStateExclusions`で再生成し、旧値と原典を検証する。エド弱・中サイコフリッカーの空振り全体45F・49Fはユーザーのゲーム内確認に基づき維持し、確認条件の未報告部分は[監査記録](../staging/official-reevaluation/remaining-screen.json)に残す。
+
+Dark Ingrid限定の`ingrid__special_214214_K_none`とL/M/H展開先は、同じ除外判断の`afterStrengthExpansion`指定で展開後に非採用化する。展開前に共通元を除外すると既存3レコードが消えるため、ID・原典・値を保持してから除外する。履歴投影では各`before`へ復元する。
 
 ## 過去の段階別更新履歴
 

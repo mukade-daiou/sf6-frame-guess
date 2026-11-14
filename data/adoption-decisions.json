@@ -1,5 +1,5 @@
 {
-  "datasetId": "unverifiable-risk-corrections-2026-11-14-r1",
+  "datasetId": "nonattacking-parent-startup-2026-11-14-r1",
   "compoundStartup": {
     "basis": "ユーザー指定: 弾出現と距離依存の攻撃発生を区別。公式取得2026-11-10、パッチ未確認。",
     "decisions": [
@@ -679,7 +679,12 @@
       "sourceInventoryComplete": true,
       "candidatePath": "staging/adoption-inputs/ingrid.json",
       "basis": "保存済み原典全行を候補・過去の除外判断へ対応付け。未確定の地上入力はheld-source-input規則で保留登録。",
-      "excludedMoveIds": []
+      "excludedMoveIds": [
+        "ingrid__special_214214_K_none",
+        "ingrid__special_214214_K_none__strength_L",
+        "ingrid__special_214214_K_none__strength_M",
+        "ingrid__special_214214_K_none__strength_H"
+      ]
     },
     {
       "id": "jamie",
@@ -14336,6 +14341,1003 @@
         "basis": "Shin Bison限定。通常状態を対象とする採用規則では対象外。原典とフレーム値は保持する。"
       },
       "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__special_214214_K_none",
+      "afterStrengthExpansion": true,
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ingrid.cargo.json",
+      "sourceIndex": 0,
+      "sourceInput": "214214K",
+      "sourceCondition": "Dark Ingrid only",
+      "reason": "Dark Ingrid限定。通常状態の採用例外はなく、元技と既存強度展開レコードを保持して対象外とする。",
+      "before": {
+        "status": "accepted",
+        "basis": "原典対応・通常状態の候補として採用。ODは弱＋中を基本とする。出典のverificationは独立に保持。"
+      },
+      "value": {
+        "status": "excluded",
+        "basis": "Dark Ingrid限定技。通常状態では対象外。ID・フレーム値・原典を保持。"
+      },
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__special_214214_K_none__strength_L",
+      "afterStrengthExpansion": true,
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ingrid.cargo.json",
+      "sourceIndex": 0,
+      "sourceInput": "214214K",
+      "sourceCondition": "Dark Ingrid only",
+      "reason": "Dark Ingrid限定。通常状態の採用例外はなく、元技と既存強度展開レコードを保持して対象外とする。",
+      "before": {
+        "status": "accepted",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      },
+      "value": {
+        "status": "excluded",
+        "basis": "Dark Ingrid限定技。通常状態では対象外。ID・フレーム値・原典を保持。"
+      },
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__special_214214_K_none__strength_M",
+      "afterStrengthExpansion": true,
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ingrid.cargo.json",
+      "sourceIndex": 0,
+      "sourceInput": "214214K",
+      "sourceCondition": "Dark Ingrid only",
+      "reason": "Dark Ingrid限定。通常状態の採用例外はなく、元技と既存強度展開レコードを保持して対象外とする。",
+      "before": {
+        "status": "accepted",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      },
+      "value": {
+        "status": "excluded",
+        "basis": "Dark Ingrid限定技。通常状態では対象外。ID・フレーム値・原典を保持。"
+      },
+      "patch": "UNVERIFIED"
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__special_214214_K_none__strength_H",
+      "afterStrengthExpansion": true,
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/ingrid.cargo.json",
+      "sourceIndex": 0,
+      "sourceInput": "214214K",
+      "sourceCondition": "Dark Ingrid only",
+      "reason": "Dark Ingrid限定。通常状態の採用例外はなく、元技と既存強度展開レコードを保持して対象外とする。",
+      "before": {
+        "status": "accepted",
+        "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      },
+      "value": {
+        "status": "excluded",
+        "basis": "Dark Ingrid限定技。通常状態では対象外。ID・フレーム値・原典を保持。"
+      },
+      "patch": "UNVERIFIED"
+    }
+  ],
+  "parentStartupDecisions": [
+    {
+      "characterId": "akuma",
+      "moveId": "akuma__special_236_K_none",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json",
+      "sourceIndex": 19,
+      "sourceInput": "236K",
+      "sourceNotes": "Button strength determines trajectory (LK short, MK mid, HK far); counter-hit state for entire duration; cancelable into follow-ups on frames 18-40; on frame 41, automatically transitions to Demon Low Slash (or Demon Swoop if holding Down)",
+      "before": {
+        "status": "confirmed",
+        "display": "53",
+        "numeric": 53
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "akuma",
+      "moveId": "akuma__special_236_K_OD",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json",
+      "sourceIndex": 20,
+      "sourceInput": "236KK",
+      "sourceNotes": "Tracks opponent's location regardless of distance; counter-hit state for entire duration; cancelable into follow-ups on frames 16-40 (16-38 for Fireball/Tatsu and Air SA1 follow-ups); on frame 41, automatically transitions to Demon Low Slash (or Demon Swoop if holding Down)",
+      "before": {
+        "status": "confirmed",
+        "display": "53",
+        "numeric": 53
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "akuma",
+      "moveId": "akuma__special_236_K_none__strength_L",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json",
+      "sourceIndex": 19,
+      "sourceInput": "236K",
+      "sourceNotes": "Button strength determines trajectory (LK short, MK mid, HK far); counter-hit state for entire duration; cancelable into follow-ups on frames 18-40; on frame 41, automatically transitions to Demon Low Slash (or Demon Swoop if holding Down)",
+      "before": {
+        "status": "confirmed",
+        "display": "53",
+        "numeric": 53
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "akuma",
+      "moveId": "akuma__special_236_K_none__strength_M",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json",
+      "sourceIndex": 19,
+      "sourceInput": "236K",
+      "sourceNotes": "Button strength determines trajectory (LK short, MK mid, HK far); counter-hit state for entire duration; cancelable into follow-ups on frames 18-40; on frame 41, automatically transitions to Demon Low Slash (or Demon Swoop if holding Down)",
+      "before": {
+        "status": "confirmed",
+        "display": "53",
+        "numeric": 53
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "akuma",
+      "moveId": "akuma__special_236_K_none__strength_H",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json",
+      "sourceIndex": 19,
+      "sourceInput": "236K",
+      "sourceNotes": "Button strength determines trajectory (LK short, MK mid, HK far); counter-hit state for entire duration; cancelable into follow-ups on frames 18-40; on frame 41, automatically transitions to Demon Low Slash (or Demon Swoop if holding Down)",
+      "before": {
+        "status": "confirmed",
+        "display": "53",
+        "numeric": 53
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "cammy",
+      "moveId": "cammy__special_236_P_none",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cammy.cargo.json",
+      "sourceIndex": 12,
+      "sourceInput": "236P",
+      "sourceNotes": "Startup refers to earliest/latest follow-up input timings; trajectory depends on button strength (LP short/high, MP middle, HP far/low); LP and MP versions can cross over close standing opponents; HP version can cross over close crouching opponents",
+      "before": {
+        "status": "confirmed",
+        "display": "20",
+        "numeric": 20
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "cammy",
+      "moveId": "cammy__special_236_P_OD",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cammy.cargo.json",
+      "sourceIndex": 13,
+      "sourceInput": "236PP",
+      "sourceNotes": "Startup refers to earliest/latest follow-up input timings; button combination affects trajectory (LP+MP=LP, LP+HP=MP, MP+HP=HP); follow-ups have enhanced OD properties",
+      "before": {
+        "status": "confirmed",
+        "display": "20",
+        "numeric": 20
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "cammy",
+      "moveId": "cammy__special_236_P_none__strength_L",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cammy.cargo.json",
+      "sourceIndex": 12,
+      "sourceInput": "236P",
+      "sourceNotes": "Startup refers to earliest/latest follow-up input timings; trajectory depends on button strength (LP short/high, MP middle, HP far/low); LP and MP versions can cross over close standing opponents; HP version can cross over close crouching opponents",
+      "before": {
+        "status": "confirmed",
+        "display": "20",
+        "numeric": 20
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "cammy",
+      "moveId": "cammy__special_236_P_none__strength_M",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cammy.cargo.json",
+      "sourceIndex": 12,
+      "sourceInput": "236P",
+      "sourceNotes": "Startup refers to earliest/latest follow-up input timings; trajectory depends on button strength (LP short/high, MP middle, HP far/low); LP and MP versions can cross over close standing opponents; HP version can cross over close crouching opponents",
+      "before": {
+        "status": "confirmed",
+        "display": "20",
+        "numeric": 20
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "cammy",
+      "moveId": "cammy__special_236_P_none__strength_H",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cammy.cargo.json",
+      "sourceIndex": 12,
+      "sourceInput": "236P",
+      "sourceNotes": "Startup refers to earliest/latest follow-up input timings; trajectory depends on button strength (LP short/high, MP middle, HP far/low); LP and MP versions can cross over close standing opponents; HP version can cross over close crouching opponents",
+      "before": {
+        "status": "confirmed",
+        "display": "20",
+        "numeric": 20
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "chunli",
+      "moveId": "chunli__special_214_P_none",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/chunli.cargo.json",
+      "sourceIndex": 6,
+      "sourceInput": "214P",
+      "sourceNotes": "Crouching state 14-22f, then low profiles until exiting stance; follow-ups can be input on frame 15 at the earliest; counter-hit state for entire animation; if no follow-up, stays crouched for 57f (hold crouch to extend); can block while crouching (cannot block overheads, as this leads to Stance Exit); blocking an attack immediately exits stance and allows a Drive Reversal; can take longer to enter stance when canceled from heavy normals, giving much worse frame advantage if a follow-up is not used immediately",
+      "before": {
+        "status": "confirmed",
+        "display": "14",
+        "numeric": 14
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "chunli",
+      "moveId": "chunli__special_214_P_none__strength_L",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/chunli.cargo.json",
+      "sourceIndex": 6,
+      "sourceInput": "214P",
+      "sourceNotes": "Crouching state 14-22f, then low profiles until exiting stance; follow-ups can be input on frame 15 at the earliest; counter-hit state for entire animation; if no follow-up, stays crouched for 57f (hold crouch to extend); can block while crouching (cannot block overheads, as this leads to Stance Exit); blocking an attack immediately exits stance and allows a Drive Reversal; can take longer to enter stance when canceled from heavy normals, giving much worse frame advantage if a follow-up is not used immediately",
+      "before": {
+        "status": "confirmed",
+        "display": "14",
+        "numeric": 14
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "chunli",
+      "moveId": "chunli__special_214_P_none__strength_M",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/chunli.cargo.json",
+      "sourceIndex": 6,
+      "sourceInput": "214P",
+      "sourceNotes": "Crouching state 14-22f, then low profiles until exiting stance; follow-ups can be input on frame 15 at the earliest; counter-hit state for entire animation; if no follow-up, stays crouched for 57f (hold crouch to extend); can block while crouching (cannot block overheads, as this leads to Stance Exit); blocking an attack immediately exits stance and allows a Drive Reversal; can take longer to enter stance when canceled from heavy normals, giving much worse frame advantage if a follow-up is not used immediately",
+      "before": {
+        "status": "confirmed",
+        "display": "14",
+        "numeric": 14
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "chunli",
+      "moveId": "chunli__special_214_P_none__strength_H",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/chunli.cargo.json",
+      "sourceIndex": 6,
+      "sourceInput": "214P",
+      "sourceNotes": "Crouching state 14-22f, then low profiles until exiting stance; follow-ups can be input on frame 15 at the earliest; counter-hit state for entire animation; if no follow-up, stays crouched for 57f (hold crouch to extend); can block while crouching (cannot block overheads, as this leads to Stance Exit); blocking an attack immediately exits stance and allows a Drive Reversal; can take longer to enter stance when canceled from heavy normals, giving much worse frame advantage if a follow-up is not used immediately",
+      "before": {
+        "status": "confirmed",
+        "display": "14",
+        "numeric": 14
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "dee_jay",
+      "moveId": "dee_jay__special_[2]8_K_L",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/dee_jay.cargo.json",
+      "sourceIndex": 70,
+      "sourceInput": "[2]8LK",
+      "sourceNotes": "40f charge time (holds charge for 12f after release); startup refers to earliest air normal timing; 6f landing recovery only applies to empty jump version (air normals have the usual 3f landing recovery); can hold back mid-air to shorten jump trajectory; Distance: 1.51~1.63",
+      "before": {
+        "status": "confirmed",
+        "display": "23",
+        "numeric": 23
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "dee_jay",
+      "moveId": "dee_jay__special_214_K_none",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/dee_jay.cargo.json",
+      "sourceIndex": 3,
+      "sourceInput": "214K",
+      "sourceNotes": "Can input follow-ups on frames 13-25 (variable timing allows stronger mixups and reaction to opponent's response); useful shimmy tool that can be canceled into to bait the opponent's defensive button press; Distance: 0.602 back",
+      "before": {
+        "status": "confirmed",
+        "display": "13",
+        "numeric": 13
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "dee_jay",
+      "moveId": "dee_jay__special_214_K_none__strength_L",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/dee_jay.cargo.json",
+      "sourceIndex": 3,
+      "sourceInput": "214K",
+      "sourceNotes": "Can input follow-ups on frames 13-25 (variable timing allows stronger mixups and reaction to opponent's response); useful shimmy tool that can be canceled into to bait the opponent's defensive button press; Distance: 0.602 back",
+      "before": {
+        "status": "confirmed",
+        "display": "13",
+        "numeric": 13
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "dee_jay",
+      "moveId": "dee_jay__special_214_K_none__strength_M",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/dee_jay.cargo.json",
+      "sourceIndex": 3,
+      "sourceInput": "214K",
+      "sourceNotes": "Can input follow-ups on frames 13-25 (variable timing allows stronger mixups and reaction to opponent's response); useful shimmy tool that can be canceled into to bait the opponent's defensive button press; Distance: 0.602 back",
+      "before": {
+        "status": "confirmed",
+        "display": "13",
+        "numeric": 13
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "dee_jay",
+      "moveId": "dee_jay__special_214_K_none__strength_H",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/dee_jay.cargo.json",
+      "sourceIndex": 3,
+      "sourceInput": "214K",
+      "sourceNotes": "Can input follow-ups on frames 13-25 (variable timing allows stronger mixups and reaction to opponent's response); useful shimmy tool that can be canceled into to bait the opponent's defensive button press; Distance: 0.602 back",
+      "before": {
+        "status": "confirmed",
+        "display": "13",
+        "numeric": 13
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "e_honda",
+      "moveId": "e_honda__special_236_K_none",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+      "sourceIndex": 13,
+      "sourceInput": "236K",
+      "sourceNotes": "Can cancel into 5P on frame 13 or 2P on frame 14 (until the end of recovery); Movement Speed: 0.052; Total Distance: 2.22 (0.63 before the earliest Teppo Triple Slap timing)",
+      "before": {
+        "status": "confirmed",
+        "display": "13",
+        "numeric": 13
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "e_honda",
+      "moveId": "e_honda__special_236_K_OD",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+      "sourceIndex": 14,
+      "sourceInput": "236KK",
+      "sourceNotes": "Can cancel into 5P follow-up on frames 13-27 or the 2P follow-up on frames 11-27; Movement Speed: 0.067; Total Distance: 2.17 (0.79 before the earliest Teppo Triple Slap timing)",
+      "before": {
+        "status": "confirmed",
+        "display": "13",
+        "numeric": 13
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "e_honda",
+      "moveId": "e_honda__special_236_K_none__strength_L",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+      "sourceIndex": 13,
+      "sourceInput": "236K",
+      "sourceNotes": "Can cancel into 5P on frame 13 or 2P on frame 14 (until the end of recovery); Movement Speed: 0.052; Total Distance: 2.22 (0.63 before the earliest Teppo Triple Slap timing)",
+      "before": {
+        "status": "confirmed",
+        "display": "13",
+        "numeric": 13
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "e_honda",
+      "moveId": "e_honda__special_236_K_none__strength_M",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+      "sourceIndex": 13,
+      "sourceInput": "236K",
+      "sourceNotes": "Can cancel into 5P on frame 13 or 2P on frame 14 (until the end of recovery); Movement Speed: 0.052; Total Distance: 2.22 (0.63 before the earliest Teppo Triple Slap timing)",
+      "before": {
+        "status": "confirmed",
+        "display": "13",
+        "numeric": 13
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "e_honda",
+      "moveId": "e_honda__special_236_K_none__strength_H",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/e_honda.cargo.json",
+      "sourceIndex": 13,
+      "sourceInput": "236K",
+      "sourceNotes": "Can cancel into 5P on frame 13 or 2P on frame 14 (until the end of recovery); Movement Speed: 0.052; Total Distance: 2.22 (0.63 before the earliest Teppo Triple Slap timing)",
+      "before": {
+        "status": "confirmed",
+        "display": "13",
+        "numeric": 13
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "elena",
+      "moveId": "elena__special_236_P_H",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/elena.cargo.json",
+      "sourceIndex": 16,
+      "sourceInput": "236HP",
+      "sourceNotes": "Longest total distance (2.21); 16f/1.08 distance before 6LK; 19f/1.35 distance before 6MK/6HK/6P; crouch-sized hurtbox 3-26f (but still considered standing); can execute the 6LK follow-up 3f earlier than the other follow-ups; Elena is in a Counter-hit state for the entire roll duration",
+      "before": {
+        "status": "confirmed",
+        "display": "16",
+        "numeric": 16
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "elena",
+      "moveId": "elena__special_236_P_L",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/elena.cargo.json",
+      "sourceIndex": 19,
+      "sourceInput": "236LP",
+      "sourceNotes": "Shortest total distance (1.37); 13f/0.72 distance before 6LK; 16f/0.87 distance before 6MK/6HK/6P; crouch-sized hurtbox 3-26f (but still considered standing); can execute the 6LK follow-up 3f earlier than the other follow-ups; Elena is in a Counter-hit state for the entire roll duration",
+      "before": {
+        "status": "confirmed",
+        "display": "13",
+        "numeric": 13
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "elena",
+      "moveId": "elena__special_236_P_M",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/elena.cargo.json",
+      "sourceIndex": 21,
+      "sourceInput": "236MP",
+      "sourceNotes": "Medium total distance (1.72); 13f/0.66 distance before 6LK; 18f/0.98 distance before 6MK/6HK/6P; crouch-sized hurtbox 3-26f (but still considered standing); can execute the 6LK follow-up 5f earlier than the other follow-ups; Elena is in a Counter-hit state for the entire roll duration",
+      "before": {
+        "status": "confirmed",
+        "display": "13",
+        "numeric": 13
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "elena",
+      "moveId": "elena__special_236_P_OD",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/elena.cargo.json",
+      "sourceIndex": 22,
+      "sourceInput": "236PP",
+      "sourceNotes": "Follow-ups are enhanced like the Lynx Whirl versions after only one spin; total distance is between the MP/HP versions (2.075); 15f/1.01 distance before 6LK; 18f/1.28 distance before 6MK/6HK/6P; crouch-sized hurtbox 3-26f (but still considered standing); can execute the 6LK follow-up 3f earlier than the other follow-ups; this version is good for combos, pressuring from neutral, and punishing projectiles due to the faster startup on enhanced follow-ups; Elena is in a Counter-hit state for the entire roll duration",
+      "before": {
+        "status": "confirmed",
+        "display": "15",
+        "numeric": 15
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__special_236_K_none",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/kimberly.cargo.json",
+      "sourceIndex": 16,
+      "sourceInput": "236K",
+      "sourceNotes": "Holding forward causes Kimberly to continue running without activating Arc Step (must not let go of forward input at any point); can hold forward + button to activate follow-up at the earliest possible timing; Movement speed: 0.112/frame during cancelable frames",
+      "before": {
+        "status": "confirmed",
+        "display": "8",
+        "numeric": 8
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__special_236_K_OD",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/kimberly.cargo.json",
+      "sourceIndex": 20,
+      "sourceInput": "236KK",
+      "sourceNotes": "Holding forward causes Kimberly to continue running without activating Arc Step (must not let go of forward input at any point); cancels into follow-ups after 8 frames minimum (can cancel into Emergency Stop 2f earlier); Movement speed: 0.135/frame during cancelable frames",
+      "before": {
+        "status": "confirmed",
+        "display": "8",
+        "numeric": 8
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__special_236_K_none__strength_L",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/kimberly.cargo.json",
+      "sourceIndex": 16,
+      "sourceInput": "236K",
+      "sourceNotes": "Holding forward causes Kimberly to continue running without activating Arc Step (must not let go of forward input at any point); can hold forward + button to activate follow-up at the earliest possible timing; Movement speed: 0.112/frame during cancelable frames",
+      "before": {
+        "status": "confirmed",
+        "display": "8",
+        "numeric": 8
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__special_236_K_none__strength_M",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/kimberly.cargo.json",
+      "sourceIndex": 16,
+      "sourceInput": "236K",
+      "sourceNotes": "Holding forward causes Kimberly to continue running without activating Arc Step (must not let go of forward input at any point); can hold forward + button to activate follow-up at the earliest possible timing; Movement speed: 0.112/frame during cancelable frames",
+      "before": {
+        "status": "confirmed",
+        "display": "8",
+        "numeric": 8
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__special_236_K_none__strength_H",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/kimberly.cargo.json",
+      "sourceIndex": 16,
+      "sourceInput": "236K",
+      "sourceNotes": "Holding forward causes Kimberly to continue running without activating Arc Step (must not let go of forward input at any point); can hold forward + button to activate follow-up at the earliest possible timing; Movement speed: 0.112/frame during cancelable frames",
+      "before": {
+        "status": "confirmed",
+        "display": "8",
+        "numeric": 8
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "luke",
+      "moveId": "luke__special_236_K_none",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/luke.cargo.json",
+      "sourceIndex": 13,
+      "sourceInput": "236K",
+      "sourceNotes": "Follow-up P or K can be input on frames 12-32; Luke is in a counter-hit state for entire duration; Total Distance: 2.23 (0.82 before the earliest follow-up timing)",
+      "before": {
+        "status": "confirmed",
+        "display": "12",
+        "numeric": 12
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "luke",
+      "moveId": "luke__special_236_K_OD",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/luke.cargo.json",
+      "sourceIndex": 14,
+      "sourceInput": "236KK",
+      "sourceNotes": "Armor does not apply to follow-up attacks; follow-up P or K can be input up to frame 32; follow-up can start immediately after armor hit freeze without waiting for any additional Avenger startup frames to occur; Luke is in a Punish Counter state for entire duration; Total Distance: 2.47 (0.75 before the earliest follow-up timing)",
+      "before": {
+        "status": "confirmed",
+        "display": "11",
+        "numeric": 11
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "luke",
+      "moveId": "luke__special_236_K_none__strength_L",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/luke.cargo.json",
+      "sourceIndex": 13,
+      "sourceInput": "236K",
+      "sourceNotes": "Follow-up P or K can be input on frames 12-32; Luke is in a counter-hit state for entire duration; Total Distance: 2.23 (0.82 before the earliest follow-up timing)",
+      "before": {
+        "status": "confirmed",
+        "display": "12",
+        "numeric": 12
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "luke",
+      "moveId": "luke__special_236_K_none__strength_M",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/luke.cargo.json",
+      "sourceIndex": 13,
+      "sourceInput": "236K",
+      "sourceNotes": "Follow-up P or K can be input on frames 12-32; Luke is in a counter-hit state for entire duration; Total Distance: 2.23 (0.82 before the earliest follow-up timing)",
+      "before": {
+        "status": "confirmed",
+        "display": "12",
+        "numeric": 12
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "luke",
+      "moveId": "luke__special_236_K_none__strength_H",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/luke.cargo.json",
+      "sourceIndex": 13,
+      "sourceInput": "236K",
+      "sourceNotes": "Follow-up P or K can be input on frames 12-32; Luke is in a counter-hit state for entire duration; Total Distance: 2.23 (0.82 before the earliest follow-up timing)",
+      "before": {
+        "status": "confirmed",
+        "display": "12",
+        "numeric": 12
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "m_bison",
+      "moveId": "m_bison__special_[2]8_K_none",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json",
+      "sourceIndex": 58,
+      "sourceInput": "[2]8K",
+      "sourceNotes": "40f charge time (charge lasts 10f after releasing down direction); button strength determines trajectory (LK close, MK mid, HK far); landing recovery and total frame refers to LK/MK/HK version respectively; Bison is in a crouching state on the final landing recovery frame; can use the OD versions of follow-ups by pressing PP or KK; foot hurtbox is projectile invincible",
+      "before": {
+        "status": "confirmed",
+        "display": "18",
+        "numeric": 18
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "m_bison",
+      "moveId": "m_bison__special_[2]8_K_OD",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json",
+      "sourceIndex": 59,
+      "sourceInput": "[2]8KK",
+      "sourceNotes": "40f charge time (charge lasts 10f after releasing down direction); automatically tracks opponent's location; horizontal travel speed depends on distance from opponent (much faster than HK Shadow Rise when used from longer ranges); follow-ups will become their respective OD versions without spending additional Drive gauge; Bison is in a crouching state on the final landing recovery frame",
+      "before": {
+        "status": "conditional",
+        "display": "16~47",
+        "condition": "同一入力の距離または持続接触タイミング",
+        "range": {
+          "min": 16,
+          "max": 47,
+          "evidence": [
+            "https://wiki.supercombo.gg/w/Street_Fighter_6/M.Bison/Frame_data"
+          ]
+        }
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "m_bison",
+      "moveId": "m_bison__special_[2]8_K_none__strength_L",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json",
+      "sourceIndex": 58,
+      "sourceInput": "[2]8K",
+      "sourceNotes": "40f charge time (charge lasts 10f after releasing down direction); button strength determines trajectory (LK close, MK mid, HK far); landing recovery and total frame refers to LK/MK/HK version respectively; Bison is in a crouching state on the final landing recovery frame; can use the OD versions of follow-ups by pressing PP or KK; foot hurtbox is projectile invincible",
+      "before": {
+        "status": "confirmed",
+        "display": "18",
+        "numeric": 18
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "m_bison",
+      "moveId": "m_bison__special_[2]8_K_none__strength_M",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json",
+      "sourceIndex": 58,
+      "sourceInput": "[2]8K",
+      "sourceNotes": "40f charge time (charge lasts 10f after releasing down direction); button strength determines trajectory (LK close, MK mid, HK far); landing recovery and total frame refers to LK/MK/HK version respectively; Bison is in a crouching state on the final landing recovery frame; can use the OD versions of follow-ups by pressing PP or KK; foot hurtbox is projectile invincible",
+      "before": {
+        "status": "confirmed",
+        "display": "18",
+        "numeric": 18
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "m_bison",
+      "moveId": "m_bison__special_[2]8_K_none__strength_H",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/m_bison.cargo.json",
+      "sourceIndex": 58,
+      "sourceInput": "[2]8K",
+      "sourceNotes": "40f charge time (charge lasts 10f after releasing down direction); button strength determines trajectory (LK close, MK mid, HK far); landing recovery and total frame refers to LK/MK/HK version respectively; Bison is in a crouching state on the final landing recovery frame; can use the OD versions of follow-ups by pressing PP or KK; foot hurtbox is projectile invincible",
+      "before": {
+        "status": "confirmed",
+        "display": "18",
+        "numeric": 18
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_236_K_none",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/yasmine.cargo.json",
+      "sourceIndex": 14,
+      "sourceInput": "236K",
+      "sourceNotes": "Button strength determines trajectory (LK short, MK mid, HK far); cannot be steered manually after activation; follow-ups can be input starting on frame 24, and as late as frame 45 (236LK) / frame 42 (236MK) / frame 43 (236HK); can input OD follow-up with PP or KK for 2 Drive bars (safer on block); empty HK flip can have 1f longer or shorter aerial animation when crossing over the opponent at certain ranges; Yasmine is in a standing state with a standing-sized hurtbox during landing recovery",
+      "before": {
+        "status": "confirmed",
+        "display": "23",
+        "numeric": 23
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_236_K_OD",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/yasmine.cargo.json",
+      "sourceIndex": 15,
+      "sourceInput": "236KK",
+      "sourceNotes": "Enhances the properties of follow-up attacks (improved hit and block advantage, can be input with no extra meter cost); can be steered by holding back/neutral/forward before the follow-up starts (no input gives the same trajectory as 236LK); gives more freedom to control Yasmine's trajectory compared to the meterless flip; follow-ups can be input on frames 24-46; Yasmine is in a standing state with a standing-sized hurtbox during landing recovery",
+      "before": {
+        "status": "confirmed",
+        "display": "23",
+        "numeric": 23
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_236_K_none__strength_L",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/yasmine.cargo.json",
+      "sourceIndex": 14,
+      "sourceInput": "236K",
+      "sourceNotes": "Button strength determines trajectory (LK short, MK mid, HK far); cannot be steered manually after activation; follow-ups can be input starting on frame 24, and as late as frame 45 (236LK) / frame 42 (236MK) / frame 43 (236HK); can input OD follow-up with PP or KK for 2 Drive bars (safer on block); empty HK flip can have 1f longer or shorter aerial animation when crossing over the opponent at certain ranges; Yasmine is in a standing state with a standing-sized hurtbox during landing recovery",
+      "before": {
+        "status": "confirmed",
+        "display": "23",
+        "numeric": 23
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_236_K_none__strength_M",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/yasmine.cargo.json",
+      "sourceIndex": 14,
+      "sourceInput": "236K",
+      "sourceNotes": "Button strength determines trajectory (LK short, MK mid, HK far); cannot be steered manually after activation; follow-ups can be input starting on frame 24, and as late as frame 45 (236LK) / frame 42 (236MK) / frame 43 (236HK); can input OD follow-up with PP or KK for 2 Drive bars (safer on block); empty HK flip can have 1f longer or shorter aerial animation when crossing over the opponent at certain ranges; Yasmine is in a standing state with a standing-sized hurtbox during landing recovery",
+      "before": {
+        "status": "confirmed",
+        "display": "23",
+        "numeric": 23
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_236_K_none__strength_H",
+      "field": "startup",
+      "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/yasmine.cargo.json",
+      "sourceIndex": 14,
+      "sourceInput": "236K",
+      "sourceNotes": "Button strength determines trajectory (LK short, MK mid, HK far); cannot be steered manually after activation; follow-ups can be input starting on frame 24, and as late as frame 45 (236LK) / frame 42 (236MK) / frame 43 (236HK); can input OD follow-up with PP or KK for 2 Drive bars (safer on block); empty HK flip can have 1f longer or shorter aerial animation when crossing over the opponent at certain ranges; Yasmine is in a standing state with a standing-sized hurtbox during landing recovery",
+      "before": {
+        "status": "confirmed",
+        "display": "23",
+        "numeric": 23
+      },
+      "value": {
+        "status": "not_applicable",
+        "display": "なし"
+      },
+      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
     }
   ]
 }

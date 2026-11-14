@@ -1,6 +1,10 @@
 # 公式フレームデータ再照合・検証状況
 
-現行datasetIdは `unverifiable-risk-corrections-2026-11-14-r1`。32キャラ・1298レコードのうち採用1282レコードについて、[保存公式との照合](../staging/official-reevaluation/results-after-risk-fixes.json)は5128フィールド、一致4459・不一致61・条件違い42・確認不能566。公式資料の対象パッチはUNVERIFIED。全体Fは原則として通常条件の空振り時を採用する。
+現行datasetIdは`nonattacking-parent-startup-2026-11-14-r1`。非攻撃の派生親技の発生48欄を「なし」に変更したが、いずれも保存公式の発生数値が空欄の確認不能欄で、採用1278・比較5112欄と各分類件数は不変。現行値と旧分類の対応は[台帳のparentStartupRule.currentComparison](../staging/official-reevaluation/remaining-screen.json)に記録する。以下のdatasetIdと判断は除外時点の履歴。
+
+現行datasetIdは `dark-ingrid-exclusion-2026-11-14-r1`。32キャラ・1298レコードのうち採用1278レコード、比較5112フィールド、一致4459・不一致61・条件違い42・確認不能550。公式資料の対象パッチはUNVERIFIED。全体Fは原則として通常条件の空振り時を採用する。
+
+Dark Ingrid限定の214214Kは共通元とL/M/Hの4レコードを非採用化した。[除外前の保存照合](../staging/official-reevaluation/results-after-risk-fixes.json)を履歴として保持し、現行の採用IDと全値を照合して除外16欄（すべて確認不能）だけを比較母数から除いた。ほかの分類は変更せず、再取得や数値の再解釈はしていない。現行集計・根拠・対象IDは[既存台帳のdarkIngridExclusion](../staging/official-reevaluation/remaining-screen.json)に記録する。
 
 確認不能の出題リスク監査後、空振り全体Fの18フィールドを修正し、特殊状態限定のベガPsycho Burstを採用対象外とした。エド弱・中サイコフリッカーの空振り全体は、ユーザーのゲーム内確認により現行45F・49Fを維持する。測定時のゲーム版・相手・距離・ホールド条件は未報告であり、原典の括弧内43F・48Fとの差の原因は未確定。[監査記録](../staging/official-reevaluation/remaining-screen.json)
 

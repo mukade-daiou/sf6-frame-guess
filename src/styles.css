@@ -348,6 +348,13 @@ summary {
   background: var(--color-deep-teal);
   color: white;
 }
+.mode-toggle button:disabled {
+  color: var(--color-ash);
+}
+.mode-toggle button[aria-pressed="true"]:disabled {
+  background: var(--color-warm-mist);
+  color: var(--color-graphite);
+}
 .remaining {
   font-size: 1rem;
   font-weight: 600;

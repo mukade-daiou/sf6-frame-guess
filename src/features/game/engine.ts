@@ -26,7 +26,7 @@ export interface Game {
 export function startGame(
   dataset: Dataset,
   mode: Mode,
-  limit = 5,
+  limit = 7,
   random = Math.random,
 ): Game {
   if (dataset.eligible.length < 2)

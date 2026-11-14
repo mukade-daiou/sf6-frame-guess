@@ -4,6 +4,7 @@ import beta from "../../data/fixtures/characters/fixture-2.json";
 import metadata from "../../data/fixtures/metadata.json";
 import { validateDataset } from "../../lib/frame-data/loader";
 import { inputKey } from "../../lib/frame-data/input";
+import { displayFrame, resolveMove } from "../../lib/frame-data/resolver";
 import {
   answer,
   giveUp,
@@ -20,6 +21,40 @@ const dataset = () =>
     alpha: structuredClone(alpha),
     beta: structuredClone(beta),
   });
+it("asks a known absent startup in both modes without treating it as unknown or an absent move", () => {
+  for (const mode of ["normal", "startup"] as const) {
+    const data = dataset();
+    const target = data.eligible[0];
+    const move = target.moves[0];
+    move.frames.startup = { status: "not_applicable", display: "なし" };
+    expect(displayFrame(move.frames.startup)).toBe("なし");
+    const game = startGame(data, mode, 1, () => 0);
+    const asked = ask(game, move.input);
+    expect(asked.status).toBe("found");
+    expect(asked.game.history).toHaveLength(1);
+    expect(asked.game.history[0].result).toMatchObject({
+      status: "found",
+      frames: { startup: { display: "なし" } },
+    });
+    expect(asked.game.candidates.map((c) => c.id)).toContain(target.id);
+    expect(isCorrect(answer(asked.game, target.id))).toBe(true);
+    move.frames.startup = { status: "unknown", display: null };
+    const unknown = ask(
+      startGame(data, mode, 1, () => 0),
+      move.input,
+    );
+    expect(unknown.status).toBe("unknown");
+    expect(unknown.game.history).toHaveLength(0);
+    expect(displayFrame(move.frames.startup)).toBe("不明");
+    const absent = {
+      ...target,
+      moves: target.moves.filter(
+        (m) => inputKey(m.input) !== inputKey(move.input),
+      ),
+    };
+    expect(resolveMove(absent, move.input, mode).status).toBe("not_found");
+  }
+});
 it("ends a give-up without selecting a character or changing history and allows a fresh game", () => {
   const game = startGame(dataset(), "normal", 5, () => 0);
   expect(giveUp(game)).toBe(game);

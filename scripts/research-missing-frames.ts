@@ -377,6 +377,7 @@ if (process.argv.includes("--check")) {
   delete expectedDecisions.kdHkdCorrections;
   delete expectedDecisions.whiffTotalCorrections;
   delete expectedDecisions.userConfirmedFrames;
+  delete expectedDecisions.parentStartupDecisions;
   for (const d of expectedDecisions.specialStateExclusions ?? []) {
     const character = expectedDecisions.characters.find(
       (c: any) => c.id === d.characterId,

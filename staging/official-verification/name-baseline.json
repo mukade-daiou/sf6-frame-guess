@@ -1,0 +1,950 @@
+{
+  "revision": "a0b4105fb368c308699ec0757ee6e4182e5a9d1c",
+  "url": "https://github.com/RyoSogawa/sf6-sensei/tree/a0b4105fb368c308699ec0757ee6e4182e5a9d1c/packages/data/src",
+  "retrievedOn": "2026-11-09",
+  "verification": "community mapping, not official verification",
+  "supplementalSources": {
+    "chunli": {
+      "Tensho Kicks": {
+        "name": "天昇脚",
+        "url": "https://streetfighter.fandom.com/wiki/Tenshokyaku"
+      },
+      "Serenity Stream": {
+        "name": "行雲流水",
+        "url": "https://streetfighter.fandom.com/wiki/Serenity_Stream"
+      }
+    },
+    "e_honda": {
+      "Sumo Dash": {
+        "name": "相撲ステップ",
+        "url": "https://streetfighter.fandom.com/wiki/Sumo_Dash"
+      }
+    },
+    "kimberly": {
+      "Hidden Variable": {
+        "name": "彩隠形",
+        "url": "https://streetfighter.fandom.com/wiki/Hidden_Variable"
+      }
+    },
+    "jp": {
+      "Embrace": {
+        "name": "アブニマーチ",
+        "url": "https://streetfighter.fandom.com/wiki/Embrace"
+      }
+    }
+  },
+  "translated": 783,
+  "alreadyJapanese": 385,
+  "unresolved": [
+    {
+      "characterId": "aki",
+      "moveId": "aki__special_2_P_OD",
+      "name": "Sinister Slide",
+      "input": "2PP",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "alex",
+      "moveId": "alex__special_2_P_OD",
+      "name": "Prowler Stance",
+      "input": "2PP",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_22_K_H",
+      "name": "Indomitable Defense",
+      "input": "22HK",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_63214_P_none",
+      "name": "Ghastly Interrogation",
+      "input": "63214P",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_63214_P_OD",
+      "name": "OD Ghastly Interrogation",
+      "input": "63214PP",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_63214_P_none__strength_L",
+      "name": "Ghastly Interrogation",
+      "input": "63214P",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_63214_P_none__strength_M",
+      "name": "Ghastly Interrogation",
+      "input": "63214P",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "arjun",
+      "moveId": "arjun__special_63214_P_none__strength_H",
+      "name": "Ghastly Interrogation",
+      "input": "63214P",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_2_P_OD",
+      "name": "Coward Crouch",
+      "input": "2PP",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_22_P_none",
+      "name": "Blanka-chan Bomb",
+      "input": "22P",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_22_P_none__strength_L",
+      "name": "Blanka-chan Bomb",
+      "input": "22P",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_22_P_none__strength_M",
+      "name": "Blanka-chan Bomb",
+      "input": "22P",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "blanka",
+      "moveId": "blanka__special_22_P_none__strength_H",
+      "name": "Blanka-chan Bomb",
+      "input": "22P",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "cviper",
+      "moveId": "cviper__held_special_214_K_none",
+      "name": "Focus Force (Lv.1)",
+      "input": "214K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "cviper",
+      "moveId": "cviper__held_special_214_K_OD",
+      "name": "OD Focus Force (Lv.1)",
+      "input": "214KK",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "cviper",
+      "moveId": "cviper__held_special_214_K_none__strength_L",
+      "name": "Focus Force (Lv.1)",
+      "input": "214K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "cviper",
+      "moveId": "cviper__held_special_214_K_none__strength_M",
+      "name": "Focus Force (Lv.1)",
+      "input": "214K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "cviper",
+      "moveId": "cviper__held_special_214_K_none__strength_H",
+      "name": "Focus Force (Lv.1)",
+      "input": "214K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "dee_jay",
+      "moveId": "dee_jay__held_special_22_P_OD",
+      "name": "Speedy Maracas",
+      "input": "22PP",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "dee_jay",
+      "moveId": "dee_jay__super_art_3_L",
+      "name": "Weekend Pleasure",
+      "input": "214214P",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "dee_jay",
+      "moveId": "dee_jay__super_art_3_M",
+      "name": "Weekend Pleasure",
+      "input": "214214P",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "dee_jay",
+      "moveId": "dee_jay__super_art_3_H",
+      "name": "Weekend Pleasure",
+      "input": "214214P",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "e_honda",
+      "moveId": "e_honda__special_22_K_none",
+      "name": "Sumo Spirit",
+      "input": "22K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "e_honda",
+      "moveId": "e_honda__special_22_P_none",
+      "name": "Neko Damashi",
+      "input": "22P",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "e_honda",
+      "moveId": "e_honda__special_22_K_none__strength_L",
+      "name": "Sumo Spirit",
+      "input": "22K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "e_honda",
+      "moveId": "e_honda__special_22_K_none__strength_M",
+      "name": "Sumo Spirit",
+      "input": "22K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "e_honda",
+      "moveId": "e_honda__special_22_K_none__strength_H",
+      "name": "Sumo Spirit",
+      "input": "22K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "e_honda",
+      "moveId": "e_honda__special_22_P_none__strength_L",
+      "name": "Neko Damashi",
+      "input": "22P",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "e_honda",
+      "moveId": "e_honda__special_22_P_none__strength_M",
+      "name": "Neko Damashi",
+      "input": "22P",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "e_honda",
+      "moveId": "e_honda__special_22_P_none__strength_H",
+      "name": "Neko Damashi",
+      "input": "22P",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "ed",
+      "moveId": "ed__special_4_K_OD",
+      "name": "Kill Rush (Backward)",
+      "input": "4KK",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "elena",
+      "moveId": "elena__special_214_K_H",
+      "name": "HK Spinning Scythe",
+      "input": "214HK",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "elena",
+      "moveId": "elena__special_214_K_L",
+      "name": "LK Spinning Scythe",
+      "input": "214LK",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "elena",
+      "moveId": "elena__special_214_K_M",
+      "name": "MK Spinning Scythe",
+      "input": "214MK",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "elena",
+      "moveId": "elena__special_214_K_OD",
+      "name": "OD Spinning Scythe",
+      "input": "214KK",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "elena",
+      "moveId": "elena__special_214_P_H",
+      "name": "HP Moon Glider",
+      "input": "214HP",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "elena",
+      "moveId": "elena__special_214_P_L",
+      "name": "LP Moon Glider",
+      "input": "214LP",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "elena",
+      "moveId": "elena__special_214_P_M",
+      "name": "MP Moon Glider",
+      "input": "214MP",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "elena",
+      "moveId": "elena__special_214_P_OD",
+      "name": "OD Moon Glider",
+      "input": "214PP",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__special_214214_K_none",
+      "name": "Sunburst Blow",
+      "input": "214214K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__special_22_K_none",
+      "name": "Sun Veil",
+      "input": "22K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__special_22_K_OD",
+      "name": "Sun Veil",
+      "input": "22KK",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__special_236_K_H",
+      "name": "Sun Rise",
+      "input": "236HK",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__special_236_K_L",
+      "name": "Sun Rise",
+      "input": "236LK",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__special_236_K_M",
+      "name": "Sun Rise",
+      "input": "236MK",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__special_236_K_OD",
+      "name": "Sun Rise",
+      "input": "236KK",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__special_214214_K_none__strength_L",
+      "name": "Sunburst Blow",
+      "input": "214214K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__special_214214_K_none__strength_M",
+      "name": "Sunburst Blow",
+      "input": "214214K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__special_214214_K_none__strength_H",
+      "name": "Sunburst Blow",
+      "input": "214214K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__special_22_K_none__strength_L",
+      "name": "Sun Veil",
+      "input": "22K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__special_22_K_none__strength_M",
+      "name": "Sun Veil",
+      "input": "22K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "ingrid",
+      "moveId": "ingrid__special_22_K_none__strength_H",
+      "name": "Sun Veil",
+      "input": "22K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_236_K_H",
+      "name": "Bakkai (DL2)",
+      "input": "236HK",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_236_K_OD",
+      "name": "Bakkai (DL2)",
+      "input": "236KK",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_236_K_L",
+      "name": "Bakkai (DL2)",
+      "input": "236LK",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_236_K_M",
+      "name": "Bakkai (DL2)",
+      "input": "236MK",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_63214_K_OD",
+      "name": "Tenshin (DL3)",
+      "input": "63214KK",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_63214_K_none",
+      "name": "Tenshin (DL3)",
+      "input": "63214K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_63214_K_none__strength_L",
+      "name": "Tenshin (DL3)",
+      "input": "63214K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_63214_K_none__strength_M",
+      "name": "Tenshin (DL3)",
+      "input": "63214K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "jamie",
+      "moveId": "jamie__held_special_63214_K_none__strength_H",
+      "name": "Tenshin (DL3)",
+      "input": "63214K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "jp",
+      "moveId": "jp__special_214_P_none",
+      "name": "Departure",
+      "input": "214P",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "jp",
+      "moveId": "jp__special_214_P_OD",
+      "name": "Departure",
+      "input": "214PP",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "jp",
+      "moveId": "jp__special_236_K_H",
+      "name": "Torbalan",
+      "input": "236HK",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "jp",
+      "moveId": "jp__special_236_K_L",
+      "name": "Torbalan",
+      "input": "236LK",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "jp",
+      "moveId": "jp__special_236_K_M",
+      "name": "Torbalan",
+      "input": "236MK",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "jp",
+      "moveId": "jp__special_236_K_OD",
+      "name": "Torbalan",
+      "input": "236KK",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "jp",
+      "moveId": "jp__special_214_P_none__strength_L",
+      "name": "Departure",
+      "input": "214P",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "jp",
+      "moveId": "jp__special_214_P_none__strength_M",
+      "name": "Departure",
+      "input": "214P",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "jp",
+      "moveId": "jp__special_214_P_none__strength_H",
+      "name": "Departure",
+      "input": "214P",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__special_22_K_none",
+      "name": "Genius at Play",
+      "input": "22K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__special_22_K_OD",
+      "name": "Genius at Play",
+      "input": "22KK",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__special_236_P_H",
+      "name": "Vagabond Edge",
+      "input": "236HP",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__special_236_P_L",
+      "name": "Vagabond Edge",
+      "input": "236LP",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__special_236_P_M",
+      "name": "Vagabond Edge",
+      "input": "236MP",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__special_236_P_OD",
+      "name": "Vagabond Edge",
+      "input": "236PP",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__special_22_K_none__strength_L",
+      "name": "Genius at Play",
+      "input": "22K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__special_22_K_none__strength_M",
+      "name": "Genius at Play",
+      "input": "22K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "kimberly",
+      "moveId": "kimberly__special_22_K_none__strength_H",
+      "name": "Genius at Play",
+      "input": "22K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "luke",
+      "moveId": "luke__special_236_K_none",
+      "name": "Avenger",
+      "input": "236K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "luke",
+      "moveId": "luke__special_236_K_OD",
+      "name": "OD Avenger",
+      "input": "236KK",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "luke",
+      "moveId": "luke__special_623_P_H",
+      "name": "HP Rising Uppercut",
+      "input": "623HP",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "luke",
+      "moveId": "luke__special_623_P_L",
+      "name": "LP Rising Uppercut",
+      "input": "623LP",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "luke",
+      "moveId": "luke__special_623_P_M",
+      "name": "MP Rising Uppercut",
+      "input": "623MP",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "luke",
+      "moveId": "luke__special_623_P_OD",
+      "name": "OD Rising Uppercut",
+      "input": "623PP",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "luke",
+      "moveId": "luke__special_236_K_none__strength_L",
+      "name": "Avenger",
+      "input": "236K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "luke",
+      "moveId": "luke__special_236_K_none__strength_M",
+      "name": "Avenger",
+      "input": "236K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "luke",
+      "moveId": "luke__special_236_K_none__strength_H",
+      "name": "Avenger",
+      "input": "236K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "m_bison",
+      "moveId": "m_bison__special_[2]8_K_none",
+      "name": "Shadow Rise",
+      "input": "[2]8K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "m_bison",
+      "moveId": "m_bison__special_[2]8_K_OD",
+      "name": "OD Shadow Rise",
+      "input": "[2]8KK",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "m_bison",
+      "moveId": "m_bison__special_623_P_OD",
+      "name": "Psycho Burst",
+      "input": "623PP",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "m_bison",
+      "moveId": "m_bison__special_[2]8_K_none__strength_L",
+      "name": "Shadow Rise",
+      "input": "[2]8K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "m_bison",
+      "moveId": "m_bison__special_[2]8_K_none__strength_M",
+      "name": "Shadow Rise",
+      "input": "[2]8K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "m_bison",
+      "moveId": "m_bison__special_[2]8_K_none__strength_H",
+      "name": "Shadow Rise",
+      "input": "[2]8K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "rashid",
+      "moveId": "rashid__special_214_P_H",
+      "name": "Arabian Cyclone",
+      "input": "214HP",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "rashid",
+      "moveId": "rashid__special_214_P_L",
+      "name": "Arabian Cyclone",
+      "input": "214LP",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "rashid",
+      "moveId": "rashid__special_214_P_M",
+      "name": "Arabian Cyclone",
+      "input": "214MP",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "rashid",
+      "moveId": "rashid__special_214_P_OD",
+      "name": "Arabian Cyclone",
+      "input": "214PP",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "rashid",
+      "moveId": "rashid__special_6_K_OD",
+      "name": "Side Flip",
+      "input": "6KK",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_214_P_H",
+      "name": "HP Talim ng Hangin",
+      "input": "214HP",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_214_P_L",
+      "name": "LP Talim ng Hangin",
+      "input": "214LP",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_214_P_M",
+      "name": "MP Talim ng Hangin",
+      "input": "214MP",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_214_P_OD",
+      "name": "OD Talim ng Hangin",
+      "input": "214PP",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_22_P_none",
+      "name": "Pangil sa Likuran",
+      "input": "22P",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_22_P_OD",
+      "name": "OD Pangil sa Likuran",
+      "input": "22PP",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_236_K_none",
+      "name": "Mukha ng Langit",
+      "input": "236K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_236_K_OD",
+      "name": "OD Mukha ng Langit",
+      "input": "236KK",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_236_P_H",
+      "name": "HP Daloy ng Tubig",
+      "input": "236HP",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_236_P_L",
+      "name": "LP Daloy ng Tubig",
+      "input": "236LP",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_236_P_M",
+      "name": "MP Daloy ng Tubig",
+      "input": "236MP",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_236_P_OD",
+      "name": "OD Daloy ng Tubig",
+      "input": "236PP",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_623_K_H",
+      "name": "HK Lipad ng Agila",
+      "input": "623HK",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_623_K_L",
+      "name": "LK Lipad ng Agila",
+      "input": "623LK",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_623_K_M",
+      "name": "MK Lipad ng Agila",
+      "input": "623MK",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_623_K_OD",
+      "name": "OD Lipad ng Agila",
+      "input": "623KK",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__super_art_1_L",
+      "name": "Hiwa ng Kalangitan",
+      "input": "236236K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__super_art_1_M",
+      "name": "Hiwa ng Kalangitan",
+      "input": "236236K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__super_art_1_H",
+      "name": "Hiwa ng Kalangitan",
+      "input": "236236K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__super_art_2_L",
+      "name": "Nakatagong Lakas",
+      "input": "214214P",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__super_art_2_M",
+      "name": "Nakatagong Lakas",
+      "input": "214214P",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__super_art_2_H",
+      "name": "Nakatagong Lakas",
+      "input": "214214P",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__super_art_3_L",
+      "name": "Pamumukadkad ng Sampaguita",
+      "input": "236236P",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__super_art_3_M",
+      "name": "Pamumukadkad ng Sampaguita",
+      "input": "236236P",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__super_art_3_H",
+      "name": "Pamumukadkad ng Sampaguita",
+      "input": "236236P",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_22_P_none__strength_L",
+      "name": "Pangil sa Likuran",
+      "input": "22P",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_22_P_none__strength_M",
+      "name": "Pangil sa Likuran",
+      "input": "22P",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_22_P_none__strength_H",
+      "name": "Pangil sa Likuran",
+      "input": "22P",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_236_K_none__strength_L",
+      "name": "Mukha ng Langit",
+      "input": "236K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_236_K_none__strength_M",
+      "name": "Mukha ng Langit",
+      "input": "236K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    },
+    {
+      "characterId": "yasmine",
+      "moveId": "yasmine__special_236_K_none__strength_H",
+      "name": "Mukha ng Langit",
+      "input": "236K",
+      "reason": "No unambiguous Japanese name in saved upstream sources; '-' is not a translation"
+    }
+  ]
+}

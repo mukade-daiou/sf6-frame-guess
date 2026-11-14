@@ -24,7 +24,10 @@ export function shareText(game: Game): string {
       return [`${command} なし`, command];
     const frames = "frames" in result ? result.frames : null;
     if (!frames) return [command];
-    const f = (key: keyof typeof frames) => displayFrame(frames[key]);
+    const f = (key: keyof typeof frames) =>
+      key === "startup" && displayFrame(frames[key]) === "なし"
+        ? "発生なし"
+        : displayFrame(frames[key]);
     return game.mode === "startup"
       ? [`${command} ${f("startup")}`, command]
       : [

@@ -1,4 +1,162 @@
 {
+  "startupIndicatorReview": {
+    "baseline": "b8cdaba",
+    "datasetId": "unverifiable-risk-corrections-2026-11-14-r1",
+    "scope": "Ingrid SA2とKimberly 214Pの発生7フィールドのみ。以下のrecords/countsは従来の歴史的監査を保持し、この追補が対象7欄の最新判断案。",
+    "patch": "UNVERIFIED",
+    "judgments": {
+      "現状維持": 3,
+      "修正提案": 0,
+      "保留": 4
+    },
+    "groups": {
+      "ingridActivation": {
+        "indicator": "SA表の発動。後続弾の攻撃発生とは別指標。",
+        "condition": "通常状態・0ストック・非ホールドの基本SA2、L/M/H別入力。",
+        "basis": "rawとCargoの基本行はstartup=1。ADOPTION_RULESのSA規則とSUPER_ART_INTEGRATION_REPORTは原典表の1Fを使用し、後続値へ置換しないと明記。生成器も共通原典を3強度に展開する。既存saEvidenceの『どちらを出題するか未決定』は現行規則と一致しない旧説明であり、判断の再保留理由にはしない。",
+        "laterAttackMeaning": "Cargo備考のprojectile startupはLP103/MP68/HP98F。保存公式row63も発生欄※、備考に弱103/中68/強98Fを記載。発動1Fと同じ欄の数値一致とは扱わず、後続弾の強度差として保持する。",
+        "sources": [
+          "archive/staging/sf6-frame-data/raw/ingrid.json#/moves/1",
+          "archive/staging/sf6-frame-data-quality/evidence/ingrid.cargo.json#/data/cargoquery/1/title",
+          "staging/official-verification/sources/ingrid.json#row=63",
+          "docs/ADOPTION_RULES.md",
+          "docs/SUPER_ART_INTEGRATION_REPORT.md",
+          "scripts/super-arts.ts"
+        ],
+        "additionalEvidence": "現行規則に基づく維持判断に実機確認は不要。1Fの暗転前後の厳密な起点、弾発生と接触時点、対象パッチの独立確認は未実施。将来攻撃発生を出題する仕様へ変更する場合のみ別途条件を検証する。"
+      },
+      "kimberlyNormal": {
+        "indicator": "現在19Fの意味は未確定。採用候補は転移という主要機能の成立時点だが、消失開始と再出現のどちらを指すかは未決定。",
+        "condition": "通常状態・非ホールドの214P。共通元kimberly__coverage_5からL/M/Hへ展開。ホールドで再出現位置が変わる版を混ぜない。",
+        "basis": "raw/Cargoはstartup19、Cargo total43(33)。備考は再出現後の7F回復で攻撃へキャンセル可能、それ以外は17F回復とするが、再出現の絶対Fは示さない。公式row60は発生空欄、19F以上ホールドで性能変化、19-26F完全無敵、34F目から所定行動へキャンセル可能。19Fを無敵開始の一致だけで発生と認定せず、34Fはキャンセル可能時点として区別する。差分の逆算で再出現Fを補完しない。",
+        "sources": [
+          "archive/staging/sf6-frame-data/raw/kimberly.json#/moves/5",
+          "archive/staging/sf6-frame-data-quality/evidence/kimberly.cargo.json#/data/cargoquery/5/title",
+          "staging/official-verification/sources/kimberly.json#row=60",
+          "staging/adoption-inputs/kimberly.json",
+          "docs/ADOPTION_RULES.md"
+        ],
+        "additionalEvidence": "版・相手・距離を記録し、L/M/H各非ホールドで入力受理、消失開始、位置変化、再出現、最速攻撃キャンセル、通常行動復帰を別々に観察する。無敵区間と視覚的消失を同一視しない。19Fと対応する主要機能が確認できれば維持、別の成立Fに明示根拠が得られれば個別修正案とする。"
+      },
+      "kimberlyOD": {
+        "indicator": "現在19Fの意味は未確定。通常版と共通の転移成立指標を候補とするが、空中再出現と空中技の操作可能時点を分離する。",
+        "condition": "通常状態・OD弱P+中P。通常版のホールド条件や地上行動キャンセル条件を移用しない。",
+        "basis": "raw/Cargoの214PPはstartup19、Cargo total45(33)、再出現後7F回復で行動可能、空中派生・着地の別条件を記載。公式row61は発生空欄、20-27F完全無敵、34F目から空中技キャンセル可能、着地硬直は移動以外でキャンセル可。rawのinvuln19-26と公式20-27も異なるが、版差・記法差を断定せず発生への換算をしない。",
+        "sources": [
+          "archive/staging/sf6-frame-data/raw/kimberly.json#/moves/6",
+          "archive/staging/sf6-frame-data-quality/evidence/kimberly.cargo.json#/data/cargoquery/6/title",
+          "staging/official-verification/sources/kimberly.json#row=61",
+          "staging/adoption-inputs/kimberly.json",
+          "docs/ADOPTION_RULES.md"
+        ],
+        "additionalEvidence": "通常版と同じ版・相手・距離でOD弱中を入力し、消失、位置変化、空中再出現、最速空中技入力と実際の技開始、無入力時の着地を別々に記録する。派生技自身の発生を転移の発生に加算しない。19Fに対応する転移イベントの直接証拠が必要。"
+      }
+    },
+    "records": [
+      {
+        "moveId": "ingrid__super_art_2_L",
+        "field": "startup",
+        "current": "1",
+        "indicatorGroup": "ingridActivation",
+        "laterAttackStartup": "103",
+        "judgment": "現状維持",
+        "proposedValue": null
+      },
+      {
+        "moveId": "ingrid__super_art_2_M",
+        "field": "startup",
+        "current": "1",
+        "indicatorGroup": "ingridActivation",
+        "laterAttackStartup": "68",
+        "judgment": "現状維持",
+        "proposedValue": null
+      },
+      {
+        "moveId": "ingrid__super_art_2_H",
+        "field": "startup",
+        "current": "1",
+        "indicatorGroup": "ingridActivation",
+        "laterAttackStartup": "98",
+        "judgment": "現状維持",
+        "proposedValue": null
+      },
+      {
+        "moveId": "kimberly__coverage_5__strength_L",
+        "field": "startup",
+        "current": "19",
+        "indicatorGroup": "kimberlyNormal",
+        "judgment": "保留",
+        "proposedValue": null
+      },
+      {
+        "moveId": "kimberly__coverage_5__strength_M",
+        "field": "startup",
+        "current": "19",
+        "indicatorGroup": "kimberlyNormal",
+        "judgment": "保留",
+        "proposedValue": null
+      },
+      {
+        "moveId": "kimberly__coverage_5__strength_H",
+        "field": "startup",
+        "current": "19",
+        "indicatorGroup": "kimberlyNormal",
+        "judgment": "保留",
+        "proposedValue": null
+      },
+      {
+        "moveId": "kimberly__special_214_P_OD",
+        "field": "startup",
+        "current": "19",
+        "indicatorGroup": "kimberlyOD",
+        "judgment": "保留",
+        "proposedValue": null
+      }
+    ],
+    "commonCriteria": [
+      "主要機能の成立と、後続攻撃・行動受付・無敵開始を別指標として扱う。",
+      "既存の明示された個別規則を優先する。表のstartupという列名だけでは非攻撃技の成立イベントを確定しない。",
+      "数値と状態イベントの直接対応が不明なら保留し、全体・持続・回復から推算しない。",
+      "通常/OD、ホールド、強度、ストックごとの条件差を保持する。別指標を選ぶ仕様変更と誤変換修正を区別する。"
+    ],
+    "kimberlyUserObservation": {
+      "source": "ユーザーによるゲーム内確認",
+      "normalWeak": {
+        "moveId": "kimberly__coverage_5__strength_L",
+        "disappearance": {
+          "value": "18F",
+          "precision": "実測報告"
+        },
+        "reappearance": {
+          "value": "約26F",
+          "precision": "概算、「26かな」"
+        },
+        "cancel": {
+          "value": "34F",
+          "targets": "通常技・必殺技・SA",
+          "qualification": "歩行・ガードを含む自由行動開始ではない"
+        },
+        "freeAction": "未測定"
+      },
+      "od": {
+        "moveId": "kimberly__special_214_P_OD",
+        "report": "通常版と同じだと思う",
+        "precision": "推測報告。消失18F・再出現F・キャンセル開始Fの個別実測ではない。以前の全体45F実測は維持し再測定不要。"
+      },
+      "judgment": {
+        "normal": "保留・現行19F維持。弱の消失18Fは転移の有意なイベントだが、原典19Fが消失と同じイベントか、どちらを採用指標とするかを確定できない。18への変更もなしへの変更も提案しない。",
+        "middleHeavy": "保留・現行19F維持。弱の報告を中・強の個別測定へ拡張しない。",
+        "od": "保留・現行19F維持。同じかもしれないとの報告は個別測定や19Fとの対応根拠にはならない。"
+      },
+      "rule": "彩隠形は消失・位置変化・再出現を主要機能とする移動技。無攻撃かつ派生移行を主機能とする親技への発生なし規則を一律適用せず、効果成立Fの個別採用余地を維持する。",
+      "known": "raw/Cargo通常・ODともstartup19、公式の発生欄は空欄。通常の公式備考には34Fからキャンセル、ODは34Fから空中技キャンセル。通常の34Fユーザー報告はその対象を確認するが19Fの意味の直接証拠ではない。",
+      "unknown": "原典19が消失・位置変化・再出現のどれか、実測18との差の起点/版/イベント差。ゲーム版、相手、距離、ホールド等の未報告条件、通常中強、ODの各時点。",
+      "additionalMeasurement": "指標と値を確定する必要がある場合のみ、まず通常弱の消失18Fと原典19Fが同一イベントかを、動作1Fの基準・版・入力保持を記録し1F刻みで確認。再出現は概算から厳密測定へ進める場合のみ別に記録。OD弱中は通常と同じかを独立に測り消失・位置変化・再出現・空中技キャンセルを分ける。中/強は共通化が必要な場合に各強度で測る。歩行・ガードの自由行動は今回の発生指標決定に必要になった場合のみ調べる。OD全体45Fの再測定は不要。",
+      "patch": "UNVERIFIED",
+      "proposedProductionChange": null,
+      "history": "以前の保留・judgments・recordsは履歴として保持。本追補が今回の判断案。"
+    }
+  },
   "baseline": "3a460ff687453b719a474afb9864746d30fa5117",
   "patch": "UNVERIFIED",
   "status": "実施した照合による優先度。詳細未調査の正誤は未確定",

@@ -34,7 +34,8 @@ export function Frames({ move }: { move?: Move }) {
       {(["startup", "total", "hit", "block"] as const).map((f) => (
         <td className="move-frame" key={f}>
           {move
-            ? move.frames[f].status === "not_applicable"
+            ? move.frames[f].status === "not_applicable" &&
+              move.frames[f].display !== "なし"
               ? "対象外"
               : displayFrame(move.frames[f])
             : "—"}

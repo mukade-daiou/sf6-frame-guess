@@ -3,6 +3,22 @@ import twitterText from "twitter-text";
 import { production } from "../../lib/frame-data/datasets";
 import { startGame } from "./engine";
 import { shareText, shareUrl, GAME_URL } from "./share";
+it("labels absent startup explicitly in shared results", () => {
+  const game = startGame(production, "startup");
+  const m = production.characters
+    .flatMap((c) => c.moves)
+    .find((m) => m.id === "cammy__special_236_P_none__strength_L")!;
+  game.history = [
+    {
+      input: m.input,
+      mode: "startup",
+      result: { status: "found", frames: m.frames },
+    },
+  ];
+  expect(shareText(game)).toContain("発生なし");
+  game.history[0].result = { status: "not_found" };
+  expect(shareText(game)).not.toContain("発生なし");
+});
 
 it("shares all outcomes and zero through five questions using the current mode", () => {
   for (const mode of ["normal", "startup"] as const)

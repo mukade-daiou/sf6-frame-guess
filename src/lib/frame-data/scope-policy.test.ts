@@ -3,6 +3,29 @@ import { excludedInputReason } from "../../../scripts/source-scope";
 import { production } from "./datasets";
 import { resolveMove } from "./resolver";
 import { inputKey } from "./input";
+it("separates parent startup absence from stock effects and attacking parents", () => {
+  for (const c of production.eligible)
+    for (const m of c.moves.filter(
+      (m) => m.frames.startup.display === "なし",
+    )) {
+      expect(m.frames.startup.status).toBe("not_applicable");
+      expect("numeric" in m.frames.startup).toBe(false);
+      if (m.input.type === "special" && m.input.strength !== "none")
+        expect(resolveMove(c, m.input, "startup").status).toBe("found");
+    }
+  for (const [id, startup] of [
+    ["ryu__special_22_P_none", 50],
+    ["jamie__special_22_P_none", 48],
+    ["kimberly__special_22_K_none", 42],
+    ["kimberly__special_22_K_OD", 42],
+    ["dee_jay__special_214_K_OD", 8],
+  ] as const) {
+    const move = production.characters
+      .flatMap((c) => c.moves)
+      .find((m) => m.id === id)!;
+    expect(move.frames.startup).toMatchObject({ numeric: startup });
+  }
+});
 it.each([
   "PP",
   "KK",
@@ -27,10 +50,11 @@ it("keeps excluded source records but removes them from question inputs and abse
       .filter((m) => m.adoption?.status === "excluded")
       .map((m) => ({ c, m })),
   );
-  expect(excluded).toHaveLength(10);
+  expect(excluded).toHaveLength(14);
   for (const { c, m } of excluded) {
     expect(m.source.verification).toBe("unverified");
     if (
+      !m.id.startsWith("ingrid__special_214214_K_none") &&
       !["dee_jay__held_special_22_P_OD", "m_bison__special_623_P_OD"].includes(
         m.id,
       )
@@ -39,6 +63,26 @@ it("keeps excluded source records but removes them from question inputs and abse
         production.inputs.some((i) => inputKey(i) === inputKey(m.input)),
       ).toBe(false);
     expect(resolveMove(c, m.input, "normal").status).toBe("not_found");
+  }
+});
+it("retains Dark Ingrid records but resolves shared 214214K as absent", () => {
+  const c = production.eligible.find((c) => c.id === "ingrid")!;
+  expect(
+    c.moves.filter((m) => m.id.startsWith("ingrid__special_214214_K_none")),
+  ).toHaveLength(4);
+  for (const strength of ["L", "M", "H"] as const) {
+    const input = {
+      type: "special",
+      motion: "214214",
+      button: "K",
+      strength,
+      includeSuperArts: true,
+    } as const;
+    expect(production.inputs.some((i) => inputKey(i) === inputKey(input))).toBe(
+      true,
+    );
+    for (const mode of ["normal", "startup"] as const)
+      expect(resolveMove(c, input, mode).status).toBe("not_found");
   }
 });
 it("excludes Shin Bison's Psycho Burst while retaining the shared input", () => {

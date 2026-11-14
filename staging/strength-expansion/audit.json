@@ -2,20 +2,21 @@
   "summary": {
     "characters": 32,
     "sourceRows": 40,
-    "expandableSources": 34,
+    "expandableSources": 33,
     "classifications": {
-      "expandable": 34,
-      "excluded": 3,
+      "expandable": 33,
+      "excluded": 4,
       "held": 3
     },
     "generatedInputs": 102,
+    "excludedGeneratedInputs": 3,
     "explicitStrengthOverlaps": 0,
     "generatedOD": 0,
     "originalRecordsVerified": 1196,
     "totalRecords": 1298,
-    "beforeGlobalQuestionInputs": 85,
-    "afterGlobalQuestionInputs": 89,
-    "addedGlobalQuestionInputs": 4
+    "beforeGlobalQuestionInputs": 82,
+    "afterGlobalQuestionInputs": 85,
+    "addedGlobalQuestionInputs": 3
   },
   "auditedCharacters": [
     {
@@ -627,12 +628,12 @@
       "sourceMoveId": "ingrid__special_214214_K_none",
       "motion": "214214",
       "button": "K",
-      "status": "accepted",
+      "status": "excluded",
       "variant": {
         "kind": "base",
         "condition": null
       },
-      "classification": "expandable",
+      "classification": "excluded",
       "strengths": [
         {
           "strength": "L",
@@ -1242,7 +1243,6 @@
   "addedQuestionKeys": [
     "command:22:P:L",
     "command:22:P:M",
-    "command:22:P:H",
-    "command:214214:K:OD"
+    "command:22:P:H"
   ]
 }

@@ -12,6 +12,15 @@ export function restoreCompoundStartup(character) {
     ...(compound?.indicatorDecisions || []),
   ];
   const result = structuredClone(character);
+  for (const d of (
+    JSON.parse(readFileSync("data/adoption-decisions.json", "utf8"))
+      .parentStartupDecisions || []
+  ).filter((x) => x.characterId === result.id)) {
+    const move = result.moves.find((m) => m.id === d.moveId);
+    if (!move || !isDeepStrictEqual(move.frames.startup, d.value))
+      throw new Error(`Unauthorized parent startup: ${d.moveId}`);
+    move.frames.startup = structuredClone(d.before);
+  }
   const special =
     JSON.parse(readFileSync("data/adoption-decisions.json", "utf8"))
       .specialStateExclusions || [];

@@ -22,10 +22,12 @@ export default function App() {
   const [game, setGame] = useState<Game | null>(null);
   const [selection, setSelection] = useState("");
   const [message, setMessage] = useState("");
+  const [modeLocked, setModeLocked] = useState(false);
   const dataset = production;
-  const limit = 5;
+  const limit = 7;
   function question(input: MoveInput) {
     if (!game) return;
+    setModeLocked(true);
     const next = ask(game, input);
     setGame(next.game);
     setMessage(
@@ -117,6 +119,7 @@ export default function App() {
             }
             onClick={() => {
               setGame(startGame(dataset, "normal", limit));
+              setModeLocked(false);
               setSelection("");
               setMessage("");
             }}
@@ -146,13 +149,14 @@ export default function App() {
                   <div
                     className="segments mode-toggle"
                     role="group"
-                    aria-label="表示モード"
+                    aria-label="難易度"
                   >
                     {(["normal", "startup"] as const).map((m) => (
                       <button
                         key={m}
                         type="button"
                         aria-pressed={game.mode === m}
+                        disabled={modeLocked}
                         onClick={() => {
                           setGame(changeMode(game, m));
                           setMessage("");
@@ -264,6 +268,7 @@ export default function App() {
                   <button
                     onClick={() => {
                       setGame(startGame(dataset, game.mode, limit));
+                      setModeLocked(false);
                       setSelection("");
                       setMessage("");
                     }}

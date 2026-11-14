@@ -68,7 +68,10 @@ if (process.argv.includes("--check"))
     if (!isDeepStrictEqual(withStrengthExpansions(c), c))
       throw new Error(`Not idempotent: ${c.id}`);
   }
-const generated = characters.flatMap(generateStrengthExpansions);
+// Excluded state-specific expansions remain in the dataset as historical records.
+const generated = characters.flatMap((c) =>
+  c.moves.filter((m) => m.strengthExpansion),
+);
 const metadata = JSON.parse(readFileSync("data/metadata.json", "utf8"));
 const uiKeys = (files: Record<string, unknown>) =>
   validateDataset(metadata, files)
@@ -92,6 +95,9 @@ const summary = {
     ]),
   ),
   generatedInputs: generated.length,
+  excludedGeneratedInputs: generated.filter(
+    (m) => m.adoption?.status === "excluded",
+  ).length,
   explicitStrengthOverlaps: rows
     .filter((r) => r.classification === "expandable")
     .flatMap((r) => r.strengths)

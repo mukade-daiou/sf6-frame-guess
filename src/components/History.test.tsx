@@ -4,6 +4,39 @@ import { History } from "./History";
 import { production } from "../lib/frame-data/datasets";
 import { startGame, ask, changeMode } from "../features/game/engine";
 import { Frames } from "../features/moves/MovesPage";
+it("renders parent startup absence in history and inventory in both modes", () => {
+  const c = production.eligible.find((c) => c.id === "cammy")!;
+  const m = c.moves.find(
+    (m) => m.id === "cammy__special_236_P_none__strength_L",
+  )!;
+  for (const mode of ["normal", "startup"] as const) {
+    const markup = renderToStaticMarkup(
+      <History
+        mode={mode}
+        entries={[
+          {
+            input: m.input,
+            mode,
+            result: { status: "found", frames: m.frames },
+          },
+        ]}
+      />,
+    );
+    expect(markup).toContain("なし");
+    expect(markup).not.toContain("不明");
+  }
+  expect(
+    renderToStaticMarkup(
+      <table>
+        <tbody>
+          <tr>
+            <Frames move={m} />
+          </tr>
+        </tbody>
+      </table>,
+    ),
+  ).toContain("なし");
+});
 
 it("shows knockdowns in Japanese in history while preserving other values and the inventory notation", () => {
   let game = startGame(production, "normal", 5, () => 0);
