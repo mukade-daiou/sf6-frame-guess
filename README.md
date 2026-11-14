@@ -1,6 +1,8 @@
 # SF6フレーム探偵
 
-現行データは `nonattacking-parent-startup-2026-11-14-r1`、32キャラ・1298レコード（採用1278）です。保存公式との照合5112フィールドは一致4459・不一致61・条件違い42・確認不能550で、公式資料の対象パッチはUNVERIFIEDです。非攻撃の派生親技は発生「なし」、全体Fは原則として通常条件の空振り時を採用します。[照合結果](docs/OFFICIAL_VERIFICATION_REEVALUATION.md)
+最新datasetIdは`automatic-no-input-startup-2026-11-14-r1`。無入力自動攻撃を持つ百鬼襲の発生53Fを復元しました。
+
+現行データは32キャラ・1298レコード（採用1278）です。保存公式との照合5112フィールドは一致4459・不一致61・条件違い42・確認不能550で、公式資料の対象パッチはUNVERIFIEDです。追加入力が必要な非攻撃の派生親技は発生「なし」、無入力自動攻撃は条件を確定できた場合に発生Fを採用します。全体Fは原則として通常条件の空振り時を採用します。[照合結果](docs/OFFICIAL_VERIFICATION_REEVALUATION.md)
 
 結果画面の「Xで結果をシェア」から、結果と質問順の履歴を入力した投稿画面を別タブで開けます。自動投稿はしません。共有時のNormal/Hardに合わせて表示し、twitter-textの重み付き280文字に収まるよう長い履歴行から短縮します。必要な場合だけ末尾の質問を「ほかN問」にまとめます。
 
@@ -65,6 +67,6 @@ VITE_BASE_PATH=/your-repository/ npm run preview
 
 ## 必殺技・SAの操作
 
-「必殺技・SA」タブでコマンドと弱・中・強（またはOD）を指定します。SAレベルの選択は不要です。同じフレーム値でも各強度は独立した質問です。CAとSA派生は対象外。溜めSAは左→右→左→右、720は2回転または候補クリックで入力できます。Normal/Hardの表示切替と質問済み判定は独立しています。
+「必殺技・SA」タブでコマンドと弱・中・強（またはOD）を指定します。SAレベルの選択は不要です。同じフレーム値でも各強度は独立した質問です。CAとSA派生は対象外。溜めSAは左→右→左→右、720は2回転または候補クリックで入力できます。Normal/Hardは最初の有効な質問を記録すると固定され、質問は最大7回です。
 
 現在のデータ監査には`npm run data:audit-coverage`、`npx tsx scripts/audit-super-arts.ts --check`、`npx tsx scripts/audit-strength-expansion.ts --check`、`npx tsx scripts/audit-conditional-specials.ts`を使います。現行の`npm run test:data`はこれらの回帰検査と過去コミットとの比較を含み、Git全履歴が必要です。過去の段階別再現テストは`npm run test:archive`に分けています。

@@ -22,12 +22,10 @@ export default function App() {
   const [game, setGame] = useState<Game | null>(null);
   const [selection, setSelection] = useState("");
   const [message, setMessage] = useState("");
-  const [modeLocked, setModeLocked] = useState(false);
   const dataset = production;
   const limit = 7;
   function question(input: MoveInput) {
     if (!game) return;
-    setModeLocked(true);
     const next = ask(game, input);
     setGame(next.game);
     setMessage(
@@ -81,7 +79,7 @@ export default function App() {
             <br />
             <strong>Hard</strong>：発生だけを表示します。
             <br />
-            プレイ中も切り替えられ、履歴全体の表示が変わります。
+            難易度は最初の質問前に選択し、質問後は変更できません。
           </p>
           <section className="start-rules" aria-labelledby="rules-title">
             <h2 id="rules-title" className="start-heading">
@@ -119,7 +117,6 @@ export default function App() {
             }
             onClick={() => {
               setGame(startGame(dataset, "normal", limit));
-              setModeLocked(false);
               setSelection("");
               setMessage("");
             }}
@@ -156,7 +153,7 @@ export default function App() {
                         key={m}
                         type="button"
                         aria-pressed={game.mode === m}
-                        disabled={modeLocked}
+                        disabled={game.history.length > 0}
                         onClick={() => {
                           setGame(changeMode(game, m));
                           setMessage("");
@@ -268,7 +265,6 @@ export default function App() {
                   <button
                     onClick={() => {
                       setGame(startGame(dataset, game.mode, limit));
-                      setModeLocked(false);
                       setSelection("");
                       setMessage("");
                     }}

@@ -24087,7 +24087,88 @@
       "method": "旧保存比較を採用IDへ限定し、変更startupの公式数値が存在すれば指標違いの条件違い、空欄なら確認不能として再評価。元の結果は保持。"
     },
     "patch": "UNVERIFIED",
-    "validation": "全1298レコードを作業前と比較し指定startup48欄のみ変更。既存履歴データテスト52件、通常テスト163件、型・データ検査・生成チェック・format・buildで検証。"
+    "validation": "全1298レコードを作業前と比較し指定startup48欄のみ変更。既存履歴データテスト52件、通常テスト163件、型・データ検査・生成チェック・format・buildで検証。",
+    "automaticNoInputRevision": {
+      "datasetId": "automatic-no-input-startup-2026-11-14-r1",
+      "reviewedSourceMoves": 21,
+      "reviewedRecords": 48,
+      "restored": [
+        {
+          "moveId": "akuma__special_236_K_none",
+          "from": "なし",
+          "to": "53",
+          "source": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json#/data/cargoquery/19/title"
+        },
+        {
+          "moveId": "akuma__special_236_K_OD",
+          "from": "なし",
+          "to": "53",
+          "source": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json#/data/cargoquery/20/title"
+        },
+        {
+          "moveId": "akuma__special_236_K_none__strength_L",
+          "from": "なし",
+          "to": "53",
+          "source": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json#/data/cargoquery/19/title"
+        },
+        {
+          "moveId": "akuma__special_236_K_none__strength_M",
+          "from": "なし",
+          "to": "53",
+          "source": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json#/data/cargoquery/19/title"
+        },
+        {
+          "moveId": "akuma__special_236_K_none__strength_H",
+          "from": "なし",
+          "to": "53",
+          "source": "archive/staging/sf6-frame-data-quality/evidence/akuma.cargo.json#/data/cargoquery/19/title"
+        }
+      ],
+      "held": [
+        "Kimberly疾駆通常/OD：14/16F以降に近距離で弧空へ自動移行するが、接触距離と親開始から攻撃判定までの時間が未確定。8Fは受付で代用せずなしを維持。",
+        "Cammy通常/OD：無入力の着地時自動攻撃に対応する親開始からの発生値が保存資料で特定できない。20F受付を復元せずなしを維持。"
+      ],
+      "other": "春麗、Dee Jay、Honda、Elena、Luke、Bison、Yasmineは保存備考で追加入力の受付と攻撃派生を区別。自動追尾/移動だけを自動攻撃と扱わずなしを維持。",
+      "comparison": "現行データで比較器を再実行。1278技/5112欄、一致4459・不一致61・条件違い42・確認不能550。旧集計は履歴として保持。",
+      "patch": "UNVERIFIED",
+      "cammyReview": {
+        "judgment": "保留・現行「なし」維持",
+        "scope": [
+          "cammy__special_236_P_none__strength_L",
+          "cammy__special_236_P_none__strength_M",
+          "cammy__special_236_P_none__strength_H",
+          "cammy__special_236_P_OD"
+        ],
+        "commonSource": "cammy__special_236_P_none",
+        "evidence": [
+          {
+            "ref": "archive/staging/sf6-frame-data-quality/evidence/cammy.cargo.json#/data/cargoquery/22/title",
+            "finding": "236P~No Inputにstartup50・total71、low profile 50–63。無入力行は存在するが、親動作開始を起点とする明示とL/M/H別条件はない。"
+          },
+          {
+            "ref": "archive/staging/sf6-frame-data-quality/evidence/cammy.cargo.json#/data/cargoquery/17/title",
+            "finding": "236PP~No Inputにstartup50・total90、low profile 50–80。OD弱中の軌道と親開始を起点とする明示がない。"
+          },
+          {
+            "ref": "archive/staging/sf6-frame-data/raw/cammy.json#/moves/19",
+            "finding": "通常親は強度で軌道が異なり、近距離の相手を越える条件も異なる。"
+          },
+          {
+            "ref": "archive/staging/sf6-frame-data/raw/cammy.json#/moves/20",
+            "finding": "ODはボタン組合せで軌道が変わる。"
+          },
+          {
+            "ref": "staging/official-verification/sources/cammy.json",
+            "finding": "row43/45の親技発生欄は空欄、row46/48は入力なしのレイザーエッジスライサー発生10。親開始からの累積Fを明示しない。"
+          }
+        ],
+        "condition": "通常状態・非ホールド・追加操作なし。OD代表は弱＋中。相手の位置・立ちしゃがみと越え方を区別。",
+        "reason": "無入力自動攻撃の存在は公式row46/48で確認。保存Cargoに50の無入力行があるが、親開始起点・強度/軌道・距離/相手状態の対応を直接確定できない。表の50を外部値というだけで拒否せず候補として保持するが採用には至らない。20は受付、10は後続技単体であり累積値ではない。",
+        "interpretation": "現行「なし」は自動攻撃が存在しないことを確定した意味ではなく、新規則上の保留値。",
+        "needed": "同一パッチ・通常/OD弱中・強度別の親動作1Fから初回攻撃判定Fまでの直接対応、距離・相手姿勢・通過条件。新証拠がなければ現状維持し追加実測は依頼しない。",
+        "patch": "UNVERIFIED"
+      }
+    }
   },
   "releaseAudit": {
     "datasetId": "nonattacking-parent-startup-2026-11-14-r1",

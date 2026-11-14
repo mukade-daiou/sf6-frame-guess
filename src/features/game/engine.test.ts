@@ -163,7 +163,7 @@ it("rejects fewer than two eligible characters and invalid limits", () => {
   expect(() => startGame(data, "normal")).toThrow();
   expect(() => startGame(dataset(), "normal", 0)).toThrow();
 });
-it("keeps the target, count and immutable question-time mode/results while switching modes", () => {
+it("allows mode changes until a question is recorded, then keeps the mode locked", () => {
   let game = startGame(dataset(), "normal", 2, () => 0);
   const first = game.inputs[0];
   game.target.moves[0].frames.total = {
@@ -173,18 +173,23 @@ it("keeps the target, count and immutable question-time mode/results while switc
     calculation: null,
   };
   expect(ask(game, first).status).toBe("unknown");
+  expect(ask(game, null).status).toBe("invalid");
+  expect(changeMode(ask(game, null).game, "startup").mode).toBe("startup");
   const switched = changeMode(game, "startup");
   expect(switched.target).toBe(game.target);
   expect(switched.history).toBe(game.history);
   game = ask(switched, first).game;
+  const returned = returnToQuestions(requestAnswer(game));
+  expect(changeMode(returned, "normal")).toBe(returned);
   const saved = JSON.stringify(game.history);
+  expect(changeMode(game, "normal")).toBe(game);
   game = changeMode(game, "normal");
   expect(game.history[0].mode).toBe("startup");
   expect(ask(game, first).status).toBe("duplicate");
   game.target.moves[0].frames.startup.display = "999";
   expect(JSON.stringify(game.history)).toBe(saved);
   game = ask(game, game.inputs[1]).game;
-  expect(game.history.map((h) => h.mode)).toEqual(["startup", "normal"]);
+  expect(game.history.map((h) => h.mode)).toEqual(["startup", "startup"]);
   const changedAnswer = changeMode(game, "startup");
   expect(changedAnswer.phase).toBe("answer");
   expect(changedAnswer.history).toBe(game.history);
@@ -194,5 +199,8 @@ it("keeps the target, count and immutable question-time mode/results while switc
   expect(changedResult.phase).toBe("result");
   expect(changedResult.selectedId).toBe(result.selectedId);
   expect(changedResult.history).toBe(result.history);
-  expect(changedResult.mode).toBe("normal");
+  expect(changedResult.mode).toBe("startup");
+  expect(startGame(dataset(), "normal").limit).toBe(7);
+  const replay = startGame(dataset(), "normal");
+  expect(changeMode(replay, "startup").mode).toBe("startup");
 });

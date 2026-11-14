@@ -76,7 +76,7 @@ it("shows knockdowns in Japanese in history while preserving other values and th
   ).toContain(">D</td>");
 });
 
-it("switches all historical rows to the current mode, including unknown saved fields", () => {
+it("keeps historical rows in the mode locked by the first question", () => {
   let game = startGame(
     production,
     "startup",
@@ -107,8 +107,8 @@ it("switches all historical rows to the current mode, including unknown saved fi
   expect((render().match(/<dd>/g) || []).length).toBe(1);
   game = changeMode(game, "normal");
   expect(game.history).toBe(history);
-  expect((render().match(/<dd>/g) || []).length).toBe(4);
-  expect(render()).toContain("不明");
+  expect((render().match(/<dd>/g) || []).length).toBe(1);
+  expect(render()).not.toContain("不明");
   expect(ask(game, input).status).toBe("duplicate");
   game = ask(game, {
     type: "normal",
@@ -116,11 +116,11 @@ it("switches all historical rows to the current mode, including unknown saved fi
     button: "P",
     strength: "L",
   }).game;
-  expect(game.history.map((h) => h.mode)).toEqual(["startup", "normal"]);
+  expect(game.history.map((h) => h.mode)).toEqual(["startup", "startup"]);
   expect(render().indexOf('aria-label="5LP"')).toBeLessThan(
     render().indexOf('aria-label="2HK"'),
   );
-  expect((render().match(/<dd>/g) || []).length).toBe(8);
+  expect((render().match(/<dd>/g) || []).length).toBe(2);
   game = changeMode(game, "startup");
   expect((render().match(/<dd>/g) || []).length).toBe(2);
   expect(render()).not.toContain("全体F");

@@ -3,6 +3,24 @@ import { excludedInputReason } from "../../../scripts/source-scope";
 import { production } from "./datasets";
 import { resolveMove } from "./resolver";
 import { inputKey } from "./input";
+it("uses the no-input automatic Demon Low Slash startup from the parent start", () => {
+  const c = production.eligible.find((c) => c.id === "akuma")!;
+  const moves = c.moves.filter((m) => m.id.startsWith("akuma__special_236_K_"));
+  expect(moves).toHaveLength(5);
+  for (const m of moves) {
+    expect(m.frames.startup).toMatchObject({
+      status: "confirmed",
+      display: "53",
+      numeric: 53,
+    });
+    if (m.input.type === "special" && m.input.strength !== "none")
+      for (const mode of ["normal", "startup"] as const)
+        expect(resolveMove(c, m.input, mode)).toMatchObject({
+          status: "found",
+          frames: { startup: { numeric: 53 } },
+        });
+  }
+});
 it("separates parent startup absence from stock effects and attacking parents", () => {
   for (const c of production.eligible)
     for (const m of c.moves.filter(

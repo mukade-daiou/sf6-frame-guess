@@ -1,5 +1,7 @@
 # データの正本と更新手順
 
+最新datasetIdは`automatic-no-input-startup-2026-11-14-r1`。parentStartupDecisionsの百鬼襲5欄は無入力自動攻撃の53Fを使用し、旧判断はpreviousDecisionに保持する。以下のdatasetIdは各段階の履歴。
+
 現行datasetIdは`nonattacking-parent-startup-2026-11-14-r1`。非攻撃の派生親技21元・48欄を`parentStartupDecisions`で発生「なし」にし、生成の最終フレーム適用段階と既存履歴投影で保護する。原典・旧値と全体/hit/blockは保持。次段落のdatasetIdは除外時点の履歴、件数は現行も同じ。
 
 現行datasetIdは`dark-ingrid-exclusion-2026-11-14-r1`。32キャラ・1298レコードのうち1278レコードを採用している。保存公式との照合5112フィールドは一致4459・不一致61・条件違い42・確認不能550で、公式資料の対象パッチはUNVERIFIED。全体Fは原則として通常条件の空振り時を採用する。[照合結果](OFFICIAL_VERIFICATION_REEVALUATION.md)と[個別監査](../staging/official-reevaluation/unverifiable-play-risk-report.md)を参照。

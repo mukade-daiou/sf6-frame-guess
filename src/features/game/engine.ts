@@ -104,6 +104,7 @@ export function ask(
   };
 }
 export function changeMode(game: Game, mode: Mode): Game {
+  if (game.history.length > 0) return game;
   return { ...game, mode };
 }
 export function requestAnswer(game: Game): Game {
