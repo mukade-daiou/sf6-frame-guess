@@ -16,6 +16,7 @@ import {
 import { MoveSelector } from "../features/move-selector/MoveSelector";
 import { History } from "../components/History";
 import { DataInfo } from "../components/DataInfo";
+import { MoveNotation } from "../components/MoveNotation";
 import { sortCharactersForDisplay } from "../features/game/character-order";
 
 export default function App() {
@@ -66,25 +67,74 @@ export default function App() {
         )}
       </header>
       {!game ? (
-        <section className="panel" aria-labelledby="description-title">
-          <h2 id="description-title" className="start-heading">
-            ゲームの説明
-          </h2>
-          <p>
-            技のフレームデータを調べて、隠されたキャラクターを当てるゲームです。レバーとボタンで技を指定し、質問を重ねて候補を絞ってください。
-          </p>
-          <p>
-            <strong>Normal</strong>
-            ：発生・全体・ヒット時の硬直差・ガード時の硬直差を表示します。
-            <br />
-            <strong>Hard</strong>：発生だけを表示します。
-            <br />
-            難易度は最初の質問前に選択し、質問後は変更できません。
-          </p>
-          <section className="start-rules" aria-labelledby="rules-title">
-            <h2 id="rules-title" className="start-heading">
-              ルール・注意事項
-            </h2>
+        <section className="start-screen" aria-labelledby="description-title">
+          <div className="start-layout">
+            <div className="start-intro">
+              <h2 id="description-title">フレームからキャラを当てる</h2>
+              <p>技を指定してフレームを確認。質問は最大{limit}回。</p>
+            </div>
+            <figure className="start-example">
+              <figcaption>表示例（サンプル値）</figcaption>
+              <div className="start-example-input">
+                <MoveNotation
+                  input={{
+                    type: "normal",
+                    direction: "2",
+                    button: "P",
+                    strength: "L",
+                  }}
+                />
+                <span>しゃがみ弱P</span>
+              </div>
+              <dl className="start-example-frames">
+                <div>
+                  <dt>発生F</dt>
+                  <dd>4</dd>
+                </div>
+                <div>
+                  <dt>全体F</dt>
+                  <dd>16</dd>
+                </div>
+                <div>
+                  <dt>ヒット時硬直差</dt>
+                  <dd>+4</dd>
+                </div>
+                <div>
+                  <dt>ガード時硬直差</dt>
+                  <dd>-1</dd>
+                </div>
+              </dl>
+            </figure>
+            <div className="start-actions">
+              <button
+                disabled={
+                  dataset.eligible.length < 2 || dataset.inputs.length === 0
+                }
+                onClick={() => {
+                  setGame(startGame(dataset, "normal", limit));
+                  setSelection("");
+                  setMessage("");
+                }}
+              >
+                ゲーム開始
+              </button>
+            </div>
+          </div>
+          <div className="start-modes">
+            <dl>
+              <div>
+                <dt>Normal</dt>
+                <dd>発生・全体・ヒット時／ガード時の硬直差</dd>
+              </div>
+              <div>
+                <dt>Hard</dt>
+                <dd>発生のみ</dd>
+              </div>
+            </dl>
+            <p>難易度は質問後に変更不可</p>
+          </div>
+          <details className="start-rules">
+            <summary>ルール・注意事項</summary>
             <ul>
               <li>
                 質問は最大{limit}
@@ -105,24 +155,12 @@ export default function App() {
               </li>
               <li>CAとSAの派生技は対象外です。</li>
             </ul>
-          </section>
+          </details>
           {dataset.eligible.length < 2 && (
             <p role="status">
               開始には、採用済みで収録範囲が確定したキャラクターが2体以上必要です。
             </p>
           )}
-          <button
-            disabled={
-              dataset.eligible.length < 2 || dataset.inputs.length === 0
-            }
-            onClick={() => {
-              setGame(startGame(dataset, "normal", limit));
-              setSelection("");
-              setMessage("");
-            }}
-          >
-            ゲーム開始
-          </button>
           {dataset.errors.length > 0 && (
             <p role="alert">
               データ検証で問題が見つかりました。管理者は validate:data
