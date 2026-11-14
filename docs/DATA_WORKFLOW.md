@@ -1,5 +1,7 @@
 # データの正本と更新手順
 
+現行datasetIdは`hooligan-no-input-startup-2026-11-14-r1`。フーリガン通常L/M/H・ODの50Fは`parentStartupDecisions`の無入力Cargo参照を検査して生成する。以下は過去の段階。
+
 最新datasetIdは`automatic-no-input-startup-2026-11-14-r1`。parentStartupDecisionsの百鬼襲5欄は無入力自動攻撃の53Fを使用し、旧判断はpreviousDecisionに保持する。以下のdatasetIdは各段階の履歴。
 
 現行datasetIdは`nonattacking-parent-startup-2026-11-14-r1`。非攻撃の派生親技21元・48欄を`parentStartupDecisions`で発生「なし」にし、生成の最終フレーム適用段階と既存履歴投影で保護する。原典・旧値と全体/hit/blockは保持。次段落のdatasetIdは除外時点の履歴、件数は現行も同じ。

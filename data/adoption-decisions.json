@@ -1,5 +1,5 @@
 {
-  "datasetId": "automatic-no-input-startup-2026-11-14-r1",
+  "datasetId": "hooligan-no-input-startup-2026-11-14-r1",
   "compoundStartup": {
     "basis": "ユーザー指定: 弾出現と距離依存の攻撃発生を区別。公式取得2026-11-10、パッチ未確認。",
     "decisions": [
@@ -14595,16 +14595,28 @@
         "numeric": 20
       },
       "value": {
-        "status": "not_applicable",
-        "display": "なし"
+        "status": "confirmed",
+        "display": "50",
+        "numeric": 50
       },
-      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。",
+      "reason": "ユーザー指定：Cargoの無入力レイザーエッジスライサー行の親開始からの発生50Fを採用。受付20F・後続単体10F・ホールド版を使わない。",
       "previousDecision": {
         "value": {
           "status": "not_applicable",
           "display": "なし"
         },
-        "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+        "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。",
+        "reviewedValue": {
+          "status": "not_applicable",
+          "display": "なし"
+        },
+        "reviewedReason": "累積発生を確定できず保留していた旧判断"
+      },
+      "automaticSource": {
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cammy.cargo.json",
+        "sourceIndex": 17,
+        "sourceInput": "236PP~No Input",
+        "startup": "50"
       }
     },
     {
@@ -14621,16 +14633,28 @@
         "numeric": 20
       },
       "value": {
-        "status": "not_applicable",
-        "display": "なし"
+        "status": "confirmed",
+        "display": "50",
+        "numeric": 50
       },
-      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。",
+      "reason": "ユーザー指定：Cargoの無入力レイザーエッジスライサー行の親開始からの発生50Fを採用。受付20F・後続単体10F・ホールド版を使わない。",
       "previousDecision": {
         "value": {
           "status": "not_applicable",
           "display": "なし"
         },
-        "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+        "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。",
+        "reviewedValue": {
+          "status": "not_applicable",
+          "display": "なし"
+        },
+        "reviewedReason": "累積発生を確定できず保留していた旧判断"
+      },
+      "automaticSource": {
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cammy.cargo.json",
+        "sourceIndex": 22,
+        "sourceInput": "236P~No Input",
+        "startup": "50"
       }
     },
     {
@@ -14647,16 +14671,28 @@
         "numeric": 20
       },
       "value": {
-        "status": "not_applicable",
-        "display": "なし"
+        "status": "confirmed",
+        "display": "50",
+        "numeric": 50
       },
-      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。",
+      "reason": "ユーザー指定：Cargoの無入力レイザーエッジスライサー行の親開始からの発生50Fを採用。受付20F・後続単体10F・ホールド版を使わない。",
       "previousDecision": {
         "value": {
           "status": "not_applicable",
           "display": "なし"
         },
-        "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+        "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。",
+        "reviewedValue": {
+          "status": "not_applicable",
+          "display": "なし"
+        },
+        "reviewedReason": "累積発生を確定できず保留していた旧判断"
+      },
+      "automaticSource": {
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cammy.cargo.json",
+        "sourceIndex": 22,
+        "sourceInput": "236P~No Input",
+        "startup": "50"
       }
     },
     {
@@ -14673,16 +14709,28 @@
         "numeric": 20
       },
       "value": {
-        "status": "not_applicable",
-        "display": "なし"
+        "status": "confirmed",
+        "display": "50",
+        "numeric": 50
       },
-      "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。",
+      "reason": "ユーザー指定：Cargoの無入力レイザーエッジスライサー行の親開始からの発生50Fを採用。受付20F・後続単体10F・ホールド版を使わない。",
       "previousDecision": {
         "value": {
           "status": "not_applicable",
           "display": "なし"
         },
-        "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
+        "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。",
+        "reviewedValue": {
+          "status": "not_applicable",
+          "display": "なし"
+        },
+        "reviewedReason": "累積発生を確定できず保留していた旧判断"
+      },
+      "automaticSource": {
+        "sourcePath": "archive/staging/sf6-frame-data-quality/evidence/cammy.cargo.json",
+        "sourceIndex": 22,
+        "sourceInput": "236P~No Input",
+        "startup": "50"
       }
     },
     {

@@ -7,7 +7,7 @@ it("labels absent startup explicitly in shared results", () => {
   const game = startGame(production, "startup");
   const m = production.characters
     .flatMap((c) => c.moves)
-    .find((m) => m.id === "cammy__special_236_P_none__strength_L")!;
+    .find((m) => m.id === "chunli__special_214_P_none__strength_L")!;
   game.history = [
     {
       input: m.input,

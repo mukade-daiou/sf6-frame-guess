@@ -3,6 +3,36 @@ import { excludedInputReason } from "../../../scripts/source-scope";
 import { production } from "./datasets";
 import { resolveMove } from "./resolver";
 import { inputKey } from "./input";
+import { ask, answer, isCorrect, startGame } from "../../features/game/engine";
+it("uses the saved no-input Hooligan startup in both modes", () => {
+  const c = production.eligible.find((x) => x.id === "cammy")!;
+  for (const suffix of [
+    "none__strength_L",
+    "none__strength_M",
+    "none__strength_H",
+    "OD",
+  ]) {
+    const m = c.moves.find((x) => x.id === `cammy__special_236_P_${suffix}`)!;
+    expect(m.frames.startup).toMatchObject({
+      status: "confirmed",
+      numeric: 50,
+      display: "50",
+    });
+    for (const mode of ["normal", "startup"] as const) {
+      expect(resolveMove(c, m.input, mode)).toMatchObject({
+        status: "found",
+        frames: { startup: { numeric: 50 } },
+      });
+      const game = { ...startGame(production, mode, 1), target: c };
+      const result = ask(game, m.input);
+      expect(result.status).toBe("found");
+      expect(result.game.history[0].result).toMatchObject({
+        frames: { startup: { numeric: 50 } },
+      });
+      expect(isCorrect(answer(result.game, c.id))).toBe(true);
+    }
+  }
+});
 it("uses the no-input automatic Demon Low Slash startup from the parent start", () => {
   const c = production.eligible.find((c) => c.id === "akuma")!;
   const moves = c.moves.filter((m) => m.id.startsWith("akuma__special_236_K_"));

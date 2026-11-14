@@ -1,5 +1,7 @@
 # 公式フレームデータ再照合・検証状況
 
+現行datasetIdは`hooligan-no-input-startup-2026-11-14-r1`。フーリガン発生4欄を50Fへ変更後、保存公式の比較器で再計算し、1278技・5112欄、一致4459／不一致61／条件違い42／確認不能550は不変。対象パッチUNVERIFIED。以下のdatasetIdは過去の段階。
+
 最新datasetIdは`automatic-no-input-startup-2026-11-14-r1`。百鬼襲の発生5欄を53Fへ復元後、保存公式の比較器を現行データで再実行した。1278技・5112欄、一致4459／不一致61／条件違い42／確認不能550で件数不変。対象パッチUNVERIFIEDも維持。以下のdatasetIdは各段階の履歴。
 
 現行datasetIdは`nonattacking-parent-startup-2026-11-14-r1`。非攻撃の派生親技の発生48欄を「なし」に変更したが、いずれも保存公式の発生数値が空欄の確認不能欄で、採用1278・比較5112欄と各分類件数は不変。現行値と旧分類の対応は[台帳のparentStartupRule.currentComparison](../staging/official-reevaluation/remaining-screen.json)に記録する。以下のdatasetIdと判断は除外時点の履歴。

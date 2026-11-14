@@ -5,9 +5,9 @@ import { production } from "../lib/frame-data/datasets";
 import { startGame, ask, changeMode } from "../features/game/engine";
 import { Frames } from "../features/moves/MovesPage";
 it("renders parent startup absence in history and inventory in both modes", () => {
-  const c = production.eligible.find((c) => c.id === "cammy")!;
+  const c = production.eligible.find((c) => c.id === "chunli")!;
   const m = c.moves.find(
-    (m) => m.id === "cammy__special_236_P_none__strength_L",
+    (m) => m.id === "chunli__special_214_P_none__strength_L",
   )!;
   for (const mode of ["normal", "startup"] as const) {
     const markup = renderToStaticMarkup(

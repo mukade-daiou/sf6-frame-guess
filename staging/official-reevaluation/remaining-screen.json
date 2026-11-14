@@ -24166,7 +24166,33 @@
         "reason": "無入力自動攻撃の存在は公式row46/48で確認。保存Cargoに50の無入力行があるが、親開始起点・強度/軌道・距離/相手状態の対応を直接確定できない。表の50を外部値というだけで拒否せず候補として保持するが採用には至らない。20は受付、10は後続技単体であり累積値ではない。",
         "interpretation": "現行「なし」は自動攻撃が存在しないことを確定した意味ではなく、新規則上の保留値。",
         "needed": "同一パッチ・通常/OD弱中・強度別の親動作1Fから初回攻撃判定Fまでの直接対応、距離・相手姿勢・通過条件。新証拠がなければ現状維持し追加実測は依頼しない。",
-        "patch": "UNVERIFIED"
+        "patch": "UNVERIFIED",
+        "latestDecision": {
+          "judgment": "ユーザー承認により修正確定・50F反映",
+          "recordIds": [
+            "cammy__special_236_P_none__strength_L",
+            "cammy__special_236_P_none__strength_M",
+            "cammy__special_236_P_none__strength_H",
+            "cammy__special_236_P_OD"
+          ],
+          "sourceNormal": "archive/staging/sf6-frame-data-quality/evidence/cammy.cargo.json#/data/cargoquery/22/title",
+          "sourceOD": "archive/staging/sf6-frame-data-quality/evidence/cammy.cargo.json#/data/cargoquery/17/title",
+          "basis": "ユーザー判断でCargo無入力行のstartup50を親開始からの代表値として通常L/M/H・基本OD弱中へ採用。旧20は受付、公式10は後続技単体であり採用しない。旧保留は履歴。共通元は従来どおりなし。",
+          "total": "通常71・OD90のCargo記載あり。公式親の全体欄は空欄、強度/軌道・距離と代表条件、従来の終了F不定例外との対応は未確定。全体を数値化すればNormalの表示・回答が変わるため現行not_applicableを維持し、別途判断が必要。",
+          "patch": "UNVERIFIED",
+          "officialComparison": {
+            "datasetId": "hooligan-no-input-startup-2026-11-14-r1",
+            "records": 1278,
+            "fields": 5112,
+            "counts": {
+              "一致": 4459,
+              "不一致": 61,
+              "条件違い": 42,
+              "確認不能": 550
+            },
+            "basis": "保存比較器を現行データに対して再実行。変更4欄は公式親発生欄が空欄で確認不能を維持。過去のreleaseAuditは旧時点の履歴。"
+          }
+        }
       }
     }
   },

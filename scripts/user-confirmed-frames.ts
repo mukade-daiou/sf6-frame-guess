@@ -34,11 +34,18 @@ export function applyUserConfirmedFrames(character: Character): Character {
     const row = JSON.parse(readFileSync(d.sourcePath, "utf8")).data.cargoquery[
       d.sourceIndex
     ]?.title;
+    const automatic = d.automaticSource
+      ? JSON.parse(readFileSync(d.automaticSource.sourcePath, "utf8")).data
+          .cargoquery[d.automaticSource.sourceIndex]?.title
+      : null;
     if (
       !move ||
       !isDeepStrictEqual(move.frames.startup, d.before) ||
       row?.input !== d.sourceInput ||
-      row.notes !== d.sourceNotes
+      row.notes !== d.sourceNotes ||
+      (d.automaticSource &&
+        (automatic?.input !== d.automaticSource.sourceInput ||
+          automatic.startup !== d.automaticSource.startup))
     )
       throw new Error(`Parent startup baseline mismatch: ${d.moveId}`);
     move.frames.startup = d.value;
