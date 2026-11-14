@@ -171,7 +171,13 @@ export default function App() {
       ) : (
         <>
           <section
-            className={game.phase === "result" ? "result-screen" : "panel"}
+            className={
+              game.phase === "result"
+                ? "result-screen"
+                : game.phase === "question"
+                  ? "play-screen"
+                  : "panel"
+            }
           >
             <div className="game-heading">
               <h2>
