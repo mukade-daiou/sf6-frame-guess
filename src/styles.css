@@ -1232,6 +1232,7 @@ summary {
 }
 .moves-controls input,
 .moves-controls select {
+  margin-top: 0;
   min-height: 44px;
   width: 100%;
   min-width: 0;
@@ -1268,6 +1269,12 @@ summary {
 }
 .moves-table thead {
   background: #efede8;
+}
+.moves-table thead th {
+  white-space: nowrap;
+}
+.moves-table thead th:nth-child(n + 3):nth-child(-n + 6) {
+  text-align: right;
 }
 .moves-table th:first-child {
   min-width: 150px;
