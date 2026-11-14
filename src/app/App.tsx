@@ -132,7 +132,9 @@ export default function App() {
         </section>
       ) : (
         <>
-          <section className="panel">
+          <section
+            className={game.phase === "result" ? "result-screen" : "panel"}
+          >
             <div className="game-heading">
               <h2>
                 {game.phase === "question"
@@ -141,6 +143,14 @@ export default function App() {
                     ? "最終回答"
                     : "結果"}
               </h2>
+              {game.phase === "result" && (
+                <p className="result-session">
+                  <span>{game.mode === "normal" ? "Normal" : "Hard"}</span>
+                  <span>
+                    質問 <strong>{game.history.length}</strong> / {game.limit}回
+                  </span>
+                </p>
+              )}
               {game.phase === "question" && (
                 <div>
                   <div
@@ -241,27 +251,34 @@ export default function App() {
             )}
             {game.phase === "result" && (
               <>
-                <p className="verdict">
+                <p
+                  className={`verdict result-verdict${isCorrect(game) ? " is-correct" : ""}`}
+                >
                   {game.selectedId === null
                     ? "ギブアップ"
                     : isCorrect(game)
                       ? "正解！"
                       : "不正解"}
                 </p>
-                <dl className="result">
-                  <dt>正解キャラクター</dt>
-                  <dd>{game.target.nameJa}</dd>
-                  <dt>
-                    {game.selectedId === null ? "回答" : "選択したキャラクター"}
-                  </dt>
-                  <dd>
-                    {game.selectedId === null
-                      ? "ギブアップ"
-                      : game.candidates.find((c) => c.id === game.selectedId)
-                          ?.nameJa}
-                  </dd>
+                <dl className="result-identities">
+                  <div className="result-answer">
+                    <dt>正解キャラクター</dt>
+                    <dd>{game.target.nameJa}</dd>
+                  </div>
+                  {!isCorrect(game) && (
+                    <div className="result-selection">
+                      <dt>あなたの回答</dt>
+                      <dd>
+                        {game.selectedId === null
+                          ? "ギブアップ"
+                          : game.candidates.find(
+                              (c) => c.id === game.selectedId,
+                            )?.nameJa}
+                      </dd>
+                    </div>
+                  )}
                 </dl>
-                <div className="choices">
+                <div className="result-actions">
                   <button
                     onClick={() => {
                       setGame(startGame(dataset, game.mode, limit));
@@ -272,6 +289,7 @@ export default function App() {
                     再プレイ
                   </button>
                   <button
+                    className="secondary-button"
                     aria-label="Xで結果をシェア"
                     onClick={() =>
                       window.open(
