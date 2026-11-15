@@ -90,7 +90,11 @@ mainへのpushで自動デプロイしないよう、既存workflowの公開を�
 
 同じreview/applyコマンドでmove_addedとcharacter_addedの雛形も生成する。雛形はapproved: false。新技はkind: add_moveとし、proposal.rowsの当該sourceRowに対応するmovesから承認するものだけをmoves配列へコピーする。新キャラはkind: add_characterとし、原典全行の分類を含むproposalを確認して承認する。いずれもreasonと新しいdatasetIdが必要となる。生成されたID・入力・フレーム値・分類を任意に書き換えた候補は拒否する。
 
+新キャラではnames.nameJa（正式な日本語名）とnames.nameEn（正式な英語名）も明示する。雛形の空欄や内部IDを名称として適用することはできない。proposalの名称は未承認の仮表示であり、編集するのはnamesだけとする。承認した名称をcharactersの採用判断とreviewedUpdatesの承認記録に保存し、再生成時に候補JSON・承認記録との一致を検査する。
+
 通常状態の入力が原典から確定する行だけを採用候補とする。地上通常技は立ち・しゃがみの弱中強P/K、必殺技は既存のコマンド解釈と収録対象入力を使う。強度共通の入力と通常SAはL/M/Hへ展開し、ODは弱＋中の同種ボタンを確認する。派生・ホールド等は対象外、条件や入力が確定しない行は保留する。フレーム表記を安全に変換できない場合はunknownとして原典を保持する。
+
+注記のうち「連打キャンセル対応」「強制立ち効果」だけの行は保留理由にしない。条件に関わる注記・未確認の注記や、それらが通常注記と混在する行は保留を維持する。注記の原文は分類にかかわらずすべて保持する。
 
 新キャラの候補はstaging/adoption-inputs/official、公式原典はreviewed-updatesのハッシュ名ファイルに保存する。adoption-decisions.charactersにofficialSourceを持つ項目を追加し、build-snapshotで毎回原典との一致とcoverageを検査する。この経路はraw/Cargoや旧SA inventoryを参照しない。公式SAの根拠にはsaEvidence.officialRefを使い、架空のraw/Cargo参照を作らない。
 

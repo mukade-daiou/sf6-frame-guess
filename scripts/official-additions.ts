@@ -11,12 +11,30 @@ import { excludedInputReason } from "./source-scope";
 // @ts-ignore shared official normalization
 import { normalize } from "./lib/source-scan.mjs";
 
+export function approvedCharacterNames(
+  names: any,
+  id: string,
+): { nameJa: string; nameEn: string } {
+  if (
+    !names ||
+    Object.keys(names).sort().join(",") !== "nameEn,nameJa" ||
+    [names.nameJa, names.nameEn].some(
+      (n) => typeof n !== "string" || !n.trim() || n !== n.trim() || n === id,
+    )
+  )
+    throw new Error(
+      "Explicit approved Japanese and English character names required",
+    );
+  return { nameJa: names.nameJa, nameEn: names.nameEn };
+}
+
 // Proposals only: no raw/Cargo references are manufactured for official rows.
 export function officialCandidate(
   source: any,
   id: string,
   version: string,
   retrievedAt: string,
+  names?: { nameJa: string; nameEn: string },
 ) {
   const normalized = normalize(source, id);
   const url = new URL(source.url);
@@ -116,7 +134,15 @@ export function officialCandidate(
         }
       }
     const uncertain =
-      !!row.notes ||
+      // Only known non-frame annotations are harmless; mixed or unknown notes
+      // still require review. Preserve all source text verbatim below.
+      row.notes
+        .split(/\r?\n/)
+        .some(
+          (line: string) =>
+            line.trim() &&
+            !["連打キャンセル対応", "強制立ち効果"].includes(line.trim()),
+        ) ||
       /Lv|レベル|ストック|電刃|飲酒|設置|[（(].*(?:状態|限定)/.test(
         row.name + row.commandText,
       ) ||
@@ -278,8 +304,9 @@ export function officialCandidate(
   });
   const character = characterSchema.parse({
     id,
-    nameJa: id,
-    nameEn: id,
+    ...(names
+      ? approvedCharacterNames(names, id)
+      : { nameJa: "名称未承認", nameEn: "Name pending approval" }),
     gameVersion: version,
     source: evidence,
     adoption: {
@@ -305,6 +332,7 @@ export function officialCandidate(
 export function loadOfficialCharacter(
   decision: any,
   version: string,
+  batches: any[],
 ): Character {
   const bytes = readFileSync(decision.officialSource);
   if (digest(bytes) !== decision.sourceHash)
@@ -315,8 +343,15 @@ export function loadOfficialCharacter(
     decision.id,
     version,
     decision.retrievedAt,
+    approvedCharacterNames(decision.names, decision.id),
   ).character;
+  const approvals = batches
+    .flatMap((b) => b.decisions)
+    .filter((d) => d.kind === "add_character" && d.characterId === decision.id);
   if (
+    approvals.length !== 1 ||
+    !isDeepStrictEqual(approvals[0].names, decision.names) ||
+    !isDeepStrictEqual(approvals[0].character, generated) ||
     !isDeepStrictEqual(stored, generated) ||
     decision.sourceInventoryComplete !==
       (generated.adoption?.status === "accepted")

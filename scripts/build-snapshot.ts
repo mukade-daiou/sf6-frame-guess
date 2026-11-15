@@ -42,7 +42,11 @@ const metadata = {
 const files: Record<string, Character> = {};
 for (const d of decisions.characters) {
   if (d.officialSource) {
-    files[d.id] = loadOfficialCharacter(d, decisions.gameVersion);
+    files[d.id] = loadOfficialCharacter(
+      d,
+      decisions.gameVersion,
+      decisions.reviewedUpdates ?? [],
+    );
     continue;
   }
   const c = characterSchema.parse(await read(d.candidatePath));

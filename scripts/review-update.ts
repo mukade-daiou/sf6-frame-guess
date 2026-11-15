@@ -16,7 +16,11 @@ import { isDeepStrictEqual } from "node:util";
 import { pathToFileURL } from "node:url";
 import { characterSchema } from "../src/lib/frame-data/schema";
 import { digest } from "./reviewed-updates";
-import { officialCandidate, loadOfficialCharacter } from "./official-additions";
+import {
+  officialCandidate,
+  loadOfficialCharacter,
+  approvedCharacterNames,
+} from "./official-additions";
 import { inputKey } from "../src/lib/frame-data/input";
 // @ts-ignore existing source normalizer
 import { normalize, compareSources, classify } from "./lib/source-scan.mjs";
@@ -120,6 +124,9 @@ export function template(run: string) {
                 ? {
                     kind:
                       e.kind === "move_added" ? "add_move" : "add_character",
+                    ...(e.kind === "character_added"
+                      ? { names: { nameJa: "", nameEn: "" } }
+                      : {}),
                     proposal: officialCandidate(
                       read(join(run, "raw", `after-${e.characterId}.raw`)),
                       e.characterId,
@@ -154,7 +161,11 @@ export function plan(run: string, approval: any, root = process.cwd()) {
       officialSource: join(root, d.officialSource),
       candidatePath: join(root, d.candidatePath),
     };
-    loadOfficialCharacter(cwdSource, policy.gameVersion);
+    loadOfficialCharacter(
+      cwdSource,
+      policy.gameVersion,
+      policy.reviewedUpdates ?? [],
+    );
   }
   const metadata = read(join(root, "data/metadata.json"));
   if (
@@ -249,6 +260,11 @@ export function plan(run: string, approval: any, root = process.cwd()) {
       const sourcePath = `staging/adoption-inputs/reviewed-updates/${input.hash}.json`;
       evidence.set(sourcePath, bytes);
       if (d.kind === "add_character") {
+        const names = approvedCharacterNames(d.names, d.characterId);
+        const namedCharacter = characterSchema.parse({
+          ...generated.character,
+          ...names,
+        });
         if (
           production.some((c) => c.id === d.characterId) ||
           decisions.some((x) => x.characterId === d.characterId) ||
@@ -256,17 +272,18 @@ export function plan(run: string, approval: any, root = process.cwd()) {
         )
           throw new Error("Invalid/duplicate character addition");
         const candidatePath = `staging/adoption-inputs/official/${d.characterId}.json`;
-        evidence.set(candidatePath, Buffer.from(json(generated.character)));
+        evidence.set(candidatePath, Buffer.from(json(namedCharacter)));
         policy.characters.push({
           id: d.characterId,
           candidatePath,
           officialSource: sourcePath,
           sourceHash: input.hash,
           retrievedAt: input.acquiredAt,
+          names,
           sourceInventoryComplete:
             generated.character.adoption?.status === "accepted",
         });
-        decisions.push({ ...d, character: generated.character, sourcePath });
+        decisions.push({ ...d, names, character: namedCharacter, sourcePath });
       } else {
         const c = production.find((c) => c.id === d.characterId);
         const row = generated.rows.find((r: any) =>

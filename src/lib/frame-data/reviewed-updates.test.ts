@@ -13,7 +13,10 @@ import { join, dirname } from "node:path";
 import { tmpdir } from "node:os";
 import { execFileSync } from "node:child_process";
 import { plan, execute, template } from "../../../scripts/review-update";
-import { officialCandidate } from "../../../scripts/official-additions";
+import {
+  officialCandidate,
+  loadOfficialCharacter,
+} from "../../../scripts/official-additions";
 import { validateDataset } from "./loader";
 import { startGame, ask } from "../../features/game/engine";
 // @ts-ignore shared historical projection
@@ -25,6 +28,59 @@ it("reviews, rejects stale/conflicting approvals and regenerates only approved f
   const root = process.cwd(),
     tmp = mkdtempSync(join(tmpdir(), "sf6-review-test-"));
   try {
+    for (const id of ["ryu", "ingrid", "alex"]) {
+      const source = read(`staging/official-verification/sources/${id}.json`);
+      const proposal = officialCandidate(
+        source,
+        id,
+        "UNVERIFIED",
+        new Date().toISOString(),
+      );
+      const ordinary = proposal.rows.filter(
+        (r: any) =>
+          r.sourceRow.section === "通常技" &&
+          /^(立ち|しゃがみ)/.test(r.sourceRow.name) &&
+          r.sourceRow.notes &&
+          r.sourceRow.notes
+            .split(/\r?\n/)
+            .every((line: string) =>
+              ["連打キャンセル対応", "強制立ち効果"].includes(line.trim()),
+            ),
+      );
+      expect(ordinary.length).toBeGreaterThan(0);
+      for (const r of ordinary) {
+        expect(r.classification).toBe("accepted");
+        expect(
+          r.moves.every((m: any) => m.notes.includes(r.sourceRow.notes)),
+        ).toBe(true);
+      }
+      for (const r of proposal.rows.filter(
+        (r: any) =>
+          r.sourceRow.section === "通常技" &&
+          /^(立ち|しゃがみ)/.test(r.sourceRow.name) &&
+          /ホールド|ヒット時|空振り時|パニッシュ/.test(r.sourceRow.notes),
+      ))
+        expect(["held", "excluded"]).toContain(r.classification);
+    }
+    for (const note of [
+      "連打キャンセル対応\nホールドで性能変化",
+      "強化状態で発生変化",
+      "距離によって変化",
+      "派生可能",
+      "接触時のみ変化",
+      "未確認の注記",
+    ]) {
+      const source = read("tests/fixtures/source-scan/new-character.json");
+      source.rows[0].notes = note;
+      expect(
+        officialCandidate(
+          source,
+          "fixture_new",
+          "UNVERIFIED",
+          new Date().toISOString(),
+        ).rows[0].classification,
+      ).toBe("held");
+    }
     const production = readdirSync("data/characters")
       .filter((f) => f.endsWith(".json"))
       .sort()
@@ -372,6 +428,11 @@ it("reviews, rejects stale/conflicting approvals and regenerates only approved f
     for (const d of additionApproval.decisions) {
       d.approved = true;
       d.reason = "Saved fictional fixture reviewed";
+      if (d.kind === "add_character")
+        d.names = {
+          nameJa: "追加検証キャラクター",
+          nameEn: "Addition Test Character",
+        };
       if (d.kind === "add_move")
         d.moves = d.proposal.rows.find(
           (r: any) => r.sourceRow.name === addedRow.name,
@@ -397,6 +458,12 @@ it("reviews, rejects stale/conflicting approvals and regenerates only approved f
       (a: any) =>
         (a.decisions.find((d: any) => d.kind === "add_move").moves[0].id =
           "duplicate"),
+      (a: any) =>
+        (a.decisions.find((d: any) => d.kind === "add_character").names.nameJa =
+          ""),
+      (a: any) =>
+        (a.decisions.find((d: any) => d.kind === "add_character").names.nameEn =
+          "fixture_new"),
     ]) {
       const bad = structuredClone(additionApproval);
       mutate(bad);
@@ -525,6 +592,36 @@ it("reviews, rejects stale/conflicting approvals and regenerates only approved f
     expect(dataset.errors).toEqual([]);
     expect(dataset.characters).toHaveLength(freshProduction.length + 1);
     expect(dataset.eligible.some((c) => c.id === "fixture_new")).toBe(true);
+    expect(
+      dataset.characters.find((c) => c.id === "fixture_new"),
+    ).toMatchObject({
+      nameJa: "追加検証キャラクター",
+      nameEn: "Addition Test Character",
+    });
+    const namedPolicy = read(join(isolated, "data/adoption-decisions.json"));
+    const recorded = namedPolicy.characters.find(
+      (d: any) => d.id === "fixture_new",
+    );
+    const absolute = {
+      ...recorded,
+      officialSource: join(isolated, recorded.officialSource),
+      candidatePath: join(isolated, recorded.candidatePath),
+    };
+    expect(
+      loadOfficialCharacter(
+        absolute,
+        namedPolicy.gameVersion,
+        namedPolicy.reviewedUpdates,
+      ).nameEn,
+    ).toBe("Addition Test Character");
+    const altered = structuredClone(namedPolicy.reviewedUpdates);
+    altered
+      .flatMap((b: any) => b.decisions)
+      .find((d: any) => d.kind === "add_character").names.nameJa =
+      "改変された名称";
+    expect(() =>
+      loadOfficialCharacter(absolute, namedPolicy.gameVersion, altered),
+    ).toThrow(/candidate\/coverage mismatch/);
     const index = dataset.eligible.findIndex((c) => c.id === "fixture_new"),
       game = startGame(
         dataset,
