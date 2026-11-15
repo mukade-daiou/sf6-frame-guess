@@ -1,6 +1,6 @@
 // Every top-level Node test must belong to exactly one group.
 export const suites = {
-  unit: ["snapshot-diff"],
+  unit: ["snapshot-diff", "source-scan"],
   current: ["current-snapshot", "move-names"],
   build: ["public-build"],
   history: [

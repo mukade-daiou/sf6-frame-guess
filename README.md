@@ -42,7 +42,7 @@ npm run preview
 [ゲーム仕様](docs/GAME_SPEC.md)、[データ仕様](docs/DATA_SPEC.md)、[出典方針](docs/DATA_SOURCES.md)を参照してください。
 
 GitHub PagesではSettings → PagesのSourceをGitHub Actionsに設定します。
-Workflowはmainへのpush・PR・手動実行で検証とビルドを行います。mainへの通常pushが成功するとGitHub Pagesへ自動公開します。手動実行の公開は `deploy: true` を明示した場合のみです（既定false）。
+Workflowはmainへのpush・PR・手動実行で検証とビルドを行います。公開は手動実行で `deploy: true` を明示した場合のみです（既定false）。通常のpushでは公開しません。
 公開前にリポジトリのPages環境の保護設定を確認してください。
 現在の開発・追加手順は[DATA_WORKFLOW.md](docs/DATA_WORKFLOW.md)を参照してください。古い引き継ぎ資料は過去記録です。
 
@@ -58,6 +58,8 @@ VITE_BASE_PATH=/your-repository/ npm run preview
 主要画面の操作・表示確認については [検証記録](archive/docs/VERIFICATION.md) を参照してください。
 
 ## 構成とデータ管理
+
+公式原典の変更候補を確認するCLIは[更新チェック手順](docs/DATA_UPDATE_SCAN.md)を参照してください。本番データへの適用は行いません。
 
 日常の確認は`npm run test:daily`、データ更新時は`npm run test:update`、保存資料と履歴の再現は`npm run test:history`を使います。`test:data`は従来の全Node検証と新しい差分検証を実行し、CIの検証範囲も維持します。共通差分検証の使い方と整理前後の測定結果は[テスト基盤整理の報告](docs/TEST_FOUNDATION_REPORT.md)を参照してください。
 
