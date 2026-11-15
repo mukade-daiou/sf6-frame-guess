@@ -1,3 +1,4 @@
+import { readHistoricalJson } from "./helpers/read-history.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync, readdirSync } from "node:fs";
@@ -5,7 +6,7 @@ import { execFileSync } from "node:child_process";
 import { restoreCompoundStartup } from "../scripts/compound-startup-projection.mjs";
 import { applyRiskCorrectionsToBaseline } from "./helpers/apply-user-confirmed.mjs";
 
-const read = (p) => JSON.parse(readFileSync(p, "utf8"));
+const read = readHistoricalJson;
 test("four approved fields are the only changes from the published baseline", () => {
   const policy = read("data/adoption-decisions.json");
   const ds = [...policy.whiffTotalCorrections.additionalDecisions, ...policy.userConfirmedFrames.decisions];

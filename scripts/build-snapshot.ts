@@ -12,6 +12,7 @@ import { applyCompoundStartup } from "./compound-startup";
 import { applyUserConfirmedFrames } from "./user-confirmed-frames";
 import { applyKdHkdCorrections } from "./kd-hkd-corrections";
 import { applyWhiffTotalCorrections } from "./whiff-total-corrections";
+import { applyReviewedUpdates } from "./reviewed-updates";
 const read = async (p: string) => JSON.parse(await readFile(p, "utf8"));
 const save = async (p: string, v: unknown) =>
   writeFile(p, JSON.stringify(v, null, 2) + "\n");
@@ -133,6 +134,8 @@ for (const d of decisions.characters) {
     move.adoption = special.value;
   }
 }
+for (const id of Object.keys(files))
+  files[id] = applyReviewedUpdates(files[id], decisions.reviewedUpdates ?? []);
 const dataset = validateDataset(metadata, files);
 if (
   dataset.errors.length ||

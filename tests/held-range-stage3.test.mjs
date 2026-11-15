@@ -1,10 +1,11 @@
+import { readHistoricalJson } from "./helpers/read-history.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { assertRegenerationPreserves } from "./helpers/regeneration.mjs";
 import { rollbackClassification } from "../scripts/contact-timing-policy.mjs";
 import { restoreCompoundStartup } from "./research-projection.mjs";
-const read=p=>JSON.parse(readFileSync(p,"utf8"));
+const read = readHistoricalJson;
 test("stage3 checks all C108 and D47 without changing production or existing decisions",()=>{
  const r=read("staging/held-range-review.json"), p=read("data/adoption-decisions.json"), l=read("staging/distance-range-candidates.json"), s=r.stage3;
  assert.equal(s.items.length,155);

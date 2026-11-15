@@ -1,6 +1,38 @@
 import { readFileSync } from "node:fs";
 import { isDeepStrictEqual } from "node:util";
 
+// Historical audits project reviewed patches back to their reviewed before
+// values. Current-snapshot verification independently requires the latest after.
+export function restoreReviewedUpdates(character, policy) {
+  const baseline = new Map();
+  for (const batch of policy.reviewedUpdates ?? [])
+    for (const d of batch.decisions) {
+      const key = `${d.characterId}/${d.moveId}/${d.field}`;
+      if (!baseline.has(key)) baseline.set(key, d.before);
+    }
+  for (const batch of [...(policy.reviewedUpdates ?? [])].reverse())
+    for (const d of [...batch.decisions].reverse()) {
+      if (d.characterId !== character.id) continue;
+      const m = character.moves.find((m) => m.id === d.moveId);
+      if (
+        m &&
+        isDeepStrictEqual(
+          m.frames[d.field],
+          baseline.get(`${d.characterId}/${d.moveId}/${d.field}`),
+        )
+      )
+        continue;
+      if (
+        !m ||
+        (!isDeepStrictEqual(m.frames[d.field], d.after) &&
+          !isDeepStrictEqual(m.frames[d.field], d.before))
+      )
+        throw new Error(`Unauthorized reviewed update: ${d.moveId}/${d.field}`);
+      m.frames[d.field] = structuredClone(d.before);
+    }
+  return character;
+}
+
 // Historical audits must validate the authorized new value before restoring the old one.
 export function restoreCompoundStartup(character) {
   const policy = JSON.parse(
@@ -12,7 +44,7 @@ export function restoreCompoundStartup(character) {
     ...(compound?.saDecisions || []),
     ...(compound?.indicatorDecisions || []),
   ];
-  const result = structuredClone(character);
+  const result = restoreReviewedUpdates(structuredClone(character), policy);
   for (const d of (policy.parentStartupDecisions || []).filter(
     (x) => x.characterId === result.id,
   )) {

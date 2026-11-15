@@ -1,3 +1,4 @@
+import { readHistoricalJson } from "./helpers/read-history.mjs";
 import { assertSnapshotDiff } from "../scripts/lib/snapshot-diff.mjs";
 import { applyUserConfirmedToBaseline } from "./helpers/apply-user-confirmed.mjs";
 import test from "node:test";
@@ -5,7 +6,7 @@ import assert from "node:assert/strict";
 import { readFileSync, readdirSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import { restoreCompoundStartup } from "../scripts/compound-startup-projection.mjs";
-const read = (p) => JSON.parse(readFileSync(p,"utf8"));
+const read = readHistoricalJson;
 const policy = read("data/adoption-decisions.json");
 test("15 source corrections change exactly 21 hits across all 1298 records",()=>{
  const ds=policy.kdHkdCorrections.additionalDecisions;

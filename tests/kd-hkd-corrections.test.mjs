@@ -1,3 +1,4 @@
+import { readHistoricalJson } from "./helpers/read-history.mjs";
 import { assertSnapshotDiff } from "../scripts/lib/snapshot-diff.mjs";
 import { applyUserConfirmedToBaseline } from "./helpers/apply-user-confirmed.mjs";
 import test from "node:test";
@@ -6,7 +7,7 @@ import { readFileSync, readdirSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import { restoreCompoundStartup } from "../scripts/compound-startup-projection.mjs";
 
-const read = (path) => JSON.parse(readFileSync(path, "utf8"));
+const read = readHistoricalJson;
 const ref = "61471d3f14ef5ca611f6503d1c15c670ad464bd0";
 const policy = read("data/adoption-decisions.json");
 test("66 KD/HKD corrections preserve all other records", () => {

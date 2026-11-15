@@ -1,3 +1,4 @@
+import { readHistoricalJson } from "./helpers/read-history.mjs";
 import { applyUserConfirmedToBaseline } from "./helpers/apply-user-confirmed.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
@@ -5,7 +6,7 @@ import { readFileSync, readdirSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import { restoreCompoundStartup } from "../scripts/compound-startup-projection.mjs";
 
-const read = (p) => JSON.parse(readFileSync(p, "utf8"));
+const read = readHistoricalJson;
 test("only two whiff totals change from the fixed published baseline", () => {
   const ds = read("data/adoption-decisions.json").whiffTotalCorrections.additionalDecisions;
   assert.deepEqual(ds.map((d) => [d.moveId, d.before.display, d.value.display]), [["arjun__special_236_P_H", "50", "53"], ["arjun__special_236_P_OD", "45", "48"]]);

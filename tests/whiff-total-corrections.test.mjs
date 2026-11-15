@@ -1,3 +1,4 @@
+import { readHistoricalJson } from "./helpers/read-history.mjs";
 import { assertSnapshotDiff } from "../scripts/lib/snapshot-diff.mjs";
 import { applyUserConfirmedToBaseline } from "./helpers/apply-user-confirmed.mjs";
 import test from "node:test";
@@ -6,7 +7,7 @@ import { readFileSync, readdirSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import { restoreCompoundStartup } from "../scripts/compound-startup-projection.mjs";
 
-const read = (p) => JSON.parse(readFileSync(p, "utf8"));
+const read = readHistoricalJson;
 const baseline = "e800bd7a124044ad5f6fd74ed013354bd064969f";
 const policy = read("data/adoption-decisions.json");
 test("approved totals match the reviewed ledger and 39 held totals remain unchanged", () => {

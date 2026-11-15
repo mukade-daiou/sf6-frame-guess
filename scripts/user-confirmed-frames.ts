@@ -1,6 +1,8 @@
 import { readFileSync } from "node:fs";
 import { isDeepStrictEqual } from "node:util";
 import { characterSchema, type Character } from "../src/lib/frame-data/schema";
+// @ts-ignore shared historical projection
+import { restoreReviewedUpdates } from "./compound-startup-projection.mjs";
 
 export function applyUserConfirmedFrames(character: Character): Character {
   const policy = JSON.parse(
@@ -57,7 +59,10 @@ export function restoreUserConfirmedFrames(character: Character): Character {
   const policy = JSON.parse(
     readFileSync("data/adoption-decisions.json", "utf8"),
   );
-  const result = structuredClone(character);
+  const result: Character = restoreReviewedUpdates(
+    structuredClone(character),
+    policy,
+  );
   for (const d of (policy.parentStartupDecisions ?? []).filter(
     (x: any) => x.characterId === result.id,
   )) {

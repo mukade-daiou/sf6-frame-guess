@@ -1,10 +1,11 @@
+import { readHistoricalJson } from "./helpers/read-history.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { assertRegenerationPreserves } from "./helpers/regeneration.mjs";
 import { rollbackClassification } from "../scripts/contact-timing-policy.mjs";
 import { restoreCompoundStartup } from "./research-projection.mjs";
-const read=p=>JSON.parse(readFileSync(p,"utf8"));
+const read = readHistoricalJson;
 test("all original 300 held fields have separate triage and evidenced resolutions",()=>{
  const r=read("staging/held-range-review.json"), l=read("staging/distance-range-candidates.json"), p=read("data/adoption-decisions.json");
  const restored = new Map();

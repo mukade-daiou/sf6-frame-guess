@@ -1,9 +1,10 @@
+import { readHistoricalJson } from "./helpers/read-history.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { restoreCompoundStartup } from "../scripts/compound-startup-projection.mjs";
 
-const read = (p) => JSON.parse(readFileSync(p, "utf8"));
+const read = readHistoricalJson;
 test("weak non-held Sun Flare uses the evidenced effect time", () => {
   const c = read("data/characters/ingrid.json");
   const m = c.moves.find((x) => x.id === "ingrid__coverage_6");

@@ -1,10 +1,11 @@
+import { readHistoricalJson } from "./helpers/read-history.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import { restoreCompoundStartup } from "../scripts/compound-startup-projection.mjs";
 
-const read = (path) => JSON.parse(readFileSync(path, "utf8"));
+const read = readHistoricalJson;
 const baselineRef = "4c2a26a276dff2ecddb13f2cc2c198190081e4a0";
 const policy = read("data/adoption-decisions.json");
 test("compound corrections preserve every other production field", () => {

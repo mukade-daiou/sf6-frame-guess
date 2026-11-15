@@ -1,3 +1,4 @@
+import { readHistoricalJson } from "./helpers/read-history.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync, readdirSync } from "node:fs";
@@ -5,7 +6,7 @@ import { execFileSync } from "node:child_process";
 import { applyRiskCorrectionsToBaseline } from "./helpers/apply-user-confirmed.mjs";
 import { restoreCompoundStartup } from "../scripts/compound-startup-projection.mjs";
 
-const read = (p) => JSON.parse(readFileSync(p, "utf8"));
+const read = readHistoricalJson;
 const base = "3a460ff687453b719a474afb9864746d30fa5117";
 test("Dark Ingrid exclusion preserves all records and changes only four adoptions", () => {
   const exclusions = read(

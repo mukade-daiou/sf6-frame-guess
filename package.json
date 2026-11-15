@@ -17,6 +17,8 @@
     "data:diff": "node scripts/check-snapshot-diff.mjs",
     "data:update:scan": "node scripts/update-data.mjs scan",
     "data:update:report": "node scripts/update-data.mjs report",
+    "data:update:review": "tsx scripts/review-update.ts review",
+    "data:update:apply": "tsx scripts/review-update.ts apply",
     "data:audit-coverage": "tsx scripts/audit-source-coverage.ts",
     "verify:browser": "node scripts/verify-gameplay.mjs",
     "validate:data": "tsx scripts/validate-data.ts",

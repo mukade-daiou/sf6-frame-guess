@@ -1,10 +1,11 @@
+import { readHistoricalJson } from "./helpers/read-history.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync, readdirSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { commands, total } from "../staging/official-verification/compare.mjs";
 import { restoreCompoundStartup } from "./research-projection.mjs";
-const read = (p) => JSON.parse(readFileSync(p, "utf8"));
+const read = readHistoricalJson;
 const dir = "staging/official-verification";
 test("Official comparison leaves all local production character data byte-identical", () => {
   const baseline = read(`${dir}/local-baseline.json`);

@@ -48,10 +48,38 @@ officialId、技名と入力、一意な技名、一意な入力の順に対応�
 
 ## 検証と次段階
 
+### 第3段階：承認した既存技の更新
+
+```sh
+# 雛形を表示（既定はdry-run）。--writeで新しい承認ファイルを保存する
+npm run data:update:review -- RUN_DIR approval.json
+npm run data:update:review -- RUN_DIR approval.json --write
+# 編集した承認内容を検証する
+npm run data:update:review -- RUN_DIR approval.json
+# 一時領域で生成・再照合する。本番は変更しない
+npm run data:update:apply -- RUN_DIR approval.json
+# 明示的な書き込み
+npm run data:update:apply -- RUN_DIR approval.json --write
+```
+
+承認ファイルのdatasetIdには新しい識別子を記入する。decisionsのeventはdiff.jsonの配列位置。必要な項目だけapprovedをtrueにし、moveId、field、現在のFrameValue全体をbefore、新しいFrameValue全体をafter、承認理由をreasonに記入する。フィールドを複数更新する場合は項目を分ける。sourceHashは変更しない。曖昧な対応は本番の既存moveIdを指定し、mappingReasonで対応の根拠を説明する。新キャラ・新技の登録、削除、inputや採用範囲の変更はできない。
+
+原典のハッシュ、正規化結果、採用判断と現行データのコンテキスト、beforeを再照合する。未承認項目は適用しない。既存の手動補正に同じ技IDが現れる場合は保守的に競合として拒否する。別フィールドだけの補正であっても、この段階では自動上書きしない。
+
+afterには既存のFrameValue形式を使う。全体Fは既存の空振り全体判定に一致するnumericとdisplayを要求する。原典の「全体N」の直接記載はprovenance: source、calculation: nullとする。計算による導出はprovenance: verified_calculation、既存計算のevidenceと一致するcalculationを要求する。導出できない全体Fは適用しない。未知値・適用外・条件付き値もschemaと原典表記を照合し、独自の推測変換はしない。
+
+承認結果はadoption-decisionsのreviewedUpdatesに保存し、原典をstaging/adoption-inputs/reviewed-updatesへハッシュ名で保持する。既存補正の後にこの判断を適用するため、build-snapshotで再生成できる。書き込み前に一時作業領域で既存生成器を2回実行し、承認したフィールド以外に差分がないことと再生成一致を確認する。検証失敗時は本番へ書き込まない。適用時には現行スナップショット保護用の承認差分も更新する。復旧はGitの差分を確認して行い、独自の永続バックアップは作らない。
+
+同じ承認を再実行した場合は、原典・適用済みデータ・採用判断の一致を確認してalreadyAppliedを返す。別の更新後に古い承認を再利用することはできない。履歴テストでは承認済み更新をbeforeへ投影し、当時の精査結果を維持する。現行データのテストはafterを検証する。
+
+今回の承認・適用検証は一時Fixtureでのみ実行し、実際の本番フレーム値は変更していない。突然のプロセス停止やOS障害に対する複数ファイルの原子的な保存は保証しない。検証失敗は保存前に検出し、通常の書き込み例外では元の内容へ戻す。手動編集や別の更新処理と同時に適用しない。
+
 第1段階のtest:update（dailyを含む）とtest:historyは確定前に成功した。第2段階では変更なし、フレーム・入力・技名・条件の変更、技・キャラ追加削除、並び替え、曖昧な対応、不明値・特殊表記、手動補正との競合、失敗・部分範囲、冪等性、出力隔離を保存Fixtureで検査する。外部通信は通常テストに含めない。
 
 第1段階はVitest165件、Node65件22.44秒、archive29件。第2段階のNode72件は23.05秒、追加Fixture検証は約0.1秒。既存テストは削除していない。本番と既存原典のGit差分も最終確認する。
 
 mainへのpushで自動デプロイしないよう、既存workflowの公開を明示的な手動実行に限定した。push時の検証・ビルドは継続する。対象外の未追跡ファイルは変更・コミットしない。
 
-第3段階では技対応の確定、版と根拠の確認、レビュー・承認ファイル、FrameValue変換と既存補正の優先順位、承認差分のみの適用、適用前再検証・ロールバックが必要となる。公式HTML抽出が必要なら、アクセス可能な実ページを根拠に別アダプターを追加する。
+第3段階の検証ではVitest166件、Node72件、archive29件が成功した。Node全体は作業前22.60秒、作業後22.56秒。Vitestは第2段階の記録1.10秒に対して10.20秒となり、一時領域での生成・書き込み・再生成・履歴検証を通す1件の統合テストが主な増加分となった。型検査、data:check、buildも成功した。既存テストは削除していない。
+
+既存補正と競合する更新の解決、新キャラ・新技の登録や削除は未対応。公式HTML抽出が必要なら、アクセス可能な実ページを根拠に別アダプターを追加する。

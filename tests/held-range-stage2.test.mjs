@@ -1,9 +1,10 @@
+import { readHistoricalJson } from "./helpers/read-history.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { assertRegenerationPreserves } from "./helpers/regeneration.mjs";
 import { rollbackClassification } from "../scripts/contact-timing-policy.mjs";
-const read=p=>JSON.parse(readFileSync(p,"utf8"));
+const read = readHistoricalJson;
 test("C134 stage2 preserves stage1 and uses the exact normal SA source row",()=>{
  const r=read("staging/held-range-review.json"), p=read("data/adoption-decisions.json"), l=read("staging/distance-range-candidates.json"), s=r.stage2;
  assert.equal(s.items.length,134);

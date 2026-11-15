@@ -1,8 +1,9 @@
+import { readHistoricalJson } from "./helpers/read-history.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { execFileSync } from "node:child_process";
-const read = (path) => JSON.parse(readFileSync(path, "utf8"));
+const read = readHistoricalJson;
 test("source inventory is checked independently from generic historical exclusions", () => {
   const repairs = JSON.parse(
     execFileSync(
