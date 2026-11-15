@@ -28,7 +28,7 @@ it("reviews, rejects stale/conflicting approvals and regenerates only approved f
   const root = process.cwd(),
     tmp = mkdtempSync(join(tmpdir(), "sf6-review-test-"));
   try {
-    for (const id of ["ryu", "ingrid", "alex"]) {
+    for (const id of ["ryu", "ingrid", "alex", "cviper"]) {
       const source = read(`staging/official-verification/sources/${id}.json`);
       const proposal = officialCandidate(
         source,
@@ -44,7 +44,11 @@ it("reviews, rejects stale/conflicting approvals and regenerates only approved f
           r.sourceRow.notes
             .split(/\r?\n/)
             .every((line: string) =>
-              ["連打キャンセル対応", "強制立ち効果"].includes(line.trim()),
+              [
+                "連打キャンセル対応",
+                "強制立ち効果",
+                "ハイジャンプキャンセル可能",
+              ].includes(line.trim()),
             ),
       );
       expect(ordinary.length).toBeGreaterThan(0);
@@ -133,6 +137,25 @@ it("reviews, rejects stale/conflicting approvals and regenerates only approved f
       ],
     };
     expect(plan(run.root, approval).decisions).toHaveLength(1);
+    const wrong = structuredClone(approval);
+    wrong.decisions[0].moveId = "ryu__normal_2_P_L";
+    wrong.decisions[0].mappingReason =
+      "Wrong grounded normal despite manual reason";
+    expect(() => plan(run.root, wrong)).toThrow(
+      /does not match official source/,
+    );
+    for (const file of readdirSync(
+      "staging/official-verification/sources",
+    ).filter((f) => f.endsWith(".json"))) {
+      const p = officialCandidate(
+        read(`staging/official-verification/sources/${file}`),
+        file.slice(0, -5),
+        "UNVERIFIED",
+        new Date().toISOString(),
+      );
+      expect(p.character.id).toBe(file.slice(0, -5));
+      expect(p.rows.length).toBeGreaterThan(0);
+    }
     const diffPath = join(run.root, "diff.json"),
       originalDiff = readFileSync(diffPath);
     for (const mutate of [

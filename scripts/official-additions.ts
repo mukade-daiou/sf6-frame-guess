@@ -38,9 +38,18 @@ export function officialCandidate(
 ) {
   const normalized = normalize(source, id);
   const url = new URL(source.url);
+  const officialSlug =
+    (
+      {
+        akuma: "gouki_akuma",
+        dee_jay: "deejay",
+        e_honda: "ehonda",
+        m_bison: "vega_mbison",
+      } as Record<string, string>
+    )[id] ?? id;
   if (
     url.hostname !== "www.streetfighter.com" ||
-    url.pathname !== `/6/ja-jp/character/${id}/frame`
+    url.pathname !== `/6/ja-jp/character/${officialSlug}/frame`
   )
     throw new Error("Official character identity mismatch");
   if (
@@ -141,7 +150,11 @@ export function officialCandidate(
         .some(
           (line: string) =>
             line.trim() &&
-            !["連打キャンセル対応", "強制立ち効果"].includes(line.trim()),
+            ![
+              "連打キャンセル対応",
+              "強制立ち効果",
+              "ハイジャンプキャンセル可能",
+            ].includes(line.trim()),
         ) ||
       /Lv|レベル|ストック|電刃|飲酒|設置|[（(].*(?:状態|限定)/.test(
         row.name + row.commandText,
@@ -192,7 +205,7 @@ export function officialCandidate(
         block: value("block"),
       },
       notes: [
-        row.notes || "Official ordinary-state row",
+        row.notes.trim() ? row.notes : "Official ordinary-state row",
         `officialSource: ${JSON.stringify(row.raw)}`,
       ],
       source: evidence,

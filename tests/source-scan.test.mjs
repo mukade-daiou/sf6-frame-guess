@@ -20,6 +20,22 @@ import {
 const fixture = JSON.parse(
   await readFile("tests/fixtures/source-scan/ryu.json", "utf8"),
 );
+test("saved official roster compares unchanged including duplicate names and commands", async () => {
+  for (const file of (
+    await readdir("staging/official-verification/sources")
+  ).filter((f) => f.endsWith(".json"))) {
+    const source = JSON.parse(
+      await readFile(`staging/official-verification/sources/${file}`, "utf8"),
+    );
+    const rows = normalize(source, file.slice(0, -5));
+    const diff = compareSources([rows], [structuredClone(rows)]);
+    assert.equal(diff.length, source.rows.length, file);
+    assert.ok(
+      diff.every((e) => e.kind === "unchanged"),
+      file,
+    );
+  }
+});
 const normalized = (s) => [normalize(s, "ryu")];
 const changes = (mutate) => {
   const x = structuredClone(fixture);

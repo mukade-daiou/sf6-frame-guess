@@ -103,3 +103,34 @@ mainへのpushで自動デプロイしないよう、既存workflowの公開を�
 保存Fixtureの新技1件・新キャラ1体について、承認、隔離領域への適用、再生成一致、再適用、出題可能性、不明値、既存データの不変性を確認する。同じ統合テストで追加後の履歴50件も実行する。履歴検証のロスターは当時のものに限定し、追加技は承認内容との一致を検証してから除く。現行スナップショットの保護検査は追加を含む全件を検証する。実際の本番登録は行っていない。
 
 既存補正との競合解決、削除、異なるゲームバージョンへの移行は未対応。読み取れない入力・条件は保留のまま扱う。公式HTML抽出が必要なら、アクセス可能な実ページを根拠に別アダプターを追加する。
+
+### 第5段階：保存済み実データでの運用検証（2026-11-15）
+
+2026-11-10取得の公式32キャラを一時ディレクトリへコピーし、全ファイルを列挙したcomplete: trueのinventoryを両側に置いてscan/reportを実行した。修正後は2,518行すべてunchangedで、追加・削除・変更は0件。再実行したdiff.jsonも一致した。比較対象の完全性は確認できたが、対象パッチは未確認のままである。保存原典と本番のgameVersionはUNVERIFIEDを維持し、manifestのgameVersion: nullも未確認を意味する。
+
+同じ一時コピーのリュウ「立ち弱P」のstartupだけを4から5へ変更し、scan → report → review雛形生成 → 承認内容検証 → applyのdry-runを実行した。承認対象はryu__normal_5_P_Lのstartupだけで、生成差分はdisplayとnumericの2要素のみだった。未承認、原典のバイト列改変、古いcontextHash、理由付きの誤った技対応はすべて拒否した。実際の本番データにapply --writeは実行していない。書き込み・再生成・再適用は従来の隔離Fixtureテストで確認した。
+
+再現して修正した問題は次のとおり。
+
+- 同一原典でもケンの「火砕蹴」が追加3件・削除3件になった。行番号を除いた全比較値が一致する行を多重集合として先に対応付け、同名・同入力だけを理由に追加削除しないようにした。
+- 豪鬼、ディージェイ、E.本田、ベガは内部IDと公式URL名が異なり、候補生成で失敗した。保存原典で確認した4つの対応だけを許可した。
+- ラシードの空白だけの注記がschema違反になった。表示用notesの空文字を避け、元の空白もsourceRowと原典に保持した。
+- 手動理由だけでリュウの立ち弱Pをしゃがみ弱Pへ誤対応できた。既存の公式候補照合にも一致することを必須にした。手動対応は照合候補の中から確定し、対応不能な技は根拠整備まで保留する。
+- C.ヴァイパーの「ハイジャンプキャンセル可能」は代表フレームに影響しない注記として、既知の通常注記へ追加した。その他の条件付き・未知の注記は緩和していない。
+
+32キャラの候補生成は全件成功し、原典行の分類はaccepted 346・held 945・excluded 1,227、生成技レコードは1,557件となった。入力・強度・OD・SAは既存の公式コマンド解釈とschemaで検査する。複数候補や条件付き注記が残るため、全32キャラがpartialで出題対象外となった。これは既存の精査済み本番データとは別の、公式だけから作った追加候補の判定である。新キャラの実登録には代表条件と入力の個別確認が必要で、保存資料だけで自動的にcompleteへ昇格させるものではない。
+
+回帰検証には32キャラの同一比較と候補生成、誤対応拒否を追加した。Vitest166件、Node73件、archive29件、型検査、data:check、buildが成功した。本番データ・採用判断・保存原典は変更していない。検証時の入力コピー、manifest、原典ハッシュ、report、承認JSON、拒否ログは一時領域で生成したもので、再取得した新パッチの原典ではない。
+
+#### 次回更新時の最小手順
+
+1. 前回と今回の原典を別ディレクトリに保存し、それぞれinventory.jsonを作る。全キャラを列挙する場合は以下の例を使い、実際に揃ったことを確認してからcompleteをtrueにする。比較の完全性と対象パッチの確認は別に記録する。
+2. `npm run data:update:scan -- --baseline BEFORE --incoming AFTER`を実行し、表示されたRUN_DIRに対して`npm run data:update:report -- --run RUN_DIR`を実行する。source_errorがあれば止める。変更なしも入力ハッシュ付きの結果として保存する。
+3. `npm run data:update:review -- RUN_DIR approval.json --write`で雛形を作る。既存技の更新では、原典との対応・before・after・sourceHash・reasonと新datasetIdを確認し、必要なフィールドだけapproved: trueにする。新キャラは正式名称の承認とcoverageの確認も必要。
+4. `npm run data:update:review -- RUN_DIR approval.json`、`npm run data:update:apply -- RUN_DIR approval.json`で検証・dry-runを行い、承認外の差分がないことを確認する。競合・古い状態・曖昧な対応は理由だけで迂回しない。
+5. 実適用が別途承認されたときだけapplyに`--write`を付ける。適用後は`npm run test:update`と`npm run test:history`、Git差分を確認する。本番公開は別の操作であり、更新チェックでは行わない。
+
+```sh
+# DIRはコピー済みの公式JSONだけを置いた入力ディレクトリ
+node --input-type=module -e 'import {readdirSync,writeFileSync} from "node:fs";const dir=process.argv[1];const characters=readdirSync(dir).filter(f=>f.endsWith(".json")&&f!=="inventory.json").sort().map(file=>({id:file.slice(0,-5),file}));writeFileSync(dir+"/inventory.json",JSON.stringify({complete:true,characters},null,2)+"\n");' DIR
+```

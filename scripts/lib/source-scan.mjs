@@ -1,6 +1,7 @@
 import { createHash, randomUUID } from "node:crypto";
 import { readFile, readdir, mkdir, writeFile } from "node:fs/promises";
 import { resolve, join } from "node:path";
+import { isDeepStrictEqual } from "node:util";
 import {
   commands,
   total,
@@ -92,6 +93,18 @@ export function compareSources(before, after) {
     const old = new Set(a.moves),
       next = new Set(b.moves),
       pairs = [];
+    // Identical semantic rows can be paired as a multiset even when names and
+    // commands repeat. Leave differing rows for the existing matching rules.
+    for (const x of [...old]) {
+      const y = [...next].find((y) =>
+        isDeepStrictEqual(comparable(x), comparable(y)),
+      );
+      if (y) {
+        pairs.push([x, y]);
+        old.delete(x);
+        next.delete(y);
+      }
+    }
     for (const key of [
       (m) => m.officialId && `${m.section}/${m.officialId}`,
       (m) => `${m.name}/${input(m)}`,

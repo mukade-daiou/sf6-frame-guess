@@ -24,6 +24,8 @@ import {
 import { inputKey } from "../src/lib/frame-data/input";
 // @ts-ignore existing source normalizer
 import { normalize, compareSources, classify } from "./lib/source-scan.mjs";
+// @ts-ignore existing official move mapping
+import { candidates } from "../staging/official-verification/compare.mjs";
 // @ts-ignore existing baseline loader
 import { readHistoricalSnapshot } from "../tests/helpers/snapshots.mjs";
 // @ts-ignore shared Node JSON diff implementation
@@ -364,6 +366,8 @@ export function plan(run: string, approval: any, root = process.cwd()) {
       !isDeepStrictEqual(m.frames[d.field], d.before)
     )
       throw new Error("Current before mismatch");
+    if (!candidates(m, c, { rows: [e.after.raw] }).length)
+      throw new Error("Approved move does not match official source");
     if (
       protectedFields.some(
         (p) =>
