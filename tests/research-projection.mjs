@@ -40,7 +40,7 @@ export function restoreResearchFrames(character) {
 }
 
 export function restoreDemonRaid(character) {
-  const result = restoreDistanceRanges(structuredClone(character)),
+  const result = restoreDistanceRanges(character),
     records =
       JSON.parse(readFileSync("data/adoption-decisions.json", "utf8"))
         .demonRaidNoInput?.records || [];

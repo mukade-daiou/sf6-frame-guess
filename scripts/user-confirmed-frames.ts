@@ -59,10 +59,7 @@ export function restoreUserConfirmedFrames(character: Character): Character {
   const policy = JSON.parse(
     readFileSync("data/adoption-decisions.json", "utf8"),
   );
-  const result: Character = restoreReviewedUpdates(
-    structuredClone(character),
-    policy,
-  );
+  const result: Character = restoreReviewedUpdates(character, policy);
   for (const d of (policy.parentStartupDecisions ?? []).filter(
     (x: any) => x.characterId === result.id,
   )) {

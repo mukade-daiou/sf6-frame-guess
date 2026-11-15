@@ -1,36 +1,50 @@
 import { readFileSync } from "node:fs";
 import { isDeepStrictEqual } from "node:util";
 
-// Historical audits project reviewed patches back to their reviewed before
-// values. Current-snapshot verification independently requires the latest after.
+// Identity is kept outside JSON: an old value read from disk (or copied without
+// its validation history) must never count as an already validated projection.
+const reviewedProjections = new WeakMap();
 export function restoreReviewedUpdates(character, policy) {
-  const baseline = new Map();
-  for (const batch of policy.reviewedUpdates ?? [])
+  const batches = policy.reviewedUpdates ?? [];
+  const policyKey = JSON.stringify([character.id, batches]);
+  const prior = reviewedProjections.get(character);
+  const result = structuredClone(character);
+  if (prior) {
+    if (prior.policyKey !== policyKey)
+      throw new Error("Reviewed projection policy mismatch");
+    for (const d of prior.fields) {
+      const m = result.moves.find((m) => m.id === d.moveId);
+      if (!m || !isDeepStrictEqual(m.frames[d.field], d.value))
+        throw new Error(
+          `Unauthorized reviewed projection: ${d.moveId}/${d.field}`,
+        );
+    }
+  } else {
+    for (const batch of [...batches].reverse())
+      for (const d of [...batch.decisions].reverse()) {
+        if (d.characterId !== character.id) continue;
+        const m = result.moves.find((m) => m.id === d.moveId);
+        if (!m || !isDeepStrictEqual(m.frames[d.field], d.after))
+          throw new Error(
+            `Unauthorized reviewed update: ${d.moveId}/${d.field}`,
+          );
+        m.frames[d.field] = structuredClone(d.before);
+      }
+  }
+  const fields = new Map();
+  for (const batch of batches)
     for (const d of batch.decisions) {
-      const key = `${d.characterId}/${d.moveId}/${d.field}`;
-      if (!baseline.has(key)) baseline.set(key, d.before);
-    }
-  for (const batch of [...(policy.reviewedUpdates ?? [])].reverse())
-    for (const d of [...batch.decisions].reverse()) {
       if (d.characterId !== character.id) continue;
-      const m = character.moves.find((m) => m.id === d.moveId);
-      if (
-        m &&
-        isDeepStrictEqual(
-          m.frames[d.field],
-          baseline.get(`${d.characterId}/${d.moveId}/${d.field}`),
-        )
-      )
-        continue;
-      if (
-        !m ||
-        (!isDeepStrictEqual(m.frames[d.field], d.after) &&
-          !isDeepStrictEqual(m.frames[d.field], d.before))
-      )
-        throw new Error(`Unauthorized reviewed update: ${d.moveId}/${d.field}`);
-      m.frames[d.field] = structuredClone(d.before);
+      fields.set(JSON.stringify([d.moveId, d.field]), {
+        moveId: d.moveId,
+        field: d.field,
+        value: structuredClone(
+          result.moves.find((m) => m.id === d.moveId).frames[d.field],
+        ),
+      });
     }
-  return character;
+  reviewedProjections.set(result, { policyKey, fields: [...fields.values()] });
+  return result;
 }
 
 // Historical audits must validate the authorized new value before restoring the old one.
@@ -44,7 +58,7 @@ export function restoreCompoundStartup(character) {
     ...(compound?.saDecisions || []),
     ...(compound?.indicatorDecisions || []),
   ];
-  const result = restoreReviewedUpdates(structuredClone(character), policy);
+  const result = restoreReviewedUpdates(character, policy);
   for (const d of (policy.parentStartupDecisions || []).filter(
     (x) => x.characterId === result.id,
   )) {

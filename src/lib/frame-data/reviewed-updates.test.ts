@@ -13,6 +13,8 @@ import { join, dirname } from "node:path";
 import { tmpdir } from "node:os";
 import { execFileSync } from "node:child_process";
 import { plan, execute, template } from "../../../scripts/review-update";
+// @ts-ignore shared historical projection
+import { restoreReviewedUpdates } from "../../../scripts/compound-startup-projection.mjs";
 // @ts-ignore source scanner is shared Node JS
 import { scan } from "../../../scripts/lib/source-scan.mjs";
 const read = (p: string) => JSON.parse(readFileSync(p, "utf8"));
@@ -74,19 +76,56 @@ it("reviews, rejects stale/conflicting approvals and regenerates only approved f
     expect(plan(run.root, approval).decisions).toHaveLength(1);
     const diffPath = join(run.root, "diff.json"),
       originalDiff = readFileSync(diffPath);
-    const manualEvents = structuredClone(run.events);
-    manualEvents[event].kind = "move_added";
-    writeFileSync(diffPath, JSON.stringify(manualEvents));
-    expect(plan(run.root, approval).decisions).toHaveLength(1);
-    const noMapping = structuredClone(approval);
-    noMapping.decisions[0].mappingReason = "";
-    expect(() => plan(run.root, noMapping)).toThrow(/mapping/);
+    for (const mutate of [
+      (e: any) => (e.kind = "move_added"),
+      (e: any) => (e.changes[0].path = ["frames", "block", "numeric"]),
+      (e: any) => (e.productionMoveIds = ["other-move"]),
+      (e: any) => (e.state = "unmatched"),
+    ]) {
+      const modified = structuredClone(run.events);
+      mutate(modified[event]);
+      writeFileSync(diffPath, JSON.stringify(modified));
+      expect(() => plan(run.root, approval)).toThrow(/Saved diff/);
+      expect(() => template(run.root)).toThrow(/Saved diff/);
+    }
     writeFileSync(diffPath, originalDiff);
     const rawPath = join(run.root, "raw/after-ryu.raw"),
       rawBytes = readFileSync(rawPath);
     writeFileSync(rawPath, "tampered source");
     expect(() => plan(run.root, approval)).toThrow(/hash/);
     writeFileSync(rawPath, rawBytes);
+    const addedSource = structuredClone(before);
+    addedSource.rows.push({
+      ...after.rows[0],
+      officialId: "new-move",
+      name: "new move",
+    });
+    writeFileSync(join(tmp, "after/ryu.json"), JSON.stringify(addedSource));
+    const addedRun = await scan({
+      baseline: join(tmp, "before"),
+      incoming: join(tmp, "after"),
+      output: join(tmp, "runs"),
+      production,
+      policy,
+    });
+    const addedApproval = {
+      ...approval,
+      runId: addedRun.manifest.id,
+      contextHash: addedRun.manifest.contextHash,
+      decisions: [
+        {
+          ...approval.decisions[0],
+          event: addedRun.events.findIndex((e: any) => e.kind === "move_added"),
+          sourceHash: addedRun.manifest.inputs.find(
+            (i: any) => i.side === "after",
+          ).hash,
+        },
+      ],
+    };
+    expect(() => plan(addedRun.root, addedApproval)).toThrow(
+      /Invalid\/duplicate approval/,
+    );
+    expect(template(addedRun.root).decisions).toHaveLength(0);
     for (const recovery of ["全体14", "8"]) {
       const source = structuredClone(after);
       source.rows[0].recovery = recovery;
@@ -231,6 +270,52 @@ it("reviews, rejects stale/conflicting approvals and regenerates only approved f
     expect(execute(run.root, approval, isolated, true)).toEqual({
       alreadyApplied: true,
     });
+    const alteredReplay = structuredClone(run.events);
+    alteredReplay[event].kind = "move_added";
+    writeFileSync(diffPath, JSON.stringify(alteredReplay));
+    expect(() => execute(run.root, approval, isolated, true)).toThrow(
+      /Saved diff/,
+    );
+    writeFileSync(diffPath, originalDiff);
+    const current = read(join(isolated, "data/characters/ryu.json")),
+      appliedPolicy = read(join(isolated, "data/adoption-decisions.json"));
+    const projected = restoreReviewedUpdates(current, appliedPolicy);
+    expect(
+      projected.moves.find((m: any) => m.id === move.id).frames.startup,
+    ).toEqual(move.frames.startup);
+    expect(restoreReviewedUpdates(projected, appliedPolicy)).toEqual(projected);
+    const reverted = structuredClone(current);
+    reverted.moves.find((m: any) => m.id === move.id).frames.startup =
+      move.frames.startup;
+    expect(() => restoreReviewedUpdates(reverted, appliedPolicy)).toThrow(
+      /Unauthorized reviewed update/,
+    );
+    expect(() =>
+      restoreReviewedUpdates(structuredClone(projected), appliedPolicy),
+    ).toThrow(/Unauthorized reviewed update/);
+    const chainedPolicy = structuredClone(appliedPolicy);
+    const later = {
+      ...appliedPolicy.reviewedUpdates[0].decisions[0],
+      before: approval.decisions[0].after,
+      after: { status: "confirmed", display: "6", numeric: 6 },
+    };
+    chainedPolicy.reviewedUpdates.push({ decisions: [later] });
+    const latest = structuredClone(current);
+    latest.moves.find((m: any) => m.id === move.id).frames.startup =
+      later.after;
+    expect(restoreReviewedUpdates(latest, chainedPolicy)).toEqual(projected);
+    expect(() => restoreReviewedUpdates(current, chainedPolicy)).toThrow(
+      /Unauthorized reviewed update/,
+    );
+    expect(() => restoreReviewedUpdates(projected, chainedPolicy)).toThrow(
+      /policy mismatch/,
+    );
+    const alteredProjection = restoreReviewedUpdates(current, appliedPolicy);
+    alteredProjection.moves.find((m: any) => m.id === move.id).frames.startup =
+      approval.decisions[0].after;
+    expect(() =>
+      restoreReviewedUpdates(alteredProjection, appliedPolicy),
+    ).toThrow(/Unauthorized reviewed projection/);
     execFileSync(
       process.execPath,
       [

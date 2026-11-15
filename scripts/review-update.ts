@@ -17,7 +17,7 @@ import { pathToFileURL } from "node:url";
 import { characterSchema } from "../src/lib/frame-data/schema";
 import { digest } from "./reviewed-updates";
 // @ts-ignore existing source normalizer
-import { normalize } from "./lib/source-scan.mjs";
+import { normalize, compareSources, classify } from "./lib/source-scan.mjs";
 // @ts-ignore existing baseline loader
 import { readHistoricalSnapshot } from "../tests/helpers/snapshots.mjs";
 // @ts-ignore shared Node JSON diff implementation
@@ -38,17 +38,66 @@ const characters = (root: string) =>
     .filter((f) => f.endsWith(".json"))
     .sort()
     .map((f) => read(join(root, "data/characters", f)));
-export function template(run: string, root = process.cwd()) {
+function verifiedEvents(run: string) {
   const manifest = read(join(run, "manifest.json"));
   if (manifest.status !== "success")
     throw new Error("Cannot review failed/partial scan");
+  const context = read(join(run, "context.json"));
+  if (digest(JSON.stringify(context)) !== manifest.contextHash)
+    throw new Error("Scan context hash mismatch");
+  const snapshots = ["before", "after"].map((side) => {
+    const inventoryBytes = readFileSync(
+      join(run, "raw", `${side}-inventory.json`),
+    );
+    if (
+      digest(inventoryBytes) !==
+      manifest.inventories?.find((i: any) => i.side === side)?.hash
+    )
+      throw new Error("Inventory hash mismatch");
+    const inventory = JSON.parse(inventoryBytes.toString());
+    const inputs = manifest.inputs.filter((i: any) => i.side === side);
+    if (
+      inventory.complete !== true ||
+      !Array.isArray(inventory.characters) ||
+      inputs.length !== inventory.characters.length
+    )
+      throw new Error("Incomplete source inventory");
+    const seen = new Set();
+    return inventory.characters.map((item: any) => {
+      if (!/^[a-z0-9_-]+$/.test(item.id) || seen.has(item.id))
+        throw new Error("Invalid source identity");
+      seen.add(item.id);
+      const matches = inputs.filter((i: any) => i.characterId === item.id);
+      const bytes = readFileSync(join(run, "raw", `${side}-${item.id}.raw`));
+      if (
+        matches.length !== 1 ||
+        matches[0].status !== "success" ||
+        digest(bytes) !== matches[0].hash
+      )
+        throw new Error("Source hash mismatch");
+      const source = JSON.parse(bytes.toString());
+      if (source.complete === false) throw new Error("Partial source");
+      return normalize(source, item.id);
+    });
+  });
+  const events = classify(
+    compareSources(snapshots[0], snapshots[1]),
+    context.production,
+    context.policy,
+  );
+  if (!isDeepStrictEqual(read(join(run, "diff.json")), events))
+    throw new Error("Saved diff does not match source comparison");
+  return { manifest, events };
+}
+export function template(run: string) {
+  const { manifest, events } = verifiedEvents(run);
   return {
     schemaVersion: 1,
     runId: manifest.id,
     datasetId: "",
     contextHash: manifest.contextHash,
-    decisions: read(join(run, "diff.json")).flatMap((e: any, index: number) =>
-      ["move_changed", "move_added"].includes(e.kind)
+    decisions: events.flatMap((e: any, index: number) =>
+      e.kind === "move_changed"
         ? [
             {
               event: index,
@@ -87,20 +136,13 @@ export function plan(run: string, approval: any, root = process.cwd()) {
     })
   )
     throw new Error("Metadata/policy mismatch");
-  const sourceManifest = read(join(run, "manifest.json"));
+  const { manifest: sourceManifest, events } = verifiedEvents(run);
   if (
     sourceManifest.id !== approval.runId ||
+    sourceManifest.contextHash !== approval.contextHash ||
     sourceManifest.status !== "success"
   )
     throw new Error("Invalid source run");
-  for (const i of sourceManifest.inputs)
-    if (
-      i.status !== "success" ||
-      digest(
-        readFileSync(join(run, "raw", `${i.side}-${i.characterId}.raw`)),
-      ) !== i.hash
-    )
-      throw new Error("Source hash mismatch");
   const previous = policy.reviewedUpdates?.find(
     (b: any) => b.approvalHash === approvalHash,
   );
@@ -118,8 +160,7 @@ export function plan(run: string, approval: any, root = process.cwd()) {
       alreadyApplied: true,
     };
   }
-  const manifest = read(join(run, "manifest.json")),
-    events = read(join(run, "diff.json"));
+  const manifest = sourceManifest;
   if (
     manifest.status !== "success" ||
     approval.runId !== manifest.id ||
@@ -135,17 +176,6 @@ export function plan(run: string, approval: any, root = process.cwd()) {
     !Array.isArray(approval.decisions)
   )
     throw new Error("Invalid approval/datasetId");
-  for (const input of manifest.inputs) {
-    if (
-      input.status !== "success" ||
-      digest(
-        readFileSync(
-          join(run, "raw", `${input.side}-${input.characterId}.raw`),
-        ),
-      ) !== input.hash
-    )
-      throw new Error("Source hash mismatch");
-  }
   const evidence = new Map<string, Buffer>(),
     decisions: any[] = [],
     seen = new Set<string>();
@@ -163,7 +193,7 @@ export function plan(run: string, approval: any, root = process.cwd()) {
       key = JSON.stringify([d.characterId, d.moveId, d.field]);
     if (
       !e ||
-      !["move_changed", "move_added"].includes(e.kind) ||
+      e.kind !== "move_changed" ||
       !e.after?.raw ||
       e.characterId !== d.characterId ||
       !["startup", "total", "hit", "block"].includes(d.field) ||
@@ -173,7 +203,6 @@ export function plan(run: string, approval: any, root = process.cwd()) {
       throw new Error("Invalid/duplicate approval");
     seen.add(key);
     if (
-      e.kind === "move_changed" &&
       !e.changes.some(
         (c: any) =>
           (c.path[0] === "frames" && c.path[1] === d.field) ||
@@ -187,8 +216,6 @@ export function plan(run: string, approval: any, root = process.cwd()) {
         e.productionMoveIds[0] !== d.moveId) &&
       !d.mappingReason?.trim()
     )
-      throw new Error("Manual mapping reason required");
-    if (e.kind === "move_added" && !d.mappingReason?.trim())
       throw new Error("Manual mapping reason required");
     if (isDeepStrictEqual(d.before, d.after)) throw new Error("No-op approval");
     const c = production.find((c) => c.id === d.characterId),
