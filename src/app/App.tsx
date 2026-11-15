@@ -67,14 +67,32 @@ export default function App() {
         )}
       </header>
       {!game ? (
-        <section className="start-screen" aria-labelledby="description-title">
+        <section className="start-screen" aria-describedby="start-description">
           <div className="start-layout">
-            <div className="start-intro">
-              <h2 id="description-title">フレームからキャラを当てる</h2>
-              <p>技を指定してフレームを確認。質問は最大{limit}回。</p>
+            <div className="start-entry">
+              <div className="start-intro">
+                <p id="start-description">
+                  技のフレームからキャラを当てるゲーム。
+                  <span className="start-limit">質問は{limit}回まで。</span>
+                </p>
+              </div>
+              <div className="start-actions">
+                <button
+                  disabled={
+                    dataset.eligible.length < 2 || dataset.inputs.length === 0
+                  }
+                  onClick={() => {
+                    setGame(startGame(dataset, "normal", limit));
+                    setSelection("");
+                    setMessage("");
+                  }}
+                >
+                  ゲーム開始
+                </button>
+              </div>
             </div>
             <figure className="start-example">
-              <figcaption>表示例（サンプル値）</figcaption>
+              <figcaption>質問例（数値はサンプル）</figcaption>
               <div className="start-example-input">
                 <MoveNotation
                   input={{
@@ -105,20 +123,6 @@ export default function App() {
                 </div>
               </dl>
             </figure>
-            <div className="start-actions">
-              <button
-                disabled={
-                  dataset.eligible.length < 2 || dataset.inputs.length === 0
-                }
-                onClick={() => {
-                  setGame(startGame(dataset, "normal", limit));
-                  setSelection("");
-                  setMessage("");
-                }}
-              >
-                ゲーム開始
-              </button>
-            </div>
           </div>
           <div className="start-modes">
             <dl>
