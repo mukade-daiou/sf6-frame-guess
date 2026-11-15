@@ -1,3 +1,5 @@
+import { historicalCharacterFiles } from "./compound-startup-projection.mjs";
+import { restoreReviewedUpdates } from "./compound-startup-projection.mjs";
 import { readFileSync, writeFileSync, readdirSync } from "node:fs";
 import { applyHeldReviews } from "./held-range-review.mjs";
 const read = (p) => JSON.parse(readFileSync(p, "utf8"));
@@ -60,10 +62,10 @@ const selections = {
   "terry/2MP": { block: "-1~+3" },
   "yasmine/2LP": { hit: "+4~+6", block: "-1~+1" },
 };
-for (const file of readdirSync("data/characters").filter((f) =>
+for (const file of historicalCharacterFiles().filter((f) =>
   f.endsWith(".json"),
 )) {
-  const c = read(`data/characters/${file}`),
+  const c = restoreReviewedUpdates(read(`data/characters/${file}`), policy),
     audit = coverage.characters.find((x) => x.id === c.id),
     sourcePath = audit.cargoPath,
     source = read(sourcePath),

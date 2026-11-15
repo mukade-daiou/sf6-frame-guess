@@ -1,3 +1,4 @@
+import { historicalCharacterFiles } from "../scripts/compound-startup-projection.mjs";
 import { readHistoricalJson } from "./helpers/read-history.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
@@ -35,7 +36,7 @@ test("Every accepted local record has exactly four classified fields and preserv
     .map((r) => r.moveId);
   const results = historical.filter((r) => !exclusions.includes(r.moveId));
   assert.equal(historical.length - results.length, exclusions.length);
-  const characters = readdirSync("data/characters")
+  const characters = historicalCharacterFiles()
     .filter((f) => f.endsWith(".json"))
     .map((f) => read("data/characters/" + f));
   const expected = characters.flatMap((c) =>

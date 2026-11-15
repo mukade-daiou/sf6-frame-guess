@@ -1,3 +1,4 @@
+import { historicalCharacterFiles } from "../scripts/compound-startup-projection.mjs";
 import { readHistoricalJson } from "./helpers/read-history.mjs";
 import { assertSnapshotDiff } from "../scripts/lib/snapshot-diff.mjs";
 import { applyUserConfirmedToBaseline } from "./helpers/apply-user-confirmed.mjs";
@@ -15,7 +16,7 @@ test("66 KD/HKD corrections preserve all other records", () => {
   assert.equal(decisions.length, 66);
   assert.equal(new Set(decisions.map((d) => `${d.characterId}/${d.moveId}/${d.field}`)).size, 66);
   let changed = 0, records = 0;
-  for (const file of readdirSync("data/characters").filter((f) => f.endsWith(".json"))) {
+  for (const file of historicalCharacterFiles().filter((f) => f.endsWith(".json"))) {
     const path = `data/characters/${file}`;
     const before = JSON.parse(execFileSync("git", ["show", `${ref}:${path}`]));
     const after = read(path);

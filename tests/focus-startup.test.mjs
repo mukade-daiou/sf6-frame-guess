@@ -1,3 +1,4 @@
+import { historicalCharacterFiles } from "../scripts/compound-startup-projection.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
@@ -7,7 +8,7 @@ import { restoreResearchFrames } from "./research-projection.mjs";
 test("only Focus Force representative startups differ from stage 16", () => {
   let records = 0;
   const changed = [];
-  for (const file of readdirSync("data/characters").filter((f) =>
+  for (const file of historicalCharacterFiles().filter((f) =>
     f.endsWith(".json"),
   )) {
     const path = `data/characters/${file}`;

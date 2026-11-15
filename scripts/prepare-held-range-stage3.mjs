@@ -1,3 +1,4 @@
+import { historicalCharacterFiles } from "./compound-startup-projection.mjs";
 import { readFileSync, writeFileSync, readdirSync } from "node:fs";
 import { applyHeldReviews } from "./held-range-review.mjs";
 import { restoreCompoundStartup } from "./compound-startup-projection.mjs";
@@ -6,7 +7,7 @@ const review = read("staging/held-range-review.json"),
   policy = read("data/adoption-decisions.json"),
   ledger = read("staging/distance-range-candidates.json");
 const dataset = Object.fromEntries(
-  readdirSync("data/characters")
+  historicalCharacterFiles()
     .filter((f) => f.endsWith(".json"))
     .map((f) => {
       const c = restoreCompoundStartup(read(`data/characters/${f}`));

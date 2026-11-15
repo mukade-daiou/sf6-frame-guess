@@ -1,3 +1,5 @@
+import { historicalCharacterFiles } from "../scripts/compound-startup-projection.mjs";
+import { readHistoricalJson } from "./helpers/read-history.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync, readdirSync } from "node:fs";
@@ -8,7 +10,7 @@ test("distance decisions change only exact authorized fields and generated stren
   const decisions = JSON.parse(readFileSync("data/adoption-decisions.json")).distanceRanges.decisions;
   const policy=JSON.parse(readFileSync("data/adoption-decisions.json"));
   let fields = 0;
-  for (const file of readdirSync("data/characters").filter(f => f.endsWith(".json"))) {
+  for (const file of historicalCharacterFiles().filter(f => f.endsWith(".json"))) {
     const path = `data/characters/${file}`;
     const ref = JSON.parse(readFileSync("data/adoption-decisions.json")).distanceRanges.protectionRef;
     const before = JSON.parse(execFileSync("git", ["show", `${ref}:${path}`]));
@@ -25,7 +27,7 @@ test("distance decisions change only exact authorized fields and generated stren
   assert.ok(ledger.characters.every(c => c.rows.length === c.sourceRows && c.rows.every(r => r.reviewed)));
   assert.ok(ledger.candidates.every(c => c.reviewed && c.reason));
   for (const cr of ledger.characters) {
-    const c = JSON.parse(readFileSync(`data/characters/${cr.characterId}.json`));
+    const c = readHistoricalJson(`data/characters/${cr.characterId}.json`);
     for (const m of c.moves.filter(m => m.adoption?.status === "accepted" && m.variant.kind === "base" && !m.strengthExpansion)) assert.ok(cr.rows.some(r => r.moveIds.includes(m.id)), `Unmapped: ${m.id}`);
   }
   for (const d of decisions) {

@@ -1,3 +1,4 @@
+import { historicalCharacterFiles } from "../scripts/compound-startup-projection.mjs";
 import { readHistoricalJson } from "./helpers/read-history.mjs";
 import { assertSnapshotDiff } from "../scripts/lib/snapshot-diff.mjs";
 import { applyUserConfirmedToBaseline } from "./helpers/apply-user-confirmed.mjs";
@@ -12,7 +13,7 @@ test("15 source corrections change exactly 21 hits across all 1298 records",()=>
  const ds=policy.kdHkdCorrections.additionalDecisions;
  assert.equal(ds.length,15);assert.equal(new Set(ds.map(d=>d.characterId+"/"+d.moveId)).size,15);
  let changed=0,n=0;
- for(const f of readdirSync("data/characters").filter(f=>f.endsWith(".json"))){
+ for(const f of historicalCharacterFiles().filter(f=>f.endsWith(".json"))){
   const path=`data/characters/${f}`,before=JSON.parse(execFileSync("git",["show",`9b34299a3f4146e189fe53137021bb4ef678b59d:${path}`])),after=read(path);n+=before.moves.length;
   for(const m of before.moves){const d=ds.find(d=>d.characterId===before.id&&d.moveId===(m.strengthExpansion?.sourceMoveId||m.id));if(d){assert.deepEqual(m.frames.hit,d.before);assert.deepEqual(d.value,{status:"confirmed",display:"D"});m.frames.hit=d.value;changed++;} const sa=policy.compoundStartup.saDecisions.find(d=>d.characterId===before.id&&d.moveId===m.id);if(sa){assert.deepEqual(m.frames.startup,sa.before);m.frames.startup=sa.value;}}
   for(const m of before.moves){const d=policy.compoundStartup.indicatorDecisions.find(x=>x.characterId===before.id&&x.moveId===(m.strengthExpansion?.sourceMoveId||m.id));if(d){assert.deepEqual(m.frames.startup,d.before);m.frames.startup=d.value;}}

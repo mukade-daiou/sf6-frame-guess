@@ -1,7 +1,11 @@
+// @ts-ignore historical roster projection
+import { historicalCharacterFiles } from "./compound-startup-projection.mjs";
+// @ts-ignore reviewed historical projection
+import { restoreReviewedUpdates } from "./compound-startup-projection.mjs";
 import { readFileSync, readdirSync, mkdirSync, writeFileSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import { isDeepStrictEqual } from "node:util";
-import { characterSchema } from "../src/lib/frame-data/schema";
+import { characterSchema, type Character } from "../src/lib/frame-data/schema";
 import { validateDataset } from "../src/lib/frame-data/loader";
 import { inputKey } from "../src/lib/frame-data/input";
 import { applyConditionalSpecials } from "./conditional-specials";
@@ -18,12 +22,15 @@ import {
 const decisions = JSON.parse(
   readFileSync("data/adoption-decisions.json", "utf8"),
 );
-const characters = readdirSync("data/characters")
-  .filter((f) => f.endsWith(".json"))
+const characters: Character[] = historicalCharacterFiles()
+  .filter((f: string) => f.endsWith(".json"))
   .sort()
-  .map((f) =>
-    characterSchema.parse(
-      JSON.parse(readFileSync(`data/characters/${f}`, "utf8")),
+  .map((f: string) =>
+    restoreReviewedUpdates(
+      characterSchema.parse(
+        JSON.parse(readFileSync(`data/characters/${f}`, "utf8")),
+      ),
+      decisions,
     ),
   );
 const rows = characters.flatMap(auditStrengthless);

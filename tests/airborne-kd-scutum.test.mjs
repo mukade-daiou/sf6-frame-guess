@@ -1,3 +1,4 @@
+import { historicalCharacterFiles } from "../scripts/compound-startup-projection.mjs";
 import { readHistoricalJson } from "./helpers/read-history.mjs";
 import { applyUserConfirmedToBaseline } from "./helpers/apply-user-confirmed.mjs";
 import test from "node:test";
@@ -13,7 +14,7 @@ test("fixed baseline differs only in seventeen approved fields", () => {
   const hit = policy.kdHkdCorrections.airborneDecisions;
   assert.equal(hit.length, 1);
   let count = 0, records = 0;
-  for (const f of readdirSync("data/characters").filter((x) => x.endsWith(".json"))) {
+  for (const f of historicalCharacterFiles().filter((x) => x.endsWith(".json"))) {
     const p = `data/characters/${f}`;
     const before = JSON.parse(execFileSync("git", ["show", `1e36836adab07b17f5462cf0f5dd35b8b4cd86a6:${p}`]));
     const after = read(p);

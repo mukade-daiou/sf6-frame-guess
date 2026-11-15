@@ -13,6 +13,7 @@ import { applyUserConfirmedFrames } from "./user-confirmed-frames";
 import { applyKdHkdCorrections } from "./kd-hkd-corrections";
 import { applyWhiffTotalCorrections } from "./whiff-total-corrections";
 import { applyReviewedUpdates } from "./reviewed-updates";
+import { loadOfficialCharacter } from "./official-additions";
 const read = async (p: string) => JSON.parse(await readFile(p, "utf8"));
 const save = async (p: string, v: unknown) =>
   writeFile(p, JSON.stringify(v, null, 2) + "\n");
@@ -40,6 +41,10 @@ const metadata = {
 };
 const files: Record<string, Character> = {};
 for (const d of decisions.characters) {
+  if (d.officialSource) {
+    files[d.id] = loadOfficialCharacter(d, decisions.gameVersion);
+    continue;
+  }
   const c = characterSchema.parse(await read(d.candidatePath));
   if (c.id !== d.id) throw new Error(`Character mismatch: ${d.id}`);
   const audited = coverageAudit.characters.find((row: any) => row.id === c.id);

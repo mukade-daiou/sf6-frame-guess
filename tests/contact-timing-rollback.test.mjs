@@ -1,3 +1,4 @@
+import { historicalCharacterFiles } from "../scripts/compound-startup-projection.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync, readdirSync } from "node:fs";
@@ -11,7 +12,7 @@ test("contact rollback changes only the 89 authorized fields and preserves all m
     records = 0,
     sa = 0;
   assert.equal(
-    readdirSync("data/characters").filter((f) => f.endsWith(".json")).length,
+    historicalCharacterFiles().filter((f) => f.endsWith(".json")).length,
     32,
   );
   assert.equal(r.revoked.length, 77);
@@ -25,7 +26,7 @@ test("contact rollback changes only the 89 authorized fields and preserves all m
     assert.deepEqual(d.value, historical.before);
     assert.ok(["hit", "block"].includes(d.field));
   }
-  for (const f of readdirSync("data/characters").filter((f) =>
+  for (const f of historicalCharacterFiles().filter((f) =>
     f.endsWith(".json"),
   )) {
     const path = `data/characters/${f}`,

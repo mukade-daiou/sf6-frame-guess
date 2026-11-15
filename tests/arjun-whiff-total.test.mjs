@@ -1,3 +1,4 @@
+import { historicalCharacterFiles } from "../scripts/compound-startup-projection.mjs";
 import { readHistoricalJson } from "./helpers/read-history.mjs";
 import { applyUserConfirmedToBaseline } from "./helpers/apply-user-confirmed.mjs";
 import test from "node:test";
@@ -11,7 +12,7 @@ test("only two whiff totals change from the fixed published baseline", () => {
   const ds = read("data/adoption-decisions.json").whiffTotalCorrections.additionalDecisions;
   assert.deepEqual(ds.map((d) => [d.moveId, d.before.display, d.value.display]), [["arjun__special_236_P_H", "50", "53"], ["arjun__special_236_P_OD", "45", "48"]]);
   let records = 0, changed = 0;
-  for (const f of readdirSync("data/characters").filter((x) => x.endsWith(".json"))) {
+  for (const f of historicalCharacterFiles().filter((x) => x.endsWith(".json"))) {
     const path = `data/characters/${f}`;
     const before = JSON.parse(execFileSync("git", ["show", `148d6dabf0792b4477051a3f9034a6007b075ed3:${path}`]));
     records += before.moves.length;

@@ -1,3 +1,4 @@
+import { historicalCharacterFiles } from "../scripts/compound-startup-projection.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync, readdirSync } from "node:fs";
@@ -6,7 +7,7 @@ import { restoreDistanceRanges } from "./research-projection.mjs";
 test("no-input automatic slash changes only its five source/strength records", () => {
   const policy = JSON.parse(readFileSync("data/adoption-decisions.json"));
   let changed = 0;
-  for (const file of readdirSync("data/characters").filter((f) =>
+  for (const file of historicalCharacterFiles().filter((f) =>
     f.endsWith(".json"),
   )) {
     const path = `data/characters/${file}`,

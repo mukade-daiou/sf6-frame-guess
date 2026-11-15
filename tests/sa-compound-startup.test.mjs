@@ -1,3 +1,4 @@
+import { historicalCharacterFiles } from "../scripts/compound-startup-projection.mjs";
 import { readHistoricalJson } from "./helpers/read-history.mjs";
 import { assertSnapshotDiff } from "../scripts/lib/snapshot-diff.mjs";
 import { applyUserConfirmedToBaseline } from "./helpers/apply-user-confirmed.mjs";
@@ -14,7 +15,7 @@ test("exactly six SA startup values change from fixed snapshot", () => {
   assert.equal(decisions.length, 6);
   assert.equal(new Set(decisions.map((d) => d.moveId)).size, 6);
   let count = 0, records = 0;
-  for (const file of readdirSync("data/characters").filter((f) => f.endsWith(".json"))) {
+  for (const file of historicalCharacterFiles().filter((f) => f.endsWith(".json"))) {
     const path = `data/characters/${file}`;
     const before = JSON.parse(execFileSync("git", ["show", `1e36836adab07b17f5462cf0f5dd35b8b4cd86a6:${path}`]));
     const after = read(path);

@@ -1,3 +1,4 @@
+import { historicalCharacterFiles } from "../scripts/compound-startup-projection.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync, readdirSync } from "node:fs";
@@ -13,7 +14,7 @@ test("only the nine authorized frame fields differ from stage B", () => {
   ]);
   const changes = [];
   let count = 0;
-  for (const f of readdirSync("data/characters").filter((f) =>
+  for (const f of historicalCharacterFiles().filter((f) =>
     f.endsWith(".json"),
   )) {
     const path = `data/characters/${f}`;

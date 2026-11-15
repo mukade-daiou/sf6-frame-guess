@@ -1089,6 +1089,10 @@
                 "type": "string",
                 "minLength": 1
               },
+              "officialRef": {
+                "type": "string",
+                "format": "uri"
+              },
               "strengthBasis": {
                 "type": "string",
                 "enum": ["explicit", "explicit_group", "user_common"]
@@ -1169,8 +1173,6 @@
             },
             "required": [
               "researchRecordId",
-              "rawRef",
-              "cargoRef",
               "strengthBasis",
               "sourceNotation",
               "frameOrigins",

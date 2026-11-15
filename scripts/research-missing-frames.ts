@@ -1,3 +1,7 @@
+// @ts-ignore historical roster projection
+import { historicalCharacterFiles } from "./compound-startup-projection.mjs";
+// @ts-ignore reviewed historical projection
+import { restoreReviewedUpdates } from "./compound-startup-projection.mjs";
 import { readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { isDeepStrictEqual } from "node:util";
 import { applyCompoundStartup } from "./compound-startup";
@@ -18,10 +22,15 @@ const baseline = read("staging/stage17/baseline.json");
 const before: Character[] = baseline.characters.map((c: unknown) =>
   characterSchema.parse(c),
 );
-const current: Character[] = readdirSync("data/characters")
-  .filter((f) => f.endsWith(".json"))
+const current: Character[] = historicalCharacterFiles()
+  .filter((f: string) => f.endsWith(".json"))
   .sort()
-  .map((f) => characterSchema.parse(read(`data/characters/${f}`)));
+  .map((f: string) =>
+    restoreReviewedUpdates(
+      characterSchema.parse(read(`data/characters/${f}`)),
+      read("data/adoption-decisions.json"),
+    ),
+  );
 const missing = (m: Character["moves"][number]) =>
   Object.entries(m.frames).filter(([, v]) => !isDisplayable(v));
 const basic = (c: Character) =>
@@ -369,6 +378,10 @@ if (process.argv.includes("--check")) {
       throw new Error(`Unauthorized stage17 record change: ${old.id}`);
   }
   const expectedDecisions = structuredClone(policy);
+  delete expectedDecisions.reviewedUpdates;
+  expectedDecisions.characters = expectedDecisions.characters.filter(
+    (d: any) => !d.officialSource,
+  );
   delete expectedDecisions.frameResearch;
   delete expectedDecisions.distanceRanges;
   delete expectedDecisions.knockdownCorrections;

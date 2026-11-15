@@ -1,9 +1,20 @@
-import { readFileSync } from "node:fs";
+import { readFileSync, readdirSync } from "node:fs";
 import { isDeepStrictEqual } from "node:util";
 
 // Identity is kept outside JSON: an old value read from disk (or copied without
 // its validation history) must never count as an already validated projection.
 const reviewedProjections = new WeakMap();
+export function historicalCharacterFiles() {
+  const policy = JSON.parse(
+    readFileSync("data/adoption-decisions.json", "utf8"),
+  );
+  const added = new Set(
+    policy.characters
+      .filter((d) => d.officialSource)
+      .map((d) => `${d.id}.json`),
+  );
+  return readdirSync("data/characters").filter((f) => !added.has(f));
+}
 export function restoreReviewedUpdates(character, policy) {
   const batches = policy.reviewedUpdates ?? [];
   const policyKey = JSON.stringify([character.id, batches]);
@@ -14,7 +25,7 @@ export function restoreReviewedUpdates(character, policy) {
       throw new Error("Reviewed projection policy mismatch");
     for (const d of prior.fields) {
       const m = result.moves.find((m) => m.id === d.moveId);
-      if (!m || !isDeepStrictEqual(m.frames[d.field], d.value))
+      if (!isDeepStrictEqual(m?.frames ?? null, d.frames))
         throw new Error(
           `Unauthorized reviewed projection: ${d.moveId}/${d.field}`,
         );
@@ -23,6 +34,14 @@ export function restoreReviewedUpdates(character, policy) {
     for (const batch of [...batches].reverse())
       for (const d of [...batch.decisions].reverse()) {
         if (d.characterId !== character.id) continue;
+        if (d.kind === "add_character") continue;
+        if (d.kind === "add_move") {
+          const index = result.moves.findIndex((m) => m.id === d.move.id);
+          if (index < 0 || !isDeepStrictEqual(result.moves[index], d.move))
+            throw new Error(`Unauthorized reviewed addition: ${d.move.id}`);
+          result.moves.splice(index, 1);
+          continue;
+        }
         const m = result.moves.find((m) => m.id === d.moveId);
         if (!m || !isDeepStrictEqual(m.frames[d.field], d.after))
           throw new Error(
@@ -35,11 +54,12 @@ export function restoreReviewedUpdates(character, policy) {
   for (const batch of batches)
     for (const d of batch.decisions) {
       if (d.characterId !== character.id) continue;
-      fields.set(JSON.stringify([d.moveId, d.field]), {
-        moveId: d.moveId,
-        field: d.field,
-        value: structuredClone(
-          result.moves.find((m) => m.id === d.moveId).frames[d.field],
+      if (d.kind === "add_character") continue;
+      const moveId = d.move?.id ?? d.moveId;
+      fields.set(moveId, {
+        moveId,
+        frames: structuredClone(
+          result.moves.find((m) => m.id === moveId)?.frames ?? null,
         ),
       });
     }

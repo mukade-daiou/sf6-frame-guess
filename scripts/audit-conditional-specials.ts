@@ -1,3 +1,5 @@
+// @ts-ignore historical roster projection
+import { historicalCharacterFiles } from "./compound-startup-projection.mjs";
 import { readFileSync, readdirSync, mkdirSync, writeFileSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import { isDeepStrictEqual } from "node:util";
@@ -16,8 +18,8 @@ const changed: any[] = [];
 let beforeCount = 0,
   afterCount = 0;
 const questions: any[] = [];
-for (const f of readdirSync("data/characters")
-  .filter((f) => f.endsWith(".json"))
+for (const f of historicalCharacterFiles()
+  .filter((f: string) => f.endsWith(".json"))
   .sort()) {
   const path = `data/characters/${f}`;
   const before = characterSchema.parse(

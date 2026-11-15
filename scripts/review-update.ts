@@ -16,6 +16,8 @@ import { isDeepStrictEqual } from "node:util";
 import { pathToFileURL } from "node:url";
 import { characterSchema } from "../src/lib/frame-data/schema";
 import { digest } from "./reviewed-updates";
+import { officialCandidate, loadOfficialCharacter } from "./official-additions";
+import { inputKey } from "../src/lib/frame-data/input";
 // @ts-ignore existing source normalizer
 import { normalize, compareSources, classify } from "./lib/source-scan.mjs";
 // @ts-ignore existing baseline loader
@@ -97,7 +99,7 @@ export function template(run: string) {
     datasetId: "",
     contextHash: manifest.contextHash,
     decisions: events.flatMap((e: any, index: number) =>
-      e.kind === "move_changed"
+      ["move_changed", "move_added", "character_added"].includes(e.kind)
         ? [
             {
               event: index,
@@ -114,6 +116,21 @@ export function template(run: string) {
               )?.hash,
               reason: "",
               mappingReason: "",
+              ...(e.kind !== "move_changed"
+                ? {
+                    kind:
+                      e.kind === "move_added" ? "add_move" : "add_character",
+                    proposal: officialCandidate(
+                      read(join(run, "raw", `after-${e.characterId}.raw`)),
+                      e.characterId,
+                      read(join(run, "context.json")).policy.gameVersion,
+                      manifest.inputs.find(
+                        (i: any) =>
+                          i.side === "after" && i.characterId === e.characterId,
+                      ).acquiredAt,
+                    ),
+                  }
+                : {}),
             },
           ]
         : [],
@@ -124,6 +141,21 @@ export function plan(run: string, approval: any, root = process.cwd()) {
   const policy = read(join(root, "data/adoption-decisions.json")),
     production = characters(root);
   const approvalHash = digest(JSON.stringify(approval));
+  for (const b of policy.reviewedUpdates ?? [])
+    for (const d of b.decisions)
+      if (
+        d.sourcePath &&
+        digest(readFileSync(join(root, d.sourcePath))) !== d.sourceHash
+      )
+        throw new Error("Stored reviewed source hash mismatch");
+  for (const d of policy.characters.filter((d: any) => d.officialSource)) {
+    const cwdSource = {
+      ...d,
+      officialSource: join(root, d.officialSource),
+      candidatePath: join(root, d.candidatePath),
+    };
+    loadOfficialCharacter(cwdSource, policy.gameVersion);
+  }
   const metadata = read(join(root, "data/metadata.json"));
   if (
     !isDeepStrictEqual(metadata, {
@@ -191,6 +223,95 @@ export function plan(run: string, approval: any, root = process.cwd()) {
     if (d.approved !== true) continue;
     const e = events[d.event],
       key = JSON.stringify([d.characterId, d.moveId, d.field]);
+    if (d.kind === "add_move" || d.kind === "add_character") {
+      if (
+        !e ||
+        e.kind !== (d.kind === "add_move" ? "move_added" : "character_added") ||
+        e.characterId !== d.characterId ||
+        !/^[a-z0-9_-]+$/.test(d.characterId) ||
+        !d.reason?.trim()
+      )
+        throw new Error("Invalid addition approval");
+      const input = manifest.inputs.find(
+        (i: any) => i.side === "after" && i.characterId === d.characterId,
+      );
+      if (d.sourceHash !== input?.hash)
+        throw new Error("Approved source hash mismatch");
+      const bytes = readFileSync(
+        join(run, "raw", `after-${d.characterId}.raw`),
+      );
+      const generated = officialCandidate(
+        readSource(bytes),
+        d.characterId,
+        policy.gameVersion,
+        input.acquiredAt,
+      );
+      const sourcePath = `staging/adoption-inputs/reviewed-updates/${input.hash}.json`;
+      evidence.set(sourcePath, bytes);
+      if (d.kind === "add_character") {
+        if (
+          production.some((c) => c.id === d.characterId) ||
+          decisions.some((x) => x.characterId === d.characterId) ||
+          !isDeepStrictEqual(d.proposal, generated)
+        )
+          throw new Error("Invalid/duplicate character addition");
+        const candidatePath = `staging/adoption-inputs/official/${d.characterId}.json`;
+        evidence.set(candidatePath, Buffer.from(json(generated.character)));
+        policy.characters.push({
+          id: d.characterId,
+          candidatePath,
+          officialSource: sourcePath,
+          sourceHash: input.hash,
+          retrievedAt: input.acquiredAt,
+          sourceInventoryComplete:
+            generated.character.adoption?.status === "accepted",
+        });
+        decisions.push({ ...d, character: generated.character, sourcePath });
+      } else {
+        const c = production.find((c) => c.id === d.characterId);
+        const row = generated.rows.find((r: any) =>
+          isDeepStrictEqual(r.sourceRow, e.after.raw),
+        );
+        if (
+          !c ||
+          !Array.isArray(d.moves) ||
+          !d.moves.length ||
+          d.moves.some(
+            (m: any) =>
+              !row?.moves.some((x: any) => isDeepStrictEqual(x, m)) ||
+              m.adoption?.status !== "accepted",
+          )
+        )
+          throw new Error("Invalid move addition");
+        for (const m of d.moves) {
+          if (
+            c.moves.some(
+              (x: any) =>
+                x.id === m.id || inputKey(x.input) === inputKey(m.input),
+            ) ||
+            decisions.some(
+              (x) =>
+                x.move?.id === m.id ||
+                (x.characterId === c.id &&
+                  x.move &&
+                  inputKey(x.move.input) === inputKey(m.input)),
+            )
+          )
+            throw new Error("Duplicate move ID or question input");
+          decisions.push({
+            kind: "add_move",
+            characterId: c.id,
+            move: m,
+            sourcePath,
+            sourceHash: input.hash,
+            sourceRow: e.after.raw,
+            retrievedAt: input.acquiredAt,
+            reason: d.reason,
+          });
+        }
+      }
+      continue;
+    }
     if (
       !e ||
       e.kind !== "move_changed" ||
@@ -288,11 +409,17 @@ export function plan(run: string, approval: any, root = process.cwd()) {
   if (!decisions.length) throw new Error("No approved changes");
   const result = structuredClone(production);
   for (const d of decisions)
-    result
-      .find((c) => c.id === d.characterId)
-      .moves.find((m: any) => m.id === d.moveId).frames[d.field] = d.after;
+    if (d.kind === "add_character") result.push(d.character);
+    else if (d.kind === "add_move")
+      result.find((c) => c.id === d.characterId).moves.push(d.move);
+    else
+      result
+        .find((c) => c.id === d.characterId)
+        .moves.find((m: any) => m.id === d.moveId).frames[d.field] = d.after;
   policy.datasetId = approval.datasetId;
-  const normalizedResult = result.map((c) => characterSchema.parse(c));
+  const normalizedResult = result
+    .map((c) => characterSchema.parse(c))
+    .sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
   policy.reviewedUpdates = [
     ...(policy.reviewedUpdates ?? []),
     {
@@ -320,6 +447,12 @@ export function execute(
 ) {
   const result = plan(run, approval, root);
   if (result.alreadyApplied) return { alreadyApplied: true };
+  for (const [p, b] of result.evidence)
+    if (
+      existsSync(join(root, p)) &&
+      digest(readFileSync(join(root, p))) !== digest(b)
+    )
+      throw new Error(`Existing adoption input differs: ${p}`);
   const workspace = mkdtempSync(join(tmpdir(), "sf6-apply-"));
   try {
     // Isolate the existing generator, including audits and their side effects.
@@ -330,6 +463,13 @@ export function execute(
     for (const file of [
       ...new Set([
         ...files,
+        ...result.policy.characters
+          .filter((d: any) => d.officialSource)
+          .flatMap((d: any) => [d.candidatePath, d.officialSource])
+          .filter((p: string) => !result.evidence.has(p)),
+        ...(result.policy.reviewedUpdates ?? [])
+          .flatMap((b: any) => b.decisions.map((d: any) => d.sourcePath))
+          .filter((p: string) => p && !result.evidence.has(p)),
         "scripts/reviewed-updates.ts",
         "scripts/review-update.ts",
       ]),

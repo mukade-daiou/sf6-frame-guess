@@ -1,3 +1,4 @@
+import { historicalCharacterFiles } from "../scripts/compound-startup-projection.mjs";
 import { readHistoricalJson } from "./helpers/read-history.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
@@ -21,7 +22,7 @@ test("Dark Ingrid exclusion preserves all records and changes only four adoption
       ),
     ].sort(),
   );
-  for (const name of readdirSync("data/characters").filter((f) =>
+  for (const name of historicalCharacterFiles().filter((f) =>
     f.endsWith(".json"),
   )) {
     const path = `data/characters/${name}`;
@@ -59,7 +60,7 @@ test("exactly 18 individual totals and approved state exclusions differ from the
   assert.equal(policy.specialStateExclusions.length, 5);
   let records = 0,
     accepted = 0;
-  for (const name of readdirSync("data/characters").filter((f) =>
+  for (const name of historicalCharacterFiles().filter((f) =>
     f.endsWith(".json"),
   )) {
     const path = `data/characters/${name}`;

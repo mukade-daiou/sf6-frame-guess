@@ -172,8 +172,9 @@ export const moveSchema = z
     saEvidence: z
       .object({
         researchRecordId: text,
-        rawRef: text,
-        cargoRef: text,
+        rawRef: text.optional(),
+        cargoRef: text.optional(),
+        officialRef: z.url().optional(),
         strengthBasis: z.enum(["explicit", "explicit_group", "user_common"]),
         sourceNotation: z.record(z.string(), z.string().nullable()),
         frameOrigins: z.record(
@@ -212,6 +213,17 @@ export const moveSchema = z
       ctx.addIssue({
         code: "custom",
         message: "SA requires explicit source and adoption evidence",
+      });
+    if (
+      move.saEvidence &&
+      !(
+        move.saEvidence.officialRef ||
+        (move.saEvidence.rawRef && move.saEvidence.cargoRef)
+      )
+    )
+      ctx.addIssue({
+        code: "custom",
+        message: "SA requires official evidence or saved raw/Cargo references",
       });
     if (move.variant.kind === "conditional" && !move.variant.condition)
       ctx.addIssue({

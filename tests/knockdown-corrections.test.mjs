@@ -1,3 +1,4 @@
+import { historicalCharacterFiles } from "../scripts/compound-startup-projection.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync, readdirSync } from "node:fs";
@@ -22,7 +23,7 @@ test("only the 17 sourced KD corrections and their generated strengths change", 
   );
   let count = 0,
     changed = 0;
-  for (const f of readdirSync("data/characters").filter((f) =>
+  for (const f of historicalCharacterFiles().filter((f) =>
     f.endsWith(".json"),
   )) {
     const path = `data/characters/${f}`,

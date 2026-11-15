@@ -1,3 +1,4 @@
+import { historicalCharacterFiles } from "../scripts/compound-startup-projection.mjs";
 import { readHistoricalJson } from "./helpers/read-history.mjs";
 import { assertSnapshotDiff } from "../scripts/lib/snapshot-diff.mjs";
 import { applyUserConfirmedToBaseline } from "./helpers/apply-user-confirmed.mjs";
@@ -40,7 +41,7 @@ test("authorized 53 totals are the only production differences", () => {
   assert.equal(ds.length, 53);
   assert.equal(new Set(ds.map((x) => `${x.characterId}/${x.moveId}/${x.field}`)).size, 53);
   let records = 0, changed = 0;
-  for (const file of readdirSync("data/characters").filter((f) => f.endsWith(".json"))) {
+  for (const file of historicalCharacterFiles().filter((f) => f.endsWith(".json"))) {
     const path = `data/characters/${file}`;
     const before = JSON.parse(execFileSync("git", ["show", `${baseline}:${path}`]));
     const after = read(path);

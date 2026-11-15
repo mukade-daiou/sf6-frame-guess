@@ -1,3 +1,4 @@
+import { historicalCharacterFiles } from "../scripts/compound-startup-projection.mjs";
 import { readHistoricalJson } from "./helpers/read-history.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
@@ -12,7 +13,7 @@ test("four approved fields are the only changes from the published baseline", ()
   const ds = [...policy.whiffTotalCorrections.additionalDecisions, ...policy.userConfirmedFrames.decisions];
   assert.deepEqual(ds.map((d) => [d.moveId, d.field, d.before.display, d.value.display]), [["arjun__special_236_P_H", "total", "50", "53"], ["arjun__special_236_P_OD", "total", "45", "48"], ["ryu__special_623_P_H", "block", "-39", "-36"], ["alex__normal_5_P_M", "total", "24", "27"]]);
   let records = 0, changed = 0;
-  for (const file of readdirSync("data/characters").filter((f) => f.endsWith(".json"))) {
+  for (const file of historicalCharacterFiles().filter((f) => f.endsWith(".json"))) {
     const path = `data/characters/${file}`;
     const before = JSON.parse(execFileSync("git", ["show", `148d6dabf0792b4477051a3f9034a6007b075ed3:${path}`]));
     records += before.moves.length;

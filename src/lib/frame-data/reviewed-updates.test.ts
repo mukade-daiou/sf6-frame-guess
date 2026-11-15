@@ -13,6 +13,9 @@ import { join, dirname } from "node:path";
 import { tmpdir } from "node:os";
 import { execFileSync } from "node:child_process";
 import { plan, execute, template } from "../../../scripts/review-update";
+import { officialCandidate } from "../../../scripts/official-additions";
+import { validateDataset } from "./loader";
+import { startGame, ask } from "../../features/game/engine";
 // @ts-ignore shared historical projection
 import { restoreReviewedUpdates } from "../../../scripts/compound-startup-projection.mjs";
 // @ts-ignore source scanner is shared Node JS
@@ -125,7 +128,10 @@ it("reviews, rejects stale/conflicting approvals and regenerates only approved f
     expect(() => plan(addedRun.root, addedApproval)).toThrow(
       /Invalid\/duplicate approval/,
     );
-    expect(template(addedRun.root).decisions).toHaveLength(0);
+    expect(template(addedRun.root).decisions[0]).toMatchObject({
+      kind: "add_move",
+      approved: false,
+    });
     for (const recovery of ["全体14", "8"]) {
       const source = structuredClone(after);
       source.rows[0].recovery = recovery;
@@ -327,7 +333,228 @@ it("reviews, rejects stale/conflicting approvals and regenerates only approved f
       ],
       { cwd: isolated, stdio: "pipe" },
     );
+    const freshProduction = readdirSync(join(isolated, "data/characters"))
+      .filter((f) => f.endsWith(".json"))
+      .sort()
+      .map((f) => read(join(isolated, "data/characters", f)));
+    const newSource = read("tests/fixtures/source-scan/new-character.json");
+    const addedRow = {
+      ...before.rows[0],
+      officialId: "new-special",
+      name: "Fixture new special",
+      section: "必殺技",
+      commandImages: ["/key-d.png", "/key-d.png", "/icon_kick_l.png"],
+    };
+    writeFileSync(
+      join(tmp, "after/ryu.json"),
+      JSON.stringify({ ...before, rows: [...before.rows, addedRow] }),
+    );
+    writeFileSync(join(tmp, "after/new.json"), JSON.stringify(newSource));
+    writeFileSync(
+      join(tmp, "after/inventory.json"),
+      JSON.stringify({
+        complete: true,
+        characters: [
+          { id: "ryu", file: "ryu.json" },
+          { id: "fixture_new", file: "new.json" },
+        ],
+      }),
+    );
+    const additionRun = await scan({
+      baseline: join(tmp, "before"),
+      incoming: join(tmp, "after"),
+      output: join(tmp, "runs"),
+      production: freshProduction,
+      policy: appliedPolicy,
+    });
+    const additionApproval = template(additionRun.root);
+    additionApproval.datasetId = "fixture-additions";
+    for (const d of additionApproval.decisions) {
+      d.approved = true;
+      d.reason = "Saved fictional fixture reviewed";
+      if (d.kind === "add_move")
+        d.moves = d.proposal.rows.find(
+          (r: any) => r.sourceRow.name === addedRow.name,
+        ).moves;
+    }
+    const newCandidate = additionApproval.decisions.find(
+      (d: any) => d.kind === "add_character",
+    ).proposal.character;
+    expect(newCandidate.adoption.status).toBe("accepted");
+    expect(
+      newCandidate.moves.filter((m: any) => m.category === "normal"),
+    ).toHaveLength(12);
+    expect(
+      newCandidate.moves.filter((m: any) => m.category === "super_art"),
+    ).toHaveLength(9);
+    expect(newCandidate.moves.some((m: any) => m.input.strength === "OD")).toBe(
+      true,
+    );
+    for (const mutate of [
+      (a: any) => a.decisions.forEach((d: any) => (d.approved = false)),
+      (a: any) =>
+        a.decisions.push(a.decisions.find((d: any) => d.kind === "add_move")),
+      (a: any) =>
+        (a.decisions.find((d: any) => d.kind === "add_move").moves[0].id =
+          "duplicate"),
+    ]) {
+      const bad = structuredClone(additionApproval);
+      mutate(bad);
+      expect(() => plan(additionRun.root, bad, isolated)).toThrow();
+    }
+    const collidingRow = {
+      ...addedRow,
+      commandImages: [
+        "/key-d.png",
+        "/key-dr.png",
+        "/key-r.png",
+        "/icon_punch_l.png",
+      ],
+    };
+    writeFileSync(
+      join(tmp, "after/ryu.json"),
+      JSON.stringify({ ...before, rows: [...before.rows, collidingRow] }),
+    );
+    const collisionRun = await scan({
+      baseline: join(tmp, "before"),
+      incoming: join(tmp, "after"),
+      output: join(tmp, "runs"),
+      production: freshProduction,
+      policy: appliedPolicy,
+    });
+    const collisionApproval = template(collisionRun.root);
+    collisionApproval.datasetId = "collision";
+    const collisionDecision = collisionApproval.decisions.find(
+      (d: any) => d.kind === "add_move",
+    );
+    collisionDecision.approved = true;
+    collisionDecision.reason = "fixture collision";
+    collisionDecision.moves = collisionDecision.proposal.rows.find(
+      (r: any) => r.sourceRow.name === addedRow.name,
+    ).moves;
+    expect(() => plan(collisionRun.root, collisionApproval, isolated)).toThrow(
+      /Duplicate move ID or question input/,
+    );
+    const partial = structuredClone(newSource);
+    partial.rows.pop();
+    const incomplete = officialCandidate(
+      partial,
+      "fixture_new",
+      policy.gameVersion,
+      new Date().toISOString(),
+    ).character;
+    expect(incomplete.adoption?.status).toBe("held");
+    expect(
+      validateDataset(read("data/metadata.json"), { incomplete }).eligible,
+    ).toHaveLength(0);
+    const noOD = structuredClone(newSource);
+    const heldVariant = structuredClone(newSource);
+    heldVariant.rows.push({
+      ...heldVariant.rows[0],
+      name: "立ち弱P（ホールド）",
+    });
+    expect(
+      officialCandidate(
+        heldVariant,
+        "fixture_new",
+        policy.gameVersion,
+        new Date().toISOString(),
+      ).character.adoption?.status,
+    ).toBe("accepted");
+    noOD.rows = noOD.rows.filter((r: any) => r.name !== "Fixture od");
+    expect(
+      officialCandidate(
+        noOD,
+        "fixture_new",
+        policy.gameVersion,
+        new Date().toISOString(),
+      ).character.coverage.special.status,
+    ).toBe("partial");
+    for (const row of [
+      { ...newSource.rows[12], section: "Unrecognized section" },
+      {
+        ...newSource.rows[12],
+        commandImages: [
+          "/key-d.png",
+          "/key-dr.png",
+          "/key-r.png",
+          "/icon_punch_l.png",
+          "/icon_punch_m.png",
+          "/icon_punch_h.png",
+        ],
+      },
+    ]) {
+      const unresolved = structuredClone(newSource);
+      unresolved.rows.push(row);
+      expect(
+        officialCandidate(
+          unresolved,
+          "fixture_new",
+          policy.gameVersion,
+          new Date().toISOString(),
+        ).character.adoption?.status,
+      ).toBe("held");
+    }
+    const collision = structuredClone(newSource);
+    collision.rows.push({ ...collision.rows[12], name: "duplicate input" });
+    const ambiguous = officialCandidate(
+      collision,
+      "fixture_new",
+      policy.gameVersion,
+      new Date().toISOString(),
+    ).character;
+    expect(ambiguous.adoption?.status).toBe("held");
+    expect(ambiguous.moves.some((m) => m.variant.kind === "conditional")).toBe(
+      true,
+    );
+    expect(
+      execute(additionRun.root, additionApproval, isolated, true),
+    ).toMatchObject({ written: true });
+    expect(execute(additionRun.root, additionApproval, isolated, true)).toEqual(
+      { alreadyApplied: true },
+    );
+    const files = Object.fromEntries(
+      readdirSync(join(isolated, "data/characters"))
+        .filter((f) => f.endsWith(".json"))
+        .map((f) => [f, read(join(isolated, "data/characters", f))]),
+    );
+    const dataset = validateDataset(
+      read(join(isolated, "data/metadata.json")),
+      files,
+    );
+    expect(dataset.errors).toEqual([]);
+    expect(dataset.characters).toHaveLength(freshProduction.length + 1);
+    expect(dataset.eligible.some((c) => c.id === "fixture_new")).toBe(true);
+    const index = dataset.eligible.findIndex((c) => c.id === "fixture_new"),
+      game = startGame(
+        dataset,
+        "startup",
+        5,
+        () => (index + 0.5) / dataset.eligible.length,
+      );
+    const unknown = newCandidate.moves.find(
+      (m: any) => m.frames.startup.status === "unknown",
+    );
+    expect(ask(game, unknown.input).game.history).toHaveLength(0);
+    for (const c of freshProduction) {
+      const after = dataset.characters.find((x) => x.id === c.id)!;
+      expect(after.moves.filter((m) => !m.id.includes("__official_"))).toEqual(
+        c.moves,
+      );
+    }
+    const stale = structuredClone(additionApproval);
+    stale.datasetId = "stale-addition";
+    expect(() => plan(additionRun.root, stale, isolated)).toThrow(/Stale/);
+    execFileSync(
+      process.execPath,
+      ["--test", "tests/current-snapshot.test.mjs"],
+      { cwd: isolated, stdio: "pipe" },
+    );
+    execFileSync(process.execPath, ["scripts/run-data-tests.mjs", "history"], {
+      cwd: isolated,
+      stdio: "inherit",
+    });
   } finally {
     rmSync(tmp, { recursive: true, force: true });
   }
-}, 30000);
+}, 90000);

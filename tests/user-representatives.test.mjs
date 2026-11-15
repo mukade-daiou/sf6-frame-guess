@@ -1,3 +1,4 @@
+import { historicalCharacterFiles } from "../scripts/compound-startup-projection.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync, readdirSync } from "node:fs";
@@ -8,7 +9,7 @@ test("only the three user-approved representative fields change", () => {
     .frameResearch.representatives;
   assert.equal(decisions.length, 3);
   let changed = 0;
-  for (const file of readdirSync("data/characters").filter((f) =>
+  for (const file of historicalCharacterFiles().filter((f) =>
     f.endsWith(".json"),
   )) {
     const path = `data/characters/${file}`,

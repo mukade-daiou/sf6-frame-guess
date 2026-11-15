@@ -56,11 +56,11 @@ it("keeps L/M/H independent across modes and categories despite shared frame val
 it("integrates three strengths for each SA level without CA and exposes only globally existing inputs", () => {
   expect(production.errors).toEqual([]);
   expect(
-    production.characters.flatMap((c) =>
+    production.eligible.flatMap((c) =>
       c.moves.filter((m) => m.category === "super_art"),
     ),
-  ).toHaveLength(production.characters.length * 3 * 3);
-  for (const c of production.characters) {
+  ).toHaveLength(production.eligible.length * 3 * 3);
+  for (const c of production.eligible) {
     expect(c.coverage.super_art?.status).toBe("complete");
     expect(c.moves.filter((m) => m.category === "super_art")).toHaveLength(9);
     expect(

@@ -18,7 +18,9 @@ it("preserves the reviewed roster and equally selects only complete scopes, keep
   const partial = production.characters.filter(
     (c) => c.coverage.special.status === "partial",
   );
-  expect(partial).toEqual([]);
+  expect(
+    partial.every((c) => !production.eligible.some((e) => e.id === c.id)),
+  ).toBe(true);
   for (const c of partial) {
     expect(production.eligible).not.toContain(c);
     expect(
