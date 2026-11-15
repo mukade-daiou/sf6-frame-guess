@@ -12,7 +12,7 @@ export default function HashApp() {
   useEffect(() => {
     document.title = moves
       ? "技データ一覧 | SF6フレーム探偵"
-      : "SF6フレーム探偵";
+      : "SF6フレーム探偵 | スト6のフレーム当てゲーム";
     if (!moves) return;
     const meta = document.createElement("meta");
     meta.name = "robots";
