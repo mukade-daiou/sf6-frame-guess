@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { execFileSync } from "node:child_process";
+import { assertRegenerationPreserves } from "./helpers/regeneration.mjs";
 import { rollbackClassification } from "../scripts/contact-timing-policy.mjs";
 import { restoreCompoundStartup } from "./research-projection.mjs";
 const read=p=>JSON.parse(readFileSync(p,"utf8"));
@@ -33,9 +33,6 @@ test("stage3 checks all C108 and D47 without changing production or existing dec
  assert.deepEqual(["accepted","held","excluded"].map(status=>l.candidates.filter(c=>c.moveIds.length&&c.classification===status).length),[4,108,625]);
 });
 test("stage3 evidence metadata survives historical regeneration",()=>{
- const paths=["staging/held-range-review.json","staging/distance-range-candidates.json","data/adoption-decisions.json"], before=paths.map(read);
- execFileSync("node",["scripts/prepare-held-range-stage3.mjs"]);
- execFileSync("node",["scripts/prepare-held-range-review.mjs"]);
- execFileSync("node",["scripts/review-distance-ranges.mjs"]);
- assert.deepEqual(paths.map(read),before);
+ const paths=["staging/held-range-review.json","staging/distance-range-candidates.json","data/adoption-decisions.json"];
+ assertRegenerationPreserves(paths, ["scripts/prepare-held-range-stage3.mjs", "scripts/prepare-held-range-review.mjs", "scripts/review-distance-ranges.mjs"]);
 });

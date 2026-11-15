@@ -97,7 +97,7 @@ it.each([
       production,
       "normal",
       5,
-      () => (production.eligible.indexOf(c) + 0.5) / 32,
+      () => (production.eligible.indexOf(c) + 0.5) / production.eligible.length,
     );
     for (const s of ["L", "M", "H"] as const) {
       const i = query(motion, button as "K", s);

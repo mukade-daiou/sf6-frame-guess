@@ -1,12 +1,13 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { execFileSync } from "node:child_process";
+import { assertRegenerationPreserves } from "./helpers/regeneration.mjs";
 import { rollbackClassification } from "../scripts/contact-timing-policy.mjs";
 import { restoreCompoundStartup } from "./research-projection.mjs";
 const read=p=>JSON.parse(readFileSync(p,"utf8"));
 test("all original 300 held fields have separate triage and evidenced resolutions",()=>{
  const r=read("staging/held-range-review.json"), l=read("staging/distance-range-candidates.json"), p=read("data/adoption-decisions.json");
+ const restored = new Map();
  assert.equal(r.items.length,300);
  assert.equal(new Set(r.items.map(x=>x.key)).size,300);
  assert.deepEqual(p.distanceRanges.decisions.slice(0,75),r.baseline.decisions);
@@ -22,7 +23,9 @@ test("all original 300 held fields have separate triage and evidenced resolution
   const stage2=r.stage2?.items.find(x=>x.key===i.key);
   assert.equal(candidate.classification,rollbackClassification(p,i.key,stage2?.resolution ?? i.resolution));
   if((stage2?.resolution ?? i.resolution)!=="accepted")for(const v of i.currentValues){
-   const c=restoreCompoundStartup(read(`data/characters/${i.before.characterId}.json`));
+   const id = i.before.characterId;
+   if (!restored.has(id)) restored.set(id, restoreCompoundStartup(read(`data/characters/${id}.json`)));
+   const c=restored.get(id);
    const d=p.distanceRanges.decisions.slice(80).find(d=>d.moveId===v.moveId&&d.field===i.before.field);
    if (d) assert.deepEqual(d.before,v.value);
    assert.deepEqual(c.moves.find(m=>m.id===v.moveId).frames[i.before.field],d?.value ?? v.value);
@@ -37,8 +40,5 @@ test("all original 300 held fields have separate triage and evidenced resolution
 });
 test("review and ledger can be regenerated without losing resolved classifications",()=>{
  const paths=["staging/held-range-review.json","staging/distance-range-candidates.json","data/adoption-decisions.json"];
- const before=paths.map(p=>read(p));
- execFileSync("node",["scripts/prepare-held-range-review.mjs"]);
- execFileSync("node",["scripts/review-distance-ranges.mjs"]);
- assert.deepEqual(paths.map(p=>read(p)),before);
+ assertRegenerationPreserves(paths, ["scripts/prepare-held-range-review.mjs", "scripts/review-distance-ranges.mjs"]);
 });

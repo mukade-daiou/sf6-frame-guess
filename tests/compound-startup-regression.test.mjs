@@ -6,8 +6,9 @@ import { restoreCompoundStartup } from "../scripts/compound-startup-projection.m
 
 const read = (path) => JSON.parse(readFileSync(path, "utf8"));
 const baselineRef = "4c2a26a276dff2ecddb13f2cc2c198190081e4a0";
+const policy = read("data/adoption-decisions.json");
 test("compound corrections preserve every other production field", () => {
-  const decisions = read("data/adoption-decisions.json").compoundStartup.decisions;
+  const decisions = policy.compoundStartup.decisions;
   assert.deepEqual(decisions.map((d) => [d.moveId, d.before.display, d.value.display]).sort(), [
     ["ed__special_236_K_H", "12", "17"],
     ["ed__special_236_K_L", "11", "16"],
@@ -23,13 +24,13 @@ test("compound corrections preserve every other production field", () => {
     const before = JSON.parse(execFileSync("git", ["show", `${baselineRef}:${path}`]));
     const after = read(path);
     for (const move of before.moves) {
-      const air = read("data/adoption-decisions.json").kdHkdCorrections.airborneDecisions.find(x => x.characterId === id && x.moveId === move.id);
+      const air = policy.kdHkdCorrections.airborneDecisions.find(x => x.characterId === id && x.moveId === move.id);
       if (air) { assert.deepEqual(move.frames.hit, air.before); move.frames.hit = air.value; }
-      const extra = read("data/adoption-decisions.json").kdHkdCorrections.additionalDecisions.find((x) => x.characterId === id && x.moveId === (move.strengthExpansion?.sourceMoveId || move.id));
+      const extra = policy.kdHkdCorrections.additionalDecisions.find((x) => x.characterId === id && x.moveId === (move.strengthExpansion?.sourceMoveId || move.id));
       if (extra) { assert.deepEqual(move.frames.hit, extra.before); move.frames.hit = extra.value; }
-      const total = read("data/adoption-decisions.json").whiffTotalCorrections.decisions.find((x) => x.characterId === id && x.moveId === move.id);
+      const total = policy.whiffTotalCorrections.decisions.find((x) => x.characterId === id && x.moveId === move.id);
       if (total) { assert.deepEqual(move.frames.total, total.before); move.frames.total = total.value; }
-      const kd = read("data/adoption-decisions.json").kdHkdCorrections.decisions.find((x) => x.characterId === id && x.moveId === move.id);
+      const kd = policy.kdHkdCorrections.decisions.find((x) => x.characterId === id && x.moveId === move.id);
       if (kd) {
         assert.deepEqual(move.frames.hit, kd.before);
         move.frames.hit = kd.value;

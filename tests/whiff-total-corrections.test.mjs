@@ -1,3 +1,4 @@
+import { assertSnapshotDiff } from "../scripts/lib/snapshot-diff.mjs";
 import { applyUserConfirmedToBaseline } from "./helpers/apply-user-confirmed.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
@@ -7,8 +8,9 @@ import { restoreCompoundStartup } from "../scripts/compound-startup-projection.m
 
 const read = (p) => JSON.parse(readFileSync(p, "utf8"));
 const baseline = "e800bd7a124044ad5f6fd74ed013354bd064969f";
+const policy = read("data/adoption-decisions.json");
 test("approved totals match the reviewed ledger and 39 held totals remain unchanged", () => {
-  const policy = read("data/adoption-decisions.json").whiffTotalCorrections.decisions;
+  const decisions = policy.whiffTotalCorrections.decisions;
   const rows = read("staging/official-reevaluation/total-audit.json").records.filter((r) => r.field === "total");
   assert.equal(rows.length, 92);
   assert.equal(new Set(rows.map((r) => `${r.characterId}/${r.moveId}`)).size, 92);
@@ -16,7 +18,7 @@ test("approved totals match the reviewed ledger and 39 held totals remain unchan
   assert.equal(rows.filter((r) => r.classification === "B").length, 39);
   for (const row of rows) {
     const move = read(`data/characters/${row.characterId}.json`).moves.find((m) => m.id === row.moveId);
-    const decision = policy.find((d) => d.characterId === row.characterId && d.moveId === row.moveId);
+    const decision = decisions.find((d) => d.characterId === row.characterId && d.moveId === row.moveId);
     assert.ok(move, row.moveId);
     if (row.classification === "A") {
       assert.ok(decision, row.moveId);
@@ -25,15 +27,15 @@ test("approved totals match the reviewed ledger and 39 held totals remain unchan
       assert.equal(move.frames.total.display, row.proposal);
     } else {
       assert.equal(decision, undefined);
-      const correction = read("data/adoption-decisions.json").whiffTotalCorrections.additionalDecisions.find((d) => d.characterId === row.characterId && d.moveId === row.moveId);
+      const correction = policy.whiffTotalCorrections.additionalDecisions.find((d) => d.characterId === row.characterId && d.moveId === row.moveId);
       if (correction) assert.equal(correction.before.display, row.current);
-      const user = read("data/adoption-decisions.json").userConfirmedFrames.decisions.find((d) => d.characterId === row.characterId && d.moveId === row.moveId && d.field === "total");
+      const user = policy.userConfirmedFrames.decisions.find((d) => d.characterId === row.characterId && d.moveId === row.moveId && d.field === "total");
       assert.equal(move.frames.total.display, user ? user.value.display : correction ? correction.value.display : row.current);
     }
   }
 });
 test("authorized 53 totals are the only production differences", () => {
-  const ds = read("data/adoption-decisions.json").whiffTotalCorrections.decisions;
+  const ds = policy.whiffTotalCorrections.decisions;
   assert.equal(ds.length, 53);
   assert.equal(new Set(ds.map((x) => `${x.characterId}/${x.moveId}/${x.field}`)).size, 53);
   let records = 0, changed = 0;
@@ -43,11 +45,11 @@ test("authorized 53 totals are the only production differences", () => {
     const after = read(path);
     records += before.moves.length;
     for (const m of before.moves) {
-      const indicator = read("data/adoption-decisions.json").compoundStartup.indicatorDecisions.find((x) => x.characterId === before.id && x.moveId === (m.strengthExpansion?.sourceMoveId || m.id));
+      const indicator = policy.compoundStartup.indicatorDecisions.find((x) => x.characterId === before.id && x.moveId === (m.strengthExpansion?.sourceMoveId || m.id));
       if (indicator) { assert.deepEqual(m.frames.startup, indicator.before); m.frames.startup = indicator.value; }
-      const sa = read("data/adoption-decisions.json").compoundStartup.saDecisions.find((x) => x.characterId === before.id && x.moveId === m.id);
+      const sa = policy.compoundStartup.saDecisions.find((x) => x.characterId === before.id && x.moveId === m.id);
       if (sa) { assert.deepEqual(m.frames.startup, sa.before); m.frames.startup = sa.value; }
-      const extra = read("data/adoption-decisions.json").kdHkdCorrections.additionalDecisions.find((x) => x.characterId === before.id && x.moveId === (m.strengthExpansion?.sourceMoveId || m.id));
+      const extra = policy.kdHkdCorrections.additionalDecisions.find((x) => x.characterId === before.id && x.moveId === (m.strengthExpansion?.sourceMoveId || m.id));
       if (extra) { assert.deepEqual(m.frames.hit, extra.before); m.frames.hit = extra.value; }
       const d = ds.find((x) => x.characterId === before.id && x.moveId === m.id);
       if (!d) continue;
@@ -59,10 +61,10 @@ test("authorized 53 totals are the only production differences", () => {
       m.frames.total = d.value;
       changed++;
     }
-    for (const m of before.moves) { const d = read("data/adoption-decisions.json").kdHkdCorrections.airborneDecisions.find(x => x.characterId === before.id && x.moveId === m.id); if (d) { assert.deepEqual(m.frames.hit, d.before); m.frames.hit = d.value; } }
-    for (const m of before.moves) { const d = read("data/adoption-decisions.json").whiffTotalCorrections.additionalDecisions.find(x => x.characterId === before.id && x.moveId === m.id); if (d) { assert.deepEqual(m.frames.total, d.before); m.frames.total = d.value; } }
+    for (const m of before.moves) { const d = policy.kdHkdCorrections.airborneDecisions.find(x => x.characterId === before.id && x.moveId === m.id); if (d) { assert.deepEqual(m.frames.hit, d.before); m.frames.hit = d.value; } }
+    for (const m of before.moves) { const d = policy.whiffTotalCorrections.additionalDecisions.find(x => x.characterId === before.id && x.moveId === m.id); if (d) { assert.deepEqual(m.frames.total, d.before); m.frames.total = d.value; } }
     applyUserConfirmedToBaseline(before);
-    assert.deepEqual(after, before);
+    assertSnapshotDiff([before], [after]);
   }
   assert.equal(records, 1298);
   assert.equal(changed, 53);

@@ -6,8 +6,8 @@ import { execFileSync } from "node:child_process";
 import { restoreCompoundStartup } from "../scripts/compound-startup-projection.mjs";
 
 const read = (p) => JSON.parse(readFileSync(p, "utf8"));
+const policy = read("data/adoption-decisions.json");
 test("fixed baseline differs only in seventeen approved fields", () => {
-  const policy = read("data/adoption-decisions.json");
   const startup = [...policy.compoundStartup.saDecisions, ...policy.compoundStartup.indicatorDecisions];
   const hit = policy.kdHkdCorrections.airborneDecisions;
   assert.equal(hit.length, 1);
@@ -23,7 +23,7 @@ test("fixed baseline differs only in seventeen approved fields", () => {
       const kd = hit.find((x) => x.characterId === before.id && x.moveId === m.id);
       if (kd) { assert.deepEqual(m.frames.hit, kd.before); m.frames.hit = kd.value; count++; }
     }
-    for (const m of before.moves) { const d = read("data/adoption-decisions.json").whiffTotalCorrections.additionalDecisions.find(x => x.characterId === before.id && x.moveId === m.id); if (d) { assert.deepEqual(m.frames.total, d.before); m.frames.total = d.value; } }
+    for (const m of before.moves) { const d = policy.whiffTotalCorrections.additionalDecisions.find(x => x.characterId === before.id && x.moveId === m.id); if (d) { assert.deepEqual(m.frames.total, d.before); m.frames.total = d.value; } }
     applyUserConfirmedToBaseline(before);
     assert.deepEqual(after, before);
   }
@@ -40,7 +40,7 @@ test("historical projection rejects unauthorized armor and airborne hit", () => 
 });
 
 test("normal airborne KD and the two non-held armor rows retain their evidence", () => {
-  const p = read("data/adoption-decisions.json");
+  const p = policy;
   const ed = p.kdHkdCorrections.airborneDecisions[0];
   const cargo = read(ed.sourcePath).data.cargoquery[ed.sourceIndex].title;
   const official = read(ed.officialPath).rows.find((r) => r.row === 51);

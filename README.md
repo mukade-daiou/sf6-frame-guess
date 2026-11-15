@@ -59,6 +59,8 @@ VITE_BASE_PATH=/your-repository/ npm run preview
 
 ## 構成とデータ管理
 
+日常の確認は`npm run test:daily`、データ更新時は`npm run test:update`、保存資料と履歴の再現は`npm run test:history`を使います。`test:data`は従来の全Node検証と新しい差分検証を実行し、CIの検証範囲も維持します。共通差分検証の使い方と整理前後の測定結果は[テスト基盤整理の報告](docs/TEST_FOUNDATION_REPORT.md)を参照してください。
+
 `src/`はゲーム本体、`data/`は固定スナップショットと採用判断、`staging/candidates/`は元の32体860候補、`staging/adoption-inputs/`は現在の採用入力です。本番レコードにはSA96枠・強度別288入力を含みます。[採用ルール](docs/ADOPTION_RULES.md)と[条件付き必殺技の採用記録](docs/CONDITIONAL_SPECIAL_ADOPTION_REPORT.md)を参照してください。
 
 [データ追加・更新手順](docs/DATA_WORKFLOW.md)、[今回の整理・検証結果](docs/PROJECT_MAINTENANCE_REPORT.md)、[過去資料の索引](archive/README.md)を参照してください。過去の段階別コード・証拠はarchiveに保存しています。

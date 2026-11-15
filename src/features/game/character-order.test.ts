@@ -6,8 +6,8 @@ it("displays the launch roster from Luke followed by additions, without changing
   const before = [...production.characters];
   const sorted = sortCharactersForDisplay(production.characters);
   const ids = sorted.map((c) => c.id);
-  expect(ids).toHaveLength(32);
-  expect(new Set(ids).size).toBe(32);
+  expect([...ids].sort()).toEqual(before.map((c) => c.id).sort());
+  expect(new Set(ids).size).toBe(before.length);
   expect(ids.slice(0, 4)).toEqual(["luke", "jamie", "manon", "kimberly"]);
   expect(ids.slice(16, 23)).toEqual([
     "zangief",
@@ -18,7 +18,7 @@ it("displays the launch roster from Luke followed by additions, without changing
     "akuma",
     "m_bison",
   ]);
-  expect(ids.slice(-6)).toEqual([
+  expect(ids.slice(26, 32)).toEqual([
     "sagat",
     "cviper",
     "alex",

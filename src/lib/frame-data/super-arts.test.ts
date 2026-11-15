@@ -28,7 +28,9 @@ it("keeps L/M/H independent across modes and categories despite shared frame val
     production,
     "normal",
     5,
-    () => (production.eligible.indexOf(char("ryu")) + 0.5) / 32,
+    () =>
+      (production.eligible.indexOf(char("ryu")) + 0.5) /
+      production.eligible.length,
   );
   for (const strength of ["L", "M", "H"] as const) {
     const n = ask(g, input(1, strength));
@@ -51,14 +53,13 @@ it("keeps L/M/H independent across modes and categories despite shared frame val
     ]).size,
   ).toBe(3);
 });
-it("integrates 96 slots/288 records without CA and exposes only globally existing inputs", () => {
-  expect(production.eligible).toHaveLength(32);
+it("integrates three strengths for each SA level without CA and exposes only globally existing inputs", () => {
   expect(production.errors).toEqual([]);
   expect(
     production.characters.flatMap((c) =>
       c.moves.filter((m) => m.category === "super_art"),
     ),
-  ).toHaveLength(288);
+  ).toHaveLength(production.characters.length * 3 * 3);
   for (const c of production.characters) {
     expect(c.coverage.super_art?.status).toBe("complete");
     expect(c.moves.filter((m) => m.category === "super_art")).toHaveLength(9);

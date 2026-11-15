@@ -27,7 +27,7 @@ it("exposes 22P at all strengths with independent queries and shares the source 
     production,
     "normal",
     5,
-    () => (production.eligible.indexOf(c) + 0.5) / 32,
+    () => (production.eligible.indexOf(c) + 0.5) / production.eligible.length,
   );
   for (const strength of ["L", "M", "H"] as const) {
     const result = resolveMove(c, query(strength), "normal");

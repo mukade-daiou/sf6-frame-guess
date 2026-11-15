@@ -5,7 +5,12 @@ import { resolveMove } from "./resolver";
 it("resolves a level-free command against the target and keeps strengths independent", () => {
   for (const id of ["ryu", "aki"]) {
     const index = production.eligible.findIndex((c) => c.id === id);
-    let g = startGame(production, "normal", 5, () => (index + 0.5) / 32);
+    let g = startGame(
+      production,
+      "normal",
+      5,
+      () => (index + 0.5) / production.eligible.length,
+    );
     for (const strength of ["L", "M", "H"] as const) {
       const i = {
         type: "special" as const,

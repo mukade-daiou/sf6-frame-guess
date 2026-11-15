@@ -71,7 +71,9 @@ SA96枠、原典基本101行、個別強度質問288レコードは別の集計�
 
 ## 現行検証と過去の再現
 
-`npm test`はアプリの機能テスト、`npm run test:data`は現行スナップショットの再生成・固定性検査。過去の変換・収集・段階別再現は`npm run test:archive`で別途実行する。検査範囲を削除していない。共有JSONを再生成するためarchive側は直列実行し、進行中の手動編集と同時に実行しない。
+`npm run test:daily`はゲーム動作・共通差分処理・スキーマ検証、`npm run test:update`はそれらに現行スナップショットの再生成一致・承認差分・名前・本番ビルドの検証を加える。`npm run test:history`は保存原典と過去コミットを使う監査、およびarchiveの段階別再現を実行する。データ更新の完了時にはupdateとhistoryの両方を実行する。
+
+`npm test`と`npm run test:archive`は従来どおり個別に使える。`npm run test:data`は全Node検証を維持し、CIも従来の全検証を継続する。履歴再生成テストは共有JSONを使うため直列実行し、進行中の手動編集や別のデータ生成コマンドと同時に実行しない。使い方・共通差分の承認形式・計測結果は[テスト基盤整理の報告](TEST_FOUNDATION_REPORT.md)を参照する。
 
 現行データ回帰は`a34d9b8`、`f51c4e2`、`d11bb6d`、`571cea0`、`1ec74b4`の履歴も参照するため、shallow cloneではなく全履歴を用意する。CIのfetch-depth: 0を維持する。
 

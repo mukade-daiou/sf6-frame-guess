@@ -3,10 +3,18 @@ import { production } from "./datasets";
 import { startGame, ask } from "../../features/game/engine";
 import { resolveMove } from "./resolver";
 import { inputKey } from "./input";
-it("preserves 32 characters and equally selects only complete scopes, keeping held inputs unknown", () => {
+import decisions from "../../../data/adoption-decisions.json";
+it("preserves the reviewed roster and equally selects only complete scopes, keeping held inputs unknown", () => {
   expect(production.errors).toEqual([]);
-  expect(production.characters).toHaveLength(32);
-  expect(production.eligible).toHaveLength(32);
+  expect(production.characters.map((c) => c.id).sort()).toEqual(
+    decisions.characters.map((c) => c.id).sort(),
+  );
+  expect(production.eligible.map((c) => c.id).sort()).toEqual(
+    decisions.characters
+      .filter((c) => c.sourceInventoryComplete)
+      .map((c) => c.id)
+      .sort(),
+  );
   const partial = production.characters.filter(
     (c) => c.coverage.special.status === "partial",
   );

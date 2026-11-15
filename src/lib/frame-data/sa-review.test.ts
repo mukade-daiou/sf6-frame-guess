@@ -15,7 +15,7 @@ it.each([
       production,
       "normal",
       5,
-      () => (production.eligible.indexOf(c) + 0.5) / 32,
+      () => (production.eligible.indexOf(c) + 0.5) / production.eligible.length,
     );
     for (const strength of ["L", "M", "H"]) {
       const m = c.moves.find(
@@ -75,7 +75,8 @@ it("distinguishes missing coverage, conditional-only, unsupported and immutable 
       production,
       "normal",
       5,
-      () => (production.eligible.indexOf(base) + 0.5) / 32,
+      () =>
+        (production.eligible.indexOf(base) + 0.5) / production.eligible.length,
     ),
   );
   expect(ask(game, { ...m.input, motion: "111111111" }).status).toBe(

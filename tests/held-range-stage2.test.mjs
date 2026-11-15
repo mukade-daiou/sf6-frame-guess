@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { execFileSync } from "node:child_process";
+import { assertRegenerationPreserves } from "./helpers/regeneration.mjs";
 import { rollbackClassification } from "../scripts/contact-timing-policy.mjs";
 const read=p=>JSON.parse(readFileSync(p,"utf8"));
 test("C134 stage2 preserves stage1 and uses the exact normal SA source row",()=>{
@@ -35,9 +35,5 @@ test("C134 stage2 preserves stage1 and uses the exact normal SA source row",()=>
 });
 test("stage2 preparation remains stable alongside historical regeneration",()=>{
  const paths=["staging/held-range-review.json","staging/distance-range-candidates.json","data/adoption-decisions.json"];
- const before=paths.map(read);
- execFileSync("node",["scripts/prepare-held-range-stage2.mjs"]);
- execFileSync("node",["scripts/prepare-held-range-review.mjs"]);
- execFileSync("node",["scripts/review-distance-ranges.mjs"]);
- assert.deepEqual(paths.map(read),before);
+ assertRegenerationPreserves(paths, ["scripts/prepare-held-range-stage2.mjs", "scripts/prepare-held-range-review.mjs", "scripts/review-distance-ranges.mjs"]);
 });
