@@ -12,7 +12,12 @@ export interface HistoryEntry {
   result: Resolution;
   mode: Mode;
 }
+export type RunMode = "single" | "streak";
+export const RECENT_STREAK_EXCLUSION = 10;
+
 export interface Game {
+  runMode: RunMode;
+  streak: Character[];
   review?: Dataset["review"];
   phase: "question" | "answer" | "result";
   target: Character;
@@ -29,20 +34,63 @@ export function startGame(
   limit = 7,
   random = Math.random,
 ): Game {
+  return createGame(dataset, mode, limit, random, "single", []);
+}
+
+export function startStreak(
+  dataset: Dataset,
+  mode: Mode,
+  limit = 7,
+  random = Math.random,
+): Game {
+  if (dataset.eligible.length <= RECENT_STREAK_EXCLUSION)
+    throw new Error("連続モードには11体以上の出題可能キャラクターが必要です。");
+  return createGame(dataset, mode, limit, random, "streak", []);
+}
+
+export function continueStreak(
+  game: Game,
+  dataset: Dataset,
+  random = Math.random,
+): Game {
+  if (game.runMode !== "streak" || !isCorrect(game)) return game;
+  return createGame(dataset, game.mode, game.limit, random, "streak", [
+    ...game.streak,
+    game.target,
+  ]);
+}
+
+function createGame(
+  dataset: Dataset,
+  mode: Mode,
+  limit: number,
+  random: () => number,
+  runMode: RunMode,
+  streak: Character[],
+): Game {
   if (dataset.eligible.length < 2)
     throw new Error(
       "採用済みで収録範囲が確定したキャラクターが2体以上必要です。",
     );
   if (!Number.isInteger(limit) || limit < 1)
     throw new Error("質問回数は1以上の整数で指定してください。");
+  const recent = new Set(
+    streak.slice(-RECENT_STREAK_EXCLUSION).map((character) => character.id),
+  );
+  const pool =
+    runMode === "streak"
+      ? dataset.eligible.filter((character) => !recent.has(character.id))
+      : dataset.eligible;
+  if (pool.length === 0)
+    throw new Error("直近10問と重複しないキャラクターがありません。");
   return {
     review: dataset.review,
     phase: "question",
     target:
-      dataset.eligible[
+      pool[
         Math.min(
-          dataset.eligible.length - 1,
-          Math.max(0, Math.floor(random() * dataset.eligible.length)),
+          pool.length - 1,
+          Math.max(0, Math.floor(random() * pool.length)),
         )
       ],
     candidates: dataset.eligible,
@@ -51,6 +99,8 @@ export function startGame(
     limit,
     history: [],
     selectedId: null,
+    runMode,
+    streak,
   };
 }
 export function ask(
@@ -104,7 +154,7 @@ export function ask(
   };
 }
 export function changeMode(game: Game, mode: Mode): Game {
-  if (game.history.length > 0) return game;
+  if (game.history.length > 0 || game.streak.length > 0) return game;
   return { ...game, mode };
 }
 export function requestAnswer(game: Game): Game {
