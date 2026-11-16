@@ -8,6 +8,8 @@ import {
   ask,
   isCorrect,
   startGame,
+  startStreak,
+  continueStreak,
   changeMode,
   requestAnswer,
   returnToQuestions,
@@ -18,6 +20,33 @@ import { History } from "../components/History";
 import { DataInfo } from "../components/DataInfo";
 import { MoveNotation } from "../components/MoveNotation";
 import { sortCharactersForDisplay } from "../features/game/character-order";
+
+function ShareButton({ game, label }: { game: Game; label: string }) {
+  return (
+    <button
+      type="button"
+      className="secondary-button"
+      aria-label={`Xで${label}`}
+      onClick={() =>
+        window.open(shareUrl(game), "_blank", "noopener,noreferrer")
+      }
+    >
+      <svg
+        aria-hidden="true"
+        width="17"
+        height="17"
+        viewBox="0 0 24 24"
+        style={{ verticalAlign: "-3px", marginRight: "8px" }}
+      >
+        <path
+          fill="currentColor"
+          d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.5 5.4 22H2.2l7.3-8.4L1.8 2h6.4l4.4 6.8L18.9 2zm-1.1 18h1.7L7.2 3.9H5.4L17.8 20z"
+        />
+      </svg>
+      {label}
+    </button>
+  );
+}
 
 export default function App() {
   const [game, setGame] = useState<Game | null>(null);
@@ -89,6 +118,19 @@ export default function App() {
                 >
                   ゲーム開始
                 </button>
+                <button
+                  className="secondary-button"
+                  disabled={
+                    dataset.eligible.length <= 10 || dataset.inputs.length === 0
+                  }
+                  onClick={() => {
+                    setGame(startStreak(dataset, "normal", limit));
+                    setSelection("");
+                    setMessage("");
+                  }}
+                >
+                  連続モード
+                </button>
               </div>
             </div>
             <figure className="start-example">
@@ -158,6 +200,9 @@ export default function App() {
                 溜め技は左から右、または下から上へ入力します。長押しは不要です。
               </li>
               <li>CAとSAの派生技は対象外です。</li>
+              <li>
+                連続モードは正解すると自動で次の問題へ進みます。不正解・ギブアップで終了し、直近10問で正解したキャラは出題されません。
+              </li>
             </ul>
           </details>
           {dataset.eligible.length < 2 && (
@@ -189,7 +234,9 @@ export default function App() {
                   ? "コマンドを指定"
                   : game.phase === "answer"
                     ? "最終回答"
-                    : "結果"}
+                    : game.runMode === "streak"
+                      ? "連続モード終了"
+                      : "結果"}
               </h2>
               {game.phase === "result" && (
                 <p className="result-session">
@@ -211,7 +258,9 @@ export default function App() {
                         key={m}
                         type="button"
                         aria-pressed={game.mode === m}
-                        disabled={game.history.length > 0}
+                        disabled={
+                          game.history.length > 0 || game.streak.length > 0
+                        }
                         onClick={() => {
                           setGame(changeMode(game, m));
                           setMessage("");
@@ -227,6 +276,16 @@ export default function App() {
                 </div>
               )}
             </div>
+            {game.runMode === "streak" && (
+              <div className="streak-bar">
+                <p className="streak-count" aria-live="polite">
+                  連続正解 <strong>{game.streak.length}</strong>問
+                </p>
+                {game.phase !== "result" && (
+                  <ShareButton game={game} label="記録をシェア" />
+                )}
+              </div>
+            )}
             {game.phase === "question" && (
               <MoveSelector
                 inputs={game.inputs}
@@ -244,8 +303,17 @@ export default function App() {
                 <form
                   onSubmit={(e) => {
                     e.preventDefault();
-                    setGame(answer(game, selection));
-                    setMessage("");
+                    const result = answer(game, selection);
+                    if (result.runMode === "streak" && isCorrect(result)) {
+                      setGame(continueStreak(result, dataset));
+                      setMessage(
+                        `正解！ ${result.streak.length + 1}問連続正解`,
+                      );
+                    } else {
+                      setGame(result);
+                      setMessage("");
+                    }
+                    setSelection("");
                   }}
                 >
                   <fieldset>
@@ -342,38 +410,18 @@ export default function App() {
                 <div className="result-actions">
                   <button
                     onClick={() => {
-                      setGame(startGame(dataset, game.mode, limit));
+                      setGame(
+                        game.runMode === "streak"
+                          ? startStreak(dataset, game.mode, limit)
+                          : startGame(dataset, game.mode, limit),
+                      );
                       setSelection("");
                       setMessage("");
                     }}
                   >
                     再プレイ
                   </button>
-                  <button
-                    className="secondary-button"
-                    aria-label="Xで結果をシェア"
-                    onClick={() =>
-                      window.open(
-                        shareUrl(game),
-                        "_blank",
-                        "noopener,noreferrer",
-                      )
-                    }
-                  >
-                    <svg
-                      aria-hidden="true"
-                      width="17"
-                      height="17"
-                      viewBox="0 0 24 24"
-                      style={{ verticalAlign: "-3px", marginRight: "8px" }}
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.5 5.4 22H2.2l7.3-8.4L1.8 2h6.4l4.4 6.8L18.9 2zm-1.1 18h1.7L7.2 3.9H5.4L17.8 20z"
-                      />
-                    </svg>
-                    結果をシェア
-                  </button>
+                  <ShareButton game={game} label="結果をシェア" />
                 </div>
               </>
             )}
