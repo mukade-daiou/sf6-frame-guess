@@ -12,7 +12,7 @@ export function History({
 }) {
   return (
     <section
-      className={`panel history-section${mode === "startup" ? " history-startup" : ""}`}
+      className={`${entries.length ? "panel " : ""}history-section${mode === "startup" ? " history-startup" : ""}`}
     >
       <h2>質問履歴</h2>
       {entries.length === 0 ? (

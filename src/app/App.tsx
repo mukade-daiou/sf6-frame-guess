@@ -228,6 +228,73 @@ export default function App() {
                   : "answer-screen"
             }
           >
+            <div className="run-mode-bar">
+              <div className="segments" role="group" aria-label="プレイモード">
+                {(["single", "streak"] as const).map((mode) => (
+                  <button
+                    key={mode}
+                    type="button"
+                    aria-pressed={game.runMode === mode}
+                    disabled={
+                      mode === "streak" && dataset.eligible.length <= 10
+                    }
+                    onClick={() => {
+                      if (game.runMode === mode) return;
+                      const prompt =
+                        game.runMode === "streak"
+                          ? `現在の連続正解記録（${game.streak.length}問）を終了してモードを変更しますか？`
+                          : "現在のゲームを終了してモードを変更しますか？";
+                      if (
+                        game.phase !== "result" &&
+                        (game.history.length > 0 || game.streak.length > 0) &&
+                        !window.confirm(prompt)
+                      )
+                        return;
+                      setGame(
+                        mode === "streak"
+                          ? startStreak(dataset, "normal", limit)
+                          : startGame(dataset, "normal", limit),
+                      );
+                      setSelection("");
+                      setMessage("");
+                    }}
+                  >
+                    {mode === "single" ? "通常モード" : "連続モード"}
+                  </button>
+                ))}
+              </div>
+              <button
+                type="button"
+                className="title-return"
+                onClick={() => {
+                  const prompt =
+                    game.runMode === "streak"
+                      ? `現在の連続正解記録（${game.streak.length}問）を終了してモード選択に戻りますか？`
+                      : "現在のゲームを終了してモード選択に戻りますか？";
+                  if (
+                    game.phase !== "result" &&
+                    (game.history.length > 0 || game.streak.length > 0) &&
+                    !window.confirm(prompt)
+                  )
+                    return;
+                  setGame(null);
+                  setSelection("");
+                  setMessage("");
+                }}
+              >
+                ← タイトルへ戻る
+              </button>
+            </div>
+            {game.runMode === "streak" && (
+              <div className="streak-bar">
+                <p className="streak-count" aria-live="polite">
+                  <strong>{game.streak.length}</strong> 連勝
+                </p>
+                {game.phase !== "result" && (
+                  <ShareButton game={game} label="記録をシェア" />
+                )}
+              </div>
+            )}
             <div className="game-heading">
               <h2>
                 {game.phase === "question"
@@ -276,16 +343,6 @@ export default function App() {
                 </div>
               )}
             </div>
-            {game.runMode === "streak" && (
-              <div className="streak-bar">
-                <p className="streak-count" aria-live="polite">
-                  連続正解 <strong>{game.streak.length}</strong>問
-                </p>
-                {game.phase !== "result" && (
-                  <ShareButton game={game} label="記録をシェア" />
-                )}
-              </div>
-            )}
             {game.phase === "question" && (
               <MoveSelector
                 inputs={game.inputs}

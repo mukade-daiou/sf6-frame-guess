@@ -149,6 +149,7 @@ export default function MovesPage() {
         {visible.length} / {patterns.length}入力パターン · 保存レコード{" "}
         {character.moves.length}件
       </p>
+      <p className="moves-scroll-hint">表を左右にスクロールできます。</p>
       <div
         className="moves-scroll"
         role="region"
