@@ -6,7 +6,35 @@ import { displayFrame } from "../../lib/frame-data/resolver";
 export const GAME_URL = "https://mukade-daiou.github.io/sf6-frame-guess/";
 const weight = (text: string) => twitterText.parseTweet(text).weightedLength;
 
+function shareStreakText(game: Game): string {
+  const difficulty = game.mode === "normal" ? "Normal" : "Hard";
+  const ending =
+    game.phase !== "result"
+      ? ""
+      : game.selectedId === null
+        ? "\nギブアップで終了"
+        : game.selectedId !== game.target.id
+          ? "\n不正解で終了"
+          : "";
+  const prefix = `SF6 フレーム探偵｜連続モード\n${difficulty}｜${game.streak.length}問連続正解${ending}\n正解キャラ：`;
+  const suffix = `\n\n${GAME_URL}\n#SF6`;
+  const names = game.streak.map((character) => character.nameJa);
+  const full = `${prefix}${names.join(" → ") || "なし"}${suffix}`;
+  if (weight(full) <= 280) return full;
+
+  const kept: string[] = [];
+  for (const name of names) {
+    const candidate = `${prefix}${[...kept, name].join(" → ")} → …${suffix}`;
+    if (weight(candidate) > 280) break;
+    kept.push(name);
+  }
+  const text = `${prefix}${kept.length ? `${kept.join(" → ")} → …` : "…"}${suffix}`;
+  if (weight(text) > 280) throw new Error("必須情報が投稿上限を超えています");
+  return text;
+}
+
 export function shareText(game: Game): string {
+  if (game.runMode === "streak") return shareStreakText(game);
   const correct = game.selectedId === game.target.id;
   const result =
     game.selectedId === null
