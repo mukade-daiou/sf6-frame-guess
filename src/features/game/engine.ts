@@ -31,7 +31,7 @@ export interface Game {
 export function startGame(
   dataset: Dataset,
   mode: Mode,
-  limit = 7,
+  limit = 5,
   random = Math.random,
 ): Game {
   return createGame(dataset, mode, limit, random, "single", []);
@@ -40,7 +40,7 @@ export function startGame(
 export function startStreak(
   dataset: Dataset,
   mode: Mode,
-  limit = 7,
+  limit = 5,
   random = Math.random,
 ): Game {
   if (dataset.eligible.length <= RECENT_STREAK_EXCLUSION)

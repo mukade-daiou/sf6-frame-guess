@@ -53,7 +53,7 @@ export default function App() {
   const [selection, setSelection] = useState("");
   const [message, setMessage] = useState("");
   const dataset = production;
-  const limit = 7;
+  const limit = 5;
   function question(input: MoveInput) {
     if (!game) return;
     const next = ask(game, input);

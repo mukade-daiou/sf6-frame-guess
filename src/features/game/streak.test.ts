@@ -36,7 +36,7 @@ it("only enables an endless sequence with at least 11 characters", () => {
 
 it("automatically clears per-question state and excludes the last ten correct answers", () => {
   const dataset = roster(11);
-  let game = startStreak(dataset, "normal", 7, () => 0);
+  let game = startStreak(dataset, "normal", undefined, () => 0);
   const sequence: string[] = [];
   for (let index = 0; index < 35; index++) {
     expect(game.phase).toBe("question");
@@ -49,7 +49,7 @@ it("automatically clears per-question state and excludes the last ten correct an
     expect(isCorrect(answered)).toBe(true);
     game = continueStreak(answered, dataset, () => 0);
     expect(game.streak).toHaveLength(index + 1);
-    expect(game.limit).toBe(7);
+    expect(game.limit).toBe(5);
     expect(game.candidates).toBe(dataset.eligible);
   }
   expect(new Set(sequence.slice(0, 11)).size).toBe(11);

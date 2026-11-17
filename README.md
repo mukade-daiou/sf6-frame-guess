@@ -73,6 +73,6 @@ VITE_BASE_PATH=/your-repository/ npm run preview
 
 ## 必殺技・SAの操作
 
-「必殺技・SA」タブでコマンドと弱・中・強（またはOD）を指定します。SAレベルの選択は不要です。同じフレーム値でも各強度は独立した質問です。CAとSA派生は対象外。溜めSAは左→右→左→右、720は2回転または候補クリックで入力できます。Normal/Hardは最初の有効な質問を記録すると固定され、質問は最大7回です。
+「必殺技・SA」タブでコマンドと弱・中・強（またはOD）を指定します。SAレベルの選択は不要です。同じフレーム値でも各強度は独立した質問です。CAとSA派生は対象外。溜めSAは左→右→左→右、720は2回転または候補クリックで入力できます。Normal/Hardは最初の有効な質問を記録すると固定され、質問は最大5回です。
 
 現在のデータ監査には`npm run data:audit-coverage`、`npx tsx scripts/audit-super-arts.ts --check`、`npx tsx scripts/audit-strength-expansion.ts --check`、`npx tsx scripts/audit-conditional-specials.ts`を使います。現行の`npm run test:data`はこれらの回帰検査と過去コミットとの比較を含み、Git全履歴が必要です。過去の段階別再現テストは`npm run test:archive`に分けています。

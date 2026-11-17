@@ -200,7 +200,7 @@ it("allows mode changes until a question is recorded, then keeps the mode locked
   expect(changedResult.selectedId).toBe(result.selectedId);
   expect(changedResult.history).toBe(result.history);
   expect(changedResult.mode).toBe("startup");
-  expect(startGame(dataset(), "normal").limit).toBe(7);
+  expect(startGame(dataset(), "normal").limit).toBe(5);
   const replay = startGame(dataset(), "normal");
   expect(changeMode(replay, "startup").mode).toBe("startup");
 });
