@@ -76,7 +76,7 @@ export function History({
                           not_recorded: "データ未収録",
                           ambiguous: "同一入力が衝突",
                         }[entry.result.assessment]
-                      : "採用データ内に該当する技なし"}
+                      : "技なし"}
                   </p>
                 )}
               </li>
