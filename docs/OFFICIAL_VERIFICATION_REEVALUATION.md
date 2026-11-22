@@ -1,18 +1,18 @@
 # 公式フレームデータ再照合・検証状況
 
-現行datasetIdは`hooligan-no-input-startup-2026-11-14-r1`。フーリガン発生4欄を50Fへ変更後、保存公式の比較器で再計算し、1278技・5112欄、一致4459／不一致61／条件違い42／確認不能550は不変。対象パッチUNVERIFIED。以下のdatasetIdは過去の段階。
+この文書は方向付き特殊技の追加前に実施した照合の記録です。各集計は記載したdatasetIdに対応します。現行の収録件数は [データ更新手順](DATA_WORKFLOW.md) を参照してください。
 
-最新datasetIdは`automatic-no-input-startup-2026-11-14-r1`。百鬼襲の発生5欄を53Fへ復元後、保存公式の比較器を現行データで再実行した。1278技・5112欄、一致4459／不一致61／条件違い42／確認不能550で件数不変。対象パッチUNVERIFIEDも維持。以下のdatasetIdは各段階の履歴。
+`hooligan-no-input-startup-2026-11-14-r1` ではフーリガン発生4欄を50Fへ変更後、保存公式の比較器で再計算した。1,278技・5,112欄、一致4,459／不一致61／条件違い42／確認不能550で、対象パッチは `UNVERIFIED`。
 
-現行datasetIdは`nonattacking-parent-startup-2026-11-14-r1`。非攻撃の派生親技の発生48欄を「なし」に変更したが、いずれも保存公式の発生数値が空欄の確認不能欄で、採用1278・比較5112欄と各分類件数は不変。現行値と旧分類の対応は[台帳のparentStartupRule.currentComparison](../staging/official-reevaluation/remaining-screen.json)に記録する。以下のdatasetIdと判断は除外時点の履歴。
+`automatic-no-input-startup-2026-11-14-r1` では百鬼襲の発生5欄を53Fへ復元後、保存公式の比較器を再実行し、同じ集計結果を得た。
 
-現行datasetIdは `dark-ingrid-exclusion-2026-11-14-r1`。32キャラ・1298レコードのうち採用1278レコード、比較5112フィールド、一致4459・不一致61・条件違い42・確認不能550。公式資料の対象パッチはUNVERIFIED。全体Fは原則として通常条件の空振り時を採用する。
+`nonattacking-parent-startup-2026-11-14-r1` では非攻撃の派生親技の発生48欄を「なし」に変更した。保存公式では全48欄が空欄だったため、比較件数と分類は同じだった。[照合台帳](../staging/official-reevaluation/remaining-screen.json)
 
-Dark Ingrid限定の214214Kは共通元とL/M/Hの4レコードを非採用化した。[除外前の保存照合](../staging/official-reevaluation/results-after-risk-fixes.json)を履歴として保持し、現行の採用IDと全値を照合して除外16欄（すべて確認不能）だけを比較母数から除いた。ほかの分類は変更せず、再取得や数値の再解釈はしていない。現行集計・根拠・対象IDは[既存台帳のdarkIngridExclusion](../staging/official-reevaluation/remaining-screen.json)に記録する。
+`dark-ingrid-exclusion-2026-11-14-r1` ではDark Ingrid限定の214214Kを共通元とL/M/Hの4レコードで非採用とした。[除外前の保存照合](../staging/official-reevaluation/results-after-risk-fixes.json)から確認不能の16欄を除き、1,278技・5,112欄となった。根拠と対象IDは [照合台帳のdarkIngridExclusion](../staging/official-reevaluation/remaining-screen.json) に記録した。
 
 確認不能の出題リスク監査後、空振り全体Fの18フィールドを修正し、特殊状態限定のベガPsycho Burstを採用対象外とした。エド弱・中サイコフリッカーの空振り全体は、ユーザーのゲーム内確認により現行45F・49Fを維持する。測定時のゲーム版・相手・距離・ホールド条件は未報告であり、原典の括弧内43F・48Fとの差の原因は未確定。[監査記録](../staging/official-reevaluation/remaining-screen.json)
 
-以下は各段階の判断・比較結果の履歴であり、当時のdatasetId・件数・現行値は上記の最新結果と区別する。
+以下の件数と比較値は各節の調査時点のものです。
 
 ## 過去のユーザーによるゲーム内確認の反映
 

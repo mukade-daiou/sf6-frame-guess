@@ -1,20 +1,22 @@
 # データの正本と更新手順
 
-現行datasetIdは`hooligan-no-input-startup-2026-11-14-r1`。フーリガン通常L/M/H・ODの50Fは`parentStartupDecisions`の無入力Cargo参照を検査して生成する。以下は過去の段階。
+現行datasetIdは [data/metadata.json](../data/metadata.json) の `command-normals-2026-11-23-r1`。32キャラ・1,408レコードのうち1,388件を採用している。方向付き特殊技は [採用判断](../data/adoption-decisions.json) の `commandNormals` を参照して生成する。
 
-最新datasetIdは`automatic-no-input-startup-2026-11-14-r1`。parentStartupDecisionsの百鬼襲5欄は無入力自動攻撃の53Fを使用し、旧判断はpreviousDecisionに保持する。以下のdatasetIdは各段階の履歴。
+## 過去の段階別更新履歴
 
-現行datasetIdは`nonattacking-parent-startup-2026-11-14-r1`。非攻撃の派生親技21元・48欄を`parentStartupDecisions`で発生「なし」にし、生成の最終フレーム適用段階と既存履歴投影で保護する。原典・旧値と全体/hit/blockは保持。次段落のdatasetIdは除外時点の履歴、件数は現行も同じ。
+以下のdatasetIdと件数は各段階の記録。
 
-現行datasetIdは`dark-ingrid-exclusion-2026-11-14-r1`。32キャラ・1298レコードのうち1278レコードを採用している。保存公式との照合5112フィールドは一致4459・不一致61・条件違い42・確認不能550で、公式資料の対象パッチはUNVERIFIED。全体Fは原則として通常条件の空振り時を採用する。[照合結果](OFFICIAL_VERIFICATION_REEVALUATION.md)と[個別監査](../staging/official-reevaluation/unverifiable-play-risk-report.md)を参照。
+`hooligan-no-input-startup-2026-11-14-r1` ではフーリガン通常L/M/H・ODの50Fを採用した。`parentStartupDecisions` の無入力Cargo参照を検査して生成する。
+
+`automatic-no-input-startup-2026-11-14-r1` では `parentStartupDecisions` の百鬼襲5欄に無入力自動攻撃の53Fを採用し、旧判断を `previousDecision` に保持した。
+
+`nonattacking-parent-startup-2026-11-14-r1` では非攻撃の派生親技21元・48欄を `parentStartupDecisions` で発生「なし」にした。生成の最終フレーム適用段階と履歴投影で保護し、原典・旧値と全体/hit/blockを保持する。
+
+`dark-ingrid-exclusion-2026-11-14-r1` では32キャラ・1,298レコードのうち1,278件を採用していた。保存公式との5,112フィールドの照合結果は [照合結果](OFFICIAL_VERIFICATION_REEVALUATION.md) と [個別監査](../staging/official-reevaluation/unverifiable-play-risk-report.md) を参照。全体Fは原則として通常条件の空振り時を採用する。
 
 通常の生成入口は`build-snapshot.ts`。空振り全体Fの18件は`whiffTotalCorrections.unverifiableDecisions`、特殊状態限定技の除外は`specialStateExclusions`で再生成し、旧値と原典を検証する。エド弱・中サイコフリッカーの空振り全体45F・49Fはユーザーのゲーム内確認に基づき維持し、確認条件の未報告部分は[監査記録](../staging/official-reevaluation/remaining-screen.json)に残す。
 
 Dark Ingrid限定の`ingrid__special_214214_K_none`とL/M/H展開先は、同じ除外判断の`afterStrengthExpansion`指定で展開後に非採用化する。展開前に共通元を除外すると既存3レコードが消えるため、ID・原典・値を保持してから除外する。履歴投影では各`before`へ復元する。
-
-## 過去の段階別更新履歴
-
-以下の段階別datasetId・集計は各時点の履歴であり、上記の現行データを置き換えない。
 
 持続当ての範囲化を撤回した時点のdatasetIdは`arrival-startup-only-2026-11-09-r1`。採用4・保留108・対象外625原典項目、範囲値は9技レコード・9発生フィールドとなった。通常の生成入口は`build-snapshot.ts`で、旧`distanceRanges.decisions`から`contactTimingRollback.revoked`を除いた判断だけを適用し、共通強度展開へ渡す。旧判断の`before`が単一代表値の復元元である。撤回正本と保留台帳の分類上書きは`prepare-contact-timing-rollback.mjs`で準備し、候補台帳は段階別判断の最後に撤回を適用する。報告は`report-distance-ranges.mjs`から方針を出力する。
 
@@ -30,9 +32,9 @@ Dark Ingrid限定の`ingrid__special_214214_K_none`とL/M/H展開先は、同じ
 
 ## 現在の生成処理
 
-1298件は従来908件＋SA288件＋共通必殺技の強度展開102件。採用条件はconditionalSpecialsを正本とし、scripts/conditional-specials.tsを通常の採用判定後・共通強度展開前に適用する。原典やadoption-inputsは変更しない。
+採用条件は `data/adoption-decisions.json` を正本とする。条件付き必殺技の判断は `conditionalSpecials` から読み、`scripts/conditional-specials.ts` が通常の採用判定後・共通強度展開前に適用する。
 
-data:planと--write --updateの更新保護を維持する。scripts/audit-conditional-specials.tsは開始HEADの全1292件と比較し、許可された21件と新規6件以外が不変であることを検査する。既存のSA/共通強度保護検査にも今回の明示的な採用差分だけを適用し、それ以外を引き続き比較する。以下の第15段階の件数はその完了時点の記録。
+`data:plan` と `--write --update` の更新保護を維持する。条件付き必殺技の履歴監査 `scripts/audit-conditional-specials.ts` は導入前の1,292件を基準に、承認済み差分を検査する。以下の第15段階の件数はその完了時点の記録。
 
 ## SAと共通強度展開
 

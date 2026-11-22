@@ -1,7 +1,7 @@
 SF6 Frame Guess — Data attribution and changes
 
-The community frame-data material under data/characters/, staging/ and archive/staging/
-is derived from:
+The SuperCombo-derived portions of the frame-data material in data/characters/,
+staging/ and archive/staging/ are derived from:
 
   SuperCombo Wiki contributors — Street Fighter 6 Frame Data
   https://wiki.supercombo.gg/w/Street_Fighter_6
@@ -21,9 +21,13 @@ Japanese normal-move labels, frame-value status classification, exclusion and
 collision audits, source-record-bound review annotations, exact-duplicate
 merging, restoration of explicit knockdown markers as D, restoration of
 explicit not-applicable dashes, quality reports and before/after diffs.
-Data remains patch-unverified; see archive/docs/FRAME_DATA_QUALITY_REPORT.md.
+The current dataset also includes records derived from CAPCOM's official frame
+tables. Their source.kind is "official", with the source URL and a CAPCOM
+rights statement on each record. The CC BY-SA 4.0 statement above is limited
+to the SuperCombo-derived material. See docs/DATA_SOURCES.md for source scope.
+The game patch remains unverified.
 
-The original upstream NOTICE files are preserved inside both staging folders.
+The original upstream NOTICE files are preserved with the archived snapshots.
 The upstream NOTICE's reference to an MIT source-code license concerns that
 upstream project; it is not a blanket license grant for this repository's code.
 Synthetic fixtures are separate and carry their own recorded attribution.

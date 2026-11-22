@@ -1,6 +1,6 @@
 # データ仕様 v1.0.0
 
-現行datasetIdは `unverifiable-risk-corrections-2026-11-14-r1`。32キャラ・1298レコードのうち1282レコードを採用し、保存公式との5128フィールドの照合は一致4459・不一致61・条件違い42・確認不能566。公式資料の対象パッチはUNVERIFIED。全体Fは原則として通常条件の空振り時を採用する。詳細は[データ更新手順](DATA_WORKFLOW.md)と[公式照合](OFFICIAL_VERIFICATION_REEVALUATION.md)を参照。
+現行のdatasetIdとレコード数は [データ更新手順](DATA_WORKFLOW.md) を参照。対象パッチは `UNVERIFIED`。全体Fは原則として通常条件の空振り時を採用する。保存公式との過去の比較範囲と結果は [公式照合](OFFICIAL_VERIFICATION_REEVALUATION.md) に記録している。
 
 `whiffTotalCorrections.unverifiableDecisions` は空振り全体Fの追加18件、`specialStateExclusions` は特殊状態限定技の除外を保持し、生成・履歴監査で検証する。エド弱・中サイコフリッカーの空振り全体45F・49Fはユーザーのゲーム内確認に基づき維持する。測定条件の未報告部分は[監査記録](../staging/official-reevaluation/remaining-screen.json)を参照。
 
