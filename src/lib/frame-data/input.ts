@@ -1,5 +1,13 @@
 import type { MoveInput } from "./schema";
 
+export function isCommandNormal(input: MoveInput): boolean {
+  return (
+    input.type === "normal" &&
+    input.direction !== "5" &&
+    input.direction !== "2"
+  );
+}
+
 // Question controls support directional motions and six attacks plus OD pairs.
 // Supports the two explicit charge motions; other complex records remain intact.
 export function isQuestionInput(input: MoveInput): boolean {

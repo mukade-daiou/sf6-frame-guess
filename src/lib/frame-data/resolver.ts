@@ -1,5 +1,5 @@
 import type { Character, FrameValue, Mode, Move, MoveInput } from "./schema";
-import { inputKey } from "./input";
+import { inputKey, isCommandNormal } from "./input";
 import { hasCompleteScope, isMoveUsable } from "./adoption";
 
 export type Resolution =
@@ -96,7 +96,12 @@ export function resolveMove(
     )
       return { status: "unknown" };
     return {
-      status: hasCompleteScope(character, input.type) ? "not_found" : "unknown",
+      status: hasCompleteScope(
+        character,
+        isCommandNormal(input) ? "command_normal" : input.type,
+      )
+        ? "not_found"
+        : "unknown",
     };
   }
   const move = matches[0];

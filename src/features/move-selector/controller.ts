@@ -1,7 +1,7 @@
-import type { MoveInput } from "../../lib/frame-data/schema";
+import type { Direction, MoveInput } from "../../lib/frame-data/schema";
 import { isQuestionInput } from "../../lib/frame-data/input";
 export { isQuestionInput } from "../../lib/frame-data/input";
-export type Direction = "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9";
+export type { Direction } from "../../lib/frame-data/schema";
 const perimeter: Direction[] = ["6", "3", "2", "1", "4", "7", "8", "9"];
 export type Rotation = {
   previous: Direction | null;

@@ -98,11 +98,13 @@ export const saLevelSchema = z.union([
   z.literal(2),
   z.literal(3),
 ]);
+const directionSchema = z.enum(["1", "2", "3", "4", "5", "6", "7", "8", "9"]);
+export type Direction = z.infer<typeof directionSchema>;
 export const inputSchema = z
   .discriminatedUnion("type", [
     z.object({
       type: z.literal("normal"),
-      direction: z.enum(["5", "2"]),
+      direction: directionSchema,
       button: z.enum(["P", "K"]),
       strength: z.enum(["L", "M", "H"]),
     }),
@@ -265,6 +267,7 @@ export const characterSchema = z.object({
   source: sourceSchema,
   coverage: z.object({
     normal: coverage,
+    command_normal: coverage.optional(),
     special: coverage,
     super_art: coverage.optional(),
   }),

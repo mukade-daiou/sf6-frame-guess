@@ -160,9 +160,9 @@ export function CommandNotation({
 export function MoveNotation({ input }: { input: MoveInput }) {
   const command =
     input.type === "normal"
-      ? input.direction === "2"
-        ? "2"
-        : ""
+      ? input.direction === "5"
+        ? ""
+        : input.direction
       : input.motion === "none"
         ? ""
         : input.motion;

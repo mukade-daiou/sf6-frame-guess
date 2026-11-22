@@ -95,6 +95,9 @@
           "required": ["status", "verification"],
           "additionalProperties": false
         },
+        "command_normal": {
+          "$ref": "#/properties/coverage/properties/normal"
+        },
         "special": {
           "type": "object",
           "properties": {
@@ -172,7 +175,7 @@
                   },
                   "direction": {
                     "type": "string",
-                    "enum": ["2", "5"]
+                    "enum": ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
                   },
                   "button": {
                     "type": "string",

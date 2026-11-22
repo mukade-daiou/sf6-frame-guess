@@ -184,7 +184,7 @@ for (const width of [1280, 768, 390, 320]) {
     "Charge candidate completion failed",
   );
   click("クリア");
-  click("通常技");
+  click("通常技・特殊技");
   click("弱P");
   click("質問する");
   ev(() => {

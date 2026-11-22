@@ -145,6 +145,18 @@ for (const d of decisions.characters) {
 }
 for (const id of Object.keys(files))
   files[id] = applyReviewedUpdates(files[id], decisions.reviewedUpdates ?? []);
+if (decisions.commandNormals) {
+  const { applyCommandNormals } = await import("./command-normals");
+  for (const [id, approval] of Object.entries(
+    decisions.commandNormals as Record<
+      string,
+      Parameters<typeof applyCommandNormals>[1]
+    >,
+  )) {
+    if (!files[id]) throw new Error(`Unknown command normal character: ${id}`);
+    files[id] = applyCommandNormals(files[id], approval);
+  }
+}
 const dataset = validateDataset(metadata, files);
 if (
   dataset.errors.length ||

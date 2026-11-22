@@ -14,7 +14,7 @@ export function isMoveUsable(character: Character, move: Move): boolean {
 }
 export function hasCompleteScope(
   character: Character,
-  category: Move["category"],
+  category: keyof Character["coverage"],
 ): boolean {
   const coverage = character.coverage[category];
   if (!coverage) return false;

@@ -33,7 +33,7 @@ export function MoveSelector({
   inputs = inputs.filter(
     (i) => i.type === "normal" || (i.type === "special" && i.includeSuperArts),
   );
-  const [direction, setDirection] = useState<"5" | "2">("5");
+  const [direction, setDirection] = useState<Direction>("5");
   const [command, setCommand] = useState("");
   const previous = useRef<Direction>("5");
   const [selected, setSelected] = useState<MoveInput>();
@@ -84,7 +84,7 @@ export function MoveSelector({
               clear();
             }}
           >
-            {t === "normal" ? "通常技" : "必殺技・SA"}
+            {t === "normal" ? "通常技・特殊技" : "必殺技・SA"}
           </button>
         ))}
       </div>
@@ -96,11 +96,9 @@ export function MoveSelector({
             selected={direction}
             onDirection={(d) => {
               if (type === "normal") {
-                if (d === "2" || d === "5") {
-                  setUnknownMode(null);
-                  setDirection(d);
-                  setSelected(undefined);
-                }
+                setUnknownMode(null);
+                setDirection(d);
+                setSelected(undefined);
               } else {
                 const before = previous.current;
                 rotation.current = trackRotation(rotation.current, d, turns);

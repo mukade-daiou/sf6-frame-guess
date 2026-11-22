@@ -163,6 +163,54 @@ it("rejects fewer than two eligible characters and invalid limits", () => {
   expect(() => startGame(data, "normal")).toThrow();
   expect(() => startGame(dataset(), "normal", 0)).toThrow();
 });
+
+it("uses the exact directional attack and applies the existing question count rules", () => {
+  const [baseline, other] = dataset().eligible;
+  const input = {
+    type: "normal",
+    direction: "6",
+    button: "P",
+    strength: "M",
+  } as const;
+  const fixture = { ...baseline.moves[0], id: "fixture-6mp", input };
+  other.moves.push(fixture);
+  const data = validateDataset(metadata, { alpha: baseline, beta: other });
+  expect(data.errors).toEqual([]);
+  expect(data.inputs).toContainEqual(input);
+  const game = startGame(data, "normal", 2, () => 0);
+  const target = game.target;
+
+  expect(ask(game, input)).toMatchObject({
+    status: "unknown",
+    game: { history: [] },
+  });
+  target.coverage.command_normal = {
+    status: "complete",
+    verification: "verified",
+  };
+  expect(ask(game, input)).toMatchObject({
+    status: "not_found",
+    game: { history: [{ input }] },
+  });
+
+  target.moves.push(fixture);
+  const asked = ask(game, input);
+  expect(asked).toMatchObject({
+    status: "found",
+    game: { history: [{ input }] },
+  });
+  expect(ask(asked.game, input)).toEqual({
+    status: "duplicate",
+    game: asked.game,
+  });
+  expect(ask(asked.game, data.inputs[0]).game.phase).toBe("answer");
+
+  target.moves.push({ ...fixture, id: "fixture-ambiguous-6mp" });
+  expect(ask(game, input)).toMatchObject({
+    status: "ambiguous",
+    game: { history: [] },
+  });
+});
 it("allows mode changes until a question is recorded, then keeps the mode locked", () => {
   let game = startGame(dataset(), "normal", 2, () => 0);
   const first = game.inputs[0];

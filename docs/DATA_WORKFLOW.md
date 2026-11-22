@@ -71,6 +71,8 @@ SA96枠、原典基本101行、個別強度質問288レコードは別の集計�
 
 ## 現行検証と過去の再現
 
+`npx tsx scripts/command-normals.ts` は保存済みCAPCOM公式表から方向付き特殊技の承認用一覧を出力します。`--json` は候補ID・原典と候補のハッシュ・全体Fの計算根拠を出力します。承認後は `data/adoption-decisions.json` の `commandNormals` にキャラIDをキーとする `{ sourceHash, candidateHash, approvedMoveIds }` を記録します。全候補の承認がそろったキャラだけ方向付き特殊技を `complete` にします（該当技がないキャラも空配列を明示承認）。通常の `data:plan` と新datasetId・`--write --update` の手順で反映します。
+
 `npm run test:daily`はゲーム動作・共通差分処理・スキーマ検証、`npm run test:update`はそれらに現行スナップショットの再生成一致・承認差分・名前・本番ビルドの検証を加える。`npm run test:history`は保存原典と過去コミットを使う監査、およびarchiveの段階別再現を実行する。データ更新の完了時にはupdateとhistoryの両方を実行する。
 
 `npm test`と`npm run test:archive`は従来どおり個別に使える。`npm run test:data`は全Node検証を維持し、CIも従来の全検証を継続する。履歴再生成テストは共有JSONを使うため直列実行し、進行中の手動編集や別のデータ生成コマンドと同時に実行しない。使い方・共通差分の承認形式・計測結果は[テスト基盤整理の報告](TEST_FOUNDATION_REPORT.md)を参照する。

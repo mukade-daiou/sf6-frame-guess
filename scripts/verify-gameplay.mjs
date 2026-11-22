@@ -84,7 +84,7 @@ async function exercise(config) {
       await click({ 2: "下", 3: "右下", 6: "右", 1: "左下", 4: "左" }[d]);
   };
   const normal = async (direction, button) => {
-    await click("通常技");
+    await click("通常技・特殊技");
     await click(direction === "2" ? "下" : "中央");
     await click(button);
   };
@@ -590,13 +590,27 @@ if (controlsOnly) {
   evaluate(async () => {
     const click = async (label) => {
       [...document.querySelectorAll("button")]
-        .find((b) => b.textContent.trim() === label)
+        .find(
+          (b) =>
+            (b.getAttribute("aria-label") || b.textContent.trim()) === label,
+        )
         .click();
       await new Promise((r) => setTimeout(r, 40));
     };
     await click("ゲーム開始");
+    const directions = [...document.querySelectorAll(".lever-direction")];
+    if (directions.length !== 9)
+      throw new Error("Normal lever must have nine directions");
+    for (const button of directions) {
+      await click(button.getAttribute("aria-label"));
+      if (button.getAttribute("aria-pressed") !== "true")
+        throw new Error(
+          `Normal lever did not select ${button.getAttribute("aria-label")}`,
+        );
+    }
     await click("必殺技・SA");
   });
+  results.push({ normalLeverAllDirections: true });
 }
 const box = evaluate(pointerChecks);
 // Native mouse drag: repeat movement in one direction must not duplicate it.

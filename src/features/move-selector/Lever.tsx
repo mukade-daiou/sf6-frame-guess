@@ -20,7 +20,7 @@ export function Lever({
   onDirection,
 }: {
   normal: boolean;
-  selected: "5" | "2";
+  selected: Direction;
   onDirection: (direction: Direction) => void;
 }) {
   const [active, setActive] = useState<Direction>("5");
@@ -28,7 +28,6 @@ export function Lever({
   const pointer = useRef<number | null>(null);
   const keys = useRef(new Set<string>());
   function emit(d: Direction) {
-    if (normal && d !== "5" && d !== "2") return;
     if (d !== previous.current || normal) onDirection(d);
     previous.current = d;
     setActive(d);
@@ -117,7 +116,6 @@ export function Lever({
             className={`lever-direction ${direction === d ? "is-active" : ""}`}
             aria-label={directionNames[d]}
             aria-pressed={direction === d}
-            disabled={normal && d !== "5" && d !== "2"}
             onClick={(e) => {
               if (e.detail === 0) {
                 emit(d);
@@ -148,7 +146,7 @@ export function Lever({
       </div>
       <p className="muted lever-help">
         {normal
-          ? "中央：立ち ／ 下：しゃがみ"
+          ? "方向を選択（中央は立ち、下はしゃがみ）"
           : "ドラッグ・タップ・方向キーで入力"}
       </p>
     </div>

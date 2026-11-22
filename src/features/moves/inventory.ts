@@ -43,20 +43,22 @@ export function inventoryPatterns(
     i.type === "normal"
       ? i.direction === "5"
         ? 0
-        : 1
+        : i.direction === "2"
+          ? 1
+          : 2
       : i.type === "super_art"
-        ? 3
+        ? 4
         : i.motion === "none" || i.strength === "none"
-          ? 4
-          : 2;
+          ? 5
+          : 3;
   const strengths = ["L", "M", "H", "OD", "none"];
   return [...patterns.values()].sort(
     (a, b) =>
       group(a) - group(b) ||
       (a.type === "super_art" ? a.saLevel : 0) -
         (b.type === "super_art" ? b.saLevel : 0) ||
-      (a.type !== "normal" ? a.motion : "").localeCompare(
-        b.type !== "normal" ? b.motion : "",
+      (a.type === "normal" ? a.direction : a.motion).localeCompare(
+        b.type === "normal" ? b.direction : b.motion,
         "en",
         { numeric: true },
       ) ||
