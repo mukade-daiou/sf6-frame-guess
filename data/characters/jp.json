@@ -21,6 +21,10 @@
       "status": "complete",
       "verification": "unverified"
     },
+    "command_normal": {
+      "status": "complete",
+      "verification": "unverified"
+    },
     "special": {
       "status": "complete",
       "verification": "unverified"
@@ -3193,6 +3197,226 @@
       "strengthExpansion": {
         "sourceMoveId": "jp__special_22_P_none",
         "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "jp__normal_6_K_M",
+      "name": "ギリオチーナ",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "6",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "22",
+          "numeric": 22
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "42",
+          "numeric": 42,
+          "provenance": "verified_calculation",
+          "calculation": "持続 22-23 の最終F 23 + 硬直 19"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 21"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/jp/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "jp__normal_3_P_H",
+      "name": "シャーロスチ",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "3",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "16",
+          "numeric": 16
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "49",
+          "numeric": 49,
+          "provenance": "verified_calculation",
+          "calculation": "持続 16-18 の最終F 18 + 硬直 31"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-14",
+          "numeric": -14
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 22",
+        "カウンター/パニッシュカウンター時ダウン時間延長"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/jp/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "jp__normal_6_K_H",
+      "name": "ヴィリーナ",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "6",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "11",
+          "numeric": 11
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "40",
+          "numeric": 40,
+          "provenance": "verified_calculation",
+          "calculation": "持続 11-16 の最終F 16 + 硬直 24"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-5",
+          "numeric": -5
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 23",
+        "空中ヒット時吹き飛びダウン"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/jp/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "jp__normal_4_P_M",
+      "name": "グロームストレルカ（1段目）",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "4",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "26",
+          "numeric": 26,
+          "provenance": "verified_calculation",
+          "calculation": "持続 8-10 の最終F 10 + 硬直 16"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+5",
+          "numeric": 5
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 24"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/jp/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
       }
     }
   ]

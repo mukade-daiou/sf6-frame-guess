@@ -21,6 +21,10 @@
       "status": "complete",
       "verification": "unverified"
     },
+    "command_normal": {
+      "status": "complete",
+      "verification": "unverified"
+    },
     "special": {
       "status": "complete",
       "verification": "unverified"
@@ -2461,6 +2465,173 @@
           "block": "source"
         },
         "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "aki__normal_3_P_M",
+      "name": "蒲牢",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "3",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "24",
+          "numeric": 24
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "44",
+          "numeric": 44,
+          "provenance": "verified_calculation",
+          "calculation": "持続 24-26 の最終F 26 + 硬直 18"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 21"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/aki/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "aki__normal_6_P_H",
+      "name": "螭吻",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "6",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "16",
+          "numeric": 16
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "39",
+          "numeric": 39,
+          "provenance": "verified_calculation",
+          "calculation": "持続 16-19 の最終F 19 + 硬直 20"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 22",
+        "ヒット、ガード時硬直1F減少"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/aki/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "aki__normal_6_K_H",
+      "name": "囚牛",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "6",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "48",
+          "numeric": 48,
+          "provenance": "verified_calculation",
+          "calculation": "持続 14-24 の最終F 24 + 硬直 16 + 空振り時硬直8F増加"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 23",
+        "空振り時硬直8F増加"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/aki/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
       }
     }
   ]

@@ -21,6 +21,10 @@
       "status": "complete",
       "verification": "unverified"
     },
+    "command_normal": {
+      "status": "complete",
+      "verification": "unverified"
+    },
     "special": {
       "status": "complete",
       "verification": "unverified"
@@ -2741,6 +2745,118 @@
       "strengthExpansion": {
         "sourceMoveId": "dee_jay__special_214_K_none",
         "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "dee_jay__normal_6_K_M",
+      "name": "サンライズヒール",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "6",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "19",
+          "numeric": 19
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "39",
+          "numeric": 39,
+          "provenance": "verified_calculation",
+          "calculation": "持続 19-23 の最終F 23 + 硬直 16"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+5",
+          "numeric": 5
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 22",
+        "空中ヒット時床バウンド"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/deejay/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "dee_jay__normal_4_K_H",
+      "name": "フェイスブレイカー",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "4",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "32",
+          "numeric": 32,
+          "provenance": "verified_calculation",
+          "calculation": "持続 7-12 の最終F 12 + 硬直 20"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-5",
+          "numeric": -5
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 23",
+        "2段目空中ヒット時個別ダメージ（800）\n初段空中ヒット時吹き飛びダウン\n強制立ち効果"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/deejay/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
       }
     }
   ]

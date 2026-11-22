@@ -21,6 +21,10 @@
       "status": "complete",
       "verification": "unverified"
     },
+    "command_normal": {
+      "status": "complete",
+      "verification": "unverified"
+    },
     "special": {
       "status": "complete",
       "verification": "unverified"
@@ -2390,6 +2394,117 @@
           "block": "source"
         },
         "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "mai__normal_6_P_M",
+      "name": "扇骨打ち",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "6",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "20",
+          "numeric": 20
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "40",
+          "numeric": 40,
+          "provenance": "verified_calculation",
+          "calculation": "持続 20-22 の最終F 22 + 硬直 18"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 21"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/mai/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "mai__normal_4_K_H",
+      "name": "星孔雀（1段目）",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "4",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "32",
+          "numeric": 32,
+          "provenance": "verified_calculation",
+          "calculation": "持続 8-12 の最終F 12 + 硬直 20"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 24",
+        "強制立ち効果"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/mai/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
       }
     }
   ]

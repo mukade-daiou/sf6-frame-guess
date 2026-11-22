@@ -70,10 +70,19 @@ export function officialCandidate(
   const rows = normalized.moves.map((row: any) => {
     const normal = /^(立ち|しゃがみ)(弱|中|強)(P|K)/.exec(row.name);
     const level = /^SA([123])/.exec(row.name);
+    // This official command normal uses a motion in the game's command tab.
+    const stomping =
+      id === "zangief" &&
+      row.section === "特殊技" &&
+      row.name === "ストンピング（1段目）" &&
+      row.commandText.trim() === "中" &&
+      row.raw.commandImages
+        .map((url: string) => url.split("/").at(-1))
+        .join(" ") === "key-d.png key-d.png key-plus.png icon_kick_m.png";
     const category =
       row.section === "通常技"
         ? "normal"
-        : row.section === "必殺技"
+        : row.section === "必殺技" || stomping
           ? "special"
           : row.section === "スーパーアーツ"
             ? "super_art"
@@ -81,9 +90,10 @@ export function officialCandidate(
     const excluded =
       (!category &&
         ["特殊技", "通常投げ", "共通システム"].includes(row.section)) ||
-      /ホールド|派生|段目|空中|ジャンプ|CA|コンボ/.test(
-        row.name + row.commandText,
-      );
+      (!stomping &&
+        /ホールド|派生|段目|空中|ジャンプ|CA|コンボ/.test(
+          row.name + row.commandText,
+        ));
     let inputs: any[] = [];
     if (category === "normal" && normal)
       inputs = [
@@ -168,7 +178,12 @@ export function officialCandidate(
     const value = (f: string) => {
       const v = row.frames[f];
       return v.status === "numeric"
-        ? { status: "confirmed", display: v.raw, numeric: v.value }
+        ? {
+            status: "confirmed",
+            display:
+              stomping && f === "hit" && v.value > 0 ? `+${v.value}` : v.raw,
+            numeric: v.value,
+          }
         : v.status === "not_applicable"
           ? { status: "not_applicable", display: "-" }
           : v.status === "special"

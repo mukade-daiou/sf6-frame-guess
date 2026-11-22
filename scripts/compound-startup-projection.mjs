@@ -1,5 +1,6 @@
 import { readFileSync, readdirSync } from "node:fs";
 import { isDeepStrictEqual } from "node:util";
+import { createHash } from "node:crypto";
 
 // Identity is kept outside JSON: an old value read from disk (or copied without
 // its validation history) must never count as an already validated projection.
@@ -15,14 +16,40 @@ export function historicalCharacterFiles() {
   );
   return readdirSync("data/characters").filter((f) => !added.has(f));
 }
+export function restoreCommandNormals(character, approval) {
+  if (!approval) return character;
+  const ids = new Set(approval.approvedMoveIds);
+  const moves = character.moves.filter((m) => ids.has(m.id));
+  const { command_normal, ...coverage } = character.coverage;
+  const hash = createHash("sha256")
+    .update(JSON.stringify([command_normal, moves]))
+    .digest("hex");
+  if (moves.length !== ids.size || hash !== approval.resultHash)
+    throw new Error(`Unauthorized command normal snapshot: ${character.id}`);
+  return {
+    ...character,
+    coverage,
+    moves: character.moves.filter((m) => !ids.has(m.id)),
+  };
+}
+
 export function restoreReviewedUpdates(character, policy) {
   const batches = policy.reviewedUpdates ?? [];
-  const policyKey = JSON.stringify([character.id, batches]);
+  const commandNormals = policy.commandNormals?.[character.id];
+  const policyKey = JSON.stringify([character.id, batches, commandNormals]);
   const prior = reviewedProjections.get(character);
-  const result = structuredClone(character);
+  let result = structuredClone(character);
   if (prior) {
     if (prior.policyKey !== policyKey)
       throw new Error("Reviewed projection policy mismatch");
+    if (
+      commandNormals &&
+      (result.coverage.command_normal ||
+        result.moves.some((m) => commandNormals.approvedMoveIds.includes(m.id)))
+    )
+      throw new Error(
+        `Unauthorized command normal projection: ${character.id}`,
+      );
     for (const d of prior.fields) {
       const m = result.moves.find((m) => m.id === d.moveId);
       if (!isDeepStrictEqual(m?.frames ?? null, d.frames))
@@ -50,6 +77,7 @@ export function restoreReviewedUpdates(character, policy) {
         m.frames[d.field] = structuredClone(d.before);
       }
   }
+  if (!prior) result = restoreCommandNormals(result, commandNormals);
   const fields = new Map();
   for (const batch of batches)
     for (const d of batch.decisions) {

@@ -9,6 +9,10 @@ import ryu from "../../../data/characters/ryu.json";
 import { characterSchema } from "./schema";
 import { displayInput } from "./input";
 import { resolveMove } from "./resolver";
+import { production } from "./datasets";
+import policy from "../../../data/adoption-decisions.json";
+// @ts-ignore shared historical projection
+import { restoreCommandNormals } from "../../../scripts/compound-startup-projection.mjs";
 
 function official(id: string) {
   const bytes = readFileSync(
@@ -42,7 +46,9 @@ it("takes only direct official inputs, including alternate directions and standa
 });
 
 it("replays approved evidence only and preserves existing records", () => {
-  const character = characterSchema.parse(ryu);
+  const character = characterSchema.parse(
+    restoreCommandNormals(ryu, policy.commandNormals.ryu),
+  );
   const { bytes, rows } = official("ryu");
   const collarbone = rows.find(({ move }) => move.name === "鎖骨割り")!.move;
   const approval = {
@@ -71,6 +77,22 @@ it("replays approved evidence only and preserves existing records", () => {
   expect(() =>
     applyCommandNormals(character, { ...approval, candidateHash: "stale" }),
   ).toThrow();
+  expect(() =>
+    applyCommandNormals(character, { ...approval, sourceHash: "stale" }),
+  ).toThrow();
+  expect(() =>
+    applyCommandNormals(character, {
+      ...approval,
+      measurements: {
+        [collarbone.id]: {
+          before: 41,
+          measured: 42,
+          communityTotal: 42,
+          evidence: "fixture",
+        },
+      },
+    }),
+  ).toThrow(/Stale command normal measurement/);
   expect(() => applyCommandNormals(applied, approval)).toThrow();
   expect(
     applyCommandNormals(character, {
@@ -78,4 +100,71 @@ it("replays approved evidence only and preserves existing records", () => {
       approvedMoveIds: rows.map(({ move }) => move.id),
     }).coverage.command_normal?.status,
   ).toBe("complete");
+});
+
+it("resolves all 109 approved command normals in both modes, changing only six measured totals", () => {
+  const measured: Record<string, number> = {
+    blanka__normal_6_P_H: 52,
+    elena__normal_3_K_H: 44,
+    guile__normal_4_K_L: 27,
+    juri__normal_6_K_M: 45,
+    ryu__normal_4_P_H: 35,
+    ryu__normal_4_K_H: 43,
+    yasmine__normal_4_K_H: 48,
+  };
+  let inputs = 0;
+  let changed = 0;
+  expect(production.errors).toEqual([]);
+  expect(production.eligible).toHaveLength(32);
+  for (const character of production.eligible) {
+    expect(character.coverage.command_normal).toEqual({
+      status: "complete",
+      verification: "unverified",
+    });
+    const { rows } = official(character.id);
+    for (const { move } of rows) {
+      inputs++;
+      const current = character.moves.find((m) => m.id === move.id)!;
+      expect(current).toMatchObject({ name: move.name, input: move.input });
+      expect(production.inputs).toContainEqual(move.input);
+      const total = measured[move.id];
+      const before = move.frames.total;
+      if (
+        total !== undefined &&
+        before.status === "confirmed" &&
+        before.numeric !== total
+      ) {
+        changed++;
+        expect(current.frames).toEqual({
+          ...move.frames,
+          total: {
+            status: "confirmed",
+            numeric: total,
+            display: String(total),
+            provenance: "source",
+            calculation: null,
+          },
+        });
+      } else {
+        expect(current.frames).toEqual(move.frames);
+      }
+      for (const mode of ["normal", "startup"] as const)
+        expect(resolveMove(character, move.input, mode)).toEqual({
+          status: "found",
+          frames: current.frames,
+        });
+    }
+  }
+  expect(inputs).toBe(109);
+  expect(changed).toBe(6);
+  const ken = production.eligible.find((c) => c.id === "ken")!;
+  expect(policy.commandNormals.ken.approvedMoveIds).toEqual([]);
+  for (const mode of ["normal", "startup"] as const)
+    expect(
+      resolveMove(
+        ken,
+        { type: "normal", direction: "6", button: "P", strength: "M" },
+        mode,
+      ),
+    ).toEqual({ status: "not_found" });
 });

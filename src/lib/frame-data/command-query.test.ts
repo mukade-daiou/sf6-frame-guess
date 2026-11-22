@@ -2,6 +2,40 @@ import { expect, it } from "vitest";
 import { production } from "./datasets";
 import { ask, startGame } from "../../features/game/engine";
 import { resolveMove } from "./resolver";
+it("asks for the opening hit of Zangief's 22MK from the command tab", () => {
+  const index = production.eligible.findIndex((c) => c.id === "zangief");
+  const game = startGame(
+    production,
+    "normal",
+    5,
+    () => (index + 0.5) / production.eligible.length,
+  );
+  expect(
+    ask(game, {
+      type: "special",
+      motion: "22",
+      button: "K",
+      strength: "M",
+      includeSuperArts: true,
+    }),
+  ).toMatchObject({
+    status: "found",
+    game: {
+      history: [
+        {
+          result: {
+            frames: {
+              startup: { numeric: 9 },
+              total: { numeric: 28 },
+              hit: { numeric: 4 },
+              block: { numeric: -3 },
+            },
+          },
+        },
+      ],
+    },
+  });
+});
 it("resolves a level-free command against the target and keeps strengths independent", () => {
   for (const id of ["ryu", "aki"]) {
     const index = production.eligible.findIndex((c) => c.id === id);

@@ -379,6 +379,7 @@ if (process.argv.includes("--check")) {
   }
   const expectedDecisions = structuredClone(policy);
   delete expectedDecisions.reviewedUpdates;
+  delete expectedDecisions.commandNormals;
   expectedDecisions.characters = expectedDecisions.characters.filter(
     (d: any) => !d.officialSource,
   );

@@ -21,6 +21,10 @@
       "status": "complete",
       "verification": "unverified"
     },
+    "command_normal": {
+      "status": "complete",
+      "verification": "unverified"
+    },
     "special": {
       "status": "complete",
       "verification": "unverified"
@@ -2381,6 +2385,173 @@
           "block": "source"
         },
         "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "lily__normal_3_P_H",
+      "name": "スラストリッジ",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "3",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "25",
+          "numeric": 25
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "45",
+          "numeric": 45,
+          "provenance": "verified_calculation",
+          "calculation": "持続 25-27 の最終F 27 + 硬直 18"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 21",
+        "5-19F足元無敵\n強制しゃがみ効果\n空中ヒット時叩きつけダウン"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/lily/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "lily__normal_4_P_H",
+      "name": "ホーンブレイク",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "4",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "35",
+          "numeric": 35,
+          "provenance": "verified_calculation",
+          "calculation": "持続 14-17 の最終F 17 + 硬直 18"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+5",
+          "numeric": 5
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 22"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/lily/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "lily__normal_6_P_H",
+      "name": "デザートストーム（1段目）",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "6",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "16",
+          "numeric": 16
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "41",
+          "numeric": 41,
+          "provenance": "verified_calculation",
+          "calculation": "持続 16-17 の最終F 17 + 硬直 24"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 25",
+        "空中ヒット時吹き飛びダウン"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/lily/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
       }
     }
   ]

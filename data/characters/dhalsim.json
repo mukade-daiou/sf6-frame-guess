@@ -21,6 +21,10 @@
       "status": "complete",
       "verification": "unverified"
     },
+    "command_normal": {
+      "status": "complete",
+      "verification": "unverified"
+    },
     "special": {
       "status": "complete",
       "verification": "unverified"
@@ -2350,6 +2354,450 @@
       "strengthExpansion": {
         "sourceMoveId": "dhalsim__special_236_P_none",
         "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "dhalsim__normal_4_P_M",
+      "name": "ヨガアッパー",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "4",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "29",
+          "numeric": 29,
+          "provenance": "verified_calculation",
+          "calculation": "持続 8-13 の最終F 13 + 硬直 16"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 21",
+        "強制立ち効果"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/dhalsim/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "dhalsim__normal_4_P_H",
+      "name": "ヨガランス",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "4",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "49",
+          "numeric": 49,
+          "provenance": "verified_calculation",
+          "calculation": "持続 14-20 の最終F 20 + 硬直 29"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "-9",
+          "numeric": -9
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-16",
+          "numeric": -16
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 22",
+        "空中カウンター/パニッシュカウンター時吹き飛びダウン"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/dhalsim/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "dhalsim__normal_1_P_H",
+      "name": "涅槃パンチ",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "1",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "33",
+          "numeric": 33,
+          "provenance": "verified_calculation",
+          "calculation": "持続 10-13 の最終F 13 + 硬直 20"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 23"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/dhalsim/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "dhalsim__normal_1_K_L",
+      "name": "アジャイルキック",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "1",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "5",
+          "numeric": 5
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "17",
+          "numeric": 17,
+          "provenance": "verified_calculation",
+          "calculation": "持続 5-7 の最終F 7 + 硬直 10"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 24",
+        "連打キャンセル対応"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/dhalsim/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "dhalsim__normal_4_K_M",
+      "name": "合掌キック",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "4",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "27",
+          "numeric": 27,
+          "provenance": "verified_calculation",
+          "calculation": "持続 7-10 の最終F 10 + 硬直 17"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "0",
+          "numeric": 0
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 25"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/dhalsim/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "dhalsim__normal_1_K_M",
+      "name": "スラストキック",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "1",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "30",
+          "numeric": 30,
+          "provenance": "verified_calculation",
+          "calculation": "持続 8-10 の最終F 10 + 硬直 20"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-7",
+          "numeric": -7
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 26"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/dhalsim/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "dhalsim__normal_4_K_H",
+      "name": "ヨガマウンテン",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "4",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "39",
+          "numeric": 39,
+          "provenance": "verified_calculation",
+          "calculation": "持続 14-19 の最終F 19 + 硬直 20"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "0",
+          "numeric": 0
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-9",
+          "numeric": -9
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 27",
+        "強制立ち効果\n空中カウンター/パニッシュカウンター時吹き飛びダウン"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/dhalsim/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "dhalsim__normal_1_K_H",
+      "name": "因果キック",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "1",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "33",
+          "numeric": 33,
+          "provenance": "verified_calculation",
+          "calculation": "持続 9-11 の最終F 11 + 硬直 22"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-7",
+          "numeric": -7
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 28",
+        "パニッシュカウンター時ダウン時間増加、ハードノックダウン"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/dhalsim/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
       }
     }
   ]

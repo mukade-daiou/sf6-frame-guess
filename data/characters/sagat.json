@@ -21,6 +21,10 @@
       "status": "complete",
       "verification": "unverified"
     },
+    "command_normal": {
+      "status": "complete",
+      "verification": "unverified"
+    },
     "special": {
       "status": "complete",
       "verification": "unverified"
@@ -2424,6 +2428,229 @@
           "block": "source"
         },
         "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "sagat__normal_6_P_M",
+      "name": "タイガーヘビーエルボー",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "6",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "22",
+          "numeric": 22
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "43",
+          "numeric": 43,
+          "provenance": "verified_calculation",
+          "calculation": "持続 22-24 の最終F 24 + 硬直 19"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 21",
+        "空中ヒット時床バウンド"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/sagat/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "sagat__normal_4_P_H",
+      "name": "タイガーモノリス",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "4",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "40",
+          "numeric": 40,
+          "provenance": "verified_calculation",
+          "calculation": "持続 8-15 の最終F 15 + 硬直 25"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-10",
+          "numeric": -10
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 22",
+        "初段カウンター/パニッシュカウンター時床バウンド"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/sagat/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "sagat__normal_6_K_L",
+      "name": "ステップローキック",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "6",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "18",
+          "numeric": 18
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "41",
+          "numeric": 41,
+          "provenance": "verified_calculation",
+          "calculation": "持続 18-20 の最終F 20 + 硬直 18 + 空振り時硬直3F増加"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 23",
+        "空振り時硬直3F増加"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/sagat/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "sagat__normal_6_K_H",
+      "name": "ステップハイキック",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "6",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "16",
+          "numeric": 16
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "40",
+          "numeric": 40,
+          "provenance": "verified_calculation",
+          "calculation": "持続 16-19 の最終F 19 + 硬直 21"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+7",
+          "numeric": 7
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 24",
+        "ガード時全体3F減少\nパニッシュカウンター時+21F"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/sagat/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
       }
     }
   ]

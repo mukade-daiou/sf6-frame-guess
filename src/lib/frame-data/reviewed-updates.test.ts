@@ -380,7 +380,7 @@ it("reviews, rejects stale/conflicting approvals and regenerates only approved f
     ).toThrow(/Unauthorized reviewed update/);
     const chainedPolicy = structuredClone(appliedPolicy);
     const later = {
-      ...appliedPolicy.reviewedUpdates[0].decisions[0],
+      ...appliedPolicy.reviewedUpdates.at(-1).decisions[0],
       before: approval.decisions[0].after,
       after: { status: "confirmed", display: "6", numeric: 6 },
     };
@@ -656,9 +656,14 @@ it("reviews, rejects stale/conflicting approvals and regenerates only approved f
       (m: any) => m.frames.startup.status === "unknown",
     );
     expect(ask(game, unknown.input).game.history).toHaveLength(0);
+    const addedMoveIds = new Set(
+      additionApproval.decisions
+        .filter((d: any) => d.kind === "add_move")
+        .flatMap((d: any) => d.moves.map((m: any) => m.id)),
+    );
     for (const c of freshProduction) {
       const after = dataset.characters.find((x) => x.id === c.id)!;
-      expect(after.moves.filter((m) => !m.id.includes("__official_"))).toEqual(
+      expect(after.moves.filter((m) => !addedMoveIds.has(m.id))).toEqual(
         c.moves,
       );
     }

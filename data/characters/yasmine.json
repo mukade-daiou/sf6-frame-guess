@@ -21,6 +21,10 @@
       "status": "complete",
       "verification": "unverified"
     },
+    "command_normal": {
+      "status": "complete",
+      "verification": "unverified"
+    },
     "special": {
       "status": "complete",
       "verification": "unverified"
@@ -2759,6 +2763,117 @@
       "strengthExpansion": {
         "sourceMoveId": "yasmine__special_236_K_none",
         "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "yasmine__normal_6_P_M",
+      "name": "ヒワン・パババ",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "6",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "22",
+          "numeric": 22
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "42",
+          "numeric": 42,
+          "provenance": "verified_calculation",
+          "calculation": "持続 22-24 の最終F 24 + 硬直 18"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 21"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/yasmine/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "yasmine__normal_4_K_H",
+      "name": "ワリス・ナ・パバグサ",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "4",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "22",
+          "numeric": 22
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "48",
+          "numeric": 48,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 22",
+        "空振り時硬直3F増加\nパニッシュカウンター時吹き飛び時間延長",
+        "空振り全体Fはユーザー実測（51F→48F、パッチ番号未確認）。根拠: staging/command-normals/whiff-measurements.tsv"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/yasmine/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
       }
     }
   ]

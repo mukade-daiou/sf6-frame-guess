@@ -21,6 +21,10 @@
       "status": "complete",
       "verification": "unverified"
     },
+    "command_normal": {
+      "status": "complete",
+      "verification": "unverified"
+    },
     "special": {
       "status": "complete",
       "verification": "unverified"
@@ -2477,6 +2481,229 @@
       "strengthExpansion": {
         "sourceMoveId": "luke__special_236_K_none",
         "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "luke__normal_6_P_M",
+      "name": "ローハイド",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "6",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "21",
+          "numeric": 21
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "43",
+          "numeric": 43,
+          "provenance": "verified_calculation",
+          "calculation": "持続 21-22 の最終F 22 + 硬直 21"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 21",
+        "空中ヒット時叩きつけダウン"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/luke/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "luke__normal_4_P_H",
+      "name": "サプレッサー",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "4",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "16",
+          "numeric": 16
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "38",
+          "numeric": 38,
+          "provenance": "verified_calculation",
+          "calculation": "持続 16-18 の最終F 18 + 硬直 20"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 22"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/luke/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "luke__normal_4_K_H",
+      "name": "アウトローキック",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "4",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "12",
+          "numeric": 12
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "39",
+          "numeric": 39,
+          "provenance": "verified_calculation",
+          "calculation": "持続 12-15 の最終F 15 + 硬直 24"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 23",
+        "パニッシュカウンター時+17F\n空中ヒット時吹き飛びダウン"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/luke/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "luke__normal_6_P_H",
+      "name": "ダブルインパクト（1段目）",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "6",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "16",
+          "numeric": 16
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "37",
+          "numeric": 37,
+          "provenance": "verified_calculation",
+          "calculation": "持続 16-18 の最終F 18 + 硬直 15 + 空振り時硬直4F増加"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 24",
+        "※空振り時硬直4F増加"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/luke/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
       }
     }
   ]

@@ -21,6 +21,10 @@
       "status": "complete",
       "verification": "unverified"
     },
+    "command_normal": {
+      "status": "complete",
+      "verification": "unverified"
+    },
     "special": {
       "status": "complete",
       "verification": "unverified"
@@ -2583,6 +2587,117 @@
         "condition": "第16段階ユーザー指定: Focus Force Lv.1、最短ホールド（非チャージ/19F以内）。自動反撃・Lv.2/3を選ばない。発生は原典の固定複合表記を加算せず表示。",
         "rawRef": "archive/staging/sf6-frame-data/raw/cviper.json#/moves/5",
         "cargoRef": "archive/staging/sf6-frame-data-quality/evidence/cviper.cargo.json#/data/cargoquery/5/title"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "cviper__normal_6_P_M",
+      "name": "ヴァイパーエルボー",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "6",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "22",
+          "numeric": 22
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "44",
+          "numeric": 44,
+          "provenance": "verified_calculation",
+          "calculation": "持続 22-24 の最終F 24 + 硬直 20"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 22",
+        "16-27F 足元無敵"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/cviper/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "cviper__normal_6_K_H",
+      "name": "ダブルキック",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "6",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "11",
+          "numeric": 11
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "47",
+          "numeric": 47,
+          "provenance": "verified_calculation",
+          "calculation": "持続 11-31 の最終F 31 + 硬直 16"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-2",
+          "numeric": -2
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 23"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/cviper/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
       }
     }
   ]

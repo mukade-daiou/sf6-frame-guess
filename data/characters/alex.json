@@ -21,6 +21,10 @@
       "status": "complete",
       "verification": "unverified"
     },
+    "command_normal": {
+      "status": "complete",
+      "verification": "unverified"
+    },
     "special": {
       "status": "complete",
       "verification": "unverified"
@@ -2199,6 +2203,117 @@
           "block": "source"
         },
         "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "alex__normal_6_P_M",
+      "name": "チョップ",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "6",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "22",
+          "numeric": 22
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "42",
+          "numeric": 42,
+          "provenance": "verified_calculation",
+          "calculation": "持続 22-23 の最終F 23 + 硬直 19"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 39"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/alex/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "alex__normal_4_K_M",
+      "name": "オブリークスタンプ",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "4",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "24",
+          "numeric": 24,
+          "provenance": "verified_calculation",
+          "calculation": "持続 7-9 の最終F 9 + 硬直 15"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+5",
+          "numeric": 5
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 40",
+        "背面ヒット時コラプス・ドライバーに派生\n・ダメージ1400\n・SAゲージ2000増加"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/alex/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
       }
     }
   ]

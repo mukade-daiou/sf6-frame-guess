@@ -22,6 +22,8 @@ import {
   approvedCharacterNames,
 } from "./official-additions";
 import { inputKey } from "../src/lib/frame-data/input";
+// @ts-ignore shared historical projection
+import { restoreCommandNormals } from "./compound-startup-projection.mjs";
 // @ts-ignore existing source normalizer
 import { normalize, compareSources, classify } from "./lib/source-scan.mjs";
 // @ts-ignore existing official move mapping
@@ -431,9 +433,15 @@ export function plan(run: string, approval: any, root = process.cwd()) {
   const result = structuredClone(production);
   for (const d of decisions)
     if (d.kind === "add_character") result.push(d.character);
-    else if (d.kind === "add_move")
-      result.find((c) => c.id === d.characterId).moves.push(d.move);
-    else
+    else if (d.kind === "add_move") {
+      const moves = result.find((c) => c.id === d.characterId).moves;
+      const commandIds =
+        policy.commandNormals?.[d.characterId]?.approvedMoveIds ?? [];
+      const start = moves.findIndex((move: any) =>
+        commandIds.includes(move.id),
+      );
+      moves.splice(start < 0 ? moves.length : start, 0, d.move);
+    } else
       result
         .find((c) => c.id === d.characterId)
         .moves.find((m: any) => m.id === d.moveId).frames[d.field] = d.after;
@@ -543,8 +551,22 @@ export function execute(
       join(root, "tests/fixtures/snapshot-approvals.json"),
     );
     const baseline = readHistoricalSnapshot(snapshotPolicy.baselineRef);
-    assertSnapshotDiff(baseline, characters(root), snapshotPolicy.approvals);
-    snapshotPolicy.approvals = diffSnapshots(baseline, characters(workspace));
+    const withoutCommandNormals = (directory: string) =>
+      characters(directory).map((character: any) =>
+        restoreCommandNormals(
+          character,
+          result.policy.commandNormals?.[character.id],
+        ),
+      );
+    assertSnapshotDiff(
+      baseline,
+      withoutCommandNormals(root),
+      snapshotPolicy.approvals,
+    );
+    snapshotPolicy.approvals = diffSnapshots(
+      baseline,
+      withoutCommandNormals(workspace),
+    );
     writeFileSync(
       join(workspace, "tests/fixtures/snapshot-approvals.json"),
       json(snapshotPolicy),

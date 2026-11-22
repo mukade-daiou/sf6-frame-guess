@@ -21,6 +21,10 @@
       "status": "complete",
       "verification": "unverified"
     },
+    "command_normal": {
+      "status": "complete",
+      "verification": "unverified"
+    },
     "special": {
       "status": "complete",
       "verification": "unverified"
@@ -3176,6 +3180,118 @@
       "strengthExpansion": {
         "sourceMoveId": "e_honda__special_236_K_none",
         "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "e_honda__normal_6_K_H",
+      "name": "払い蹴り",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "6",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "37",
+          "numeric": 37,
+          "provenance": "verified_calculation",
+          "calculation": "持続 14-16 の最終F 16 + 硬直 21"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-5",
+          "numeric": -5
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 22",
+        "パニッシュカウンター時吹き飛びダウン"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/ehonda/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "e_honda__normal_3_K_H",
+      "name": "力足",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "3",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "22",
+          "numeric": 22
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "45",
+          "numeric": 45,
+          "provenance": "verified_calculation",
+          "calculation": "持続 22-27 の最終F 27 + 硬直 18"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 23",
+        "空中ヒット時床バウンド、ハードノックダウン\n※15F目で必殺技、SAで空振りキャンセル可能"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/ehonda/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
       }
     }
   ]

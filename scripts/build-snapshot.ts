@@ -153,7 +153,8 @@ if (decisions.commandNormals) {
       Parameters<typeof applyCommandNormals>[1]
     >,
   )) {
-    if (!files[id]) throw new Error(`Unknown command normal character: ${id}`);
+    if (!files[id] || !approval.resultHash)
+      throw new Error(`Invalid command normal snapshot approval: ${id}`);
     files[id] = applyCommandNormals(files[id], approval);
   }
 }

@@ -21,6 +21,10 @@
       "status": "complete",
       "verification": "unverified"
     },
+    "command_normal": {
+      "status": "complete",
+      "verification": "unverified"
+    },
     "special": {
       "status": "complete",
       "verification": "unverified"
@@ -2616,6 +2620,228 @@
           "block": "source"
         },
         "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "elena__normal_3_K_H",
+      "name": "スライディング",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "3",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "44",
+          "numeric": 44,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-10",
+          "numeric": -10
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 21",
+        "空振り/アーマーヒット時硬直4F増加",
+        "空振り全体Fはユーザー実測（48F→44F、パッチ番号未確認）。根拠: staging/command-normals/whiff-measurements.tsv"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/elena/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "elena__normal_4_K_H",
+      "name": "ラウンドアーチ",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "4",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "36",
+          "numeric": 36,
+          "provenance": "verified_calculation",
+          "calculation": "持続 14-17 の最終F 17 + 硬直 17 + 空振り時硬直2F増加"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 22",
+        "9-17F 足元無敵\nカウンター/パニッシュカウンター時吹き飛びダウン\n空振り時硬直2F増加"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/elena/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "elena__normal_6_K_M",
+      "name": "ハンドスタンドウィップ（1段目）",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "6",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "20",
+          "numeric": 20
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "41",
+          "numeric": 41,
+          "provenance": "verified_calculation",
+          "calculation": "持続 20-22 の最終F 22 + 硬直 19"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 24"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/elena/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "elena__normal_6_P_H",
+      "name": "トランクスラップ（1段目）",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "6",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "16",
+          "numeric": 16
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "39",
+          "numeric": 39,
+          "provenance": "verified_calculation",
+          "calculation": "持続 16-19 の最終F 19 + 硬直 20"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 29"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/elena/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
       }
     }
   ]

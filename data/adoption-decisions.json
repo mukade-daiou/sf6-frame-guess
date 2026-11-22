@@ -1,5 +1,5 @@
 {
-  "datasetId": "hooligan-no-input-startup-2026-11-14-r1",
+  "datasetId": "command-normals-2026-11-23-r1",
   "compoundStartup": {
     "basis": "ユーザー指定: 弾出現と距離依存の攻撃発生を区別。公式取得2026-11-10、パッチ未確認。",
     "decisions": [
@@ -15728,5 +15728,520 @@
         "reason": "ユーザー指定：非攻撃の派生親技。受付・空中移行・自動派生後の攻撃発生を親技の発生として採用しない。"
       }
     }
-  ]
+  ],
+  "reviewedUpdates": [
+    {
+      "runId": "zangief-stomping",
+      "decisions": [
+        {
+          "kind": "add_move",
+          "characterId": "zangief",
+          "move": {
+            "id": "zangief__official_fbc83ed55ef63fe6_M",
+            "name": "ストンピング（1段目）",
+            "category": "special",
+            "input": {
+              "type": "special",
+              "motion": "22",
+              "button": "K",
+              "strength": "M"
+            },
+            "variant": {
+              "kind": "base",
+              "condition": null
+            },
+            "frames": {
+              "startup": {
+                "status": "confirmed",
+                "display": "9",
+                "numeric": 9
+              },
+              "total": {
+                "status": "confirmed",
+                "display": "28",
+                "numeric": 28,
+                "provenance": "verified_calculation",
+                "calculation": "持続 9-11 の最終F 11 + 硬直 17"
+              },
+              "hit": {
+                "status": "confirmed",
+                "display": "+4",
+                "numeric": 4
+              },
+              "block": {
+                "status": "confirmed",
+                "display": "-3",
+                "numeric": -3
+              }
+            },
+            "notes": [
+              "Official ordinary-state row",
+              "officialSource: {\"active\":\"9-11\",\"attribute\":\"下\",\"block\":\"-3\",\"cells\":[{\"colspan\":1,\"text\":\"ストンピング（1段目）\\n\\n中\"},{\"colspan\":1,\"text\":\"9\"},{\"colspan\":1,\"text\":\"9-11\"},{\"colspan\":1,\"text\":\"17\"},{\"colspan\":1,\"text\":\"4\"},{\"colspan\":1,\"text\":\"-3\"},{\"colspan\":1,\"text\":\"C\"},{\"colspan\":1,\"text\":\"500\"},{\"colspan\":1,\"text\":\"始動補正20%\"},{\"colspan\":1,\"text\":\"1500\"},{\"colspan\":1,\"text\":\"-2500\"},{\"colspan\":1,\"text\":\"-4000\"},{\"colspan\":1,\"text\":\"700\"},{\"colspan\":1,\"text\":\"下\"},{\"colspan\":1,\"text\":\"\"}],\"commandImages\":[\"/6/assets/images/common/controller/key-d.png\",\"/6/assets/images/common/controller/key-d.png\",\"/6/assets/images/common/controller/key-plus.png\",\"/6/assets/images/common/controller/icon_kick_m.png\"],\"commandText\":\"中\",\"hit\":\"4\",\"name\":\"ストンピング（1段目）\",\"notes\":\"\",\"recovery\":\"17\",\"row\":35,\"section\":\"特殊技\",\"startup\":\"9\"}"
+            ],
+            "source": {
+              "url": "https://www.streetfighter.com/6/ja-jp/character/zangief/frame",
+              "retrievedAt": "2026-11-10T00:00:00Z",
+              "gameVersion": "UNVERIFIED",
+              "kind": "official",
+              "attribution": "CAPCOM",
+              "license": "Official frame data; rights retained by CAPCOM",
+              "verification": "unverified"
+            },
+            "adoption": {
+              "status": "accepted",
+              "basis": "Reviewed ordinary official command"
+            }
+          },
+          "sourcePath": "staging/official-verification/sources/zangief.json",
+          "sourceHash": "d6b1937756ffbbc512ec1622dc6b6a68e14038bf65abd9599fc19f7c9d159cc1",
+          "sourceRow": {
+            "active": "9-11",
+            "attribute": "下",
+            "block": "-3",
+            "cells": [
+              {
+                "colspan": 1,
+                "text": "ストンピング（1段目）\n\n中"
+              },
+              {
+                "colspan": 1,
+                "text": "9"
+              },
+              {
+                "colspan": 1,
+                "text": "9-11"
+              },
+              {
+                "colspan": 1,
+                "text": "17"
+              },
+              {
+                "colspan": 1,
+                "text": "4"
+              },
+              {
+                "colspan": 1,
+                "text": "-3"
+              },
+              {
+                "colspan": 1,
+                "text": "C"
+              },
+              {
+                "colspan": 1,
+                "text": "500"
+              },
+              {
+                "colspan": 1,
+                "text": "始動補正20%"
+              },
+              {
+                "colspan": 1,
+                "text": "1500"
+              },
+              {
+                "colspan": 1,
+                "text": "-2500"
+              },
+              {
+                "colspan": 1,
+                "text": "-4000"
+              },
+              {
+                "colspan": 1,
+                "text": "700"
+              },
+              {
+                "colspan": 1,
+                "text": "下"
+              },
+              {
+                "colspan": 1,
+                "text": ""
+              }
+            ],
+            "commandImages": [
+              "/6/assets/images/common/controller/key-d.png",
+              "/6/assets/images/common/controller/key-d.png",
+              "/6/assets/images/common/controller/key-plus.png",
+              "/6/assets/images/common/controller/icon_kick_m.png"
+            ],
+            "commandText": "中",
+            "hit": "4",
+            "name": "ストンピング（1段目）",
+            "notes": "",
+            "recovery": "17",
+            "row": 35,
+            "section": "特殊技",
+            "startup": "9"
+          },
+          "retrievedAt": "2026-11-10T00:00:00Z",
+          "reason": "ユーザー指定により通常状態から出せる22MK初段を必殺技・SAタブに収録。"
+        }
+      ]
+    }
+  ],
+  "commandNormals": {
+    "aki": {
+      "sourceHash": "49b2b058b0617e4c8b0f2624bffe4d017b6468bae17526d1b4f126aa38fb27ea",
+      "candidateHash": "6983fc18b21c213628acfc83b49d9f6a893d886b40a13ab78b634b5e2f750519",
+      "approvedMoveIds": [
+        "aki__normal_3_P_M",
+        "aki__normal_6_P_H",
+        "aki__normal_6_K_H"
+      ],
+      "resultHash": "f825235f4e9c3f7293819f22d61328b995a415b7c74c131a01275e8c833d3757"
+    },
+    "akuma": {
+      "sourceHash": "b267637ae2f8531da61d5be6d2d585f52c5640b747a94fb4514515a247294478",
+      "candidateHash": "6bc22c67d3642068e557e9ae4ef79aafe306032f374667a287aa588ab781b10e",
+      "approvedMoveIds": [
+        "akuma__normal_6_P_M",
+        "akuma__normal_6_K_M",
+        "akuma__normal_4_K_H",
+        "akuma__normal_6_P_H"
+      ],
+      "resultHash": "f095bc3c40dc6f569f3d768ce612544a5b25e6c85802154511289b8e258515d7"
+    },
+    "alex": {
+      "sourceHash": "3c4f4ab9f76bf8cb7fb97eb1352ffce01c0647ae7431076671964671e0a0a480",
+      "candidateHash": "eb3f521531251acee428db90914bd9b47ec0e1ba1f444ad37cfc5572d2cbb7f4",
+      "approvedMoveIds": ["alex__normal_6_P_M", "alex__normal_4_K_M"],
+      "resultHash": "57de5866fd921a1111e9b0c41c2538f1fff87d9edcf4b6f29f4df3fad11c79c0"
+    },
+    "arjun": {
+      "sourceHash": "90f2c2445a1bec7ae151c63082232d77d2f781edc548aea3362f5a15bd256df3",
+      "candidateHash": "272f552e07914d053625a471683e567be900681ffc86bff87ad4e57da3240d73",
+      "approvedMoveIds": ["arjun__normal_6_P_H", "arjun__normal_6_K_H"],
+      "resultHash": "7c86e63b224ee5ec268773f5614852fb402549433ca5284aa3f663622a87e3d6"
+    },
+    "blanka": {
+      "sourceHash": "0b9d437e0cabceac6c7493c4ccd6a6bf6e8b1ac67e08a32eb047bc8a42926df7",
+      "candidateHash": "53e1141f6f227b9b2eecc712936f904a14b571e8f63d307ce2b4015a08c1ed07",
+      "approvedMoveIds": [
+        "blanka__normal_6_P_M",
+        "blanka__normal_6_K_M",
+        "blanka__normal_4_K_M",
+        "blanka__normal_6_P_H",
+        "blanka__normal_3_P_H"
+      ],
+      "measurements": {
+        "blanka__normal_6_P_H": {
+          "before": 52,
+          "measured": 52,
+          "communityTotal": 49,
+          "evidence": "staging/command-normals/whiff-measurements.tsv"
+        }
+      },
+      "resultHash": "3aec7156a5961c0eb447ce94f49f1f1fdccca0d75d3fe4f1f2820a2d3961a5e7"
+    },
+    "cammy": {
+      "sourceHash": "6450efd9887caeddbdccf3e5d60a586163a2f80645693f19e1f0192f6c385707",
+      "candidateHash": "81b3a05af140764f53afc11eca2b9b738b4238aabd83cdf591bbbebd991110f2",
+      "approvedMoveIds": [
+        "cammy__normal_4_P_M",
+        "cammy__normal_6_K_H",
+        "cammy__normal_4_K_H"
+      ],
+      "resultHash": "361711976555dfaba89d1836c55db9fc2dcb43db2cc6457dc249a05d7f928854"
+    },
+    "chunli": {
+      "sourceHash": "95088707b44afb3b8193c3620166e7b75d4d3236ae20dbbcf0df1d744a965598",
+      "candidateHash": "898839bb832a9077cc349dd013e97384f0b52d9f673da7bc77e7e21baa04d071",
+      "approvedMoveIds": [
+        "chunli__normal_4_P_M",
+        "chunli__normal_6_P_M",
+        "chunli__normal_4_P_H",
+        "chunli__normal_3_P_H",
+        "chunli__normal_6_K_H",
+        "chunli__normal_3_K_H"
+      ],
+      "resultHash": "e96895e25a4a9d5797ae4ad818974f58480e62e10f2bf71d787cb9c7aa22d054"
+    },
+    "cviper": {
+      "sourceHash": "774a674fac117322492265a63be818b5c4d1a8529d2dc293cf0a1b813b924720",
+      "candidateHash": "46c6f4abac3d39b2d65f2eb814eb9e07cbe7f27c95b6f0385e74ab32ae943bc3",
+      "approvedMoveIds": ["cviper__normal_6_P_M", "cviper__normal_6_K_H"],
+      "resultHash": "d4fb7588f84dd3850f4fbc6b6a762772c09ae85ac4f7ba03fc0808a95884c48f"
+    },
+    "dee_jay": {
+      "sourceHash": "4434e68bd1745664d23fd7b7f6d1cc44a61db7fd73d3267866bd6f13ba9b630e",
+      "candidateHash": "8c2c432d1811afd25afdd56adf4d8765e5a31d2dd6c0ca43f653115d8f9270c5",
+      "approvedMoveIds": ["dee_jay__normal_6_K_M", "dee_jay__normal_4_K_H"],
+      "resultHash": "2341ba9f67b0252e54f69f02e6d8b1a1a943c93f7695bd2f072daf05e0a41370"
+    },
+    "dhalsim": {
+      "sourceHash": "a5fc51942c6f16f4c5a5c9d6e9ccbab93c52d48ca1b2c348fd0a30047b112a5a",
+      "candidateHash": "b2d78c4b78a902d5b8518942fbf11d10a38cf56aa83754da4af72ca99260bd16",
+      "approvedMoveIds": [
+        "dhalsim__normal_4_P_M",
+        "dhalsim__normal_4_P_H",
+        "dhalsim__normal_1_P_H",
+        "dhalsim__normal_1_K_L",
+        "dhalsim__normal_4_K_M",
+        "dhalsim__normal_1_K_M",
+        "dhalsim__normal_4_K_H",
+        "dhalsim__normal_1_K_H"
+      ],
+      "resultHash": "8174d195101700d6e70aa34d55ead68c33ade299d77022d5090497764359b14f"
+    },
+    "e_honda": {
+      "sourceHash": "902ce3623b3e59d158f1444550f60ebc4199d91fd64dffea057cab7ed880e565",
+      "candidateHash": "338bfd1e5492b61cc60d4c90a57a60cfe520cebf0155c08e5e0372fc42e4cba5",
+      "approvedMoveIds": ["e_honda__normal_6_K_H", "e_honda__normal_3_K_H"],
+      "resultHash": "476b262b944b3c386624b2e0ecfab09ba979cbe44d960b7a3affbb185c81d14b"
+    },
+    "ed": {
+      "sourceHash": "9d14604953ca64334081a20e294fb5d2003782174b98901ee6a967e9a561b567",
+      "candidateHash": "f3955a6fa45f676e432f7c66f758f76f05c981a1204b8d09b044cfa733b7ffe4",
+      "approvedMoveIds": ["ed__normal_6_P_H"],
+      "resultHash": "f1cbd84509b659adecb5f24b7ddad01bfa3b35530d47d5e791dfa80740b4e438"
+    },
+    "elena": {
+      "sourceHash": "33fa46a550dda7a814148015ba99ed8fa88c5ace806de60343083b12560c12c7",
+      "candidateHash": "ec9c1b60f1f62e7e52691402e1418bfd908d37dbc3cf1b8fb08e42e93c8aeb0d",
+      "approvedMoveIds": [
+        "elena__normal_3_K_H",
+        "elena__normal_4_K_H",
+        "elena__normal_6_K_M",
+        "elena__normal_6_P_H"
+      ],
+      "measurements": {
+        "elena__normal_3_K_H": {
+          "before": 48,
+          "measured": 44,
+          "communityTotal": 40,
+          "evidence": "staging/command-normals/whiff-measurements.tsv"
+        }
+      },
+      "resultHash": "aa6a90e9134ac4b064adbc2ffbeda5795fadd8a45f5d1f05e29f901a8e7ec066"
+    },
+    "guile": {
+      "sourceHash": "8f2b8bbe41d072a3a1279f76792a86e1c210bd2761b951081e570689192dadc7",
+      "candidateHash": "4a5b128f0620659faea76a753730ff5b0e81b15457a86fe42d5a40efe5e6296e",
+      "approvedMoveIds": [
+        "guile__normal_6_P_M",
+        "guile__normal_4_P_H",
+        "guile__normal_6_P_H",
+        "guile__normal_4_K_L",
+        "guile__normal_4_K_M",
+        "guile__normal_6_K_M",
+        "guile__normal_6_K_H",
+        "guile__normal_3_K_H"
+      ],
+      "measurements": {
+        "guile__normal_4_K_L": {
+          "before": 26,
+          "measured": 27,
+          "communityTotal": 27,
+          "evidence": "staging/command-normals/whiff-measurements.tsv"
+        }
+      },
+      "resultHash": "f5009e05284a593fce1ffdc0e629b64a6f44495d248c86bd6c2c2e334b789884"
+    },
+    "ingrid": {
+      "sourceHash": "39c5695eaa2fd8816b3c22b55a8b54ab6ebdcda792ca30e282833fbcf86159ed",
+      "candidateHash": "7219b6719b9e9981bca5c7ce9b14d55ad0efbacbecf3d2d3f1e77244ff414b64",
+      "approvedMoveIds": [
+        "ingrid__normal_6_P_M",
+        "ingrid__normal_6_P_H",
+        "ingrid__normal_4_K_M",
+        "ingrid__normal_4_P_H"
+      ],
+      "resultHash": "30aded69d1f422ed523836bc8d078e3bbf9f570bb2deed7106afa8cc7ed40e24"
+    },
+    "jamie": {
+      "sourceHash": "281b2b402677b7f22b49d744877c9abb1fcf868ee8764af4d03ff1e37e5c9957",
+      "candidateHash": "4151c7db2c08370c3d119ddaeeec86b9ba607dd3f69089b47a6923cd3e9b66d1",
+      "approvedMoveIds": [
+        "jamie__normal_6_K_M",
+        "jamie__normal_4_P_H",
+        "jamie__normal_6_K_H"
+      ],
+      "resultHash": "b3cb018035a57006efbf56b021c1e9995e647c5d211aeafd03a5cd184c91f0bc"
+    },
+    "jp": {
+      "sourceHash": "6e424804ed59b6efab4460bb70f605ab22181de349e04e4fa7c0aabf2dee7d8d",
+      "candidateHash": "1f0faed50c02190924d7266d99f68c58a3e888418f0eed898ccddc127db9d84d",
+      "approvedMoveIds": [
+        "jp__normal_6_K_M",
+        "jp__normal_3_P_H",
+        "jp__normal_6_K_H",
+        "jp__normal_4_P_M"
+      ],
+      "resultHash": "e76adf46ce89a2fa54833c48cb15b1411ed81dc24e96026f88abdd57cf0a3066"
+    },
+    "juri": {
+      "sourceHash": "e6238efd4b8b1eaf951e866a366b99a1eb44c5a657200d8f8061bafda4430204",
+      "candidateHash": "f6c4fb923462f3b62410f504192035a80fa77a8b4dab0bfd6817302f740cc96e",
+      "approvedMoveIds": [
+        "juri__normal_6_P_M",
+        "juri__normal_6_K_M",
+        "juri__normal_6_P_H",
+        "juri__normal_4_K_H"
+      ],
+      "measurements": {
+        "juri__normal_6_K_M": {
+          "before": 47,
+          "measured": 45,
+          "communityTotal": 43,
+          "evidence": "staging/command-normals/whiff-measurements.tsv"
+        }
+      },
+      "resultHash": "173204bcef0fba80d8f56f51bdd1ed6f5d1c6d2bd7846e23ef0411915af54261"
+    },
+    "ken": {
+      "sourceHash": "988d6bfb137750b13a1b147e3d784f725f6a35defe1c57e9389e94a3d878b5ea",
+      "candidateHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "approvedMoveIds": [],
+      "resultHash": "8bd2ff1eed695d65bc34cb9f1178e14bb229c2524fcc05bcdf461f043ae24f23"
+    },
+    "kimberly": {
+      "sourceHash": "c267243f430c174270627bb6e819e3bbe759a4356625fc5f0a5ec1b4cba07a67",
+      "candidateHash": "b628f9268588b4bb093be47bdce4dcd64b5d113d25ab316a35dd4a9e5f0face5",
+      "approvedMoveIds": [
+        "kimberly__normal_3_K_M",
+        "kimberly__normal_4_K_H",
+        "kimberly__normal_6_K_H"
+      ],
+      "resultHash": "44652a8a84d75d76500825387592414913d21eeea8435402526a826bce51e4bf"
+    },
+    "lily": {
+      "sourceHash": "098caba390082efb256b605670bceaf79c271f2d8ea4775ca01458fc4bf30dc6",
+      "candidateHash": "ff97c5af1ad165b040f272e629b41ecd357c14c0e045fa171983904ecfba5bf1",
+      "approvedMoveIds": [
+        "lily__normal_3_P_H",
+        "lily__normal_4_P_H",
+        "lily__normal_6_P_H"
+      ],
+      "resultHash": "26766d5cbdef02da30e509a7c5f1ad8f1eb41d9f3d87ca4b5b23b5f47a867a07"
+    },
+    "luke": {
+      "sourceHash": "9d21b6a6bbf919099184b771d8924483d84ee2eed7050e80311e2b3efb1bc5b5",
+      "candidateHash": "8d78d5dc30338cc0ebcec0dd06b1a48e7602ad9e67fbb63011a317df7de9b5aa",
+      "approvedMoveIds": [
+        "luke__normal_6_P_M",
+        "luke__normal_4_P_H",
+        "luke__normal_4_K_H",
+        "luke__normal_6_P_H"
+      ],
+      "resultHash": "e697f833f00a6238d5467aa0c46a7edcf51f61cb976bde75039226ff61cadb97"
+    },
+    "m_bison": {
+      "sourceHash": "155c4be2599e6a4c6606136fd1c9addabd67a8cd3f529129ada0c870ff2e9f76",
+      "candidateHash": "5cfac1c2cca1eebfe56625111c567f08af3dabc1c49214573644c392ab18efff",
+      "approvedMoveIds": [
+        "m_bison__normal_6_P_H",
+        "m_bison__normal_4_K_H",
+        "m_bison__normal_3_K_H"
+      ],
+      "resultHash": "a0efb005e79be150c5300304332c2cef3c2d7c1916ea1242ab19393999a453c7"
+    },
+    "mai": {
+      "sourceHash": "30be46f6deb41dce797ba7a297dd7811153616538036cc3b4a0499d6a8fab853",
+      "candidateHash": "c3e09267248a7934150f9a86b43397608dc7ce664a499b358030a5861ebd0bd2",
+      "approvedMoveIds": ["mai__normal_6_P_M", "mai__normal_4_K_H"],
+      "resultHash": "31a2f7f7c670e4d94b518eaf83c9d246fbfb0922c6327b4ea00f7d4eafa551d4"
+    },
+    "manon": {
+      "sourceHash": "bfc5af0de388083d4bbd2ec8088b566d61983aa80ed0c33a940462de71848d28",
+      "candidateHash": "f309ff9373d9b7adf44ac06db161536cd7a02548a6d8bcf348635bee4f920bac",
+      "approvedMoveIds": [
+        "manon__normal_4_P_H",
+        "manon__normal_3_K_H",
+        "manon__normal_4_K_M"
+      ],
+      "resultHash": "e0ddf7599ab0b8f127071d31f5d35142069a9125112c895e85cf5115011889b1"
+    },
+    "marisa": {
+      "sourceHash": "1637f07aade1f7dc50f03db69154ff66ca554e88699d7b949dcddb7fd6a5818e",
+      "candidateHash": "c09bd12c56808ccb2693b40c6f6eed9327b06864258a8135b442205bde257a08",
+      "approvedMoveIds": [
+        "marisa__normal_4_P_H",
+        "marisa__normal_6_P_M",
+        "marisa__normal_3_P_H",
+        "marisa__normal_6_K_H"
+      ],
+      "resultHash": "e76167e27f88d4926cf488cae0fd4035e975147063d2232690cef2d03c78d13f"
+    },
+    "rashid": {
+      "sourceHash": "b7b2da913c7c16d0a5bc1d19fc2d45c0f3fffdf8b6386982b911e6665ffb44ac",
+      "candidateHash": "62e6f8aff3eaa3473722d42a749d42910527a626474fe024b583eeb4adaa3dcf",
+      "approvedMoveIds": [
+        "rashid__normal_6_P_M",
+        "rashid__normal_6_P_H",
+        "rashid__normal_6_K_H"
+      ],
+      "resultHash": "91674744c1314bcd59b19af121a366c85cb599482b8344fc1874a314ec5d8594"
+    },
+    "ryu": {
+      "sourceHash": "25ec78f34af930b395ca9ad3bfe0eba716c6712aced3d897744ff18e63cfae82",
+      "candidateHash": "a04de665affceb1d21b34a0118506180df33dbb2405830286c97f436e2298eb4",
+      "approvedMoveIds": [
+        "ryu__normal_6_P_M",
+        "ryu__normal_6_P_H",
+        "ryu__normal_4_P_H",
+        "ryu__normal_4_K_H",
+        "ryu__normal_6_K_H"
+      ],
+      "measurements": {
+        "ryu__normal_4_P_H": {
+          "before": 36,
+          "measured": 35,
+          "communityTotal": 35,
+          "evidence": "staging/command-normals/whiff-measurements.tsv"
+        },
+        "ryu__normal_4_K_H": {
+          "before": 44,
+          "measured": 43,
+          "communityTotal": 43,
+          "evidence": "staging/command-normals/whiff-measurements.tsv"
+        }
+      },
+      "resultHash": "558dffa02e5a314f794d67d365d881f08563d72a2ae579de215748ca5dfa919c"
+    },
+    "sagat": {
+      "sourceHash": "6b8413ca811109b14bcbf2baa05ab002e6d6ade5a4b3ba3b256a1d7dfd37b3b6",
+      "candidateHash": "c1e57b1058928e92f31147d1402d3b6789332352bde7d1d8bece81dc48f2cd57",
+      "approvedMoveIds": [
+        "sagat__normal_6_P_M",
+        "sagat__normal_4_P_H",
+        "sagat__normal_6_K_L",
+        "sagat__normal_6_K_H"
+      ],
+      "resultHash": "4ef93c455d38ddfbb9ab1d338d9483bb34a9d10de6b3f142ee1020ec6d8fdf34"
+    },
+    "terry": {
+      "sourceHash": "577434180c6b8c684cce41a5b34616b444c56b85d7ea1e316174c8192c47d95f",
+      "candidateHash": "6fc4a8303ff20a109bfcec913409d0d9ebc7b2eb1b1f49a4f9ec0baef4591ef8",
+      "approvedMoveIds": ["terry__normal_6_P_H"],
+      "resultHash": "7081dabe68306f5651f52d21ec58dc1efd869e14f72f4110bcf815b657a9ad12"
+    },
+    "yasmine": {
+      "sourceHash": "8ab5d25685f1bbe75e4bd2a40f5ce970c00b61b8fa291e931854e4ca1d3045ff",
+      "candidateHash": "284c581d8e14cd9d550bf95bfe91b4954c5ba7edde5c8413a284ea80a5d634ec",
+      "approvedMoveIds": ["yasmine__normal_6_P_M", "yasmine__normal_4_K_H"],
+      "measurements": {
+        "yasmine__normal_4_K_H": {
+          "before": 51,
+          "measured": 48,
+          "communityTotal": 45,
+          "evidence": "staging/command-normals/whiff-measurements.tsv"
+        }
+      },
+      "resultHash": "103db474cb03ce227cff2706d284522d0cc02c676b4d6eee9ff04735e1e8f1d0"
+    },
+    "zangief": {
+      "sourceHash": "d6b1937756ffbbc512ec1622dc6b6a68e14038bf65abd9599fc19f7c9d159cc1",
+      "candidateHash": "4a1f13a1a73efac0d056ac5d5e3bb2661310c4fb3c7fbfd914da1b59e129e221",
+      "approvedMoveIds": [
+        "zangief__normal_3_P_M",
+        "zangief__normal_6_K_M",
+        "zangief__normal_6_P_H",
+        "zangief__normal_6_K_H",
+        "zangief__normal_3_K_H"
+      ],
+      "resultHash": "f79d3d1df6cc9aa9d47836d46274a13142ff8e7408fad1cfb0b3aeb2f3ecaf1a"
+    }
+  }
 }

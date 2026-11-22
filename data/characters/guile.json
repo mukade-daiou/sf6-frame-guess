@@ -21,6 +21,10 @@
       "status": "complete",
       "verification": "unverified"
     },
+    "command_normal": {
+      "status": "complete",
+      "verification": "unverified"
+    },
     "special": {
       "status": "complete",
       "verification": "unverified"
@@ -2205,6 +2209,452 @@
           "block": "source"
         },
         "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "guile__normal_6_P_M",
+      "name": "フルブレットマグナム",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "6",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "20",
+          "numeric": 20
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "41",
+          "numeric": 41,
+          "provenance": "verified_calculation",
+          "calculation": "持続 20-22 の最終F 22 + 硬直 19"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 21",
+        "空中ヒット時叩きつけダウン"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/guile/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "guile__normal_4_P_H",
+      "name": "バーンストレート",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "4",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "32",
+          "numeric": 32,
+          "provenance": "verified_calculation",
+          "calculation": "持続 9-11 の最終F 11 + 硬直 21"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 22"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/guile/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "guile__normal_6_P_H",
+      "name": "スピニングバックナックル",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "6",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "16",
+          "numeric": 16
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "38",
+          "numeric": 38,
+          "provenance": "verified_calculation",
+          "calculation": "持続 16-18 の最終F 18 + 硬直 20"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+5",
+          "numeric": 5
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 23"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/guile/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "guile__normal_4_K_L",
+      "name": "ニーバズーカ",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "4",
+        "button": "K",
+        "strength": "L"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "8",
+          "numeric": 8
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "27",
+          "numeric": 27,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "0",
+          "numeric": 0
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 24",
+        "空振り全体Fはユーザー実測（26F→27F、パッチ番号未確認）。根拠: staging/command-normals/whiff-measurements.tsv"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/guile/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "guile__normal_4_K_M",
+      "name": "ローリングソバット",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "4",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "11",
+          "numeric": 11
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "31",
+          "numeric": 31,
+          "provenance": "verified_calculation",
+          "calculation": "持続 11-13 の最終F 13 + 硬直 18"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 25",
+        "7-17F 足元無敵"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/guile/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "guile__normal_6_K_M",
+      "name": "ローリングソバット",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "6",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "11",
+          "numeric": 11
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "34",
+          "numeric": 34,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-6",
+          "numeric": -6
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 26",
+        "7-17F 足元無敵\n空振り時硬直21F/全体34F"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/guile/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "guile__normal_6_K_H",
+      "name": "リバーススピンキック",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "6",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "17",
+          "numeric": 17
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "45",
+          "numeric": 45,
+          "provenance": "verified_calculation",
+          "calculation": "持続 17-19 の最終F 19 + 硬直 26"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-8",
+          "numeric": -8
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 27",
+        "4F-28F　投げ無敵/足元無敵\nカウンターヒット時吹き飛びダウン\nパニッシュカウンターヒット時膝崩れ"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/guile/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "guile__normal_3_K_H",
+      "name": "ガイルハイキック",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "3",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "35",
+          "numeric": 35,
+          "provenance": "verified_calculation",
+          "calculation": "持続 10-12 の最終F 12 + 硬直 23"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "0",
+          "numeric": 0
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-9",
+          "numeric": -9
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 28",
+        "パニッシュカウンターヒット時吹き飛びダウン\n空中ヒット時、カウンター以上で吹き飛びダウン\n18-19F 必殺技キャンセル可能"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/guile/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
       }
     }
   ]

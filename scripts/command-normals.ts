@@ -195,6 +195,16 @@ type Approval = {
   sourceHash: string;
   candidateHash: string;
   approvedMoveIds: string[];
+  resultHash?: string;
+  measurements?: Record<
+    string,
+    {
+      before: number;
+      measured: number;
+      communityTotal: number;
+      evidence: string;
+    }
+  >;
 };
 
 export function applyCommandNormals(
@@ -209,11 +219,13 @@ export function applyCommandNormals(
   );
   const ids = new Set(approval.approvedMoveIds);
   const approved = rows.filter(({ move }) => ids.has(move.id));
+  const measurements = approval.measurements ?? {};
   if (
     digest(bytes) !== approval.sourceHash ||
     digest(JSON.stringify(rows)) !== approval.candidateHash ||
     ids.size !== approval.approvedMoveIds.length ||
     approved.length !== ids.size ||
+    Object.keys(measurements).some((id) => !ids.has(id)) ||
     approved.some(({ move }) =>
       character.moves.some(
         (existing) =>
@@ -223,7 +235,7 @@ export function applyCommandNormals(
     )
   )
     throw new Error(`Invalid command normal approval: ${character.id}`);
-  return characterSchema.parse({
+  const result = characterSchema.parse({
     ...character,
     coverage: {
       ...character.coverage,
@@ -234,15 +246,52 @@ export function applyCommandNormals(
     },
     moves: [
       ...character.moves,
-      ...approved.map(({ move }) => ({
-        ...move,
-        adoption: {
-          status: "accepted",
-          basis: "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。",
-        },
-      })),
+      ...approved.map(({ move }) => {
+        const measurement = measurements[move.id];
+        if (measurement) {
+          const { before, measured, evidence } = measurement;
+          if (
+            move.frames.total.status !== "confirmed" ||
+            move.frames.total.numeric !== before ||
+            !Number.isSafeInteger(measured) ||
+            measured <= 0 ||
+            !evidence.trim()
+          )
+            throw new Error(`Stale command normal measurement: ${move.id}`);
+          if (measured !== before) {
+            move.frames.total = {
+              status: "confirmed",
+              numeric: measured,
+              display: String(measured),
+              provenance: "source",
+              calculation: null,
+            };
+            move.notes.push(
+              `空振り全体Fはユーザー実測（${before}F→${measured}F、パッチ番号未確認）。根拠: ${evidence}`,
+            );
+          }
+        }
+        return {
+          ...move,
+          adoption: {
+            status: "accepted",
+            basis: "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。",
+          },
+        };
+      }),
     ],
   });
+  if (
+    approval.resultHash &&
+    digest(
+      JSON.stringify([
+        result.coverage.command_normal,
+        result.moves.slice(character.moves.length),
+      ]),
+    ) !== approval.resultHash
+  )
+    throw new Error(`Command normal result hash mismatch: ${character.id}`);
+  return result;
 }
 
 if (import.meta.url === pathToFileURL(process.argv[1] ?? "").href) {

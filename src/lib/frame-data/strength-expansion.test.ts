@@ -6,6 +6,9 @@ import {
 } from "./strength-expansion";
 import { resolveMove } from "./resolver";
 import { ask, startGame, changeMode } from "../../features/game/engine";
+import policy from "../../../data/adoption-decisions.json";
+// @ts-ignore shared historical projection
+import { restoreCommandNormals } from "../../../scripts/compound-startup-projection.mjs";
 const character = (id: string) =>
   production.characters.find((c) => c.id === id)!;
 const query = (strength: "L" | "M" | "H" | "OD", includeSuperArts = true) => ({
@@ -51,7 +54,10 @@ it("exposes 22P at all strengths with independent queries and shares the source 
 it.each(["e_honda", "blanka", "chunli", "jp", "dee_jay"])(
   "expands accepted non-22 motions without altering original frames: %s",
   (id) => {
-    const c = character(id);
+    const c = restoreCommandNormals(
+      character(id),
+      policy.commandNormals[id as keyof typeof policy.commandNormals],
+    ) as ReturnType<typeof character>;
     for (const m of c.moves.filter((m) => m.strengthExpansion)) {
       const source = c.moves.find(
         (s) => s.id === m.strengthExpansion!.sourceMoveId,

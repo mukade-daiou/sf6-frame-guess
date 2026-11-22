@@ -1,4 +1,67 @@
 {
   "baselineRef": "53524c395f03426676612aa7617660b86578529a",
-  "approvals": []
+  "approvals": [
+    {
+      "characterId": "zangief",
+      "moveId": "zangief__official_fbc83ed55ef63fe6_M",
+      "path": [],
+      "kind": "add",
+      "after": {
+        "adoption": {
+          "status": "accepted",
+          "basis": "Reviewed ordinary official command"
+        },
+        "id": "zangief__official_fbc83ed55ef63fe6_M",
+        "name": "ストンピング（1段目）",
+        "category": "special",
+        "input": {
+          "type": "special",
+          "motion": "22",
+          "button": "K",
+          "strength": "M"
+        },
+        "variant": {
+          "kind": "base",
+          "condition": null
+        },
+        "frames": {
+          "startup": {
+            "status": "confirmed",
+            "display": "9",
+            "numeric": 9
+          },
+          "total": {
+            "status": "confirmed",
+            "display": "28",
+            "numeric": 28,
+            "provenance": "verified_calculation",
+            "calculation": "持続 9-11 の最終F 11 + 硬直 17"
+          },
+          "hit": {
+            "status": "confirmed",
+            "display": "+4",
+            "numeric": 4
+          },
+          "block": {
+            "status": "confirmed",
+            "display": "-3",
+            "numeric": -3
+          }
+        },
+        "notes": [
+          "Official ordinary-state row",
+          "officialSource: {\"active\":\"9-11\",\"attribute\":\"下\",\"block\":\"-3\",\"cells\":[{\"colspan\":1,\"text\":\"ストンピング（1段目）\\n\\n中\"},{\"colspan\":1,\"text\":\"9\"},{\"colspan\":1,\"text\":\"9-11\"},{\"colspan\":1,\"text\":\"17\"},{\"colspan\":1,\"text\":\"4\"},{\"colspan\":1,\"text\":\"-3\"},{\"colspan\":1,\"text\":\"C\"},{\"colspan\":1,\"text\":\"500\"},{\"colspan\":1,\"text\":\"始動補正20%\"},{\"colspan\":1,\"text\":\"1500\"},{\"colspan\":1,\"text\":\"-2500\"},{\"colspan\":1,\"text\":\"-4000\"},{\"colspan\":1,\"text\":\"700\"},{\"colspan\":1,\"text\":\"下\"},{\"colspan\":1,\"text\":\"\"}],\"commandImages\":[\"/6/assets/images/common/controller/key-d.png\",\"/6/assets/images/common/controller/key-d.png\",\"/6/assets/images/common/controller/key-plus.png\",\"/6/assets/images/common/controller/icon_kick_m.png\"],\"commandText\":\"中\",\"hit\":\"4\",\"name\":\"ストンピング（1段目）\",\"notes\":\"\",\"recovery\":\"17\",\"row\":35,\"section\":\"特殊技\",\"startup\":\"9\"}"
+        ],
+        "source": {
+          "url": "https://www.streetfighter.com/6/ja-jp/character/zangief/frame",
+          "retrievedAt": "2026-11-10T00:00:00Z",
+          "gameVersion": "UNVERIFIED",
+          "kind": "official",
+          "attribution": "CAPCOM",
+          "license": "Official frame data; rights retained by CAPCOM",
+          "verification": "unverified"
+        }
+      }
+    }
+  ]
 }

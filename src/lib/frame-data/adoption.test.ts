@@ -4,6 +4,7 @@ import marisa from "../../../data/characters/marisa.json";
 import metadata from "../../../data/metadata.json";
 import { validateDataset } from "./loader";
 import { resolveMove } from "./resolver";
+import { isCommandNormal } from "./input";
 import { startGame, ask, answer, isCorrect } from "../../features/game/engine";
 const data = () => validateDataset(metadata, { ken, marisa });
 it("adopts 63 source-matched moves without falsely verifying the source or patch", () => {
@@ -14,7 +15,10 @@ it("adopts 63 source-matched moves without falsely verifying the source or patch
     d.characters.map(
       (c) =>
         c.moves.filter(
-          (m) => m.category !== "super_art" && !m.strengthExpansion,
+          (m) =>
+            m.category !== "super_art" &&
+            !m.strengthExpansion &&
+            !isCommandNormal(m.input),
         ).length,
     ),
   ).toEqual([33, 30]);

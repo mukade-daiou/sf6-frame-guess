@@ -21,6 +21,10 @@
       "status": "complete",
       "verification": "unverified"
     },
+    "command_normal": {
+      "status": "complete",
+      "verification": "unverified"
+    },
     "special": {
       "status": "complete",
       "verification": "unverified"
@@ -2361,6 +2365,339 @@
           "block": "source"
         },
         "laterAttackStartup": null
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "Reviewed ordinary official command"
+      },
+      "id": "zangief__official_fbc83ed55ef63fe6_M",
+      "name": "ストンピング（1段目）",
+      "category": "special",
+      "input": {
+        "type": "special",
+        "motion": "22",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "9",
+          "numeric": 9
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "28",
+          "numeric": 28,
+          "provenance": "verified_calculation",
+          "calculation": "持続 9-11 の最終F 11 + 硬直 17"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "Official ordinary-state row",
+        "officialSource: {\"active\":\"9-11\",\"attribute\":\"下\",\"block\":\"-3\",\"cells\":[{\"colspan\":1,\"text\":\"ストンピング（1段目）\\n\\n中\"},{\"colspan\":1,\"text\":\"9\"},{\"colspan\":1,\"text\":\"9-11\"},{\"colspan\":1,\"text\":\"17\"},{\"colspan\":1,\"text\":\"4\"},{\"colspan\":1,\"text\":\"-3\"},{\"colspan\":1,\"text\":\"C\"},{\"colspan\":1,\"text\":\"500\"},{\"colspan\":1,\"text\":\"始動補正20%\"},{\"colspan\":1,\"text\":\"1500\"},{\"colspan\":1,\"text\":\"-2500\"},{\"colspan\":1,\"text\":\"-4000\"},{\"colspan\":1,\"text\":\"700\"},{\"colspan\":1,\"text\":\"下\"},{\"colspan\":1,\"text\":\"\"}],\"commandImages\":[\"/6/assets/images/common/controller/key-d.png\",\"/6/assets/images/common/controller/key-d.png\",\"/6/assets/images/common/controller/key-plus.png\",\"/6/assets/images/common/controller/icon_kick_m.png\"],\"commandText\":\"中\",\"hit\":\"4\",\"name\":\"ストンピング（1段目）\",\"notes\":\"\",\"recovery\":\"17\",\"row\":35,\"section\":\"特殊技\",\"startup\":\"9\"}"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/zangief/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "zangief__normal_3_P_M",
+      "name": "ヘルスタブ",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "3",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "30",
+          "numeric": 30,
+          "provenance": "verified_calculation",
+          "calculation": "持続 7-9 の最終F 9 + 硬直 21"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "-1",
+          "numeric": -1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 26",
+        "強制立ち効果"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/zangief/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "zangief__normal_6_K_M",
+      "name": "ニーバット",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "6",
+        "button": "K",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "33",
+          "numeric": 33,
+          "provenance": "verified_calculation",
+          "calculation": "持続 14-20 の最終F 20 + 硬直 13"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 27"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/zangief/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "zangief__normal_6_P_H",
+      "name": "ヘッドバット",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "6",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "14",
+          "numeric": 14
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "35",
+          "numeric": 35,
+          "provenance": "verified_calculation",
+          "calculation": "持続 14-18 の最終F 18 + 硬直 15 + 空振り時硬直2F増加"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+8",
+          "numeric": 8
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "+4",
+          "numeric": 4
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 28",
+        "空振り時硬直2F増加"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/zangief/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "zangief__normal_6_K_H",
+      "name": "サイクロンニールキック",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "6",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "22",
+          "numeric": 22
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "53",
+          "numeric": 53,
+          "provenance": "verified_calculation",
+          "calculation": "持続 22-28 の最終F 28 + 硬直 25"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-9",
+          "numeric": -9
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 29",
+        "パニッシュカウンター時床バウンド"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/zangief/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "zangief__normal_3_K_H",
+      "name": "スメタナドロップキック",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "3",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "16",
+          "numeric": 16
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "59",
+          "numeric": 59,
+          "provenance": "verified_calculation",
+          "calculation": "持続 16-19 の最終F 19 + 硬直 40"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "D"
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-18",
+          "numeric": -18
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 30",
+        "5-26F　投げ無敵\nパニッシュカウンター時壁張り付け効果"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/zangief/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
       }
     }
   ]

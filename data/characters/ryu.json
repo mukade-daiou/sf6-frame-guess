@@ -21,6 +21,10 @@
       "status": "complete",
       "verification": "unverified"
     },
+    "command_normal": {
+      "status": "complete",
+      "verification": "unverified"
+    },
     "special": {
       "status": "complete",
       "verification": "unverified"
@@ -2872,6 +2876,287 @@
       "strengthExpansion": {
         "sourceMoveId": "ryu__special_22_P_none",
         "basis": "ユーザー指定: 強度未指定の採用済み基本必殺技の共通値をL/M/Hのゲーム用代表値へ展開。実性能一致を保証せず、ODは生成しない。"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "ryu__normal_6_P_M",
+      "name": "鎖骨割り",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "6",
+        "button": "P",
+        "strength": "M"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "20",
+          "numeric": 20
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "42",
+          "numeric": 42,
+          "provenance": "verified_calculation",
+          "calculation": "持続 20-23 の最終F 23 + 硬直 19"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-3",
+          "numeric": -3
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 21",
+        "※初段が空振り時のみ2段目が中段判定"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/ryu/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "ryu__normal_6_P_H",
+      "name": "鳩尾砕き",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "6",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "20",
+          "numeric": 20
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "40",
+          "numeric": 40,
+          "provenance": "verified_calculation",
+          "calculation": "持続 20-24 の最終F 24 + 硬直 16"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+6",
+          "numeric": 6
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "+3",
+          "numeric": 3
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 22"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/ryu/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "ryu__normal_4_P_H",
+      "name": "上げ突き",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "4",
+        "button": "P",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "7",
+          "numeric": 7
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "35",
+          "numeric": 35,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+1",
+          "numeric": 1
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-13",
+          "numeric": -13
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 23",
+        "キャンセルは持続の1F目がヒットした時のみ\n強制立ち効果",
+        "空振り全体Fはユーザー実測（36F→35F、パッチ番号未確認）。根拠: staging/command-normals/whiff-measurements.tsv"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/ryu/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "ryu__normal_4_K_H",
+      "name": "かかと落とし",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "4",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "10",
+          "numeric": 10
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "43",
+          "numeric": 43,
+          "provenance": "source",
+          "calculation": null
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "0",
+          "numeric": 0
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 24",
+        "1段目強制立ち効果\n2段目空中ヒット時床バウンド",
+        "空振り全体Fはユーザー実測（44F→43F、パッチ番号未確認）。根拠: staging/command-normals/whiff-measurements.tsv"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/ryu/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
+      }
+    },
+    {
+      "adoption": {
+        "status": "accepted",
+        "basis": "CAPCOM公式表に基づく方向付き特殊技の承認済み入力。"
+      },
+      "id": "ryu__normal_6_K_H",
+      "name": "旋風脚",
+      "category": "normal",
+      "input": {
+        "type": "normal",
+        "direction": "6",
+        "button": "K",
+        "strength": "H"
+      },
+      "variant": {
+        "kind": "base",
+        "condition": null
+      },
+      "frames": {
+        "startup": {
+          "status": "confirmed",
+          "display": "16",
+          "numeric": 16
+        },
+        "total": {
+          "status": "confirmed",
+          "display": "39",
+          "numeric": 39,
+          "provenance": "verified_calculation",
+          "calculation": "持続 16-19 の最終F 19 + 硬直 20"
+        },
+        "hit": {
+          "status": "confirmed",
+          "display": "+2",
+          "numeric": 2
+        },
+        "block": {
+          "status": "confirmed",
+          "display": "-4",
+          "numeric": -4
+        }
+      },
+      "notes": [
+        "CAPCOM CLASSIC 特殊技 行 25",
+        "※空中竜巻旋風脚(OD版を含む)でキャンセル可能"
+      ],
+      "source": {
+        "url": "https://www.streetfighter.com/6/ja-jp/character/ryu/frame",
+        "retrievedAt": "2026-11-10T00:00:00Z",
+        "gameVersion": "UNVERIFIED",
+        "kind": "official",
+        "attribution": "CAPCOM",
+        "license": "Official frame data; rights retained by CAPCOM",
+        "verification": "unverified"
       }
     }
   ]
