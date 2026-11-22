@@ -1,8 +1,8 @@
-import test from "node:test";
+import { localEvidenceTest } from "./helpers/local-evidence-test.mjs";
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
 import { readFileSync } from "node:fs";
-test("only approved conditional adoptions differ from the previous snapshot", () => {
+localEvidenceTest("only approved conditional adoptions differ from the previous snapshot", () => {
   execFileSync("node_modules/.bin/tsx", [
     "scripts/audit-conditional-specials.ts",
   ]);

@@ -18,6 +18,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      # Local verification also runs data:check and tests that read source captures.
+      SF6_WITHOUT_SOURCE_CAPTURES: "1"
     steps:
       - uses: actions/checkout@v4
         with:
@@ -27,7 +30,6 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
-      - run: npm run data:check
       - run: npm run format:check
       - run: npm test
       - name: Build under repository path

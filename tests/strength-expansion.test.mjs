@@ -1,8 +1,8 @@
-import test from "node:test";
+import { localEvidenceTest } from "./helpers/local-evidence-test.mjs";
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
 import { readFileSync } from "node:fs";
-test("strength expansion preserves all pre-existing records, coverage and is reproducible", () => {
+localEvidenceTest("strength expansion preserves all pre-existing records, coverage and is reproducible", () => {
   execFileSync("node_modules/.bin/tsx", [
     "scripts/audit-strength-expansion.ts",
     "--check",

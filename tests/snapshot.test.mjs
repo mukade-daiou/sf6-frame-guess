@@ -1,8 +1,8 @@
-import test from "node:test";
+import { localEvidenceTest } from "./helpers/local-evidence-test.mjs";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { execFileSync } from "node:child_process";
-test("initial adopted snapshot is reproducible and preserves all previous candidates", () => {
+localEvidenceTest("initial adopted snapshot is reproducible and preserves all previous candidates", () => {
   const current = [
     "data/metadata.json",
     "data/characters/ken.json",

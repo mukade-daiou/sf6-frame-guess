@@ -1,6 +1,7 @@
 import { historicalCharacterFiles } from "../scripts/compound-startup-projection.mjs";
 import { readHistoricalJson } from "./helpers/read-history.mjs";
 import test from "node:test";
+import { localEvidenceTest } from "./helpers/local-evidence-test.mjs";
 import assert from "node:assert/strict";
 import { readFileSync, readdirSync } from "node:fs";
 import { createHash } from "node:crypto";
@@ -27,7 +28,7 @@ test("Official comparison leaves all local production character data byte-identi
     );
   }
 });
-test("Every accepted local record has exactly four classified fields and preserved official evidence", () => {
+localEvidenceTest("Every accepted local record has exactly four classified fields and preserved official evidence", () => {
   const historical = read(
     "staging/official-reevaluation/results-after-risk-fixes.json",
   );
@@ -90,7 +91,7 @@ test("Every accepted local record has exactly four classified fields and preserv
     }
   }
 });
-test("Whiff totals include explicit whiff recovery and reject hit-only continuations", () => {
+localEvidenceTest("Whiff totals include explicit whiff recovery and reject hit-only continuations", () => {
   const ryu = read(`${dir}/sources/ryu.json`);
   assert.equal(
     total(ryu.rows.find((r) => r.name.startsWith("しゃがみ中P"))).value,
@@ -104,7 +105,7 @@ test("Whiff totals include explicit whiff recovery and reject hit-only continuat
   const chunli = read(`${dir}/sources/chunli.json`);
   assert.equal(total(chunli.rows.find((r) => r.name === "OD 天昇脚")), null);
 });
-test("Official names resolve only reviewed baseline records and retain unresolved names", () => {
+localEvidenceTest("Official names resolve only reviewed baseline records and retain unresolved names", () => {
   const baseline = read(`${dir}/name-baseline.json`);
   const official = read("staging/move-names/official.json");
   const names = read("src/features/moves/japanese-names.json");

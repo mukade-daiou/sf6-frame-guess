@@ -1,4 +1,5 @@
 import test from "node:test";
+import { localEvidenceTest } from "./helpers/local-evidence-test.mjs";
 import assert from "node:assert/strict";
 import {
   readFile,
@@ -20,7 +21,7 @@ import {
 const fixture = JSON.parse(
   await readFile("tests/fixtures/source-scan/ryu.json", "utf8"),
 );
-test("saved official roster compares unchanged including duplicate names and commands", async () => {
+localEvidenceTest("saved official roster compares unchanged including duplicate names and commands", async () => {
   for (const file of (
     await readdir("staging/official-verification/sources")
   ).filter((f) => f.endsWith(".json"))) {

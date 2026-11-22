@@ -1,4 +1,5 @@
 import test from "node:test";
+import { localEvidenceTest } from "../../tests/helpers/local-evidence-test.mjs";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { execFileSync } from "node:child_process";
@@ -36,7 +37,7 @@ test("all 63 candidates have named counterparts without certifying patch or inpu
     }
   }
 });
-test("audit is reproducible and cannot overwrite previous-stage candidates", () => {
+localEvidenceTest("audit is reproducible and cannot overwrite previous-stage candidates", () => {
   const paths = [
     "archive/staging/sf6-frame-data-stage7/review.json",
     "archive/staging/sf6-frame-data-stage7/characters/ken.json",

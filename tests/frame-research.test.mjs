@@ -1,9 +1,9 @@
-import test from "node:test";
+import { localEvidenceTest } from "./helpers/local-evidence-test.mjs";
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
 import { readFileSync } from "node:fs";
 
-test("every stage17 change is an evidenced unknown field and all 1298 records remain protected", () => {
+localEvidenceTest("every stage17 change is an evidenced unknown field and all 1298 records remain protected", () => {
   execFileSync("node_modules/.bin/tsx", [
     "scripts/research-missing-frames.ts",
     "--check",

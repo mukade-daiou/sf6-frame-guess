@@ -4,8 +4,10 @@ coverage/
 *.local
 .env*
 staging/verification/
-# Full-page research caches kept locally; only Luke is required by generation.
+# Third-party source captures used for local regeneration and audits.
+/staging/official-verification/sources/*.json
+/archive/staging/sf6-frame-data-stage8/evidence/steam_news.json
+/archive/staging/sf6-frame-data-stage8/evidence/steam_official_news.json
 staging/held-range-stage2/*.html
-!staging/held-range-stage2/luke.html
 staging/held-range-stage3/*.html
 staging/held-range-stage3/sf6frame-readme.md

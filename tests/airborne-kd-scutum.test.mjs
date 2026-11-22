@@ -2,6 +2,7 @@ import { historicalCharacterFiles } from "../scripts/compound-startup-projection
 import { readHistoricalJson } from "./helpers/read-history.mjs";
 import { applyUserConfirmedToBaseline } from "./helpers/apply-user-confirmed.mjs";
 import test from "node:test";
+import { localEvidenceTest } from "./helpers/local-evidence-test.mjs";
 import assert from "node:assert/strict";
 import { readFileSync, readdirSync } from "node:fs";
 import { execFileSync } from "node:child_process";
@@ -41,7 +42,7 @@ test("historical projection rejects unauthorized armor and airborne hit", () => 
   assert.throws(() => restoreCompoundStartup(e), /Unauthorized KD\/HKD/);
 });
 
-test("normal airborne KD and the two non-held armor rows retain their evidence", () => {
+localEvidenceTest("normal airborne KD and the two non-held armor rows retain their evidence", () => {
   const p = policy;
   const ed = p.kdHkdCorrections.airborneDecisions[0];
   const cargo = read(ed.sourcePath).data.cargoquery[ed.sourceIndex].title;

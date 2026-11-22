@@ -1,11 +1,11 @@
 import { readHistoricalJson } from "./helpers/read-history.mjs";
-import test from "node:test";
+import { localEvidenceTest } from "./helpers/local-evidence-test.mjs";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { restoreCompoundStartup } from "../scripts/compound-startup-projection.mjs";
 
 const read = readHistoricalJson;
-test("weak non-held Sun Flare uses the evidenced effect time", () => {
+localEvidenceTest("weak non-held Sun Flare uses the evidenced effect time", () => {
   const c = read("data/characters/ingrid.json");
   const m = c.moves.find((x) => x.id === "ingrid__coverage_6");
   const d = read("data/adoption-decisions.json").compoundStartup.indicatorDecisions.find((x) => x.moveId === m.id);

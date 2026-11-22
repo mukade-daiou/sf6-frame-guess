@@ -1,11 +1,11 @@
 import { readHistoricalJson } from "./helpers/read-history.mjs";
-import test from "node:test";
+import { localEvidenceTest } from "./helpers/local-evidence-test.mjs";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { assertRegenerationPreserves } from "./helpers/regeneration.mjs";
 import { rollbackClassification } from "../scripts/contact-timing-policy.mjs";
 const read = readHistoricalJson;
-test("C134 stage2 preserves stage1 and uses the exact normal SA source row",()=>{
+localEvidenceTest("C134 stage2 preserves stage1 and uses the exact normal SA source row",()=>{
  const r=read("staging/held-range-review.json"), p=read("data/adoption-decisions.json"), l=read("staging/distance-range-candidates.json"), s=r.stage2;
  assert.equal(s.items.length,134);
  assert.equal(new Set(s.items.map(x=>x.key)).size,134);
@@ -34,7 +34,7 @@ test("C134 stage2 preserves stage1 and uses the exact normal SA source row",()=>
  const expected=[81,155,501];for(const x of p.distanceRanges.contactTimingRollback?.candidates||[]){expected[x.before==="accepted"?0:1]--;expected[2]++;}
  assert.deepEqual(["accepted","held","excluded"].map(s=>l.candidates.filter(c=>c.moveIds.length&&c.classification===s).length),expected);
 });
-test("stage2 preparation remains stable alongside historical regeneration",()=>{
+localEvidenceTest("stage2 preparation remains stable alongside historical regeneration",()=>{
  const paths=["staging/held-range-review.json","staging/distance-range-candidates.json","data/adoption-decisions.json"];
  assertRegenerationPreserves(paths, ["scripts/prepare-held-range-stage2.mjs", "scripts/prepare-held-range-review.mjs", "scripts/review-distance-ranges.mjs"]);
 });

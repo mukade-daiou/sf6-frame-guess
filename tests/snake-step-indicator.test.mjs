@@ -1,11 +1,11 @@
 import { readHistoricalJson } from "./helpers/read-history.mjs";
-import test from "node:test";
+import { localEvidenceTest } from "./helpers/local-evidence-test.mjs";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { restoreCompoundStartup } from "../scripts/compound-startup-projection.mjs";
 
 const read = readHistoricalJson;
-test("weak Snake Step retains total while removing total-as-startup", () => {
+localEvidenceTest("weak Snake Step retains total while removing total-as-startup", () => {
   const c = read("data/characters/aki.json");
   const m = c.moves.find((x) => x.id === "aki__special_236_K_L");
   const d = read("data/adoption-decisions.json").compoundStartup.indicatorDecisions[0];
@@ -22,7 +22,7 @@ test("weak Snake Step retains total while removing total-as-startup", () => {
   assert.throws(() => restoreCompoundStartup(c), /Unauthorized compound startup/);
 });
 
-test("each strength is an individually evidenced total-time correction", () => {
+localEvidenceTest("each strength is an individually evidenced total-time correction", () => {
   const c = read("data/characters/aki.json");
   const decisions = read("data/adoption-decisions.json").compoundStartup.indicatorDecisions.filter((d) => d.characterId === "aki");
   assert.deepEqual(decisions.map((d) => d.moveId).sort(), ["aki__special_236_K_H", "aki__special_236_K_L", "aki__special_236_K_M", "aki__special_236_K_OD"]);

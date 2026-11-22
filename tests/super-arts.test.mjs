@@ -1,8 +1,8 @@
-import test from "node:test";
+import { localEvidenceTest } from "./helpers/local-evidence-test.mjs";
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
 import { readFileSync } from "node:fs";
-test("SA source mapping, 288 inputs and all original 908 records survive regeneration", () => {
+localEvidenceTest("SA source mapping, 288 inputs and all original 908 records survive regeneration", () => {
   execFileSync("node_modules/.bin/tsx", [
     "scripts/audit-super-arts.ts",
     "--check",

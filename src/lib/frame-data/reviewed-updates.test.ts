@@ -1,4 +1,4 @@
-import { it, expect } from "vitest";
+import { test, expect } from "vitest";
 import {
   readFileSync,
   readdirSync,
@@ -12,7 +12,12 @@ import {
 import { join, dirname } from "node:path";
 import { tmpdir } from "node:os";
 import { execFileSync } from "node:child_process";
-import { plan, execute, template } from "../../../scripts/review-update";
+import {
+  plan,
+  execute,
+  template,
+  snapshotCapturePaths,
+} from "../../../scripts/review-update";
 import {
   officialCandidate,
   loadOfficialCharacter,
@@ -24,6 +29,7 @@ import { restoreReviewedUpdates } from "../../../scripts/compound-startup-projec
 // @ts-ignore source scanner is shared Node JS
 import { scan } from "../../../scripts/lib/source-scan.mjs";
 const read = (p: string) => JSON.parse(readFileSync(p, "utf8"));
+const it = test.skipIf(process.env.SF6_WITHOUT_SOURCE_CAPTURES === "1");
 it("reviews, rejects stale/conflicting approvals and regenerates only approved fields in an isolated fixture", async () => {
   const root = process.cwd(),
     tmp = mkdtempSync(join(tmpdir(), "sf6-review-test-"));
@@ -276,6 +282,7 @@ it("reviews, rejects stale/conflicting approvals and regenerates only approved f
           .toString()
           .split("\0")
           .filter(Boolean),
+        ...snapshotCapturePaths(read("data/adoption-decisions.json")),
         "scripts/reviewed-updates.ts",
         "scripts/review-update.ts",
       ]),

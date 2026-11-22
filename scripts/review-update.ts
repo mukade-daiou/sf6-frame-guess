@@ -16,6 +16,8 @@ import { isDeepStrictEqual } from "node:util";
 import { pathToFileURL } from "node:url";
 import { characterSchema } from "../src/lib/frame-data/schema";
 import { digest } from "./reviewed-updates";
+import { commandNormalSourcePath } from "./command-normals";
+import { isContactRevoked } from "./contact-timing-policy.mjs";
 import {
   officialCandidate,
   loadOfficialCharacter,
@@ -468,6 +470,17 @@ export function plan(run: string, approval: any, root = process.cwd()) {
   };
 }
 const readSource = (b: Buffer) => JSON.parse(b.toString());
+export function snapshotCapturePaths(policy: any): string[] {
+  return [
+    ...Object.keys(policy.commandNormals ?? {}).map(commandNormalSourcePath),
+    ...(policy.distanceRanges?.decisions ?? []).flatMap((decision: any) =>
+      decision.additionalEvidence && !isContactRevoked(policy, decision)
+        ? [decision.additionalEvidence.path]
+        : [],
+    ),
+  ];
+}
+
 export function execute(
   run: string,
   approval: any,
@@ -492,6 +505,7 @@ export function execute(
     for (const file of [
       ...new Set([
         ...files,
+        ...snapshotCapturePaths(result.policy),
         ...result.policy.characters
           .filter((d: any) => d.officialSource)
           .flatMap((d: any) => [d.candidatePath, d.officialSource])

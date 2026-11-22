@@ -1,5 +1,5 @@
 import { readFileSync } from "node:fs";
-import { expect, it } from "vitest";
+import { expect, test } from "vitest";
 import {
   applyCommandNormals,
   commandNormalCandidates,
@@ -21,6 +21,7 @@ function official(id: string) {
   return { bytes, ...commandNormalCandidates(bytes, id, "UNVERIFIED") };
 }
 
+const it = test.skipIf(process.env.SF6_WITHOUT_SOURCE_CAPTURES === "1");
 it("takes only direct official inputs, including alternate directions and standalone openers", () => {
   expect(
     official("chunli")

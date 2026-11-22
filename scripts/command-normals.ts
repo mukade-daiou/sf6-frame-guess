@@ -14,7 +14,8 @@ import { frame, normalize } from "./lib/source-scan.mjs";
 // @ts-ignore shared official whiff-total calculation
 import { total } from "../staging/official-verification/compare.mjs";
 
-const sources = "staging/official-verification/sources";
+export const commandNormalSourcePath = (id: string) =>
+  `staging/official-verification/sources/${id}.json`;
 const slugs: Record<string, string> = {
   akuma: "gouki_akuma",
   dee_jay: "deejay",
@@ -211,7 +212,7 @@ export function applyCommandNormals(
   character: Character,
   approval: Approval,
 ): Character {
-  const bytes = readFileSync(`${sources}/${character.id}.json`);
+  const bytes = readFileSync(commandNormalSourcePath(character.id));
   const { rows } = commandNormalCandidates(
     bytes,
     character.id,
@@ -302,7 +303,7 @@ if (import.meta.url === pathToFileURL(process.argv[1] ?? "").href) {
     .sort()
     .map((file) => {
       const character = read(`data/characters/${file}`);
-      const bytes = readFileSync(`${sources}/${file}`);
+      const bytes = readFileSync(commandNormalSourcePath(character.id));
       const proposal = commandNormalCandidates(bytes, character.id, version);
       return {
         characterId: character.id as string,
