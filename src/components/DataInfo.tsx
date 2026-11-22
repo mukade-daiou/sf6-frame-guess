@@ -12,7 +12,8 @@ export function DataInfo({ dataset }: { dataset: Dataset }) {
           Fighterおよび関連名称の権利は各権利者に帰属します。
         </p>
         <p>
-          原典データを選別・正規化し、代表条件を採用しています。データとその改変部分は{" "}
+          原典データを選別・正規化し、代表条件を採用しています。SuperCombo
+          Wiki由来のデータとその改変部分のみを{" "}
           <a
             href="https://creativecommons.org/licenses/by-sa/4.0/"
             target="_blank"
@@ -20,7 +21,7 @@ export function DataInfo({ dataset }: { dataset: Dataset }) {
           >
             CC BY-SA 4.0
           </a>{" "}
-          として提供します。ライセンスは商標等の権利を許諾するものではありません。
+          として提供します。CAPCOM公式フレーム表由来のデータには、出典ごとにCAPCOMの権利表記を記載しています。ライセンスは商標等の権利を許諾するものではありません。
         </p>
         <p>
           {dataset.metadata.label} ／ {dataset.metadata.gameVersion}
